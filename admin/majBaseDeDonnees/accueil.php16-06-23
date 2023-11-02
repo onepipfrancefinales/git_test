@@ -1,0 +1,36 @@
+<?php 
+require '../../saison.php';
+echo "Saison : ".$saison;
+
+?>
+
+
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<h2 >Champions régionaux </h2>
+  <p><a href="championsRegionaux.php?annee=<?php echo $saison;?>">G&eacute;n&eacute;rer le fichier des champions 
+  des diff&eacute;rentes ligues (Equipes premières)</a></p>
+
+<p><a href="championsRegionauxReserves.php?annee=<?php echo $saison;?>">G&eacute;n&eacute;rer le fichier des champions 
+  des diff&eacute;rentes ligues (Equipes Réserves)</a></p>
+
+<h2>Champions de France </h2>
+<p><a href="listeChampionsFrance.php?annee=<?php echo $saison;?>">G&eacute;n&eacute;rer le fichier des champions 
+  de France </a></p>
+
+ <h2>Participation aux championnats de France </h2> 
+  <p><a href="championsFrance.php?annee=<?php echo $saison;?>">Liste des clubs participants aux phases finales 
+  du champs de France</a></p>
+
+
+
+  <p><a href="participantschampionsRegionaux.php?annee=<?php echo $saison;?>">Liste des clubs participants aux 
+  phases finales du champs des ligues</a></p>
+</body>
+</html>

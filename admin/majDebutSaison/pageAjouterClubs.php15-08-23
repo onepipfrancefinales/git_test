@@ -1,0 +1,52 @@
+<h1 align="center">Mise à jour de la table bdSaison</h1>
+<br/><br/>
+ <?php
+ // if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee = "Saisir la saison dans l'url (Exemple : &annee=2022)";
+ if (isset ($_GET['info'])) $info = $_GET['info']; else $info = "aucune division s&eacute;lectionn&eacute;e";
+
+
+ //echo "Année : " . $annee."<br/>";
+ echo "Division choisie  : ".$info."<br/>";
+
+?>
+  <form name="form1" method="GET" action="pageAjouterClubs.php?comite=<?php echo $info;?>">
+  <p>&nbsp;</p>
+    <p><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b><font size="3" color="#000000">S&eacute;lection 
+      de ligue</font> </b></font> 
+      <select name="info"  size="1">
+        <option selected>division</option>
+        <option value="110"><b>Top 14</b></option>
+        <option value="120"><b>Pro D2</b></option>
+        <option value="130"><b>Nationale 1</b></option>
+        <option value="135"><b>Nationale 2</b></option>
+        <option value="Aucune sélection"><b>-----------</b></option>
+        <option value="140"><b>F&eacute;d&eacute;rale 1</b></option>
+        <option value="150"><b>F&eacute;d&eacute;rale 2</b></option>
+        <option value="160"><b>F&eacute;d&eacute;rale 3</b></option>
+       <option value="Aucune sélection"><b>-----------</b></option>
+        <option value="170"><b>Régionale 1</b></option>
+        <option value="180"><b>Régionale 2</b></option>
+        <option value="190"><b>Régionale 3</b></option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" name="Submit" value="valider">
+  </form>
+
+<hr/>
+
+<?php require 'boutonAjouterClubs2.php';
+
+echo "<hr/>";
+echo "<br>";
+ echo "Mettre le champ en_cours à Null dans la table bdsaisons.";
+ echo "<br>";
+echo "<br>";
+
+require 'boutonMettreEn_coursNull.php';
+
+ 
+?>
+<br>
+<a href="/admin/majDebutSaison/pageAjouterJournee.php">retour Accueil<br></a>
+<br>

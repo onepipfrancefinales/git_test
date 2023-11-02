@@ -1,0 +1,46 @@
+/*titre*/
+div
+{ 
+color: black;
+font-size: 18px;
+text-align:center;
+}
+
+.mark {
+	
+  background-color: red;
+  color: white;
+  text-align:center;
+  font-family: Arial;
+  font-size: 28px;
+}
+
+
+span.test{
+background-color:red;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px;
+font-family: arial; 
+
+font-size: 14px;
+text-align: center;
+font-weight: Bold;
+width:100px;
+text-decoration:none;
+
+}
+
+
+span.test2{
+background-color:yellow;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px;
+font-family: arial; 
+
+font-size: 14px;
+text-align: center;
+font-weight: Bold;
+width:100px;
+text-decoration:none;
+
+}

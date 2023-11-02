@@ -1,0 +1,290 @@
+<a href="accueil.php">retour Accueil<br></a>
+<br>
+
+<?php
+
+require '../../connect1/connection2.php';
+require ("../../phasesfinalesterr2019/fonctionspfterrESDL2019.php"); 
+
+
+
+
+//require 'choixDivision.php';
+if (isset($comite)) $comite = $comite;
+
+
+	
+	$annee = '2019';
+	
+	
+	
+	
+	
+	//recherche du type
+
+$comite2  = array('au','bg', 'br','ce', 'al','fl' ,'idf', 'n', 'ca','ab', 'pl', 'pr');	
+foreach ($comite2 as $comite)
+{
+//echo $value.' ';
+//echo $comite.' ';
+
+	for ($division =170; $division<230; $division = $division+10)
+	
+	{	
+	
+	//Recherche du type de phase finale
+	$phpComite_pfterr_e = "php".$comite."_pfterr_e";
+	$reponse = $bdd->query("   	SELECT type
+					FROM $phpComite_pfterr_e
+					WHERE division = $division");
+							while ($row = $reponse->fetch() )
+									{ 
+									$type = $row[0];
+									}
+echo "<br/>";
+echo "--------------".$phpComite_pfterr_e."------------"."<br/>";
+?>
+<font color="#FF0000" size="5"><b> 
+<?php
+echo "-------     ".$comite.' '.$division.' '.$type."     -----------".''."<br/>";									
+?>	
+</b></font>	
+		
+<?php
+
+	if ($type == 16 or $type == 17)
+			{
+			seizieme2019 ($comite, $division, $annee, $bdd);
+			
+			 ?>
+ 
+			<h2>champion </h2>
+	 			<?php		 
+	 
+				if ($A1001>$A1002)
+				echo $clubA1001;else echo $clubA1002;
+				?>
+			
+	 		<h2>finale </h2>
+	 			<?php	
+	 			echo  $id1001.' - '.$clubA1001;echo "<br/>";
+	 			echo  $id1002.' - '.$clubA1002;echo "<br/>";
+				?>
+				
+			<h2>demi finale </h2>
+				<?php	
+				if ($clubA1001 ==  $clubA2001) echo $id2002.' - '.$clubA2002; else echo $id2001.' - '.$clubA2001;echo "<br/>";
+				if ($clubA1002 ==  $clubA2003) echo $id2004.' - '.$clubA2004; else echo $id2003.' - '.$clubA2003;echo "<br/>";
+				?>
+				
+			<h2>quarts finale </h2>
+				<?php		
+				if ($clubA2001 ==  $clubA4001) echo $id4002.' - '.$clubA4002; else echo $id4001.'- '.$clubA4001;echo "<br/>";
+				if ($clubA2002 ==  $clubA4003) echo $id4004.' - '.$clubA4004; else echo $id4003.'- '.$clubA4003;echo "<br/>";
+				if ($clubA2003 ==  $clubA4005) echo $id4006.' - '.$clubA4006; else echo $id4005.'- '.$clubA4005;echo "<br/>";
+				if ($clubA2004 ==  $clubA4007) echo $id4008.' - '.$clubA4008; else echo $id4007.'- '.$clubA4007;echo "<br/>";
+				?>
+				
+			<h2>huitieme finale </h2>
+				<?php		
+				if ($clubA4001 ==  $clubA8001) echo $id8002.' - '.$clubA8002; else echo $id8001.' - '.$clubA8001;echo "<br/>";
+				if ($clubA4002 ==  $clubA8003) echo $id8004.' - '.$clubA8004; else echo $id8003.' - '.$clubA8003;echo "<br/>";
+				if ($clubA4003 ==  $clubA8005) echo $id8006.' - '.$clubA8006; else echo $id8005.' - '.$clubA8005;echo "<br/>";
+				if ($clubA4004 ==  $clubA8007) echo $id8008.' - '.$clubA8008; else echo $id8007.' - '.$clubA8007;echo "<br/>";
+
+				if ($clubA4005 ==  $clubA8009) echo $id8010.' - '.$clubA8010; else echo $id8009.' - '.$clubA8009;echo "<br/>";
+				if ($clubA4006 ==  $clubA8011) echo $id8012.' - '.$clubA8012; else echo $id8011.' - '.$clubA8011;echo "<br/>";
+				if ($clubA4007 ==  $clubA8013) echo $id8014.' - '.$clubA8014; else echo $id8013.' - '.$clubA8013;echo "<br/>";
+				if ($clubA4008 ==  $clubA8015) echo $id8016.' - '.$clubA8016; else echo $id8015.' - '.$clubA8015;echo "<br/>";
+				?>
+	
+			<h2>Seizieme finale </h2>
+				<?php		
+				if ($clubA8001 ==  $clubA1601) echo $id1602.' - '.$clubA1602; else echo $id1601.' - '.$clubA1601;echo "<br/>";
+				if ($clubA8002 ==  $clubA1603) echo $id1604.' - '.$clubA1604; else echo $id1603.' - '.$clubA1603;echo "<br/>";
+				if ($clubA8003 ==  $clubA1605) echo $id1606.' - '.$clubA1606; else echo $id1605.' - '.$clubA1605;echo "<br/>";
+				if ($clubA8004 ==  $clubA1607) echo $id1608.' - '.$clubA1608; else echo $id1607.' - '.$clubA1607;echo "<br/>";
+
+				if ($clubA8005 ==  $clubA1609) echo $id1610.' - '.$clubA1610; else echo $id1609.' - '.$clubA1609;echo "<br/>";
+				if ($clubA8006 ==  $clubA1611) echo $id1612.' - '.$clubA1612; else echo $id1611.' - '.$clubA1611;echo "<br/>";
+				if ($clubA8007 ==  $clubA1613) echo $id1614.' - '.$clubA1614; else echo $id1613.' - '.$clubA1613;echo "<br/>";
+				if ($clubA8008 ==  $clubA1615) echo $id1616.' - '.$clubA1616; else echo $id1615.' - '.$clubA1615;echo "<br/>";	
+				
+				if ($clubA8009 ==  $clubA1617) echo $id1618.' - '.$clubA1618; else echo $id1617.' - '.$clubA1617;echo "<br/>";
+				if ($clubA8010 ==  $clubA1619) echo $id1620.' - '.$clubA1620; else echo $id1619.' - '.$clubA1619;echo "<br/>";
+				if ($clubA8011 ==  $clubA1621) echo $id1622.' - '.$clubA1622; else echo $id1621.' - '.$clubA1621;echo "<br/>";
+				if ($clubA8012 ==  $clubA1623) echo $id1624.' - '.$clubA1624; else echo $id1623.' - '.$clubA1623;echo "<br/>";
+
+				if ($clubA8013 ==  $clubA1625) echo $id1626.' - '.$clubA1626; else echo $id1625.' - '.$clubA1625;echo "<br/>";
+				if ($clubA8014 ==  $clubA1628) echo $id1628.' - '.$clubA1628; else echo $id1627.' - '.$clubA1627;echo "<br/>";
+				if ($clubA8015 ==  $clubA1629) echo $id1630.' - '.$clubA1630; else echo $id1629.' - '.$clubA1629;echo "<br/>";
+				if ($clubA8016 ==  $clubA1631) echo $id1632.' - '.$clubA1632; else echo $id1631.' - '.$clubA1631;echo "<br/>";
+				
+				
+				
+				
+				echo "<br/>";
+
+			}	
+	 
+		elseif ($type == 18 or $type ==19 )
+			{
+			huitieme2019 ($comite, $division, $annee, $bdd);
+			
+			 ?>
+ 
+			<h2>champion </h2>
+	 			<?php		 
+	 
+				if ($A1001>$A1002)
+				echo $clubA1001;else echo $clubA1002;
+				?>
+			
+	 		<h2>finale </h2>
+	 			<?php	
+	 			echo  $id1001.' - '.$clubA1001;echo "<br/>";
+	 			echo  $id1002.' - '.$clubA1002;echo "<br/>";
+				?>
+				
+			<h2>demi finale </h2>
+				<?php	
+				if ($clubA1001 ==  $clubA2001) echo $id2002.' - '.$clubA2002; else echo $id2001.' - '.$clubA2001;echo "<br/>";
+				if ($clubA1002 ==  $clubA2003) echo $id2004.' - '.$clubA2004; else echo $id2003.' - '.$clubA2003;echo "<br/>";
+				?>
+				
+			<h2>quarts finale </h2>
+				<?php		
+				if ($clubA2001 ==  $clubA4001) echo $id4002.' - '.$clubA4002; else echo $id4001.'- '.$clubA4001;echo "<br/>";
+				if ($clubA2002 ==  $clubA4003) echo $id4004.' - '.$clubA4004; else echo $id4003.'- '.$clubA4003;echo "<br/>";
+				if ($clubA2003 ==  $clubA4005) echo $id4006.' - '.$clubA4006; else echo $id4005.'- '.$clubA4005;echo "<br/>";
+				if ($clubA2004 ==  $clubA4007) echo $id4008.' - '.$clubA4008; else echo $id4007.'- '.$clubA4007;echo "<br/>";
+				?>
+				
+			<h2>huitieme finale </h2>
+				<?php		
+				if ($clubA4001 ==  $clubA8001) echo $id8002.' - '.$clubA8002; else echo $id8001.' - '.$clubA8001;echo "<br/>";
+				if ($clubA4002 ==  $clubA8003) echo $id8004.' - '.$clubA8004; else echo $id8003.' - '.$clubA8003;echo "<br/>";
+				if ($clubA4003 ==  $clubA8005) echo $id8006.' - '.$clubA8006; else echo $id8005.' - '.$clubA8005;echo "<br/>";
+				if ($clubA4004 ==  $clubA8007) echo $id8008.' - '.$clubA8008; else echo $id8007.' - '.$clubA8007;echo "<br/>";
+
+				if ($clubA4005 ==  $clubA8009) echo $id8010.' - '.$clubA8010; else echo $id8009.' - '.$clubA8009;echo "<br/>";
+				if ($clubA4006 ==  $clubA8011) echo $id8012.' - '.$clubA8012; else echo $id8011.' - '.$clubA8011;echo "<br/>";
+				if ($clubA4007 ==  $clubA8013) echo $id8014.' - '.$clubA8014; else echo $id8013.' - '.$clubA8013;echo "<br/>";
+				if ($clubA4008 ==  $clubA8015) echo $id8016.' - '.$clubA8016; else echo $id8015.' - '.$clubA8015;echo "<br/>";
+	
+	
+				echo "<br/>";
+
+			}
+		
+		
+		
+		
+		
+		
+		elseif ($type == 14)
+			{
+			quarts2019 ($comite, $division, $annee, $bdd);
+			
+			?>
+	 		<h2>champion </h2>
+	 			<?php		 
+	 
+				if ($A1001>$A1002)
+				echo $clubA1001; else	echo $clubA1002;
+				 ?>
+				 
+		 <h2>finale </h2>
+	 			<?php	
+	 			echo  $id1001.' - '.$clubA1001;echo "<br/>";
+	 			echo  $id1002.' - '.$clubA1002;echo "<br/>";	
+				?>
+				
+		<h2>demi finale </h2>
+				<?php	
+				if ($clubA1001 ==  $clubA2001) echo $id2002.' - '.$clubA2002; else echo $id2001.' - '.$clubA2001;echo "<br/>";
+				if ($clubA1002 ==  $clubA2003) echo $id2004.' - '.$clubA2004; else echo $id2003.' - '.$clubA2003;echo "<br/>";	
+				?>
+				
+		<h2>quarts finale </h2>
+				<?php		
+				if ($clubA2001 ==  $clubA4001) echo $id4002.' - '.$clubA4002; else echo $id4001.'- '.$clubA4001;echo "<br/>";
+				if ($clubA2002 ==  $clubA4003) echo $id4004.' - '.$clubA4004; else echo $id4003.'- '.$clubA4003;echo "<br/>";
+				if ($clubA2003 ==  $clubA4005) echo $id4006.' - '.$clubA4006; else echo $id4005.'- '.$clubA4005;echo "<br/>";
+				if ($clubA2004 ==  $clubA4007) echo $id4008.' - '.$clubA4008; else echo $id4007.'- '.$clubA4007;echo "<br/>";
+				
+			
+			}
+		
+		elseif ($type == 2 or $type == 3)
+			{
+			demi2019($comite, $division, $annee, $bdd);
+			
+			
+				?>
+			 <h2>champion </h2>
+	 			<?php		 
+	 			if ($A1001>$A1002)
+					echo $clubA1001;  else	echo $clubA1002;
+				 ?>
+	 
+	 		<h2>finale </h2>
+	 			<?php	
+	 			echo  $id1001.' - '.$clubA1001;echo "<br/>";
+	 			echo  $id1002.' - '.$clubA1002;echo "<br/>";
+				?>
+				
+			<h2>demi finale </h2>
+				<?php	
+				if ($clubA1001 ==  $clubA2001) echo $id2002.' - '.$clubA2002."<br/>"; else echo $id2001.' - '.$clubA2001."<br/>";
+				if ($clubA1002 ==  $clubA2003) echo $id2004.' - '.$clubA2004."<br/>"; else echo $id2003.' - '.$clubA2003."<br/>";
+
+			}
+			
+		elseif ($type == 1)
+			{
+				finale2019($comite, $division, $annee, $bdd);
+				?>
+				<h2>champion </h2>
+		 			<?php		 
+					if ($A1001>$A1002)
+					echo $clubA1001; else echo $clubA1002;
+					?>
+				
+				
+				
+				<h2>finale </h2>
+					<?php
+					echo  $id1001.' - '.$clubA1001;echo "<br/>";
+			 		echo  $id1002.' - '.$clubA1002;echo "<br/>";
+			 
+				
+			}	
+			
+		
+		else
+			echo "traitement impossible";		
+	
+	}	
+
+}		
+	
+	?>
+
+
+
+
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+ 

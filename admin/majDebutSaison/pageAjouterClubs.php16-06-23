@@ -1,0 +1,35 @@
+<h1 align="center">Mise à jour de la table bdSaison</h1>
+<br/><br/>
+ <?php
+  if (isset ($_GET['info'])) $info = $_GET['info']; else $info = "aucune division s&eacute;lectionn&eacute;e";
+echo "Division choisie  : ".$info;
+?>
+  <form name="form1" method="GET" action="pageAjouterClubs.php?comite=<?php echo $info;?>">
+  <p>&nbsp;</p>
+    <p><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b><font size="3" color="#000000">S&eacute;lection 
+      de ligue</font> </b></font> 
+      <select name="info"  size="1">
+        <option selected>Ligue</option>
+        <option value="Top 14"><b>Top 14</b></option>
+        <option value="Pro D2"><b>Pro D2</b></option>
+        <option value="Nationale 1"><b>Nationale 1</b></option>
+        <option value="Nationale 2"><b>Nationale 2</b></option>
+        <option value="Aucune sélection"><b>-----------</b></option>
+        <option value="Fédérale 1"><b>F&eacute;d&eacute;rale 1</b></option>
+        <option value="Fédérale 2"><b>F&eacute;d&eacute;rale 2</b></option>
+        <option value="Fédérale 3"><b>F&eacute;d&eacute;rale 3</b></option>
+       <option value="Aucune sélection"><b>-----------</b></option>
+        <option value="Régionale 1"><b>F&eacute;d&eacute;rale 1</b></option>
+        <option value="Régionale 2"><b>F&eacute;d&eacute;rale 2</b></option>
+        <option value="Régionale 3"><b>F&eacute;d&eacute;rale 3</b></option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" name="Submit" value="valider">
+  </form>
+
+<hr/>
+
+
+
+<?php require 'boutonAjouterClubs2.php';?>
