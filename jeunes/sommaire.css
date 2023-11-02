@@ -1,0 +1,25 @@
+
+
+
+
+.tab3{
+font-family: arial;
+font-weight: Bold;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: 1px black solid ;
+background-color:#FF9933;
+}
+
+.sommaire{
+width:500px;
+border: 1px black solid ;
+
+}
+
+a{
+color: #000000;
+text-decoration: none;
+}
+
