@@ -1,0 +1,359 @@
+<head>
+
+<link rel="stylesheet" type="text/css" href="2.css">
+
+<meta name="description"
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comités territoriaux, Tous les championnats de rugby, fédérale 2, fédérale 3, fédérale 1, top 14.">
+<meta name="keywords"
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+<meta name="classification" content="Sport,Rugby">
+<meta name="resource-type" content="document">
+<meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+<meta name="author" content="Equipe Onepip">
+<meta name="robots" content="All">
+<title>Barrages Fedérale</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<?php
+ $annee=$_GET['annee'];
+ $division=$_GET['division'];
+ // $annee=2022;
+ //$division=150;
+ require '../../phases_finales2019/fonctionsChampFrance2019.php';
+ require '../../connect/connexion6.php';
+ nomDivision($division);
+
+ require '../../connect/connexion1.php';
+ trenteDeuxieme2019 ($division, $annee, $bdd);
+
+?>
+
+
+<?php
+$division = $_GET['division'];
+
+// *******fédérale 2 *********************
+if ($division == 7150 or $division == 7250 )
+{
+if ($division == 7150) {
+	$texteDivision = "Barrages Fédérale 2 ";
+	$texte="Les rencontres se jouent sur les installations de l'
+	équipe la mieux classée (la première citée)";}
+	
+	else {
+	$texteDivision = "Barrages Fédérale B ";
+	$texte= "Les rencontres se jouent sur terrain neutre.";}
+
+?>
+
+<table width="300" border="0" align="left" height="500" cellspacing="0">
+
+  <div><b><i>	<?php echo $texte;?></b><i></div>
+	<br>
+	<table width="300" border="0" align="left" height="500" cellspacing="0">
+
+  <tr>
+    <td colspan="3" class="barrage2GA" ><?php echo $texteDivision; ?> </td>
+  </tr>
+    <td width="10" height="13"></td>
+	<td width="216" height="2">&nbsp;</td>
+    <td width="32" height="13"></td>
+  </tr>
+  <tr>
+	<td rowspan="2" width="6" class="numero"><?php echo "1";?></td>
+    <td class="barrage"><?php echo $clubA1601;?></td>
+      <td class="barrageGA"><?php	echo $A1601;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"> <?php echo $clubA1602;?></td>
+   	<td class="barrageGA"><?php echo $A1602;?> </td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "2";?></td>
+    <td class="barrage2"><?php echo $clubA1603;?></td>
+	<td class="barrage2GA"><?php echo $A1603;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA1604;?></td>
+	<td class="barrage2GA"><?php echo $A1604;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "3";?></td>
+    <td class="barrage"><?php echo $clubA1605;?></td>
+   	<td class="barrageGA"><?php echo $A1605;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"> <?php echo $clubA1606;?></td>
+   	<td class="barrageGA"><?php echo $A1606;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "4";?></td>
+    <td class="barrage2"><?php echo $clubA1607;?></td>
+   	<td class="barrage2GA"><?php echo $A1607;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA1608;?></td>
+	<td class="barrage2GA"><?php echo $A1608;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "5";?></td>
+    <td class="barrage" ><?php echo $clubA1609;?></td>
+	<td class="barrageGA"><?php echo $A1609;?></td>
+  </tr>
+  <tr>
+    <td class="barrage" ><?php echo $clubA1610;?></td>
+	<td class="barrageGA"><?php echo $A1610;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "6";?></td>
+    <td class="barrage2"><?php echo $clubA1611;?></td>
+	<td class="barrage2GA"><?php echo $A1611;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA1612;?></td>
+   <td class="barrage2GA"><?php echo $A1612;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "7";?></td>
+    <td class="barrage"><?php echo $clubA1613;?></td>
+   	<td class="barrageGA"><?php echo $A1613;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"><?php echo $clubA1614;?></td>
+	<td class="barrageGA"><?php echo $A1614;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "8";?></td>
+    <td class="barrage2"><?php echo $clubA1615;?></td>
+	<td class="barrage2GA"><?php echo $A1615;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA1616;?></td>
+  	<td class="barrage2GA"><?php echo $A1616;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "9";?></td>
+    <td class="barrage"><?php echo $clubA1617;?></td>
+	<td class="barrageGA"><?php echo $A1617;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"><?php echo $clubA1618;?></td>
+	<td class="barrageGA"><?php echo $A1618;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "10";?></td>
+    <td class="barrage2"><?php echo $clubA1619;?></td>
+   <td class="barrage2GA"><?php echo $A1619;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA1620;?></td>
+	<td class="barrage2GA"><?php echo $A1620;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "11";?></td>
+    <td class="barrage"><?php echo $clubA1621;?></td>
+  	<td class="barrageGA"><?php echo $A1621;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"><?php echo $clubA1622;?></td>
+	<td class="barrageGA"><?php echo $A1622;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "12";?></td>
+    <td class="barrage2"><?php echo $clubA1623;?></td>
+   	<td class="barrage2GA"><?php echo $A1623;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA1624;?></td>
+   	<td class="barrage2GA"><?php echo $A1624;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "13";?></td>
+    <td class="barrage"><?php echo $clubA1625;?></td>
+	<td class="barrageGA"><?php echo $A1625;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"><?php echo $clubA1626;?></td>
+	<td class="barrageGA"><?php echo $A1626;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "14";?></td>
+    <td class="barrage2"><?php echo $clubA1627;?></td>
+	<td class="barrage2GA"><?php echo $A1627;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA1628;?></td>
+	<td class="barrage2GA"><?php echo $A1628;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "15";?></td>
+    <td class="barrage"><?php echo $clubA1629;?></td>
+	<td class="barrageGA"><?php echo $A1629;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"><?php echo $clubA1630;?></td>
+	<td class="barrageGA"><?php echo $A1630;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "16";?></td>
+    <td class="barrage2"><?php echo $clubA1631;?></td>
+    <td class="barrage2GA"><?php echo $A1631;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA1632;?></td>
+	<td class="barrage2GA"><?php echo $A1632;?></td>
+  </tr>
+  <tr>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+	<td >&nbsp;</td>
+    <td >&nbsp;</td>
+  </tr>
+
+</table>
+<p>&nbsp; </p><br>
+
+
+<?php
+}
+// *******Réglement fédérale 3 *********************
+elseif ($division == 7160 or $division == 7260)
+{
+	if ($division == 7160) {
+		$texteDivision = "Barrages Fédérale 3 ";
+	$texte="Les rencontres se jouent sur les installations de l'
+	équipe la mieux classée (la première citée)";}
+	
+	else {
+	$texteDivision = "Barrages Excellence 3 ";
+	$texte= "Les rencontres se jouent sur terrain neutre.";}
+
+	?><div><b><i>	<?php echo $texte;?></b><i></div>
+	<br>
+	<table width="300" border="0" align="left" height="500" cellspacing="0">
+
+  <tr>
+    <td colspan="3" class="barrage2GA" ><?php echo $texteDivision; ?> </td>
+  </tr>
+  <tr>
+    <td width="10" height="13"></td>
+	<td width="216" height="2">&nbsp;</td>
+	<td width="32" height="13"></td>
+  </tr>
+  <tr>
+	<td rowspan="2" width="6" class="numero"><?php echo "1";?></td>
+    <td class="barrage"><div><?php echo $clubA3201;?></div></td>
+   <td class="barrageGA"><div><?php echo $A3201;?></div></td>
+  </tr>
+  <tr>
+    <td class="barrage"></div> <?php echo $clubA3202;?></div></td>
+	<td class="barrageGA"></div><?php echo $A3202;?></div> </td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "2";?></td>
+    <td class="barrage2"><div><?php echo $clubA3203;?></div></td>
+    <td class="barrage2GA"><div><?php echo $A3203;?></div></td>
+  </tr>
+  <tr>
+    <td class="barrage2"><?php echo $clubA3204;?></td>
+    <td class="barrage2GA"><?php echo $A3204;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "3";?></td>
+    <td class="barrage"><?php echo $clubA3205;?></td>
+	<td class="barrageGA"><?php echo $A3205;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"> <?php echo $clubA3206;?></td>
+	<td class="barrageGA"><?php echo $A3206;?></td>
+
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "4";?></td>
+    <td class="barrage2"><?php echo $clubA3207;?></td>
+	<td class="barrage2GA"><?php echo $A3207;?></td>
+  </tr>
+
+  <tr>
+    <td class="barrage2"><?php echo $clubA3208;?></td>
+    <td class="barrage2GA"><?php echo $A3208;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "5";?></td>
+    <td class="barrage" ><?php echo $clubA3209;?></td>
+    <td class="barrageGA"><?php echo $A3209;?></td>
+  </tr>
+  <tr>
+    <td class="barrage" ><?php echo $clubA3210;?></td>
+    <td class="barrageGA"><?php echo $A3210;?></td>
+  </tr>
+   </tr>
+
+    <tr>
+	<td rowspan="2" width="6" class="numero"><?php echo "6";?></td>
+    <td class="barrage2"><?php echo $clubA3211;?></td>
+   <td class="barrage2GA"><?php	echo $A3211;?></td>
+
+  </tr>
+  <tr>
+    <td class="barrage2"> <?php echo $clubA3212;?></td>
+	<td class="barrage2GA"><?php echo $A3212;?> </td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "7";?></td>
+    <td class="barrage"><?php echo $clubA3213;?></td>
+    <td class="barrageGA"><?php echo $A3213;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"><?php echo $clubA3214;?></td>
+    <td class="barrageGA"><?php echo $A3214;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "8";?></td>
+    <td class="barrage2"><?php echo $clubA3215;?></td>
+	<td class="barrage2GA"><?php echo $A3215;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2"> <?php echo $clubA3216;?></td>
+	<td class="barrage2GA"><?php echo $A3216;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "9";?></td>
+    <td class="barrage"><?php echo $clubA3217;?></td>
+	<td class="barrageGA"><?php echo $A3217;?></td>
+  </tr>
+  <tr>
+    <td class="barrage"><?php echo $clubA3218;?></td>
+    <td class="barrageGA"><?php echo $A3218;?></td>
+  </tr>
+  <tr>
+  <td rowspan="2" width="6" class="numero"><?php echo "10";?></td>
+    <td class="barrage2" ><?php echo $clubA3219;?></td>
+    <td class="barrage2GA"><?php echo $A3219;?></td>
+  </tr>
+  <tr>
+    <td class="barrage2" ><?php echo $clubA3220;?></td>
+    <td class="barrage2GA"><?php echo $A3220;?></td>
+  </tr>
+  </tr>
+  </table>
+<p>&nbsp; </p>
+
+
+
+<?php
+}
+
+// *******Rélement fédérale 3 *********************
+
+//elseif ($cmt == 'fed3GS' or $cmt == 'fed3NE' or $cmt == '991160' or $cmt == '992160')
+//{
+?>
+
+
+
+
+
+<?php
+///}
+?>

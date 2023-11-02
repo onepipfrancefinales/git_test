@@ -1,0 +1,164 @@
+<html>
+  <head>
+<title>modification de données en PHP :: partie2</title>
+
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../maj.css">
+</head>
+
+<body>
+<?php $page="score"; ?>
+<?php $division=$_GET['division']; ?>
+<?php $comite=$_GET['comite']; ?>
+
+<?php $annee=$_GET['annee']; ?>
+<?php $type=$_GET['type'];?>
+
+<?php  
+require ("../../fonctionspfterrESDL2019.php"); 
+
+?>
+<form name="insertion" action="saisieScore2.php?division=<?php echo $division ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>&comite=<?php echo $comite ;?>" method="POST">
+  
+  <?php
+
+require ("../../../connect/connection6.php");
+ 
+   $reponse = mysql_query( " SELECT clubA2001, clubA2002, clubA2003, clubA2004
+    					     FROM $phpbd_pfterr_e
+									  WHERE  annee=$annee AND division =$division" ) ;
+ 										 while ($donnees = mysql_fetch_array($reponse) )
+												{ 		
+												$clubA2001 = $donnees['clubA2001']; 	
+												$clubA2002 = $donnees['clubA2002']; 
+												$clubA2003 = $donnees['clubA2003']; 
+												$clubA2004 = $donnees['clubA2003']; 
+												}
+												 
+												
+$reponse = mysql_query( " SELECT nom
+    					  FROM $phpcomite_clubs 
+						  WHERE  id=$clubA2001 " ) ;
+ 								while ($donnees = mysql_fetch_array($reponse) )
+										{ 		
+										$clubA2001 = $donnees['nom']; 	
+										}							
+												
+	$reponse = mysql_query( " SELECT nom
+    					  FROM $phpcomite_clubs
+						  WHERE  id=$clubA2002 " ) ;
+ 								while ($donnees = mysql_fetch_array($reponse) )
+										{ 		
+										$clubA2002 = $donnees['nom']; 	
+										}	
+										
+										$reponse = mysql_query( " SELECT nom
+    					  FROM $phpcomite_clubs
+						  WHERE  id=$clubA2003 " ) ;
+ 								while ($donnees = mysql_fetch_array($reponse) )
+										{ 		
+										$clubA2003 = $donnees['nom']; 	
+										}	
+										
+										$reponse = mysql_query( " SELECT nom
+    					  FROM $phpcomite_clubs
+						  WHERE  id=$clubA2004 " ) ;
+ 								while ($donnees = mysql_fetch_array($reponse) )
+										{ 		
+										$clubA2004 = $donnees['nom']; 	
+										}
+  
+
+//***************  Scores  ****************************
+												 
+								
+							$phpbd_pfterr="php".''.$phpbd_pfterr;					
+												
+												
+			$requete = mysql_query( "SELECT division , A2001, A2002, A2003, A2004,
+													   A1001, A1002
+    					   			  FROM $phpbd_pfterr_r
+									  WHERE  annee=$annee AND division =$division" ) ;			
+												
+ 
+
+  if( $result = mysql_fetch_object( $requete ) )
+  {
+  ?>
+  <?php
+ }
+mysql_close(); // Déconnexion de MySQL
+?>
+
+  <input type="hidden" name="division" value="<?php echo($division) ;?>">
+
+<header>
+ <h1>QUARTS DE FINALE  <?php echo $division; ?> (  <?php echo $id; ?>  )    <?php echo $annee; ?>
+      </h1> 
+    </header>  
+	   
+	<p class="texte">  QUARTS DE FINALE</p>
+    
+	<h3>1</h3>
+        <h2><?php	echo $clubA4001; ?></h2>
+        <h2><?php	echo $clubA4002; ?></h2>
+   	<h3>1</h3>
+		<input type="text" name="A4001" value="<?php echo $A4001 ;?>" size="3">
+        <input type="text" name="A4002" value="<?php echo $A4002 ;?>" size="3">
+      
+	<h3>2</h3>  
+        <h2><?php	echo $clubA4003; ?></h2>
+        <h2><?php	echo $clubA4004; ?></h2>
+    <h4></h4> 	
+		<input type="text" name="A4003" value="<?php echo $A4003 ;?>" size="3">
+        <input type="text" name="A4004" value="<?php echo $A4004 ;?>" size="3">
+	
+	<h3>3</h3>
+        <h2><?php	echo $clubA4005; ?></h2>
+        <h2><?php	echo $clubA4006; ?></h2>
+    <h4></h4>
+		<input type="text" name="A4005" value="<?php echo $A4005 ;?>" size="3">
+        <input type="text" name="A4006" value="<?php echo $A4006 ;?>" size="3">
+      
+	<h3>4</h3>
+         <h2><?php	echo $clubA4007; ?></h2>
+		<h2><?php	echo $clubA4008; ?></h2>
+    <h4></h4>		
+		<input type="text" name="A4007" value="<?php echo $A4007 ;?>" size="3">
+        <input type="text" name="A4008" value="<?php echo $A4008 ;?>" size="3">
+     
+	<p class="texte">  Demi finale </p>
+  		
+	<h3>1</h3>
+	<h2><?php	echo $clubA2001; ?></h2>
+    <h2><?php	echo $clubA2002; ?></h2>
+    <h4></h4>
+	<input type="text" name="A2001" value="<?php echo $A2001 ;?>" size="3">
+    <input type="text" name="A2002" value="<?php echo $A2002 ;?>" size="3">
+	
+	<h3>2</h3>
+    <h2><?php echo $clubA2003; ?></h2>
+    <h2><?php echo $clubA2004; ?></h2>
+    <h4></h4>
+		<input type="text" name="A2003" value="<?php echo $A2003 ;?>" size="3">
+        <input type="text" name="A2004" value="<?php echo $A2004 ;?>" size="3">
+
+  	<p class="texte"> FINALE </p>
+  
+    <h3>1</h3>
+		<h2><?php	echo $clubA1001; ?></h2>
+		<h2><?php	echo $clubA1002; ?></h2>
+    <h4></h4>
+	   	<input type="text" name="A1001" value="<?php echo $A1001 ;?>" size="3">
+   		<input type="text" name="A1002" value="<?php echo $A1002 ;?>" size="3">
+    <footer> 
+        <input type="submit" value="modifier" name="submit">
+      </footer> 
+     
+</form>
+
+
+
+
+</body>
+</html>

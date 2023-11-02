@@ -1,0 +1,162 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../champTerr.css">
+</head>
+
+
+<?php
+$bdcomiteClub=($comite.''."_clubs");
+require ("../../connect/connexion6.php") ;
+require ("../../phasesfinalesterr2019/fonctionspfterrESDL2019.php");
+
+if ($page=="HPHS1")
+		{
+		$nom1="Honneur";
+		$nom2="Promotion Honneur";
+		$nom3="1re S&eacute;rie";
+		$division = $codeLigue + 170;
+		}
+elseif ($page=="S2S3S4")
+		{
+		$nom1="2me S&eacute;rie";
+		$nom2="3me S&eacute;rie";
+		$nom3="4me S&eacute;rie";
+		$division= $codeLigue + 200;
+		}
+elseif ($page=="RRPHR1")
+		{
+		$nom1="R&eacute;serve";
+		$nom2="R&eacute;serve Promotion";
+		$nom3="R&eacute;serve 1re S&eacute;rie";
+		$division= $codeLigue + 270;
+		}
+?>
+
+<br />
+<div id="palmares2" > Palmar&egrave;s <?php echo $annee;?></div>
+
+<?php
+	$division=$division;
+	demi2019 ($comite, $division, $annee, $bdd);
+	champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+	traitementScores (2001,2004, $bdd);
+?>
+		
+<p class="divisionDemi"><?php echo $nom1; ?></p>
+
+<!-- Demi 1 -->
+<p class="demi1"> <?php echo $clubA2001 ;?></p>
+<p class="demiScore1"><?php echo $A2001 ;?></p>
+
+<!-- Demi 2 -->
+<p class="demi2"><?php echo $clubA2002 ;?></p>
+<p class="demiScore2"><?php echo $A2002 ;?></p>
+
+<!-- Finale 1 -->
+<p class="demi5"><?php echo $clubA1001 ;?></p>
+<p class="demiScore5"><?php echo $A1001;?></p>
+
+<!-- Logo + nom du champion -->
+<p class="demiChamplogo"><img src="<?php echo $champLogo; ?>" border="0" height="100" width="100"></p>
+<p class="demiChampnom"><?php echo $champion; ?></p>
+
+<!-- Demi 3 -->
+<p class="demi3"><?php echo $clubA2003 ;?></p>
+<p class="demiScore3"><?php echo $A2003 ;?></p>
+
+<!-- Finale 2 -->
+<p class="demi6"><?php echo $clubA1002 ;?></p>
+<p class="demiScore6"><?php echo $A1002 ;?></p>
+
+<!-- Demi 4 -->
+<p class="demi4"><?php echo $clubA2004 ;?></p>
+<p class="demiScore4"><?php echo $A2004 ;?></p>
+
+<!--***********************************************************************
+***************************************************************************
+-->
+
+<?php 		
+	$A2001 ="-";$A2002 ="-";$A2003 ="-";$A2004 ="-";
+	if ($page=="RRPHR1") $division=$division+8910; else $division=$division+10;
+	demi2019 ($comite, $division, $annee, $bdd);				
+	champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+	traitementScores (2001,2004, $bdd);
+?>
+<hr />
+
+<p class="divisionDemi"><?php echo $nom2; ?></p>
+	
+<!-- Demi 1 -->
+<p class="demi1"> <?php echo $clubA2001 ;?></p>
+<p class="demiScore1"><?php echo $A2001 ;?></p>
+
+<!-- Demi 2 -->
+<p class="demi2"><?php echo $clubA2002 ;?></p>
+<p class="demiScore2"><?php echo $A2002 ;?></p>
+
+<!-- Finale 1 -->
+<p class="demi5"><?php echo $clubA1001 ;?></p>
+<p class="demiScore5"><?php echo $A1001;?></p>
+
+<!-- Logo + nom du champion -->
+<p class="demiChamplogo"><img src="<?php echo $champLogo; ?>" border="0" height="100" width="100"></p>
+<p class="demiChampnom"><?php echo $champion; ?></p>
+
+<!-- Demi 3 -->
+<p class="demi3"><?php echo $clubA2003 ;?></p>
+<p class="demiScore3"><?php echo $A2003 ;?></p>
+
+<!-- Finale 2 -->
+<p class="demi6"><?php echo $clubA1002 ;?></p>
+<p class="demiScore6"><?php echo $A1002 ;?></p>
+
+<!-- Demi 4 -->
+<p class="demi4"><?php echo $clubA2004 ;?></p>
+<p class="demiScore4"><?php echo $A2004 ;?></p>
+<!--***********************************************************
+*************************************************************
+-->
+<?php 
+	$division = $division + 10;
+	$A2001 ="-";$A2002 ="-";$A2003 ="-";$A2004 ="-";	
+	demi2019 ($comite, $division, $annee, $bdd);
+	champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+	traitementScores (2001,2004, $bdd);
+?>
+<hr />
+
+<p class="divisionDemi"><?php echo $nom3; ?></p>
+	
+<!-- Demi 1 -->
+<p class="demi1"><?php echo $clubA2001 ;?></p>
+<p class="demiScore1"><?php echo $A2001 ;?></p>
+
+<!-- Demi 2 -->
+<p class="demi2"><?php echo $clubA2002 ;?></p>
+<p class="demiScore2"><?php echo $A2002 ;?></p>
+
+<!-- Finale 1 -->
+<p class="demi5"><?php echo $clubA1001 ;?></p>
+<p class="demiScore5"><?php echo $A1001;?></p>
+
+<!-- Logo + nom du champion -->
+<p class="demiChamplogo"><img src="<?php echo $champLogo; ?>" border="0" height="100" width="100"></p>
+<p class="demiChampnom"><?php echo $champion; ?></p>
+
+<!-- Demi 3 -->
+<p class="demi3"><?php echo $clubA2003 ;?></p>
+<p class="demiScore3"><?php echo $A2003 ;?></p>
+
+<!-- Finale 2 -->
+<p class="demi6"><?php echo $clubA1002 ;?></p>
+<p class="demiScore6"><?php echo $A1002 ;?></p>
+
+<!-- Demi 4 -->
+<p class="demi4"><?php echo $clubA2004 ;?></p>
+<p class="demiScore4"><?php echo $A2004 ;?></p>
+
+<hr />
+
+<?php require("../../pub/pub1.php"); ?>
+

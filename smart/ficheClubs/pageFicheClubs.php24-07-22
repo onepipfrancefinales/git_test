@@ -1,0 +1,65 @@
+<?php
+require ("../../saison.php");
+require ("../../fonctions.php");
+$chaine = $_GET['champion'];
+
+if (is_numeric($chaine))
+ {
+	//echo "numerique";
+	if(strlen($chaine)==5){
+ 	 $equipe = $chaine;
+	$id = substr($chaine,0,2);
+	}
+	else {
+ 	 $equipe = substr($chaine,2,5);
+	 $numLigue=substr($chaine,0,2);
+	 $id = substr($chaine,2,2);
+	}
+ }
+
+ 
+require '../../connect/connexion1.php'; 
+infosclub($chaine, $bdd);
+nomLigue ($numLigue, $bdd);
+bdInfosClub($chaine, $bdd);
+saisons($code, $annee, $bdd);
+nomComite ($sigleComite, 0, $bdd);
+affichageSaisonEnCours($equipe, $bdd);
+?>
+
+<html>
+<head>
+ <title>Fiche club <?php echo $nomChampion; ?></title>
+<content="Présentation de club <?php echo $nomChampion; ?>">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="stylesheet" type="text/css" href="../menu_smart2.css">  
+ <link type="text/css" rel="stylesheet" href="../10.css">
+ <link type="text/css" rel="stylesheet" href="paramTiroir.css">
+ <link type="text/css" rel="stylesheet" href="../../consultation/pgclub00.css"/>
+ <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+
+<body text="#000000" bgcolor="#CCCCCC">
+ <div class="fixed-header">
+   <div class="container">
+    <table width="98%" border="1">
+     <tr> 
+      <td width= "5%"class="h22" height="20"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20"></a></td>
+	  <td width= "95%"class="h22" height="20"> France Finales Rugby </td>
+     </tr>
+     <tr> 
+      <td colspan="2" class="h12"><?php echo $nomLong;?> </td>
+     </tr>
+    </table>
+   </div>
+  </div>
+ <div class="container">
+   <?php
+   $smart = true;
+   require '../../consultation/00clubs.php';
+   require '../bas2.php';
+   include("../../pub/pub_displayCarre.php");
+   ?>
+ </div>
+</body>
+</html>

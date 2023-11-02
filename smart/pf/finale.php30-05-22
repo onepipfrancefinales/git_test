@@ -1,0 +1,38 @@
+<table width="90%" border="1" align="center">
+  <tr>
+    <td class="titre">Finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D1ME; ?></strong></i></b></font></div></td>
+ </td>
+  </tr>
+</table>
+<br />
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2"></td>
+    
+  </tr>
+  <tr> 
+    <td class="equipe5"><?php echo $clubA1001;?></td>
+    <td class="coin5GA"><?php echo $A1001;?></td>
+  </tr>
+  <tr> 
+    <td class="equipe5"><?php echo $clubA1002;?></td>
+    <td class="coin5GA"><?php echo $A1002;?></td>
+  </tr>
+</table>
+<br>
+<table width="90%" border="1" align="center">
+  <tr> 
+    <td height="32" class="champion">Champion de France <?php echo $annee ;?></td>
+  </tr>
+</table>
+<center>	
+<?php
+
+	if (is_numeric($A1001)and is_numeric($A1002))
+	{
+	$idEquipeCourt = substr($idEquipe,2,7);echo "<br />";
+	echo "<img src=\"../../images/blasons200_200/$idEquipeCourt.gif\" height=\"100\" width=\"100\">";
+	}
+	?>
+	<p class="equipeChamp"><?php echo $champion;?></p>
+</center>

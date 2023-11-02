@@ -1,0 +1,290 @@
+  <table width="90%" border="1" align="center">
+    <tr>   
+    <td class="titre">8me de finale <br> <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D8000; ?></strong></i></b></font></div></td>
+    </tr>
+  </table>
+
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L8001;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo  $clubA8001;?></td>
+    <td class="coin4pts"><?php echo $A8001;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA8002;?></td>
+    <td class="coin4pts"><?php echo $A8002;?></td>
+  </tr>
+</table>
+
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L8003;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA8003;?></td>
+    <td class="coin5pts"><?php	echo $A8003;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA8004;?></td>
+    <td class="coin5pts"><?php echo $A8004;?></td>
+  </tr>
+  <tr> 
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L8005;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA8005;?></td>
+    <td class="coin4pts"><?php echo $A8005;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA8006;?></td>
+    <td class="coin4pts"><?php echo $A8006;?></td>
+  </tr>
+</table>
+    
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L8007;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA8007;?></td>
+    <td class="coin5pts"><?php echo $A8007;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA8008;?></td>
+    <td class="coin5pts"><?php echo $A8008;?></td>
+  </tr>
+</table>
+
+  <?php	include("../../pub/pub20.php"); ?>
+      
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L8009;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA8009;?></td>
+    <td class="coin4pts"><?php echo $A8009;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA8010;?></td>
+    <td class="coin4pts"><?php echo $A8010;?></td>
+  </tr>
+</table>
+      
+<table width="90%" border="0" align="center"> 
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L8011;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA8011;?></td>
+    <td class="coin5pts"><?php echo $A8011;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA8012;?></td>
+    <td class="coin5pts"><?php echo $A8012;?></td>
+  </tr>
+  <tr> 
+    <td width="79%"></td>
+    <td width="21%"></td>
+  </tr>
+</table>
+     
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L8013;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA8013;?></td>
+    <td class="coin4pts"><?php echo $A8013;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA8014;?></td>
+    <td class="coin4pts"><?php echo $A8014;?></td>
+  </tr>
+</table>
+	  
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L8015;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA8015;?></td>
+    <td class="coin5pts"><?php echo $A8015;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA8016;?></td>
+    <td class="coin5pts"><?php echo $A8016;?></td>
+  </tr>
+</table>
+
+  <table width="90%" border="1" align="center">
+    <tr> 
+      <td class="titre">Quarts de finale <br><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D4000; ?></strong></i></b></font></div></td>
+    </tr>
+  </table>
+  
+<table width="90%" border="0" align="center">
+ <tr> 
+    <td colspan="2" class="lieux"><?php echo $L4001;?></td>
+  </tr>
+ <tr> 
+    <td class="coin4"><?php echo $clubA4001;?></td>
+    <td class="coin4pts"><?php echo $A4001;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA4002;?></td>
+    <td class="coin4pts"><?php echo $A4002;?></td>
+  </tr>
+</table>
+  	  
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L4003;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA4003;?></td>
+    <td class="coin5pts"><?php	echo $A4003;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA4004;?></td>
+    <td class="coin5pts"><?php echo $A4004;?></td>
+  </tr>
+  <tr> 
+    <td width="79%"></td>
+    <td width="21%"></td>
+  </tr>
+</table>
+ 
+      
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L4005;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA4005;?></td>
+    <td class="coin4pts"><?php echo $A4005;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA4006;?></td>
+    <td class="coin4pts"><?php echo $A4006;?></td>
+  </tr>
+</table>
+     
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L4007;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA4007;?></td>
+    <td class="coin5pts"><?php	echo $A4007;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA4008;?></td>
+    <td class="coin5pts"><?php echo $A4008;?></td>
+  </tr>
+</table>
+
+  <?php	include("../../pub/pub20.php"); ?>
+
+<table width="90%" border="1" align="center">
+  <tr> 
+    <td class="titre">Demi finale<br><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D2000; ?></strong></i></b></font></div></td>
+  </tr>
+</table>
+ 
+
+      
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L2001;?></td>
+  </tr>
+ <?php if ($comite == "au"){ ?> 
+ <tr> 
+    <td class="coin4" colspan="2" ><?php echo "Champion d'Auvergne"?></td>
+  </tr>
+ <?php } ?>
+  <tr> 
+    <td class="coin4"><?php echo $clubA2001;?></td>
+    <td class="coin4pts"><?php echo $A2001;?></td>
+  </tr>
+ 
+  <tr> 
+    <td class="coin4"><?php echo $clubA2002;?></td>
+    <td class="coin4pts"><?php	echo $A2002;?></td>
+  </tr>
+   <?php if ($comite == "au"){ ?> 
+ <tr> 
+    <td class="coin4" colspan="2" size="2"><?php echo "Champion Champion Lyonnais"?></td>
+  </tr>
+ <?php } ?>
+  
+</table>
+      
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php echo $L2003;?></td>
+  </tr>
+  <?php if ($comite == "au"){ ?> 
+ <tr> 
+    <td class="coin4" colspan="2" size="2"><?php echo "Champion Dr&ocirc;me Ard&egrave;che"?></td>
+  </tr>
+ <?php } ?>
+  <tr> 
+    <td class="coin4"><?php echo $clubA2003;?></td>
+    <td class="coin4pts"><?php	echo $A2003;?></td>
+  </tr>
+  <tr> 
+    <td class="coin4"><?php echo $clubA2004;?></td>
+    <td class="coin4pts"><?php	echo $A2004;?></td>
+  </tr>
+ <?php if ($comite == "au"){ ?> 
+ <tr> 
+    <td class="coin4" colspan="2" size="2"><?php echo "Champion des Alpes"?></td>
+  </tr>
+ <?php } ?>
+</table>
+
+<table width="90%" border="1" align="center">
+  <tr> 
+    <td class="titre">Finale <br><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D1000; ?></strong></i></b></font></div></td>
+  </tr>
+</table>    
+
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td colspan="2" class="lieux"><?php // echo $L1001;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA1001;?></td>
+    <td class="coin5pts"><?php echo $A1001;?></td>
+  </tr>
+  <tr> 
+    <td class="coin5"><?php echo $clubA1002;?></td>
+    <td class="coin5pts"><?php echo $A1002;?></td>
+  </tr>
+</table>
+
+  <?php	require ("../../pub/pub25.php"); ?>
+
+<table width="90%" border="1" align="center">
+  <tr> 
+    <td bgcolor="#FF0000" height="32" class="titre">Champion <?php echo $nomDivision2.' '.$annee ; ?></td>
+  </tr>
+</table>
+<table width="90%" border="0" align="center">
+  <tr> 
+    <td height="14" align="center"><img src="<?php echo $champLogo;  ?>" width="100" height="100"></td>
+  </tr>
+  <tr>
+     <td class="coin5" class="titre"><?php echo $champion;?></td>
+  </tr>
+</table>

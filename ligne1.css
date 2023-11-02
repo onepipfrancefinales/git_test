@@ -1,0 +1,22 @@
+td{text-align:center;}
+.celluleNoire{font-family: arial;font-size: 16px;background-color:#000000;font-weight: Bold;}
+.celluleGrise{background-color:#333333;font-size: 16px;font-family: arial;font-weight: Bold;}
+.none a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial;}
+
+img{border:0;}
+
+/*bas*/
+.bas{font-size: 16px;background-color:#000000;font-family: arial;color: #ffffff;font-weight: Bold;}
+.bas a{font-size: 16px;background-color:#000000;font-family: arial;color: #ffffff;font-weight: Bold;}
+
+/*pages territoriaux*/
+.terr{font-size: 16px;color: #000066;font-family: arial;font-weight: Bold;}
+.terr a{text-decoration: none;color: #000066;}
+.terr2{width:600px;background-color:#00CCCC;font-size: 16px;color: #000066;font-family: arial;font-weight: Bold;}
+.terr2 a{color:#000000;font-weight: normal;font-size: 12px;text-decoration: none;color: #000000;}
+.terr3{width:500px;background-color:#006699;font-size: 16px;color: #FFFFFF;font-family: arial;font-weight: Bold;}
+.terr3 a{color:#000000;font-weight: normal;font-size: 14px;text-decoration: none;color: #000000;font-weight: Bold;}
+.terr4{width:500px;background-color:#FF00FF;font-size: 16px;color: #FFFFFF;font-family: arial;font-weight: Bold;}
+.terr4 a{color:#000000;font-weight: normal;font-size: 14px;text-decoration: none;color: #000000;font-weight: Bold;}
+
+
