@@ -1,4 +1,7 @@
 <?php
+//$localHost = true; // connexion en local
+$localHost = false;// connexion en ligne
+
 setlocale(LC_TIME, 'fr_FR');
 date_default_timezone_set('Europe/Paris');
 // date du jour :  journee jour mois annee heures:minutes //exemple : mercredi 15 juin 2022, 08:42
