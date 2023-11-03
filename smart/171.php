@@ -278,7 +278,7 @@ division($champ, $bdd);
 					</tr>
 				</table>
 
-				<?php aff_journeeSupp($champ,  $bdd);
+			<?php aff_journeeSupp($champ,  $bdd);
 
 				include("../pub/pub25.php");
 
@@ -295,39 +295,39 @@ division($champ, $bdd);
 		//************************************
 		elseif ($bddComite == "au" or $bddComite == "ca" or $bddComite == "ab") {
 
-		//	if (substr($champ, -3) != 1271) {
-				$phpComite = "php" . $bddComite;
+			//	if (substr($champ, -3) != 1271) {
+			$phpComite = "php" . $bddComite;
 
-				if (substr($champ, -1) == 0)
-					$champ = $champ + 1;
+			if (substr($champ, -1) == 0)
+				$champ = $champ + 1;
 
-				if (is_numeric($champ) && is_numeric($max)) {
-					// cas d'une division avec 10 poules (saison 2022-2023 ARA R�gionale 3)
-					if ($champ == 100191)
-						$finChamp = 100201;
-					else
-						$finChamp = $champ + $max;
-				}
-				//echo "champ :".$champ;echo "<br/>";
-				//echo "max :".$max;echo "<br/>";
-				//echo "finchamp :".$finChamp;
-				echo "<br/>";
+			if (is_numeric($champ) && is_numeric($max)) {
+				// cas d'une division avec 10 poules (saison 2022-2023 ARA R�gionale 3)
+				if ($champ == 100191)
+					$finChamp = 100201;
+				else
+					$finChamp = $champ + $max;
+			}
+			//echo "champ :".$champ;echo "<br/>";
+			//echo "max :".$max;echo "<br/>";
+			//echo "finchamp :".$finChamp;
+			echo "<br/>";
 
-				for ($i = $champ; $i < $finChamp; $i++) {
-					divisionPlusPoule($bddComite, $champ, $bdd);
-					// echo "poule : ".$poule; echo "champ : ".$i; 
-				?>
+			for ($i = $champ; $i < $finChamp; $i++) {
+				divisionPlusPoule($bddComite, $champ, $bdd);
+				// echo "poule : ".$poule; echo "champ : ".$i; 
+			?>
 
-					<table width="90%" border="1" align="center">
-						<tr>
-							<td class="titre"><?php echo $poule; ?></td>
-						</tr>
-					</table>
+				<table width="90%" border="1" align="center">
+					<tr>
+						<td class="titre"><?php echo $poule; ?></td>
+					</tr>
+				</table>
 
-					<br />
-					<div align="center">
-						<?php
-						/*	
+				<br />
+				<div align="center">
+					<?php
+					/*	
 	if ($comite == "au" and $champ > 100190 and $champ < 100230  )
 	{
 		if ($champ < '100210')	
@@ -336,39 +336,39 @@ division($champ, $bdd);
 	echo "<font size=\"2\">"."<center>"."<b>"."<a href=\"171.php?champ=$newChamp&comite=au&bddComite=au\">Consulter la phase pr&eacute;c&eacute;dente</a>"."</b>"."</center>"."</font>";		
 	}
 	*/
-						echo "<br />";
-
-						//echo $nbreChamp;
-						AffichageLogos($champ, $phpComite, true, $bdd); ?>
-					</div>
-					<?php
-					aff_journee($champ, $bdd);
-					maj($champ, true, 'php' . $comite, $bdd);
-					clmnt($champ, true, $bdd);
-					journeesReportees($phpComite, $champ, $bdd);
-					perequation($phpComite, $champ, $bdd);		?>
-					<br />
-					<table width="90%" border="0" align="center">
-						<tr border="0">
-							<td border="0" align="center" bgcolor="#FFFF00"><a href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
-									<font color="#FF0000">
-										<font size="4"><b>--
-												Calendrier complet --</font>
-									</font>
-								</a></td>
-						</tr>
-					</table>
-
-				<?php aff_journeeSupp($champ,  $bdd);
-
-					include("../pub/pub25.php");
-					echo "<hr />" . "<hr />";
 					echo "<br />";
-					$champ = $champ + 1;
-					$nbreChamp = $nbreChamp + 1;
-				}
 
-				/*
+					//echo $nbreChamp;
+					AffichageLogos($champ, $phpComite, true, $bdd); ?>
+				</div>
+				<?php
+				aff_journee($champ, $bdd);
+				maj($champ, true, 'php' . $comite, $bdd);
+				clmnt($champ, true, $bdd);
+				journeesReportees($phpComite, $champ, $bdd);
+				perequation($phpComite, $champ, $bdd);		?>
+				<br />
+				<table width="90%" border="0" align="center">
+					<tr border="0">
+						<td border="0" align="center" bgcolor="#FFFF00"><a href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
+								<font color="#FF0000">
+									<font size="4"><b>--
+											Calendrier complet --</font>
+								</font>
+							</a></td>
+					</tr>
+				</table>
+
+			<?php aff_journeeSupp($champ,  $bdd);
+
+				include("../pub/pub25.php");
+				echo "<hr />" . "<hr />";
+				echo "<br />";
+				$champ = $champ + 1;
+				$nbreChamp = $nbreChamp + 1;
+			}
+
+			/*
 			} else {
 				//Traitement des �quipes r�serves (affichage ind�pendants des equipes Unes ";
 				//ARA réserves reg1
@@ -499,46 +499,46 @@ echo $champ;
 				//  echo "champ apres else :".$champ;
 				require("../connect/connexion6.php");
 				divisionPlusPoule($bddComite, $champ, $bdd);
-					?>
-					<table width="90%" border="1" align="center">
-						<tr>
-							<td class="titre"><?php echo $poule; ?></td>
-						</tr>
-					</table>
-					<br />
-					<div align="center">
-						<?php
-						//echo $nbreChamp ;
-						AffichageLogos($champ, "php" . $bddComite, true, $bdd); ?></div>
+			?>
+				<table width="90%" border="1" align="center">
+					<tr>
+						<td class="titre"><?php echo $poule; ?></td>
+					</tr>
+				</table>
+				<br />
+				<div align="center">
 					<?php
+					//echo $nbreChamp ;
+					AffichageLogos($champ, "php" . $bddComite, true, $bdd); ?></div>
+				<?php
 
-					aff_journee($champ, $bdd);
-					maj($champ, true, 'php' . $comite, $bdd);
-					clmnt($champ, true, $bdd);
-					$phpComite = "php" . $bddComite;
-					journeesReportees($phpComite, $champ, $bdd);
-					perequation($phpComite, $champ, $bdd);
-					?>
-					<br />
-					<table width="90%" border="" align="center">
-						<tr>
-							<td align="center" bgcolor="#FFFF00" class="calendrier"><a href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
-									<font color="#FF0000">
-										<font size="4"><b>--
-												Calendrier complet --</font>
-									</font>
-								</a></td>
-						</tr>
-					</table>
+				aff_journee($champ, $bdd);
+				maj($champ, true, 'php' . $comite, $bdd);
+				clmnt($champ, true, $bdd);
+				$phpComite = "php" . $bddComite;
+				journeesReportees($phpComite, $champ, $bdd);
+				perequation($phpComite, $champ, $bdd);
+				?>
+				<br />
+				<table width="90%" border="" align="center">
+					<tr>
+						<td align="center" bgcolor="#FFFF00" class="calendrier"><a href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
+								<font color="#FF0000">
+									<font size="4"><b>--
+											Calendrier complet --</font>
+								</font>
+							</a></td>
+					</tr>
+				</table>
 
-					<?php aff_journeeSupp($champ,  $bdd);
+				<?php aff_journeeSupp($champ,  $bdd);
 
-					include("../pub/pub25.php"); ?>
-					<hr />
-					<hr />
-					<br />
+				include("../pub/pub25.php"); ?>
+				<hr />
+				<hr />
+				<br />
 
-			<?php
+		<?php
 				$nbreChamp = $nbreChamp + 1;
 			}
 		}
@@ -553,8 +553,8 @@ echo $champ;
 		require("bas.php");
 		echo "<hr />";
 		include("../pub/pub_displayCarre.php");
-			?>
-					</div>
+		?>
+	</div>
 </body>
 
 </html>

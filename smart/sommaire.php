@@ -116,7 +116,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2"  class="coin"><a href="171.php?comite=n&bddComite=idf&champ=116171">Ligue Normandie</a></td>
+    <td colspan="2"  class="coin"><a href="171.php?comite=n&bddComite=idf&champ=180171">Ligue Normandie</a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>

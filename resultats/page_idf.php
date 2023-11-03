@@ -1,9 +1,9 @@
 <?php
 session_start ();
+include("../saison.php");
 require '../connect/connexion6.php';
 require '../Phpleague/phpidf/consult/fonctions_matchs.php';
 require '../Phpleague/phpidf/lang/lang_fr.php';
-include("../saison.php");
 include("fonctions.php");
 require "constantes.php";
 $champLigue=17;

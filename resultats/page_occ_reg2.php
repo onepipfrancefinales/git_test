@@ -1,13 +1,12 @@
 <?php
 session_start();
-$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 6me journ&eacute;e du 01 Novembre";
-//require '../connect/connexion2.php';
-require '../connect/connexion6.php';
 include("../saison.php");
+require '../connect/connexion6.php';
 include("fonctions.php");
 require "constantes.php";
 require '../Phpleague/phpab/consult/fonctions_matchs.php';
 require '../Phpleague/phpab/lang/lang_fr.php';
+
 $idLigue = 20;
 $champLigue = $idLigue;
 $sigleLigue = "(OCC)";

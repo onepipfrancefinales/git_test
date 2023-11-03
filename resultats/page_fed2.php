@@ -2,9 +2,10 @@
 <html lang="fr">
 <?php 
 session_start ();
+include("../saison.php");
 require '../connect/connexion6.php';
 include("fonctions.php");
-include("../saison.php");
+
 require '../Phpleague/phppro/consult/fonctions_matchs.php';
 require '../Phpleague/phppro/lang/lang_fr.php';
 $division = 150;

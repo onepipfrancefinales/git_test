@@ -1,7 +1,7 @@
 <?php 
 session_start ();
-require '../connect/connexion6.php';
 include("../saison.php");
+require '../connect/connexion6.php';
 include("fonctions.php");
 require '../Phpleague/phppro/consult/fonctions_matchs.php';
 require '../Phpleague/phppro/lang/lang_fr.php';

@@ -2,8 +2,8 @@
 session_start ();
 //$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 7me journ&eacute;e du 01 Novembre";
 //require '../connect/connexion3.php';
-require '../connect/connexion6.php';
 include("../saison.php");
+require '../connect/connexion6.php';
 include("fonctions.php");
 require "constantes.php";
 require '../Phpleague/phpfed3NE/consult/fonctions_matchs.php';

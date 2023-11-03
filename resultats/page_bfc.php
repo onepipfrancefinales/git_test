@@ -1,13 +1,12 @@
 <?php
 session_start (); 
-//$message = "<br /> Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 6me journ&eacute;e du 01 Novembre <br/>";
-//require '../connect/connexion2.php';
+include("../saison.php");
 require '../connect/connexion6.php';
 require '../Phpleague/phppl/consult/fonctions_matchs.php';
 require '../Phpleague/phppl/lang/lang_fr.php';
-include("../saison.php");
 include("fonctions.php");
 require "constantes.php";
+
 $champLigue=11;
 //$sigleLigue="(BFC)";
 $comite="phppl";
