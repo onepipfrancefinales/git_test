@@ -40,7 +40,7 @@ traitementDesScores($equipe, $phpComite, $bdd);
   
   <link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/league.css"/>
   <link type="text/css" rel="stylesheet" href="bilan.css">
-  <link type="text/css" rel="stylesheet" href="../resultats.css">
+ <!-- <link type="text/css" rel="stylesheet" href="../resultats.css">-->
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../../ligne1.css">
   <title>Statistiques de <?php echo $nom;?></title>

@@ -129,7 +129,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
  elseif ($sigle == '(BE)')
 		{
 		$code = 1914800;
-		echo "Béarn"; 
+		echo "Bï¿½arn"; 
  		}
 elseif ($sigle == '(BG)')
 		{
@@ -246,7 +246,7 @@ elseif ($sigle == '(PC)')
 <p>&nbsp;</p>
 <div align="center"></div>
 <?php
-// Collecte et affichage des clubs féminins
+// Collecte et affichage des clubs fï¿½minins
 
 require ("../connect1/connection1.php") ;
 
@@ -255,7 +255,7 @@ require ("../connect1/connection1.php") ;
 // --------------------------------
 // (exemple)
 $NbrCol = 4;
-// La requete (exemple) : toutes les "CHOSE" commençant par un "b", classées par ordre alphabétique.
+// La requete (exemple) : toutes les "CHOSE" commenï¿½ant par un "b", classï¿½es par ordre alphabï¿½tique.
 $NbreData = array();
 $requete = $bdd->query("SELECT COUNT(id) 
 						FROM bdclubs 
@@ -350,7 +350,7 @@ echo "pas de donn&eacute;es &agrave; afficher";
 // --------------------------------
 // (exemple)
 $NbrCol = 4;
-// La requete (exemple) : toutes les "CHOSE" commençant par un "b", classées par ordre alphabétique.
+// La requete (exemple) : toutes les "CHOSE" commenï¿½ant par un "b", classï¿½es par ordre alphabï¿½tique.
 
 $requete = $bdd->query("SELECT COUNT(id) 
 						FROM bdclubs 

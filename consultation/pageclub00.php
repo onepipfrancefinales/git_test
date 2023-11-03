@@ -4,7 +4,7 @@ require ("../fonctions.php");
 $chaine = $_GET['champion']; 
 
 
-//Evaluation de la variable chaine si numérique
+//Evaluation de la variable chaine si numï¿½rique
 if (is_numeric($chaine))
  {
 	//echo "numerique";
@@ -49,9 +49,9 @@ saisons($code, $annee, $bdd);
 <html>
 	<head>
 <meta name="description"
-content=" <?php echo $titre;?> : Présentation du club (Bureau; Siège; Stade; Contacts); les grandes du dates du club; les palmarès; les résultats du clubs au cours des dernières saisons et un album photos dédié au club..">
+content=" <?php echo $titre;?> : Prï¿½sentation du club (Bureau; Siï¿½ge; Stade; Contacts); les grandes du dates du club; les palmarï¿½s; les rï¿½sultats du clubs au cours des derniï¿½res saisons et un album photos dï¿½diï¿½ au club..">
 <meta name="keywords"
-content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitï¿½ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -119,7 +119,7 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
     <tr> 
       <td bgcolor="#FFFFFF"> 
         <p align="center">
-          <?php// echo $id; //echo $sigleComite; ?>
+          <?php // echo $id; //echo $sigleComite; ?>
         </p>
         <p align="center"><font color="#FF0000">____________________________________________________</font></p>
         <div align="center"> 

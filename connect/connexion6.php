@@ -1,6 +1,4 @@
 <?php
-require "../saison.php";
-
 if ($localHost == true) {
 
         try {
@@ -15,5 +13,7 @@ if ($localHost == true) {
         } catch (Exception $e) {
                 die('Erreur : ' . $e->getMessage());
         }
+        
 }
+
 ?>
