@@ -19,7 +19,7 @@ elseif ($champRecup == 200191)
 	$tableau = array(200191, 200192, 200193, 200194, 200195, 200196, 200197, 200198);
 elseif ($champRecup == 200271)
 	$tableau = array(200271, 200272, 200273, 200274);
-elseif ($champRecup == 2009181)
+elseif ($champRecup == 209181)
 	$tableau = array(209181, 209182, 209183 , 209184, 209185, 209186, 209187);
 
 //$tableau = array(171,172,173,174,181,182,183,184)

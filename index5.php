@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phppleague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phppleague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phppleague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -22,15 +22,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>phpabeague - Administration</title>
+<title>phppleague - Administration</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
-<body topmargin="0" leftmargin="0" class="phpab">
+<body topmargin="0" leftmargin="0" class="phppl">
 
 <?php
 $championnat = $_GET['champ'];
+$comite = $_GET['comite'];
 require ("../config.php") ;
 require ("fonctions.php");
 ouverture ();
@@ -38,23 +39,23 @@ ouverture ();
 
 <div align="center">
   <center>
-<!-- 
- <table cellspacing="0" width="100%" height="100%" cellpadding="0">
+  <!--
+  <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpab">Comit&eacute; 
-          Ligue Occitanie </font></td>
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppl">Comit&eacute; 
+          Cote d'Argent - Administration</font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
-      <td class="phpab3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
-      <a href="?page=championnat"><?php // echo LEAGUE; ?></a><br /><br />
+      <td class="phppl3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
+      <a href="?page=championnat"><?php// echo LEAGUE; ?></a><br /><br />
       
--->     
+   -->  
       
      
       
-      <a href="logout.php"><?php // echo "Logout"; ?></a><br />
+      <a href="logout.php"><?php// echo "Logout"; ?></a><br />
       </td>
       <td valign="top" colspan="2"><div align="center">
 
@@ -77,14 +78,14 @@ ouverture ();
 
      if (VerifSession ($user_pseudo,$user_mdp, $idconnect)=="1")
                 {
-       if ($page=="championnat") {include ("championnat2.php");}
+       if ($page=="championnat") {include ("championnat5.php");}
        elseif ($page=="mini_classement") {include ("mini_classement.php");}
        elseif ($page=="membres") {include ("membres.php");}
         elseif ($page=="accueil") {include ("accueil.htm");}
        else {include ("accueil.htm");}
                 }
      //  elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-     //  elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
+     //  elseif ($identification == "non2") {echo "Identifiants erronés !";}
      //  else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
       else
     		 {
@@ -105,7 +106,7 @@ ouverture ();
       <td></td>
     </tr>
     <tr>
-      <td class="phpab" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
+      <td class="phppl" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
         </td>
      
     </tr>
@@ -114,9 +115,7 @@ ouverture ();
   </center>
 </div>
 <?php $championnat = (substr($championnat,0,5)*10)+1;?>
-<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=ab&bddComite=ab&champ=<?php echo $championnat; ?>">
-
-
+<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=<?php echo $comite; ?>&bddComite=pl&champ=<?php echo $championnat; ?>">
 </body>
 
 </html>

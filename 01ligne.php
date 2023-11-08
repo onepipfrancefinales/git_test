@@ -56,7 +56,7 @@
     <td width="94"><a href="http://francefinalesrugby.fr/resultats/page_pca.php"><img src="/images/ligues/PCA.jpg" border="0"  width="60" height="60"></a></td>
    </tr>
    <tr> 
-    <td class = "none" width="128"><a href="http://francefinalesrugby.fr/resultats/page_ara_reg1.php"><font size="2"><b>Auvergne <br> Rh&ocirc;ne Alpes</b></font></a></td>
+    <td class = "none" width="128"><a href="resultats/page_ara_reg1.php"><font size="2"><b>Auvergne <br> Rh&ocirc;ne Alpes</b></font></a></td>
     <td class = "none" width="102"><a href="http://francefinalesrugby.fr/resultats/page_bfc.php"><font size="2"><b>Bourgogne<br> Franche comt&eacute;</b></font></a></td>
     <td class = "none" width="93"><a href="http://francefinalesrugby.fr/resultats/page_bre.php"><font size="2"><b>Bretagne</b></font></a></td>
     <td class = "none" width="101"><a href="http://francefinalesrugby.fr/resultats/page_cvl.php"><font size="2"><b>Centre<br> Val de Loire</b></font></a></td>

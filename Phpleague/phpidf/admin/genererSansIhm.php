@@ -27,7 +27,7 @@ elseif ($champRecup == 180271)
 
 
 elseif ($champRecup == 220171)
-	$tableau = array(220171 220181, 220182,
+	$tableau = array(220171, 220181, 220182,
 					 220191, 220192);
 elseif ($champRecup == 220271)
 	$tableau = array(220271);
