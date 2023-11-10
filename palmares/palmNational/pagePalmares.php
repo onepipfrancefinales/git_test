@@ -8,6 +8,7 @@ if (isset ($base)) ; else $base='-';
 
 <html lang="fr"> 
 <head>
+	
 <meta name="description" content="">
 <meta name="keywords" content="Presentation de la competititon et de tous les champions de France 1re Serie. Palmares complet de la 1re Serie.">
 <meta name="classification" content="Sport,Rugby">

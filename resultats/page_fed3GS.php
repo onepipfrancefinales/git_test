@@ -28,6 +28,7 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";?>
   gtag('config', 'G-G7CSSC3EPH');
 </script>
 -->
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_fed3GS.php/" />
  <link type="text/css" rel="stylesheet" href="../Phpleague/phpfed3NE/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

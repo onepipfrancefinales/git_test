@@ -17,6 +17,7 @@ $comiteNom="Alsace Lorraine";?>
 <!DOCTYPE html>       
 <html>
 <head>
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_ges.php/" />
   <link type="text/css" rel="stylesheet" href="../Phpleague/phpidf/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

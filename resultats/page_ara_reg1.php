@@ -19,6 +19,7 @@ $sigleLigue = "(ARA)";
 <html lang="fr">
 
 <head>
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_ara_reg1.php/" />
   <link type="text/css" rel="stylesheet" href="../Phpleague/phpau/league.css" />
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

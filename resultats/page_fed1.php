@@ -28,6 +28,7 @@ $comiteNom="F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
   gtag('config', 'G-G7CSSC3EPH');
 </script>
 -->
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_fed1.php/" />
  <link type="text/css" rel="stylesheet" href="../Phpleague/phppro/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

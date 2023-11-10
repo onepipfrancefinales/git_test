@@ -15,6 +15,7 @@ $comiteNom="F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_ara_reg3.php/ " />
  <link type="text/css" rel="stylesheet" href="../Phpleague/phpf1/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

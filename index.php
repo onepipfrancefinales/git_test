@@ -12,6 +12,7 @@ $annee = 2022;
 
 <meta name="google-adsense-account" content="ca-pub-9177538664500260">
 <title>France Finales Rugby</title>
+<link rel= "canonical" href= "https://francefinalesrugby.fr " />
   <link type="text/css" rel="stylesheet" href="ligne1.css">
   <link type="text/css" rel="stylesheet" href="formulaireDG.css"/> 
   <meta name="description" content=" Résulats des compétitions Fédérales et régionales. Egalement disponible les phases finales Régionales et nationales. ">

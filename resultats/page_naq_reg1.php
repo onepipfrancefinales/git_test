@@ -22,7 +22,8 @@ $comiteNom="Cote d'Argentaaaaa";?>
 <head>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
- <link type="text/css" rel="stylesheet" href="../Phpleague/phpca/league.css"/>
+     <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_naq_reg1.php/" />
+     <link type="text/css" rel="stylesheet" href="../Phpleague/phpca/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">

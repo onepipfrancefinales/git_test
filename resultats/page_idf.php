@@ -16,6 +16,7 @@ $comiteNom="Ile de France";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_idf.php/" />
  <link type="text/css" rel="stylesheet" href="../Phpleague/phpidf/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

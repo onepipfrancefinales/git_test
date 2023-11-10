@@ -17,7 +17,7 @@ $comiteNom="F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";
 
 
 <head>
-
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_fed2.php/" />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
