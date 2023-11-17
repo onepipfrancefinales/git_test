@@ -37,10 +37,10 @@ $comiteNom="Provence";
   window.open(page,nom,options);
 }
 </script>
-<!--
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
--->
+
 
 </head>
 <body>

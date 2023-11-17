@@ -1,6 +1,6 @@
 
 <?php
-  //récupération des valeurs des champs:
+  //rï¿½cupï¿½ration des valeurs des champs:
 $bddComite = $_GET['bddComite']; 
 $comite = $_GET['comite'];  
 $maxJournee=$_GET['maxJournee'];  
@@ -134,7 +134,7 @@ else
 				$codeEquipe2 = $row[1];
 				} 
 		 	 
-//récupération des bonus equipe1
+//rï¿½cupï¿½ration des bonus equipe1
 			 
 	 $result =$bdd->query( "SELECT $J
 						 FROM $phpcomite_equipesResultat
@@ -145,7 +145,7 @@ else
 			$totalBonusEquipe1 = $row[0]; 
 			} 
 		 
-//récupération des bonus equipe2
+//rï¿½cupï¿½ration des bonus equipe2
 			  
 	$result =$bdd->query( "SELECT $J
 						  FROM $phpcomite_equipesResultat
@@ -306,10 +306,15 @@ echo $numeroJournee.''."me journ&eacute;e"; ?>
 			}
 
 
-	if ($bddComite== 'fed3ne' OR $bddComite=='pro' OR $bddComite== 'fed3NE')
-	{	
+	if 	($bddComite =='pro'){
+		
 	$champ = substr($journee,0,5)*10;	
 	}
+elseif ($bddComite =='fed3NE' OR $bddComite =='fed3ne')
+{
+	$champ = 991161;
+}
+
 	else
 	$champ = substr($journee,0,6);
 			

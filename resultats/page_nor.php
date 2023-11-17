@@ -30,10 +30,10 @@ $comiteNom="Normandie";?>
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <!--
+  
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
--->
+
 </head>
 
 <body>

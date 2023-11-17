@@ -30,10 +30,9 @@ $comiteNom="";
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <meta name="robots" content="All">
  <title>Championnat de France Professionnel</title>
-<!--
+
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
--->
 	</head>
 
 <body> 

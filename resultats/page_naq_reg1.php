@@ -41,10 +41,10 @@ $comiteNom="Cote d'Argentaaaaa";?>
   window.open(page,nom,options);
 }
 </script>
-<!--
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
--->
+
 </head>
 <body>
 <div align="center">
@@ -89,7 +89,7 @@ $comiteNom="Cote d'Argentaaaaa";?>
  
 	echo " <hr>"."<hr>";
   
-	require("comPerso.php"); 
+//	require("comPerso.php"); 
   
 	echo  "<h5>".$REG1." - ".$P1." <br>
 	<font face=\"Arial, Helvetica, sans-serif\" size=\"2\">".$EXHPH."</font><br></h5>";
@@ -98,7 +98,7 @@ $comiteNom="Cote d'Argentaaaaa";?>
 	journeesReportees($comite, $champ, $bdd);  
 	perequation($comite, $champ, $bdd);
 	
-	require '../pub/pub_displayH_550.php';
+//	require '../pub/pub_displayH_550.php';
    
 	echo  "<h5>".$REG1." - ".$P2." <br>
     <font face=\"Arial, Helvetica, sans-serif\" size=\"2\">".$EXHPH."</font></h5>";
@@ -115,11 +115,11 @@ $comiteNom="Cote d'Argentaaaaa";?>
     perequation($comite, $champ, $bdd);
 	
 	//require 'cadrePubHorizontal600.php';
-	require '../pub/pub_displayH_550.php';
+	//require '../pub/pub_displayH_550.php';
    
 	echo  "<h5>".$REG1." - ".$P4." <br>
     <font face=\"Arial, Helvetica, sans-serif\" size=\"2\">".$EXHPH."</font></h5>";
-    $champ = 190174; $champ2 = 190274;
+  $champ = 190174; $champ2 = 190274;
 	affichage($champ, $champ2, $comite, $bdd);  
 	journeesReportees($comite, $champ, $bdd);  
 	perequation($comite, $champ, $bdd);
@@ -137,7 +137,7 @@ $comiteNom="Cote d'Argentaaaaa";?>
   
 	include 'sommaires.php'; 
 	include 'liensDivers.php'; 
-	require '../pub/pub_displayH_550.php';
+//	require '../pub/pub_displayH_550.php';
 ?>
             <br>
           </p>

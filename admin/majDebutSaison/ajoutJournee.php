@@ -184,24 +184,24 @@ if ($ligue== "phppro" or $ligue == "phpfed3NE"  or $ligue == "phpfed3ne"){
 	      $finPouleTraite =   99025922;
 	}
 	
-	//FED3NE - Poule 1 à 10
+	//FED3NE - Poule 1 à 9
 	elseif (substr($id,0,6) == 991161){
-		  $debutPouleTraite = 99116001;
+		  $debutPouleTraite = 99116101;
 	      $finPouleTraite =   99116922;
 	}	
-	//FED3NE - Poule 11 à 20	
+	//FED3NE - Poule 10 à 18	
 	elseif (substr($id,0,6) == 992161){	  
-		  $debutPouleTraite = 99216001;
+		  $debutPouleTraite = 99216101;
 	      $finPouleTraite =   99216922;	  
 	}	  
-	//Excellence B - Poule 1 à 10
+	//Excellence B - Poule 1 à 9
 	elseif (substr($id,0,6) == 991261){
-		  $debutPouleTraite = 99126001;
+		  $debutPouleTraite = 99126101;
 	      $finPouleTraite =   99126922;
 	}
-	//Excellence B - Poule 11 à 20
+	//Excellence B - Poule 10 à 18
 	elseif (substr($id,0,6) == 992261){
-		  $debutPouleTraite = 99226001;
+		  $debutPouleTraite = 99226101;
 	      $finPouleTraite =   99226922;
 	}
 	
@@ -462,6 +462,17 @@ echo "nbreLignes : ".$nbreLignes;echo "<br />";
 //echo "<br />";
 echo "<br />";
 
+//test
+
+echo "1 : ".$tableMatch; echo "<br />";
+echo "2 : ".$debutPouleTraite; echo "<br />";
+echo "3 : ".$finPouleTraite; echo "<br />";
+echo "4 : ".$id; echo "<br />";
+echo "5 : ".$journeeTraitee; echo "<br />";
+echo "nbreLignes : ".$nbreLignes;echo "<br />";
+//test
+
+echo "etape 1"	;	echo "<br />";
 
 $reponse = $bdd->query("	
 				SELECT id, id_equipe_dom, id_equipe_ext, id_journee, buts_dom, buts_ext
@@ -480,6 +491,16 @@ $reponse = $bdd->query("
 		 $buts_domBdd[] = $row[4];
 		 $buts_extBdd[] = $row[5];
 		}
+
+echo "etape 2"	;	echo "<br />";
+
+echo "1 : ".$idBdd[0] ;echo "<br />";
+echo "2 : ".$id_equipe_domBdd[0] ;echo "<br />";
+echo "3 : ".$id_equipe_extBdd[0] ;echo "<br />";
+echo "4 : ".$id_journeeBdd[0] ;echo "<br />";
+echo "5 : ".$buts_domBdd[0] ;echo "<br />";
+echo "6 : ".$buts_extBdd[0] ;echo "<br />";
+
 // id renumeroté de 1 à nbre de libre
 
 for ($i=0; $i <= $nbreLignes -1 ; $i++)
@@ -493,7 +514,7 @@ for ($i=0; $i <= $nbreLignes -1 ; $i++)
 // affichage du contenu de la table
 //echo $i.' '.$id_equipe_domBdd[$i].' '.$id_equipe_extBdd[$i].' '.$buts_domBdd[$i].' '.$buts_extBdd[$i];echo "<br>";
 }
-
+echo "etape 3"	;	echo "<br />";
 echo "<br>";
 
 
@@ -508,7 +529,7 @@ if (isset($recup_buts_ext)) $recup_buts_ext = $recup_buts_ext; else $recup_buts_
 if (isset($scoresBdd)) $scoresBdd = $scoresBdd; else $scoresBdd=0;
 
 //echo "tableMatch : ".$tableMatch;echo "<br>";
-
+echo "etape 4"	;	echo "<br />";
 $reponse = $bdd->query("	
 				SELECT buts_dom, buts_ext
 				FROM $tableMatch 
@@ -526,7 +547,7 @@ $reponse = $bdd->query("
 $scoresBdd = $recup_buts_dom + $recup_buts_ext;echo "<br>";
 //echo $buts_dom." - ".$buts_ext;echo "<br>";
 //echo "scoresBdd : ".$scoresBdd ;
-
+echo "etape 5"	;	echo "<br />";
 echo "<br>";
 echo "********************    Première ligne du fichier     *************************";echo "<br>";
 echo "<br>";

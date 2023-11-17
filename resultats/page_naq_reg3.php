@@ -43,10 +43,10 @@ $comiteNom="Cote d'Argent";?>
   window.open(page,nom,options);
 }
 </script>
-<!--
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
--->
+
 </head>
 <body>
 <div align="center">
@@ -67,7 +67,7 @@ $comiteNom="Cote d'Argent";?>
       <table width="1200" border="0" align="center">
         <tr> 
           <td> 
-            <?php include("../pub/pub_displayHorizontal.php");?>
+            <?php //include("../pub/pub_displayHorizontal.php");?>
           </td>
         </tr>
       </table>
@@ -91,7 +91,7 @@ $comiteNom="Cote d'Argent";?>
  
 	echo " <hr>"."<hr>";
   
-	require("comPerso.php"); 
+	//require("comPerso.php"); 
   
 	echo "<h5>".$REG3." - ".$P1."<br>
 	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS3S4." 
@@ -101,7 +101,7 @@ $comiteNom="Cote d'Argent";?>
 	journeesReportees($comite, $champ, $bdd);  
 	perequation($comite, $champ, $bdd);
 	
-	require '../pub/pub_displayH_550.php';
+//	require '../pub/pub_displayH_550.php';
    
 	echo "<h5>".$REG3." - ".$P2."<br>
 	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS3S4."  
@@ -119,7 +119,7 @@ $comiteNom="Cote d'Argent";?>
 	journeesReportees($comite, $champ, $bdd);  
     perequation($comite, $champ, $bdd);
 	
-	require 'cadrePubHorizontal600.php';
+//	require 'cadrePubHorizontal600.php';
    
 	echo "<h5>".$REG3." - ".$P4."<br>
 	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS3S4."  
@@ -138,7 +138,7 @@ $comiteNom="Cote d'Argent";?>
 	journeesReportees($comite, $champ, $bdd);  
 	perequation($comite, $champ, $bdd);
 	
-	require '../pub/pub_displayH_550.php';
+	//require '../pub/pub_displayH_550.php';
    
 	echo "<h5>".$REG3." - ".$P6."<br>
 	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS3S4." 
@@ -161,7 +161,7 @@ $comiteNom="Cote d'Argent";?>
   
 	include 'sommaires.php'; 
 	include 'liensDivers.php'; 
-	require '../pub/pub_displayH_550.php';
+//	require '../pub/pub_displayH_550.php';
 ?>
             <br>
           </p>
