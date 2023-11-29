@@ -25,7 +25,7 @@ $maxJournee=$_GET['JMAX'];
 	</head>
 <body>
 
-<meta http-equiv="refresh" content="0;URL=http://francefinalesrugby.franceserv.com/smart/majScoresAvecMdp/saisie.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee; ?>&maxJournee=<?php echo $maxJournee; ?>&codeEquipe=<?php echo $codeEquipe; ?>">
+<meta http-equiv="refresh" content="0;URL=/smart/majScoresAvecMdp/saisie.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee; ?>&maxJournee=<?php echo $maxJournee; ?>&codeEquipe=<?php echo $codeEquipe; ?>">
 
 </body>
 </html>

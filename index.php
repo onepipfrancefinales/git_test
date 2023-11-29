@@ -119,11 +119,11 @@ $annee = 2022;
             </tr>
             <tr> 
               <td colspan="2" bgcolor="#FFFFFF"><a
- href="http://francefinalesrugby.franceserv.com/smart/sommaire.php"
+ href="https://francefinalesrugby.fr/smart/sommaire.php"
  target="_blank"><b><font color="#ff0000" size="5">Lien &agrave; mettre dans vos 
                 favoris<br>
                 </font><font color="#ff0000"> </font></b></a><a
- href="http://francefinalesrugby.franceserv.com/smart/sommaire.php"
+ href="https://francefinalesrugby.fr/smart/sommaire.php"
  target="_blank"><img src="../images/apple.png" border="0" height="183"
  width="184"></a></td>
               <td bgcolor="#FFFFFF" width="299"> 
@@ -279,7 +279,7 @@ $annee = 2022;
             </tr>
             <tr> 
               <td width="274"> 
-                <div align="center"><a href="dossiers/video/pagevideo.php?choix=<?php echo "ess";?>"><font color="#000000" size="4">Essais</font></a></div>
+                <div align="center"><a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "ess";?>"><font color="#000000" size="4">Essais</font></a></div>
               </td>
               <td width="272"> 
                 <div align="center"></div>
@@ -287,7 +287,7 @@ $annee = 2022;
             </tr>
             <tr> 
               <td width="274"> 
-                <div align="center"><a href="dossiers/video/pagevideo.php?choix=<?php echo "bag";?>"><font color="#000000" size="4">Bagarres</font></a></div>
+                <div align="center"><a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "bag";?>"><font color="#000000" size="4">Bagarres</font></a></div>
               </td>
               <td width="272" bgcolor="#000000"> 
                 <div align="center"><font color="#000000"><b><font color="#FFFFFF" size="5">PHASES 
@@ -296,15 +296,15 @@ $annee = 2022;
             </tr>
             <tr> 
               <td width="274"> 
-                <div align="center"><a href="dossiers/video/pagevideo.php?choix=<?php echo "ins";?>"><font color="#000000" size="4">Insolites</font></a></div>
+                <div align="center"><a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "ins";?>"><font color="#000000" size="4">Insolites</font></a></div>
               </td>
               <td width="272" height="22"> 
                 <div align="center"><font color="#000000" size="4">R&eacute;gionales</font></div>
               </td>
             </tr>
             <tr> 
-              <td width="274" height="24"><a href="dossiers/video/pagevideo.php?choix=<?php echo "cau";?>"><font color="#000000" size="4">Causeries</font></a></td>
-              <td width="272" height="24"><font color="#000000"><a href="phases_finales/top14/pagetop14.php"><font color="#000000" size="4">Champ 
+              <td width="274" height="24"><a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "cau";?>"><font color="#000000" size="4">Causeries</font></a></td>
+              <td width="272" height="24"><font color="#000000"><a href="https://francefinalesrugby.fr/phases_finales/top14/pagetop14.php"><font color="#000000" size="4">Champ 
                 de France</font></a></font></td>
             </tr>
             <tr> 
@@ -334,33 +334,33 @@ $annee = 2022;
             </tr>
             <tr> 
               <td height="28" width="274"> 
-                <div align="center"><font color="#000000"><a href="dossiers/lexique/pageLexique.php?sommaire=1&lettre=0"><font color="#000000" size="4">Lexique 
+                <div align="center"><font color="#000000"><a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=1&lettre=0"><font color="#000000" size="4">Lexique 
                   du rugby</font></a></font></div>
               </td>
               <td height="28" width="272"> 
-                <div align="center"><font color="#000000"><a href="dossiers/lexique/page_chansons.php"><font color="#000000" size="4" >Chansons 
+                <div align="center"><font color="#000000"><a href="https://francefinalesrugby.fr/dossiers/lexique/page_chansons.php"><font color="#000000" size="4" >Chansons 
                   paillardes</font></a></font></div>
               </td>
             </tr>
             <tr> 
               <td width="274"> 
-                <div align="center"><font color="#000000"><a href="dossiers/lexique/pageLexique.php?sommaire=2"><font color="#000000" size="4" >Expressions 
+                <div align="center"><font color="#000000"><a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=2"><font color="#000000" size="4" >Expressions 
                   du rugby</font></a></font></div>
               </td>
               <td width="299"> 
-                <div align="center"><font color="#FFFFFF"><a href="dossiers/lexique/page_hymnes.php"><font color="#000000"size="4" >Hymnes</font></a></font></div>
+                <div align="center"><font color="#FFFFFF"><a href="https://francefinalesrugby.fr/dossiers/lexique/page_hymnes.php"><font color="#000000"size="4" >Hymnes</font></a></font></div>
               </td>
             </tr>
             <tr> 
               <td width="274"> 
-                <div align="center"><font color="#000000"><a href="dossiers/lexique/pageLexique.php?sommaire=4"><font color="#000000" size="4" >Expressions 
+                <div align="center"><font color="#000000"><a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=4"><font color="#000000" size="4" >Expressions 
                   mediatiques</font></a></font></div>
               </td>
               <td width="299">&nbsp;</td>
             </tr>
             <tr> 
               <td width="274"> 
-                <div align="center"><font color="#000000"><a href="dossiers/lexique/pageLexique.php?sommaire=3"><font color="#000000"size="4" >Phrases 
+                <div align="center"><font color="#000000"><a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=3"><font color="#000000"size="4" >Phrases 
                   c&eacute;l&eacute;bres</font></a></font></div>
               </td>
               <td width="272">&nbsp;</td>

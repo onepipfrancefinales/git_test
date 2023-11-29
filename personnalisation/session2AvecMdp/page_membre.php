@@ -169,7 +169,7 @@ $journeeActuelle=substr($journee,-2);
 
 <div align="left"><br>
 	</div>
-	<p align="center"> <font face="Arial, Helvetica, sans-serif" size="3"><a href="http://resultats.franceserv.com/retourAvecMdp.php?E=<?php echo $id; ?>&bddC=<?php echo $bddComite; ?>&C=<?php echo $comite; ?>&J=<?php echo $journee; ?>&JMAX=<?php echo $derniereJournee; ?>"><font color="#000000"><b>Mise 
+	<p align="center"> <font face="Arial, Helvetica, sans-serif" size="3"><a href="/resultatsFranceservCom/retourAvecMdp.php?E=<?php echo $id; ?>&bddC=<?php echo $bddComite; ?>&C=<?php echo $comite; ?>&J=<?php echo $journee; ?>&JMAX=<?php echo $derniereJournee; ?>"><font color="#000000"><b>Mise 
 	  &agrave; jour Equipe Une </b></font></a></font> <br>
 	  <?php
 	//******** Modif des variableS pour les equipes II  *******
@@ -188,7 +188,7 @@ $journeeActuelle=substr($journee,-2);
 	//echo "journee : ".$journee;
 ?>	
 
-<p align="center"><font face="Arial, Helvetica, sans-serif" size="3"><a href="http://resultats.franceserv.com/retourAvecMdp.php?E=<?php echo $id; ?>&bddC=<?php echo $bddComite; ?>&C=<?php echo $comite; ?>&J=<?php echo $journee; ?>&JMAX=<?php echo $derniereJournee;?>"><font color="#000000"><b>Mise 
+<p align="center"><font face="Arial, Helvetica, sans-serif" size="3"><a href="/resultatsFranceservCom/retourAvecMdp.php?E=<?php echo $id; ?>&bddC=<?php echo $bddComite; ?>&C=<?php echo $comite; ?>&J=<?php echo $journee; ?>&JMAX=<?php echo $derniereJournee;?>"><font color="#000000"><b>Mise 
   &agrave; jour Equipe II </b></font></a></font></p>
 </body>
 </html>

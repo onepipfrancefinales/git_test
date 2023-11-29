@@ -161,7 +161,7 @@ $journeeActuelle=substr($journee,-2);
 //echo "journée actuelle : ".$journeeActuelle;echo "<br />";
 ?>
   <font size="5"> <b> 
-  <?php// echo $nomChampion; ?>
+  <?php // echo $nomChampion; ?>
    </b></font></p>
 <div align="center"> 
   <?php 

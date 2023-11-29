@@ -261,7 +261,7 @@ elseif ($ligue== "phpab" or $ligue == "phpca"  or $ligue == "phpau"){
 	  	  
 	 elseif (substr($id,0,6) == 190271){
 		  $debutPouleTraite = 19027101;
-	      $finPouleTraite =   19927922;
+	      $finPouleTraite =   19027922;
 	  }
 	 elseif (substr($id,0,6) == 199181){
 		  $debutPouleTraite = 19918101;
@@ -494,12 +494,12 @@ $reponse = $bdd->query("
 
 echo "etape 2"	;	echo "<br />";
 
-echo "1 : ".$idBdd[0] ;echo "<br />";
-echo "2 : ".$id_equipe_domBdd[0] ;echo "<br />";
-echo "3 : ".$id_equipe_extBdd[0] ;echo "<br />";
-echo "4 : ".$id_journeeBdd[0] ;echo "<br />";
-echo "5 : ".$buts_domBdd[0] ;echo "<br />";
-echo "6 : ".$buts_extBdd[0] ;echo "<br />";
+echo "étape 1 : ".$idBdd[0] ;echo "<br />";
+echo "étape 2 : ".$id_equipe_domBdd[0] ;echo "<br />";
+echo "étape 3 : ".$id_equipe_extBdd[0] ;echo "<br />";
+echo "étape 4 : ".$id_journeeBdd[0] ;echo "<br />";
+echo "étape 5 : ".$buts_domBdd[0] ;echo "<br />";
+echo "étape 6 : ".$buts_extBdd[0] ;echo "<br />";
 
 // id renumeroté de 1 à nbre de libre
 

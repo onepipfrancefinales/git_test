@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>Mise à jour des résultats</title>
+<title>Mise ï¿½ jour des rï¿½sultats</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/personnalisation/admin/formulaire.css"/> 
-<link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/smart/10.css"> 
+<link type="text/css" rel="stylesheet" href="/personnalisation/admin/formulaire.css"/> 
+<link type="text/css" rel="stylesheet" href="/smart/10.css"> 
 <link type="text/css" rel="stylesheet" href="CSS.css">
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
@@ -25,7 +25,7 @@
   (de la forme 4 chiffres + 1 lettre en majuscules)<br>
   <hr />
 <p> 
-  <link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/personnalisation/admin/formulaire.css"/>
+  <link type="text/css" rel="stylesheet" href="/personnalisation/admin/formulaire.css"/>
   <b>Exemple :</b> Identifiant : 3345A<br>
   <font color="#FFFFFF"><a href="../../smart/dossiers/sommaire.php"><font color="#FFFFFF">pagetest</font></a>ssss</font>Mot 
   de passe 3345A<br>
