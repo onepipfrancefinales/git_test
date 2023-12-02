@@ -184,7 +184,11 @@ if ($equipe > 90000000) {
 <h2>Suivi des résultats des rencontres </h2>
 <?php
 //$comite ="php".$comite; 
-//evolutionResultatsSmart ($equipe, $comite, $champ, $bdd);
+
+//echo "equipe : ".$equipe;echo "<br />";
+//echo "comite : ". $comite;echo "<br />";
+//echo "champ : ".$champ;echo "<br />";
+evolutionResultatsSmart ($equipe, $comite, $champ, $bdd);
 ?>
 <br />
 <h2>Calendrier et résultats<br>

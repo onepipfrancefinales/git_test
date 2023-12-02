@@ -1039,6 +1039,7 @@ function messages($champ)
 function evolutionResultats($equipe, $comite, $champ, $bdd)
 {
 
+	
 	$php_matchs = $comite . "_matchs";
 	$php_journees = $comite . "_journees";
 
@@ -1130,7 +1131,7 @@ function evolutionResultats($equipe, $comite, $champ, $bdd)
 
 function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 {
-	//echo "test";
+	
 	$php_matchs = $comite . "_matchs";
 	$php_journees = $comite . "_journees";
 

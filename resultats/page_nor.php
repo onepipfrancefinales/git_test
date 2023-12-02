@@ -108,15 +108,7 @@ $comiteNom="Normandie";?>
 	journeesReportees($comite, $champ, $bdd);
 	perequation($comite, $champ, $bdd);
 	
-	echo "<h5><a name=\"R3\"></a>".$REG3." - ".$P3." <br />
-	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS3S4."  </font> <br><br></h5>";	
-  $champ = 180193; $champ2 = 0;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-	perequation($comite, $champ, $bdd);
-	
-	
-	
+		
     echo "<hr />"." <hr />";
 	 
     include("sommaires.php"); 
