@@ -23,7 +23,7 @@
     <td  class="tab3"  > 
 		<a href="#4">4me S&eacute;rie </a> 
     </td>
-    <td  class="tab3" colspan="2" > <a href="../feminine/index_fem.php">Comp&eacute;titions 
+    <td  class="tab3" colspan="2" > <a href="https://francefinalesrugby.fr/feminine/index_fem.php">Comp&eacute;titions 
       f&eacute;minines</a> </td>
   </tr>
 </table>

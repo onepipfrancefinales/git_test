@@ -10,7 +10,7 @@ if ($cmt == "fem")
     <td class="tab3" colspan="2"><a href="page_federale.php">F&eacute;d&eacute;rale 1 </a></td>
   </tr>
   <tr>
-    <td class="tab3" colspan="6"><a href="../../index.php">Comp&eacute;titions masculines</a></td>
+    <td class="tab3" colspan="6"><a href="https://francefinalesrugby.fr/index.php">Comp&eacute;titions masculines</a></td>
    
   </tr>
   
@@ -37,10 +37,10 @@ elseif ($cmt == "f1")
  ?>
 <table class="sommaire" align="center">
   <tr>
-    <td class="tab3" colspan="2"><a href="#1">Poule 1 </a></td>
-    <td class="tab3" colspan="2"><a href="#2">Poule 2 </a></td>
-    <td class="tab3" colspan="2"><a href="#3">Poule 3 </a></td>
-    <td class="tab3" colspan="2"><a href="#4">Poule 4 </a></td>
+    <td class="tab3" colspan="2"><a href="https://francefinalesrugby.fr/resultats/page_fed1.php#1">Poule 1 </a></td>
+    <td class="tab3" colspan="2"><a href="https://francefinalesrugby.fr/resultats/page_fed1.php#2">Poule 2 </a></td>
+    <td class="tab3" colspan="2"><a href="https://francefinalesrugby.fr/resultats/page_fed1.php#3">Poule 3 </a></td>
+    <td class="tab3" colspan="2"><a href="https://francefinalesrugby.fr/resultats/page_fed1.php#4">Poule 4 </a></td>
   </tr>
 </table>
 <?php
@@ -51,16 +51,16 @@ elseif ($cmt =="fed2")
  ?>
 <table class="sommaire" align="center">
   <tr> 
-    <td class="tab3"><a href="#1">Poule 1</a></td>
-    <td class="tab3"><a href="#2">Poule 2</a></td>
-    <td class="tab3"><a href="#3">Poule 3</a></td>
-    <td class="tab3"><a href="#4">Poule 4</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed2.ph#1">Poule 1</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed2.ph#2">Poule 2</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed2.ph#3">Poule 3</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed2.ph#4">Poule 4</a></td>
   </tr>
   <tr> 
-    <td class="tab3"><a href="#5">Poule 5</a></td>
-    <td class="tab3"><a href="#6">Poule 6</a></td>
-    <td class="tab3"><a href="#7">Poule 7</a></td>
-    <td class="tab3"><a href="#8">Poule 8</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed2.ph#5">Poule 5</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed2.ph#6">Poule 6</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed2.ph#7">Poule 7</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed2.ph#8">Poule 8</a></td>
   </tr>
 </table>
 
@@ -74,27 +74,27 @@ elseif ($cmt =="fed3NE" or $cmt =="fed3GS")
 
 <table class="sommaireFed3" align="center" >
   <tr> 
-    <td class="tab3"><a href="page_fed3NE.php#1">Poule 1</a></td>
-    <td class="tab3"><a href="page_fed3NE.php#2">Poule 2</a></td>
-    <td class="tab3"><a href="page_fed3NE.php#3">Poule 3 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#4">Poule 4 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#5">Poule 5 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#6">Poule 6 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#7">Poule 7 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#8">Poule 8 </a></td>
-	<td class="tab3"><a href="page_fed3NE.php#9">Poule 9 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#1">Poule 1</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#2">Poule 2</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#3">Poule 3 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#4">Poule 4 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#5">Poule 5 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#6">Poule 6 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#7">Poule 7 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#8">Poule 8 </a></td>
+	  <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3NE.php#9">Poule 9 </a></td>
 	
   </tr>
   <tr> 
-   <td class="tab3"><a href="page_fed3GS.php#10">Poule 10 </a></td>
-  <td class="tab3"><a href="page_fed3GS.php#11">Poule 11</a></td>
-    <td class="tab3"><a href="page_fed3GS.php#12">Poule 12</a></td>
-    <td class="tab3"><a href="page_fed3GS.php#13">Poule 13 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#14">Poule 14 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#15">Poule 15 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#16">Poule 16 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#17">Poule 17 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#18">Poule 18 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#10">Poule 10 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#11">Poule 11</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#12">Poule 12</a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#13">Poule 13 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#14">Poule 14 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#15">Poule 15 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#16">Poule 16 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#17">Poule 17 </a></td>
+    <td class="tab3"><a href="https://francefinalesrugby.fr/resultats/page_fed3GS.php#18">Poule 18 </a></td>
 	
   </tr>
   
@@ -112,12 +112,12 @@ elseif ( $cmt =="au" or $cmt =="ab" or $cmt == "ca")
  ?>
   <table class="sommaire" align="center" width="519" height="49">
     <tr> 
-      <td class="tab3" width="157"><a href="page_<?php echo $cmt2;?>_reg1.php">R&eacute;gionale 1</a></td>
-      <td class="tab3" colspan="2"><a href="page_<?php echo $cmt2;?>_reg2.php">R&eacute;gionale 2</a> </td>
-      <td class="tab3" width="173"><a href="page_<?php echo $cmt2;?>_reg3.php">R&eacute;gionale 3 </a></td>
+      <td class="tab3" width="157"><a href="https://francefinalesrugby.fr/resultats/page_<?php echo $cmt2;?>_reg1.php">R&eacute;gionale 1</a></td>
+      <td class="tab3" colspan="2"><a href="https://francefinalesrugby.fr/resultats/page_<?php echo $cmt2;?>_reg2.php">R&eacute;gionale 2</a> </td>
+      <td class="tab3" width="173"><a href="https://francefinalesrugby.fr/resultats/page_<?php echo $cmt2;?>_reg3.php">R&eacute;gionale 3 </a></td>
     </tr>
     <tr> 
-      <td class="tab3" colspan="4"><a href="../feminine/index_fem.php">Comp&eacute;titions f&eacute;minines</a> </td>
+      <td class="tab3" colspan="4"><a href="https://francefinalesrugby.fr/feminine/index_fem.php">Comp&eacute;titions f&eacute;minines</a> </td>
     </tr>
   </table>
   <?php
@@ -170,7 +170,7 @@ else
       <td class="tab3"><a href="#R3">R&eacute;gionale 3 </a></td>
     </tr>
     <tr> 
-     <td class="tab3" colspan="3" > <a href="../feminine/index_fem.php">Comp&eacute;titions f&eacute;minines</a> </td>
+     <td class="tab3" colspan="3" > <a href="https://francefinalesrugby.fr/feminine/index_fem.php">Comp&eacute;titions f&eacute;minines</a> </td>
     </tr>
   </table>
   <?php

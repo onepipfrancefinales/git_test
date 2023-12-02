@@ -19,16 +19,16 @@ $equipe2 = "Excellence B";
   <tr border color="#009966"> 
     <td height="23" valign="middle" bgcolor="#006699" align="center" rowspan="2" bordercolor="#006699"> 
       <h4><a
- href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=<?php echo $division; ?>&annee=<?php echo $saison;?>"
+ href="https://francefinalesrugby.fr/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=<?php echo $division; ?>&annee=<?php echo $saison;?>"
  target="_top"><font color="#FFFFFF">Phase finale du<br>
         championnat de France</font></a></h4>
     </td>
-    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division; ?>">Palmar&egrave;s 
+    <td class="bleuClair"> <a href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmares.php?division=<?php echo $division; ?>">Palmar&egrave;s 
       <?php echo $equipe1;?>
       </a> </td>
   </tr>
   <tr bordercolor="#009966"> 
-    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division+100; ?>">Palmar&egrave;s <?php echo $equipe2; ?></a> </td>
+    <td class="bleuClair"> <a href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmares.php?division=<?php echo $division+100; ?>">Palmar&egrave;s <?php echo $equipe2; ?></a> </td>
   </tr>
 </table>
 
