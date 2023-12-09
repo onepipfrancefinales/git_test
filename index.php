@@ -133,7 +133,7 @@ $annee = 2022;
                   l'adresse de ce dernier en favori. </font></p>
                 <p><font color="#000000" size="4">ou saisir l'adresse ci-dessous 
                   et la mettre en favori sur votre smartphone.</font></p>
-                <p><font color="#000000" size="4">http://francefinalesrugbyfranceserv.com/<br>
+                <p><font color="#000000" size="4">http://francefinalesrugby.fr/<br>
                   smart/sommaire.php</font></p>
               </td>
             </tr>

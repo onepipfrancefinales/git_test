@@ -231,7 +231,7 @@ elseif ($ligue== "phpab" or $ligue == "phpca"  or $ligue == "phpau"){
 	    
 	 elseif (substr($id,0,6) == 100191){
 		  $debutPouleTraite = 10019101;
-	      $finPouleTraite = 10019922;
+	      $finPouleTraite = 10020022;
 	  }
 	 
 	  elseif (substr($id,0,6) == 100271){
@@ -279,7 +279,7 @@ elseif ($ligue== "phpab" or $ligue == "phpca"  or $ligue == "phpau"){
 	  }
 	  elseif (substr($id,0,6) == 200191){
 		  $debutPouleTraite = 20019101;
-	      $finPouleTraite = 20020922;
+	      $finPouleTraite = 20019922;
 	  }
 	 
 	   elseif (substr($id,0,6) == 200271){
@@ -301,7 +301,7 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	//BFC
 	if (substr($id,0,6) == 110171){
 		  $debutPouleTraite = 11017101;
-	      $finPouleTraite = 11022122;
+	      $finPouleTraite = 11019501;
 	}
 	elseif (substr($id,0,6) == 110271){
 		  $debutPouleTraite = 11027101;
@@ -310,7 +310,7 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	//BRE
 	elseif (substr($id,0,6) == 120171){
 		  $debutPouleTraite = 12017101;
-	      $finPouleTraite = 12018122;
+	      $finPouleTraite = 12019522;
 	}
 	elseif (substr($id,0,6) == 120191){
 		  $debutPouleTraite = 12019101;
@@ -324,7 +324,7 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	//CVL
 	elseif (substr($id,0,6) == 130171){
 		  $debutPouleTraite = 13017101;
-	      $finPouleTraite = 13022122;
+	      $finPouleTraite = 130195;
 	}
 	elseif (substr($id,0,6) == 130271){
 		  $debutPouleTraite = 13027101;
@@ -363,7 +363,7 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	//IDF
 	elseif (substr($id,0,6) == 170171){
 		  $debutPouleTraite = 17017101;
-	      $finPouleTraite = 17022122;
+	      $finPouleTraite = 17018522;
 	}
 	elseif (substr($id,0,6) == 170271){
 		  $debutPouleTraite = 17027101;
@@ -381,7 +381,7 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	//PCA
 	elseif (substr($id,0,6) == 220171){
 		  $debutPouleTraite = 22017101;
-	      $finPouleTraite = 22022122;
+	      $finPouleTraite = 220195122;
 	}
 	elseif (substr($id,0,6) == 220271){
 		  $debutPouleTraite = 22027101;
@@ -502,17 +502,21 @@ echo "étape 5 : ".$buts_domBdd[0] ;echo "<br />";
 echo "étape 6 : ".$buts_extBdd[0] ;echo "<br />";
 
 // id renumeroté de 1 à nbre de libre
-
+////echo "Etape 7 :  récuperation des oppostions et des scores : id  -- equipe_dom  -- equipe_ext -- score1 -- score 2  ";echo "<br>";
 for ($i=0; $i <= $nbreLignes -1 ; $i++)
 {
 	//$i=0;
+	
+
+	
 	$bdd->exec("UPDATE $tableMatch
 				SET id = '$i'   
 				WHERE id_equipe_dom = '$id_equipe_domBdd[$i]' AND id_equipe_ext = '$id_equipe_extBdd[$i]'");	
-	
+
 
 // affichage du contenu de la table
-//echo $i.' '.$id_equipe_domBdd[$i].' '.$id_equipe_extBdd[$i].' '.$buts_domBdd[$i].' '.$buts_extBdd[$i];echo "<br>";
+//echo$i.' '. $buts_domBdd[$i]; echo "<br>";
+echo $i.' '.$id_equipe_domBdd[$i].' '.$id_equipe_extBdd[$i].' '.$buts_domBdd[$i].' '.$buts_extBdd[$i];echo "<br>";
 }
 echo "etape 3"	;	echo "<br />";
 echo "<br>";

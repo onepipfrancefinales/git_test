@@ -16,7 +16,7 @@ if ($champRecup == 200171)
 elseif ($champRecup == 200181)
 	$tableau = array(200181, 200182, 200183 , 200184, 200185, 200186, 200187);
 elseif ($champRecup == 200191)
-	$tableau = array(200191, 200192, 200193, 200194, 200195, 200196, 200197, 200198);
+	$tableau = array(200191, 200192, 200193, 200194, 200195, 200196, 200197, 200198,200199);
 elseif ($champRecup == 200271)
 	$tableau = array(200271, 200272, 200273, 200274);
 elseif ($champRecup == 209181)
