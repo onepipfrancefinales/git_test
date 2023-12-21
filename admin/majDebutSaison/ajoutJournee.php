@@ -256,7 +256,7 @@ elseif ($ligue== "phpab" or $ligue == "phpca"  or $ligue == "phpau"){
 
 	 elseif (substr($id,0,6) == 190191){
 		  $debutPouleTraite = 19019101;
-	      $finPouleTraite = 19019922;
+	      $finPouleTraite = 19020022;
 	  }
 	  	  
 	 elseif (substr($id,0,6) == 190271){
@@ -324,7 +324,7 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	//CVL
 	elseif (substr($id,0,6) == 130171){
 		  $debutPouleTraite = 13017101;
-	      $finPouleTraite = 130195;
+	      $finPouleTraite = 13019522;
 	}
 	elseif (substr($id,0,6) == 130271){
 		  $debutPouleTraite = 13027101;
@@ -381,7 +381,7 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	//PCA
 	elseif (substr($id,0,6) == 220171){
 		  $debutPouleTraite = 22017101;
-	      $finPouleTraite = 220195122;
+	      $finPouleTraite = 22019522;
 	}
 	elseif (substr($id,0,6) == 220271){
 		  $debutPouleTraite = 22027101;
