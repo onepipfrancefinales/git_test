@@ -16,7 +16,7 @@
 //                                                                      */
 //***********************************************************************/
 ?>
-<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Language" content="fr">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -28,7 +28,7 @@
 </head>
 
 <body topmargin="0" leftmargin="0" class="phppl">
-<?php echo "test"; ?>
+
 <?php
 $champ = $_GET['champ'];
 require ("../config.php") ;
@@ -50,8 +50,7 @@ if ($champ >= 110000 and $champ < 120000)
  elseif ($champ >= 220000 and $champ < 230000)
 	{ $nomLigue= "Provence Alpes Cote d'azur";}
 
-echo $champ;
-echo $nomLigue; 
+
 ?>
 
 <div align="center">
@@ -103,7 +102,7 @@ echo $nomLigue;
        else {include ("accueil.htm");}
                 }
        elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-       elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
+       elseif ($identification == "non2") {echo "Identifiants erronés !";}
     
        else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
      

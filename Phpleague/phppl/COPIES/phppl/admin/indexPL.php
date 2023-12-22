@@ -16,7 +16,7 @@
 //                                                                      */
 //***********************************************************************/
 ?>
-<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Language" content="fr">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -28,30 +28,11 @@
 </head>
 
 <body topmargin="0" leftmargin="0" class="phppl">
-<?php echo "test"; ?>
+
 <?php
-$champ = $_GET['champ'];
 require ("../config.php") ;
 require ("fonctions.php");
 ouverture ();
-
-if (isset ($nomLigue)) $nomLigue=$nomLigue; else $nomLigue="";
-
-if ($champ >= 110000 and $champ < 120000)
-	{ $nomLigue= "Bourgogne Franche Comt&eacute";}	
- elseif ($champ >= 120000 and $champ < 130000)
-	{ $nomLigue= "Bretagne";}
- elseif ($champ >= 130000 and $champ < 140000) 
-	{ $nomLigue= "Centre Val de Loire";}
- elseif ($champ >= 160000 and $champ < 170000)
-	{ $nomLigue= "Haut de France";}
- elseif ($champ >= 210000 and $champ < 220000)
-	{ $nomLigue= "Pays de la Loire";}	
- elseif ($champ >= 220000 and $champ < 230000)
-	{ $nomLigue= "Provence Alpes Cote d'azur";}
-
-echo $champ;
-echo $nomLigue; 
 ?>
 
 <div align="center">
@@ -59,7 +40,8 @@ echo $nomLigue;
   <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppl">Ligue <?php echo $nomLigue;?> - Administration</font></td>
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppl">Ligue 
+          Pays de la loire - Administration</font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
@@ -93,7 +75,7 @@ echo $nomLigue;
 /*pas de verif du mdp et user php7*/
    if (VerifSession ($user_pseudo,$user_mdp, $idconnect)=="1" or VerifSession ($user_pseudo,$user_mdp, $idconnect)=="0")
                 {
-       if ($page=="championnat") {include ("championnat.php");}
+       if ($page=="championnatPL") {include ("championnatPL.php");}
        elseif ($page=="groupes_championnats") {include ("groupes_championnats.php");}
        elseif ($page=="mini_classement") {include ("mini_classement.php");}
        elseif ($page=="fiches_clubs") {include ("fiches_clubs.php");}
@@ -103,7 +85,7 @@ echo $nomLigue;
        else {include ("accueil.htm");}
                 }
        elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-       elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
+       elseif ($identification == "non2") {echo "Identifiants erronés !";}
     
        else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
      

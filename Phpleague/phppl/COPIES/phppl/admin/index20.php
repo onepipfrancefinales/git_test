@@ -16,7 +16,7 @@
 //                                                                      */
 //***********************************************************************/
 ?>
-<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Language" content="fr">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -28,30 +28,11 @@
 </head>
 
 <body topmargin="0" leftmargin="0" class="phppl">
-<?php echo "test"; ?>
+
 <?php
-$champ = $_GET['champ'];
 require ("../config.php") ;
 require ("fonctions.php");
 ouverture ();
-
-if (isset ($nomLigue)) $nomLigue=$nomLigue; else $nomLigue="";
-
-if ($champ >= 110000 and $champ < 120000)
-	{ $nomLigue= "Bourgogne Franche Comt&eacute";}	
- elseif ($champ >= 120000 and $champ < 130000)
-	{ $nomLigue= "Bretagne";}
- elseif ($champ >= 130000 and $champ < 140000) 
-	{ $nomLigue= "Centre Val de Loire";}
- elseif ($champ >= 160000 and $champ < 170000)
-	{ $nomLigue= "Haut de France";}
- elseif ($champ >= 210000 and $champ < 220000)
-	{ $nomLigue= "Pays de la Loire";}	
- elseif ($champ >= 220000 and $champ < 230000)
-	{ $nomLigue= "Provence Alpes Cote d'azur";}
-
-echo $champ;
-echo $nomLigue; 
 ?>
 
 <div align="center">
@@ -59,17 +40,18 @@ echo $nomLigue;
   <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppl">Ligue <?php echo $nomLigue;?> - Administration</font></td>
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppl"> 
+          Ligue Nouvelle Aquitaine - Administration</font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
       <td class="phppl3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
       <a href="?page=championnat"><?php echo LEAGUE; ?></a><br /><br />
-      <a href="?page=groupes_championnats"><?php echo "Groupes championnats"; ?></a><br /><br />
-      <a href="?page=fiches_clubs"><?php echo MENU_FICHES_CLUBS; ?></a><br /><br />
-      <a href="?page=mini_classement"><?php echo ADMIN_MINI_1; ?></a><br /><br />
-      <a href="?page=membres"><?php echo MENU_MEMBRES; ?></a><br /><br />
-      <a href="?page=credits"><?php echo MENU_CREDITS; ?></a><br /><br />
+      
+     
+      
+     
+      
       <a href="logout.php"><?php echo "Logout"; ?></a><br />
       </td>
       <td valign="top" colspan="2"><div align="center">
@@ -90,20 +72,17 @@ echo $nomLigue;
      if (isset($_GET['page'])){$page=$_GET['page'];}
      else {$page="accueil";}
 
-/*pas de verif du mdp et user php7*/
-   if (VerifSession ($user_pseudo,$user_mdp, $idconnect)=="1" or VerifSession ($user_pseudo,$user_mdp, $idconnect)=="0")
+
+     if (VerifSession ($user_pseudo,$user_mdp, $idconnect)=="1")
                 {
-       if ($page=="championnat") {include ("championnat.php");}
-       elseif ($page=="groupes_championnats") {include ("groupes_championnats.php");}
+       if ($page=="championnat") {include ("championnat20.php");}
        elseif ($page=="mini_classement") {include ("mini_classement.php");}
-       elseif ($page=="fiches_clubs") {include ("fiches_clubs.php");}
        elseif ($page=="membres") {include ("membres.php");}
-       elseif ($page=="credits") {include ("credits.htm");}
-       elseif ($page=="accueil") {include ("accueil.htm");}
+        elseif ($page=="accueil") {include ("accueil.htm");}
        else {include ("accueil.htm");}
                 }
        elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-       elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
+       elseif ($identification == "non2") {echo "Identifiants erronés !";}
     
        else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
      
@@ -119,7 +98,9 @@ echo $nomLigue;
     <tr>
       <td class="phppl" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
         </td>
-      <td class="phppl" colspan="3" width="70%" height="10" colspan="2" align="right">
+      <td class="phppl" colspan="3" width="70%" height="10" colspan="2" align="right"><a target="_blank" href="http://phppleague.univert.org">phppleague</a>
+        - Copyright © 2004-2005 - Tous droits réservés - <a href="mailto:Alexis@univert.org">Alexis
+        MANGIN</a><br />
         </td>
     </tr>
   </table>

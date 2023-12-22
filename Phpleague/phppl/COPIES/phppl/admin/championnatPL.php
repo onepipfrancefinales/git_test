@@ -1,4 +1,3 @@
-
 <?php
 //***********************************************************************/
 // phpplceeague : gestionnaire de championnat                              */
@@ -35,7 +34,7 @@ $miroir = isset($_POST['miroir']) ? $_POST['miroir'] : NULL;
 $id_domicile = isset($_POST['id_domicile']) ? $_POST['id_domicile'] : NULL;
 $id_exterieur = isset($_POST['id_exterieur']) ? $_POST['id_exterieur'] : NULL;
 
-//paramï¿½tres
+//paramètres
 $pts_victoire = isset($_POST['pts_victoire']) ? $_POST['pts_victoire'] : NULL;
 $pts_nul = isset($_POST['pts_nul']) ? $_POST['pts_nul'] : NULL;
 $pts_defaite = isset($_POST['pts_defaite']) ? $_POST['pts_defaite'] : NULL;
@@ -46,8 +45,6 @@ $estimation = isset($_POST['estimation']) ? $_POST['estimation'] : NULL;
 $barrage = isset($_POST['barrage']) ? $_POST['barrage'] : NULL;
 $fiches_clubs = isset($_POST['fiches_clubs']) ? $_POST['fiches_clubs'] : NULL;
 $malus = isset($_POST['malus']) ? $_POST['malus'] : NULL;
-$pts_admin = isset($_POST['pts_admin']) ? $_POST['pts_admin'] : NULL;
-$jour_pere = isset($_POST['jour_pere']) ? $_POST['jour_pere'] : NULL;
 
 $id_equipe = isset($_POST['id_equipe']) ? $_POST['id_equipe'] : NULL;
 $id_journee = isset($_REQUEST['id_journee']) ? $_REQUEST['id_journee'] : NULL;
@@ -86,28 +83,28 @@ $id_joueur = isset($_POST['id_joueur']) ? $_POST['id_joueur'] : NULL;
 
 if ($action2=="creer" and $saison and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phppl_saisons (annee) values ('$saison')"));
+  mysqli_query($idconnect, ("INSERT INTO phppl_saisons (annee) values ('$saison')")) or die ("probleme " .mysqli_error());
 }
 
 if ($action2=="creer" and $division and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phppl_divisions (nom) values ('$division')"));
+  mysqli_query($idconnect, ("INSERT INTO phppl_divisions (nom) values ('$division')")) or die ("probleme " .mysqli_error());
 }
 
 if ($action3=="creer" and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phppl_championnats (id_division, id_saison) values ('$division','$saison')"));
+  mysqli_query($idconnect, ("INSERT INTO phppl_championnats (id_division, id_saison) values ('$division','$saison')")) or die ("probleme " .mysqli_error());
 }
 
 
 if ($action2=="supp" and $saison and $action=="creer")
 {
-  mysqli_query($idconnect, ("DELETE FROM phppl_saisons WHERE id ='$saison'")) ;
+  mysqli_query($idconnect, ("DELETE FROM phppl_saisons WHERE id ='$saison'")) or die ("probleme " .mysqli_error());
 }
 
 if ($action2=="supp" and $division and $action=="creer")
 {
-  mysqli_query($idconnect, ("DELETE FROM phppl_divisions WHERE id ='$division'")) ;
+  mysqli_query($idconnect, ("DELETE FROM phppl_divisions WHERE id ='$division'")) or die ("probleme " .mysqli_error());
 }
 
 if ($confirm=="ok" and $champ and $action=="supp")
@@ -120,13 +117,13 @@ if ($confirm=="ok" and $champ and $action=="supp")
   //$resultats=mysql_query($requete);
      while($row = mysqli_fetch_array($resultats))
       {
-        mysqli_query($idconnect, ("DELETE FROM phppl_matchs where id_equipe_dom='$row[0]' "));
-        mysqli_query($idconnect, ("DELETE FROM phppl_matchs where id_equipe_ext='$row[0]' ")) ;
+        mysqli_query($idconnect, ("DELETE FROM phppl_matchs where id_equipe_dom='$row[0]' ")) or die ("probleme" .mysqli_error());
+        mysqli_query($idconnect, ("DELETE FROM phppl_matchs where id_equipe_ext='$row[0]' ")) or die ("probleme" .mysqli_error());
       }
-    mysqli_query($idconnect, ("DELETE FROM phppl_championnats where id='$champ' "));
-    mysqli_query($idconnect, ("DELETE FROM phppl_journees WHERE  id_champ = '$champ'"));
-    mysqli_query($idconnect, ("DELETE FROM phppl_equipes WHERE id_champ ='$champ' "));
-   mysqli_query($idconnect, ("DELETE FROM phppl_parametres WHERE id_champ ='$champ' "));
+    mysqli_query($idconnect, ("DELETE FROM phppl_championnats where id='$champ' ")) or die ("probleme " .mysqli_error());
+    mysqli_query($idconnect, ("DELETE FROM phppl_journees WHERE  id_champ = '$champ'"))or die ("probleme " .mysqli_error());
+    mysqli_query($idconnect, ("DELETE FROM phppl_equipes WHERE id_champ ='$champ' "))or die ("probleme " .mysqli_error());
+   mysqli_query($idconnect, ("DELETE FROM phppl_parametres WHERE id_champ ='$champ' "))or die ("probleme " .mysqli_error());
 
 }
 ?>
@@ -184,4 +181,3 @@ if ($action=="buteurs" and $champ){include("buteurs.php");}
 if ($action=="generer" and $champ){include("generer.php");}
 
 ?>
-

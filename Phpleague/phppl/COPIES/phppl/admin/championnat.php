@@ -1,4 +1,3 @@
-
 <?php
 //***********************************************************************/
 // phpplceeague : gestionnaire de championnat                              */
@@ -184,4 +183,3 @@ if ($action=="buteurs" and $champ){include("buteurs.php");}
 if ($action=="generer" and $champ){include("generer.php");}
 
 ?>
-
