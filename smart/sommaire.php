@@ -128,7 +128,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="https://francefinalesrugby.fr/smart/https://francefinalesrugby.fr/smart/171.php?comite=ab&bddComite=ab&champ=200171">Ligue Occitanie</a></td>
+    <td colspan="2" class="coin"><a href="https://francefinalesrugby.fr/smart/171.php?comite=ab&bddComite=ab&champ=200171">Ligue Occitanie</a></td>
   </tr>
   <tr> 
    <td colspan="2"></td>
