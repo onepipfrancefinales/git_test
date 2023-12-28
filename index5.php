@@ -49,13 +49,13 @@ ouverture ();
     </tr>
     <tr>
       <td class="phppl3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
-      <a href="?page=championnat"><?php// echo LEAGUE; ?></a><br /><br />
+      <a href="?page=championnat"><?php // echo LEAGUE; ?></a><br /><br />
       
    -->  
       
      
       
-      <a href="logout.php"><?php// echo "Logout"; ?></a><br />
+      <a href="logout.php"><?php // echo "Logout"; ?></a><br />
       </td>
       <td valign="top" colspan="2"><div align="center">
 
@@ -85,7 +85,7 @@ ouverture ();
        else {include ("accueil.htm");}
                 }
      //  elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-     //  elseif ($identification == "non2") {echo "Identifiants erronés !";}
+     //  elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
      //  else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
       else
     		 {

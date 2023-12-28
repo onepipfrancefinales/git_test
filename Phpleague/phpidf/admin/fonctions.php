@@ -38,7 +38,8 @@ if ($champ >= 150000 and $champ < 160000)
 			AND	phpidf_divisions.id between $valLigueMin  and $valLigueMax 
 			ORDER BY id, nom");
 
-  $i=0;
+  
+$i=0;
     while ($row = mysqli_fetch_array($resultats))
       {
         $saison=$row[2]+1;

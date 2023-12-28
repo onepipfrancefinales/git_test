@@ -28,30 +28,12 @@
 </head>
 
 <body topmargin="0" leftmargin="0" class="phppl">
-<?php echo "test"; ?>
+
 <?php
-$champ = $_GET['champ'];
 require ("../config.php") ;
 require ("fonctions.php");
 ouverture ();
-
-if (isset ($nomLigue)) $nomLigue=$nomLigue; else $nomLigue="";
-
-if ($champ >= 110000 and $champ < 120000)
-	{ $nomLigue= "Bourgogne Franche Comt&eacute";}	
- elseif ($champ >= 120000 and $champ < 130000)
-	{ $nomLigue= "Bretagne";}
- elseif ($champ >= 130000 and $champ < 140000) 
-	{ $nomLigue= "Centre Val de Loire";}
- elseif ($champ >= 160000 and $champ < 170000)
-	{ $nomLigue= "Haut de France";}
- elseif ($champ >= 210000 and $champ < 220000)
-	{ $nomLigue= "Pays de la Loire";}	
- elseif ($champ >= 220000 and $champ < 230000)
-	{ $nomLigue= "Provence Alpes Cote d'azur";}
-
-echo $champ;
-echo $nomLigue; 
+$codeLigue = $_GET['champ'];
 ?>
 
 <div align="center">
@@ -59,7 +41,37 @@ echo $nomLigue;
   <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppl">Ligue <?php echo $nomLigue;?> - Administration</font></td>
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppl">Ligue 
+
+
+        <?php 
+		 switch ($codeLigue){
+					
+			case ($codeLigue < 120000):
+			echo  "Bourgogne Franche Comt&eacute - Administration";
+			break;
+			
+			case ($codeLigue < 130000):
+			echo  "Bretagne - Administration";
+			break;
+			
+			case ($codeLigue < 140000):
+			echo  "Centre Val de Loire - Administration";
+			break;
+			
+			case ($codeLigue < 170000):
+			echo "Haut de France - Administration";
+			break;
+
+      case ($codeLigue < 220000):
+        echo "Pays de la Loire - Administration";
+        break;
+	
+		 }
+		
+		?>
+
+        </font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>

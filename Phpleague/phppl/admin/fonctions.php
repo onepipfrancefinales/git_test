@@ -31,15 +31,14 @@ if ($champ >= 110000 and $champ < 120000)
 	{$valLigueMin = 160000;  $valLigueMax = 170000; }
  elseif ($champ >= 210000 and $champ < 220000)
 	{$valLigueMin = 210000;  $valLigueMax = 220000; }
- elseif ($champ >= 220000 and $champ < 230000)
-	{$valLigueMin = 220000;  $valLigueMax = 230000; }
-  
   $resultats=$idconnect->query("SELECT phppl_championnats.id, phppl_divisions.nom, phppl_saisons.annee 
             FROM phppl_championnats, phppl_divisions, phppl_saisons 
             WHERE phppl_championnats.id_division=phppl_divisions.id
             AND phppl_championnats.id_saison=phppl_saisons.id 
 			AND	phppl_divisions.id between $valLigueMin  and $valLigueMax 
 			ORDER BY id, nom");
+  
+  
   $i=0;
     while ($row = mysqli_fetch_array($resultats))
       {
@@ -120,7 +119,7 @@ function affich_championnatsMAJ ($champ, $action, $idconnect)
        // echo " $gras_1<a href=\"?page=championnat&action=equipes&champ=$row[0]\">[".EQUIPE."]</a>$gras_fin";
        //echo " $gras_2<a href=\"?page=championnat&action=dates&champ=$row[0]\">[".DATE."]</a>$gras_fin";
        // echo " $gras_3<a href=\"?page=championnat&action=matchs&champ=$row[0]\">[".MATCH."]$gras_fin</a>";
-        //echo " $gras_4<a href=\"?page=championnat&action=parametres&champ=$row[0]\">[".PARAMETRE."]$gras_fin</a>";
+       //echo " $gras_4<a href=\"?page=championnat&action=parametres&champ=$row[0]\">[".PARAMETRE."]$gras_fin</a>";
        // echo " $gras_5<a href=\"?page=championnat&action=resultats&champ=$row[0]\">[".RESULT."]$gras_fin</a>";
 		echo " <b><a href=\"index6.php?page=championnat&action=generer&champ=$champ\">[".GENERER."]</b></a>";
 		echo "</tr>";

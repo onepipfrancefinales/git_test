@@ -18,7 +18,7 @@
    </tr>
    <tr> 
     <td colspan="12" height="28" bgcolor="#FFFFFF"> 
-      <a href="francefinalesrugby.fr/resultats/page_resultats.php"><font face="Arial, Helvetica, sans-serif" size="4" color="#FF0000"><b>Comp&eacute;titions F&eacute;d&eacute;rales </b></font></a></td>
+      <a href="/resultats/page_resultats.php"><font face="Arial, Helvetica, sans-serif" size="4" color="#FF0000"><b>Comp&eacute;titions F&eacute;d&eacute;rales </b></font></a></td>
    </tr>
    <tr> 
     <td class = "none" colspan="2" height="28"><a href="/resultats/page_pro.php"><font size="4">Top 14/ Pro D2/ Nationales</font></a></td>
