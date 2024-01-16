@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabceeague : gestionnaire de championnat                              */
+// phpauceeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabceeague.univert.org                                         */
+// http://phpauceeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabceeague.univert.org/forum               */
+// Support technique : http://phpauceeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -85,76 +85,76 @@ $id_joueur = isset($_POST['id_joueur']) ? $_POST['id_joueur'] : NULL;
 
 if ($action2=="creer" and $saison and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phpab_saisons (annee) values ('$saison')")) ;
+  mysqli_query($idconnect, ("INSERT INTO phpau_saisons (annee) values ('$saison')")) or die ("probleme " .mysqli_error());
 }
 
 if ($action2=="creer" and $division and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phpab_divisions (nom) values ('$division')")) ;
+  mysqli_query($idconnect, ("INSERT INTO phpau_divisions (nom) values ('$division')")) or die ("probleme " .mysqli_error());
 }
 
 if ($action3=="creer" and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phpab_championnats (id_division, id_saison) values ('$division','$saison')")) ;
+  mysqli_query($idconnect, ("INSERT INTO phpau_championnats (id_division, id_saison) values ('$division','$saison')")) or die ("probleme " .mysqli_error());
 }
 
 
 if ($action2=="supp" and $saison and $action=="creer")
 {
-  mysqli_query($idconnect, ("DELETE FROM phpab_saisons WHERE id ='$saison'")) ;
+  mysqli_query($idconnect, ("DELETE FROM phpau_saisons WHERE id ='$saison'")) or die ("probleme " .mysqli_error());
 }
 
 if ($action2=="supp" and $division and $action=="creer")
 {
-  mysqli_query($idconnect, ("DELETE FROM phpab_divisions WHERE id ='$division'")) ;
+  mysqli_query($idconnect, ("DELETE FROM phpau_divisions WHERE id ='$division'")) or die ("probleme " .mysqli_error());
 }
 
 if ($confirm=="ok" and $champ and $action=="supp")
 {
  // $idconnect=@mysqli_connect('127.0.0.0','root','','onepip-france-db3');	
   
-  $resultats=$idconnect->query("SELECT phpab_equipes.id 
-  			FROM phpab_equipes, phpab_championnats 
+  $resultats=$idconnect->query("SELECT phpau_equipes.id 
+  			FROM phpau_equipes, phpau_championnats 
   			WHERE id_champ='$champ'");
   //$resultats=mysql_query($requete);
      while($row = mysqli_fetch_array($resultats))
       {
-        mysqli_query($idconnect, ("DELETE FROM phpab_matchs where id_equipe_dom='$row[0]' ")) ;
-        mysqli_query($idconnect, ("DELETE FROM phpab_matchs where id_equipe_ext='$row[0]' ")) ;
+        mysqli_query($idconnect, ("DELETE FROM phpau_matchs where id_equipe_dom='$row[0]' ")) or die ("probleme" .mysqli_error());
+        mysqli_query($idconnect, ("DELETE FROM phpau_matchs where id_equipe_ext='$row[0]' ")) or die ("probleme" .mysqli_error());
       }
-    mysqli_query($idconnect, ("DELETE FROM phpab_championnats where id='$champ' ")) ;
-    mysqli_query($idconnect, ("DELETE FROM phpab_journees WHERE  id_champ = '$champ'"));
-    mysqli_query($idconnect, ("DELETE FROM phpab_equipes WHERE id_champ ='$champ' "));
-   mysqli_query($idconnect, ("DELETE FROM phpab_parametres WHERE id_champ ='$champ' "));
+    mysqli_query($idconnect, ("DELETE FROM phpau_championnats where id='$champ' ")) or die ("probleme " .mysqli_error());
+    mysqli_query($idconnect, ("DELETE FROM phpau_journees WHERE  id_champ = '$champ'"))or die ("probleme " .mysqli_error());
+    mysqli_query($idconnect, ("DELETE FROM phpau_equipes WHERE id_champ ='$champ' "))or die ("probleme " .mysqli_error());
+   mysqli_query($idconnect, ("DELETE FROM phpau_parametres WHERE id_champ ='$champ' "))or die ("probleme " .mysqli_error());
 
 }
 ?>
 
-<br /><font class=phpab><?php echo LEAGUE; ?></font><br /><br />
+<br /><font class=phpau><?php echo LEAGUE; ?></font><br /><br />
 
 
 
-<table class=phpab width="90%">
+<table class=phpau width="90%">
             <tr>
               
-    <td class=phpab2 width="6%"> 
+    <td class=phpau2 width="6%"> 
       <?php echo MENU_ID; ?>
     </td>
               
-    <td class=phpab2 width="36%"> 
+    <td class=phpau2 width="36%"> 
       <?php echo MENU_NOM; ?>
     </td>
               
-    <td class=phpab2 width="12%"> 
+    <td class=phpau2 width="12%"> 
       <?php echo ADMIN_JOURNEES_MSG3; ?>
     </td>
               
-    <td class=phpab2 width="46%"></td>
+    <td class=phpau2 width="46%"></td>
             </tr>
             <?php affich_championnats ($champ, $action, $idconnect); ?>
             <tr>
               
-    <td class=phpab5 align="right" colspan="4"> 
+    <td class=phpau5 align="right" colspan="4"> 
       </td>
             </tr>
 

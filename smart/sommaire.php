@@ -57,7 +57,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=816216">F&eacute;minines</a></td>
+    <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=880281">F&eacute;minines</a></td>
     <td></td>
   </tr>
   <tr> 
@@ -143,7 +143,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2" height="8"></td>
   </tr>
   <tr> 
-    <td height="25" colspan="2" class="france"><a href="pf/accueil.php?annee=<?php echo $finSaison;?>">Championnats de France <?php echo $saison;?></a></td>
+    <td height="25" colspan="2" class="france"><a href="pf/accueil.php?annee=<?php echo $finSaison;?>">Championnats de France <?php echo $finSaison;?></a></td>
   </tr>
 </table>
 

@@ -188,8 +188,8 @@ division($champ, $bdd);
 			}
 
 			// Féminines
-			elseif ($champ == 816216) {
-				$tabLigue = array(816281, 816282, 816285, 816291, 816292, 816293, 816294);
+			elseif ($champ == 880281) {
+				$tabLigue = array(880281, 880282, 880285, 880291, 880292, 880293, 880294);
 			}
 
 

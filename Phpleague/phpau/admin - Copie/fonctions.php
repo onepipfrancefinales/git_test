@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpaueague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpaueague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpaueague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -24,10 +24,10 @@ function affich_championnats ($champ, $action, $idconnect)
   //$valLigueMin= $champ;
  // $valLigueMax= $valLigueMin+10;
  // }
-  $resultats=$idconnect->query("SELECT phpab_championnats.id, phpab_divisions.nom, phpab_saisons.annee 
-            FROM phpab_championnats, phpab_divisions, phpab_saisons 
-            WHERE phpab_championnats.id_division=phpab_divisions.id
-            AND phpab_championnats.id_saison=phpab_saisons.id 
+  $resultats=$idconnect->query("SELECT phpau_championnats.id, phpau_divisions.nom, phpau_saisons.annee 
+            FROM phpau_championnats, phpau_divisions, phpau_saisons 
+            WHERE phpau_championnats.id_division=phpau_divisions.id
+            AND phpau_championnats.id_saison=phpau_saisons.id 
 			ORDER BY id, nom");
 
   $i=0;
@@ -51,9 +51,9 @@ function affich_championnats ($champ, $action, $idconnect)
         elseif ($action=="generer" and $champ==$row[0]){$gras_7="<b>";}
         
 
-        if ($champ=="$row[0]") {$class="phpab7";}
-        elseif (($i%2)==0) {$class="phpab3";}
-        else {$class="phpab4";}
+        if ($champ=="$row[0]") {$class="phpau7";}
+        elseif (($i%2)==0) {$class="phpau3";}
+        else {$class="phpau4";}
 
         echo "<tr>";
         echo "<td class='$class'>$row[0]</td>";
@@ -75,7 +75,7 @@ function affich_championnats ($champ, $action, $idconnect)
 function affich_championnatsMAJ ($champ, $action, $idconnect)
 {
   $resultats=$idconnect->query("SELECT id
-								FROM phpab_championnats 
+								FROM phpau_championnats 
 								WHERE id='$champ' ");
   $i=0;
     while ($row = mysqli_fetch_array($resultats))
@@ -97,9 +97,9 @@ function affich_championnatsMAJ ($champ, $action, $idconnect)
        // elseif ($action=="generer" and $champ==$row[0]){$gras_7="<b>";}
         
 
-        if ($champ=="$row[0]") {$class="phpab7";}
-        elseif (($i%2)==0) {$class="phpab3";}
-        else {$class="phpab4";}
+        if ($champ=="$row[0]") {$class="phpau7";}
+        elseif (($i%2)==0) {$class="phpau3";}
+        else {$class="phpau4";}
 
         echo "<tr>";
        // echo "<td class='$class'>$row[0]</td>";
@@ -123,7 +123,7 @@ function affich_championnatsMAJ ($champ, $action, $idconnect)
 function affich_gr_championnats ($gr_champ, $action, $idconnect)
 {
    $resultats=$idconnect->query("  SELECT DISTINCT id, nom 
-								   FROM phpab_gr_championnats 
+								   FROM phpau_gr_championnats 
 								   ORDER by id desc");
 
   $i=0;
@@ -139,9 +139,9 @@ function affich_gr_championnats ($gr_champ, $action, $idconnect)
 
         if ($action=="editer" and $gr_champ=="$row[0]"){$gras_1="<b>";}
 
-        if ($gr_champ=="$row[0]") {$class="phpab7";}
-        elseif (($i%2)==0) {$class="phpab3";}
-        else {$class="phpab4";}
+        if ($gr_champ=="$row[0]") {$class="phpau7";}
+        elseif (($i%2)==0) {$class="phpau3";}
+        else {$class="phpau4";}
 
         echo "<tr>";
         echo "<td class='$class'>$row[0]</td>";
@@ -149,8 +149,8 @@ function affich_gr_championnats ($gr_champ, $action, $idconnect)
         echo "<td class='$class' align=\"right\" width=\"75%\">";
 
         echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
-     //   echo " $gras_2<a href=\"?page=groupes_championnats&action=generer&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
-     //   echo " $gras_8<a href=\"?page=groupes_championnats&action=supp&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
+        echo " $gras_2<a href=\"?page=groupes_championnats&action=generer&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
+        echo " $gras_8<a href=\"?page=groupes_championnats&action=supp&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
 
         echo "</tr>";
         $i++;
@@ -161,11 +161,11 @@ function affich_gr_championnats ($gr_champ, $action, $idconnect)
 
 function affich_champ ($champ, $idconnect)
 {
-  $resultats=$idconnect->query("SELECT phpab_divisions.nom, phpab_saisons.annee 
-              FROM phpab_championnats, phpab_divisions, phpab_saisons
-              WHERE phpab_championnats.id_division=phpab_divisions.id 
-              AND phpab_championnats.id_saison=phpab_saisons.id 
-              AND phpab_championnats.id='$champ' ORDER by annee desc");
+  $resultats=$idconnect->query("SELECT phpau_divisions.nom, phpau_saisons.annee 
+              FROM phpau_championnats, phpau_divisions, phpau_saisons
+              WHERE phpau_championnats.id_division=phpau_divisions.id 
+              AND phpau_championnats.id_saison=phpau_saisons.id 
+              AND phpau_championnats.id='$champ' ORDER by annee desc");
 
     while ($row = mysqli_fetch_array($resultats))
       {
@@ -177,7 +177,7 @@ function affich_champ ($champ, $idconnect)
 function affich_gr_champ ($gr_champ, $idconnect)
 {	
   $resultats= $idconnect->query(" SELECT nom 
-								  FROM phpab_gr_championnats 
+								  FROM phpau_gr_championnats 
 								  WHERE id='$gr_champ'");
    
     while($row = mysqli_fetch_array($resultats))
@@ -190,8 +190,8 @@ function affich_gr_champ ($gr_champ, $idconnect)
 
 function divisions_menu ($idconnect)
 {
-  $result=$idconnect->query(" SELECT phpab_divisions.id, phpab_divisions.nom 
-							  FROM phpab_divisions 
+  $result=$idconnect->query(" SELECT phpau_divisions.id, phpau_divisions.nom 
+							  FROM phpau_divisions 
 							  ORDER by nom");
 
 echo "<select name=division>";
@@ -206,8 +206,8 @@ echo "</select>";
 
 function saisons_menu($idconnect)
 {
-  $result=$idconnect->query(" SELECT phpab_saisons.id, phpab_saisons.annee 
-							  FROM phpab_saisons 
+  $result=$idconnect->query(" SELECT phpau_saisons.id, phpau_saisons.annee 
+							  FROM phpau_saisons 
 							  ORDER by annee");
 
 echo "<select name=saison>";
@@ -223,8 +223,8 @@ echo "</select>";
 
 function clubs_menu($idconnect)
 {    
-  $result=$idconnect->query(" SELECT phpab_clubs.id, phpab_clubs.nom 
-							  FROM phpab_clubs 
+  $result=$idconnect->query(" SELECT phpau_clubs.id, phpau_clubs.nom 
+							  FROM phpau_clubs 
 							  ORDER by nom");
   
     echo "<select name=\"club[]\" multiple size=\"8\">";
@@ -240,11 +240,11 @@ echo "</select>";
 function champ_menu($idconnect)
 {
  $result=$idconnect->query(" 
-		 SELECT phpab_championnats.id, phpab_divisions.nom, phpab_saisons.annee, (phpab_saisons.annee)+1 
-		 FROM phpab_championnats, phpab_divisions, phpab_saisons 
-		 WHERE phpab_divisions.id=phpab_championnats.id_division 
-		 AND phpab_saisons.id=phpab_championnats.id_saison 
-		 ORDER by annee desc, phpab_divisions.nom");
+		 SELECT phpau_championnats.id, phpau_divisions.nom, phpau_saisons.annee, (phpau_saisons.annee)+1 
+		 FROM phpau_championnats, phpau_divisions, phpau_saisons 
+		 WHERE phpau_divisions.id=phpau_championnats.id_division 
+		 AND phpau_saisons.id=phpau_championnats.id_saison 
+		 ORDER by annee desc, phpau_divisions.nom");
    
  echo "<select name=\"champ[]\" multiple size=\"8\">";
  while($row = mysqli_fetch_array($result))
@@ -257,10 +257,10 @@ function champ_menu($idconnect)
 
 function equipes_menu($champ, $idconnect)
 {
-  $result=$idconnect->query(" SELECT phpab_equipes.id, phpab_clubs.nom 
-							  FROM phpab_clubs, phpab_equipes 
+  $result=$idconnect->query(" SELECT phpau_equipes.id, phpau_clubs.nom 
+							  FROM phpau_clubs, phpau_equipes 
 							  WHERE id_champ='$champ' 
-							  AND phpab_clubs.id=phpab_equipes.id_club 
+							  AND phpau_clubs.id=phpau_equipes.id_club 
 							  ORDER by nom");
     
     echo "<select name=\"club[]\" multiple size=\"8\">";
@@ -278,18 +278,18 @@ function champ_gr_menu($gr_champ, $idconnect)
    echo "<select name=\"champ[]\" multiple size=\"8\">";	
   
   $result=$idconnect->query(" SELECT id_champ 
-							  FROM phpab_gr_championnats 
+							  FROM phpau_gr_championnats 
 							  WHERE id = '$gr_champ'");
     
     while ($row=mysqli_fetch_array($result))
     {
          $result2=$idconnect->query(" 
-					SELECT phpab_championnats.id, phpab_divisions.nom, phpab_saisons.annee, (phpab_saisons.annee)+1 
-					 FROM phpab_championnats, phpab_divisions, phpab_saisons 
-					 WHERE phpab_divisions.id=phpab_championnats.id_division 
-					 AND phpab_saisons.id=phpab_championnats.id_saison 
-					 AND phpab_championnats.id='$row[0]'  
-					 ORDER by annee desc, phpab_divisions.nom");
+					SELECT phpau_championnats.id, phpau_divisions.nom, phpau_saisons.annee, (phpau_saisons.annee)+1 
+					 FROM phpau_championnats, phpau_divisions, phpau_saisons 
+					 WHERE phpau_divisions.id=phpau_championnats.id_division 
+					 AND phpau_saisons.id=phpau_championnats.id_saison 
+					 AND phpau_championnats.id='$row[0]'  
+					 ORDER by annee desc, phpau_divisions.nom");
          while($row2 = mysqli_fetch_array($result2))
          {
             echo ("<option value=\"$row2[0]\">$row2[1] $row2[2]/$row2[3]\n");
@@ -302,7 +302,7 @@ function champ_gr_menu($gr_champ, $idconnect)
 function journees ($champ, $numero, $action, $idconnect)
 {
   $resultats=$idconnect->query("  SELECT numero, id 
-								  FROM phpab_journees 
+								  FROM phpau_journees 
 								  WHERE id_champ='$champ' 
 								  ORDER BY numero");
 
@@ -321,17 +321,17 @@ function format_date_fr($date){
 
 function resultats ($champ, $numero, $idconnect)
 { 
- $resultats= $idconnect->query("SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.id, phpab_matchs.date_reelle
-             FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT
-             WHERE phpab_clubs.id=phpab_equipes.id_club
+ $resultats= $idconnect->query("SELECT phpau_clubs.nom, CLEXT.nom, phpau_matchs.buts_dom, phpau_matchs.buts_ext, phpau_matchs.id, phpau_matchs.date_reelle
+             FROM phpau_clubs, phpau_clubs as CLEXT, phpau_matchs, phpau_journees, phpau_equipes, phpau_equipes as EXT
+             WHERE phpau_clubs.id=phpau_equipes.id_club
              AND CLEXT.id=EXT.id_club
-             AND phpab_equipes.id=phpab_matchs.id_equipe_dom
-             AND EXT.id=phpab_matchs.id_equipe_ext
-             AND phpab_matchs.id_journee=phpab_journees.id
-             AND phpab_journees.numero='$numero'
-             AND phpab_journees.id_champ='$champ'
+             AND phpau_equipes.id=phpau_matchs.id_equipe_dom
+             AND EXT.id=phpau_matchs.id_equipe_ext
+             AND phpau_matchs.id_journee=phpau_journees.id
+             AND phpau_journees.numero='$numero'
+             AND phpau_journees.id_champ='$champ'
              AND CLEXT.nom!='exempte'
-             AND phpab_clubs.nom!='exempte'
+             AND phpau_clubs.nom!='exempte'
              ORDER BY date_reelle asc");
 
   $i=0;
@@ -339,8 +339,8 @@ function resultats ($champ, $numero, $idconnect)
 	{
      $row[0] = stripslashes($row[0]);
      $row[1] = stripslashes($row[1]);
-     if (($i%2)==0) {$class="phpab3";}
-     else {$class="phpab4";}
+     if (($i%2)==0) {$class="phpau3";}
+     else {$class="phpau4";}
      $date_fr=format_date_fr($row[5]);
      echo "<tr><td class=$class>$row[0]";
      echo "<td class=$class><input type=\"text\" size=\"3\" name=\"butd[]\" value=\"$row[2]\"></td>";
@@ -353,24 +353,24 @@ function resultats ($champ, $numero, $idconnect)
     }
 	
   
-  $resultats3=$idconnect->query(" SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.id, phpab_matchs.date_reelle 
-								  FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT 
-								  WHERE phpab_clubs.id=phpab_equipes.id_club 
+  $resultats3=$idconnect->query(" SELECT phpau_clubs.nom, CLEXT.nom, phpau_matchs.buts_dom, phpau_matchs.buts_ext, phpau_matchs.id, phpau_matchs.date_reelle 
+								  FROM phpau_clubs, phpau_clubs as CLEXT, phpau_matchs, phpau_journees, phpau_equipes, phpau_equipes as EXT 
+								  WHERE phpau_clubs.id=phpau_equipes.id_club 
 								  AND CLEXT.id=EXT.id_club 
-								  AND phpab_equipes.id=phpab_matchs.id_equipe_dom 
-								  AND EXT.id=phpab_matchs.id_equipe_ext 
-								  AND phpab_matchs.id_journee=phpab_journees.id 
-								  AND phpab_journees.numero='$numero' 
-								  AND phpab_journees.id_champ='$champ' 
-								  AND (CLEXT.nom='exempte' or phpab_clubs.nom='exempte')");
+								  AND phpau_equipes.id=phpau_matchs.id_equipe_dom 
+								  AND EXT.id=phpau_matchs.id_equipe_ext 
+								  AND phpau_matchs.id_journee=phpau_journees.id 
+								  AND phpau_journees.numero='$numero' 
+								  AND phpau_journees.id_champ='$champ' 
+								  AND (CLEXT.nom='exempte' or phpau_clubs.nom='exempte')");
  
 
   while ($row3=mysqli_fetch_array($resultats3))
   {
     $row3[0] = stripslashes($row3[0]);
     $row3[1] = stripslashes($row3[1]);
-    if (($i%2)==0) {$class="phpab3";}
-    else {$class="phpab4";}
+    if (($i%2)==0) {$class="phpau3";}
+    else {$class="phpau4";}
     if ($row3[0]=='exempte') {echo "<tr><td colspan=6  class=$class>".ADMIN_RESULTS_1." : $row3[1]</td></tr>";}
     if ($row3[1]=='exempte') {echo "<tr><td colspan=6  class=$class>".ADMIN_RESULTS_1." : $row3[0]</td></tr>";}
   }
@@ -392,7 +392,7 @@ function resultats ($champ, $numero, $idconnect)
 function nb_equipes($id_champ, $idconnect)
 {
   $result=$idconnect->query(" SELECT id 
-							  FROM phpab_equipes 
+							  FROM phpau_equipes 
 							  WHERE id_champ='$id_champ'");
 
 //if (!$result) die mysql_error();
@@ -437,9 +437,9 @@ else return "00000000";
 function nom_club($id_equipe, $idconnect)
 {
   $result=$idconnect->query(" SELECT nom 
-							  FROM phpab_clubs, phpab_equipes 
-							  WHERE phpab_clubs.id=phpab_equipes.id_club 
-							  and phpab_equipes.id='$id_equipe'");
+							  FROM phpau_clubs, phpau_equipes 
+							  WHERE phpau_clubs.id=phpau_equipes.id_club 
+							  and phpau_equipes.id='$id_equipe'");
   
   $row=mysqli_fetch_array( $result );
   $nom_club=stripslashes($row[0]);
@@ -449,7 +449,7 @@ function nom_club($id_equipe, $idconnect)
 function nb_journees($id_champ, $idconnect)
 {
   $result=$idconnect->query(" SELECT id 
-							  FROM phpab_equipes 
+							  FROM phpau_equipes 
 							  WHERE id_champ='$id_champ'");
   
   $nb_equipes=mysqli_num_rows( $result );
@@ -460,10 +460,10 @@ function nb_journees($id_champ, $idconnect)
 function nb_matchs ($numero, $champ, $idconnect)
 {
   $result=$idconnect->query("select * 
-							 from phpab_matchs, phpab_journees 
-							 where phpab_matchs.id_journee=phpab_journees.id 
-							 and phpab_journees.numero=$numero 
-							 and phpab_journees.id_champ=$champ");
+							 from phpau_matchs, phpau_journees 
+							 where phpau_matchs.id_journee=phpau_journees.id 
+							 and phpau_journees.numero=$numero 
+							 and phpau_journees.id_champ=$champ");
   
   $nb_matchs=mysqli_num_rows( $result );
   return("$nb_matchs");
@@ -475,11 +475,11 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
   $nb_requete=0;
   if($cache=="1")
 	{ 
-	 mysqli_query($idconnect,("DELETE FROM phpab_clmnt_cache WHERE ID_CHAMP='$champ'")) or die (mysqli_error($idconnect));
+	 mysqli_query($idconnect,("DELETE FROM phpau_clmnt_cache WHERE ID_CHAMP='$champ'")) or die (mysqli_error($idconnect));
 	}
 	else
 	{ 
-	 mysqli_query($idconnect,("DELETE FROM phpab_clmnt")) or die (mysqli_error($idconnect));
+	 mysqli_query($idconnect,("DELETE FROM phpau_clmnt")) or die (mysqli_error($idconnect));
 	}
      $nb_requete++;
 
@@ -489,7 +489,7 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
 	// SELECTION DES PARAMETRES
 	 
 	$result=$idconnect->query("SELECT pts_victoire, pts_nul, pts_defaite 
-							   FROM phpab_parametres 
+							   FROM phpau_parametres 
 							   WHERE id_champ='$champ'");
 	$nb_requete++;
 	
@@ -502,17 +502,17 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
 	// RESULTATS domicile :
 	// victoires domicile
   
-	$dom=$idconnect->query("SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) 
-						  FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+	$dom=$idconnect->query("SELECT dom.id, count(dom.id), phpau_clubs.nom, sum(buts_dom), sum(buts_ext) 
+						  FROM phpau_equipes as dom, phpau_clubs, phpau_matchs, phpau_journees, phpau_championnats
 						  WHERE dom.id_champ='$champ'
-						  AND dom.id_club=phpab_clubs.id
-						  AND dom.id=phpab_matchs.id_equipe_dom
+						  AND dom.id_club=phpau_clubs.id
+						  AND dom.id=phpau_matchs.id_equipe_dom
 						  AND buts_dom > buts_ext
-						  AND phpab_championnats.id=phpab_journees.id_champ
-						  AND phpab_journees.id=phpab_matchs.id_journee
-						  AND phpab_journees.numero>='$debut'
-						  AND phpab_journees.numero<='$fin'
-						  GROUP by phpab_clubs.nom ");
+						  AND phpau_championnats.id=phpau_journees.id_champ
+						  AND phpau_journees.id=phpau_matchs.id_journee
+						  AND phpau_journees.numero>='$debut'
+						  AND phpau_journees.numero<='$fin'
+						  GROUP by phpau_clubs.nom ");
       $nb_requete++;
 	  
      while($row= mysqli_fetch_array($dom))
@@ -528,17 +528,17 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
 	// Defaites domicile
 	
 	$dom=$idconnect->query("
-		 SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) 
-	     FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+		 SELECT dom.id, count(dom.id), phpau_clubs.nom, sum(buts_dom), sum(buts_ext) 
+	     FROM phpau_equipes as dom, phpau_clubs, phpau_matchs, phpau_journees, phpau_championnats
 		 WHERE dom.id_champ='$champ'
-         AND dom.id_club=phpab_clubs.id
-         AND dom.id=phpab_matchs.id_equipe_dom
+         AND dom.id_club=phpau_clubs.id
+         AND dom.id=phpau_matchs.id_equipe_dom
          AND buts_dom < buts_ext
-         AND phpab_championnats.id=phpab_journees.id_champ
-         AND phpab_journees.id=phpab_matchs.id_journee
-         AND phpab_journees.numero>='$debut'
-         AND phpab_journees.numero<='$fin'
-         GROUP by phpab_clubs.nom ");
+         AND phpau_championnats.id=phpau_journees.id_champ
+         AND phpau_journees.id=phpau_matchs.id_journee
+         AND phpau_journees.numero>='$debut'
+         AND phpau_journees.numero<='$fin'
+         GROUP by phpau_clubs.nom ");
 	  
 	  $nb_requete++;
 
@@ -555,19 +555,19 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
 	// Nuls domicile
 	 
 	$dom=$idconnect->query("
-		 SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) 
-		 FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+		 SELECT dom.id, count(dom.id), phpau_clubs.nom, sum(buts_dom), sum(buts_ext) 
+		 FROM phpau_equipes as dom, phpau_clubs, phpau_matchs, phpau_journees, phpau_championnats
 		 WHERE dom.id_champ='$champ'
-         AND dom.id_club=phpab_clubs.id
-         AND dom.id=phpab_matchs.id_equipe_dom
+         AND dom.id_club=phpau_clubs.id
+         AND dom.id=phpau_matchs.id_equipe_dom
          AND buts_dom = buts_ext
          AND buts_dom is not null
          AND buts_ext is not null
-         AND phpab_championnats.id=phpab_journees.id_champ
-         AND phpab_journees.id=phpab_matchs.id_journee
-         AND phpab_journees.numero>='$debut'
-         AND phpab_journees.numero<='$fin'
-         GROUP by phpab_clubs.nom ");
+         AND phpau_championnats.id=phpau_journees.id_champ
+         AND phpau_journees.id=phpau_matchs.id_journee
+         AND phpau_journees.numero>='$debut'
+         AND phpau_journees.numero<='$fin'
+         GROUP by phpau_clubs.nom ");
 
      while($row= mysqli_fetch_array($dom))
     {
@@ -578,11 +578,11 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
      else{$clmnt[$row[2]]['BUTSDOMCONTRE']+=$row[4];}
     }
 	 	 
-   $result=$idconnect->query("SELECT phpab_clubs.nom 
-							 FROM phpab_clubs, phpab_equipes, phpab_championnats
-							 WHERE phpab_equipes.id_champ=phpab_championnats.id
-							 AND phpab_championnats.id='$champ'
-							 AND phpab_equipes.id_club=phpab_clubs.id");
+   $result=$idconnect->query("SELECT phpau_clubs.nom 
+							 FROM phpau_clubs, phpau_equipes, phpau_championnats
+							 WHERE phpau_equipes.id_champ=phpau_championnats.id
+							 AND phpau_championnats.id='$champ'
+							 AND phpau_equipes.id_club=phpau_clubs.id");
 
 	//$result=mysqli_query($idconnect, $query) or die (mysqli_error($idconnect));
 
@@ -597,16 +597,16 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
 // RESULTATS EXTERIEURS :
 // victoires exterieur	
   
-  $dom=$idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+  $dom=$idconnect->query("SELECT ext.id, count(ext.id), phpau_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpau_equipes as ext, phpau_clubs, phpau_matchs, phpau_journees, phpau_championnats
 WHERE ext.id_champ='$champ'
-      AND ext.id_club=phpab_clubs.id
-      AND ext.id=phpab_matchs.id_equipe_ext
+      AND ext.id_club=phpau_clubs.id
+      AND ext.id=phpau_matchs.id_equipe_ext
       AND buts_ext > buts_dom
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phpau_championnats.id=phpau_journees.id_champ
+      AND phpau_journees.id=phpau_matchs.id_journee
+      AND phpau_journees.numero>='$debut'
+      AND phpau_journees.numero<='$fin'
+      GROUP by phpau_clubs.nom ");
 
      while($row= mysqli_fetch_array($dom))
 	{
@@ -621,16 +621,16 @@ WHERE ext.id_champ='$champ'
 	  
 // Defaites exterieur	
   
-	$dom=$idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+	$dom=$idconnect->query("SELECT ext.id, count(ext.id), phpau_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpau_equipes as ext, phpau_clubs, phpau_matchs, phpau_journees, phpau_championnats
 		WHERE ext.id_champ='$champ'
-      AND ext.id_club=phpab_clubs.id
-      AND ext.id=phpab_matchs.id_equipe_ext
+      AND ext.id_club=phpau_clubs.id
+      AND ext.id=phpau_matchs.id_equipe_ext
       AND buts_ext < buts_dom
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phpau_championnats.id=phpau_journees.id_champ
+      AND phpau_journees.id=phpau_matchs.id_journee
+      AND phpau_journees.numero>='$debut'
+      AND phpau_journees.numero<='$fin'
+      GROUP by phpau_clubs.nom ");
                     
     While($row= mysqli_fetch_array($dom))
     {
@@ -641,18 +641,18 @@ WHERE ext.id_champ='$champ'
      else{$clmnt[$row[2]]['BUTSEXTCONTRE']+=$row[4];} 
 	}
   
-  $dom=$idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+  $dom=$idconnect->query("SELECT ext.id, count(ext.id), phpau_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpau_equipes as ext, phpau_clubs, phpau_matchs, phpau_journees, phpau_championnats
 	  WHERE ext.id_champ='$champ'
-      AND ext.id_club=phpab_clubs.id
-      AND ext.id=phpab_matchs.id_equipe_ext
+      AND ext.id_club=phpau_clubs.id
+      AND ext.id=phpau_matchs.id_equipe_ext
       AND buts_ext = buts_dom
       AND buts_dom is not null
       AND buts_ext is not null
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phpau_championnats.id=phpau_journees.id_champ
+      AND phpau_journees.id=phpau_matchs.id_journee
+      AND phpau_journees.numero>='$debut'
+      AND phpau_journees.numero<='$fin'
+      GROUP by phpau_clubs.nom ");
 
     while($row= mysqli_fetch_array($dom))
     {
@@ -665,11 +665,11 @@ WHERE ext.id_champ='$champ'
 	                 
 // TABLEAU DE CLASSEMENT
 	
-  $result=$idconnect->query("SELECT phpab_clubs.nom, phpab_equipes.penalite, phpab_equipes.id, phpab_equipes.pts_admin, phpab_equipes.jour_pere
-							 FROM phpab_clubs, phpab_equipes, phpab_championnats
-							 WHERE phpab_equipes.id_champ=phpab_championnats.id
-							 AND phpab_championnats.id='$champ'
-							 AND phpab_equipes.id_club=phpab_clubs.id");
+  $result=$idconnect->query("SELECT phpau_clubs.nom, phpau_equipes.penalite, phpau_equipes.id, phpau_equipes.pts_admin, phpau_equipes.jour_pere
+							 FROM phpau_clubs, phpau_equipes, phpau_championnats
+							 WHERE phpau_equipes.id_champ=phpau_championnats.id
+							 AND phpau_championnats.id='$champ'
+							 AND phpau_equipes.id_club=phpau_clubs.id");
 
 	//$result=mysqli_query($idconnect, $query) or die (mysqli_error($idconnect));
 	/*
@@ -679,17 +679,17 @@ WHERE ext.id_champ='$champ'
 	 echo $equipe.' '.$penalite.' '.$equipeId;echo "<br />";
 	}
 	*/
-	//mysqlY_query("LOCK TABLE phpab_clmnt WRITE, phpab_equipes WRITE, phpab_clubs WRITE") or die (mysql_error());
+	//mysqlY_query("LOCK TABLE phpau_clmnt WRITE, phpau_equipes WRITE, phpau_clubs WRITE") or die (mysql_error());
 	/*
     if (mysqli_num_rows($result)==0)
     {
 	   // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
   
-		$result=$idconnect->query("SELECT phpab_clubs.nom, phpab_equipes.id 
-            FROM phpab_clubs, phpab_equipes, phpab_championnats
-            WHERE phpab_equipes.id_champ=phpab_championnats.id
-            AND phpab_championnats.id='$champ'
-            AND phpab_equipes.id_club=phpab_clubs.id");
+		$result=$idconnect->query("SELECT phpau_clubs.nom, phpau_equipes.id 
+            FROM phpau_clubs, phpau_equipes, phpau_championnats
+            WHERE phpau_equipes.id_champ=phpau_championnats.id
+            AND phpau_championnats.id='$champ'
+            AND phpau_equipes.id_club=phpau_clubs.id");
 
 		$result=mysqli_query($query) or die (mysqli_error());
     }
@@ -738,45 +738,43 @@ WHERE ext.id_champ='$champ'
 		
 		if($cache=="1")
 		{
-		 mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_cache(NOM, POINTS, JOUES, JOURPERE,  G, N, P, BUTSPOUR, BUTSCONTRE, DIFF, PEN,PTS_ADMIN,  DOMPOINTS, DOMJOUES, DOMG, DOMN, DOMP, DOMBUTSPOUR, DOMBUTSCONTRE, DOMDIFF, EXTPOINTS, EXTJOUES, EXTG, EXTN, EXTP, EXTBUTSPOUR, EXTBUTSCONTRE, EXTDIFF, ID_EQUIPE, ID_CHAMP) 
+		 mysqli_query($idconnect, ("INSERT INTO phpau_clmnt_cache(NOM, POINTS, JOUES, JOURPERE,  G, N, P, BUTSPOUR, BUTSCONTRE, DIFF, PEN,PTS_ADMIN,  DOMPOINTS, DOMJOUES, DOMG, DOMN, DOMP, DOMBUTSPOUR, DOMBUTSCONTRE, DOMDIFF, EXTPOINTS, EXTJOUES, EXTG, EXTN, EXTP, EXTBUTSPOUR, EXTBUTSCONTRE, EXTDIFF, ID_EQUIPE, ID_CHAMP) 
 									  VALUES('$NOM','$POINTS','$JOUES',$JOURPERE, '$G','$N','$P','$BUTSPOUR','$BUTSCONTRE','$DIFF','$PEN', '$PTS_ADMIN',  '$DOMPOINTS','$DOMJOUES','$DOMG','$DOMN','$DOMP','$DOMBUTSPOUR','$DOMBUTSCONTRE','$DOMDIFF','$EXTPOINTS','$EXTJOUES','$EXTG','$EXTN','$EXTP','$EXTBUTSPOUR','$EXTBUTSCONTRE','$EXTDIFF','$ID_EQUIPE','$ID_CHAMP')"));
 		}
 		else
 		{
-		 mysqli_query($idconnect, ("INSERT INTO phpab_clmnt(NOM, POINTS, JOUES, JOURPERE, G, N, P, BUTSPOUR, BUTSCONTRE, DIFF, PEN, PTS_ADMIN, DOMPOINTS, DOMJOUES, DOMG, DOMN, DOMP, DOMBUTSPOUR, DOMBUTSCONTRE, DOMDIFF, EXTPOINTS, EXTJOUES, EXTG, EXTN, EXTP, EXTBUTSPOUR, EXTBUTSCONTRE, EXTDIFF, ID_EQUIPE, ID_CHAMP) 
+		 mysqli_query($idconnect, ("INSERT INTO phpau_clmnt(NOM, POINTS, JOUES, JOURPERE, G, N, P, BUTSPOUR, BUTSCONTRE, DIFF, PEN, PTS_ADMIN, DOMPOINTS, DOMJOUES, DOMG, DOMN, DOMP, DOMBUTSPOUR, DOMBUTSCONTRE, DOMDIFF, EXTPOINTS, EXTJOUES, EXTG, EXTN, EXTP, EXTBUTSPOUR, EXTBUTSCONTRE, EXTDIFF, ID_EQUIPE, ID_CHAMP) 
 									  VALUES('$NOM','$POINTS','$JOUES',$JOURPERE, '$G','$N','$P','$BUTSPOUR','$BUTSCONTRE','$DIFF','$PEN', '$PTS_ADMIN', '$DOMPOINTS','$DOMJOUES','$DOMG','$DOMN','$DOMP','$DOMBUTSPOUR','$DOMBUTSCONTRE','$DOMDIFF','$EXTPOINTS','$EXTJOUES','$EXTG','$EXTN','$EXTP','$EXTBUTSPOUR','$EXTBUTSCONTRE','$EXTDIFF','$ID_EQUIPE','$ID_CHAMP')"));
 		}
 	
    }
    
 	// echo "cache fin : ".$cache;  
-  /*
 	if($cache=="1")
-	{$requete="DELETE FROM phpab_clmnt_cache WHERE nom='exempte'" or die (mysql_error($idconnect));}
+	{$requete="DELETE FROM phpau_clmnt_cache WHERE nom='exempte'" ;}
 	else
-	{$requete="DELETE FROM phpab_clmnt WHERE nom='exempte'" or die (mysql_error($idconnect));}
+	{$requete="DELETE FROM phpau_clmnt WHERE nom='exempte'" ;}
 
 	$resultat=mysqli_query($idconnect,$requete) or die (mysqli_error($idconnect));
 	//mysql_query("UNLOCK TABLES") or die (mysql_error());
 
 
 	//echo "fin";//echo "<br />"; 
-  */
 }
 
-// Nombres de renseignement dans cette classe � partir de l'id_classe  (utilis� dans phpab_classe.php)
+// Nombres de renseignement dans cette classe � partir de l'id_classe  (utilis� dans phpau_classe.php)
 function nb_classe($data, $idconnect)
 {
-  $result=$idconnect->query("SELECT id FROM phpab_rens WHERE id_classe='$data'");
+  $result=$idconnect->query("SELECT id FROM phpau_rens WHERE id_classe='$data'");
 //if (!$result) die mysql_error();
   $nb_classe=mysqli_num_rows( $result );
   return("$nb_classe");
 }
 
-// Nombres de classes enregistr�es (ulilis� dans phpab_classe.php)
+// Nombres de classes enregistr�es (ulilis� dans phpau_classe.php)
 function nb_classe2($idconnect)
 {	
-  $result=$idconnect->query("SELECT * FROM phpab_classe");
+  $result=$idconnect->query("SELECT * FROM phpau_classe");
 //if (!$result) die mysql_error();
   $nb_classe2=mysqli_num_rows( $result );
   return("$nb_classe2");
@@ -785,7 +783,7 @@ function nb_classe2($idconnect)
 // Nombres de renseignements class�s (utilis� dans admin/rens.php)
 function nb_rens($idconnect)
 {
-  $result=$idconnect->query("SELECT id FROM phpab_rens where id_classe>'0'");
+  $result=$idconnect->query("SELECT id FROM phpau_rens where id_classe>'0'");
   $nb_rens=mysqli_num_rows( $result );
   return("$nb_rens");
 }
@@ -793,7 +791,7 @@ function nb_rens($idconnect)
 // Nombres de renseignements enregistr�s (utilis� dans rens.php)
 function nb_rens2($idconnect)
 {	
-  $result=$idconnect->query("SELECT * FROM phpab_rens");
+  $result=$idconnect->query("SELECT * FROM phpau_rens");
   $nb_rens2=mysqli_num_rows( $result );
   return("$nb_rens2");
 }
@@ -801,7 +799,7 @@ function nb_rens2($idconnect)
 // id du renseignement � partir du nom du rens (utilis� dans rens.php)
 function rens2($rens, $idconnect)
 {
-  $result=$idconnect->query("select id, nom from phpab_rens where nom='$rens'");
+  $result=$idconnect->query("select id, nom from phpau_rens where nom='$rens'");
 //if (!$result) die mysql_error();
   $row=mysqli_fetch_array($result);
   $rens2=$row[0];
@@ -811,11 +809,11 @@ function rens2($rens, $idconnect)
 // Affichage des renseignements (utilis� dans gestequipes.php
 function aff_rens ($id_classe, $id_clubs, $idconnect)
   {
-  $result=$idconnect->query("SELECT phpab_donnee.id, phpab_donnee.nom, id_rens, id_clubs, phpab_rens.id, phpab_rens.nom, phpab_rens.id_classe, phpab_clubs.id, etat, phpab_donnee.url, phpab_rens.url
-							 FROM phpab_donnee, phpab_rens, phpab_clubs
+  $result=$idconnect->query("SELECT phpau_donnee.id, phpau_donnee.nom, id_rens, id_clubs, phpau_rens.id, phpau_rens.nom, phpau_rens.id_classe, phpau_clubs.id, etat, phpau_donnee.url, phpau_rens.url
+							 FROM phpau_donnee, phpau_rens, phpau_clubs
 							 WHERE id_clubs='$id_clubs'
-							 AND id_clubs=phpab_clubs.id
-							 AND id_rens=phpab_rens.id
+							 AND id_clubs=phpau_clubs.id
+							 AND id_rens=phpau_rens.id
 							 AND id_classe='$id_classe'
 							 AND etat='1' 
 							 order by rang");
@@ -843,7 +841,7 @@ function VerifSession ($user_pseudo,$user_mdp, $idconnect)
   if ($user_pseudo and $user_mdp)
   {
         $result=$idconnect->query(" SELECT mot_de_passe, id_prono 
-									FROM phpab_membres 
+									FROM phpau_membres 
 									WHERE pseudo='onepip' 
 									and admin='1'");
         
