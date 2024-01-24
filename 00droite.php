@@ -3,9 +3,8 @@
 <table>
   <tr> 
     <td> 
-      <p align="center"><br>
-        <img src="/images/123.jpg" width="190" height="190
-	  " align="middle"> 
+    
+        <img src="/images/123.jpg" width="190" height="190" alt=""> 
       
      
 	  <form action="/pagerecherchegoogle.php" id="cse-search-box">
@@ -18,14 +17,14 @@
       
       </form>
 	 
-      <div align="center"> 
+     
       <!--  <script type="text/javascript" src="http://www.google.fr/coop/cse/brand?form=cse-search-box&amp;lang=fr"></script>-->
-      </div>
+      
   <br/>
-      <p align="center"> 
-	  <fieldset class="fieldsetG"> <legend class="legendG"> 
+    
+	  <fieldset class="fieldsetG"> <legend class="legendG" > 
         Pr&eacute;sentation des ligues </legend><br />
-        <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
+        <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="1" alt="text" title="Recherche par ligue">
           <option selected>Par ligue</option>
           <option value="/consultation/page_ligue.php?idLigue=10">Auvergne Rh&ocirc;ne Alpes</option>
           <option value="/consultation/page_ligue.php?idLigue=11">Bourgogne Franche Comt&eacute;</option>
@@ -44,12 +43,12 @@
         </fieldset > 
       <br>
        <br>
-      <p align="center">
+    
 	 
 	   <fieldset class="fieldsetG"> <legend class="legendG"> 
         Pr&eacute;sentation des comit&eacute;s<br>
         (avant 2019)</legend> <br />
-        <select class="inputG" name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1">
+        <select class="inputG" name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1" alt="text" title="Recherche par comité">
           <option selected>Par comit&eacute;</option>
           <option value="/consultation/page_comite.php?variable_1=(AP)">Alpes</option>
           <option value="/consultation/page_comite.php?variable_1=(AL)">Alsace 
@@ -96,7 +95,7 @@
       <br>
       <br>
       <form action="/consultation/pageclub00.php" method="GET">
-        <p align="center">
+      
 		
 		
 		<fieldset class="fieldsetG"> 
@@ -133,8 +132,7 @@
         </b></p>
       
         <?php //include("pub/pub6.php");?>
-      <p align="center">------- </p>
-      <p align="center"><br>
+   
         <?php //include("pub/pub10.php");?>
       </p>
     </td>

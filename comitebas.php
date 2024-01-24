@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<table width="1250" border="1" cellspacing="1" cellpadding="0" align="center" bgcolor="#000000">
-  <tr bordercolor="#000000"> 
+
+<table class= "tableauBas2 ligneNoire">
+  <tr > 
     <td  class="bas"> 
       <a href="/index.php">Accueil</a>
     </td>
@@ -35,7 +34,7 @@
     </td>
   </tr>
 </table>
-</html>
+
 
 
 

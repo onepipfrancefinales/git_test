@@ -7,6 +7,9 @@ background-color:#006699;
 vertical-align: top;
 
 }
+
+table.infos{width:"500"; margin :auto;}
+
 td.colonneCentrale {
 	background-color: #ffffff;
 	width: 650px;
@@ -77,16 +80,18 @@ tr.fond{background: #006699;}
 h4.perso{ color: #ffffff; font-family: Arial;font-size: 18px;text-align: center;Font-weight: bold;border-color:#000000;
 background-color:red;border-radius: 10px;margin: 5px 5px 5px 5px;  width: 350px}
 
-
+h4 a{
+	color: #FFFFFF;  text-decoration: none;;
+}
 
 td.tabHautDroit{font-family: arial;font-weight: Bold;font-size: 17px;font-style: italic;text-align: center;
-border: 1px black solid ;background-color:#0099CC;color: #000000;border-color:#333333;}
+border: 1px black solid ;background-color:#0099CC;color: #000000;border-color:#333333; height:"25";}
 td.tabHautDroit a{color: #000000;  text-decoration: none; }
 
 
 /* sommaire */
 table.sommaire{width:500px;border: 1px black solid ;}
-table.sommaireFed3{width:600px;border: 1px black solid ;}
+table.sommaireFed3{width:600px;border: 1px black solid ; text-align:center;}
 td.tab3{font-family: arial;font-weight: Bold;font-size: 13px;text-align: center;
 border: 1px black solid ;background-color:#FF9933;}
 td.tab3 a{text-decoration: none;color: #000000;}

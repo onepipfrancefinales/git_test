@@ -109,7 +109,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 	if ($champ2 > 0) {
 		echo "<table width=\"750\">";
 		AffichageLogos($champ, $comite, false, $bdd);
-		echo "<tr valign=\"top\"> ";
+		echo "<tr > ";
 		echo "<td> ";
 		echo "<h3 align=\"center\">Equipe I </h3>";
 		aff_journee($champ, $bdd);
@@ -1390,7 +1390,7 @@ function journeesReportees($comite, $champ, $bdd)
 		if ($nbreMatchsReportes[0] > 0) {
 
 		?>
-			<table align="center" width="90%" cellspacing="1" cellpadding="1" border color="#3B487F"">
+		<table align="center" width="90%" cellspacing="1" cellpadding="1" border color="#3B487F"">
 		<tr bgcolor = " #000000">
 				<td style="background-color: #3B487F">
 					<font color="#FFFF00" size="3pt" face="arial , Helvetica, sans-serif">

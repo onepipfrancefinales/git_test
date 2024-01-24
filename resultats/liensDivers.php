@@ -6,13 +6,13 @@ if ($cmt == "fem")
    <tr class="fond" >
     <td rowspan="3"  valign="middle" width="303"> 
       <h4><a href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=<?php echo $division; ?>&annee=<?php echo $annee;?>"		target="_top"><font color="#FFFFFF">Phases finales <br /> Championnat de France</font></a></h4></td>
-    <td class="tabHautDroit" height="25"><a href="/palmares/palmNational/pagePalmares.php?division=280" target="_top">Palmar&egrave;s Elite 1</a></td>
+    <td class="tabHautDroit"><a href="/palmares/palmNational/pagePalmares.php?division=280" target="_top">Palmar&egrave;s Elite 1</a></td>
   </tr>
   <tr> 
-    <td class="tabHautDroit" height="25"><a href="/palmares/palmNational/pagePalmares.php?division=285" target="_top">Palmar&egrave;s Elite2</a></td>
+    <td class="tabHautDroit"><a href="/palmares/palmNational/pagePalmares.php?division=285" target="_top">Palmar&egrave;s Elite2</a></td>
   </tr>
   <tr class="fond" valign="middle">     
-	<td class="tabHautDroit" height="25"><a href="/palmares/palmNational/pagePalmares.php?division=290" target="_top">Palmar&egrave;s F&eacute;d&eacute;rale 1</a></td>
+	<td class="tabHautDroit"><a href="/palmares/palmNational/pagePalmares.php?division=290" target="_top">Palmar&egrave;s F&eacute;d&eacute;rale 1</a></td>
 	</tr>
 </table>	
 <?php	
@@ -28,10 +28,10 @@ elseif ($cmt =="pro")
     <td class="tabHautDroit"> <a href="/palmares/palmNational/pagePalmares.php?division=110" target="_top">Palmar&egrave;s Top 14</a></td>
   </tr>
   <tr> 
-    <td class="tabHautDroit" height="25"> <a href="/palmares/palmNational/pagePalmares.php?division=120" target="_top">Palmar&egrave;s Pro D2</a></td>
+    <td class="tabHautDroit"> <a href="/palmares/palmNational/pagePalmares.php?division=120" target="_top">Palmar&egrave;s Pro D2</a></td>
   </tr>
   <tr class="fond" valign="middle">     
-	<td class="tabHautDroit" height="25"> <a href="/palmares/palmNational/pagePalmares.php?division=130" target="_top">Palmar&egrave;s Nationale</a></td>
+	<td class="tabHautDroit"> <a href="/palmares/palmNational/pagePalmares.php?division=130" target="_top">Palmar&egrave;s Nationale</a></td>
 	</tr>
 </table>	
 <?php	
@@ -60,15 +60,15 @@ elseif($cmt == "f1" OR $cmt == "fed2" OR $cmt == "fed3NE" OR $cmt == "fed3GS")
   <tr border color="#009966"> 
     <td height="23" valign="middle" bgcolor="#006699" align="center" rowspan="2" border color="#006699"> 
       <h4><a href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=<?php echo $division; ?>&annee=<?php echo $finSaison;?>"
- target="_top"><font color="#FFFFFF">Phase finale du<br>
-        championnat de France</font></a></h4>
+ target="_top">Phase finale du<br>
+        championnat de France</a></h4>
     </td>
-    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division; ?>">Palmar&egrave;s 
-      <?php echo $equipe1;?>
+    <td class="bleuClair" > <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division; ?>" alt="text" title = "palmarès">Palmar&egrave;s 
+      <?php echo $equipe1;?> 
       </a> </td>
   </tr>
   <tr border color="#009966"> 
-    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division+100; ?>">Palmar&egrave;s <?php echo $equipe2; ?></a> </td>
+    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division+100; ?> " alt="text" title = "palmarès<?php echo $equipe2; ?>">Palmar&egrave;s <?php echo $equipe2; ?></a> </td>
   </tr>
 </table>	
 <?php	
@@ -86,7 +86,7 @@ else
 		target="_top">Palmar&egrave;s r&eacute;gional</a></td>
   </tr>
   <tr> 
-    <td class="tabHautDroit" height="25"> <a href="../consultation/page_ligue.php?idLigue=<?php echo $champLigue;?>"
+    <td class="tabHautDroit" > <a href="../consultation/page_ligue.php?idLigue=<?php echo $champLigue;?>"
 		target="_top">Acc&egrave;s aux infos de la ligue</a></td>
   </tr>
   <tr class="fond" valign="middle">     

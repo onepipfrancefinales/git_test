@@ -1,9 +1,51 @@
 td{text-align:center;}
 .celluleNoire{font-family: arial;font-size: 16px;background-color:#000000;font-weight: Bold;}
 .celluleGrise{background-color:#333333;font-size: 16px;font-family: arial;font-weight: Bold;}
-.none a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial;}
+.none a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 19px;  height:28;}
+.none2 a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 15px;}
+.none3 a{text-decoration: none; color: #333333; text-align:center;font-family: arial; font-size: 19px;  height:28;}
+
+.compet a{text-decoration: none; color: #FF0000; text-align:center;font-family: arial; font-size: 18px; height:28;}
+
+
+.ligneBlanche{background: #FFFFFF; font-weight:bold;}
+.ligneNoire{background: #000000;}
+.ligneNoireLight{background: #333333;}
+.ligneGrise{background: #CCCCCC;}
+.ligneBleue{background: #0066CC;}
+
+.hauteurColonne{ height: 22px;}
+
+.ligneBlanche650{background: #FFFFFF; width:650 }
+.adresseBas{text-align:center; color:#000000;font-size: 19px; font-weight:bold;}
+
+.colonneGauche{width: 225px;  background:#006699;vertical-align: top; }
+
+
+
+.largueurTab{width:2500px; }
+.tableauBas{border:1; border-color:#006699;  margin:auto;  }
+
+.tableauBas2{border:1;  
+    margin:auto;  width:1250px; }
+  
+
+
+/*
+.tableFed{width:650; border:3px cellspacing=0; border-color :#000000; ali   :center; cellpadding:0}
+*/
+
+td.azeLigue{width: 1px;	height: 1px;}
+
 
 img{border:0;}
+
+/*logo ligue*/
+
+
+
+
+
 
 /*bas*/
 .bas{font-size: 16px;background-color:#000000;font-family: arial;color: #ffffff;font-weight: Bold;}

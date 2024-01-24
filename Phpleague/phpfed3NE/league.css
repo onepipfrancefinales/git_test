@@ -1,4 +1,4 @@
-/* --------- Général --------- */
+/* --------- Gï¿½nï¿½ral --------- */
 
 BODY.phpfed3NE { color: #000000;  font-size:10pt; font-family: arial;}
 BODY.phpfed3GS { color: #000000;  font-size:10pt; font-family: arial;}
@@ -30,28 +30,37 @@ A.blanc:hover {color:#FFFFFF; text-decoration:none;}
 
 /* --------- tableau classement --------- */
 
-TABLE.tablephpfed3NE2 {border-style: solid; border-color:#3B487F; border-width: 2;} /* bordure tableau */
+
+.colonne1{text-align: center; color: #000000;}
+.colonne234{text-align: left; color: #000000;}
+.ligneBleueJaune{background-color:#ff0000; color:#ffffff;}
+.ligneRougeBlanc{background-color:#ff0000; color:#ffffff;}
+.miseEngras{font-weight:bold}
+
+TABLE.tablephpfed3NE2 {border-style: solid; border-color:#3B487F; border-width: 2; margin: auto;} /* bordure tableau */
 TABLE.tablephpfed3GS2 {border-style: solid; border-color:#3B487F; border-width: 2;} /* bordure tableau */
 
 TR.accession {background-color: #ccffcc} /* couleur partie accession ou coupe d'europe */
 TR.barrage {background-color: #66CCFF} /* couleur partie barrage ou coupe d'europe*/
-TR.relegation {background-color: #FFcc99} /* couleur partie relégation */
+TR.relegation {background-color: #FFcc99} /* couleur partie relï¿½gation */
 
-TR.ligne1 {background-color: #E5E5E5} /* première ligne grise du classement */
+TR.ligne1 {background-color: #E5E5E5} /* premiï¿½re ligne grise du classement */
 TR.ligne2 {background-color: #FFFFFF} /* seconde ligne blanche du classement */
 
 TD.domicile {color: #000000;text-align:right; ;width:40%}
+TD.domicileGras {color: #000000;text-align:right; ;width:40%; font-weight:bold;}
 TD.tiret{color: #000000;text-align:center; width:20%}
 TD.exterieur {color: #000000;text-align:left; ;width:40%}
-/* --------- tableau journée --------- */
+TD.exterieurGras {color: #000000;text-align:left; ;width:40%; font-weight:bold;}
+/* --------- tableau journï¿½e --------- */
 
-TR.date {color: #ff0000; background-color: #0066cc} /* date des rencontres*/
-
+TR.date { background-color: #0066cc;  } /* date des rencontres*/
+TD.white {color:#ffffff}
 /* --------- calendrier ---------- */
 
-font.victoire {color: #339933} /* couleur du texte désignant une victoire */
-font.nul {color: #ff9933} /* couleur du texte désignant un nul */
-font.defaite {color: #FF3300} /* couleur du texte désignant une défaite */
+font.victoire {color: #339933} /* couleur du texte dï¿½signant une victoire */
+font.nul {color: #ff9933} /* couleur du texte dï¿½signant un nul */
+font.defaite {color: #FF3300} /* couleur du texte dï¿½signant une dï¿½faite */
 td.cld1 {text-align:right; width:40%} /* cellule gauche tableau */
 td.cld2 {text-align:left; width:40%} /* cellule droite tableau */
 
@@ -59,7 +68,7 @@ td.cld2 {text-align:left; width:40%} /* cellule droite tableau */
 /* -------- autres ----------- */
 
 TR.trphpfed3NE {font-size: 10pt}
-TR.trphpfed3NE2 {background-color: #F5F5F5 ; vertical-align: top; font-size: 10pt}
+TR.trphpfed3NE2 {background-color: #F5F5F5 ; vertical-align: top; font-size: 10pt;  border-spacing:0; width:80%;}
 TR.trphpfed3NE3 {background-color: #3b487f ; color: #FFFF00; font-size: 10pt;} /* titre dans les tableaux */
 TR.trphpfed3GS {font-size: 10pt}
 TR.trphpfed3GS2 {background-color: #F5F5F5 ; vertical-align: top; font-size: 10pt}

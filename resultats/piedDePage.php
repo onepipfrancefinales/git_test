@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-<table border="1" border color="#006699" width="1250" align="center" >
-  <tr>
+<table class="tableauBas">
+  <tr class="largueurTab">
     <td><?php include("../comitebas.php"); ?></td>
   </tr>
   <tr>
-     <td bgcolor="#ffffff"><?php //include("../pub/pub_displayHorizontal.php");?></td>
+     <td class="ligneBlanche"><?php //include("../pub/pub_displayHorizontal.php");?></td>
   </tr>
-  <tr>
-    <td bgcolor="#ffffff"><?php include("../bas.php"); ?></td>
+  <tr class="largueurTab">
+    <td class="ligneBlanche"><?php include("../bas.php"); ?></td>
   </tr> 
 </table>
 </html>

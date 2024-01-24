@@ -16,8 +16,9 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 ?> 
 
 <!DOCTYPE html>       
-<html>
+<html lang="fr">
 <head>
+<meta charset="utf-8" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,6 +38,7 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
 <title>Championnats de France <?php echo $comiteNom;?></title>
+
 <meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
 <meta name="classification" content="Sport,Rugby">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
@@ -59,21 +61,21 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 
  <table class="table">
   <tr  > 
-    <td colspan="3" > <img src="../images/stade3.jpg" width="1250" height="150"></td>
+    <td colspan="3" > <img src="../images/stade3.jpg" width="1250" height="150" atl=""></td>
   </tr>  
   <tr >
     <td colspan="3" ><?php include("../01ligne.php"); ?></td>
   </tr> 
-  <tr bgcolor="#FFFFFF"  > 
-   <td height="26" colspan="3" ><?php include("../pub/pub_displayHorizontal.php");?> </td>
+  <tr class="ligneBlanche"  > 
+   <td  colspan="3" ><?php include("../pub/pub_displayHorizontal.php");?> </td>
   </tr>
   <tr> 
   <!-- Colonne de gauche --> 
-  <td width="225"  bgcolor="#006699"  valign="top"  ><?php  include("../01gauche.php");?> </td>
+  <td class="colonneGauche"  ><?php  include("../01gauche.php");?> </td>
    
    
    <!-- Colonne centrale --> 
-  <td bgcolor="#ffffff"  width="650" > 
+  <td class =ligneBlanche650  width="650" > 
         <div align="center"><br />
           <h1> CHAMPIONNAT DE FRANCE </h1>
 	 <h2 class="titre">F&eacute;d&eacute;rale 3 - Excellence B  </h2>
@@ -89,12 +91,12 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 </script>
   <br/>
    
-  <table align ="center"  width="500">
+  <table class = "infos">
  <tr> 
    <td>
   
 	<h4 class="bulleReparGeo">
-	 <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed3.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')"><font color="#000000">R&eacutepartition g&eacuteographique des clubs de F&eacuted&eacuterale 3</font></a>
+	 <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed3.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">R&eacutepartition g&eacuteographique des clubs de F&eacuted&eacuterale 3</a>
  
  </h4> 
     <h4 class="bulleReglement">
@@ -107,29 +109,32 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
   <?php       
     echo "<hr />"." <hr />";
     //require("comPerso.php");
-          
-    echo " <h5><a name=\"1\"></a>".$P1." </h5>"; 
+       
+  
+    
+    echo " <h5 id=\"1\">".$P1."  </h5>"; 
     $champ = 991161; $champ2 = 991261;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
-    
+   
 	require '../pub/pub_displayH_550.php' ;
-	//  include("comPerso2.php");  
-          
-    echo " <h5><a name=\"2\"></a>".$P2." </h5>"; 
+	//  include("comPerso2.php"); 
+   
+ 
+  echo " <h5 id=\"2\">".$P2."  </h5>"; 
     $champ = 991162; $champ2 = 991262;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
-    perequation($comite, $champ, $bdd);
+  
 	//  include("comPerso2.php"); 
 		   
-    echo " <h5><a name=\"3\"></a>".$P3."  </h5>"; 
+  echo " <h5 id=\"3\">".$P3."  </h5>";  
     $champ = 991163; $champ2 = 991263;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
     perequation($comite, $champ, $bdd); 
 	
-    echo " <h5><a name=\"4\"></a>".$P4."  </h5>"; 
+    echo " <h5 id=\"4\">".$P4."  </h5>"; 
     $champ = 991164; $champ2 = 991264;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
@@ -137,13 +142,13 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 	
 	require '../pub/pub_displayH_550.php' ;	  
    
-    echo " <h5><a name=\"5\"></a>".$P5."  </h5>"; 
+  echo " <h5 id=\"5\">".$P5."  </h5>"; 
     $champ = 991165; $champ2 = 991265;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
     perequation($comite, $champ, $bdd);
 	
-	echo " <h5><a name=\"6\"></a>".$P6." </h5>"; 
+    echo " <h5 id=\"6\">".$P6."  </h5>"; 
     $champ = 991166; $champ2 = 991266;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
@@ -151,19 +156,19 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 	
 	//require '../pub/pub_displayHorizontal.php';
          
-	echo " <h5><a name=\"7\"></a>".$P7."  </h5>"; 
+  echo " <h5 id=\"7\">".$P7."  </h5>"; 
     $champ = 991167; $champ2 = 991267;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
     perequation($comite, $champ, $bdd);
 	
-    echo " <h5><a name=\"8\"></a>".$P8." </h5>"; 
+    echo " <h5 id=\"8\">".$P8."  </h5>"; 
     $champ = 991168; $champ2 = 991268;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
 	perequation($comite, $champ, $bdd);
 	
-	echo " <h5><a name=\"9\"></a>".$P9."  </h5>"; 
+  echo " <h5 id=\"9\">".$P9."  </h5>"; 
     $champ = 991169; $champ2 = 991269;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd); 
@@ -201,7 +206,7 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
         
       </td>
 	  <!-- Colonne de droite --> 
-      <td bgcolor="#006699" width="225" valign="top" align="center"><p><?php  include("../00droite.php"); ?>   </p></td>
+      <td class = "colonneGauche" ><p><?php  include("../00droite.php"); ?>   </p></td>
     </tr>
     
       
