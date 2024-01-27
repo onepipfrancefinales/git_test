@@ -29,11 +29,7 @@
     <td class = "none" colspan="3" ><a href="/resultats/page_fed3GS.php" atl="text" title="Auvergne">F&eacute;d&eacute;rale 3 ( P10 &agrave; 18)</a></td>
     <td class = "none"  width="94"><a href="/feminine/index_fem.php">F&eacute;minines</a></td>
    </tr>
-   <tr> 
-    <td colspan="4" rowspan="1" style="text-align: center; color: rgb(153, 153, 153); background-color: rgb(51, 51, 51);"></td>
-    <td colspan="4" rowspan="1" style="text-align: center; color: rgb(153, 153, 153); background-color: rgb(51, 51, 51);"></td>
-    <td colspan="4" rowspan="1" style="text-align: center; color: rgb(153, 153, 153); background-color: rgb(51, 51, 51);"></td>
-   </tr>
+   
    <tr class = "ligneBlanche"> 
     <td class = "compet" colspan="12"><a href="/resultats/page_resultats.php" atl="text" title="Compétitions Régionales">Comp&eacute;tititons R&eacute;gionales</a> </td>
    </tr>

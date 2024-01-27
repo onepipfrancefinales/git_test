@@ -53,7 +53,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  	  Palmar&egrave;s par Ann&eacute;e
 	    </legend> 
       <br />
-	  <input class="inputG" type="text" name="saison" maxlength="4" size="8" >
+	  <input class="inputG" type="text" name="saison" maxlength="4" size="8" alt="text" title="Recherche par année" >
       <br />
 	  <input class="inputG" type="submit" value="par annee" name="submit33" >
       </fieldset > 
@@ -68,7 +68,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 		Palmar&egrave;s par divisions
 		</legend> 
 		<br />
-        <select class="inputG" name="select4" onChange="MM_jumpMenu('parent',this,0)" size="14">
+        <select class="inputG" name="select4" onChange="MM_jumpMenu('parent',this,0)" size="14" alt="text" title="Recherche par divisions">
           <option selected>------------</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=110">TOP 14</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=120">Pro D2</option>
@@ -149,7 +149,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       
 	  <fieldset class="fieldsetG"> <legend class="legendG"> Palmar&egrave;s 
         Europ&eacute;ens</legend> <br />
-        <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="4">
+        <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="4" alt="text" title="Coupes d'Europe">
             <option selected>--------------------------------</option>
             <option value="/palmares/palmNational/pagehcup.php">Champions Cup 
             </option>

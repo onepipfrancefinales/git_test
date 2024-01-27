@@ -23,7 +23,7 @@ MM_reloadPage(true);
     <td  > <img src="http://francefinalesrugby.franceserv.com/images/123.jpg" width="190" height="190
 	  " align="middle">
 <p><br>
-      <form action="http://francefinalesrugby.franceserv.com/pagerecherchegoogle.php" id="cse-search-box">
+      <form action="https://francefinalesrugby.fr/pagerecherchegoogle.php" id="cse-search-box">
   <div>
     <input type="hidden" name="cx" value="partner-pub-9177538664500260:6143685311" />
     <input type="hidden" name="cof" value="FORID:10" />

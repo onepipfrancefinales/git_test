@@ -6,14 +6,14 @@
     
         <img src="/images/123.jpg" width="190" height="190" alt=""> 
       
-     
+     <br/>
 	  <form action="/pagerecherchegoogle.php" id="cse-search-box">
     
           <input type="hidden" name="cx" value="partner-pub-9177538664500260:6143685311" />
           <input type="hidden" name="cof" value="FORID:10" />
           <input type="hidden" name="ie" value="UTF-8" />
-          <input type="text" name="q" size="20" />
-          <input class="inputG" type="submit" name="sa" value="Rechercher" />
+          <input type="text" name="q" size="20"alt="text" title="Recherche " />
+          <input class="inputG" type="submit" name="sa" value="Rechercher"/>
       
       </form>
 	 
@@ -103,7 +103,7 @@
 			  Palmar&egrave;s par club
 			 </legend> 
          <br />
-          <input class="inputG" type="text" name="champion" />
+          <input class="inputG" type="text" name="champion" alt="text" title="Recherche par club"/>
          <br />
           <input class="inputG" type="submit" value="par club" />
         </fieldset> 

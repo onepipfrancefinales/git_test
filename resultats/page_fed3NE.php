@@ -61,7 +61,7 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 
  <table class="table">
   <tr  > 
-    <td colspan="3" > <img src="../images/stade3.jpg" width="1250" height="150" atl=""></td>
+    <td colspan="3" > <img src="../images/stade3.jpg" width="1250" height="150" atl="" role="none"></td>
   </tr>  
   <tr >
     <td colspan="3" ><?php include("../01ligne.php"); ?></td>
@@ -111,11 +111,12 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
     //require("comPerso.php");
        
   
-    
+    //echo "<fieldset>";
     echo " <h5 id=\"1\">".$P1."  </h5>"; 
     $champ = 991161; $champ2 = 991261;
 	affichage($champ, $champ2, $comite, $bdd);
     journeesReportees($comite, $champ, $bdd);  
+   // echo "</fieldset>";
    
 	require '../pub/pub_displayH_550.php' ;
 	//  include("comPerso2.php"); 

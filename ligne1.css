@@ -5,13 +5,13 @@ td{text-align:center;}
 .none2 a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 15px;}
 .none3 a{text-decoration: none; color: #333333; text-align:center;font-family: arial; font-size: 19px;  height:28;}
 
-.compet a{text-decoration: none; color: #FF0000; text-align:center;font-family: arial; font-size: 18px; height:28;}
+.compet a{text-decoration: none; color: #e50000; text-align:center;font-family: arial; font-size: 18px; }
 
 
 .ligneBlanche{background: #FFFFFF; font-weight:bold;}
 .ligneNoire{background: #000000;}
 .ligneNoireLight{background: #333333;}
-.ligneGrise{background: #CCCCCC;}
+.ligneGrise{background: #CCCCCC; }
 .ligneBleue{background: #0066CC;}
 
 .hauteurColonne{ height: 22px;}
