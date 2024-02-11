@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>Instruction d'exercices - Formation développeur - Access42</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles_instructions.css" media="all" />
+</head>
+
+<body>
+    <div class="a42-layout">
+
+        <header role="banner" class="a42-header">
+            <div class="a42-header_in inside">
+                <p id="logo">
+                    <a href="https://access42.net/">
+                        <svg class="a42-main-logo" role="img" aria-label="Access42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58 43" xml:space="preserve" width="133" height="99">
+								<title>Access42</title>
+								<g>
+									<g>
+										<path class="st0" d="M43.1,25.5c-1.5,0-3-0.5-4.1-1.3c2.4-2.4,3.8-5.8,3.8-9.4c0-7.5-6.1-13.6-13.6-13.6c-3.3,0-6.3,1.2-8.7,3.1
+										c-1.4-1.1-3.3-1.8-5.3-1.8V4c1.5,0,3,0.5,4.1,1.3c-2.4,2.4-3.8,5.8-3.8,9.4c0,7.5,6.1,13.6,13.6,13.6c3.3,0,6.3-1.2,8.7-3.1
+										c1.4,1.1,3.3,1.8,5.3,1.8V25.5z M17.1,14.8c0-3.3,1.3-6.2,3.4-8.4c1.1,1.2,1.7,2.9,1.7,4.6v2c0,4.4,3.4,8.1,7.8,8.5v1.8h1.5v-6.6
+										h-1.5V20c-3.5-0.4-6.2-3.4-6.2-7v-2c0-2.2-0.8-4.1-2.2-5.7c2.1-1.7,4.7-2.6,7.5-2.6c6.7,0,12.1,5.4,12.1,12.1
+										c0,3.3-1.3,6.2-3.4,8.4c-1.1-1.2-1.7-2.9-1.7-4.6v-2c0-4.7-3.8-8.5-8.5-8.5h-0.8v4.8h1.5V9.6c3.5,0.4,6.2,3.4,6.2,7v2
+										c0,2.2,0.8,4.1,2.2,5.7c-2.1,1.7-4.7,2.6-7.5,2.6C22.5,26.9,17.1,21.4,17.1,14.8z"/>
+										<g>
+											<g>
+												<path class="st0" d="M3.5,38.9l-1,2.8H1l3.5-9.5H6l3.5,9.5H8l-1-2.8H3.5z M5.3,33.7l-1.3,3.9h2.6L5.3,33.7z"/>
+												<path class="st0" d="M15.7,36.5c-0.3-0.3-1-0.8-1.9-0.8c-1.3,0-2.2,1-2.2,2.4c0,1.4,1,2.4,2.3,2.4c0.9,0,1.6-0.5,1.9-0.8
+												l0.4,1.2c-0.4,0.3-1.2,0.9-2.4,0.9c-2.2,0-3.7-1.6-3.7-3.7c0-2.1,1.6-3.7,3.7-3.7c1.2,0,2,0.5,2.4,0.9L15.7,36.5z"/>
+												<path class="st0" d="M22.5,36.5c-0.3-0.3-1-0.8-1.9-0.8c-1.3,0-2.2,1-2.2,2.4c0,1.4,1,2.4,2.3,2.4c0.9,0,1.6-0.5,1.9-0.8
+												l0.4,1.2c-0.4,0.3-1.2,0.9-2.4,0.9c-2.2,0-3.7-1.6-3.7-3.7c0-2.1,1.6-3.7,3.7-3.7c1.2,0,2,0.5,2.4,0.9L22.5,36.5z"/>
+												<path class="st0" d="M27.2,34.4c2.2,0,3.4,1.5,3.4,3.7c0,0.1,0,0.2,0,0.4h-5.4c0,1.3,0.9,2.1,2.2,2.1c1.1,0,1.7-0.6,2-1l1,0.7
+												c-0.3,0.6-1.3,1.6-3,1.6c-2.2,0-3.7-1.6-3.7-3.7C23.7,35.9,25.2,34.4,27.2,34.4z M29.1,37.4c-0.1-1.2-0.9-1.8-1.9-1.8
+												s-1.8,0.7-1.9,1.8H29.1z"/>
+												<path class="st0" d="M32.2,39.7c0.3,0.5,0.8,0.9,1.7,0.9c0.6,0,1.1-0.3,1.1-0.9c0-1.4-3.5-0.9-3.5-3.3c0-1.3,1.1-2,2.4-2
+												c1.3,0,2,0.8,2.3,1.3l-1,0.7c-0.2-0.3-0.6-0.8-1.4-0.8c-0.5,0-1,0.3-1,0.8c0,1.4,3.5,0.8,3.5,3.3c0,1.3-1.1,2.2-2.6,2.2
+												c-1.4,0-2.2-0.8-2.6-1.4L32.2,39.7z"/>
+												<path class="st0" d="M38,39.7c0.3,0.5,0.8,0.9,1.7,0.9c0.6,0,1.1-0.3,1.1-0.9c0-1.4-3.5-0.9-3.5-3.3c0-1.3,1.1-2,2.4-2
+												c1.3,0,2,0.8,2.3,1.3l-1,0.7c-0.2-0.3-0.6-0.8-1.4-0.8c-0.5,0-1,0.3-1,0.8c0,1.4,3.5,0.8,3.5,3.3c0,1.3-1.1,2.2-2.6,2.2
+												c-1.4,0-2.2-0.8-2.6-1.4L38,39.7z"/>
+												<path class="st0" d="M43,38.2l4.1-6.1h1.7V38H50v1.3h-1.2v2.3h-1.5v-2.3H43V38.2z M47.3,38v-4.1L44.6,38H47.3z"/>
+												<path class="st0" d="M51,41.1c0-2.7,4.4-4.2,4.4-6.3c0-0.8-0.5-1.4-1.5-1.4c-0.9,0-1.4,0.6-1.6,1.3L51,34.2
+												c0.2-0.9,1-2.3,2.9-2.3c1.8,0,3,1.1,3,2.8c0,2.7-3.9,4.1-4.1,5.6H57v1.3h-6V41.1z"/>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+                    </a>
+                </p>
+                <h1 class="a42-main-title"><strong>Énoncés d'exercices</strong> <span class="a42-main-title_desc">Formation développeur</span></h1>
+            </div>
+        </header>
+
+        <nav role="navigation">
+            <div class="inside">
+                <ul>
+                    <li><a href="#exo1">Exercice 1</a></li>
+                    <li><a href="#exo2">Exercice 2</a></li>
+                    <li><a href="#exo3">Exercice 3</a></li>
+                    <li><a href="#exo4">Exercice 4</a></li>
+                    <li><a href="#exo5">Exercice 5</a></li>
+                    <li><a href="#exo6">Exercice 6</a></li>                    
+                    <li><a href="#exo7">Exercice 7</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="a42-main" role="main">
+            <section class="a42-ml-welcome a42-contrib">
+                <div class="a42-narrow a42-block">
+                    <p><b>Ressource&nbsp;:</b> si vous avez un lecteur d'écran à disposition, une fois les corrections réalisées pour chaque exercice, vous pouvez tester avec un lecteur d'écran. Vous trouverez <a href="tests_LE.html">une page avec le détail des raccourcis claviers</a> à employer en fonction de l'exercice et des éléments à tester.</p>
+                    <article>
+
+                        <h2 id="exo1" tabindex="-1">Exercice 1&nbsp;: La structure de la page</h2>
+
+                        <h3>Implémenter une structure HTML5 pertinente</h3>
+
+                        <ul>
+                            <li><code>&lt;header&gt;</code></li>
+                            <li><code>&lt;nav&gt;</code></li>
+                            <li><code>&lt;main&gt;</code></li>
+                            <li><code>&lt;aside&gt;</code> (optionnel)</li>
+                            <li><code>&lt;footer&gt;</code></li>
+                        </ul>
+                        
+                        <h3>Implémenter les éléments de navigation interne</h3>
+                        <p><strong>Landmarks :</strong></p>
+                        <ul>
+                            <li><code>role="banner"</code></li>
+                            <li><code>role="search"</code></li>
+                            <li><code>role="navigation"</code></li>
+                            <li><code>role="main"</code></li>
+                            <li><code>role="complementary"</code> (optionnel)</li>
+                            <li><code>role="contentinfo"</code></li>
+                        </ul>
+
+                        <p><strong>Liens d'accès rapide :</strong></p>
+                        <ul>
+                            <li>Vers le contenu principal au moins</li>
+                        </ul>
+
+                    </article>
+
+                    <hr />
+
+                    <article>
+
+                        <h2 id="exo2" tabindex="-1">Exercice 2&nbsp;: le contenu (partie 1)</h2>
+
+                        <h3>Réparer les éléments du contenu</h3>
+
+                        <ul>
+                            <li>Titrage</li>
+                            <li>Listes</li>
+                            <li>Tableau</li>
+                        </ul>
+
+                    </article>
+
+                    <hr />
+                    
+                    <article>
+
+                        <h2 id="exo3" tabindex="-1">Exercice 3&nbsp;: le contenu (partie 2)</h2>
+
+                        <h3>Réparer les éléments du contenu</h3>
+
+                        <ul>
+                            <li>Images</li>
+                            <li>Liens (remarque : les éléments <code>&lt;a href=&quot;#&quot;&gt;</code> doivent bien être considérés comme des liens et non des ancres dans le cadre de cet exercice)</li>
+                        </ul>
+
+                    </article>
+
+                    <hr />
+
+                    <article>
+                        
+                        <h2 id="exo4" tabindex="-1">Exercice 4&nbsp;: Présentation</h2>
+                        
+                        <h3>Repérer les erreurs et les corriger.</h3>
+                        <ul>
+                            <li>Vérifier que tous les textes informatifs sont intégrés au moyen d'HTML et non au moyen de CSS (propriétés <code>content</code> ou <code>background-image</code>) ;</li>
+                            <li>Désactivez les CSS et vérifiez que les informations et les fonctionnalités se suivent dans un ordre logique ;</li>
+                            <li>Vérifiez que les prises de focus sont visibles lorsqu'on parcourt la page en tabulant ;</li>
+                            <li>Textes cachés : réparer les éléments qui utilisent les propriétés de masquage de manière inappopriée :
+                                <ul>
+                                    <li>Le bouton "Espace privé" ;</li>
+                                    <li>En version mobile, le bouton du menu de navigation ;</li>
+                                </ul>
+                            </li>
+                            <li>Augmentez les espacements des textes au moyen d'une feuille de style personnalisée ou d'un bookmarklet et vérifiez que tous les textes restent lisibles.</li>
+                            <li>Dans le menu de navigation, l'indication de page active est transmise uniquement par la couleur. Mettez en place un moyen de transmettre cette information aux personnes 
+                                aveugles et aux personnes qui distinguent mal les différences entre les couleurs ;</li>
+                        </ul>
+                    </article>
+                    
+                    <hr />
+
+                    <article>
+
+                        <h2 id="exo5" tabindex="-1">Exercice 5&nbsp;: les formulaires</h2>
+
+                        <h3>Réparer les formulaires</h3>
+
+                        <ul>
+                            <li>Vérifier que tous les champs possèdent une étiquette visible et correctement liée. 
+                                Afin de vous exercer, utilisez chacune des méthodes ci-dessous au moins une fois :
+                                <ul>
+                                    <li><code>&lt;label for=&quot;id&quot;&gt;</code></li>
+                                    <li><code>aria-label</code></li>
+                                    <li><code>aria-labelledby</code></li>
+                                    <li><code>title</code></li>
+                                </ul>
+                            </li>
+                            <li>Vérifier que les champs de même nature sont regroupés et possèdent une légende ;</li>
+                            <li>Vérifier que les champs qui le nécessitent possèdent des indications de saisie (champs obligatoires, formats attendus, exemples réels) ;<br> Remarque : Les propriétés <code>aria-required</code> indiquent quels champs sont obligatoires.<br> <b>Ne pas supprimer</b> ces propriétés car elles sont exploitées par le script JS pour la gestion des erreurs !</li>
+                            <li>Vérifier que les messages d'aides ou d'informations sont correctement liés à leur champ ;</li>
+                            <li>Vérifier que les boutons ont des intitulés pertinents ;</li>
+                            <li>Vérifier que les messages d'erreur sont correctement liés à leur champ ;</li>
+                            <li>Si des champs collectent des données personnelles, assurez-vous qu'ils soient identifiables par les technologies d'assistance (<code lang="en">autocomplete</code>).</code></li>
+                        </ul>
+
+                    </article>
+
+                    <hr />
+
+                    <article>
+
+                        <h2 id="exo6" tabindex="-1">Exercice 6&nbsp;: JavaScript et ARIA</h2>
+
+                        <h3 lang="en">Disclosure</h3>
+
+                        <p>Le composant &laquo;&nbsp;Espace privé&nbsp;&raquo; gère une zone affichée/masquée.</p>
+
+                        <p>Vous devez rendre accessibles ce bouton et l'événement qu'il génère.</p>
+
+                        <p>Le motif de conception correspondant est consultable à cette adresse&nbsp;: <a href="https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/" lang="en" hreflang="en"><i>Disclosure</i></a></p>
+
+                        <p><strong>Note pour les corrections en JavaScript&nbsp;:</strong></p>
+
+                        <p>Dans le fichier <code>script.js</code>, le comportement de ce bouton est géré par la fonction <code>toggleAccountMenu</code>.</p>
+
+                        <p><strong>Alternative sans corrections en JavaScript&nbsp;:</strong></p>
+                        
+                        <p>Répondez aux questions suivantes. Justifiez vos réponses et décrivez les comportements attendus si nécessaire.</p>
+
+                        <ul>
+                            <li>L'implémentation du bouton permet-elle de savoir si le menu est affiché ou masqué ?</li>
+                            <li>Le comportement au clavier est-il satisfaisant ?</li>
+                        </ul>
+
+                        <h3>Ordre de tabulation</h3>
+
+                        <p>Parcourez la page en utilisant la touche <kbd>Tab</kbd> et <kbd>Shift Tab</kbd> et vérifier que l'ordre de tabulation est logique.</p>
+
+                        <h3>Message de statut</h3>
+
+                        <p>L'acceptation ou le refus des cookies déclenche l'apparition d'une notification de succès visuellement positionné en bas à droite.</p>
+                        
+                        <p>Vous devez implémenter une méthode de votre choix pour garantir aux utilisateurs l'accès à l'information.</p>
+
+                        <h3>Formulaire</h3>
+
+                        <p>Vérifier que la gestion du focus permet de comprendre le résultat de la soumission du formulaire, qu'il retourne des erreurs ou non.</p>
+                        
+                        <p><strong>Note pour les corrections en JavaScript&nbsp;:</strong></p>
+
+                        <p>Dans le fichier <code>script.js</code>, la soumission du formulaire est gérée dans les fonctions <code>verifyRequiredFields</code> et <code>sendForm</code>.</p>
+
+                        <p><strong>Alternative sans corrections en JavaScript&nbsp;:</strong></p>
+                        
+                        <p>Répondez aux questions suivantes. Justifiez vos réponses et décrivez les comportements attendus si nécessaire.</p>
+
+                        <ul>
+                            <li>Lorsque la soumission du formulaire retourne des erreurs de saisie, la gestion du focus est-elle satisfaisante ?</li>
+                            <li>Et lorsque la soumission du formulaire retourne un message de succès ?</li>
+                        </ul>
+
+
+                        <h3>Fenêtre modale</h3>
+
+                        <p>Le bouton « D'où vient le mot « thé » ? » déclenche l'affichage d'une fenêtre modale.</p>
+
+                        <p>Vous devez vérifier que le motif de conception de la fenêtre modale est correct et réparer les erreurs.<br>
+                            Vérifiez également les reprises de focus à l'ouverture et à la fermeture de la modale.</p>
+
+                        <p>Le motif de conception fenêtre modale est consultable à cette adresse&nbsp;: <a lang="en" hreflang="en" href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">Dialog modal</a></p>
+
+                        <p><strong>Note pour les corrections en JavaScript&nbsp;:</strong></p>
+
+                        <p>Dans le fichier <code>script.js</code>, les fonctions qui gèrent l'ouverture et la fermeture de la modale sont <code>closeDialog</code> et <code>openDialog</code>.</p>
+
+                        <p><strong>Alternative sans corrections en JavaScript&nbsp;:</strong></p>
+
+                        <p>Répondez aux questions suivantes. Justifiez vos réponses et décrivez les comportements attendus si nécessaire.</p>
+
+                        <ul>
+                            <li>Le parcours de tabulation dans la modale est-il satisfaisant ?</li>
+                            <li>Qu'en est-il à la suite de l'ouverture et de la fermeture de la modale ?</li>
+                        </ul>
+                        
+                    </article>
+                    <hr />
+                    <article>
+                        <h2 id="exo7" tabindex="-1">Exercice 7: ARIA</h2>
+                        <h3>Motif de conception</h3>
+                        <p>À l'aide de la grille de test "DP-ARIA.xlsx", vous devez vérifier que le composant proposé est conforme au motif de conception ARIA.</p>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

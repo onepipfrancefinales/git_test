@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>Corrections d'exercices - Formation développeur - Access42</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../exercice/css/styles_instructions.css" media="all" />
+</head>
+
+<body>
+    <div class="a42-layout">
+
+        <header role="banner" class="a42-header">
+            <div class="a42-header_in inside">
+                <p id="logo">
+                    <a href="https://access42.net/">
+                        <svg class="a42-main-logo" role="img" aria-label="Access42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58 43" xml:space="preserve" width="133" height="99">
+								<title>Access42</title>
+								<g>
+									<g>
+										<path class="st0" d="M43.1,25.5c-1.5,0-3-0.5-4.1-1.3c2.4-2.4,3.8-5.8,3.8-9.4c0-7.5-6.1-13.6-13.6-13.6c-3.3,0-6.3,1.2-8.7,3.1
+										c-1.4-1.1-3.3-1.8-5.3-1.8V4c1.5,0,3,0.5,4.1,1.3c-2.4,2.4-3.8,5.8-3.8,9.4c0,7.5,6.1,13.6,13.6,13.6c3.3,0,6.3-1.2,8.7-3.1
+										c1.4,1.1,3.3,1.8,5.3,1.8V25.5z M17.1,14.8c0-3.3,1.3-6.2,3.4-8.4c1.1,1.2,1.7,2.9,1.7,4.6v2c0,4.4,3.4,8.1,7.8,8.5v1.8h1.5v-6.6
+										h-1.5V20c-3.5-0.4-6.2-3.4-6.2-7v-2c0-2.2-0.8-4.1-2.2-5.7c2.1-1.7,4.7-2.6,7.5-2.6c6.7,0,12.1,5.4,12.1,12.1
+										c0,3.3-1.3,6.2-3.4,8.4c-1.1-1.2-1.7-2.9-1.7-4.6v-2c0-4.7-3.8-8.5-8.5-8.5h-0.8v4.8h1.5V9.6c3.5,0.4,6.2,3.4,6.2,7v2
+										c0,2.2,0.8,4.1,2.2,5.7c-2.1,1.7-4.7,2.6-7.5,2.6C22.5,26.9,17.1,21.4,17.1,14.8z"/>
+										<g>
+											<g>
+												<path class="st0" d="M3.5,38.9l-1,2.8H1l3.5-9.5H6l3.5,9.5H8l-1-2.8H3.5z M5.3,33.7l-1.3,3.9h2.6L5.3,33.7z"/>
+												<path class="st0" d="M15.7,36.5c-0.3-0.3-1-0.8-1.9-0.8c-1.3,0-2.2,1-2.2,2.4c0,1.4,1,2.4,2.3,2.4c0.9,0,1.6-0.5,1.9-0.8
+												l0.4,1.2c-0.4,0.3-1.2,0.9-2.4,0.9c-2.2,0-3.7-1.6-3.7-3.7c0-2.1,1.6-3.7,3.7-3.7c1.2,0,2,0.5,2.4,0.9L15.7,36.5z"/>
+												<path class="st0" d="M22.5,36.5c-0.3-0.3-1-0.8-1.9-0.8c-1.3,0-2.2,1-2.2,2.4c0,1.4,1,2.4,2.3,2.4c0.9,0,1.6-0.5,1.9-0.8
+												l0.4,1.2c-0.4,0.3-1.2,0.9-2.4,0.9c-2.2,0-3.7-1.6-3.7-3.7c0-2.1,1.6-3.7,3.7-3.7c1.2,0,2,0.5,2.4,0.9L22.5,36.5z"/>
+												<path class="st0" d="M27.2,34.4c2.2,0,3.4,1.5,3.4,3.7c0,0.1,0,0.2,0,0.4h-5.4c0,1.3,0.9,2.1,2.2,2.1c1.1,0,1.7-0.6,2-1l1,0.7
+												c-0.3,0.6-1.3,1.6-3,1.6c-2.2,0-3.7-1.6-3.7-3.7C23.7,35.9,25.2,34.4,27.2,34.4z M29.1,37.4c-0.1-1.2-0.9-1.8-1.9-1.8
+												s-1.8,0.7-1.9,1.8H29.1z"/>
+												<path class="st0" d="M32.2,39.7c0.3,0.5,0.8,0.9,1.7,0.9c0.6,0,1.1-0.3,1.1-0.9c0-1.4-3.5-0.9-3.5-3.3c0-1.3,1.1-2,2.4-2
+												c1.3,0,2,0.8,2.3,1.3l-1,0.7c-0.2-0.3-0.6-0.8-1.4-0.8c-0.5,0-1,0.3-1,0.8c0,1.4,3.5,0.8,3.5,3.3c0,1.3-1.1,2.2-2.6,2.2
+												c-1.4,0-2.2-0.8-2.6-1.4L32.2,39.7z"/>
+												<path class="st0" d="M38,39.7c0.3,0.5,0.8,0.9,1.7,0.9c0.6,0,1.1-0.3,1.1-0.9c0-1.4-3.5-0.9-3.5-3.3c0-1.3,1.1-2,2.4-2
+												c1.3,0,2,0.8,2.3,1.3l-1,0.7c-0.2-0.3-0.6-0.8-1.4-0.8c-0.5,0-1,0.3-1,0.8c0,1.4,3.5,0.8,3.5,3.3c0,1.3-1.1,2.2-2.6,2.2
+												c-1.4,0-2.2-0.8-2.6-1.4L38,39.7z"/>
+												<path class="st0" d="M43,38.2l4.1-6.1h1.7V38H50v1.3h-1.2v2.3h-1.5v-2.3H43V38.2z M47.3,38v-4.1L44.6,38H47.3z"/>
+												<path class="st0" d="M51,41.1c0-2.7,4.4-4.2,4.4-6.3c0-0.8-0.5-1.4-1.5-1.4c-0.9,0-1.4,0.6-1.6,1.3L51,34.2
+												c0.2-0.9,1-2.3,2.9-2.3c1.8,0,3,1.1,3,2.8c0,2.7-3.9,4.1-4.1,5.6H57v1.3h-6V41.1z"/>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+                    </a>
+                </p>
+                <h1 class="a42-main-title"><strong>Corrections d'exercices</strong> <span class="a42-main-title_desc">Formation développeur</span></h1>
+            </div>
+        </header>
+
+        <nav role="navigation">
+            <div class="inside">
+                <ul>
+                    <li><a href="#exo1">Exercice 1</a></li>
+                    <li><a href="#exo2">Exercice 2</a></li>
+                    <li><a href="#exo3">Exercice 3</a></li>
+                    <li><a href="#exo4">Exercice 4</a></li>
+                    <li><a href="#exo5">Exercice 5</a></li>
+                    <li><a href="#exo6">Exercice 6</a></li>
+                    <li><a href="#exo7">Exercice 7</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="a42-main" role="main">
+            <section class="a42-ml-welcome a42-contrib">
+                <div class="a42-narrow a42-block">
+                    
+                    <article>
+
+                        <h2 id="exo1" tabindex="-1">Exercice 1&nbsp;: La structure de la page</h2>
+
+                        <h3>Structure HTML5</h3>
+
+                        <ul>
+                            <li>Un élément <code>&lt;header&gt;</code> est ajouté autour de la zone d'en-tête, incluant ou non la ou les zones de navigation et la zone de recherche.</li>
+                            <li>Des éléments <code>&lt;nav&gt;</code> sont ajoutés autour du ou des lien(s) d'accès rapide et autour du menu de navigation (en version mobile, la balise <code>&lt;nav&gt;</code> intègre le bouton burger qui permet d'afficher le menu).</li>
+                            <li>Un élément <code>&lt;main&gt;</code> est ajouté autour de la zone de contenu principal.</li>
+                            <li>Optionnellement, un élément <code>&lt;aside&gt;</code> est ajouté autour de la zone des réseaux sociaux.</li>
+                            <li>Un élément <code>&lt;footer&gt;</code> est ajouté autour de la zone de pied de page.</li>
+                        </ul>
+                        
+                        <h3>Éléments de navigation interne</h3>
+                        <p><strong>Landmarks :</strong></p>
+                        <ul>
+                            <li>Un <code>role="banner"</code> est défini sur l'élément <code>&lt;header&gt;</code>.</li>
+                            <li>Un <code>role="search"</code> est défini sur la <code>&lt;div&gt;</code> ou sur le <code>&lt;form&gt;</code> contenant le champ de recherche.</li>
+                            <li>Des <code>role="navigation"</code> sont définis sur les éléments <code>&lt;nav&gt;</code>.<br>
+                            Pas obligatoire mais recommandé : des propriétés <code>aria-label</code> sont également définies sur ces éléments afin de les nommer. Par exemple :
+                            <code>aria-label="Accès rapide"</code> et <code>aria-label="Menu principal"</code>.</li>
+                            <li>Un <code>role="main"</code> est défini sur l'élément <code>&lt;main&gt;</code>.</li>
+                            <li>Un <code>role="complementary"</code> est défini sur l'élément <code>&lt;aside&gt;</code> s'il existe.</li>
+                            <li>Un <code>role="contentinfo"</code> est défini sur l'élément <code>&lt;footer&gt;</code>.</li>
+                        </ul>
+
+                        <p><strong>Liens d'accès rapide :</strong></p>
+                        <ul>
+                            <li>Au moins un lien (ancre) est ajouté au début de la page dans le code HTML et mène vers le contenu principal.</li>
+                        </ul>
+
+                    </article>
+
+                    <hr />
+
+                    <article>
+
+                        <h2 id="exo2" tabindex="-1">Exercice 2&nbsp;: le contenu (partie 1)</h2>
+
+                        <h3>Réparer les éléments du contenu</h3>
+
+                        <p><strong>Titres :</strong></p>
+                        <ul>
+                            <li>Un <code>&lt;h1&gt;</code> est ajouté sur le texte "Découvrez les saveurs du thé".</li>
+                            <li>Les titres de niveau 3 dans le pied de page sont changés en <code>&lt;h2&gt;</code>.</li>
+                            <li>Un <code>&lt;h1&gt;</code> est ajouté sur le texte "Étymologie" dans la modale.</li>
+                        </ul>
+                        <p><strong>Listes :</strong></p>
+                        <ul>
+                            <li>Une liste <code>&lt;ul&gt;</code>/<code>&lt;li&gt;</code> est utilisée pour structurer les liens du menu de navigation.</li>
+                            <li>Une liste <code>&lt;ul&gt;</code>/<code>&lt;li&gt;</code> est utilisée pour structurer le texte sous "Quelques thés parfumés célèbres".</li>
+                        </ul>
+                        <p><strong>Tableau :</strong></p>
+                        <ul>
+                            <li>Le texte "Production des 10 principaux pays producteurs en 2017" est déplacé directement après la balise <code>&lt;table&gt;</code> ouvrante, dans un élément <code>&lt;caption&gt;</code>.</li>
+                            <li>Des éléments <code>&lt;th&gt;</code> remplacent les <code>&lt;td&gt;</code> de la première ligne et optionnellement de la première colonne du tableau.<br>
+                            Si des éléments <code>&lt;th&gt;</code> sont utilisés dans la première colonne, alors des attributs <code>scope</code> sont ajoutés sur tous les éléments <code>&lt;th&gt;</code>
+                            du tableau (avec pour valeurs : <code>col</code> dans la première ligne, <code>row</code> dans la première colonne).</li>
+                        </ul>
+                    </article>
+
+                    <hr />
+
+                    <article>
+
+                        <h2 id="exo3" tabindex="-1">Exercice 3&nbsp;: le contenu (partie 2)</h2>
+
+                        <h3>Réparer les éléments du contenu</h3>
+
+                        <p><strong>Images :</strong></p>
+                        <ul>
+                            <li>Une propriété <code>aria-hidden="true"</code> est ajoutée sur l'icône <code>&lt;svg&gt;</code> dans le bouton "Espace privé".</li>
+                            <li>La structure <code>&lt;figure&gt;</code>/<code>&lt;figcaption&gt;</code> avec ses propriétés ARIA associées est utilisée autour de l'image "theier.jpg" et sa légende.</li>
+                            <li>Un attribut <code>alt=""</code> est ajouté sur l'image "salon.jpg" dans le pied de page.</li>
+                        </ul>
+                        <p><strong>Liens :</strong></p>
+                        <ul>
+                            <li>Sur le lien-logo dans l'en-tête :
+                                <ul>
+                                    <li>L'attribut <code>alt</code> de l'image est vide ;</li>
+                                    <li>Le <code>title</code> est modifié de façon à reprendre au moins le contenu du lien (par exemple : 
+                                    <code>title="Le Thé : Accueil"</code>). Le <code>title</code> pourrait aussi être supprimé (l'utilisateur comprend sans cette précision).</li>
+                                </ul>
+                            <li>Dans la zone des réseaux sociaux, les intitulés des liens sont définis par leurs contenus, des textes positionnés hors écran.</li>
+                        </ul>
+                    </article>
+
+                    <hr />
+
+                    <article>
+                        
+                        <h2 id="exo4" tabindex="-1">Exercice 4&nbsp;: Présentation</h2>
+                        
+                        <h3>Réparer les erreurs liées à la présentation des contenus</h3>
+                        <p><strong>Présence et ordre de lecture des contenus sans mise en forme CSS :</strong></p>
+                        <ul>
+                            <li>Le bandeau des cookies est déplacé en tout début de page dans le code HTML ;</li>
+                            <li>Dans le formulaire "Catalogue", le bouton de soumission est déplacé après la case à cocher dans le code HTML ;</li>
+                            <li>Dans le pied de page, les indications "Nouveau" sont intégrées directement en texte dans le contenu des liens et non au moyen de la propriété
+                                CSS <code>content</code>.
+                            </li>
+                        </ul>
+                        <p><strong>Visibilité des prises de focus :</strong></p>
+                        <ul>
+                            <li>Dans le fichier <code>styles.css</code>, la règle qui annulait l'outline sur les boutons est supprimée (sélecteur <code>.tm-btn:focus</code>).</li>
+                        </ul>
+                        <p><strong>Textes cachés :</strong></p>
+                        <ul>
+                            <li>Bouton "Menu" (version mobile) : 
+                                <ul>
+                                    <li>La propriété <code>style="display: none;"</code> est supprimée du <code>&lt;span&gt;</code> qui contient l'intitulé.<br>
+                                    Le texte est caché visuellement grâce à un positionnement hors écran (classe <code>.sr-only</code> dans <code>styles.css</code>).</li>
+                                    <li>La propriété <code>aria-hidden=&quot;true&quot;</code> est conservée sur l'icône car elle ne doit pas être restituée.</li>
+                                </ul>
+                            </li>
+                            <li>Bouton "Espace privé" : La propriété <code>aria-hidden=&quot;true&quot;</code> est supprimée du <code>&lt;span&gt;</code> qui contient 
+                                l'intitulé.</li>
+                        </ul>
+                        <p><strong>Espacements des textes :</strong></p>
+                        <p>Dans fichier <code>styles.css</code> :</p>
+                        <ul>
+                            <li>Menu de navigation : les propriétés <code>overflow</code> et <code>height</code> au minimum sont supprimées sur les liens (sélecteur <code>.nav-list .nav-link</code>) ;</li>
+                            <li>Sous-menu "Espace privé" : la propriété <code>height</code> est supprimée sur les éléments de la liste (sélecteur <code>.account-menu li</code>) ;</li>
+                        </ul>
+                        <p><strong>Informations transmises par la couleur :</strong></p>
+                        <ul>
+                            <li>Lien actif du menu de navigation ("Accueil") :</li>
+                                <ul>
+                                    <li>Un changement de forme (soulignement) est ajouté sur le lien ;</li>
+                                    <li>Un title est ajouté sur le lien : <code>title=&quot;Accueil - page active&quot;</code> .</li>
+                                    <li>Remarque : en réalité, l'utilisation d'un <code>title</code> remplit la condition du changement de forme puisqu'il déclenche 
+                                        l'affichage d'une tooltip. Avec la limitation cependant que cette tooltip n'apparaît pas au focus pour les personnes qui naviguent au clavier.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    
+                    <hr />
+
+                    <article>
+
+                        <h2 id="exo5" tabindex="-1">Exercice 5&nbsp;: les formulaires</h2>
+
+                        <h3>Réparer les formulaires</h3>
+
+                        <p><strong>Étiquettes</strong></p>
+                        <ul>
+                            <li>Pour tous les champs du formulaire "Catalogue", des étiquettes sont définies au moyen d'éléments <code>&lt;label for=&quot;id&quot;&gt;</code> ;</li>
+                            <li>Pour le champ de recherche, l'étiquette est définie au moyen d'un attribut <code>title</code> (nom accessible) qui reprend le texte du 
+                                <code>placeholder</code> (nom visible).</li>
+                        </ul>
+                        <p><strong>Regroupements</strong></p>
+                        <ul>
+                            <li>Le texte "Je souhaite recevoir un échantillon ..." et les boutons radio sont regroupés dans un élément <code>&lt;fieldset&gt;</code>.</li>
+                            <li>Un élément <code>&lt;legend&gt;</code> remplace le <code>&lt;p&gt;</code> autour du texte "Je souhaite recevoir un échantillon...".</li>
+                        </ul>
+                        <p><strong>Aides à la saisie</strong></p>
+                        <p>Pour le formulaire "Catalogue" :</p>
+                        <ul>
+                            <li>Champs obligatoires (tous les champs sauf les boutons radio et la case à cocher) : <br>
+                                Des astérisques sont ajoutés dans les étiquettes des champs et un texte "* Champs obligatoires" est ajouté avant le début du formulaire ;
+                            </li>
+                            <li>Formats attendus : <br>
+                                Un texte "Format attendu : nom@domaine.com" visible est ajoutée dans un paragraphe à proximité du champ "Adresse e-mail". Une propriété 
+                                <code>aria-describedby</code> est utilisée sur le champ pour lier le texte.
+                            </li>
+                            <li>Messages d'aide :<br>
+                            Une propriété <code>aria-describedby</code> est utilisée sur le champ "Adresse e-mail" pour y lier le texte "Nous nous engageons à ne pas communiquer pas votre adresse e-mail à des tiers".</li>
+                            <li>Messages d'erreur :<br>
+                                Des propriétés <code>aria-describedby</code> sont ajoutées sur champs pour les liers aux messages d'erreur associés.
+                            </li>
+                        </ul>
+                        <p><strong>Intitulé des boutons :</strong></p>
+                        <ul>
+                            <li>Un attribut <code>title</code> est ajouté sur le bouton de validation afin de préciser sa fonction.</li>
+                        </ul>
+                        <p><strong>Remplissage automatique des champs :</strong></p>
+                        <ul>
+                            <li>Des attributs <code>autocomplete</code> sont ajoutés sur les champs qui collectent des données personnelles :
+                                <ul>
+                                    <li>Nom : <code>autocomplete=&quot;family-name&quot;</code></li>
+                                    <li>Prénom : <code>autocomplete=&quot;given-name&quot;</code></li>
+                                    <li>Adresse : <code>autocomplete=&quot;street-address&quot;</code></li>
+                                    <li>Code postal : <code>autocomplete=&quot;postal-code&quot;</code></li>
+                                    <li>Ville : <code>autocomplete=&quot;address-level2&quot;</code></li>
+                                    <li>Adresse e-mail : <code>autocomplete=&quot;email&quot;</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </article>
+
+                    <hr />
+
+                    <article>
+
+                        <h2 id="exo6" tabindex="-1">Exercice 6&nbsp;: JavaScript et ARIA.</h2>
+
+                        <h3 lang="en">Disclosure</h3>
+
+                        <p>Pour le bouton "Espace privé" :</p>
+                        <ul>
+                            <li>Un <code>&lt;button&gt;</code> est utilisé à la place du <code>&lt;a&gt;</code> ;</li>
+                            <li>Les propriétés <code>aria-expanded</code> et optionnellement <code>aria-controls</code> sont ajoutées ;</li>
+                            <li>Dans le fichier <code>script.js</code>, la valeur de la propriété <code>aria-expanded</code> est mise à jour dans la fonction <code>toggleAccountMenu</code>.</li>
+                        </ul>
+
+                        <h3>Ordre de tabulation</h3>
+
+                        <p>Le contenu du sous-menu "Espace privé" est positionné dans le code source avant le bouton qui gère sa visibilité. Afin de garantir un ordre de tabulation logique, le contenu du sous-menu est déplacé après le bouton "espace privé" dans le code source.</p>
+
+                        <p>L'affichage du sous-menu "Espace privé" est géré au moyen de la propriété CSS <code>display</code> au lieu de <code>opacity</code>, évitant la tabulation sur les éléments non visibles du sous-menu lorsque le celui-ci est fermé.</p>
+                        <!-- <p>La propriété <code>tabindex=&quot;1&quot;</code> est supprimée du champ de recherche, le parcours de tabulation commence naturellement dans le bandeau des cookies.</p> -->
+
+                        <h3>Message de statut</h3>
+
+                        <p>Une propriété <code>role=&quot;status&quot;</code> est ajoutée sur l'élément qui contient la notification de prise en compte des préférences de l'utilisateur concernant les cookies (<code>#cookiesConfirm</code>).</p>
+
+                        <h3>Formulaire</h3>
+
+                        <p><strong>Focus</strong></p>
+                        <ul>
+                            <li>Après soumission du formulaire avec des erreurs, la méthode JS <code>focus()</code> est utilisée pour déplacer le focus de l'utilisateur sur le premier champ qui contient une erreur de saisie : la correction est à faire dans le fichier <code>script.js</code>, dans la fonction <code>verifyRequiredFields</code> (sous le commentaire "Don't send form").</li>
+                            <li>Après la soumission du formulaire complet, sans erreurs, la méthode JS <code>focus()</code> est utilisée pour déplacer le focus de l'utilisateur sur le texte de réussite "Votre demande a bien été reçue. Vous recevrez notre catalogue très prochainement" : la correction est à faire dans le fichier <code>script.js</code>, avant <code>successCtn.focus();</code> en ajoutant une propriété <code>tabindex="-1"</code> au passage de texte visé par la reprise de focus.</li>
+                        </ul>
+    
+                        <p></p>
+
+
+                        <h3>Fenêtre modale</h3>
+
+                        <ul>
+                            <li>Les propriétés suivantes sont ajoutées sur l'élément <code>#dialog-wrapper</code> : 
+                                <ul>
+                                    <li><code>role=&quot;dialog&quot;</code></li>
+                                    <li><code>aria-modal=&quot;true&quot;</code></li>
+                                    <li><code>aria-labelledby=&quot;dialog-title&quot;</code></li>
+                                </ul>
+                            </li>
+                            <li>Un attribut <code>tabindex=&quot;-1&quot;</code> est ajouté sur le même élément afin de permettre sa prise de focus à l'ouverture de la modale ;</li>
+                            <li>la méthode JS <code>focus()</code> est utilisée pour déplacer le focus de l'utilisateur :
+                                <ul>
+                                    <li>Sur la modale elle-même (<code>#dialog-wrapper</code>) à son ouverture ;</li>
+                                    <li>Sur le bouton <code>#btn-dialog</code> à sa fermeture.</li>
+                                </ul>
+                                La correction est à faire dans le fichier <code>script.js</code>, dans les fonctions <code>openDialog</code> et <code>closeDialog</code>.
+                            </li>
+                        </ul>
+                        
+                    </article>
+                    <hr />
+                    <article>
+                        <h2 id="exo7" tabindex="-1">Exercice 7: ARIA.</h2>
+                        <h3>Motif de conception</h3>
+                        <p>À l'aide de la grille de test "Test_DP_ARIA_grille_de_saisie-V2.0_valide", vous devez vérifier que le composant proposé est conforme au motif de conception ARIA.</p>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

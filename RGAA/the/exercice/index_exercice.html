@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Le Thé</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/styles.css"> 
+    </head>
+
+    <body>
+        <div id="cookies" class="cookies">
+            <p>Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site.</p>
+            <button class="cookies-btn cookies-yes">J'accepte</button>
+            <button class="cookies-btn cookies-no">Je refuse</button>
+        </div>
+        <div id="wrapper" tabindex="-1">
+            <nav role="navigation" aria-label="Accès rapide">
+                <a href="#main" class="skiplink">Contenu principal</a>
+            </nav>
+            <div role="banner" class="tm-header">
+                <div class="container-fluid">
+                    <div class="tm-header-inner">
+                        <a href="#" class="tm-site-name" title="Le Thé :Accueil">
+                            <img src="img/logo-le-the.png" alt="Logo du site" width="60">
+                            <span class="tm-site-name-text">Le Thé</span>
+                        </a>
+                        
+                        <div role="navigation" class="navbar" id="navbar">
+                            <button id="toggle-menu" class="navbar-toggler" aria-expanded="false" aria-controls="tm-navbar">
+                                <span aria-hidden="true">&#9776;</span>
+                                <span class="sr-only">Menu</span>
+                            </button>
+                            
+                            <div class="navbar-menu" id="tm-navbar">
+                                <ul class="nav-list">
+                                    <li class="nav-item active">
+                                        <a href="#" class="nav-link" title="Accueil - page active">Accueil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Thé vert</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Thé noir</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Thé blanc</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Autres thés</a>
+                                    </li>
+                                </ul>                        
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="underbanner">
+                    <div class="container-fluid">
+                        <div class="underbanner-inner">
+                            <div role="seach" class="search-form">
+                                <form method="POST">
+                                    <input type="text" class="search-field" title="Rechercher sur le site" placeholder="Rechercher sur le site">
+                                    <input type="submit" value="" class="search-btn" title="Lancer la recherche">
+                                </form>
+                            </div>
+                            <div class="account-nav">
+                                <ul id="private-menu" class="account-menu">
+                                    <li><a href="#">Mes favoris</a></li>
+                                    <li><a href="#">Ma liste d'envies</a></li>
+                                    <li><a href="#">Mes informations personnelles</a></li>
+                                </ul>
+                                <a id="account-btn" class="account-btn">
+                                    <span class="account-btn-text" >Espace privé</span>
+                                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                                        <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                                            <g fill-rule="nonzero">
+                                                <path d="M12,12.96 C17.49,12.96 20.57,15.56 20.68,20.28 C20.69,20.75 20.32,21.14 19.85,21.15 L19.83,21.15 L19.83,21.15 C19.37,21.15 18.99,20.78 18.98,20.32 C18.89,16.51 16.61,14.66 12,14.66 C7.39,14.66 5.1,16.51 5.02,20.32 C5.01,20.78 4.63,21.15 4.17,21.15 L4.15,21.15 L4.15,21.15 C3.68,21.14 3.31,20.75 3.32,20.28 C3.43,15.56 6.51,12.96 12,12.96 Z M12,2.45 C14.6,2.45 16.71,4.57 16.71,7.17 C16.71,9.77 14.6,11.88 12,11.88 C9.4,11.88 7.29,9.76 7.29,7.16 C7.29,4.56 9.4,2.45 12,2.45 Z M12,4.15 C10.34,4.15 8.98,5.5 8.98,7.17 C8.98,8.83 10.33,10.19 12,10.19 C13.67,10.19 15.02,8.84 15.02,7.17 C15.02,5.5 13.66,4.15 12,4.15 Z" id="Combined-Shape"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+                <div class="tm-banner-img-container"></div>
+                
+                
+            </div>
+            <div role="main" id="main" tabindex="-1" class="tm-main">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="intro col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h1 class="tm-title">Découvrez les saveurs du thé</h1>
+                            <p class="tm-subtitle">Le thé est la boisson la plus bue au monde après l'eau.
+                                Consommée depuis des milliers d'années, la plante dont elle est issue est peu connue. Découvrez les méthodes de production qui donnent au thé ses différentes couleurs.</p>
+                        </div>
+                    </div>
+
+                    <div class="row tm-margin-t-mid tm-margin-b-40">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-sm-m-b">
+                            <h2 class="tm-gold-text">Les couleurs du thé</h2>
+                            <p>Le thé est une boisson obtenue à partir de feuilles ayant des niveaux d'oxydation et de fermentation différents qui en déterminent les caractéristiques.<br>
+                                Les thés obtenus sont différenciés par leur « <b>couleur</b> ». Ainsi un thé non oxydé est appelé thé vert. Un thé oxydé est appelé thé blanc (oxydation faible), 
+                                thé Oolong ou bleu (oxydation intermédiaire) ou thé noir (oxydation complète). Enfin un thé ayant subi une fermentation est appelé thé jaune (fermentation légère) 
+                                ou thé sombre (maturation longue).</p>
+                            <p>Une fois les feuilles de thé préparées, des additifs peuvent être utilisés pour parfumer le thé avant son infusion.</p>
+                            <p>Quelques thés parfumés célèbres : </p>
+                            <p>
+                                <ul>
+                                    <li> thé au jasmin (thé vert) </li>
+                                        <li> thé à la menthe (thé vert, en général du <span lang="en">Gunpowder</span>) </li>
+                                            <li> <span lang="en">Earl Grey</span> (thé noir parfumé à l'essence de bergamote) </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <h2 class="tm-gold-text">Histoire</h2>
+                            <p>Le thé est consommé en Chine depuis l'Antiquité, puis s'est étendu au Japon et au monde arabe au IXe siècle et à l'Europe au XVIe siècle.<br>
+                                Le thé est au XXIe siècle la boisson la plus bue au monde après l'eau. Il peut prendre des formes très diverses, procurant une vaste gamme de 
+                                boissons aromatiques, gustatives ou désaltérantes, obtenues par infusion ou percolation d'eau sur diverses préparations à partir des petites 
+                                feuilles et des bourgeons du théier.
+                            </p>
+                            <p>Riche en gallocatéchol, en gallate d'épigallocatéchine, en théanine et en caféine, le thé est à la fois recherché pour son goût, ses vertus 
+                                énergisantes et relaxantes ainsi que pour ses effets positifs sur la santé dans le cas du thé vert.</p>
+                            <button id="btn-dialog" class="tm-btn">D'où vient le mot &laquo;&nbsp;thé&nbsp;&raquo; ?</button>
+                        </div>
+                    </div>
+
+                    <h2 class="tm-gold-text tm-margin-b-40">Production</h2>
+                    <div class="row tm-2-rows-sm-swap">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9 tm-2-rows-sm-down-1">
+                            <h3 class="tm-gold-text">Le théier</h3>
+                            <p>Le théier (Camellia sinensis) est un arbuste tropical originaire d'Extrême-Orient. Il alterne des phases de dormance et de croissance végétative. 
+                                Cultivé, il est maintenu dans ce dernier état afin de stimuler la croissance des bourgeons et des jeunes feuilles, qui sont la partie de la plante consommée.</p>
+                            <p>Les feuilles alternes et persistantes, ont une forme allongée, elliptique, longues de 4 à 15 cm, sur 1,5 à 7,5 cm de large. Elles sont brillantes, vert foncé, 
+                                relativement coriaces, avec une texture assez épaisse.<br>
+                                Les fleurs du théier sont blanches à jaune clair. Elles mesurent entre 2,5 et 4 cm de diamètre. Solitaires ou en petits groupes de 3 ou 4, elles comptent cinq 
+                                sépales persistants, cinq pétales, parfois plus jusqu'à 7 ou 8, de couleur jaune clair ou blanc-crème, et de très nombreuses étamines jaunes souvent soudées entre elles. 
+                            </p>
+                            <a href="#">Lire la suite</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 tm-2-rows-sm-down-2">
+                            <div class="img-block">
+                                <figure class="img-block" role="figure" aria-label="Photo 1 : Camellia sinensis var. assamica cultivé dans le jardin botanique d'Auckland.">
+                                <img src="./img/theier.jpg" alt="Photo 1">
+                                <figcaption class="img-block-text">Photo 1 : Camellia sinensis var. assamica cultivé dans le jardin botanique d'Auckland.</figcaption></figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row tm-margin-t-mid">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-sm-m-b">
+                            <h3 class="tm-gold-text">Pays producteurs</h3>
+                            <p>Le principal pays producteur est la Chine, suivie par l'Inde, le Kenya, le Sri Lanka, le Viêt Nam et la Turquie, ces six pays produisant plus de 200 000 tonnes par an.<br>
+                                La production de thé se fait essentiellement en Asie (83,4%), l'Afrique représentant 12,3% de la production de thé mondiale, tandis que l'Amérique (2,2%), l'Europe (1,9%) 
+                                et l'Océanie (0,2%) n'en produisent que marginalement.
+                            </p>
+                            <p>De 2006 à 2016, la production mondiale de thé augmente de 4,4% par an en moyenne. La croissance de la production devrait s'accélérer de 2014 à 2024, davantage pour le thé vert 
+                                (+7,7% par an) que pour le thé noir (+2,9%).</p>
+                                <a href="#">Lire la suite</a>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="table-wrapper">
+                              
+                                <table class="production-table">
+                                    <caption>Production des 10 principaux pays producteurs en 2017</caption>
+                                    <tr>
+                                        <th scope="col">Pays</th>
+                                        <th scope="col">Continent</th>
+                                        <th scope="col">Production<br>(en tonnes)</th>
+                                        <th scope="col">Superficie<br>(en hectares)</th>
+                                        <th scope="col">Rendement<br>(en hg/hectare)</th>
+                                </tr>
+                                    <tr>
+                                        <td>Chine (Taiwan inclus)</td>
+                                        <td>Asie</td>
+                                        <td>2&nbsp;473&nbsp;443</td>
+                                        <td>2&nbsp;224&nbsp;261</td>
+                                        <td>11&nbsp;120</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inde</td>
+                                        <td>Asie</td>
+                                        <td>1&nbsp;325&nbsp;050</td>
+                                        <td>621&nbsp;610</td>
+                                        <td>21&nbsp;316</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kenya</td>
+                                        <td>Afrique</td>
+                                        <td>439&nbsp;857</td>
+                                        <td>218&nbsp;538</td>
+                                        <td>20&nbsp;127</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sri Lanka</td>
+                                        <td>Asie</td>
+                                        <td>349&nbsp;699</td>
+                                        <td>233&nbsp;909</td>
+                                        <td>14&nbsp;950</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Viet Nam</td>
+                                        <td>Asie</td>
+                                        <td>260&nbsp;000</td>
+                                        <td>123&nbsp;188</td>
+                                        <td>21&nbsp;105</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Turquie</td>
+                                        <td>Asie</td>
+                                        <td>234&nbsp;000</td>
+                                        <td>82&nbsp;108</td>
+                                        <td>28&nbsp;499</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Indonésie</td>
+                                        <td>Asie</td>
+                                        <td>139&nbsp;362</td>
+                                        <td>113&nbsp;692</td>
+                                        <td>12&nbsp;257</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Myanmar</td>
+                                        <td>Asie</td>
+                                        <td>104&nbsp;743</td>
+                                        <td>88&nbsp;806</td>
+                                        <td>11&nbsp;794</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Iran</td>
+                                        <td>Asie</td>
+                                        <td>100&nbsp;580</td>
+                                        <td>15&nbsp;848</td>
+                                        <td>63&nbsp;465</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bangladesh</td>
+                                        <td>Asie</td>
+                                        <td>81&nbsp;850</td>
+                                        <td>53&nbsp;856</td>
+                                        <td>15&nbsp;197</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="contentInfo" class="tm-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-footer-form">
+                            <h2 class="tm-gold-text tm-form-title">Informations complementaires</h2>
+                            <h3 class="tm-gold-text tm-form-title">Recevez notre catalogue</h3>
+                            <div id="form-catalogue-wrapper">
+                                <p class="tm-form-description">Découvrez notre gamme de thés en demandant notre catalogue qui arrivera directement dans votre boîte aux lettres.</p> 
+                                <p>* Champs obligatoires</p>
+                                <form method="POST" class="tm-form" id="form-catalogue">                                
+                                    <div class="form-group">
+                                        <span class="form-label">Nom *</span>
+                                        <input type="text" aria-required="true" id="nom" class="form-control" aria-describedby="error-nom" autocomplete="family-name">
+                                        <p class="form-error" id="error-nom"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-label">Prénom *</span>
+                                        <input type="text" aria-required="true" id="prenom" class="form-control" aria-describedby="error-prenom  " autocomplete="given-name" >
+                                        <p class="form-error" id="error-prenom"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-label">Adresse *</span>
+                                        <textarea aria-required="true" id="adresse" class="form-control"  aria-describedby="error-adresse" autocomplete="street-address"></textarea>
+                                        <p class="form-error" id="error-adresse"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                <span class="form-label">Code postal *</span>
+                                                <input type="text" aria-required="true" id="zipcode" class="form-control"  aria-describedby="error-zipcode" autocomplete=" postal-code">
+                                                <p class="form-error" id="error-zipcode"></p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                <span class="form-label">Ville *</span>
+                                                <input type="text" aria-required="true" id="ville" class="form-control" autocomplete="address-level2" aria-describedby="error-ville">
+                                                <p class="form-error" id="error-ville"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                        <legend>Je souhaite recevoir un échantillon gratuit avec mon catalogue:</legend>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6 col-xl-3">
+                                                <div class="form-group">
+                                                    <input type="radio" id="the-vert" name="echantillon" class="form-control">
+                                                    <span class="form-label">Thé vert</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6 col-xl-3">
+                                                <div class="form-group">
+                                                    <input type="radio" id="the-noir" name="echantillon" class="form-control">
+                                                    <span class="form-label">Thé noir</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6 col-xl-3">
+                                                <div class="form-group">
+                                                    <input type="radio" id="the-blanc" name="echantillon" class="form-control">
+                                                    <span class="form-label">Thé blanc</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6 col-xl-3">
+                                                <div class="form-group">
+                                                    <input type="radio" id="the-aucun" name="echantillon" class="form-control">
+                                                    <span class="form-label">Aucun</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                    <div class="form-group" id="newsletter-form-group">
+                                        <input type="checkbox" id="newsletter" class="form-control" checked="checked">
+                                        <span class="form-label">Je souhaite également recevoir la <span lang="en">newsletter</span></span>
+                                    </div>                         
+                                    <div class="form-group" id="email-form-group">
+                                        <label class="form-label" for="email">Adresse e-mail *</label>
+                                        <!--  Exercice 5 : Le format attendu du champ e-mail est transmis par un texte visible.
+                                            L'information est également liée au champ au moyen d'une propriété aria-describedby définie sur le champ, et dont la valeur reprend au moins l'id du texte. -->
+                                        <p class="form-format" id="format-email">Format attendu : nom@domaine.com</p>
+                                        <input type="email" aria-required="true" id="email" class="form-control" aria-describedby="format-email error-email note-email" autocomplete="email">
+                                        <p class="form-error" id="error-email"></p>
+                                        <!--  Exercice 5 : Cette information est liée au champ au moyen d'une propriété aria-describedby définie sur le champ, et dont la valeur reprend au moins l'id du texte. -->
+                                        <p class="form-note" id="note-email">Nous nous engageons à ne pas communiquer pas votre adresse e-mail à des tiers.</p>
+                                    </div>
+                                    <button type="submit" class="tm-btn form-group" id="form-submit" title="Envoyer le catalogue à cette adresse postale">Envoyer</button>
+                                   
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-footer-links">                    
+                            <div class="row tm-footer-links-row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <h3 class="tm-gold-text tm-title">Retrouvez-nous sur notre boutique en ligne</h3> 
+                                    <ul class="links-list">
+                                        <li><a href="#" class="tm-text-link">Nos thés verts</a></li>
+                                        <li><a href="#" class="tm-text-link">Nos thés noirs</a></li>
+                                        <li><a href="#" class="tm-text-link">Nos thés blancs</a></li>
+                                        <li><a href="#" class="tm-text-link">Nos thés Oolong</a></li>
+                                        <li><a href="#" class="tm-text-link ">Nos thés sombres<span class="new">Nouveau</span></a></li>
+                                        <li><a href="#" class="tm-text-link ">Le matcha<span class="new">Nouveau</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">                            
+                                    <h3 class="tm-gold-text tm-title">Liens utiles</h3>
+                                    <ul class="links-list">
+                                        <li><a href="#" class="tm-text-link">Accessibilité: totalement conforme</a></li>
+                                        <li><a href="#" class="tm-text-link">Aide et contact</a></li>
+                                        <li><a href="#" class="tm-text-link">Plan du site</a></li>
+                                        <li><a href="#" class="tm-text-link">Conditions générales de vente</a></li>
+                                        <li><a href="#" class="tm-text-link">Mentions légales</a></li>
+                                        <li><a href="#" class="tm-text-link">Protection des données</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <h3 class="tm-gold-text tm-title">Retrouvez-nous sur les réseaux sociaux</h3>
+                                    <ul class="links-list social-links">
+                                        <li><a href="#" class="social-link-fb"><span class="sr-only">="Facebook"></span></a></li>
+                                        <li><a href="#" class="social-link-tw"><span class="sr-only">"Twitter"></span></a></li>
+                                        <li><a href="#" class="social-link-inst"><span class="sr-only">="Instagram"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <h3 class="tm-gold-text tm-title">Visitez notre salon de thé</h3>
+                                    <p>14 Rue du camphrier<br>
+                                        76000 Rouen</p>
+                                    <img src="img/salon.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-copyright">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <p class="tm-copyright-text">Copyright 2022 Access42</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <p class="tm-wiki-text"><a href="https://fr.wikipedia.org/wiki/Th%C3%A9" target="_blank">Article extrait et adapté de Wikipédia</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cookies" class="cookies">
+                <p>Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site.</p>
+                <button class="cookies-btn cookies-yes">J'accepte</button>
+                <button class="cookies-btn cookies-no">Je refuse</button>
+            </div>
+        </div>
+
+        <div id="dialog-wrapper" class="dialog-wrapper" role="dialog" aria-modal="true" aria-labelledby="dialog-title" tabindex="-1"style="display: none;">
+            <button id="dialog-close-btn" class="dialog-close-btn"><span class="sr-only">Fermer</span></button>
+            <h1 id="dialog-title" class="dialog-title">Étymologie</h1>
+            <p>Le sinogramme pour le mot &laquo;&nbsp;thé&nbsp;&raquo; a de nombreuses prononciations suivant les langues et dialectes : 
+                &laquo;&nbsp;chá&nbsp;&raquo; en mandarin et dans d'autres langues du nord et du sud-ouest de la Chine, comme le cantonais ;
+                et &laquo;&nbsp;te&nbsp;&raquo; dans les langues du groupe minnan, parlées dans le <a href="https://fr.wikipedia.org/wiki/Fujian" target="_blank">Fujian</a>.
+                Le mot désignant le thé dérive, dans presque toutes les langues du monde, de l'une ou l'autre de ces prononciations.</p>
+                <p>La prononciation &laquo;&nbsp;chá&nbsp;&raquo; s’est diffusée dans les régions traversées par les caravanes de la <a href="https://fr.wikipedia.org/wiki/Route_de_la_soie" target="_blank">
+                    route de la soie</a> terrestre (Afghanistan, Russie, Asie Centrale, Turquie, Iran, Moyen Orient, Tibet, Japon). De cette prononciation dérive notamment 
+                    le terme &laquo;&nbsp;chai&nbsp;&raquo;, très courant en Eurasie.</p>
+                <p>La prononciation &laquo;&nbsp;te&nbsp;&raquo;, elle, s'est diffusée aux Pays d'Europe par la route maritime suivie par les navires Hollandais partant de la région d'Amoy,
+                    et aux autres pays qui ont connu cette boisson par eux.</p>
+        </div>
+        <!-- Cet élément permet de détecter lorsque le focus sort de la fenêtre modale. Il n'est rendu disponible qu'à l'ouverture de celle-ci. -->
+        <span id="outside-dialog" tabindex="0" style="display: none;"></span>
+
+        <!-- Notification consentement cookies -->
+        <div id="cookiesConfirm">
+            <p class="cookiesConfirmText"></p>
+        </div>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+
+</html>
