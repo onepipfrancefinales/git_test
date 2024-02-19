@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="fr">
+<head>
+    <link type="text/css" rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+
+        <h1>Attribut aria-describe</h1>
+    </header>
+    <main>
+        <script>
+            var list = document.querySelector( '[role="tablist"]' );
+            var tablist = new Tablist( list );
+            
+            // il est possible d'ajouter des écouteurs sur l'ouverture et la fermeture des onglets
+            tablist.on( 'show', function( tab, tabPanel ){
+            });
+            
+            tablist.on( 'hide', function( tab, tabPanel ){
+            
+            });
+            
+            // démarage du plugin
+            tablist.mount();
+            </script>
+        <ul role="tablist">
+            <li role="tab" aria-controls="panneau-1">Onglet n<sup>o</sup> 1</li>
+            <li role="tab" aria-controls="panneau-2">Onglet n<sup>o</sup> 2</li>
+            <li role="tab" aria-disabled="true" aria-controls="panneau-3">Onglet n<sup>o</sup> 3</li>
+            <li role="tab" aria-controls="panneau-4">Onglet n<sup>o</sup> 4</li>
+          </ul>
+          
+          <div role="tabpanel" id="panneau-1">
+            <p>---</p>
+          </div>
+          <div role="tabpanel" id="panneau-2">
+            <p>---</p>
+          </div>
+          <div role="tabpanel" id="panneau-3">
+            <p>---</p>
+          </div>
+          <div role="tabpanel" id="panneau-4">
+            <p>---</p>
+          </div>
+       
+</main>
+</body>
+<footer>
+
+</footer>
+</html>

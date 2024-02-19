@@ -34,18 +34,22 @@ infosclub($chaine, $bdd);
 nomLigue ($numLigue, $bdd);
 affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($code, $bdd);
-saisons($code, $bdd);
+saisons($code,$annee, $bdd);
 ?>
 
 
 
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC >
+<html lang="fr">
+
 	<head>
+<link rel= "canonical" href= "https://francefinalesrugby.fr/consultation/00pageclub00.php/" />
+<meta charset="utf-8" />
 <meta name="description"
-content=" <?php echo $titre;?> : Présentation du club (Bureau; Siège; Stade; Contacts); les grandes du dates du club; les palmarès; les résultats du clubs au cours des dernières saisons et un album photos dédié au club..">
+content=" <?php echo $titre;?> : Prï¿½sentation du club (Bureau; Siï¿½ge; Stade; Contacts); les grandes du dates du club; les palmarï¿½s; les rï¿½sultats du clubs au cours des derniï¿½res saisons et un album photos dï¿½diï¿½ au club..">
 <meta name="keywords"
-content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitï¿½
+ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">

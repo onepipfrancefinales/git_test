@@ -65,7 +65,7 @@ echo "nbre de matchs : ".$nbreDeMatchs; echo "<br />";
 
 /***********************************/
 
-for ($i = 0; $i < $nbreDeMatchs ; $i++) {
+for ($i = 0; $i < 7 ; $i++) {
 
 //echo "date FR : ".$date_reelle[$i];echo "<br />";
 
