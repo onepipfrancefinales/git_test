@@ -190,21 +190,21 @@ structureLigue($idLigue, $bdd);
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td class="texte18">Régional 1 : </td>
-    <td class="texte18"> <?php if($d170 > 0) echo $d171;?></td>
+    <td class="texte18"> <?php if($d170 > 0) echo $d170;?></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
     <td class="texte18">Régional 2 : </td>
-    <td class="texte18">  <?php if($d180 > 0) echo $d181;?></td>
+    <td class="texte18">  <?php if($d180 > 0) echo $d180;?></td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td colspan="4" bgcolor="#FFFFFF"></td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td class="texte18">Régional 3 :</td>
-    <td class="texte18"><?php if($d190 >0) echo $d191;?> </td>
+    <td class="texte18"><?php if($d190 >0) echo $d190;?> </td>
   </tr>
  
   <tr> 
@@ -397,13 +397,13 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
  
 
 <h3>R&eacute;gionale 1 :</h3>
- <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 171, $bdd);?></p> 
+ <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 170, $bdd);?></p> 
  
  <h3>R&eacute;gionale 2 :</h3> 
-<p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 181, $bdd);?></p>
+<p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 180, $bdd);?></p>
 
 <h3>R&eacute;gionale 3 :</h3> 
- <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 191, $bdd);?></p>
+ <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 190, $bdd);?></p>
 
 <h3>Equipes f&eacute;minines :</h3>
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "F", 281, $bdd);?></p> 
@@ -415,7 +415,7 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 <hr /><hr />
 <h3>Que sont ils devenus ? : </h3>
 <p> 
-  <?php// require ("../connect1/connection1.php") ;?>
+  <?php // require ("../connect1/connection1.php") ;?>
   <?php
 
 //$query = "	SELECT bdsaisons.id, bdclubs.nom_1, bdclubs.url, bdclubs.logo, bdclubs.url, bdclubs.fusion 

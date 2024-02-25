@@ -13,10 +13,11 @@ $CMT="IDF";
 $cmt="idf";
 $comiteNom="Ile de France";
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
 <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_idf.php/" />
+<meta charset="utf-8" />
  <link type="text/css" rel="stylesheet" href="../Phpleague/phpidf/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

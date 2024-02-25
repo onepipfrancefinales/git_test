@@ -14,10 +14,11 @@ $CMT="BG";
 $cmt="bg";
 $comiteNom="Bourgogne";?>
   
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
 <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_bfc.php/" />
+<meta charset="utf-8" />
   <link type="text/css" rel="stylesheet" href="../Phpleague/phppl/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

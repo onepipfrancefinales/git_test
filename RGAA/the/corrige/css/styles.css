@@ -271,7 +271,7 @@ caption {
 
 .nav-list .nav-item {
 	display: block;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #0b0404;
 }
 
 /* Exercice 4 : Pas de hauteur fixe ni d'overflow afin de ne pas causer de problèmes de lisibilité lors de la personnalisation des espacements de texte */

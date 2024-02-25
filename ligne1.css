@@ -1,4 +1,6 @@
+
 td{text-align:center;}
+
 .celluleNoire{font-family: arial;font-size: 16px;background-color:#000000;font-weight: Bold;}
 .celluleGrise{background-color:#333333;font-size: 16px;font-family: arial;font-weight: Bold;}
 .none a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 19px;  height:28;}
@@ -41,9 +43,37 @@ td.azeLigue{width: 1px;	height: 1px;}
 img{border:0;}
 
 /*logo ligue*/
+.colorTexte{
+    color:#000000;
+    font-size: 20px;
+}
+.alignementCentre{
+    text-align: center;
+}
+.alignementGauche{
+    text-align: left;
+}
+.alignementDroite{
+    text-align: right;
+}
+.backgroundRouge{
+    background-color: #FF0000;
+}
+.backgroundBleu{
+    background-color: #006699;
+}
+.backgroundBlanc{
+    background-color: #FFFFFF;
+}
 
-
-
+.styleTitre{
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 23px;
+    font-style: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 
 
 

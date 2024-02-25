@@ -15,13 +15,14 @@ $champLigue=10;
 $sigleLigue="(ARA)";
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
 <meta name="google-adsense-account" content="ca-pub-9177538664500260">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
      <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_ara_reg3.php/" />
+     <meta charset="utf-8" />
   <link type="text/css" rel="stylesheet" href="../Phpleague/phpau/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

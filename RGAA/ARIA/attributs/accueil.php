@@ -1,18 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="fr">
-<meta charset="utf-8" />
+
 
 <head>
-
-
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/RGAA/styleCss.css"> 
 </head>
+
+
 
 <body>
     <header>
-        <h1>Attribut aria-label, aria-labelledby et aria-describedby </h1>
-
+        <h1>Accueil Balises ARIA :  </h1>
+        <?php require '../../onglets.php'; ?>
     </header>
     <main role="main" id="main" tabindex="-1">
+1/ balises
+
+    <ul>
+<li> <li class="nav-item"><a href="aria-label.php" class="nav-link">aria-label</a></li>
+<li> <li class="nav-item"><a href="aria-labelledby.php" class="nav-link">aria-labelledby</a></li>
+<li> <li class="nav-item"><a href="aria-describe.php" class="nav-link">aria-describe</a></li>
+
+ </ul>
+
+2/ role
+
+
+
         <h2>1 - Définition</h2>
     <!-- 
         <p> aria-label, aria-labelledby permettent de donner un nom accessible à un élément ,  est destiné à être utilisé sur des éléments interactifs</p>
@@ -49,7 +64,7 @@
 
         <h3>2-4 Attribut aria-describedby</h3>
         <div><p id="titre">Code de la page de formulaire de connexion</p> </div>
-        <div> <button type="button" aria-label="accéder au code HTML" aria-describedby="blabla bla titre">test RGAA</buttton></div>
+        <div> <button type="button"  aria-describedby="blabla bla titre">test RGAA</buttton></div>
         <div><p aria-hidden="true"> Sortie pour un lecteur d'écran : Bouton "Accéder au code HTML code de la page de formulaire de connexion"</p></div>
 
         <h3>2-5 Attribut aria-describedby et aria-label</h3>
@@ -133,13 +148,13 @@
         <input type="text" id="name" name="name" aria-invalid="true" aria-labelledby="erreur-email">
         <p id="erreur-email">Le format attendu n'est pas correct.</p>
     -->
-        <div><a href="../accueil.html">revenir à la page d'accueil</a> </div>
+        <div><a href="../accueil.php">revenir à la page d'accueil</a> </div>
         <p>Lecteur d'é;cran : "visitez lien revenir à la page d'accueil" </p>
 
     </main>
 </body>
 <footer role="contentinfo">
-
+<?php require '../piedPage.php'; ?>
 </footer>
 
 </html>

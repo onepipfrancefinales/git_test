@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
+
 <?php
 require '../../saison.php';
 if (isset($_GET['idLigue'])) $idLigue = $_GET['idLigue']; else $idLigue=0;
@@ -10,8 +9,11 @@ $sigleLigue = substr ($sigleLigue,-4,3);
 nomLigue($idLigue, $sigleLigue, $bdd);
 ?>
 
-
+<!DOCTYPE html PUBLIC>
+<html lang="fr">
 <head>
+<link rel= "canonical" href= "https://francefinalesrugby.fr/palmares/palmTerritorial/tableauPalmReg.php?sigleLigue=<?php echo $ $sigleLigue;?>" />
+<meta charset="utf-8" />
 <link type="text/css" rel="stylesheet" href="../../ligne1.css"/>
 <link type="text/css" rel="stylesheet" href="palmaresTerr.css"/>
 <title> Champions R&eacute;gionauxx <?php echo $nomLigue; ?></title>

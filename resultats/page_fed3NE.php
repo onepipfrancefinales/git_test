@@ -15,7 +15,7 @@ $division = 160;
 $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 ?> 
 
-<!DOCTYPE html>       
+<!DOCTYPE html PUBLIC>       
 <html lang="fr">
 <head>
 <meta charset="utf-8" />
@@ -33,6 +33,7 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 </script>
 -->
 <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_fed3NE.php/" />
+
  <link type="text/css" rel="stylesheet" href="../Phpleague/phpfed3NE/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

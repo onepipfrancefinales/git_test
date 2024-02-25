@@ -18,7 +18,7 @@ $CMT = "AB";
 $comiteNom = "Occitanie"; ?>
 
 
-<!doctype html>
+<!doctype html PUBLIC>
 <html lang="fr">
 
 <head>
@@ -26,6 +26,7 @@ $comiteNom = "Occitanie"; ?>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
      <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_occ_reg1.php/" />
+     <meta charset="utf-8" />
   <link type="text/css" rel="stylesheet" href="../Phpleague/phpab/league.css" />
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

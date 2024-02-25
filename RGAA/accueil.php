@@ -1,9 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="fr">
-<meta charset="utf-8" />
+
 
 <head>
+    <meta charset="utf-8" />
     <title>R&eacute;f&eacute;rentiel G&eacute;n&eacute;ral d'Am&eacute;lioration de Accessililit&eacute;</title>
+    <link rel="stylesheet" href="styleCss.css"> 
 </head>
 
 <body>
@@ -12,29 +14,16 @@
 
     </header>
     <main>
+
+      
+        
         <div>
             <h1>R&eacute;f&eacute;rentiel G&eacute;n&eacute;ral d'Am&eacute;lioration de Accessililit&eacute; </h1>
         </div>
         <div>
             <h4> Balises ARIA</h4>
             <p> ce site est g&eacute;nial, venez nombreux</p>
-            <table>
-                <tt>
-                <td><a href="attributs_ARIA/aria-label.html" aria-label="consulter l'attribut aria-label">acceder
-                        &agrave; l'attribut aria-label</a></td>
-                <td><a href="attributs_ARIA/aria-labelledby.html">acceder &agrave; l'attribut aria-labelledby</a></td>
-                <td><a href="attributs_ARIA/aria-describe.html" aria-label="consulter l'attribut aria-describe">acceder
-                        &agrave; l'attribut aria-describe</a></td>
-                <td><a href="Formulaires/Formulaires1.html">Formulaires</a> </td>
-                </tr>
-                <tr>
-                <td><a href="Multimedia/Multimedia1.html">Multimédia</a> </td>
-                <td><a href="Navigation/Navigation1.html">acceder &agrave; Elements Obligatoires</a></td>
-                <td><a href="NormesReferentiels/ElementsObligatoires.html">Normes et réferentiels</a></td>
-                <td><a href="SemantiqueStructuration/ElementsObligatoires.html">acceder &agrave; Elements
-                        Obligatoires</a></td>
-                </tr>
-            </table>
+            <div>  <?php require 'onglets.php';?></div> 
 
 
 
@@ -66,9 +55,11 @@
             <a href="https://francefinalesrugby.fr" aria-label=" visiter le site france ">suivant aussi</a>
         </div>
     </main>
+    
 </body>
 <footer>
-
+    <?php
+require 'piedPage.php'; ?>
 </footer>
 
 </html>

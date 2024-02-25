@@ -236,8 +236,8 @@ function rechercheInfosComites($sigle, $bdd)
 // Récuperer l'ensemble des éléments présents dans la table bdligue
 function rechercheInfosLigues($idLigue, $bdd)
 {
- if (isset($comite5)) $comite5 = $comite5;
- if (isset($comite6)) $comite6 = $comite6;	
+
+
 	
  global $idLigue, $nomLigue, $sigleLigue, $nbreFeminines, $nbreFemininesJeunes,	$nbreSeniors ,	$nbreJeunes ,$nbreDirigeants ,
 	   $nbreClubs,	$president ,$batiment ,	$adresse ,	$cp , $ville , $site ,  $tel , $fax  ,
@@ -299,9 +299,9 @@ function nomLigueParSigleLigue($sigleLigue ,$bdd)
 // indiquer le nombre de clubs par divisions avec un id d'une ligue passé en paramétre 
 function structureLigue($idLigue, $bdd)
 {	
- global $d110,$d120,$d130,$d135,$d140,$d150,$d160,$d171,$d181,$d191;	
+ global $d110,$d120,$d130,$d135,$d140,$d150,$d160,$d170,$d180,$d190;	
 	
- $tabDivision = array('110','120','130','135','140','150','160','171','181','191');
+ $tabDivision = array('110','120','130','135','140','150','160','170','180','190');
  $nbre = array();
  $tabNbre = array();
  foreach($tabDivision as $division) 
@@ -321,9 +321,9 @@ function structureLigue($idLigue, $bdd)
 	$d140 = $tabNbre[4];
 	$d150 = $tabNbre[5];
 	$d160 = $tabNbre[6];
-	$d171 = $tabNbre[7];
-	$d181 = $tabNbre[8];
-	$d191 = $tabNbre[9];
+	$d170 = $tabNbre[7];
+	$d180 = $tabNbre[8];
+	$d190 = $tabNbre[9];
 	
 }
 ?>

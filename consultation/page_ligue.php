@@ -8,12 +8,16 @@ rechercheInfosLigues($idLigue, $bdd);
 ?>
 
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
+<html lang="fr">
 <head>
+<link rel= "canonical" href= "https://francefinalesrugby.fr/consultation/page_ligue.php/" />
+<meta charset="utf-8" />
 	<meta name="description"
-	content="Tout sur le comitÈ territorial <?php echo $nomComite;?> : PrÈsentation du comitÈ (Bureau; adresse; contact mel; contact site officiel du comitÈ); les effectifs; les palmarËs nationaux; les palmarÈs territoriaux et l'ensemble des clubs composant le comitÈ avec un lien pour accÈder aux diffÈrents clubs.">
+	
+	content="Tout sur le comit√© territorial <?php echo $nomComite;?> : Pr√©sentation du comit√© (Bureau; adresse; contact mel; contact site officiel du comitÔøΩ); les effectifs; les palmarÔøΩs nationaux; les palmarÔøΩs territoriaux et l'ensemble des clubs composant le comitÔøΩ avec un lien pour accÔøΩder aux diffÔøΩrents clubs.">
 	<meta name="keywords"
-	content="comitÈ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,FranÁaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+	content="comit√© Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,FranÔøΩaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 	<meta name="classification" content="Sport,Rugby">
 	<meta name="resource-type" content="document">
 	<meta name="copyright" content="Comite Midi Pyrenees de Rugby">

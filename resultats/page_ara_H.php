@@ -14,9 +14,10 @@ $cmt2="ara";
 $comiteNom="du lyonnais";
 $forum = 7;
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
+<meta charset="utf-8" />
   <link rel= "canonical" href= "https://www.francefinalesrugby.resultats/page_ara_reg1.php " />
   <link type="text/css" rel="stylesheet" href="../Phpleague/phpau/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">

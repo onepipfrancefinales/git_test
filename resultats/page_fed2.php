@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="fr">
 <?php 
 session_start ();
@@ -18,6 +18,7 @@ $comiteNom="F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";
 
 <head>
 <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_fed2.php/" />
+<meta charset="utf-8" />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,6 +32,7 @@ $comiteNom="F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";
   gtag('config', 'G-G7CSSC3EPH');
 </script>
 -->
+<meta charset="utf-8" />
  <link type="text/css" rel="stylesheet" href="../Phpleague/phppro/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

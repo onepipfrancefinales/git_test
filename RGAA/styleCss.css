@@ -1,0 +1,23 @@
+
+.nav-list {
+    display: flex;
+    background-color: rgb(221, 242, 162);
+}
+
+.nav-list .nav-item {
+	display: block;
+	border-bottom: 1px solid #0b0404;
+}
+
+
+.nav-list .nav-link {
+	display: block;
+	padding: 10px 40px;
+	border: none;
+	color: rgb(5, 3, 3);
+}
+
+.nav-item {
+	display: block;
+	border-bottom: 1px solid #0f0303;
+}

@@ -154,11 +154,11 @@ promotion honneur 1serie
 if ($sigle == "(BG)" or $sigle == "(N)")
 {
 ?>
-<h3>Honneur ou Pr&eacute;-f&eacute;d&eacute;rale :</h3>
+<h3>Régionale 1 :</h3>
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 170, $bdd);?></p> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 171, $bdd);?></p> 
  
- <h3>Promotion honneur ou R&eacute;gionale 1 :</h3> 
+ <h3>Régionale 2 :</h3> 
 <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 180, $bdd);?></p>
 <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 181, $bdd);?></p>
 
@@ -194,15 +194,15 @@ elseif ($sigle == "(AL)")
 else
 {
 ?>
- <h3>Honneur ou Pr&eacute;-f&eacute;d&eacute;rale :</h3>
+ <h3>Régionale 1 :</h3>
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 170, $bdd);?></p> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 171, $bdd);?></p> 
 
- <h3>Promotion honneur ou R&eacute;gionale 1 :</h3> 
+ <h3>Régionale 2 :</h3> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 180, $bdd);?></p>
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 181, $bdd);?></p>
  
- <h3>1re / 2me S&eacute;rie ou R&eacute;gionale 2 :</h3> 
+ <h3>Régionale 3 :</h3> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 190, $bdd);?></p>
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 191, $bdd);?></p>
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 200, $bdd);?></p>

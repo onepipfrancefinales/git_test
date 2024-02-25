@@ -33,10 +33,11 @@ traitementDesScores($equipe, $phpComite, $bdd);
 ?>
 
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
-
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/bilan/page_bilan.php/" />
+<meta charset="utf-8" />
   
   <link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/league.css"/>
   <link type="text/css" rel="stylesheet" href="bilan.css">
