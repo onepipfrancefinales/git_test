@@ -15,16 +15,49 @@
         <?php require '../../onglets.php'; ?>
     </header>
     <main role="main" id="main" tabindex="-1">
-1/ balises
+
+
+
+
+    <h2>  Définition ARIA </h2>
+
+
+Accessible Rich Internet Applications (ARIA) (qu'on pourrait traduire par « applications internet riches et accessibles ») 
+est un ensemble de rôles (en-US) et d'attributs d'attributs qui définissent comment rendre le contenu et 
+les applications web accessibles (notamment ceux développés avec JavaScript) pour les personnes avec des handicaps.
+
+ARIA complète HTML afin que les éléments interactifs et les widgets puissent être utilisés par 
+les outils d'assistance quand les fonctionnalités standard ne le permettent pas. Ainsi, 
+ARIA permet de rendre accessible les widgets JavaScript, les indications dans les formulaires, 
+les messages d'erreur et les mises à jour dynamiques du contenu, etc.
+
+    <h2>  Les attributs </h2>
 
     <ul>
 <li> <li class="nav-item"><a href="aria-label.php" class="nav-link">aria-label</a></li>
 <li> <li class="nav-item"><a href="aria-labelledby.php" class="nav-link">aria-labelledby</a></li>
 <li> <li class="nav-item"><a href="aria-describe.php" class="nav-link">aria-describe</a></li>
+<li> <li class="nav-item"><a href="aria-expanded.php" class="nav-link">aria-expanded</a></li>
+<li> <li class="nav-item"><a href="aria-hidden.php" class="nav-link">aria-hidden</a></li>
+<li> <li class="nav-item"><a href="aria-required.php" class="nav-link">aria-required</a></li>
+<li> <li class="nav-item"><a href="aria-modal.php" class="nav-link">aria-modal</a></li>
+<li> <li class="nav-item"><a href="aria-autocomplete.php" class="nav-link">aria-autocomplete</a></li>
+
 
  </ul>
 
-2/ role
+ <h2> 2/ Les roles </h2>
+
+
+    banner (document <header>)
+    complementary (<aside>)
+    contentinfo (document <footer>)
+    form (<form>)
+    main (<main>)
+    navigation (<nav>)
+    region (<section>)
+    search (<search>)
+
 
 
 
