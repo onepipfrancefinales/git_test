@@ -1,4 +1,120 @@
 
+/****Zones de la page *****/
+
+.center {
+	margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  border-color: #0b0404;
+  border:solid;
+}
+
+surligner {
+
+text-decoration-color :#9966FF;
+
+}
+
+.container1 {
+	vertical-align: auto;
+	margin: 1px;
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+	background-color:#FF9900;
+	float:left;
+
+}
+.container2 {
+	vertical-align: auto;
+	margin: 1px;
+	background-color:#ff00bf;
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+	float:left;
+	
+}
+.container3 {
+	margin: 1px;
+	align-content: center;
+	background-color:#00ff37;
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+	float:left;
+	clear:both;
+
+}
+.container4 {
+	margin: 1px;
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+	float:left;
+	background-color:#6600ff;
+}
+
+.block1 {	
+	font-size: 25px;
+	text-align:center;
+	font-weight: bold;
+	vertical-align: auto;
+
+}
+.block2 {
+	font-size: 25px;
+	text-align:center;
+	font-weight: bold;
+	vertical-align: auto;
+	
+
+	
+}
+.block3 {
+	font-size: 25px;
+	text-align:center;
+	
+		
+}
+.block4 {
+	font-size: 25px;
+	text-align:center;
+	
+}
+
+.entete {
+	background-color:#FF9900;
+	text-align:center;
+	}
+
+.main {
+	max-width:1500px;
+	margin:auto;
+	}
+
+.menu  {
+	float:left;
+	width:300px;
+	background-color:#FF3366;
+	}
+
+.contenu {
+	margin-left:245px;
+	background-color:#9966FF;
+	}
+
+.footer {
+	background-color:#669933;
+	text-align:center;
+	clear:both;
+	}
+
+.test {
+	color: red;
+	size: 25p
+}
+
 .nav-list {
     display: flex;
     background-color: rgb(221, 242, 162);
@@ -21,3 +137,4 @@
 	display: block;
 	border-bottom: 1px solid #0f0303;
 }
+

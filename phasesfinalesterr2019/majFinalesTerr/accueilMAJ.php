@@ -32,7 +32,7 @@
     </td>
     <td height="25" colspan="3" valign="middle" align="center"><b><font face="Arial, Helvetica, sans-serif" size="5" color="#FF0000"><?php // $annee=$_POST['annee']; 
 //******** changement de date ********
-$annee=2023;
+$annee=2024;
 echo $annee; ?></font></b></td>
   </tr>
   <tr> 

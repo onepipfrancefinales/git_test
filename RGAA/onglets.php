@@ -1,4 +1,4 @@
-<div class="navbar-menu" >
+<div class="entete navbar-menu " >
     <ul class="nav-list">
          <li class="nav-item"><a href="/RGAA/ARIA/attributs/accueil.php" aria-label="consulter l'attribut aria-label" class="nav-link">ARIA
             </a></li>

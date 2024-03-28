@@ -1,10 +1,13 @@
-<html>
+<!DOCTYPE html PUBLIC>
+<html lang="fr">
   <head>
+  <meta charset="utf-8" />
+  <title>Phases finales r√©gionales</title>
  <link rel="stylesheet" type="text/css" href="../pf/AA2.css"> 
  <link rel="stylesheet" type="text/css" href="../10.css">
  <link type="text/css" rel="stylesheet" href="../pf/paramTiroir.css"> 
-<meta name="description" content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitÈs territoriaux, Tous les championnats de rugby, fÈdÈrale 2, fÈdÈrale 3, fÈdÈrale 1, top 14.">
-<meta name="keywords" content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,FranÁaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
+<meta name="description" content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitÔøΩs territoriaux, Tous les championnats de rugby, fÔøΩdÔøΩrale 2, fÔøΩdÔøΩrale 3, fÔøΩdÔøΩrale 1, top 14.">
+<meta name="keywords" content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,FranÔøΩaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -38,7 +41,7 @@ nomLigue2($bddComite, $champ, $bdd);
 //$bdcomiteClub=("php".''.$comite.''."_clubs");
 //$bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
 $bdcomite_pfterr=("php".''.$bddComite.''."_pfterr_e");
-//---------------RÈcuperation du type dans la base--------------
+//---------------R√©cuperation du type dans la base--------------
 
 require ("../../connect/connexion6.php") ; 
 
@@ -55,8 +58,10 @@ require ("../../connect/connexion6.php") ;
 //-----------------         Affichage       --------------- 
 //---------------------------------------------------------
 ?>
+
+
 <div class="fixed-header">
- <div class="container">
+<div class="container">
 
  <?php
 
@@ -76,12 +81,15 @@ require ("../../connect/connexion6.php") ;
 	require ("../../phasesfinalesterr2019/fonctionspfterrESDL2019.php");
 	
 	
+	
 	if ($type==1)
 	{			
 		finale2019 ($comite, $division, $annee, $bdd);
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 		require ("test1.php");
-	}	
+	}
+	
+	
 //***************     Demi finale - Finale ******************
     elseif ($type==2)
 	{			
@@ -95,8 +103,10 @@ require ("../../connect/connexion6.php") ;
 		demiAR2019 ($comite, $division, $annee, $bdd);
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 		require ("test3.php");		
-	}			
-//*********** Barrages(8 Èquipes)- Quarts - Demi - Finale   ***
+	}	
+	
+	
+//*********** Barrages(8 √©quipes)- Quarts - Demi - Finale   ***
     elseif($type==13)
 	{	
 		quartsPlusBarrages2019 ($comite, $division, $annee, $bdd);
@@ -112,6 +122,8 @@ require ("../../connect/connexion6.php") ;
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 		require ("test14.php");		
 	}	
+
+	
 //**************  QuartsAR - DemiAR - Finale   ******************
     elseif($type==15)
 	{
@@ -120,16 +132,18 @@ require ("../../connect/connexion6.php") ;
 		afficheLieux ($division, $annee, $comite, $bdd);
 		require ("test15.php");
 	}	
-//*************Seizieme -  HuitiËme -Quarts - Demi - Finale   *****
-    elseif($type==16)
+//*************Seizieme -  Huiti√®me -Quarts - Demi - Finale   *****
+ 
+elseif($type==16)
 	{		  
 		seizieme2019 ($comite, $division, $annee, $bdd);
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 		afficheLieux ($division, $annee, $comite, $bdd);
 		traitementScores (1601, 1632, $bdd);
 		require ("test16.php");
-	}	
-// **************Barrages - HuitiËme -Quarts - Demi - Finale ****
+	}
+	
+// **************Barrages - Huiti√®me -Quarts - Demi - Finale ****
     elseif($type==17)
 		{
 		huitiemeEtBarrages2019 ($comite, $division, $annee, $bdd);
@@ -137,8 +151,10 @@ require ("../../connect/connexion6.php") ;
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 		require ("test17.php");
 		}
-//  ***************** HuitiËme -Quarts - Demi - Finale  **********
-	elseif($type==18)
+//  ***************** Huiti√®me -Quarts - Demi - Finale  **********
+	
+
+elseif($type==18)
 		{
 		huitieme2019($comite, $division, $annee, $bdd);
 		afficheLieux($division, $annee, $comite, $bdd);
@@ -148,7 +164,9 @@ require ("../../connect/connexion6.php") ;
 		traitementScores (2001,2004, $bdd);
 		require ("test18.php");		
 		}
-//  ***************** HuitiËme AR-Quarts - Demi - Finale  **********
+
+		
+//  ***************** Huiti√®me AR-Quarts - Demi - Finale  **********
 	elseif($type==19)
 		{
 		afficheLieux ($division, $annee, $comite, $bdd);

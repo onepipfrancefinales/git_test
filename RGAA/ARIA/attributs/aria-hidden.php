@@ -13,6 +13,13 @@
     <?php require '../../onglets.php'; ?>
     </header>
     <main>
+
+    <div class="main">
+    <div class="menu">
+    <?php require 'nav_attributs.php'; ?>
+                
+            </div>
+            <div class="contenu">
     <h1>aria-hidden</h1>
   
     <h2>Définition</h2>
@@ -29,6 +36,9 @@ Contenu hors écran ou réduit, tel que les menus
 
    
    <h2>Exemples</h2>
+
+   </div>
+        </div>
     </main>
   
 </body>

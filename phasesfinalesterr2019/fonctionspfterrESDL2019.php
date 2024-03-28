@@ -8,9 +8,9 @@
 //				Demi finale												*/
 //				Demi finale aller-retour								*/
 //				Quarts	(ligne 822)                                     */
-//		        huitième (ligne 850)                                    */
-//              huitième  + Barrages 									*/
-//				huitième Aller-Retour                                    */
+//		        huitiÃ¨me (ligne 850)                                    */
+//              huitiÃ¨me  + Barrages 									*/
+//				huitiÃ¨me Aller-Retour                                    */
 //				Seizieme (ligne 1850)                                    */
 //***********************************************************************/
 
@@ -54,8 +54,8 @@ function nomDivision($division, $bdd)
 {
 global $nomDivision;	
 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france_db5"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france_db5"); // Sï¿½lection de la base onepip
 			
 	$reponse = $bdd->query( "SELECT division
 							FROM divisions
@@ -98,7 +98,7 @@ function traitementScores ($debut, $fin, $bdd)
 	global ${"clubA".($i)};
 	global ${"A".($i)};
 
-//Qualifié d'office
+//Qualifiï¿½ d'office
 	
 	if (${"A".($i)} == '999')	{${"A".($i)}="Q"; }
 	if (${"A".($i)} == '222')   {${"A".($i)}="-"; }	
@@ -114,7 +114,7 @@ function traitementScores ($debut, $fin, $bdd)
 	//if (${"A".($i)} == '111')   {${"clubA".($i)}="-"; }	
 	//if (${"A".($i)} == '-')     {${"clubA".($i+1)}="-"; }
 	
-// Non affichage d'une équipe
+// Non affichage d'une ï¿½quipe
 	if (isset ($id8001)) $id8001=$id8001;else $id8001='';
 	if (isset ($id8002)) $id8002=$id8002;else $id8002='';
 	
@@ -323,10 +323,10 @@ else
 	 if (isset($idEquipe)) $idEquipe = $idEquipe; else $idEquipe=''; 
 	 if (isset($champion)) $champion = $champion; else $champion="-";
 
-	 //Affichage du nom de l'équipe championne
+	 //Affichage du nom de l'ï¿½quipe championne
 	 if ($A1001>$A1002) {$champion=$clubA1001;} else {$champion=$clubA1002;}
 		
-	 //Affichage du logo de l'équipe championne
+	 //Affichage du logo de l'Ã©quipe championne
 	 
 	 if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 			$bddComite = "idf";
@@ -362,7 +362,7 @@ else
 }
 
 
-//***** Récupération des variables *******************************
+//***** Rï¿½cupï¿½ration des variables *******************************
 
 if (isset ($_GET['division'])) $division = $_GET['division']; else $division='-';
 //if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite='-';
@@ -370,7 +370,7 @@ if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee='-';
 if (isset ($_GET['id'])) $id = $_GET['id']; else $id='-';
 
 
-
+/*
 function championDirect ($comite, $division, $annee, $bdd)
 {
 global $championDirect;
@@ -389,7 +389,7 @@ $reponse = $bdd->query("SELECT  $bdcomiteClub.nom, $bdcomiteClub.url_logo, $bdco
 						$logoDirect = $row[1];
 						}
 }
-
+*/
 
 //***********************************************************************
 //***********************************************************************
@@ -439,7 +439,7 @@ function finale2019 ($comite, $division, $annee, $bdd)
 	   if (isset ($tabEquipesF[1])) $clubA1002 = $tabEquipesF[1]; else $clubA1002='-';
 	   if (isset ($tabEquipesId[0])) $clubA1001Id = $tabEquipesId[0]; else $clubA1001Id='-'; 
 	   if (isset ($tabEquipesId[1])) $clubA1002Id = $tabEquipesId[1]; else $clubA1002Id='-';	
-//*********** Récupération des résultats et traitements *****************************
+//*********** Rï¿½cupï¿½ration des rï¿½sultats et traitements *****************************
 
 	global $A1001, $A1002, $champion;	
 	
@@ -525,7 +525,7 @@ function demi2019($comite, $division, $annee, $bdd)
 	 if (isset ($tabId[$i-$debut])) ${"id".($i)} = $tabId[$i-$debut]; else ${"id".($i)}='-';
 	}
 	
-	//*********** Récupération des résultats et traitements *****************************
+	//*********** Rï¿½cupï¿½ration des rï¿½sultats et traitements *****************************
 
 	global $A2001;global $A2002;global $A2003;global $A2004;
 
@@ -563,7 +563,7 @@ function demi2019($comite, $division, $annee, $bdd)
 						$A1002 = $row[1];
 						}
 						
-if ($A2001 + $A2002 > 0)	
+if (is_numeric($A2001) + is_numeric($A2002) > 0)	
 	{	if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} 
 	else	
 	{$clubA1001=$clubA2002;	}}
@@ -629,7 +629,7 @@ function demiAR2019 ($comite, $division, $annee, $bdd)
 	 if (isset ($tabEquipes[3])) $clubA2004 = $tabEquipes[3]; else $clubA2004='-';
 
 	
-//*********** Récupération des résultats et traitements *****************************
+//*********** Rï¿½cupï¿½ration des rï¿½sultats et traitements *****************************
 //ALLER  : Pts
 	global $A2001, $A2002, $A2003, $A2004;
 //ALLER		GA
@@ -819,7 +819,7 @@ function quartsDemiAR2019 ($comite, $division, $annee, $bdd)
 	
 	
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des quarts de finale ********
+//*****  Traitement des Equipes et des rÃ©sultats des quarts de finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -1005,7 +1005,7 @@ if (is_numeric($A8008) and is_numeric($R8016)) $pts4008 = $A8008 + $R8016;
 //	}
 //echo "<br />";
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des demi finale ********
+//*****  Traitement des Equipes et des rÃ©sultats des demi finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -1139,7 +1139,7 @@ $GA2004 = $A4004 + $R4004;
 //echo $pts2003;echo  $GA2003;
 //echo $pts2004;echo  $GA2004;
 //**********************************************************************
-//*****  Traitement des Equipes et des résultats des demi finale ********
+//*****  Traitement des Equipes et des rï¿½sultats des demi finale ********
 //*********************************************************************
 
 global $A1001, $A1002;
@@ -1212,7 +1212,7 @@ function quarts2019 ($comite, $division, $annee, $bdd)
 	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
 	
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des quarts de finale ********
+//*****  Traitement des Equipes et des rÃ©sultats des quarts de finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -1262,7 +1262,7 @@ function quarts2019 ($comite, $division, $annee, $bdd)
 	
 //echo "<br />";
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des demi finale ********
+//*****  Traitement des Equipes et des rï¿½sultats des demi finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -1296,7 +1296,7 @@ function quarts2019 ($comite, $division, $annee, $bdd)
 	}	
 
 //**********************************************************************
-//*****  Traitement des Equipes et des résultats des demi finale ********
+//*****  Traitement des Equipes et des rÃ©sultats des demi finale ********
 //*********************************************************************
 
 global $A1001, $A1002;
@@ -1389,7 +1389,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	$bdcomiteClub = "php".''.$comite.''."_clubs";
 
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des barrages ********
+//*****  Traitement des Equipes et des rï¿½sultats des barrages ********
 //*******************************************************************
 	
 
@@ -1430,7 +1430,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	}	
 	
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des quarts de finale ********
+//*****  Traitement des Equipes et des rï¿½sultats des quarts de finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -1470,7 +1470,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	}	
 	
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats des Demi finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats des Demi finale********											
 //**********************************************************************
 
 	$tabScores = array() ;
@@ -1496,7 +1496,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	} 
 
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats des Demi finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats des Demi finale********											
 //**********************************************************************	
 
 
@@ -1597,7 +1597,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	
 
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des huitièmes ********
+//*****  Traitement des Equipes et des rÃ©sultats des huitiÃ¨mes ********
 //*********************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -1644,7 +1644,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	//traitementScores ($debut,$fin, $bdd);
 	
 //***************************************************										
-//*****  Traitement des résultats des quarts ********											
+//*****  Traitement des rÃ©sultats des quarts ********											
 //***************************************************	
 
 	$tabScores = array() ;
@@ -1675,7 +1675,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	}											
 											
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats des Demi finale********											
+//*****  Traitement des Ã©quipes et des rÃ©sultats des Demi finale********											
 //**********************************************************************
 
 	$tabScores = array() ;
@@ -1704,7 +1704,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	} 
 	 	 
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats dea la finale********											
+//*****  Traitement des Ã©quipes et des rÃ©sultats dea la finale********											
 //**********************************************************************	 
 	 
 	 global $clubA1001; global $clubA1002;										
@@ -1730,7 +1730,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
      if (isset($A1002)) $A1002 = $A1002; else $A1002='-'; 				
 
 //************************************************************************************
-//*******************    Récupérations des Scores	**********************************
+//*******************    Rï¿½cupï¿½rations des Scores	**********************************
 //************************************************************************************
 if (is_numeric($A8001) && is_numeric($A8001))
 {if ($A8001 + $A8002 > 0) { if ($A8001>$A8002)	{$clubA4001=$clubA8001;	} else	{$clubA4001=$clubA8002; }}	else{ $A8001="-"; $A8002="-"; $clubA4001="-";}}
@@ -1791,7 +1791,7 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
 		
 //************************************************************************
-//*****  Traitement des Equipes et des résultats des 8me de finale********
+//*****  Traitement des Equipes et des rï¿½sultats des 8me de finale********
 //************************************************************************
 
 	$tabEquipes = array();
@@ -1894,7 +1894,7 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 	}	
 
 //***************************************************										
-//*****  Traitement des résultats des quarts ********											
+//*****  Traitement des rï¿½sultats des quarts ********											
 //***************************************************	
 
 	$tabScores = array() ;
@@ -1920,7 +1920,7 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 	}											
 											
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats des Demi finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats des Demi finale********											
 //**********************************************************************
 
 	$tabScores = array() ;
@@ -1948,7 +1948,7 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 	 
 	 
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats dea la finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats dea la finale********											
 //**********************************************************************	 
 	 
 	 global $clubA1001;global $clubA1002;										
@@ -1972,11 +1972,11 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 	
 		
 //************************************************************************************
-//*******************    Récupérations des Scores	**********************************
+//*******************    Rï¿½cupï¿½rations des Scores	**********************************
 //************************************************************************************
 
 
-// Traitement des résultats des 8me
+// Traitement des rï¿½sultats des 8me
 $Pts8001 = $A8001 + $R8001;
 $Pts8002 = $A8002 + $R8002;
 $Pts8003 = $A8003 + $R8003;
@@ -2156,7 +2156,7 @@ function huitiemeEtBarrages2019($comite, $division, $annee, $bdd)
 //echo $division;echo "<br />";	
 //echo $bdcomite_pfterr_e;echo "<br />";
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des Barrages ********
+//*****  Traitement des Equipes et des rï¿½sultats des Barrages ********
 //*********************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -2200,7 +2200,7 @@ function huitiemeEtBarrages2019($comite, $division, $annee, $bdd)
 	}	
 	
 //************************************************************************
-//*****  Traitement des Equipes et des résultats des 8me de finale********
+//*****  Traitement des Equipes et des rï¿½sultats des 8me de finale********
 //************************************************************************
 	$tabEquipes2 = array();
 	$tabScores = array() ;
@@ -2243,7 +2243,7 @@ function huitiemeEtBarrages2019($comite, $division, $annee, $bdd)
 	
 	
 //************************************************************************
-//*****  Traitement des Equipes et des résultats des quarts de finale********
+//*****  Traitement des Equipes et des rï¿½sultats des quarts de finale********
 //************************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -2274,7 +2274,7 @@ function huitiemeEtBarrages2019($comite, $division, $annee, $bdd)
 	}	
 	
 //************************************************************************
-//*****  Traitement des Equipes et des résultats des demi finale********
+//*****  Traitement des Equipes et des rï¿½sultats des demi finale********
 //************************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -2304,7 +2304,7 @@ function huitiemeEtBarrages2019($comite, $division, $annee, $bdd)
 	}	
 	
 //************************************************************************
-//*****  Traitement des Equipes et des résultats de la finale     ********
+//*****  Traitement des Equipes et des rï¿½sultats de la finale     ********
 //************************************************************************	
 
 	 global $clubA1001;global $clubA1002;
@@ -2326,30 +2326,30 @@ function huitiemeEtBarrages2019($comite, $division, $annee, $bdd)
 						}							
 		
 //************************************************************************************
-//*******************    Récupérations des Scores	**********************************
+//*******************    Rï¿½cupï¿½rations des Scores	**********************************
 //************************************************************************************
 
 
-// Traitement des résultats des barrages et des 8me
+// Traitement des rï¿½sultats des barrages et des 8me
 
 if (is_numeric($A1601)+is_numeric($A1602) > 0)	{if ($A1601>$A1602)	{$clubA8002=$clubA1601;	} else	{$clubA8002=$clubA1602;	}}	else {	$A1601="-";	$A1602="-";	$quart1="-";}
 if (is_numeric($A1603)+is_numeric($A1604) > 0)	{if ($A1603>$A1604)	{$clubA8006=$clubA1603;	} else  {$clubA8006=$clubA1604; }}  else {  $A1603="-";	$A1604="-";	$quart1="-";}
 if (is_numeric($A1605)+is_numeric($A1606) > 0)	{if ($A1605>$A1606)	{$clubA8010=$clubA1605;	} else  {$clubA8010=$clubA1606; }}  else {  $A1605="-";	$A1606="-";	$quart1="-";}
 if (is_numeric($A1607)+is_numeric($A1608) > 0)	{if ($A1607>$A1608)	{$clubA8014=$clubA1607;	} else  {$clubA8014=$clubA1608; }}  else {  $A1607="-";	$A1608="-";	$quart1="-";}
 
-//****** traitement résultats 8me de finale  *********	
+//****** traitement rï¿½sultats 8me de finale  *********	
 for ($i= 8001, $j = 8002, $k= 4001; $i<8016, $j <8017, $k< 4009; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement résultats 4me de finale  *********	
+//****** traitement rï¿½sultats 4me de finale  *********	
 for ($i= 4001, $j = 4002, $k= 2001; $i<4008, $j <4009, $k< 2005; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement résultats demi finale  *********	
+//****** traitement rï¿½sultats demi finale  *********	
 if (is_numeric($A2001)+is_numeric($A2002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A2001="-";	$A2002="-";	$clubA1001="-";}
 if (is_numeric($A2003)+is_numeric($A2004) > 0)	{if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-";	$A2004="-";	$clubA1002="-";}
 
-//****** traitement résultats finale  *********
+//****** traitement rï¿½sultats finale  *********
 if (is_numeric($A1001)+is_numeric($A1002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A1001="-";	$A1002="-"; 	$quart1="-";}																		
 }
 
@@ -2375,7 +2375,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
 	
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats des 16me de finale	 
+//           Traitements des equipes et des rÃ©sultats des 16me de finale	 
 //***************************************************************************************
 
 	$tabEquipes = array();
@@ -2420,9 +2420,9 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	//if (isset ($tabScores[$i-1601])) ${"A".($i)} = $tabScores[$i-1601]; else ${"A".($i)}='-'; 
 	if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
 	}
-	
+
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats des 8me de finale	 
+//           Traitements des equipes et des rÃ©sultats des 8me de finale	 
 //***************************************************************************************
 
 	$tabEquipes = array();
@@ -2457,9 +2457,9 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
 	 if (isset ($tabId[$i-$debut])) ${"id".($i)} = $tabId[$i-$debut]; else ${"id".($i)}='-';
 	}
-	
+
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats des quarts de finale	 
+//           Traitements des equipes et des rÃ©sultats des quarts de finale	 
 //***************************************************************************************
 
 	$tabEquipes = array();
@@ -2495,7 +2495,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	
 	
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats des demi finale	 
+//           Traitements des equipes et des rÃ©sultats des demi finale	 
 //***************************************************************************************
 
 	$tabEquipes = array();
@@ -2530,7 +2530,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 	}	
 	
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats de la finale	 
+//           Traitements des Ã©quipes et des rÃ©sultats de la finale	 
 //***************************************************************************************
 
 	global $clubA1001;global $clubA1002;
@@ -2551,7 +2551,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 						$A1002 = $row[1];
 						}							
 
-//****** traitement résultats 16me de finale  *********	
+//****** traitement rÃ©sultats 16me de finale  *********	
 /*
 if ($A1601 + $A1602 > 0)	{if ($A1601>$A1602) {$clubA8001 = $clubA1601;	} else	{$clubA8001=$clubA1602;	}}  else{	$A1601="-"; $A1602="-";}
 if ($A1603 + $A1604 > 0)	{if ($A1603>$A1604)	{$clubA8002 = $clubA1603;	} else	{$clubA8002=$clubA1604;	}}	else{	$A1603="-"; $A1604="-";}
@@ -2623,19 +2623,19 @@ if ((int)$A2001+(int)$A2002 > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} e
 for ($i= 1601, $j = 1602, $k= 8001; $i<1632, $j <1633, $k< 8017; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement résultats 8me de finale  *********	
+//****** traitement rï¿½sultats 8me de finale  *********	
 for ($i= 8001, $j = 8002, $k= 4001; $i<8016, $j <8017, $k< 4009; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement résultats 4me de finale  *********	
+//****** traitement rï¿½sultats 4me de finale  *********	
 for ($i= 4001, $j = 4002, $k= 2001; $i<4008, $j <4009, $k< 2005; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement résultats demi finale  *********	
+//****** traitement rï¿½sultats demi finale  *********	
 if (is_numeric($A2001)+is_numeric($A2002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A2001="-";	$A2002="-";	$clubA1001="-";}
 if (is_numeric($A2003)+is_numeric($A2004) > 0)	{if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-";	$A2004="-";	$clubA1002="-";}
 
-//****** traitement résultats finale  *********
+//****** traitement rï¿½sultats finale  *********
 if (is_numeric($A1001)+is_numeric($A1002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A1001="-";	$A1002="-"; 	$quart1="-";}																		
 */
 }

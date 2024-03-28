@@ -1,6 +1,6 @@
   <table width="90%" border="1" align="center">
     <tr> 
-      <td class="titre">Barrages <?php//  echo $D1600;?></td>
+      <td class="titre">Barrages <?php //  echo $D1600;?></td>
     </tr>
   </table>
   <table width="90%" border="0" align="center">

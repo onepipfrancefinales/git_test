@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -41,7 +41,7 @@ if (isset ($_POST['clubA4006'])) $clubA4006 = $_POST['clubA4006']; else $clubA40
 if (isset ($_POST['clubA4007'])) $clubA4007 = $_POST['clubA4007']; else $clubA4007='0';
 if (isset ($_POST['clubA4008'])) $clubA4008 = $_POST['clubA4008']; else $clubA4008='0';
 
-//Huitième
+//Huitiï¿½me
 if (isset ($_POST['clubA8001'])) $clubA8001 = $_POST['clubA8001']; else $clubA8001='0';
 if (isset ($_POST['clubA8002'])) $clubA8002 = $_POST['clubA8002']; else $clubA8002='0';
 if (isset ($_POST['clubA8003'])) $clubA8003 = $_POST['clubA8003']; else $clubA8003='0';
@@ -61,7 +61,7 @@ if (isset ($_POST['clubA8014'])) $clubA8014 = $_POST['clubA8014']; else $clubA80
 if (isset ($_POST['clubA8015'])) $clubA8015 = $_POST['clubA8015']; else $clubA8015='0';
 if (isset ($_POST['clubA8016'])) $clubA8016 = $_POST['clubA8016']; else $clubA8016='0';
  
-//Seizième
+//Seiziï¿½me
 /*
 for ($i = 1601; $i > 1633; $i++)
 {if (isset ($_POST['"clubA".($i)'])) ${"clubA".($i)} = $_POST['clubA.($i)']; else ${"clubA".($i)}='0';}
@@ -103,13 +103,13 @@ if (isset ($_POST['clubA1631'])) $clubA1631 = $_POST['clubA1631']; else $clubA16
 if (isset ($_POST['clubA1632'])) $clubA1632 = $_POST['clubA1632']; else $clubA1632='0';
 
 
-//Récupération des valeurs des champs Equipes:
+//RÃ©cupÃ©ration des valeurs des champs Equipes:
 
 //**********  Finale ********************
 
 if ($type==1)
  {
-	verifClubsPresents($comite,'1001' ,'1002', $bdd);
+	//verifClubsPresents($comite,'1001' ,'1002', $bdd);
 	$requete = $bdd->prepare("UPDATE $bdcomite_pfterr_e
 						SET	type =:type,	clubA1001 =:clubA1001,	clubA1002 =:clubA1002
 							
@@ -126,7 +126,7 @@ if ($type==1)
 					
 if ($type==2 OR $type==3)
  {
-	verifClubsPresents($comite,'2001' ,'2004', $bdd);
+	//verifClubsPresents($comite,'2001' ,'2004', $bdd);
 	$requete = $bdd->prepare("UPDATE $bdcomite_pfterr_e
 						SET	type =:type,	clubA2001 =:clubA2001,	clubA2002 =:clubA2002,
 											clubA2003 =:clubA2003,	clubA2004 =:clubA2004
@@ -142,7 +142,7 @@ if ($type==2 OR $type==3)
 //************** Quarts de finale ********************************
 elseif ($type==14 OR $type==15)
  {	
-	verifClubsPresents($comite,'4001' ,'4008', $bdd);
+	//verifClubsPresents($comite,'4001' ,'4008', $bdd);
 	//for ($i=4001; $i<4009 ; $i ++)	
 	//	{echo ${"clubA".($i)}."<br />";}
 				
@@ -166,11 +166,11 @@ elseif ($type==14 OR $type==15)
 //********** Quarts de finale avec 8 barragistes ********************
 elseif ($type==13)
  {
-	verifClubsPresents($comite,'1601' ,'1608', $bdd);
-	verifClubsPresents($comite,'4001' ,'4001', $bdd);
-	verifClubsPresents($comite,'4003' ,'4003', $bdd);
-	verifClubsPresents($comite,'4005' ,'4005', $bdd);
-	verifClubsPresents($comite,'4007' ,'4007', $bdd);
+//	verifClubsPresents($comite,'1601' ,'1608', $bdd);
+//	verifClubsPresents($comite,'4001' ,'4001', $bdd);
+//	verifClubsPresents($comite,'4003' ,'4003', $bdd);
+//	verifClubsPresents($comite,'4005' ,'4005', $bdd);
+//	verifClubsPresents($comite,'4007' ,'4007', $bdd);
 		
 	$requete = $bdd->prepare("UPDATE $bdcomite_pfterr_e
 						SET	type =:type,	clubA1601 =:clubA1601,	clubA1602 =:clubA1602,
@@ -193,11 +193,11 @@ elseif ($type==13)
 						 or die(print_r($requete->errorInfo()))	;
  }
 		 	 
-//********** Huitième  de finale  (18) ********************
+//********** Huitiï¿½me  de finale  (18) ********************
 
 elseif ($type==18 or $type==19)
  {
-		verifClubsPresents($comite,'8001' ,'8016', $bdd);
+	//	verifClubsPresents($comite,'8001' ,'8016', $bdd);
 		
 		$requete = $bdd->prepare("	UPDATE $bdcomite_pfterr_e
 								SET	type =:type,	clubA8001 =:clubA8001,	clubA8002 =:clubA8002,
@@ -228,13 +228,13 @@ elseif ($type==18 or $type==19)
 
  }		 
 
-//********** Huitième  de finale avec 8 barragistes  (17)  ********************
+//********** Huitiï¿½me  de finale avec 8 barragistes  (17)  ********************
 
 elseif ($type==17)
 		{
 		echo $clubA8016; echo $clubA8016;
-		verifClubsPresents($comite,'1601' ,'1608', $bdd);
-		verifClubsPresents($comite,'8001' ,'8016', $bdd);
+	//	verifClubsPresents($comite,'1601' ,'1608', $bdd);
+	//	verifClubsPresents($comite,'8001' ,'8016', $bdd);
 	/*	for ($i=1601; $i<1609 ; $i ++)	
 			{	
 			echo ${"clubA".($i)};echo "<br />";
@@ -291,7 +291,7 @@ elseif ($type==16)
   for ($i = 1601; $i < 1633; $i++)
 		{if (${"clubA".($i)}=="-") ${"clubA".($i)}= 0;}	
 	
-	verifClubsPresents($comite,'1601' ,'1632', $bdd);
+	//verifClubsPresents($comite,'1601' ,'1632', $bdd);
 	
   $requete=$bdd->exec("UPDATE $bdcomite_pfterr_e
     	    SET  clubA1601='$clubA1601', clubA1602='$clubA1602', clubA1603='$clubA1603', clubA1604='$clubA1604',	
@@ -308,11 +308,11 @@ elseif ($type==16)
 	
  }
  
-// résultat de la requête		 	
+// rÃ©sultat de la requï¿½te		 	
 	if($requete)
-		{echo("La modification type".' '.$type.' '."a &eacute;t&eacute; correctement effectu&eacute;e");}
+		{echo("La modification type".' '.$type.' '."a Ã©tÃ© correctement effectuÃ©e");}
 	else
-		{echo("La modification à &eacute;chou&eacute;") ;}
+		{echo("La modification a Ã©chouÃ©") ;}
 
 
 function verifClubsPresents($comite ,$debut ,$fin, $bdd)
@@ -320,6 +320,7 @@ function verifClubsPresents($comite ,$debut ,$fin, $bdd)
  for ($i = $debut; $i <= $fin; $i++)
  {	
 	global ${'clubA'.$i};
+	$test= ${'clubA'.$i};
 	$bddComite_clubs ="php".$comite."_clubs";
 	
 	$reponse = $bdd->query("SELECT count(id)
@@ -332,7 +333,7 @@ function verifClubsPresents($comite ,$debut ,$fin, $bdd)
 	if ( $idPresent [0] != 1)
 	{
 	echo "<br />";
-	echo "L &eacute;quipe ".${"clubA".$i}." n'est pas pr&eacute;sente dans la table php_clubs"."<br />" ;
+	echo "L Ã©quipe ".${"clubA".$i}." n'est pas prÃ©sente dans la table php_clubs"."<br />" ;
 	${"clubA".$i} ='99999';
 	
 	}

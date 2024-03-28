@@ -1352,7 +1352,7 @@ for ($i=$debut ; $i<= $fin; $i++){
 				if (substr($type,5,2) == '16')
 				{
 
-				if ((int)$A8001Pts+(int)$A8002Pts>6) {if ($A8001Pts > $A8002Pts or ($A8001Pts == $A8002Pts and $A8001>$A8002)) {$clubA4001= $clubA8001;} else {$clubA4001= $clubA8002;}} else {$clubA4001="-";}	
+				if ($A8001Pts+ $A8002Pts>6) {if ($A8001Pts > $A8002Pts or ($A8001Pts == $A8002Pts and $A8001>$A8002)) {$clubA4001= $clubA8001;} else {$clubA4001= $clubA8002;}} else {$clubA4001="-";}	
 				if ((int)$A8003Pts+(int)$A8004Pts>6) {if ($A8003Pts > $A8004Pts or ($A8003Pts == $A8004Pts and $A8003>$A8004)) {$clubA4002= $clubA8003;} else {$clubA4002= $clubA8004;}} else {$clubA4002="-";}
 				if ((int)$A8005Pts+(int)$A8006Pts>6) {if ($A8005Pts > $A8006Pts or ($A8005Pts == $A8006Pts and $A8005>$A8006)) {$clubA4003= $clubA8005;} else {$clubA4003= $clubA8006;}} else {$clubA4003="-";}
 				if ((int)$A8007Pts+(int)$A8008Pts>6) {if ($A8007Pts > $A8008Pts or ($A8007Pts == $A8008Pts and $A8007>$A8008)) {$clubA4004= $clubA8007;} else {$clubA4004= $clubA8008;}} else {$clubA4004="-";}
@@ -1366,7 +1366,7 @@ for ($i=$debut ; $i<= $fin; $i++){
 				else
 				{				
 
-					 if ((int)$A8001+(int)$A8002 > 0)	{if ($A8001>$A8002)	{$clubA4001=$clubA8001;	} else	{$clubA4001=$clubA8002;	}}	else{	$A8001="-";	$A8002="-";	$clubA4001="-";}
+					 if ( $A8001+ $A8002 > 0)	{if ($A8001>$A8002)	{$clubA4001=$clubA8001;	} else	{$clubA4001=$clubA8002;	}}	else{	$A8001="-";	$A8002="-";	$clubA4001="-";}
 					 if ((int)$A8003+(int)$A8004 > 0)	{if ($A8003>$A8004)	{$clubA4002=$clubA8003;	} else	{$clubA4002=$clubA8004;	}}	else{	$A8003="-";	$A8004="-";	$clubA4002="-";}
 					 if ((int)$A8005+(int)$A8006 > 0)	{if ($A8005>$A8006)	{$clubA4003=$clubA8005;	} else	{$clubA4003=$clubA8006;	}}	else{	$A8005="-";	$A8006="-";	$clubA4003="-";}
 					 if ((int)$A8007+(int)$A8008 > 0)	{if ($A8007>$A8008)	{$clubA4004=$clubA8007;	} else	{$clubA4004=$clubA8008;	}}	else{	$A8007="-";	$A8008="-";	$clubA4004="-";}

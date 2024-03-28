@@ -13,8 +13,17 @@
     <?php require '../../onglets.php'; ?>
     </header>
     <main>
+
+    <div class="main">
+    <div class="menu">
+    <?php require 'nav_attributs.php'; ?>
+                
+            </div>
+            <div class="contenu">
+
+
     <h1>aria-required</h1>
-    L' aria-requiredattribut indique que la saisie de l'utilisateur est requise sur l'élément avant qu'un formulaire puisse être soumis.
+    L'attribut aria-required indique que la saisie de l'utilisateur est requise sur l'élément avant qu'un formulaire puisse être soumis.
 
     <h2>Définition</h2>
 
@@ -23,6 +32,7 @@
 
    
    <h2>Exemples</h2>
+</div></div>
     </main>
   
 </body>

@@ -13,11 +13,16 @@
     <?php require '../../onglets.php'; ?>
     </header>
     <main>
-
+    <div class="main">
+    <div class="menu">
+    <?php require 'nav_attributs.php'; ?>
+             
+            </div>
+            <div class="contenu">
     <h1>aria-describedby</h1> 
     
     <h2>Définition</h2>
-    L' aria-describedbyattribut répertorie les ids des éléments qui décrivent l'objet. 
+    L'attribut aria-describedby répertorie les ids des éléments qui décrivent l'objet. 
     Il est utilisé pour établir une relation entre des widgets ou des groupes et le texte qui les décrit.
 
 L' aria-describedbyattribut n'est pas limité aux contrôles de formulaire.
@@ -31,7 +36,8 @@ Tandis que aria-labelledbyrépertorie les ids des étiquettes ou des éléments 
 
 
 
-
+</div>
+        </div>
 
 
     </main>

@@ -13,6 +13,12 @@
     <?php require '../../onglets.php'; ?>
     </header>
     <main>
+    <div class="main">
+    <div class="menu">
+    <?php require 'nav_attributs.php'; ?>
+               
+            </div>
+            <div class="contenu">
 <h1>aria-labelledby</h1>
 
 <h2>Définition</h2>
@@ -28,7 +34,7 @@ La propriété aria-labelledby permet aux auteurs de référencer d'autres élé
   tabindex="0"
   aria-labelledby="tac"></span>
 <span id="tac">J'accepte les conditions.</span>
-
+</div></div>
    
     </main>
   

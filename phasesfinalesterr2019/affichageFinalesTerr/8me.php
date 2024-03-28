@@ -140,7 +140,7 @@ afficheDivisionChampion($division);
     <td><div class="affichageGA" ><?php echo $A8003; ?></div></td>
     <td></td>
     <td></td>
-    <td><?php if ($comite=="au" and $annee > 2021) echo "Champion d'Auvergne";?> <font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php	 echo $L2001; ?></strong></i></b></font> </td>
+    <td> <font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php	 echo $L2001; ?></strong></i></b></font> </td>
     <td></td>
     <td></td>
     <td></td>
@@ -180,7 +180,7 @@ afficheDivisionChampion($division);
     <td rowspan="5" height="71"><img src="../../images/accolade.png" width="8" height="98"></td>
     <td><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php  echo $L4003; ?></strong></i></b></font></td>
     <td> </td>
-    <td><?php if ($comite=="au" and $annee > 2021) echo "Champion Lyonnais";?></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -316,7 +316,7 @@ afficheDivisionChampion($division);
     <td><div class="affichageGA" ><?php echo $A8012; ?></div></td>
     <td></td>
     <td></td>
-    <td><?php if ($comite=="au" and $annee > 2021) echo "Champion Dr&ocirc;me Ard&egrave;che";?><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php	 echo $L2003; ?></strong></i></b></font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $L2003; ?></strong></i></b></font></td>
     <td></td>
     <td></td>
   </tr>
@@ -349,9 +349,9 @@ afficheDivisionChampion($division);
     <td></td>
     <td><div class="affichageEquipe" ><?php echo $clubA8014; ?></div></td>
     <td><div class="affichageGA" ><?php echo $A8014; ?></div></td>
-    <td><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php  echo $L4007 ?></strong></i></b></font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $L4007 ?></strong></i></b></font></td>
     <td></td>
-    <td><?php if ($comite=="au" and $annee > 2021) echo "Champion des Alpes";?> </td>
+    <td> </td>
     <td>  </td>
     <td></td>
     <td></td>

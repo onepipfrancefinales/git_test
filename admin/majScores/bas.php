@@ -101,7 +101,7 @@
     <td width="389" align="center"><a href="/phasesfinalesterr2019/majFinalesTerr/accueilMAJ.php">MAJ Phases finales régionales</a> </td>
   </tr>
    <tr> 
-    <td width="395" align="center"><a href="/phases_finales2019/Maj_champ_france/accueilMAJ.php?annee=2023">MAJ Phases finales championnnat de France</a></td>
+    <td width="395" align="center"><a href="/phases_finales2019/Maj_champ_france/accueilMAJ.php?annee=2024">MAJ Phases finales championnnat de France</a></td>
    </tr>
    <tr> 
       <td align="center">MAJ Saisie du résultats des coupes d'europe (à construire)</td>
