@@ -9,7 +9,8 @@ quarts2019($comite, $division, $annee, $bdd);
 traitementScores (4001, 4008, $bdd);
 afficheLieux ($division, $annee, $comite, $bdd);
 champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
-afficheDivisionChampion($division);
+//afficheDivisionChampion($division);
+afficheDivisionChampionLigue($division,$annee);
 ?>
 
 

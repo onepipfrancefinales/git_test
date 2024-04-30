@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpfed3NEeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                         */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpfed3NEeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                    */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpfed3NEeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum          */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -38,7 +38,7 @@ ouverture ();
 if (isset ($nomLigue)) $nomLigue=$nomLigue; else $nomLigue="";
 
 if ($champ >= 991160 and $champ < 991270)
-	{ $nomLigue= "F&eacute;d&eacute;rale 3 - Excellence B -Pouel 1 &agrave; 9";}	
+	{ $nomLigue= "F&eacute;d&eacute;rale 3 - Excellence B -Poule 1 &agrave; 9";}	
  else
 	{ $nomLigue= "F&eacute;d&eacute;rale 3 - Excellence B -Poule 10 &agrave; 18";}
  
@@ -93,7 +93,7 @@ if ($champ >= 991160 and $champ < 991270)
        else {include ("accueil.htm");}
                 }
        elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-       elseif ($identification == "non2") {echo "Identifiants erronés !";}
+       elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
     
        else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
      

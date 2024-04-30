@@ -22,17 +22,21 @@ echo $resultat;
 
  
 //*******************************************************	
-//********  Données contenu dans la table bdclubs  ******
+//********  DonnÃ©es contenu dans la table bdclubs  ******
 //*******************************************************
 function affichageSaisonEnCours($equipe, $bdd)
 {
+
+
+	
+	$equipe = substr($equipe, 2, 5);
+//	echo $equipe;
  global $saisonEnCours, $saisonEnCoursChiffre;
  
- $requete =$bdd->query( "
-		   SELECT bddivisions.division, bdsaisons.en_cours 
+ $requete =$bdd->query( " SELECT bddivisions.division, bdsaisons.en_cours 
 		   FROM bdsaisons 
 		   INNER JOIN bddivisions
-		   WHERE bdsaisons.id = $equipe
+		   WHERE bdsaisons.id = '$equipe'
 		   AND bdsaisons.en_cours = bddivisions.id ");
 		  
  While ($row = $requete->fetch())
@@ -40,7 +44,21 @@ function affichageSaisonEnCours($equipe, $bdd)
 	 $saisonEnCours=$row[0];
 	 $saisonEnCoursChiffre=$row[1];
 	}
-	
+/*
+	$requete =$bdd->query( "SELECT en_cours 
+	FROM bdsaisons 	
+	WHERE id ='29164' ");
+   
+While ($row = $requete->fetch())
+{ 
+$saisonEnCours=$row[0];
+//$saisonEnCoursChiffre=$row[1];
+}
+*/
+
+	//echo "test methode";
+//	echo $saisonEnCours;
+	//echo $saisonEnCoursChiffre;
 }
 
 
@@ -118,7 +136,7 @@ function nomLigue ($numLigue, $bdd)
 	}
 }
 //*******************************************************	
-//**************   Nom du comité  **********************
+//**************   Nom du comitÃ©  **********************
 //*******************************************************
 
 function nomComite ($sigle, $id, $bdd)
@@ -139,7 +157,7 @@ $reponse = $bdd->query("SELECT id, nom, sigle, sigleLigue, nbre_club
 }
 
 //*******************************************************	
-//********  Données contenues dans la table infoclub  ******
+//********  Donnï¿½es contenues dans la table infoclub  ******
 //*******************************************************
 
 function bdInfosClub($code, $bdd)

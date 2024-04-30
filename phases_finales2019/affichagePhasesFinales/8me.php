@@ -88,7 +88,7 @@
     <td colspan="2"></td>
     <td colspan="2"></td>
     <td class="coin4"><?php echo $clubA2001;?></td>
-    <td class="coin4Pts"><?php if ($A2001+$A2002>0) echo $A2001; else	echo "-";?>
+    <td class="coin4Pts"><?php  echo $A2001;?>
     </td>
     <td colspan ="3"></td>
   </tr>
@@ -97,7 +97,7 @@
     <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
     <td colspan="2"></td>
     <td class="coin4"><?php	echo $clubA2002;?></td>
-    <td class="coin4Pts"><?php if ($A2001+$A2002>0) echo $A2002; else	echo "-"; ?>
+    <td class="coin4Pts"><?php  echo $A2002;  ?>
     </td>
     <td colspan="3"></td>
   </tr>
@@ -205,7 +205,7 @@
     <td colspan="2"></td>
     <td colspan="2"></td>
     <td class="coin4"><?php echo $clubA2003;?></td>
-    <td class="coin4Pts"><?php if ($A2003+$A2004>0) echo $A2003; else echo "-";?>
+    <td class="coin4Pts"><?php  echo $A2003; ?>
     </td>
   </tr>
   <tr> 
@@ -213,7 +213,7 @@
     <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
     <td colspan="2"></td>
     <td class="coin4"><?php echo $clubA2004;?></td>
-    <td class="coin4Pts"><?php if ($A2003+$A2004>0) echo $A2004; else echo "-";?>
+    <td class="coin4Pts"><?php  echo $A2004; ?>
     </td>
   </tr>
   <tr> 

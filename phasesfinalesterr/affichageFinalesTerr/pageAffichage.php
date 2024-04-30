@@ -34,12 +34,13 @@ Rugby,championnat de france de rugby,Francaise,honneur,promotion honneur,Sport,B
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
 
 </head>
 
 <?php 
 //*****************************************************
-//**** Récupération des noms des comites et des ligues*
+//**** Rï¿½cupï¿½ration des noms des comites et des ligues*
 //*****************************************************
 require ("../../connect/connexion5.php") ; 
 if ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "pl")
@@ -72,7 +73,7 @@ while ($donnees = $reponse->fetch())
 		 $ligueNom=$donnees['nomLigue'];
 		}
 		
-// nom du comité							
+// nom du comitï¿½							
 $reponse = $bdd->query("
 		   SELECT nom as nomComite
 		   FROM comite
@@ -124,11 +125,11 @@ $saisonMin=$reponse->fetch();
 
 if ($annee < $saisonMin[0])
     {
-	// bandeau avec les liens des différentes divisions
+	// bandeau avec les liens des diffï¿½rentes divisions
 	 include("hautindex.php");
-	 // affichage double flèches
+	 // affichage double flï¿½ches
 	 include("bandeauNavigation.php");
-	 // affichage du nom de la compétition et de l'année
+	 // affichage du nom de la compï¿½tition et de l'annï¿½e
 	 include("bandeauNavigation2.php");
 	 //include("/phasesFinalesTerr2019/affichageFinalesTerr/infos.php");
 	 include("infos.php");
@@ -138,7 +139,7 @@ elseif ($annee < 2019 )
 	{
 	//echo "test1";
 	 //****************************************************************
-	 // traitement des phases finales de Honneur Promotion 1ère série**
+	 // traitement des phases finales de Honneur Promotion 1ï¿½re sï¿½rie**
 	 //****************************************************************
 	 $table_pfterr="php".''.$comite.''."_pfterr";
 
@@ -164,7 +165,7 @@ elseif ($annee < 2019 )
 			}
 		}   
 	 //************************************************************		
-	 //**   traitement des phases finales de 2me 3me 4me série   **
+	 //**   traitement des phases finales de 2me 3me 4me sï¿½rie   **
 	 //************************************************************
 
 	 elseif ($page=="S2S3S4")
@@ -188,7 +189,7 @@ elseif ($annee < 2019 )
 		}	
 		
 	 //************************************************************		
-	 //**   traitement des phases finales de Réserve             **
+	 //**   traitement des phases finales de Rï¿½serve             **
 	 //************************************************************
 		
 	 elseif ($page=="RRPHR1")
@@ -219,7 +220,7 @@ elseif ($annee < 2019 )
 //****************************************	
 else	
     {  
-	 //****** Prise en compte du changement des nom des comités
+	 //****** Prise en compte du changement des nom des comitï¿½s
 	//echo "test2019"; echo "<br />";
 	//echo "codeLigue : ".$codeLigue; echo "<br />";
 	//echo "page : ".$page; echo "<br />";
@@ -240,7 +241,7 @@ else
 	 //*************  Traitement des phases finales  ********
 	 //******************************************************
 
-	 //*************  Récupèration du type de phase finale pour l'Honneur Promotion 1ère série  ********
+	 //*************  Rï¿½cupï¿½ration du type de phase finale pour l'Honneur Promotion 1ï¿½re sï¿½rie  ********
 	 
 	 if ($page == "HPHS1")
 	 {
@@ -256,7 +257,7 @@ else
 			{ $somme=$donnees['sommeHPHS1'];}
 		}
 	
-	 //*************   Récupèration du type de phase finale pour les 2me 3me 4me série           *******
+	 //*************   Rï¿½cupï¿½ration du type de phase finale pour les 2me 3me 4me sï¿½rie           *******
 	 elseif ($page=="S2S3S4")
 		{
 		
@@ -273,7 +274,7 @@ else
 		//echo "somme : ".$somme;
 		}
 
-	 //*************    Récupèration du type de phase finale pour les Réserves              *******
+	 //*************    Rï¿½cupï¿½ration du type de phase finale pour les Rï¿½serves              *******
 	 elseif ($page=="RRPHR1")
 		{
 

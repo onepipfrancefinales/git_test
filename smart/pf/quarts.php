@@ -1,8 +1,9 @@
 <?php traitementScores (4001, 4008);?>
 <table width="90%" border="1"align="center">
   <tr> 
-    <td class="titre">Quarts de finale <br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D4ME; ?></strong></i></b></font></div</td>
-  </tr>
+    <td class="titre">Quarts de finale <br />
+    <span><div class="pf_lieux"><?php echo $D4ME; ?></div></span>
+      </tr>
 </table>
 <br />
 <table width="90%" border="0" align="center">

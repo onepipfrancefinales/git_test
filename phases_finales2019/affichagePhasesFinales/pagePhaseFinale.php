@@ -3,7 +3,7 @@
  $division=$_GET['division'];
  //echo $division;
  ?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
   <head>
    <title>Championnat de France <?php echo $annee;?></title>
 	<link rel="stylesheet" type="text/css" href="2.css">

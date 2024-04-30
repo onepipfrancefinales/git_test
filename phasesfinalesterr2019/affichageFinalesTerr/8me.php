@@ -10,7 +10,9 @@ traitementScores (8001,8016, $bdd);
 traitementScores (4001,4008, $bdd);
 traitementScores (2001,2004, $bdd);
 champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
-afficheDivisionChampion($division);
+
+//afficheDivisionChampion($division);
+afficheDivisionChampionLigue($division,$annee);
 ?>
 <head>
 <link rel="stylesheet" type="text/css" href="../../phasesfinalesterr2019/qualification/qualification.css">

@@ -15,10 +15,10 @@
   </tr>
   <tr> 
     <td > 
-      <?php //require("../../pub/pub5.php"); ?>
+      <?php require("../../pub/pub5.php"); ?>
     </td>
     <td  valign="top"> 
-      <?php //require("../../pub/pub5.php"); ?>
+      <?php require("../../pub/pub5.php"); ?>
     </td>
   </tr>
 </table>

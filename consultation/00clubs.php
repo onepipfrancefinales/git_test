@@ -280,8 +280,10 @@ if ($nombreTitre > 0 )	{echo "<h2> Cadets </h2>";}?>
 	<?php ;} ?>
 
 <h1>Saisons pr&eacute;c&eacute;dentes</h1>
+
 			<p>&nbsp; 
-		<?php //echo "code : ".$code;?>	<?php //echo "code : ".$terr2019;?>
+		<?php //echo "code : ".$code;?>	<?php //echo "code : ".$terr2019;
+  ?>
 <table width="<?php echo $width;?>" bordercolor="#CCCCCC" border="0" cellpadding="0" cellspacing="0" align="center">
   <!--Saison N-1 -->
   <tr > 

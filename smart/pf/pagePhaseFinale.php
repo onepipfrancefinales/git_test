@@ -3,7 +3,8 @@ $annee=$_GET['annee'];
 $division=$_GET['division'];
 //if (isset ($_GET['type2'])) $type2=$_GET['type2'];else $type2="";
 //echo "type = ".$type2;?>
-<html>
+<!DOCTYPE html PUBLIC>
+<html lang="fr">
   <head>
    <title>Championnat de France <?php echo $annee;?></title>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -75,6 +76,7 @@ if (substr($type,0,1) == '8')
 			
 }
 // insertion de barrages
+/*
 elseif(substr($type,0,1)== 7 )
 {
 
@@ -86,6 +88,7 @@ elseif(substr($type,0,1)== 7 )
 	{require "barrages32.php";
 	}
 	//Barrages avant 16me
+	//if(	substr($type,3,2) == '16' or substr($type,3,2) == '32')
 	elseif(	substr($type,3,2) == '16' or substr($type,3,2) == '32')
 	{require "barrages16.php";}
 	
@@ -103,8 +106,7 @@ elseif(substr($type,0,1)== 7 )
 	
 	$division = $division - 7000;
 }
-		
-
+*/		
 // phases réguliéres
 
 	trenteDeuxieme2019 ($division, $annee, $bdd);

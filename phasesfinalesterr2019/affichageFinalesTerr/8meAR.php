@@ -241,7 +241,7 @@ afficheDivisionChampion($division);
     <td width="38"></td>
     <td width="84"></td>
     <td width="200"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php// echo $finale; ?>
+      <?php // echo $finale; ?>
       </strong></i></b></font> </td>
     <td width="38"> </td>
     <td width="26">&nbsp;</td>

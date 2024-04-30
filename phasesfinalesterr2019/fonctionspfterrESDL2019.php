@@ -301,6 +301,30 @@ elseif(substr($division,-4)=='9180')
 elseif(substr($division,-4)=='9190')
 	$division = "R&eacute;serve  1re s&eacute;rie";	
 }
+function afficheDivisionChampionLigue($division, $annee)
+{
+	
+GLOBAL $division;
+	
+if (substr($division,-4)=='0170'){
+	if ($annee < 2023)	{$division = "Honneur"; } else {$division = "Régionale 1"; }}
+elseif(substr($division,-4)=='0180') {
+	if ($annee < 2023) {$division = "Promotion honneur";} else {$division = "Régionale 2"; }}
+elseif(substr($division,-4)=='0190') { 
+	if ($annee < 2023) {$division = "1re s&eacute;rie";} else {$division = "Régionale 3"; }}
+elseif(substr($division,-4)=='0200')
+	$division = "2me s&eacute;rie";
+elseif(substr($division,-4)=='0210')
+	$division = "3me s&eacute;rie";
+elseif(substr($division,-4)=='0220')
+	$division = "4me s&eacute;rie";
+elseif(substr($division,-4)=='0270') {
+	if ($annee < 2023) { $division = "R&eacute;serve honneur";} else { $division = "Réserve régionale 1"; }}
+elseif(substr($division,-4)=='9180') {
+	if ($annee < 2023) { $division = "R&eacute;serve promotion honneur" ;}else {$division = "Réserve régionale 2"; }}
+elseif(substr($division,-4)=='9190')
+	$division = "R&eacute;serve  1re s&eacute;rie";	
+}
 
 function champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd)
 {
@@ -562,16 +586,20 @@ function demi2019($comite, $division, $annee, $bdd)
 						$A1001 = $row[0];
 						$A1002 = $row[1];
 						}
-						
+				
+												
+
 if (is_numeric($A2001) + is_numeric($A2002) > 0)	
 	{	if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} 
 	else	
 	{$clubA1001=$clubA2002;	}}
 else {	$A2001="-";	$A2002="-";$clubA1001="-";	}
 
-if (is_numeric($A2003) + is_numeric($A2004) > 0)	{	if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-";	$A2004="-";$clubA1002="-";	}
+if (is_numeric($A2003) + is_numeric($A2004) > 0)	
+{	if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-";	$A2004="-";$clubA1002="-";	}
 
-if (is_numeric($A1001) + is_numeric($A1002) == 0)	{$A1001="-";	$A1002="-";	}	
+if ($A1001 + $A1002 == 0)	{$A1001="-";	$A1002="-";	}	
+
 
 //champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);		
 //traitementScores (2001,2004, $bdd);

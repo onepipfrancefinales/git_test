@@ -20,7 +20,7 @@ $division =substr($champ,3,3);
 <tr>
 <!-- Affichage des phases finales champ de France -->
 <td class="france"> 
-	<a href="pf/pagePhaseFinale.php?annee=2023&division=<?php echo $division ;?>"> 
+	<a href="pf/pagePhaseFinale.php?annee=2024&division=<?php echo $division ;?>"> 
  		<font color="#FFFFFF">Phases finales champ de France <?php echo $finSaison;?></font>
 	</a>
 </td>

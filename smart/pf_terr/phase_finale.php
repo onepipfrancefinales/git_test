@@ -16,6 +16,8 @@
 <title>Phase finale de la ligue</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
+
 </head>
   
 <body bgcolor="#CCCCCC" text="#000000">

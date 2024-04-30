@@ -28,7 +28,7 @@ $smart = 0;
 $id = substr($chaine,0,2);
 
 require '../connect1/connection1.php';
-
+echo "test";
 nomComite (0, $id, $bdd);
 infosclub($chaine, $bdd);
 nomLigue ($numLigue, $bdd);
@@ -48,7 +48,7 @@ saisons($code,$annee, $bdd);
 <meta name="description"
 content=" <?php echo $titre;?> : Pr�sentation du club (Bureau; Si�ge; Stade; Contacts); les grandes du dates du club; les palmar�s; les r�sultats du clubs au cours des derni�res saisons et un album photos d�di� au club..">
 <meta name="keywords"
-content="comit�
+content="comité
  Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">

@@ -61,8 +61,8 @@ elseif ($page == "dates" )
     	
 	<option value=""><b>------Réserves--------</b></option>
 	<option value="<?php echo $ad ;?>?division=225&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs Elite</b></option>
-	<option value="<?php echo $ad ;?>?division=225&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs F&eacute;d&eacute;raux</b></option>
-	<option value="<?php echo $ad ;?>?division=240&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs  Fed1</b></option>
+	<option value="<?php echo $ad ;?>?division=230&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs Nationaux</b></option>
+	<option value="<?php echo $ad ;?>?division=240&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs  Federaux</b></option>
     <option value="<?php echo $ad ;?>?division=250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale B</b></option>
     <option value="<?php echo $ad ;?>?division=260&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Excellence B</b></option>
 	<option value="<?php echo $ad ;?>?division=270&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Res R&eacute;gionale</b></option>

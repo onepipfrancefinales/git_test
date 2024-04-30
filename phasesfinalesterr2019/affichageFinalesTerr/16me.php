@@ -9,7 +9,8 @@ traitementScores (8001,8016, $bdd);
 traitementScores (4001,4008, $bdd);
 traitementScores (2001,2004, $bdd);
 champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
-afficheDivisionChampion($division);
+//afficheDivisionChampion($division);
+afficheDivisionChampionLigue($division,$annee);
 ?><head>
 <link rel="stylesheet" type="text/css" href="../../phasesfinalesterr2019/qualification/qualification.css">
 <link rel="stylesheet" type="text/css" href="../champTerr.css">
@@ -287,7 +288,8 @@ afficheDivisionChampion($division);
     <td width="19"></td>
     <td width="190"></td>
     <td width="46"></td>
-    <td width="216"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $L1001;?></strong></i></b></font></td>
+    <td width="216"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong>
+      <?php echo $L1001;?></strong></i></b></font></td>
     <td width="23"></td>
     <td width="32"></td>
   </tr>
@@ -347,7 +349,9 @@ afficheDivisionChampion($division);
     <td  width="19"></td>
     <td  width="190"></td>
     <td width="46"></td>
-    <td height="17" rowspan="4"><div align="center"><font size="5"><b><strong><b><strong><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><img src="<?php echo $champLogo;  ?>" width="100" height="100"></strong></i></b></font></strong></b></font></div></td>
+    <td height="17" rowspan="4"><div align="center">
+      <font size="5"><b><strong><b><strong>
+        <font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><img src="<?php echo $champLogo;  ?>" width="100" height="100"></strong></i></b></font></strong></b></font></div></td>
     <td ></td>
     <td ></td>
   </tr>

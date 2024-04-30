@@ -102,31 +102,31 @@ echo ADMIN_PARAM_MSG3;
 echo "<td class=phpab4>";
 echo "<input type=\"text\" name=\"pts_nul\"  value=\"$existant[pts_nul]\" size=3 maxlength=3>";
 
-// points pour une d�faite
+// points pour une défaite
 echo "<tr><td class=phpab3>";
 echo ADMIN_PARAM_MSG4;
 echo " <td class=phpab3>";
 echo "<input type=\"text\" name=\"pts_defaite\"  value=\"$existant[pts_defaite]\" size=3 maxlength=3>";
 
-// Nombre d'�quipe pour l'accession directe
+// Nombre d'équipe pour l'accession directe
 echo "<tr><td  class=phpab4>";
 echo ADMIN_PARAM_MSG5;
 echo " <td class=phpab4>";
 echo "<input type=\"text\" name=\"accession\"  value=\"$existant[accession]\" size=3 maxlength=3>";
 
-// Nombre d'�quipe pour des l'accession en barrages
+// Nombre d'équipe pour des l'accession en barrages
 echo "<tr><td class=phpab3>";
 echo ADMIN_PARAM_MSG6;
 echo " <td class=phpab3>";
 echo "<input type=\"text\" name=\"barrage\"  value=\"$existant[barrage]\" size=3 maxlength=3>";
 
-// Nombre d'�quipe pour la descente
+// Nombre d'équipe pour la descente
 echo "<tr><td class=phpab4>";
 echo ADMIN_PARAM_MSG7;
 echo " <td class=phpab4>";
 echo "<input type=\"text\" name=\"relegation\"  value=\"$existant[relegation]\" size=3 maxlength=3>";
 
-// Equipe � suivre plus particuli�rement
+// Equipe à suivre plus particulièrement
 // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
  /* 
   $resultats=$idconnect->query("SELECT phpab_clubs.nom, phpab_equipes.id FROM phpab_equipes, phpab_clubs WHERE phpab_equipes.id_champ='$champ' AND phpab_clubs.id=phpab_equipes.id_club ORDER by nom");
@@ -226,7 +226,7 @@ echo "<input type=\"submit\" value=$button></form><br />";
             </tr>
 </table><br /><br />
 
-<!-- tableau points admin p�r�quation autres-->
+<!-- tableau points admin péréquation autres-->
 
 <table class=phpab width="80%">
   <tr>

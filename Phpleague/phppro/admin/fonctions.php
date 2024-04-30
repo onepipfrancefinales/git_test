@@ -730,11 +730,14 @@ WHERE ext.id_champ='$champ'
 		$DOMPOINTS=(($clmnt[$NOM]['GDOM'])*$pts_victoire) + (($clmnt[$NOM]['NDOM'])*$pts_nul) + (($clmnt[$NOM]['PDOM'])*$pts_defaite);
 		$EXTPOINTS=(($clmnt[$NOM]['GEXT'])*$pts_victoire) + (($clmnt[$NOM]['NEXT'])*$pts_nul) + (($clmnt[$NOM]['PEXT'])*$pts_defaite);
 		
-		if ($JOURPERE == 0)
+    $newPtsPerequation = 2;
+
+    if ($JOURPERE == 0)
 		$POINTS = $DOMPOINTS+ $EXTPOINTS + $PEN + $PTS_ADMIN;
 		else
-		$POINTS = $DOMPOINTS+ $EXTPOINTS + $PEN + $PTS_ADMIN +((($DOMPOINTS + $EXTPOINTS + $PEN) / ($EXTJOUES + $DOMJOUES))* $JOURPERE);	
-		
+    	// article 341-3 Péréquation : le calcul : (($DOMPOINTS + $EXTPOINTS + $PEN) / ($EXTJOUES + $DOMJOUES))* $JOURPERE
+    		//$POINTS = $DOMPOINTS+ $EXTPOINTS + $PEN + $PTS_ADMIN +((($DOMPOINTS + $EXTPOINTS + $PEN) / ($EXTJOUES + $DOMJOUES))* $JOURPERE);	
+		$POINTS = $DOMPOINTS+ $EXTPOINTS + $PEN + $PTS_ADMIN +($newPtsPerequation * $JOURPERE);	
 		
 		$G=$clmnt[$NOM]['GEXT'] + $clmnt[$NOM]['GDOM'];
 		$N=$clmnt[$NOM]['NEXT'] + $clmnt[$NOM]['NDOM'];
