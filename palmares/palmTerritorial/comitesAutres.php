@@ -66,6 +66,12 @@
 		$idComite=31;
 		$sigleComite = "(PL)";
 		}
+		elseif ($sigleLigue == "PCA")
+		{
+		$nomComite = "Provence Alpes côte d'Azur"; 
+		$idComite=34;
+		$sigleComite = "(PCA)";
+		}
 		?>
       <div align="right"><a href="tableauPalmTerr.php?paramIdComite=<?php echo $idComite; ?>"><font color="FFFFFF">Comit&eacute; 
         <?php echo $nomComite; ?></Font></a></td>

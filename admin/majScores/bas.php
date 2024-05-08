@@ -107,7 +107,7 @@
       <td align="center">MAJ Saisie du résultats des coupes d'europe (à construire)</td>
   </tr>
   <tr> 
-      <td align="center" bgcolor="#66FF66"><a href="/admin/majBaseDeDonnees/accueil.php?annee=2022">Maj des tables equipe1 / equipe2 / bdsaisons</td>
+      <td align="center" bgcolor="#66FF66"><a href="/admin/majBaseDeDonnees/accueil.php?annee=">Maj des tables equipe1 / equipe2 / bdsaisons</td>
   </tr>
   <tr> 
       <td align="center" bgcolor="#66FF66"><a href="/admin/majDebutSaison/pageAjouterClubs.php">Maj de la colonne " en_cours " de la table bdsaisons</td>

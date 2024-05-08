@@ -183,7 +183,17 @@ if ($ligue== "phppro" or $ligue == "phpfed3NE"  or $ligue == "phpfed3ne"){
 		  $debutPouleTraite = 99025101;
 	      $finPouleTraite =   99025922;
 	}
-	
+
+//FED2 test
+elseif (substr($id,0,6) == 990651){
+	$debutPouleTraite = 99065101;
+	$finPouleTraite =   99065922;
+}
+elseif (substr($id,0,6) == 990751){
+	$debutPouleTraite = 99075101;
+	$finPouleTraite =   99075922;
+}
+
 	//FED3NE - Poule 1 à 9
 	elseif (substr($id,0,6) == 991161){
 		  $debutPouleTraite = 99116101;
@@ -531,7 +541,7 @@ if (isset($scoresBdd)) $scoresBdd = $scoresBdd; else $scoresBdd=0;
 //echo "tableMatch : ".$tableMatch;echo "<br>";
 echo "etape 4"	;	echo "<br />";
 $reponse = $bdd->query("	
-				SELECT buts_dom, buts_ext
+				SELECT buts_dom, buts_ext, id_equipe_dom, id_equipe_ext
 				FROM $tableMatch 
 				WHERE id='$id'
 				 "); 
@@ -540,6 +550,8 @@ $reponse = $bdd->query("
 		{ 
 		 $recup_buts_dom = $row[0];
 		 $recup_buts_ext = $row[1];
+		 $recup_id_equipe_dom = $row[2];
+		 $recup_id_equipe_ext = $row[3];
 		}
 
 //echo "<br>";
@@ -549,27 +561,39 @@ $scoresBdd = $recup_buts_dom + $recup_buts_ext;echo "<br>";
 //echo "scoresBdd : ".$scoresBdd ;
 echo "etape 5"	;	echo "<br />";
 echo "<br>";
-echo "********************    Première ligne du fichier     *************************";echo "<br>";
+echo "********************    Première ligne du fichier     *************************"; echo "<br>";
 echo "<br>";
 echo $id.' - '.$id_equipe_dom.' - '.$id_equipe_ext.' - '.$date_reelle.' - '.$id_journee.' - '.$buts_dom.' - '.$buts_ext;
-	echo "<br>";echo "<br>";
+echo "<br>";echo "<br>";
+
+
+// vérification des oppositions
+
+
+
+
+
 
 // traitement des scores de la première ligne
 	if ( $scoresBdd  > 0 and $buts_dom + $buts_ext == 0){
+		// scores en base > 0 ET scores fichier = 0
 	  echo "test1 : ";	
+	//  if ( $id_equipe_dom == )
 	  $bdd->exec("UPDATE $tableMatch
 				  SET id = '$id', date_reelle = '$date_reelle', buts_dom = '$recup_buts_dom', buts_ext = '$recup_buts_ext'  
 				  WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");	
 	}
-	elseif ( $scoresBdd == 0 and  $buts_dom + $buts_ext > 0){	 
+	elseif ( $scoresBdd == 0 and  $buts_dom + $buts_ext > 0){	
+		// scores en base = 0 ET scores fichier > 0
 	  echo "test2 : ";	
-	  echo "222".' - '.$id.' - '.$id_equipe_dom.' - '.$id_equipe_ext.' - '.$date_reelle.' - '.$id_journee.' - '.$buts_dom.' - '.$buts_ext;
+	//  echo "222".' - '.$id.' - '.$id_equipe_dom.' - '.$id_equipe_ext.' - '.$date_reelle.' - '.$id_journee.' - '.$buts_dom.' - '.$buts_ext;
 	  $bdd->exec("UPDATE $tableMatch
 				  SET  id = '$id', date_reelle ='$date_reelle', buts_dom = '$buts_dom', buts_ext = '$buts_ext'  
 				  WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");
 	}
 	elseif ( $scoresBdd != 0 and  $buts_dom + $buts_ext !=0){	 
-	  echo "test3 : "."<br />";
+	  // scores en base != 0 ET scores fichier != 0
+		echo "test3 : "."<br />";
 	  $bdd->exec("UPDATE $tableMatch
 				  SET id = '$id', date_reelle ='$date_reelle', buts_dom = '$buts_dom', buts_ext = '$buts_ext'  
 				  WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");

@@ -1,5 +1,10 @@
+<?php
+$annee =  $_GET['annee'];
+
+
+?>
 <br/>
-<h1 align="center">Mise à jour des tables bdSaison / bdequipe1 / bdequipe2</h1>
+<h1 align="center">Mise à jour des tables bdSaison : Année <?php echo $annee;?></h1>
 <br/>
 
 <form action = "nouvelleColonne.php?saison=&nomColonne=" method ="POST">
@@ -35,7 +40,7 @@
 
 <hr/>
 <h3> Equipes Une</h3>
-<form action="participantschampionsRegionaux.php" method="POST">
+<form action="participantschampionsRegionaux.php?annee=<?php echo $annee;?>" method="POST">
   <fieldset>
   <legend>Choisir les ligues à mettre à jour (Equipe I):</legend>
   <table>
@@ -135,7 +140,7 @@
 
 <hr/>
 <h3> Equipes II</h3>
-<form action="participantschampionsRegionauxEquipe2.php" method="POST">
+<form action="participantschampionsRegionauxEquipe2.php?annee=<?php echo $annee;?>" method="POST">
   <fieldset>
   <legend>Choisir les ligues à mettre à jour (Equipe II):</legend>
   <table>

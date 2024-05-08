@@ -34,6 +34,11 @@ function affich_championnats ($champ, $action, $idconnect)
 	$valLigueMin  = 990150;   $valLigueMax  = 990160;
 	$valLigueMin2 = 990250;   $valLigueMax2 = 990260;
    } 
+
+   elseif (($champ >= 990650 and $champ < 990660) or ($champ >= 990750 and $champ < 990760)) {
+    $valLigueMin  = 990650;   $valLigueMax  = 990660;
+    $valLigueMin2 = 990750;   $valLigueMax2 = 990760;
+     } 
  
 elseif($champ >= 880280 and $champ <= 889300){
 	$valLigueMin= 880280;		$valLigueMax=880310;

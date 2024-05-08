@@ -8,7 +8,7 @@ function traitementScores ($debut, $fin)
 	global ${"clubA".($i)};
 	//if (isset (${"A".($i)})) ${"A".($i)}=${"A".($i)};${"A".($i)}='-';
 	
-	//Qualifié d'office
+	//Qualifiï¿½ d'office
 	
 	
 	if (${"A".($i)} == '999')	{${"A".($i)}="Q"; }
@@ -17,7 +17,7 @@ function traitementScores ($debut, $fin)
 	//if (${"A".($i)} == '-')     {${"clubA".($i+1)}="-"; }
 	
 	
-	// non affichage d'un équipe
+	// non affichage d'un ï¿½quipe
 	/*
 	if ($clubA2001 == '99999'  or $clubA2001 == '-')   
 		$clubA2002 = "-";
@@ -65,13 +65,13 @@ $reponse = $bdd->query("	SELECT *
 									}		
 }
 
-// Récupération du nom de la division
+// Rï¿½cupï¿½ration du nom de la division
 function nomDivision($division)
 {
 global $nomDivision;	
 
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france_db5"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france_db5"); // Sï¿½lection de la base onepip
 	
 require '../../connect1/connection5.php';
 				
@@ -178,8 +178,8 @@ $bdpfAnnee = "bdpf".$annee;
 $bdpfAnnee_2 = "bdpf".$annee."_2";
 //echo $bdpfAnnee;
 
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 
 //mysql_connect("127.0.0.1", "root", ""); 
 //mysql_select_db("onepip-france-db1"); 
@@ -198,7 +198,7 @@ $reponse = $bdd->query("SELECT type
 															
 				$prefTexte = "clubA";
 	
-//********    trente-deuxième    ************
+//********    trente-deuxiï¿½me    ************
 
  if (substr($type,0,3)=='932' or substr($type,0,3) == '964')
 	{
@@ -219,7 +219,7 @@ $reponse = $bdd->query("SELECT type
 	
 	
 	}
-//**********    seizième  ************************
+//**********    seiziï¿½me  ************************
 elseif(substr($type,3,2)== 16 or substr($type,3,2)== 32)
 	{
 	$prefTexte = "clubA";
@@ -237,7 +237,7 @@ elseif(substr($type,3,2)== 16 or substr($type,3,2)== 32)
 	$debutScores ="";
 	$finScores= "";
 	}
-//*******       huitième   ************************
+//*******       huitiï¿½me   ************************
 
 elseif (substr($type,5,2)== '08' or substr($type,5,2)== '16')
 	{
@@ -352,7 +352,7 @@ $prefixeEquipes1B = $prefTexte2.$prefChiffre1;
 $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 
 //*****************************************************************************
-//************************         Equipes de E01 à E09  **********************
+//************************         Equipes de E01 ï¿½ E09  **********************
 //*****************************************************************************	
 	//$debut =1;
 	//$fin=9;
@@ -412,7 +412,7 @@ $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 			
 
 //************************************************************************************
-//*******************    Equipes de E10 à E65   **************************************
+//*******************    Equipes de E10 ï¿½ E65   **************************************
 //************************************************************************************	
 	
 	//$prefixeEquipes2 = substr($prefixeEquipes,0,7);
@@ -455,12 +455,12 @@ $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 				}
 	
 	//echo 	$tabNomEquipes2[3] ;
-//********************* Trente deuxième de finale***************************************
+//********************* Trente deuxiï¿½me de finale***************************************
 
 
 
 
-///trente-deuxième de finale
+///trente-deuxiï¿½me de finale
 	$divisionAPts = $division + '1';
 	$divisionRGA  = $division + '2';
 	$divisionRPts = $division + '3';
@@ -493,7 +493,7 @@ $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 	}
 
 //******************************************************************************************************	
-//********************* Trente deuxième de finale  ALLER/RETOUR  ***************************************
+//********************* Trente deuxiï¿½me de finale  ALLER/RETOUR  ***************************************
 //******************************************************************************************************
 
 //GA Aller : juste au dessus
@@ -569,7 +569,7 @@ $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 	
 
 //****************************************************************************	
-//***********************         seizième de finale    **********************
+//***********************         seiziï¿½me de finale    **********************
 //****************************************************************************
 
 
@@ -697,7 +697,7 @@ for ($i=$debut ; $i<= $fin; $i++)
 	
 
 //*************************************************************************
-//******************         huitième de finale  **************************
+//******************         huitiï¿½me de finale  **************************
 //*************************************************************************
 	
 	$divisionAPts = $division + '1';
@@ -738,7 +738,7 @@ for ($i=$debut ; $i<= $fin; $i++)
 	}
 	
 	
-//**********************    huitième de finale	AR *********************************
+//**********************    huitiï¿½me de finale	AR *********************************
 	
 //PTS Aller
 
@@ -1048,7 +1048,7 @@ for ($i=$debut ; $i<= $fin; $i++)
 
 	}			
 
-// traitement des résultats	
+// traitement des rï¿½sultats	
 	for ($i=$debut ; $i<= $fin; $i++)
 	{
 	${"A".($i)} = (int)${"A".($i)} + (int)${"R".($i)};

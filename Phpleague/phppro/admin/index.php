@@ -43,9 +43,12 @@ if ($champ >= 990110 and $champ < 990140)
 	{ $nomLigue= "F&eacute;d&eacute;rale 1 - Espoir F&eacute;d&eacute;rale";}
  elseif (($champ >= 990150 and $champ < 990160) or ($champ >= 990250 and $champ < 990260)) 
 	{ $nomLigue= "F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";}
+  elseif (($champ >= 990650 and $champ < 990660) or ($champ >= 990750 and $champ < 990760)) 
+	{ $nomLigue= "F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B - test";}
  elseif ($champ >= 880280 and $champ < 880350) 
 	{ $nomLigue= "Comp&eacute;titions f&eacute;minines";}
- 
+  else
+  { $nomLigue= "Comp&eacute;titions test";}
 ?>
 
 <div align="center">
@@ -97,7 +100,7 @@ if ($champ >= 990110 and $champ < 990140)
        else {include ("accueil.htm");}
                 }
        elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-       elseif ($identification == "non2") {echo "Identifiants erronés !";}
+       elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
     
        else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
      

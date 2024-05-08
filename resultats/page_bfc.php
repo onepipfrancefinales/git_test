@@ -8,7 +8,7 @@ include("fonctions.php");
 require "constantes.php";
 
 $champLigue=11;
-//$sigleLigue="(BFC)";
+$sigleLigue="(BFC)";
 $comite="phppl";
 $CMT="BG";
 $cmt="bg";

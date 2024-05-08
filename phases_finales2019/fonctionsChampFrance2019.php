@@ -1203,8 +1203,8 @@ for ($i=$debut ; $i<= $fin; $i++){
 
 				if ((int)$A3201Pts+(int)$A3202Pts>6) {if ($A3201Pts > $A3202Pts or ($A3201Pts == $A3202Pts and $A3201>$A3202)) {$clubA1601= $clubA3201;} else {$clubA1601= $clubA3202;}} else {$clubA1601="-";}	
 				if ((int)$A3203Pts+(int)$A3204Pts>6) {if ($A3203Pts > $A3204Pts or ($A3203Pts == $A3204Pts and $A3203>$A3204)) {$clubA1602= $clubA3203;} else {$clubA1602= $clubA3204;}} else {$clubA1602="-";}
-				if ((int)$A3205Pts+(int)$A3206Pts>6) {if ($A3205Pts > $A3206Pts or ($A3205Pts == $A3206Pts and $A3205>$A3206)) {$clubA1603= $clubA3205;} else	{$clubA1603= $clubA3206;}} else {$clubA1603="-";}
-				if ((int)$A3207Pts+(int)$A3208Pts>6) {if ($A3207Pts > $A3208Pts or ($A3207Pts == $A3208Pts and $A3207>$A3208)) {$clubA1604= $clubA3207;} else	{$clubA1604= $clubA3208;}} else {$clubA1604="-";}
+				if ((int)$A3205Pts+(int)$A3206Pts>6) {if ($A3205Pts > $A3206Pts or ($A3205Pts == $A3206Pts and $A3205>$A3206)) {$clubA1603= $clubA3205;} else {$clubA1603= $clubA3206;}} else {$clubA1603="-";}
+				if ((int)$A3207Pts+(int)$A3208Pts>6) {if ($A3207Pts > $A3208Pts or ($A3207Pts == $A3208Pts and $A3207>$A3208)) {$clubA1604= $clubA3207;} else {$clubA1604= $clubA3208;}} else {$clubA1604="-";}
 			
 				if ((int)$A3209Pts+(int)$A3210Pts>6) {if ($A3209Pts > $A3210Pts or ($A3209Pts == $A3210Pts and $A3209>$A3210)) {$clubA1605= $clubA3209;} else {$clubA1605= $clubA3210;}} else {$clubA1605="-";}	
 				if ((int)$A3211Pts+(int)$A3212Pts>6) {if ($A3211Pts > $A3212Pts or ($A3211Pts == $A3212Pts and $A3211>$A3212)) {$clubA1606= $clubA3211;} else {$clubA1606= $clubA3212;}} else {$clubA1606="-";}
@@ -1218,15 +1218,10 @@ for ($i=$debut ; $i<= $fin; $i++){
 			
 				if ((int)$A3225Pts+(int)$A3226Pts>6) {if ($A3225Pts > $A3226Pts or ($A3225Pts == $A3226Pts and $A3225>$A3226)) {$clubA1613= $clubA3225;} else {$clubA1613= $clubA3226;}} else {$clubA1613="-";}	
 				if ((int)$A3227Pts+(int)$A3228Pts>6) {if ($A3227Pts > $A3228Pts or ($A3227Pts == $A3228Pts and $A3227>$A3228)) {$clubA1614= $clubA3227;} else {$clubA1614= $clubA3228;}} else {$clubA1614="-";}
-				if ((int)$A3229Pts+(int)$A3230Pts>6) {
-					if ($A3229Pts > $A3230Pts or ($A3229Pts == $A3230Pts and $A3229>$A3230)) 
-						{$clubA1615= $clubA3229;} 
-					else 
-						{$clubA1615= $clubA3230;}} 
-				else {$clubA1615="-";}
-				if ((int)$A3231Pts+(int)$A3232Pts>6) {if ($A3231Pts > $A3232Pts or ($A3231Pts == $A3232Pts and $A3231>$A3232)) {$clubA1616= $clubA3231;} else	{$clubA1616= $clubA3232;}} else {$clubA1616="-";}
+				if ((int)$A3229Pts+(int)$A3230Pts>6) {if ($A3229Pts > $A3230Pts or ($A3229Pts == $A3230Pts and $A3229>$A3230)) {$clubA1615= $clubA3229;} else {$clubA1615= $clubA3230;}} else {$clubA1615="-";}
+				if ((int)$A3231Pts+(int)$A3232Pts>6) {if ($A3231Pts > $A3232Pts or ($A3231Pts == $A3232Pts and $A3231>$A3232)) {$clubA1616= $clubA3231;} else {$clubA1616= $clubA3232;}} else {$clubA1616="-";}
 			
-				if ((int)$A3233Pts+(int)$A3234Pts>6) {if ($A3232Pts > $A3234Pts or ($A3233Pts == $A3234Pts and $A3233>$A3234)) {$clubA1617= $clubA3233;} else {$clubA1617= $clubA3234;}} else {$clubA1617="-";}	
+				if ((int)$A3233Pts+(int)$A3234Pts>6) {if ($A3233Pts > $A3234Pts or ($A3233Pts == $A3234Pts and $A3233>$A3234)) {$clubA1617= $clubA3233;} else {$clubA1617= $clubA3234;}} else {$clubA1617="-";}	
 				if ((int)$A3235Pts+(int)$A3236Pts>6) {if ($A3235Pts > $A3236Pts or ($A3235Pts == $A3236Pts and $A3235>$A3236)) {$clubA1618= $clubA3235;} else {$clubA1618= $clubA3236;}} else {$clubA1618="-";}
 				if ((int)$A3237Pts+(int)$A3238Pts>6) {if ($A3237Pts > $A3238Pts or ($A3237Pts == $A3238Pts and $A3237>$A3238)) {$clubA1619= $clubA3237;} else {$clubA1619= $clubA3238;}} else {$clubA1619="-";}
 				if ((int)$A3239Pts+(int)$A3240Pts>6) {if ($A3239Pts > $A3240Pts or ($A3239Pts == $A3240Pts and $A3239>$A3240)) {$clubA1620= $clubA3239;} else {$clubA1620= $clubA3240;}} else {$clubA1620="-";}
@@ -1234,17 +1229,17 @@ for ($i=$debut ; $i<= $fin; $i++){
 				if ((int)$A3241Pts+(int)$A3242Pts>6) {if ($A3241Pts > $A3242Pts or ($A3241Pts == $A3242Pts and $A3241>$A3242)) {$clubA1621= $clubA3241;} else {$clubA1621= $clubA3242;}} else {$clubA1621="-";}	
 				if ((int)$A3243Pts+(int)$A3244Pts>6) {if ($A3243Pts > $A3244Pts or ($A3243Pts == $A3244Pts and $A3243>$A3244)) {$clubA1622= $clubA3243;} else {$clubA1622= $clubA3244;}} else {$clubA1622="-";}
 				if ((int)$A3245Pts+(int)$A3246Pts>6) {if ($A3245Pts > $A3246Pts or ($A3245Pts == $A3246Pts and $A3245>$A3246)) {$clubA1623= $clubA3245;} else {$clubA1623= $clubA3246;}} else {$clubA1623="-";}
-				if ((int)$A3247Pts+(int)$A3248Pts>6) {if ($A3247Pts > $A3248Pts or ($A3247Pts == $A3248Pts and $A3247>$A3248)) {$clubA1624= $clubA3247;} else	{$clubA1624= $clubA3248;}} else {$clubA1624="-";}
+				if ((int)$A3247Pts+(int)$A3248Pts>6) {if ($A3247Pts > $A3248Pts or ($A3247Pts == $A3248Pts and $A3247>$A3248)) {$clubA1624= $clubA3247;} else {$clubA1624= $clubA3248;}} else {$clubA1624="-";}
 			
 				if ((int)$A3249Pts+(int)$A3250Pts>6) {if ($A3249Pts > $A3250Pts or ($A3249Pts == $A3250Pts and $A3249>$A3250)) {$clubA1625= $clubA3249;} else {$clubA1625= $clubA3250;}} else {$clubA1625="-";}	
 				if ((int)$A3251Pts+(int)$A3252Pts>6) {if ($A3251Pts > $A3252Pts or ($A3251Pts == $A3252Pts and $A3251>$A3252)) {$clubA1626= $clubA3251;} else {$clubA1626= $clubA3252;}} else {$clubA1626="-";}
-				if ((int)$A3253Pts+(int)$A3254Pts>6) {if ($A3253Pts > $A3254Pts or ($A3253Pts == $A3254Pts and $A3253>$A3254)) {$clubA1627= $clubA3253;} else	{$clubA1627= $clubA3254;}} else {$clubA1627="-";}
-				if ((int)$A3255Pts+(int)$A3256Pts>6) {if ($A3255Pts > $A3256Pts or ($A3255Pts == $A3256Pts and $A3255>$A3256)) {$clubA1628= $clubA3255;} else	{$clubA1628= $clubA3256;}} else {$clubA1628="-";}
+				if ((int)$A3253Pts+(int)$A3254Pts>6) {if ($A3253Pts > $A3254Pts or ($A3253Pts == $A3254Pts and $A3253>$A3254)) {$clubA1627= $clubA3253;} else {$clubA1627= $clubA3254;}} else {$clubA1627="-";}
+				if ((int)$A3255Pts+(int)$A3256Pts>6) {if ($A3255Pts > $A3256Pts or ($A3255Pts == $A3256Pts and $A3255>$A3256)) {$clubA1628= $clubA3255;} else {$clubA1628= $clubA3256;}} else {$clubA1628="-";}
 			
 				if ((int)$A3257Pts+(int)$A3258Pts>6) {if ($A3257Pts > $A3258Pts or ($A3257Pts == $A3258Pts and $A3257>$A3258)) {$clubA1629= $clubA3257;} else {$clubA1629= $clubA3258;}} else {$clubA1629="-";}	
 				if ((int)$A3259Pts+(int)$A3260Pts>6) {if ($A3259Pts > $A3260Pts or ($A3259Pts == $A3260Pts and $A3259>$A3260)) {$clubA1630= $clubA3259;} else {$clubA1630= $clubA3260;}} else {$clubA1630="-";}
-				if ((int)$A3261Pts+(int)$A3262Pts>6) {if ($A3261Pts > $A3262Pts or ($A3261Pts == $A3262Pts and $A3261>$A3262)) {$clubA1631= $clubA3261;} else	{$clubA1631= $clubA3262;}} else {$clubA1631="-";}
-				if ((int)$A3263Pts+(int)$A3264Pts>6) {if ($A3253Pts > $A3264Pts or ($A3263Pts == $A3264Pts and $A3263>$A3264)) {$clubA1632= $clubA3263;} else	{$clubA1632= $clubA3264;}} else {$clubA1632="-";}
+				if ((int)$A3261Pts+(int)$A3262Pts>6) {if ($A3261Pts > $A3262Pts or ($A3261Pts == $A3262Pts and $A3261>$A3262)) {$clubA1631= $clubA3261;} else {$clubA1631= $clubA3262;}} else {$clubA1631="-";}
+				if ((int)$A3263Pts+(int)$A3264Pts>6) {if ($A3253Pts > $A3264Pts or ($A3263Pts == $A3264Pts and $A3263>$A3264)) {$clubA1632= $clubA3263;} else {$clubA1632= $clubA3264;}} else {$clubA1632="-";}
 			
 			
 			}
@@ -1487,7 +1482,7 @@ for ($i=$debut ; $i<= $fin; $i++){
 				if ((int)$A3229Pts+(int)$A3230Pts>6) {if ($A3229Pts > $A3230Pts or ($A3229Pts == $A3230Pts and $A3229>$A3230)) {$clubA1615= $clubA3229;} else	{$clubA1615= $clubA3230;}} else {$clubA1615="-";}
 				if ((int)$A3231Pts+(int)$A3232Pts>6) {if ($A3231Pts > $A3232Pts or ($A3231Pts == $A3232Pts and $A3231>$A3232)) {$clubA1616= $clubA3231;} else	{$clubA1616= $clubA3232;}} else {$clubA1616="-";}
 			
-				if ((int)$A3233Pts+(int)$A3234Pts>6) {if ($A3232Pts > $A3234Pts or ($A3233Pts == $A3234Pts and $A3233>$A3234)) {$clubA1617= $clubA3233;} else {$clubA1617= $clubA3234;}} else {$clubA1617="-";}	
+				if ((int)$A3233Pts+(int)$A3234Pts>6) {if ($A3233Pts > $A3234Pts or ($A3233Pts == $A3234Pts and $A3233>$A3234)) {$clubA1617= $clubA3233;} else {$clubA1617= $clubA3234;}} else {$clubA1617="-";}	
 				if ((int)$A3235Pts+(int)$A3236Pts>6) {if ($A3235Pts > $A3236Pts or ($A3235Pts == $A3236Pts and $A3235>$A3236)) {$clubA1618= $clubA3235;} else {$clubA1618= $clubA3236;}} else {$clubA1618="-";}
 				if ((int)$A3237Pts+(int)$A3238Pts>6) {if ($A3237Pts > $A3238Pts or ($A3237Pts == $A3238Pts and $A3237>$A3238)) {$clubA1619= $clubA3237;} else	{$clubA1619= $clubA3238;}} else {$clubA1619="-";}
 				if ((int)$A3239Pts+(int)$A3240Pts>6) {if ($A3239Pts > $A3240Pts or ($A3239Pts == $A3240Pts and $A3239>$A3240)) {$clubA1620= $clubA3239;} else	{$clubA1620= $clubA3240;}} else {$clubA1620="-";}

@@ -34,6 +34,11 @@ function affich_championnats ($champ, $action, $idconnect)
 	$valLigueMin  = 990150;   $valLigueMax  = 990160;
 	$valLigueMin2 = 990250;   $valLigueMax2 = 990260;
    } 
+
+   elseif (($champ >= 990160 and $champ < 990170) or ($champ >= 990750 and $champ < 990760)) {
+    $valLigueMin  = 990650;   $valLigueMax  = 990660;
+    $valLigueMin2 = 990750;   $valLigueMax2 = 990760;
+     } 
  
 elseif($champ >= 880280 and $champ >= 88350){
 	$valLigueMin= 880280;		$valLigueMax=880310;
@@ -820,7 +825,7 @@ WHERE ext.id_champ='$champ'
 	//echo "fin";//echo "<br />"; 
 }
 
-// Nombres de renseignement dans cette classe à partir de l'id_classe  (utilisé dans phppro_classe.php)
+// Nombres de renseignement dans cette classe ï¿½ partir de l'id_classe  (utilisï¿½ dans phppro_classe.php)
 function nb_classe($data, $idconnect)
 {
   $result=$idconnect->query("SELECT id FROM phppro_rens WHERE id_classe='$data'");
@@ -829,7 +834,7 @@ function nb_classe($data, $idconnect)
   return("$nb_classe");
 }
 
-// Nombres de classes enregistrées (ulilisé dans phppro_classe.php)
+// Nombres de classes enregistrï¿½es (ulilisï¿½ dans phppro_classe.php)
 function nb_classe2($idconnect)
 {	
   $result=$idconnect->query("SELECT * FROM phppro_classe");
@@ -838,7 +843,7 @@ function nb_classe2($idconnect)
   return("$nb_classe2");
 }
 
-// Nombres de renseignements classés (utilisé dans admin/rens.php)
+// Nombres de renseignements classï¿½s (utilisï¿½ dans admin/rens.php)
 function nb_rens($idconnect)
 {
   $result=$idconnect->query("SELECT id FROM phppro_rens where id_classe>'0'");
@@ -846,7 +851,7 @@ function nb_rens($idconnect)
   return("$nb_rens");
 }
 
-// Nombres de renseignements enregistrés (utilisé dans rens.php)
+// Nombres de renseignements enregistrï¿½s (utilisï¿½ dans rens.php)
 function nb_rens2($idconnect)
 {	
   $result=$idconnect->query("SELECT * FROM phppro_rens");
@@ -854,7 +859,7 @@ function nb_rens2($idconnect)
   return("$nb_rens2");
 }
 
-// id du renseignement à partir du nom du rens (utilisé dans rens.php)
+// id du renseignement ï¿½ partir du nom du rens (utilisï¿½ dans rens.php)
 function rens2($rens, $idconnect)
 {
   $result=$idconnect->query("select id, nom from phppro_rens where nom='$rens'");
@@ -864,7 +869,7 @@ function rens2($rens, $idconnect)
   return("$rens2");
 }
 
-// Affichage des renseignements (utilisé dans gestequipes.php
+// Affichage des renseignements (utilisï¿½ dans gestequipes.php
 function aff_rens ($id_classe, $id_clubs, $idconnect)
   {
   $result=$idconnect->query("SELECT phppro_donnee.id, phppro_donnee.nom, id_rens, id_clubs, phppro_rens.id, phppro_rens.nom, phppro_rens.id_classe, phppro_clubs.id, etat, phppro_donnee.url, phppro_rens.url
