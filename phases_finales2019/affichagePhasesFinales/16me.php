@@ -245,7 +245,7 @@
     <td></td>
     <td class="coin4"><?php echo $clubA8008;?></td>
     <td class="coin4pts"><?php echo $A8008;?></td>
-	<td colspan="4" bgcolor="#FFFFFF"><b><font color="#FF0000" size="4"><i></i></font></b></td>
+	<td colspan="4" ></td>
 	<td></td>
     <td class="coin4"><?php echo $clubA1001;?></td>
     <td class="coin4pts"><?php echo $A1001;?></td>
@@ -258,10 +258,10 @@
     <td colspan="3"></td>
 	 
 	
-   <td bgcolor="#FFFFFF"></td>
-	<td bgcolor="#FFFFFF"></td>
-  <td bgcolor="#FFFFFF"></td>
-  <td bgcolor="#FFFFFF"></td>
+   <td ></td>
+	<td ></td>
+  <td ></td>
+  <td></td>
 	 <td></td>
 	
 	<td class="coin4"><?php echo $clubA1002;?></td>
@@ -275,7 +275,7 @@
     <td colspan="3"></td>
     <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
     
-		<td colspan="4" bgcolor="#FFFFFF"></td>
+		<td colspan="4" ></td>
 		<td></td>
    <td></td>
 		

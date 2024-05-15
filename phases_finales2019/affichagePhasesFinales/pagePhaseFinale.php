@@ -81,9 +81,12 @@ elseif (substr($type,0,1) == 8)
 
 	//********   Nationale    *********	
 
-	elseif ($division == '130')
-			require "130_2019.php";
-	
+	elseif ($division == '130') {
+			if ($annee <= 2024)
+			{require "130_2019.php";}
+		else
+		{require "130_2024.php";}
+	}
 	//********   Nationale II   *********	
 			elseif ($division == '135')
 			require "0804AR.php";
