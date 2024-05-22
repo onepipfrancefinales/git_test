@@ -76,13 +76,13 @@ elseif (substr($type,0,1) == 8)
 
 	//********   Pro D2    *********	
 
-	elseif ($division == '120')
+	elseif ($division == '120') 
 			require "120_2019.php";
 
 	//********   Nationale    *********	
 
 	elseif ($division == '130') {
-			if ($annee <= 2024)
+			if ($annee < 2024)
 			{require "130_2019.php";}
 		else
 		{require "130_2024.php";}

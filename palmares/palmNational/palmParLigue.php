@@ -1,4 +1,4 @@
-<?php require ("../../connect1/connection1.php") ; ?>  
+<?php require ("../../connect/connexion1.php") ; ?>  
 
 
 <br /><br />

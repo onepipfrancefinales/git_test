@@ -17,3 +17,14 @@ color:red;
 background-color:yellow;
 
 }
+
+.titrePage{
+    margin: 0px auto;   text-align:center;
+
+    font-weight: Bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color:rgb(6, 6, 6);
+
+    
+    }

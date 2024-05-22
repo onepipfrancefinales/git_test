@@ -4,21 +4,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link type="text/css" rel="stylesheet" href="pglogo.css"/>
 <script language="JavaScript">
-<!--
-<!--
-function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+
+/*
+function MM_reloadPage(init) { 
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-// -->
 
-function MM_jumpMenu(targ,selObj,restore){ //v3.0
+
+function MM_jumpMenu(targ,selObj,restore){ 
   eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
   if (restore) selObj.selectedIndex=0;
 }
-//-->
+*/
 </script>
 </head>
 
@@ -28,107 +28,88 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     <table width="801" align="center">
       <tr> 
         <td width="387" bgcolor="#CCCCCC"> 
-          <div align="center"><font size="7"><font size="6" color="#000000">Autre 
-            recherche</font></font> <br>
+          <div align="center"><font size="6" color="#000000">Autre recherche</font> <br>
             <select name="select3" onChange="MM_jumpMenu('parent',this,0)" size="1">
-              <option selected><font color="#FF0000">Alphab&eacute;tique</font></option>
-              <option value="page_recherche_comite2.php?variable_1=A"><font color="#FF0000">A</font></option>
-              <option value="page_recherche_comite2.php?variable_1=B"><font color="#FF0000">B</font></option>
-              <option value="page_recherche_comite2.php?variable_1=C"><font color="#FF0000">C</font></option>
-              <option value="page_recherche_comite2.php?variable_1=D"><font color="#FF0000">D</font></option>
-              <option value="page_recherche_comite2.php?variable_1=E"><font color="#FF0000">E</font></option>
-              <option value="page_recherche_comite2.php?variable_1=F"><font color="#FF0000">F</font></option>
-              <option value="page_recherche_comite2.php?variable_1=G"><font color="#FF0000">G</font></option>
-              <option value="page_recherche_comite2.php?variable_1=H"><font color="#FF0000">H</font></option>
-              <option value="page_recherche_comite2.php?variable_1=I"><font color="#FF0000">I</font></option>
-              <option value="page_recherche_comite2.php?variable_1=J"><font color="#FF0000">J</font></option>
-              <option value="page_recherche_comite2.php?variable_1=K"><font color="#FF0000">K</font></option>
-              <option value="page_recherche_comite2.php?variable_1=L"><font color="#FF0000">L</font></option>
-              <option value="page_recherche_comite2.php?variable_1=M"><font color="#FF0000">M</font></option>
-              <option value="page_recherche_comite2.php?variable_1=N"><font color="#FF0000">N</font></option>
-              <option value="page_recherche_comite2.php?variable_1=O"><font color="#FF0000">O</font></option>
-              <option value="page_recherche_comite2.php?variable_1=P"><font color="#FF0000">P</font></option>
-              <option value="page_recherche_comite2.php?variable_1=Q"><font color="#FF0000">Q</font></option>
-              <option value="page_recherche_comite2.php?variable_1=R"><font color="#FF0000">R</font></option>
-              <option value="page_recherche_comite2.php?variable_1=S"><font color="#FF0000">S</font></option>
-              <option value="page_recherche_comite2.php?variable_1=T"><font color="#FF0000">T</font></option>
-              <option value="page_recherche_comite2.php?variable_1=U"><font color="#FF0000">U</font></option>
-              <option value="page_recherche_comite2.php?variable_1=V"><font color="#FF0000">V</font></option>
-              <option value="page_recherche_comite2.php?variable_1=W"><font color="#FF0000">W</font></option>
-              <option value="page_recherche_comite2.php?variable_1=X"><font color="#FF0000">X</font></option>
-              <option value="page_recherche_comite2.php?variable_1=Y"><font color="#FF0000">Y</font></option>
-              <option value="page_recherche_comite2.php?variable_1=Z"><font color="#FF0000">Z</font></option>
+              <option selected>Alphabétique</option>
+              <option value="page_recherche_comite2.php?variable_1=A">A</option>
+              <option value="page_recherche_comite2.php?variable_1=B">B</option>
+              <option value="page_recherche_comite2.php?variable_1=C">C</option>
+              <option value="page_recherche_comite2.php?variable_1=D">D</option>
+              <option value="page_recherche_comite2.php?variable_1=E">E</option>
+              <option value="page_recherche_comite2.php?variable_1=F">F</option>
+              <option value="page_recherche_comite2.php?variable_1=G">G</option>
+              <option value="page_recherche_comite2.php?variable_1=H">H</option>
+              <option value="page_recherche_comite2.php?variable_1=I">I</option>
+              <option value="page_recherche_comite2.php?variable_1=J">J</option>
+              <option value="page_recherche_comite2.php?variable_1=K">K</option>
+              <option value="page_recherche_comite2.php?variable_1=L">L</option>
+              <option value="page_recherche_comite2.php?variable_1=M">M</option>
+              <option value="page_recherche_comite2.php?variable_1=N">N</option>
+              <option value="page_recherche_comite2.php?variable_1=O">O</option>
+              <option value="page_recherche_comite2.php?variable_1=P">P</option>
+              <option value="page_recherche_comite2.php?variable_1=Q">Q</option>
+              <option value="page_recherche_comite2.php?variable_1=R">R</option>
+              <option value="page_recherche_comite2.php?variable_1=S">S</option>
+              <option value="page_recherche_comite2.php?variable_1=T">T</option>
+              <option value="page_recherche_comite2.php?variable_1=U">U</option>
+              <option value="page_recherche_comite2.php?variable_1=V">V</option>
+              <option value="page_recherche_comite2.php?variable_1=W">W</option>
+              <option value="page_recherche_comite2.php?variable_1=X">X</option>
+              <option value="page_recherche_comite2.php?variable_1=Y">Y</option>
+              <option value="page_recherche_comite2.php?variable_1=Z">Z</option>
             </select>
           </div>
         </td>
         <td width="402" bgcolor="#CCCCCC"> 
-          <div align="center"><font size="6" color="#000000">Recherche par comit&eacute;</font><font size="7"><br>
+          <div align="center"><font size="6" color="#000000">Recherche par comité</font><br>
             <select id="inputG" name="select3" onChange="MM_jumpMenu('parent',this,0)" size="1">
-              <option selected>Par comit&eacute;</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(AP)">Alpes</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(AL)">Alsace 
-              Lorraine</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(AB)">Armagnac 
-              Bigorre</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(AU)">Auvergne</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(BE)">B&eacute;arn</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(BG)">Bourgogne</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(BR)">Bretagne</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(CE)">Centre</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(C)">Corse</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(CBL)">C&ocirc;te 
-              Basque Landes</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(CA)">C&ocirc;te 
-              d'Argent</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(CAZ)">C&ocirc;te 
-              d'Azur</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(DA)">Dr&ocirc;me 
-              Ard&egrave;che</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(FL)">Flandres</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(FC)">Franche 
-              Comt&eacute;</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(IDF)">Ile 
-              de France</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(LD)">Languedoc</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(LM)">Limousin</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(LY)">Lyonnais</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(MPY)">Midi 
-              Pyr&eacute;n&eacute;es</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(N)">Normandie</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(PL)">Pays 
-              de Loire</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(PA)">P&eacute;rigord 
-              Agenais</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(PCH)">Poitou 
-              Charente</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(PR)">Provence</option>
-              <option value="/consultation/page_recherche_comite.php?variable_1=(PC)">Pays 
+              <option selected>Par comité</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(AP)">Alpes</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(AL)">Alsace Lorraine</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(AB)">Armagnac Bigorre</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(AU)">Auvergne</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(BE)">Béarn</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(BG)">Bourgogne</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(BR)">Bretagne</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(CE)">Centre</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(C)">Corse</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(CBL)">Côte Basque Landes</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(CA)">Côte d'Argent</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(CAZ)">Côte d'Azur</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(DA)">Drôme Ardèche</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(FL)">Flandres</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(FC)">Franche Comté</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(IDF)">Ile de France</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(LD)">Languedoc</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(LM)">Limousin</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(LY)">Lyonnais</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(MPY)">Midi Pyrénées</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(N)">Normandie</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(PL)">Pays de Loire</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(PA)">Périgord Agenais</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(PCH)">Poitou Charente</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(PR)">Provence</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(PC)">Pays 
               Catalan</option>
             </select>
-            </font> </div>
+             </div>
         </td>
       </tr>
     </table>
   </div>
-  <div align="left"> 
-    <div align="center">
+ 
       <HR/>
-    </div>
-    <b><font size="7"> 
+   
+  
     <?php $sigle = $_GET['variable_1'];?>
-    </font></b><font size="7"> 
-    <div align="center"><b>Tous les Clubs Fran&ccedil;ais<br>
-      en 
-      <?php echo $sigle ;?>
-    </b></div>
-    </font> 
-    <div align="center"><font size="6"></font></div>
-    <font size="6"></font> </div>
-</div>
-<p>&nbsp;</p>
+   
+<div class="titrePage">Tous les Clubs Français<br>
+      en <?php echo $sigle ;?>
+    </div>
+
 <p> 
   <?php
-require ("../connect1/connection1.php") ;
+require ("../connect/connexion1.php") ;
 
 // $NbrCol : le nombre de colonnes
 // $NbrLigne : calcul automatique a la FIN
@@ -137,7 +118,7 @@ require ("../connect1/connection1.php") ;
 $NbreData =array();
 //echo "sigle : ".$sigle;
 $NbrCol = 4;
-// La requete (exemple) : toutes les "CHOSE" commen�ant par un "b", class�es par ordre alphab�tique.
+// La requete (exemple) : toutes les "CHOSE" commen�ant par un "b", class�es par ordre alphab�tique.
 
 $requete = $bdd->query("SELECT COUNT(id)
 						FROM bdclubs 
@@ -157,16 +138,28 @@ if ($NbreData != 0) {
 	$j = 1;
 ?>
 </p>
-<table align="center" color="#000000" vlink="#000000" text="#000000" link="#000000" alink="#000000">
+<table >
     <tbody> 
     <?php
 	
 	
+if (strlen($sigle) == 1) {
+
+
 	$query =$bdd->query("SELECT *
 						 FROM bdclubs 
 						 WHERE nom_1 LIKE '$sigle%'  
 						 AND siglecomite !=''
 						 ORDER BY  nom_1 ASC");
+}
+else {
+
+  $query =$bdd->query("SELECT *
+  FROM bdclubs 
+  WHERE siglecomite = '$sigle'  
+  ORDER BY  nom_1 ASC");
+
+}
 	
 	
 	while ($val = $query->fetch()) 
@@ -199,8 +192,11 @@ if ($NbreData != 0) {
     </tr>
     <?php		}
 		$j++;
-	} // fin while
-	// fermeture derniere balise /tr
+	}
+  
+
+
+
 	if ($fintr!=1) {
 ?>
     <?php	} ?>
@@ -208,12 +204,9 @@ if ($NbreData != 0) {
   </table>
   
 <?php
-} else { ?>
-Aucun club en <b><font size="5"> 
-<?php echo $sigle ;?>
-</font></b> 
-<?php
+} else 
+{ 
+ echo "Aucun club en ". $sigle ; 
 }
 
 ?>
-<br/><br/>

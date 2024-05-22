@@ -207,7 +207,47 @@ $nomChampion= substr($champion,0, -6);
   }
   $idEquipeCourt=substr($idEquipe ,2,5);
 }
+/*
+SELECT bdclubs.id, bdclubs.nom_1, bdclubs.sigleComite, bdclubs.ligue 
+				FROM bdclubs, bdpffrance
+				WHERE bdclubs.id=bdpffrance.$equipes 
+				AND bdpffrance.id= '$division' AND bdpffrance.saison = '$annee'"
 
+	*/			
+function accessMatch ($division, $annee, $bdd) {
+
+	GLOBAL $equipeDom, $equipeExt, $scoreDom, $scoreExt;
+	
+	$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3201
+	FROM bdclubs, bdpffrance
+	WHERE 	bdclubs.id= bdpffrance.E01
+	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'");
+
+	while ($row = $reponse->fetch() )
+		{ 
+		
+		$equipeDom = $row[0];
+		$scoreDom = $row[1];
+
+		}
+
+
+
+		$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3202
+	FROM bdclubs, bdpffrance
+	WHERE 	bdclubs.id= bdpffrance.E02
+	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'");
+
+	while ($row = $reponse->fetch() )
+		{ 
+		
+		
+		$equipeExt = $row[0];
+		$scoreExt = $row[1];
+
+		}
+
+}
 
 
 //***********************************************************************

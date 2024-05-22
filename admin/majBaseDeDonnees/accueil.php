@@ -31,9 +31,9 @@ echo $annee;
 
   <h2>Participations et champions aux championnats de France </h2> 
   <p><a href="championsFrance.php?annee=<?php echo $annee;?>">Liste des clubs participants aux phases finales 
-  du champs de France (table bdsaisons)</a></p>
+  du champs de France (table bdsaisonset bdEquipe1)</a></p>
 
-
+  <p> -> Mise à jour des tables bdequipe1, bdequipe2 et bdSaison (pour les compétition de 110 à 160)</p>
 <!--
   <p><a href="participantschampionsRegionaux.php?annee=<?php echo $saison;?>">Liste des clubs participants aux 
   phases finales du champs des ligues (table bdsaison)</a></p>

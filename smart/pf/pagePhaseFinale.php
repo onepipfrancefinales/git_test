@@ -60,12 +60,14 @@ if (substr($type,0,1) == '8')
 	if ($division == '110')
 		require 'top14.php';
 		
-	elseif ($division == '120')
+	elseif ($division == '120') 
 		require 'prod2.php';
+	
 
-	elseif ($division == '130')
+	elseif ($division == '130') {
 		require 'nationale1.php';	
-
+	//	require 'matchAccession.php';
+}
 	elseif ($division == '135')
 		require 'nationale2.php';	
 		

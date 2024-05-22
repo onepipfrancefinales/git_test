@@ -133,6 +133,8 @@ $buts_ext = $liste[6];
 
 $journee =  substr($id_journee,-2);
 $competition = substr($id,3,3);
+$journeeDebut = $id_journee;
+$journeeFin = $journeeDebut + 21;
 
 echo "*************** Données du fichier ***************";echo "<br />";
 echo "id : ". $id; echo "<br />";
@@ -449,71 +451,14 @@ $row = $requete->fetch();
 $nbreLignes = $row[0];	
 
 
-
-echo "<br />";
-echo "nbreLignes : ".$nbreLignes; echo "<br />";
-echo "stop2";echo "<br />";
-
-
-		$reponse = $bdd->query("	
-		SELECT id, id_equipe_dom, id_equipe_ext, date_reelle, id_journee, buts_dom, buts_ext
-		FROM $tableMatch
-		WHERE id_equipe_dom = '$id_equipe_dom' and id_equipe_ext = '$id_equipe_ext'
-		 "); 
-								
-while ($row = $reponse->fetch() )
-{ 
- $idBdd[] = $row[0];
- $id_equipe_domBdd[] = $row[1];
- $id_equipe_extBdd[] = $row[2];
- $date_reelleBdd[] = $row[3];
- $id_journeeBdd[] = $row[4];
- $buts_domBdd[] = $row[5];
- $buts_extBdd[] = $row[6];
-}
-
-
-
-
-
-echo "idBdd : ".$idBdd[0] ;echo "<br />";
-echo "id_equipe_domBdd : ".$id_equipe_domBdd[0] ;echo "<br />";
-echo "id_equipe_extBdd : ".$id_equipe_extBdd[0] ;echo "<br />";
-echo "dateReellle : ".$date_reelleBdd[0] ;echo "<br />";
-echo "id_journeeBdd : ".$id_journeeBdd[0] ;echo "<br />";
-echo "buts_domBdd : ".$buts_domBdd[0] ;echo "<br />";
-echo "buts_extBdd : ".$buts_extBdd[0] ;echo "<br />";
-$journeeTraiteeBdd = substr($id_journeeBdd[0],6,2);
-echo "journeeTraiteeBdd :" .$journeeTraiteeBdd;echo "<br />";
-
-// id renumeroté de 1 à nbre de libre
-echo "stop3";echo "<br />";
-
-echo "etape 3"	;	echo "<br />";
 echo "<br>";
-
-
-// renumérotage du 1er id 170171xx01
-
-	
-//echo "<br>";
-//echo $recup_buts_dom.' - '.$recup_buts_ext;echo "<br>";
-$scoresBdd = $recup_buts_dom + $recup_buts_ext;echo "<br>";
-//echo $buts_dom." - ".$buts_ext;echo "<br>";
-//echo "scoresBdd : ".$scoresBdd ;
-
+echo "********************                    *************************";echo "<br>";
 echo "<br>";
-echo "********************    Première ligne du fichier     *************************";echo "<br>";
+echo "Championnat". ' '."journée ". substr($id_journee,6,2);
+echo "nombre de lignes traitées : ".$nbreLignes; echo "<br />";
+echo "<br>";	echo "<br>";
+echo "***********    lecture des lignes du fichier     ********* "; echo "<br>";
 echo "<br>";
-echo $id.' - '.$id_equipe_dom.' - '.$id_equipe_ext.' - '.$date_reelle.' - '.$id_journee.' - '.$buts_dom.' - '.$buts_ext;
-	echo "<br>";echo "<br>";
-
-
-echo "<br>";
-echo "***********    lecture des lignes suivantes du fichier     ********* "; echo "<br>";
-
-
-
 
 
 $i=0;
@@ -538,9 +483,6 @@ $competition = substr($id,3,3);
 
 if ($id > 0)
 {	   		
-//****************************************
-//******* traitements des scores    ******	
-//****************************************
 
 $buts_dom = intval($buts_dom);
 $buts_ext = intval($buts_ext);
@@ -563,46 +505,27 @@ $buts_ext = intval($buts_ext);
 		 $buts_domBdd[] = $row[5];
 		 $buts_extBdd[] = $row[6];
 		}
-	//	echo "scores : ".$idBdd[$i].' - '.$id_equipe_domBdd[$i].' - '.$id_equipe_extBdd[$i].' - ' .$date_reelleBdd[$i].' - '. $buts_domBdd[$i].' - '.$buts_extBdd[$i];echo "<br>";
-		$journeeTraitee = 99065101;
-
-	
-	
-	
-	
 		
-
-
-		
-//**********************************************
-// id renumeroté
-echo "nbreLignes : ".$nbreLignes;echo "<br>";
-
-	//echo "scores : ".$idBdd[$i].' - '.$id_equipe_domBdd[$i].' - '.$id_equipe_extBdd[$i].' - '.$buts_domBdd[$i].' - '.$buts_extBdd[$i];echo "<br>";
-	//echo $i." -- ";
-	//echo "id : ".$id.' '. " -".' '.$i.' '.$buts_domBdd[$i].' - '.$buts_extBdd[$i]." --> ";
-	
 	if ($buts_domBdd[$i] + $buts_extBdd[$i]  > 0 and $buts_dom + $buts_ext == 0) {
 		echo "<br>";
-		echo $i . ' - ';
-		echo $id . ' ' . "test1  : ";
+		echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
+		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
+		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
+
 		//  $bdd->exec("UPDATE $tableMatch
 		//			  SET id = '$id', date_reelle ='$date_reelle', buts_dom = '$buts_domBdd[$i]', buts_ext = '$buts_extBdd[$i]'  
 		//			  WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");	
 	} elseif ($buts_domBdd[$i] + $buts_extBdd[$i] == 0 and  $buts_dom + $buts_ext > 0) {
-		echo $i . ' - ';
-		echo $id . ' ' . "test2 : ";
-		echo $ligne;	echo "<br>";
-
-
-
 		
 
-		echo "<br>";
-		echo "---------------";
-		echo "<br>";
-		if (substr($journeeTraitee, 6, 2) == substr($id_journeeBdd[$i], 6, 2)) {
-			//	  if ($id_equipe_dom == $id_equipe_domBdd[$i]  and $id_equipe_ext == $id_equipe_extBdd[$i]) {
+		
+		
+		echo $i . ' - '. $id . ' ' . "test2 : ". $ligne. "<br>";
+		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
+		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
+		
+	//	if (substr($journeeTraitee, 6, 2) == substr($id_journeeBdd[$i], 6, 2)) {
+	//	  if ($id_equipe_dom == $id_equipe_domBdd[$i]  and $id_equipe_ext == $id_equipe_extBdd[$i]) {
 
 			echo "comparaisons Ok Ok";
 			echo "<br>";
@@ -618,51 +541,46 @@ echo "nbreLignes : ".$nbreLignes;echo "<br>";
 			$requete = $bdd->query("SELECT COUNT(id)
 					FROM $tableMatch
 					WHERE id_equipe_dom = '$id_equipe_ext' AND id_equipe_ext = '$id_equipe_dom' AND id_journee = '$id_journee'");
-
-
 			$row = $requete->fetch();
 			$presence = $row[0];
 
 			echo "presence de la rencontre retour : " . $presence;
 
 			if ($presence == 1) {
+				
+				$idChampRetour =  substr($id_journee,0,6,);
+				
 				echo "<br>";
 				echo "Modifier l'id_journée .";
 				echo "<br>";
-				echo "id_equipe_ext : " . $id_equipe_ext;
-				echo "<br>";
-				echo "id_equipe_dom : " . $id_equipe_dom;
-				echo "<br>";
-				echo "id_journee : " . $id_journee;
-				echo "<br>";
-				$idChampRetour =  substr($id_journee,0,6,);
+				echo "id_equipe_ext : " . $id_equipe_ext; echo "<br>";
+				echo "id_equipe_dom : " . $id_equipe_dom; echo "<br>";
+				echo "id_journee : " . $id_journee;	echo "<br>";
 				echo "idChampRetour : " . $idChampRetour;echo "<br>";
-
-
 
 				$requete = $bdd->query("SELECT COUNT(id)
 				FROM $tableJournees
 				WHERE  id_champ = '$idChampRetour'");
-
 
 					$row = $requete->fetch();
 					$nombreDeJournees = $row[0];
 
 echo "nombreDeJournees : " . $nombreDeJournees;echo "<br>";
 
-				$idJourneeRetour = $id_journee + ($nombreDeJournees/2);
-				echo "idJourneeRetour : ", $idJourneeRetour;
 				echo "<br>";
+				
+				$idJourneeRetour = $id_journee + ($nombreDeJournees/2);
+				echo "idJourneeRetour : ".$idJourneeRetour;
+
+				$numero = substr($idJourneeRetour,-2);
+echo "numero : ".$numero;echo "<br>";
 				$bdd->exec("UPDATE $tableMatch
 			  SET   id_journee = '$idJourneeRetour'
 			  WHERE id_equipe_dom = '$id_equipe_ext' AND id_equipe_ext = '$id_equipe_dom' ");
 
-
-
-			
 				echo "idChampRetour : " . $idChampRetour;echo "<br>";
-				
-				$numero = 12;
+	//TODO	 traiter la journée à sélectionner		
+			//	$numero = 12;
 				
 				$reponse = $bdd->query("SELECT date_prevue
 					FROM $tableJournees
@@ -676,7 +594,7 @@ echo "nombreDeJournees : " . $nombreDeJournees;echo "<br>";
 				echo "dateRetour : " . $dateRetour;echo "<br>";
 				
 
-				//TODO Modifier la lheure en fonction du champiuonnat traité (premi)
+	//TODO Modifier la lheure en fonction du champiuonnat traité (premi)
 
 		
 				$dateReelleRetour = date('Y-m-d 15:i:s', strtotime($dateRetour));
@@ -687,29 +605,15 @@ echo "nombreDeJournees : " . $nombreDeJournees;echo "<br>";
 			  SET   date_reelle = '$dateReelleRetour'
 			  WHERE id_journee = '$idJourneeRetour' ");
 
-
-
-				echo "Modifier l'id";
-				echo "<br>";
-			}
+			//}
 		}
-		}
+	}
 	
 	elseif ( $buts_domBdd[$i] + $buts_extBdd[$i] != 0 and  $buts_dom + $buts_ext !=0){	 
-	echo $buts_domBdd[$i];echo "<br>";
-	echo $buts_extBdd[$i];echo "<br>";
-		$test =	$buts_domBdd[$i] + $buts_extBdd[$i];
-		echo "<br>";
-		echo $test ; echo "<br>";
-		echo "<br>";
-		echo $ligne;	echo "<br>";
-		echo $i.' - ';	echo $id .' - ';  echo "test3 : ";	
-
-
-		echo "journeeTraitee : " . $journeeTraitee;	echo "<br>";
-	echo "journeeTraiteeBdd : " . $id_journeeBdd[$i];	echo "<br>";
-	echo "idBdd : " . $idBdd[$i];	echo "<br>";
-echo "---------------";
+	
+		echo $i . ' - '. $id . ' ' . "test3 : ". $ligne. "<br>";
+		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
+		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 	//  $bdd->exec("UPDATE $tableMatch
 	//			  SET  date_reelle ='$date_reelle', buts_dom = '$buts_dom', buts_ext = '$buts_ext'  
 	//			  WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");
@@ -717,18 +621,20 @@ echo "---------------";
 	//transformation des scores 0-0 en NULL-NULL
 	
 	elseif ( $buts_dom + $buts_ext == 0)		{	
-		echo "<br>";
-		echo $i.' - ';	echo $id;	echo "test4 : ";
-	//	$bdd->exec("UPDATE $tableMatch
+	
+		echo $i . ' - '. $id . ' ' . "test4 : ". $ligne. "<br>";
+		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
+		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
+	
+		//	$bdd->exec("UPDATE $tableMatch
 	//			SET   date_reelle ='$date_reelle', id_journee='$id_journee', buts_dom = NULL, buts_ext = NULL 
 	//			WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");
 		}
 		
-	// affichage des lignes suivantes
-	//echo $id.' - '.$id_equipe_dom.' - '.$id_equipe_ext.' - '.$date_reelle.' - '.$id_journee.' - '.$buts_dom.' - '.$buts_ext;
-	echo "<br>";
+	
 	
 	//2-traitement du bonus offensif
+	
 	$bonusDef = 8;
 		
 	//cas 2.1 : récupération des données dans la table equipesresultats pour l'équipe qui se déplace
@@ -770,7 +676,7 @@ echo "---------------";
 	$equipeTraitee = $id_equipe_dom;
 	bonusOffensif($equipeTraitee, $id_journee, $ligue, $bdd);}
 
- //Traitement d'un forfait ou MEI (-2 de bonus)
+ 	//Traitement d'un forfait ou MEI (-2 de bonus)
 	if ($buts_dom == 0 and $buts_ext == 25 and $bonusDeLaJournee > -1){
 	echo "forfait dom";echo "<br />";
 	echo $buts_dom.' - '.$buts_ext.' - '.$bonusDeLaJournee;echo "<br />";
@@ -785,21 +691,15 @@ echo "---------------";
 	forfait($equipeTraitee, $id_journee, $ligue, $bdd);
 	}
 	
-	
-	
-	
 	$i =$i+1;
-	//echo "**************";echo "<br>";
+	
    } 
-    //$compteur_int = $compteur_int + 1 ;
- 
+    
  }
  
-//echo "<br />";echo "<br />";
-//echo "nombre de lignes traitées : ".$compteur_int;			
-//echo "<br />"; 
 echo "------------------------ fin de programme ----------------";
 echo "<br/>";
+
 echo $journeeDebut;
 global $champRecup;echo "<br/>";
 $champRecup=substr($journeeDebut,0,6);
@@ -807,7 +707,4 @@ echo "champRecup : ".$champRecup;echo "<br />";
 
 require "../../Phpleague/$ligue/admin/genererSansIhm.php";
 require '../majScores/bas.php';
-
-
-
 ?>

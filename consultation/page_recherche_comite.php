@@ -1,61 +1,60 @@
 <?php 
-$sigle = $_GET['variable_1'];
 
- 
-require ("../connect1/connection1.php") ; 
+$sigle = $_GET['variable_1'];
+//$champion = $_POST['champion'];
+echo  $sigle;
+
+//echo 
+
+require ("../connect/connexion1.php") ; 
 $reponse = $bdd->query("SELECT nom
 						FROM bdcomite 
 						WHERE sigle='$sigle' "); 
-								while ($donnees = $reponse->fetch() )
+								while ($row = $reponse->fetch() )
 									{ 
 									$nomComite = $donnees['nom'];
 									}
 
-if (isset($_POST['champion'])) $champion = $_POST['champion'];else$champion=""; //
-// On fait une boucle pour lister tout ce que contient la table :
 
+echo $nomComite;
+
+               //   echo "test1";
+//if (isset($_POST['champion'])) $champion = $_POST['champion'];else$champion=""; //
+// On fait une boucle pour lister tout ce que contient la table :
+/*
 $chaine = $champion; //transforme en minuscule
 $chaine = strtolower($chaine);
 
-$reponse =$bdd->query("SELECT * 
+
+$chaine= $sigle;
+echo $chaine; 
+*/
+$listeClubs = array();
+$reponse =$bdd->query("SELECT nom_1
 						FROM bdclubs 
-						WHERE code='$chaine'or nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); 
-While ($donnees = $reponse->fetch() )
+						WHERE sigleComite='$sigle'"); 
+While ($row = $reponse->fetch() )
 { 
  
-$coordonnees = array (
-        "$chaine" => $donnees['nom_1']);
+$listeClubs[]=  $row[0];
 
-	foreach($coordonnees as $cle => $element)
-	{
-     '' . $cle . ' vaut ' . $element . '<br />';
-	}
+}
 
-	$coordonnees = array (
-        "$chaine" => $donnees['code']);
-
-	foreach($coordonnees as $cle1 => $element1)
-	{
-     '' . $cle1 . ' vaut ' . $element1 . '<br />';
-	}
- $id= $element1;
- }
+echo $listeClubs[2];
 
 
-$reponse = $bdd->query("SELECT * 
-						FROM bdclubs 
-						WHERE code='$chaine' or nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'");  
-								While ($donnees = $reponse->fetch() )
-										 { 
-										 $titre = $donnees['sigle'];
-										 }
- 
+
 ?>
 
-<html>
+<!DOCTYPE html PUBLIC>
+<html lang="fr">
 <head>
-<title>Tous les clubs du comit&eacute;  <?php echo $nomComite;?></title>
+<title>Tous les clubs du comité  <?php //echo $nomComite;?></title>
 <link type="text/css" rel="stylesheet" href="../ligne1.css"/>
+
+<link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+  <link type="text/css" rel="stylesheet" href="resultat.css">
+  
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script language="JavaScript">
 <!--
@@ -101,8 +100,12 @@ MM_reloadPage(true);
       </td>
       <td bgcolor="#FFFFFF" height="505" valign="top" width="650"> 
         <div align="center"> 
-          <p>
-            <?php include("logoclubs.php"); ?>
+          <p text="#000000">
+
+          
+            <?php echo $nomComite;
+            // include("logoclubs.php");
+             ?>
            </p>
         </div>
       </td>
@@ -125,7 +128,7 @@ MM_reloadPage(true);
           <tr> 
             <td> 
               <div align="center"><font color="#000000"> 
-                <?php    include("../pub/pub1.php");    ?>
+                <?php  //  include("../pub/pub1.php");    ?>
                 </font></div>
             </td>
           </tr>
@@ -144,4 +147,5 @@ MM_reloadPage(true);
 <p align="center">&nbsp;</p>
 <p>&nbsp;</p>
 <div align="center"> </div>
- 
+</body>
+</html>

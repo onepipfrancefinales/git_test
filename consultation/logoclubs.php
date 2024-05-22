@@ -30,33 +30,33 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <div align="center"><font size="7"><font size="6" color="#000000">Autre 
         recherche</font></font> <br>
         <select name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1">
-          <option selected><font color="#FF0000">Alphab&eacute;tique</font></option>
-          <option value="page_recherche_comite2.php?variable_1=A"><font color="#FF0000">A</font></option>
-          <option value="page_recherche_comite2.php?variable_1=B"><font color="#FF0000">B</font></option>
-          <option value="page_recherche_comite2.php?variable_1=C"><font color="#FF0000">C</font></option>
-          <option value="page_recherche_comite2.php?variable_1=D"><font color="#FF0000">D</font></option>
-          <option value="page_recherche_comite2.php?variable_1=E"><font color="#FF0000">E</font></option>
-          <option value="page_recherche_comite2.php?variable_1=F"><font color="#FF0000">F</font></option>
-          <option value="page_recherche_comite2.php?variable_1=G"><font color="#FF0000">G</font></option>
-          <option value="page_recherche_comite2.php?variable_1=H"><font color="#FF0000">H</font></option>
-          <option value="page_recherche_comite2.php?variable_1=I"><font color="#FF0000">I</font></option>
-          <option value="page_recherche_comite2.php?variable_1=J"><font color="#FF0000">J</font></option>
-          <option value="page_recherche_comite2.php?variable_1=K"><font color="#FF0000">K</font></option>
-          <option value="page_recherche_comite2.php?variable_1=L"><font color="#FF0000">L</font></option>
-          <option value="page_recherche_comite2.php?variable_1=M"><font color="#FF0000">M</font></option>
-          <option value="page_recherche_comite2.php?variable_1=N"><font color="#FF0000">N</font></option>
-          <option value="page_recherche_comite2.php?variable_1=O"><font color="#FF0000">O</font></option>
-          <option value="page_recherche_comite2.php?variable_1=P"><font color="#FF0000">P</font></option>
-          <option value="page_recherche_comite2.php?variable_1=Q"><font color="#FF0000">Q</font></option>
-          <option value="page_recherche_comite2.php?variable_1=R"><font color="#FF0000">R</font></option>
-          <option value="page_recherche_comite2.php?variable_1=S"><font color="#FF0000">S</font></option>
-          <option value="page_recherche_comite2.php?variable_1=T"><font color="#FF0000">T</font></option>
-          <option value="page_recherche_comite2.php?variable_1=U"><font color="#FF0000">U</font></option>
-          <option value="page_recherche_comite2.php?variable_1=V"><font color="#FF0000">V</font></option>
-          <option value="page_recherche_comite2.php?variable_1=W"><font color="#FF0000">W</font></option>
-          <option value="page_recherche_comite2.php?variable_1=X"><font color="#FF0000">X</font></option>
-          <option value="page_recherche_comite2.php?variable_1=Y"><font color="#FF0000">Y</font></option>
-          <option value="page_recherche_comite2.php?variable_1=Z"><font color="#FF0000">Z</font></option>
+          <option selected>Alphab&eacute;tique</option>
+          <option value="page_recherche_comite2.php?variable_1=A">A</option>
+          <option value="page_recherche_comite2.php?variable_1=B">B</option>
+          <option value="page_recherche_comite2.php?variable_1=C">C</option>
+          <option value="page_recherche_comite2.php?variable_1=D">D</option>
+          <option value="page_recherche_comite2.php?variable_1=E">E</option>
+          <option value="page_recherche_comite2.php?variable_1=F">F</option>
+          <option value="page_recherche_comite2.php?variable_1=G">G</option>
+          <option value="page_recherche_comite2.php?variable_1=H">H</option>
+          <option value="page_recherche_comite2.php?variable_1=I">I</option>
+          <option value="page_recherche_comite2.php?variable_1=J">J</option>
+          <option value="page_recherche_comite2.php?variable_1=K">K</option>
+          <option value="page_recherche_comite2.php?variable_1=L">L</option>
+          <option value="page_recherche_comite2.php?variable_1=M">M</option>
+          <option value="page_recherche_comite2.php?variable_1=N">N</option>
+          <option value="page_recherche_comite2.php?variable_1=O">O</option>
+          <option value="page_recherche_comite2.php?variable_1=P">P</option>
+          <option value="page_recherche_comite2.php?variable_1=Q">Q</option>
+          <option value="page_recherche_comite2.php?variable_1=R">R</option>
+          <option value="page_recherche_comite2.php?variable_1=S">S</option>
+          <option value="page_recherche_comite2.php?variable_1=T">T</option>
+          <option value="page_recherche_comite2.php?variable_1=U">U</option>
+          <option value="page_recherche_comite2.php?variable_1=V">V</option>
+          <option value="page_recherche_comite2.php?variable_1=W">W</option>
+          <option value="page_recherche_comite2.php?variable_1=X">X</option>
+          <option value="page_recherche_comite2.php?variable_1=Y">Y</option>
+          <option value="page_recherche_comite2.php?variable_1=Z">Z</option>
         </select>
       </div>
     </td>
@@ -129,7 +129,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
  elseif ($sigle == '(BE)')
 		{
 		$code = 1914800;
-		echo "B�arn"; 
+		echo "Béarn"; 
  		}
 elseif ($sigle == '(BG)')
 		{

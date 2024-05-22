@@ -202,7 +202,7 @@
     <td></td>
 	<td></td>
     <td width="222"><div class="coin4" ><?php echo $clubA2003; ?></div></td>
-    <td width="46"><div class="coin4pts" ><?php echo $A2002; ?></div></td>
+    <td width="46"><div class="coin4pts" ><?php echo $A2003; ?></div></td>
     <td></td>
 	<td></td>
 	<td></td>

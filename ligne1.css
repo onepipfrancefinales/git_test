@@ -1,6 +1,11 @@
 
 td{text-align:center;}
 
+
+
+      
+
+
 .celluleNoire{font-family: arial;font-size: 16px;background-color:#000000;font-weight: Bold;}
 .celluleGrise{background-color:#333333;font-size: 16px;font-family: arial;font-weight: Bold;}
 .none a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 19px;  height:28;}
@@ -76,6 +81,50 @@ img{border:0;}
 }
 
 
+.style {font-family: sans-serif;}
+
+.colorRed { color: #ff0000; }
+.colorBlack { color: #000000; }
+.colorWhite { color: #FFFFFF; }
+
+.size5 {font-size: 25px;}
+.size4 {font-size: 20px;}
+.size3 {font-size: 15px;}
+
+.center {text-align: center;}
+
+.bandeauSup {
+    background-color: #666666;
+    width: 552px;
+    height: 3px;
+    margin: 0;
+    padding: 10px;
+ vertical-align: auto;
+  }
+
+.conteneurGauche {
+    background-color: #CCCCCC;
+    width: 138px;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+  
+  }
+  .conteneurdroit {
+    background-color: #CCCCCC;
+    width: 414px;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+  
+  }
+  .debut{
+    justify-content: flex-start;
+}
 
 /*bas*/
 .bas{font-size: 16px;background-color:#000000;font-family: arial;color: #ffffff;font-weight: Bold;}

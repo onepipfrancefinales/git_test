@@ -57,12 +57,12 @@ $annee = 2022;
           <td class="backgroundBlanc" border color="#000000" width="650">
 
 
-            <font size="5"><b>
+            <b>
                 <br>
                 <p><b>
-                    <font size="5" color="#000000" face="Arial, Helvetica, sans-serif">Pyramide
+                    <div class= "colorBlack style size5">Pyramide
                       des divisions pour la depuis la <br>
-                      saison 2022-2023</font>
+                      saison 2022-2023</div>
                   </b></p>
 
                 <p><img src="/images/pyramide-2022-2023.jpg" width="500" height="511"></p>
@@ -79,14 +79,12 @@ $annee = 2022;
                   <table width="557" border="0" align="center">
                     <tr class="backgroundRouge">
                       <td colspan="3"><b>
-                          <font color="#FFFFFF" size="4" face="Arial, Helvetica, sans-serif">LES
-                            METHODES POUR ACCEDER A </font>
+                          <div class="colorWhite size4 style">LES METHODES POUR ACCEDER A </div>
                         </b></td>
                     </tr>
                     <tr class="backgroundRouge">
                       <td colspan="3"><b>
-                          <font color="#FFFFFF" size="4" face="Arial, Helvetica, sans-serif">L'APPLICATION
-                            SMARTPHONE </font>
+                          <div class="colorWhite size4 style">L'APPLICATION  SMARTPHONE </div>
                         </b></td>
                     </tr>
                     <tr class="backgroundBlanc">
@@ -96,28 +94,25 @@ $annee = 2022;
                       <td colspan="3" class="backgroundBleu">
 
                         <b>
-                          <font color="#ffffff" face="Arial, Helvetica, sans-serif" size="4">Installation de l'appli pour les
-                            Appareils sous Android</font>
+                          <div class="colorWhite size4 style" face="Arial, Helvetica, sans-serif" size="4">Installation de l'appli pour les
+                            Appareils sous Android</div>
                         </b>
 
                       </td>
                     </tr>
                     <tr>
-                      <td colspan="2" bgcolor="#FFFFFF">
+                      <td colspan="2" >
                         <p>
-                          <font color="#000000" size="4">Télécharger l'application</font>
+                          <div class="colorBlack size4" >Télécharger l'application </br>
 
-                          <font size="4"><b><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
-                                <font color="#000000"> France Finales Rugby App</font>
-                              </a></b>
-
-                            sur Google Play.
-                          </font>
+                          <b><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
+                             France Finales Rugby App
+                              </a></b></br> sur Google Play.
+</div>
                         </p>
                         <p>&nbsp;</p>
                         <p><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
-                            <font color="#000000">Aller sur Google play</font>
-                          </a></p>
+                           Aller sur Google play </a></p>
                       </td>
                       <td class="backgroundBlanc" width="299"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank"><img src="images/logo_google.jpg" border="0" height="176" width="215"></a></td>
                     </tr>
@@ -126,24 +121,23 @@ $annee = 2022;
                     </tr>
                     <tr>
                       <td colspan="3" class="backgroundBleu"><b>
-                          <font color="#ffffff" face="Arial, Helvetica, sans-serif" size="4">Installation d'un lien pour les
-                            Apple</font>
+                          <div class="colorWhite size4 style">Installation d'un lien pour les
+                            Apple</div>
                         </b></td>
                     </tr>
                     <tr>
                       <td colspan="2" class="backgroundBlanc"><a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><b>
-                            <font color="#ff0000" size="5">Lien &agrave; mettre dans vos
-                              favoris<br>
-                            </font>
-                            <font color="#ff0000"> </font>
+                            <div class="colorRed size5">Lien à mettre dans vos favoris<br>
+</div>
+                         
                           </b></a><a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><img src="../images/apple.png" border="0" height="183" width="184"></a></td>
                       <td width="299">
                         <div class="colorTexte">
                           <p>
                             Pour les utilisateurs de smartphones
-                            et de tablettes <b>
-                              <font size="5">Apple</font>
-                            </b>,<br>
+                            et de tablettes
+                              <span > <b>Apple</b></span>
+                            ,<br>
                             Cliquer sur le lien ci-dessous et mettre
                             l'adresse de ce dernier en favori.
                           </p>
@@ -153,7 +147,7 @@ $annee = 2022;
                           </p>
 
                           <p>
-                            http://francefinalesrugbyfranceserv.com/<br>
+                            https://francefinalesrugby.fr/<br>
                             smart/sommaire.php
                           </p>
                         </div>
@@ -186,8 +180,8 @@ $annee = 2022;
                     <tr>
                       <td colspan="2" bordercolor="#CCCCCC" class="colorTexte">
 
-                        Retrouvez tous les palmarès par
-
+                        Retrouvez tous les palmarès
+                        <br>
                       </td>
                       <td width="299">
 
@@ -211,19 +205,11 @@ $annee = 2022;
                         </p>
 
                         <p align="left">
-                          <font color="#000000"><a href="resultats/page_pro.php">
-                              <font color="#0033FF" size="4">Compétitions
-                                professionnels</font>
-                            </a>
-                            <font color="#0033FF" size="4"><br>
-                              <a href="resultats/page_resultats.php">
-                                <font color="#0033FF" size="4">Compétitions Fédé;rales</font>
-                              </a><br>
-                              <a href="resultats/page_resultats.php">
-                                Compétitions territoriales
-                              </a>
-                            </font>
-                          </font>
+                          <div class="colorBlack size4">
+                              <a href="resultats/page_pro.php"> Compétitions professionnels</a><br>
+                              <a href="resultats/page_resultats.php">Compétitions Fédérales</a><br>
+                              <a href="resultats/page_resultats.php">Compétitions régionales</a> 
+</div>
                         </p>
                 </div>
           </td>
@@ -276,8 +262,8 @@ $annee = 2022;
           <tr>
             <td width="274">
               
-                <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php">
-                  >Championnats féminins
+                <a href="http://francefinalesrugby.fr/feminine/index_fem.php">
+                  Championnats féminins
                 </a>
          
             </td>
@@ -287,8 +273,8 @@ $annee = 2022;
                 à jour ou d'insérer des informations concernant
                 vos clubs (Bureau, site internet, contact etc...) en passant
                 par le menu déroulant des comités, ou en inserant
-                le nom de votre club dans le formulaire &quot;par club&quot;
-                situ&eacute; &agrave; droite de la page
+                le nom de votre club dans le formulaire "par club"
+                                situé droite de la page
               </p>
               <p>
 
@@ -300,15 +286,13 @@ $annee = 2022;
           <tr>
             <td width="274">
 
-              <font color="#000000" size="5"><a href="http://coupesdumondederugbyfeminin.franceserv.com/"></a></font>
+             
 
             </td>
           </tr>
           <tr>
             <td width="274">
-              <a href="http://coupesdumondederugbyfeminin.franceserv.com/">
-                Coupe du monde 2014
-              </a>
+              <a href="http://coupesdumondederugbyfeminin.franceserv.com/"> Coupe du monde 2014 </a>
             </td>
           </tr>
           <tr>

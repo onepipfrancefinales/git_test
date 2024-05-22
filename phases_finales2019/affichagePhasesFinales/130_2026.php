@@ -1,4 +1,3 @@
-
 <table width="1413" border="0">
   <tr> 
     <td colspan="13" bgcolor="#FFCC66" height="16" align="center"><i><b> Nationale 
@@ -117,9 +116,9 @@
     <td></td>
   </tr>
   <tr> 
-    <td></td><td  height="8" class="coin4"><?php echo $clubA2001;?></td>
-    <td height="8" class="ptsTerrain"><?php echo $A2001Pts; ?></td>
-    <td height="8" class="coin4GA"><?php echo $A2001; ?></td>
+    <td></td><td  height="8" class="coin4"><?php echo $clubA2002;?></td>
+<!--    <td height="8" class="ptsTerrain"><?php // echo $A2002Pts; ?></td> -->
+    <td height="8" class="coin4GA"><?php echo $A2002; ?></td>
     <td rowspan="6" ><img src="../../images/accolade.png" width="8" height="120"></td>
     <td></td>
     <td></td>
@@ -128,9 +127,9 @@
   </tr>
   <tr> 
     <td></td>
-	<td class="coin4"><?php echo $clubA2002; ?></td>
-    <td class="ptsTerrain"><?php echo $A2002Pts; ?></td>
-    <td class="coin4GA"><?php echo $A2002; ?></td>
+	<td class="coin4"><?php echo $clubA2001; ?></td>
+ <!--   <td class="ptsTerrain"><?php //echo $A2001Pts; ?></td> -->
+    <td class="coin4GA"><?php echo $A2001; ?></td>
     <td></td>
     <td class="coin4"><?php echo $clubA1001; ?></td>
     <td class="coin4pts"><?php echo $A1001; ?></td>
@@ -158,16 +157,16 @@
   </tr>
   <tr> 
     <td></td>
-    <td  class="coin4"><?php echo $clubA2003;?></td>
-    <td  class="ptsTerrain"><?php echo $A2003Pts;?></td>
-    <td  class="coin4GA"><?php echo $A2003;?></td>
-    <td colspan="4" rowspan="2" align="center"><b><font size="5">Champion de France <?php echo $annee; ?></font></b></td>
+    <td  class="coin4"><?php echo $clubA2004;?></td>
+  <!--  <td  class="ptsTerrain"><?php //echo $A2004Pts;?></td> -->
+    <td  class="coin4GA"><?php echo $A2004;?></td>
+    <td colspan="4" rowspan="2" align="center"><b><font size="5">Champion de Franceee <?php echo $annee; ?></font></b></td>
   </tr>
   <tr> 
     <td ></td>
-    <td  class="coin4"><?php echo $clubA2004; ?></td>
-    <td  class="ptsTerrain"><?php echo $A2004Pts; ?></td>
-    <td  class="coin4GA"><?php echo $A2004; ?></td>
+    <td  class="coin4"><?php echo $clubA2003; ?></td>
+  <!--  <td  class="ptsTerrain"><?php //echo $A2003Pts; ?></td> -->
+    <td  class="coin4GA"><?php echo $A2003; ?></td>
   </tr>
   <tr> 
     <td colspan="4" valign="top"></td>
@@ -233,3 +232,7 @@
     <td  bgcolor="#FFCC66" colspan="13"></td>
   </tr>
 </table>
+<?php 
+if ($annee > 2023)
+require 'matchAccession.php';
+?>
