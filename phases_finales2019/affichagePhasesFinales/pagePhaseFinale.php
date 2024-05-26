@@ -8,11 +8,6 @@
    <title>Championnat de France <?php echo $annee;?></title>
 	<link rel="stylesheet" type="text/css" href="2.css">
  
- <script language="JavaScript">
-   function ouvrirPopup(page,nom,options) {
-  window.open(page,nom,options);
-}
-</script>
 
 
  </head>
