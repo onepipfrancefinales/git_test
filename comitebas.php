@@ -6,28 +6,28 @@
     </td>
     <td  class="bas"> <a href="/resultats/page_pro.php">Top 14/ Pro D2/ National</a> </td>
     <td   class="bas"> 
-      <a href="/feminine/index_fem.php">F&eacute;minines</a>
+      <a href="/feminine/index_fem.php">Féminines</a>
     </td>
     <td  class="bas"> 
-      <a href="/resultats/page_fed1.php">F&eacute;d&eacute;rale 1</a>
+      <a href="/resultats/page_fed1.php">Fédérale 1</a>
     </td>
     <td  class="bas"> 
-      <a href="/resultats/page_fed2.php">F&eacute;d&eacute;rale 2</a>
+      <a href="/resultats/page_fed2.php">Fédérale 2</a>
     </td>
     <td  class="bas"> 
-      <a href="/resultats/page_fed3NE.php">F&eacute;d&eacute;rale 3</a>
+      <a href="/resultats/page_fed3NE.php">Fédérale 3</a>
     </td>
   </tr>
-  <tr  valign="top"> 
+  <tr > 
     <td  class="bas"> 
-      <a href="/video/causeries/pagevideo.php">Vid&eacute;os</a>
+      <a href="/video/causeries/pagevideo.php">Vidéos</a>
     </td>
-    <td  class="bas" colspan="2"> <a href="/resultats/page_resultats.php">R&eacute;sultats 
-      et classements r&eacute;gionaux</a> </td>
-    <td  class="bas"> <a href="/resultats/page_f1.php">Espoirs F&eacute;d&eacute;rale 
+    <td  class="bas" colspan="2"> <a href="/resultats/page_resultats.php">Résultats 
+      et classements régionaux</a> </td>
+    <td  class="bas"> <a href="/resultats/page_f1.php">Espoirs Fédérale 
       1</a> </td>
     <td class="bas"> 
-     <a href="/resultats/page_fed2.php">F&eacute;d&eacute;rale B</a>
+     <a href="/resultats/page_fed2.php">Fédérale B</a>
     </td>
     <td  class="bas"> 
      <a href="/resultats/page_fed3NE.php">Excellence B</a>

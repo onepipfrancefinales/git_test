@@ -123,8 +123,8 @@
   <table width="100%" border="0" height="30">
     <tr valign="top" align="center"> 
       <td colspan="12" bgcolor="006699" height="28"><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Championnat des Pyrénées";?>
-        <? echo "Reserve 1re Série";?>
+        <? echo "Championnat des Pyrï¿½nï¿½es";?>
+        <? echo "Reserve 1re Sï¿½rie";?>
         </font></b></font></td>
     </tr>
     <tr valign="top" align="center"> 

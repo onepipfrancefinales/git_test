@@ -54,7 +54,7 @@ $clubA2004 = 'Stade Toulousain (MPY)';
 
 else
 {
-echo "<h3> <strong>Désolé, aucune donnée pour cette saison <h3> <strong>";
+echo "<h3> <strong>Dï¿½solï¿½, aucune donnï¿½e pour cette saison <h3> <strong>";
 }
 ?>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: 1px; top: 651px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 

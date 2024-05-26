@@ -6,15 +6,15 @@ $id = 210;
 <link rel="stylesheet" type="text/css" href="../2.css">
 
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comités territoriaux, Tous les championnats de rugby, fédérale 2, fédérale 3, fédérale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitï¿½s territoriaux, Tous les championnats de rugby, fï¿½dï¿½rale 2, fï¿½dï¿½rale 3, fï¿½dï¿½rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re Série</title>
+<title>1re Sï¿½rie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 </head>
@@ -77,7 +77,7 @@ $clubA3235= ' Provence 1';
 $clubA3236= ' Drome Ardeche 2 ';
 
 $clubA3237= ' Alpes 2';
-$clubA3238= ' Drôme Ardèche 1';
+$clubA3238= ' Drï¿½me Ardï¿½che 1';
 
 $clubA3239= ' Languedoc 1';
 $clubA3240= ' Provence 4 ';
@@ -92,22 +92,22 @@ $clubA3245= ' Provence 2';
 $clubA3246= ' Languedoc 2';
 
 $clubA3247= ' Armagnac Bigorre 1';
-$clubA3248= ' Midi-Pyrénées 3 ';
+$clubA3248= ' Midi-Pyrï¿½nï¿½es 3 ';
 
-$clubA3249= ' Périgord Agenais 2 ';
+$clubA3249= ' Pï¿½rigord Agenais 2 ';
 $clubA3250= ' Limousin 2';
 
 $clubA3251= ' Cote d Argent 1';
-$clubA3252= ' Midi-Pyrénées 2 ';
+$clubA3252= ' Midi-Pyrï¿½nï¿½es 2 ';
 
 $clubA3253= ' Limousin 1';
-$clubA3254= ' Midi-Pyrénées 5';
+$clubA3254= ' Midi-Pyrï¿½nï¿½es 5';
 
 $clubA3255= ' Bearn 1';
 $clubA3256= ' Armagnac Bigorre 2 ';
 
 $clubA3257= ' Perigord Agenais 1';
-$clubA3258= ' Midi-Pyrénées 4';
+$clubA3258= ' Midi-Pyrï¿½nï¿½es 4';
  
 $clubA3259= ' Cote basque Landes 2';
 $clubA3260= ' Barrage CA 3 -  BE 2';

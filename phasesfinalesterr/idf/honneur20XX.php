@@ -52,7 +52,7 @@ MM_reloadPage(true);
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
         </font><font size="5"><b><font size="5"><b><font color="#FFCC00">
-        <? echo "Finales territoriales du comité Ile de France $annee";?>
+        <? echo "Finales territoriales du comitï¿½ Ile de France $annee";?>
         </font></b></font></b></font></b></font></td>
     </tr>
   </table>

@@ -5,7 +5,7 @@
 <meta name="description"
 content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comit&egrave;s territoriaux, Tous les championnats de rugby, f&egrave;d&egrave;rale 2, f&egrave;d&egrave;rale 3, f&egrave;d&egrave;rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -316,7 +316,7 @@ echo $Q1;
         <strong> 
         <?php
 
-$reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='220' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='220' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 
@@ -644,9 +644,9 @@ echo "";
       <td width="204" align="left" height="20"><font size="2" face="Arial, Helvetica, sans-serif"> 
         <strong> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db3"); // S&egrave;lection de la base onepip	  
-$reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='220' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='220' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
       

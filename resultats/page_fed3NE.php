@@ -15,8 +15,8 @@ $division = 160;
 $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
 ?> 
 
-<!DOCTYPE html PUBLIC>       
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="FR">
 <head>
 <meta charset="utf-8" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
@@ -38,6 +38,7 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <meta name="viewport" content="width=device-width">
 <title>Championnats de France <?php echo $comiteNom;?></title>
 
 <meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">

@@ -118,7 +118,7 @@ $reponse = $bdd->query("SELECT champion, championnat, division
  <br>
 <font color="#FF0000">_______________________________________________________</font> 
 
-<h1><font color="#000000">Clubs du comit&eacute;</font></h1>
+<h1><font color="#000000">Clubs du comité</font></h1>
 <br />
 
 <h3> Clubs professionnels :</h3>
@@ -127,72 +127,19 @@ $reponse = $bdd->query("SELECT champion, championnat, division
 
 <h3>Nationale :</h3> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 130, $bdd);?></p>
+ <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 135, $bdd);?></p>
 
-<h3>F&eacute;d&eacute;rale 1 :</h3> 
+<h3>Fédérale 1 :</h3> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 140, $bdd);?></p>
 
-<h3>F&eacute;d&eacute;rale 2 :</h3> 
+<h3>Fédérale 2 :</h3> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 150, $bdd);?></p>
 
-<h3>F&eacute;d&eacute;rale 3 :</h3> 
+<h3>Fédérale 3 :</h3> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 160, $bdd);?></p>
 
-<!--
-honneur 
-honneur promotion honneur
-honneur promotion
-promotion honneur 1serie
-1re serie 2me serie
-3me serie 4me serie
-2me serie 3me serie 4me serie
-1re 2me serie 3me serie 4me serie
--->
-
 
 <?php
-
-if ($sigle == "(BG)" or $sigle == "(N)")
-{
-?>
-<h3>Régionale 1 :</h3>
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 170, $bdd);?></p> 
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 171, $bdd);?></p> 
- 
- <h3>Régionale 2 :</h3> 
-<p class="afficheEquipe"><?php clubsParComite($sigle, "M", 180, $bdd);?></p>
-<p class="afficheEquipe"><?php clubsParComite($sigle, "M", 181, $bdd);?></p>
-
-<h3>1er 2me 3me 4me s&eacute;rie :</h3> 
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 225, $bdd);?></p>
-<?php
-}
-elseif ($sigle == "(CE)" or $sigle == "(PL)")
-{
-?>
-<h3>Honneur / Promotion honneur :</h3>
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 175, $bdd);?></p>
-  
- <h3>1re / 2me S&eacute;rie ou R&eacute;gionale 2 :</h3> 
-<p class="afficheEquipe"><?php clubsParComite($sigle, "M", 195, $bdd);?></p>
-
- <h3>3me / 4me S&eacute;rie ou R&eacute;gionale 3 :</h3> 
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 215, $bdd);?></p>
-<?php
-}
-elseif ($sigle == "(AL)")
-{
-?>
- <h3>Honneur :</h3>
-<p class="afficheEquipe"><?php clubsParComite($sigle, "M", 195, $bdd);?></p> 
-
- <h3>Promotion honneur / 1re S&eacute;rie :</h3> 
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 195, $bdd);?></p>
-
- <h3>2me / 3me / 4me S&eacute;rie :</h3> 
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 195, $bdd);?></p><?php
-}
-else
-{
 ?>
  <h3>Régionale 1 :</h3>
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 170, $bdd);?></p> 
@@ -205,19 +152,13 @@ else
  <h3>Régionale 3 :</h3> 
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 190, $bdd);?></p>
  <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 191, $bdd);?></p>
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 200, $bdd);?></p>
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 195, $bdd);?></p>
  
- <h3>3me / 4me S&eacute;rie ou R&eacute;gionale 3 :</h3> 
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 210, $bdd);?></p>
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 211, $bdd);?></p>
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 220, $bdd);?></p>
- <p class="afficheEquipe"><?php clubsParComite($sigle, "M", 215, $bdd);?></p>
+
  <?php
-}
+
 ?>
 
-<h3>Equipes f&eacute;minines :</h3>
+<h3>Equipes féminines :</h3>
 
 <p class="afficheEquipe"><?php clubsParComite($sigle, "F", 281, $bdd);?></p> 
 <p class="afficheEquipe"><?php clubsParComite($sigle, "F", 285, $bdd);?></p>

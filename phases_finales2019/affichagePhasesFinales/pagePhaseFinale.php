@@ -3,15 +3,27 @@
  $division=$_GET['division'];
  //echo $division;
  ?>
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
+<html lang="fr"> 
   <head>
    <title>Championnat de France <?php echo $annee;?></title>
+   <meta name="description" content="">
+<meta name="keywords" content="Presentation de la competititon et de tous les champions de France 1re Serie. Palmares complet de la 1re Serie.">
+<meta name="classification" content="Sport,Rugby">
+<meta name="resource-type" content="document">
+<meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+<meta name="author" content="Equipe Onepip">
+<meta name="robots" content="All">
 	<link rel="stylesheet" type="text/css" href="2.css">
- 
+	  <meta name="viewport" content="width=device-width">
 
 
  </head>
-
+ <script language="JavaScript">
+   function ouvrirPopup(page,nom,options) {
+  window.open(page,nom,options);
+}
+</script>
 <body bgcolor="#EAECEB" text="#000000" align="center">
 
  <?php

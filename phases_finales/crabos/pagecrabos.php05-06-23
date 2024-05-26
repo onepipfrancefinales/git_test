@@ -8,7 +8,7 @@ require ("../fonctions_phases_finales.php");?>
 
 <html>
 <head>
-<title>Championnat de France Juniors René CRABOS <?php echo $annee;?></title>
+<title>Championnat de France Juniors Renï¿½ CRABOS <?php echo $annee;?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link type="text/css" rel="stylesheet"  href="../../2.css">
 </head>

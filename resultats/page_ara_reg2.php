@@ -63,11 +63,12 @@ $sigleLigue="(ARA)";
 	 <!-- Colonne centrale --> 
 	 <td class="colonneCentrale"> 
         <div align="center"> <br>
-          <h1>Comp&eacute;titions R&eacute;gionales</h1>
-          <h2 class ="titre">Ligue Auvergne Rh&ocirc;ne Alpes</h2>
-          <h2 class ="commentaire">La ligue Auvergne Rh&ocirc;ne Alpes est n&eacute;e de la fusion des comit&eacute;s territoriaux<br>
-            de l'Auvergne, du Lyonnais, des Alpes et du comit&eacute;<br>
-            Dr&ocirc;me Ard&egrave;che en janvier 2018.</h2>
+        <h1>Compétitions Régionales</h1>
+          <h2 class="titre">Ligue Auvergne Rhône Alpes</h2>
+          <h2 class="commentaire">La ligue Auvergne Rhône Alpes est née de la fusion des comités
+            territoriaux<br>
+            de l'Auvergne, du Lyonnais, des Alpes et du comité<br>
+            Drôme Ardèche en janvier 2018.</h2>
  <?php 
 	include("liensDivers.php"); 
     include("sommaires.php");  

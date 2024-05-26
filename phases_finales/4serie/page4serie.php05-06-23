@@ -5,8 +5,8 @@ $annee2=$annee.''."_2";
 $id = 220; 
 ?>
 <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france_db5"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france_db5"); // Sï¿½lection de la base onepip
 require '../../connect1/connection5.php';
 $reponse = $bdd->query(" 	SELECT division
 							FROM divisions
@@ -32,7 +32,7 @@ require ("../fonctions_phases_finales.php");
 
 <html>
 <head>
-<title>Championnat de France de 4me Série <?php echo $annee;?></title>
+<title>Championnat de France de 4me Sï¿½rie <?php echo $annee;?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../2.css">
 </head>

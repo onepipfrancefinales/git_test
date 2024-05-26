@@ -2,14 +2,16 @@
 td{text-align:center;}
 
 
+.marginAuto {
+    margin : auto;
+}
 
-      
 
 
 .celluleNoire{font-family: arial;font-size: 16px;background-color:#000000;font-weight: Bold;}
 .celluleGrise{background-color:#333333;font-size: 16px;font-family: arial;font-weight: Bold;}
-.none a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 19px;  height:28;}
-.none2 a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 15px;}
+.none a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 19px;  height:28; background-color: #000000;}
+.none2 a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 15px; background-color: #000000; }
 .none3 a{text-decoration: none; color: #333333; text-align:center;font-family: arial; font-size: 19px;  height:28;}
 
 .compet a{text-decoration: none; color: #e50000; text-align:center;font-family: arial; font-size: 18px; }
@@ -70,7 +72,9 @@ img{border:0;}
 .backgroundBlanc{
     background-color: #FFFFFF;
 }
-
+.backgroundNoir{
+    background-color: #000000;
+}
 .styleTitre{
     background-color: #000000;
     color: #FFFFFF;
@@ -90,6 +94,8 @@ img{border:0;}
 .size5 {font-size: 25px;}
 .size4 {font-size: 20px;}
 .size3 {font-size: 15px;}
+
+.width1250 {width:1250px;}
 
 .center {text-align: center;}
 
@@ -140,4 +146,17 @@ img{border:0;}
 .terr4{width:500px;background-color:#FF00FF;font-size: 16px;color: #FFFFFF;font-family: arial;font-weight: Bold;}
 .terr4 a{color:#000000;font-weight: normal;font-size: 14px;text-decoration: none;color: #000000;font-weight: Bold;}
 
+
+.colonne {
+    background-color: #006699;
+    width:225px;
+    text-align: center;
+    vertical-align:top;
+     } 
+.centreDePage {
+    background-color: #FFFFFF;
+    width:800px;
+    text-align: center;
+    vertical-align:top;
+     }
 

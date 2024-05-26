@@ -1,7 +1,7 @@
 <?php $annee=$_GET['variable_1'];?>
 <html>
 <head>
-<title>Championnat de France Féderale 1 et Trophée Jean Prat <?php echo $annee;?></title>
+<title>Championnat de France Fï¿½derale 1 et Trophï¿½e Jean Prat <?php echo $annee;?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="../2.css">
 </head>

@@ -130,7 +130,7 @@
         <?php echo $A1601; ?>
       </div>
     </td>
-    <td rowspan="4" height="38" ><img src="../../images/accolade.png" width="8" height="82"> 
+    <td rowspan="4" height="38" ><img src="../../images/accolade.png" alt ="accolade des 16me" width="8" height="82"> 
     </td>
     <td></td>
     <td></td>
@@ -159,7 +159,7 @@
     <td><div class="coin4GA" ><?php echo $A1602; ?></div></td>
     <td><div class="coin4" ><?php echo $clubA8001;?></div></td>
     <td><div class="coin4GA" ><?php echo $A8001; ?></div></td>
-    <td rowspan="6" ><img src="../../images/accolade.png" width="8" height="127"></td>
+    <td rowspan="6" ><img src="../../images/accolade.png" alt ="accolade des 8me" width="8" height="127"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -208,7 +208,7 @@
     <td></td>
     <td><div class="coin4" ><?php	echo $clubA4001; ?></div></td>
     <td><div class="coin4GA" ><?php	echo $A4001; ?></div></td>
-    <td rowspan="10" height="43" ><img src="../../images/accolade.png" width="10" height="207"></td>
+    <td rowspan="10" height="43" ><img src="../../images/accolade.png" alt ="accolade des quarts" width="10" height="207"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -228,7 +228,7 @@
     <td><div class="coin5" ><?php echo $clubA1605;?></div></td>
     <td><div class="ptsTerrain5" ><?php echo $A1605Pts; ?></div></td>
     <td><div class="coin5GA" ><font size="2"><?php	echo $A1605; ?></font></div></td>
-    <td rowspan="4" ><img src="../../images/accolade.png" width="8" height="82"></td>
+    <td rowspan="4" ><img src="../../images/accolade.png" alt ="accolade des 16me" width="8" height="82"></td>
     <td></td>
     <td></td>
     <td><div class="coin4" ><?php echo $clubA4002; ?></div></td>
@@ -305,7 +305,7 @@
     <td></td>
     <td><div class="coin4" ><?php	echo $clubA2001; ?></div></td>
     <td><div class="coin4GA" ><?php	echo $A2001; ?></div></td>
-    <td rowspan="18" ><img src="../../images/accolade.png" width="10" height="383"></td>
+    <td rowspan="18" ><img src="../../images/accolade.png" alt ="accolade des demi finale" width="10" height="383"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -322,7 +322,7 @@
     <td><div class="coin4" ><?php echo $clubA1609; ?></div></td>
     <td><div class="ptsTerrain" ><?php echo $A1609Pts; ?></div></td>
     <td><div class="coin4GA" ><?php echo $A1609; ?></div></td>
-    <td rowspan="4" ><img src="../../images/accolade.png" width="8" height="82"></td>
+    <td rowspan="4" ><img src="../../images/accolade.png" alt ="accolade des 16me" width="8" height="82"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -349,7 +349,7 @@
     <td><div class="coin4GA" ><?php echo $A1610; ?></div></td>
     <td><div class="coin4" ><?php echo $clubA8005; ?></div></td>
     <td><div class="coin4GA" ><?php echo $A8005; ?></div></td>
-    <td rowspan="6" ><img src="../../images/accolade.png" width="8" height="127"></td>
+    <td rowspan="6" ><img src="../../images/accolade.png" alt ="accolade des 8me" width="8" height="127"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -414,7 +414,7 @@
     <td><div class="coin5" ><?php echo $clubA1613; ?></div></td>
     <td><div class="ptsTerrain5" ><?php echo $A1613Pts; ?></div></td>
     <td><div class="coin5GA" ><?php echo $A1613; ?></div></td>
-    <td rowspan="4" ><img src="../../images/accolade.png" width="8" height="82"></td>
+    <td rowspan="4" ><img src="../../images/accolade.png"alt ="accolade des 16me"  width="8" height="82"></td>
     <td></td>
     <td></td>
     <td><div class="coin4" ><?php echo $clubA4004; ?></div></td>
@@ -507,7 +507,7 @@
     <td><div class="coin4" ><?php echo $clubA1617; ?></div></td>
     <td><div class="ptsTerrain" ><?php echo $A1617Pts; ?></div></td>
     <td><div class="coin4GA" ><?php echo $A1617; ?></div></td>
-    <td rowspan="4" ><img src="../../images/accolade.png" width="8" height="82"></td>
+    <td rowspan="4" ><img src="../../images/accolade.png"  alt ="accolade des 16me" width="8" height="82"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -534,7 +534,7 @@
     <td><div class="coin4GA" ><?php echo $A1618; ?></div></td>
     <td><div class="coin4" ><?php echo $clubA8009; ?></div></td>
     <td><div class="coin4GA" ><?php	echo $A8009; ?></div></td>
-    <td rowspan="6" ><img src="../../images/accolade.png" width="8" height="127"></td>
+    <td rowspan="6" ><img src="../../images/accolade.png" alt ="accolade des 8me" width="8" height="127"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -578,7 +578,7 @@
     <td></td>
     <td><div class="coin4" ><?php echo $clubA4005; ?></div></td>
     <td><div class="coin4GA" ><?php echo $A4005; ?></div></td>
-    <td rowspan="10" ><img src="../../images/accolade.png" width="10" height="207"></td>
+    <td rowspan="10" ><img src="../../images/accolade.png" alt ="accolade des quarts" width="10" height="207"></td>
     <td></td>
     <td></td>
   </tr>
@@ -594,7 +594,7 @@
     <td><div class="coin5" ><?php echo $clubA1621; ?></div></td>
     <td><div class="ptsTerrain5" ><?php echo $A1621Pts; ?></div></td>
     <td><div class="coin5GA" ><?php	echo $A1621; ?></div></td>
-    <td rowspan="4" height="28" ><img src="../../images/accolade.png" width="8" height="82"></td>
+    <td rowspan="4" height="28" ><img src="../../images/accolade.png" alt ="accolade des 16me" width="8" height="82"></td>
     <td></td>
     <td></td>
     <td><div class="coin4" ><?php echo $clubA4006; ?></div></td>
@@ -675,7 +675,7 @@
     <td><div class="coin4" ><?php echo $clubA1625; ?></div></td>
     <td><div class="ptsTerrain" ><?php echo $A1625Pts; ?></div></td>
     <td><div class="coin4GA" ><?php echo $A1625; ?></div></td>
-    <td rowspan="4" ><img src="../../images/accolade.png" width="8" height="82"></td>
+    <td rowspan="4" ><img src="../../images/accolade.png" alt ="accolade des 16me" width="8" height="82"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -699,7 +699,7 @@
     <td><div class="coin4GA" ><?php echo $A1626; ?></div></td>
     <td><div class="coin4" ><?php echo $clubA8013; ?></div></td>
     <td><div class="coin4GA" ><?php echo $A8013; ?></div></td>
-    <td rowspan="6" ><img src="../../images/accolade.png" width="8" height="127"></td>
+    <td rowspan="6" ><img src="../../images/accolade.png" width="8" alt ="accolade des 8me" height="127"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -761,7 +761,7 @@
     <td><div class="coin5" ><?php echo $clubA1629; ?></div></td>
     <td><div class="ptsTerrain5" ><?php echo $A1629Pts; ?></div></td>
     <td><div class="coin5GA" ><?php echo $A1629; ?></div></td>
-    <td rowspan="4" ><img src="../../images/accolade.png" width="8" height="82"></td>
+    <td rowspan="4" ><img src="../../images/accolade.png" alt ="accolade des 16me" width="8" height="82"></td>
     <td></td>
     <td></td>
     <td><div class="coin4" ><?php echo $clubA4008; ?></div></td>

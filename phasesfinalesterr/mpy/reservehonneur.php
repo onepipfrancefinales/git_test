@@ -990,7 +990,7 @@ echo "";
 <div id="Layer6" style="position:absolute; width:98px; height:60px; z-index:11; left: 801px; top: 469px"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="4"><b> 
   </b></font><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="4"><b> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
 $query = "SELECT Phpmpy_clubs.id, nom, url_logo FROM Phpmpy_clubs WHERE Phpmpy_clubs.id='29014'";
 $result = mysql_query($query);

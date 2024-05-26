@@ -5,7 +5,7 @@
 <meta name="description"
 content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comit&egrave;s territoriaux, Tous les championnats de rugby, f&egrave;d&egrave;rale 2, f&egrave;d&egrave;rale 3, f&egrave;d&egrave;rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -32,7 +32,7 @@ mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
 mysql_select_db("onepip-france-db3"); 
 ?>
 <?php
-//-------------Récupération des variables--------------------
+//-------------Rï¿½cupï¿½ration des variables--------------------
  
 $comite=mpy;
 $id=170;

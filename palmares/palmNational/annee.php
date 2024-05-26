@@ -1,6 +1,6 @@
 <?php $annee = $_POST['saison']; ?>
 <?php require ("../../connect/connexion1.php") ; ?>
-<p class="annee">Equipes s&eacuteniors</p> 
+<p class="annee">Equipes séniors</p> 
 <p class="equipe"><br>
   <?php $reponse = $bdd->query("	SELECT division, champion, comite1
 									FROM bdequipe1 
@@ -8,13 +8,13 @@
 										while ($donnees =  $reponse->fetch()  )
 											{ 
 												echo $donnees['division']." : ".  $donnees['champion']."  ". $donnees['comite1'];
-												echo "<br/>";
+												echo "<br>";
 											}
 	?>
 </p>
 
-<br/>
-<p class="annee">Equipes R&eacuteserves<br>
+<br>
+<p class="annee">Equipes Réserves<br>
 </p> 
 <p class="equipe"><br>
   <?php $reponse = $bdd->query("	SELECT division, champion, comite1 
@@ -24,28 +24,28 @@
 										while ($donnees = $reponse->fetch() )
 											{ 
 												echo $donnees['division']." : ".  $donnees['champion']."  ". $donnees['comite1'];
-												echo "<br/>";
+												echo "<br>";
 											 }
 	?>
 </p>
-<br/>
-<br/>
-<p class="annee">Equipes F&eacuteminines</p> 
+<br>
+<br>
+<p class="annee">Equipes Féminines</p> 
 <p class="equipe">
-<br/>
+<br>
   	<?php $reponse = $bdd->query("SELECT division, champion, comite1 
 						FROM bdfem 
 						WHERE saison='$annee'and titre='champion' and categorie='F' order by rang"); 
 										while ($donnees =  $reponse->fetch() )
 											{ 
 												echo $donnees['division']." : ".  $donnees['champion']."  ". $donnees['comite1'];
-												echo "<br/>";
+												echo "<br>";
 											 }
 	?>
 </p>	
-  <br/><br/>
+  <br><br>
  <p class="annee">Reichels & Juniors</p> 
-  <br/>
+  <br>
 <p class="equipe"> 
 	<?php $reponse = $bdd->query("	SELECT division, champion, comite1 
 									FROM bdjeunes 
@@ -53,14 +53,14 @@
 										while ($donnees =  $reponse->fetch() )
 											{ 
 											echo $donnees['division']." : ".  $donnees['champion']."  ". $donnees['comite1'];
-											echo "<br/>";
+											echo "<br>";
 											 }
 
 	?>
 </p>
-<br/><br/>
+<br><br>
 <p class="annee">Cadets</p>  
-  <br/>
+  <br>
 <p class="equipe">  
 	<?php $reponse = $bdd->query("	SELECT division, champion, comite1 
 									FROM bdjeunes 
@@ -68,15 +68,15 @@
 											while ($donnees =  $reponse->fetch() )
 														{ 
 															echo $donnees['division']." : ".  $donnees['champion']."  ". $donnees['comite1'];
-															echo "<br/>";	
+															echo "<br>";	
 															
 														 }
 
 	?>
 </p>
-  <br/><br/>
+  <br><br>
 <p class="annee"> Challenges</p> 
-<br/>
+<br>
 <p class="equipe"> 
 	<?php $reponse = $bdd->query("	SELECT division, champion, comite1
 									FROM bdchallenges 
@@ -84,7 +84,7 @@
 										while ($donnees =  $reponse->fetch() )
 											{ 
 												echo $donnees['division']." : ".  $donnees['champion']."  ". $donnees['comite1'];
-												echo "<br/>";
+												echo "<br>";
 												
 										 	}
  ?>

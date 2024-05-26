@@ -15,7 +15,7 @@ require ("../fonctions_phases_finales.php");
 
 <html>
 <head>
-<title>Championnat de France 2me Série <?php echo $annee;?></title>
+<title>Championnat de France 2me Sï¿½rie <?php echo $annee;?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../2.css">
 </head>

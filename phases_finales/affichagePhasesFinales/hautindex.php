@@ -106,7 +106,7 @@
       <div id="equipeIterr"><a href="pagePhaseFinale.php?division=220&annee=<?php echo $annee;?>" target="_top>4<font size="1">4&egrave;meS&eacute;rie</a></div>
       </td>
       
-    <td height="30" width="125"> <div id="equipeII"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">Réserve </a></div></td>
+    <td height="30" width="125"> <div id="equipeII"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">Rï¿½serve </a></div></td>
       <td align="center" nowrap height="30" width="106"> 
         <div id="equipeJ"><a href="pagePhaseFinale.php?annee=<?php echo $annee;?>">Phliponeau</a></div>
       </td>

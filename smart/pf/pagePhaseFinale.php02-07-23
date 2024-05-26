@@ -47,13 +47,13 @@ championDeFrance ( $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
  </div>
 </div>
 
-	<!-- fin entete figée-------->
+	<!-- fin entete figï¿½e-------->
 	
 <div class="container">
 <br/><br/><br/><br/><br/><br/><br/><br/>
 <?php
 
-//**************  Exceptions type débute par 8 *************************		
+//**************  Exceptions type dï¿½bute par 8 *************************		
 if (substr($type,0,1) == '8')
 {
 	if ($division == '110')
@@ -99,7 +99,7 @@ if(substr($type,0,1)== 7 )
 }
 		
 
-// phases régulière
+// phases rï¿½guliï¿½re
 
 	trenteDeuxieme2019 ($division, $annee, $bdd);
 	if ((substr($type,0,1) == '9' or substr($type,0,1) == '7') and strlen($division)==3)
@@ -205,7 +205,7 @@ else
 		
 		
 	
-//**************  Trente-deuxième *************************	
+//**************  Trente-deuxiï¿½me *************************	
 
 	elseif (substr($type,0,3)==932 or substr($type,0,3) ==964)
 		{
@@ -214,7 +214,7 @@ else
 		else
 			require '32me.php';
 		}
-//**************  seizième  *************************
+//**************  seiziï¿½me  *************************
 
 	elseif(  substr($type,3,2)== 16 or substr($type,3,2)== 32 or $type2==16)
 		{
@@ -224,7 +224,7 @@ else
 			require '16me.php';
 		}
 		
-//**************  Huitième  *************************		
+//**************  Huitiï¿½me  *************************		
 
 	elseif(substr($type,5,2)== 8 or substr($type,5,2)== 16)
 		{

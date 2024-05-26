@@ -36,15 +36,15 @@ $reponse = $bdd->query("SELECT division
 	$nomDivision = $donnees['division']; 		
 	}
 ?>
-<br />
-<h1> <font color="#000000"> 
-  <?php //echo $titre; ?>
+<br>
+<h1 class="colorBlack">  
+  <?php echo $titre; ?>
   <br>
-  </font> <font color="#000000">
+  
   <?php echo $nomDivision; ?>
-  </font><br/>
+  <br>
 </h1>
-<br />
+<br>
 <?php
 
 $reponse = $bdd->query("SELECT saison, champion, comite1 
@@ -60,7 +60,7 @@ $reponse = $bdd->query("SELECT saison, champion, comite1
 								
 								echo "<h4>";
 							    echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1'];
-								echo "<h4>";
+								echo "</h4>";
 					
 								
 								 }
@@ -94,7 +94,7 @@ $reponse = $bdd->query("	SELECT saison, champion, comite1
 				 
 	while ($donnees =  $reponse->fetch()  )
 	{ 									
-		echo "</h4>";
+		echo "<h4>";
 		echo $donnees['saison'].' - '.$donnees['champion'].$donnees['comite1']; 
 		echo "</h4>";  
 	}			 							 

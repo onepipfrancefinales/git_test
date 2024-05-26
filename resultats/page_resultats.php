@@ -35,7 +35,7 @@ require ("../connect/connexion1.php") ;
 		elseif ($idLigue == 22)
 			$sigleLigue = "pca";
 			
-		//echo $sigleLigue."PRO";echo "<br />";
+		//echo $sigleLigue."PRO";echo "<br>";
 			
 		structureLigue($idLigue, $bdd); 
 		${$sigleLigue."PRO1"} = ($d110); 
@@ -65,20 +65,21 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
 
 ?>
 <!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta name="description"
-	content="Tout sur le comité territorial <?php echo $titre;?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comité); les effectifs; les palmarès nationaux; les palmares territoriaux et l'ensemble des clubs composant le comité avec un lien pour acceder aux différents clubs.">
+	<meta name="description"	content="Tout sur le comité territorial <?php echo $titre;?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comité); les effectifs; les palmarès nationaux; les palmares territoriaux et l'ensemble des clubs composant le comité avec un lien pour acceder aux différents clubs.">
 	<meta name="keywords"
 	content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Francaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 	<meta name="classification" content="Sport,Rugby">
 	<meta name="resource-type" content="document">
 	<meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+  <meta name="viewport" content="width=device-width">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="author" content="Equipe Onepip">
 	<meta name="robots" content="All">
 	<link type="text/css" rel="stylesheet" href="../formulaireDG.css">
-	<link type="text/css" rel="stylesheet" href="../ligne1.css"/>
-	<link type="text/css" rel="stylesheet" href="../lienNoir.css"/>
+	<link type="text/css" rel="stylesheet" href="../ligne1.css">
+	<link type="text/css" rel="stylesheet" href="../lienNoir.css">
 	
 	
 	<title>Comit&eacute; territoriaux   </title>
@@ -86,59 +87,58 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
 
 
 <body>
-  <table width="1250" align="center" height="639">
-    <tr valign="middle" align="center" ><td colspan="3" height="74"><font color="#FFFFFF"> <?php include("../images/page_image_al.php");?>
-        </font> </td>
+  <table class="marginAuto">
+    <tr>
+    <td colspan="3">
+       <?php include("../images/page_image_al.php");?>
+        </td>
     </tr>
-    <tr valign="middle" align="center" bgcolor="#000000"><td height="26" colspan="3"><font color="#FFFFFF"><?php include("../01ligne.php");   ?> </font></td>
+    <tr >
+      <td  colspan="3">
+        <?php include("../01ligne.php");   ?> 
+      </td>
     </tr>
-    <tr valign="middle" align="center" bgcolor="#FFFFFF"> 
-       <td colspan="3" height="26"><table width="1200" border="0" align="center"></td>
-     <tr> 
-        <td><?php include("../pub/pub_displayHorizontal.php");?></td>
-    </tr>
-  </table>
-	  
-    </tr>
-    <tr valign="middle" align="center" bgcolor="#000000"> 
-      <td width="225" height="1703" bgcolor="#006699" align="center" valign="top"> 
-        <div align="center"><?php    include("../01gauche.php");  ?></div></td>
-      <td bgcolor="#ffffff" height="1703" valign="top" width="800"> 
-        <div align="center"> 
-          <p>&nbsp;</p>
-          <p><font color="#000000" size="5"><b><font face="Arial, Helvetica, sans-serif">RESULTATS &amp; CLASSEMENTS<br>
+  
+    <tr > 
+      <td class="colonne"> 
+    
+          <?php include("../01gauche.php");  ?>
+        </td>
+      <td class="centreDePage"> 
+        <div > 
+        
+          <p>RESULTATS & CLASSEMENTS<br>
             <br>
             <?php echo $saison; ?> - <?php echo $saison+1; ?></font></b></font></p>
           <p>&nbsp;</p>
           <table width="550" border="0" cellspacing="0" cellpadding="0">
             <tr bgcolor="#000000"> 
               <td colspan="7"> 
-                <div align="center"><b><font color="#FFFFFF" size="6">Comp&eacute;titions 
-                  f&eacute;d&eacute;rales</font></b></div>
+              <b>    Compétitions fédérales</b>
               </td>
             </tr>
           </table>
           <p>&nbsp;</p>
         
-        <p class="terr3">Top 14 - Pro D2 <br />
+        <p class="terr3">Top 14 - Pro D2 <br>
 			<a href="page_pro.php">poule unique (<?php echo ($pro1 + $pro2)." clubs";?>)</a></p>
 
-        <p class="terr3">Nationale<br />
+        <p class="terr3">Nationale<br>
 			<a href="page_pro.php">poule unique (<?php echo $nat1." clubs";?>)</a></p>
 
-		<p class="terr3">Nationale 2 <br />
+		<p class="terr3">Nationale 2 <br>
 			<a href="page_pro.php">2 poules de 12 (<?php echo $nat2." clubs";?>)</a></p>
 			
-		<p class="terr3">F&eacute;d&eacute;rale 1 - Nationale B <br />
+		<p class="terr3">Fédérale 1 - Nationale B <br>
             <a href="page_fed1.php">4 poules de 12(<?php echo $fed1." clubs";?>)</a></p>
 
-		<p class="terr3">F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B <br />
+		<p class="terr3">Fédérale 2 - F&eacute;d&eacute;rale B <br>
             <a href="page_fed2.php">8 poules de 12 (<?php echo $fed2." clubs";?>)</a></p>
           
-        <p class="terr3"> F&eacute;d&eacute;rale 3 - Excellence B <br />
+        <p class="terr3"> Fédérale 3 - Excellence B <br>
             <a href="page_fed3NE.php">20 poules de 10 (<?php echo $fed3." clubs";?>)</a></p>
           <br><br>
-            <?php    include("../pub/pub4.php");    ?>
+          
            <br>
             <br>
             <br>
@@ -146,17 +146,17 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
            
           <table width="550" border="0" cellspacing="0" cellpadding="0">
             <tr bgcolor="#000000"> 
-              <td colspan="7"><div align="center"><b><font color="#FFFFFF" size="6">Comp&eacute;titions f&eacute;minines </font></b></div></td>
+              <td colspan="7"><div align="center"><b><font color="#FFFFFF" size="6">Compétitions féminines </font></b></div></td>
             </tr>
           </table>
           <p>&nbsp;</p>
-          <p class="terr4">Elite 1 - Elite 2<br />
+          <p class="terr4">Elite 1 - Elite 2<br>
             <a href="../feminine/page_elite1.php">(23 clubs)</a></p>
 
-          <p class="terr4">F&eacute;d&eacute;rale 1<br />
+          <p class="terr4">Fédérale 1<br>
             <a href="../feminine/page_federale.php">(32 clubs)</a></p>
           <br>
-		<!--	  <p class="terr4">F&eacute;d&eacute;rale 2<br />
+		<!--	  <p class="terr4">F&eacute;d&eacute;rale 2<br>
             <a href="../feminine/page_federale2.php">(30 clubs)</a></p>
  -->
 
@@ -229,13 +229,10 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
           <br>
           </font></div>
       </td>
-      <td height="1703" bgcolor="#006699" width="225" valign="top"> 
-        <p> 
-          <?php
-    // On inclut le haut de la page
-    include("../00droite.php");
-    ?>
-        </p>
+      <td class="colonne"> 
+       
+          <?php include("../00droite.php");  ?>
+        
       </td>
     </tr>
     <tr bordercolor="#000000"> 
@@ -243,13 +240,13 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
         <div align="center"> 
           <table width="1100" border="1">
             <tr> 
-              <td><div align="center"><font color="#000000"><?php include("../comitebas.php"); ?></font></div></td>
+              <td><?php include("../comitebas.php"); ?></td>
             </tr>
             <tr> 
-              <td><div align="center"><font color="#000000"><?php require 'cadrePubHorizontal600.php';?></font></div></td>
+              <td><?php require 'cadrePubHorizontal600.php';?></td>
             </tr>
             <tr> 
-              <td><div align="center"><font color="#000000"><?php include("../bas.php");?></font></div></td>
+              <td>><?php include("../bas.php");?></td>
             </tr>
           </table>
         </div>

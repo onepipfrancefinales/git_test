@@ -351,9 +351,9 @@ echo "";
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 743px; top: 311px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
-$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -368,9 +368,9 @@ mysql_close(); // D&egrave;connexion de MySQL
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 135px; top: 221px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
-$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -385,9 +385,9 @@ mysql_close(); // D&egrave;connexion de MySQL
 <div id="Layer7" style="position:absolute; width:193px; height:15px; z-index:12; left: 131px; top: 411px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
-$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -402,9 +402,9 @@ mysql_close(); // D&egrave;connexion de MySQL
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 446px; top: 453px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
-$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -419,9 +419,9 @@ mysql_close(); // D&egrave;connexion de MySQL
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 439px; top: 274px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
-$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -436,9 +436,9 @@ mysql_close(); // D&egrave;connexion de MySQL
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 137px; top: 301px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
-$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -484,9 +484,9 @@ mysql_close(); // D&egrave;connexion de MySQL
 <div id="Layer7" style="position:absolute; width:193px; height:15px; z-index:12; left: 130px; top: 491px"><font size="2"> 
   <b><font face="Arial, Helvetica, sans-serif"><i> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
-$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='9200' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>

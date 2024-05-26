@@ -87,7 +87,7 @@ else
   </tr>
   <tr> 
     <td class="tabHautDroit" > <a href="../consultation/page_ligue.php?idLigue=<?php echo $champLigue;?>"
-		target="_top">Acc&egrave;s aux infos de la ligue</a></td>
+		target="_top">Accès aux infos de la ligue</a></td>
   </tr>
   <tr class="fond" valign="middle">     
 	<td class="phasesFinales" colspan="2"> 

@@ -121,7 +121,7 @@ else
 	elseif ($division == '120')
 		require 'prod2.php';
 	
-//**************  Trente-deuxième *************************	
+//**************  Trente-deuxiï¿½me *************************	
 
 	elseif (substr($type,0,3)==932 or substr($type,0,3) ==964)
 		{
@@ -130,7 +130,7 @@ else
 		else
 			require '32me.php';
 		}
-//**************  seizième  *************************
+//**************  seiziï¿½me  *************************
 
 	elseif(  substr($type,3,2)== 16 or substr($type,3,2)== 32 or $type2==16)
 		{
@@ -140,7 +140,7 @@ else
 			require '16me.php';
 		}
 		
-//**************  Huitième  *************************		
+//**************  Huitiï¿½me  *************************		
 
 	elseif(substr($type,5,2)== 8 or substr($type,5,2)== 16)
 		{

@@ -4,15 +4,15 @@ $id = 200;
 ?><head>
 <link rel="stylesheet" type="text/css" href="../2.css">
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comités territoriaux, Tous les championnats de rugby, fédérale 2, fédérale 3, fédérale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitï¿½s territoriaux, Tous les championnats de rugby, fï¿½dï¿½rale 2, fï¿½dï¿½rale 3, fï¿½dï¿½rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re Série</title>
+<title>1re Sï¿½rie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script language="JavaScript">
 <!--
@@ -32,7 +32,7 @@ $clubA3201= '		Carmaux				 ';
 $clubA3202= '		Objat				 ';
 $clubA3203= '		Nimes				 ';
 $clubA3204= '		LRC RCPF				 ';
-$clubA3205= '		Vallée Du Girou				 ';
+$clubA3205= '		Vallï¿½e Du Girou				 ';
 $clubA3206='		Vendres Lespignan				 ';
 $clubA3207= '		Royan Saujon				 ';
 $clubA3208= '		Le Queyran				 ';
@@ -40,21 +40,21 @@ $clubA3209= '		Malemort Brive				 ';
 $clubA3210= '		Castanet				 ';
 $clubA3211= '		Saint Yrieix				 ';
 $clubA3212= '		Alban Valence Lacaune				 ';
-$clubA3213= '		Xv Sud Brétilien				 ';
+$clubA3213= '		Xv Sud Brï¿½tilien				 ';
 $clubA3214= '		Angers				 ';
-$clubA3215= '		Surgères				 ';
+$clubA3215= '		Surgï¿½res				 ';
 $clubA3216= '		Cornouaille				 ';
 $clubA3217= '		Portes Du Comminges				 ';
 $clubA3218= '		Larressore Arcangues				 ';
 $clubA3219= '		Lorient				 ';
 $clubA3220= '		Lormont				 ';
-$clubA3221= '		Bièvres Izeaux Brézin				 ';
+$clubA3221= '		Biï¿½vres Izeaux Brï¿½zin				 ';
 $clubA3222= '		Dombes Saone				 ';
 $clubA3223= '		Ampuis				 ';
 $clubA3224= '		Olonzac				 ';
 $clubA3225= '		Quatre Cantons				 ';
 $clubA3226= '		Bretenoux				 ';
-$clubA3227= '		Albret Nérac				 ';
+$clubA3227= '		Albret Nï¿½rac				 ';
 $clubA3228= '		Masseube				 ';
 $clubA3229= '		Cenac				 ';
 $clubA3230='		Sarlat				 ';
@@ -78,13 +78,13 @@ $clubA3247= '		Iris Lille				 ';
 $clubA3248= '		Meaux				 ';
 $clubA3249= '		Riom Bort	(PR)			 ';
 $clubA3250= '		Oval Drome				 ';
-$clubA3251= '		Valréas				 ';
+$clubA3251= '		Valrï¿½as				 ';
 $clubA3252= '		Squadra Corsa				 ';
 $clubA3253= '		Bourges				 ';
 $clubA3254= '		Paris Xv				 ';
 $clubA3255= '		Saint Maur				 ';
 $clubA3256= '		Buxy Montchanin				 ';
-$clubA3257= '		Acbb Sèvres Fontenay				 ';
+$clubA3257= '		Acbb Sï¿½vres Fontenay				 ';
 $clubA3258= '		Lisieux Honfleur				 ';
 $clubA3259= '		Hagueneau				 ';
 $clubA3260= '		Arras				 ';

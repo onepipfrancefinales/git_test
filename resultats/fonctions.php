@@ -1174,8 +1174,10 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	//******phase Aller******
 
 	echo "<tr>";
-	echo "<td colspan=\"9\" align=\"center\">";
-	echo "phase aller";
+	echo "<td colspan=\"3\" align=\"left\">";
+	echo "<b>";
+	echo "Phase aller : ";
+	echo "</b>";
 	echo "</td>";
 	echo "</tr>";
 	echo "<tr>";
@@ -1242,8 +1244,10 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	echo "</tr>";
 	echo "<tr>";
 	/******  phase Retour******/
-	echo "<td colspan=\"9\"align=\"center\">";
-	echo "phase retour";
+	echo "<td colspan=\"3\"align=\"left\">";
+	echo "<b>";
+	echo "Phase retour : ";
+	echo "<b>";
 	echo "</td>";
 	echo "</tr>";
 	echo "<tr>";

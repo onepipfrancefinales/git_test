@@ -39,12 +39,12 @@ $clubA2004 = 'ASM Clermont (AU)';
 else
 {
 $clubA2001 = 'Premier';
-$clubA2003 = 'Deuxième	';
-$clubA4001 = 'Quatrième';
-$clubA4002 = 'Cinquième';
-$clubA4003 = 'Troisième';
-$clubA4004 = 'Sixième';
-echo "<h3> <strong>Désolé, aucune données pour cette saison</h3> </strong>";
+$clubA2003 = 'Deuxiï¿½me	';
+$clubA4001 = 'Quatriï¿½me';
+$clubA4002 = 'Cinquiï¿½me';
+$clubA4003 = 'Troisiï¿½me';
+$clubA4004 = 'Sixiï¿½me';
+echo "<h3> <strong>Dï¿½solï¿½, aucune donnï¿½es pour cette saison</h3> </strong>";
 }
 ?>
 

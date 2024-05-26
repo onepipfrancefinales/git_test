@@ -1322,7 +1322,7 @@ echo "<table width=\"90%\" align=\"center\">";
 //******phase Aller******
 
  echo "<tr>";
-  echo "<td colspan=\"9\" align=\"center\">";echo "phase aller"; echo "</td>";
+  echo "<td colspan=\"9\" align=\"left\">";echo "phase aller"; echo "</td>";
  echo "</tr>";
  echo "<tr>";
   for ($i=0; $i<$demiMaxJournee; $i++)
@@ -1381,7 +1381,7 @@ echo "<td align=\"center\">";
   echo "</tr>"; 
  echo "<tr>";
  /******  phase Retour******/
- echo "<td colspan=\"9\"align=\"center\">";echo "phase retour"; echo "</td>";
+ echo "<td colspan=\"9\"align=\"left\">";echo "phase retour"; echo "</td>";
  echo "</tr>";
  echo "<tr>";
   for ($i=$demiMaxJournee; $i<$maxJournee; $i++)

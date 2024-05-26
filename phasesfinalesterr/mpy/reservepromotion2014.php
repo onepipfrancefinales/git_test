@@ -185,8 +185,8 @@ MM_reloadPage(true);
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
         </font><font size="5"><b><font color="#FFCC00">
-        <? echo "Championnat des Pyrénées";?>
-        <? echo "Réserve Promotion Honneur";?>
+        <? echo "Championnat des Pyrï¿½nï¿½es";?>
+        <? echo "Rï¿½serve Promotion Honneur";?>
         </font></b></font></b></font></td>
     </tr>
   </table>

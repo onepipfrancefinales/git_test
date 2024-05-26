@@ -1,6 +1,6 @@
   
 <table width="100%" border="0" height="71" cellspacing="0">
-  <tr valign="top" align="center" bgcolor="EAECEB" background="EAECEB"> 
+  <tr valign="top" align="center" bgcolor="#EAECEB" > 
     <td height="12" colspan="2"> 
       <div class="equipeIpro"><a href="/index.php">Accueil</a></div>
     </td>
@@ -12,7 +12,7 @@
         <?php echo $annee; ?>
       </div>
     </td>
-    <td height="12" colspan="4" background="EAECEB"> 
+    <td height="12" colspan="4" > 
       <div class="entete"><font color="#000000">-</font></div>
     </td>
 	<!--
@@ -21,7 +21,7 @@
     </td>
 	-->
   </tr>
-  <tr valign="top" align="center" bgcolor="EAECEB" background="EAECEB"> 
+  <tr valign="top" align="center" bgcolor="#EAECEB" > 
     <td width="99" ><div class="equipeIpro"><a href="pagePhaseFinale.php?division=110&annee=<?php echo $annee;?>">Top 14</a></div></td>
     <td width="67" ><div class="equipeIpro"><a href="pagePhaseFinale.php?division=120&annee=<?php echo $annee;?>" target="_top">Pro D2</a></div></td>
     <td width="121"><div class="equipeIpro"><a href="pagePhaseFinale.php?division=130&annee=<?php echo $annee;?>" target="_top">Nationale 1 </a></div></td>
@@ -36,8 +36,8 @@
     <td width="122"><div class="equipeII"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $annee;?>" target="_top">Excellence B</a></div></td>
     <td width="95"><div class="equipeII"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">R&eacute;serve R1</a></div></td>
   </tr>
-  <tr valign="top" align="center" bgcolor="EAECEB" background="EAECEB"> 
-    <td colspan="2" ><div align="center"></div><div class="cal"><a href="/phases_finales/Calendriers_phasesfinales<?php echo $annee;?>.pdf" target="_blank">Calendriers complets </a></div></td>
+  <tr valign="top" align="center" bgcolor="#EAECEB" > 
+    <td colspan="2" ><div class="cal"><a href="/phases_finales/Calendriers_phasesfinales<?php echo $annee;?>.pdf" target="_blank">Calendriers complets </a></div></td>
     <td><div class="equipeIterr"><a href="pagePhaseFinale.php?division=170&annee=<?php echo $annee;?>" target="_top">R&eacute;gionale 1</a></div></td>
     <td><div class="equipeIterr"><a href="pagePhaseFinale.php?division=180&annee=<?php echo $annee;?>" target="_top">R&eacute;gionale 2</a></div></td>
     <td><div class="equipeIterr"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $annee;?>" target="_top">R&eacute;gionale 3</a></div></td>

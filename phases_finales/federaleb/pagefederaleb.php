@@ -2,7 +2,7 @@
 echo $annee; ?>
 <html>
 <head>
-<title>Championnat de France Fédérale B <?php echo $annee;?></title>
+<title>Championnat de France Fï¿½dï¿½rale B <?php echo $annee;?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../2.css">
 </head>

@@ -89,7 +89,7 @@ else
 	 echo "</h4>"; 									
 	}			 							 
 }
-echo "<br />";
-echo "<br />";
+echo "<br>";
+echo "<br>";
 //include("../../pub/pub_carre.php"); 
 ?>

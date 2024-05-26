@@ -3,7 +3,7 @@
  <?php $division=$_GET['division'];?>
  <html>
 <head>
-<title>Championnat de France 2me Série <?php echo $annee;?></title>
+<title>Championnat de France 2me Sï¿½rie <?php echo $annee;?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../2.css">
 </head>
@@ -43,7 +43,7 @@
 		else
 			require '32me.php';
 		}
-//seizième
+//seiziï¿½me
 	elseif(substr($type,3,2)== 16 or substr($type,3,2)== 32)
 		{
 		if (substr($type,3,2)== 32)

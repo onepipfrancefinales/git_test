@@ -68,7 +68,7 @@ $clubA2004 = 'Stade Montois (CBL)';
 }
 else
 {
-echo "Désolé, aucune donnée pour cette saison";
+echo "Dï¿½solï¿½, aucune donnï¿½e pour cette saison";
 }
 ?>
 <script language="JavaScript">

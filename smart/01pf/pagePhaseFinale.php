@@ -36,7 +36,7 @@ trenteDeuxieme2019 ($division, $annee);
 		else
 			require '32me.php';
 		}
-//seizième
+//seiziï¿½me
 	elseif(substr($type,3,2)== 16 or substr($type,3,2)== 32)
 		{
 		if (substr($type,3,2)== 32)

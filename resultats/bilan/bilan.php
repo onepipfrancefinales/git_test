@@ -9,13 +9,14 @@
         <?php echo $nom; ?>
       </h2>
     </td>
-    <td rowspan="2" valign="middle">
-      <div align="center">
+    <td rowspan="2" valign="middle" align="center">
+      
         <?php
         $logoEquipe = substr($logoEquipe, -5); {
-          print("<img src=\"/images/blasons200_200/$logoEquipe.gif\" >");
-        } ?>
-      </div>
+         print("<img src=\"/images/blasons200_200/$logoEquipe.gif\" >");
+       }
+      ?>
+      
     </td>
   </tr>
   <tr>
@@ -26,9 +27,9 @@
 </table>
 
 
-<h1>Saisons pr&eacute;c&eacute;dentes </h1>
+<h1>Saisons précédentes </h1>
 
-<table width="550" border="0" cellspacing="0">
+<table width="550" border="0" cellspacing="0" align="center">
   <!-- Dernière saison : saison -1 ans -->
   <tr class="ligneGrise">
     <td class="saison">
@@ -163,13 +164,13 @@
 <div>
   </p>
   <br />
-  <h4>Classement g&eacute;n&eacute;ral</h4>
+  <h4>Classement général</h4>
   <!-- Classement général de la poule -->
-
+<div align="center" >
   <?php
   classementDetaille($champ, $bdd);
-  include("../../pub/pub4.php"); ?>
-
+  ?>
+</div>
   <!--
   <h3><font color="#000000" face="Arial, Helvetica, sans-serif"> Evolution du classement</font></h3>
   -->
@@ -182,22 +183,22 @@
   echo "<br />";
   echo "<br />"; ?>
 
-  <h3> Suivi des r&eacute;sultats des rencontres </h3>
+  <h3> Suivi des résultats des rencontres </h3>
   <?php
   require '../../connect/connexion6.php';
-  evolutionResultats($equipe, $comite, $champ, $bdd);
+ evolutionResultatsSmart($equipe, $comite, $champ, $bdd);
   ?>
   <br /><br />
-  <h3> Journ&eacute;e(s) report&eacute;e(s)</h3>
+  <h3> Journée(s) reportée(s)</h3>
   <br />
-  <?php journeesReportees($comite, $champ, $bdd); ?>
+  <?php  journeesReportees($comite, $champ, $bdd); ?>
   <br /><br />
 
   <p class=titreNoir2>Calendrier et r&eacute;sultats de<br>
     <?php echo $nom; ?>
   </p>
 
-  <?php oppositionsDetaillees($champ, $id_equipe, false, $bdd); ?>
+  <?php  oppositionsDetaillees($champ, $id_equipe, false, $bdd); ?>
   <hr>
   <hr><br>
 
@@ -206,7 +207,7 @@
   <!-- font size="3" face="Arial, Helvetica, sans-serif" color="#FF0000">Victoires 
     cons&eacute;cutives</font>
   -->
-  <table width="400" border="0" height="250">
+  <table width="400" border="0" height="250" align="center">
     <tr>
       <td class="stats">R&eacute;sultats &agrave; domicile</td>
       <td class="stats">R&eacute;sultats &agrave; l'exterieur </td>
@@ -230,7 +231,7 @@
 
   <h1>Moyennes</h1>
   <br>
-  <table width="73%" border="0" cellspacing="0" cellpadding="0">
+  <table width="73%" border="0"  align="center">
     <tr>
       <td class="moyPP" colspan="2"> Points marqu&eacute;s par match </td>
       <td class="moyPC" colspan="2"> Points encaiss&eacute;s par match </td>
@@ -257,7 +258,7 @@
     </tr>
   </table>
   <br>
-  <table width="73%" border="1" cellspacing="0" cellpadding="0">
+  <table width="73%" border="1" cellspacing="0" cellpadding="0" align="center">
     <tr>
       <td class="moyVert"> Moyenne &agrave; domicile </td>
       <td class="moyVert"> Moyenne &agrave; l'exterieur </td>
@@ -298,7 +299,7 @@
   <br>
   <hr />
   <br>
-  <table width="72%" border="0">
+  <table width="72%" border="0" align="center">
     <tr>
       <td class="QLiens">Meilleure attaque de la poule :</td>
       <td class="QLiens">
@@ -326,7 +327,7 @@
   <hr>
   <div align="left"><a href="javascript:history.go(-1)">
       <font color="#000099"><i><b>&lt;---
-            Retour r&eacute;sultats du comit&eacute;</b></i></font>
+            Retour résultats du comité</b></i></font>
     </a></div>
   <hr>
   <br>
@@ -348,11 +349,11 @@
   <p class="QLiens"><a
       href="../../dirigeant/calendrier/pageCalendrier.php?idEquipe=<?php echo $equipe; ?>&champ=<?php echo $champ; ?>&comite=<?php echo substr($comite, 3, 6); ?>"
       target="_top">
-      T&eacute;l&eacute;charger le calendrier du club
+      Télécharger le calendrier du club
     </a>
   </p></br>
   <hr />
-  <h1> Palmar&egrave;s </h1>
+  <h1> Palmarès </h1>
   <br>
 
   <?php  include("palmares.php"); ?>

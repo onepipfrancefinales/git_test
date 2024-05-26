@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <?php  
 $anneemoins = $annee-1;
 $anneeplus = $annee+1;
@@ -74,7 +74,7 @@ if ($division == 190 and $annee < 2023) $nomDivision  = "1re S&eacute;rie";
   </tr>
   <tr valign="top" align="center"> 
 	
-   <td colspan="10" bgcolor="#EAECEB" height="51"><?php	//include("../../pub/pub101.php"); ?></td>
+   <td colspan="10" bgcolor="#EAECEB" height="51"></td>
     <td valign="middle" bgcolor="#EAECEB" height="51" width="5%"><div align="right"> <font size="2" color="#000000"><?php echo "( ".''.$anneemoins.''." )"; ?></font></div></td> 
     <td valign="middle" bgcolor="#EAECEB" height="51" width="19%"> 
       <?php
@@ -119,7 +119,7 @@ if ($anneeplus >= '2019')
 	?>
     </td> 
     <td valign="middle" bgcolor="#EAECEB" height="51" width="4%"><div align="left"><font size="2" color="#000000"><?php echo "( ".''.$anneeplus.''." )"; ?></font></div></td>	  
-    <td width="37%" bgcolor="#EAECEB" height="51"><?php	//include("../../pub/pub201.php"); ?></td>
+    <td width="37%" bgcolor="#EAECEB" height="51"></td>
   </tr>
 </table>
 </html>

@@ -181,11 +181,11 @@
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
         </font><font size="5"><b><font color="#FFCC00">
-        <? echo "Championnat des Pyrénées";?>
+        <? echo "Championnat des Pyrï¿½nï¿½es";?>
         </font><font size="5" color="#FFCC00"><b> 
         <?php echo $annee;?>
         </b></font><font color="#FFCC00"> : 
-        <? echo "Reserve 1re Série";?>
+        <? echo "Reserve 1re Sï¿½rie";?>
         </font></b></font></b></font></td>
     </tr>
   </table>

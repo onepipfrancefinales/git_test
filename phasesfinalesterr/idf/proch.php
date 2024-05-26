@@ -25,7 +25,7 @@ MM_reloadPage(true);
   <table width="100%" border="0" height="30">
     <tr valign="top" align="center"> 
       <td colspan="12" bgcolor="006699" height="28"><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Finales territoriales du comité des Flandres ";?>
+        <? echo "Finales territoriales du comitï¿½ des Flandres ";?>
         </font></b></font></td>
     </tr>
     <tr valign="top" align="center"> 

@@ -56,7 +56,7 @@ traitementDesScores($equipe, $phpComite, $bdd);
 </head>
 <body>
 
-<table width="1100" align="center">
+<table width="1250" align="center">
     <tr>
       <td colspan="3"> <?php  include("../../images/page_image_al.php");  ?></td>
     </tr>
@@ -65,22 +65,22 @@ traitementDesScores($equipe, $phpComite, $bdd);
       <div><?php include("../../01ligne.php"); ?> </div>
       </td>
     </tr>
-    <tr bgcolor="#ffffff" valign="middle">
-      <td colspan="3" height="74"> 
-        <div align="center"><?php include("../../pub/pub20.php"); ?> </div>
+    <tr>
+      <td colspan="3" height="74" > 
+     
       </td>
     </tr>
-    <tr valign="middle">
-      <td bgcolor="#006699" valign="top" width="225" height="89"> 
+    <tr >
+      <td class="colonne"> 
        <?php include("../../01gauche.php");?>
     </td>
-    <td bgcolor="#ffffff" width="650" valign="top" height="89"> 
-     <div align="center">
+    <td class="centreDePage"> 
+     
 	  <?php include("bilan.php"); ?>  
-      <?php include("../../pub/pub_carre.php"); ?>
-	  </div>
+    
+	 
     </td>
-    <td align="center" bgcolor="#006699" height="89" valign="top" width="225"> 
+    <td class="colonne"> 
         <?php include("../../00droite.php"); ?>
     </td>
   </tr>
@@ -100,6 +100,7 @@ traitementDesScores($equipe, $phpComite, $bdd);
     </th>
   </tr>
 </table>
+</body>
 <!--   
 	<footer> 
     <div id="9129-5">
@@ -108,5 +109,5 @@ traitementDesScores($equipe, $phpComite, $bdd);
     </div>
    </footer>
    -->
-  </body>
+  
 </html>

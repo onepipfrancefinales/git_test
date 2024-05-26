@@ -218,34 +218,39 @@ function accessMatch ($division, $annee, $bdd) {
 
 	GLOBAL $equipeDom, $equipeExt, $scoreDom, $scoreExt;
 	
-	$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3201
-	FROM bdclubs, bdpffrance
+	$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3201, bdligue.sigle
+	FROM bdclubs, bdpffrance, bdligue
 	WHERE 	bdclubs.id= bdpffrance.E01
+	AND bdligue.id = bdclubs.ligue
 	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'");
 
 	while ($row = $reponse->fetch() )
 		{ 
 		
-		$equipeDom = $row[0];
+		$equipe = $row[0];
 		$scoreDom = $row[1];
+		$ligue = $row[2];
 
 		}
 
+		$equipeDom = $equipe.' ('.$ligue.')';		
 
-
-		$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3202
-	FROM bdclubs, bdpffrance
+		$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3202, bdligue.sigle
+	FROM bdclubs, bdpffrance, bdligue
 	WHERE 	bdclubs.id= bdpffrance.E02
+	AND bdligue.id = bdclubs.ligue
 	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'");
 
 	while ($row = $reponse->fetch() )
 		{ 
 		
 		
-		$equipeExt = $row[0];
+		$equipe = $row[0];
 		$scoreExt = $row[1];
-
+		$ligue = $row[2];
 		}
+
+		$equipeExt = $equipe.' ('.$ligue.')';
 
 }
 

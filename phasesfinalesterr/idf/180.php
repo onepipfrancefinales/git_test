@@ -4,15 +4,15 @@
 <link rel="stylesheet" type="text/css" href="../style2.css">
 <?php $annee=$_GET['variable_1'];?>
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comités territoriaux, Tous les championnats de rugby, fédérale 2, fédérale 3, fédérale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitï¿½s territoriaux, Tous les championnats de rugby, fï¿½dï¿½rale 2, fï¿½dï¿½rale 3, fï¿½dï¿½rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re Série</title>
+<title>1re Sï¿½rie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 </head>
@@ -53,7 +53,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     </tr>
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Finales territoriales du comité Ile de France $annee";?>
+        <? echo "Finales territoriales du comitï¿½ Ile de France $annee";?>
         </font></b></font></td>
     </tr>
   </table>
@@ -105,8 +105,8 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   <tr> 
     <td width="52" height="26"> 
       <?php 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db2"); // Sélection de la base onepip	   
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db2"); // Sï¿½lection de la base onepip	   
    ?>
     </td>
     <td width="185" height="26"> 
@@ -291,7 +291,7 @@ echo "";
     <td width="185" height="25"><font size="2" face="Arial, Helvetica, sans-serif"><b><i> 
       <?php
 
-$reponse = mysql_query("SELECT * FROM phpidf_pf$annee WHERE id='180' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM phpidf_pf$annee WHERE id='180' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>

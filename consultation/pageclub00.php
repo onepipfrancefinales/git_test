@@ -7,17 +7,17 @@ $chaine = $_GET['champion'];
 //echo "chaine : ".$chaine;echo "<br/>";
 //Evaluation de la variable chaine si numérique
 if (is_int($chaine)) {
- 
+
   //  echo " numerique"; echo "<br/>";
-    $equipe = substr($chaine, 2, 5);
-    $numLigue = substr($chaine, 0, 2);
-    $id = substr($chaine, 2, 2);
-  }
+  $equipe = substr($chaine, 2, 5);
+  $numLigue = substr($chaine, 0, 2);
+  $id = substr($chaine, 2, 2);
+}
 
 
 //Evaluation de la variable chaine si textuelle
 else {
-////  echo " non numerique";echo "<br/>";
+  ////  echo " non numerique";echo "<br/>";
   require '../connect/connexion1.php';
   infosclub($chaine, $bdd);
   $equipe = $numLigue . $code;
@@ -75,19 +75,21 @@ saisons($code, $annee, $bdd);
 
 </head>
 
-<body bgcolor="#000000">
-
-  <div align="center">
-    <table width="1100">
+<body >
+    <table width="1250"  align="center">
       <tr>
-        <td colspan="3"><?php include("../images/page_image_al.php"); ?></td>
+        <td colspan="3">
+          <?php include("../images/page_image_al.php"); ?>
+        </td>
       </tr>
-      <tr valign="middle" align="center" bgcolor="#000000">
-        <td height="24" colspan="3"><?php include("../01ligne.php"); ?></td>
+      <tr >
+        <td colspan="3"><?php include("../01ligne.php"); ?></td>
       </tr>
-      <tr valign="middle" align="center" bgcolor="#000000">
-        <td height="505" bgcolor="#006699" align="center" valign="top" width="225"><?php include("../01gauche.php"); ?></td>
-        <td bgcolor="#FFFFFF" height="505" valign="top" width="650">
+      <tr >
+        <td class="colonne">
+          <?php include("../01gauche.php"); ?>
+        </td>
+        <td class="centreDePage">
           <?php
           if ($code > 0) {
             include("00clubs.php");
@@ -96,7 +98,9 @@ saisons($code, $annee, $bdd);
           }
           ?>
         </td>
-        <td height="505" bgcolor="#006699" width="225" valign="top"><?php include("../00droite.php"); ?></td>
+        <td class="colonne">
+          <?php include("../00droite.php"); ?>
+        </td>
       </tr>
     </table>
     <table width="1100" align="center">
@@ -144,10 +148,5 @@ saisons($code, $annee, $bdd);
         </td>
       </tr>
     </table>
-  </div>
-  <p align="center">&nbsp;</p>
-  <p>&nbsp;</p>
-  <div align="center"> </div>
 </body>
-
 </html>

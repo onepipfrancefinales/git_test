@@ -59,7 +59,7 @@ if ($type < 90000000000)
 	
 else
 	{	
-//********    trente deuxième    *********	
+//********    trente deuxiï¿½me    *********	
 	if (substr($type,0,3)==932 or substr($type,0,3) ==964)
 		{
 		if (substr($type,0,3) == 964)
@@ -72,7 +72,7 @@ else
 			}
 		}
 		
-//********    seizième    *********
+//********    seiziï¿½me    *********
 
 	elseif(substr($type,3,2)== 16 or substr($type,3,2)== 32)
 		{
@@ -81,7 +81,7 @@ else
 		else
 			require "16me.php";
 		}
-//********    huitième    *********
+//********    huitiï¿½me    *********
 
 	elseif(substr($type,5,2)== '08' or substr($type,5,2)== '16')
 		{

@@ -34,12 +34,13 @@ while ($donnees = $reponse->fetch()) {
 }
 ?>
 
-<html>
+<!DOCTYPE html PUBLIC>
+<html lang="fr">
 <head>
   <title>Tous les clubs du comit&eacute; <?php echo $sigle; ?></title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content=" <?php echo $titre; ?> : Pr�sentation du club (Bureau; Si�ge; Stade; Contacts); les grandes du dates du club; les palmar�s; les r�sultats du clubs au cours des derni�res saisons et un album photos d�di� au club. ">
-  <meta name="keywords" content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+  <meta name="description" content=" <?php echo $titre; ?> : Présentation du club (Bureau; Siège; Stade; Contacts); les grandes du dates du club; les palmar�s; les r�sultats du clubs au cours des derni�res saisons et un album photos d�di� au club. ">
+  <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -50,50 +51,29 @@ while ($donnees = $reponse->fetch()) {
   <link type="text/css" rel="stylesheet" href="resultat.css">
 </head>
 
-
-
-
-
-
-<body text="#000000" link="#000000" vlink="#000000" alink="#000000" bgcolor="#000000">
-  <div align="center">
-    <table width="1000" height="639">
-      <tr valign="middle" align="center" bordercolor="#FFFFFF">
-        <td colspan="3" height="74">
-          <table width="1250" border="1" bordercolor="#000000" height="150">
-            <tr>
-              <td height="151">
-               
-                  
-                    <?php include("../images/page_image_al.php");  ?>
-                 
-                
-              </td>
-            </tr>
-          </table>
+<body >
+  <table  width="1250" align="center">
+      <tr>
+          <td colspan="3" height="74">
+             <?php include("../images/page_image_al.php");  ?>
+          </td>
+       </tr>
+      <tr>
+      <tr >
+        <td  colspan="3">  
+           <?php include("../01ligne.php");  ?>
         </td>
       </tr>
-      <tr valign="middle" align="center" bgcolor="#000000">
-        <td height="24" colspan="3">
-        
-            <?php include("../01ligne.php");  ?>
-          
-        </td>
-      </tr>
-      <tr valign="middle" align="center" bgcolor="#000000">
-        <td width="225" height="505" bgcolor="#006699" align="center" valign="top">
-
-
+      <tr>
+        <td class="colonne">
           <?php include("../01gauche.php"); ?>
-
         </td>
-        <td bgcolor="#FFFFFF" height="505" valign="top" width="650">
+     
+        <td class="centreDePage">
           <?php include("logoclubs2.php");  ?>
         </td>
-        <td height="505" bgcolor="#006699" width="225" valign="top">
-          <p>
+        <td class="colonne">
             <?php include("../00droite.php"); ?>
-          </p>
         </td>
       </tr>
       <tr valign="middle" align="center" bgcolor="#FFFFFF">
@@ -119,8 +99,5 @@ while ($donnees = $reponse->fetch()) {
         </td>
       </tr>
     </table>
-
-  </div>
-
 
 </html>

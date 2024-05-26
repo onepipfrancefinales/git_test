@@ -7,10 +7,10 @@ if ($cmt == "fem")
   <tr>
     <td class="tab3" colspan="2"><a href="page_elite1.php#1">Elite 1</a></td>
     <td class="tab3" colspan="2"><a href="page_elite1.php#2">Elite 2 </a></td>
-    <td class="tab3" colspan="2"><a href="page_federale.php">F&eacute;d&eacute;rale 1 </a></td>
+    <td class="tab3" colspan="2"><a href="page_federale.php">Fédérale 1 </a></td>
   </tr>
   <tr>
-    <td class="tab3" colspan="6"><a href="../../index.php">Comp&eacute;titions masculines</a></td>
+    <td class="tab3" colspan="6"><a href="../../index.php">Compétitions masculines</a></td>
    
   </tr>
   
@@ -112,12 +112,12 @@ elseif ( $cmt =="au" or $cmt =="ab" or $cmt == "ca")
  ?>
   <table class="sommaire" align="center" width="519" height="49">
     <tr> 
-      <td class="tab3" width="157"><a href="page_<?php echo $cmt2;?>_reg1.php">R&eacute;gionale 1</a></td>
-      <td class="tab3" colspan="2"><a href="page_<?php echo $cmt2;?>_reg2.php">R&eacute;gionale 2</a> </td>
-      <td class="tab3" width="173"><a href="page_<?php echo $cmt2;?>_reg3.php">R&eacute;gionale 3 </a></td>
+      <td class="tab3" width="157"><a href="page_<?php echo $cmt2;?>_reg1.php">Régionale 1</a></td>
+      <td class="tab3" colspan="2"><a href="page_<?php echo $cmt2;?>_reg2.php">Régionale 2</a> </td>
+      <td class="tab3" width="173"><a href="page_<?php echo $cmt2;?>_reg3.php">Régionale 3 </a></td>
     </tr>
     <tr> 
-      <td class="tab3" colspan="4"><a href="../feminine/index_fem.php">Comp&eacute;titions f&eacute;minines</a> </td>
+      <td class="tab3" colspan="4"><a href="../feminine/index_fem.php">Compétitions féminines</a> </td>
     </tr>
   </table>
   <?php
@@ -165,12 +165,12 @@ else
   ?>
   <table class="sommaire" align="center"width="519" height="49">
     <tr> 
-	  <td class="tab3"><a href="#R1">R&eacute;gionale 1</a> </td>
-   	  <td class="tab3"><a href="#R2">R&eacute;gionale 2</a></td>
-      <td class="tab3"><a href="#R3">R&eacute;gionale 3 </a></td>
+	    <td class="tab3"><a href="#R1">Régionale 1</a> </td>
+   	  <td class="tab3"><a href="#R2">Régionale 2</a></td>
+      <td class="tab3"><a href="#R3">Régionale 3</a></td>
     </tr>
     <tr> 
-     <td class="tab3" colspan="3" > <a href="../feminine/index_fem.php">Comp&eacute;titions f&eacute;minines</a> </td>
+     <td class="tab3" colspan="3" > <a href="../feminine/index_fem.php">Compétitions féminines</a> </td>
     </tr>
   </table>
   <?php

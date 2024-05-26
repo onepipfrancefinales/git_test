@@ -9,7 +9,7 @@ $sigleLigue = substr ($sigleLigue,-4,3);
 nomLigue($idLigue, $sigleLigue, $bdd);
 ?>
 
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <link rel= "canonical" href= "https://francefinalesrugby.fr/palmares/palmTerritorial/tableauPalmReg.php?sigleLigue=<?php echo $ $sigleLigue;?>" />
@@ -17,6 +17,14 @@ nomLigue($idLigue, $sigleLigue, $bdd);
 <link type="text/css" rel="stylesheet" href="../../ligne1.css"/>
 <link type="text/css" rel="stylesheet" href="palmaresTerr.css"/>
 <title> Champions R&eacute;gionauxx <?php echo $nomLigue; ?></title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="">
+<meta name="keywords" content="Presentation de la competititon et de tous les champions de France 1re Serie. Palmares complet de la 1re Serie.">
+<meta name="classification" content="Sport,Rugby">
+<meta name="resource-type" content="document">
+<meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+<meta name="author" content="Equipe Onepip">
+<meta name="robots" content="All">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 
@@ -43,7 +51,7 @@ MM_reloadPage(true);
   <tr bgcolor="#FFFFFF"><td colspan="7" height="12" valign="top">&nbsp;</td>
   </tr>
   <tr> 
-    <td colspan="7" height="11" valign="top"><font size="4">Champions territoriaux (par comit&eacute; ) avant 2019 :</font>	
+    <td colspan="7" height="11" valign="top"><font size="4">Champions territoriaux (par comité ) avant 2019 :</font>	
 	<?php 
 	if ($sigleLigue == "ARA")
 		require 'comitesARA.php';
@@ -58,9 +66,9 @@ MM_reloadPage(true);
 	</td>
   </tr>
   <tr> 
-    <td width="83" height="96"><div align="left"><?php {print("<img src=\"../../images/ligues/$sigleLigue.jpg\" border=\"0\" target=_top>");}?></div> </td>
-    <td colspan="3" height="128" valign="middle"><p align="center"><font size="7" color="#FFFFFF">Champions R&eacute;gionaux<br>de la <strong>ligue<br><?php echo $nomLigue;?></strong></font></p></td>
-    <td colspan="2" height="96" width="78"><div align="right"><?php	{print("<img src=\"../../images/ligues/$sigleLigue.jpg\" border=\"0\" target=_top>");}?></div></td>
+    <td width="83" height="96"><div align="left"><?php {print("<img src=\"../../images/ligues/$sigleLigue.jpg\" height=\"225\" width=\"225\" border=\"0\" target=_top>");}?></div> </td>
+    <td colspan="3" height="128" valign="middle"><p align="center"><font size="7" color="#FFFFFF">Champions Régionaux<br>de la <strong>ligue<br><?php echo $nomLigue;?></strong></font></p></td>
+    <td colspan="2" height="96" width="78"><div align="right"><?php	{print("<img src=\"../../images/ligues/$sigleLigue.jpg\" height=\"225\" width=\"225\" border=\"0\" target=_top>");}?></div></td>
   </tr>
   <tr> 
     <td colspan="7" height="32" valign="top"></td>
