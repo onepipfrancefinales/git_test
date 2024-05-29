@@ -1,5 +1,5 @@
 
-<table class= "tableauBas2 ligneNoire">
+<table class= " tableauBas2 colorBlack backgroundWhite ">
   <tr > 
     <td  class="bas"> 
       <a href="/index.php">Accueil</a>

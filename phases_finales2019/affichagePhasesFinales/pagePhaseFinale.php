@@ -14,18 +14,19 @@
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-	<link rel="stylesheet" type="text/css" href="2.css">
-	  <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="../../ligne1.css">
+<link rel="stylesheet" type="text/css" href="2.css">
+<meta name="viewport" content="width=device-width">
 
 
  </head>
- <script language="JavaScript">
+
+<body  class="marginAuto colorBlack backgroundEAECEB">
+ <script >
    function ouvrirPopup(page,nom,options) {
   window.open(page,nom,options);
 }
 </script>
-<body bgcolor="#EAECEB" text="#000000" align="center">
-
  <?php
  require '../../phases_finales2019/fonctionsChampFrance2019.php';  
  require '../../connect/connexion5.php';

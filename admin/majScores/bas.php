@@ -102,8 +102,14 @@
   </tr>
    <tr> 
     <td width="395" align="center"><a href="/phases_finales2019/Maj_champ_france/accueilMAJ.php?annee=2024">MAJ Phases finales championnnat de France</a></td>
-   </tr>
- 
+  
+  
+  </tr>
+  <tr> 
+    <td width="395" align="center" height = "23"></td>
+  
+  
+  </tr>
   
    <tr> 
     <td colspan="2" bgcolor="#006699"> 

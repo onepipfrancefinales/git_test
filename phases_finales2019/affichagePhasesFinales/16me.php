@@ -92,7 +92,7 @@
     <td class="coin4"><?php echo $clubA1601;?></td>
     <td class="coin4pts"><?php echo $A1601;?></td>
     <td colspan="3"></td>
-    <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
+    <td rowspan="8"><img class="width8 height163" src="../../images/accolade.png"></td>
     <td colspan="9"></td>
 	  <td></td>
    
@@ -112,7 +112,7 @@
     <td class="coin4"><?php echo $clubA8002;?></td>
     <td class="coin4pts"><?php echo $A8002;?></td>
     <td colspan="2"></td>
-    <td rowspan="12"><img src="../../images/accolade.png" width="8" height="236"></td>
+    <td rowspan="12"><img class="width8 height236" src="../../images/accolade.png"></td>
     <td colspan="6"></td>
 	 <td></td>
    
@@ -157,7 +157,7 @@
     <td colspan="2"></td>
     <td></td>
     <td></td>
-    <td rowspan="20"><img src="../../images/accolade.png" width="8" height="403"></td>
+    <td rowspan="20"><img class="width8 height426" src="../../images/accolade.png"></td>
     <td colspan="3"></td>
 	
   </tr>
@@ -176,7 +176,7 @@
     <td class="coin4"><?php echo $clubA1609;?></td>
     <td class="coin4pts"><?php echo $A1609;?></td>
     <td colspan="3"></td>
-    <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
+    <td rowspan="8"><img class="width8 height163" src="../../images/accolade.png"></td>
     <td colspan="2"></td>
     <td class="coin4"><?php echo $clubA2002;?></td>
     <td class="coin4pts"><?php echo $A2002;?></td>
@@ -273,7 +273,7 @@
     <td class="coin4"><?php echo $clubA1617;?></td>
     <td class="coin4pts"><?php echo $A1617;?></td>
     <td colspan="3"></td>
-    <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
+    <td rowspan="8"><img class="width8 height163" src="../../images/accolade.png"></td>
     
 		<td colspan="4" ></td>
 		<td></td>
@@ -303,7 +303,7 @@
     <td class="coin4"><?php echo $clubA8010;?></td>
     <td class="coin4pts"><?php echo $A8010;?></td>
     <td colspan="2"></td>
-    <td rowspan="12"><img src="../../images/accolade.png" width="8" height="236"></td>
+    <td rowspan="12"><img class="width8 height236" src="../../images/accolade.png"></td>
     <td colspan="2"></td>
 <td></td>
  </tr>
@@ -359,7 +359,7 @@
     <td class="coin4"><?php echo $clubA1625;?></td>
     <td class="coin4pts"><?php echo $A1625;?></td>
     <td colspan="3"></td>
-    <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
+    <td rowspan="8"><img class="width8 height163" src="../../images/accolade.png"></td>
     <td colspan="2"></td>
     <td class="coin4"><?php echo $clubA2004;?></td>
     <td class="coin4pts"><?php echo $A2004;?></td>

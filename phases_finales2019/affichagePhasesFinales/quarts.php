@@ -1,4 +1,4 @@
-<table width="1200" border="0"  align="center" height="500" cellspacing="0">
+<table class="width1200 marginAuto">
   <tr> 
     <td width="229"> </td>
     <td width="54"> </td>
@@ -15,7 +15,7 @@
     <td></td>
   </tr>
   <tr> 
-    <td colspan="13" bgcolor="#FFCC66"><div ></div></td>
+    <td><div colspan="13" bgcolor="#FFCC66" ></div></td>
   </tr>
   <tr> 
     <td colspan="13"></td>
@@ -25,11 +25,11 @@
   </tr>
   <tr> 
     <td><div class="coin5" >Quarts de finale</div></td>
-    <td></td>
-    <td></td>
+    <td colspan ="2"></td>
+   
     <td><div class="coin5" >Demi finale</div></td>
-    <td></td>
-    <td></td>
+    <td colspan ="2"></td>
+    
 	<td></td>
     <td><div class="coin5" >Finale</div></td>
     <td></td>
@@ -55,48 +55,18 @@
   </tr>
   <tr> 
      <tr> 
-    <td height="23"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td class="height23" colspan="13"></td>
   </tr>
   <tr> 
     <td><div class="coin4" ><?php echo $clubA4001;?></div></td>
     <td><div class="coin4pts" ><?php echo $A4001; ?></div></td>
     <td rowspan="6" width="33"><img src="../../images/accolade.png" width="8" height="127"></td>
-    <td></td>
-    <td></td>
-	<td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-	<td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="10"></td>
   </tr>
   <tr> 
     <td><div class="coin4"><?php echo $clubA4002; ?></div></td>
     <td><div class="coin4pts"><?php echo $A4002; ?></div></td>
-    <td></td>
-    <td></td>
-	<td></td>
-    <td></td>
-    <td></td>
-	<td></td>
-     <td></td>
-    <td></td>
-	<td></td>
-    <td ></td>
+    <td colspan="10"></td>
   </tr>
   <tr> 
     <td></td>
@@ -105,11 +75,8 @@
     <td><div class="coin4pts" ><?php echo $A2001; ?></div></td>
     <td rowspan="10" width="28"></td>
     <td rowspan="10" width="28"><img src="../../images/accolade.png" height="207"></td>
-    <td></td>
-    <td></td>
-	<td></td>
-     <td></td>
-    <td></td>
+    <td colspan="5"></td>
+    
 	<td></td>
   </tr>
   <tr> 
@@ -117,18 +84,13 @@
     <td></td>
     <td><div class="coin4" ><?php echo $clubA2002; ?></div></td>
     <td><div class="coin4pts" ><?php echo $A2002; ?></div></td>
-    <td></td>
-    <td></td>
-	<td></td>
-    <td></td>
-    <td></td>
+    <td colspan="5"></td>
 	<td></td>
   </tr>
   <tr> 
     <td><div class="coin4" ><?php echo $clubA4003; ?></div></td>
     <td><div class="coin4pts" ><?php echo $A4003; ?></div></td>
-    <td></td>
-    <td></td>
+    <td colspan="2"></td>
 	<td></td>
     <td></td>
 	<td></td>
@@ -139,26 +101,17 @@
   <tr> 
     <td><div class="coin4" ><?php echo $clubA4004; ?></div></td>
     <td><div class="coin4pts" ><?php echo $A4004; ?></div></td>
-    <td></td>
-    <td></td>
+    <td colspan="2"></td>
 	<td><div class="coin4" ><?php echo $clubA1001; ?></div></td>
 	<td><div class="coin4pts" ><?php echo $A1001; ?></div></td>
-	<td></td>
-    <td></td>
-    <td></td>
-	<td></td>
+	<td colspan="4"></td>
   </tr>
   <tr> 
-    <td></td>
-    <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+    <td colspan="5"></td>
+  
     <td><div class="coin4" ><?php echo $clubA1002; ?></div></td>
     <td><div class="coin4pts" ><?php echo $A1002; ?></div></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="3"></td>
 	<td></td>
   </tr>
   <tr> 
@@ -214,7 +167,7 @@
     <td></td>
     <td><div class="coin4" ><?php echo $clubA2004; ?></div></td>
     <td><div class="coin4pts" ><?php	echo $A2004; ?></div></td>
-    <td rowspan="7"  align="center"> <img src="../../images/blasons200_200/<?php echo $idEquipeCourt;?>.gif" width="150" height="150"></td>
+    <td rowspan="7"  class= "marginAuto"> <img class="width150 height50" src="../../images/blasons200_200/<?php echo $idEquipeCourt;?>.gif" ></td>
     <td></td>
 	<td></td>
 	<td></td>
@@ -224,86 +177,24 @@
   <tr> 
     <td><div class="coin4" ><?php echo $clubA4007; ?></div></td>
     <td><div class="coin4pts" ><?php echo $A4007; ?></div></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="10"></td>
   </tr>
   <tr> 
     <td><div class="coin4" ><?php echo $clubA4008; ?></div></td>
     <td><div class="coin4pts" ><?php echo $A4008; ?></div></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="10"></td>
   </tr>
   <tr> 
-    <td height="23"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+  <td class="height23" colspan="13"></td>
   </tr>
    <tr> 
-    <td height="23"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-   
+   <td class="height23" colspan="13"></td>
   </tr>
    <tr> 
-    <td height="23"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-   
+   <td class="height23" colspan="13"></td>
   </tr>
    <tr> 
-    <td height="23"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>  
+   <td class="height23" colspan="13"></td>
   </tr>
    <tr> 
     <td height="23"></td>
@@ -321,36 +212,12 @@
     <td></td>
   </tr>
    <tr> 
-    <td height="23"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+   <td class="height23" colspan="13"></td>
   </tr>
    <tr> 
-    <td height="23"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+   <td class="height23" colspan="13"></td>
   </tr>
   <tr> 
-    <td colspan="13" bgcolor="#FFCC66"><div ></div></td> 
+    <td colspan="13" class="blackgroundOrange"></td> 
   </tr>
 </table>

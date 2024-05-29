@@ -35,9 +35,9 @@ $annee = 2022;
     </tr>
     <tr>
       <td colspan="3">
-        <div>
-          <?php include("01ligne.php"); ?>
-        </div>
+
+        <?php include("01ligne.php"); ?>
+
       </td>
     </tr>
     <tr class="colonne">
@@ -50,363 +50,374 @@ $annee = 2022;
         <?php include("01gauche.php"); ?>
       </td>
       <td class="backgroundBlanc">
+
+      <br> <br>
+        <?php  include("championsAnnee2024.php");  ?>
+
+
+        <br>
+<hr>
+<br>
+        <br>
         <b>
-          <br>
-          <b>
-            <div class="colorBlack style size5">Pyramide
-              des divisions pour la depuis la <br>
-              saison 2022-2023</div>
-          </b>
+          <div class="colorBlack style size5">Pyramide
+            des divisions pour la depuis la <br>
+            saison 2022-2023</div>
+        </b>
 
-          <img src="/images/pyramide-2022-2023.jpg" alt="pyramide des divisions" width="500" height="511">
+        <img src="/images/pyramide-2022-2023.jpg" alt="pyramide des divisions" width="500" height="511">
 
 
+     <br>
+<hr>
+<br>
+        <br>
+        <?php include("informations/majParSMS/infosMajClassement.php"); ?>
+        </p>
+        <!-- <p align="center"><a href="brennus_histoire/pageAccueil.php">test</a></p>-->
+   
+        <div align="center">
+          <table width="557" border="0" align="center">
+            <tr class="backgroundRouge">
+              <td class="colorWhite size4 style" colspan="3">
+                <b> LES METHODES POUR ACCEDER A </b>
+              </td>
+            </tr>
+            <tr class="backgroundRouge">
+              <td class="colorWhite size4 style" colspan="3">
+                <b> L'APPLICATION SMARTPHONE </b>
+              </td>
+            </tr>
+            <tr class="backgroundBlanc">
+              <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="backgroundBleu colorWhite size4 style">
+                <b>
+                  Installation de l'appli pour les
+                  Appareils sous Android
+                </b>
 
-          <?php include("informations/majParSMS/infosMajClassement.php"); ?>
-          </p>
-          <!-- <p align="center"><a href="brennus_histoire/pageAccueil.php">test</a></p>-->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>
+                <div class="colorBlack size4">Télécharger l'application </br>
 
-          <div align="center">
-            <table width="557" border="0" align="center">
-              <tr class="backgroundRouge">
-                <td class="colorWhite size4 style" colspan="3">
-                  <b> LES METHODES POUR ACCEDER A </b>
-                </td>
-              </tr>
-              <tr class="backgroundRouge">
-                <td class="colorWhite size4 style" colspan="3">
-                  <b> L'APPLICATION SMARTPHONE </b>
-                </td>
-              </tr>
-              <tr class="backgroundBlanc">
-                <td colspan="3">&nbsp;</td>
-              </tr>
-              <tr>
-                <td colspan="3" class="backgroundBleu colorWhite size4 style">
-                  <b>
-                    Installation de l'appli pour les
-                    Appareils sous Android
-                  </b>
-
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <p>
-                  <div class="colorBlack size4">Télécharger l'application </br>
-
-                    <b><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
-                        France Finales Rugby App
-                      </a></b> sur Google Play.
-                  </div>
-
-
-
-                  <p><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
-                      Aller sur Google play </a></p>
-                </td>
-                <td class="backgroundBlanc"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank"><img src="images/logo_google.jpg" alt="logo google" height="176" width="215"></a></td>
-              </tr>
-              <tr>
-                <td colspan="3" class="backgroundBlanc"></td>
-              </tr>
-              <tr>
-                <td colspan="3" class="backgroundBleu colorWhite size4 style"><b>
-                    Installation d'un lien pour les
-                    Apple
-                  </b></td>
-              </tr>
-              <tr>
-                <td colspan="2" class="colorRed size5 backgroundBlanc"><a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><b>
-                      Lien à mettre dans vos favoris<br>
+                  <b><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
+                      France Finales Rugby App
+                    </a></b> sur Google Play.
+                </div>
 
 
-                    </b></a><a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><img src="../images/apple.png" alt="apple" height="183" width="184"></a></td>
-                <td class="colorTexte">
-                  <p>
-                    Pour les utilisateurs de smartphones
-                    et de tablettes
-                    <span> <b>Apple</b></span>
-                    ,<br>
-                    Cliquer sur le lien ci-dessous et mettre
-                    l'adresse de ce dernier en favori.
-                  </p>
-                  <p>
-                    ou saisir l'adresse ci-dessous
-                    et la mettre en favori sur votre smartphone.
-                  </p>
 
-                  <p>
-                    https://francefinalesrugby.fr/<br>
-                    smart/sommaire.php
-                  </p>
-
-                </td>
-              </tr>
-              <tr>
-                <td colspan="3" class="backgroundBlanc"></td>
-              </tr>
-              <tr>
-                <td colspan="3" class="backgroundBlanc">
-                  <hr>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"></td>
-                <td></td>
-              </tr>
-              <tr class="styleTitre">
-                <td colspan="2">
-                  LES PALMARES
-                </td>
-                <td>
-                  LES RESULTATS ET <br> CLASSEMENTS
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2" class="colorTexte">
-
-                  Retrouvez tous les palmarès
-                  <br>
-                </td>
-                <td>
-
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2" class="colorTexte">
-                  Par années <br>
-                  Par clubs <br>
-                  Par catégories<br>
-                  Par divisions<br>
-                  Par comité
-
-                </td>
-                <td class="colorTexte">
-
-                  <p>
-                    Decouvrez tous les championnats et
-                    classements des compétitions de rugby Français
-                    ( du Top 14 à la 4me Série)
-                  </p>
+                <p><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
+                    Aller sur Google play </a></p>
+              </td>
+              <td class="backgroundBlanc"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank"><img src="images/logo_google.jpg" alt="logo google" height="176" width="215"></a></td>
+            </tr>
+            <tr>
+              <td colspan="3" class="backgroundBlanc"></td>
+            </tr>
+            <tr>
+              <td colspan="3" class="backgroundBleu colorWhite size4 style"><b>
+                  Installation d'un lien pour les
+                  Apple
+                </b></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="colorRed size5 backgroundBlanc"><a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><b>
+                    Lien à mettre dans vos favoris<br>
 
 
-                  <div class="colorBlack size4">
-                    <a href="resultats/page_pro.php"> Compétitions professionnels</a><br>
-                    <a href="resultats/page_resultats.php">Compétitions Fédérales</a><br>
-                    <a href="resultats/page_resultats.php">Compétitions régionales</a>
-                  </div>
+                  </b></a>
+                  <a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><img src="../images/apple.png" alt="apple" height="183" width="184"></a></td>
+              <td class="colorTexte">
+                <p>
+                  Pour les utilisateurs de smartphones
+                  et de tablettes
+                  <span> <b>Apple</b></span>
+                  ,<br>
+                  Cliquer sur le lien ci-dessous et mettre
+                  l'adresse de ce dernier en favori.
+                </p>
+                <p>
+                  ou saisir l'adresse ci-dessous
+                  et la mettre en favori sur votre smartphone.
+                </p>
+
+                <p>
+                  https://francefinalesrugby.fr/<br>
+                  smart/sommaire.php
+                </p>
+
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="backgroundBlanc"></td>
+            </tr>
+            <tr>
+              <td colspan="3" class="backgroundBlanc">
+                <hr>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <td></td>
+            </tr>
+            <tr class="styleTitre">
+              <td colspan="2">
+                LES PALMARES
+              </td>
+              <td>
+                LES RESULTATS ET <br> CLASSEMENTS
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="colorTexte">
+
+                Retrouvez tous les palmarès
+                <br>
+              </td>
+              <td>
+
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="colorTexte">
+                Par années <br>
+                Par clubs <br>
+                Par catégories<br>
+                Par divisions<br>
+                Par comité
+
+              </td>
+              <td class="colorTexte">
+
+                <p>
+                  Decouvrez tous les championnats et
+                  classements des compétitions de rugby Français
+                  ( du Top 14 à la 4me Série)
+                </p>
 
 
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"></td>
-                <td>
-
-                </td>
-              </tr>
-              <tr>
-                <td colspan="3"></td>
-              </tr>
-              <tr>
-                <td colspan="3">
-                  <?php //include("pub/pub4.php");   
-                  ?>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="3"></td>
-              </tr>
-            </table>
-
-            <table width="558">
-              <tr>
-                <td width="274"></td>
-                <td width="272"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr class="styleTitre">
-                <td>
-
-                  LES FEMININES
-
-                </td>
-                <td>
-                  LES CLUB
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>
-
-                  <a href="http://francefinalesrugby.fr/feminine/index_fem.php"> Championnats féminins </a>
-
-                </td>
-                <td rowspan="4" class="colortexte">
-                  <p>
-                    Vous avez la possibilité de mettre
-                    à jour ou d'insérer des informations concernant
-                    vos clubs (Bureau, site internet, contact etc...) en passant
-                    par le menu déroulant des comités, ou en inserant
-                    le nom de votre club dans le formulaire "par club"
-                    situé droite de la page
-                  </p>
-                  <p>
-                    vous pourez également inserer des photos de votre club
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="http://coupesdumondederugbyfeminin.franceserv.com/"> Coupe du monde 2014 </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="http://coupesdumondederugbyfeminin.franceserv.com/" target="_blank"><img src="images/CDMfemininemini.jpg" alt="féminin" width="197" height="168"></a>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>
-
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="styleTitre">
-
-                  LES VIDEOS
-
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="dossiers/video/pagevideo.php?choix=<?php echo "pla"; ?>"> Plaquages </a>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "ess"; ?>"> Essais </a>
-                </td>
-                <td>
-
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "bag"; ?>"> Bagarres </a>
-                </td>
-                <td class="styleTitre">
-                  PHASES FINALES
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "ins"; ?>"> Insolites </a>
-                </td>
-                <td>
-
-                  Régionales
-
-                </td>
-              </tr>
-              <tr>
-                <td><a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "cau"; ?>">
-                    Causeries
-                  </a></td>
-                <td>
-                  <a href="https://francefinalesrugby.fr/phases_finales/top14/pagetop14.php">
-                    Champ de France
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="styleTitre">
-
-                  MOTS ET BONS MOTS
-
-                </td>
-                <td class="styleTitre">
-
-                  Avant Match et<br> 3me MI-TEMPS
-
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><b>
-                    HISTOIRE
-                  </b></td>
-              </tr>
-              <tr>
-                <td>
-
-                  <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=1&lettre=0"> Lexique du rugby </a>
-
-                </td>
-                <td>
-                  <a href="https://francefinalesrugby.fr/dossiers/lexique/page_chansons.php"> Chansons paillardes </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=2"> Expressions du rugby </a>
-                </td>
-                <td>
-                  <a href="https://francefinalesrugby.fr/dossiers/lexique/page_hymnes.php"> Hymnes </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=4"> Expressions mediatiques </a>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=3">
-                    Phrases célèbres
-                  </a>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-              </tr>
-            </table>
+                <div class="colorBlack size4">
+                  <a href="resultats/page_pro.php"> Compétitions professionnels</a><br>
+                  <a href="resultats/page_resultats.php">Compétitions Fédérales</a><br>
+                  <a href="resultats/page_resultats.php">Compétitions régionales</a>
+                </div>
 
 
-          </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <td>
+
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <?php //include("pub/pub4.php");   
+                ?>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+            </tr>
+          </table>
+
+          <table width="558">
+            <tr>
+              <td width="274"></td>
+              <td width="272"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="styleTitre">
+              <td>
+
+                LES FEMININES
+
+              </td>
+              <td>
+                LES CLUB
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+
+                <a href="http://francefinalesrugby.fr/feminine/index_fem.php"> Championnats féminins </a>
+
+              </td>
+              <td rowspan="4" class="colortexte">
+                <p>
+                  Vous avez la possibilité de mettre
+                  à jour ou d'insérer des informations concernant
+                  vos clubs (Bureau, site internet, contact etc...) en passant
+                  par le menu déroulant des comités, ou en inserant
+                  le nom de votre club dans le formulaire "par club"
+                  situé droite de la page
+                </p>
+                <p>
+                  vous pourez également inserer des photos de votre club
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://coupesdumondederugbyfeminin.franceserv.com/"> Coupe du monde 2014 </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://coupesdumondederugbyfeminin.franceserv.com/" target="_blank"><img src="images/CDMfemininemini.jpg" alt="féminin" width="197" height="168"></a>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="styleTitre">
+
+                LES VIDEOS
+
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="dossiers/video/pagevideo.php?choix=<?php echo "pla"; ?>"> Plaquages </a>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "ess"; ?>"> Essais </a>
+              </td>
+              <td>
+
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "bag"; ?>"> Bagarres </a>
+              </td>
+              <td class="styleTitre">
+                PHASES FINALES
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "ins"; ?>"> Insolites </a>
+              </td>
+              <td>
+
+                Régionales
+
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://francefinalesrugby.fr/dossiers/video/pagevideo.php?choix=<?php echo "cau"; ?>">
+                  Causeries
+                </a></td>
+              <td>
+                <a href="https://francefinalesrugby.fr/phases_finales/top14/pagetop14.php">
+                  Champ de France
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="styleTitre">
+
+                MOTS ET BONS MOTS
+
+              </td>
+              <td class="styleTitre">
+
+                Avant Match et<br> 3me MI-TEMPS
+
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>
+                  HISTOIRE
+                </b></td>
+            </tr>
+            <tr>
+              <td>
+
+                <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=1&lettre=0"> Lexique du rugby </a>
+
+              </td>
+              <td>
+                <a href="https://francefinalesrugby.fr/dossiers/lexique/page_chansons.php"> Chansons paillardes </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=2"> Expressions du rugby </a>
+              </td>
+              <td>
+                <a href="https://francefinalesrugby.fr/dossiers/lexique/page_hymnes.php"> Hymnes </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=4"> Expressions mediatiques </a>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=3">
+                  Phrases célèbres
+                </a>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+
+
+        </div>
       </td>
       <td class="colonne">
 

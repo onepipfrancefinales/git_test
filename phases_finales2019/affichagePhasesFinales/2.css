@@ -301,7 +301,7 @@ color: #FFCC00;
 /*****points terrain*****/
 /*bleu*/
 .coin4pts{ 
-width:20px;
+width:25px;
 color: #FFFFFF;
 background-color:#405864;
 border:2px #040BB3 solid;
@@ -312,7 +312,7 @@ text-align: center;
 font-weight: Bold;
 } 
 .coin4pts-32{ 
-width:30px;
+width:60px;
 color: #FFFFFF;
 background-color:#405864;
 border:2px #040BB3 solid;
@@ -551,3 +551,31 @@ font-size: 16px;
 text-align: center;
 font-weight: Bold;
 }
+
+
+.width19PC {width:19%;}
+.width4PC {width:4%;}
+
+.width2100 {width:2000px;}
+.width1200 {width:1200px;}
+
+
+/*affichage accolades*/
+
+.width8 {width:8px;}
+
+.height80 {height:80px;}
+.height163 {height:163px;}
+.height236 {height:236px;}
+.height426 {height:426px;}
+
+/*affichage logo champion*/
+
+.height150 {height:150px;}
+.height23 {height:23px;}
+
+
+.width150 {width:150px;}
+
+
+.width730 {width:730px;}

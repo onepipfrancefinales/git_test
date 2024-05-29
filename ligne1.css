@@ -26,7 +26,7 @@ td{text-align:center;}
 .hauteurColonne{ height: 22px;}
 
 .ligneBlanche650{background: #FFFFFF; width:650 }
-.adresseBas{text-align:center; color:#000000;font-size: 19px; font-weight:bold;}
+.adresseBas{margin:auto; width : 1250px;background:#ffffff; text-align:center; color:#000000;font-size: 19px; font-weight:bold;}
 
 .colonneGauche{width: 225px;  background:#006699;vertical-align: top; }
 
@@ -69,12 +69,36 @@ img{border:0;}
 .backgroundBleu{
     background-color: #006699;
 }
+.backgroundBlue{
+    background-color: #006699;
+}
+.backgroundGray{
+    background-color: #c8caca;
+}
+
 .backgroundBlanc{
     background-color: #FFFFFF;
+
+}
+.background{
+    background-color: #FFFFFF;
+    
 }
 .backgroundNoir{
     background-color: #000000;
 }
+.backgroundNoir{
+    background-color: #000000;
+}
+.backgroundOrange{
+    background-color: #FFCC00;
+}
+.backgroundEAECEB{
+    background-color: #EAECEB;
+}
+
+background
+
 .styleTitre{
     background-color: #000000;
     color: #FFFFFF;
@@ -83,19 +107,35 @@ img{border:0;}
     font-style: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-
+.border {border:6px solid black};
 
 .style {font-family: sans-serif;}
 
 .colorRed { color: #ff0000; }
 .colorBlack { color: #000000; }
 .colorWhite { color: #FFFFFF; }
+.colorOrange { color: #FFCC00; }
+.colorEAECEB { color: #EAECEB; }
 
+
+.size7 {font-size: 33px;}
+.size6 {font-size: 28px;}
 .size5 {font-size: 25px;}
 .size4 {font-size: 20px;}
 .size3 {font-size: 15px;}
 
+.width100PC {width:100%;}
+
+
+
+
 .width1250 {width:1250px;}
+.width1100 {width:1100px;}
+.width550 {width:550px;}
+
+
+.verticalAlign {vertical-align: text-top;}
+
 
 .center {text-align: center;}
 

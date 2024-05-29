@@ -1,42 +1,40 @@
 
-<table  width="2000" border="0"   cellspacing= "">
+<table  class="width2000" >
   <tr> 
-    <td  colspan="18" bgcolor="#FFCC66" align="center"><b></b></td>
+    <td  colspan="18" class = "backgroundOrange" ></td>
   </tr>
  <tr> 
        <?php 
     // message info de haut de page
     
-       require 'infoMessages.php';  
+     require 'infoMessages.php';  
     // mise en évidence des clubs qualifiés
-       require 'fichierQualifies.php';
+      require 'fichierQualifies.php';
        ?>
-  </tr>
-  <tr> 
-    <td> 
-      <div class="coin5-32BarrageFed3" > 
+  
+    <td class="coin5-32BarrageFed3 colorWhite width100PC" > 
         <?php if (substr($type,0,1)== 7 and $annee > 2021){?>
-        <a href="javascript:ouvrirPopup('barrages.php?annee=<?php echo $annee; ?>&division=7260','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=330, height=600, menubar=no')"><font color="#FFFFFF">Barrages accès aux 32me<br />
-        </font></a> </div>
+        <a href="javascript:ouvrirPopup('barrages.php?annee=<?php echo $annee; ?>&division=7260','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=330, height=600, menubar=no')">Barrages accès aux 32me<br />
+        </a> 
       <?php } ?>
     </td>
-    <td width="60"> </td>
-    <td width="31"></td>
-    <td width="200"></td>
-    <td width="31"></td>
-    <td width="31"></td>
-    <td width="200"></td>
-    <td width="31"></td>
-    <td width="31"></td>
-    <td width="200"></td>
-    <td width="31"></td>
-    <td width="31"></td>
-    <td width="200"></td>
-    <td width="31"></td>
-    <td width="31"></td>
-    <td width="200"></td>
-    <td width="31"></td>
-    <td width="31"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr> 
     <td class="coin5"> 32me de finale </td>
@@ -87,9 +85,9 @@
 
     
     <td class="coin4pts"><?php echo $A1601;?></td>
-    <td rowspan="4"><img src="../../images/accolade.png" width="8" height="80"></td>
+    <td rowspan="4"><img class="width8 height80" src="../../images/accolade.png" alt="accolade"></td>
     <td colspan="2"></td>
-    <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
+    <td rowspan="8"><img class="width8 height163" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="9"></td>
   </tr>
   <tr> 
@@ -112,6 +110,7 @@
     <td class="coin4pts"><?php echo $A8001;?></td>
     <td colspan="9"></td>
   </tr>
+  
   <tr> 
     <td class="coin4-32"><?php if ($qualif3205 == true){;?>
       <span style = color:yellow><?php echo $clubA3205 ;?></span><?php } else {
@@ -132,9 +131,11 @@
     } ?></td>
     <td class="coin4pts"><?php echo $A8002;?></td>
     <td colspan="2"></td>
-    <td rowspan="12"><img src="../../images/accolade.png" width="8" height="236"></td>
+    <td rowspan="12"><img class="width8 height236" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="6"></td>
   </tr>
+ 
+ 
   <tr> 
     <td class="coin4-32"><?php if ($qualif3207 == true){;?>
       <span style = color:yellow><?php echo $clubA3207 ;?></span><?php } else {
@@ -169,7 +170,7 @@
       echo $clubA1605;
     } ?></td>
     <td class="coin5pts"><?php echo $A1605;?></td>
-    <td rowspan="4"><img src="../../images/accolade.png" width="8" height="80"></td>
+    <td rowspan="4"><img class="width8 height80" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
     <td class="coin4"><?php if ($qualif4002 == true){;?>
       <span style = color:yellow><?php echo $clubA4002; ?></span><?php } else {
@@ -230,7 +231,7 @@
     </td>
     <td colspan="2"></td>
     <td colspan="2"></td>
-    <td rowspan="20"><img src="../../images/accolade.png" width="8" height="426"></td>
+    <td rowspan="20"><img class="width8 height426" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="3"></td>
   </tr>
   <tr> 
@@ -287,9 +288,9 @@
     <td class="coin4pts">
       <?php echo $A1609;?>
     </td>
-    <td rowspan="4"><img src="../../images/accolade.png" width="8" height="80"></td>
+    <td rowspan="4"><img class="width8 height80" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
-    <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
+    <td rowspan="8"><img class="width8 height163" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
     <td class="coin4">
       <?php if ($qualif2002 == true){;?>
@@ -422,7 +423,7 @@
     <td class="coin5pts">
       <?php echo $A1613;?>
     </td>
-    <td rowspan="4"><img src="../../images/accolade.png" width="8" height="80"></td>
+    <td rowspan="4"><img class="width8 height80" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
     <td class="coin4">
       <?php if ($qualif4004 == true){;?>
@@ -564,9 +565,9 @@
     <td class="coin4pts">
       <?php echo $A1617;?>
     </td>
-    <td rowspan="4"><img src="../../images/accolade.png" width="8" height="80"></td>
+    <td rowspan="4"><img class="width8 height80" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
-    <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
+    <td rowspan="8"><img class="width8 height163" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="5"></td>
     <td ></td>
     <td ></td>
@@ -606,6 +607,7 @@
       <?php echo "Champion de France ".$annee;?>
     </td>
   </tr>
+
   <tr> 
     <td class="coin4-32">
        <?php if ($qualif3237 == true){;?>
@@ -636,14 +638,18 @@
       <?php echo $A8010;?>
     </td>
     <td colspan="2"></td>
-    <td rowspan="12"><img src="../../images/accolade.png" width="8" height="236"></td>
+    <td rowspan="12"><img class="width8 height236" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
     <td colspan="3" class="titre">
       <?php echo $nomDivision;?>
     </td>
   </tr>
+ 
+ 
+ 
+ 
   <tr> 
-    <td class="coin4-32" height="2">
+    <td class="coin4-32">
         <?php if ($qualif3239 == true){;?>
       <span style = color:yellow><?php echo $clubA3239 ;?></span><?php } else {
       echo $clubA3239;
@@ -673,7 +679,7 @@
       <?php echo $A4005;?>
     </td>
     <td colspan="2"></td>
-    <td colspan="3" rowspan="6" align="center"><img src="../../images/blasons200_200/<?php echo $idEquipeCourt;?>.gif" width="150" height="150"></td>
+    <td colspan="3" rowspan="6" class="marginAuto"><img class="width150 height150" src="../../images/blasons200_200/<?php echo $idEquipeCourt;?>.gif" alt="blason du champion"></td>
   </tr>
   <tr> 
     <td class="coin5-32">
@@ -696,7 +702,7 @@
     <td class="coin5pts">
       <?php echo $A1621;?>
     </td>
-    <td rowspan="4"><img src="../../images/accolade.png" width="8" height="80"></td>
+    <td rowspan="4"><img class="width8 height80" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
     <td class="coin4">
       <?php if ($qualif4006 == true){;?>
@@ -780,7 +786,7 @@
       echo $clubA3247;
     }?> - <?php echo $clubA3248;?>
     </td>
-    <td class="coin5pts-32" height="2">
+    <td class="coin5pts-32">
       <?php echo $A3247." - ".$A3248;?>
     </td>
     <td ></td>
@@ -826,9 +832,9 @@
     <td class="coin4pts">
       <?php echo $A1625;?>
     </td>
-    <td rowspan="4"><img src="../../images/accolade.png" width="8" height="80"></td>
+    <td rowspan="4"><img  class="width8 height80" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
-    <td rowspan="8"><img src="../../images/accolade.png" width="8" height="163"></td>
+    <td rowspan="8"><img class="width8 height163" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
     <td class="coin4">
       <?php if ($qualif2004 == true){;?>
@@ -871,7 +877,10 @@
     </td>
     <td colspan="2"></td>
     <td colspan="2"></td>
+    <td colspan="3"></td>
   </tr>
+
+
   <tr> 
     <td class="coin4-32">
         <?php if ($qualif3253 == true){;?>
@@ -902,8 +911,13 @@
     <td class="coin4pts">
       <?php echo $A8014;?>
     </td>
-    <td colspan="6"></td>
+    <td colspan="2"></td>
+    <td colspan="2"></td>
+    <td colspan="3"></td>
+   
   </tr>
+
+
   <tr> 
     <td class="coin4-32">
         <?php if ($qualif3255 == true){;?>
@@ -958,7 +972,7 @@
     <td class="coin5pts">
       <?php echo $A1629;?>
     </td>
-    <td rowspan="4"><img src="../../images/accolade.png" width="8" height="80"></td>
+    <td rowspan="4"><img class="width8 height80" src="../../images/accolade.png"  alt="accolade"></td>
     <td colspan="2"></td>
     <td class="coin4">
       <?php if ($qualif4008 == true){;?>
@@ -1063,6 +1077,6 @@
     <td colspan="18"></td>
   </tr>
   <tr> 
-    <td colspan="18" bgcolor="#FFCC66"></td>
+    <td colspan="18" class="backgroundOrange"></td>
   </tr>
 </table>

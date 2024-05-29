@@ -1,23 +1,19 @@
-<table  border="0"  align="left">
+<table class="marginAuto size5">
   <tr> 
-    <td width="730" height="15"> 
-      <div align="center"><b><a href="/palmares/palmNational/pagePalmares.php?division=<?php echo $division;?>" target="_top"><font size="5" color="#000000">Palmar&egrave;s 
-        champions de France 
-        <?php echo $nomDivision ;?>
-        </font></a></b></div>
+    <td class="width730"   > 
+      <b><a href="/palmares/palmNational/pagePalmares.php?division=<?php echo $division;?>" target="_top"><span class="colorBlack">Palmarès champions de France <?php echo $nomDivision ;?>
+</span>  </a></b>
     </td>
-    <td width="730" height="15" valign="top"> 
-      <div align="center"><b><a href="/palmares/palmNational/pagePalmares.php?division=<?php echo $division;?>" target="_top"><font size="5" color="#000000">Palmar&egrave;s 
-        champions de France 
-        <?php echo $nomDivision ;?>
-        </font></a></b></div>
+    <td  class="width730" > 
+    <b><a href="/palmares/palmNational/pagePalmares.php?division=<?php echo $division;?>" target="_top"><span class="colorBlack">Palmarès  champions de France  <?php echo $nomDivision ;?>
+</span></a></b>
     </td>
   </tr>
   <tr> 
-    <td > 
+    <td> 
       <?php require("../../pub/pub5.php"); ?>
     </td>
-    <td  valign="top"> 
+    <td> 
       <?php require("../../pub/pub5.php"); ?>
     </td>
   </tr>

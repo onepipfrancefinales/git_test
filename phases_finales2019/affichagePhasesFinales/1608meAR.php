@@ -1,25 +1,9 @@
 <table border="0"  height="500" >
   <tr> 
-    <td bgcolor="#FFCC66" colspan="17"> <i></i> </td>
+    <td bgcolor="#FFCC66" colspan="17">  </td>
   </tr>
   <tr> 
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td  colspan="17"></td>
   </tr>
   <tr> 
     <td class="coin5-32BarrageFed2">
