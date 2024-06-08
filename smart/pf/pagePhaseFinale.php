@@ -3,7 +3,7 @@ $annee=$_GET['annee'];
 $division=$_GET['division'];
 //if (isset ($_GET['type2'])) $type2=$_GET['type2'];else $type2="";
 //echo "type = ".$type2;?>
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html >
 <html lang="fr">
   <head>
    <title>Championnat de France <?php echo $annee;?></title>
@@ -12,10 +12,11 @@ $division=$_GET['division'];
    <link rel="stylesheet" type="text/css" href="AA2.css">  
    <link type="text/css" rel="stylesheet" href="../10.css">
    <link type="text/css" rel="stylesheet" href="paramTiroir.css">
+   <link type="text/css" rel="stylesheet" href="../../ligne1.css">
    <meta name=viewport content="width=device-width, initial-scale=1">
   </head>
 
-<body bgcolor="#EAECEB" text="#000000">
+<body class="backgroundEAECEB colorBlack" >
  <?php
 require ("../../phases_finales2019/fonctionsChampFrance2019.php");  
 require '../../connect/connexion5.php';
@@ -43,15 +44,15 @@ championDeFrance ( $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 	
 	require 'liensdiv.php';
 	//require 'liensdiv2022.php';
-	echo "<br/>";
+	echo "<br>";
 	?>
  </div>
 </div>
 
-	<!-- fin entete figée-------->
+	<!-- fin entete figée -->
 	
 <div class="container">
-<br/><br/><br/><br/><br/><br/><br/><br/>
+<br><br><br><br><br><br><br><br>
 <?php
 
 //**************  Exceptions type débute par 8 *************************		

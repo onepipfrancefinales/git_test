@@ -4,11 +4,11 @@ require("../fonctions.php");
 $chaine = $_GET['champion'];
 
 
-//echo "chaine : ".$chaine;echo "<br/>";
+echo "chaine : ".$chaine;echo "<br/>";
 //Evaluation de la variable chaine si numérique
 if (is_int($chaine)) {
 
-  //  echo " numerique"; echo "<br/>";
+    echo " numerique"; echo "<br/>";
   $equipe = substr($chaine, 2, 5);
   $numLigue = substr($chaine, 0, 2);
   $id = substr($chaine, 2, 2);
@@ -17,9 +17,9 @@ if (is_int($chaine)) {
 
 //Evaluation de la variable chaine si textuelle
 else {
-  ////  echo " non numerique";echo "<br/>";
+  echo " non numerique";echo "<br/>";
   require '../connect/connexion1.php';
-  infosclub($chaine, $bdd);
+ // infosclub($chaine, $bdd);
   $equipe = $numLigue . $code;
   $id = substr($id, 2, 2);
 }
@@ -42,19 +42,20 @@ saisons($code, $annee, $bdd);
 
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
   <meta name="description" content=" <?php echo $titre; ?> : Pr�sentation du club (Bureau; Si�ge; Stade; Contacts); les grandes du dates du club; les palmar�s; les r�sultats du clubs au cours des derni�res saisons et un album photos d�di� au club..">
-  <meta name="keywords" content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+  <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link type="text/css" rel="stylesheet" href="../ligne1.css" />
-  <link type="text/css" rel="stylesheet" href="pgclub00.css" />
+  <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <link type="text/css" rel="stylesheet" href="pgclub00.css">
+  <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <title> fiche club </title>
 
@@ -76,7 +77,7 @@ saisons($code, $annee, $bdd);
 </head>
 
 <body >
-    <table width="1250"  align="center">
+    <table width="1250"  class="marginAuto">
       <tr>
         <td colspan="3">
           <?php include("../images/page_image_al.php"); ?>

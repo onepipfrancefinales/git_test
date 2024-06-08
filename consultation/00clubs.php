@@ -1,23 +1,14 @@
-
-<br />
-								
-<h2><font size="6" color="#FF0000">
-  <?php echo $nomLong;?>
-  </font></h2>
-				<br/>
+<br>							
+<h1 class="colorRed">  <?php echo $nomLong;?> </h1>
+<br>
 				
-<h2><font size="6">
-  <?php  echo "Ligue".' '.$nomLigue;?>
-  </font></h2>
+<h1 class="colorBlack"> <?php  echo "Ligue".' '.$nomLigue;?></h1>
 				
-<h2> <font color="#000000" size="4"><b>
-  <?php echo "( Ex comit&eacute;".' '.$nomComite.''." )";?>
-  </b></font></h2>
-<div align="center">
-  <?php
-				 {print("<img src=\"/../images/blasons200_200/$code.gif\" >");}	
-  echo "<br />";
-  echo "<br />"; 
+<h2 class="size4"><b>  <?php echo "( Ex comité".' '.$nomComite.''." )";?>  </b></h2>
+<div class="center">
+  <?php {print("<img src=\"/../images/blasons200_200/$code.gif\" >");}	
+  echo "<br>";
+  echo "<br>"; 
 
 if ($smart == true)
 $width = "100%";
@@ -25,32 +16,32 @@ else
 $width = "70%";
 ?>
 </div>
-<table border="1" align="center" cellspacing="0" cellpadding="2" width="<?php echo $width;?>" border color="#999999">
+<table class="marginAuto borderWidth1 borderColorBlack" width="<?php echo $width;?>" >
   <tr > 
     <td class="titreGauche" colspan="2" width="30%">Identification FFR : </td>
-	<td class="saisie"><font color = "#000000" size ="3" width="70%"><?php echo $idFfr;?> </font></td>
+	<td class="saisie" width="70%"><?php echo $idFfr;?> </td>
   </tr>
 
  <tr > 
-    <td class="titreGauche" colspan="2" width="30%">Cr&eacute;ation du club : </td>
+    <td class="titreGauche" colspan="2" width="30%">Création du club : </td>
     <td class="saisieGras" width="70%"> <?php echo $dateCreation;?></td>
   </tr>
 </table>
 <br>
-<table border="1" align="center" cellspacing="0" cellpadding="0" width="<?php echo $width;?>" >
+<table class="marginAuto borderWidth1 borderColorBlack" width="<?php echo $width;?>" >
   <tr  > 
     <td class="titre" colspan="2" width="100%"> Bureau </td>
   </tr>
   <tr> 
-    <td class="titreGauche" width="30%">Pr&eacute;sident : </td>
+    <td class="titreGauche" width="30%">Président : </td>
     <td class="saisieGras" width="70%"><?php echo $president;?> </td>
   </tr>
   <tr   > 
-    <td class="titreGauche" >  Tr&eacute;sorier : </td>
+    <td class="titreGauche" >  Trésorier : </td>
     <td class="saisieGras" > <?php echo $tresorier;?> </td>
   </tr>
   <tr > 
-    <td class="titreGauche"> Secr&eacute;taire : </td>
+    <td class="titreGauche"> Secrétaire : </td>
     <td class="saisieGras"><?php echo $secretaire;?></td>
   </tr>
   <tr > 
@@ -59,7 +50,7 @@ $width = "70%";
   </tr>
 </table>
 <br>
-<table border="1" align="center" cellspacing="0" cellpadding="0" width="<?php echo $width;?>" >
+<table class="marginAuto borderWidth1"  width="<?php echo $width;?>" >
   <tr> 
 	<td class="titre" colspan="2" width="70%">Si&egrave;ge</td>
   </tr>
@@ -70,7 +61,7 @@ $width = "70%";
     <td class="saisie" colspan="2"><?php echo $adresse;?> </td>
   </tr>
   <tr > 
-    <td class="saisie" colspan="2" valign="top"><?php echo $cp;?> <?php echo $ville;?></td>
+    <td class="saisie" colspan="2" ><?php echo $cp;?> <?php echo $ville;?></td>
   </tr>
   <tr > 
     <td class="titreGauche" width="30%"> T&egrave;l : </td>
@@ -78,7 +69,7 @@ $width = "70%";
   </tr>
 </table>
 <br>
-<table border="1" align="center" cellspacing="0" cellpadding="0" width="<?php echo $width;?>" border color="#999999">
+<table class="marginAuto borderWidth1"  width="<?php echo $width;?>" >
   <tr > 
    
   </tr>
@@ -92,7 +83,7 @@ $width = "70%";
     <td class="saisie" colspan="2"> <?php echo $adresseStade;?></td>
   </tr>
   <tr > 
-    <td class="saisie" colspan="2"  valign="top"> <?php echo $cpStade;?> <?php echo $villeStade;?> </td>
+    <td class="saisie" colspan="2"  > <?php echo $cpStade;?> <?php echo $villeStade;?> </td>
   </tr>
   <tr > 
     <td class="titreGauche" width="20%" > T&egrave;l : </td>
@@ -104,7 +95,7 @@ $width = "70%";
   </tr>
 </table>
 <br>
-<table border="1" align="center" cellspacing="0" cellpadding="0" width="<?php echo $width;?>" >
+<table class="marginAuto borderWidth1"   width="<?php echo $width;?>" >
   <tr > 
     <td class="titre" colspan="3" > Contact </td>
   </tr>
@@ -138,7 +129,7 @@ $width = "70%";
   </tr>
 </table>
 <br>
-<table width="<?php echo $width;?>" border="1" align="center" cellspacing="0" cellpadding="0" >
+<table width="<?php echo $width;?>" class="marginAuto borderWidth1" >
   <tr > 
     <td class="titre" colspan="2">Section f&eacute;minine : </td>
   </tr>
@@ -152,7 +143,7 @@ $width = "70%";
   </tr>
 </table>
 <br>
-<table border="1" align="center" cellspacing="0" cellpadding="0" width="<?php echo $width;?>" >
+<table class="marginAuto borderWidth1" width="<?php echo $width;?>" >
   <tr > 
     <td class="titre">   Dates importantes </td>
   </tr>
@@ -173,16 +164,16 @@ $width = "70%";
   </tr>
 </table>
 <br>
-<table border="1" align="center" cellspacing="0" cellpadding="0" width="80%" border color="#999999">
+<table class="marginAuto borderWidth1" width="80%" >
   <tr > 
-    <td colspan="6" height="25" border color="#000000" bgcolor="#FF0000"> 
+    <td colspan="6" class="backgroundRed borderColorBlack"> 
       <div align="center"><b><font color="#000000" link="#000000"> 
         <?php echo "<a href=/mise_a_jour/infosclub/mdp.php?idClub=$code target=_blank>Modifier la fiche du club</a> "; ?>
         </font></b></div>
     </td>
   </tr>
 </table>
-<br />
+<br>
 
 <p> 
   <?php //include("pub2.php");  ?>
@@ -207,7 +198,7 @@ require ("../connect/connexion1.php") ;
 $table="bdeurope";
 nbreTitreEU($nomChampion, $bdd);
 if ($nombreTitreEU > 0 ){echo "<h2> Titres Europ&eacute;ens </h2>";}?>
-<div id="palmares" align="center">
+<div id="palmares" ass="center">
   <?php palmaresEU($nomChampion, $bdd);?>
 </div>
 
@@ -216,7 +207,7 @@ if ($nombreTitreEU > 0 ){echo "<h2> Titres Europ&eacute;ens </h2>";}?>
 $table="bdequipe1"; $categorie="A";
 nbreTitre($nomChampion, $table, $categorie, $bdd);
 if ($nombreTitre > 0 ){	echo "<h2> Equipe Une </h2>";}?>
-<div id="palmares" align="center">
+<div id="palmares" class="center">
   <?php palmares($nomChampion, $table, $categorie, $bdd);?>
 </div>
 							
@@ -225,7 +216,7 @@ if ($nombreTitre > 0 ){	echo "<h2> Equipe Une </h2>";}?>
 $table="bdequipe2"; $categorie="B";
 nbreTitre($nomChampion, $table, $categorie, $bdd);
 if ($nombreTitre > 0 ){	echo "<h2> Equipe II </h2>";}?>
-<div id="palmares" align="center">
+<div id="palmares" class="center">
   <?php palmares($nomChampion, $table, $categorie, $bdd);?>
 </div>
 	
@@ -234,7 +225,7 @@ if ($nombreTitre > 0 ){	echo "<h2> Equipe II </h2>";}?>
 $table="bdchallenges"; $categorie="C";
 nbreTitre($nomChampion, $table, $categorie, $bdd);
 if ($nombreTitre > 0 ){echo "<h2> Challenges Nationaux </h2>";}?>
-<div id="palmares" align="center">
+<div id="palmares"  class="center">
   <?php palmares($nomChampion, $table, $categorie, $bdd);?>
 </div>
 
@@ -243,7 +234,7 @@ if ($nombreTitre > 0 ){echo "<h2> Challenges Nationaux </h2>";}?>
 $table="bdjeunes"; $categorie="D";
 nbreTitre($nomChampion, $table, $categorie, $bdd);
 if ($nombreTitre > 0 ){echo "<h2> Reichels & Juniors </h2>";}?>
-<div id="palmares" align="center">
+<div id="palmares" class="center">
 	<?php palmares($nomChampion, $table, $categorie, $bdd);?>
 </div>
 
@@ -252,11 +243,11 @@ if ($nombreTitre > 0 ){echo "<h2> Reichels & Juniors </h2>";}?>
 $table="bdjeunes"; $categorie="E";
 nbreTitre($nomChampion, $table, $categorie, $bdd);
 if ($nombreTitre > 0 )	{echo "<h2> Cadets </h2>";}?>
-<div id="palmares">
+<div id="palmares" class="center">
   <?php palmares($nomChampion, $table, $categorie, $bdd);?>
 </div>
 
-<br />
+<br>
 
 <?php if ($smart != true )
 	{?>
@@ -273,13 +264,13 @@ if ($nombreTitre > 0 )	{echo "<h2> Cadets </h2>";}?>
    if ($saisonEnCoursChiffre > 0)	echo "- ".$saisonEnCours." -";	else echo "-";
    ?>
  </div>
- <br />
+ <br>
 <?php if ($smart != true )
 	{?>
 	<hr width= "70%" color="red" >
 	<?php ;} ?>
 
-<h1>Saisons pr&eacute;c&eacute;dentes</h1>
+<h1>Saisons précédentes</h1>
 
 			<p>&nbsp; 
 		<?php //echo "code : ".$code;?>	<?php //echo "code : ".$terr2019;
@@ -287,173 +278,173 @@ if ($nombreTitre > 0 )	{echo "<h2> Cadets </h2>";}?>
 <table width="<?php echo $width;?>" bordercolor="#CCCCCC" border="0" cellpadding="0" cellspacing="0" align="center">
   <!--Saison N-1 -->
   <tr > 
-    <td class="saisonImpaire" width="40%" valign="top"> Saison <?php echo $debutSaison-1; ?> - <?php echo $finSaison-1; ?>  : </td>
+    <td class="saisonImpaire" width="40%" > Saison <?php echo $debutSaison-1; ?> - <?php echo $finSaison-1; ?>  : </td>
     <td class="saisonImpaireNG" width="60%" >  <?php $saisonRetro = $finSaison-1 ;	echo ${"terr".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top">&nbsp;</td>
+    <td class="saisonImpaire" >&nbsp;</td>
     <td class="saisonImpaireNG" > <?php echo ${"france".$saisonRetro}; ?>
     </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top">&nbsp;</td>
+    <td class="saisonImpaire" >&nbsp;</td>
     <td class="saisonImpaireNG">&nbsp;</td>
   </tr>
   <!--Saison N-2 -->
   <tr > 
-    <td class="saisonPaire" valign="top"> Saison <?php echo $debutSaison-2; ?>- <?php echo $finSaison-2; ?> : </td>
+    <td class="saisonPaire" > Saison <?php echo $debutSaison-2; ?>- <?php echo $finSaison-2; ?> : </td>
     <td class="saisonPaireNG" > <?php $saisonRetro = $finSaison -2;	echo ${"terr".$saisonRetro};?> </td>
   </tr>
   <tr > 
-    <td class="saisonPaire"  valign="top">&nbsp;</td>
+    <td class="saisonPaire"  >&nbsp;</td>
     <td class="saisonPaireNG"> <?php echo ${"france".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonPaire"  valign="top">&nbsp;</td>
+    <td class="saisonPaire"  >&nbsp;</td>
     <td class="saisonPaireNG" >&nbsp;</td>
   </tr>
   <!--Saison N-3 -->
   <tr > 
-    <td class="saisonImpaire" valign="top"> Saison <?php echo $debutSaison-3; ?> - <?php echo $finSaison-3; ?> : </td>
+    <td class="saisonImpaire" > Saison <?php echo $debutSaison-3; ?> - <?php echo $finSaison-3; ?> : </td>
     <td class="saisonImpaireNG" > <?php $saisonRetro = $finSaison -3;echo ${"terr".$saisonRetro};?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire"  valign="top">&nbsp;</td>
+    <td class="saisonImpaire"  >&nbsp;</td>
     <td class="saisonImpaireNG"  > <?php echo ${"france".$saisonRetro}; ?></td>
   </tr>
    <tr > 
-    <td class="saisonImpaire" valign="top">&nbsp;</td>
+    <td class="saisonImpaire" >&nbsp;</td>
     <td class="saisonImpaireNG">&nbsp;</td>
   </tr>
    <!--Saison N-4 -->
    <tr > 
-    <td class="saisonPaire" valign="top"> Saison <?php echo $debutSaison-4; ?>- <?php echo $finSaison-4; ?> : </td>
+    <td class="saisonPaire" > Saison <?php echo $debutSaison-4; ?>- <?php echo $finSaison-4; ?> : </td>
     <td class="saisonPaireNG" > <?php $saisonRetro = $finSaison -4; echo ${"terr".$saisonRetro};?>  </td>
   </tr>
   <tr > 
-    <td class="saisonPaire" valign="top">&nbsp;</td>
+    <td class="saisonPaire" >&nbsp;</td>
     <td class="saisonPaireNG" > <?php echo ${"france".$saisonRetro}; ?> </td>
   </tr>
    <tr > 
-    <td class="saisonPaire"  valign="top">&nbsp;</td>
+    <td class="saisonPaire"  >&nbsp;</td>
     <td class="saisonPaireNG" >&nbsp;</td>
   </tr>
    <!--Saison N-5 -->
    <tr > 
-    <td class="saisonImpaire" valign="top"> Saison   <?php echo $debutSaison-5; ?> -  <?php echo $finSaison-5; ?>: </td>
+    <td class="saisonImpaire" > Saison   <?php echo $debutSaison-5; ?> -  <?php echo $finSaison-5; ?>: </td>
     <td class="saisonImpaireNG" > <?php $saisonRetro = $finSaison -5;	echo ${"terr".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top">&nbsp;</td>
+    <td class="saisonImpaire" >&nbsp;</td>
     <td class="saisonImpaireNG"  > <?php echo ${"france".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top">&nbsp;</td>
+    <td class="saisonImpaire" >&nbsp;</td>
     <td class="saisonImpaire" >&nbsp;</td>
   </tr>
   <!--Saison N-6 -->
   <tr > 
-    <td class="saisonPaire" valign="top"> Saison  <?php echo $debutSaison-6; ?> - <?php echo $finSaison-6; ?> : </td>
+    <td class="saisonPaire" > Saison  <?php echo $debutSaison-6; ?> - <?php echo $finSaison-6; ?> : </td>
 	<td class="saisonPaireNG" > <?php $saisonRetro = $finSaison -6; echo ${"terr".$saisonRetro};?> </td>
   </tr>
   <tr > 
-    <td class="saisonPaire" valign="top">&nbsp;</td>
+    <td class="saisonPaire" >&nbsp;</td>
     <td class="saisonPaireNG" > <?php echo ${"france".$saisonRetro}; ?></td>
   </tr>
   <tr> 
-    <td class="saisonPaire" valign="top">&nbsp;</td>
+    <td class="saisonPaire" >&nbsp;</td>
     <td class="saisonPaireNG">&nbsp; </td>
   </tr>
   <!--Saison N-7 -->
   <tr > 
-    <td class="saisonImpaire" valign="top"> Saison <?php echo $debutSaison-7; ?> - <?php echo $finSaison-7; ?> : </td>
+    <td class="saisonImpaire" > Saison <?php echo $debutSaison-7; ?> - <?php echo $finSaison-7; ?> : </td>
     <td class="saisonImpaireNG"  > <?php $saisonRetro = $finSaison -7;	echo ${"terr".$saisonRetro};?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top">&nbsp; </td>
+    <td class="saisonImpaire" >&nbsp; </td>
     <td class="saisonImpaireNG"> <?php echo ${"france".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top">&nbsp; </td>
+    <td class="saisonImpaire" >&nbsp; </td>
     <td class="saisonImpaire" >&nbsp;</td>
   </tr>
   <!--Saison N-8 -->
   <tr > 
-    <td class="saisonPaire"  valign="top"> Saison <?php echo $debutSaison-8; ?> - <?php echo $finSaison-8; ?> : </td>
+    <td class="saisonPaire"  > Saison <?php echo $debutSaison-8; ?> - <?php echo $finSaison-8; ?> : </td>
     <td class="saisonPaireNG"  ><?php $saisonRetro = $finSaison -8;	echo ${"terr".$saisonRetro};?> </td>
   </tr>
   <tr > 
-    <td class="saisonPaire" valign="top">&nbsp;</td>
+    <td class="saisonPaire" >&nbsp;</td>
     <td class="saisonPaireNG"  > <?php echo ${"france".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonPaire" valign="top"> </td>
+    <td class="saisonPaire" > </td>
     <td class="saisonPaireNG" >&nbsp; </td>
   </tr>
   <!--Saison N-9 -->
   <tr > 
-    <td class="saisonImpaire"  valign="top"> Saison <?php echo $debutSaison-9; ?> - <?php echo $finSaison-9; ?>: </td>
+    <td class="saisonImpaire"  > Saison <?php echo $debutSaison-9; ?> - <?php echo $finSaison-9; ?>: </td>
     <td class="saisonImpaireNG"  ><?php $saisonRetro = $finSaison -9; echo ${"terr".$saisonRetro}; ?></td>
   </tr>
   <tr > 
-    <td class="saisonImpaire"  valign="top">&nbsp; </td>
+    <td class="saisonImpaire"  >&nbsp; </td>
     <td class="saisonImpaireNG"  > <?php echo ${"france".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire"  valign="top">&nbsp; </td>
-    <td class="saisonImpaire" >&nbsp;</td>
+    <td class="saisonImpaire"> </td>
+    <td class="saisonImpaire" ></td>
   </tr>
   <!--Saison N-10 -->
   <tr > 
-    <td class="saisonPaire"  valign="top"> Saison <?php echo $debutSaison-10; ?> - <?php echo $finSaison-10; ?>: </td>
+    <td class="saisonPaire"> Saison <?php echo $debutSaison-10; ?> - <?php echo $finSaison-10; ?>: </td>
     <td class="saisonPaireNG"  > <?php $saisonRetro = $finSaison -10; echo ${"terr".$saisonRetro}; ?></td>
   </tr>
   <tr > 
-    <td class="saisonPaire"  valign="top">&nbsp;</td>
+    <td class="saisonPaire"></td>
     <td class="saisonPaireNG" > <?php echo ${"france".$saisonRetro}; ?></td>
   </tr>
   <tr > 
-    <td class="saisonPaire"  valign="top"> </td>
+    <td class="saisonPaire"> </td>
     <td class="saisonPaireNG" > &nbsp;</td>
   </tr>
   <!--Saison N-11 -->
   <tr > 
-    <td class="saisonImpaire"  valign="top"> Saison <?php echo $debutSaison-11; ?> - <?php echo $finSaison-11; ?> : </td>
+    <td class="saisonImpaire"> Saison <?php echo $debutSaison-11; ?> - <?php echo $finSaison-11; ?> : </td>
     <td class="saisonImpaireNG"  > <?php $saisonRetro = $finSaison -11;	echo ${"terr".$saisonRetro}; ?>  </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top"> </td>
+    <td class="saisonImpaire"> </td>
     <td class="saisonImpaireNG" > &nbsp;<?php echo ${"france".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire"  valign="top"> </td>
-    <td class="saisonImpaireNG" >&nbsp; </td>
+    <td class="saisonImpaire"> </td>
+    <td class="saisonImpaireNG" ></td>
   </tr>
    <!--Saison N-12 -->
   <tr > 
-    <td class="saisonPaire" valign="top"> Saison <?php echo $debutSaison-12; ?>- <?php echo $finSaison-12; ?> : </td>
+    <td class="saisonPaire"> Saison <?php echo $debutSaison-12; ?>- <?php echo $finSaison-12; ?> : </td>
     <td class="saisonPaireNG"> <?php $saisonRetro = $finSaison -12;	echo ${"terr".$saisonRetro};  ?> </td>
   </tr>
   <tr > 
-    <td class="saisonPaire" valign="top" height="17"> </td>
+    <td class="saisonPaire" height="17"> </td>
     <td class="saisonPaireNG" > <?php echo ${"france".$saisonRetro}; ?> </td>
   </tr>
   <tr > 
-    <td class="saisonPaire" valign="top"> </td>
-    <td class="saisonPaireNG">&nbsp; </td>
+    <td class="saisonPaire"> </td>
+    <td class="saisonPaireNG"> </td>
   </tr>
    <!--Saison N-13 -->
   <tr > 
-    <td class="saisonImpaire" valign="top"> Saison <?php echo $debutSaison-13; ?>- <?php echo $finSaison-13; ?> : </td>
+    <td class="saisonImpaire"> Saison <?php echo $debutSaison-13; ?>- <?php echo $finSaison-13; ?> : </td>
     <td class="saisonImpaireNG" ><?php $saisonRetro = $finSaison -13; echo ${"terr".$saisonRetro};  ?> </td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top"> </td>
+    <td class="saisonImpaire" > </td>
     <td class="saisonImpaireNG" ><?php echo ${"france".$saisonRetro}; ?></td>
   </tr>
   <tr > 
-    <td class="saisonImpaire" valign="top"></td>
-    <td class="saisonImpaireNG" >&nbsp;</td>
+    <td class="saisonImpaire"></td>
+    <td class="saisonImpaireNG" ></td>
   </tr>
 </table>
 	<p>

@@ -1,7 +1,7 @@
-<table width="100%" border="1" >
+<table class="width100PC borderWidth1" >
   <tr> 
-    <td width= "5%"class="h22" height="20"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20"></a></td>
-	<td width= "95%"class="h22" height="20"> France Finales Rugby </td>
+  <td class="h22 width5PC" ><a href="../sommaire.php"><img class="width27 height20" src="../../images/smart/flecheGauche.jpg" alt="fléche retour"></a></td>
+	<td class="h22" > France Finales Rugby </td>
   </tr>
   <tr> 
     <td colspan="2" class="h12">Championnat de France<br><?php echo $nomDivision.' - '.$annee;?></td>

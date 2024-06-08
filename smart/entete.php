@@ -1,8 +1,7 @@
 <?php 
-
  require ("../../connect/connexion5.php");
 
- //Nom du comité
+ //Nom du comitÃ©
 
 	$reponse = $bdd->query(" SELECT nomLigue
 							 FROM comite
@@ -27,15 +26,15 @@ $reponse = $bdd->query("	SELECT division
 							//	echo $nomDivision2;
 																					
 ?>
-<table width="100%" border="1">
+<table class="width100PC borderWidth1">
   <tr> 
-     <td width= "5%" class="h22" height="20"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20"></a></td>
-	<td width= "95%" class="h22" height="20"> France Finales Rugby </td>
+     <td width= "5%" class="h22" height="20"><a href="../sommaire.php"><img class="width27 height20" src="../../images/smart/flecheGauche.jpg" ></a></td>
+	<td  class="h22  width95PC" height="20"> France Finales Rugby </td>
     </td>
   </tr>
   <tr> 
-    <td colspan="2" bgcolor="#FFFFFF" colspan="2" height="2" 
-      class="titre"> Ligue  <?php echo $ligueToutesLettres ;?>
+    <td colspan="2" colspan="2" height="2" 
+      class="titre backgroundWhite"> Ligue  <?php echo $ligueToutesLettres ;?>
         <br>
         <?php echo $nomDivision2;?> <?php echo $annee;?>
         

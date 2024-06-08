@@ -94,11 +94,11 @@ $reponse = $bdd->query("SELECT MAX(saison)
 								 $tabPalmaresHonneur[] = $row[0];
 								 }
 		// affectation  des variables  
-		//echo $i; //echo "<br />";
-		//echo $nbre; echo "<br />";
+		//echo $i; //echo "<br>";
+		//echo $nbre; echo "<br>";
 			
 			if (isset ($tabPalmaresHonneur[$nbre])) ${"honneur".($i)} = $tabPalmaresHonneur[$nbre]; else ${"honneur".($i)}='-'; 
-			echo substr(${"honneur".($i)},0,20);echo "<br /><hr />";
+			echo substr(${"honneur".($i)},0,20);echo "<br><hr>";
 		$nbre = $nbre + 1;
 		
 		}
@@ -160,11 +160,11 @@ else
 								 $tabSaison[] = $row[0];
 								 }
 // affectation  des variables  
-//echo $i; //echo "<br />";
-//echo $nbre; echo "<br />";
+//echo $i; //echo "<br>";
+//echo $nbre; echo "<br>";
 			
 			if (isset ($tabSaison[$nbre])) ${"saison".($i)} = $tabSaison[$nbre]; else ${"saison".($i)}='-'; 
-			echo $i;echo "<br /><hr />";
+			echo $i;echo "<br><hr>";
 			
 		$nbre = $nbre + 1;
 		}
@@ -222,10 +222,10 @@ function palmaresLigues2($comite, $rang, $bdd, $reforme)
 								 $tabPalmaresHonneur[] = $row[0];
 								 }
 // affectation  des variables  
-//echo $i; //echo "<br />";
-//echo $nbre; echo "<br />";	
+//echo $i; //echo "<br>";
+//echo $nbre; echo "<br>";	
 			if (isset ($tabPalmaresHonneur[$nbre])) ${"honneur".($i)} = $tabPalmaresHonneur[$nbre]; else ${"honneur".($i)}='-'; 
-			echo ${"honneur".($i)};echo "<br /><hr />";
+			echo ${"honneur".($i)};echo "<br><hr>";
 		$nbre = $nbre + 1;
 		}
 
@@ -271,11 +271,11 @@ function saisonLigues2($rang, $comite, $bdd, $reforme)
 								 $tabPalmaresHonneur[] = $row[0];
 								 }
 // affectation  des variables  
-//echo $i; //echo "<br />";
-//echo $nbre; echo "<br />";
+//echo $i; //echo "<br>";
+//echo $nbre; echo "<br>";
 			
 			if (isset ($tabPalmaresHonneur[$nbre])) ${"honneur".($i)} = $tabPalmaresHonneur[$nbre]; else ${"honneur".($i)}='-'; 
-			echo $i;echo "<br /><hr />";	
+			echo $i;echo "<br><hr>";	
 		$nbre = $nbre + 1;
 		}
 }
@@ -313,7 +313,7 @@ function palmares($comite, $rang, $bdd, $debut, $fin)
 								 }
 		// affectation  des variables  		
 	if (isset ($tabPalmaresHonneur[$nbre])) ${"honneur".($i)} = $tabPalmaresHonneur[$nbre]; else ${"honneur".($i)}='-'; 
-	echo substr(${"honneur".($i)},0,20);echo "<br /><hr />";
+	echo substr(${"honneur".($i)},0,20);echo "<br><hr>";
 	$nbre = $nbre + 1;
 		
 		}
@@ -345,7 +345,7 @@ function saison($rang, $comite, $bdd, $debut, $fin)
 								}
 			
 			if (isset ($tabSaison[$nbre])) ${"saison".($i)} = $tabSaison[$nbre]; else ${"saison".($i)}='-'; 
-			echo $i;echo "<br /><hr />";
+			echo $i;echo "<br><hr>";
 			
 		$nbre = $nbre + 1;
 		}
@@ -392,11 +392,11 @@ function palmares2($comite, $rang, $bdd)
 								 $tabPalmaresHonneur[] = $row[0];
 								 }
 		// affectation  des variables  
-		//echo $i; //echo "<br />";
-		//echo $nbre; echo "<br />";
+		//echo $i; //echo "<br>";
+		//echo $nbre; echo "<br>";
 	//echo $tabPalmaresHonneur[0];		
 	if (isset ($tabPalmaresHonneur[$nbre])) ${"honneur".($i)} = $tabPalmaresHonneur[$nbre]; else ${"honneur".($i)}='-'; 
-	echo substr(${"honneur".($i)},0,30);echo "<br /><hr />";
+	echo substr(${"honneur".($i)},0,30);echo "<br><hr>";
 	$nbre = $nbre + 1;
 		
 		}
@@ -441,11 +441,11 @@ function saison2($rang, $comite, $bdd)
 								 $tabPalmaresHonneur[] = $row[0];
 								 }
 // affectation  des variables  
-//echo $i; //echo "<br />";
-//echo $nbre; echo "<br />";
+//echo $i; //echo "<br>";
+//echo $nbre; echo "<br>";
 			
 			if (isset ($tabPalmaresHonneur[$nbre])) ${"honneur".($i)} = $tabPalmaresHonneur[$nbre]; else ${"honneur".($i)}='-'; 
-			echo $i;echo "<br /><hr />";	
+			echo $i;echo "<br><hr>";	
 		$nbre = $nbre + 1;
 		}
 }

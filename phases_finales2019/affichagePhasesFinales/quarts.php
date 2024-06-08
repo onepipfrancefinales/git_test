@@ -1,223 +1,246 @@
 <table class="width1200 marginAuto">
-  <tr> 
-    <td width="229"> </td>
-    <td width="54"> </td>
-    <td width="33"></td>
-    <td width="222"></td>
-    <td width="46"></td>
-    <td width="28"></td>
-    <td width="28"></td>
-    <td width="222"></td>
-    <td width="35"></td>
-    <td width="17"></td>
-    <td width="222"></td>
-    <td width="32"></td>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
-  <tr> 
-    <td><div colspan="13" bgcolor="#FFCC66" ></div></td>
+  <tr>
+    <td colspan="13"> </td>
   </tr>
-  <tr> 
+  <tr>
     <td colspan="13"></td>
   </tr>
-  <tr> 
+  <tr>
     <td colspan="13"></td>
   </tr>
-  <tr> 
-    <td><div class="coin5" >Quarts de finale</div></td>
-    <td colspan ="2"></td>
-   
-    <td><div class="coin5" >Demi finale</div></td>
-    <td colspan ="2"></td>
-    
-	<td></td>
-    <td><div class="coin5" >Finale</div></td>
+  <tr>
+    <td>
+      <div class="coin5">Quarts de finale</div>
+    </td>
+    <td colspan="2"></td>
+
+    <td>
+      <div class="coin5">Demi finale</div>
+    </td>
+    <td colspan="2"></td>
+
+    <td></td>
+    <td>
+      <div class="coin5">Finale</div>
+    </td>
     <td></td>
     <td></td>
-	<td></td>
     <td></td>
-	<td></td>
+    <td></td>
+    <td></td>
   </tr>
-  <tr> 
-    <td><div class="dates" > <?php echo $D4ME; ?></div></td>
+  <tr>
+    <td>
+      <div class="dates"> <?php echo $D4ME; ?></div>
+    </td>
     <td></td>
     <td></td>
-    <td><div class="dates" ><?php echo $D2ME; ?></div></td>
+    <td>
+      <div class="dates"><?php echo $D2ME; ?></div>
+    </td>
     <td></td>
     <td></td>
-	<td></td>
-    <td><div class="dates" ><?php echo $D1ME; ?></div></td>
+    <td></td>
+    <td>
+      <div class="dates"><?php echo $D1ME; ?></div>
+    </td>
     <td></td>
     <td></td>
- <td></td>
     <td></td>
-	<td></td>
+    <td></td>
+    <td></td>
   </tr>
-  <tr> 
-     <tr> 
+  <tr>
     <td class="height23" colspan="13"></td>
   </tr>
-  <tr> 
-    <td><div class="coin4" ><?php echo $clubA4001;?></div></td>
-    <td><div class="coin4pts" ><?php echo $A4001; ?></div></td>
-    <td rowspan="6" width="33"><img src="../../images/accolade.png" width="8" height="127"></td>
+  <tr>
+    <td class="coin4"><?php echo $clubA4001; ?> </td>
+    <td class="coin4pts"><?php echo $A4001; ?></td>
+    <td rowspan="6"><img src="../../images/accolade.png" width="8" height="127" alt="accolade"></td>
     <td colspan="10"></td>
   </tr>
-  <tr> 
-    <td><div class="coin4"><?php echo $clubA4002; ?></div></td>
-    <td><div class="coin4pts"><?php echo $A4002; ?></div></td>
+  <tr>
+    <td class="coin4"><?php echo $clubA4002; ?> </td>
+    <td class="coin4pts"><?php echo $A4002; ?> </td>
     <td colspan="10"></td>
   </tr>
-  <tr> 
-    <td></td>
-    <td></td>
-    <td><div class="coin4" ><?php echo $clubA2001;?></div></td>
-    <td><div class="coin4pts" ><?php echo $A2001; ?></div></td>
-    <td rowspan="10" width="28"></td>
-    <td rowspan="10" width="28"><img src="../../images/accolade.png" height="207"></td>
-    <td colspan="5"></td>
-    
-	<td></td>
-  </tr>
-  <tr> 
-    <td></td>
-    <td></td>
-    <td><div class="coin4" ><?php echo $clubA2002; ?></div></td>
-    <td><div class="coin4pts" ><?php echo $A2002; ?></div></td>
-    <td colspan="5"></td>
-	<td></td>
-  </tr>
-  <tr> 
-    <td><div class="coin4" ><?php echo $clubA4003; ?></div></td>
-    <td><div class="coin4pts" ><?php echo $A4003; ?></div></td>
+  <tr>
     <td colspan="2"></td>
-	<td></td>
-    <td></td>
-	<td></td>
-    <td></td>
-    <td></td>
-	<td></td>
-  </tr>
-  <tr> 
-    <td><div class="coin4" ><?php echo $clubA4004; ?></div></td>
-    <td><div class="coin4pts" ><?php echo $A4004; ?></div></td>
-    <td colspan="2"></td>
-	<td><div class="coin4" ><?php echo $clubA1001; ?></div></td>
-	<td><div class="coin4pts" ><?php echo $A1001; ?></div></td>
-	<td colspan="4"></td>
-  </tr>
-  <tr> 
+    <td>
+      <div class="coin4"><?php echo $clubA2001; ?></div>
+    </td>
+    <td>
+      <div class="coin4pts"><?php echo $A2001; ?></div>
+    </td>
+    <td rowspan="10"></td>
+    <td rowspan="10"><img src="../../images/accolade.png" height="207" alt="accolade"></td>
     <td colspan="5"></td>
-  
-    <td><div class="coin4" ><?php echo $clubA1002; ?></div></td>
-    <td><div class="coin4pts" ><?php echo $A1002; ?></div></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td class="coin4"><?php echo $clubA2002; ?> </td>
+    <td class="coin4pts"><?php echo $A2002; ?></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td class="coin4"><?php echo $clubA4003; ?></td>
+    <td class="coin4pts"><?php echo $A4003; ?></td>
+    <td colspan="2"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="coin4"><?php echo $clubA4004; ?></td>
+    <td class="coin4pts"><?php echo $A4004; ?></td>
+    <td colspan="2"></td>
+    <td class="coin4"><?php echo $clubA1001; ?></td>
+    <td class="coin4pts"><?php echo $A1001; ?></td>
+    <td colspan="4"></td>
+  </tr>
+  <tr>
+    <td colspan="5"></td>
+
+    <td class="coin4"><?php echo $clubA1002; ?></td>
+    <td class="coin4pts"><?php echo $A1002; ?></td>
     <td colspan="3"></td>
-	<td></td>
+    <td></td>
   </tr>
-  <tr> 
-    <td></td>
-    <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+  <tr>
     <td></td>
     <td></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
-  <tr> 
-    <td><div class="coin4" ><?php echo $clubA4005; ?></div></td>
-    <td><div class="coin4pts" ><?php echo $A4005; ?></div></td>
-    <td rowspan="6" width="33"><img src="../../images/accolade.png" width="8" height="127"></td>
+  <tr>
+    <td class="coin4"><?php echo $clubA4005; ?></td>
+    <td class="coin4pts"><?php echo $A4005; ?></td>
+    <td rowspan="6"><img src="../../images/accolade.png" width="8" height="127" alt="accolade"></td>
     <td></td>
     <td></td>
-    <td class="titre" rowspan="3" ><?php echo "Champion de France ".$annee;?><br/> <?php echo $nomDivision;?></td>
+    <td class="titre" rowspan="3"><?php echo "Champion de France " . $annee; ?><br> <?php echo $nomDivision; ?></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
-  <tr> 
-    <td><div class="coin4" ><?php echo $clubA4006; ?></div></td>
-    <td><div class="coin4pts" ><?php echo $A4006; ?></div></td>
+  <tr>
+    <td class="coin4"><?php echo $clubA4006; ?></td>
+    <td class="coin4pts"><?php echo $A4006; ?></td>
     <td></td>
-	<td></td>
-	<td></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
-  <tr> 
+  <tr>
     <td></td>
-	<td></td>
-    <td width="222"><div class="coin4" ><?php echo $clubA2003; ?></div></td>
-    <td width="46"><div class="coin4pts" ><?php echo $A2003; ?></div></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+    <td class="coin4"><?php echo $clubA2003; ?></td>
+    <td class="coin4pts"><?php echo $A2003; ?></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
-  <tr> 
+  <tr>
     <td></td>
     <td></td>
-    <td><div class="coin4" ><?php echo $clubA2004; ?></div></td>
-    <td><div class="coin4pts" ><?php	echo $A2004; ?></div></td>
-    <td rowspan="7"  class= "marginAuto"> <img class="width150 height50" src="../../images/blasons200_200/<?php echo $idEquipeCourt;?>.gif" ></td>
+    <td class="coin4"><?php echo $clubA2004; ?></td>
+    <td class="coin4pts"><?php echo $A2004; ?></td>
+    <td rowspan="7" class="marginAuto"> <img class="width150 height50" src="../../images/blasons200_200/<?php echo $idEquipeCourt; ?>.gif" alt="accolade"></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-  <tr> 
-    <td><div class="coin4" ><?php echo $clubA4007; ?></div></td>
-    <td><div class="coin4pts" ><?php echo $A4007; ?></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="coin4"><?php echo $clubA4007; ?></td>
+    <td class="coin4pts"><?php echo $A4007; ?></td>
     <td colspan="10"></td>
   </tr>
-  <tr> 
-    <td><div class="coin4" ><?php echo $clubA4008; ?></div></td>
-    <td><div class="coin4pts" ><?php echo $A4008; ?></div></td>
+  <tr>
+    <td class="coin4"><?php echo $clubA4008; ?></td>
+    <td class="coin4pts"><?php echo $A4008; ?></td>
     <td colspan="10"></td>
   </tr>
-  <tr> 
-  <td class="height23" colspan="13"></td>
+  <tr>
+    <td class="height23" colspan="13"></td>
   </tr>
-   <tr> 
-   <td class="height23" colspan="13"></td>
+  <tr>
+    <td class="height23" colspan="13"></td>
   </tr>
-   <tr> 
-   <td class="height23" colspan="13"></td>
+  <tr>
+    <td class="height23" ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
   </tr>
-   <tr> 
-   <td class="height23" colspan="13"></td>
+  <tr>
+    <td class="height23" colspan="8"></td>
   </tr>
-   <tr> 
-    <td height="23"></td>
+  <tr>
+    <td class="height23"></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-    <td rowspan="2" class="champ"><?php echo $champion;?></td>
+    <td rowspan="2" class="champ"><?php echo $champion; ?></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+
   </tr>
-   <tr> 
-   <td class="height23" colspan="13"></td>
+  <tr>
+    <td class="height23" colspan="13"></td>
   </tr>
-   <tr> 
-   <td class="height23" colspan="13"></td>
+  <tr>
+    <td class="height23" colspan="13"></td>
   </tr>
-  <tr> 
-    <td colspan="13" class="blackgroundOrange"></td> 
+  <tr>
+    <td colspan="13" class="blackgroundOrange"></td>
   </tr>
 </table>

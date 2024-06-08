@@ -1,11 +1,11 @@
-<table width="90%" border="1" align="center">
+<table class="borderDouble width90PC marginAuto">
   <tr> 
-    <td class="titre">Demi finale<br />
-   <span> <div class="pf_lieux"><?php echo $D2ME; ?></div></span></td>
+    <td class="titre">Demi finale<br>
+   <span class="pf_lieux"><?php echo $D2ME; ?></span></td>
   </tr>
 </table>
-<br/>
-<table width="90%" border="0" align="center">
+<br>
+<table  class="borderNone width90PC marginAuto">
   <tr> 
     <td colspan="2"></td>
   </tr>
@@ -18,7 +18,7 @@
     <td class="coin4GA"><?php echo $A2002;?></td>
   </tr>
   <tr> 
-    <td colspan="2" height="25"></td>
+    <td colspan="2" ></td>
   </tr>
   <tr> 
     <td class="equipe4"><?php echo $clubA2003;?></td>
@@ -29,7 +29,7 @@
     <td class="coin4GA"><?php echo $A2004;?></td>
   </tr>
   <tr> 
-    <td colspan="2" height="25"></td>
+    <td colspan="2" ></td>
   </tr>
 </table>
 

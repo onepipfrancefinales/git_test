@@ -38,7 +38,7 @@ function listePoule($champ, $bddComite, $bdd)
 
 	for ($i = 0; $i <= $nbreDivisions - 1; $i++) {
 		$tabDivisions[$i];
-		echo "<br />";
+		echo "<br>";
 	}
 }
 
@@ -80,7 +80,7 @@ function maj($champ, $smart, $comite, $bdd)
 
 	$row = $requete->fetch();
 	$journeePrevue = $row[0];
-	//echo "journee prevue : ". $journeePrevue;echo "<br/>";
+	//echo "journee prevue : ". $journeePrevue;echo "<br>";
 	//echo "champ : ".$champ;
 	if ($journeePrevue > 0 and ($champ < 990110 or $champ > 990130)) {
 ?>
@@ -198,9 +198,9 @@ function clmntbdpl($champ, $smart, $bdd)
 		$barrage = $row[1];
 		$relegation =  $row[2];
 	}
-	//echo $accession;echo "<br/>";
-	//echo $barrage;echo "<br/>"; 
-	//echo $relegation;echo "<br/>";
+	//echo $accession;echo "<br>";
+	//echo $barrage;echo "<br>"; 
+	//echo $relegation;echo "<br>";
 
 	$res = $bdd->query("SELECT count(*) 
 						 FROM $php_equipes 
@@ -277,7 +277,7 @@ function clmntbdpl($champ, $smart, $bdd)
 		echo "</div></tr>\n";
 	}
 	echo "</table>";
-	echo "<br />";
+	echo "<br>";
 }
 
 //**********************************Affichage de toutes les  rencontres par ligues **************
@@ -302,9 +302,9 @@ function affichageTitreCompet($date, $champ, $ligue, $comite, $bdd)
 		$champMax = 220200;
 		$categorie = "R&eacute;gionales";
 	}
-	// echo "<br />";
+	// echo "<br>";
 
-	//echo "<br />";
+	//echo "<br>";
 
 	$php_journees = $comite . "_journees";
 	$dateMax =  date('Y-m-d', strtotime($date . ' + 2 days')); // On ajoute 2 jours
@@ -363,7 +363,7 @@ function affichageOppositionsPro($page, $date, $champ, $ligue, $comite, $bdd)
 
 	if ($numero > 0) {
 		//echo "champ : ".substr($champ,3,2);
-		//echo "champ : ".$champ;echo "<br />";
+		//echo "champ : ".$champ;echo "<br>";
 
 		if ($page == "presentation") {
 			if (substr($champ, 3, 3) == 281 or substr($champ, 3, 3) == 282)
@@ -423,14 +423,14 @@ function affichageOppositionsPro($page, $date, $champ, $ligue, $comite, $bdd)
 
 		$ligueMax = $ligue + 100000;
 
-		//echo "champ : ".$champ;echo "<br />";//
-		//echo "base : ".$comite;echo "<br />";
-		//echo "ligue : ".$ligue;echo "<br />";
-		//echo "ligueMax : ".$ligueMax;echo "<br />";
+		//echo "champ : ".$champ;echo "<br>";//
+		//echo "base : ".$comite;echo "<br>";
+		//echo "ligue : ".$ligue;echo "<br>";
+		//echo "ligueMax : ".$ligueMax;echo "<br>";
 
-		// echo "ligue :".$ligue;echo "<br />";
-		//	echo "comite :".$comite;echo "<br />";
-		//	echo "champ :".$champ;echo "<br />"; 
+		// echo "ligue :".$ligue;echo "<br>";
+		//	echo "comite :".$comite;echo "<br>";
+		//	echo "champ :".$champ;echo "<br>"; 
 
 		//if ($ligue == 1100000	){
 
@@ -668,10 +668,10 @@ function affichageOppositionsLigueNE($page, $date, $champ, $ligue, $comite, $bdd
 
 		$ligueMax = $ligue + 100000;
 
-		//echo "champ : ".$champ;echo "<br />";
-		//echo "base : ".$comite;echo "<br />";
-		//echo "ligue : ".$ligue;echo "<br />";
-		//echo "ligueMax : ".$ligueMax;echo "<br />";
+		//echo "champ : ".$champ;echo "<br>";
+		//echo "base : ".$comite;echo "<br>";
+		//echo "ligue : ".$ligue;echo "<br>";
+		//echo "ligueMax : ".$ligueMax;echo "<br>";
 
 
 		echo "<table width=\"750\">";
@@ -831,10 +831,10 @@ function affichageOppositionsLigueBFC($page, $date, $champ, $ligue, $comite, $bd
 		//$ligue = $champ;
 		$ligueMax = $ligue + 100000;
 
-		//echo "champ : ".$champ;echo "<br />";
-		//echo "base : ".$comite;echo "<br />";
-		//echo "ligue : ".$ligue;echo "<br />";
-		//echo "ligueMax : ".$ligueMax;echo "<br />";
+		//echo "champ : ".$champ;echo "<br>";
+		//echo "base : ".$comite;echo "<br>";
+		//echo "ligue : ".$ligue;echo "<br>";
+		//echo "ligueMax : ".$ligueMax;echo "<br>";
 
 
 
@@ -885,12 +885,12 @@ function affichageOppositionsLigueBFC($page, $date, $champ, $ligue, $comite, $bd
 		if ($page == "presentation")
 			affJourneeOppLigueBFC($date, $champ, $comite, $ligue, $bdd);
 		else {
-			//echo "champ1 : ".$champ;echo "<br />";
+			//echo "champ1 : ".$champ;echo "<br>";
 			affJourneeOppLigueBFC($date, $champ, $comite, $ligue, $bdd);
-			//echo "champ2 : ".$champ;echo "<br />";
-			//	echo "ligue : ".$ligue;echo "<br/>";
-			//echo "comite : ".$comite;echo "<br/>";
-			//echo "champ : ".$champ;echo "<br/>";
+			//echo "champ2 : ".$champ;echo "<br>";
+			//	echo "ligue : ".$ligue;echo "<br>";
+			//echo "comite : ".$comite;echo "<br>";
+			//echo "champ : ".$champ;echo "<br>";
 			affichageFacebook($champ, $comite, $bdd);
 		}
 
@@ -1169,12 +1169,12 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	$demiMaxJournee = $maxJournee / 2;
 	// echo $demiMaxJournee;
 
-	echo "<table width=\"90%\" align=\"center\">";
+	echo "<table  class=\"center width90PC\">";
 
 	//******phase Aller******
 
 	echo "<tr>";
-	echo "<td colspan=\"3\" align=\"left\">";
+	echo "<td colspan=\"3\" class=\"alignGauche\">";
 	echo "<b>";
 	echo "Phase aller : ";
 	echo "</b>";
@@ -1182,7 +1182,7 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	echo "</tr>";
 	echo "<tr>";
 	for ($i = 0; $i < $demiMaxJournee; $i++) {
-		echo "<td align=\"center\">";
+		echo "<td class=\"center\">";
 		echo "J";
 		echo $i + 1;
 		echo "</td>";
@@ -1191,7 +1191,7 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	echo "<tr>";
 	for ($i = 0; $i < $demiMaxJournee; $i++) {
 
-		echo "<td align=\"center\">";
+		echo "<td class=\"center\">";
 		//echo "J";
 		//echo $i+1;
 
@@ -1214,26 +1214,26 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 			$resultat = $tabButs_dom[$i] - $tabButs_ext[$i];
 
 			if ("$tabEquipeDom[$i]" === "$equipe" and $tabButs_dom[$i] > $tabButs_ext[$i]) {
-				print("<img src=\"/resultats/bilan/gagnedream.jpg\"  height=\"25\" width=\"25\">");
+				print("<img class=\"height25 width25\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\" >");
 			}
 
 			if ("$tabEquipeDom[$i]" === "$equipe" and $tabButs_dom[$i] < $tabButs_ext[$i]) {
-				print("<img src=\"/resultats/bilan/perdudream.jpg\"  height=\"25\" width=\"25\">");
+				print("<img class=\"height25 width25\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\" >");
 			}
 
 			if ("$tabEquipeExt[$i]" === "$equipe" and $tabButs_dom[$i] < $tabButs_ext[$i]) {
-				echo ("<img src=\"/resultats/bilan/gagnedream.jpg\"  height=\"25\" width=\"25\">");
+				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\" >");
 			}
 
 			if ("$tabEquipeExt[$i]" === "$equipe"	and $tabButs_dom[$i] > $tabButs_ext[$i]) {
-				echo ("<img src=\"/resultats/bilan/perdudream.jpg\"  height=\"25\" width=\"25\">");
+				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\" >");
 			}
 
 			if ($resultat == 0) {
-				echo ("<img src=\"/resultats/bilan/nulldream.jpg\"  height=\"25\" width=\"25\">");
+				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/nulldream.jpg\" alt=\"affichage\" >");
 			}
 		} else {
-			echo ("<img src=\"/resultats/bilan/rien.jpg\"  height=\"25\" width=\"25\">");
+			echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/rien.jpg\" >");
 		}
 
 		echo "</td>";
@@ -1244,7 +1244,7 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	echo "</tr>";
 	echo "<tr>";
 	/******  phase Retour******/
-	echo "<td colspan=\"3\"align=\"left\">";
+	echo "<td colspan=\"3\"class=\"alignGauche\">";
 	echo "<b>";
 	echo "Phase retour : ";
 	echo "<b>";
@@ -1252,7 +1252,7 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	echo "</tr>";
 	echo "<tr>";
 	for ($i = $demiMaxJournee; $i < $maxJournee; $i++) {
-		echo "<td align=\"center\">";
+		echo "<td class=\"center\">";
 		echo "J";
 		echo $i + 1;
 		echo "</td>";
@@ -1261,7 +1261,7 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	echo "<tr>";
 	for ($i = $demiMaxJournee; $i < $maxJournee; $i++) {
 
-		echo "<td align=\"center\">";
+		echo "<td class=\"center\">";
 		//echo "J";
 		//echo $i+1;
 
@@ -1284,26 +1284,26 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 			$resultat = $tabButs_dom[$i] - $tabButs_ext[$i];
 
 			if ("$tabEquipeDom[$i]" === "$equipe" and $tabButs_dom[$i] > $tabButs_ext[$i]) {
-				print("<img src=\"/resultats/bilan/gagnedream.jpg\"  height=\"25\" width=\"25\">");
+				print("<img class=\"height25 width25\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\">");
 			}
 
 			if ("$tabEquipeDom[$i]" === "$equipe" and $tabButs_dom[$i] < $tabButs_ext[$i]) {
-				print("<img src=\"/resultats/bilan/perdudream.jpg\"  height=\"25\" width=\"25\">");
+				print("<img class=\"height25 width25\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\">");
 			}
 
 			if ("$tabEquipeExt[$i]" === "$equipe" and $tabButs_dom[$i] < $tabButs_ext[$i]) {
-				echo ("<img src=\"/resultats/bilan/gagnedream.jpg\"  height=\"25\" width=\"25\">");
+				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\">");
 			}
 
 			if ("$tabEquipeExt[$i]" === "$equipe"	and $tabButs_dom[$i] > $tabButs_ext[$i]) {
-				echo ("<img src=\"/resultats/bilan/perdudream.jpg\"  height=\"25\" width=\"25\">");
+				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\">");
 			}
 
 			if ($resultat == 0) {
-				echo ("<img src=\"/resultats/bilan/nulldream.jpg\"  height=\"25\" width=\"25\">");
+				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/nulldream.jpg\" alt=\"affichage\">");
 			}
 		} else {
-			echo ("<img src=\"/resultats/bilan/rien.jpg\"  height=\"25\" width=\"25\">");
+			echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/rien.jpg\" alt=\"affichage\" >");
 		}
 
 		echo "</td>";
@@ -1346,7 +1346,7 @@ function journeesReportees($comite, $champ, $bdd)
 
 
 	$premiereJournee = $champ * 100 + 1;
-	//echo "dateDuJour: ".$dateDuJour; echo "<br />";
+	//echo "dateDuJour: ".$dateDuJour; echo "<br>";
 	//echo "championnat: ".$champ;
 	//	echo "1re journee: ".$premiereJournee;
 	$requete = $bdd->query("SELECT numero, id
@@ -1375,11 +1375,11 @@ function journeesReportees($comite, $champ, $bdd)
 
 		$DateTime = DateTime::createFromFormat('Y-m-d', $dateDuJourSansHeure);
 		$dateDuJourFR = $DateTime->format('d-M-Y');
-		//echo "jourFR : ".$dateDuJourFR; echo "<br />";
+		//echo "jourFR : ".$dateDuJourFR; echo "<br>";
 
 
 		$annee = substr($dateDuJourFR, 7, 4);
-		echo "<br />";
+		echo "<br>";
 		$nbreMatchsReportes = array();
 
 		$requete = $bdd->query("SELECT COUNT(*)
@@ -1588,9 +1588,9 @@ function perequation($comite, $champ, $bdd)
 		//changement de la date US en FR
 		$DateTime = DateTime::createFromFormat('Y-m-d', $dateDuJourSansHeure);
 		$dateDuJourFR = $DateTime->format('d-M-Y');
-		//echo "jourFR : ".$dateDuJourFR; echo "<br />";
+		//echo "jourFR : ".$dateDuJourFR; echo "<br>";
 		$annee = substr($dateDuJourFR, 7, 4);
-		echo "<br />";
+		echo "<br>";
 		$nbreMatchsReportes = array();
 		$requete = $bdd->query("SELECT COUNT(*)
 							FROM $php_matchs

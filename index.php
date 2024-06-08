@@ -77,7 +77,7 @@ $annee = 2022;
         <!-- <p align="center"><a href="brennus_histoire/pageAccueil.php">test</a></p>-->
    
         <div align="center">
-          <table width="557" border="0" align="center">
+          <table width="557" border="0" align="center" >
             <tr class="backgroundRouge">
               <td class="colorWhite size4 style" colspan="3">
                 <b> LES METHODES POUR ACCEDER A </b>

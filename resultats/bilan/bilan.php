@@ -13,10 +13,9 @@
       
         <?php
         $logoEquipe = substr($logoEquipe, -5); {
-         print("<img src=\"/images/blasons200_200/$logoEquipe.gif\" >");
+         print("<img class=\"width200 height200\" src=\"/images/blasons200_200/$logoEquipe.gif\" alt=\"blason du club\">");
        }
-      ?>
-      
+      ?>      
     </td>
   </tr>
   <tr>
@@ -116,8 +115,8 @@
   </tr>
 </table>
 <br>
-<hr />
-<hr />
+<hr>
+<hr>
 
 <h1>Saison
   <?php echo $debutSaison . " - " . $finSaison; ?>
@@ -163,10 +162,10 @@
   <?php echo $division; ?>
 <div>
   </p>
-  <br />
+  <br>
   <h4>Classement général</h4>
   <!-- Classement général de la poule -->
-<div align="center" >
+<div class="center" >
   <?php
   classementDetaille($champ, $bdd);
   ?>
@@ -179,20 +178,20 @@
   //echo "prochainement";
   //require 'graphiqueTest2.php';
   //require 'graphiqueTest3.php';
-  echo "<br />";
-  echo "<br />";
-  echo "<br />"; ?>
+  echo "<br>";
+  echo "<br>";
+  echo "<br>"; ?>
 
-  <h3> Suivi des résultats des rencontres </h3>
+  <h4> Suivi des résultats des rencontres </h4>
   <?php
   require '../../connect/connexion6.php';
  evolutionResultatsSmart($equipe, $comite, $champ, $bdd);
   ?>
-  <br /><br />
-  <h3> Journée(s) reportée(s)</h3>
-  <br />
+  <br><br>
+  <h4> Journée(s) reportée(s)</h4>
+  <br>
   <?php  journeesReportees($comite, $champ, $bdd); ?>
-  <br /><br />
+  <br><br>
 
   <p class=titreNoir2>Calendrier et r&eacute;sultats de<br>
     <?php echo $nom; ?>
@@ -209,10 +208,10 @@
   -->
   <table width="400" border="0" height="250" align="center">
     <tr>
-      <td class="stats">R&eacute;sultats &agrave; domicile</td>
-      <td class="stats">R&eacute;sultats &agrave; l'exterieur </td>
+      <td class="stats">Résultats à domicile</td>
+      <td class="stats">Résultats à l'exterieur </td>
     </tr>
-    <tr bgcolor="#FFFFFF">
+    <tr class="colorWhite">
       <td class="statsBlanc">Nbre de match :
         <?php echo $matchDomicile ?>
       </td>
@@ -233,8 +232,8 @@
   <br>
   <table width="73%" border="0"  align="center">
     <tr>
-      <td class="moyPP" colspan="2"> Points marqu&eacute;s par match </td>
-      <td class="moyPC" colspan="2"> Points encaiss&eacute;s par match </td>
+      <td class="moyPP" colspan="2"> Points marqués par match </td>
+      <td class="moyPC" colspan="2"> Points encaisses par match </td>
     </tr>
     <tr>
       <td class="moyPP" colspan="2">
@@ -297,7 +296,7 @@
     </tr>
   </table>
   <br>
-  <hr />
+  <hr>
   <br>
   <table width="72%" border="0" align="center">
     <tr>
@@ -312,7 +311,7 @@
       </td>
     </tr>
     <tr>
-      <td class="QLiens">Meilleure d&eacute;fense de la poule : </td>
+      <td class="QLiens">Meilleure défense de la poule : </td>
       <td class="QLiens">
         <?php echo $nomMeilleureDefense; ?>
       </td>
@@ -336,7 +335,7 @@
 
   <?php //calendrier($champ, false, $bdd); ?>
 
-  <hr />
+  <hr>
 
   <p class="titreRouge1">Quelques liens concernant <br>
     <?php echo $nom; ?>
@@ -352,7 +351,7 @@
       Télécharger le calendrier du club
     </a>
   </p></br>
-  <hr />
+  <hr>
   <h1> Palmarès </h1>
   <br>
 

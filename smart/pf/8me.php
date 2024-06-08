@@ -1,11 +1,11 @@
-<table width="90%" border="1" align="center">
+<table class="borderDouble width90PC marginAuto">
   <tr> 
-    <td class="titre">8me de finale<br />
-    <span><div class="pf_lieux"><?php echo $D8ME; ?></div></span></td>
+    <td class="titre">8me de finale<br>
+    <span class="pf_lieux"><?php echo $D8ME; ?></span></td>
   </tr>
 </table>
-  <br />
-<table width="90%" border="0" align="center">
+  <br> 
+<table class="borderNone width90PC  marginAuto">
   <tr> 
     <td colspan="2"></td>
   </tr>
@@ -42,7 +42,7 @@
     <td class="coin5GA"><?php echo $A8008;?></td>
   </tr>
   <tr> 
-    <td colspan="3" height="25"></td>
+    <td colspan="2" class="height25"></td>
   </tr>
   <tr> 
     <td class="equipe4"><?php echo $clubA8009;?></td>
@@ -77,6 +77,6 @@
     <td class="coin5GA"><?php echo $A8016;?></td>
   </tr>
   <tr> 
-    <td colspan="3" height="25"></td>
+    <td colspan="2" class="height25"></td>
   </tr>
 </table>

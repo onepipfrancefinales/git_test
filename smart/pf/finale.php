@@ -1,12 +1,11 @@
-<table width="90%" border="1" align="center">
+<table  class="borderDouble width90PC marginAuto">
   <tr>
-    <td class="titre">Finale<br />
-   <span> <div class= "pf_lieux"><?php echo $D1ME; ?></div></span></td>
- </td>
+    <td class="titre">Finale<br>
+   <span class= "pf_lieux"><?php echo $D1ME; ?></span> </td>
   </tr>
 </table>
-<br />
-<table width="90%" border="0" align="center">
+<br>
+<table class="borderNone width90PC marginAuto">
   <tr> 
     <td colspan="2"></td>
     
@@ -21,19 +20,22 @@
   </tr>
 </table>
 <br>
-<table width="90%" border="1" align="center">
+<table   class="borderWidth1 width90PC marginAuto">
   <tr> 
-    <td height="32" class="champion">Champion de France <?php echo $annee ;?></td>
+    <td class="champion">Champion de France <?php echo $annee ;?></td>
   </tr>
 </table>
-<center>	
+<p>
 <?php
 
 	if (is_numeric($A1001)and is_numeric($A1002))
 	{
-	$idEquipeCourt = substr($idEquipe,2,7);echo "<br />";
-	echo "<img src=\"../../images/blasons200_200/$idEquipeCourt.gif\" height=\"100\" width=\"100\">";
-	}
-	?>
+	$idEquipeCourt = substr($idEquipe,2,7);echo "<br>";
+  ?>
+ 
+<img class="height100 width100 marginAuto" src="../../images/blasons200_200/<?php echo $idEquipeCourt; ?>.gif" alt="blason du champion">
+
+<?php	
+}
+	?></p>
 	<p class="equipeChamp"><?php echo $champion;?></p>
-</center>

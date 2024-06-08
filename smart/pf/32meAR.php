@@ -12,18 +12,19 @@ date2019($division, $annee, $bdd);
 ?>
 
 
-<table width="90%" border="1" align="center">
+<table class="width90PC marginAuto borderWidth1">
   <tr> 
-    <td class="titre">32me de finale A/R <br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D32ME; ?></strong></i></b></font></div></td>
+    <td class="titre">32me de finale A/R <br>
+    <span class="pf_lieux"><?php echo $D32ME; ?></span></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class="borderNone width90PC marginAuto">
   <tr> 
     <td colspan="3"></td>
     
   </tr>
   <tr> 
-    <td>&nbsp;</td>
+    <td></td>
     <td class="pts">Pts</td>
     <td class="Ga">GA</td>
   </tr>
@@ -109,9 +110,9 @@ date2019($division, $annee, $bdd);
   </tr>
 </table>
 
-<p align="center"><?php	require "../../pub/pub20.php";?></p>
+<p class="marginAuto"><?php	require "../../pub/pub20.php";?></p>
 
-<table width="90%" border="0" align="center">
+<table class="borderNone width90PC marginAuto">
   <tr> 
     <td class="coin4"><?php echo $clubA3217;?></td>
     <td class="quartsPts"><?php echo $A3217Pts;?></td>
@@ -194,9 +195,9 @@ date2019($division, $annee, $bdd);
   </tr>
 </table>
 
-<p align="center"><?php	require "../../pub/pub20.php";?></p>
+<p class="marginAuto"><?php	require "../../pub/pub20.php";?></p>
 
-<table width="90%" border="0" align="center">
+<table class="borderNone width90PC marginAuto">
   <tr> 
     <td class="coin4"><?php echo $clubA3233;?></td>
     <td class="quartsPts"><?php echo $A3233Pts;?></td>
@@ -279,9 +280,9 @@ date2019($division, $annee, $bdd);
   </tr>
 </table>
 
-<p align="center"><?php	require "../../pub/pub20.php";?></p>
+<p class="marginAuto "><?php	require "../../pub/pub20.php";?></p>
 
-<table width="90%" border="0" align="center">
+<table class="borderNone width90PC marginAuto">
   <tr> 
     <td class="coin4"><?php echo $clubA3249;?></td>
     <td class="quartsPts"><?php echo $A3249Pts;?></td>
@@ -364,6 +365,6 @@ date2019($division, $annee, $bdd);
     <td class="coin5pts"><?php echo $A3264;?></td>
   </tr>
   <tr> 
-    <td colspan="3" height="25"></td>
+    <td colspan="3" class="height25"></td>
   </tr>
 </table>

@@ -1,10 +1,6 @@
-
-
-
 <?php 
-
 require 'quartsAR.php'; ?>
-<br />
+<br>
 <?php require 'demiAR.php'; ?>
-<br />
+<br>
 <?php require 'finale.php'; ?>

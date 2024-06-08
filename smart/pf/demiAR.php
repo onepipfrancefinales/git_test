@@ -1,16 +1,16 @@
-<table width="90%" border="1" align="center">
+<table width="90%" class="borderDouble width90PC marginAuto">
   <tr> 
-    <td class="titre">Demi finale A/R<br />
+    <td class="titre">Demi finale A/R<br>
     <div class="pf_lieux"><?php echo $D2ME; ?></div>
   </td>
   </tr>
 </table>
-<br/>
-<table width="90%" border="0" align="center">
+<br>
+<table class="width90PC borderNone marginAuto">
   <tr> 
     <td width="78%"><?php //echo $D2ME;?> </td>
-    <td width="11%" height="18">&nbsp;</td>
-    <td width="11%" height="18">&nbsp;</td>
+    <td width="11%" height="18"></td>
+    <td width="11%" height="18"></td>
   </tr>
   <tr> 
     <td> </td>
@@ -28,9 +28,9 @@
     <td class="coin4"><?php echo $A2002;?></td>
   </tr>
   <tr> 
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr> 
     <td class="coin4"><?php echo $clubA2003;?></td>
@@ -43,10 +43,10 @@
     <td class="coin4"><?php echo $A2004;?></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table width="90%" border="0" class="marginAuto">
   <tr> 
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 <br>

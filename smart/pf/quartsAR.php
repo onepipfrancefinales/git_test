@@ -2,17 +2,17 @@
  
 <table >
   <tr> 
-    <td class="titre"> Quarts de finale A/R <br />
+    <td class="titre"> Quarts de finale A/R <br>
 	<div class="pf_lieux"><?php echo $D4ME; ?></div>
   </td>
   </tr>
 </table>
 <br />
-<table width="90%" border="0" align="center">
+<table class="width90PC marginAuto" border="0" >
   <tr> 
     <td width="78%"><?php //echo $D4ME;?></td>
-    <td width="11%">&nbsp;</td>
-    <td width="11%">&nbsp;</td>
+    <td width="11%"></td>
+    <td width="11%"></td>
   </tr>
   <tr> 
     <td></td>
@@ -60,4 +60,4 @@
     <td class="coin5"><?php echo $A4008;?></td>
   </tr>
 </table>
-<br/>
+<br>

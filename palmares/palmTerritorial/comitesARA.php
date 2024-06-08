@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="fr">
-<table width="792" border="0">
+<table class=" width1250 borderNone colorWhite">
   <tr> 
-    <td align="center"><a href="tableauPalmTerr.php?paramIdComite=10"><font color="FFFFFF">Comit&eacute; des <br>Alpes</Font></a></td>
-    <td width="56"align="center"><a href="tableauPalmTerr.php?paramIdComite=10"><img src="../../images/comites/(AP).jpg" width="50" height="50"></a></td>
-    <td align="center"><a href="tableauPalmTerr.php?paramIdComite=13"><font color="FFFFFF">Comit&eacute;<br>Auvergne</Font></a></td>
-    <td width="92" align="center"><a href="tableauPalmTerr.php?paramIdComite=13"><img src="../../images/comites/(AU).jpg" width="50" height="50"></a></td>
-    <td align="center"><a href="tableauPalmTerr.php?paramIdComite=22"><font color="FFFFFF">Comit&eacute;<br>Dr&ocirc;me Ard&egrave;che</Font></a></td>
-    <td width="85" align="center"><a href="tableauPalmTerr.php?paramIdComite=22"><img src="../../images/comites/(DA).jpg" width="50" height="50"></a></td>
-    <td align="center"><a href="tableauPalmTerr.php?paramIdComite=28"><font color="FFFFFF">Comit&eacute; du <br>Lyonnais</Font></a></td>
-    <td  align="center"><a href="tableauPalmTerr.php?paramIdComite=28"><img src="../../images/comites/(LY).jpg" width="50" height="50"></a></td>
+    <td><a class="decorationNone center"  href="tableauPalmTerr.php?paramIdComite=10">Comité des <br>Alpes</a></td>
+    <td class="width100"><a href="tableauPalmTerr.php?paramIdComite=10"><img class="width50 height50 center" src="../../images/comites/(AP).jpg" alt="Logo des Alpes"></a></td>
+    
+    <td><a class="decorationNone center" href="tableauPalmTerr.php?paramIdComite=13">Comité<br>Auvergne</a></td>
+    <td class="width100"><a href="tableauPalmTerr.php?paramIdComite=13"><img class="width50 height50 center" src="../../images/comites/(AU).jpg" alt="Logo de l'Auvergne"></a></td>
+    
+    <td><a class="decorationNone center" href="tableauPalmTerr.php?paramIdComite=22">Comité<br>Drôme Ardèche</a></td>
+    <td class="width100"><a href="tableauPalmTerr.php?paramIdComite=22"><img class="width50 height50 center" src="../../images/comites/(DA).jpg" alt="Logo de Drôme Ardèche"></a></td>
+    
+    <td><a class="decorationNone center" href="tableauPalmTerr.php?paramIdComite=28">Comité du <br>Lyonnais</a></td>
+    <td class="width100"><a href="tableauPalmTerr.php?paramIdComite=28"><img class="width50 height50 center" src="../../images/comites/(LY).jpg " alt="Logo du Lyonnais"></a></td>
   </tr>
-  <tr bgcolor="#FFFFFF" > 
-    <td colspan="8" ><hr/></td>
+  <tr class="backgroundWhite" > 
+    <td colspan="8" ><hr></td>
   </tr>
 </table>
-</html>
+
 

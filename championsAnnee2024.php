@@ -1,4 +1,4 @@
-<table class="marginAuto border">
+<table class="marginAuto border borderSpacing " >
 	<tr class="size6 style">
 		<td colspan="3"><b>Champions de France 2024<br></b></td>
 	</tr>

@@ -1,11 +1,11 @@
- <table width="90%" border="1" align="center">
+ <table class="borderDouble width90PC marginAuto">
     <tr> 
-      <td class="titre"> 16me de finale<br />
-      <span><div class="pf_lieux"><?php echo $D16ME; ?></div></span></td>
+      <td class="titre"> 16me de finale<br> 
+      <span class="pf_lieux"><?php echo $D16ME; ?></span></td>
     </tr>
   </table>
-  <br />
-  <table width="90%" border="0" align="center">
+  <br> 
+  <table class="borderNone width90PC marginAuto">
  <tr> 
     <td colspan="2"></td>
   </tr>
@@ -42,7 +42,7 @@
     <td class="coin5GA"><?php echo $A1608;?></td>
   </tr>
  <tr> 
-    <td colspan="3" height="25"></td>
+    <td colspan="2" class="height25"></td>
   </tr>
   <tr> 
     <td class="equipe4"><?php echo $clubA1609;?></td>
@@ -78,9 +78,9 @@
   </tr>
 </table>
 
-<p align="center"><?php	include ("../../pub/pub20.php");?></p>
+<p class="marginAuto"><?php	include ("../../pub/pub20.php");?></p>
 
-<table width="90%" border="0" align="center">
+<table   class="borderNone width90PC marginAuto">
   <tr> 
     <td class="equipe4"><?php echo $clubA1617;?></td>
     <td class="coin4GA"><?php echo $A1617;?></td>
@@ -114,7 +114,7 @@
     <td class="coin5GA"><?php echo $A1624;?></td>
   </tr>
 <tr> 
-    <td colspan="3" height="25"></td>
+    <td colspan="2" class="height25"></td>
   </tr>
   <tr> 
     <td class="equipe4"><?php echo $clubA1625;?></td>
@@ -149,4 +149,4 @@
     <td class="coin5GA"><?php echo $A1632;?></td>
   </tr>
 </table>
-<br />
+<br> 

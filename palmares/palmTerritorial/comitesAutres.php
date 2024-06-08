@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</head>
-
-<body bgcolor="#FFFFFF" text="#000000">
-<table width="792" border="0">
+<table  class=" width1250 borderNone colorWhite">
   <tr> 
     <td width="65" align="center"><a href="tableauPalmTerr.php?paramIdComite=<?php echo $idComite; ?>"></a></td>
     <td width="65"> 
@@ -20,7 +12,7 @@
       <?php 
 	if ($sigleLigue == "BFC")
 		{
-		$nomComite = "Bourgogne Franche Comt�";
+		$nomComite = "Bourgogne Franche Comte";
 		$idComite=15;
 		$sigleComite = "(BG)";
 		}
@@ -91,9 +83,8 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td colspan="8"> 
-      <HR/>
+      <hr>
     </td>
   </tr>
 </table>
-</body>
-</html>
+

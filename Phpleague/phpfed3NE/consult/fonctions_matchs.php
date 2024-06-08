@@ -375,7 +375,7 @@ function classementDetaille($champ, $bdd)
   $type = "GENERAL";
   $legende = "";
 
-  //bar�mes du championnat
+  //barèmes du championnat
   $res = $bdd->query("SELECT accession, barrage, relegation 
 				   FROM phpfed3NE_parametres 
 				   WHERE ID_CHAMP='$champ'");
@@ -392,25 +392,25 @@ function classementDetaille($champ, $bdd)
 						 WHERE id_champ='$champ'");
 
   $nb_equipes = $res->fetch();
-  $legende = "Classement g&eacute;n&eacute;ral";
+  $legende = "Classement général";
 
   echo "<table class=\"tablephpfed3NE2\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphpfed3NE3\"><th colspan=\"14\">" . $legende . "</th></tr>\n";
   echo "<tr class=\"trphpfed3NE3\">
 
-	<th align=\"center\">" . CLMNT_POSITION . "</th>
-	<th align=\"left\">" . CLMNT_EQUIPE . "</th>
-	<th align=\"left\">" . CLMNT_POINTS . "</th>
-	<th align=\"left\">" . CLMNT_JOUES . "</th>
-	<th align=\"left\">" . CLMNT_VICTOIRES . "</th>
-	<th align=\"left\">" . CLMNT_NULS . "</th>
-	<th align=\"left\">" . CLMNT_DEFAITES . "</th>
-	<th align=\"left\">" . CLMNT_BUTSPOUR . "</th>
-	<th align=\"left\">" . CLMNT_BUTSCONTRE . "</th>
-	<th align=\"left\">" . CLMNT_DIFF . "</th>
-	<th align=\"left\">" . CLMNT_PEN . "</th>
-	<th align=\"left\">" . PTS_ADMIN . "</th>
-	<th align=\"left\">" . JOURPERE . "</th>
-	<th align=\"left\"></th></tr>\n";
+	<th class=\"center\">" . CLMNT_POSITION . "</th>
+	<th class=\"alignGauche\">" . CLMNT_EQUIPE . "</th>
+	<th class=\"alignGauche\">" . CLMNT_POINTS . "</th>
+	<th class=\"alignGauche\">" . CLMNT_JOUES . "</th>
+	<th class=\"alignGauche\">" . CLMNT_VICTOIRES . "</th>
+	<th class=\"alignGauche\">" . CLMNT_NULS . "</th>
+	<th class=\"alignGauche\">" . CLMNT_DEFAITES . "</th>
+	<th class=\"alignGauche\">" . CLMNT_BUTSPOUR . "</th>
+	<th class=\"alignGauche\">" . CLMNT_BUTSCONTRE . "</th>
+	<th class=\"alignGauche\">" . CLMNT_DIFF . "</th>
+	<th class=\"alignGauche\">" . CLMNT_PEN . "</th>
+	<th class=\"alignGauche\">" . PTS_ADMIN . "</th>
+	<th class=\"alignGauche\">" . JOURPERE . "</th>
+	<th class=\"alignGauche\"></th>\n";
 
   //  if (isset ($legende)) $legende =$legende;else $legende= "";
   // if ($debut=="1" and $fin==$nb_journees)
@@ -450,12 +450,12 @@ function classementDetaille($champ, $bdd)
     }
 
     //colonne 1
-    echo "<td><div align=\"center\"><font color=\"#000000\"> $pl</font> </div></td>";
+    echo "<td><div class=\"center colorBlack\"> $pl </div></td>";
     $pl++;
     $x = 0;
-    //colonne x de 0 � 11 --  Equipe Points .....Bonus Admin
+    //colonne x de 0 à 11 --  Equipe Points .....Bonus Admin
     while ($x < 12) {
-      echo "<td><div align=\"left\">";
+      echo "<td><div class=\"alignGauche\">";
       if ($x == 0) {
         // echo "<a href=/resultats/bilan/page_bilan.php?comite=$comite&amp;champ=$champ target=\"_top\">$row[$x]</a>";
         echo "$row[$x]";
@@ -465,11 +465,11 @@ function classementDetaille($champ, $bdd)
       echo "</div></td>";
       $x++;
     }
-    echo "</div></tr>\n";
+    echo "</tr>\n";
   }
   echo "</table>";
   // echo "Admin correspond aux points  (p�r�quations,etc...)";
-  echo "<br />";
+  echo "<br>";
 }
 
 function oppositionsDetaillees($champ, $id_equipe, $smart, $bdd)

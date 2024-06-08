@@ -1,15 +1,17 @@
 <?php traitementScores (4001, 4008);?>
-<table width="90%" border="1"align="center">
+<table class="borderDouble width90PC marginAuto" >
   <tr> 
-    <td class="titre">Quarts de finale <br />
-    <span><div class="pf_lieux"><?php echo $D4ME; ?></div></span>
-      </tr>
+    <td class="titre">Quarts de finale <br>
+    <span class="pf_lieux"><?php echo $D4ME; ?></span>
+    </td>
+  </tr>
 </table>
-<br />
-<table width="90%" border="0" align="center">
+<br>
+<table class="width90PC marginAuto borderNone" >
   <tr> 
     <td colspan="2"></td>
   </tr>
+  <tr> 
     <td class="equipe4"><?php echo $clubA4001;?></td>
     <td class="coin4GA"><?php echo $A4001;?></td>
   </tr>
@@ -42,7 +44,7 @@
     <td class="coin5GA"><?php echo $A4008;?></td>
   </tr>
   <tr> 
-    <td colspan="3" height="25"></td>
+    <td colspan="2" class="height25"></td>
   </tr>
 </table>
-<p align="center"><?php include ("../../pub/pub20.php");?></p>
+<p class=" marginAuto"><?php include ("../../pub/pub20.php");?></p>

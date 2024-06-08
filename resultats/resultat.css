@@ -52,10 +52,11 @@ Font-weight: bold;font-size: 16px;}
 .bleuClair a{color: #000000;text-decoration: none}
 
 /*Division*/
-h5{ width: 600px; height: 25px;Font-weight:bold;/*background: #FF9933;*/color: #000000;
+h5{
+
+	width: 600px; height: 25px;Font-weight:bold;color: #000000;
 font-size: 25px;border: 2px solid #000000; text-align : center;
 background-image: linear-gradient(45deg, #ffcc33, #99cc66, #99cc66, #f3e481, #99cc66, #ffcc33);
-/*background-image: linear-gradient(45deg, #090620, #350804, #350804, #f3e481, #350804, #090620);*/
 border-radius: 20px;}
 
 /*Plus d'infos & Calendrier*/
