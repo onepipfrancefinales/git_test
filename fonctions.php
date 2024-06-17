@@ -65,23 +65,18 @@ $saisonEnCours=$row[0];
 
 function infosclub($chaine, $bdd)
 {
-	echo $chaine;
 global $nomLong, $comite, $id, $sigleComite, $nomChampion, $numLigue, $code,$idFfr;	
 	
 global $chaine2;
 if (is_numeric($chaine))
 {
-	echo "<br />";
-	echo "type numerique";echo "<br />";
 	if (strlen($chaine)==7)
 		{
 		$chaine2 = substr($chaine,-5);
-		//echo "type numerique7";echo "<br />";
 		}
 	else
 		{
 		$chaine2 = $chaine;
-		//echo "type numerique5";echo "<br />";	
 		}
 			
 		$requete =$bdd->query( "SELECT sigle, siglecomite, id, nom_1 , ligue, comite, idffr
@@ -90,21 +85,7 @@ if (is_numeric($chaine))
 }
 else
 {
-	echo "<br />";
-	echo "type non numerique";echo "<br />";
 	$chaine2=$chaine	;
-	//echo "type lettre";echo "<br />";
-	
-	
-	
-	
-	
-	echo $chaine2;echo "<br />";
-
-
-	
-	
-	
 	$requete =$bdd->query( "SELECT sigle, siglecomite, id, nom_1 , ligue, comite, idffr
 							FROM bdclubs  
 							WHERE nom_1 ='$chaine2'
@@ -131,10 +112,6 @@ if (isset ($numLigue)) $numLigue=$numLigue; else $numLigue=0;
 						$code=substr($id,-5);
 						
 						}	
-						
-		echo $code	;echo "<br />";	
-		
-
 }
 
 //*******************************************************	
@@ -177,7 +154,7 @@ $reponse = $bdd->query("SELECT id, nom, sigle, sigleLigue, nbre_club
 }
 
 //*******************************************************	
-//********  Donn�es contenues dans la table infoclub  ******
+//********  Données contenues dans la table infoclub  ******
 //*******************************************************
 
 function bdInfosClub($code, $bdd)

@@ -218,11 +218,13 @@ function accessMatch ($division, $annee, $bdd) {
 
 	GLOBAL $equipeDom, $equipeExt, $scoreDom, $scoreExt;
 	
-	$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3201, bdligue.sigle
-	FROM bdclubs, bdpffrance, bdligue
+	$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance_2.A1001, bdligue.sigle
+	FROM bdclubs, bdpffrance,  bdpffrance_2, bdligue
 	WHERE 	bdclubs.id= bdpffrance.E01
 	AND bdligue.id = bdclubs.ligue
-	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'");
+	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'
+	AND bdpffrance_2.id = '$division' AND bdpffrance_2.saison = '$annee'
+	");
 
 	while ($row = $reponse->fetch() )
 		{ 
@@ -235,11 +237,13 @@ function accessMatch ($division, $annee, $bdd) {
 
 		$equipeDom = $equipe.' ('.$ligue.')';		
 
-		$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3202, bdligue.sigle
-	FROM bdclubs, bdpffrance, bdligue
+		$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance_2.A1002, bdligue.sigle
+	FROM bdclubs,bdpffrance, bdpffrance_2, bdligue
 	WHERE 	bdclubs.id= bdpffrance.E02
 	AND bdligue.id = bdclubs.ligue
-	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'");
+	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'
+	AND bdpffrance_2.id = '$division' AND bdpffrance_2.saison = '$annee'
+	");
 
 	while ($row = $reponse->fetch() )
 		{ 

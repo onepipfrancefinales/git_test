@@ -38,17 +38,42 @@ $reponse = $bdd->query("SELECT division
 	$nomDivision = $donnees['division']; 		
 	}
 ?>
-<br />
-<h1> <font color="#000000"> 
-  <?php echo $titre; ?>
-  <br><br>
-  </font> <font color="#000000">
-  <?php echo $nomDivision; ?>
-  </font><br/>
-</h1>
-<br />
-<?php
+<br>
 
+<h1 class="colorBlack">  
+  <?php echo $titre; ?>
+  <br>
+  
+  <?php echo $nomDivision; ?>
+  <br>
+</h1>
+
+<br>
+<?php
+// seniors I
+if ($division<200) {
+	$reponse = $bdd->query("SELECT saison, champion, comite1 
+							FROM $base
+							WHERE championnat='de France' 
+							AND rang=$division 
+							AND rang2=$division  AND saison > 2022 
+							AND titre='champion' 
+							ORDER BY saison DESC"); 
+						 
+								while ($donnees =  $reponse->fetch()  )
+									{ 
+									
+									echo "<h4>";
+									echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1'];
+									echo "<h4>";
+						
+									
+									 }
+									}
+
+
+// seniors II
+elseif ($division<280) {
 $reponse = $bdd->query("SELECT saison, champion, comite1 
 						FROM $base
 						WHERE championnat='de France' 
@@ -66,27 +91,56 @@ $reponse = $bdd->query("SELECT saison, champion, comite1
 					
 								
 								 }
-
-if ($division<380)
-{/*
+								}
+// féminines
+elseif ($division<310)
+{
 					$reponse = $bdd->query("SELECT saison, champion, comite1 
 											FROM $base
-											WHERE championnat='de France' and rang=$division and rang2=$division  and titre='champion' 
+											WHERE championnat='de France'
+											AND rang=$division 
+											AND rang2=$division 
+											AND saison > 2022  
+											AND titre='champion' 
 											ORDER BY saison DESC"); 
 					 
 							while ($donnees =  $reponse->fetch()  )
 								{ 
 								?>
 								<h4>
-									<?php echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; ?>
+									<?php echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 	?>
 								</h4>
 					
 								<?php
 								 }
 								 
-*/			 
+		 
+}											
+// jeunes
+elseif ($division<380)
+{
+					$reponse = $bdd->query("SELECT saison, champion, comite1 
+											FROM $base
+											WHERE championnat='de France'
+											AND rang=$division 
+											AND rang2=$division 
+											AND saison > 2022  
+											AND titre='champion' 
+											ORDER BY saison DESC"); 
+					 
+							while ($donnees =  $reponse->fetch()  )
+								{ 
+								?>
+								<h4>
+									<?php echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 	?>
+								</h4>
+					
+								<?php
+								 }
+								 
+		 
 }			 
-			 
+	// challenges		 
 else
 {
 $reponse = $bdd->query("	SELECT saison, champion, comite1  

@@ -185,8 +185,9 @@ $comiteNom = "Occitanie"; ?>
     </tr>
 
   </table>
-  <?php include("piedDePage.php"); ?>
+ 
   <footer>
+  <?php include("../footer.php"); ?>
   </footer>
 </body>
 

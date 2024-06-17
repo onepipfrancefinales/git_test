@@ -1,6 +1,6 @@
 <!--
 
-<br />
+<br>
 <div align="center">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 -->
@@ -18,5 +18,5 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-<br />
+<br>
 -->

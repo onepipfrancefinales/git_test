@@ -13,7 +13,7 @@
 
 	<tr class="size4 backgroundGray " >
 		<td>Pro D2 :</td>
-		<td></td>
+		<td><b>RC Vannes (BRE)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=120&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4 " >
@@ -28,7 +28,7 @@
 	</tr>
 	<tr class="size4">
 		<td>Fédérale 1 :</td>
-		<td></td>
+		<td><b>Servette de Genève (ARA)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=140&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4 backgroundGray">
@@ -53,7 +53,7 @@
 	</tr>
 	<tr class="size4 backgroundGray">
 		<td>Régionale 3 :</td>
-		<td><b></b></td>
+		<td><b>Cruzy Saint Chinian (OCC)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=190&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
     
@@ -67,12 +67,12 @@
 	</tr>
 	<tr class="size4 backgroundGray">
 		<td>Espoirs Nationaux : </td>
-		<td><b></b></td>
+		<td><b>Graulhet (OCC)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=2350&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4">
 		<td>Espoirs Fédéraux : </td>
-		<td><b></b></td>
+		<td><b>Peyrehorade (NAQ)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=240&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4 backgroundGray">
@@ -87,7 +87,7 @@
 	</tr>
     <tr class="size4 backgroundGray">
 		<td>Réserve :</td>
-		<td><b></b></td>
+		<td><b>Saint Flour (ARA)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=270&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
     <tr  class="size5 backgroundBlue colorWhite">
@@ -95,17 +95,17 @@
 	</tr>
     <tr class="size4">
 		<td>Elite 1 :</td>
-		<td><b></b></td>
+		<td><b>Stade Bordelais (NAQ)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=280&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4 backgroundGray">
 		<td>Elite 2 :</td>
-		<td><b></b></td>
+		<td><b>Stade Rochelais (NAQ)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=285&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4">
 		<td>Fédérale 1 :</td>
-		<td><b></b></td>
+		<td><b>Aviron Bayonnais (NAQ)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=290&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 
@@ -122,7 +122,7 @@
 	</tr>
 	<tr class="size4">
 		<td>U18 : </td>
-		<td><b></b></td>
+		<td><b>CS Bourgoin Jallieu (ARA)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=330&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr  class="size5">
 	<td colspan="3"><b>Cadets (-16ans)</b></td>
@@ -134,12 +134,12 @@
 	</tr>
     <tr class="size4">
 		<td>Gaudermen :</td>
-		<td><b></b></td>
+		<td><b>USA Perpignan (OCC)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=365&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4 backgroundGray">
 		<td>U16 : </td>
-		<td><b></b></td>
+		<td><b>Aix en Provence (PCA)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=370&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 

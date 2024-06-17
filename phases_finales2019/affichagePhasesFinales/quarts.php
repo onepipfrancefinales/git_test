@@ -178,7 +178,7 @@
     <td></td>
     <td class="coin4"><?php echo $clubA2004; ?></td>
     <td class="coin4pts"><?php echo $A2004; ?></td>
-    <td rowspan="7" class="marginAuto"> <img class="width150 height50" src="../../images/blasons200_200/<?php echo $idEquipeCourt; ?>.gif" alt="accolade"></td>
+    <td rowspan="7" class="marginAuto"> <img class="width150 height150" src="../../images/blasons200_200/<?php echo $idEquipeCourt; ?>.gif" alt="accolade"></td>
     <td></td>
     <td></td>
     <td></td>

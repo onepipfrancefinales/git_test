@@ -9,6 +9,6 @@
     <td class="ligneBlanche"><?php include("../bas.php"); ?></td>
   </tr> 
 </table>
-</html>
+
 
  

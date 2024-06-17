@@ -7,7 +7,7 @@
        <?php 
     // message info de haut de page
     
-     require 'infoMessages.php';  
+   // require 'infoMessages.php';  
     // mise en évidence des clubs qualifiés
       require 'fichierQualifies.php';
        ?>
@@ -18,23 +18,7 @@
         </a> 
       <?php } ?>
     </td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan ="17"></td>
   </tr>
   <tr> 
     <td class="coin5"> 32me de finale </td>

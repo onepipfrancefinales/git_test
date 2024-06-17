@@ -3,6 +3,7 @@ session_start ();
 //$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 7me journ&eacute;e du 01 Novembre";
 //require '../connect/connexion3.php';
 include("../saison.php");
+include("../fichierConfig.php");
 require '../connect/connexion6.php';
 include("fonctions.php");
 require "constantes.php";
@@ -12,7 +13,7 @@ $comite="phpfed3NE";
 $CMT="fed3NE"; 
 $cmt="fed3NE";
 $division = 160; 
-$comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
+$comiteNom="Fédérale 3 - Excellence B";
 ?> 
 
 <!DOCTYPE html>
@@ -66,32 +67,32 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
     <td colspan="3" > <img src="../images/stade3.jpg" width="1250" height="150" atl="" role="none"></td>
   </tr>  
   <tr >
-    <td colspan="3" ><?php include("../01ligne.php"); ?></td>
+    <td colspan="3" >
+      <?php include("../01ligne.php"); ?></td>
   </tr> 
-  <tr class="ligneBlanche"  > 
-   <td  colspan="3" ><?php include("../pub/pub_displayHorizontal.php");?> </td>
-  </tr>
+  
   <tr> 
   <!-- Colonne de gauche --> 
-  <td class="colonneGauche"  ><?php  include("../01gauche.php");?> </td>
+  <td class="colonneGauche"  >
+    <?php  include("../01gauche.php");?> </td>
    
    
    <!-- Colonne centrale --> 
-  <td class =ligneBlanche650  width="650" > 
-        <div align="center"><br />
+  <td  class="colonneCentrale center" > 
+        <br />
           <h1> CHAMPIONNAT DE FRANCE </h1>
-	 <h2 class="titre">F&eacute;d&eacute;rale 3 - Excellence B  </h2>
+	 <h2 class="titre">Fédérale 3 - Excellence B  </h2>
      <br>
 	 <?php 
 	require 'liensDivers.php';
 	require 'sommaires.php';
    ?>
-  <script language="JavaScript">
+  <script >
    function ouvrirPopup(page,nom,options) {
   window.open(page,nom,options);
 }
 </script>
-  <br/>
+  <br>
    
   <table class = "infos">
  <tr> 
@@ -109,78 +110,25 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
  </table> 
 
   <?php       
-    echo "<hr />"." <hr />";
+    echo "<hr>"." <hr>";
     //require("comPerso.php");
        
   
-    //echo "<fieldset>";
-    echo " <h5 id=\"1\">".$P1."  </h5>"; 
-    $champ = 991161; $champ2 = 991261;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd);  
-   // echo "</fieldset>";
-   
-	require '../pub/pub_displayH_550.php' ;
-	//  include("comPerso2.php"); 
-   
- 
-  echo " <h5 id=\"2\">".$P2."  </h5>"; 
-    $champ = 991162; $champ2 = 991262;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd);  
-  
-	//  include("comPerso2.php"); 
-		   
-  echo " <h5 id=\"3\">".$P3."  </h5>";  
-    $champ = 991163; $champ2 = 991263;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd);  
-    perequation($comite, $champ, $bdd); 
-	
-    echo " <h5 id=\"4\">".$P4."  </h5>"; 
-    $champ = 991164; $champ2 = 991264;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd);  
-    perequation($comite, $champ, $bdd);
-	
-	require '../pub/pub_displayH_550.php' ;	  
-   
-  echo " <h5 id=\"5\">".$P5."  </h5>"; 
-    $champ = 991165; $champ2 = 991265;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd);  
-    perequation($comite, $champ, $bdd);
-	
-    echo " <h5 id=\"6\">".$P6."  </h5>"; 
-    $champ = 991166; $champ2 = 991266;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd);  
-	perequation($comite, $champ, $bdd);	
-	
-	//require '../pub/pub_displayHorizontal.php';
-         
-  echo " <h5 id=\"7\">".$P7."  </h5>"; 
-    $champ = 991167; $champ2 = 991267;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd);  
-    perequation($comite, $champ, $bdd);
-	
-    echo " <h5 id=\"8\">".$P8."  </h5>"; 
-    $champ = 991168; $champ2 = 991268;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd);  
-	perequation($comite, $champ, $bdd);
-	
-  echo " <h5 id=\"9\">".$P9."  </h5>"; 
-    $champ = 991169; $champ2 = 991269;
-	affichage($champ, $champ2, $comite, $bdd);
-    journeesReportees($comite, $champ, $bdd); 
-    perequation($comite, $champ, $bdd);
-	
-	
-	
-	require '../pub/pub_displayH_550.php' ;	 
-	//include("comPerso2.php");
+    foreach ($tableauFed3_1 as $champ) {
+      echo "  <br>" . "<br>";
+      $numPoule = substr($champ, -1);
+      echo "<a name=\"$numPoule\"></a>";
+      echo "<h5>" . "Poule " . $numPoule;
+      echo "<br>"; 
+      echo "</h5>";
+      echo  "<br>" . "<br>" . "<br>";
+      $champReserve = 100;
+      $champ2 = $champ + $champReserve;
+      affichage($champ, $champ2, $comite, $bdd);
+      journeesReportees($comite, $champ, $bdd);
+      perequation($comite, $champ, $bdd);
+      echo "<br>" . "<br>";
+    };
           
     echo "<hr />"." <hr />";?>
    
@@ -196,27 +144,25 @@ $comiteNom="F&eacute;d&eacute;rale 3 - Excellence B";
   </tr> 
 </table> 
 
-  <br/>
-   
-   
-   
+  <br>
    
   <?php 		
 	require 'sommaires.php';
 	require 'liensDivers.php';
-	require '../pub/pub_displayCarre.php' ;
+	echo "<br>" . " <br>";
 	  ?>          
         
       </td>
 	  <!-- Colonne de droite --> 
-      <td class = "colonneGauche" ><p><?php  include("../00droite.php"); ?>   </p></td>
+      <td class = "colonneGauche" >
+        <?php  include("../00droite.php"); ?>   </td>
     </tr>
     
       
    </table>
-  <?php include("piedDePage.php"); ?>
+ 
   <footer>
-  
+  <?php include("../footer.php"); ?>
   </footer>
  </body>
 </html>

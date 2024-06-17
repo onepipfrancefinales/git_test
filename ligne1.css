@@ -5,6 +5,9 @@ td{text-align:center;}
 .marginAuto {
     margin : auto;
 }
+.marginTop {
+    margin-top : 0;
+}
 
 
 
@@ -75,6 +78,7 @@ img{border:0;}
 .backgroundBlack{background-color: #000000;}
 .backgroundOrange{background-color: #FFCC00;}
 .backgroundEAECEB{background-color: #EAECEB;}
+.background3B487F{background-color: #3B487F;}
 
 
 
@@ -97,6 +101,7 @@ img{border:0;}
 
 .borderColorBlue {border-color: #006699;}
 .borderColorBlack {border-color: #000000;}
+.borderColor3B487F{border-color: #3B487F;}
 
 .borderWidth1 {border: 1px solid;}
 .borderWidth3 {border-width: 3px;}
@@ -104,8 +109,10 @@ img{border:0;}
 .colorRed { color: #ff0000; }
 .colorBlack { color: #000000; }
 .colorWhite { color: #FFFFFF; }
+.colorYellow { color: yellow }
 .colorOrange { color: #FFCC00; }
 .colorEAECEB { color: #EAECEB; }
+
 
 
 .size7 {font-size: 33px;}
@@ -113,13 +120,14 @@ img{border:0;}
 .size5 {font-size: 25px;}
 .size4 {font-size: 20px;}
 .size3 {font-size: 15px;}
-
+.size2 {font-size: 12px;}
 /* width px en pourcentage */
 
 .width100PC {width:100%;}
 .width98PC {width:98%;}
 .width95PC {width:95%;}
 .width90PC {width:90%;}
+.width80PC {width:80%;}
 .width75PC {width:75%;}
 .width5PC {width:5%;}
 
@@ -129,7 +137,9 @@ img{border:0;}
 .width1150 {width:1150px}
 .width1100 {width:1100px;}
 .width800 {width:800px;}
+.width750 {width:750px;}
 .width550 {width:550px;}
+.width500 {width:500px;}
 .width250 {width:250px;}
 .width225 {width:225px;}
 .width200 {width:200px;}
@@ -146,11 +156,15 @@ img{border:0;}
 .height25 {height:25px;}
 .height20 {height:20px;}
 
-.verticalAlign {vertical-align: text-top;}
+.verticalAlign {vertical-align: top;}
 
-.borderSpacing {
-    border-spacing: 0px"
-}
+.borderSpacing { border-spacing: 0;}
+.borderSpacing1 { border-spacing: 1px;}
+
+.padding1 {padding: 1px;}
+
+
+
 
 a.decorationNone{
     text-decoration:none;

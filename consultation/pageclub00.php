@@ -4,24 +4,26 @@ require("../fonctions.php");
 $chaine = $_GET['champion'];
 
 
-echo "chaine : ".$chaine;echo "<br/>";
+//echo "chaine : ".$chaine; echo "<br/>";
 //Evaluation de la variable chaine si numérique
 if (is_int($chaine)) {
 
-    echo " numerique"; echo "<br/>";
+ //   echo " numerique"; echo "<br/>";
   $equipe = substr($chaine, 2, 5);
   $numLigue = substr($chaine, 0, 2);
   $id = substr($chaine, 2, 2);
+ // echo $id;
 }
 
 
 //Evaluation de la variable chaine si textuelle
 else {
-  echo " non numerique";echo "<br/>";
+ // echo " non numerique";echo "<br/>";
   require '../connect/connexion1.php';
- // infosclub($chaine, $bdd);
+  infosclub($chaine, $bdd);
   $equipe = $numLigue . $code;
   $id = substr($id, 2, 2);
+ // echo $id;
 }
 
 //echo $numLigue;;echo "<br/>";
@@ -37,6 +39,9 @@ nomLigue($numLigue, $bdd);
 affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);
+
+
+//echo "nomComite : ".$nomComite;
 ?>
 
 
@@ -45,7 +50,7 @@ saisons($code, $annee, $bdd);
 <html lang="fr">
 
 <head>
-  <meta name="description" content=" <?php echo $titre; ?> : Pr�sentation du club (Bureau; Si�ge; Stade; Contacts); les grandes du dates du club; les palmar�s; les r�sultats du clubs au cours des derni�res saisons et un album photos d�di� au club..">
+  <meta name="description" content=" <?php echo $titre; ?> : Présentation du club (Bureau; Si�ge; Stade; Contacts); les grandes du dates du club; les palmar�s; les r�sultats du clubs au cours des derni�res saisons et un album photos d�di� au club..">
   <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">

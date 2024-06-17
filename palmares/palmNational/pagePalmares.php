@@ -8,6 +8,7 @@ else $base = '-';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta name="description" content="Palmarès des champions de france par divisions et pas années">
 	<meta name="keywords" content="Presentation de la competititon et de tous les champions de France 1re Serie. Palmares complet de la 1re Serie.">
@@ -50,7 +51,9 @@ else $base = '-';
 
 				if ($division == 110)
 					require("top14.php");
-				elseif ($division == 330) {
+				else {
+
+					require("palmaresLigues2023.php");
 					require("palmaresLigues.php");
 					echo "<hr />";
 					echo "<i>" . "Saison 2018-2019 : Réformes Territoriales";
@@ -59,11 +62,12 @@ else $base = '-';
 							identiques aux nouvelles régions administratives françaises." . "</i>";
 					echo "<br>" . "<hr>";
 					require("palmares.php");
-				} else {
+					/*
 					if ($division == '170' or $division == '180' or $division == '190' or $division == '2070') {
-						require("palmaresLigues2023.php");
+						//require("palmaresLigues2023.php");
 						//require("palmares2023.php");
 					}
+
 					require("palmaresLigues.php");
 					echo "<hr>";
 					echo "<i>" . "Saison 2018-2019 : Réformes Territoriales";
@@ -72,6 +76,7 @@ else $base = '-';
 						identiques aux nouvelles régions administratives françaises.			" . "</i>";
 					echo "<br>" . "<hr>";
 					require("palmares.php");
+					*/
 				}
 				?>
 			</td>
@@ -79,20 +84,11 @@ else $base = '-';
 				<?php include("../../00droite.php"); ?>
 			</td>
 		</tr>
-				
+		<tr>
+			<?php include("../../footer.php");  ?>
+		</tr>
 	</table>
-			<table class="marginAuto backgroundBlanc" >
-				<tr>
-					<td><?php include("../../comitebas.php"); ?></td>
-				</tr>
-				<tr>
-					<td> <?php  //include("../../pub/pub1.php");
-							?></td>
-				</tr>
-				<tr>
-					<td><?php include("../../bas.php"); ?></td>
-				</tr>
-			</table>
-
+	<footer> </footer>
 </body>
+
 </html>

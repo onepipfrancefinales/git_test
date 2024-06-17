@@ -36,6 +36,9 @@ $reponse = $bdd->query("SELECT division
 	$nomDivision = $donnees['division']; 		
 	}
 ?>
+<?php 
+if ($division == '170' or $division == '180' or $division == '190' or $division == '270') {
+	?>
 <br>
 <h1 class="colorBlack">  
   <?php echo $titre; ?>
@@ -45,6 +48,9 @@ $reponse = $bdd->query("SELECT division
   <br>
 </h1>
 <br>
+<?php
+}
+?>
 <?php
 
 $reponse = $bdd->query("SELECT saison, champion, comite1 

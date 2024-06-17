@@ -25,4 +25,3 @@ if ($annee == '2023' and $division == '170') {
 
 ?>
 </font></p></td>
-</td>

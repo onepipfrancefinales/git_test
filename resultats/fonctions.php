@@ -1,4 +1,5 @@
 <?php
+
 /*************************************************************************
  **************************************************************************
 
@@ -103,30 +104,37 @@ function maj($champ, $smart, $comite, $bdd)
 		echo "<br>";
 	}
 }
-
+//fonction
 function affichage($champ, $champ2, $comite, $bdd)
 {
 	if ($champ2 > 0) {
-		echo "<table width=\"750\">";
+		echo "<table class=\"width750\">";
+		echo "<tr> ";
+		echo "<td colspan=\"2\"> ";
 		AffichageLogos($champ, $comite, false, $bdd);
-		echo "<tr > ";
-		echo "<td> ";
-		echo "<h3 align=\"center\">Equipe I </h3>";
+		echo "</td> ";
+		echo "</tr > ";
+
+
+
+		echo "<tr> ";
+		echo "<td class=\"verticalAlign\"> ";
+		echo "<h3 class=\"center \">Equipe I </h3>";
 		aff_journee($champ, $bdd);
 		maj($champ, false, $comite, $bdd);
 		clmnt($champ, false, $bdd);
-		aff_journeeSupp($champ,  $bdd);
+	//	aff_journeeSupp($champ,  $bdd);
 		echo "</td>";
 
-		echo "<td>";
-		echo "<h3 align=\"center\">Equipe II</h3>";
+		echo "<td class=\"verticalAlign\">";
+		echo "<h3 class=\"center\">Equipe II</h3>";
 		aff_journee($champ2, $bdd);
 		if (substr($champ, 3, 2) > 17)
 			$champ = $champ + 9000;
 		else $champ = $champ + 100;
 		maj($champ, false, $comite, $bdd);
 		clmnt($champ2, false, $bdd);
-		aff_journeeSupp($champ2,  $bdd);
+	//	aff_journeeSupp($champ2,  $bdd);
 		echo "</td>";
 		echo "</tr>";
 		echo "</table>";
@@ -1039,7 +1047,7 @@ function messages($champ)
 function evolutionResultats($equipe, $comite, $champ, $bdd)
 {
 
-	
+
 	$php_matchs = $comite . "_matchs";
 	$php_journees = $comite . "_journees";
 
@@ -1131,7 +1139,7 @@ function evolutionResultats($equipe, $comite, $champ, $bdd)
 
 function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 {
-	
+
 	$php_matchs = $comite . "_matchs";
 	$php_journees = $comite . "_journees";
 
@@ -1394,16 +1402,18 @@ function journeesReportees($comite, $champ, $bdd)
 		if ($nbreMatchsReportes[0] > 0) {
 
 		?>
-		<table align="center" width="90%" cellspacing="1" cellpadding="1" border color="#3B487F"">
-		<tr bgcolor = " #000000">
-				<td style="background-color: #3B487F">
-					<font color="#FFFF00" size="3pt" face="arial , Helvetica, sans-serif">
-						<b> <?php echo "<center>" . "Journée(s) reportée(s) au " . $dateDuJourFR . "</center>";	?>
-						</b>
-					</font>
-				</td>
+			<table class="marginAuto width90PC tablephpab2  ">
+				<tr>
+					<td>
+						<table class="marginAuto width100PC borderSpacing">
+							<tr>
+								<td class="colorYellow background3B487F">
+									<b> <?php echo "Journée(s) reportée(s) au " . $dateDuJourFR;	?></b>
+								</td>
+							</tr>
+						</table>
+					</td>
 				</tr>
-				<tr bgcolor="#CCCCCC">
 			</table>
 			<?php
 		}
@@ -1483,46 +1493,46 @@ function journeesReportees($comite, $champ, $bdd)
 				}
 				if ($cpte < 7) {
 			?>
-					<table align="center" width="90%" cellspacing="1" cellpadding="1" bordercolor="#3B487F">
-						<tr bgcolor="#CCCCCC">
-							<th>
-								<font color="#000000" size="2pt" face="arial , Helvetica, sans-serif">
-									<?php
-									$j = $i + 1;
-									$datePrevue[$j];
-									echo "<center>";
-									echo "journée n° " . $j . " prévue le " . substr($datePrevue[$i], 8, 2) . "-" . substr($datePrevue[$j], 5, 2) . "-" . substr($datePrevue[$j], 0, 4);
-									echo "</center>";
-									?>
-								</font>
+					<table class="marginAuto width90PC background3B487F"   >
+						<tr class="backgroundGray">
+							<th class="size2 colorBlack center">
+
+								<?php
+								$j = $i + 1;
+								$datePrevue[$j];
+								
+								echo "journée n° " . $j . " prévue le " . substr($datePrevue[$i], 8, 2) . "-" . substr($datePrevue[$j], 5, 2) . "-" . substr($datePrevue[$j], 0, 4);
+								
+								?>
+
 							</th>
 						</tr>
-						<tr bgcolor="#FFFFFF">
-							<td>
-								<font color="#000000" size="2pt" text-align="center" face="arial , Helvetica, sans-serif">
-									<?php
-									for ($k = 0; $k < 7; $k++) {
-										if (isset(${"tabEquipeDom" . $id_journee}[$k])) ${"tabEquipeDom" . $id_journee}[$k] = ${"tabEquipeDom" . $id_journee}[$k];
-										else ${"tabEquipeDom" . $id_journee}[$k] = NULL;
-										if (isset(${"tabEquipeExt" . $id_journee}[$k])) ${"tabEquipeExt" . $id_journee}[$k] = ${"tabEquipeExt" . $id_journee}[$k];
-										else ${"tabEquipeExt" . $id_journee}[$k] = NULL;
-										if (isset(${"tabButsDom" . $id_journee}[$k])) ${"tabButsDom" . $id_journee}[$k] = ${"tabButsDom" . $id_journee}[$k];
-										else ${"tabButsDom" . $id_journee}[$k] = NULL;
-										if (isset(${"tabButsExt" . $id_journee}[$k])) ${"tabButsExt" . $id_journee}[$k] = ${"tabButsExt" . $id_journee}[$k];
-										else ${"tabButsExt" . $id_journee}[$k] = NULL;
-										if (isset(${"tabDateReelle" . $id_journee}[$k])) ${"tabDateReelle" . $id_journee}[$k] = ${"tabDateReelle" . $id_journee}[$k];
-										else ${"tabDateReelle" . $id_journee}[$k] = '';
+						<tr class="backgroundWhite">
+							<td class="size2 colorBlack center">
 
-										if (${"tabEquipeDom" . $id_journee}[$k] != NULL) {
-											$DateTime = DateTime::createFromFormat('Y-m-d', ${"tabDateReelle" . $id_journee}[$k]);
-											$dateFR = $DateTime->format('d-M-Y');
-											echo "<center>";
-											echo ${"tabEquipeDom" . $id_journee}[$k] . " - " . ${"tabEquipeExt" . $id_journee}[$k] . " reportée au " . $dateFR;
-											echo "</center>";
-										}
+								<?php
+								for ($k = 0; $k < 7; $k++) {
+									if (isset(${"tabEquipeDom" . $id_journee}[$k])) ${"tabEquipeDom" . $id_journee}[$k] = ${"tabEquipeDom" . $id_journee}[$k];
+									else ${"tabEquipeDom" . $id_journee}[$k] = NULL;
+									if (isset(${"tabEquipeExt" . $id_journee}[$k])) ${"tabEquipeExt" . $id_journee}[$k] = ${"tabEquipeExt" . $id_journee}[$k];
+									else ${"tabEquipeExt" . $id_journee}[$k] = NULL;
+									if (isset(${"tabButsDom" . $id_journee}[$k])) ${"tabButsDom" . $id_journee}[$k] = ${"tabButsDom" . $id_journee}[$k];
+									else ${"tabButsDom" . $id_journee}[$k] = NULL;
+									if (isset(${"tabButsExt" . $id_journee}[$k])) ${"tabButsExt" . $id_journee}[$k] = ${"tabButsExt" . $id_journee}[$k];
+									else ${"tabButsExt" . $id_journee}[$k] = NULL;
+									if (isset(${"tabDateReelle" . $id_journee}[$k])) ${"tabDateReelle" . $id_journee}[$k] = ${"tabDateReelle" . $id_journee}[$k];
+									else ${"tabDateReelle" . $id_journee}[$k] = '';
+
+									if (${"tabEquipeDom" . $id_journee}[$k] != NULL) {
+										$DateTime = DateTime::createFromFormat('Y-m-d', ${"tabDateReelle" . $id_journee}[$k]);
+										$dateFR = $DateTime->format('d-M-Y');
+
+										echo ${"tabEquipeDom" . $id_journee}[$k] . " - " . ${"tabEquipeExt" . $id_journee}[$k] . " reportée au " . $dateFR;
+									echo "<br>";
 									}
-									?>
-								</font>
+									
+								}
+								?>
 							</td>
 						</tr>
 					</table>
@@ -1602,18 +1612,13 @@ function perequation($comite, $champ, $bdd)
 		$perequation = $requete->fetch();
 
 		if ($perequation[0] > 0) {
-
 			?>
-			<table align="center" width="90%" cellspacing="1" cellpadding="1" border color="#3B487F"">
-		<tr bgcolor = " #000000">
-				<td style="background-color: #FF0000">
-					<font color="#FFFF00" size="3pt" face="arial , Helvetica, sans-serif">
-						<b> <?php echo "<center>" . "Rencontre(s) soumise(s) à Péréquation(s)" . "</center>";	?>
-						</b>
-					</font>
-				</td>
+			<table class="marginAuto width90PC ">
+				<tr>
+					<td class="backgroundRed size3 colorYellow center">
+						<b> Rencontre(s) soumise(s) à Péréquation(s) </b>
+					</td>
 				</tr>
-				<tr bgcolor="#CCCCCC">
 			</table>
 			<?php
 		}
@@ -1692,46 +1697,43 @@ function perequation($comite, $champ, $bdd)
 				}
 				if ($cpte < 7) {
 			?>
-					<table align="center" width="90%" cellspacing="1" cellpadding="1" bordercolor="#3B487F">
-						<tr bgcolor="#CCCCCC">
-							<th>
-								<font color="#000000" size="2pt" face="arial , Helvetica, sans-serif">
-									<?php
-									$j = $i + 1;
-									$datePrevue[$j];
-									echo "<center>";
-									echo "journée n° " . $j . " prévue le " . substr($datePrevue[$i], 8, 2) . "-" . substr($datePrevue[$j], 5, 2) . "-" . substr($datePrevue[$j], 0, 4);
-									echo "</center>";
-									?>
-								</font>
+					<table class="marginAuto width90PC">
+						<tr class="backgroundGray">
+							<th class="center size3">
+
+								<?php
+								$j = $i + 1;
+								$datePrevue[$j];
+
+								echo "journée n° " . $j . " prévue le " . substr($datePrevue[$i], 8, 2) . "-" . substr($datePrevue[$j], 5, 2) . "-" . substr($datePrevue[$j], 0, 4);
+
+								?>
+
 							</th>
 						</tr>
-						<tr bgcolor="#FFFFFF">
-							<td>
-								<font color="#000000" size="2pt" text-align="center" face="arial , Helvetica, sans-serif">
-									<?php
-									for ($k = 0; $k < 7; $k++) {
-										if (isset(${"tabEquipeDom" . $id_journee}[$k])) ${"tabEquipeDom" . $id_journee}[$k] = ${"tabEquipeDom" . $id_journee}[$k];
-										else ${"tabEquipeDom" . $id_journee}[$k] = NULL;
-										if (isset(${"tabEquipeExt" . $id_journee}[$k])) ${"tabEquipeExt" . $id_journee}[$k] = ${"tabEquipeExt" . $id_journee}[$k];
-										else ${"tabEquipeExt" . $id_journee}[$k] = NULL;
-										if (isset(${"tabButsDom" . $id_journee}[$k])) ${"tabButsDom" . $id_journee}[$k] = ${"tabButsDom" . $id_journee}[$k];
-										else ${"tabButsDom" . $id_journee}[$k] = NULL;
-										if (isset(${"tabButsExt" . $id_journee}[$k])) ${"tabButsExt" . $id_journee}[$k] = ${"tabButsExt" . $id_journee}[$k];
-										else ${"tabButsExt" . $id_journee}[$k] = NULL;
-										if (isset(${"tabDateReelle" . $id_journee}[$k])) ${"tabDateReelle" . $id_journee}[$k] = ${"tabDateReelle" . $id_journee}[$k];
-										else ${"tabDateReelle" . $id_journee}[$k] = '';
+						<tr class="backgroundWhite">
+							<td class="center size3">
 
-										if (${"tabEquipeDom" . $id_journee}[$k] != NULL) {
-											$DateTime = DateTime::createFromFormat('Y-m-d', ${"tabDateReelle" . $id_journee}[$k]);
-											$dateFR = $DateTime->format('d-M-Y');
-											echo "<center>";
-											echo ${"tabEquipeDom" . $id_journee}[$k] . " - " . ${"tabEquipeExt" . $id_journee}[$k];
-											echo "</center>";
-										}
+								<?php
+								for ($k = 0; $k < 7; $k++) {
+									if (isset(${"tabEquipeDom" . $id_journee}[$k])) ${"tabEquipeDom" . $id_journee}[$k] = ${"tabEquipeDom" . $id_journee}[$k];
+									else ${"tabEquipeDom" . $id_journee}[$k] = NULL;
+									if (isset(${"tabEquipeExt" . $id_journee}[$k])) ${"tabEquipeExt" . $id_journee}[$k] = ${"tabEquipeExt" . $id_journee}[$k];
+									else ${"tabEquipeExt" . $id_journee}[$k] = NULL;
+									if (isset(${"tabButsDom" . $id_journee}[$k])) ${"tabButsDom" . $id_journee}[$k] = ${"tabButsDom" . $id_journee}[$k];
+									else ${"tabButsDom" . $id_journee}[$k] = NULL;
+									if (isset(${"tabButsExt" . $id_journee}[$k])) ${"tabButsExt" . $id_journee}[$k] = ${"tabButsExt" . $id_journee}[$k];
+									else ${"tabButsExt" . $id_journee}[$k] = NULL;
+									if (isset(${"tabDateReelle" . $id_journee}[$k])) ${"tabDateReelle" . $id_journee}[$k] = ${"tabDateReelle" . $id_journee}[$k];
+									else ${"tabDateReelle" . $id_journee}[$k] = '';
+
+									if (${"tabEquipeDom" . $id_journee}[$k] != NULL) {
+										$DateTime = DateTime::createFromFormat('Y-m-d', ${"tabDateReelle" . $id_journee}[$k]);
+										$dateFR = $DateTime->format('d-M-Y');
+										echo ${"tabEquipeDom" . $id_journee}[$k] . " - " . ${"tabEquipeExt" . $id_journee}[$k];
 									}
-									?>
-								</font>
+								}
+								?>
 							</td>
 						</tr>
 					</table>
@@ -1777,11 +1779,11 @@ function AffichageLogos($champ, $comite, $smart, $bdd)
 		//choix de la connexion (local pou en ligne); 
 		require("../saison.php");
 
-	//	if ($localHost  == true)
+		//	if ($localHost  == true)
 
-	//		$bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db1;charset=utf8', 'root', '');
-	//	else
-			$bdd =  new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db1;charset=utf8', 'onepip-france', 'lavelan09');
+		//		$bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db1;charset=utf8', 'root', '');
+		//	else
+		$bdd =  new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db1;charset=utf8', 'onepip-france', 'lavelan09');
 
 		$requete = $bdd->query("
 				SELECT sigle
@@ -1809,77 +1811,16 @@ function AffichageLogos($champ, $comite, $smart, $bdd)
 			}
 			?>
 
-			<a href="<?php echo $lien . $tabNbreEquipe[$j]; ?>" style="text-decoration:none">
-				<img src="../images/blasons200_200/<?php echo $tabNbreEquipe[$j]; ?>.gif" height="<?php echo $dim; ?>" width="<?php echo $dim; ?>" alt="texte" title="<?php echo ${"sigleEquipe" . ($j)}; ?>" />
+			<a class="decorationNone" href="<?php echo $lien . $tabNbreEquipe[$j]; ?>">
+				<img src="../images/blasons200_200/<?php echo $tabNbreEquipe[$j]; ?>.gif" height="<?php echo $dim; ?>" width="<?php echo $dim; ?>" alt="texte" title="<?php echo ${"sigleEquipe".($j)}; ?>">
 			</a>
+
 <?php
 		}
 	}
-	echo "</br>";
 }
 
-//affichage des logos smart 
-/*
-function AffichageLogosSmart($id, $comite)
-{
- $tabNbreEquipe = array();
- $nombreEquipe = array();
- $php_equipes = $comite."_equipes";
- if ($comite=="phpfem" or $comite=="phppro" or $comite =="phpf1" or $comite =="phpfed2" or $comite=="phpfed3NE" or $comite=="phpfed3GS")
-  require ("../connect1/connection3.php");
- else
-  require ("../connect1/connection2.php");
 
- $requete = $bdd->query("SELECT COUNT(id_champ) as nb
-						 FROM $php_equipes
-						 WHERE id_champ =$id");
-
-			$nombre = $requete->fetch();
-							
- $nombreEquipe=$nombre['nb'];
-
- $requete = $bdd->query("SELECT id_club
-						FROM $php_equipes
-						WHERE id_champ =$id");
-
-			while ($row = $requete->fetch())
-							{
-							$tabNbreEquipe[] = $row[0];
-							}
-							
-	//Recheche des noms des clubs						
-	for ($i=0; $i<$nombreEquipe; $i++)
-	{
-	 $tabSigleEquipe = array();
-	 require ("../connect1/connection1.php");
-	 $requete = $bdd->query("SELECT sigle
-							 FROM bdclubs
-							 WHERE id =$tabNbreEquipe[$i]");
-				while ($row = $requete->fetch())
-							{
-							${"sigleEquipe".($i)} = $row[0];
-							}													
-	 //echo ${"sigleEquipe".($i)};
-	
-	}			
-	
- for ($j=0; $j<$nombreEquipe; $j++)
-	{
-	 $tabNbreEquipe[$j]=substr($tabNbreEquipe[$j],-5);	
-	 ?>
-	 
-	 <a href="/smart/ficheClubs/pageFicheClubs.php?champion=<?php echo $tabNbreEquipe[$j];?>">
-		<img src="../images/blasons200_200/<?php echo $tabNbreEquipe[$j];?>.gif" 
-			 height="38" 
-			 width="38" 
-			 alt="texte"  
-			 title="<?php echo ${"sigleEquipe".($j)};?>"/>	
-	 </a>
-	 
-	 <?php	
-	}
-}
-*/
 ?>
 
 <?php

@@ -1,23 +1,11 @@
-<script language="JavaScript">
-<!--
-function MM_reloadPage(init) {  //reloads the window if Nav4 resized
-  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
-    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
-  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
-}
-MM_reloadPage(true);
-// -->
-</script>
-
-
-<?php $annee = $_POST['saison'];?>          
-<?php $annee=$_GET['variable_1'];?>
-<font color="#000000"><br>
-</font>
-<div id="titre"><font color="#000000"> Finales du Championnat de France<br>
+<?php 
+$annee = $_POST['saison'];        
+$annee=$_GET['variable_1'];?>
+<br><br>
+<p id="titre" class="colorBlack"> Finales du Championnat de France<br>
   <?php echo  $annee;?>
-  </font></div>
-<br /><br />
+  </p>
+<br><br>
 <p class="annee">Equipes S&eacuteniors</p> 
 <p class="equipe">
 	
@@ -36,13 +24,13 @@ MM_reloadPage(true);
 									</strong>  
 									<?php echo $donnees['champion'] ." " .  $donnees['comite1'].  " - ". $donnees['vice_champion']." " . $donnees['comite2']."  " .$donnees['score1']. " - " . $donnees['score2']; ?>
 									  
-									  <br/>  
+									  <br>  
 									<?php
 								 }
 								 
 	?>
 </p>
-<br /><br />
+<br><br>
 <p class="annee">Equipes R&eacuteserves</p> 
 <p class="equipe">
 	<?php 
@@ -58,13 +46,13 @@ MM_reloadPage(true);
 									</strong>  
 									<?php echo $donnees['champion'] ." " .  $donnees['comite1'].  " - ". $donnees['vice_champion']." " . $donnees['comite2']."  " .$donnees['score1']. " - " . $donnees['score2']; ?>
 									  
-									  <br/>  
+									  <br>  
 									<?php 
 								 }
 								 
  	?>
 </p>
-<br /><br />
+<br><br>
 <p class="annee"> Equipes F&eacuteminines </p>
 <p class="equipe">
 	<?php
@@ -80,13 +68,13 @@ MM_reloadPage(true);
 									</strong>  
 									<?php echo $donnees['champion'] ." " .  $donnees['comite1'].  " - ". $donnees['vice_champion']." " . $donnees['comite2']."  " .$donnees['score1']. " - " . $donnees['score2']; ?>
 									  
-									  <br/>  
+									  <br>  
 									<?php 
 								 }
 							
 						?>
 </p>						
-<br /><br />						
+<br><br>						
 <p class="annee"> Reichels & Juniors </p>
 <p class="equipe">
 	<?php
@@ -102,13 +90,13 @@ MM_reloadPage(true);
 											</strong>  
 											<?php echo $donnees['champion'] ." " .  $donnees['comite1'].  " - ". $donnees['vice_champion']." " . $donnees['comite2']."  " .$donnees['score1']. " - " . $donnees['score2']; ?>
 											  
-											  <br/>  
+											  <br>  
 											<?php 
 								 		}
 								
 	?>
 </p>
-<br /><br />
+<br><br>
 <p class="annee"> Cadets </p>
 <p class="equipe">
 	<?php
@@ -123,13 +111,13 @@ MM_reloadPage(true);
 											<?php echo $donnees['division']." : "; ?>
 										</strong>  
 									<?php echo $donnees['champion'] ." " .  $donnees['comite1'].  " - ". $donnees['vice_champion']." " . $donnees['comite2']."  " .$donnees['score1']. " - " . $donnees['score2']; ?>	  
-									<br/>  
+									<br>  
 									<?php 
 								}
 							
 							?>
 </p>
-<br /><br />
+<br><br>
 <p class="annee"> Challenges </p>
 <p class="equipe">
 <?php
@@ -144,7 +132,7 @@ $reponse = $bdd->query("SELECT division, champion, comite1, vice_champion, comit
 										<?php echo $donnees['division']." : "; ?>
 									</strong>  
 									<?php echo $donnees['champion'] ." " .  $donnees['comite1'].  " - ". $donnees['vice_champion']." " . $donnees['comite2']."  " .$donnees['score1']. " - " . $donnees['score2']; ?>	  
-									<br/>  
+									<br>  
 									<?php 
 							
 							

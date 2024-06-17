@@ -1,17 +1,17 @@
 <?php 
 if ($division == 140)
 {
-$equipe1 = "F&eacute;d&eacute;rale 1";
+$equipe1 = "Fédérale 1";
 $equipe2 = "Espoir";
 }
 elseif ($division == 150)
 {
-$equipe1 = "F&eacute;d&eacute;rale 2";
-$equipe2 = "F&eacute;d&eacute;rale B";
+$equipe1 = "Fédérale 2";
+$equipe2 = "Fédérale B";
 }
 elseif ($division == 160)
 {
-$equipe1 = "F&eacute;d&eacute;rale 3";
+$equipe1 = "Fédérale 3";
 $equipe2 = "Excellence B";
 }
 ?>

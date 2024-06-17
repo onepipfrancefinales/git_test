@@ -49,8 +49,8 @@ function nb_equipes($id_champ, $idconnect)
 function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equipe_fetiche)
          {
 
-    // cellule d'affichage des derniers résultats
-      // cellule d'affichage des derniers résultats
+    // cellule d'affichage des derniers rï¿½sultats
+// cellule d'affichage des derniers rï¿½sultats
   $color=0;
         $reponse=$idconnect->query("SELECT cldom.nom as cldom, clext.nom as clext, phpab_matchs.buts_dom, phpab_matchs.buts_ext,
                         phpab_journees.date_prevue, cldom.id as cliddom, clext.id as clidext, date_reelle,
@@ -155,9 +155,9 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
                 if (!($annee==substr($row[7],0,4)) or !($mois==substr($row[7],5,2)) or !($jour==substr($row[7],8,2)) or !($minute==substr($row[7],14,2)) or !($heure==substr($row[7],11,2)))
                 {
 
-                $minute = substr($row[7],14,2); // on récupère la minute
-                $heure = substr($row[7],11,2); // on récupère l'heure
-                $jour = substr($row[7],8,2); // on récupère le jour
+                $minute = substr($row[7],14,2); // on rï¿½cupï¿½re la minute
+                $heure = substr($row[7],11,2); // on rï¿½cupï¿½re l'heure
+                $jour = substr($row[7],8,2); // on rï¿½cupï¿½re le jour
                 $mois = substr($row[7],5,2); // puis le mois
                 $annee = substr($row[7],0,4); // et l'annee
 
@@ -325,7 +325,7 @@ $dom = mysql_query($query) or die (mysql_error());
       if (!isset($clmnt[$row[2]]['BUTSDOMCONTRE'])) {$clmnt[$row[2]]['BUTSDOMCONTRE']=$row[4];}
       else{$clmnt[$row[2]]['BUTSDOMCONTRE']+=$row[4];}
      }
-// Resultats à domicile
+// Resultats ï¿½ domicile
 $query="SELECT phpab_clubs.nom FROM phpab_clubs, phpab_equipes, phpab_championnats
 WHERE phpab_equipes.id_champ=phpab_championnats.id
       AND phpab_championnats.id='$champ'
@@ -621,23 +621,23 @@ echo "</table>";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Titre       : Add-on Gestion des clubs (fiches clubs), mini-classement,                     //
-//               statistiques, amélioration de la gestion des buteurs pour phpabeague.          //
+//               statistiques, amï¿½lioration de la gestion des buteurs pour phpabeague.          //
 // Auteur      : Alexis MANGIN                                                                 //
 // Email       : Alexis@univert.org                                                            //
 // Url         : http://www.univert.org                                                        //
-// Démo        : http://phpabeague.univert.org/demo.php                                         //
+// Dï¿½mo        : http://phpabeague.univert.org/demo.php                                         //
 // Description : Edition, gestion, fiches phpab_clubs, statistiques, mini-classement...         //
 // Version     : 0.71 (29/03/2003)                                                             //
 //                                                                                             //
 //                                                                                             //
-// L'Univert   : Retrouvez quotidiennement l'actualité des Verts ainsi que de                  //
-//               nombreuses autres rubriques consacrées à l'AS Saint-Etienne. Mais             //
-//               L'Univert c'est avant tout la présentation d'un club devenu légende.          //
+// L'Univert   : Retrouvez quotidiennement l'actualitï¿½ des Verts ainsi que de                  //
+//               nombreuses autres rubriques consacrï¿½es ï¿½ l'AS Saint-Etienne. Mais             //
+//               L'Univert c'est avant tout la prï¿½sentation d'un club devenu lï¿½gende.          //
 //                                                                                             //
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// Affichage renseignements utilisée dans consult/club.php
+// Affichage renseignements utilisï¿½e dans consult/club.php
 function aff_rens ($id_classe, $id_clubs)
 {
 $query="SELECT phpab_donnee.id, phpab_donnee.nom, id_rens, id_clubs, phpab_rens.id, phpab_rens.nom, phpab_rens.id_classe, phpab_clubs.id, etat, phpab_donnee.url, phpab_rens.url

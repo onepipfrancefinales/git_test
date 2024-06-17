@@ -136,7 +136,6 @@ elseif (substr($type,0,1) == '9' or substr($type,0,1) == '7')
 				 
 				 require "32me.php";
 			 }
-		
 		}
 		
 //********    seizième    *********
@@ -153,11 +152,9 @@ elseif (substr($type,0,1) == '9' or substr($type,0,1) == '7')
 		 else
 		  { require "16me.php"; }
 		}
-
 //********    huitième    *********
 	elseif(substr($type,5,2)== '08' or substr($type,5,2)== '16')
 		{
-		
 		//traitementScores (4001, 4008);
 		if (substr($type,5,4)== 1604)
 		 	require "8meAR.php";
@@ -165,10 +162,9 @@ elseif (substr($type,0,1) == '9' or substr($type,0,1) == '7')
 			require "8meQDAR.php";
 		elseif (substr($type,5,4)== 1608)
 			require "8meQAR.php";	
-		 else
+		else
 			require "8me.php";
-		}
-		
+		}		
 //********   Quarts   *********		
 	elseif(substr($type,7,2)== '04' or substr($type,7,2)== '08')
 		{
@@ -176,8 +172,7 @@ elseif (substr($type,0,1) == '9' or substr($type,0,1) == '7')
 		 	require "0164AR.php";
 		else
 			require "quarts.php";
-		}
-		
+		}	
 //********   demi   *********			
 	elseif(substr($type,9,2)== '02' or substr($type,9,2)== '22' or substr($type,9,2)== '42' or substr($type,9,2)== '04')
 		{
@@ -199,12 +194,9 @@ elseif (substr($type,0,1) == '9' or substr($type,0,1) == '7')
 		{
 		require "plusDeChamp.php";
 		}
-	
 	}
 }
-
 require 'bas.php';
-?>
-	
+?>	
 </body>
 </html>

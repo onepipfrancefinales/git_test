@@ -170,100 +170,7 @@
     <td width="37"></td>
     <td width="118"></td>
   </tr>
-  
- 
-<!--
- <tr> 
 
-	<td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269" class="coin4">Barrage d'accession au Top 14 </td>
-    <td width="41"></td>
-    <td width="85"></td>
-	<?php
-	/*
-	$division = 115;
-	trenteDeuxieme2019 ($division, $annee, $bdd);
-	require '../../connect/connexion1.php';
-	
-	$reponse = $bdd->query("	
-				SELECT bdclubs.id, bdclubs.nom_1, bdclubs.sigleComite, bdclubs.ligue 
-				FROM bdclubs, bdpffrance
-				WHERE bdclubs.id=bdpffrance.E01
-				AND bdpffrance.id= $division AND bdpffrance.saison = $annee"); 
-										
-	 while ($row = $reponse->fetch() )
-		{ 
-		 $tabId[] = $row[0];
-		 $tabNomEquipes2[] = $row[1];
-		 $tabNomComite2[] = $row[2];
-		 $tabNomLigue[] = $row[3];
-		 
-		 
-		}
-		
-		
-	$clubA1001 = $tabNomEquipes2[0].' '.$tabNomLigue[0];
-	
-	$reponse = $bdd->query("	
-				SELECT bdclubs.id, bdclubs.nom_1, bdclubs.sigleComite, bdclubs.ligue 
-				FROM bdclubs, bdpffrance
-				WHERE bdclubs.id=bdpffrance.E02
-				AND bdpffrance.id= $division AND bdpffrance.saison = $annee"); 
-										
-	 while ($row = $reponse->fetch() )
-		{ 
-		
-		 $tabId[] = $row[0];
-		 $tabNomEquipes22[] = $row[1];
-		 $tabNomComite2[] = $row[2];
-		 $tabNomLigue2[] = $row[3];
-		 
-		}
-		
-	$clubA1002 =  $tabNomEquipes22[0].' '.$tabNomLigue2[0];
-*/	
-	?>
-<!--	
-    <td width="21"></td>
-    <td width="245" class="coin4" ><?php //echo $clubA1001; ?></td>
-    <td width="37" class="coin4pts" ><?php //echo $A1001; ?></td>
-    <td width="118"></td>
-  </tr>
-  <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269"></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td width="21"></td>
-    <td width="245" class="coin4" ><?php  //echo $clubA1002; ?></td>
-    <td width="37" class="coin4pts" ><?php //echo $A1002; ?></td>
-    <td width="118"></td>
-  </tr>
-  <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269"></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td width="21"></td>
-    <td width="245"></td>
-    <td width="37"></td>
-    <td width="118"></td>
-  </tr>
-  <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269"></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td width="21"></td>
-    <td width="245"></td>
-    <td width="37"></td>
-    <td width="118"></td>
-  </tr>
-  -->
   <tr> 
     <td colspan="12"  bgcolor="#FFCC66"></td>
   </tr>
@@ -271,4 +178,6 @@
 <?php 
 if ($annee > 2017)
 require 'matchAccession.php';
+
+$division ="120";
 ?>

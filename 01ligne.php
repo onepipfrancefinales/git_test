@@ -1,4 +1,4 @@
-<table  class="width1250">
+<table  class="width1250 marginAuto">
  
    <tr class="ligneNoire"> 
     <td class="hauteurColonne" > </td>

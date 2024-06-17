@@ -51,13 +51,13 @@ $annee = 2022;
       </td>
       <td class="backgroundBlanc">
 
-      <br> <br>
-        <?php  include("championsAnnee2024.php");  ?>
+        <br> <br>
+        <?php include("championsAnnee2024.php");  ?>
 
 
         <br>
-<hr>
-<br>
+        <hr>
+        <br>
         <br>
         <b>
           <div class="colorBlack style size5">Pyramide
@@ -68,16 +68,16 @@ $annee = 2022;
         <img src="/images/pyramide-2022-2023.jpg" alt="pyramide des divisions" width="500" height="511">
 
 
-     <br>
-<hr>
-<br>
+        <br>
+        <hr>
+        <br>
         <br>
         <?php include("informations/majParSMS/infosMajClassement.php"); ?>
         </p>
         <!-- <p align="center"><a href="brennus_histoire/pageAccueil.php">test</a></p>-->
-   
+
         <div align="center">
-          <table width="557" border="0" align="center" >
+          <table width="557" border="0" align="center">
             <tr class="backgroundRouge">
               <td class="colorWhite size4 style" colspan="3">
                 <b> LES METHODES POUR ACCEDER A </b>
@@ -132,7 +132,8 @@ $annee = 2022;
 
 
                   </b></a>
-                  <a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><img src="../images/apple.png" alt="apple" height="183" width="184"></a></td>
+                <a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><img src="../images/apple.png" alt="apple" height="183" width="184"></a>
+              </td>
               <td class="colorTexte">
                 <p>
                   Pour les utilisateurs de smartphones
@@ -420,28 +421,11 @@ $annee = 2022;
         </div>
       </td>
       <td class="colonne">
-
         <?php include("00droite.php"); ?>
-
       </td>
     </tr>
     <tr>
-      <th colspan="3" class="backgroundBlanc">
-
-        <table bordercolor="#006699">
-
-          <tr>
-            <td>
-              <?php include("comitebas.php");    ?>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <?php include("bas.php"); ?>
-            </td>
-          </tr>
-        </table>
-      </th>
+      <?php include("footer.php");  ?>
     </tr>
   </table>
   <footer> </footer>

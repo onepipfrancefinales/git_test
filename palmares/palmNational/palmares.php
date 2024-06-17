@@ -50,7 +50,7 @@ $reponse = $bdd->query("SELECT saison, champion, comite1
 	if ($donnees['saison'] =='2018' and $division =='330') 
 	{ echo "<h1><font color=\"#000000\">"; echo "Jules Balandrade"; echo "<br />";echo "</font></h1>";}
 elseif ($donnees['saison'] =='2018' and $division =='370') 
-	{ echo "<h1><font color=\"#000000\">"; echo "Jean Teuli&egrave;re"; echo "<br />";echo "</font></h1>";}
+	{ echo "<h1><font color=\"#000000\">"; echo "Jean Teulière"; echo "<br />";echo "</font></h1>";}
 	echo "<h4>";
 	echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 
 	echo "</h4>";
@@ -69,7 +69,7 @@ if ($division<380)
 	while ($donnees =  $reponse->fetch()  )
 	{ 						
 	echo "<h4>";
-	echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; ?>
+	echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 
 	echo "</h4>";
 	}								 
 */			 
