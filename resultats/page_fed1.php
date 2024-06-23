@@ -29,15 +29,15 @@ $comiteNom = "F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
   gtag('config', 'G-G7CSSC3EPH');
 </script>
 -->
-  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/page_fed1.php/" />
+  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/page_fed1.php/">
   <meta charset="utf-8" />
-  <link type="text/css" rel="stylesheet" href="../Phpleague/phppro/league.css" />
+  <link type="text/css" rel="stylesheet" href="../Phpleague/phppro/league.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
 
   <title>Championnat de France <?php echo $comiteNom; ?></title>
-  <meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+  <meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
@@ -94,7 +94,7 @@ $comiteNom = "F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
           <tr>
             <td>
               <h4 class="bulleReglement">
-                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalit&eacutes de qualification de la saison 2023-2024</a>
+                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalités de qualification de la saison 2023-2024</a>
               </h4>
               <h4 class="bulleReparGeo colorBlack">
                 <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed1.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">
@@ -134,7 +134,7 @@ $comiteNom = "F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
           <tr>
             <td>
               <h4 class="bulleReglement">
-                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalit&eacutes de qualification de la saison 2023-2024</a>
+                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalités de qualification de la saison 2023-2024</a>
               </h4>
               <h4 class="bulleReparGeo colorBlack">
                 <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed1.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">
@@ -166,5 +166,4 @@ $comiteNom = "F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
     <?php include("../footer.php"); ?>
   </footer>
 </body>
-
 </html>

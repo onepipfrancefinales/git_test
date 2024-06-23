@@ -16,7 +16,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 <p><font size="5"><b>Insertion d'un nouveau club dans les tables</b></font></p>
 <p><font size="4" face="Arial, Helvetica, sans-serif">bdclubs (Identifiants du club)<br>
   infosClub (infos sur le clubs)<br>
-  bdsaisons (historique des saisons pr&eacute;c&eacute;dentes)</font></p>
+  bdsaisons (historique des saisons précé;dentes)</font></p>
   <hr />
 <form name="form1" method="POST" action="retour.php">
   <p></p>
@@ -38,7 +38,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   <p><font size="4" face="Arial, Helvetica, sans-serif">IdFFR (1234M): 
     <input type="text" name="idffr">
     </font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">type d'&eacute;quipe : 
+  <p><font size="4" face="Arial, Helvetica, sans-serif">type d'équipe : 
     <select name="type" size="1">
       <option selected>Type d'&eacutequipe</option>
       <option value="F">Equipe f&eacuteminine</option>
@@ -47,7 +47,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     </font></p>
   <p><font size="4" face="Arial, Helvetica, sans-serif">Comite : 
     <select name="comite" size="1">
-      <option selected>Comit&eacute;</option>
+      <option selected>Comité</option>
       <option value="(AP)">Alpes</option>
       <option value="(AL)">Alsace Lorraine</option>
       <option value="(AB)">Armagnac Bigorre</option>

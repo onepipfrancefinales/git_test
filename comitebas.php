@@ -1,4 +1,3 @@
-
 <table class= " tableauBas2 colorBlack backgroundWhite ">
   <tr > 
     <td  class="bas"> 
@@ -20,11 +19,11 @@
   </tr>
   <tr > 
     <td  class="bas"> 
-      <a href="/video/causeries/pagevideo.php">Vidéos</a>
+      <a href="/dossiers/video/pagevideo.php?choix=ama">Vidéos</a>
     </td>
     <td  class="bas" colspan="2"> <a href="/resultats/page_resultats.php">Résultats 
       et classements régionaux</a> </td>
-    <td  class="bas"> <a href="/resultats/page_f1.php">Espoirs Fédérale 
+    <td  class="bas"> <a href="/resultats/page_fed1.php">Espoirs Fédérale 
       1</a> </td>
     <td class="bas"> 
      <a href="/resultats/page_fed2.php">Fédérale B</a>

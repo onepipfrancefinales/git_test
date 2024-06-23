@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -89,7 +89,7 @@ elseif (substr ($type,3,2) == '16' OR substr ($type,3,2) == '32')
 	
 	}		 
 
-//********** Huitième  de finale   ********************
+//********** HuitiÃ¨me  de finale   ********************
 elseif (substr ($type,5,2) == '08' OR substr ($type,5,2) == '16')
 	{
 		if (isset($clubA8001)) $clubA8001=$clubA8001;else $clubA8001="--";echo $clubA8001;

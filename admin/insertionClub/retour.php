@@ -4,7 +4,7 @@ if (isset ($_POST['id'])) $id = $_POST['id'];
 if (isset ($_POST['idffr'])) $idffr = $_POST['idffr'];
 if (isset ($_POST['nom'])) $nom = $_POST['nom'];
 if (isset ($_POST['nomComplet'])) $nomComplet = $_POST['nomComplet'];
-if (isset ($_POST['saison'])) $saison = $_POST['saison'];
+if (isset ($_POST['saison'])) $saison = $_POST['saison'];else $saison= '0';
 if (isset ($_POST['type'])) $type = $_POST['type'];
 if (isset ($_POST['comite'])) $sigleComite = $_POST['comite'];else $sigleComite= "null";
 if (isset ($_POST['ligue'])) $ligue = $_POST['ligue'];
@@ -37,18 +37,9 @@ require '../../connect/connexion1.php';
 		$nomComite = $row[0];
 		}
 
-$comiteLitteral = "comit&eacute; ".$nomComite;
-
-
-
+$comiteLitteral = "comité; ".$nomComite;
 
 echo "12- comite : ".$comiteLitteral; echo "<br />";
-
-
-
-
-
-
 
 
 // Insertion dans la table bdclubs
@@ -66,49 +57,37 @@ echo "table infosClub"; echo "<br />";echo "<br />";
 
 $idReduit = substr($id,-5);
 echo "1- id :".$idReduit; echo "<br />";
-echo "2- Cr&eacute;ation : ".$saison; echo "<br />";
+echo "2- Création : ".$saison; echo "<br />";
+echo "3- club : ".$nom; echo "<br />";
 
 $vide = "";
 $videInt = 0;
 $bdd->exec("INSERT INTO infosclub
-			VALUES('$idReduit',  '$vide','$ligue','$vide','$vide','$vide','$vide','$vide','$vide','$vide',
-				   '$vide','$vide','$vide','$vide','$vide','$vide','$vide','$vide','$vide','$vide',
-				   '$vide','$vide','$vide','$vide','$vide','$vide','$vide','$saison','$vide','$vide',
-				   '$vide','$vide','$vide','$vide','$vide','$vide'  )");
+			VALUES('$idReduit',  '$nom', '$ligue','$vide','$vide','$vide','$vide','$vide','$vide', 
+			       '$vide',      '$vide', '$vide', '$vide','$vide','$vide','$vide','$vide','$vide',
+			       '$vide',      '$vide', '$vide', '$vide','$vide','$vide','$vide','$vide','$vide',
+				   '$saison','$vide','$vide', '$vide','$vide','$vide','$vide','$vide','$vide'  )");
 
 
 
 echo "<hr />";
 echo "table bdsaisons"; echo "<br />";echo "<br />";
 
-$bdd->exec("INSERT INTO bdsaisons
-			VALUES('$id',  '$vide','$vide','$vide','$ligue','$vide','$vide','$vide','$vide','$vide',
-				   '$vide','$vide','$vide','$vide','$vide','$vide','$vide','$vide','$vide','$vide',
-				   '$vide','$vide','$videInt','$vide','$vide','$vide','$vide','$vide','$vide','$vide',
-				   '$vide','$vide','$vide','$vide','$vide','$vide','$vide','$vide'  )");
+$bdd->exec("INSERT INTO bdsaisons(id, nom_1, code_bdsaison, siglecomite, ligue)
+			VALUES('$idReduit','$nom','$idReduit', ''  , '$ligue')");
 
-echo "1- id :".$id; echo "<br />";
-echo "2- ligue : ".$ligue; echo "<br />";
 
-/**
-echo "<br />";
-//echo $id; echo "<br />";echo $nom; echo "<br />";
-echo $idffr; echo "<br />";
-echo $type; echo "<br />";
-echo $nomComplet; echo "<br />";
-echo $ligue; echo "<br />";
-echo $comite; echo "<br />";
-**/
+echo "1- id :".$idReduit; echo "<br />";
+echo "2- nom_1 : ".$nom; echo "<br />";
+echo "3- code_bdsaison : ".$idReduit; echo "<br />";
+echo "4- sigleComite : ".$sigleComite; echo "<br />";
+echo "5- ligue : ".$ligue; echo "<br />";
+
+
 
 echo "<hr />";
 echo "<hr />";
-echo "insertions effectu&eacute;es";	
-
-
-
-
-
-
+echo "insertions effectuées";	
 
 
 require '../majScores/bas.php';

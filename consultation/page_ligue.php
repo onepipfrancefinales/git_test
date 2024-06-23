@@ -7,12 +7,11 @@ require("../connect/connexion1.php");
 rechercheInfosLigues($idLigue, $bdd);
 ?>
 
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-	<link rel="canonical" href="https://francefinalesrugby.fr/consultation/page_ligue.php/" />
-	<meta charset="utf-8" />
+	<link rel="canonical" href="https://francefinalesrugby.fr/consultation/page_ligue.php" >
 	<meta name="description" content="Tout sur le comité territorial <?php echo $nomComite; ?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comit�); les effectifs; les palmar�s nationaux; les palmar�s territoriaux et l'ensemble des clubs composant le comit� avec un lien pour acc�der aux diff�rents clubs.">
 	<meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 	<meta name="classification" content="Sport,Rugby">
@@ -22,14 +21,14 @@ rechercheInfosLigues($idLigue, $bdd);
 	<meta name="author" content="Equipe Onepip">
 	<meta name="robots" content="All">
 	<link type="text/css" rel="stylesheet" href="../formulaireDG.css">
-	<link type="text/css" rel="stylesheet" href="../ligne1.css" />
-	<link type="text/css" rel="stylesheet" href="lienNoir.css" />
-	<link type="text/css" rel="stylesheet" href="pglogo.css" />
-	<title>Pr&eacute;sentation ligue <?php echo $nomLigue; ?> </title>
+	<link type="text/css" rel="stylesheet" href="../ligne1.css" >
+	<link type="text/css" rel="stylesheet" href="lienNoir.css" >
+	<link type="text/css" rel="stylesheet" href="pglogo.css" >
+	<title>Présentation ligue <?php echo $nomLigue; ?> </title>
 </head>
 
 <body>
-	<table width="1250" align="center">
+	<table class="marginAuto width1250" >
 		<tr >
 			<td colspan="3" height="74">
 				<?php include("../images/page_image_al.php"); ?>

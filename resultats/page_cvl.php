@@ -19,9 +19,9 @@ $comiteNom = "du Centre"; ?>
 <html lang="fr">
 
 <head>
-<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_cvl.php/" />
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_cvl.php" />
 <meta charset="utf-8" />
-  <link type="text/css" rel="stylesheet" href="../Phpleague/phppl/league.css" />
+  <link type="text/css" rel="stylesheet" href="../Phpleague/phppl/league.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
@@ -36,7 +36,7 @@ $comiteNom = "du Centre"; ?>
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <script language="JavaScript">
+  <script >
     function ouvrirPopup(page, nom, options) {
       window.open(page, nom, options);
     }
@@ -57,8 +57,8 @@ $comiteNom = "du Centre"; ?>
         <?php include("../01ligne.php"); ?>
       </td>
     </tr>
-    <tr bgcolor="#ffffff" valign="middle">
-      <td colspan="3" height="26">
+    <tr>
+      <td colspan="3">
         <table width="1200" border="0" align="center">
           <tr>
             <td>
@@ -68,7 +68,7 @@ $comiteNom = "du Centre"; ?>
         </table>
       </td>
     </tr>
-    <tr valign="middle">
+    <tr>
       <!-- Colonne de gauche -->
       <td class="colonneDroiteGauche">
         <p>
@@ -78,7 +78,7 @@ $comiteNom = "du Centre"; ?>
 
       <!-- Colonne centrale -->
       <td class="colonneCentrale">
-        <div align="center"><br />
+        <br />
           <h1> Compétitions Régionales</h1>
           <h2 class="titre">
             <?php echo $ligueCVL; ?>
@@ -93,7 +93,7 @@ $comiteNom = "du Centre"; ?>
           include("liensDivers.php");
           include("sommaires.php");
 
-          echo "<hr />" . " <hr />";
+          echo "<hr>" . " <hr>";
           //require("comPerso.php"); 
           /*
            echo "  <h5><a name=\"H\"></a>$FED3</h5>";  
@@ -138,27 +138,27 @@ $comiteNom = "du Centre"; ?>
 
           // require '../pub/pub_displayHorizontal.php';
           
-          echo "<hr />" . " <hr />";
+          echo "<hr>" . " <hr>";
 
           include("sommaires.php");
           include("liensDivers.php");
 
           //require '../pub/pub_displayH_550.php' ;?>
 
-        </div>
+        
 
       </td>
       <!-- Colonne de droite -->
       <td class="colonneDroiteGauche">
-        <p>
+      
           <?php include("../00droite.php"); ?>
-        </p>
+        
       </td>
     </tr>
   </table>
-  <?php include("piedDePage.php"); ?>
-  <footer>
 
+  <footer>
+  <?php include("../footer.php"); ?>
   </footer>
 </body>
 

@@ -89,17 +89,38 @@ $comiteNom = "Occitanie"; ?>
         include("liensDivers.php");
         include("sommaires.php");
 
-        foreach ($tableauOCC1 as $champ) {
+        $lien = $_GET['lien'];
+        
+        if ($lien == 17) { $tableauCompetition = $tableauOCC1; }
+        else if ($lien == 18) { $tableauCompetition = $tableauOCC2; }
+        else if ($lien == 19) { $tableauCompetition = $tableauOCC3; }
+        
+        foreach ($tableauCompetition as $champ) {
+
+          if ($lien == 17) {
+            $competition =  $REG1;
+            $champ2 = $champ + 100;
+           $nomSerie = "(Ex honneur/ promotion honneur)";
+          }
+          else if ($lien == 18) {
+            $competition =  $REG2;
+            $champ2 = $champ + 9000;
+            $nomSerie = "(Ex 1re/ 2me série)";
+          }
+          else if ($lien == 19) {
+            $competition =  $REG3;
+            $champ2 = 0;
+            $nomSerie = "(Ex 3me/ 4me série)";
+          }
+        
           echo "  <br>" . "<br>";
-          echo "<h5>" .  $REG1 . " - " . "Poule " . substr($champ, -1);
+          echo "<h5>" .  $competition . " - " . "Poule " . substr($champ, -1);
           echo "<br>"; ?>
 
-          <span class="size2">(Ex honneur/ promotion honneur) </span>
+          <span class="size2"> <?php  echo $nomSerie; ?> </span>
         <?php
           echo "</h5>";
           echo  "<br>" . "<br>" . "<br>";
-          $champReserve = 100;
-          $champ2 = $champ + $champReserve;
           affichage($champ, $champ2, $comite, $bdd);
           journeesReportees($comite, $champ, $bdd);
           perequation($comite, $champ, $bdd);

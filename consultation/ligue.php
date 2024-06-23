@@ -1,7 +1,7 @@
 <?php
 $terr_annee =("terr_".''.$saison);?>
 <br />
-<h1><font color="#000000">Ligue <?php echo $nomLigue;?></font></h1>
+<h1>Ligue <?php echo $nomLigue;?></h1>
 
 <?php 
 require ("../connect/connexion1.php") ; 
@@ -10,7 +10,7 @@ echo "<br/><br/><br/>";
 ?>
 							  
 <p>&nbsp;</p>
-<p class="texteGras">Pr&eacute;sident : </p>
+<p class="texteGras">Président : </p>
 <p class="texte"> 
    <?php  echo $president;?></p>
 <?php
@@ -44,16 +44,15 @@ echo "<br/><br/><br/>";
   <b> Site Internet :</b> 
  
 </p>
-<p><br/>
+<br/>
   <br/>
-</p>
+
 <hr />
-<p align="center"> 
-	<?php include("../pub/pub4.php");	echo"<br/>";?>
+
 							  
 <hr />
 
-<h1 align="center" > <font color="#000000">Pr&eacute;sentation :</font><br></h1>
+<h1> Présentation :<br></h1>
 							
 <p class="texte"> La ligue <?php echo $nomLigue; ?> se compose <br/>
 	des anciens comit&eacute;s suivants : <br />
@@ -117,8 +116,8 @@ echo "<br/><br/><br/>";
 	echo"<br/>";
 	?>
 </P>
-	<h1 align="center" > <font color="#000000">Quelques chiffres : </font><br></h1>
-														
+	<h1> Quelques chiffres : </h1>
+		<br>												
 <?php 
 
 $nb_equipe_tt = $bdd->query("
@@ -151,11 +150,11 @@ echo"<br/>";
 structureLigue($idLigue, $bdd);
 ?>
 
-<h1 align="center" > <font color="#000000">Structure de la ligue :</font><br></h1>
-<table width="407" border="0" align="center">
+<h1  > Structure de la ligue :<br></h1>
+<table width="407" class="marginAuto">
  <tr> 
     <td width="150" class="texte18">  </td>
-    <td width="80" class="texte18"> <font color="#000000" size="2">(En nombre de clubs) </font></td>
+    <td width="80" class="texte18"> <span class=" size2">(En nombre de clubs) </span></td>
  </tr>
  <tr> 
     <td width="150" class="texte18">Professionnel : </td>
@@ -172,15 +171,15 @@ structureLigue($idLigue, $bdd);
   </tr>
   
   <tr> 
-    <td class="texte18">F&eacute;d&eacute;rale  1 : </td>
+    <td class="texte18">Fédérale  1 : </td>
     <td class="texte18"><?php echo $d140;?></td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
-    <td class="texte18">F&eacute;d&eacute;rale 2 :</td>
+    <td class="texte18">Fédérale 2 :</td>
     <td class="texte18"><?php echo $d150;?></td>
   </tr>
   <tr> 
-    <td class="texte18">F&eacute;d&eacute;rale 3 :</td>
+    <td class="texte18">Fédérale 3 :</td>
     <td class="texte18">  <?php echo $d160;?></td>
   </tr>
   <tr> 
@@ -237,7 +236,7 @@ structureLigue($idLigue, $bdd);
 <br>
 
 <br>
-<h1><font color="#000000">Palmar&egrave;s national </font></h1>
+<h1><font color="#000000">Palmars national </font></h1>
 <h3><font size="3"> (Les dix derniers titres de la ligue)</font></h3>
 <p class="texte18">
 <?php
@@ -366,13 +365,13 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 <p align="center">
 <br>
   <br>
-  <hr /> <br>
+  <hr> <br>
   <br>
   <?php   include("../pub/pub4.php");
     ?>
   <br>
 <font color="#FF0000">_______________________________________________________</font> 
-<p>&nbsp;</p>
+<br>
 <h1>Clubs de la ligue</h1>
 <br />
 <h3> Clubs professionnels :</h3>
@@ -385,27 +384,27 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 <h3> Nationales :</h3> 
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 130, $bdd); ?></p>
 
-<h3>F&eacute;d&eacute;rale 1 :</h3> 
+<h3>Fédérale 1 :</h3> 
 <p class="afficheEquipe"> <?php clubsParLigue($idLigue, "M", 140, $bdd);?></p>
-<h3>F&eacute;d&eacute;rale 2 :</h3> 
+<h3>Fédérale 2 :</h3> 
 <p class="afficheEquipe"> <?php clubsParLigue($idLigue, "M", 150, $bdd);?></p>
 
-<h3>F&eacute;d&eacute;rale 3 :</h3> 
+<h3>Fédérale 3 :</h3> 
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 160, $bdd);?></p>
 <br />
 <h3>
  
 
-<h3>R&eacute;gionale 1 :</h3>
+<h3>Régionale 1 :</h3>
  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 170, $bdd);?></p> 
  
- <h3>R&eacute;gionale 2 :</h3> 
+ <h3>Régionale 2 :</h3> 
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 180, $bdd);?></p>
 
-<h3>R&eacute;gionale 3 :</h3> 
+<h3>Régionale 3 :</h3> 
  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 190, $bdd);?></p>
 
-<h3>Equipes f&eacute;minines :</h3>
+<h3>Equipes féminines :</h3>
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "F", 281, $bdd);?></p> 
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "F", 285, $bdd);?></p>
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "F", 291, $bdd);?></p>

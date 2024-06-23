@@ -81,7 +81,7 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
   <link type="text/css" rel="stylesheet" href="../lienNoir.css">
 
 
-  <title>Comit&eacute; territoriaux </title>
+  <title>Comités territoriaux </title>
 </head>
 
 
@@ -127,7 +127,7 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
         </p>
         <br>
         <p class="terr3 marginAuto">Fédérale 1 - Nationale B <br>
-          <a href="page_fed1.php">4 poules de 12(<?php echo $fed1 . " clubs"; ?>)</a>
+          <a href="page_fed1.php">4 poules de 12 (<?php echo $fed1 . " clubs"; ?>)</a>
         </p>
         <br>
         <p class="terr3 marginAuto">Fédérale 2 - F&eacute;d&eacute;rale B <br>
@@ -135,7 +135,7 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
         </p>
         <br>
         <p class="terr3 marginAuto"> Fédérale 3 - Excellence B <br>
-          <a href="page_fed3NE.php">20 poules de 10 (<?php echo $fed3 . " clubs"; ?>)</a>
+          <a href="page_fed3NE.php">18 poules de 10 (<?php echo $fed3 . " clubs"; ?>)</a>
         </p>
         <br><br>
 
@@ -167,61 +167,82 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
         </p>
         <p></p>
 
+        <?php structureLigue(10, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE AUVERGNE RHONE ALPES (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+          <a href="page_ara_reg1.php?lien=17"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
+        </p>
+        <br>
+        <?php structureLigue(11, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE BOURGOGNE et FRANCHE COMTE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+          <a href="page_bfc.php"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
+        </p>
+        <br>
+        <?php structureLigue(12, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE BRETAGNE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+          <a href="page_bre.php"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
+        </p>
+        <br>
+        <?php structureLigue(13, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE CENTRE VAL DE LOIRE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
 
-        <p class="terr2 marginAuto">LIGUE AUVERGNE RHONE ALPES (<?php echo $clubsara . " clubs"; ?>)<br>
-          <a href="resultats/page_ara_reg1.php"> Régionale 1 (<?php echo $araREG1; ?>) - Régionale 2 (<?php echo $araREG2; ?>) - Régionale 3 (<?php echo $araREG3; ?>) </a>
+          <a href="page_cvl.php"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
         </p>
         <br>
-        <p class="terr2 marginAuto">LIGUE BOURGOGNE et FRANCHE COMTE (<?php echo $clubsbfc . " clubs"; ?>)<br>
-          <a href="page_bfc.php"> Régionale 1 (<?php echo $bfcREG1; ?>) - Régionale 2 (<?php echo $bfcREG2; ?>) - Régionale 3 (<?php echo $bfcREG3; ?>) </a>
-        </p>
-        <br>
-        <p class="terr2 marginAuto">LIGUE BRETAGNE (<?php echo $clubsbre . " clubs"; ?>)<br>
-          <a href="page_bre.php"> Régionale 1 (<?php echo $breREG1; ?>) - Régionale 2 (<?php echo $breREG2; ?>) - Régionale 3 (<?php echo $breREG3; ?>) </a>
-        </p>
-        <br>
-        <p class="terr2 marginAuto">LIGUE CENTRE VAL DE LOIRE (<?php echo $clubscvl . " clubs"; ?>)<br>
-          <a href="page_cvl.php"> Régionale 1 (<?php echo $cvlREG1; ?>) - Régionale 2 (<?php echo $cvlREG2; ?>) - Régionale 3 (<?php echo $cvlREG3; ?>) </a>
-        </p>
-        <br>
-        <p class="terr2 marginAuto">LIGUE CORSE (<?php echo $clubsara . " clubs"; ?>)<br>
-          <a href="page_cor.php">Aucune comp&eacute;tition propos&eacute;e</a>
-        </p>
-        <br>
-        <p class="terr2 marginAuto">LIGUE GRAND EST (<?php echo $clubsges . " clubs"; ?>)<br>
-          <a href="page_ges.php"> Régionale 1(<?php echo $gesREG1; ?>) - Régionale 2(<?php echo $gesREG2; ?>) - Régionale 3 (<?php echo $gesREG3; ?>) </a>
-        </p>
-        <br>
+        <?php structureLigue(14, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE CORSE (<?php " clubs"; ?>)<br>
 
-        <p class="terr2 marginAuto">LIGUE HAUTS DE FRANCE (<?php echo $clubshdf . " clubs"; ?>)<br>
-          <a href="page_hdf.php"> Régionale 1 (<?php echo $hdfREG1; ?>) - Régionale 2 (<?php echo $hdfREG2; ?>) - Régionale 3 (<?php echo $hdfREG3; ?>) </a>
+          <a href="page_cor.php">Aucune compétition proposée</a>
+        </p>
+        <br>
+        <?php structureLigue(15, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE GRAND EST (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+
+          <a href="page_ges.php"> Régionale 1(<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2(<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
+        </p>
+        <br>
+        <?php structureLigue(16, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE HAUTS DE FRANCE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+
+          <a href="page_hdf.php"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
         </p>
 
         <?php require '../pub/pub_displayCarre.php'; ?>
         <br>
         <br>
-        <p class="terr2 marginAuto">LIGUE ILE DE FRANCE (<?php echo $clubsidf . " clubs"; ?>)<br>
-          <a href="page_idf.php"> Régionale 1 (<?php echo $idfREG1; ?>) - Régionale 2 (<?php echo $idfREG2; ?>) - Régionale 3 (<?php echo $idfREG3; ?>) </a>
+        <?php structureLigue(17, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE ILE DE FRANCE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+
+          <a href="page_idf.php"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
         </p>
         <br>
-        <p class="terr2 marginAuto">LIGUE NORMANDIE (<?php echo $clubsnor . " clubs"; ?>)<br>
-          <a href="page_nor.php"> Régionale 1 (<?php echo $norREG1; ?>) - Régionale 2(<?php echo $norREG2; ?>) - Régionale 3 (<?php echo $norREG3; ?>) </a>
+        <?php structureLigue(18, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE NORMANDIE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+
+          <a href="page_nor.php"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2(<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
         </p>
         <br>
-        <p class="terr2 marginAuto">LIGUE NOUVELLE AQUITAINE (<?php echo $clubsnaq . " clubs"; ?>)<br>
-          <a href="page_naq_reg1.php"> Régionale 1 (<?php echo $naqREG1; ?>) - Régionale 2 (<?php echo $naqREG2; ?>) - Régionale 3 (<?php echo $naqREG3; ?>) </a>
+        <?php structureLigue(19, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE NOUVELLE AQUITAINE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+
+          <a href="page_naq_reg1.php?lien=17"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
         </p>
         <br>
-        <p class="terr2 marginAuto">LIGUE OCCITANIE (<?php echo $clubsocc . " clubs"; ?>)<br>
-          <a href="page_occ_reg1.php"> Régionale 1 (<?php echo $occREG1; ?>) - Régionale 2 (<?php echo $occREG2; ?>) - Régionale 3 (<?php echo $occREG3; ?>) </a>
+        <?php structureLigue(20, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE OCCITANIE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+
+          <a href="page_occ_reg1.php?lien=17"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
         </p>
         <br>
-        <p class="terr2 marginAuto">LIGUE PAYS DE LA LOIRE (<?php echo $clubspdl . " clubs"; ?>)<br>
-          <a href="page_pdl.php"> Régionale 1 (<?php echo $pdlREG1; ?>) - Régionale 2 ((<?php echo $pdlREG2; ?>)) - Régionale 3 ((<?php echo $pdlREG3; ?>)) </a>
+        <?php structureLigue(21, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE PAYS DE LA LOIRE (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+
+          <a href="page_pdl.php"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
         </p>
         <br>
-        <p class="terr2 marginAuto">LIGUE PROVENCE ALPES COTE D'AZUR (<?php echo $clubspca . " clubs"; ?>)<br>
-          <a href="page_pca.php"> Régionale 1 (<?php echo $pcaREG1; ?>) - Régionale 2 (<?php echo $pcaREG2; ?>) - Régionale 3 (<?php echo $pcaREG3; ?>) </a>
+        <?php structureLigue(22, $bdd); ?>
+        <p class="terr2 marginAuto">LIGUE PROVENCE ALPES COTE D'AZUR (<?php echo $d170+$d180+$d190 . " clubs"; ?>)<br>
+
+          <a href="page_pca.php"> Régionale 1 (<?php if ($d170 > 0) echo $d170; ?>) - Régionale 2 (<?php if ($d180 > 0) echo $d180; ?>) - Régionale 3 (<?php if ($d190 > 0) echo $d190; ?>) </a>
         </p>
 
         <br>
@@ -242,11 +263,11 @@ $reg3 = $araREG3 + $breREG3 + $bfcREG3 + $cvlREG3 + $corREG3 + $gesREG3 + $hdfRE
   </table>
 
 
- 
-        <?php include("../comitebas.php"); ?>
-     
-        <?php include("../bas.php"); ?>
-  
+
+  <?php include("../comitebas.php"); ?>
+
+  <?php include("../bas.php"); ?>
+
 
 </body>
 

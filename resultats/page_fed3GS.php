@@ -29,15 +29,15 @@ $comiteNom = "Fédérale 3 - Excellence B"; ?>
   gtag('config', 'G-G7CSSC3EPH');
 </script>
 -->
-  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/page_fed3GS.php/" />
-  <link type="text/css" rel="stylesheet" href="../Phpleague/phpfed3NE/league.css" />
+  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/page_fed3GS.php">
+  <link type="text/css" rel="stylesheet" href="../Phpleague/phpfed3NE/league.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <title>Championnats de France <?php echo $comiteNom; ?></title>
   <meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
   <meta name="classification" content="Sport,Rugby">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
@@ -95,11 +95,11 @@ $comiteNom = "Fédérale 3 - Excellence B"; ?>
             <td>
               <h4 class="bulleReparGeo">
                 <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed3.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">
-                  <font color="#000000">R&eacutepartition g&eacuteographique des clubs de F&eacuted&eacuterale 3</font>
+                  Répartition géographique des clubs de Fédérale 3
                 </a>
               </h4>
               <h4 class="bulleReglement">
-                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalit&eacutes de qualification de la saison 2023-2024</a>
+                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalités de qualification de la saison 2023-2024</a>
               </h4>
             </td>
           </tr>
@@ -136,11 +136,11 @@ $comiteNom = "Fédérale 3 - Excellence B"; ?>
           <tr>
             <td>
               <h4 class="bulleReglement">
-                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalit&eacutes de qualification de la saison 2023-2024</a>
+                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalités de qualification de la saison 2023-2024</a>
               </h4>
               <h4 class="bulleReparGeo">
                 <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed3.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">
-                  <font color="#000000">R&eacutepartition g&eacuteographique des clubs de F&eacuted&eacuterale 3</font>
+                  Répartition géographique des clubs de Fédérale 3
                 </a>
               </h4>
             </td>

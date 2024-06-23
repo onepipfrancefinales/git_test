@@ -29,6 +29,7 @@ meilleureDefense ($comite, $champ, $bdd);
 <head>
  <title><?php echo $equipe; ?></title>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link type="text/css" rel="stylesheet" href="../ligne1.css" >
  <link rel="stylesheet" type="text/css" href="../menu_smart2.css"> 
  <link type="text/css" rel="stylesheet" href="../resultats/bilan/bilan.css">
  <link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/league.css"/>

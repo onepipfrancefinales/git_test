@@ -40,6 +40,7 @@ division($champ, $bdd);
 	<title>Resultats et classement</title>
 	<link rel="stylesheet" type="text/css" href="menu_smart2.css">
 	<link type="text/css" rel="stylesheet" href="10.css">
+	<link type="text/css" rel="stylesheet" href="../ligne1.css" >
 	<link type="text/css" rel="stylesheet" href="paramTiroir.css">
 	<link type="text/css" rel="stylesheet" href="../Phpleague/<?php echo "php" . $bddComite; ?>/league.css" />
 	<meta name="description" content="Resultat, classement, stats et infos de la poule nom de la poule nom de la competition">

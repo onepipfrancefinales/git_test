@@ -104,17 +104,33 @@ elseif ($cmt =="fed3NE" or $cmt =="fed3GS")
 }
  // **** Sommaire ligues Nouvelle AQuitaine et Auvergne Rhône Alpes  *****
 //elseif ($cmt =="au" OR $cmt =="ca" )
-elseif ( $cmt =="au" or $cmt =="ab" or $cmt == "ca")
+elseif ( $cmt =="ab" or $cmt == "ca")
 {
- if ($cmt == "au" ) $cmt2 = "ara"; 
- elseif ($cmt == "ab")  $cmt2 = "occ";
+ if ($cmt == "ab")  $cmt2 = "occ";
  elseif ($cmt == "ca")  $cmt2 = "naq";
  ?>
   <table class="sommaire">
     <tr> 
-      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg1.php">Régionale 1</a></td>
-      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg2.php">Régionale 2</a></td>
-      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg3.php">Régionale 3</a></td>
+      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg1.php?lien=17">Régionale 1</a></td>
+      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg1.php?lien=18">Régionale 2</a></td>
+      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg1.php?lien=19">Régionale 3</a></td>
+    </tr>
+    <tr> 
+      <td class="tab3" colspan="3"><a href="../feminine/index_fem.php">Compétitions féminines</a> </td>
+    </tr>
+  </table>
+  <?php
+}
+elseif ( $cmt =="au" )
+{
+ if ($cmt == "au" ) $cmt2 = "ara"; 
+ 
+ ?>
+  <table class="sommaire">
+    <tr> 
+      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg1.php?lien=17">Régionale 1</a></td>
+      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg1.php?lien=18">Régionale 2</a></td>
+      <td class="tab3"><a href="page_<?php echo $cmt2;?>_reg1.php?lien=19">Régionale 3</a></td>
     </tr>
     <tr> 
       <td class="tab3" colspan="3"><a href="../feminine/index_fem.php">Compétitions féminines</a> </td>

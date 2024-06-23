@@ -188,7 +188,7 @@ if ($equipe > 90000000) {
 //echo "equipe : ".$equipe;echo "<br />";
 //echo "comite : ". $comite;echo "<br />";
 //echo "champ : ".$champ;echo "<br />";
-evolutionResultatsSmart ($equipe, $comite, $champ, $bdd);
+//// 23-06-2024 ----evolutionResultatsSmart ($equipe, $comite, $champ, $bdd);
 ?>
 <br />
 <h2>Calendrier et résultats<br>

@@ -274,8 +274,7 @@ function rechercheInfosLigues($idLigue, $bdd)
 				$comite3 = $donnees[20];
 				$comite4 = $donnees[21];
 				$comite5 = $donnees[22];
-				$comite6 = $donnees[23];
-				
+				$comite6 = $donnees[23];			
 	}
 }
 // Récupèrer le nom de la ligue à partir du sigle de la ligue(ex : occ)
@@ -313,7 +312,6 @@ function structureLigue($idLigue, $bdd)
 	$nbre = $reponse->fetch();
 	$tabNbre[]= $nbre[0];
 	}
-	
 	$d110 = $tabNbre[0];
 	$d120 = $tabNbre[1];
 	$d130 = $tabNbre[2];
@@ -323,7 +321,6 @@ function structureLigue($idLigue, $bdd)
 	$d160 = $tabNbre[6];
 	$d170 = $tabNbre[7];
 	$d180 = $tabNbre[8];
-	$d190 = $tabNbre[9];
-	
+	$d190 = $tabNbre[9];	
 }
 ?>

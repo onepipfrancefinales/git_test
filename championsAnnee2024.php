@@ -43,12 +43,12 @@
 	</tr>
     <tr class="size4 backgroundGray">
 		<td>Régionale 1 :</td>
-		<td><b></b></td>
+		<td><b>Corbières XV (OCC)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=170&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4">
 		<td>Régionale 2 :</td>
-		<td><b></b></td>
+		<td><b>Saint Pee/Nivelle (NAQ)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=180&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4 backgroundGray">
@@ -77,12 +77,12 @@
 	</tr>
 	<tr class="size4 backgroundGray">
 		<td>Fédérale B :</td>
-		<td><b></b></td>
+		<td><b>Soustons (NAQ)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=250&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 	<tr class="size4">
 		<td>Excellence B :</td>
-		<td><b></b></td>
+		<td><b>Mauguio Jacou (OCC)</b></td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=260&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
     <tr class="size4 backgroundGray">
