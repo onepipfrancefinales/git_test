@@ -1177,7 +1177,7 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 	$demiMaxJournee = $maxJournee / 2;
 	// echo $demiMaxJournee;
 
-	echo "<table  class=\"center width90PC\">";
+	echo "<table  class=\"center width90PC marginAuto\">";
 
 	//******phase Aller******
 
@@ -1222,26 +1222,26 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 			$resultat = $tabButs_dom[$i] - $tabButs_ext[$i];
 
 			if ("$tabEquipeDom[$i]" === "$equipe" and $tabButs_dom[$i] > $tabButs_ext[$i]) {
-				print("<img class=\"height25 width25\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\" >");
+				print("<img class=\"height25 width27\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\" >");
 			}
 
 			if ("$tabEquipeDom[$i]" === "$equipe" and $tabButs_dom[$i] < $tabButs_ext[$i]) {
-				print("<img class=\"height25 width25\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\" >");
+				print("<img class=\"height25 width27\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\" >");
 			}
 
 			if ("$tabEquipeExt[$i]" === "$equipe" and $tabButs_dom[$i] < $tabButs_ext[$i]) {
-				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\" >");
+				echo ("<img class=\"height25 width27\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\" >");
 			}
 
 			if ("$tabEquipeExt[$i]" === "$equipe"	and $tabButs_dom[$i] > $tabButs_ext[$i]) {
-				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\" >");
+				echo ("<img class=\"height25 width27\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\" >");
 			}
 
 			if ($resultat == 0) {
-				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/nulldream.jpg\" alt=\"affichage\" >");
+				echo ("<img class=\"height25 width27\" src=\"/resultats/bilan/nulldream.jpg\" alt=\"affichage\" >");
 			}
 		} else {
-			echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/rien.jpg\" >");
+			echo ("<img class=\"height25 width27\" src=\"/resultats/bilan/rien.jpg\" >");
 		}
 
 		echo "</td>";
@@ -1292,26 +1292,26 @@ function evolutionResultatsSmart($equipe, $comite, $champ, $bdd)
 			$resultat = $tabButs_dom[$i] - $tabButs_ext[$i];
 
 			if ("$tabEquipeDom[$i]" === "$equipe" and $tabButs_dom[$i] > $tabButs_ext[$i]) {
-				print("<img class=\"height25 width25\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\">");
+				print("<img class=\"height25 width27\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\">");
 			}
 
 			if ("$tabEquipeDom[$i]" === "$equipe" and $tabButs_dom[$i] < $tabButs_ext[$i]) {
-				print("<img class=\"height25 width25\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\">");
+				print("<img class=\"height25 width27\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\">");
 			}
 
 			if ("$tabEquipeExt[$i]" === "$equipe" and $tabButs_dom[$i] < $tabButs_ext[$i]) {
-				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\">");
+				echo ("<img class=\"height25 width27\" src=\"/resultats/bilan/gagnedream.jpg\" alt=\"affichage\">");
 			}
 
 			if ("$tabEquipeExt[$i]" === "$equipe"	and $tabButs_dom[$i] > $tabButs_ext[$i]) {
-				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\">");
+				echo ("<img class=\"height25 width27\" src=\"/resultats/bilan/perdudream.jpg\" alt=\"affichage\">");
 			}
 
 			if ($resultat == 0) {
-				echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/nulldream.jpg\" alt=\"affichage\">");
+				echo ("<img class=\"height25 width27\" src=\"/resultats/bilan/nulldream.jpg\" alt=\"affichage\">");
 			}
 		} else {
-			echo ("<img class=\"height25 width25\" src=\"/resultats/bilan/rien.jpg\" alt=\"affichage\" >");
+			echo ("<img class=\"height25 width27\" src=\"/resultats/bilan/rien.jpg\" alt=\"affichage\" >");
 		}
 
 		echo "</td>";

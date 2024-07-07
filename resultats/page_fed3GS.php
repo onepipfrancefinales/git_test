@@ -114,7 +114,7 @@ $comiteNom = "Fédérale 3 - Excellence B"; ?>
 
         foreach ($tableauFed3_2 as $champ) {
           echo "  <br>" . "<br>";
-          $numPoule = substr($champ, -1)+9;
+          $numPoule = substr($champ, -1) + 8;
           echo "<a name=\"$numPoule\"></a>";
           echo "<h5>" . "Poule " . $numPoule;
           echo "<br>"; 

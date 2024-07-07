@@ -455,7 +455,7 @@
     <td></td>
     <td></td>
     <td></td>
-    <td colspan="3" height="39" rowspan="4"></td>
+    <td colspan="3" height="39" rowspan="4" class="marginAuto"><img class="width150 height150" src="../../images/blasons200_200/<?php echo $idEquipeCourt;?>.gif" alt="blason du champion" ></td>
   </tr>
   <tr> 
     <td><div class="coin4"><?php echo $clubA8011;?></div></td>
@@ -516,9 +516,8 @@
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    
+    <td colspan="3" rowspan="2" class="champ"><?php echo $champion;?></td>
   </tr>
   <tr> 
     <td><div class="coin4"><?php echo $clubA8014;?></div></td>
@@ -548,7 +547,7 @@
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td> </td>
   </tr>
   <tr> 
     <td></td>

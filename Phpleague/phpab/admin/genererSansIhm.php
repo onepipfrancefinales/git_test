@@ -14,13 +14,13 @@ if (isset($champRecup)) $champRecup = $champRecup; else $champRecup=0;
 if ($champRecup == 200171)
 	$tableau = array(200171, 200172, 200173, 200174);
 elseif ($champRecup == 200181)
-	$tableau = array(200181, 200182, 200183 , 200184, 200185, 200186, 200187);
+	$tableau = array(200181, 200182, 200183 , 200184, 200185, 200186, 200187,200188);
 elseif ($champRecup == 200191)
 	$tableau = array(200191, 200192, 200193, 200194, 200195, 200196, 200197, 200198);
 elseif ($champRecup == 200271)
 	$tableau = array(200271, 200272, 200273, 200274);
 elseif ($champRecup == 209181)
-	$tableau = array(209181, 209182, 209183 , 209184, 209185, 209186, 209187);
+	$tableau = array(209181, 209182, 209183 , 209184, 209185, 209186, 209187, 209188);
 
 //$tableau = array(171,172,173,174,181,182,183,184)
 

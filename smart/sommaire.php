@@ -13,7 +13,8 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <title>France Finales Rugby App</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="10.css">  
+<link rel="stylesheet" type="text/css" href="10.css"> 
+<link rel="stylesheet" type="text/css" href="../ligne1.css">  
 <!--<link rel="stylesheet" type="text/css" href="11.css"> -->
 </head>
 <?php include("../saison.php");?>

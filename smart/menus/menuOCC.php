@@ -1,9 +1,9 @@
 
-<table width="100%" align="center">
+<table class="marginAuto width100PC">
   <tr> 
     <td width="15%" valign="top"> 
       <ul class="menu-demo2" >
-        <li><a href="#"><b><font color="#FFFFFF">H</font></b></a> 
+        <li class="colorWhite"><a href="#"><b>H></b></a> 
           <ul>
             <li><a href="171.php?champ=171&comite=ab">P1</a></li>
             <li><a href="171.php?champ=172&comite=ab"> P2</a></li>
@@ -21,7 +21,7 @@
     </td>
     <td   width="15%" height="28" valign="top"> 
       <ul class="menu-demo2">
-        <li><a href="#"><b> <font color="#FFFFFF">PH</font> </b></a> 
+        <li class="colorWhite"><a href="#"><b> PH </b></a> 
           <ul>
            <li><a href="171.php?champ=181&comite=ab">P1</a></li>
             <li><a href="171.php?champ=182&comite=ab"> P2</a></li>
@@ -38,7 +38,7 @@
     </td>
     <td   width="15%" height="28" valign="top"> 
       <ul class="menu-demo2">
-        <li><a href="#"><b><font color="#FFFFFF">1S</font></b></a> 
+        <li class="colorWhite"><a href="#"><b>1S</b></a> 
           <ul>
             <li><a href="171.php?champ=191&comite=ab">P1</a></li>
             <li><a href="171.php?champ=192&comite=ab"> P2</a></li>
@@ -54,7 +54,7 @@
       </ul>
     </td>
     <td   width="15%" height="28" valign="top"><ul class="menu-demo2">
-        <li><a href="#"><b> <font color="#FFFFFF">2S</font> </b></a> 
+        <li class="colorWhite"><a href="#"><b> 2S </b></a> 
           <ul>
             <li><a href="171.php?champ=201&comite=ab">P1</a></li>
             <li><a href="171.php?champ=202&comite=ab">P2</a></li>

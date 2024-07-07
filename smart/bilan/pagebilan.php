@@ -10,7 +10,7 @@ $equipeComite= substr($equipe,-5);
 $champ = $_GET['champ'];
 
 require ("../../saison.php"); 
-require ('fonctions.php');
+//require ('fonctions.php');
 require ('../../resultats/fonctions.php');
 require "../../Phpleague/".$comite."/consult/fonctions_matchs.php";
 require "../../Phpleague/".$comite."/lang/lang_fr.php";
@@ -20,8 +20,8 @@ affichage5Saisons($finSaison, $equipeComite,$champ,$phpComite, $bdd);
 
 	require ("../../connect/connexion6.php");
 traitementDesScores($equipe, $comite, $bdd);
-meilleureAttaque ($comite, $champ, $bdd);
-meilleureDefense ($comite, $champ, $bdd);
+//meilleureAttaque ($comite, $champ, $bdd);
+//meilleureDefense ($comite, $champ, $bdd);
 
 ?>
 
@@ -29,10 +29,10 @@ meilleureDefense ($comite, $champ, $bdd);
 <head>
  <title><?php echo $equipe; ?></title>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <link type="text/css" rel="stylesheet" href="../ligne1.css" >
+ <link type="text/css" rel="stylesheet" href="../../ligne1.css">
  <link rel="stylesheet" type="text/css" href="../menu_smart2.css"> 
  <link type="text/css" rel="stylesheet" href="../resultats/bilan/bilan.css">
- <link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/league.css"/>
+ <link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/league.css">
  <link type="text/css" rel="stylesheet" href="../10.css"> 
  <link type="text/css" rel="stylesheet" href="paramTiroir.css">
  <meta name=viewport content="width=device-width, initial-scale=1">
@@ -47,7 +47,7 @@ meilleureDefense ($comite, $champ, $bdd);
 	  <td width= "95%"class="h22"> France Finales Rugby </td>
     </tr>
     <tr> 
-      <td colspan="2" class="h12"><?php // echo $nom; ?> </td>
+      <td colspan="2" class="h12"><?php echo $nom; ?> </td>
     </tr>
    </table>
   </div>
@@ -57,7 +57,7 @@ meilleureDefense ($comite, $champ, $bdd);
   <?php require 'bilan.php';?>
   <br>
   <?php require '../bas2.php';
-  include("../../pub/pub_displayCarre.php");?>
+ // include("../../pub/pub_displayCarre.php");?>
  </div>
 </body>
 </html>

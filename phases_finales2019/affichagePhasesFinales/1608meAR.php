@@ -439,7 +439,7 @@
     <td class="coin4GA"><?php echo $A4006;?></td>
     <td></td>
     <td></td>
-    <td colspan="3" height="50" rowspan="4"> <b><font color="#FF0000" size="5" face="Arial, Helvetica, sans-serif"><?php	//echo $clubA1000;	?></font></b> </td>
+    <td colspan="3" height="50" rowspan="4" class="marginAuto"><img class="width150 height150" src="../../images/blasons200_200/<?php echo $idEquipeCourt;?>.gif" alt="blason du champion">  </td>
   </tr>
   <tr> 
     <td class="coin5"><?php echo $clubA1622;?></td>
@@ -513,9 +513,7 @@
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="3" rowspan="2" class="champ"><?php echo $champion;?></td>
   </tr>
   <tr> 
     <td class="coin4"><?php echo $clubA1627;?></td>

@@ -897,7 +897,7 @@
     </td>
     <td colspan="2"></td>
     <td colspan="2"></td>
-    <td colspan="3"></td>
+    <td colspan="3" rowspan="2" class="champ"><?php echo $champion;?></td>
    
   </tr>
 

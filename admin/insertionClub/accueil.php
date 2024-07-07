@@ -32,35 +32,35 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   <p><font size="4" face="Arial, Helvetica, sans-serif">Pour saisir l'id consulter 
     la liste des clubs par Id (<a href="../consultation/listeClubsParNom.php" target="_blank">liste 
     par ID</a>)</font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">Id (2029076): 
+  <p><font size="4" face="Arial, Helvetica, sans-serif">Id 2029076: 
     <input type="text" name="id">
     </font></p>
   <p><font size="4" face="Arial, Helvetica, sans-serif">IdFFR (1234M): 
     <input type="text" name="idffr">
     </font></p>
   <p><font size="4" face="Arial, Helvetica, sans-serif">type d'équipe : 
-    <select name="type" size="1">
-      <option selected>Type d'&eacutequipe</option>
-      <option value="F">Equipe f&eacuteminine</option>
+    <select name="type" size="1" required>
+      <option selected>Type d'équipe</option>
+      <option value="F">Equipe féminine</option>
       <option value="M">Equipe Masculine</option>
     </select>
     </font></p>
   <p><font size="4" face="Arial, Helvetica, sans-serif">Comite : 
-    <select name="comite" size="1">
+    <select name="comite" size="1" required>
       <option selected>Comité</option>
       <option value="(AP)">Alpes</option>
       <option value="(AL)">Alsace Lorraine</option>
       <option value="(AB)">Armagnac Bigorre</option>
       <option value="(AU)">Auvergne</option>
-      <option value="(BE)">B&eacute;arn</option>
+      <option value="(BE)">Béarn</option>
       <option value="(BG)">Bourgogne</option>
       <option value="(BR)">Bretagne</option>
       <option value="(CE)">Centre</option>
       <option value="(C)">Corse</option>
-      <option value="(CBL)">C&ocirc;te Basque Landes</option>
-      <option value="(CA)">C&ocirc;te d'Argent</option>
-      <option value="(CAZ)">C&ocirc;te d'Azur</option>
-      <option value="(DA)">Dr&ocirc;me Ard&egrave;che</option>
+      <option value="(CBL)">Côte Basque Landes</option>
+      <option value="(CA)">Côte d'Argent</option>
+      <option value="(CAZ)">Côte d'Azur</option>
+      <option value="(DA)">Drôme Ard&egrave;che</option>
       <option value="(FL)">Flandres</option>
       <option value="(FC)">Franche Comt&eacute;</option>
       <option value="(IDF)">Ile de France</option>
@@ -77,7 +77,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     </select>
     </font></p>
   <p><font size="4" face="Arial, Helvetica, sans-serif">Ligue : 
-    <select name="ligue"  size="1">
+    <select name="ligue"  size="1" required>
       <option selected>Ligue</option>
       <option value="10">Auvergne Rhone Alpes</option>
       <option value="11">Bourgogne Franche Comte</option>

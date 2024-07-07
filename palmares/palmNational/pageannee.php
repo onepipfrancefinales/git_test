@@ -55,8 +55,6 @@
           <?php include("../../00droite.php");    ?>
         </td>
       </tr>
-    
-
        </table>
         <table class="marginAuto backgroundBlanc" >
           <tr>

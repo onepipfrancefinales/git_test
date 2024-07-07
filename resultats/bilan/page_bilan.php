@@ -15,9 +15,7 @@ require("../../saison.php");
 require("../fonctions.php");
 require("../../connect/connexion1.php");
 
-//echo "<br/>";
-//echo $saison."<br/>";
-//echo $annee."<br/>";
+
 nomClub($equipe, $bdd);
 nomLigue($equipe, $bdd);
 affichage5Saisons($finSaison, $equipe, $champ, $phpComite, $bdd);
@@ -26,10 +24,10 @@ affichage5Saisons($finSaison, $equipe, $champ, $phpComite, $bdd);
 require("../../connect/connexion6.php");
 
 nomDivision($phpComite, $champ, $bdd);
-meilleureAttaque($phpComite, $champ, $bdd);
-meilleureDefense($phpComite, $champ, $bdd);
-nombreEquipe($phpComite, $champ, $bdd);
-traitementDesScores($equipe, $phpComite, $bdd);
+//meilleureAttaque($phpComite, $champ, $bdd);
+//meilleureDefense($phpComite, $champ, $bdd);
+//nombreEquipe($phpComite, $champ, $bdd);
+//traitementDesScores($equipe, $phpComite, $bdd);
 ?>
 
 

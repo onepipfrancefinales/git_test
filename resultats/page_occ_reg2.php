@@ -162,6 +162,13 @@ $comiteNom = "Occitanie"; ?>
           perequation($comite, $champ, $bdd);
 
 
+          echo "<h5>" . $REG2 . " - " . $P8 . "<br>
+          <font size=\"2\" face=\"Arial, Helvetica, sans-serif\">" . $EXS1S2 . "</font> <br><br></h5>";
+                  $champ = 200188;
+                  $champ2 = 209188;
+                  affichage($champ, $champ2, $comite, $bdd);
+                  journeesReportees($comite, $champ, $bdd);
+                  perequation($comite, $champ, $bdd);
           // require 'cadrePubHorizontal600.php';
           // include("comPerso2.php"); 
           

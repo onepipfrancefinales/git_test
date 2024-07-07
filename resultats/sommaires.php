@@ -82,10 +82,11 @@ elseif ($cmt =="fed3NE" or $cmt =="fed3GS")
     <td class="tab3"><a href="page_fed3NE.php#6" alt="text" title="Poule 6">Poule 6 </a></td>
     <td class="tab3"><a href="page_fed3NE.php#7" alt="text" title="Poule 7">Poule 7 </a></td>
     <td class="tab3"><a href="page_fed3NE.php#8" alt="text" title="Poule 8">Poule 8 </a></td>
-	  <td class="tab3"><a href="page_fed3NE.php#9" alt="text" title="Poule 9">Poule 9 </a></td>
+	
 	
   </tr>
   <tr> 
+    <td class="tab3"><a href="page_fed3NE.php#9" alt="text" title="Poule 9">Poule 9 </a></td>
     <td class="tab3"><a href="page_fed3GS.php#10" alt="text" title="Poule 10">Poule 10 </a></td>
     <td class="tab3"><a href="page_fed3GS.php#11" alt="text" title="Poule 11">Poule 11</a></td>
     <td class="tab3"><a href="page_fed3GS.php#12" alt="text" title="Poule 12">Poule 12</a></td>
@@ -93,9 +94,6 @@ elseif ($cmt =="fed3NE" or $cmt =="fed3GS")
     <td class="tab3"><a href="page_fed3GS.php#14" alt="text" title="Poule 14">Poule 14 </a></td>
     <td class="tab3"><a href="page_fed3GS.php#15" alt="text" title="Poule 15">Poule 15 </a></td>
     <td class="tab3"><a href="page_fed3GS.php#16" alt="text" title="Poule 16">Poule 16 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#17" alt="text" title="Poule 17">Poule 17 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#18" alt="text" title="Poule 18">Poule 18 </a></td>
-	
   </tr>
   
   </table>

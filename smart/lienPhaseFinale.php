@@ -2,10 +2,10 @@
 $champ2 =substr($champ,0,2);
 $division =$champ2*10;
 ?>
-<table align="center" width="95%">
+<table class="marginAuto width95PC">
 <tr>
- <td class="france" height="10" ><a href="pf_terr/phase_finale.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&annee=<?php echo $finSaison;?>&division=<?php echo substr($champ,0,5).'0';?>"> 
-		Phases finales r&eacute;gionales <?php echo $finSaison;?>
+ <td class="france"><a href="pf_terr/phase_finale.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&annee=<?php echo $finSaison;?>&division=<?php echo substr($champ,0,5).'0';?>"> 
+		Phases finales régionales <?php echo $finSaison;?>
 	</a></td>
 </tr>
 <tr>
@@ -13,7 +13,7 @@ $division =$champ2*10;
 </tr>
 <tr>
  <td class="franceBleu"><a href="palmares/pagePalmTerr.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ ;?>"> 
- 		Palmar&egrave;s régional</a></td>
+ 		Palmarès régional</a></td>
 </tr>
 </table>
 

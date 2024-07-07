@@ -41,7 +41,7 @@ if ($equipe > 90000000) {
 <hr />
 <hr />
 <p>
-<h2 align="center">Saisons pr&eacute;c&eacute;dentes</h2>
+<h2 align="center">Saisons précédentes</h2>
 
 <table width="95%" border="0" cellspacing="0" align="center">
   <!--Saison N-1 -->
@@ -155,13 +155,13 @@ if ($equipe > 90000000) {
   <tr class="ligneA"> 
     <td class="saisons"><?php echo $saison - 7;
     echo "-";
-    echo $saison - 6; ?></td>
-    <td class="lignePalm"><?php // echo $terrMoins7; ?></td>
+   // echo $saison - 6; ?></td>
+    <td class="lignePalm"><?php  echo $terrMoins7; ?></td>
   </tr>
   
   <tr class="ligneA"> 
     <td class="saisons"><?php echo "-"; ?></td>
-    <td class="lignePalm"><?php // echo $franceMoins7; ?></td>
+    <td class="lignePalm"><?php  echo $franceMoins7; ?></td>
   </tr>
   -->
 </table>
@@ -182,14 +182,7 @@ if ($equipe > 90000000) {
 
 
 <h2>Suivi des résultats des rencontres </h2>
-<?php
-//$comite ="php".$comite; 
-
-//echo "equipe : ".$equipe;echo "<br />";
-//echo "comite : ". $comite;echo "<br />";
-//echo "champ : ".$champ;echo "<br />";
-//// 23-06-2024 ----evolutionResultatsSmart ($equipe, $comite, $champ, $bdd);
-?>
+<p class="marginAuto"><?php evolutionResultatsSmart ($equipe, $comite, $champ, $bdd);?></p>
 <br />
 <h2>Calendrier et résultats<br>
   de
@@ -200,9 +193,9 @@ if ($equipe > 90000000) {
 
 <hr>
 <h2> Quelques Stats</h2>
-<table align="center" width="16%" border="0" height="250">
+<table align="center" width="75%" border="0" height="250">
   <tr>
-    <td class="taille8B">R&eacute;sultats &agrave; domicile</td>
+    <td class="taille8B">Résultats à domicile</td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td class="taille8">Nbre de match :
@@ -218,7 +211,7 @@ if ($equipe > 90000000) {
 <table align="center" width="16%" border="0">
   <tr>
     <td bgcolor="#FF0000" height="25"></td>
-    <td class="taille8B" align="left">D&eacute;faite</td>
+    <td class="taille8B" align="left">Défaite</td>
     <td bgcolor="#00CC00" height="25"></td>
     <td class="taille8B" align="left">Victoire</td>
     <td bgcolor="#FFCC00" height="25"></td>
@@ -228,9 +221,9 @@ if ($equipe > 90000000) {
 <br>
 <br>
 
-<table align="center" width="16%" border="0" height="250">
+<table align="center" width="75%" border="0" height="250">
   <tr>
-    <td class="taille8B">R&eacute;sultats &agrave; l'exterieur </td>
+    <td class="taille8B">Résultats à l'extérieur </td>
   </tr>
   <tr>
     <td class="taille8">Nbre de match :
@@ -244,14 +237,11 @@ if ($equipe > 90000000) {
 
 <h2> Moyennes </h2>
 
-<table align="center" width="16%" border="0" border color="#000000" cellspacing="0" cellpadding="0" align="center">
+<table align="center" width="75%" border="0" border color="#000000"  >
   <tr>
     <td align="center" colspan="2">
-      <font color="#109618" size="4"><b>Points marqu&eacute;s par match </b></font>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
+      <font color="#109618" size="4"><b>Points marqués par match : </b></font>
+   
       <font size="3" face="Arial, Helvetica, sans-serif" color="#FF0000"><b>
           <font color="#109618" size="4">
             <?php
@@ -267,12 +257,12 @@ if ($equipe > 90000000) {
     </td>
   </tr>
 </table>
-<table align="center" width="16%" border="1" border color="#000000" cellspacing="0" cellpadding="0">
+<table class="marginAuto" width="75%" border="1" border color="#000000">
   <tr>
-    <td class="texteBgVert"> Moyenne &agrave; domicile </td>
+    <td class="texteBgVert"> Moyenne à domicile </td>
 
   </tr>
-  <tr bgcolor="#FFFFFF">
+  <tr class="backgroundWhite">
     <td class="taille8B">
       <?php
       if ($joues > 0)
@@ -283,13 +273,14 @@ if ($equipe > 90000000) {
     </td>
   </tr>
 </table>
-<table align="center" width="16%" border="1" border color="#000000" cellspacing="0" cellpadding="0">
+<table class="marginAuto " width="75%" border="1" border color="#000000" >
   <tr>
-    <td class="texteBgVert"> Moyenne &agrave; l'exterieur </td>
+    <td class="texteBgVert"> Moyenne à l'exterieur  </td>
   </tr>
-  <tr bgcolor="#FFFFFF">
+  <tr class="backgroundWhite">
     <td class="taille8B">
       <?php
+      
       if ($joues > 0)
         echo round($pointsMarquesExterieur / $matchExterieur);
       else
@@ -298,18 +289,17 @@ if ($equipe > 90000000) {
     </td>
   </tr>
 </table>
-
-<table align="center" width="16%" border="0" border color="#000000" cellspacing="0" cellpadding="0">
+<br>
+<table class="MarginAuto" width="75%" border="0" border color="#000000" >
   <tr>
 
-    <td align="center" colspan="2">
-      <font size="4" face="Arial, Helvetica, sans-serif" color="#FF0000"><b>Points
-          encaiss&eacute;s par match</font></b></font>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
+    <td colspan="2">
+      <font size="4" face="Arial, Helvetica, sans-serif" color="#FF0000"><b>
+        Points encaissés par match :</font></b></font>
+  
       <font size="4" face="Arial, Helvetica, sans-serif" color="#FF0000"><b>
           <?php
+          
           if ($joues > 0) {
             $moyenne = round($pointsPris / $joues);
             echo $moyenne;
@@ -321,13 +311,14 @@ if ($equipe > 90000000) {
     </td>
   </tr>
 </table>
-<table align="center" width="16%" border="1" border color="#000000" cellspacing="0" cellpadding="0">
+<table align="center" width="75%" border="1" border color="#000000" >
   <tr>
-    <td class="texteBgRouge"> Moyenne &agrave; domicile </td>
+    <td class="texteBgRouge"> Moyenne à domicile </td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td class="taille8B">
       <?php
+      
       if ($joues > 0)
         echo round($pointsPrisDomicile / $matchDomicile);
       else
@@ -335,13 +326,14 @@ if ($equipe > 90000000) {
     </td>
   </tr>
 </table>
-<table align="center" width="16%" border="1" border color="#000000" cellspacing="0" cellpadding="0">
+<table class="marginAuto" width="75%" border="1" border color="#000000">
   <tr>
-    <td class="texteBgRouge">Moyenne &agrave; l'exterieur </td>
+    <td class="texteBgRouge">Moyenne à l'exterieur </td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td class="taille8B">
       <?php
+      
       if ($joues > 0)
         echo round($pointsPrisExterieur / $matchExterieur);
       else
@@ -351,10 +343,10 @@ if ($equipe > 90000000) {
 </table>
 </center>
 <hr>
-<h2>Calendrier et <br /> r&eacute;sultats de la poule</h2>
+<h2>Calendrier et <br /> résultats de la poule</h2>
 <?php calendrier($champ, true, $bdd); ?>
 <hr>
-<h2> Palmar&egrave;s </h2>
+<h2> Palmarès </h2>
 <?php require '../../resultats/bilan/palmares.php'; ?>
 <hr>
-<?php include("../../pub/pub25.php"); ?>
+<?php //include("../../pub/pub25.php"); ?>

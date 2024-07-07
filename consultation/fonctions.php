@@ -293,7 +293,7 @@ function nomLigueParSigleLigue($sigleLigue ,$bdd)
    $NomLigueParSigle=$row[0]; 
   }	
 }
-
+// *********  Récupération des équipes pas ligues et/ou par divisions  ************
 
 // indiquer le nombre de clubs par divisions avec un id d'une ligue passé en paramétre 
 function structureLigue($idLigue, $bdd)
@@ -323,4 +323,15 @@ function structureLigue($idLigue, $bdd)
 	$d180 = $tabNbre[8];
 	$d190 = $tabNbre[9];	
 }
+
+function cssColonne ($trigrammeLigue) {
+	if ( $trigrammeLigue == "ARA" OR $trigrammeLigue == "BRE" OR  $trigrammeLigue == "COR" OR   $trigrammeLigue == "HDF" OR
+	  $trigrammeLigue == "NOR" OR   $trigrammeLigue == "OCC" OR   $trigrammeLigue == "PCA" ) 
+	  return true;
+	  else 
+	  return false;
+}
+
+
+
 ?>

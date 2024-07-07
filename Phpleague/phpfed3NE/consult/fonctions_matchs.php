@@ -583,7 +583,7 @@ function oppositionsDetaillees($champ, $id_equipe, $smart, $bdd)
 function calendrier($champ, $smart, $bdd)
 {
 
-  echo "test"; //nbre d'equipes
+  //echo "test"; //nbre d'equipes
   $result = $bdd->query("SELECT COUNT(*) 
 					  FROM phpfed3NE_equipes 
 					  WHERE id_champ='$champ'");
