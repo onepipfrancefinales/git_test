@@ -39,15 +39,17 @@ $sigleLigue = "(".$sigle.")";
 function nomDivision($rang, $bdd)
 {
 global $division;
-
 $reponse = $bdd->query("SELECT division
-						FROM divisions
+						FROM bddivisions
 						WHERE id= '$rang' ");
 							while($donnees = $reponse->fetch())
 								{
 								$division=$donnees['division'];
-								}
+								}								
 }
+
+
+
 
 function palmaresLigue($sigleLigue, $annee, $rang, $bdd)
 {
@@ -83,7 +85,6 @@ $intervalleAnnee=$annee-2018;
 
 function palmaresFrance($rang, $annee, $bdd)
 {
-	
 global $tabSaison, $tabChampion, $tabComite, $intervalleAnneeChampion;
 
 if ($rang > 100 && $rang < 225)

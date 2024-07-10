@@ -24,7 +24,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td class ="h22">France Finales Rugby</td>
   </tr>
   <tr>
-    <td class ="h12">Comp&eacute;titions Fran&ccedil;aises</td>
+    <td class ="h12">Compétitions Françaises</td>
   </tr>
 </table>
 <p align="center"><img src="/images/123.jpg" width="120" height="120"></p>

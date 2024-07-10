@@ -236,12 +236,6 @@ division($champ, $bdd);
 				else
 					$ancre = substr($champ, -1);
 
-				//if ($champ == 991161 or $champ == 991261 or $champ == 992161 or $champ == 992261) 
-				//$ancre = $ancre +9;
-				//echo "champ : ".$champ;
-				//echo "<br>";
-				//echo "ancre : ".$ancre;	
-
 		?>
 
 				<a name="<?php echo $ancre; ?>"></a>
@@ -283,7 +277,7 @@ division($champ, $bdd);
 				<br>
 				<table class= "width90PC marginAuto ">
 					<tr >
-						<td class=" size4 colorRed backgroundYellow"><a class="decorationNoneRed" href="calendrier.php?champ=<?php echo $champ; ?>&comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>" target="_blank">
+						<td class=" size4 colorRed backgroundYellow"><a style ="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>" target="_blank">
 									<b>--	Calendrier complet -- </a></td>
 					</tr>
 				</table>
@@ -328,7 +322,7 @@ division($champ, $bdd);
 				// echo "poule : ".$poule; echo "champ : ".$i; 
 			?>
 
-				<table class="width90PC center" border="1" >
+				<table class="width90PC marginAuto" border="1">
 					<tr>
 						<td class="titre"><?php echo $poule; ?></td>
 					</tr>
@@ -360,7 +354,7 @@ division($champ, $bdd);
 				<br>
 				<table class="width90PC marginAuto"  >
 					<tr>
-						<td class="size4 colorRed backgroundYellow"><a class="decorationNoneRed" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
+						<td class="size4 colorRed backgroundYellow decorationNone"><a style ="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
 								<b>--	Calendrier complet -- </a></td>
 					</tr>
 				</table>
@@ -386,7 +380,7 @@ division($champ, $bdd);
 				require("../connect/connexion6.php");
 				divisionPlusPoule($bddComite, $champ, $bdd);
 			?>
-				<table class="width90PC marginAuto " border="1" >
+				<table class="width90PC marginAuto" border="1" >
 					<tr>
 						<td class="titre"><?php echo $poule; ?></td>
 					</tr>
@@ -408,7 +402,7 @@ division($champ, $bdd);
 				<br>
 				<table class= "width90PC marginAuto" >
 					<tr>
-						<td class="size4 colorRed backgroundYellow"><a class="decorationNoneRed" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
+						<td class="size4 colorRed backgroundYellow"><a style ="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
 							<b>-- Calendrier complet --	</a></td>
 					</tr>
 				</table>

@@ -8,18 +8,21 @@ if (isset($_GET['comite'])) $comite = $_GET['comite'];
 //$comite = $bddComite;
 $champ = substr($champ,0,5)*10;
 //echo "champ : ".$champ;echo "<br>";
-// prevoir en fonction de la longueur de la division étudieé
+// prevoir en fonction de la longueur de la division ï¿½tudieï¿½
 
 $rang = substr($champ,3,2)*10;
+echo "rang".$rang;
 $comitePlus="(".''.$comite.''.")";
 
 require ("../../saison.php") ;
 require 'fonctions.php';
-require '../../connect/connexion5.php';
-infosComite($champ, $bdd);
-nomDivision($rang, $bdd);
+//require '../../connect/connexion5.php';
+
+
 
 require '../../connect/connexion1.php';
+infosComite($champ, $bdd);
+nomDivision($rang, $bdd);
 infosLigue($codeLigue, $bdd);
 palmaresLigue($sigleLigue, $annee, $rang, $bdd);
 palmaresComite($comitePlus, $rang, $bdd);
@@ -28,9 +31,9 @@ palmaresComite($comitePlus, $rang, $bdd);
 <html>
 <head>
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comités territoriaux, Tous les championnats de rugby, fédérale 2, fédérale 3, fédérale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitï¿½s territoriaux, Tous les championnats de rugby, fï¿½dï¿½rale 2, fï¿½dï¿½rale 3, fï¿½dï¿½rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -67,7 +70,7 @@ else
 	<td width= "95%"class="h22" height="20"> France Finales Rugby </td>
   </tr>
   <tr> 
-    <td colspan="2" class="h12"><?php echo "Palmar&egrave;s R&eacute;gional "."<br />".$nomCompletLigue;?></td>
+    <td colspan="2" class="h12"><?php echo "PalmarÃ¨s RÃ©gional "."<br />".$nomCompletLigue;?></td>
   </tr>
 </table>
  
@@ -78,11 +81,11 @@ include("menuTerrReg.php"); ?>
   </div>
   </div>
 	
-	<!-- fin entete figée-------->
+	<!-- fin entete figÃ©e-------->
 	
 	
 <div class="container">
-<!-- affichage palmarès ligue -->
+<!-- affichage palmarÃ¨s ligue -->
 <?php
 if ($comite=="au" OR $comite=="ly" OR $comite=="da" OR $comite=="ap" 
 OR $comite=="ab" OR $comite=="ld" OR $comite=="mpy" OR $comite=="pc"
@@ -117,27 +120,27 @@ for ($i=0; $i<$intervalleAnnee; $i++)
 <?php
 }?>
 
-<!-- affichage palmarès comité -->
+<!-- affichage palmarÃ¨s comitÃ©s -->
 <p class="palm">
     <?php 
 	if ($comite == "ap") $nomCompletComite ="des Alpes";
 	elseif ($comite == "au") $nomCompletComite ="d'Auvergne";
-	elseif ($comite == "da") $nomCompletComite ="Dr&ocirc;me Ard&egrave;che";
+	elseif ($comite == "da") $nomCompletComite ="DrÃ´me ArdÃ¨che";
 	elseif ($comite == "ly") $nomCompletComite ="du Lyonnais";
 	
-	elseif ($comite == "be") $nomCompletComite ="du B&eacute;arn";
-	elseif ($comite == "cbl") $nomCompletComite ="C&ocirc;te Basque Landes";
-	elseif ($comite == "ca") $nomCompletComite ="C&ocirc;te d'Argent";
+	elseif ($comite == "be") $nomCompletComite ="du BÃ©arn";
+	elseif ($comite == "cbl") $nomCompletComite ="CÃ´te Basque Landes";
+	elseif ($comite == "ca") $nomCompletComite ="CÃ´te d'Argent";
 	elseif ($comite == "lm") $nomCompletComite ="du Limousin";
 	elseif ($comite == "pch") $nomCompletComite ="Poitou Charente";
-	elseif ($comite == "pa") $nomCompletComite ="P&eacute;rigord Agenais";
+	elseif ($comite == "pa") $nomCompletComite ="PÃ©rigord Agenais";
 	
 	elseif ($comite == "ab") $nomCompletComite ="Armagnac Bigorre";
 	elseif ($comite == "ld") $nomCompletComite ="Languedoc";
-	elseif ($comite == "mpy") $nomCompletComite ="Midi Pyr&eacute;n&eacute;es";
+	elseif ($comite == "mpy") $nomCompletComite ="Midi PyrÃ©nÃ©es";
 	elseif ($comite == "pa") $nomCompletComite ="Pays Catalan";
 	
-	echo "Champions ".'comit&eacute; '.$nomCompletComite.' '.$division; ?>
+	echo "Champions ".'comitÃ© '.$nomCompletComite.' '.$division; ?>
 </p> 
 <?php
 for ($i=0; $i<$intervalleAnneeComite; $i++)
@@ -153,8 +156,8 @@ for ($i=0; $i<$intervalleAnneeComite; $i++)
     <br>
 <?php
   //include("../pub20.php"); 
-  require ("../bas2.php");
-  include("../../pub/pub_displayCarre.php"); 
+ require ("../bas2.php");
+ // include("../../pub/pub_displayCarre.php"); 
 ?>
    
   </div>
