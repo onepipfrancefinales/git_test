@@ -5,15 +5,15 @@ include("../../Phpleague/phpau/lang/lang_fr.php");
 ouverture();
 
 if ($champRecup == 100171)
-	$tableau = array(100171, 100172, 100173, 100174);
+	$tableau =$tableauARA1;	
 elseif ($champRecup == 100181)
-	$tableau = array( 100181, 100182, 100183 , 100184, 100185, 100186);
+	$tableau = $tableauARA2;	
 elseif ($champRecup == 100191)
-	$tableau = array(100191, 100192, 100193, 100194, 100195, 100196, 100197, 100198, 100199, 100200 );
+	$tableau = $tableauARA3;	
 elseif ($champRecup == 100271)
-	$tableau = array(100271, 100272, 100273, 100274);	
+	$tableau = $tableauRES_ARA1;		
 elseif ($champRecup == 109181)
-	$tableau = array(109181, 109182, 109183 , 109184, 109185, 109186);
+	$tableau = $tableauRES_ARA2;	
 
 
 //for ($champDiv = $champRecup ; $champDiv < 220 ; $champDiv=$champDiv+10)

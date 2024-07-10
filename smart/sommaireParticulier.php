@@ -17,9 +17,9 @@ if ($bddComite =="fed3NE" and $champ=="991161")
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#6"> P6 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#7"> P7 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#8"> P8 </a></td>
-	  <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#9"> P9 </a></td>
   </tr>
   <tr> 
+     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#9"> P9 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#10"> P10 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#11"> P11</a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#12"> P12</a></td>
@@ -27,9 +27,6 @@ if ($bddComite =="fed3NE" and $champ=="991161")
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#14"> P14</a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#15"> P15</a></td>
 	  <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#16"> P16</a></td>
-    <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#17"> P17</a></td>
-    <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS#18"> P18</a></td>
-	
   </tr>
 </table>
 
@@ -50,9 +47,10 @@ elseif ($bddComite =="fed3NE" and $champ=="991261")
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#6"> P6 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#7"> P7 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#8"> P8 </a></td>
-	  <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#9"> P9 </a></td>
+	 
   </tr>
   <tr> 
+   <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#9"> P9 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#10"> P10</a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#11"> P11</a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#12"> P12</a></td>
@@ -60,8 +58,7 @@ elseif ($bddComite =="fed3NE" and $champ=="991261")
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#14"> P14</a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#15"> P15</a></td>
 	  <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#16"> P16</a></td>
-    <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#17"> P17</a></td>
-    <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS#18"> P18</a></td>
+   
   </tr>
 </table>
   <?php

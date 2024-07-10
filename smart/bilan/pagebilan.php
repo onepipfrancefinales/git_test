@@ -4,7 +4,7 @@ $champion = $_GET['id_equipe'];
 $equipe=$_GET['id_equipe'];
 $id_equipe=$_GET['id_equipe'];
 $comite=$_GET['comite'];
-$phpComite="php".$comite;
+$phpComite=$_GET['comite'];
 $equipeComite= substr($equipe,-5);
 //$comite=substr($phpComite, 3);
 $champ = $_GET['champ'];
@@ -16,12 +16,15 @@ require "../../Phpleague/".$comite."/consult/fonctions_matchs.php";
 require "../../Phpleague/".$comite."/lang/lang_fr.php";
 //connection à la base de données
 require ("../../connect/connexion1.php");
+nomClub($equipe, $bdd);
+nomLigue($equipe, $bdd);
 affichage5Saisons($finSaison, $equipeComite,$champ,$phpComite, $bdd);
 
 	require ("../../connect/connexion6.php");
 traitementDesScores($equipe, $comite, $bdd);
-//meilleureAttaque ($comite, $champ, $bdd);
-//meilleureDefense ($comite, $champ, $bdd);
+nomDivision($phpComite, $champ, $bdd);
+//meilleureAttaque ($phpCcomite, $champ, $bdd);
+//meilleureDefense ($phpComite, $champ, $bdd);
 
 ?>
 
@@ -38,7 +41,7 @@ traitementDesScores($equipe, $comite, $bdd);
  <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body text="#000000" bgcolor="#CCCCCC" align="center">
+<body  text="#000000" bgcolor="#CCCCCC" align="center">
  <div class="fixed-header">
   <div class="container">
    <table width="100%" border="1" align="center">
@@ -61,3 +64,29 @@ traitementDesScores($equipe, $comite, $bdd);
  </div>
 </body>
 </html>
+<style>
+.titreRouge11{
+     font-family: Arial;
+font-size: 23px;
+     color: #FF0000;
+     font-weight: bold;
+}
+
+.titreRouge22{
+     font-family: Arial;
+     font-size: 15px;
+     color :#FF0000;
+     font-weight: bold;
+
+}
+.titreSaison{
+     font-family: Arial;
+     font-size: 20px;
+     color :#000000;
+     font-weight: bold;
+}
+
+  </style>
+
+
+

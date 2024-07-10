@@ -137,17 +137,17 @@
     elseif (substr($champ, 3, 2) == 13)
       echo "Nationale";
     elseif (substr($champ, 3, 2) == 14)
-      echo "F&eacute;d&eacute;rale 1";
+      echo "Fédérale 1";
     elseif (substr($champ, 3, 2) == 24)
-      echo "Espoir F&eacute;d 1";
+      echo "Espoir Féd 1";
     elseif (substr($champ, 3, 2) == 15)
-      echo "F&eacute;d&eacute;rale 2";
+      echo "Fédérale 2";
     elseif (substr($champ, 3, 2) == 25)
-      echo "F&eacute;d&eacute;rale B";
+      echo "Fédérale B";
 
   } elseif ($phpComite == "phpfed3NE") {
     if (substr($champ, 3, 2) == 16)
-      echo "F&eacute;d&eacute;rale 3";
+      echo "Fédérale 3";
     else
       echo "Excellence B";
   } else {
@@ -163,9 +163,9 @@
 <div>
   </p>
   <br>
-  <h4>Classement général</h4>
+  <h4 >Classement général</h4>
   <!-- Classement général de la poule -->
-<div class="center" >
+<div  align="center" >
   <?php
   classementDetaille($champ, $bdd);
   ?>
@@ -193,7 +193,7 @@
   <?php  journeesReportees($comite, $champ, $bdd); ?>
   <br><br>
 
-  <p class=titreNoir2>Calendrier et r&eacute;sultats de<br>
+  <p class=titreNoir2>Calendrier et résultats de<br>
     <?php echo $nom; ?>
   </p>
 
@@ -204,7 +204,7 @@
   <h1> Quelques Stats</h1>
 
   <!-- font size="3" face="Arial, Helvetica, sans-serif" color="#FF0000">Victoires 
-    cons&eacute;cutives</font>
+    consécutives</font>
   -->
   <table width="400" border="0" height="250" align="center">
     <tr>
@@ -259,10 +259,10 @@
   <br>
   <table width="73%" border="1" cellspacing="0" cellpadding="0" align="center">
     <tr>
-      <td class="moyVert"> Moyenne &agrave; domicile </td>
-      <td class="moyVert"> Moyenne &agrave; l'exterieur </td>
-      <td class="moyRouge"> Moyenne &agrave; domicile </td>
-      <td class="moyRouge"> Moyenne &agrave; l'exterieur </td>
+      <td class="moyVert"> Moyenne à domicile </td>
+      <td class="moyVert"> Moyenne à l'exterieur </td>
+      <td class="moyRouge"> Moyenne à domicile </td>
+      <td class="moyRouge"> Moyenne à l'exterieur </td>
     </tr>
     <tr>
       <td class="moyResultat">
@@ -331,7 +331,7 @@
   <hr>
   <br>
 
-  <p class="QLiens"> Calendrier et r&eacute;sulats des rencontres de la poule</p>
+  <p class="QLiens"> Calendrier et résulats des rencontres de la poule</p>
 
   <?php //calendrier($champ, false, $bdd); ?>
 
@@ -342,7 +342,7 @@
   </p>
 
   <p class="QLiens"><a href="/consultation/pageclub00.php?champion=<?php echo $equipe; ?>" target="_blank">
-      Compl&eacute;ter les infos du club
+      Compléter les infos du club
     </a>
   </p>
   <p class="QLiens"><a

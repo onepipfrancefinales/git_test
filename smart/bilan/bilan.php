@@ -43,7 +43,7 @@ if ($equipe > 90000000) {
 <p>
 <h2 align="center">Saisons précédentes</h2>
 
-<table width="95%" border="0" cellspacing="0" align="center">
+<table class="marginAuto width95PC" border="0" >
   <!--Saison N-1 -->
   <tr class="ligneA">
     <td class="saisons">
@@ -168,23 +168,66 @@ if ($equipe > 90000000) {
 
 <br>
 <hr />
+<h1 class="titreSaison">Saison
+  <?php echo $debutSaison . " - " . $finSaison; ?>
+</h1>
+<p class="titreRouge11">
+  <?php
+  //$comite= substr ($comite,0,3);
+  echo "Championnat ";
+  
+  if ($phpComite == "phppro") {
+    if (substr($champ, 3, 2) == 11)
+      echo "Top 14";
+    elseif (substr($champ, 3, 2) == 12)
+      echo "Pro D2";
+    elseif (substr($champ, 3, 2) == 13)
+      echo "Nationale";
+    elseif (substr($champ, 3, 2) == 14)
+      echo "Fédérale 1";
+    elseif (substr($champ, 3, 2) == 24)
+      echo "Espoir Féd 1";
+    elseif (substr($champ, 3, 2) == 15)
+      echo "Fédérale 2";
+    elseif (substr($champ, 3, 2) == 25)
+      echo "Fédérale B";
 
-<h2> Classement <?php echo $debutSaison." - ".$finSaison; ?></h2>
+  } elseif ($phpComite == "phpfed3NE") {
+    if (substr($champ, 3, 2) == 16)
+      echo "Fédérale 3";
+    else
+      echo "Excellence B";
+  } else {
+    echo "ligue " . $nomLigue;
+  }
+
+  ?>
+</p>
+
+
+<p class="titreRouge22">
+  <?php 
+  echo $division; 
+  ?>
+<div>
+  </p>
+  <br>
+<h2 class="marginAuto"> Classement général</h2>
 <?php clmnt($champ, true, $bdd); ?>
 
 <hr />
 
-<h2>Evolution du classement</h2>
+<h2 class="marginAuto">Evolution du classement</h2>
 
 <?php //require '../../resultats/bilan/graphiqueTest2.php';?>
 
 <p>Prochainement</p>
 
 
-<h2>Suivi des résultats des rencontres </h2>
+<h2 class="marginAuto">Suivi des résultats des rencontres </h2>
 <p class="marginAuto"><?php evolutionResultatsSmart ($equipe, $comite, $champ, $bdd);?></p>
 <br />
-<h2>Calendrier et résultats<br>
+<h2> <span class="marginAuto"> Calendrier et résultats<br>
   de
   <?php echo $nom; ?>
 </h2>
@@ -221,7 +264,7 @@ if ($equipe > 90000000) {
 <br>
 <br>
 
-<table align="center" width="75%" border="0" height="250">
+<table class="marginAuto" width="75%" border="0" height="250">
   <tr>
     <td class="taille8B">Résultats à l'extérieur </td>
   </tr>
@@ -237,7 +280,7 @@ if ($equipe > 90000000) {
 
 <h2> Moyennes </h2>
 
-<table align="center" width="75%" border="0" border color="#000000"  >
+<table class="marginAuto" width="75%" border="0" border color="#000000"  >
   <tr>
     <td align="center" colspan="2">
       <font color="#109618" size="4"><b>Points marqués par match : </b></font>

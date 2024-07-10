@@ -2,6 +2,7 @@
 require "../../Phpleague/phpca/config2.php";
 require '../../Phpleague/phpca/admin/fonctions.php';
 include("../../Phpleague/phpca/lang/lang_fr.php");
+require '../../../fichierConfig.php';
 ouverture();
 
 echo "<br />";
@@ -12,15 +13,15 @@ if (isset($champRecup)) $champRecup=$champRecup; else $champRecup=0;
 
 
 if ($champRecup == 190171)
-	$tableau = array(190171, 190172, 190173, 190174, 190175);
+	$tableau = $tableauNAQ1;
 elseif ($champRecup == 190181)
-	$tableau = array(190181, 190182, 190183 , 190184, 190185, 190186, 190187);
+	$tableau = $tableauNAQ2;
 elseif ($champRecup == 190191)
-	$tableau = array(190191, 190192, 190193, 190194, 190195, 190196, 190197);
+	$tableau = $tableauNAQ3;
 elseif ($champRecup == 190271)
-	$tableau = array(190271, 190272, 190273, 190274, 190275);
+	$tableau = $tableauRES_NAQ1;
 elseif ($champRecup == 199181)
-	$tableau = array(199181, 199182, 199183 , 199184, 199185, 199186, 199187);	
+	$tableau =$tableauRES_NAQ2;	
 
 
 

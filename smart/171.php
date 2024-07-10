@@ -165,24 +165,35 @@ division($champ, $bdd);
 				$tabLigue = $tableau110;
 			// Fédérale 1
 			elseif ($champ == 990140) {
-				$tabLigue = array(990141, 990142, 990143, 990144);
+				$tabLigue = $tableauFed1 ;	
+				;
 			} elseif ($champ == 990240) {
-				$tabLigue = array(990241, 990242, 990243, 990244);
+				$tabLigue = $tableauFed1B;
 			}
 
 			// Fédérale 2
 			elseif ($champ == 990150) {
-				$tabLigue = array(990151, 990152, 990153, 990154, 990155, 990156, 990157, 990158);
+				$tabLigue = $tableauFed2;
 			} elseif ($champ == 990250) {
-				$tabLigue = array(990251, 990252, 990253, 990254, 990255, 990256, 990257, 990258);
+				$tabLigue = $tableauFed2B;
 			}
 
 			// Fédérale 3
-			elseif ($champ == 991161 or $champ == 992161) {
+			elseif ($champ == 991161 ) {
 				$tabLigue = array(
 					991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168, 991169,
 					992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168, 992169
 				);
+			}
+				elseif ($champ == 992161) {
+					$tabLigue = array(
+						991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168, 991169,
+						992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168, 992169
+					);
+	
+
+
+
 			} elseif ($champ == 991261 or $champ == 992261) {
 				$tabLigue = array(
 					991261, 991262, 991263, 991264, 991265, 991266, 991267, 991268, 991269,
@@ -192,7 +203,7 @@ division($champ, $bdd);
 
 			// Féminines
 			elseif ($champ == 880281) {
-				$tabLigue = array(880281, 880282, 880285, 880291, 880292, 880293, 880294);
+				$tabLigue = $tableauFem;
 			}
 
 
@@ -235,9 +246,9 @@ division($champ, $bdd);
 
 				<a name="<?php echo $ancre; ?>"></a>
 
-				<table class="width90PC center" border="1" >
+				<table class="width90PC marginAuto" border="1" >
 					<tr>
-						<td class="titre">
+						<td class="titre ">
 							<?php
 
 							if ($champ == 990110) echo "TOP 14";

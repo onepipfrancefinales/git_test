@@ -27,7 +27,7 @@ nomDivision($phpComite, $champ, $bdd);
 //meilleureAttaque($phpComite, $champ, $bdd);
 //meilleureDefense($phpComite, $champ, $bdd);
 //nombreEquipe($phpComite, $champ, $bdd);
-//traitementDesScores($equipe, $phpComite, $bdd);
+traitementDesScores($equipe, $phpComite, $bdd);
 ?>
 
 
@@ -35,7 +35,7 @@ nomDivision($phpComite, $champ, $bdd);
 <html lang="fr">
 
 <head>
-  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/bilan/page_bilan.php/" />
+  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/bilan/page_bilan.php" />
   <meta charset="utf-8">
 
   <link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/league.css">
@@ -46,7 +46,7 @@ nomDivision($phpComite, $champ, $bdd);
   <link type="text/css" rel="stylesheet" href="../../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../../ligne1.css">
   <title>Statistiques de <?php echo $nom; ?></title>
-  <meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+  <meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
