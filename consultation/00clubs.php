@@ -90,7 +90,7 @@ $width = "70%";
     <td class="saisie" width="80%">  <?php echo $telStade;?>  </td>
   </tr>
   <tr > 
-    <td  class="titreGauche" >capacit&eacute; : </td>
+    <td  class="titreGauche" >capacité : </td>
     <td class="saisie">  <?php echo $capacite;?> </td>
   </tr>
 </table>
@@ -183,7 +183,7 @@ $width = "70%";
 	<hr width= "70%" color="red" >
 	<?php ;} ?>
 
-<h1>Palmar&egrave;s</h1>
+<h1>Palmarès</h1>
 
 
 <?php

@@ -25,7 +25,7 @@ elseif ($cmt == "pro")
   <tr>
     <td class="tab3"><a href="#1">Top 14 </a></td>
     <td class="tab3"><a href="#2">Pro D2 </a></td>
-	<td class="tab3"><a href="#3">Nationale 1</a></td>
+	  <td class="tab3"><a href="#3">Nationale 1</a></td>
     <td class="tab3"><a href="#3">Nationale 2</a></td>
   </tr>
 </table>
@@ -71,31 +71,27 @@ elseif ($cmt =="fed2")
 elseif ($cmt =="fed3NE" or $cmt =="fed3GS")
 {
  ?>
-
 <table class="sommaireFed3"  >
   <tr> 
-    <td class="tab3"><a href="page_fed3NE.php#1" alt="text" title="Poule 1">Poule 1</a></td>
-    <td class="tab3"><a href="page_fed3NE.php#2" alt="text" title="Poule 2">Poule 2</a></td>
-    <td class="tab3"><a href="page_fed3NE.php#3" alt="text" title="Poule 3">Poule 3 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#4" alt="text" title="Poule 4">Poule 4 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#5" alt="text" title="Poule 5">Poule 5 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#6" alt="text" title="Poule 6">Poule 6 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#7" alt="text" title="Poule 7">Poule 7 </a></td>
-    <td class="tab3"><a href="page_fed3NE.php#8" alt="text" title="Poule 8">Poule 8 </a></td>
-	
-	
+    <td class="tab3"><a href="page_fed3.php?code=NE#1" alt="text" title="Poule 1">Poule 1 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=NE#2" alt="text" title="Poule 2">Poule 2 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=NE#3" alt="text" title="Poule 3">Poule 3 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=NE#4" alt="text" title="Poule 4">Poule 4 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=NE#5" alt="text" title="Poule 5">Poule 5 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=NE#6" alt="text" title="Poule 6">Poule 6 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=NE#7" alt="text" title="Poule 7">Poule 7 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=NE#8" alt="text" title="Poule 8">Poule 8 </a></td>
   </tr>
   <tr> 
-    <td class="tab3"><a href="page_fed3NE.php#9" alt="text" title="Poule 9">Poule 9 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#10" alt="text" title="Poule 10">Poule 10 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#11" alt="text" title="Poule 11">Poule 11</a></td>
-    <td class="tab3"><a href="page_fed3GS.php#12" alt="text" title="Poule 12">Poule 12</a></td>
-    <td class="tab3"><a href="page_fed3GS.php#13" alt="text" title="Poule 13">Poule 13 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#14" alt="text" title="Poule 14">Poule 14 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#15" alt="text" title="Poule 15">Poule 15 </a></td>
-    <td class="tab3"><a href="page_fed3GS.php#16" alt="text" title="Poule 16">Poule 16 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=GS#1" alt="text" title="Poule 9">Poule 9 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=GS#2" alt="text" title="Poule 10">Poule 10 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=GS#3" alt="text" title="Poule 11">Poule 11 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=GS#4" alt="text" title="Poule 12">Poule 12 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=GS#5" alt="text" title="Poule 13">Poule 13 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=GS#6" alt="text" title="Poule 14">Poule 14 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=GS#7" alt="text" title="Poule 15">Poule 15 </a></td>
+    <td class="tab3"><a href="page_fed3.php?code=GS#8" alt="text" title="Poule 16">Poule 16 </a></td>
   </tr>
-  
   </table>
 
 <?php

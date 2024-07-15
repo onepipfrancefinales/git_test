@@ -14,7 +14,7 @@
       <a href="/resultats/page_fed2.php">Fédérale 2</a>
     </td>
     <td  class="bas"> 
-      <a href="/resultats/page_fed3NE.php">Fédérale 3</a>
+      <a href="/resultats/page_fed3.php?code=NE">Fédérale 3</a>
     </td>
   </tr>
   <tr > 
@@ -29,7 +29,7 @@
      <a href="/resultats/page_fed2.php">Fédérale B</a>
     </td>
     <td  class="bas"> 
-     <a href="/resultats/page_fed3NE.php">Excellence B</a>
+     <a href="/resultats/page_fed3.php?code=NE">Excellence B</a>
     </td>
   </tr>
 </table>

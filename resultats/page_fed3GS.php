@@ -110,6 +110,7 @@ $comiteNom = "Fédérale 3 - Excellence B"; ?>
         echo "<hr>" . " <hr>";
 
         // require("comPerso.php"); 
+        
 
 
         foreach ($tableauFed3_2 as $champ) {

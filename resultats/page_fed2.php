@@ -74,6 +74,7 @@ $comiteNom = "Fédérale 2 - Fédérale B";
 
       <!-- Colonne centrale -->
       <td class="colonneCentrale">
+       
       <br />
           <h1>CHAMPIONNAT DE FRANCE</h1>
           <h2 class="titre">Fédérale 2 - Fédérale B</h2>
@@ -88,25 +89,10 @@ $comiteNom = "Fédérale 2 - Fédérale B";
           </script>
           <br >
 
-          <table class="marginAuto width500">
-            <tr>
-              <td>
-                <h4 class="bulleReparGeo">
-                  <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed2.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">
-                  Répartition géographique des clubs de Fédérale 2
-                  </a>
-
-                </h4>
-                <h4 class="bulleReglement">
-                  <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalités de qualification de la saison 2023-2024</a>
-                </h4>
-
-              </td>
-            </tr>
-          </table>
+        
 
           <?php
-
+  include 'presentationSaison.php';
           echo "<hr>" . " <hr>";
 
           // require("comPerso.php"); 
@@ -130,22 +116,9 @@ $comiteNom = "Fédérale 2 - Fédérale B";
             echo "<br>" . "<br>";
           };
 
-          echo "<hr />" . " <hr />"; ?>
-
-          <table class="marginAuto width500">
-            <tr>
-              <td>
-                <h4 class="bulleReglement">
-                  <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalités de qualification de la saison 2023-2024</a>
-                </h4>
-                <h4 class="bulleReparGeo">
-                  <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed2.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">
-                   Répartition géographique des clubs de Fédérale 2
-                  </a>
-                </h4>
-              </td>
-            </tr>
-          </table>
+          echo "<hr />" . " <hr />"; 
+  include 'presentationSaison.php';?>
+          
 
           <br />
           <?php

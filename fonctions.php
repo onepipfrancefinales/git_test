@@ -243,7 +243,7 @@ function palmares($nomChampion, $table, $categorie, $bdd)
 					while ($donnees =$reponse->fetch())
 						{ 
 echo $donnees['saison'].' '.$donnees['titre'].' '.$donnees['championnat'].' '.$donnees['division'] 
-		.' '.$donnees['champion_entente'].' '."<br />";
+		."<br />";
 						}					
 }
 

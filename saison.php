@@ -16,7 +16,7 @@ echo "annee : " . $annee;
 echo "<br/>";
 echo "<br/>";
 */
-// Du 1er Aout a Décembre
+// Du 1er Aout à Décembre
 if (date('m', time()) > 07 and date('m', time()) <= 12) {
 
     $debutSaison = $annee;

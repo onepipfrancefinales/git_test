@@ -1,6 +1,7 @@
 <?php
 session_start ();
 include("../saison.php");
+include("../fichierConfig.php");
 require '../connect/connexion6.php';
 require '../Phpleague/phppl/consult/fonctions_matchs.php';
 require '../Phpleague/phppl/lang/lang_fr.php';
@@ -47,24 +48,28 @@ $comiteNom="des Flandres";?>
 <body>
 <table class="table">
     <tr>
-      <td colspan="3"><img src="../images/banniere_haut/(<?php echo $CMT;?>).jpg" height="150" width="1250"></td>
+      <td colspan="3">
+        <img src="../images/banniere_haut/(<?php echo $CMT;?>).jpg" height="150" width="1250"></td>
     </tr>
     <tr>
-      <td colspan="3"><?php include("../01ligne.php"); ?></td>
+      <td colspan="3">
+        <?php include("../01ligne.php"); ?></td>
     </tr>
-    <tr bgcolor="#ffffff">
-     <td colspan="3"><td><?php include("../pub/pub_displayHorizontal.php");?></td> 
+    <tr>
+     <td colspan="3"></td> 
     </tr>
     <tr>
 	  <!-- Colonne de gauche --> 
-      <td bgcolor="#006699" valign="top" width="225" height="1361"><p><?php include("../01gauche.php");?> </p></td>
+      <td class="colonneDroiteGauche">
+        <?php include("../01gauche.php");?> 
+      </td>
      
 	 <!-- Colonne centrale --> 
-	 <td bgcolor="#ffffff" height="1361" valign="top"> 
-        <div align="center"><br>
-          <h1> Comp&eacute;titions R&eacute;gionales</h1>
+	 <td class="colonneCentrale center"> 
+       <br>
+          <h1> Compétitions Régionales</h1>
           <h2 class="titre">Ligue Haut de France </h2>
-          <h2 class="commentaire">Le comit&eacute; territorial des Flandres est devenu<br>
+          <h2 class="commentaire">Le comité territorial des Flandres est devenu<br>
             la ligue des Hauts de France en 2018.</h2>
 		  <?php
 
@@ -73,6 +78,44 @@ $comiteNom="des Flandres";?>
         
           
     echo "<hr />"." <hr />";
+
+
+    $tableauCompetition = $tableauHDF;
+
+    foreach ($tableauCompetition as $champ) {
+
+
+      $idCompetition = substr($champ, -3, 2);
+
+      if ($idCompetition == 17) {
+        $competition =  $REG1;
+        $champ2 = $champ + 100;
+        $nomSerie = "(Ex honneur/ promotion honneur)";
+      } else if ($idCompetition == 18) {
+        $competition =  $REG2;
+        $champ2 = $champ + 9000;
+        $nomSerie = "(Ex 1re/ 2me série)";
+      } else if ($idCompetition == 19) {
+        $competition =  $REG3;
+        $champ2 = 0;
+        $nomSerie = "(Ex 3me/ 4me série)";
+      }
+
+      echo "  <br>" . "<br>";
+      echo "<h5>" .  $competition . " - " . "Poule " . substr($champ, -1);
+      echo "<br>"; ?>
+
+      <span class="size2"> <?php echo $nomSerie; ?> </span>
+    <?php
+
+
+      echo "</h5>";
+      echo  "<br>" . "<br>" . "<br>";
+      affichage($champ, $champ2, $comite, $bdd);
+      journeesReportees($comite, $champ, $bdd);
+      perequation($comite, $champ, $bdd);
+      echo "<br>" . "<br>";
+    }
 	
 	/*
 	 echo "<h5> <a name=\"H\"></a>$FED3 <br>
@@ -83,7 +126,7 @@ $comiteNom="des Flandres";?>
     perequation($comite, $champ, $bdd);
 	
 	require '../pub/pub_displayH_550.php' ;
-    */
+    
 	
      echo "<h5> <a name=\"R1\"></a>".$REG1." <br>
 	 <font face=\"Arial, Helvetica, sans-serif\" size=\"2\">".$EXHPH."</font></h5>";
@@ -111,7 +154,7 @@ $comiteNom="des Flandres";?>
     */
      
 	//require 'cadrePubHorizontal600.php';
-        
+   /*     
     echo " <h5><a name=\"R2\"></a></a>".$REG3." - ".$P1."<br />
 	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS3S4." 
             </font> <br><br></h5>";	
@@ -127,9 +170,10 @@ $comiteNom="des Flandres";?>
 	affichage($champ, $champ2, $comite, $bdd);  
 	journeesReportees($comite, $champ, $bdd); 
 	perequation($comite, $champ, $bdd);
-	
+	*/
 		
 	// include("comPerso2.php"); 
+  echo "<hr />" . " <hr />";
 
 	include("sommaires.php");
 	include("liensDivers.php");
@@ -138,7 +182,8 @@ $comiteNom="des Flandres";?>
 			
         </div>
       </td>
-      <td align="center" bgcolor="#006699" valign="top" width="225"><p><?php include("../00droite.php"); ?> </p>
+      <td class="colonneDroiteGauche">
+        <?php include("../00droite.php"); ?> </p>
       </td>
     </tr>
     

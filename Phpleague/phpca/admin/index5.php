@@ -38,23 +38,23 @@ ouverture ();
 
 <div align="center">
   <center>
-  <!--
-  <table cellspacing="0" width="100%" height="100%" cellpadding="0">
+<!-- 
+ <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
         <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpca">Comit&eacute; 
-          Ligue Nouvelle Aquitaine</font></td>
+          Ligue Occitanie </font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
       <td class="phpca3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
-      <a href="?page=championnat"><?php //echo LEAGUE; ?></a><br /><br />
+      <a href="?page=championnat"><?php // echo LEAGUE; ?></a><br /><br />
+      
+-->     
       
      
-   -->   
-     
       
-      <a href="logout.php"><?php //echo "Logout"; ?></a><br />
+      <a href="logout.php"><?php // echo "Logout"; ?></a><br />
       </td>
       <td valign="top" colspan="2"><div align="center">
 
@@ -84,7 +84,7 @@ ouverture ();
        else {include ("accueil.htm");}
                 }
      //  elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-     //  elseif ($identification == "non2") {echo "Identifiants erronés !";}
+     //  elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
      //  else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
       else
     		 {
@@ -95,8 +95,8 @@ ouverture ();
     			else {include ("accueil.htm");}
               }
      ?>
-<!--   
-   </div></td>
+	 <!--
+      </div></td>
       <td  width="1%" style="border-left-style: dashed;border-left-width : 1px; border-color:#3b487f">&nbsp;</td>
     </tr>
     <tr>
@@ -114,7 +114,7 @@ ouverture ();
   </center>
 </div>
 <?php $championnat = (substr($championnat,0,5)*10)+1;?>
-<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=ca&bddComite=ca&champ=<?php echo $championnat; ?>">
+<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=ab&bddComite=ab&champ=<?php echo $championnat; ?>">
 
 
 </body>

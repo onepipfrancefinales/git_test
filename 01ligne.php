@@ -23,8 +23,8 @@
     <td class = "none backgroundNoir" colspan="2" ><a href="/resultats/page_pro.php"  title="Auvergne">Top 14/ Pro D2/ Nationales</a></td>
     <td class = "none backgroundNoir" colspan="2"><a href="/resultats/page_fed1.php"  title="Auvergne">Fédérale 1</a></td>
     <td class = "none backgroundNoir" colspan="2" ><a href="/resultats/page_fed2.php"  title="Auvergne">Fédérale 2</a></td>
-    <td class = "none backgroundNoir" colspan="2" ><a href="/resultats/page_fed3NE.php"  title="Auvergne">Fédérale 3( P1 à P8)</a></td>
-    <td class = "none backgroundNoir" colspan="3" ><a href="/resultats/page_fed3GS.php"  title="Auvergne">Fédérale 3 ( P10 à P16)</a></td>
+    <td class = "none backgroundNoir" colspan="2" ><a href="/resultats/page_fed3.php?code=NE"  title="Auvergne">Fédérale 3( P1 à P8)</a></td>
+    <td class = "none backgroundNoir" colspan="3" ><a href="/resultats/page_fed3.php?code=GS"  title="Auvergne">Fédérale 3 ( P10 à P16)</a></td>
     <td class = "none backgroundNoir" ><a href="/feminine/index_fem.php">Féminines</a></td>
    </tr>
    

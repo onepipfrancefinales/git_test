@@ -2,20 +2,24 @@
 //titre haut de page
 $competReg = "Compétitions Régionales";
 $competFrance = "CHAMPIONNAT DE FRANCE";
-$champReg =  "Championnats R&eacute;gionaux de la ligue";
+$champReg =  "Championnats Régionaux de la ligue";
 
 
 // Divisions
 
-$FED1 = "F&eacute;d&eacute;rale 1";
-$FED2 = "F&eacute;d&eacute;rale 2";
-$FED3 = "F&eacute;d&eacute;rale 3";
-$REG1 = "R&eacute;gionale 1";
-$REG2 = "R&eacute;gionale 2";
-$REG3 = "R&eacute;gionale 3";
-$RESREG1 = "R&eacute;s R&eacute;g 1";
-$RESREG2 = "R&eacute;s R&eacute;g 2";
-$PHASE_REGIONALE ="Phase R&eacute;gionale";
+$FED1 = "Fédérale 1";
+$FED2 = "Fédérale 2";
+$FED3 = "Fédérale 3";
+$REG1 = "Régionale 1";
+$REG2 = "Régionale 2";
+$REG3 = "Régionale 3";
+
+$FED1B = "Espoir Fédéraux";
+$FED2B = "Fédérale B";
+$FED3B = "Excellence B";
+$RESREG1 = "Rés Rég 1";
+$RESREG2 = "Rés Rég 2";
+$PHASE_REGIONALE ="Phase Régionale";
 
 // Dénominations des ligues
 $ligueARA ="Ligue Auvergne Rhône Alpes";

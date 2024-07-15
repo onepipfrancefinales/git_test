@@ -11,12 +11,7 @@ if (isset($_GET['champ'])) {
 if (isset($_GET['bddComite'])) {
 	$bddComite = $_GET['bddComite'];
 }
-//if (isset($_GET['ancre'])){$ancre=$_GET['ancre'];} 
-/*
-echo $comite;echo "<br>";
-echo $champ;echo "<br>";
-echo $bddComite;echo "<br>";
-*/
+
 require '../resultats/fonctions.php';
 require 'fonctions.php';
 require "../Phpleague/php" . $bddComite . "/consult/fonctions_matchs.php";
@@ -112,12 +107,7 @@ division($champ, $bdd);
 
 				require("sommaireParticulier.php");
 			}
-			//elseif ($comite=="fem")
-			//	require ("menus/menuFem.php");	
-			//else
-			//	require ("menus/menuA.php");
-
-			?>
+	?>
 			<hr>
 
 		</div>
@@ -179,26 +169,11 @@ division($champ, $bdd);
 			}
 
 			// Fédérale 3
-			elseif ($champ == 991161 ) {
-				$tabLigue = array(
-					991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168, 991169,
-					992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168, 992169
-				);
-			}
-				elseif ($champ == 992161) {
-					$tabLigue = array(
-						991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168, 991169,
-						992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168, 992169
-					);
-	
-
-
-
+			elseif ($champ == 991161 or $champ == 992161 ) {
+				$tabLigue =  $tableauSmartFed3;
+			
 			} elseif ($champ == 991261 or $champ == 992261) {
-				$tabLigue = array(
-					991261, 991262, 991263, 991264, 991265, 991266, 991267, 991268, 991269,
-					992261, 992262, 992263, 992264, 992265, 992266, 992267, 992268, 992269
-				);
+				$tabLigue = $tableauSmartResFed3;
 			}
 
 			// Féminines
@@ -206,33 +181,28 @@ division($champ, $bdd);
 				$tabLigue = $tableauFem;
 			}
 
-
-
 			foreach ($tabLigue as $champ) {
 
 
 				//echo "champ : ".$champ;
 				//Traitement du numéro des poules
-				if (substr($champ, -1) == 0) {
-					$poule1 = substr($champ, -1);
-					$poule = $poule1 + 10;
-				} else
+				
 					$poule = substr($champ, -1);
 
 
 				//echo "poule 1 ".$poule;
 				// traitement des poules de 10 à 20
-				$pref = 9;
+				$pref = 8;
 				$pouleGS = $pref + $poule;
 
 				// définiton de l'ancre -->
 
 				$ancre = substr($champ, -1);
-				$pref = 9;
+				$pref = 7;
 				$ancreGS = $pref + $ancre;
 
-				if ($champ >= 992161 and $champ < 992170) $ancre = intval($ancreGS);
-				elseif ($champ >= 992261 and $champ < 992270) $ancre = intval($ancreGS);
+				if ($champ >= 992161 and $champ < 992169) $ancre = intval($ancreGS);
+				elseif ($champ >= 992261 and $champ < 992269) $ancre = intval($ancreGS);
 				else
 					$ancre = substr($champ, -1);
 
@@ -312,14 +282,11 @@ division($champ, $bdd);
 				else
 					$finChamp = $champ + $max;
 			}
-			//echo "champ :".$champ;echo "<br>";
-			//echo "max :".$max;echo "<br>";
-			//echo "finchamp :".$finChamp;
+	
 			echo "<br>";
 
 			for ($i = $champ; $i < $finChamp; $i++) {
 				divisionPlusPoule($bddComite, $champ, $bdd);
-				// echo "poule : ".$poule; echo "champ : ".$i; 
 			?>
 
 				<table class="width90PC marginAuto" border="1">
@@ -330,16 +297,9 @@ division($champ, $bdd);
 
 				<br>
 				<div class="center">
-					<?php
-					/*	
-	if ($comite == "au" and $champ > 100190 and $champ < 100230  )
-	{
-		if ($champ < '100210')	
-		$newChamp = '100691'; else $newChamp ='100711';
-	
-	echo "<font size=\"2\">"."<center>"."<b>"."<a href=\"171.php?champ=$newChamp&comite=au&bddComite=au\">Consulter la phase pr&eacute;c&eacute;dente</a>"."</b>"."</center>"."</font>";		
-	}
-	*/
+		
+		<?php
+
 					echo "<br>";
 
 					//echo $nbreChamp;

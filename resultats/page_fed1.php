@@ -10,7 +10,7 @@ $division = 140;
 $comite = "phppro";
 $CMT = "fed1";
 $cmt = "f1";
-$comiteNom = "F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
+$comiteNom = "Fédérale 1 - Espoirs Fédérale 1";
 ?>
 
 <!DOCTYPE html PUBLIC>
@@ -90,22 +90,10 @@ $comiteNom = "F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
           }
         </script>
         <br />
-        <table class="marginAuto width500">
-          <tr>
-            <td>
-              <h4 class="bulleReglement">
-                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalités de qualification de la saison 2023-2024</a>
-              </h4>
-              <h4 class="bulleReparGeo colorBlack">
-                <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed1.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">
-                  Répartition géographique des clubs de Fédérale 1
-                </a>
-              </h4>
-            </td>
-          </tr>
-        </table>
+      
 
         <?php
+        require 'presentationSaison.php';
         echo "<hr />" . " <hr />";
 
         // require("comPerso.php"); 
@@ -120,31 +108,13 @@ $comiteNom = "F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
           $champReserve = 100;
           $champ2 = $champ + $champReserve;
         
-     
           affichage($champ, $champ2, $comite, $bdd);
           journeesReportees($comite, $champ, $bdd);
           perequation($comite, $champ, $bdd);
           echo "<br>" . "<br>";
         };
-
-
-        echo "<hr />" . " <hr />"; ?>
-
-        <table class="marginAuto width500">
-          <tr>
-            <td>
-              <h4 class="bulleReglement">
-                <a href="javascript:ouvrirPopup('reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=580, height=600, menubar=no')">Modalités de qualification de la saison 2023-2024</a>
-              </h4>
-              <h4 class="bulleReparGeo colorBlack">
-                <a href="javascript:ouvrirPopup('cartographie/2023_2024/carteFed1.bmp','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=530, height=600, menubar=no')">
-                  Répartition géographique des clubs de Fédérale 1
-                </a>
-              </h4>
-            </td>
-          </tr>
-        </table>
-
+        echo "<hr />" . " <hr />"; 
+        require 'presentationSaison.php';?>
         <br>
         <?php
         require "sommaires.php";
@@ -152,10 +122,7 @@ $comiteNom = "F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
         echo "<br>" . " <br>";
         //require '../pub/pub_displayCarre.php' ;
         ?>
-
-
       </td>
-
       <!-- Colonne de droite -->
       <td class="colonneDroiteGauche">
         <?php include("../00droite.php"); ?>

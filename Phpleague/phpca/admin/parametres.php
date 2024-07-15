@@ -36,10 +36,10 @@ if ($action2=="1")
    else
    {
     // Insertion des param�tres dans la bdd
-//    $requete="INSERT INTO phpca_parametres (id_champ, pts_victoire, pts_nul, pts_defaite, accession, barrage, relegation,id_equipe_fetiche, fiches_clubs, estimation) 
-//	VALUES ('$champ', '$pts_victoire', '$pts_nul', '$pts_defaite', '$accession', '$barrage', '$relegation', '$id_equipe_fetiche', '$fiches_clubs', '$estimation')";
-  //  $resultats = mysqli_query ($requete);
-   // if (!$resultats) ;
+   // $requete="INSERT INTO phpca_parametres (id_champ, pts_victoire, pts_nul, pts_defaite, accession, barrage, relegation,id_equipe_fetiche, fiches_clubs, estimation) 
+	//VALUES ('$champ', '$pts_victoire', '$pts_nul', '$pts_defaite', '$accession', '$barrage', '$relegation', '$id_equipe_fetiche', '$fiches_clubs', '$estimation')";
+ //   $resultats = mysqli_query ($requete);
+ //   if (!$resultats) ;
     }  
  }
 
@@ -102,35 +102,36 @@ echo ADMIN_PARAM_MSG3;
 echo "<td class=phpca4>";
 echo "<input type=\"text\" name=\"pts_nul\"  value=\"$existant[pts_nul]\" size=3 maxlength=3>";
 
-// points pour une d�faite
+// points pour une défaite
 echo "<tr><td class=phpca3>";
 echo ADMIN_PARAM_MSG4;
 echo " <td class=phpca3>";
 echo "<input type=\"text\" name=\"pts_defaite\"  value=\"$existant[pts_defaite]\" size=3 maxlength=3>";
 
-// Nombre d'�quipe pour l'accession directe
+// Nombre d'équipe pour l'accession directe
 echo "<tr><td  class=phpca4>";
 echo ADMIN_PARAM_MSG5;
 echo " <td class=phpca4>";
 echo "<input type=\"text\" name=\"accession\"  value=\"$existant[accession]\" size=3 maxlength=3>";
 
-// Nombre d'�quipe pour des l'accession en barrages
+// Nombre d'équipe pour des l'accession en barrages
 echo "<tr><td class=phpca3>";
 echo ADMIN_PARAM_MSG6;
 echo " <td class=phpca3>";
 echo "<input type=\"text\" name=\"barrage\"  value=\"$existant[barrage]\" size=3 maxlength=3>";
 
-// Nombre d'�quipe pour la descente
+// Nombre d'équipe pour la descente
 echo "<tr><td class=phpca4>";
 echo ADMIN_PARAM_MSG7;
 echo " <td class=phpca4>";
 echo "<input type=\"text\" name=\"relegation\"  value=\"$existant[relegation]\" size=3 maxlength=3>";
 
-// Equipe � suivre plus particuli�rement
+// Equipe à suivre plus particulièrement
 // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-/*  
+ /* 
   $resultats=$idconnect->query("SELECT phpca_clubs.nom, phpca_equipes.id FROM phpca_equipes, phpca_clubs WHERE phpca_equipes.id_champ='$champ' AND phpca_clubs.id=phpca_equipes.id_club ORDER by nom");
-//$resultats = mysqli_query ($requete);
+
+  //$resultats = mysqli_query ($requete);
 echo "<tr><td class=phpca3>";
 echo ADMIN_PARAM_MSG8;
 echo " <td class=phpca3>";
@@ -225,7 +226,7 @@ echo "<input type=\"submit\" value=$button></form><br />";
             </tr>
 </table><br /><br />
 
-<!-- tableau points admin p�r�quation autres-->
+<!-- tableau points admin péréquation autres-->
 
 <table class=phpca width="80%">
   <tr>

@@ -181,7 +181,7 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
         </p>
         <br>
         <p class="terr3 marginAuto"> Fédérale 3 - Excellence B <br>
-          <a href="page_fed3NE.php">18 poules de 10 (<?php echo $FED3 . " clubs"; ?>)</a>
+          <a href="page_fed3.php?code=NE">16 poules de 10 (<?php echo $FED3 . " clubs"; ?>)</a>
         </p>
         <br><br>
 

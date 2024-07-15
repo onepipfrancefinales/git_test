@@ -6,108 +6,108 @@
 <body>
 <?php
 // ***** Fédérales *****	
-			$NAT1 = 20467;
-			$NAT2 = 20468;
-			$FED1 = 20469;
-			$FED2 = 20478;
-			$FED3 = 20479;
-			$NAT2B = 19937;
-			$FED1B = 20481;
-			$FED2B = 20482;
-			$FED3B = 20485;
+			$NAT1 = 21949;
+			$NAT2 = 21950;
+			$FED1 = 0;
+			$FED2 = 0;
+			$FED3 = 0;
+			$NAT2B = 0;
+			$FED1B = 0;
+			$FED2B = 0;
+			$FED3B = 0;
 										
 // ***** Féminines *****					
 
-					$FEMH = 20461;
-					$FEMPH = 20462;
-					$FEMS1 = 20460;
+					$FEMH = 0;
+					$FEMPH = 0;
+					$FEMS1 = 0;
 				//	$FEMS2 = $row[3];
 				//	$FEMS3 = $row[4];
 				//	$FEMS4 = $row[5];
 					
 // ***** Auvergne Rhône Alpes *****	
-					$ARAH = 20511;
-					$ARAPH = 20522;
-					$ARAS1 = 20514;
-					$ARAResH =20512;
-					$ARAResPH = 20523;
+					$ARAH = 0;
+					$ARAPH = 0;
+					$ARAS1 = 0;
+					$ARAResH =0;
+					$ARAResPH = 0;
 				
 // ***** Bretagne *****									
-					$BREH = 20576;
-					$BREPH = 20580;
-					$BRES1 =20581;
+					$BREH = 0;
+					$BREPH = 0;
+					$BRES1 =0;
 					$BREResH = 0;
 					$BREResPH = 0;
 								
 // ***** Bourgogne *****															
-					$BFCH = 20455;
-					$BFCPH = 20457;
-					$BFCS1 = 20470;
-					$BFCResH = 20456;
-					$BFCResPH = 20458;
+					$BFCH = 21957;
+					$BFCPH = 0;
+					$BFCS1 = 0;
+					$BFCResH = 0;
+					$BFCResPH = 0;
 					
 // ***** centre val de loire *****					
-					$CVLH = 20538;
-					$CVLPH = 20539;
-					$CVLS1 = 20542;				
-					$CVLResH = 20540;
+					$CVLH = 0;
+					$CVLPH = 0;
+					$CVLS1 = 0;				
+					$CVLResH = 0;
 					$CVLResPH = 0;
 
 // ***** Grand Est *****	
-					$GESH = 20440;
-					$GESPH = 20441;
-					$GESS1 = 20442;
-					$GESResH = 20447;
-					$GESResPH = 20549;
+					$GESH =21940;
+					$GESPH = 0;
+					$GESS1 = 0;
+					$GESResH = 21941;
+					$GESResPH = 0;
 
 // ***** Hauts de France *****					
-					$HDFH = 20564;
-					$HDFPH = 20565;
-					$HDFS1 = 20569;
-					$HDFResH = 20567;
-					$HDFResPH = 20;
+					$HDFH = 0;
+					$HDFPH = 0;
+					$HDFS1 = 0;
+					$HDFResH = 0;
+					$HDFResPH = 0;
 
 // ***** ile de france *****							
-					$IDFH = 20543;
-					$IDFPH = 20545;
-					$IDFS1 = 20566;
-					$IDFResH = 20544;
-					$IDFResPH = 20566;
+					$IDFH = 0;
+					$IDFPH = 0;
+					$IDFS1 = 0;
+					$IDFResH = 0;
+					$IDFResPH = 0;
 
 // ***** Normandie *****	
-					$NORH = 20526;
-					$NORPH = 20528;
-					$NORS1 = 20530;
-					$NORResH = 20527;
-					$NORResPH = 20529;
+					$NORH = 21951;
+					$NORPH = 21953;
+					$NORS1 = 0;
+					$NORResH = 21952;
+					$NORResPH = 21954;
 						
 // ***** Nouvelle Aquitaine *****				
-					$NAQH = 20517;
-					$NAQPH = 20518;
-					$NAQS1 = 20519;
-					$NAQResH = 20520;
-					$NAQResPH = 20521;
+					$NAQH = 0;
+					$NAQPH = 0;
+					$NAQS1 = 0;
+					$NAQResH = 0;
+					$NAQResPH = 0;
 						
 // ***** Occitanie *****		
-					$OCCH = 20533;
-					$OCCPH = 20546;
-					$OCCS1 = 20547;
-					$OCCResH = 20534;
-					$OCCResPH = 20550;
+					$OCCH = 0;
+					$OCCPH = 0;
+					$OCCS1 = 0;
+					$OCCResH = 0;
+					$OCCResPH = 0;
 	
 // ***** Pays de la Loire *****		
-					$PDLH = 20559;
-					$PDLPH = 20573;
-					$PDLS1 = 20597;
-					$PDLResH = 20599;
+					$PDLH = 0;
+					$PDLPH = 0;
+					$PDLS1 = 0;
+					$PDLResH = 0;
 					$PDLResPH = 0;
 
 // ***** Provence *****	
-					$PCAH = 20506;
-					$PCAPH = 20505;
-					$PCAS1 = 20507;
-					$PCAResH = 20508;
-					$PCAResPH =20515;
+					$PCAH = 0;
+					$PCAPH = 0;
+					$PCAS1 = 0;
+					$PCAResH = 0;
+					$PCAResPH =0;
 				
 ?>
 <table border="1" width="750">

@@ -61,9 +61,9 @@ function affich_championnats ($champ, $action, $idconnect)
         echo "<td class='$class'>$row[2]/$saison</td>";
         echo "<td class='$class' align=\"right\" width=\"75%\">";
 
-        echo " $gras_1<a href=\"?page=championnat&action=equipes&champ=$row[0]\">[".EQUIPE."]</a>$gras_fin";
-        echo " $gras_2<a href=\"?page=championnat&action=dates&champ=$row[0]\">[".DATE."]</a>$gras_fin";
-       // echo " $gras_3<a href=\"?page=championnat&action=matchs&champ=$row[0]\">[".MATCH."]$gras_fin</a>";
+        echo " $gras_1<a href=\"?page=championnat&action=equipes&champ=$row[0]\">[".EQUIPE."]$gras_fin</a>";
+        echo " $gras_2<a href=\"?page=championnat&action=dates&champ=$row[0]\">[".DATE."]$gras_fin</a>";
+        //echo " $gras_3<a href=\"?page=championnat&action=matchs&champ=$row[0]\">[".MATCH."]$gras_fin</a>";
         echo " $gras_4<a href=\"?page=championnat&action=parametres&champ=$row[0]\">[".PARAMETRE."]$gras_fin</a>";
         echo " $gras_5<a href=\"?page=championnat&action=resultats&champ=$row[0]\">[".RESULT."]$gras_fin</a>";
         echo " $gras_7<a href=\"?page=championnat&action=generer&champ=$row[0]\">[".GENERER."]$gras_fin</a>";
@@ -149,8 +149,8 @@ function affich_gr_championnats ($gr_champ, $action, $idconnect)
         echo "<td class='$class' align=\"right\" width=\"75%\">";
 
         echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
-    //    echo " $gras_2<a href=\"?page=groupes_championnats&action=generer&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
-     //   echo " $gras_8<a href=\"?page=groupes_championnats&action=supp&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
+        echo " <a href=\"?page=groupes_championnats&action=generer&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
+        echo " <a href=\"?page=groupes_championnats&action=supp&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
 
         echo "</tr>";
         $i++;
@@ -750,18 +750,16 @@ WHERE ext.id_champ='$champ'
    }
    
 	// echo "cache fin : ".$cache;  
-  /*
 	if($cache=="1")
-	{$requete="DELETE FROM phpca_clmnt_cache WHERE nom='exempte'" or die (mysql_error($idconnect));}
+	{$requete="DELETE FROM phpca_clmnt_cache WHERE nom='exempte'" ;}
 	else
-	{$requete="DELETE FROM phpca_clmnt WHERE nom='exempte'" or die (mysql_error($idconnect));}
+	{$requete="DELETE FROM phpca_clmnt WHERE nom='exempte'" ;}
 
-	$resultat=mysqli_query($idconnect,$requete) or die (mysqli_error($idconnect));
+	//$resultat=mysqli_query($idconnect,$requete) or die (mysqli_error($idconnect));
 	//mysql_query("UNLOCK TABLES") or die (mysql_error());
 
 
 	//echo "fin";//echo "<br />"; 
-  */
 }
 
 // Nombres de renseignement dans cette classe � partir de l'id_classe  (utilis� dans phpca_classe.php)
