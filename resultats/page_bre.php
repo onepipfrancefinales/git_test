@@ -8,7 +8,7 @@ require '../Phpleague/phppl/lang/lang_fr.php';
 include("fonctions.php");
 require "constantes.php";
 $champLigue = 12;
-//$sigleLigue="(BRE)";
+$sigleLigue="(BRE)";
 $comite = "phppl";
 $CMT = "BR";
 $cmt = "br";
@@ -64,7 +64,6 @@ $comiteNom = "Bretagne";
 
       <!-- Colonne centrale -->
       <td class="colonneCentrale">
-        <br>
         <h1>Compétitions Régionales</h1>
         <h2 class="titre">Ligue de Bretagne</h2>
         <h2 class="commentaire"> Le comité territorial de Bretagne est devenu<br>
@@ -124,14 +123,11 @@ $comiteNom = "Bretagne";
           perequation($comite, $champ, $bdd);
           echo "<br>" . "<br>";
         };
-
-        echo "<hr>" . " <hr>";
-
-        include("sommaires.php");
-        include("liensDivers.php");
-
-        // require '../pub/pub_displayH_550.php' ;
-        ?>
+        
+         include "liensDiversBas.php";
+         
+         ?>
+      
       </td>
 
       <!-- Colonne de droite -->

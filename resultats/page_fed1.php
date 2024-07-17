@@ -71,12 +71,11 @@ $comiteNom = "Fédérale 1 - Espoirs Fédérale 1";
     <tr>
       <!-- Colonne de gauche -->
       <td class="colonneDroiteGauche">
-        <p><?php include("../01gauche.php"); ?> </p>
+      <?php include("../01gauche.php"); ?>
       </td>
 
       <!-- Colonne centrale -->
       <td class="colonneCentrale">
-        <br>
         <h1> CHAMPIONNAT DE FRANCE </h1>
         <h2 class="titre">Fédérale 1 - Espoirs</h2>
         <br>
@@ -130,7 +129,7 @@ $comiteNom = "Fédérale 1 - Espoirs Fédérale 1";
     </tr>
   </table>
   <footer>
-    <?php include("../footer.php"); ?>
+    <?php include "../footer.php"; ?>
   </footer>
 </body>
 </html>

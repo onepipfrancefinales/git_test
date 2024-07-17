@@ -20,7 +20,7 @@ if ($cmt == "fem")
 elseif ($cmt =="pro")
 {
 ?>	
-<table class = "marginAuto width550  borderWidth3">
+<table class = "marginAuto width550  borderWidth3" >
    <tr class="fond" >
     <td   rowspan="3"   > 
       <h4 ><a  class="decorationNone" href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=110&annee=<?php echo $finSaison;?>"
@@ -77,7 +77,7 @@ else
 {
 	$division = ($champLigue*10000) + 170;
 ?>
-<table class = "marginAuto width550 borderWidth3" >
+<table class = "marginAuto width550 borderWidth3"  >
    <tr class="fond" >
     <td   rowspan="2" > 
       <h4 ><a class="decorationNone" href="/phasesfinalesterr/affichageFinalesTerr/pageAffichage.php?page=HPHS1&comite=<?php echo $cmt;?>&annee=<?php echo $finSaison;?>&division=<?php echo $division;?>"

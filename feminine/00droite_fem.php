@@ -1,9 +1,6 @@
-<!DOCTYPE html><head>
 
-<link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/formulaireDG.css"/> 
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-</head>
+
 
 <script language="JavaScript">
 <!--
@@ -14,19 +11,17 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 //--> //0new2
 </script>
 
-<body bgcolor="#FFFFFF" text="#000000" link="#000000">
-<table width="225" height="639">
-  <tr valign="middle" align="center" bgcolor="#000000"> 
-    <td height="505" bgcolor="#996699" width="225" valign="top"> 
-      <p>&nbsp;</p>
-      <p><font color="#006699"><img src="/images/123.jpg" width="190" height="190
-	  " align="middle"></font></p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p> <p> <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par 
-        comit&eacute;</legend> <br />
+
+<table class="marginAuto">
+  <tr> 
+    <td > 
+    <br>   <br> <br>   <br>
+      <p><img src="/images/123.jpg" width="190" height="190 "></p>
+   
+      <p> <p> <fieldset id="fieldsetG"> <legend id="legendG"> Palmarès par 
+        comité</legend> <br />
         <select id="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
-          <option selected>Par comit&eacute;</option>
+          <option selected>Par comité</option>
           <option value="../consultation/page_comite.php?variable_1=(AP)">Alpes</option>
           <option value="../consultation/page_comite.php?variable_1=(AL)"><b>Alsace Lorraine</b></option>
           <option value="../consultation/page_comite.php?variable_1=(AB)">Armagnac Bigorre</option>
@@ -58,9 +53,9 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <p>&nbsp;</p>
        <form action="../pageclub00.php" method="GET">
         <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par club</legend> 
-       <p align="center"> 
+       
          <input id="inputG" type="text" name="champion" />
-        </p>
+     
         <p> 
          <input id="inputG" type="submit" value="par club" name="submit322" />
         </fieldset> 
@@ -83,15 +78,12 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         une erreur--</a><br>
         <br>
         </font></b></p>
-      <p> 
-        <?php include '../pub/pub10.php';  ?>
-      </p>
+     
 	  
     </td>
   </tr>
 </table>
-</body>
-</html>
+
 
 
 

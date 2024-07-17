@@ -1,9 +1,3 @@
- <!DOCTYPE html><head>
-
-<link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/formulaireDG.css"/> 
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-</head>
 <script language="JavaScript">
 <!--
 function MM_jumpMenu(targ,selObj,restore){ //v3.0
@@ -23,18 +17,16 @@ function MM_reloadPage(init) {  //reloads the window if Nav4 resized
 MM_reloadPage(true);
 // -->
 </script>
-<body text="#000000" link="#000000">
-<table width="225" height="639">
+
+<table class="marginAuto">
   <tr valign="middle" align="center" bgcolor="#000000"> 
     <td height="505" bgcolor="#996699" width="225" valign="top"> 
-      <p>&nbsp;</p>
-      <p><br>
+     <br>
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
+       
+  
       </p>
       <p> 
         
@@ -138,14 +130,10 @@ MM_reloadPage(true);
     
       <p>
       <form action="annee.php" method="POST">
-        <div align="center"> </div>
-      </form>
-      
-      
      
-      
+      </form>
+    
   </tr>
-  
 </table>
 
 

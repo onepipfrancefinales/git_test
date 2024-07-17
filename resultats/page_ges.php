@@ -42,28 +42,30 @@ $comiteNom="Alsace Lorraine";?>
 -->
 </head>
 <body >
-
-
   <table class="table">
     <tr  > 
-      <td colspan="3" ><img src="../images/banniere_haut/(<?php echo $CMT;?>).jpg" width="1250" height="150"></td>
+      <td colspan="3" >
+        <img src="../images/banniere_haut/(<?php echo $CMT;?>).jpg" width="1250" height="150"></td>
     </tr>
     <tr >
-      <td colspan="3" ><?php include("../01ligne.php"); ?></td>
+      <td colspan="3" >
+        <?php include("../01ligne.php"); ?></td>
     </tr>
-    <tr bgcolor="#FFFFFF" > 
-      <td colspan="3" ><?php include("../pub/pub_displayHorizontal.php");?></td>
-    </tr>
+    <td colspan="3">
+        <?php include("../pub/pub_displayHorizontal.php"); ?>
+      </td>
     <tr> 
 	  <!-- Colonne de gauche --> 
-      <td width="225"  bgcolor="#006699"  valign="top"  ><p><?php  include("../01gauche.php");?></p></td>
+      <td class="colonneDroiteGauche">
+        <?php  include("../01gauche.php");?>
+      </td>
      
 	 <!-- Colonne centrale --> 
-	 <td bgcolor="#ffffff" valign="top" > 
-        <div align="center"> <br />
-          <h1> Comp&eacute;titions R&eacute;gionales</h1>
+	 <td class="colonneCentrale center" > 
+         
+          <h1> Compétitions Régionales</h1>
           <h2 class="titre">Ligue du Grand Est </h2>
-          <h2 class="commentaire">La ligue Grand Est est n&eacute;e de la fusion des<br>
+          <h2 class="commentaire">La ligue Grand Est est née de la fusion des<br>
             comit&eacute;s territoriaux Lorraine et Alsace.<br></h2>
 <?php 
 	include("liensDivers.php");  
@@ -120,18 +122,13 @@ $comiteNom="Alsace Lorraine";?>
 	journeesReportees($comite, $champ, $bdd); 	
   perequation($comite, $champ, $bdd);
 	
-    echo "<hr />"." <hr />";
-            		  
-	include("sommaires.php"); 
-    include("liensDivers.php");  
-	
-	//require '../pub/pub_displayH_550.php'; 
+  include "liensDiversBas.php";
 
 	?>
         </div>
       </td>
 	  
-      <td align="center" bgcolor="#006699" height="1361" valign="top" width="225"> 
+      <td class="colonneDroiteGauche"> 
         <p><?php include("../00droite.php"); ?> </p>
       </td>
     </tr>

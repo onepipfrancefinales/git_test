@@ -88,7 +88,7 @@
 		
 		<fieldset class="fieldsetG"> 
 			<legend class="legendG"> 
-			  Palmar&egrave;s par club
+			  Palmarès par club
 			 </legend> 
          <br>
           <input class="inputG" type="text" name="champion"  title="Recherche par club">

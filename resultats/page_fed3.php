@@ -1,6 +1,6 @@
 <?php
 session_start();
-$code=$_GET["code"];
+$code = $_GET["code"];
 //$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 7me journ&eacute;e du 01 Novembre";
 //require '../connect/connexion3.php';
 include("../saison.php");
@@ -80,10 +80,8 @@ $comiteNom = "Fédérale 3 - Excellence B";
 
       <!-- Colonne centrale -->
       <td class="colonneCentrale center">
-        <br />
         <h1> CHAMPIONNAT DE FRANCE </h1>
         <h2 class="titre">Fédérale 3 - Excellence B </h2>
-        <br>
         <?php
         require 'liensDivers.php';
         require 'sommaires.php';
@@ -95,10 +93,10 @@ $comiteNom = "Fédérale 3 - Excellence B";
         </script>
         <br>
 
-      
+
 
         <?php
-         include 'presentationSaison.php';
+        include 'presentationSaison.php';
         echo "<hr>" . " <hr>";
 
         if ($code == "NE")
@@ -111,15 +109,15 @@ $comiteNom = "Fédérale 3 - Excellence B";
           echo "  <br>" . "<br>";
           $ancre = substr($champ, -1);
           if ($code == "NE")
-          
-          $numPoule = substr($champ, -1);
-        else
-          $numPoule = substr($champ, -1) + 8;
+
+            $numPoule = substr($champ, -1);
+          else
+            $numPoule = substr($champ, -1) + 8;
 
 
           echo "<a name=\"$ancre\"></a>";
 
-          
+
           echo "<h5>" . "Poule " . $numPoule;
           echo "<br>";
           echo "</h5>";
@@ -132,12 +130,12 @@ $comiteNom = "Fédérale 3 - Excellence B";
           echo "<br>" . "<br>";
         };
 
-        echo "<hr />" . " <hr />"; 
+        echo "<hr />" . " <hr />";
         include 'presentationSaison.php';
-        
+
         ?>
 
-       
+
 
         <br>
 

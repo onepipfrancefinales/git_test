@@ -27,14 +27,14 @@ $comiteNom = "Ile de France";
   <title><?php echo $champReg; ?> Ile de France</title>
 
   <meta name="google-adsense-account" content="ca-pub-9177538664500260">
-  <meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+  <meta name="description" content=" Résulats des compétitions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  
+
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
 
@@ -62,7 +62,6 @@ $comiteNom = "Ile de France";
       </td>
       <!-- Colonne centrale -->
       <td class="colonneCentrale center">
-        <br>
         <h1> Compétitions Régionales</h1>
         <h2 class="titre"> Ligue Ile de France</h2>
         <h2 class="commentaire">
@@ -104,8 +103,6 @@ $comiteNom = "Ile de France";
 
           <span class="size2"> <?php echo $nomSerie; ?> </span>
         <?php
-
-
           echo "</h5>";
           echo  "<br>" . "<br>" . "<br>";
           affichage($champ, $champ2, $comite, $bdd);
@@ -115,28 +112,24 @@ $comiteNom = "Ile de France";
         }
 
 
+    
+          include "liensDiversBas.php";
+     ?>
 
 
 
-        echo "<hr />" . " <hr />";
 
-        include("sommaires.php");
-        include("liensDivers.php");
 
-        require '../pub/pub_displayH_550.php';
-        ?>
-
-        </div>
       </td>
       <td class="colonneDroiteGauche">
-        <p><?php include("../00droite.php"); ?> </p>
+        <p><?php include "../00droite.php"; ?> </p>
       </td>
     </tr>
 
   </table>
-  <?php include("piedDePage.php"); ?>
-  <footer>
 
+  <footer>
+    <?php include "piedDePage.php"; ?>
   </footer>
 </body>
 

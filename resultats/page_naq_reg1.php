@@ -58,7 +58,7 @@ $comiteNom = "Cote d'Argent"; ?>
     </tr>
     <tr>
       <td colspan="3">
-        <?php include("../01ligne.php"); ?>
+        <?php include "../01ligne.php"; ?>
       </td>
     </tr>
     <tr>
@@ -68,10 +68,9 @@ $comiteNom = "Cote d'Argent"; ?>
     </tr>
     <tr valign="middle">
       <td class="colonneDroiteGauche">
-        <p><?php include("../01gauche.php"); ?> </p>
+        <?php include "../01gauche.php"; ?> 
       </td>
       <td class="colonneCentrale center">
-        <br>
         <h1> Compétitions Régionales</h1>
         <h2 class="titre"><?php echo $ligueNAQ; ?></h2>
         <h2 class="commentaire">La ligue Nouvelle Aquitaine est née de la fusion des comité;s territoriaux<br>
@@ -123,12 +122,7 @@ $comiteNom = "Cote d'Argent"; ?>
         };
     
    
-        echo "<hr>" . "<hr>";
-
-        include 'sommaires.php';
-        include 'liensDivers.php';
-        echo "<br>" . " <br>";
-        //	require '../pub/pub_displayH_550.php';
+        include "liensDiversBas.php";
         ?>
              
 

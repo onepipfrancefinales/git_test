@@ -1,8 +1,8 @@
 <?php 
 session_start ();
-include("../saison.php");
+include "../saison.php" ;
 require '../connect/connexion6.php';
-include("fonctions.php");
+include "fonctions.php" ;
 require '../Phpleague/phppro/consult/fonctions_matchs.php';
 require '../Phpleague/phppro/lang/lang_fr.php';
 
@@ -16,14 +16,14 @@ $comiteNom="";
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
-<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_pro.php/">
+<link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_pro.php">
 <meta charset="utf-8" />
   <link type="text/css" rel="stylesheet" href="../Phpleague/phppro/league.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
- <meta name="description" content="R&eacute;sulats de toutes les comp&eacute;titions Professionnelles. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmar�s territoriaux des differentes divisions du comit&eacute;.">
- <meta name="keywords" content="comit&eacute; Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+ <meta name="description" content="Résulats de toutes les compétitions Professionnelles. Calendriers, résultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmar�s territoriaux des differentes divisions du comit&eacute;.">
+ <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
  <meta name="classification" content="Sport,Rugby">
  <meta name="resource-type" content="document">
  <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -39,29 +39,35 @@ $comiteNom="";
 <body> 
   <table class="table">
     <tr>
-     <td colspan="3" height="157"> <img src="../images/boucliers/brennusGrand.jpg" width="1250" height="150"></td>
+     <td colspan="3" height="157"> 
+		<img src="../images/boucliers/brennusGrand.jpg" width="1250" height="150">
+	</td>
     </tr>
 	<tr>
-      <td colspan="3"><?php include("../01ligne.php"); ?></td>
+      <td colspan="3">
+		<?php include "../01ligne.php"; ?>
+	</td>
     </tr>
-	<tr bgcolor="#ffffff">
-      <td colspan="3"><?php include("../pub/pub_displayHorizontal.php");?></td>
+	<tr >
+      <td colspan="3">
+		<?php include "../pub/pub_displayHorizontal.php";?>
+	</td>
     </tr>
     
 	<tr>
 	<!-- Colonne de gauche --> 
-      <td bgcolor="#006699" height="1192" valign="top" width="225"><p><?php include("../01gauche.php");?> </p></td>
+      <td class="colonneDroiteGauche">
+		<?php include "../01gauche.php";?>
+	</td>
       
 	  <!-- Colonne centrale --> 
-	  <td bgcolor="#ffffff" height="1192" valign="top"> <br>
-        <br>
+	  <td class="colonneCentrale center">
         <h1>CHAMPIONNATS DE FRANCE</h1>
           <h2 class="titre">Professionnels</h2>
-          <br />
-		  <?php 
-		  
-		include("liensDivers.php");  
-		include("sommaires.php"); 
+		
+		<?php  
+		include "liensDivers.php";  
+		include "sommaires.php"; 
 		echo "<hr>"."<hr>";?>
 		
 		<br>
@@ -129,21 +135,23 @@ $comiteNom="";
 	perequation($comite, $champ, $bdd);
 	
     echo "<hr>"."<hr>";
-	include("sommaires.php");
-	include("liensDivers.php"); 
+	include "sommaires.php" ;
+	include "liensDivers.php" ; 
 	//require '../pub/pub_displayH_550.php'; ?>
    <br><br> 
    </div>
    </td>
       
 	  <!-- Colonne de droite --> 
-	  <td align="center" bgcolor="#006699" height="1192" valign="top" width="225"><?php include("../00droite.php"); ?></td>
+	  <td class="colonneDroiteGauche">
+		<?php include "../00droite.php" ; ?>
+	</td>
     </tr>
   </table>
   
-<?php include("piedDePage.php"); ?>
+
   <footer> 
-   
+   <?php include "piedDePage.php" ; ?>
   </footer>
  </body>
 </html>

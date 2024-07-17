@@ -74,8 +74,6 @@ $comiteNom = "Fédérale 2 - Fédérale B";
 
       <!-- Colonne centrale -->
       <td class="colonneCentrale">
-       
-      <br />
           <h1>CHAMPIONNAT DE FRANCE</h1>
           <h2 class="titre">Fédérale 2 - Fédérale B</h2>
           <br>
@@ -121,13 +119,14 @@ $comiteNom = "Fédérale 2 - Fédérale B";
           
 
           <br />
+          <div style = "padding-bottom:50px">
           <?php
           include 'sommaires.php';
-          require 'liensDivers.php';
-          echo "<br>" . " <br>";
+          include 'liensDivers.php';
+         
           //require '../pub/pub_displayCarre.php' ;
           ?>
-       
+       </div>
       </td>
       <!-- Colonne de droite -->
       <td class="colonneDroiteGauche">

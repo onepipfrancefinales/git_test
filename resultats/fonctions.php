@@ -123,7 +123,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 		aff_journee($champ, $bdd);
 		maj($champ, false, $comite, $bdd);
 		clmnt($champ, false, $bdd);
-	//	aff_journeeSupp($champ,  $bdd);
+		aff_journeeSupp($champ,  $bdd);
 		echo "</td>";
 
 		echo "<td class=\"verticalAlign\">";
@@ -134,7 +134,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 		else $champ = $champ + 100;
 		maj($champ, false, $comite, $bdd);
 		clmnt($champ2, false, $bdd);
-	//	aff_journeeSupp($champ2,  $bdd);
+		aff_journeeSupp($champ2,  $bdd);
 		echo "</td>";
 		echo "</tr>";
 		echo "</table>";

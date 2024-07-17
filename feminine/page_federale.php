@@ -10,12 +10,13 @@ $cmt="fem";
 ?>
 
   
-<html>
+<!DOCTYPE html PUBLIC>
+<html lang="fr">
 <head>
 <meta name="description"
-content="Résultats du championnnant de France de Fédérale 2 et en Fédérale B :  Calendriers, résultats et statistiques des équipes évoluant en Fédérale 2 et Fédérale B. Egalement disponible les toutes les  phases finales du championnat de France Fédérale 2 (depuis  2003), ainsi que les palmarès complets de ces 2 catègories.">
+content="Rï¿½sultats du championnnant de France de Fï¿½dï¿½rale 2 et en Fï¿½dï¿½rale B :  Calendriers, rï¿½sultats et statistiques des ï¿½quipes ï¿½voluant en Fï¿½dï¿½rale 2 et Fï¿½dï¿½rale B. Egalement disponible les toutes les  phases finales du championnat de France Fï¿½dï¿½rale 2 (depuis  2003), ainsi que les palmarï¿½s complets de ces 2 catï¿½gories.">
 <meta name="keywords"
-content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitï¿½ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -25,24 +26,33 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
    <link type="text/css" rel="stylesheet" href="../ligne1.css">
 <link type="text/css" rel="stylesheet" href="../../resultats/resultat.css"/>
-<title>Championnat de France F&eacute;d&eacute;rale F&eacute;minines </title>
-<body text="#000000" link="#FFFFFF" alink="#FFFFFF" vlink="#FFFFFF" bgcolor="#000000">
-<div align="center">
-  <table width="1250" height="639" align="center">
-    <tr valign="middle" align="center" > 
-      <td colspan="3" height="74"> <font color="#FFFFFF"> <img src="../images/stade3.jpg" width="1250" height="150"></font></td>
+<title>Championnat de France FÃ©dÃ©rale FÃ©minines </title>
+
+</head>
+
+<body>
+
+  <table class="table" >
+    <tr> 
+      <td colspan="3" > 
+        <img src="../images/stade3.jpg" width="1250" height="150">
+      </td>
     </tr>
-    <tr valign="middle" align="center" bgcolor="#000000"> 
-      <td height="26" colspan="3"><?php include("ligne_fem.php");?></font></td>
+    <tr> 
+      <td  colspan="3">
+        <?php include "ligne_fem.php";?>
+      </td>
     </tr>
-    <tr valign="middle" align="center" bgcolor="#000000"> 
-      <td width="225" height="1326" bgcolor="#996699" align="center" valign="top"><?php include("01gauche_fem.php");   ?></p></td>
-      <td bgcolor="#ffffff" text="#000000" height="1326" valign="top" width="550"> 
-      <div align="center"><br />
-        <h1>Championnats de France F&eacute;minin<h1>
-        <h2 class ="titre">F&eacute;d&eacute;rale 1</h2>
+    <tr > 
+      <!-- Colonne de gauche -->
+      <td class="colonneDroiteGaucheFem">
+        <?php include("01gauche_fem.php");   ?>
+      </td>
+      <td class="colonneCentrale"> 
+ 
+        <h1>Championnats de France FÃ©minin<h1>
+        <h2 class ="titre">FÃ©dÃ©rale 1</h2>
           <?php 
-		
 		require '../resultats/liensDivers.php';
 		require '../resultats/sommaires.php'; 
 		?>
@@ -51,7 +61,9 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
   window.open(page,nom,options);
 }
 </script>
- <br/>
+ <br>
+
+ <!--
  <table align ="center"  width="500">
  <tr> 
    <td>
@@ -66,6 +78,8 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
      </td>
 	</tr> 
  </table> 
+
+-->
   <?php  
 		
 		
@@ -97,30 +111,36 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
 		require '../resultats/sommaires.php'; 
         require '../resultats/liensDivers.php';
           
-        include("../pub/pub_carre.php"); ?>
-      </div>
-	  </td>
-      <td height="1326" bgcolor="#996699" width="225" valign="top"><p><?php include("00droite_fem.php");  ?></p></td>
+        ?>
+    
+	  </td>	
+    <!-- Colonne de droite -->
+    <td class="colonneDroiteGaucheFem">
+        <?php include "00droite_fem.php";  ?>
+        <br><br><br><br>
+      </td>
     </tr>
     <tr >
 	
-	<th bgcolor="#FFFFFF" colspan="3" valign="top" height="30"align="center"> 
-       <div align="center">    
-		  <table width="1250" border="1" >
+
+       
+	
             <tr> 
-              <td><?php include("resultatsbas_fem.php");?></td>
+              <td><?php //include "resultatsbas_fem.php";?></td>
             </tr>
             <tr>
-              <td><?php include("../pub/pub1.php");?></td>
+              <td><?php //include "../pub/pub1.php";?></td>
             </tr>
             <tr> 
-              <td><?php    include("../bas.php");?></td>
+              <td><?php   // include "../bas.php";?></td>
             </tr>
-          </table>
-    </div>
-      </th>
+  
+   
+    
     </tr>
    </table>
-  </div>
- </body>
+   <footer>
+    <?php include "../footer.php"; ?>
+  </footer>
+</body>
 </html>

@@ -8,19 +8,19 @@
 // ***** Fédérales *****	
 			$NAT1 = 21949;
 			$NAT2 = 21950;
-			$FED1 = 0;
+			$FED1 = 21948;
 			$FED2 = 0;
 			$FED3 = 0;
 			$NAT2B = 0;
-			$FED1B = 0;
+			$FED1B = 21968;
 			$FED2B = 0;
 			$FED3B = 0;
 										
 // ***** Féminines *****					
 
-					$FEMH = 0;
-					$FEMPH = 0;
-					$FEMS1 = 0;
+					$FEMH = 21963;
+					$FEMPH = 21964;
+					$FEMS1 = 21965;
 				//	$FEMS2 = $row[3];
 				//	$FEMS3 = $row[4];
 				//	$FEMS4 = $row[5];
@@ -103,11 +103,11 @@
 					$PDLResPH = 0;
 
 // ***** Provence *****	
-					$PCAH = 0;
-					$PCAPH = 0;
-					$PCAS1 = 0;
-					$PCAResH = 0;
-					$PCAResPH =0;
+					$PCAH = 10;
+					$PCAPH = 10;
+					$PCAS1 = 10;
+					$PCAResH = 10;
+					$PCAResPH = 10;
 				
 ?>
 <table border="1" width="750">

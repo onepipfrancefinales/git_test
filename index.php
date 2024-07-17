@@ -258,7 +258,7 @@ $annee = 2022;
             <tr>
               <td>
 
-                <a href="http://francefinalesrugby.fr/feminine/index_fem.php"> Championnats féminins </a>
+                <a href="http://francefinalesrugby.fr/feminine/page_elite1.php"> Championnats féminins </a>
 
               </td>
               <td rowspan="4" class="colortexte">
@@ -279,16 +279,7 @@ $annee = 2022;
               <td>
               </td>
             </tr>
-            <tr>
-              <td>
-                <a href="http://coupesdumondederugbyfeminin.franceserv.com/"> Coupe du monde 2014 </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="http://coupesdumondederugbyfeminin.franceserv.com/" target="_blank"><img src="images/CDMfemininemini.jpg" alt="féminin" width="197" height="168"></a>
-              </td>
-            </tr>
+            
             <tr>
               <td></td>
               <td></td>

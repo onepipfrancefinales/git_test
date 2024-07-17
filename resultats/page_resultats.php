@@ -1,5 +1,4 @@
-<?php require("../saison.php");
-
+<?php 
 require("../saison.php");
 require("../consultation/fonctions.php");
 require("../connect/connexion1.php");
@@ -52,47 +51,15 @@ structureLigue($idLigue, $bdd); ${$sigleLigue."110"} = $d110;
 }
 
 
-
 // totaux par ligues
-
-
 foreach ($tabTrigrammeLigue as $trigrammeLigue) {
 
 ${"totaux".$trigrammeLigue} = ${$trigrammeLigue."110"} + ${$trigrammeLigue."120"} + ${$trigrammeLigue."130"} + ${$trigrammeLigue."135"} + ${$trigrammeLigue."140"} 
                             + ${$trigrammeLigue."150"} + ${$trigrammeLigue."160"} + ${$trigrammeLigue."170"} + ${$trigrammeLigue."180"} + ${$trigrammeLigue."190"};
 
 }
-/*
-$totauxARA =  $ARA110 + $ARA120 + $ARA130 + $ARA135 + $ARA140 + $ARA150 + $ARA160 + $ARA170 + $ARA180 + $ARA190;
-$totauxBFC =  $BFC110 + $BFC120 + $BFC130 + $BFC135 + $BFC140 + $BFC150 + $BFC160 + $BFC170 + $BFC180 + $BFC190;
-$totauxBRE =  $BRE110 + $BRE120 + $BRE130 + $BRE135 + $BRE140 + $BRE150 + $BRE160 + $BRE170 + $BRE180 + $BRE190;
-$totauxCVL =  $CVL110 + $CVL120 + $CVL130 + $CVL135 + $CVL140 + $CVL150 + $CVL160 + $CVL170 + $CVL180 + $CVL190;
-$totauxCOR =  $COR110 + $COR120 + $COR130 + $COR135 + $COR140 + $COR150 + $COR160 + $COR170 + $COR180 + $COR190;
-$totauxGES =  $GES110 + $GES120 + $GES130 + $GES135 + $GES140 + $GES150 + $GES160 + $GES170 + $GES180 + $GES190;
-$totauxHDF =  $HDF110 + $HDF120 + $HDF130 + $HDF135 + $HDF140 + $HDF150 + $HDF160 + $HDF170 + $HDF180 + $HDF190;
-$totauxIDF =  $IDF110 + $IDF120 + $IDF130 + $IDF135 + $IDF140 + $IDF150 + $IDF160 + $IDF170 + $IDF180 + $IDF190;
-$totauxNOR =  $NOR110 + $NOR120 + $NOR130 + $NOR135 + $NOR140 + $NOR150 + $NOR160 + $NOR170 + $NOR180 + $NOR190;
-$totauxNAQ =  $NAQ110 + $NAQ120 + $NAQ130 + $NAQ135 + $NAQ140 + $NAQ150 + $NAQ160 + $NAQ170 + $NAQ180 + $NAQ190;
-$totauxOCC =  $OCC110 + $OCC120 + $OCC130 + $OCC135 + $OCC140 + $OCC150 + $OCC160 + $OCC170 + $OCC180 + $OCC190;
-$totauxPDL =  $PDL110 + $PDL120 + $PDL130 + $PDL135 + $PDL140 + $PDL150 + $PDL160 + $PDL170 + $PDL180 + $PDL190;
-$totauxPCA =  $PCA110 + $PCA120 + $PCA130 + $PCA135 + $PCA140 + $PCA150 + $PCA160 + $PCA170 + $PCA180 + $PCA190;
-*/
-// totaux par divisions
 
 
-
-/*
-foreach ($tabNomDivision as $nomDivision)
-{
-
-foreach ($tabDivision as $division) {
-
-$TOP14 = ${"ARA".$division} + ${"BFC".$division} + ${"BRE".$division} + ${"CVL".$division} + ${"COR".$division} + ${"GES".$division} + ${"HDF".$division} + ${"IDF".$division}
-+ ${"NOR".$division} + ${"NAQ".$division}+ ${"OCC".$division} + ${"PDL".$division} + ${"PCA".$division};
-
-}
-}
-*/
 $TOP14 = $ARA110 + $BFC110 + $BRE110 + $CVL110 + $COR110 + $GES110 + $HDF110 + $IDF110 + $NOR110 + $NAQ110 + $OCC110 + $PDL110 + $PCA110;
 $PROD2 = $ARA120 + $BFC120 + $BRE120 + $CVL120 + $COR120 + $GES120 + $HDF120 + $IDF120 + $NOR120 + $NAQ120 + $OCC120 + $PDL120 + $PCA120;
 $NAT1  = $ARA130 + $BFC130 + $BRE130 + $CVL130 + $COR130 + $GES130 + $HDF130 + $IDF130 + $NOR130 + $NAQ130 + $OCC130 + $PDL130 + $PCA130;
@@ -195,7 +162,7 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
         </p>
         <p>&nbsp;</p>
         <p class="terr4 marginAuto">Elite 1 - Elite 2<br>
-          <a href="../feminine/page_elite1.php">(23 clubs)</a>
+          <a href="../feminine/page_elite1.php">(20 clubs)</a>
         </p>
         <br>
         <p class="terr4 marginAuto">Fédérale 1<br>

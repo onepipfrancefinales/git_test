@@ -57,12 +57,12 @@ $comiteNom = "Occitanie"; ?>
   <table class="table">
     <tr>
       <td colspan="3">
-        <?php include("../images/page_image_al.php"); ?>
+        <?php include "../images/page_image_al.php"; ?>
       </td>
     </tr>
     <tr>
       <td colspan="3">
-        <?php include("../01ligne.php"); ?>
+        <?php include "../01ligne.php"; ?>
       </td>
     </tr>
     <tr>
@@ -72,12 +72,11 @@ $comiteNom = "Occitanie"; ?>
     <tr>
       <!-- Colonne de gauche -->
       <td class="colonneDroiteGauche">
-        <?php include("../01gauche.php"); ?>
+        <?php include "../01gauche.php"; ?>
       </td>
 
       <!-- Colonne centrale -->
       <td class="colonneCentrale center">
-        <br>
         <h1> Compétitions Régionales</h1>
         <h2 class="titre">Ligue Occitanie</h2>
         <h2 class="commentaire">La ligue Occitanie est née de la fusion des comités territoriaux<br>
@@ -86,8 +85,8 @@ $comiteNom = "Occitanie"; ?>
         <br>
 
         <?php
-        include("liensDivers.php");
-        include("sommaires.php");
+        include "liensDivers.php";
+        include "sommaires.php";
 
         $lien = $_GET['lien'];
         
@@ -113,7 +112,7 @@ $comiteNom = "Occitanie"; ?>
             $nomSerie = "(Ex 3me/ 4me série)";
           }
         
-          echo "  <br>" . "<br>";
+      
           echo "<h5>" .  $competition . " - " . "Poule " . substr($champ, -1);
           echo "<br>"; ?>
 
@@ -124,26 +123,23 @@ $comiteNom = "Occitanie"; ?>
           affichage($champ, $champ2, $comite, $bdd);
           journeesReportees($comite, $champ, $bdd);
           perequation($comite, $champ, $bdd);
-          echo "<br>" . "<br>";
+       
         };
 
 
-        echo "<hr>" . " <hr>";
-        include("sommaires.php");
-        include("liensDivers.php");
-        echo "<br>" . " <br>";
+        include "liensDiversBas.php";
         ?>
 
       </td>
       <!-- Colonne de droite -->
       <td class="colonneDroiteGauche">
-        <?php include("../00droite.php"); ?>
+        <?php include "../00droite.php"; ?>
       </td>
     </tr>
   </table>
 
   <footer>
-    <?php include("../footer.php"); ?>
+    <?php include "../footer.php" ; ?>
   </footer>
 </body>
 </html>

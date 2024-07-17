@@ -25,7 +25,7 @@
     <td class = "none backgroundNoir" colspan="2" ><a href="/resultats/page_fed2.php"  title="Auvergne">Fédérale 2</a></td>
     <td class = "none backgroundNoir" colspan="2" ><a href="/resultats/page_fed3.php?code=NE"  title="Auvergne">Fédérale 3( P1 à P8)</a></td>
     <td class = "none backgroundNoir" colspan="3" ><a href="/resultats/page_fed3.php?code=GS"  title="Auvergne">Fédérale 3 ( P10 à P16)</a></td>
-    <td class = "none backgroundNoir" ><a href="/feminine/index_fem.php">Féminines</a></td>
+    <td class = "none backgroundNoir" ><a href="/feminine/page_elite1.php">Féminines</a></td>
    </tr>
    
    <tr class = "ligneBlanche"> 
@@ -63,7 +63,7 @@
     <td class = "none2"><a href="/resultats/page_pca.php"  title="Ligue Provence"><b>Provence <br>  Alpes<br> Côte d'Azur</b></a></td>
    </tr>
    <tr class="ligneBleue"> 
-     <td class="hauteurColonne" colspan="12" > </td>
+     <td class="hauteurColonne backgroundWhite" colspan="12" > </td>
     </tr> 
   </table>
 

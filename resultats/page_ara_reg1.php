@@ -123,10 +123,7 @@ $sigleLigue = "(ARA)";
           };
 
 
-          echo "<hr>" . " <hr>";
-          include("sommaires.php");
-          include("liensDivers.php");
-          echo "<br>" . " <br>";
+          include"liensDiversBas.php";
           ?>
       </td>
 

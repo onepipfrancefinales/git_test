@@ -51,19 +51,22 @@ $comiteNom="Pays de Loire";?>
     <tr>
       <td colspan="3"><?php include("../01ligne.php"); ?></td>
     </tr>
-    <tr bgcolor="#ffffff" >
-      <td colspan="3"><?php include("../pub/pub_displayHorizontal.php");?></td>
+    <tr class="backgroundColorWhite" >
+      <td colspan="3">
+        <?php include("../pub/pub_displayHorizontal.php");?>
+      </td>
     </tr>
     <tr>
 	  <!-- Colonne de gauche --> 
-      <td bgcolor="#006699" height="1192" valign="top" width="225"><p><?php include("../01gauche.php");?> </p></td>
+      <td class="colonneDroiteGauche">
+        <?php include("../01gauche.php");?> 
+    </td>
       
 	  <!-- Colonne centrale --> 
-	  <td border color="#000000" bgcolor="#ffffff" height="1192" valign="top"> 
-        <div align="center"><br>
-          <h1> Comp&eacute;titions R&eacute;gionales</h1>
+	  <td class="colonneCentrale center"> 
+          <h1> Compétitions Régionales</h1>
           <h2 class="titre">Ligue Pays de la Loire</h2>
-          <h2 class="commentaire">Le comit&eacute; territorial Pays de la Loire est devenu<br>
+          <h2 class="commentaire">Le comité territorial Pays de la Loire est devenu<br>
             la ligue Pays de la Loire en 2018.</h2>
 			<br>
           		 
@@ -72,7 +75,7 @@ $comiteNom="Pays de Loire";?>
     include("sommaires.php");  
          
     echo "<hr>"."<hr>";
-	
+    echo "<br>"."<br>";
 	//require("comPerso.php");
      
  	/*
@@ -104,22 +107,20 @@ $comiteNom="Pays de Loire";?>
 	affichage($champ, $champ2, $comite, $bdd);  
 	journeesReportees($comite, $champ, $bdd);
 	      
-    echo "<hr>"."<hr>";
-			  
-	include("sommaires.php");  
-	include("liensDivers.php");
-    //require '../pub/pub_displayH_550.php';?>
-     
-	 <br>
-      </div>
+  include "liensDiversBas.php";
+  
+  ?>
+    
+  </td>
+      <td class="colonneDroiteGauche">
+        <?php include("../00droite.php"); ?> 
       </td>
-      <td align="center" bgcolor="#006699" height="1192" valign="top" width="225"><p><?php include("../00droite.php"); ?> </p></td>
     </tr>
     
 </table>
-<?php include("piedDePage.php"); ?>
+
  <footer> 
-  
+  <?php include("piedDePage.php"); ?>
  </footer>
 </body>
 </html>

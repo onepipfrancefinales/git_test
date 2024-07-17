@@ -65,22 +65,17 @@ $comiteNom = "du Centre"; ?>
     <tr>
       <!-- Colonne de gauche -->
       <td class="colonneDroiteGauche">
-        <p>
+        
           <?php include("../01gauche.php"); ?>
-        </p>
+        
       </td>
 
       <!-- Colonne centrale -->
       <td class="colonneCentrale">
-
-        <br />
         <h1> Compétitions Régionales</h1>
-        <h2 class="titre">
-          <?php echo $ligueCVL; ?>
-        </h2>
+        <h2 class="titre"> <?php echo $ligueCVL; ?> </h2>
         <h2 class="commentaire">Le comité territorial du Centre est devenu<br>
-          la
-          <?php echo $ligueCVL; ?> en 2018.
+          la <?php echo $ligueCVL; ?> en 2018.
         </h2>
 
 
@@ -134,12 +129,7 @@ $comiteNom = "du Centre"; ?>
 
 
 
-        echo "<hr>" . " <hr>";
-
-        include("sommaires.php");
-        include("liensDivers.php");
-        echo "<br>. <br>";
-        //require '../pub/pub_displayH_550.php' ;
+        include "liensDiversBas.php";
 
         ?>
 

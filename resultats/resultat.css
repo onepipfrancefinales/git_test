@@ -10,6 +10,14 @@ td.colonneDroiteGauche {
 
 }
 
+td.colonneDroiteGaucheFem {
+	background-color: #996699;
+	width: 225px;
+	height: 1222px;
+	vertical-align: top;
+
+}
+
 table.infos {
 	width: "500";
 	margin: auto;
@@ -19,9 +27,9 @@ td.colonneCentrale {
 	background-color: #ffffff;
 	width: 650px;
 	height: 1222px;
-	width: "650";
 	vertical-align: top;
 	border-color: #000000;
+	padding-top:50px;
 
 }
 
@@ -139,6 +147,7 @@ h5 {
 	background-image: linear-gradient(45deg, #ffcc33, #99cc66, #99cc66, #f3e481, #99cc66, #ffcc33);
 	border-radius: 20px;
 	margin: auto;
+	margin-top:25px;
 }
 
 /*Plus d'infos & Calendrier*/
@@ -388,4 +397,13 @@ td.forum a {
 
 tr.fond {
 	background: #006699;
+}
+
+.lienSommaireBas{
+padding-bottom:75px;
+}
+
+
+.lienSommaireHaut{
+	padding-top:50px;
 }

@@ -61,11 +61,10 @@ $comiteNom="Provence";
       
 	  <!-- Colonne centrale --> 
 	  <td class = "colonneCentrale"> 
-        <div align="center"> <br>
-          <h1> Comp&eacute;titions R&eacute;gionales</h1>
-          <h2 class="titre">Ligue Provence Alpes <br>C&ocirc;te d'Azur</h2>
-          <h2 class="commentaire">La ligue Provence Alpes C&ocirc;te d'Azur est n&eacute;e de la fusion des<br>
-            comit&eacute;s territoriaux de Provence et de C&ocirc;te d'Azur en 2018.</h2>
+          <h1> Compétitions Régionales</h1>
+          <h2 class="titre">Ligue Provence Alpes <br>Côte d'Azur</h2>
+          <h2 class="commentaire">La ligue Provence Alpes Côte d'Azur est née de la fusion des<br>
+            comités territoriaux de Provence et de Côte d'Azur en 2018.</h2>
           <br>
        
 <?php
@@ -152,12 +151,8 @@ $comiteNom="Provence";
 	perequation($comite, $champ, $bdd);
 	
  
-	
-    echo "<hr>"."<hr>";
-         
-    include("sommaires.php");
-    include("liensDivers.php");  
-    require '../pub/pub_displayH_550.php';?>
+	include "liensDiversBas.php";
+  ?>
        
  </td>
       <td class = "colonneDroiteGauche"> 
@@ -166,9 +161,9 @@ $comiteNom="Provence";
     </tr>
    
 </table>
-<?php include("piedDePage.php"); ?>
+
   <footer> 
-   
+   <?php include("piedDePage.php"); ?>
   </footer>
  </body>
 </html>
