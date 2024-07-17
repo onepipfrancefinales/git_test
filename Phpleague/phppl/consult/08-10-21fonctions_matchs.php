@@ -76,7 +76,7 @@ function aff_journee($champ, $bdd)
 {
  
  
- $legende="Journ&eacute;e N&deg;";
+ $legende="JournÃ©e N&deg;";
  $color=0;
  
  
@@ -146,9 +146,9 @@ function aff_journee($champ, $bdd)
                 //if (($minute==substr($row[7],14,2)) and ($heure==substr($row[7],11,2)) and ($jour==substr($row[7],8,2)) and ($mois==substr($row[7],5,2)) and ($annee==substr($row[7],0,4)))
      if (!($annee==substr($row[7],0,4)) or !($mois==substr($row[7],5,2)) or !($jour==substr($row[7],8,2)) or !($minute==substr($row[7],14,2)) or !($heure==substr($row[7],11,2)))
      {
-      $minute = substr($row[7],14,2); // on récupère la minute
-      $heure = substr($row[7],11,2); // on récupère l'heure
-      $jour = substr($row[7],8,2); // on récupère le jour
+      $minute = substr($row[7],14,2); // on rï¿½cupï¿½re la minute
+      $heure = substr($row[7],11,2); // on rï¿½cupï¿½re l'heure
+      $jour = substr($row[7],8,2); // on rï¿½cupï¿½re le jour
       $mois = substr($row[7],5,2); // puis le mois
       $annee = substr($row[7],0,4); // et l'annee
 
@@ -199,9 +199,9 @@ function aff_journee($champ, $bdd)
 function aff_journeeSupp($champ, $bdd)
 {
 
- // cellule d'affichage des derniers résultats
+ // cellule d'affichage des derniers rï¿½sultats
  $color=0;
- $legende="Prochaine journ&eacute;e N&deg;";
+ $legende="Prochaine journÃ©e N&deg;";
   if (isset ($journee)) $journee = $journee; else $journee =($champ*1000)+01;
  $res3=$bdd->query("SELECT phppl_matchs.id_journee
 					FROM phppl_journees, phppl_matchs 
@@ -256,9 +256,9 @@ $minute = 0;$heure = 0;  $jour = 0; $mois = 0;$annee = 0;
           
 	   if (!($annee==substr($row[7],0,4)) or !($mois==substr($row[7],5,2)) or !($jour==substr($row[7],8,2)) or !($minute==substr($row[7],14,2)) or !($heure==substr($row[7],11,2)))
        {
-        $minute = substr($row[7],14,2); // on récupère la minute
-        $heure = substr($row[7],11,2); // on récupère l'heure
-        $jour = substr($row[7],8,2); // on récupère le jour
+        $minute = substr($row[7],14,2); // on rï¿½cupï¿½re la minute
+        $heure = substr($row[7],11,2); // on rï¿½cupï¿½re l'heure
+        $jour = substr($row[7],8,2); // on rï¿½cupï¿½re le jour
         $mois = substr($row[7],5,2); // puis le mois
         $annee = substr($row[7],0,4); // et l'annee
 
@@ -296,7 +296,7 @@ function classementDetaille($champ, $bdd)
   $type= "GENERAL";
   $legende = "";
  
- //barèmes du championnat
+ //barï¿½mes du championnat
  $res=$bdd->query("SELECT accession, barrage, relegation 
 				   FROM phppl_parametres 
 				   WHERE ID_CHAMP='$champ' 
@@ -315,7 +315,7 @@ function classementDetaille($champ, $bdd)
 						 WHERE id_champ='$champ'");
 		   
   $nb_equipes=$res->fetch();
-  $legende="Classement g&eacute;n&eacute;ral";
+  $legende="Classement gÃ©nÃ©ral";
   
   echo "<table class=\"tablephppl2\" align=\"center\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphppl3\"><th colspan=\"11\">".$legende."</th></tr>\n";
   echo "<tr class=\"trphppl3\">
@@ -439,9 +439,9 @@ echo "<br />";echo "<br />";
 
     if ($smart == false)
 	{
-	  $minute = substr($row[5],14,2); // on récupère la minute
-       $heure = substr($row[5],11,2); // on récupère l'heure
-       $jour = substr($row[5],8,2); // on récupère le jour
+	  $minute = substr($row[5],14,2); // on rï¿½cupï¿½re la minute
+       $heure = substr($row[5],11,2); // on rï¿½cupï¿½re l'heure
+       $jour = substr($row[5],8,2); // on rï¿½cupï¿½re le jour
        $mois = substr($row[5],5,2); // puis le mois
        $annee = substr($row[5],0,4); // et l'annee
 
@@ -705,7 +705,7 @@ WHERE dom.id_champ='$champ'
       if (!isset($clmnt[$row[2]]['BUTSDOMCONTRE'])) {$clmnt[$row[2]]['BUTSDOMCONTRE']=$row[4];}
       else{$clmnt[$row[2]]['BUTSDOMCONTRE']+=$row[4];}
      }
-// Resultats à domicile
+// Resultats ï¿½ domicile
 $result=$idconnect->query("SELECT phppl_clubs.nom FROM phppl_clubs, phppl_equipes, phppl_championnats
 WHERE phppl_equipes.id_champ=phppl_championnats.id
       AND phppl_championnats.id='$champ'
@@ -897,7 +897,7 @@ function clmnt($champ,$smart, $bdd)
   $type= "GENERAL";
   $legende = "";
  
- //barèmes du championnat
+ //barï¿½mes du championnat
  $res=$bdd->query("SELECT accession, barrage, relegation 
 				   FROM phppl_parametres 
 				   WHERE ID_CHAMP='$champ' 
@@ -1044,23 +1044,23 @@ echo "</table>";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Titre       : Add-on Gestion des clubs (fiches clubs), mini-classement,                     //
-//               statistiques, amélioration de la gestion des buteurs pour phppleague.          //
+//               statistiques, amï¿½lioration de la gestion des buteurs pour phppleague.          //
 // Auteur      : Alexis MANGIN                                                                 //
 // Email       : Alexis@univert.org                                                            //
 // Url         : http://www.univert.org                                                        //
-// Démo        : http://phppleague.univert.org/demo.php                                         //
+// Dï¿½mo        : http://phppleague.univert.org/demo.php                                         //
 // Description : Edition, gestion, fiches phppl_clubs, statistiques, mini-classement...         //
 // Version     : 0.71 (29/03/2003)                                                             //
 //                                                                                             //
 //                                                                                             //
-// L'Univert   : Retrouvez quotidiennement l'actualité des Verts ainsi que de                  //
-//               nombreuses autres rubriques consacrées à l'AS Saint-Etienne. Mais             //
-//               L'Univert c'est avant tout la présentation d'un club devenu légende.          //
+// L'Univert   : Retrouvez quotidiennement l'actualitï¿½ des Verts ainsi que de                  //
+//               nombreuses autres rubriques consacrï¿½es ï¿½ l'AS Saint-Etienne. Mais             //
+//               L'Univert c'est avant tout la prï¿½sentation d'un club devenu lï¿½gende.          //
 //                                                                                             //
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// Affichage renseignements utilisée dans consult/club.php
+// Affichage renseignements utilisï¿½e dans consult/club.php
 //function aff_rens ($id_classe, $id_clubs)
 //{
 //$query="SELECT phppl_donnee.id, phppl_donnee.nom, id_rens, id_clubs, phppl_rens.id, phppl_rens.nom, phppl_rens.id_classe, phppl_clubs.id, etat, phppl_donnee.url, phppl_rens.url

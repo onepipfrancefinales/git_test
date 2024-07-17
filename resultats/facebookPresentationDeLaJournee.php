@@ -11,7 +11,7 @@ $division = 140;
 $comite="phppro";
 $CMT="fed1";
 $cmt="f1";
-$comiteNom="F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
+$comiteNom="Fédérale 1 - Espoirs Fédérale 1";
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ $comiteNom="F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
   <div align="center">
  <title>Championnat de France <?php echo $comiteNom;?></title>
  <meta name="description"
- content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+ content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
  <meta name="classification" content="Sport,Rugby">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <meta name="resource-type" content="document">

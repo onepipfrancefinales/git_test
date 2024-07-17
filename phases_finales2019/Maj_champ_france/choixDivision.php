@@ -38,11 +38,11 @@ elseif ($page == "dates" )
   <select name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1">
     <option selected></option>
    <option value=""><b>----Barrages----------</b></option>
-    <option value="<?php echo $ad ;?>?division=7140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages F&eacute;d 1</b></option>
-	<option value="<?php echo $ad ;?>?division=7150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages F&eacute;d 2</b></option>
-    <option value="<?php echo $ad ;?>?division=7160&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages F&eacute;d 3 </b></option>
+    <option value="<?php echo $ad ;?>?division=7140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Féd 1</b></option>
+	<option value="<?php echo $ad ;?>?division=7150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Féd 2</b></option>
+    <option value="<?php echo $ad ;?>?division=7160&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Féd 3 </b></option>
 	<option value="<?php echo $ad ;?>?division=7240&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Espoir Fed 1</b></option>
-	<option value="<?php echo $ad ;?>?division=7250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages F&eacute;d B</b></option>
+	<option value="<?php echo $ad ;?>?division=7250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Féd B</b></option>
     <option value="<?php echo $ad ;?>?division=7260&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Excellence B</b></option>
 
 <option value=""><b>--------Séniors I------</b></option>
@@ -52,25 +52,25 @@ elseif ($page == "dates" )
     <option value="<?php echo $ad ;?>?division=130&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Nationale 1 </b></option>
 	<option value="<?php echo $ad ;?>?division=135&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Nationale 2 </b></option>
 	
-	<option value="<?php echo $ad ;?>?division=140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale 1 J Prat </b></option>
-    <option value="<?php echo $ad ;?>?division=150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale 2</b></option>
-    <option value="<?php echo $ad ;?>?division=160&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale 3 </b></option>
-    <option value="<?php echo $ad ;?>?division=170&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;gionale 1</b></option>
-    <option value="<?php echo $ad ;?>?division=180&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;gionale 2 </b></option>
-    <option value="<?php echo $ad ;?>?division=190&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;gionale 3 </b></option>
+	<option value="<?php echo $ad ;?>?division=140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 1 J Prat </b></option>
+    <option value="<?php echo $ad ;?>?division=150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 2</b></option>
+    <option value="<?php echo $ad ;?>?division=160&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 3 </b></option>
+    <option value="<?php echo $ad ;?>?division=170&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 1</b></option>
+    <option value="<?php echo $ad ;?>?division=180&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 2 </b></option>
+    <option value="<?php echo $ad ;?>?division=190&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 3 </b></option>
     	
 	<option value=""><b>------Réserves--------</b></option>
 	<option value="<?php echo $ad ;?>?division=225&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs Elite</b></option>
 	<option value="<?php echo $ad ;?>?division=230&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs Nationaux</b></option>
 	<option value="<?php echo $ad ;?>?division=240&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs  Federaux</b></option>
-    <option value="<?php echo $ad ;?>?division=250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale B</b></option>
+    <option value="<?php echo $ad ;?>?division=250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale B</b></option>
     <option value="<?php echo $ad ;?>?division=260&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Excellence B</b></option>
-	<option value="<?php echo $ad ;?>?division=270&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Res R&eacute;gionale</b></option>
+	<option value="<?php echo $ad ;?>?division=270&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Res Régionale</b></option>
    
   	<option value=""><b>------Féminines--------</b></option> 
     <option value="<?php echo $ad ;?>?division=280&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 1</b></option>
     <option value="<?php echo $ad ;?>?division=285&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 2</b></option>
-    <option value="<?php echo $ad ;?>?division=290&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale 1</b></option>
+    <option value="<?php echo $ad ;?>?division=290&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 1</b></option>
 	
     <option value=""><b>-----Jeunes---------</b></option>
     <option value="<?php echo $ad ;?>?division=325&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Crabos</b></option>

@@ -2,11 +2,11 @@
   
 <td border color="#0000FF" align="center" bgcolor="#ffffff" width="650" height="2121" valign="top"> 
   <br>
-    <h1> Comp&eacute;titions R&eacute;gionales</h1>
+    <h1> Compétitions Régionales</h1>
 	<h2 class="titre">Ligue Occitanie </h2>
-    <h2 class="commentaire">La ligue Occitanie est n&eacute;e de la fusion des comit&eacute;s territoriaux<br>
-            du Languedoc, de l'Armagnac Bigorre, du pays Catalan et du comit&eacute;<br>
-            Midi Pyr&eacute;n&eacute;es en janvier 2018.</h2>
+    <h2 class="commentaire">La ligue Occitanie est née de la fusion des comités territoriaux<br>
+            du Languedoc, de l'Armagnac Bigorre, du pays Catalan et du comité<br>
+            Midi Pyrénées en janvier 2018.</h2>
 			<br>
     
 	<?php 
@@ -17,7 +17,7 @@
      
     <hr><hr>
 	 <?php// require("comPerso.php"); ?> <br>
-     <h5>1re S&eacute;rie - Poule 1<br><br></h5>
+     <h5>1re Série - Poule 1<br><br></h5>
 	 <?php $champ = 191; AffichageLogos($champ, $comite, false, $bdd);?>
       <table width="700" >
        <tr> 
@@ -33,7 +33,7 @@
 	  
       include("../pub/pub_displayHorizontal.php");?>
           
-      <h5>1re S&eacute;rie - Poule 2<br><br></h5>
+      <h5>1re Série - Poule 2<br><br></h5>
       <?php $champ = 192; AffichageLogos($champ, $comite, false, $bdd);?>
       
       
@@ -61,7 +61,7 @@
            echo "<p class=\"ressource\">".$message."</p>"; ?>
     
           
-	  <h5>1re S&eacute;rie - Poule 3<br><br></h5>
+	  <h5>1re Série - Poule 3<br><br></h5>
       <?php $champ = 193;  AffichageLogos($champ, $comite, false, $bdd);?>
           
       
@@ -85,7 +85,7 @@
 		<?php  journeesReporteesCovid($comite, 193, $bdd);  
            echo "<p class=\"ressource\">".$message."</p>";
 	  include("../pub/pub_displayHorizontal.php"); ?>
-      <h5>1re S&eacute;rie - Poule 4<br><br></h5>
+      <h5>1re Série - Poule 4<br><br></h5>
       <?php $champ = 194;  AffichageLogos($champ, $comite, false, $bdd);?>
           
       
@@ -110,7 +110,7 @@
            echo "<p class=\"ressource\">".$message."</p>"; ?>
 	 
       
-      <h5>1re S&eacute;rie - Poule 5<br> <br></h5>
+      <h5>1re Série - Poule 5<br> <br></h5>
       <?php $champ = 195;  AffichageLogos($champ, $comite, false, $bdd);?>
           
       

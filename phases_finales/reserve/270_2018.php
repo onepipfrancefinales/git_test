@@ -9,15 +9,15 @@ $id = 270;
 <link type="text/css" rel="stylesheet"  href="../2.css">
 
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comit�s territoriaux, Tous les championnats de rugby, f�d�rale 2, f�d�rale 3, f�d�rale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comit�s territoriaux, Tous les championnats de rugby, f�d�rale 2, f�d�rale 3, f�d�rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re S�rie</title>
+<title>1re S�rie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 </head>
@@ -134,12 +134,12 @@ $A8016="11";
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="25" bgcolor="#FFCC66" colspan="15"> 
-      <p><i><b>R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve </b></i></p>
+      <p><i><b>Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve </b></i></p>
     </td>
   </tr>
   <tr> 
@@ -694,10 +694,10 @@ $A8016="11";
     <td width="21" height="11">&nbsp;</td>
     <td rowspan="4" height="31" align="left" bgcolor="#CCCCCC" width="213"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
-        sont d&eacute;finies <br>
+        sont définies <br>
         par la FFR, apr&egrave;s chaque tour en<br>
-        privil&eacute;giant des <br>
-        oppositions g&eacute;ographiques</font></div>
+        privilégiant des <br>
+        oppositions géographiques</font></div>
     </td>
     <td width="51" height="11">&nbsp;</td>
     <td width="243" height="11"> 
@@ -794,7 +794,7 @@ $A8016="11";
     <td width="51">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        R&eacute;serve 
+        Réserve 
         <?php echo $annee;?>
         </b></font></div>
     </td>

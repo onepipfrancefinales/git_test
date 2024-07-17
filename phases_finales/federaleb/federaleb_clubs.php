@@ -85,13 +85,13 @@ $clubA1632= '-';
 <table width="1600" border="0" align="left" height="500" cellspacing="0">
   <tr bgcolor="#FFCC66"> 
     <td colspan="15" height="21"> 
-      <div align="center"><i><b>F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
+      <div align="center"><i><b>Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
         B</b></i></div>
     </td>
   </tr>

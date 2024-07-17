@@ -5,14 +5,14 @@
 <table align="center" border="0" width="500"> 
 <tbody><tr>
 <td class="bienvenue" colspan="2"> 
-<font face="Arial, Helvetica, sans-serif"> <font color="#666666" size="2"><i>(Pour r&eacute;aliser
+<font face="Arial, Helvetica, sans-serif"> <font color="#666666" size="2"><i>(Pour réaliser
 votre selection cliquez sur Modifier)</i></font></font>
 </td>
 </tr> <tr> <td class="user" width="242">
-<a href="../admin/pageChoix.php?comiteA=phppro#zone2">Modifier ma s&eacute;lection</a>
+<a href="../admin/pageChoix.php?comiteA=phppro#zone2">Modifier ma sélection</a>
 </td> 
 <td class="user" width="248">
-<a href="../admin/logout.php">D&eacute;connection</a>
+<a href="../admin/logout.php">Déconnection</a>
 </td>
 </tr></tbody></table><br>
 <br>
@@ -73,7 +73,7 @@ $query = " SELECT p.$comiteA, p.$divisionA, p.$typeA, c.nom, d.division, p.$tail
 					//	echo "-taille==== ".''.$taille; 
 ?>
 						
-	<?php //************** affichage du championnat R�serve ou non ************************* 
+	<?php //************** affichage du championnat R�serve ou non ************************* 
 						if ($type==2) 
 							{ 
 							require ("typeDouble.php"); 

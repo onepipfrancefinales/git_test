@@ -26,7 +26,7 @@
         <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="1"  title="Recherche par ligue">
           <option selected>Par ligue</option>
           <option value="/consultation/page_ligue.php?idLigue=10">Auvergne Rhône Alpes</option>
-          <option value="/consultation/page_ligue.php?idLigue=11">Bourgogne Franche Comt&eacute;</option>
+          <option value="/consultation/page_ligue.php?idLigue=11">Bourgogne Franche Comté</option>
           <option value="/consultation/page_ligue.php?idLigue=12">Bretagne</option>
           <option value="/consultation/page_ligue.php?idLigue=13">Centre Val de Loire</option>
           <option value="/consultation/page_ligue.php?idLigue=14">Corse</option>
@@ -45,10 +45,10 @@
     
 	 
 	   <fieldset class="fieldsetG"> <legend class="legendG"> 
-        Pr&eacute;sentation des comit&eacute;s<br>
+        Présentation des comités<br>
         (avant 2019)</legend> <br>
         <select class="inputG" name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1"  title="Recherche par comité">
-          <option selected>Par comit&eacute;</option>
+          <option selected>Par comité</option>
           <option value="/consultation/page_comite.php?variable_1=(AP)">Alpes</option>
           <option value="/consultation/page_comite.php?variable_1=(AL)">Alsace 
           Lorraine</option>

@@ -7,9 +7,9 @@
 //				Demi finale												*/
 //				Demi finale aller-retour								*/
 //				Quarts	(ligne 822)                                     */
-//		        huitième (ligne 850)                                    */
-//              huitième  + Barrages 									*/
-//				huitième Aller-Retour                                    */
+//		        huitiï¿½me (ligne 850)                                    */
+//              huitiï¿½me  + Barrages 									*/
+//				huitiï¿½me Aller-Retour                                    */
 //				Seizieme (ligne 1850)                                    */
 //***********************************************************************/
 
@@ -29,23 +29,23 @@ if ($division== 170)
 elseif ($division == 180)
 	echo "- Promotion honneur -";
 elseif ($division == 190)
-	echo "- 1re S&eacute;rie -";
+	echo "- 1re SÃ©rie -";
 elseif ($division == 200)
-	echo "- 2me S&eacute;rie -";
+	echo "- 2me SÃ©rie -";
 elseif ($division == 210)
-	echo "- 3me S&eacute;rie -";
+	echo "- 3me SÃ©rie -";
 elseif ($division == 220)
-	echo "- 4me S&eacute;rie -";
+	echo "- 4me SÃ©rie -";
 elseif ($division == 270)
-	echo "- R&eacute;serve honneur -";
+	echo "- RÃ©serve honneur -";
 elseif ($division == 9180)	
-	echo "- R&eacute;serve promotion honneur -";
+	echo "- RÃ©serve promotion honneur -";
 elseif ($division == 9190)
-	echo "- R&eacute;serve S&eacute;rie -";
+	echo "- RÃ©serve SÃ©rie -";
 elseif ($division == 9200)
-	echo "- R&eacute;serve 2me S&eacute;rie -";
+	echo "- RÃ©serve 2me SÃ©rie -";
 else
-	echo "R&eacute;serve 4me S&eacute;rie  ";
+	echo "RÃ©serve 4me SÃ©rie  ";
 }
 
 
@@ -54,7 +54,7 @@ else
 
 
 
-//***** Récupération des variables *******************************
+//***** Rï¿½cupï¿½ration des variables *******************************
 
 
 
@@ -147,7 +147,7 @@ function finale2019 ($bdcomiteClub, $division, $annee)
 
 	}
 
-	 //*********** Récupération des résultats et traitements *****************************
+	 //*********** Rï¿½cupï¿½ration des rï¿½sultats et traitements *****************************
 
 	global $A1001;global $A1002;	
 	
@@ -244,7 +244,7 @@ function demi2019($bdcomiteClub, $division, $annee)
 	 if (isset ($tabEquipes[3])) $clubA2004 = $tabEquipes[3]; else $clubA2004='-';
 	}
 	
-	//*********** Récupération des résultats et traitements *****************************
+	//*********** Rï¿½cupï¿½ration des rï¿½sultats et traitements *****************************
 
 	global $A2001;global $A2002;global $A2003;global $A2004;
 
@@ -357,7 +357,7 @@ function demiAR2019 ($bdcomiteClub, $division, $annee)
 	}
 
 	
-//*********** Récupération des résultats et traitements *****************************
+//*********** Rï¿½cupï¿½ration des rï¿½sultats et traitements *****************************
 //ALLER  : Pts
 	global $A2001;global $A2002;global $A2003;global $A2004;
 //			GA
@@ -532,7 +532,7 @@ function quarts2019 ($bdcomiteClub, $division, $annee)
 	
 	
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des quarts de finale ********
+//*****  Traitement des Equipes et des rï¿½sultats des quarts de finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -578,7 +578,7 @@ function quarts2019 ($bdcomiteClub, $division, $annee)
 	}		
 	
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des demi finale ********
+//*****  Traitement des Equipes et des rï¿½sultats des demi finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -615,7 +615,7 @@ function quarts2019 ($bdcomiteClub, $division, $annee)
 	
 
 //**********************************************************************
-//*****  Traitement des Equipes et des résultats des demi finale ********
+//*****  Traitement des Equipes et des rï¿½sultats des demi finale ********
 //*********************************************************************
 
 
@@ -678,7 +678,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	$bdcomiteClub = "php".''.$comite.''."_clubs";
 
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des barrages ********
+//*****  Traitement des Equipes et des rï¿½sultats des barrages ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -725,7 +725,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 	
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des quarts de finale ********
+//*****  Traitement des Equipes et des rï¿½sultats des quarts de finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -773,7 +773,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 	
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats des Demi finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats des Demi finale********											
 //**********************************************************************
 
 	
@@ -806,7 +806,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 
 
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats des Demi finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats des Demi finale********											
 //**********************************************************************	
 
 
@@ -876,7 +876,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des huitièmes ********
+//*****  Traitement des Equipes et des rï¿½sultats des huitiï¿½mes ********
 //*********************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -922,7 +922,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 
 	
 //***************************************************										
-//*****  Traitement des résultats des quarts ********											
+//*****  Traitement des rï¿½sultats des quarts ********											
 //***************************************************	
 
 	$tabScores = array() ;
@@ -957,7 +957,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 											
 
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats des Demi finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats des Demi finale********											
 //**********************************************************************
 
 	
@@ -990,7 +990,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	 
 	 
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats dea la finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats dea la finale********											
 //**********************************************************************	 
 	 
 	 global $clubA1001;global $clubA1002;										
@@ -1014,11 +1014,11 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 						}		
 
 //************************************************************************************
-//*******************    Récupérations des Scores	**********************************
+//*******************    Rï¿½cupï¿½rations des Scores	**********************************
 //************************************************************************************
 
 
-// Traitement des résultats des 8me
+// Traitement des rï¿½sultats des 8me
 
 
 
@@ -1079,7 +1079,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 	
 //************************************************************************
-//*****  Traitement des Equipes et des résultats des 8me de finale********
+//*****  Traitement des Equipes et des rï¿½sultats des 8me de finale********
 //************************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -1192,7 +1192,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 
 
 //***************************************************										
-//*****  Traitement des résultats des quarts ********											
+//*****  Traitement des rï¿½sultats des quarts ********											
 //***************************************************	
 
 	$tabScores = array() ;
@@ -1223,7 +1223,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 											
 
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats des Demi finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats des Demi finale********											
 //**********************************************************************
 
 	
@@ -1256,7 +1256,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	 
 	 
 //**********************************************************************										
-//*****  Traitement des équipes et des résultats dea la finale********											
+//*****  Traitement des ï¿½quipes et des rï¿½sultats dea la finale********											
 //**********************************************************************	 
 	 
 	 global $clubA1001;global $clubA1002;										
@@ -1281,11 +1281,11 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 		
 //************************************************************************************
-//*******************    Récupérations des Scores	**********************************
+//*******************    Rï¿½cupï¿½rations des Scores	**********************************
 //************************************************************************************
 
 
-// Traitement des résultats des 8me
+// Traitement des rï¿½sultats des 8me
 
 $A8001 = $A8001 + $R8001;
 $A8002 = $A8002 + $R8002;
@@ -1394,7 +1394,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	$bdcomiteClub = "php".''.$comite.''."_clubs";
 	
 //*********************************************************************
-//*****  Traitement des Equipes et des résultats des Barrages ********
+//*****  Traitement des Equipes et des rï¿½sultats des Barrages ********
 //*********************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -1442,7 +1442,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 	
 //************************************************************************
-//*****  Traitement des Equipes et des résultats des 8me de finale********
+//*****  Traitement des Equipes et des rï¿½sultats des 8me de finale********
 //************************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -1488,7 +1488,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 	
 	//************************************************************************
-//*****  Traitement des Equipes et des résultats des quarts de finale********
+//*****  Traitement des Equipes et des rï¿½sultats des quarts de finale********
 //************************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -1522,7 +1522,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	}	
 	
 //************************************************************************
-//*****  Traitement des Equipes et des résultats des demi finale********
+//*****  Traitement des Equipes et des rï¿½sultats des demi finale********
 //************************************************************************
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -1557,7 +1557,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 	
 //************************************************************************
-//*****  Traitement des Equipes et des résultats de la finale     ********
+//*****  Traitement des Equipes et des rï¿½sultats de la finale     ********
 //************************************************************************	
 	
 
@@ -1588,11 +1588,11 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 
 		
 //************************************************************************************
-//*******************    Récupérations des Scores	**********************************
+//*******************    Rï¿½cupï¿½rations des Scores	**********************************
 //************************************************************************************
 
 
-// Traitement des résultats des barrages et des 8me
+// Traitement des rï¿½sultats des barrages et des 8me
 
 
 //verifier les oppossitions
@@ -1659,7 +1659,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	$bdcomiteClub = "php".''.$comite.''."_clubs";
 	
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats des 16me de finale	 
+//           Traitements des equipes et des rï¿½sultats des 16me de finale	 
 //***************************************************************************************
 
 	$tabEquipes = array();
@@ -1712,7 +1712,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 	
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats des 8me de finale	 
+//           Traitements des equipes et des rï¿½sultats des 8me de finale	 
 //***************************************************************************************
 
 	$tabEquipes = array();
@@ -1754,7 +1754,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	}
 	
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats des quarts de finale	 
+//           Traitements des equipes et des rï¿½sultats des quarts de finale	 
 //***************************************************************************************
 
 	$tabEquipes = array();
@@ -1794,7 +1794,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	
 	
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats des demi finale	 
+//           Traitements des equipes et des rï¿½sultats des demi finale	 
 //***************************************************************************************
 
 	$tabEquipes = array();
@@ -1833,7 +1833,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 	}	
 	
 //***************************************************************************************	 
-//           Traitements des equipes et des résultats de la finale	 
+//           Traitements des equipes et des rï¿½sultats de la finale	 
 //***************************************************************************************
 
 
@@ -1860,7 +1860,7 @@ if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
 						$A1002 = $row[1];
 						}							
 
-//****** traitement résultats 16me de finale  *********	
+//****** traitement rï¿½sultats 16me de finale  *********	
 
 
 	

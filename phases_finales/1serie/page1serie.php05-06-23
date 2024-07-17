@@ -35,7 +35,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re S&eacute;rie</title>
+<title>1re Série</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script language="JavaScript">
 <!--

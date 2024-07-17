@@ -335,7 +335,7 @@ echo "";
 <div id="Layer10" style="position:absolute; width:359px; height:52px; z-index:6; left: 32px; top: 535px"><font size="2"> 
   (P) Equipes Promues <br>
   Qualification aux phases finales<br>
-  Equipes rel&eacute;gu&eacute;s<br>
+  Equipes relégués<br>
   </font> </div>
 <div id="Layer8" style="position:absolute; width:469px; height:25px; z-index:3; left: 668px; top: 313px"> 
   <div align="center"><font face="Lucida Handwriting" size="4"><b>Phase finale 

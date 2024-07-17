@@ -84,7 +84,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
 				// if ($val1 + $val2 < 4   )
 				//	{   
 					 
-					$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journ&eacute;e :<br>";
+					$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journée :<br>";
 				//	}
 			}
 	echo "<br><br>";
@@ -222,7 +222,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
 				// if ($val1 + $val2 < 4   )
 				//	{   
 					     
-		 			$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journ&eacute;e :<br>";
+		 			$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journée :<br>";
 				//	}
 			}		
 	echo "<br><br>";

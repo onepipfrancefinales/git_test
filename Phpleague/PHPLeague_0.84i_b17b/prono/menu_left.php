@@ -83,7 +83,7 @@ else
 
 	if (isset($_REQUEST['t']) AND $_REQUEST['t'] == 1)
 	{
-		echo '<div class="CadreErreur">'.FormatText('Identifiants erron&eacute;s').'</div>';
+		echo '<div class="CadreErreur">'.FormatText('Identifiants erronés').'</div>';
 	}
 	elseif (isset($_REQUEST['t']) AND $_REQUEST['t'] == 0)
 	{

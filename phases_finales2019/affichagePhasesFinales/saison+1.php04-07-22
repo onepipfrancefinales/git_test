@@ -1049,7 +1049,7 @@ elseif ($division > 160 and  $division < 230 or $division == 150)
   <tr bgcolor="#009933"> 
     <td height="55" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font color="#FFFFFF">Nombre 
-        de clubs qualifi&eacute;s par Ligues - Honneur</font></b></font></div>
+        de clubs qualifiés par Ligues - Honneur</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -1058,15 +1058,15 @@ elseif ($division > 160 and  $division < 230 or $division == 150)
     </td>
     <td height="83" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Anciens 
-        comit&eacute;s</b></font></div>
+        comités</b></font></div>
     </td>
     <td height="83" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Nombre 
-        de clubs qualifi&eacute;s directement en 16me</b></font></div>
+        de clubs qualifiés directement en 16me</b></font></div>
     </td>
     <td height="83" width="16%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Saison<br>
-        pr&eacute;c&eacute;dente </b></font></div>
+        précédente </b></font></div>
     </td>
     <td height="83" width="21%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Nbre 
@@ -1093,10 +1093,10 @@ elseif ($division > 160 and  $division < 230 or $division == 150)
   </tr>
   <tr> 
     <td width="25%" bgcolor="#999999" height="21"><font size="3" face="Arial, Helvetica, sans-serif" color="#000000">Bourgogne 
-      Franche Comt&eacute;</font></td>
+      Franche Comté</font></td>
     <td width="23%" bgcolor="#999999" height="21"> 
       <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Bourgogne 
-        Franche Comt&eacute;</font></div>
+        Franche Comté</font></div>
     </td>
     <td width="15%" bgcolor="#999999" height="21"> 
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>2</b></font></div>
@@ -1223,9 +1223,9 @@ elseif ($division > 160 and  $division < 230 or $division == 150)
     <td width="25%"><font size="3" face="Arial, Helvetica, sans-serif" color="#000000">Nouvelle 
       Aquitaine</font></td>
     <td width="23%"> 
-      <p align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">B&eacute;arn 
+      <p align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Béarn 
         -C&ocirc;te Basque Landes -<br>
-        C&ocirc;te d'argent - Limousin - P&eacute;rigord Agenais - Poitou Charente 
+        C&ocirc;te d'argent - Limousin - Périgord Agenais - Poitou Charente 
         </font></p>
     </td>
     <td width="15%"> 
@@ -1242,7 +1242,7 @@ elseif ($division > 160 and  $division < 230 or $division == 150)
     <td width="25%" height="30"><font size="3" face="Arial, Helvetica, sans-serif" color="#000000">Occitanie</font></td>
     <td width="23%" height="30"> 
       <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Armagnac 
-        Bigorre - Midi Pyr&eacute;n&eacute;es<br>
+        Bigorre - Midi Pyrénées<br>
         Languedoc - Pays Catalans</font></div>
     </td>
     <td width="15%" height="30"> 
@@ -1387,7 +1387,7 @@ elseif ($division ==180)
   <tr bgcolor="#009933"> 
     <td height="55" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font color="#FFFFFF">Nombre 
-        de clubs qualifi&eacute;s par Ligues - Promotion honneur</font></b></font></div>
+        de clubs qualifiés par Ligues - Promotion honneur</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -1396,16 +1396,16 @@ elseif ($division ==180)
     </td>
     <td height="83" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Anciens 
-        comit&eacute;s</b></font></div>
+        comités</b></font></div>
     </td>
     <td height="83" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nombre 
-        de clubs qualifi&eacute;s directement <br>
+        de clubs qualifiés directement <br>
         en 16me</b></font></div>
     </td>
     <td height="83" width="16%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Saison<br>
-        pr&eacute;c&eacute;dente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
+        précédente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
     </td>
     <td height="83" width="21%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nbre de 
@@ -1433,10 +1433,10 @@ elseif ($division ==180)
   </tr>
   <tr> 
     <td width="25%" bgcolor="#999999" height="21"><font face="Arial, Helvetica, sans-serif" size="3">Bourgogne 
-      Franche Comt&eacute;</font></td>
+      Franche Comté</font></td>
     <td width="23%" bgcolor="#999999" height="21"> 
       <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Bourgogne 
-        Franche Comt&eacute;</font></div>
+        Franche Comté</font></div>
     </td>
     <td width="15%" bgcolor="#999999" height="21"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b><font size="4">2</font></b></font></div>
@@ -1562,9 +1562,9 @@ elseif ($division ==180)
     <td width="25%"><font face="Arial, Helvetica, sans-serif" size="3">Nouvelle 
       Aquitaine</font></td>
     <td width="23%"> 
-      <p align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">B&eacute;arn 
+      <p align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Béarn 
         -C&ocirc;te Basque Landes -<br>
-        C&ocirc;te d'argent - Limousin - P&eacute;rigord Agenais -Poitou Charente 
+        C&ocirc;te d'argent - Limousin - Périgord Agenais -Poitou Charente 
         </font></p>
     </td>
     <td width="15%"> 
@@ -1581,7 +1581,7 @@ elseif ($division ==180)
     <td width="25%" height="30"><font face="Arial, Helvetica, sans-serif" size="3">Occitanie</font></td>
     <td width="23%" height="30"> 
       <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Armagnac 
-        Bigorre - Midi Pyr&eacute;n&eacute;es<br>
+        Bigorre - Midi Pyrénées<br>
         Languedoc - Pays Catalans</font></div>
     </td>
     <td width="15%" height="30"> 
@@ -1725,7 +1725,7 @@ elseif ($division == 190)
   <tr bgcolor="#009933"> 
     <td height="55" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Nombre 
-        de clubs qualifi&eacute;s par Ligues - 1&egrave;re s&eacute;rie</font></b></font></div>
+        de clubs qualifiés par Ligues - 1&egrave;re série</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -1734,15 +1734,15 @@ elseif ($division == 190)
     </td>
     <td height="83" width="23%"> 
       <div align="center"><b><font face="Arial, Helvetica, sans-serif">Anciens 
-        comit&eacute;s</font></b></div>
+        comités</font></b></div>
     </td>
     <td height="83" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nombre 
-        de clubs qualifi&eacute;s directement en 16me</b></font></div>
+        de clubs qualifiés directement en 16me</b></font></div>
     </td>
     <td height="83" width="16%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Saison<br>
-        pr&eacute;c&eacute;dente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
+        précédente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
     </td>
     <td height="83" width="21%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nbre de 
@@ -1770,10 +1770,10 @@ elseif ($division == 190)
   </tr>
   <tr> 
     <td width="25%" bgcolor="#999999" height="21"><font size="3" face="Arial, Helvetica, sans-serif">Bourgogne 
-      Franche Comt&eacute;</font></td>
+      Franche Comté</font></td>
     <td width="23%" bgcolor="#999999" height="21"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Bourgogne 
-        Franche Comt&eacute;</font></div>
+        Franche Comté</font></div>
     </td>
     <td width="15%" bgcolor="#999999" height="21"> 
       <div align="center"><b><font size="4" face="Arial, Helvetica, sans-serif">2</font></b></div>
@@ -1899,9 +1899,9 @@ elseif ($division == 190)
     <td width="25%"><font size="3" face="Arial, Helvetica, sans-serif">Nouvelle 
       Aquitaine</font></td>
     <td width="23%"> 
-      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">B&eacute;arn 
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">Béarn 
         -C&ocirc;te Basque Landes -<br>
-        C&ocirc;te d'argent - Limousin - P&eacute;rigord Agenais -Poitou Charente 
+        C&ocirc;te d'argent - Limousin - Périgord Agenais -Poitou Charente 
         </font></p>
     </td>
     <td width="15%"> 
@@ -1918,7 +1918,7 @@ elseif ($division == 190)
     <td width="25%" height="30"><font size="3" face="Arial, Helvetica, sans-serif">Occitanie</font></td>
     <td width="23%" height="30"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Armagnac 
-        Bigorre - Midi Pyr&eacute;n&eacute;es<br>
+        Bigorre - Midi Pyrénées<br>
         Languedoc - Pays Catalans</font></div>
     </td>
     <td width="15%" height="30"> 
@@ -2062,7 +2062,7 @@ elseif ($division == 200)
   <tr bgcolor="#009933"> 
     <td height="55" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Nombre 
-        de clubs qualifi&eacute;s par Ligues - 2&egrave;me s&eacute;rie</font></b></font></div>
+        de clubs qualifiés par Ligues - 2&egrave;me série</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -2071,15 +2071,15 @@ elseif ($division == 200)
     </td>
     <td height="83" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Anciens 
-        comit&eacute;s</b></font></div>
+        comités</b></font></div>
     </td>
     <td height="83" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nombre 
-        de clubs qualifi&eacute;s directement en 16me</b></font></div>
+        de clubs qualifiés directement en 16me</b></font></div>
     </td>
     <td height="83" width="16%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Saison<br>
-        pr&eacute;c&eacute;dente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
+        précédente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
     </td>
     <td height="83" width="21%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nbre de 
@@ -2107,10 +2107,10 @@ elseif ($division == 200)
   </tr>
   <tr> 
     <td width="25%" bgcolor="#999999" height="21"><font face="Arial, Helvetica, sans-serif" size="3">Bourgogne 
-      Franche Comt&eacute;</font></td>
+      Franche Comté</font></td>
     <td width="23%" bgcolor="#999999" height="21"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Bourgogne 
-        Franche Comt&eacute;</font></div>
+        Franche Comté</font></div>
     </td>
     <td width="15%" bgcolor="#999999" height="21"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="4"><b>1</b></font></div>
@@ -2236,9 +2236,9 @@ elseif ($division == 200)
     <td width="25%"><font face="Arial, Helvetica, sans-serif" size="3">Nouvelle 
       Aquitaine</font></td>
     <td width="23%"> 
-      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">B&eacute;arn 
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">Béarn 
         -C&ocirc;te Basque Landes -<br>
-        C&ocirc;te d'argent - Limousin - P&eacute;rigord Agenais - Poitou Charente 
+        C&ocirc;te d'argent - Limousin - Périgord Agenais - Poitou Charente 
         </font></p>
     </td>
     <td width="15%"> 
@@ -2255,7 +2255,7 @@ elseif ($division == 200)
     <td width="25%" height="30"><font face="Arial, Helvetica, sans-serif" size="3">Occitanie</font></td>
     <td width="23%" height="30"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Armagnac 
-        Bigorre - Midi Pyr&eacute;n&eacute;es<br>
+        Bigorre - Midi Pyrénées<br>
         Languedoc - Pays Catalans</font></div>
     </td>
     <td width="15%" height="30"> 
@@ -2399,8 +2399,8 @@ elseif ($division == 210)
   <tr> 
     <td height="55" bgcolor="#009933" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Nombre 
-        de clubs qualifi&eacute;s par Ligues</font><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"> 
-        - 3&egrave;me s&eacute;rie</font></b></font></b></font></div>
+        de clubs qualifiés par Ligues</font><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"> 
+        - 3&egrave;me série</font></b></font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -2409,16 +2409,16 @@ elseif ($division == 210)
     </td>
     <td height="83" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Anciens 
-        comit&eacute;s</b></font></div>
+        comités</b></font></div>
     </td>
     <td height="83" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nombre 
-        de clubs qualifi&eacute;s directement<br>
+        de clubs qualifiés directement<br>
         en 16me</b></font></div>
     </td>
     <td height="83" width="16%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Saison<br>
-        pr&eacute;c&eacute;dente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
+        précédente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
     </td>
     <td height="83" width="21%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nbre de 
@@ -2446,10 +2446,10 @@ elseif ($division == 210)
   </tr>
   <tr> 
     <td width="25%" bgcolor="#999999" height="21"><font size="3" face="Arial, Helvetica, sans-serif">Bourgogne 
-      Franche Comt&eacute;</font></td>
+      Franche Comté</font></td>
     <td width="23%" bgcolor="#999999" height="21"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Bourgogne 
-        Franche Comt&eacute;</font></div>
+        Franche Comté</font></div>
     </td>
     <td width="15%" bgcolor="#999999" height="21"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="4"><b>1</b></font></div>
@@ -2576,9 +2576,9 @@ elseif ($division == 210)
     <td width="25%" bgcolor="#999999"><font size="3" face="Arial, Helvetica, sans-serif">Nouvelle 
       Aquitaine</font></td>
     <td width="23%" bgcolor="#999999"> 
-      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">B&eacute;arn 
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">Béarn 
         -C&ocirc;te Basque Landes -<br>
-        C&ocirc;te d'argent - Limousin - P&eacute;rigord Agenais -Poitou Charente 
+        C&ocirc;te d'argent - Limousin - Périgord Agenais -Poitou Charente 
         </font></p>
     </td>
     <td width="15%" bgcolor="#999999"> 
@@ -2595,7 +2595,7 @@ elseif ($division == 210)
     <td width="25%" height="30"><font size="3" face="Arial, Helvetica, sans-serif">Occitanie</font></td>
     <td width="23%" height="30"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Armagnac 
-        Bigorre - Midi Pyr&eacute;n&eacute;es<br>
+        Bigorre - Midi Pyrénées<br>
         Languedoc - Pays Catalans</font></div>
     </td>
     <td width="15%" height="30"> 
@@ -2739,8 +2739,8 @@ elseif ($division == 220)
   <tr bgcolor="#009933"> 
     <td height="55" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Nombre 
-        de clubs qualifi&eacute;s par Ligues</font><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"> 
-        - 4&egrave;me s&eacute;rie</font></b></font></b></font></div>
+        de clubs qualifiés par Ligues</font><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"> 
+        - 4&egrave;me série</font></b></font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -2749,15 +2749,15 @@ elseif ($division == 220)
     </td>
     <td height="83" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Anciens 
-        comit&eacute;s</b></font></div>
+        comités</b></font></div>
     </td>
     <td height="83" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nombre 
-        de clubs qualifi&eacute;s directement en 16me</b></font></div>
+        de clubs qualifiés directement en 16me</b></font></div>
     </td>
     <td height="83" width="16%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b>Saison<br>
-        pr&eacute;c&eacute;dente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
+        précédente</b></font><font face="Arial, Helvetica, sans-serif"></font></div>
     </td>
     <td height="83" width="21%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nbre de 
@@ -2785,10 +2785,10 @@ elseif ($division == 220)
   </tr>
   <tr> 
     <td width="25%" bgcolor="#999999" height="21"><font face="Arial, Helvetica, sans-serif" size="3">Bourgogne 
-      Franche Comt&eacute;</font></td>
+      Franche Comté</font></td>
     <td width="23%" bgcolor="#999999" height="21"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Bourgogne 
-        Franche Comt&eacute;</font></div>
+        Franche Comté</font></div>
     </td>
     <td width="15%" bgcolor="#999999" height="21"> 
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>1</b></font></div>
@@ -2914,9 +2914,9 @@ elseif ($division == 220)
     <td width="25%"><font face="Arial, Helvetica, sans-serif" size="3">Nouvelle 
       Aquitaine</font></td>
     <td width="23%"> 
-      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">B&eacute;arn 
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">Béarn 
         -C&ocirc;te Basque Landes -<br>
-        C&ocirc;te d'argent - Limousin - P&eacute;rigord Agenais -Poitou Charente 
+        C&ocirc;te d'argent - Limousin - Périgord Agenais -Poitou Charente 
         </font></p>
     </td>
     <td width="15%"> 
@@ -2933,7 +2933,7 @@ elseif ($division == 220)
     <td width="25%" height="67"><font face="Arial, Helvetica, sans-serif" size="3">Occitanie</font></td>
     <td width="23%" height="67"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Armagnac 
-        Bigorre - Midi Pyr&eacute;n&eacute;es<br>
+        Bigorre - Midi Pyrénées<br>
         Languedoc - Pays Catalans</font></div>
     </td>
     <td width="15%" height="67"> 

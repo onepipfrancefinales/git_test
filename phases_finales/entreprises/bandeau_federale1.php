@@ -32,7 +32,7 @@ MM_reloadPage(true);
         <?php echo "Championnat de France";?>
         <?php echo $annee;?>
         : 
-        <?php echo "F&eacute;d&eacute;rale 1";?>
+        <?php echo "Fédérale 1";?>
         </font></b></font></td>
     </tr>
     <tr valign="top" align="center"> 

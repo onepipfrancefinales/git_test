@@ -131,14 +131,14 @@ $clubA3264= ' 2me Poule 15';
 </p>
 <table width="1740" border="0" align="left" height="500" cellspacing="0">
   <tr> 
-    <td colspan="19" height="19" bgcolor="#FFCC66"><i><b>F&eacute;d&eacute;rale 
-      3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-      3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-      3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-      3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-      3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-      3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-      3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
+    <td colspan="19" height="19" bgcolor="#FFCC66"><i><b>Fédérale 
+      3 Fédérale 3 Fédérale 3 Fédérale 
+      3 Fédérale 3 Fédérale 3 Fédérale 
+      3 Fédérale 3 Fédérale 3 Fédérale 
+      3 Fédérale 3 Fédérale 3 Fédérale 
+      3 Fédérale 3 Fédérale 3 Fédérale 
+      3 Fédérale 3 Fédérale 3 Fédérale 
+      3 Fédérale 3 Fédérale 3 Fédérale 
       3 </b></i></td>
   </tr>
   <tr> 

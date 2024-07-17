@@ -201,10 +201,10 @@
     Juniors Crabos </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> <b><i>Juniors 
-    Ren&eacute; CRABOS (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; CRABOS 
-    (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> 
-    <b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; 
+  <div align="center"><b><i>Juniors René CRABOS (- de 18 ans)</i></b> <b><i>Juniors 
+    René CRABOS (- de 18 ans)</i></b> <b><i>Juniors René CRABOS 
+    (- de 18 ans)</i></b> <b><i>Juniors René CRABOS (- de 18 ans)</i></b> 
+    <b><i>Juniors René CRABOS (- de 18 ans)</i></b> <b><i>Juniors René 
     CRABOS (- de 18 ans)</i></b> </div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: 1px; top: 900px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 

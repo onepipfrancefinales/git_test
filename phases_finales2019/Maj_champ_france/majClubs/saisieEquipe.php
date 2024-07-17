@@ -27,7 +27,7 @@ trenteDeuxieme2019 ($division, $annee, $bdd);
     <td colspan="2" align="center"><b><font size="5" face="Arial, Helvetica, sans-serif">Maj Champ de France <?php echo $annee;?></font></b></td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
-    <td colspan="2" align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie des &eacute;quipes</font></b></font></td>
+    <td colspan="2" align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie des équipes</font></b></font></td>
   </tr>
   <tr> 
     <td width="37" bgcolor="#000000" align="center"><font size="6"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">3</font></b></font></td>
@@ -48,7 +48,7 @@ trenteDeuxieme2019 ($division, $annee, $bdd);
     <td width="74%" valign="top" height="17" bgcolor="#0099FF"></td>
   </tr>
   <tr> 
-    <td valign="top" height="23" width="26%" align="center">Ann&eacute;e</td>
+    <td valign="top" height="23" width="26%" align="center">Année</td>
     <td width="74%" valign="top" height="23" bgcolor="#000000" align="center"><b><font size="5" color="#FFFFFF"><?php echo $annee; ?></font></b></td>
   </tr>
   <tr> 

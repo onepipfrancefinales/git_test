@@ -98,7 +98,7 @@ MM_reloadPage(true);
 <div id="Layer10" style="position:absolute; width:359px; height:52px; z-index:6; left: 32px; top: 535px"><font size="2"> 
   (P) Equipes Promues <br>
   Qualification aux phases finales<br>
-  Equipes rel&eacute;gu&eacute;s<br>
+  Equipes relégués<br>
   </font> </div>
 <div id="Layer8" style="position:absolute; width:469px; height:25px; z-index:3; left: 668px; top: 313px"> 
   <div align="center"><font face="Lucida Handwriting" size="4"><b>Phase finale 
@@ -122,7 +122,7 @@ MM_reloadPage(true);
   <div align="center"><font size="3"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">32</font></b></font></div>
 </div>
 <div id="Layer12" style="position:absolute; width:197px; height:21px; z-index:8; left: 670px; top: 513px"><font face="Arial, Helvetica, sans-serif" size="2">Agen 
-  qualifi&eacute; : 4 essais &agrave; 2</font></div>
+  qualifié : 4 essais &agrave; 2</font></div>
 </body>
 
 </html>

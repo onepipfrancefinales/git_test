@@ -143,7 +143,7 @@ MM_reloadPage(true);
   ) Champion en titre, (P) Equipes Promues <br>
   Qualification aux phases finales (surlignage en bleu ou vert)<br>
   Qualification en H Cup (surlignage en jaune,bleu ou vert)<br>
-  Equipes rel&eacute;gu&eacute;s surlign&eacute;es en rouge<br>
+  Equipes relégués surlignées en rouge<br>
   </font> </div>
 <div id="Layer11" style="position:absolute; width:316px; height:33px; z-index:7; left: 1186px; top: 454px; background-color: #EAECEB; layer-background-color: #EAECEB; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France 

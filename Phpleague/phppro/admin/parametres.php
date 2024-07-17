@@ -241,7 +241,7 @@ echo "<input type=\"submit\" value=$button></form><br />";
 
 <table class=phppro width="80%">
   <tr>
-    <td class=phppro2 align="center" colspan="4"><?php echo "Points administratifs et p&eacute;r&eacute;quation "; affich_champ ($champ, $idconnect); ?></td>
+    <td class=phppro2 align="center" colspan="4"><?php echo "Points administratifs et péréquation "; affich_champ ($champ, $idconnect); ?></td>
   </tr>
     <tr>
   <td width="10%"><?php echo "Administratifs";?></td>

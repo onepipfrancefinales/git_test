@@ -74,7 +74,7 @@ function nb_equipes($id_champ, $idconnect)
 
 function aff_journee($champ, $bdd)
 {
- $legende="Journ&eacute;e N&deg;";
+ $legende="JournÃ©e N&deg;";
  $color=0;
  
  if (isset ($journee)) $journee = $journee; else $journee =($champ*100)+01;
@@ -140,9 +140,9 @@ function aff_journee($champ, $bdd)
                 //if (($minute==substr($row[7],14,2)) and ($heure==substr($row[7],11,2)) and ($jour==substr($row[7],8,2)) and ($mois==substr($row[7],5,2)) and ($annee==substr($row[7],0,4)))
      if (!($annee==substr($row[7],0,4)) or !($mois==substr($row[7],5,2)) or !($jour==substr($row[7],8,2)) or !($minute==substr($row[7],14,2)) or !($heure==substr($row[7],11,2)))
      {
-      $minute = substr($row[7],14,2); // on récupère la minute
-      $heure = substr($row[7],11,2); // on récupère l'heure
-      $jour = substr($row[7],8,2); // on récupère le jour
+      $minute = substr($row[7],14,2); // on rï¿½cupï¿½re la minute
+      $heure = substr($row[7],11,2); // on rï¿½cupï¿½re l'heure
+      $jour = substr($row[7],8,2); // on rï¿½cupï¿½re le jour
       $mois = substr($row[7],5,2); // puis le mois
       $annee = substr($row[7],0,4); // et l'annee
 
@@ -192,9 +192,9 @@ function aff_journee($champ, $bdd)
 function aff_journeeSupp($champ, $bdd)
 {
 
- // cellule d'affichage des derniers résultats
+ // cellule d'affichage des derniers rï¿½sultats
  $color=0;
- $legende="Prochaine journ&eacute;e N&deg;";
+ $legende="Prochaine journÃ©e N&deg;";
   if (isset ($journee)) $journee = $journee; else $journee =($champ*1000)+01;
  $res3=$bdd->query("SELECT phpfed3GS_matchs.id_journee
 					FROM phpfed3GS_journees, phpfed3GS_matchs 
@@ -249,9 +249,9 @@ $minute = 0;$heure = 0;  $jour = 0; $mois = 0;$annee = 0;
           
 	   if (!($annee==substr($row[7],0,4)) or !($mois==substr($row[7],5,2)) or !($jour==substr($row[7],8,2)) or !($minute==substr($row[7],14,2)) or !($heure==substr($row[7],11,2)))
        {
-        $minute = substr($row[7],14,2); // on récupère la minute
-        $heure = substr($row[7],11,2); // on récupère l'heure
-        $jour = substr($row[7],8,2); // on récupère le jour
+        $minute = substr($row[7],14,2); // on rï¿½cupï¿½re la minute
+        $heure = substr($row[7],11,2); // on rï¿½cupï¿½re l'heure
+        $jour = substr($row[7],8,2); // on rï¿½cupï¿½re le jour
         $mois = substr($row[7],5,2); // puis le mois
         $annee = substr($row[7],0,4); // et l'annee
 
@@ -289,7 +289,7 @@ function classementDetaille($champ, $bdd)
   $type= "GENERAL";
   $legende = "";
  
- //barèmes du championnat
+ //barï¿½mes du championnat
  $res=$bdd->query("SELECT accession, barrage, relegation 
 				   FROM phpfed3GS_parametres 
 				   WHERE ID_CHAMP='$champ' 
@@ -308,7 +308,7 @@ function classementDetaille($champ, $bdd)
 						 WHERE id_champ='$champ'");
 		   
   $nb_equipes=$res->fetch();
-  $legende="Classement g&eacute;n&eacute;ral";
+  $legende="Classement gÃ©nÃ©ral";
   
   echo "<table class=\"tablephpfed3GS2\" align=\"center\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphpfed3GS3\"><th colspan=\"11\">".$legende."</th></tr>\n";
   echo "<tr class=\"trphpfed3GS3\">
@@ -432,9 +432,9 @@ echo "<br />";echo "<br />";
 
     if ($smart == false)
 	{
-	  $minute = substr($row[5],14,2); // on récupère la minute
-       $heure = substr($row[5],11,2); // on récupère l'heure
-       $jour = substr($row[5],8,2); // on récupère le jour
+	  $minute = substr($row[5],14,2); // on rï¿½cupï¿½re la minute
+       $heure = substr($row[5],11,2); // on rï¿½cupï¿½re l'heure
+       $jour = substr($row[5],8,2); // on rï¿½cupï¿½re le jour
        $mois = substr($row[5],5,2); // puis le mois
        $annee = substr($row[5],0,4); // et l'annee
 
@@ -698,7 +698,7 @@ WHERE dom.id_champ='$champ'
       if (!isset($clmnt[$row[2]]['BUTSDOMCONTRE'])) {$clmnt[$row[2]]['BUTSDOMCONTRE']=$row[4];}
       else{$clmnt[$row[2]]['BUTSDOMCONTRE']+=$row[4];}
      }
-// Resultats à domicile
+// Resultats ï¿½ domicile
 $result=$idconnect->query("SELECT phpfed3GS_clubs.nom FROM phpfed3GS_clubs, phpfed3GS_equipes, phpfed3GS_championnats
 WHERE phpfed3GS_equipes.id_champ=phpfed3GS_championnats.id
       AND phpfed3GS_championnats.id='$champ'
@@ -890,7 +890,7 @@ function clmnt($champ,$smart, $bdd)
   $type= "GENERAL";
   $legende = "";
  
- //barèmes du championnat
+ //barï¿½mes du championnat
  $res=$bdd->query("SELECT accession, barrage, relegation 
 				   FROM phpfed3GS_parametres 
 				   WHERE ID_CHAMP='$champ' 
@@ -1037,23 +1037,23 @@ echo "</table>";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Titre       : Add-on Gestion des clubs (fiches clubs), mini-classement,                     //
-//               statistiques, amélioration de la gestion des buteurs pour phpfed3GSeague.          //
+//               statistiques, amï¿½lioration de la gestion des buteurs pour phpfed3GSeague.          //
 // Auteur      : Alexis MANGIN                                                                 //
 // Email       : Alexis@univert.org                                                            //
 // Url         : http://www.univert.org                                                        //
-// Démo        : http://phpfed3GSeague.univert.org/demo.php                                         //
+// Dï¿½mo        : http://phpfed3GSeague.univert.org/demo.php                                         //
 // Description : Edition, gestion, fiches phpfed3GS_clubs, statistiques, mini-classement...         //
 // Version     : 0.71 (29/03/2003)                                                             //
 //                                                                                             //
 //                                                                                             //
-// L'Univert   : Retrouvez quotidiennement l'actualité des Verts ainsi que de                  //
-//               nombreuses autres rubriques consacrées à l'AS Saint-Etienne. Mais             //
-//               L'Univert c'est avant tout la présentation d'un club devenu légende.          //
+// L'Univert   : Retrouvez quotidiennement l'actualitï¿½ des Verts ainsi que de                  //
+//               nombreuses autres rubriques consacrï¿½es ï¿½ l'AS Saint-Etienne. Mais             //
+//               L'Univert c'est avant tout la prï¿½sentation d'un club devenu lï¿½gende.          //
 //                                                                                             //
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// Affichage renseignements utilisée dans consult/club.php
+// Affichage renseignements utilisï¿½e dans consult/club.php
 //function aff_rens ($id_classe, $id_clubs)
 //{
 //$query="SELECT phpfed3GS_donnee.id, phpfed3GS_donnee.nom, id_rens, id_clubs, phpfed3GS_rens.id, phpfed3GS_rens.nom, phpfed3GS_rens.id_classe, phpfed3GS_clubs.id, etat, phpfed3GS_donnee.url, phpfed3GS_rens.url

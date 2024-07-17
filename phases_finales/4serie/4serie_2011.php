@@ -918,14 +918,14 @@ else
   <div align="center"> <font size="5"><b>Champion de France
     <?php echo $annee;?>
     <br>
-    4me S&eacute;rie </b></font></div>
+    4me Série </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>4me 
-  S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me 4me S&eacute;rie 4me S&eacute;rie 4me 
-  S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me</b></i></div>
+  Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me 4me Série 4me Série 4me 
+  Série 4me Série 4me Série 4me</b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1081px; top: 707px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000">
   <div align="center"> <b><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="5">Plaisance 
     du Gers (AB)</font></b></div>

@@ -68,10 +68,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <br>
 <table width="1000" border="0" align="left" height="500" cellspacing="0">
   <tr> 
-    <td height="22" bgcolor="#FFCC66" colspan="12"><i><b> R&eacute;serve Promotion 
-      R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion 
-      R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion 
-      R&eacute;serve</b></i></td>
+    <td height="22" bgcolor="#FFCC66" colspan="12"><i><b> Réserve Promotion 
+      Réserve Promotion Réserve Promotion Réserve Promotion 
+      Réserve Promotion Réserve Promotion Réserve Promotion 
+      Réserve</b></i></td>
   </tr>
   <tr> 
     <td width="160" height="13">&nbsp;</td>

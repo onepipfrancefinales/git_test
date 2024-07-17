@@ -46,8 +46,8 @@
             <p align="center"><font size="6" color="#000000"><b>ET DES CLASSEMENTS</b></font></p>
             <p align="center">&nbsp;</p>
             <p align="center"><big style="color: rgb(255, 0, 0); font-weight: bold;"><big><b><font size="4" face="Arial, Helvetica, sans-serif">Saississez 
-              vous m&ecirc;me les r&eacute;sultats de votre club <br>
-              et mettez le classement &agrave; jour en temps r&eacute;el.</font></b></big></big><br
+              vous m&ecirc;me les résultats de votre club <br>
+              et mettez le classement &agrave; jour en temps réel.</font></b></big></big><br
  style="font-weight: bold;">
               <br>
             </p>
@@ -64,7 +64,7 @@
               <br style="font-weight: bold;">
               <span style="font-weight: bold;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<a
  style="color: rgb(0, 0, 0);" href="../../pageEquipe2.php">Le disposif peut il &ecirc;tre 
-              utilis&eacute; pour les &eacute;quipes II ?</a></span><br style="font-weight: bold;">
+              utilisé pour les équipes II ?</a></span><br style="font-weight: bold;">
               <br style="font-weight: bold;">
               <span style="font-weight: bold;"><a style="color: rgb(0, 0, 0);"
  href="pageSMS.php"><span style="font-weight: bold;"> <font color="#FFFFFF">DD</font>Comment 
@@ -79,19 +79,19 @@
       <br>
             <span style="font-weight: bold;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
             &nbsp;&nbsp;<big><big><font color="#FF0000" size="4" face="Arial, Helvetica, sans-serif">&nbsp; 
-            Le disposif peut il &ecirc;tre utilis&eacute; pour les &eacute;quipes 
+            Le disposif peut il &ecirc;tre utilisé pour les équipes 
             II ?</font><font color="#000000"><br>
             </font></big></big><font color="#000000"><br>
             </font></span> 
             <div style="text-align: center;"><font color="#000000" size="4" face="Arial, Helvetica, sans-serif">Oui, 
               biensur.<br>
-              Il faut cependant un lien diff&eacute;rent de celui de l'&eacute;quipe 
+              Il faut cependant un lien différent de celui de l'équipe 
               Une<span
  style="font-weight: bold;">.</span><br>
               <br>
-              La distinction ne peut se faire qu'au niveau du premier &eacute;cran 
+              La distinction ne peut se faire qu'au niveau du premier écran 
               <br>
-              ou le mention &eacute;quipe II est surlign&eacute;e<br>
+              ou le mention équipe II est surlignée<br>
               <br>
               <span style="font-weight: bold;">Il faut donc demander 2 liens</span></font><br>
       <span style="font-weight: bold;"></span><br>

@@ -4,9 +4,9 @@
 <head>
 
 <meta name="description"
-content="tous les champions de france de rugby, presentation de tous les clubs de rugby francais, Champions des differents comit�s territoriaux, Tous les championnats de rugby, f�d�rale 2, f�d�rale 3, f�d�rale 1, top 14.">
+content="tous les champions de france de rugby, presentation de tous les clubs de rugby francais, Champions des differents comit�s territoriaux, Tous les championnats de rugby, f�d�rale 2, f�d�rale 3, f�d�rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -99,30 +99,30 @@ MM_reloadPage(true);
                 <div align="center"><b><font color="#ffffff">DEVENEZ Administrateur</font></b></div>
               </td>
               <td width="230" height="22"> 
-                <div align="center"><b><font color="#FFFFFF">Nouveaut&eacute;s 
+                <div align="center"><b><font color="#FFFFFF">Nouveautés 
                   2011</font></b></div>
               </td>
             </tr>
             <tr> 
               <td height="61" width="250" bgcolor="#99CCFF"> 
                 <p align="center"><font size="3" color="#000000">Devenez administrateur 
-                  de votre poule, d'un championnat ou d'un comit&eacute;. </font></p>
+                  de votre poule, d'un championnat ou d'un comité. </font></p>
                 <p align="center"><font size="3" color="#000000">Envoyez un identifiant 
-                  et un mot de passe, nous vous renverrons la proc&eacute;dure 
+                  et un mot de passe, nous vous renverrons la procédure 
                   (simple et rapide) pour administrer une ou plusieurs poules 
                   </font> </p>
                 
               </td>
               <td bordercolor="#000000" height="61" width="230" bgcolor="#FF0000"> 
                 <div align="center"> 
-                  <p><font color="#FFFFFF"><b>Vous avez d&egrave;s &agrave; pr&eacute;sent 
-                    la possibilit&eacute; d'ins&eacute;rer les informations concernant 
+                  <p><font color="#FFFFFF"><b>Vous avez d&egrave;s &agrave; présent 
+                    la possibilité d'insérer les informations concernant 
                     vos clubs (Bureau, site internet, contact etc...) en passant 
-                    par le menu d&eacute;roulant des comit&eacute;s, ou en inserant 
-                    le nom de votre club dans le formulaire &quot;club&quot; situ&eacute; 
+                    par le menu déroulant des comités, ou en inserant 
+                    le nom de votre club dans le formulaire &quot;club&quot; situé 
                     &agrave; droite de la page</b></font></p>
-                  <p><b><font size="3" color="#FFFFFF">Tr&eacute;s prochainement 
-                    vous pourez &eacute;galement inserer des photos de votre club</font></b></p>
+                  <p><b><font size="3" color="#FFFFFF">Trés prochainement 
+                    vous pourez également inserer des photos de votre club</font></b></p>
                   </div>
               </td>
             </tr>
@@ -138,27 +138,27 @@ MM_reloadPage(true);
                 <div align="center"><b><font color="#FFFFFF">Forums</font></b></div>
               </td>
               <td width="230"> 
-                <div align="center"><font color="#FFFFFF"><b>R&eacute;sultats 
+                <div align="center"><font color="#FFFFFF"><b>Résultats 
                   et classements</b></font></div>
               </td>
             </tr>
             <tr bordercolor="#000000"> 
               <td width="250" height="10" bgcolor="#CCCCFF"> 
-                <p><font color="#000000">Les Forums (tr&eacute;s actifs) des comit&eacute;s 
-                  <b>Auvergne</b>, <b>Bretagne, Normandie</b> et <b>Midi Pyr&eacute;n&eacute;es</b> 
-                  et <b>Amagnac Bigorre </b>sont index&eacute;s sur la page Forum 
+                <p><font color="#000000">Les Forums (trés actifs) des comités 
+                  <b>Auvergne</b>, <b>Bretagne, Normandie</b> et <b>Midi Pyrénées</b> 
+                  et <b>Amagnac Bigorre </b>sont indexés sur la page Forum 
                   du site.</font></p>
                 <p align="center"><a href="forums.php"><font color="#0033FF" size="3">Tous 
                   les forums</font></a></p>
                 <p align="left"><font color="#000000">Vous pouvez proposer de 
-                  nouveau forum ou devenir adminstrateur pour votre comit&eacute;</font></p>
+                  nouveau forum ou devenir adminstrateur pour votre comité</font></p>
               </td>
               <td width="230" height="10" bgcolor="#99FFFF"><font size="1" color="#FFFFFF">s</font> 
                 <div align="center"> 
                   <p><a href="resultats/page_resultats.php"><font color="#0033FF" size="3">Tous 
-                    les r&eacute;sultats et les classements</font></a></p>
+                    les résultats et les classements</font></a></p>
                   <p><font size="3" color="#000000">Vous pouvez communiquer les 
-                    r&eacute;sultats &agrave; l'aide des forums d&eacute;j&agrave; 
+                    résultats &agrave; l'aide des forums déj&agrave; 
                     existants</font></p>
                 </div>
                 <font size="1" color="#FFFFFF">s</font></td>
@@ -172,11 +172,11 @@ MM_reloadPage(true);
               <td colspan="2" height="20"> 
                 <p>&nbsp;</p>
                 <p align="center"><font color="#000000">Pour chaque poule un classement 
-                  simplifi&eacute; est propos&eacute;. En cliquant sur </font><b><font color="#FF0000" size="4">&quot;Classement 
+                  simplifié est proposé. En cliquant sur </font><b><font color="#FF0000" size="4">&quot;Classement 
                   complet&quot;</font></b><font color="#FF0000" size="4"> </font><font color="#000000">vous 
                   pourrez disposer d'un classement complet, de statistiques et 
-                  de l'ensemble des calendriers des diff&eacute;rentes poules 
-                  du comit&eacute; ou de la division.<font size="1">s</font></font></p>
+                  de l'ensemble des calendriers des différentes poules 
+                  du comité ou de la division.<font size="1">s</font></font></p>
                 <p>&nbsp;</p>
               </td>
             </tr>
@@ -199,8 +199,8 @@ MM_reloadPage(true);
                   erreur, un oubli, un dysfonctionnement vous pouvez nous contacter 
                   par mel : onepip@free.fr</font></p>
                 <p align="center"><font color="#000000">OU par l'intermediaire 
-                  du forum Midi Pyr&eacute;n&eacute;es &agrave; la rubrique &quot;Erreurs 
-                  constat&eacute;es&quot;</font></p>
+                  du forum Midi Pyrénées &agrave; la rubrique &quot;Erreurs 
+                  constatées&quot;</font></p>
               </td>
             </tr>
             <tr bgcolor="#0066FF"> 
@@ -232,7 +232,7 @@ MM_reloadPage(true);
             <b><font size="3">(Du TOP 14 &agrave; la 4ieme Serie)</font></b></font></p>
           <p> 
             <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
-              <option selected>S&eacute;lectionner une saison</option>
+              <option selected>Sélectionner une saison</option>
               <option value="http://francefinalesrugby.franceserv.com/phases_finales/top14/pagetop14.php?variable_1=2011">Saison 
               2010-2011</option>
               <option value="http://francefinalesrugby.franceserv.com/phases_finales/top14/pagetop14.php?variable_1=2010">Saison 
@@ -251,8 +251,8 @@ MM_reloadPage(true);
               2003-2004</option>
             </select>
           </p>
-          <p>Quelques archives sont d&eacute;j&agrave; disponibles, notamment 
-            les saisons pr&eacute;c&eacute;dentes du Top 14 et de la ProD2</p>
+          <p>Quelques archives sont déj&agrave; disponibles, notamment 
+            les saisons précédentes du Top 14 et de la ProD2</p>
           <p> 
             <script type="text/javascript" charset="utf-8" src="http://www.gambling-affiliation.com/cpm/v=v3AjTp6ol4eEUSmc1.6opOmqa91ubcDMxzlhaHRcOBU_&s="></script>
           </p>

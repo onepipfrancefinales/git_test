@@ -124,27 +124,27 @@ $clubA3231= ' Auvergne 1 ';
 $clubA3232= ' Vainqueur PCH 3 contre PA 4';
 
 $clubA3233= ' Limousin 1';
-$clubA3234= ' Midi-Pyrénées 6 ';
+$clubA3234= ' Midi-Pyrï¿½nï¿½es 6 ';
 
-$clubA3235= ' Côte d Argent 1 ';
-$clubA3236= ' Côte Basque Landes 2';
+$clubA3235= ' Cï¿½te d Argent 1 ';
+$clubA3236= ' Cï¿½te Basque Landes 2';
 
-$clubA3237= ' Midi-Pyrénées 4 ';
-$clubA3238= ' Périgord Agenais 2 ';
+$clubA3237= ' Midi-Pyrï¿½nï¿½es 4 ';
+$clubA3238= ' Pï¿½rigord Agenais 2 ';
 
 $clubA3239= ' Armagnac Bigorre 2 ';
 $clubA3240= ' Limousin 2';
 
-$clubA3241= ' Côte d Argent 2';
-$clubA3242= ' Midi-Pyrénées 5 ';
+$clubA3241= ' Cï¿½te d Argent 2';
+$clubA3242= ' Midi-Pyrï¿½nï¿½es 5 ';
 
-$clubA3243= ' Côte Basque Landes 1';
-$clubA3244= ' Périgord Agenais 3';
+$clubA3243= ' Cï¿½te Basque Landes 1';
+$clubA3244= ' Pï¿½rigord Agenais 3';
 
 $clubA3245= ' Armagnac Bigorre 1 ';
-$clubA3246= ' Midi-Pyrénées 3';
+$clubA3246= ' Midi-Pyrï¿½nï¿½es 3';
 
-$clubA3247= ' Périgord Agenais 1 ';
+$clubA3247= ' Pï¿½rigord Agenais 1 ';
 $clubA3248= ' Limousin 3 ';
 
 $clubA3249= ' Bearn 1';
@@ -153,13 +153,13 @@ $clubA3250= ' Vainqueur CBL 3 contre MPY 7';
 $clubA3251= ' Languedoc 1';
 $clubA3252= ' Provence 2';
 
-$clubA3253= ' Midi-Pyrénées 1 ';
+$clubA3253= ' Midi-Pyrï¿½nï¿½es 1 ';
 $clubA3254= ' Languedoc 3 ';
 
 $clubA3255= ' Drome Ardeche 1';
 $clubA3256= ' Lyonnais 2';
 
-$clubA3257= ' Midi-Pyrénées 2 ';
+$clubA3257= ' Midi-Pyrï¿½nï¿½es 2 ';
 $clubA3258= ' Poitou Charente 1 '; 
 
 $clubA3259= ' Provence 1 ';
@@ -168,7 +168,7 @@ $clubA3260= ' Vainqueur CAZ 2 contre LD 4';
 $clubA3261= ' Lyonnais 1';
 $clubA3262= ' Languedoc 2';
 
-$clubA3263= ' Côte d Azur 1 ';
+$clubA3263= ' Cï¿½te d Azur 1 ';
 $clubA3264= ' Vainqueur DA 2 contre AP 3'; 
 }
 
@@ -1226,15 +1226,15 @@ else
     Litois</font></b></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>1re 
-  S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
+  SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 
+  1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 
+  1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 
+  1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 
+  1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 1re SÃ©rie 
   1re </b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1495px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France <br>
-    1re S&eacute;rie 
+    1re SÃ©rie 
     <?php echo $annee;?>
     </b></font><font color="#FF0000" face="Geneva, Arial, Helvetica, san-serif"size="5"><b> 
     </b></font></div>

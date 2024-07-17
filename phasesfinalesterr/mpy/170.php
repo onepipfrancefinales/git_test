@@ -79,7 +79,7 @@ $anneeplus = $annee+1;
     </tr>
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
-        <?php echo "Finales territoriales du comit&egrave; des Pyr&eacute;n&eacute;es $annee";?>
+        <?php echo "Finales territoriales du comit&egrave; des Pyrénées $annee";?>
         </font></b></font></td>
     </tr>
   </table>

@@ -40,7 +40,7 @@ $anneeplus = $annee+1;
   <tr valign="top" align="center"> 
     <td colspan="3" height="31"> 
       <div class="bandeau1"> 
-        <?php echo "Phases finales du champ territorial du comit&eacute; Midi Pyr&eacute;n&eacute;es".' '.$annee; ?>
+        <?php echo "Phases finales du champ territorial du comité Midi Pyrénées".' '.$annee; ?>
       </div>
     </td>
   </tr>

@@ -36,7 +36,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <br>
 <table width="90%" border="0"  align="center">
   <tr> 
-    <td colspan="2" class ="titre2">Comp&eacute;titions  Pro</td>
+    <td colspan="2" class ="titre2">Compétitions  Pro</td>
   </tr>
   <tr> 
     <td class="coin45"><a href="pagePhaseFinale.php?division=110&annee=<?php echo $saison;?> ">Top 14</a></td>
@@ -53,31 +53,31 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 </table>
 <table width="90%" border="0" align="center">
   <tr> 
-    <td class ="titre2">Comp&eacute;titions F&eacute;d&eacute;rales</td>
+    <td class ="titre2">Compétitions Fédérales</td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $saison;?>">F&eacute;d&eacute;rale 1 J Prat</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $saison;?>">Fédérale 1 J Prat</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=150&annee=<?php echo $saison;?>">F&eacute;d&eacute;rale 2</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=150&annee=<?php echo $saison;?>">Fédérale 2</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=160&annee=<?php echo $saison;?>">F&eacute;d&eacute;rale 3</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=160&annee=<?php echo $saison;?>">Fédérale 3</a></td>
   </tr>
   <tr> 
-    <td class ="titre2">Comp&eacute;titions territoriales</td>
+    <td class ="titre2">Compétitions territoriales</td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=170&annee=<?php echo $saison;?>">R&eacute;gionale 1</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=170&annee=<?php echo $saison;?>">Régionale 1</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=180&annee=<?php echo $saison;?>">R&eacute;gionale 2</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=180&annee=<?php echo $saison;?>">Régionale 2</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $saison;?>">R&eacute;gionale 3</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $saison;?>">Régionale 3</a></td>
   </tr>
   <tr> 
-    <td class="titre2">Comp&eacute;titions f&eacute;minines</td>
+    <td class="titre2">Compétitions féminines</td>
   </tr>
   <tr> 
     <td class="coin45"><a href="pagePhaseFinale.php?division=280&annee=<?php echo $saison;?>">Elite 1</a></td>
@@ -86,22 +86,22 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td class="coin45"><a href="pagePhaseFinale.php?division=285&annee=<?php echo $saison;?>">Elite 2</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $saison;?>">F&eacute;d&eacute;rale 1</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $saison;?>">Fédérale 1</a></td>
  </tr>
   <tr> 
-    <td class ="titre2">Comp&eacute;titions &eacute;quipes II</td>
+    <td class ="titre2">Compétitions équipes II</td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=240&annee=<?php echo $saison;?>">Espoir F&eacute;d 1</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=240&annee=<?php echo $saison;?>">Espoir Féd 1</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $saison;?>">F&eacute;d&eacute;rale B</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $saison;?>">Fédérale B</a></td>
   </tr>
   <tr> 
     <td class="coin45"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $saison;?>">Excellence B</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $saison;?>">R&eacute;serve</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $saison;?>">Réserve</a></td>
   </tr>
   <tr> 
     <td height="2">&nbsp;</td>

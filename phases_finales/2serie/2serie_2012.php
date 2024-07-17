@@ -1302,15 +1302,15 @@ else
     sur Dordogne (LM)</font></b></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie </b></i></div>
+  <div align="center"><i><b>2me Série 2me Série 2me Série 
+    2me Série 2me Série 2me Série 2me Série 2me Série 
+    2me Série 2me Série 2me Série 2me Série 2me Série 
+    2me Série 2me Série 2me Série 2me Série 2me Série 
+    2me Série 2me Série 2me Série 2me Série </b></i></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1495px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    2me S&eacute;rie </b></font></div>
+    2me Série </b></font></div>
 </div>

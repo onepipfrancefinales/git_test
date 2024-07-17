@@ -968,7 +968,7 @@ require ("../fonctions_phases_finales.php");
     <td width="201" align="left" height="17"> 
       <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1413px; top: 628px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
         <div align="center"> <font size="5"><b>Champion de France <br>
-          F&eacute;d&eacute;rale 2
+          Fédérale 2
           <?php echo $annee;?>
           </b></font></div>
       </div>

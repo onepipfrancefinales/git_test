@@ -16,7 +16,7 @@ $clubA3207= '  Finances ';
 $clubA3208= ' RAS ELAT ';
 
 $clubA3209= ' Cahors ';
-$clubA3210= ' Billi�re ';
+$clubA3210= ' Billi�re ';
 
 $clubA3211= ' Tournay ';
 $clubA3212= ' Gabardan ';
@@ -40,7 +40,7 @@ $clubA3223= ' Melun ';
 $clubA3224= ' Faucigny ';
 
 $clubA3225= 'Grasse ';
-$clubA3226=  '  P�zenas ';
+$clubA3226=  '  P�zenas ';
 
 $clubA3227= ' Pontault C. ';
 $clubA3228= ' Montrevel ';
@@ -49,11 +49,11 @@ $clubA3229= 'Pontarlier ';
 $clubA3230 ='Les Angles ';
 
 $clubA3231= ' Brassac ';
-$clubA3232= 'Viller�al ';
+$clubA3232= 'Viller�al ';
 
 
 $clubA3233= ' Couches ';
-$clubA3234= 'Chamb�ry ';
+$clubA3234= 'Chamb�ry ';
 
 $clubA3235= 'Chevreuse ';
 $clubA3236= ' Risle ';
@@ -1160,16 +1160,16 @@ else
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1494px; top: 688px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> </div>
 </div>
-<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 </b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1495px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France <br>
-    F&eacute;d&eacute;rale 3 
+    Fédérale 3 
     <?php echo $annee;?>
     </b></font><font color="#FF0000" face="Geneva, Arial, Helvetica, san-serif"size="5"><b> 
     </b></font></div>

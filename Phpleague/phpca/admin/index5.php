@@ -42,7 +42,7 @@ ouverture ();
  <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpca">Comit&eacute; 
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpca">Comité 
           Ligue Occitanie </font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>

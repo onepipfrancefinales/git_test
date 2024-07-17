@@ -74,12 +74,12 @@ $clubA1632='Pays Saint Yrieix (LM)';
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="20" bgcolor="#FFCC66" colspan="15"> 
-      <div align="center"><i><b>F&eacute;minine F&eacute;d&eacute;rale &agrave; 
-        XV F&eacute;minine F&eacute;d&eacute;rale &agrave; XV F&eacute;minine 
-        F&eacute;d&eacute;rale &agrave; XV F&eacute;minine F&eacute;d&eacute;rale 
-        &agrave; XV F&eacute;minine F&eacute;d&eacute;rale &agrave; XV F&eacute;minine 
-        F&eacute;d&eacute;rale &agrave; XV F&eacute;minine F&eacute;d&eacute;rale 
-        &agrave; XV F&eacute;minine F&eacute;d&eacute;rale &agrave; XV F&eacute;minin</b></i></div>
+      <div align="center"><i><b>Féminine Fédérale &agrave; 
+        XV Féminine Fédérale &agrave; XV Féminine 
+        Fédérale &agrave; XV Féminine Fédérale 
+        &agrave; XV Féminine Fédérale &agrave; XV Féminine 
+        Fédérale &agrave; XV Féminine Fédérale 
+        &agrave; XV Féminine Fédérale &agrave; XV Féminin</b></i></div>
     </td>
   </tr>
   <tr> 
@@ -736,7 +736,7 @@ $clubA1632='Pays Saint Yrieix (LM)';
     <td width="23">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France<br>
-        F&eacute;d&eacute;rale &agrave; XV 
+        Fédérale &agrave; XV 
         <?php echo $annee;?>
         </b></font></div>
     </td>

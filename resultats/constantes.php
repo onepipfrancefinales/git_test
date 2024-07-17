@@ -37,8 +37,8 @@ $liguePCA ="Ligue Provence Alpes Côte d'Azur";
 
 //Niveaux régionaux
 $EXHPH = "(Ex honneur/ promotion honneur)";
-$EXS1S2 = "(Ex 1re/ 2me s&eacute;rie)";
-$EXS3S4 = "(Ex 3me/ 4me s&eacute;rie)";
+$EXS1S2 = "(Ex 1re/ 2me série)";
+$EXS3S4 = "(Ex 3me/ 4me série)";
 
 // Noms des poules
 $P1 = "Poule 1";

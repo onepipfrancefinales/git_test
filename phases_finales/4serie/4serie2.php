@@ -25,22 +25,22 @@ $clubA1613= ' Bretagne 1';
 $clubA1614= ' Barrage CE 2 - LM 2';
 
 $clubA1615= ' Poitou Charente 1';
-$clubA1616= ' P�rigord Agenais 1 ';
+$clubA1616= ' P�rigord Agenais 1 ';
 
-$clubA1617= '  Midi-Pyr�n�es 1';
+$clubA1617= '  Midi-Pyr�n�es 1';
 $clubA1618= '  Barrage PA 2 - CA 2';
 
-$clubA1619= ' C�te Basque Landes 1';
+$clubA1619= ' C�te Basque Landes 1';
 $clubA1620= ' Armagnac Bigorre 1 ';
 
 $clubA1621= ' Cote d Argent 1';
 $clubA1622= ' Barrage BE 1 - PC 1';
 
 $clubA1623= '  Limousin 1';
-$clubA1624= ' Midi-Pyr�n�es 3 ';
+$clubA1624= ' Midi-Pyr�n�es 3 ';
 
 $clubA1625= ' Languedoc 1';
-$clubA1626= ' Midi-Pyr�n�es 2 ';
+$clubA1626= ' Midi-Pyr�n�es 2 ';
 
 $clubA1627= ' Provence 1';
 $clubA1628= ' Barrage DA 1 - AU 2';
@@ -512,17 +512,17 @@ $clubA1632= ' Alpes 1 ';
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 254px; top: 420px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 254px; top: 819px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>4me 
-  S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me 4me S&eacute;rie 4me S&eacute;rie 4me 
-  S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me</b></i></div>
+  Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me 4me Série 4me Série 4me 
+  Série 4me Série 4me Série 4me</b></i></div>
 <div id="Layer4" style="position:absolute; width:991px; height:538px; z-index:6; left: 343px; top: 257px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000"> 
   <table width="109%" border="1">
     <tr bgcolor="#FFFFFF"> 
       <td height="55" colspan="9" bgcolor="#FFFFFF"> 
         <div align="center"><font size="5" color="#000000"><b>Nombre de clubs 
-          qualifi&eacute;s par comit&eacute; (2015-2016)</b></font></div>
+          qualifiés par comité (2015-2016)</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -530,7 +530,7 @@ $clubA1632= ' Alpes 1 ';
         <div align="center"><b>COMITES</b></div>
       </td>
       <td height="83" width="11%"> 
-        <div align="center"><b>Nombre de clubs qualifi&eacute;s directement en 
+        <div align="center"><b>Nombre de clubs qualifiés directement en 
           16me</b></div>
       </td>
       <td height="83" width="9%"> 
@@ -545,7 +545,7 @@ $clubA1632= ' Alpes 1 ';
       </td>
       <td height="83" width="12%"> 
         <div align="center"> 
-          <p><b>Nombre de clubs qualifi&eacute;s directement en 16me</b></p>
+          <p><b>Nombre de clubs qualifiés directement en 16me</b></p>
         </div>
       </td>
       <td height="83" width="9%"> 
@@ -568,7 +568,7 @@ $clubA1632= ' Alpes 1 ';
       <td height="24" width="10%"> 
         <div align="center"><b><font size="4"></font></b></div>
       </td>
-      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comté</td>
       <td width="12%" height="24"> 
         <div align="center">avec Bourgogne</div>
       </td>
@@ -686,7 +686,7 @@ $clubA1632= ' Alpes 1 ';
       <td width="10%"> 
         <div align="center"><b><font size="4"></font></b></div>
       </td>
-      <td width="18%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+      <td width="18%" bgcolor="#FFFFFF">Midi Pyrénées</td>
       <td width="12%" bgcolor="#FFFFFF"> 
         <div align="center">3</div>
       </td>

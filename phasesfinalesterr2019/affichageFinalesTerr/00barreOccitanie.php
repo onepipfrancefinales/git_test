@@ -19,18 +19,18 @@
   </tr>
   <tr> 
     <td> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ab&variable_1=2018">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ab&variable_1=2018">Comité 
         Armagnac Bigorre</a></div>
     </td>
     <td> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ld&variable_1=2018">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ld&variable_1=2018">Comité 
         du languedoc</a></div>
     </td>
     <td> 
-      <div align="center">Comit&eacute; Midi Pyr&eacute;n&eacute;es</div>
+      <div align="center">Comité Midi Pyrénées</div>
     </td>
     <td> 
-      <div align="center">Comit&eacute; Pays Catalans</div>
+      <div align="center">Comité Pays Catalans</div>
     </td>
   </tr>
 </table>

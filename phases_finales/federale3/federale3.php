@@ -156,12 +156,12 @@ $clubA3205= ' Antony ';
 $clubA3206= ' Pontarlier ';
 $clubA3207= ' Nantes ';
 $clubA3208= ' Royan-Saujon ';
-$clubA3209= ' Saint-RaphaÎl-FrÈjus ';
+$clubA3209= ' Saint-RaphaÔøΩl-FrÔøΩjus ';
 $clubA3210= ' Vinay ';
 $clubA3211= ' Riscle ';
-$clubA3212= ' NËgrepelisse ';
-$clubA3213= ' PÈzenas ';
-$clubA3214= ' Coteaux de l ArrÍt ';
+$clubA3212= ' NÔøΩgrepelisse ';
+$clubA3213= ' PÔøΩzenas ';
+$clubA3214= ' Coteaux de l ArrÔøΩt ';
 $clubA3215= ' Arpajon ';
 $clubA3216= ' Bizanos ';
 $clubA3217= ' Saint Maur ';
@@ -170,12 +170,12 @@ $clubA3219= ' Rennes ';
 $clubA3220= ' Trignac '; 
 $clubA3221= ' Saint-Denis ';
 $clubA3222= ' Auxerre ';
-$clubA3223= ' St-Jean d AngÈly ';
+$clubA3223= ' St-Jean d AngÔøΩly ';
 $clubA3224= ' Pithiviers ';
 $clubA3225= ' Beaune ';
 $clubA3226= ' Beauvais ';
-$clubA3227= ' AngoulÍme ';
-$clubA3228= ' SurgËres ';
+$clubA3227= ' AngoulÔøΩme ';
+$clubA3228= ' SurgÔøΩres ';
 $clubA3229= ' Boulogne-Billancourt ';
 $clubA3230= ' Val d Europe ';
 $clubA3231= ' L Aigle ';
@@ -183,8 +183,8 @@ $clubA3232= ' Caen ';
 $clubA3233= ' Cannes Mandelieu ';
 $clubA3234= ' Ugine-Albertville ';
 $clubA3235= ' Pamiers ';
-$clubA3236= ' LÈvÈzou ';
-$clubA3237= ' LÈon ';
+$clubA3236= ' LÔøΩvÔøΩzou ';
+$clubA3237= ' LÔøΩon ';
 $clubA3238= ' Anglet ';
 $clubA3239= ' Agde ';
 $clubA3240= ' Palavas ';
@@ -196,13 +196,13 @@ $clubA3245= ' St Jean en Royans ';
 $clubA3246= ' Cavaillon ';
 $clubA3247= ' Hendaye ';
 $clubA3248= ' Montfort ';
-$clubA3249= ' MontÈlimar ';
+$clubA3249= ' MontÔøΩlimar ';
 $clubA3250= ' Issoire ';
 $clubA3251= ' Nogaro ';
-$clubA3252= ' St-Sulpice-sur-lËze..';
+$clubA3252= ' St-Sulpice-sur-lÔøΩze..';
 $clubA3253= ' Tournefeuille ';
-$clubA3254= ' CÙte Vermeille ';
-$clubA3255= ' Pays du MÈdoc ';
+$clubA3254= ' CÔøΩte Vermeille ';
+$clubA3255= ' Pays du MÔøΩdoc ';
 $clubA3256= ' Saint-Junien ';
 $clubA3257= ' Six-Fours ';
 $clubA3258= ' Voiron '; 
@@ -210,7 +210,7 @@ $clubA3259= ' Saint-Cernin ';
 $clubA3260= ' Quillan ';
 $clubA3261= ' Draguignan';
 $clubA3262= ' Fontaine ';
-$clubA3263= ' CÈnac ';
+$clubA3263= ' CÔøΩnac ';
 $clubA3264= ' Riom ';
 
 
@@ -226,7 +226,7 @@ $clubA3206= ' Nuits-Saint-Georges ';
 $clubA3207= ' La Roche-sur-Yon ';
 $clubA3208= ' Pithiviers ';
 $clubA3209= ' Annonay ';
-$clubA3210= ' MontÈlimar ';
+$clubA3210= ' MontÔøΩlimar ';
 $clubA3211= ' Elne ';
 $clubA3212= ' Torreilles ';
 $clubA3213= ' Gimont (AB)';
@@ -235,13 +235,13 @@ $clubA3215= ' Villeneuve de Marsan ';
 $clubA3216= ' Anglet ';
 $clubA3217= ' Nevers ';
 $clubA3218= ' Saint Maur ';
-$clubA3219= ' SurgËres ';
-$clubA3220= ' Saint-SÈbastien ';
+$clubA3219= ' SurgÔøΩres ';
+$clubA3220= ' Saint-SÔøΩbastien ';
 $clubA3221= ' Houilles ';
 $clubA3222= ' Genlis ';
 $clubA3223= ' Thouars ';
 $clubA3224= ' Trignac ';
-$clubA3225= ' CompiËgne ';
+$clubA3225= ' CompiÔøΩgne ';
 $clubA3226= ' CSM Finances ';
 $clubA3227= ' Rennes ';
 $clubA3228= ' Sancerres ';
@@ -249,21 +249,21 @@ $clubA3229= ' Couches ';
 $clubA3230= ' Pontault-Combault ';
 $clubA3231= ' Blois ';
 $clubA3232= ' Royan-Saujon ';
-$clubA3233= ' Carqueiranne-HyËres ';
+$clubA3233= ' Carqueiranne-HyÔøΩres ';
 $clubA3234= ' La Voulte ';
 $clubA3235= ' Balma (MPY)';
 $clubA3236= ' Saverdun (MPY)';
 $clubA3237= ' Roquefort ';
 $clubA3238= ' Mugron ';
 $clubA3239= ' Decazeville (MPY)';
-$clubA3240= ' MontrÈjeau (MPY) ';
+$clubA3240= ' MontrÔøΩjeau (MPY) ';
 $clubA3241= ' Villars-les-Dombes ';
 $clubA3242= ' Berre ';
 $clubA3243= ' Floirac ';
 $clubA3244= ' Sainte-Foy-la-Grande ';
-$clubA3245= ' VallÈe du Gapeau ';
+$clubA3245= ' VallÔøΩe du Gapeau ';
 $clubA3246= ' La Valette ';
-$clubA3247= ' NÈrac ';
+$clubA3247= ' NÔøΩrac ';
 $clubA3248= ' Saint-Junien ';
 $clubA3249=  'Saint-Etienne ';
 $clubA3250= ' Pays de Gex ';
@@ -275,8 +275,8 @@ $clubA3255= ' AS Bayonne ';
 $clubA3256= ' Saint-Cernin ';
 $clubA3257= ' St Jean en Royans ';
 $clubA3258= ' Le Pontet - Avignon '; 
-$clubA3259= ' PÈzenas ';
-$clubA3260= ' LÈon ';
+$clubA3259= ' PÔøΩzenas ';
+$clubA3260= ' LÔøΩon ';
 $clubA3261= ' Meyzieu ';
 $clubA3262= ' Voiron ';
 $clubA3263= ' La Bugue ';
@@ -289,13 +289,13 @@ $clubA3201= ' Le Creusot ';
 $clubA3202= ' Vitry ';
 $clubA3203= ' Drancy ';
 $clubA3204= ' Puilboreau ';
-$clubA3205= ' CompiËgne ';
+$clubA3205= ' CompiÔøΩgne ';
 $clubA3206= ' Soissons ';
 $clubA3207= ' Rochefort ';
 $clubA3208= ' L Aigle ';
 $clubA3209= ' Clermont-Cournon ';
 $clubA3210= ' Belleville ';
-$clubA3211= ' St-Sulpice-sur-lËze ';
+$clubA3211= ' St-Sulpice-sur-lÔøΩze ';
 $clubA3212= ' Riscle ';
 $clubA3213= ' Nogaro ';
 $clubA3214= ' Servian-Boujan ';
@@ -303,29 +303,29 @@ $clubA3215= ' Casteljaloux ';
 $clubA3216= ' Isle sur Vienne ';
 $clubA3217= ' Marcq-en-Baroeuil ';
 $clubA3218= ' Chevreuse ';
-$clubA3219= ' St-Jean d AngÈly ';
+$clubA3219= ' St-Jean d AngÔøΩly ';
 $clubA3220= ' Blois ';
 $clubA3221= ' Dole ';
 $clubA3222= ' Metz ';
-$clubA3223= ' JouÈ-les-Tours ';
+$clubA3223= ' JouÔøΩ-les-Tours ';
 $clubA3224= ' Basse Goulaine ';
 $clubA3225= ' Suresnes ';
 $clubA3226= ' Couches ';
 $clubA3227= ' Saint-Pierre-des-Corps ';
 $clubA3228= ' Thouars ';
 $clubA3229= ' Caen ';
-$clubA3230= ' SurgËres ';
+$clubA3230= ' SurgÔøΩres ';
 $clubA3231= ' Nuits-Saint-Georges ';
 $clubA3232= ' Beauvais ';
 $clubA3233= ' Monteux ';
 $clubA3234= ' Meyzieu ';
 $clubA3235= ' Saint Girons ';
-$clubA3236= ' PÈzenas ';
-$clubA3237= ' Coteaux de l ArrÍt ';
+$clubA3236= ' PÔøΩzenas ';
+$clubA3237= ' Coteaux de l ArrÔøΩt ';
 $clubA3238= ' Elne ';
-$clubA3239= ' Saint-MÈdard ';
+$clubA3239= ' Saint-MÔøΩdard ';
 $clubA3240= ' Sainte-Bazelle ';
-$clubA3241= ' Saint-RaphaÎl-FrÈjus ';
+$clubA3241= ' Saint-RaphaÔøΩl-FrÔøΩjus ';
 $clubA3242= ' Avignon ';
 $clubA3243= ' Tulle ';
 $clubA3244= ' Montfort ';
@@ -338,14 +338,14 @@ $clubA3250= ' La Voulte ';
 $clubA3251= ' Mouguerre ';
 $clubA3252= ' Verfeil ';
 $clubA3253= ' Ampuis ';
-$clubA3254= ' VallÈe du Gapeau ';
+$clubA3254= ' VallÔøΩe du Gapeau ';
 $clubA3255= ' Lormont Cenon ';
-$clubA3256= ' VillerÈal ';
+$clubA3256= ' VillerÔøΩal ';
 $clubA3257= ' Saint Marcellin ';
 $clubA3258= ' Moulins '; 
 $clubA3259= ' Quillan ';
 $clubA3260= ' Luzech ';
-$clubA3261= ' VallÈe du Girou ';
+$clubA3261= ' VallÔøΩe du Girou ';
 $clubA3262= ' Thuir ';
 $clubA3263= ' Fumel ';
 $clubA3264= ' Bardos ';
@@ -356,7 +356,7 @@ $clubA3264= ' Bardos ';
 }
 else
 {
-echo "dÈsolÈ, pas de donnÈes pour cette saison";
+echo "dÔøΩsolÔøΩ, pas de donnÔøΩes pour cette saison";
 }
 
 ?>
@@ -4150,16 +4150,16 @@ echo "";
 <div id="Layer4" style="position:absolute; width:2px; height:80px; z-index:6; left: 954px; top: 760px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 423px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 820px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
-<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F√©d√©rale 
+  3 F√©d√©rale 3 F√©d√©rale 3 F√©d√©rale 3 
+  F√©d√©rale 3 F√©d√©rale 3 F√©d√©rale 3 F√©d√©rale 
+  3 F√©d√©rale 3 F√©d√©rale 3 F√©d√©rale 3 
+  F√©d√©rale 3 F√©d√©rale 3 F√©d√©rale 3 F√©d√©rale 
+  3 F√©d√©rale 3 F√©d√©rale 3 F√©d√©rale 3 
+  F√©d√©rale 3 F√©d√©rale 3 F√©d√©rale 3 </b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1495px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France<br>
-    F&eacute;d&eacute;rale 3 
+    F√©d√©rale 3 
     <?php echo $annee;?>
     </b></font></div>
 </div>

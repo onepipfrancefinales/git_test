@@ -1,7 +1,7 @@
 <?php
 session_start();
 $code = $_GET["code"];
-//$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 7me journ&eacute;e du 01 Novembre";
+//$message = "Arr&ecirc;t des compétitions &agrave; l'occasion de la 7me journée du 01 Novembre";
 //require '../connect/connexion3.php';
 include("../saison.php");
 include("../fichierConfig.php");
@@ -43,7 +43,7 @@ $comiteNom = "Fédérale 3 - Excellence B";
   <meta name="viewport" content="width=device-width">
   <title>Championnats de France <?php echo $comiteNom; ?></title>
 
-  <meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+  <meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">

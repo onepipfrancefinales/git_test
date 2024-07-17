@@ -33,7 +33,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
   <tr> 
     <td bgcolor="#FFFFFF" colspan="2" height="14"> 
       <div class="titre"> Champ de France<br>
-        S&eacute;ries r&eacute;gionales</div>
+        Séries régionales</div>
     </td>
   </tr>
 </table>
@@ -388,7 +388,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
   <tr bgcolor="#FF0000"> 
     <td colspan="2"> 
       <div align="center"><b><font size="4" face="Arial, Helvetica, sans-serif" color="#FFFFFF">1re 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -540,7 +540,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
   <tr> 
     <td colspan="2"> 
       <div align="right"><b><font size="3"><font size="3"><font face="Arial, Helvetica, sans-serif"><a href="pagePhaseFinale.php?division=190&annee=2019"><font color="#FF0000">Tableau 
-        complet 1re S&eacute;rie</font><font color="#FF0000" size="4"> </font><font color="#FF0000" size="4"> 
+        complet 1re Série</font><font color="#FF0000" size="4"> </font><font color="#FF0000" size="4"> 
         &gt;&gt;</font></a></font></font></font></b></div>
     </td>
   </tr>
@@ -572,7 +572,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
   <tr bgcolor="#FF0000"> 
     <td colspan="2"> 
       <div align="center"><b><font size="4" face="Arial, Helvetica, sans-serif" color="#FFFFFF">2me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -731,7 +731,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
     <td> 
       <div align="center"></div>
       <div align="right"><b><font size="3"><font size="3"><font face="Arial, Helvetica, sans-serif"><a href="pagePhaseFinale.php?division=200&annee=2019"><font color="#FF0000">Tableau 
-        complet 2me S&eacute;rie</font><font color="#FF0000" size="4"> </font><font color="#FF0000" size="4"> 
+        complet 2me Série</font><font color="#FF0000" size="4"> </font><font color="#FF0000" size="4"> 
         &gt;&gt;</font></a></font></font></font></b></div>
     </td>
   </tr>
@@ -748,7 +748,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
   <tr bgcolor="#FF0000"> 
     <td colspan="2"> 
       <div align="center"><b><font size="4" face="Arial, Helvetica, sans-serif" color="#FFFFFF">3me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -900,7 +900,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
   <tr> 
     <td> 
       <div align="right"><b><font size="3"><font size="3"><font face="Arial, Helvetica, sans-serif"><a href="pagePhaseFinale.php?division=210&annee=2019"><font color="#FF0000">Tableau 
-        complet 3me S&eacute;rie</font><font color="#FF0000" size="4"> &gt;&gt;</font></a></font></font></font></b></div>
+        complet 3me Série</font><font color="#FF0000" size="4"> &gt;&gt;</font></a></font></font></font></b></div>
     </td>
   </tr>
   <tr> 
@@ -916,7 +916,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
   <tr bgcolor="#FF0000"> 
     <td colspan="2"> 
       <div align="center"><b><font size="4" face="Arial, Helvetica, sans-serif" color="#FFFFFF">4me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -1066,7 +1066,7 @@ content="tous les divisionions de france de rugby, ffr,FFR, presentation de tous
   <tr> 
     <td colspan="2"> 
       <div align="right"><b><font size="3"><font size="3"><font face="Arial, Helvetica, sans-serif"><a href="pagePhaseFinale.php?division=220&annee=2019"><font color="#FF0000">Tableau 
-        complet 4me S&eacute;rie</font><font color="#FF0000" size="4"> &gt;&gt;</font></a></font></font></font></b></div>
+        complet 4me Série</font><font color="#FF0000" size="4"> &gt;&gt;</font></a></font></font></font></b></div>
     </td>
   </tr>
 </table>

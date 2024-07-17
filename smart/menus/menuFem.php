@@ -10,7 +10,7 @@
     <td   width="50%" height="28"> 
       <ul class="menu-demo2">
         <li>
-		  <a href="171.php?champ=291&comite=<?php echo $comite;?>&bddComite=<?php echo $bddComite;?>"><b><font color="#FFFFFF">F&eacute;d&eacute;rales</font></b></a>    
+		  <a href="171.php?champ=291&comite=<?php echo $comite;?>&bddComite=<?php echo $bddComite;?>"><b><font color="#FFFFFF">Fédérales</font></b></a>    
         </li>
       </ul>
 	</td>

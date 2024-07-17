@@ -3,34 +3,34 @@
 if ($division==180 or $division ==200)
 {
 ?>
-<h2>Modalit&eacute;s de qualifications aux championnats de France 2019 </h2>
+<h2>Modalités de qualifications aux championnats de France 2019 </h2>
 <P><a href="../../phases_finales/honneur/pagehonneur.php?variable_1=2019&annee=2019"><font color="#FF0000"><b><font face="Arial, Helvetica, sans-serif">Oppositions 
-  des 32me de finales 2019 en Promotion et 2me s&eacute;rie</font></b></font></a> 
-<P><font face="Arial, Helvetica, sans-serif">15 Equipes de la ligue sont engag&eacute;es 
+  des 32me de finales 2019 en Promotion et 2me série</font></b></font></a> 
+<P><font face="Arial, Helvetica, sans-serif">15 Equipes de la ligue sont engagées 
   en championnat de France 2019.<br>
-  12 directements qualifi&eacute;es en 32 de finale et 3 qualifi&eacute;es pour 
+  12 directements qualifiées en 32 de finale et 3 qualifiées pour 
   disputer un barrage </font>
-<P><font face="Arial, Helvetica, sans-serif"><b><font size="3">3 Possibilit&eacute;s 
+<P><font face="Arial, Helvetica, sans-serif"><b><font size="3">3 Possibilités 
   d'acceder aux championnats de france </font></b> </font>
-<P> <font face="Arial, Helvetica, sans-serif"><b>-1-</b> Toutes les equipes qualifi&eacute;es 
+<P> <font face="Arial, Helvetica, sans-serif"><b>-1-</b> Toutes les equipes qualifiées 
   pour les quarts de finales du championnat d'occitanie (Tableau 1)<br>
-  seront engag&eacute;es pour les 32me de finale (8 equipes). </font>
+  seront engagées pour les 32me de finale (8 equipes). </font>
 <P><font face="Arial, Helvetica, sans-serif">-<b>2-</b> Dans le tableau 2, les 
-  &eacute;quipes &eacute;limin&eacute;es du tableau 1 se rencontreront en quarts 
+  équipes éliminées du tableau 1 se rencontreront en quarts 
   demis et finale.<br>
   </font>
-<P><font face="Arial, Helvetica, sans-serif">les &eacute;quipes demi-finalistes 
-  seront qualifi&eacute;es directement pour les 32me de fnales.<br>
-  Les 4 &eacute;quipes &eacute;limin&eacute;es au 1er tour du tableau 2 se rencontreront. 
-  Les 2 gagnants seront qualifi&eacute;s pour les barrages du championnat de france<br>
-  participeront au barrages d'accession des 32me du championnat de France (4 &eacute;quipes 
+<P><font face="Arial, Helvetica, sans-serif">les équipes demi-finalistes 
+  seront qualifiées directement pour les 32me de fnales.<br>
+  Les 4 équipes éliminées au 1er tour du tableau 2 se rencontreront. 
+  Les 2 gagnants seront qualifiés pour les barrages du championnat de france<br>
+  participeront au barrages d'accession des 32me du championnat de France (4 équipes 
   : 2 directes et 2 barrages). </font>
 <P>&nbsp; 
-<P><font face="Arial, Helvetica, sans-serif"><b>-3-</b>Le tableau 3 est compos&eacute; 
-  des &eacute;quipes class&eacute;es de 17 &agrave; 28. elles se rencontreront 
-  en barrages pour les &eacute;quipes les plus mal class&eacute;es, puis en huitit&egrave;me 
+<P><font face="Arial, Helvetica, sans-serif"><b>-3-</b>Le tableau 3 est composé 
+  des équipes classées de 17 &agrave; 28. elles se rencontreront 
+  en barrages pour les équipes les plus mal classées, puis en huitit&egrave;me 
   , quarts demi et finale.<br>
-  les 2 &eacute;quipes qui attteindront la finale seront qualifi&eacute;es pour 
+  les 2 équipes qui attteindront la finale seront qualifiées pour 
   les barrages d'accession aux 32me de finale du champ de France (2 equipes barragistes) 
   </font>
 <P>&nbsp;
@@ -41,33 +41,33 @@ if ($division==180 or $division ==200)
 elseif ($division==190)
 {
 ?>
-<h2>Modalit&eacute;s de qualifications aux championnats de France 2019 </h2>
+<h2>Modalités de qualifications aux championnats de France 2019 </h2>
 <P><a href="../../phases_finales/promotion/pagepromotion.php?variable_1=2019&annee=2019"><font color="#FF0000"><b><font face="Arial, Helvetica, sans-serif">Oppositions 
-  des 32me de finales 2019 en 1re s&eacute;rie</font></b></font></a> 
-<P><font face="Arial, Helvetica, sans-serif">14 Equipes de la ligue sont engag&eacute;es 
+  des 32me de finales 2019 en 1re série</font></b></font></a> 
+<P><font face="Arial, Helvetica, sans-serif">14 Equipes de la ligue sont engagées 
   en championnat de France 2019.<br>
-  12 directements qualifi&eacute;es en 32 de finale et 2 qualifi&eacute;es pour 
+  12 directements qualifiées en 32 de finale et 2 qualifiées pour 
   disputer un barrage </font>
-<P><b><font size="3" face="Arial, Helvetica, sans-serif">3 Possibilit&eacute;s 
+<P><b><font size="3" face="Arial, Helvetica, sans-serif">3 Possibilités 
   d'acceder aux championnats de france </font></b>
 <P> <b><font face="Arial, Helvetica, sans-serif" color="#000000">-1-</font></b><font color="#000000" face="Arial, Helvetica, sans-serif"> 
-  Toutes les equipes qualifi&eacute;es pour les quarts de finales du championnat 
+  Toutes les equipes qualifiées pour les quarts de finales du championnat 
   d'occitanie (Tableau 1)<br>
-  seront engag&eacute;es pour les 32me de finale (8 equipes). </font>
+  seront engagées pour les 32me de finale (8 equipes). </font>
 <P><font color="#000000" face="Arial, Helvetica, sans-serif">-<b>2-</b> Dans le 
-  tableau 2, les &eacute;quipes &eacute;limin&eacute;es du tableau 1 se rencontreront 
+  tableau 2, les équipes éliminées du tableau 1 se rencontreront 
   en quarts demis et finale.<br>
   </font>
-<P><font color="#000000" face="Arial, Helvetica, sans-serif">les &eacute;quipes 
-  demi-finalistes seront qualifi&eacute;es directement pour les 32me de fnales 
+<P><font color="#000000" face="Arial, Helvetica, sans-serif">les équipes 
+  demi-finalistes seront qualifiées directement pour les 32me de fnales 
   du champ de France 2019.<br>
   </font>
 <P>&nbsp; 
 <P><font color="#000000" face="Arial, Helvetica, sans-serif"><b>-3-</b>Le tableau 
-  3 est compos&eacute; des &eacute;quipes class&eacute;es de 17 &agrave; 28. elles 
-  se rencontreront en barrages pour les &eacute;quipes les plus mal class&eacute;es, 
+  3 est composé des équipes classées de 17 &agrave; 28. elles 
+  se rencontreront en barrages pour les équipes les plus mal classées, 
   puis en huitit&egrave;me , quarts demi et finale.<br>
-  les 2 &eacute;quipes qui attteindront la finale seront qualifi&eacute;es pour 
+  les 2 équipes qui attteindront la finale seront qualifiées pour 
   les barrages d'accession aux 32me de finale du champ de France (2 equipes barragistes) 
   </font>
 <P>&nbsp;

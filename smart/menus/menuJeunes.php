@@ -68,7 +68,7 @@
             <li><font color="#000000">  -</font> </li>
             <li><a href="fem/171.php?champ=280">Top 8</a></li>
             <li><a href="fem/171.php?champ=285">Elite 2</a></li>
-            <li><a href="fem/171.php?champ=291">F&eacute;d 1</a> </li>
+            <li><a href="fem/171.php?champ=291">Féd 1</a> </li>
           </ul>
         </li>
       </ul>

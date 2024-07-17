@@ -28,7 +28,7 @@ $clubA1618= 'Balma (MPY)';
 $clubA1619= 'Surenes (IDF)';
 $clubA1620= ' Dijon (BG)';
 
-$clubA1621= 'Périgueux (PA)';		
+$clubA1621= 'Pï¿½rigueux (PA)';		
 $clubA1622= ' Oloron (BE)';		
 $clubA1623= ' Grenade (MPY)';	
 $clubA1624= ' Anglet (CBL)';
@@ -795,7 +795,7 @@ $clubA1632= ' Gimont (AB)';
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    B&eacute;lascain</b></font></div>
+    BÃ©lascain</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 176px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
   <div align="center"><i><b><i><b>Christian BELASCAIN (- de 21 ans) Christian 

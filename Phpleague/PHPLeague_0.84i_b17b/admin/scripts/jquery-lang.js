@@ -3,13 +3,13 @@
 jQuery(function($){
 	$.datepicker.regional['fr'] = {
 		closeText: 'Fermer',
-		prevText: '&#x3c;Pr&eacute;c',
+		prevText: '&#x3c;Préc',
 		nextText: 'Suiv&#x3e;',
 		currentText: 'Courant',
-		monthNames: ['Janvier','F&eacute;vrier','Mars','Avril','Mai','Juin',
-		'Juillet','Ao&#251;t','Septembre','Octobre','Novembre','D&eacute;cembre'],
-		monthNamesShort: ['Jan','F&eacute;v','Mar','Avr','Mai','Jun',
-		'Jul','Ao&ucirc;','Sep','Oct','Nov','D&eacute;c'],
+		monthNames: ['Janvier','Février','Mars','Avril','Mai','Juin',
+		'Juillet','Ao&#251;t','Septembre','Octobre','Novembre','Décembre'],
+		monthNamesShort: ['Jan','Fév','Mar','Avr','Mai','Jun',
+		'Jul','Ao&ucirc;','Sep','Oct','Nov','Déc'],
 		dayNames: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
 		dayNamesShort: ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],
 		dayNamesMin: ['Di','Lu','Ma','Me','Je','Ve','Sa'],
@@ -34,14 +34,14 @@ jQuery.extend(jQuery.validator.messages, {
         date: "Veuillez entrer une date valide.",
         dateISO: "Veuillez entrer une date valide (ISO).",
         number: "Veuillez entrer un nombre valide.",
-        digits: "Veuillez entrer (seulement) une valeur num&eacute;rique.",
-        creditcard: "Veuillez entrer un num&eacute;ro de carte de cr&eacute;dit valide.",
+        digits: "Veuillez entrer (seulement) une valeur numérique.",
+        creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
         equalTo: "Veuillez entrer une nouvelle fois la m&ecirc;me valeur.",
         accept: "Veuillez entrer une valeur avec une extension valide.",
         maxlength: jQuery.validator.format("Veuillez ne pas entrer plus de {0} caract&egrave;res."),
         minlength: jQuery.validator.format("Veuillez entrer au moins {0} caractères."),
         rangelength: jQuery.validator.format("Veuillez entrer entre {0} et {1} caract&egrave;res."),
         range: jQuery.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
-        max: jQuery.validator.format("Veuillez entrer une valeur inf&eacute;rieure ou &eacute;gale à {0}."),
-        min: jQuery.validator.format("Veuillez entrer une valeur sup&eacute;rieure ou &eacute;gale à {0}.")
+        max: jQuery.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
+        min: jQuery.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
 });

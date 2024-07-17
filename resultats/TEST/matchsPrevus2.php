@@ -16,7 +16,7 @@ require ('../../connect/connexion6.php');
 echo	"<h3><b>"."<hr>".''."Ligue Rh&ocirc;ne Alpes Auvergne"."</b>"."</h3>";
 matchsAVenir("au", 10, $dateDeLaCompet, $bdd);
 
-echo	"<h3><b>"."<hr>".''."Ligue Bourgogne Franche Comt&eacute;"."</b>"."</h3>";
+echo	"<h3><b>"."<hr>".''."Ligue Bourgogne Franche Comté"."</b>"."</h3>";
 matchsAVenir("pl", 11, $dateDeLaCompet, $bdd);
 
 echo	"<h3><b>"."<hr>".''."Ligue Bretagne;"."</b>"."</h3>";

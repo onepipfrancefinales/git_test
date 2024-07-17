@@ -46,7 +46,7 @@ echo "type (../saisieEquipe.php): ".$type;  echo "<br>";
     <td width="74%" valign="top" height="17" bgcolor="#0099FF"><div align="center"> </div></td>
   </tr>
   <tr> 
-    <td valign="top" height="23" width="26%"><div align="center">Ann&eacute;e</div></td>
+    <td valign="top" height="23" width="26%"><div align="center">Année</div></td>
     <td width="74%" valign="top" height="23" bgcolor="#000000"><div align="center"><b><font size="5" color="#FFFFFF"><?php echo $annee; ?></font></b></div></td>
   </tr>
   <tr> 

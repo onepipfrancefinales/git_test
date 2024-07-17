@@ -1,18 +1,18 @@
 <html>
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
 
-<?php // ******************   Récupération des variables   ***************** 
+<?php // ******************   Rï¿½cupï¿½ration des variables   ***************** 
  
  $type=$_GET['type']; 
  $annee=$_GET['annee']; 
  $comite=$_GET['comite'];
  $division=$_GET['division'];
   
- // ***************** Test des variables récupérées ****************
+ // ***************** Test des variables rï¿½cupï¿½rï¿½es ****************
   echo "ligue : ".$comite; echo "<br />";
   echo "type : ".$type; echo "<br />";
   echo "annee : ".$annee; echo "<br />";
@@ -73,12 +73,12 @@ echo $D1000; echo "<br />";
 
     if($req)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 	

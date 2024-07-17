@@ -217,28 +217,28 @@ $clubB4S12= ' Provence 2';
     </td>
     <td colspan="2" bgcolor="#FF9933"> 
       <div align="center"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">1re 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
     <td width="49"> 
       <div align="center"></div>
     </td>
     <td colspan="2" bgcolor="#FF9933"> 
       <div align="center"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">2me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
     <td width="51"> 
       <div align="center"></div>
     </td>
     <td colspan="2" bgcolor="#FF9933"> 
       <div align="center"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">3me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
     <td width="45"> 
       <div align="center"></div>
     </td>
     <td colspan="2" bgcolor="#FF9933"> 
       <div align="center"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">4me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
     <td width="49">&nbsp;</td>
   </tr>
@@ -480,7 +480,7 @@ $clubB4S12= ' Provence 2';
   </tr>
   <tr> 
     <td width="196"> 
-      <div id="coin4" >P&eacute;rigord Agenais 3</div>
+      <div id="coin4" >Périgord Agenais 3</div>
     </td>
     <td width="29"> 
       <div id="coin4" > - </div>
@@ -508,14 +508,14 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="51">&nbsp;</td>
     <td width="167"> 
-      <div id="coin4" > B&eacute;arn 1</div>
+      <div id="coin4" > Béarn 1</div>
     </td>
     <td width="13"> 
       <div id="coin4" > - </div>
     </td>
     <td width="45">&nbsp;</td>
     <td width="157"> 
-      <div id="coin5" > P&eacute;rigord Agenais 2</div>
+      <div id="coin5" > Périgord Agenais 2</div>
     </td>
     <td width="20"> 
       <div id="coin5" > - </div>
@@ -538,7 +538,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="48">&nbsp;</td>
     <td width="192"> 
-      <div id="coin4" > P&eacute;rigord Agenais 4</div>
+      <div id="coin4" > Périgord Agenais 4</div>
     </td>
     <td width="29"> 
       <div id="coin4" > - </div>
@@ -623,7 +623,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="45">&nbsp;</td>
     <td width="157"> 
-      <div id="coin5" > B&eacute;arn 1</div>
+      <div id="coin5" > Béarn 1</div>
     </td>
     <td width="20"> 
       <div id="coin5" > - </div>
@@ -646,7 +646,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="48">&nbsp;</td>
     <td width="192"> 
-      <div id="coin4" > Pyr&eacute;n&eacute;es 7</div>
+      <div id="coin4" > Pyrénées 7</div>
     </td>
     <td width="29"> 
       <div id="coin4" > - </div>
@@ -660,7 +660,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="51">&nbsp;</td>
     <td width="167"> 
-      <div id="coin4" > Pyr&eacute;n&eacute;es 4</div>
+      <div id="coin4" > Pyrénées 4</div>
     </td>
     <td width="13"> 
       <div id="coin4" > - </div>
@@ -740,14 +740,14 @@ $clubB4S12= ' Provence 2';
   </tr>
   <tr> 
     <td width="196"> 
-      <div id="coin4" >B&eacute;arn 2</div>
+      <div id="coin4" >Béarn 2</div>
     </td>
     <td width="29"> 
       <div id="coin4" > - </div>
     </td>
     <td width="48">&nbsp;</td>
     <td width="195"> 
-      <div id="coin5" >Pyr&eacute;n&eacute;es 7 </div>
+      <div id="coin5" >Pyrénées 7 </div>
     </td>
     <td width="29"> 
       <div id="coin5" > - </div>
@@ -761,7 +761,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="49">&nbsp;</td>
     <td width="185"> 
-      <div id="coin5" > Pyr&eacute;n&eacute;es 7</div>
+      <div id="coin5" > Pyrénées 7</div>
     </td>
     <td width="24"> 
       <div id="coin5" > - </div>
@@ -848,14 +848,14 @@ $clubB4S12= ' Provence 2';
   </tr>
   <tr> 
     <td width="196"> 
-      <div id="coin4" >Pyr&eacute;n&eacute;es 6</div>
+      <div id="coin4" >Pyrénées 6</div>
     </td>
     <td width="29"> 
       <div id="coin4" > - </div>
     </td>
     <td width="48">&nbsp;</td>
     <td width="195"> 
-      <div id="coin5" >B&eacute;arn 2 </div>
+      <div id="coin5" >Béarn 2 </div>
     </td>
     <td width="29"> 
       <div id="coin5" > - </div>
@@ -869,7 +869,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="49">&nbsp;</td>
     <td width="185"> 
-      <div id="coin5" > B&eacute;arn 2</div>
+      <div id="coin5" > Béarn 2</div>
     </td>
     <td width="24"> 
       <div id="coin5" > - </div>

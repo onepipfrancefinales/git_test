@@ -3262,9 +3262,9 @@ echo "";
 <div id="Layer4" style="position:absolute; width:2px; height:80px; z-index:6; left: 566px; top: 760px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 285px; top: 420px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 286px; top: 819px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
-<div id="Layer2" style="position:absolute; width:1200px; height:20px; z-index:4; left: -2px; top: 151px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1200px; height:20px; z-index:4; left: -2px; top: 151px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 </b></i></div>

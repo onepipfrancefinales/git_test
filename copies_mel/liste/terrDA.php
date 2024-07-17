@@ -29,7 +29,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">1re S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">1re Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4" color="#000000">Saint Sorlin en Valloire</font></div>
@@ -37,7 +37,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">2me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">2me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4" color="#000000">JSQ St Paul les Romans</font></div>
@@ -45,7 +45,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">3me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">3me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4" color="#000000">Chabeuil</font></div>
@@ -53,7 +53,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">4me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">4me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4" color="#000000">SC Ouv&egrave;ze Payre</font></div>
@@ -61,7 +61,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">R&eacute;serve</font></div>
+      <div align="center"><font color="#000000" size="4">Réserve</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#000000"><font size="4"></font></font></font></div>
@@ -69,7 +69,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">R&eacute;serve PH</font></div>
+      <div align="center"><font color="#000000" size="4">Réserve PH</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#000000"><font size="4"></font></font></font></div>

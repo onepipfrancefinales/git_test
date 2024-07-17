@@ -73,7 +73,7 @@ MM_reloadPage(true);
 <div id="Layer10" style="position:absolute; width:359px; height:52px; z-index:6; left: 32px; top: 535px"><font size="2"> 
   (P) Equipes Promues <br>
   Qualification aux phases finales<br>
-  Equipes rel&eacute;gu&eacute;s<br>
+  Equipes relégués<br>
   </font> </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: 0px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
   <div align="center"><i><b>Pro D2 Pro D2 Pro D2 Pro D2 Pro D2 Pro D2 Pro D2 Pro 

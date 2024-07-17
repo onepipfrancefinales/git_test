@@ -163,12 +163,12 @@ elseif (substr ($type,10,1) == '1' OR substr ($type,10,1) == '2')
 echo "<br />";
 if($requete)
 	{
-	 echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+	 echo("La modification (".$division.") a été correctement effectuée");
 	 echo "<br />";
 	}
 else
 	{
-	 echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+	 echo("La modification (".$division.") a échoué") ;
 	 echo "<br />";
 	}
 

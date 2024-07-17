@@ -48,7 +48,7 @@ echo "type (saisieEquipe.php): ".$type;  echo "<br>";
   <tr bgcolor="#FFFFFF"> 
     <td colspan="2"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie 
-        des &eacute;quipes</font></b></font></div>
+        des équipes</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -83,7 +83,7 @@ echo "type (saisieEquipe.php): ".$type;  echo "<br>";
   </tr>
   <tr> 
     <td valign="top" height="23" width="26%"> 
-      <div align="center">Ann&eacute;e</div>
+      <div align="center">Année</div>
     </td>
     <td width="74%" valign="top" height="23" bgcolor="#000000"> 
       <div align="center"><b><font size="5" color="#FFFFFF"> 
@@ -114,7 +114,7 @@ echo "type (saisieEquipe.php): ".$type;  echo "<br>";
 </table>
 
 
-xx : code comit&eacute;<br>
+xx : code comité<br>
 xx400 : pas d'opposant, cas de qualification directe<br>
 xx401 : 1er de la poule -- xx402 : 2me de la poule -- etc...<br>
 xx411 : 1er de la poule 1
@@ -151,7 +151,7 @@ if ($type == 90000000001 or $type == 90000000011)
 				  <input type="hidden" name="division" value="<?php echo($division) ;?>">
 				  
 		 <header>
-  <h1><?php echo "Division ( ".''.$division.''." )Ann&eacute;e ".''.$annee; ?> </h1>
+  <h1><?php echo "Division ( ".''.$division.''." )Année ".''.$annee; ?> </h1>
   </header>
   
        <p class="texte">
@@ -209,7 +209,7 @@ elseif ($type == 90000000002  or $type == 90000000004)
 				  <input type="hidden" name="division" value="<?php echo($division) ;?>">
 				  
 		 <header>
-  <h1><?php echo "Division ( ".''.$division.''." )Ann&eacute;e ".''.$annee; ?> </h1>
+  <h1><?php echo "Division ( ".''.$division.''." )Année ".''.$annee; ?> </h1>
   </header>
   
        <p class="texte">
@@ -267,7 +267,7 @@ elseif ($type==90000000402 or  $type == 90000000804)
 						  <input type="hidden" name="division" value="<?php echo($division) ;?>">
 		
 		<header>				  
-	<h1> <?php echo  "Division (".''.$division.''." ) Ann&eacute;e ".''.$annee; ?></h1>
+	<h1> <?php echo  "Division (".''.$division.''." ) Année ".''.$annee; ?></h1>
 		</header>		  
 		 <p class="texte">
 	  Quarts de finale
@@ -318,7 +318,7 @@ elseif ($type==90000000402 or  $type == 90000000804)
 						
 						
 						
-<!-- ************ Barrages(8 �quipes) Quarts (4 �quipes)   ************
+<!-- ************ Barrages(8 �quipes) Quarts (4 �quipes)   ************
 -->
 						
 		<?php		
@@ -356,7 +356,7 @@ elseif ($type==13)
 	<header>	  
   <h1> Division ( 
     <?php echo $division; ?>
-    ) Ann&eacute;e 
+    ) Année 
     <?php echo $annee; ?>
   </h1>
     </header>  

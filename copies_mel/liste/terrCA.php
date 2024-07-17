@@ -17,7 +17,7 @@
       <div align="center"><font size="4">Honneur</font></div>
     </td>
     <td width="222"> 
-      <div align="center"><font size="4">L&eacute;ognan</font></div>
+      <div align="center"><font size="4">Léognan</font></div>
     </td>
   </tr>
   <tr> 
@@ -25,13 +25,13 @@
       <div align="center"><font size="4">Promotion</font></div>
     </td>
     <td width="222"> 
-      <div align="center"><font size="4"><font size="4"><font size="4">Saint Andr&eacute; 
+      <div align="center"><font size="4"><font size="4"><font size="4">Saint André 
         de Cubzac</font></font></font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="148"> 
-      <div align="center"><font size="4">1re S&eacute;rie</font></div>
+      <div align="center"><font size="4">1re Série</font></div>
     </td>
     <td width="222"> 
       <div align="center"><font size="4">Pessac</font></div>
@@ -39,7 +39,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="148"> 
-      <div align="center"><font size="4">2me S&eacute;rie</font></div>
+      <div align="center"><font size="4">2me Série</font></div>
     </td>
     <td width="222"> 
       <div align="center"><font size="4"><font size="4"><font size="4">RC Libourne</font></font></font></div>
@@ -47,7 +47,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="148"> 
-      <div align="center"><font size="4">3me S&eacute;rie</font></div>
+      <div align="center"><font size="4">3me Série</font></div>
     </td>
     <td width="222"> 
       <div align="center"><font size="4"><font size="4"><font size="4">Eysines</font></font></font></div>
@@ -55,7 +55,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="148"> 
-      <div align="center"><font size="4">4me S&eacute;rie</font></div>
+      <div align="center"><font size="4">4me Série</font></div>
     </td>
     <td width="222"> 
       <div align="center"><font size="4">Cadillac</font></div>
@@ -63,7 +63,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="148"> 
-      <div align="center"><font size="4">R&eacute;serve</font></div>
+      <div align="center"><font size="4">Réserve</font></div>
     </td>
     <td width="222"> 
       <div align="center"><font size="4"><font size="4"><font size="4">Castillon 
@@ -72,19 +72,19 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="148" height="27"> 
-      <div align="center"><font size="4">R&eacute;serve PH</font></div>
+      <div align="center"><font size="4">Réserve PH</font></div>
     </td>
     <td width="222" height="27"> 
       <div align="center"><font size="4"><font size="4"><font size="4">Le Bouscat</font></font></font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
-    <td width="148"><font size="4">R&eacute;s 1re s&eacute;rie</font></td>
+    <td width="148"><font size="4">Rés 1re série</font></td>
     <td width="222"><font size="4"><font size="4"><font size="4">Martignas sur 
       Jalle</font></font></font></td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
-    <td width="148"><font size="4">R&eacute;serve 2me s&eacute;rie</font></td>
+    <td width="148"><font size="4">Réserve 2me série</font></td>
     <td width="222">&nbsp;</td>
   </tr>
 </table>

@@ -1,6 +1,6 @@
 <?php
 
-// Général
+// Gï¿½nï¿½ral
 $page    = isset($_REQUEST['page'])    ? $_REQUEST['page']    : NULL;
 $champ   = isset($_REQUEST['champ'])   ? $_REQUEST['champ']   : NULL;
 $annee   = isset($_REQUEST['annee'])   ? $_REQUEST['annee']   : NULL;
@@ -40,7 +40,7 @@ $miroir = isset($_POST['miroir']) ? $_POST['miroir'] : NULL;
 $id_domicile = isset($_POST['id_domicile']) ? $_POST['id_domicile'] : NULL;
 $id_exterieur = isset($_POST['id_exterieur']) ? $_POST['id_exterieur'] : NULL;
 
-// Paramètres
+// Paramï¿½tres
 $malus     = isset($_REQUEST['malus'])     ? $_REQUEST['malus']     : NULL;
 $id_equipe = isset($_REQUEST['id_equipe']) ? $_REQUEST['id_equipe'] : NULL;
 
@@ -54,7 +54,7 @@ $estimation = isset($_POST['estimation']) ? $_POST['estimation'] : NULL;
 $barrage = isset($_POST['barrage']) ? $_POST['barrage'] : NULL;
 $fiches_clubs = isset($_POST['fiches_clubs']) ? $_POST['fiches_clubs'] : NULL;
 
-// Résultats
+// Rï¿½sultats
 $date_reelle = isset($_REQUEST['date_reelle']) ? $_REQUEST['date_reelle'] : NULL;
 $matchs_id   = isset($_REQUEST['matchs_id'])   ? $_REQUEST['matchs_id']   : NULL;
 
@@ -140,7 +140,7 @@ $minute = isset($_POST['minute']) ? $_POST['minute'] : NULL;
 
 $RESULT = '';
 
-// Création de la saison
+// Crï¿½ation de la saison
 if ($action == 'creer' AND $action2 == 'creer' AND $saison)
 {
 	$REQ1 = mysql_query('SELECT annee FROM phpl_saisons WHERE annee='.$saison);
@@ -167,7 +167,7 @@ if ($action == 'creer' AND $action2 == 'creer' AND $saison)
 	}
 }
 
-// Création de la division
+// Crï¿½ation de la division
 if ($action == 'creer' AND $action2 == 'creer' AND $division)
 {
 	$REQ1 = mysql_query('SELECT nom FROM phpl_divisions WHERE nom="'.$division.'"');
@@ -265,10 +265,10 @@ if ($confirm == 'ok' AND $champ AND $action == 'supp')
 		}
 		mysql_free_result($REQ1);
 
-		if ($REQ2) { $RESULT.= InfoReqSql('InfSupp2', 0, 'highlight', 'check', 'Equipes domiciles du championnat supprimées avec succès'); }
+		if ($REQ2) { $RESULT.= InfoReqSql('InfSupp2', 0, 'highlight', 'check', 'Equipes domiciles du championnat supprimï¿½es avec succï¿½s'); }
 		else       { $RESULT.= InfoReqSql('InfSupp2', 0, 'error', 'alert', GestErreur(ADMIN_GRP_CHAMP_SUPP2, $REQ4)); }
 
-		if ($REQ3) { $RESULT.= InfoReqSql('InfSupp3', 0, 'highlight', 'check', 'Equipes externes du championnat supprimées avec succès'); }
+		if ($REQ3) { $RESULT.= InfoReqSql('InfSupp3', 0, 'highlight', 'check', 'Equipes externes du championnat supprimï¿½es avec succï¿½s'); }
 		else       { $RESULT.= InfoReqSql('InfSupp3', 0, 'error', 'alert', GestErreur(ADMIN_GRP_CHAMP_SUPP2, $REQ5)); }
 
 
@@ -277,16 +277,16 @@ if ($confirm == 'ok' AND $champ AND $action == 'supp')
 		$REQ6 = @mysql_query("DELETE FROM phpl_equipes WHERE id_champ='$champ'");
 		$REQ7 = @mysql_query("DELETE FROM phpl_parametres WHERE id_champ='$champ'");
 
-		if ($REQ4) { $RESULT.= InfoReqSql('InfSupp4', 0, 'highlight', 'check', 'Championnat supprimé avec succès'); }
+		if ($REQ4) { $RESULT.= InfoReqSql('InfSupp4', 0, 'highlight', 'check', 'Championnat supprimï¿½ avec succï¿½s'); }
 		else       { $RESULT.= InfoReqSql('InfSupp4', 0, 'error', 'alert', GestErreur(ADMIN_GRP_CHAMP_SUPP2, $REQ4)); }
 
-		if ($REQ5) { $RESULT.= InfoReqSql('InfSupp5', 0, 'highlight', 'check', 'Journées du championnat supprimé avec succès'); }
+		if ($REQ5) { $RESULT.= InfoReqSql('InfSupp5', 0, 'highlight', 'check', 'Journï¿½es du championnat supprimï¿½ avec succï¿½s'); }
 		else       { $RESULT.= InfoReqSql('InfSupp5', 0, 'error', 'alert', GestErreur(ADMIN_GRP_CHAMP_SUPP2, $REQ5)); }
 
-		if ($REQ6) { $RESULT.= InfoReqSql('InfSupp6', 0, 'highlight', 'check', 'Equipes du championnat supprimé avec succès'); }
+		if ($REQ6) { $RESULT.= InfoReqSql('InfSupp6', 0, 'highlight', 'check', 'Equipes du championnat supprimï¿½ avec succï¿½s'); }
 		else       { $RESULT.= InfoReqSql('InfSupp6', 0, 'error', 'alert', GestErreur(ADMIN_GRP_CHAMP_SUPP2, $REQ6)); }
 
-		if ($REQ7) { $RESULT.= InfoReqSql('InfSupp7', 0, 'highlight', 'check', 'Paramètres du championnat supprimé avec succès'); }
+		if ($REQ7) { $RESULT.= InfoReqSql('InfSupp7', 0, 'highlight', 'check', 'Paramï¿½tres du championnat supprimï¿½ avec succï¿½s'); }
 		else       { $RESULT.= InfoReqSql('InfSupp7', 0, 'error', 'alert', GestErreur(ADMIN_GRP_CHAMP_SUPP2, $REQ7)); }
 	}
 	else
@@ -343,7 +343,7 @@ elseif ($action == 'compoCR' AND $champ)			   { $STITRE = ' &#062; '.CR; $INC_PA
 elseif ($action == 'generer' AND $champ)			   { $STITRE = ' &#062; '.GENERER; $INC_PAGE = 'generer.php'; }
 elseif ($action == 'convocation' AND $champ)		   { $STITRE = ''; $INC_PAGE = 'convocation.php'; }
 elseif ($action == 'supp' AND $champ)				   { $STITRE = ' &#062; '.ADMIN_RENS_8; $INC_PAGE = 'champ_supp.php'; }
-elseif ($action == 'creer')							   { $STITRE = ' &#062; Cr&eacute;ation d\'un championnat'; $INC_PAGE = 'creer_champ.php'; }
+elseif ($action == 'creer')							   { $STITRE = ' &#062; CrÃ©ation d\'un championnat'; $INC_PAGE = 'creer_champ.php'; }
 else												   { $STITRE = ''; $INC_PAGE = 'vide.php'; }
 
 if (empty($champ))

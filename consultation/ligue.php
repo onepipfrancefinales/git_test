@@ -33,7 +33,7 @@ echo "<br/><br/><br/>";
 <br>
 <br>
 <p class="texteGras">Contacts </p>
-<p class="texte"> <b>T&eacute;l :</b> 
+<p class="texte"> <b>Tél :</b> 
   <?php echo $tel; ?>
   <br />
   <b>Fax :</b> 
@@ -55,7 +55,7 @@ echo "<br/><br/><br/>";
 <h1> Présentation :<br></h1>
 							
 <p class="texte"> La ligue <?php echo $nomLigue; ?> se compose <br/>
-	des anciens comit&eacute;s suivants : <br />
+	des anciens comités suivants : <br />
   <?php
 	echo "<br />";
 	$sigle = 0;
@@ -132,10 +132,10 @@ $nb_equipe_tt = $bdd->query("
 <?php
 echo 
 "<strong> Nbre de clubs : </strong>".' '.$nb_equipe_tt[0].'<br/><br/>'
-.'<strong> Effectif s&eacute;niors : </strong>'.' '.number_format ($nbreSeniors).'<br/>'.'<br/>'
-.'<strong> Effectif F&eacute;minins : </strong>'.' '.number_format ($nbreFeminines).'<br/>'.'<br/>'
+.'<strong> Effectif séniors : </strong>'.' '.number_format ($nbreSeniors).'<br/>'.'<br/>'
+.'<strong> Effectif Féminins : </strong>'.' '.number_format ($nbreFeminines).'<br/>'.'<br/>'
 .'<strong> Effectif Jeunes : </strong>'.' '.number_format ($nbreJeunes+$nbreFemininesJeunes).'<br/>'
-.'<strong> dont </strong>'.' '.    number_format ($nbreFemininesJeunes).' f&eacute;minines'.'<br/>'
+.'<strong> dont </strong>'.' '.    number_format ($nbreFemininesJeunes).' féminines'.'<br/>'
 .'<strong>  et </strong> '.number_format ($nbreJeunes).' jeunes hommes'.'<br/>'.'<br/>'
 .'<strong> Effectif dirigeants : </strong>'.' '.number_format ($nbreDirigeants).'<br/><br/>';
 ?>
@@ -213,11 +213,11 @@ structureLigue($idLigue, $bdd);
     <td colspan="2"> <hr /></td>
   </tr>
   <tr> 
-    <td class="texte18">F&eacute;minines Elite:</td>
+    <td class="texte18">Féminines Elite:</td>
     <td class="texte18"><?php  if($d281 >0) echo ($d281+$d285); ?></td>
   </tr>
     <tr> 
-    <td class="texte18">F&eacute;minines F&eacute;d&eacute;rale:</td>
+    <td class="texte18">Féminines Fédérale:</td>
     <td class="texte18"><?php  if($d291 >0) echo ($d291+$d301); ?></td>
   </tr>
 </table>
@@ -283,7 +283,7 @@ echo "<a href=../palmares/palmNational/pagePalmLigue.php?idLigue=$idLigue > Tous
   </select>
 </form>
 -->
-<h1 ><font color="#000000">Palmar&egrave;s R&eacute;gional 
+<h1 ><font color="#000000">Palmar&egrave;s Régional 
   <?php
   //  $saisonChoisie=$_GET['saisonChoisie'];  
   //echo "$saison1";  
@@ -359,7 +359,7 @@ echo "<br/>";
  
  <p class="lien">     
  <?php
-echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLigue\" target=\"_top\"> Tous les champions r&eacute;gionaux de la ligue</a> ";
+echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLigue\" target=\"_top\"> Tous les champions régionaux de la ligue</a> ";
 ?>
       </p> 
 <p align="center">

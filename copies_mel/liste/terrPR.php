@@ -25,12 +25,12 @@
       <div align="center"><font size="4">Promotion</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4"><font size="4">Stade Phoc&eacute;en</font></font></div>
+      <div align="center"><font size="4"><font size="4">Stade Phocéen</font></font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">1re S&eacute;rie</font></div>
+      <div align="center"><font size="4">1re Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Digne les Bains</font></font></div>
@@ -38,15 +38,15 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font size="4">2me S&eacute;rie</font></div>
+      <div align="center"><font size="4">2me Série</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4"><font size="4">Vall&eacute;e de l'Huveaune</font></font></div>
+      <div align="center"><font size="4"><font size="4">Vallée de l'Huveaune</font></font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">3me S&eacute;rie</font></div>
+      <div align="center"><font size="4">3me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Pont Saint Esprit</font></font></div>
@@ -54,7 +54,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font size="4">4me S&eacute;rie</font></div>
+      <div align="center"><font size="4">4me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Pertuis</font></font></div>
@@ -62,7 +62,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">R&eacute;serve</font></div>
+      <div align="center"><font size="4">Réserve</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Salon de Provence</font></font></div>
@@ -70,10 +70,10 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font size="4">R&eacute;serve PH</font></div>
+      <div align="center"><font size="4">Réserve PH</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4"><font size="4">Stade Phoc&eacute;en</font></font></div>
+      <div align="center"><font size="4"><font size="4">Stade Phocéen</font></font></div>
     </td>
   </tr>
 </table>

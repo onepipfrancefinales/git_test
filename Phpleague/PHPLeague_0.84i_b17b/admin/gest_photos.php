@@ -1,6 +1,6 @@
 <h2><?php echo utf8_encode(MENU_GEST_PHOTOS); ?></h2>
 
-<?php echo InfoReqSql('Info', 0, 'error', 'alert', 'En cours de d&eacute;veloppement. Aucune requ&ecirc;tes MySQL.'); ?>
+<?php echo InfoReqSql('Info', 0, 'error', 'alert', 'En cours de développement. Aucune requ&ecirc;tes MySQL.'); ?>
 
 <script type="text/javascript">
 $(document).ready(function() {

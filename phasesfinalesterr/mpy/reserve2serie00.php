@@ -154,7 +154,7 @@ MM_reloadPage(true);
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 297px; top: 248px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><b><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2">Club 
-    class&eacute; N&deg;1</font> </b> 
+    classé N&deg;1</font> </b> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         </b></font></div>
@@ -172,7 +172,7 @@ MM_reloadPage(true);
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 297px; top: 317px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><b><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2">Club 
-    class&eacute; N&deg;3</font> </b> 
+    classé N&deg;3</font> </b> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         </b></font></div>
@@ -190,7 +190,7 @@ MM_reloadPage(true);
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 304px; top: 436px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><b><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2">Club 
-    class&eacute; N&deg;4</font> </b> 
+    classé N&deg;4</font> </b> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         </b></font></div>
@@ -208,7 +208,7 @@ MM_reloadPage(true);
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 303px; top: 507px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><b><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"> 
     </font> </b> <font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2">Club 
-    class&eacute; N&deg;2</font></b></font> 
+    classé N&deg;2</font></b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         </b></font></div>
@@ -284,10 +284,10 @@ MM_reloadPage(true);
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 320px; top: 195px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF"><b>Quarts de finale</b></font></div>
 </div>
-<div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 152px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>R&eacute;serve 
-  2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie 
-  R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 
-  2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie</b></i></div>
+<div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 152px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Réserve 
+  2me Série Réserve 2me Série Réserve 2me Série 
+  Réserve 2me Série Réserve 2me Série Réserve 
+  2me Série Réserve 2me Série Réserve 2me Série</b></i></div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 46px; top: 195px; background-image:    url(../../phases_finales/titre2.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#000000"><b>Barrages</b></font></div>
 </div>

@@ -97,7 +97,7 @@ $anneeMoins1 = $annee - 1;
  
  
  
- --- S&eacute;niors I ---
+ --- Séniors I ---
   <?php
   
   require '../../connect/connexion6.php';
@@ -132,7 +132,7 @@ $anneeMoins1 = $annee - 1;
 ?>
 
 <br/>
----  S&eacute;niors 2  ---
+---  Séniors 2  ---
 
 <br/>
 <br/>

@@ -434,7 +434,7 @@ echo "";
   ?>
   </font></b></font></b></font></div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 50px; top: 428px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>1re S&eacute;rie</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>1re Série</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:245px; height:28px; z-index:10; left: 771px; top: 442px"> 
   <div align="center"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 

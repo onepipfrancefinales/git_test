@@ -25,7 +25,7 @@ $comiteNom="Normandie";?>
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <title><?php echo $champReg;?> Normandie</title>
   <meta name="description"
- content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+ content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
@@ -57,7 +57,7 @@ $comiteNom="Normandie";?>
 	 <td class="colonneCentrale center">
           <h1> Compétitions Régionales</h1> 
           <h2 class="titre">Ligue de Normandie </h2>
-          <h2 class="commentaire">Le comit&eacute; territorial de Normandie est devenu<br>
+          <h2 class="commentaire">Le comité territorial de Normandie est devenu<br>
             la ligue de Normandie en 2018.</h2>
 		  <br>
 <?php 

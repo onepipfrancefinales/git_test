@@ -1113,10 +1113,10 @@ echo "";
   <div align="center"><font color="#FFFFFF"><b>Quarts de finale</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 166px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>1re 
-  S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;r</b></i></div>
+  Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
+  1re Sér</b></i></div>
    
 	   
 <div id="Layer4" style="position:absolute; width:1px; height:102px; z-index:6; left: 478px; top: 439px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>

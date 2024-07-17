@@ -1,7 +1,7 @@
 <html>
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>modification de donn�es en PHP :: partie2</title>
+<title>modification de donn�es en PHP :: partie2</title>
 <script language="JavaScript">
 <!--
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
@@ -19,8 +19,8 @@ MM_reloadPage(true);
   <b> <font size="4"> </font></b> </p>
 <div id="Layer1" style="position:absolute; width:280px; height:115px; z-index:1; left: 706px; top: 284px"> 
   <div align="center">
-    <p><b><font size="3" color="#FF0000">Pour toutes modifications, &eacute;volutions 
-      ou difficult&eacute;s prendre contact &agrave; l'adresse suivante:<br>
+    <p><b><font size="3" color="#FF0000">Pour toutes modifications, évolutions 
+      ou difficultés prendre contact &agrave; l'adresse suivante:<br>
       <a href="mailto:francefinalesrugby@free.fr">francefinalesrugby@free.fr</a></font></b></p>
     </div>
 </div>
@@ -102,7 +102,7 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
     </tr>
     <tr align="center"> 
       <td width="1">&nbsp;</td>
-      <td width="91">cr&eacute;ation du club :</td>
+      <td width="91">création du club :</td>
       <td width="533"> 
         <div align="left"> 
           <input type="text" name="A1624" value="<?php echo $A1624 ;?>" size="6">
@@ -115,7 +115,7 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
     </tr>
     <tr align="center"> 
       <td width="1">&nbsp;</td>
-      <td width="91">Pr&eacute;sident </td>
+      <td width="91">Président </td>
       <td width="533"> 
         <div align="left"> 
           <input type="text" name="A1601" value="<?php echo $A1601 ;?>" size="50">
@@ -125,7 +125,7 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
     </tr>
     <tr align="center"> 
       <td width="1">&nbsp;</td>
-      <td width="91">Tr&eacute;sorier</td>
+      <td width="91">Trésorier</td>
       <td width="533"> 
         <div align="left"> 
           <input type="text" name="A1630" value="<?php echo $A1630 ;?>" size="50">
@@ -198,7 +198,7 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
     </tr>
     <tr align="center"> 
       <td width="1">&nbsp;</td>
-      <td width="91">T&eacute;l</td>
+      <td width="91">Tél</td>
       <td width="533"> 
         <div align="left"> 
           <input type="text" name="A1608" value="<?php echo $A1608 ;?>" size="15">
@@ -261,7 +261,7 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
     </tr>
     <tr align="center"> 
       <td width="1">&nbsp;</td>
-      <td width="91">capacit&eacute;</td>
+      <td width="91">capacité</td>
       <td width="533"> 
         <div align="left"> 
           <input type="text" name="A1614" value="<?php echo $A1614 ;?>" size="6">

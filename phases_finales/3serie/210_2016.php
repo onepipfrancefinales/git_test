@@ -35,18 +35,18 @@ require ("../fonctions_phases_finales.php");
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="20" bgcolor="#FFCC66" colspan="16"> 
-      <div align="center"><i><b>3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-        3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me 
-        S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-        3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me 
-        S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
+      <div align="center"><i><b>3me Série 3me Série 3me Série 
+        3me Série 3me Série 3me Série 3me Série 3me 
+        Série 3me Série 3me Série 3me Série 3me Série 
+        3me Série 3me Série 3me Série 3me Série 3me 
+        Série 3me Série 3me Série 3me Série 3me Série 
         </b></i></div>
     </td>
   </tr>
   <tr> 
     <td width="198" height="13"> 
       <div id="cal"><a href="../pagebarrages.php?variable_1=<?php echo $annee;?>">Barrages 
-        s&eacute;ries Territoriales</a></div>
+        séries Territoriales</a></div>
     </td>
     <td width="36" height="13">&nbsp;</td>
     <td width="32" height="13">&nbsp;</td>
@@ -756,7 +756,7 @@ require ("../fonctions_phases_finales.php");
     <td width="23">&nbsp;</td>
     <td colspan="4" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France<br>
-        3me S&eacute;rie 
+        3me Série 
         <?php echo $annee;?>
         </b></font></div>
     </td>

@@ -36,7 +36,7 @@ $clubA3221= ' Alencon (N) ';
 $clubA3222= ' Champagne St Andre Vergers';
 
 $clubA3223= ' Chatellerault (PCH)';
-$clubA3224= ' Aurore Vitr� (BR)';
+$clubA3224= ' Aurore Vitr� (BR)';
 
 $clubA3225= ' Landivisiau (BR)';
 $clubA3226= ' Flers (N) ';
@@ -1105,11 +1105,11 @@ $clubA3264= ' Lovali XV(DA)';
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 423px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 820px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>1re 
-  S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
+  Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
   1re </b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:29px; z-index:7; left: 1494px; top: 688px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <b><font color="#FF0000" size="4" face="Arial, Helvetica, sans-serif">Saint 
@@ -1119,5 +1119,5 @@ $clubA3264= ' Lovali XV(DA)';
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    1re S&eacute;rie </b></font></div>
+    1re Série </b></font></div>
 </div>

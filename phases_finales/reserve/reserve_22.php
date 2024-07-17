@@ -430,7 +430,7 @@ $clubA1632= '  (PC)';
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 254px; top: 660px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 254px; top: 260px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 60px; top: 200px; background-image:  url(../titre.jpg); layer-background-image:  url(../titre.jpg); border: 1px none #000000; background-color: #FF0000; layer-background-color: #FF0000"> 
-  <div align="center"><font color="#FFFFFF"><b>Equipes qualifi&eacute;es</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>Equipes qualifiées</b></font></div>
 </div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 254px; top: 420px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 254px; top: 819px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
@@ -439,7 +439,7 @@ $clubA1632= '  (PC)';
     <tr bgcolor="#FFFFFF"> 
       <td height="55" colspan="7" bgcolor="#FFFFFF"> 
         <div align="center"><font size="5" color="#000000"><b>Nombre de clubs 
-          qualifi&eacute;s par comit&eacute; (2015-2016)</b></font></div>
+          qualifiés par comité (2015-2016)</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -447,7 +447,7 @@ $clubA1632= '  (PC)';
         <div align="center"><b>COMITES</b></div>
       </td>
       <td height="83" width="15%"> 
-        <div align="center"><b>Nombre de clubs qualifi&eacute;s en 16me</b></div>
+        <div align="center"><b>Nombre de clubs qualifiés en 16me</b></div>
       </td>
       <td height="83" width="10%"> 
         <div align="center"><b>Nbre de clubs dans la division</b></div>
@@ -458,7 +458,7 @@ $clubA1632= '  (PC)';
       </td>
       <td height="83" width="17%"> 
         <div align="center"> 
-          <p><b>Nombre de clubs qualifi&eacute;s en 16me</b></p>
+          <p><b>Nombre de clubs qualifiés en 16me</b></p>
         </div>
       </td>
       <td height="83" width="18%" bgcolor="#FFFFFF"> 
@@ -477,7 +477,7 @@ $clubA1632= '  (PC)';
       <td height="24" width="10%"> 
         <div align="center"><b><font color="#000000"><font size="4"></font></font></b></div>
       </td>
-      <td width="20%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+      <td width="20%" height="24" bgcolor="#FFFFFF">Franche Comté</td>
       <td width="17%" height="24"> 
         <div align="center">avec Bourgogne</div>
       </td>
@@ -554,7 +554,7 @@ $clubA1632= '  (PC)';
         <div align="center">1</div>
       </td>
       <td width="10%">&nbsp;</td>
-      <td width="20%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+      <td width="20%" bgcolor="#FFFFFF">Midi Pyrénées</td>
       <td width="17%" bgcolor="#FFFFFF"> 
         <div align="center">3</div>
       </td>
@@ -674,10 +674,10 @@ $clubA1632= '  (PC)';
   </table>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 176px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
-  <div align="center"><i><b>R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve </b></i></div>
+  <div align="center"><i><b>Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve </b></i></div>
 </div>

@@ -26,7 +26,7 @@ $NBR1 = mysql_num_rows($REQ1);
 <h2><?php echo MENU_MEMBRES; ?></h2>
 
 
-<?php echo InfoReqSql('Info', 0, 'error', 'alert', 'En cours de dÈveloppement. DÈsolÈ de la gËne occasionnÈe.'); ?>
+<?php echo InfoReqSql('Info', 0, 'error', 'alert', 'En cours de dÔøΩveloppement. DÔøΩsolÔøΩ de la gÔøΩne occasionnÔøΩe.'); ?>
 
 
 <script type="text/javascript">
@@ -56,11 +56,11 @@ $NBR1 = mysql_num_rows($REQ1);
 					<th class="TxtLeft">Pseudo</th>
 					<th class="TxtLeft">Email</th>
 					<th class="TxtLeft">Nom</th>
-					<th class="TxtLeft">Pr&eacute;nom</th>
+					<th class="TxtLeft">Pr√©nom</th>
 					<th class="TxtLeft">Adresse</th>
 					<th class="TxtLeft">Code postal</th>
 					<th class="TxtLeft">Ville</th>
-					<th class="TxtLeft">T&eacute;l.</th>
+					<th class="TxtLeft">T√©l.</th>
 				</tr>
 			</thead>
 			<tbody>

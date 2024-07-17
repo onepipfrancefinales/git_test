@@ -1,6 +1,6 @@
 <?php
- if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÈclarÈe";
- if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite = "Variable comite non dÈclarÈe";
+ if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÔøΩclarÔøΩe";
+ if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite = "Variable comite non dÔøΩclarÔøΩe";
  ?>
 <?php
 require ("fonction_Qualification.php");
@@ -14,7 +14,7 @@ classementParPoints4poules( $comite, $division);
  
 <table width="192" border="0" align="left" height="500" cellspacing="0">
   <tr> 
-    <th colspan="2" height="13">Qualifi&eacute;s pour les 8me</th>
+    <th colspan="2" height="13">Qualifi√©s pour les 8me</th>
   </tr>
   <tr> 
     <td width="38" height="13">&nbsp;</td>

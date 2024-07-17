@@ -132,7 +132,7 @@ echo "";
 <p>&nbsp; </p>
 <p>&nbsp;</p>
 <div id="Layer2" style="position:absolute; width:183px; height:20px; z-index:4; left: 7px; top: 203px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>R&eacute;serve Honneur</b></i></div>
+  <div align="center"><i><b>Réserve Honneur</b></i></div>
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 27px; top: 241px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b> 
@@ -384,7 +384,7 @@ echo "";
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <div id="Layer2" style="position:absolute; width:219px; height:20px; z-index:4; left: 6px; top: 362px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>R&eacute;serve Promotion Honneur</b></i></div>
+  <div align="center"><i><b>Réserve Promotion Honneur</b></i></div>
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 29px; top: 394px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b> 
@@ -658,7 +658,7 @@ mysql_close(); // D�connexion de MySQL
     complet des Finales territoriales d'ile de France qui auront lieu le 26 Avril 
     au</font></b></font></a><font face="Arial, Helvetica, sans-serif"><br>
     <font color="#FF0000" size="4"><b><br>
-    <font size="5">Rugby Club Vall&eacute;e de Montmorency</font></b></font><br>
+    <font size="5">Rugby Club Vallée de Montmorency</font></b></font><br>
     (Andilly &#150; Enghien &#150; Groslay &#150; Margency &#150; Montmorency 
     - Soisy)</font></div>
 </div>

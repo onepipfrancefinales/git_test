@@ -16,19 +16,19 @@
   </tr>
   <tr> 
     <td> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ap&variable_1=2018"><font color="#FFFFFF">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ap&variable_1=2018"><font color="#FFFFFF">Comité 
         des Alpes</font></a></div>
     </td>
     <td> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=au&variable_1=2018"><font color="#FFFFFF">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=au&variable_1=2018"><font color="#FFFFFF">Comité 
         Auvergne</font></a></div>
     </td>
     <td> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=da&variable_1=2018"><font color="#FFFFFF">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=da&variable_1=2018"><font color="#FFFFFF">Comité 
         Dr&ocirc;me Ard&egrave;che</font></a></div>
     </td>
     <td> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ly&variable_1=2018"><font color="#FFFFFF">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ly&variable_1=2018"><font color="#FFFFFF">Comité 
         du lyonnais</font></a></div>
     </td>
   </tr>

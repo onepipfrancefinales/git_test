@@ -13,7 +13,7 @@ nomLigue($idLigue, $sigleLigue, $bdd);
 ?>
 <link type="text/css" rel="stylesheet" href="../../ligne1.css"/>
 <link type="text/css" rel="stylesheet" href="palmaresTerr.css"/>
-<title> Champions R&eacute;gionaux 
+<title> Champions Régionaux 
 <?php echo $nomLigue; ?>
 </title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -42,7 +42,7 @@ MM_reloadPage(true);
   <tr bgcolor="#FFFFFF"><td colspan="7" height="12" valign="top">&nbsp;</td>
   </tr>
   <tr> 
-    <td colspan="7" height="11" valign="top"><font size="4">Champions territoriaux (par comit&eacute; ) avant 2019 :</font>	
+    <td colspan="7" height="11" valign="top"><font size="4">Champions territoriaux (par comité ) avant 2019 :</font>	
 	<?php 
 	if ($sigleLigue == "ARA")
 		require 'comitesARA.php';
@@ -66,7 +66,7 @@ MM_reloadPage(true);
         </b></font></div>
     </td>
     <td colspan="3" height="128" valign="middle">
-<p align="center"><font size="7" color="#FFFFFF">Champions R&eacute;gionaux<br>
+<p align="center"><font size="7" color="#FFFFFF">Champions Régionaux<br>
         de la <strong>ligue<br><?php echo $nomLigue;?></strong></font></p></td>
     <td colspan="2" height="96" valign="top" width="78"> 
       <div align="right"><font size="5"><b> <strong> </strong> 
@@ -93,11 +93,11 @@ $comite ="(".$sigleLigue.")";
  <table width="75%" border="0" align="center">
   <tr> 
     <th width="34" ></th>
-    <th width="200">R&eacute;gionale 1</th>
-    <th width="200">R&eacute;gionale 2</th>
-    <th width="200">R&eacute;gionale 3</th>
+    <th width="200">Régionale 1</th>
+    <th width="200">Régionale 2</th>
+    <th width="200">Régionale 3</th>
     <th width="200"></th>
-    <th width="200">R&eacute;serve</th>
+    <th width="200">Réserve</th>
     <th width="200"></th>
   </tr>	
   <tr>    
@@ -132,10 +132,10 @@ $comite ="(".$sigleLigue.")";
     <th height="20" width="34" ></th>
     <th height="20" width="200">honneur</th>
     <th height="20" width="200">promotion<br>honneur</th>
-    <th height="20" width="200">1re s&eacute;rie</th>
-    <th height="20" width="200">2me s&eacute;rie</th>
-    <th height="20" width="200">3me s&eacute;rie</th>
-    <th height="20" width="200">4me s&eacute;rie</th>
+    <th height="20" width="200">1re série</th>
+    <th height="20" width="200">2me série</th>
+    <th height="20" width="200">3me série</th>
+    <th height="20" width="200">4me série</th>
   </tr>	
   <tr>    
     <td width="34"><div class="equipes"><?php $rang =170; saisonLigues($rang, $comite,$bdd);?></div></td>	
@@ -158,15 +158,15 @@ $comite ="(".$sigleLigue.")";
     <td colspan="8" height="42" valign="top"><hr/></td>
   </tr>
 </table>
-<p align="center"><b><font size="6" color="#FFFFFF">Equipes r&eacute;serves</font></b></p>
+<p align="center"><b><font size="6" color="#FFFFFF">Equipes réserves</font></b></p>
 <p align="center">&nbsp;</p>
 <table width="75%" border="0" align="center">
   <tr> 
     <th height="20" width="49">&nbsp;</th>
     <th height="20" width="208">honneur</th>
     <th height="20" width="363">promotion honneur</th>
-    <th height="20" width="319">1re s&eacute;rie</th>
-    <th height="20" width="239">2me s&eacute;rie</th>
+    <th height="20" width="319">1re série</th>
+    <th height="20" width="239">2me série</th>
   </tr>
   <tr> 
     <td width="49"><div class="equipes"><?php $rang =270;saisonLigues2($rang, $comite, $bdd);?></div></td>

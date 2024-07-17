@@ -30,7 +30,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <div align="center"><font size="7"><font size="6" color="#000000">Autre 
         recherche</font></font> <br>
         <select name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1">
-          <option selected>Alphab&eacute;tique</option>
+          <option selected>Alphabétique</option>
           <option value="page_recherche_comite2.php?variable_1=A">A</option>
           <option value="page_recherche_comite2.php?variable_1=B">B</option>
           <option value="page_recherche_comite2.php?variable_1=C">C</option>
@@ -61,14 +61,14 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       </div>
     </td>
     <td width="402" bgcolor="#CCCCCC"> 
-      <div align="center"><font size="6" color="#000000">Recherche par comit&eacute;</font><font size="7"><br>
+      <div align="center"><font size="6" color="#000000">Recherche par comité</font><font size="7"><br>
         <select id="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
-          <option selected>Par comit&eacute;</option>
+          <option selected>Par comité</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(AP)">Alpes</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(AL)">Alsace Lorraine</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(AB)">Armagnac Bigorre</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(AU)">Auvergne</option>
-          <option value="/consultation/page_recherche_comite.php?variable_1=(BE)">B&eacute;arn</option>
+          <option value="/consultation/page_recherche_comite.php?variable_1=(BE)">Béarn</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(BG)">Bourgogne</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(BR)">Bretagne</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(CE)">Centre</option>
@@ -78,15 +78,15 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/consultation/page_recherche_comite.php?variable_1=(CAZ)">C&ocirc;te d'Azur</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(DA)">Dr&ocirc;me Ard&egrave;che</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(FL)">Flandres</option>
-          <option value="/consultation/page_recherche_comite.php?variable_1=(FC)">Franche Comt&eacute;</option>
+          <option value="/consultation/page_recherche_comite.php?variable_1=(FC)">Franche Comté</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(IDF)">Ile de France</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(LD)">Languedoc</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(LM)">Limousin</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(LY)">Lyonnais</option>
-          <option value="/consultation/page_recherche_comite.php?variable_1=(MPY)">Midi Pyr&eacute;n&eacute;es</option>
+          <option value="/consultation/page_recherche_comite.php?variable_1=(MPY)">Midi Pyrénées</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(N)">Normandie</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(PL)">Pays de Loire</option>
-          <option value="/consultation/page_recherche_comite.php?variable_1=(PA)">P&eacute;rigord Agenais</option>
+          <option value="/consultation/page_recherche_comite.php?variable_1=(PA)">Périgord Agenais</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(PCH)">Poitou Charente</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(PR)">Provence</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(PC)">Pays Catalan</option>
@@ -103,7 +103,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   
   ?>
     
-    <font color="#000000">Clubs du comit&eacute; <br />
+    <font color="#000000">Clubs du comité <br />
   <?php 
   
 	 if ($sigle == '(AP)')
@@ -276,7 +276,7 @@ if ($NbreData != 0)
 {
    $j = 1;
    ?>
- <p class="titre">Equipes f&eacute;minines</p>
+ <p class="titre">Equipes féminines</p>
  <br />
  <br />
  <table >
@@ -338,7 +338,7 @@ $requete =$bdd->query( "SELECT *
 } 
 else 
 { 
-echo "pas de donn&eacute;es &agrave; afficher";
+echo "pas de données &agrave; afficher";
 }
 
 
@@ -443,7 +443,7 @@ if ($NbreData2 != 0)
 	} 	
 else 
 	{ 
-	echo "Pas de donn&eacute;es &agrave; afficher ";
+	echo "Pas de données &agrave; afficher ";
 	}
 ?>
   <br/>

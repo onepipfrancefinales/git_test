@@ -9,7 +9,7 @@ $division = 150;
 $comite="phpfed2"; 
 $CMT="fed2"; 
 $cmt="fed2";
-$comiteNom="F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";
+$comiteNom="Fédérale 2 - Fédérale B";
 ?> 
 
 <!DOCTYPE html>       
@@ -20,7 +20,7 @@ $comiteNom="F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
 <title>Championnats de France <?php echo $comiteNom;?></title>
-<meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+<meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4meée;rieée;quipes II comprises. Egalement disponible les phases finales territoriales des aée;es éeée;dentes et les palmares territoriaux des diée;erentes divisions du comée;. ">
 <meta name="classification" content="Sport,Rugby">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 <meta name="resource-type" content="document">
@@ -54,7 +54,7 @@ $comiteNom="F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";
       <td bgcolor="#ffffff"  width="650"  bordercolor="#000000" height="1797" valign="top" > 
         <div align="center"><br />
           <h1>CHAMPIONNAT DE FRANCE</h1>
-          <h2 class="titre">F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B</h2>
+          <h2 class="titre">Fédérale 2 - Fédérale B</h2>
           <br />
 		  <?php require 'liensDiversFed.php';
 				include 'sommaireFed2.php';  
@@ -120,7 +120,7 @@ $comiteNom="F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";
 			<tr>
               <td height="141"> <a href="carteFederale2.htm"  onclick="open('carteFederale2.htm', 'Popup', 'scrollbars=1,resizable=1,height=810,width=680'); return false;" ><img src="../images/federale2.gif" width="132" height="142" border="0"></a></td>
               <td height="141"><b><font face="Arial, Helvetica, sans-serif" size="4"> <a href="carteFederale2.htm"  onclick="open('carteFederale2.htm', 'Popup', 'scrollbars=1,resizable=1,height=810,width=680'); return false;" ><font color="#000000">Car</font><font color="#000000">tographie 
-                des clubs de F&eacute;d&eacute;rale 2<br>
+                des clubs de Fédérale 2<br>
                 (Saison 2019-2020)</font></a></font></b></td>
             </tr>
           </table>

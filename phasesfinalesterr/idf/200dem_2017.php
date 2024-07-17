@@ -137,7 +137,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
   <tr> 
     <td height="18" colspan="3" bgcolor="#FF9933"> 
       <div align="center"><b><font face="Arial, Helvetica, sans-serif"><i><font size="2">2me 
-        S&eacute;rie</font></i></font></b></div>
+        Série</font></i></font></b></div>
     </td>
     <td height="18" width="137"> 
       <?php $id='200';
@@ -431,7 +431,7 @@ echo "";
     <td colspan="3" bgcolor="#FF9933" height="6"> 
       <div id"entete"> 
         <div align="center"><font size="2"><b><font face="Arial, Helvetica, sans-serif"><i>3<font size="2">me 
-          S&eacute;rie</font></i></font></b></font></div>
+          Série</font></i></font></b></font></div>
       </div>
     </td>
     <td width="137" height="6">
@@ -714,7 +714,7 @@ echo "";
   <tr> 
     <td colspan="3" height="21" bgcolor="#FF9933"> 
       <div align="center"><b><font face="Arial, Helvetica, sans-serif"><i><font size="2"><b><font face="Arial, Helvetica, sans-serif"><i>4<font size="2">me 
-        S&eacute;rie</font></i></font></b></font></i></font></b></div>
+        Série</font></i></font></b></font></i></font></b></div>
     </td>
     <td width="137" height="21">
       <?php $id='220';

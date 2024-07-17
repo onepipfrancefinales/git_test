@@ -27,7 +27,7 @@ $clubA1614= ' Cublac Terrasson (LM)';
 $clubA1615= ' Manzat (AU)';
 $clubA1616= ' Labarthe sur Leze (MPY) ';
 
-$clubA1617= ' P�rigord Agenais 1';
+$clubA1617= ' P�rigord Agenais 1';
 $clubA1618= ' Laissac (MPY)';
 
 $clubA1619= ' La Brede (CA)';
@@ -439,7 +439,7 @@ $clubA1632= ' St Amour (LY)-St Jean de M (AP) ';
     <tr bgcolor="#FFFFFF"> 
       <td height="55" colspan="9" bgcolor="#FFFFFF"> 
         <div align="center"><font size="5" color="#000000"><b>Nombre de clubs 
-          qualifi&eacute;s par comit&eacute; (2014-2015)</b></font></div>
+          qualifiés par comité (2014-2015)</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -447,7 +447,7 @@ $clubA1632= ' St Amour (LY)-St Jean de M (AP) ';
         <div align="center"><b>COMITES</b></div>
       </td>
       <td height="83" width="11%"> 
-        <div align="center"><b>Nombre de clubs qualifi&eacute;s directement en 
+        <div align="center"><b>Nombre de clubs qualifiés directement en 
           16me</b></div>
       </td>
       <td height="83" width="9%"> 
@@ -462,7 +462,7 @@ $clubA1632= ' St Amour (LY)-St Jean de M (AP) ';
       </td>
       <td height="83" width="12%"> 
         <div align="center"> 
-          <p><b>Nombre de clubs qualifi&eacute;s directement en 16me</b></p>
+          <p><b>Nombre de clubs qualifiés directement en 16me</b></p>
         </div>
       </td>
       <td height="83" width="9%"> 
@@ -487,7 +487,7 @@ $clubA1632= ' St Amour (LY)-St Jean de M (AP) ';
       <td height="24" width="10%"> 
         <div align="center"><b><font size="4"></font></b></div>
       </td>
-      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comté</td>
       <td width="12%" height="24"> 
         <div align="center">avec Bourgogne</div>
       </td>
@@ -619,7 +619,7 @@ $clubA1632= ' St Amour (LY)-St Jean de M (AP) ';
       <td width="10%"> 
         <div align="center"><b><font size="4"></font></b></div>
       </td>
-      <td width="18%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+      <td width="18%" bgcolor="#FFFFFF">Midi Pyrénées</td>
       <td width="12%" bgcolor="#FFFFFF"> 
         <div align="center">3</div>
       </td>
@@ -815,8 +815,8 @@ $clubA1632= ' St Amour (LY)-St Jean de M (AP) ';
   </table>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>3me 
-  S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-  3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-  3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-  3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-  3me S&eacute;rie 3me S&eacute;rie</b></i></div>
+  Série 3me Série 3me Série 3me Série 3me Série 
+  3me Série 3me Série 3me Série 3me Série 3me Série 
+  3me Série 3me Série 3me Série 3me Série 3me Série 
+  3me Série 3me Série 3me Série 3me Série 3me Série 
+  3me Série 3me Série</b></i></div>

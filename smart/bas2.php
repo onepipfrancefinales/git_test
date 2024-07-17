@@ -23,7 +23,7 @@
     <td colspan="3"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin_fed"><a href="mailto:francefinalesrugby@free.fr">Contact M&eacute;l</a></td>
+    <td colspan="2" class="coin_fed"><a href="mailto:francefinalesrugby@free.fr">Contact Mél</a></td>
     <td class="coin_fed"><a href="../personnalisation/session2/">Admin</a></td>
   </tr>
 </table>

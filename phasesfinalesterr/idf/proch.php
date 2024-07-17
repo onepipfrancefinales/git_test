@@ -48,15 +48,15 @@ MM_reloadPage(true);
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 57px; top: 234px; background-image:    url(../../phases_finales/titre2.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b><i>R&eacute;serve</i></b></font></div>
+  <div align="center"><font color="#FFFFFF"><b><i>Réserve</i></b></font></div>
 </div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 60px; top: 311px; background-image:    url(../../phases_finales/titre2.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b><i>R&eacute;serve Promotion</i></b></font></div>
+  <div align="center"><font color="#FFFFFF"><b><i>Réserve Promotion</i></b></font></div>
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 56px; top: 401px; background-image:    url(../../phases_finales/titre2.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b><i>R&eacute;serve 1re S&eacute;rie</i></b></font></div>
+  <div align="center"><font color="#FFFFFF"><b><i>Réserve 1re Série</i></b></font></div>
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -68,11 +68,11 @@ MM_reloadPage(true);
   <tr> 
     <td colspan="3" height="26"> 
       <form name="form1" method="post" action="">
-        <b><font size="4">Visualisez les oppositions apr&eacute;s la</font><font size="5" color="#FF0000"> 
+        <b><font size="4">Visualisez les oppositions aprés la</font><font size="5" color="#FF0000"> 
         <? echo $test;?>
         </font><font size="4"> 
         <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
-          <option selected>journ&eacute;e</option>
+          <option selected>journée</option>
           <option value="http://francefinalesrugby.franceserv.com/phasesfinalesterr/au/pagehonneurA.php">Oppositions</option>
           <option value="http://francefinalesrugby.franceserv.com/phasesfinalesterr/au/pagehonneur.php?test=1">1</option>
           <option value="http://francefinalesrugby.franceserv.com/phasesfinalesterr/au/pagehonneur.php?test=2">2</option>

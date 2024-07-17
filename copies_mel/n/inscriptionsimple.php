@@ -13,7 +13,7 @@
   <tr> 
     <td colspan="3"> 
       <div align="center"><font size="4"><b>Pour s'inscrire saississsez votre 
-        m&eacute;l ci-dessous</b></font></div>
+        mél ci-dessous</b></font></div>
       <div align="center"> 
         <form action="http://francefinalesrugby.franceserv.com/copies_mel/n/inscriptionsimple2.php" method="POST">
         <p align="center"> 

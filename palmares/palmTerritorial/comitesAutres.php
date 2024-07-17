@@ -65,7 +65,7 @@
 		$sigleComite = "(PCA)";
 		}
 		?>
-      <div align="right"><a href="tableauPalmTerr.php?paramIdComite=<?php echo $idComite; ?>"><font color="FFFFFF">Comit&eacute; 
+      <div align="right"><a href="tableauPalmTerr.php?paramIdComite=<?php echo $idComite; ?>"><font color="FFFFFF">Comité 
         <?php echo $nomComite; ?></Font></a></td>
     <td width="125"> 
       <div align="center"><a href="tableauPalmTerr.php?paramIdComite=<?php echo $idComite; ?>"><img src="../../images/comites/<?php echo $sigleComite; ?>.jpg" width="50" height="50"></a></div>

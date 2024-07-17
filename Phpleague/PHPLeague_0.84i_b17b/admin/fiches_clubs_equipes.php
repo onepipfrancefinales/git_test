@@ -104,7 +104,7 @@ if ($id)
 	}
 	mysql_free_result($REQ3);
 
-	// Renseignements prédéfinis
+	// Renseignements prï¿½dï¿½finis
 	$REQ4 = mysql_query('SELECT id, url_logo, url_photo FROM phpl_clubs WHERE phpl_clubs.id='.$id);
 
 	while($ROW4 = mysql_fetch_array($REQ4))
@@ -205,7 +205,7 @@ if ($id)
 			</tr>
 			<tr>
 				<th class="Large33P">Grand</th>
-				<th class="Large33P">M&eacute;dium</th>
+				<th class="Large33P">MÃ©dium</th>
 				<th class="Large33P">Petit</th>
 			</tr>
 		</thead>

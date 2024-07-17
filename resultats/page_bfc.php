@@ -26,7 +26,7 @@ $comiteNom = "Bourgogne"; ?>
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <title><?php echo $champReg; ?> Bourgogne franche Comté</title>
-  <meta name="description" content=" Résulats des compétitions territoriales du comité; Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+  <meta name="description" content=" Résulats des compétitions territoriales du comité; Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">

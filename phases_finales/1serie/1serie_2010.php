@@ -31,12 +31,12 @@ $clubA3225= ' Ramonville (MPY)';
 $clubA3226= ' Neuvic (PA)';
 $clubA3227= ' Les Baronnies (AB)';
 $clubA3228= ' Montreal d Aude (LD)';
-$clubA3229= ' Murviel Th�zan (LD) ';
+$clubA3229= ' Murviel Th�zan (LD) ';
 $clubA3230= ' Salindres (PR) ';
 $clubA3231= ' Verdun sur Garonne (MPY)';
 $clubA3232= ' Mansac (LM)';
 $clubA3233= ' Couiza Esparaza (LD)';
-$clubA3234= ' S�verac le Chateau (MPY) ';
+$clubA3234= ' S�verac le Chateau (MPY) ';
 $clubA3235= ' Pennes Mirabeau(PR) ';
 $clubA3236= ' Saint Martin d Heres (AP)';
 $clubA3237= ' La Tour du Crieu (MPY) ';
@@ -53,7 +53,7 @@ $clubA3247= ' Clermont (IDF) ';
 $clubA3248= ' Plateau 25 (FC) ';
 $clubA3249= ' Forbach (AL)';
 $clubA3250= ' L Isle Adam (IDF) ';
-$clubA3251= ' La Verpill�re (LY) ';
+$clubA3251= ' La Verpill�re (LY) ';
 $clubA3252= ' Valloire Galaure (DA)';
 $clubA3253= ' Gevaudan (AU) ';
 $clubA3254= ' Limoges EC (LM) ';
@@ -1257,16 +1257,16 @@ else
     (CA)</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>1re 
-  S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-  1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
+  Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
+  1re Série 1re Série 1re Série 1re Série 1re Série 
   1re </b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1495px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    1re S&eacute;rie </b></font><font color="#FF0000" face="Geneva, Arial, Helvetica, san-serif"size="5"><b> 
+    1re Série </b></font><font color="#FF0000" face="Geneva, Arial, Helvetica, san-serif"size="5"><b> 
     </b></font></div>
 </div>

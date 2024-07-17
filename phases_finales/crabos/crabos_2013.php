@@ -353,10 +353,10 @@ MM_reloadPage(true);
     </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><b><i>Juniors Ren&eacute; CRABOS (- de 19 ans)</i></b> <b><i>Juniors 
-    Ren&eacute; CRABOS (- de 19 ans)</i></b> <b><i>Juniors Ren&eacute; CRABOS 
-    (- de 19 ans)</i></b> <b><i>Juniors Ren&eacute; CRABOS (- de 19 ans)</i></b> 
-    <b><i>Juniors Ren&eacute; CRABOS (- de 19 ans)</i></b> <b><i>Juniors Ren&eacute; 
+  <div align="center"><b><i>Juniors René CRABOS (- de 19 ans)</i></b> <b><i>Juniors 
+    René CRABOS (- de 19 ans)</i></b> <b><i>Juniors René CRABOS 
+    (- de 19 ans)</i></b> <b><i>Juniors René CRABOS (- de 19 ans)</i></b> 
+    <b><i>Juniors René CRABOS (- de 19 ans)</i></b> <b><i>Juniors René 
     CRABOS (- de 19 ans)</i></b> </div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 881px; top: 673px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 

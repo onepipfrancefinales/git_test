@@ -31,7 +31,7 @@ MM_reloadPage(true);
       <p> 
         
       <form action="../palmares/palmNational/pageannee.php" method="POST">
-        <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par Ann&eacute;e</legend> 
+        <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par Année</legend> 
         <p> 
        <input id="inputGA" type="text" name="saison" maxlength="4" size="8" >
           <br>
@@ -52,25 +52,25 @@ MM_reloadPage(true);
           14</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=120">Pro 
           D2</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=130">F&eacute;d&eacute;rale 
+          <option value="../palmares/palmNational/pagePalmares.php?division=130">Fédérale 
           1</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=140">F&eacute;d&eacute;rale 
+          <option value="../palmares/palmNational/pagePalmares.php?division=140">Fédérale 
           1 - Jean Prat</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=150">F&eacute;d&eacute;rale 
+          <option value="../palmares/palmNational/pagePalmares.php?division=150">Fédérale 
           2</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=160">F&eacute;d&eacute;rale 
+          <option value="../palmares/palmNational/pagePalmares.php?division=160">Fédérale 
           3</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=170">Honneur</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=180">Promotion 
           </option>
           <option value="../palmares/palmNational/pagePalmares.php?division=190">1re 
-          S&eacute;rie</option>
+          Série</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=200">2me 
-          S&eacute;rie</option>
+          Série</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=210">3me 
-          S&eacute;rie</option>
+          Série</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=220">4me 
-          S&eacute;rie</option>
+          Série</option>
           <option value="../palmares/palmNational/pageentreprise.php">Entreprise</option>
           <option value="../palmares/palmNational/pageentreprise.php">-------------------</option>
           <option> EQUIPES II </option>
@@ -78,11 +78,11 @@ MM_reloadPage(true);
           <option value="../palmares/palmNational/pageespoir.php">Espoir</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=240">Nationale 
           B</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=250">F&eacute;d&eacute;rale 
+          <option value="../palmares/palmNational/pagePalmares.php?division=250">Fédérale 
           B</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=260">Excellence 
           B</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=270">R&eacute;serve</option>
+          <option value="../palmares/palmNational/pagePalmares.php?division=270">Réserve</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=270">--------------------</option>
           <option>FEMININES</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=280">----------------------</option>
@@ -90,11 +90,11 @@ MM_reloadPage(true);
           1 TOP 10</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=285">Elite 
           2</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=290">F&eacute;d&eacute;rale 
+          <option value="../palmares/palmNational/pagePalmares.php?division=290">Fédérale 
           1</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=295">F&eacute;d&eacute;rale 
+          <option value="../palmares/palmNational/pagePalmares.php?division=295">Fédérale 
           2</option>
-          <option value="../palmares/palmNational/pagePalmares.php?division=300">F&eacute;d&eacute;rale 
+          <option value="../palmares/palmNational/pagePalmares.php?division=300">Fédérale 
           3</option>
           <option value="../palmares/palmNational/pagePalmares.php?division=300">------------------</option>
           <option>REICHELS</option>

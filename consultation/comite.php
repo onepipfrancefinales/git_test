@@ -1,5 +1,5 @@
 <br/>
-<h1><font color="#000000">Comit&eacute; <?php echo $nomComite;?></font> </h1>
+<h1><font color="#000000">Comité <?php echo $nomComite;?></font> </h1>
 <?php 
 {print("<img src=\"/images/comites/$sigle.jpg\" border=\"0\" target=_top>");}
 ?>
@@ -11,9 +11,9 @@
 							 
 							  
 	<hr />
-	<h1><font color="#000000"> Pr&eacute;sentation :</font></h1>
+	<h1><font color="#000000"> Présentation :</font></h1>
 	<p class="texte">
-	Le comit&eacute; <?php echo $nomComite; ?> se composait  des <?php //echo $donnees['nbre_dep'];?> d&eacute;partements  suivants :
+	Le comité <?php echo $nomComite; ?> se composait  des <?php //echo $donnees['nbre_dep'];?> départements  suivants :
 	<?php
 	echo "<br />";
 							
@@ -43,8 +43,8 @@
 	<?php
 	echo 
 	"<strong> Nbre de clubs : </strong>".' '.$nb_equipe_tt[0].'<br/><br/>'
-	.'<strong> Effectif s&eacute;nior : </strong>'.' '.$nbreSeniors.'<br/>'
-	.'<strong> Effectif F&eacute;minin : </strong>'.' '.$nbreFeminines.'<br/>'
+	.'<strong> Effectif sénior : </strong>'.' '.$nbreSeniors.'<br/>'
+	.'<strong> Effectif Féminin : </strong>'.' '.$nbreFeminines.'<br/>'
 	.'<strong> Effectif Jeune : </strong>'.' '.$nbreJeunes.'<br/>'
 	.'<strong> Effectif dirigeant : </strong>'.' '.$nbreDirigeants.'<br/><br/>';
 	?>
@@ -52,7 +52,7 @@
 	
 	
 <p class="lien"> 
-  <?php echo "<a href=../palmares/palmNational/pagePalmComite.php?variable_1=$sigle > Tous les champions de France du comit&eacute; </a> ";?>
+  <?php echo "<a href=../palmares/palmNational/pagePalmComite.php?variable_1=$sigle > Tous les champions de France du comité </a> ";?>
 </p>
 <br />
 <hr />

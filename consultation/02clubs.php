@@ -20,7 +20,7 @@
   <h1>
     <select name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1">
       <option selected>
-        <font color="#FF0000">Alphab&eacute;tique</font>
+        <font color="#FF0000">Alphabétique</font>
       </option>
       <option value="../consultation/page_recherche_comite2.php?variable_1=A">
         <font color="#FF0000">A</font>
@@ -110,7 +110,7 @@
       <font size="1"><b>
           <font size="6">ou</font>
           <font size="6"> une recherche par
-            ligues ou comit&eacute;</font>
+            ligues ou comité</font>
         </b></font>s<br>
   </h1>
   <br>

@@ -42,15 +42,15 @@
    
    <td   width="33%" height="28"> 
 	  <ul class="menu-demo2">
-          <li><a href="#"><b>F&eacute;d&eacute;rales </b></a> 
+          <li><a href="#"><b>Fédérales </b></a> 
 			  <ul>
-				<li><a href="fed1/171.php?champion=141">F&eacute;d 1</a></li>
-				<li><a href="fed2/171.php?champion=151">F&eacute;d 2</a></li>
-				<li><a href="fed3NE/171.php?champion=161">F&eacute;d 3</a></li>
+				<li><a href="fed1/171.php?champion=141">Féd 1</a></li>
+				<li><a href="fed2/171.php?champion=151">Féd 2</a></li>
+				<li><a href="fed3NE/171.php?champion=161">Féd 3</a></li>
 				<li><a href="fed1/171.php?champion=241">Nat B</a></li>
-				<li><a href="fed2/171.php?champion=251">F&eacute;d B</a></li>
+				<li><a href="fed2/171.php?champion=251">Féd B</a></li>
 				<li><a href="fed3NE/171.php?champion=261">Excel B</a></li>
-				<li><a href="fem/171.php?champion=280">F&eacute;minines<br /> F&eacute;d&eacute;rale</a></li> 
+				<li><a href="fem/171.php?champion=280">Féminines<br /> Fédérale</a></li> 
 				 
 			  </ul>
           </li>
@@ -65,11 +65,11 @@
             <li><a href="pro/120.php">Pro D2</a></li>
             <li><font color="#000000">  - </font></li>
             <li><a href="sommaire.php">Autres<br />
-              comit&eacute;s</a></li>
+              comités</a></li>
             <li><font color="#000000">  -</font> </li>
             <li><a href="fem/171.php?champion=280">Top 8</a></li>
             <li><a href="fem/171.php?champion=285">Elite 2</a></li>
-            <li><a href="fem/171.php?champion=291">F&eacute;d 1</a> </li>
+            <li><a href="fem/171.php?champion=291">Féd 1</a> </li>
           </ul>
         </li>
       </ul>

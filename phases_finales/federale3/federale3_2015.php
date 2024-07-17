@@ -700,13 +700,13 @@ MM_reloadPage(true);
     
   </div>
 </div>
-<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 </b></i></div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 961px; top: 303px; background-image:  url(../unique3.jpg); layer-background-image:  url(../unique3.jpg); border: 1px none #000000"> 
   <div align="center"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="2">Rennes 
     (BR</font><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">)</font></b> 
@@ -791,9 +791,9 @@ MM_reloadPage(true);
       <font size="2"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Annecy 
       (AP)</font></b></font>
       <div id="Layer4" style="position:absolute; width:315px; height:63px; z-index:1; top: 243px; left: -187px"> 
-        <div align="left">Rencontre a rejouer suite &agrave; la r&eacute;clamation 
-          des Hauts-Savoyards, qui leur reprochaient d'avoir simul&eacute; une 
-          m&ecirc;l&eacute;e alors que leurs premi&egrave;res lignes valides se 
+        <div align="left">Rencontre a rejouer suite &agrave; la réclamation 
+          des Hauts-Savoyards, qui leur reprochaient d'avoir simulé une 
+          m&ecirc;lée alors que leurs premi&egrave;res lignes valides se 
           trouvaient sur le banc<br>
         </div>
       </div>
@@ -805,7 +805,7 @@ MM_reloadPage(true);
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1450px; top: 547px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France<br>
-    F&eacute;d&eacute;rale 3 </b></font></div>
+    Fédérale 3 </b></font></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1450px; top: 617px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"><b><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="6">Chartres 

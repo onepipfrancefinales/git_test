@@ -60,10 +60,10 @@ $A2004="22";
 </p>
 <table width="1200" border="0" align="left"  cellspacing="0">
   <tr> 
-    <td colspan="13" bgcolor="#FFCC66" height="22"><i><b><i>Juniors Ren&eacute; 
-      CRABOS (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> 
-      <b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; 
-      CRABOS (- de 18ans)</i></b> <b><i>Juniors Ren&eacute; CRABOS </i></b></i></td>
+    <td colspan="13" bgcolor="#FFCC66" height="22"><i><b><i>Juniors René 
+      CRABOS (- de 18 ans)</i></b> <b><i>Juniors René CRABOS (- de 18 ans)</i></b> 
+      <b><i>Juniors René CRABOS (- de 18 ans)</i></b> <b><i>Juniors René 
+      CRABOS (- de 18ans)</i></b> <b><i>Juniors René CRABOS </i></b></i></td>
   </tr>
 </table>
 

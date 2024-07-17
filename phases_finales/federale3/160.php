@@ -10,15 +10,15 @@ $id2=130;
 ?><head>
 <link rel="stylesheet" type="text/css" href="../2.css">
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comités territoriaux, Tous les championnats de rugby, fédérale 2, fédérale 3, fédérale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitï¿½s territoriaux, Tous les championnats de rugby, fï¿½dï¿½rale 2, fï¿½dï¿½rale 3, fï¿½dï¿½rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re Série</title>
+<title>1re Sï¿½rie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script language="JavaScript">
 <!--
@@ -1391,7 +1391,7 @@ require ("../fonctions_phases_finalesAR.php");
     <td width="31">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        F&eacute;d&eacute;rale 3 
+        FÃ©dÃ©rale 3 
         <?php echo $annee;?>
         </b></font></div>
     </td>

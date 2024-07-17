@@ -52,19 +52,19 @@ $result =$idconnect->query("	SELECT pseudo, mail, nom_site, url_site
 if (list($pseudo, $mail) = mysqli_fetch_array($query))
 {                                                                                            
 $to="france";
-$sujet="Votre mot de passe pour la mise à jour des résulats des compétitions $nom_site_admin";
+$sujet="Votre mot de passe pour la mise ï¿½ jour des rï¿½sulats des compï¿½titions $nom_site_admin";
 $message="<html>
 <head>
 <title>phpabeague</title>
 </head>
 <body>
 <p><font face=\"Verdana\" size=\"2\">Bonjour,</font></p>
-<p><font face=\"Verdana\" size=\"2\">Vous avez demand&eacute; &agrave; recevoir un nouveau mot
-de passe pour acc&eacute;der &agrave; la mise &agrave; jour des r&eacute;sultats de votre poule <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
+<p><font face=\"Verdana\" size=\"2\">Vous avez demandÃ© &agrave; recevoir un nouveau mot
+de passe pour accÃ©der &agrave; la mise &agrave; jour des rÃ©sultats de votre poule <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
 <p><font face=\"Verdana\" size=\"2\">Votre pseudo : $pseudo</font></p>
 <p><font face=\"Verdana\" size=\"2\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
 <p><font face=\"Verdana\" size=\"2\">--------------------------------------------------------------------</font></p>
-<p><font face=\"Verdana\" size=\"2\">FranceFinalesRugby <a href=\"http://francefinalesrugby.franceserv.com/smart/sommaire.php\">phpabeague</a> : Gestionnaire de comp&eacute;titions Fran&ccedil;aises de Rugby </font></p>
+<p><font face=\"Verdana\" size=\"2\">FranceFinalesRugby <a href=\"http://francefinalesrugby.franceserv.com/smart/sommaire.php\">phpabeague</a> : Gestionnaire de compÃ©titions Fran&ccedil;aises de Rugby </font></p>
 </body>
 </html>";
  // $from="Content-Type: text/html; charset=\"UTF-8\"\nFrom: $mail_admin\n";

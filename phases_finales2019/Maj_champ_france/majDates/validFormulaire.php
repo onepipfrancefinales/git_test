@@ -39,13 +39,13 @@ if ($page == "dates")
 	 if($requete)
 		{
 		echo "<br />";
-		echo("La modification(".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification(".$division.") a été correctement effectuée");
 		echo "<br />";
 		}
 	 else
 		{
 		echo "<br />";
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a échoué") ;
 		echo "<br />";
 		}
 	}

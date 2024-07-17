@@ -23,21 +23,21 @@ require ("../connection.php") ;
 echo "<h1><p> <strong> Champions de France <br>
 Espoir <BR/></strong></p></h1>";
 ?>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Cette comp&eacute;tititon, 
-  arriv&eacute;e avec le professionnalisme est obligatoire pour les 30 clubs professionnels 
-  et a remplac&eacute; le championnat des &eacute;quipes r&eacute;serves de l'&eacute;lite. 
+<p><font face="Arial, Helvetica, sans-serif" size="3">Cette compétititon, 
+  arrivée avec le professionnalisme est obligatoire pour les 30 clubs professionnels 
+  et a remplacé le championnat des équipes réserves de l'élite. 
   Ce championnat s'adresse au joueurs de moins de 23 ans. Chaque club a toutefois 
-  la possibilit&eacute; d'int&egrave;grer &agrave; l'&eacute;quipe des joueurs 
+  la possibilité d'int&egrave;grer &agrave; l'équipe des joueurs 
   de premi&egrave;re ligne de moins de 25 ans, ainsi que quatre autres joueurs 
   de plus de 25 ans. </font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">A partir de la saison 2014-2015, 
-  cette comp&eacute;tition fusionne avec la competition Reichel A, sous le nom 
-  de <b>REICHEL/ESPOIRS</b> r&eacute;serv&eacute;e aux licenci&eacute;s de moins 
+  cette compétition fusionne avec la competition Reichel A, sous le nom 
+  de <b>REICHEL/ESPOIRS</b> réservée aux licenciés de moins 
   22 ans (18, 19, 20 et 21 ans). <a href="pagereichelA_espoirs.php"><font color="#000000">Palmar&egrave;s 
-  de cette nouvelle comp&eacute;tition</font></a><font color="#000000">.</font></font></p>
+  de cette nouvelle compétition</font></a><font color="#000000">.</font></font></p>
 <p> 
   <?php
-$reponse = mysql_query("SELECT saison, champion, comite1  FROM bdequipe2 WHERE rang='235'and titre='Champion'ORDER BY saison DESC"); // Requ�te SQL
+$reponse = mysql_query("SELECT saison, champion, comite1  FROM bdequipe2 WHERE rang='235'and titre='Champion'ORDER BY saison DESC"); // Requ�te SQL
  
 // On fait une boucle pour lister tout ce que contient la table :
 while ($donnees = mysql_fetch_array($reponse) )
@@ -48,7 +48,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </font></font>  <br/><br/>
   <?php
  }
-mysql_close(); // D�connexion de MySQL
+mysql_close(); // D�connexion de MySQL
 ?>
 </p>
 <p>&nbsp; </p>
@@ -64,7 +64,7 @@ require ("../connection.php") ;
 
 echo "<h1><p> <strong> Champions de France <br>
 Reserve 1re Division <BR/></strong></p></h1>";
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE rang='230'and titre='Champion'ORDER BY saison DESC"); // Requ�te SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE rang='230'and titre='Champion'ORDER BY saison DESC"); // Requ�te SQL
  
 // On fait une boucle pour lister tout ce que contient la table :
 while ($donnees = mysql_fetch_array($reponse) )
@@ -75,5 +75,5 @@ while ($donnees = mysql_fetch_array($reponse) )
 </font></font>  <br/><br/>
 <?php
  }
-mysql_close(); // D�connexion de MySQL
+mysql_close(); // D�connexion de MySQL
 ?>

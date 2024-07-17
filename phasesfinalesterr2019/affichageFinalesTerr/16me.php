@@ -24,7 +24,7 @@ afficheDivisionChampionLigue($division,$annee);
   <tr> 
     <td colspan="4"> 
       <div align="center"><b><font face="Arial, Helvetica, sans-serif" color="#000000" size="2"> 
-        <?php //if ($division==270)echo "Oppositions g&eacute;ographiques pour les 16me et 8me de finale";?>
+        <?php //if ($division==270)echo "Oppositions géographiques pour les 16me et 8me de finale";?>
         </font></b></div>
     </td>
     <td width="43"></td>

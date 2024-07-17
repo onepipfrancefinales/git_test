@@ -37,7 +37,7 @@ while ($donnees = $reponse->fetch()) {
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
-  <title>Tous les clubs du comit&eacute; <?php echo $sigle; ?></title>
+  <title>Tous les clubs du comité <?php echo $sigle; ?></title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content=" <?php echo $titre; ?> : Présentation du club (Bureau; Siège; Stade; Contacts); les grandes du dates du club; les palmar�s; les r�sultats du clubs au cours des derni�res saisons et un album photos d�di� au club. ">
   <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">

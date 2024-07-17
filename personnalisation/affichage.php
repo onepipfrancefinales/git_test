@@ -5,14 +5,14 @@
 <table align="center" border="0" width="500"> 
 <tbody><tr>
 <td class="bienvenue" colspan="2"> 
-<font face="Arial, Helvetica, sans-serif"> <font color="#666666" size="2"><i>(Pour r&eacute;aliser
+<font face="Arial, Helvetica, sans-serif"> <font color="#666666" size="2"><i>(Pour r√©aliser
 votre selection cliquez sur Modifier)</i></font></font>
 </td>
 </tr> <tr> <td class="user" width="242">
-<a href="admin/pageChoix.php?comiteA=&poule=">Modifier ma s&eacute;lection</a>
+<a href="admin/pageChoix.php?comiteA=&poule=">Modifier ma s√©lection</a>
 </td> 
 <td class="user" width="248">
-<a href="admin/logout.php">D&eacute;connection</a>
+<a href="admin/logout.php">D√©connection</a>
 </td>
 </tr></tbody></table><br>
 <br>
@@ -62,7 +62,7 @@ for ($nbreDeChoix=1; $nbreDeChoix < 6 ; $nbreDeChoix++)
 		// $taille=470;		
 		 // elseif ($id <170)
 			
-		//taille de la fenÍtretre
+		//taille de la fenÔøΩtretre
 		  $height=$taille;
 					
 		 // echo "<br />"; echo "<br />"; 
@@ -74,7 +74,7 @@ for ($nbreDeChoix=1; $nbreDeChoix < 6 ; $nbreDeChoix++)
 		 // echo "taille :  ".$taille; echo "<br />";  
 
 
- //************** affichage du championnat RÈserve ou non ************************* 
+ //************** affichage du championnat RÔøΩserve ou non ************************* 
 			if ($type==2) 
 			{ 
 			  require ("typeDouble.php"); 

@@ -660,7 +660,7 @@ else
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    B&eacute;lascain</b></font></div>
+    Bélascain</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 176px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
   <div align="center"><i><b><i><b>Christian BELASCAIN (- de 22 ans) Christian 

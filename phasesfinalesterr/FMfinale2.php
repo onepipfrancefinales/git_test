@@ -20,9 +20,9 @@ MM_reloadPage(true);
     une trace de <br>
     votre finale</font></b></font></p>
   <p align="center"><font face="Arial, Helvetica, sans-serif">Proposez &agrave; 
-    vos dirigeants la r&eacute;alisation d'un document pour immortaliser et graver 
+    vos dirigeants la réalisation d'un document pour immortaliser et graver 
     dans le marbre tous les participants &agrave; la finale (joueurs, dirigeants 
-    et r&eacute;sultat).</font></p>
+    et résultat).</font></p>
   <p align="center"><font face="Arial, Helvetica, sans-serif">(Gratuit, simple 
     et rapide &agrave; mettre en oeuvre, tout se fait en ligne )</font></p>
   <table width="493" border="0">
@@ -31,14 +31,14 @@ MM_reloadPage(true);
       <td rowspan="2" height="313" valign="top" width="268"> 
         <p>&nbsp;</p>
         <p>Sous la forme d'une feuille de match, se document, peut &ecirc;tre 
-          imagin&eacute; au format A3 ou A4, &eacute;dit&eacute; &agrave; l'occassion 
-          de finales, de jubil&eacute;s etc... <br>
+          imaginé au format A3 ou A4, édité &agrave; l'occassion 
+          de finales, de jubilés etc... <br>
           <br>
-          pour les s&eacute;niors, les jeunes..<br>
-          remis &agrave; l'occassion d'une l'AG, d'une r&eacute;ception &agrave; 
+          pour les séniors, les jeunes..<br>
+          remis &agrave; l'occassion d'une l'AG, d'une réception &agrave; 
           la mairie, chez un sponsor....</p>
-        <p>Pour le support d'impression on peut &eacute;galement tout envisager 
-          ( papier, bristol, plastifi&eacute;, encadr&eacute;, avec une image 
+        <p>Pour le support d'impression on peut également tout envisager 
+          ( papier, bristol, plastifié, encadré, avec une image 
           en arri&egrave;re plan, couleurs, noir et blanc, etc..</p>
         <p>Pour tous contacts ou renseignements </p>
         <p align="center"><a a href="mailto:francefinalesrugby.free.fr/"><font color="#FF0000"><b>francefinalesrugby@free.fr</b></font></a><br>

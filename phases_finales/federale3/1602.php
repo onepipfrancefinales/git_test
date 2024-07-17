@@ -41,14 +41,14 @@ MM_reloadPage(true);
 <table width="1850" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="13" bgcolor="#FFCC66" colspan="19"> 
-      <div align="center"><i><b>F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-        3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-        3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-        3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-        3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-        3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-        3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-        3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 </b></i></div>
+      <div align="center"><i><b>Fédérale 3 Fédérale 
+        3 Fédérale 3 Fédérale 3 Fédérale 
+        3 Fédérale 3 Fédérale 3 Fédérale 
+        3 Fédérale 3 Fédérale 3 Fédérale 
+        3 Fédérale 3 Fédérale 3 Fédérale 
+        3 Fédérale 3 Fédérale 3 Fédérale 
+        3 Fédérale 3 Fédérale 3 Fédérale 
+        3 Fédérale 3 Fédérale 3 </b></i></div>
     </td>
   </tr>
   <tr> 
@@ -1345,7 +1345,7 @@ MM_reloadPage(true);
     <td width="31">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        F&eacute;d&eacute;rale 3 
+        Fédérale 3 
         <?php echo $annee;?>
         </b></font></div>
     </td>

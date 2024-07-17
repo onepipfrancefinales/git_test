@@ -71,7 +71,7 @@ championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballo
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
         </font><font size="5"><b><font color="#FFCC00">
-        <? echo "Championnat des Pyr&eacute;n&eacute;es $annee : Reserve Promotion Honneur";?>
+        <? echo "Championnat des Pyrénées $annee : Reserve Promotion Honneur";?>
         </font></b></font></b></font></td>
     </tr>
   </table>
@@ -81,9 +81,9 @@ championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballo
 <table width="1000" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="17" bgcolor="#FFCC66" colspan="12"> 
-      <div align="center"><i><b>R&eacute;serve Promotion R&eacute;serve Promotion 
-        R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion 
-        R&eacute;serve Promotion R&eacute;serve Promotion </b></i></div>
+      <div align="center"><i><b>Réserve Promotion Réserve Promotion 
+        Réserve Promotion Réserve Promotion Réserve Promotion 
+        Réserve Promotion Réserve Promotion </b></i></div>
     </td>
   </tr>
   <tr> 

@@ -15,7 +15,7 @@
 			<td><a href="mailto:multiastuces@free.fr">Emmanuel CAMPAIT</a> (Manuc)</td>
 		</tr>
 		<tr class="ligne1">
-			<td>Base de donn&eacute;es</td>
+			<td>Base de données</td>
 			<td><a href="http://www.mysql.com" rel="external">MySQL</a></td>
 		</tr>
 		<tr class="ligne2">

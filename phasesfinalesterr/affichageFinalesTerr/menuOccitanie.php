@@ -21,19 +21,19 @@
   <tr> 
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=ab&annee=2018&division=170">
-	  Comit&eacute; Armagnac Bigorre</a>
+	  Comité Armagnac Bigorre</a>
     </td>
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=ld&annee=2018&division=170">
-	  Comit&eacute; du Languedoc</a>
+	  Comité du Languedoc</a>
     </td>
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=mpy&annee=2018&division=170">
-	  Comit&eacute; Midi Pyr&eacute;n&eacute;es</a>
+	  Comité Midi Pyrénées</a>
     </td>
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=r&annee=2018&division=170">
-	  Comit&eacute; Pays Catalans</a>
+	  Comité Pays Catalans</a>
     </td>
   </tr>
 </table>

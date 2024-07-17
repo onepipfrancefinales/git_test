@@ -129,11 +129,11 @@ afficheLieux ($division, $annee);
   </tr>
   <tr> 
     <td width="112" height="13"><b><i><font size="2" face="Arial, Helvetica, sans-serif">Terrain 
-      du mieux class&eacute;</font></i></b></td>
+      du mieux classé</font></i></b></td>
     <td width="58" height="13"><font size="2" face="Arial, Helvetica, sans-serif"></font></td>
     <td width="16" height="13"><font face="Arial, Helvetica, sans-serif"></font></td>
     <td width="173" height="13"><b><i><font size="2" face="Arial, Helvetica, sans-serif">Terrain 
-      du mieux class&eacute;</font></i></b></td>
+      du mieux classé</font></i></b></td>
     <td width="43" height="13">&nbsp;</td>
     <td width="20" height="13">&nbsp;</td>
     <td width="182" height="13">&nbsp;</td>

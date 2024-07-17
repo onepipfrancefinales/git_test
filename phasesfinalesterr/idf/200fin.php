@@ -31,7 +31,7 @@ require ("../connect2.php") ;
   </tr>
   <tr > 
     <td class="ligneComite" colspan="3" > 
-      <? echo "Finales territoriales du comit&eacute;  $comiteNom $annee";?>
+      <? echo "Finales territoriales du comité  $comiteNom $annee";?>
     </td>
   </tr>
 </table>
@@ -49,7 +49,7 @@ require ("../connect2.php") ;
        ?>
 
 	
-<p class="division"> 2me s&eacute;rie</p>
+<p class="division"> 2me série</p>
 	
 	<p class="finale1"> 
 	  <?php  echo $clubA ; ?>
@@ -80,7 +80,7 @@ require ("../connect2.php") ;
    		finaleB ($bdcomiteClub, $id, $annee, $bdcomiteAnnee);     
  	 	score ( $id, $annee, $bdcomiteAnnee)
        ?>
-<p class="division"> 3me s&eacute;rie</p>
+<p class="division"> 3me série</p>
 	
 	<p class="finale1"> 
 	  <?php  echo $clubA ; ?>
@@ -111,7 +111,7 @@ require ("../connect2.php") ;
    		finaleB ($bdcomiteClub, $id, $annee, $bdcomiteAnnee);     
  	 	score ( $id, $annee, $bdcomiteAnnee)
        ?>
-<p class="division"> 4me s&eacute;rie</p>
+<p class="division"> 4me série</p>
 	
 	<p class="finale1"> 
 	  <?php  echo $clubA ; ?>

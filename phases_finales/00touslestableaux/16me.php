@@ -14,13 +14,13 @@ $id = 250;
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="13" bgcolor="#FFCC66" colspan="15"> 
-      <div align="center"><i><b>F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B</b></i></div>
+      <div align="center"><i><b>Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B</b></i></div>
     </td>
   </tr>
   <tr> 
@@ -627,7 +627,7 @@ $id = 250;
 <div id="titre">Champion de France 
         <?php echo $annee;?>
         <br>
-        F&eacute;d&eacute;rale B</div>
+        Fédérale B</div>
     </td>
   </tr>
   <tr> 

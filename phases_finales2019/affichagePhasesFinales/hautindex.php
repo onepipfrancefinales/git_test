@@ -28,25 +28,25 @@
           D2</a></div>
       </td>
       <td height="13" width="121"> 
-        <div class="equipeIfed"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div class="equipeIfed"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $annee;?>" target="_top">Fédérale 
           1 </a></div>
       </td>
       <td height="13" width="106"> 
-        <div class="equipeIfed"><a href="pagePhaseFinale.php?division=150&annee=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div class="equipeIfed"><a href="pagePhaseFinale.php?division=150&annee=<?php echo $annee;?>" target="_top">Fédérale 
           2 </a></div>
       </td>
       <td width="99" height="13"> 
-        <div class="equipeIfed"><a href="pagePhaseFinale.php?division=160&annee=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div class="equipeIfed"><a href="pagePhaseFinale.php?division=160&annee=<?php echo $annee;?>" target="_top">Fédérale 
           3 </a></div>
       </td>
       <td width="111" height="13"> 
         
       <div class="equipeII"><a href="pagePhaseFinale.php?annee=<?php echo $annee;?>&division=240" target="_top">Espoir 
-        F&eacute;d1</a></div>
+        Féd1</a></div>
       </td>
       <td width="105" height="13"> 
         
-      <div class="equipeII"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+      <div class="equipeII"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $annee;?>" target="_top">Fédérale 
         B</a></div>
       </td>
       <td width="115" height="13"> 
@@ -56,7 +56,7 @@
       </td>
       <td width="125" height="13"> 
         
-      <div class="equipeII"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">R</a><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>&annee=<?php echo $annee;?>&champ=285">&eacute;</a><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">serve</a></div>
+      <div class="equipeII"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">R</a><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>&annee=<?php echo $annee;?>&champ=285">é</a><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">serve</a></div>
       </td>
       <td height="13" width="122"> 
         
@@ -70,7 +70,7 @@
       </td>
       <td align="center" nowrap height="13" width="95"> 
         
-      <div class="equipeJ"><a href="pagePhaseFinale.php?division=320&annee=<?php echo $annee;?>">B&eacute;lascain</a></div>
+      <div class="equipeJ"><a href="pagePhaseFinale.php?division=320&annee=<?php echo $annee;?>">Bélascain</a></div>
       </td>
       <td align="center" nowrap height="13" width="89"> 
         <div class="equipeJ"><a href="pagePhaseFinale.php?division=325&annee=<?php echo $annee;?>">Crabos</a></div>
@@ -94,32 +94,32 @@
         <div class="equipeIterr"><a href="pagePhaseFinale.php?division=180&annee=<?php echo $annee;?>" target="_top">Promotion</a></div>
       </td>
       <td width="99" height="30"> 
-        <div class="equipeIterr"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $annee;?>" target="_top">1<font size="1">&eacute;re</font> 
-          S&eacute;rie</a></div>
+        <div class="equipeIterr"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $annee;?>" target="_top">1<font size="1">ére</font> 
+          Série</a></div>
       </td>
       <td width="111" height="30"> 
         
       <div class="equipeIterr"><a href="pagePhaseFinale.php?division=200&annee=<?php echo $annee;?>" target="_top>2<font size="1">2&egrave;me 
-        S&eacute;rie</a></div>
+        Série</a></div>
       </td>
       <td width="105" height="30"> 
         
       <div class="equipeIterr"><a href="pagePhaseFinale.php?division=210&annee=<?php echo $annee;?>" target="_top>3<font size="1">3&egrave;me 
-        S&eacute;rie</a></div>
+        Série</a></div>
       </td>
       <td width="115" height="30"> 
         
       <div class="equipeIterr"><a href="pagePhaseFinale.php?division=220&annee=<?php echo $annee;?>" target="_top>4<font size="1">4&egrave;me 
-        S&eacute;rie</a></div>
+        Série</a></div>
       </td>
       
     <td height="30" width="125"> 
-      <div class="equipeFEM"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>" target="_top>4<font size="1">F&eacute;d&eacute;rale 
+      <div class="equipeFEM"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>" target="_top>4<font size="1">Fédérale 
         1</a></div>
     </td>
       <td align="center" nowrap height="30" width="106"> 
         
-      <div class="equipeFEM"><a href="pagePhaseFinale.php?division=295&annee=<?php echo $annee;?>" target="_top>4<font size="1">F&eacute;d&eacute;rale 
+      <div class="equipeFEM"><a href="pagePhaseFinale.php?division=295&annee=<?php echo $annee;?>" target="_top>4<font size="1">Fédérale 
         2</a></div>
       </td>
       <td align="center" nowrap height="30" width="95"> 

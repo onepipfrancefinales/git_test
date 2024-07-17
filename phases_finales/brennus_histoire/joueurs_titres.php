@@ -5,7 +5,7 @@
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
-<div align="center"><font size="4"><b><font size="5">Joueurs les plus titr&eacute;s</font></b></font><br>
+<div align="center"><font size="4"><b><font size="5">Joueurs les plus titrés</font></b></font><br>
   <br>
   <br>
   <br>
@@ -34,7 +34,7 @@
     </tr>
     <tr> 
       <td width="142"> 
-        <div align="center">M. Palmi&eacute; </div>
+        <div align="center">M. Palmié </div>
       </td>
       <td width="176"> 
         <div align="center">AS Beziers</div>
@@ -155,7 +155,7 @@
     </tr>
     <tr> 
       <td width="142"> 
-        <div align="center">T. Mant&eacute;rola </div>
+        <div align="center">T. Mantérola </div>
       </td>
       <td width="176"> 
         <div align="center">FC Lourdes</div>
@@ -221,7 +221,7 @@
     </tr>
     <tr> 
       <td width="142"> 
-        <div align="center">A. S&eacute;nal </div>
+        <div align="center">A. Sénal </div>
       </td>
       <td width="176"> 
         <div align="center">AS Beziers</div>

@@ -6,15 +6,15 @@ $annee2 ="bdpf".''.$annee.''."_2";
 ?><head>
 <link rel="stylesheet" type="text/css" href="../2.css">
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitÈs territoriaux, Tous les championnats de rugby, fÈdÈrale 2, fÈdÈrale 3, fÈdÈrale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitÔøΩs territoriaux, Tous les championnats de rugby, fÔøΩdÔøΩrale 2, fÔøΩdÔøΩrale 3, fÔøΩdÔøΩrale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,FranÁaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,FranÔøΩaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re SÈrie</title>
+<title>1re SÔøΩrie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 </head>
@@ -57,14 +57,14 @@ require ("../fonctions_phases_finalesAR.php");
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="9" colspan="15" bgcolor="#FFCC66"> 
-      <div align="center"><b><i>F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
+      <div align="center"><b><i>F√©d√©rale 1 Jean PRAT - F√©d√©rale 
+        1 Jean PRAT - F√©d√©rale 1 Jean PRAT - F√©d√©rale 
+        1 Jean PRAT - F√©d√©rale 1 Jean PRAT - F√©d√©rale 
         1 Jean PRAT </i></b></div>
     </td>
     <td height="9" bgcolor="#FFCC66" width="28">&nbsp;</td>
     <td height="9" colspan="5" bgcolor="#FF9900"> 
-      <div align="center"><i><font size="4"><b>F&eacute;d&eacute;rale 1</b></font></i></div>
+      <div align="center"><i><font size="4"><b>F√©d√©rale 1</b></font></i></div>
     </td>
   </tr>
   <tr> 

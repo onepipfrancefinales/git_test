@@ -1,5 +1,5 @@
 <?php
-//récupération des valeurs des champs:
+//rï¿½cupï¿½ration des valeurs des champs:
 
 $bddComite = $_GET['bddComite']; 
 $comite = $_GET['comite'];   
@@ -132,7 +132,7 @@ elseif ($bonusOffEquipe2 == 1)
 ?>
 
 <?php
-//   *************      Bonus Défensif      ********************
+//   *************      Bonus Dï¿½fensif      ********************
 if ($score1 < $score2 and ($score2 - $score1 <= 7))
 			{
 			$bonusDefEquipe1 = 1;
@@ -176,12 +176,12 @@ if ($score1 < $score2 and ($score2 - $score1 <= 7))
 		elseif ($bonusOffEquipe1 == 1 AND $bonusDefEquipe1 == 0) 
 			echo "Bonus Offensif";
 		elseif ($bonusOffEquipe1 == 0 AND $bonusDefEquipe1 == 1)
-			echo "Bonus D&eacute;fensif";
+			echo "Bonus DÃ©fensif";
 		elseif($bonusOffEquipe1 + $bonusDefEquipe1 == 2)
 		{
 		 	echo "Bonus Offensif" ; ?>
       <br />
-      <?php echo "Bonus  D&eacute;fensif";
+      <?php echo "Bonus  DÃ©fensif";
 			}
 			?>
     </td>
@@ -202,12 +202,12 @@ if ($score1 < $score2 and ($score2 - $score1 <= 7))
 		elseif ($bonusOffEquipe2 == 1 AND $bonusDefEquipe2 == 0) 
 			echo "Bonus Offensif";
 		elseif ($bonusOffEquipe2 == 0 AND $bonusDefEquipe2 == 1)
-			echo "Bonus D&eacute;fensif";
+			echo "Bonus DÃ©fensif";
 		elseif($bonusOffEquipe2 + $bonusDefEquipe2 == 2)
 		{
 		 	echo "Bonus Offensif" ; ?>
       <br />
-      <?php echo "Bonus  D&eacute;fensif";
+      <?php echo "Bonus  DÃ©fensif";
 			}
 			?>
     </td>

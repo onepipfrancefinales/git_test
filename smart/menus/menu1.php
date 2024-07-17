@@ -41,7 +41,7 @@
 	<td>
 	<ul class="menu-demo2" >
         <li>
-		   <a href="171.php?champ=200271&comite=<?php echo $comite;?>&bddComite=<?php echo $bddComite;?>"><b> <font color="#FFFFFF">R&eacute;serves</font></b></a>  
+		   <a href="171.php?champ=200271&comite=<?php echo $comite;?>&bddComite=<?php echo $bddComite;?>"><b> <font color="#FFFFFF">Réserves</font></b></a>  
         </li>
       </ul>
 	<td>

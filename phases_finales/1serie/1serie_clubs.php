@@ -31,13 +31,13 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <body bgcolor="#EAECEB">
 <table width="1740" border="0" align="left" height="500" cellspacing="0">
   <tr> 
-    <td colspan="18" height="20" bgcolor="#FFCC66"><i><b>1re S&eacute;rie 1re 
-      S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-      1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re 
-      S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-      1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re 
-      S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-      1re S&eacute;rie 1re r Honneur Honne</b></i></td>
+    <td colspan="18" height="20" bgcolor="#FFCC66"><i><b>1re Série 1re 
+      Série 1re Série 1re Série 1re Série 1re Série 
+      1re Série 1re Série 1re Série 1re Série 1re 
+      Série 1re Série 1re Série 1re Série 1re Série 
+      1re Série 1re Série 1re Série 1re Série 1re 
+      Série 1re Série 1re Série 1re Série 1re Série 
+      1re Série 1re r Honneur Honne</b></i></td>
   </tr>
   <tr bgcolor="EAECEB"> 
     <td width="359" height="13">&nbsp;</td>
@@ -279,7 +279,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
           <tr bgcolor="#009933"> 
             <td height="55" colspan="5"> 
               <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif">Nombre 
-                de clubs qualifi&eacute;s par Ligues</font></b></font></div>
+                de clubs qualifiés par Ligues</font></b></font></div>
             </td>
           </tr>
           <tr> 
@@ -288,11 +288,11 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
             </td>
             <td height="83" width="23%"> 
               <div align="center"><b><font face="Arial, Helvetica, sans-serif">Anciens 
-                comit&eacute;s</font></b></div>
+                comités</font></b></div>
             </td>
             <td height="83" width="15%"> 
               <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nombre 
-                de clubs qualifi&eacute;s directement en 32me</b></font></div>
+                de clubs qualifiés directement en 32me</b></font></div>
             </td>
             <td height="83" width="16%"> 
               <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Nbre 
@@ -324,10 +324,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
           </tr>
           <tr> 
             <td width="25%" bgcolor="#999999" height="21"><font size="3" face="Arial, Helvetica, sans-serif">Bourgogne 
-              Franche Comt&eacute;</font></td>
+              Franche Comté</font></td>
             <td width="23%" bgcolor="#999999" height="21"> 
               <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Bourgogne 
-                Franche Comt&eacute;</font></div>
+                Franche Comté</font></div>
             </td>
             <td width="15%" bgcolor="#999999" height="21"> 
               <div align="center"><font size="4" color="#000000" face="Arial, Helvetica, sans-serif">3</font></div>
@@ -454,9 +454,9 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
             <td width="25%"><font size="3" face="Arial, Helvetica, sans-serif">Nouvelle 
               Aquitaine</font></td>
             <td width="23%"> 
-              <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">B&eacute;arn 
+              <p align="center"><font face="Arial, Helvetica, sans-serif" size="2">Béarn 
                 -C&ocirc;te Basque Landes -<br>
-                C&ocirc;te d'argent - Limousin - P&eacute;rigord Agenais -Poitou 
+                C&ocirc;te d'argent - Limousin - Périgord Agenais -Poitou 
                 Charente </font></p>
             </td>
             <td width="15%"> 
@@ -473,7 +473,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
             <td width="25%" height="30"><font size="3" face="Arial, Helvetica, sans-serif">Occitanie</font></td>
             <td width="23%" height="30"> 
               <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Armagnac 
-                Bigorre - Midi Pyr&eacute;n&eacute;es<br>
+                Bigorre - Midi Pyrénées<br>
                 Languedoc - Pays Catalans</font></div>
             </td>
             <td width="15%" height="30"> 

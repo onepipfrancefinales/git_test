@@ -166,7 +166,7 @@ $clubA3264= ' Isle sur vienne (LM)';
 }
 else
 {
-echo "d�sol�, pas de donn�es pour cette saison";
+echo "d�sol�, pas de donn�es pour cette saison";
 }
 
 ?>
@@ -3914,13 +3914,13 @@ echo "";
 	echo $clubA8015;?>
     </b></font> </div>
 </div>
-<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 </b></i></div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 961px; top: 303px; background-image:  url(../unique3.jpg); layer-background-image:  url(../unique3.jpg); border: 1px none #000000"> 
   <div align="center"> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
@@ -4519,7 +4519,7 @@ echo "";
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1452px; top: 617px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> 
     <p><font size="5"><b>Champion de France<br>
-      F&eacute;d&eacute;rale 3 
+      Fédérale 3 
       <?php echo $annee;?>
       </b></font></p>
   </div>

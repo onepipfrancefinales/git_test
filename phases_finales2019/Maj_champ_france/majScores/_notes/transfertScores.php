@@ -1,5 +1,5 @@
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -30,7 +30,7 @@ mysql_select_db("onepip-france-db1");
 
 if ($type==32 and $AR==1)
 	{
-//récupération des valeurs des champs:
+//rï¿½cupï¿½ration des valeurs des champs:
   
 		$A3201 = $_POST['A3201'];
 		$A3202 = $_POST['A3202'];
@@ -116,7 +116,7 @@ echo $A3217;
 echo $A3218;
 
 
-//************  création de la requête SQL: ***************************
+//************  crï¿½ation de la requï¿½te SQL: ***************************
 $sql = "	UPDATE bdpfScoresA
             SET A3201='$A3201',A3202='$A3202',A3203='$A3203',A3204='$A3204',A3205='$A3205',A3206='$A3206',A3207='$A3207',A3208='$A3208',
 				A3209='$A3209',A3210='$A3210',A3211='$A3211',A3212='$A3212',A3213='$A3213',A3214='$A3214',A3215='$A3215',A3216='$A3216',
@@ -128,19 +128,19 @@ $sql = "	UPDATE bdpfScoresA
 				A3257='$A3257',A3258='$A3258',A3259='$A3259',A3260='$A3260',A3261='$A3261',A3262='$A3262',A3263='$A3263',A3264='$A3264'
            WHERE division = $champ and annee=$annee" ;
 
-//**********  exécution de la requête SQL: ****************
+//**********  exï¿½cution de la requï¿½te SQL: ****************
 
 $requete = mysql_query( $sql )   ;
  
-//*********   affichage des résultats, pour savoir si la modification a march&eacute;: ******
+//*********   affichage des rï¿½sultats, pour savoir si la modification a marÃ©e;: ******
   
 	if($requete)
 	  	{
-		 echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		 echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 	  	}
 	else
 	  	{
-		echo("La modification a &eacute;chou&eacute;e") ;
+		echo("La modification a Ã©chouÃ©e") ;
 	  	}
   
 	}
@@ -155,7 +155,7 @@ $requete = mysql_query( $sql )   ;
 	
 elseif ($type==32 and $AR==2)
 {
-//Récupation des resultats des matchs ALLER
+//Rï¿½cupation des resultats des matchs ALLER
  
 		$A3201 = $_POST['A3201'];
 		$A3202 = $_POST['A3202'];
@@ -239,7 +239,7 @@ elseif ($type==32 and $AR==2)
 
 
 
-//************  création de la requête SQL: ***************************
+//************  crï¿½ation de la requï¿½te SQL: ***************************
 $sql = "	UPDATE bdpfScoresA
             SET A3201='$A3201',A3202='$A3202',A3203='$A3203',A3204='$A3204',A3205='$A3205',A3206='$A3206',A3207='$A3207',A3208='$A3208',
 				A3209='$A3209',A3210='$A3210',A3211='$A3211',A3212='$A3212',A3213='$A3213',A3214='$A3214',A3215='$A3215',A3216='$A3216',
@@ -251,27 +251,27 @@ $sql = "	UPDATE bdpfScoresA
 				A3257='$A3257',A3258='$A3258',A3259='$A3259',A3260='$A3260',A3261='$A3261',A3262='$A3262',A3263='$A3263',A3264='$A3264'
            WHERE division = '$champ' and annee=$annee" ;
 
-//**********  exécution de la requête SQL: ****************
+//**********  exï¿½cution de la requï¿½te SQL: ****************
 
 $requete= mysql_query( $sql )   ;
  
-//*********   affichage des résultats, pour savoir si la modification a march&eacute;: ******
+//*********   affichage des rï¿½sultats, pour savoir si la modification a marÃ©e;: ******
   
 	if($requete)
 	  	{
 		echo "<br />";
-		 echo("La modification des r&eacute;sultats Aller a &eacute;t&eacute; correctement effectu&eacute;e");
+		 echo("La modification des rÃ©sultats Aller a Ã©tÃ© correctement effectuÃ©e");
 	  	}
 	else
 	  	{
 		echo "<br />";
-		echo("La modification des r&eacute;sultats Aller a &eacute;chou&eacute;e") ;
+		echo("La modification des rÃ©sultats Aller a Ã©chouÃ©e") ;
 	  	}
 		
 		
 		
 //**************************************************************************************************************************		
-//*************************       Récupation des résultats des points terrain ALLER     ************************************
+//*************************       Rï¿½cupation des rï¿½sultats des points terrain ALLER     ************************************
 
 		$PTSA3201 = $_POST['PTSA3201'];
 		$PTSA3202 = $_POST['PTSA3202'];
@@ -356,7 +356,7 @@ $requete= mysql_query( $sql )   ;
 
 
 
-//************  création de la requête SQL: ***************************
+//************  crï¿½ation de la requï¿½te SQL: ***************************
 			
 			$PTSA= $champ+500;
 $sqlPTSA = "UPDATE bdpfScoresA
@@ -370,26 +370,26 @@ $sqlPTSA = "UPDATE bdpfScoresA
 				A3257='$PTSA3257',A3258='$PTSA3258',A3259='$PTSA3259',A3260='$PTSA3260',A3261='$PTSA3261',A3262='$PTSA3262',A3263='$PTSA3263',A3264='$PTSA3264'
            WHERE division = $PTSA and annee=$annee" ;
 
-//**********  exécution de la requête SQL: ****************
+//**********  exï¿½cution de la requï¿½te SQL: ****************
 
 $requetePTSA = mysql_query( $sqlPTSA )   ;
  
-//*********   affichage des résultats, pour savoir si la modification a march&eacute;e: ******
+//*********   affichage des rï¿½sultats, pour savoir si la modification a marÃ©e;e: ******
   
 	if($requetePTSA)
 	  	{
 		echo "<br />";
-		 echo("La modification des points terrain Aller a &eacute;t&eacute; correctement effectu&eacute;e");
+		 echo("La modification des points terrain Aller a Ã©tÃ© correctement effectuÃ©e");
 	  	}
 	else
 	  	{
 		echo "<br />";
-		echo("La modification des points terrain Aller a &eacute;chou&eacute;e") ;
+		echo("La modification des points terrain Aller a Ã©chouÃ©e") ;
 	  	}
   
 
 //************************************************************************************************
-//****************   Récupation des resultats des matchs Retour   ********************************
+//****************   Rï¿½cupation des resultats des matchs Retour   ********************************
  
 		$R3201 = $_POST['R3201'];
 		$R3202 = $_POST['R3202'];
@@ -473,7 +473,7 @@ $requetePTSA = mysql_query( $sqlPTSA )   ;
 
 
 
-//************  création de la requête SQL: ***************************
+//************  crï¿½ation de la requï¿½te SQL: ***************************
 $sql = "	UPDATE bdpfScoresR
             SET R3201='$R3201',R3202='$R3202',R3203='$R3203',R3204='$R3204',R3205='$R3205',R3206='$R3206',R3207='$R3207',R3208='$R3208',
 				R3209='$R3209',R3210='$R3210',R3211='$R3211',R3212='$R3212',R3213='$R3213',R3214='$R3214',R3215='$R3215',R3216='$R3216',
@@ -485,28 +485,28 @@ $sql = "	UPDATE bdpfScoresR
 				R3257='$R3257',R3258='$R3258',R3259='$R3259',R3260='$R3260',R3261='$R3261',R3262='$R3262',R3263='$R3263',R3264='$R3264'
            WHERE division = '$champ' and annee=$annee" ;
 
-//**********  exécution de la requête SQL: ****************
+//**********  exï¿½cution de la requï¿½te SQL: ****************
 
 $requete= mysql_query( $sql )   ;
  
-//*********   affichage des résultats, pour savoir si la modification a march&eacute;: ******
+//*********   affichage des rï¿½sultats, pour savoir si la modification a marÃ©e;: ******
   
 	if($requete)
 	  	{
 		echo "<br />";
-		 echo("La modification des r&eacute;sultats Retour a &eacute;t&eacute; correctement effectu&eacute;e");
+		 echo("La modification des rÃ©sultats Retour a Ã©tÃ© correctement effectuÃ©e");
 	  	}
 	else
 	  	{
 		echo "<br />";
-		echo("La modification des r&eacute;sultats Retour a &eacute;chou&eacute;e") ;
+		echo("La modification des rÃ©sultats Retour a Ã©chouÃ©e") ;
 	  	}
 
 
 
 
 //*****************************************************************************************************
-//********************    Récupation des résultats des points terrain Retour   ************************
+//********************    Rï¿½cupation des rï¿½sultats des points terrain Retour   ************************
 
 		$PTSR3201 = $_POST['PTSR3201'];
 		$PTSR3202 = $_POST['PTSR3202'];
@@ -591,7 +591,7 @@ $requete= mysql_query( $sql )   ;
 
  
 
-//************  création de la requête SQL: ***************************
+//************  crï¿½ation de la requï¿½te SQL: ***************************
 $PTSR= $champ+500;
 $sqlPTSR = "UPDATE bdpfScoresR
             SET R3201='$PTSR3201',R3202='$PTSR3202',R3203='$PTSR3203',R3204='$PTSR3204',R3205='$PTSR3205',R3206='$PTSR3206',R3207='$PTSR3207',R3208='$PTSR3208',
@@ -604,22 +604,22 @@ $sqlPTSR = "UPDATE bdpfScoresR
 				R3257='$PTSR3257',R3258='$PTSR3258',R3259='$PTSR3259',R3260='$PTSR3260',R3261='$PTSR3261',R3262='$PTSR3262',R3263='$PTSR3263',R3264='$PTSR3264'
            WHERE division = $PTSR and annee=$annee" ;
 
-//**********  exécution de la requête SQL: ****************
+//**********  exï¿½cution de la requï¿½te SQL: ****************
 
 $requetePTSR = mysql_query( $sqlPTSR )   ;
  
-//*********   affichage des résultats, pour savoir si la modification a march&eacute;: ******
+//*********   affichage des rï¿½sultats, pour savoir si la modification a marÃ©e;: ******
 
   
 	if($requetePTSR)
 	  	{
 		echo "<br />";
-		 echo("La modification des points terrain Retour a &eacute;t&eacute; correctement effectu&eacute;e");
+		 echo("La modification des points terrain Retour a Ã©tÃ© correctement effectuÃ©e");
 	  	}
 	else
 	  	{
 		echo "<br />";
-		echo("La modification des points terrain Retour a &eacute;chou&eacute;e") ;
+		echo("La modification des points terrain Retour a Ã©chouÃ©e") ;
 	  	}
   
 
@@ -643,7 +643,7 @@ $requetePTSR = mysql_query( $sqlPTSR )   ;
 
 elseif ($type==16 and $AR==1)
 {
-	//récupération des valeurs des champs:
+	//rï¿½cupï¿½ration des valeurs des champs:
   
 		$A1601 = $_POST['A1601'];
 		$A1602 = $_POST['A1602'];
@@ -688,7 +688,7 @@ elseif ($type==16 and $AR==1)
 echo $A1601.''."<br />";
 echo $A1602.''."<br />";
 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  A1601='$A1601',A1602='$A1602',A1603='$A1603',A1604='$A1604',A1605='$A1605',A1606='$A1606',A1607='$A1607',A1608='$A1608',
 				 A1609='$A1609',A1610='$A1610',A1611='$A1611',A1612='$A1612',A1613='$A1613',A1614='$A1614',A1615='$A1615',A1616='$A1616',
@@ -696,18 +696,18 @@ echo $A1602.''."<br />";
 				 A1625='$A1625',A1626='$A1626',A1627='$A1627',A1628='$A1628',A1629='$A1629',A1630='$A1630',A1631='$A1631',A1632='$A1632'
 		  WHERE division = $champ and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
 		{
-		echo("La modification a été correctement effectuée");
+		echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
 		}
   else
 		{
-		echo("La modification à échouée") ;
+		echo("La modification ï¿½ ï¿½chouï¿½e") ;
 		}
 
 
@@ -728,7 +728,7 @@ elseif ($type==16 and $AR==2)
 
 
 //********************************************************************************
-// ******************* Récupération des scores des matchs ALLER (16me)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs ALLER (16me)***********
 	 
 
 		$A1601 = $_POST['A1601'];
@@ -775,7 +775,7 @@ echo "scoreA : ".''.$A1601.''."<br />";
 echo "scoreA : ".''.$A1602.''."<br />";
 
 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  A1601='$A1601',A1602='$A1602',A1603='$A1603',A1604='$A1604',A1605='$A1605',A1606='$A1606',A1607='$A1607',A1608='$A1608',
 				 A1609='$A1609',A1610='$A1610',A1611='$A1611',A1612='$A1612',A1613='$A1613',A1614='$A1614',A1615='$A1615',A1616='$A1616',
@@ -783,22 +783,22 @@ echo "scoreA : ".''.$A1602.''."<br />";
 				 A1625='$A1625',A1626='$A1626',A1627='$A1627',A1628='$A1628',A1629='$A1629',A1630='$A1630',A1631='$A1631',A1632='$A1632'
 		  WHERE division = $champ and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
 		{
-		echo("La modification a été correctement effectuée");
+		echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
 		}
   else
 		{
-		echo("La modification à échouée") ;
+		echo("La modification ï¿½ ï¿½chouï¿½e") ;
 		}
 
 //********************************************************************************
-// ******************* Récupération des scores des matchs RETOUR (16me)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs RETOUR (16me)***********
 	 
 		$R1601 = $_POST['R1601'];
 		$R1602 = $_POST['R1602'];
@@ -844,7 +844,7 @@ echo "scoreR : ".''.$R1601.''."<br />";
 echo "scoreR : ".''.$R1602.''."<br />"; 
 
 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresR
             SET  R1601='$R1601',R1602='$R1602',R1603='$R1603',R1604='$R1604',R1605='$R1605',R1606='$R1606',R1607='$R1607',R1608='$R1608',
 				 R1609='$R1609',R1610='$R1610',R1611='$R1611',R1612='$R1612',R1613='$R1613',R1614='$R1614',R1615='$R1615',R1616='$R1616',
@@ -852,21 +852,21 @@ echo "scoreR : ".''.$R1602.''."<br />";
 				 R1625='$R1625',R1626='$R1626',R1627='$R1627',R1628='$R1628',R1629='$R1629',R1630='$R1630',R1631='$R1631',R1632='$R1632'
 		  WHERE division = $champ and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
 		{
-		echo("La modification a été correctement effectuée");
+		echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
 		}
   else
 		{
-		echo("La modification à échouée") ;
+		echo("La modification ï¿½ ï¿½chouï¿½e") ;
 		}
 //**********************************************************************************
-// *************  Récupération de spoints terrain des matchs ALLER (16me)   ********
+// *************  Rï¿½cupï¿½ration de spoints terrain des matchs ALLER (16me)   ********
 
 		$PTSA1601 = $_POST['PTSA1601'];
 		$PTSA1602 = $_POST['PTSA1602'];
@@ -913,7 +913,7 @@ echo "ptsA : ".''.$PTSA1602.''."<br />";
 
 
 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  A1601='$PTSA1601',A1602='$PTSA1602',A1603='$PTSA1603',A1604='$PTSA1604',A1605='$PTSA1605',A1606='$PTSA1606',A1607='$PTSA1607',A1608='$PTSA1608',
 				 A1609='$PTSA1609',A1610='$PTSA1610',A1611='$PTSA1611',A1612='$PTSA1612',A1613='$PTSA1613',A1614='$PTSA1614',A1615='$PTSA1615',A1616='$PTSA1616',
@@ -921,23 +921,23 @@ echo "ptsA : ".''.$PTSA1602.''."<br />";
 				 A1625='$PTSA1625',A1626='$PTSA1626',A1627='$PTSA1627',A1628='$PTSA1628',A1629='$PTSA1629',A1630='$PTSA1630',A1631='$PTSA1631',A1632='$PTSA1632'
 		  WHERE division = $champ+500 and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
 		{
-		echo("La modification a été correctement effectuée");
+		echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
 		}
   else
 		{
-		echo("La modification à échouée") ;
+		echo("La modification ï¿½ ï¿½chouï¿½e") ;
 		}
 		
 		
 //**********************************************************************************		
-// ******************* Récupération des Points terrain des matchs RETOUR (16me)*****
+// ******************* Rï¿½cupï¿½ration des Points terrain des matchs RETOUR (16me)*****
 	 
 		$PTSR1601 = $_POST['PTSR1601'];
 		$PTSR1602 = $_POST['PTSR1602'];
@@ -983,7 +983,7 @@ echo "ptsA : ".''.$PTSA1602.''."<br />";
 echo "ptsR : ".''.$PTSR1601.''."<br />";
 echo "ptsR : ".''.$PTSR1602.''."<br />";
 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresR
             SET  R1601='$PTSR1601',R1602='$PTSR1602',R1603='$PTSR1603',R1604='$PTSR1604',R1605='$PTSR1605',R1606='$PTSR1606',R1607='$PTSR1607',R1608='$PTSR1608',
 				 R1609='$PTSR1609',R1610='$PTSR1610',R1611='$PTSR1611',R1612='$PTSR1612',R1613='$PTSR1613',R1614='$PTSR1614',R1615='$PTSR1615',R1616='$PTSR1616',
@@ -991,18 +991,18 @@ echo "ptsR : ".''.$PTSR1602.''."<br />";
 				 R1625='$PTSR1625',R1626='$PTSR1626',R1627='$PTSR1627',R1628='$PTSR1628',R1629='$PTSR1629',R1630='$PTSR1630',R1631='$PTSR1631',R1632='$PTSR1632'
 		  WHERE division = $champ + 500 and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
 		{
-		echo("La modification a été correctement effectuée");
+		echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
 		}
   else
 		{
-		echo("La modification à échouée") ;
+		echo("La modification ï¿½ ï¿½chouï¿½e") ;
 		}
 
 
@@ -1020,7 +1020,7 @@ elseif ($type==8 and $AR==1)
  
 	 
 	 
-//********  récupération des résultats des rencontres  *********
+//********  rï¿½cupï¿½ration des rï¿½sultats des rencontres  *********
   
 		$A8001 = $_POST['A8001'];
 		$A8002 = $_POST['A8002'];
@@ -1043,24 +1043,24 @@ elseif ($type==8 and $AR==1)
 		$A8016 = $_POST['A8016'];
 
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  A8001='$A8001', A8002='$A8002', A8003='$A8003', A8004='$A8004', A8005='$A8005', A8006='$A8006', A8007='$A8007', A8008='$A8008',
 				 A8009='$A8009', A8010='$A8010', A8011='$A8011', A8012='$A8012', A8013='$A8013', A8014='$A8014', A8015='$A8015', A8016='$A8016'
 		  WHERE division = '$champ' and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
-		echo("La modification a été correctement effectuée");
+		echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
 		}
 	  else
 		{
-		echo("La modification à échouée") ;
+		echo("La modification ï¿½ ï¿½chouï¿½e") ;
 		}
 	
 }
@@ -1077,7 +1077,7 @@ elseif ($type==8 and $AR==2)
 {
 
 //********************************************************************************
-// ******************* Récupération des scores des matchs ALLER (8me)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs ALLER (8me)***********
 	 
 		$A8001 = $_POST['A8001'];
 		$A8002 = $_POST['A8002'];
@@ -1101,31 +1101,31 @@ elseif ($type==8 and $AR==2)
 
  		echo $A8001;
 			echo $A8002;
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  A8001='$A8001', A8002='$A8002', A8003='$A8003', A8004='$A8004', A8005='$A8005', A8006='$A8006', A8007='$A8007', A8008='$A8008',
 				 A8009='$A8009', A8010='$A8010', A8011='$A8011', A8012='$A8012', A8013='$A8013', A8014='$A8014', A8015='$A8015', A8016='$A8016'
 		  WHERE division = '$champ' and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 
 
 //********************************************************************************
-// ******************* Récupération des scores des matchs RETOUR (8me)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs RETOUR (8me)***********
 	 
 		$R8001 = $_POST['R8001'];
 		$R8002 = $_POST['R8002'];
@@ -1148,30 +1148,30 @@ elseif ($type==8 and $AR==2)
 		$R8016 = $_POST['R8016'];
 
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresR
             SET  R8001='$R8001', R8002='$R8002', R8003='$R8003', R8004='$R8004', R8005='$R8005', R8006='$R8006', R8007='$R8007', R8008='$R8008',
 				 R8009='$R8009', R8010='$R8010', R8011='$R8011', R8012='$R8012', R8013='$R8013', R8014='$R8014', R8015='$R8015', R8016='$R8016'
 		  WHERE division = '$champ' and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 
 //********************************************************************************
-// ******************* Récupération points TERRAIN des matchs ALLER (8me)***********
+// ******************* Rï¿½cupï¿½ration points TERRAIN des matchs ALLER (8me)***********
 	
 		$PTSA8001 = $_POST['PTSA8001'];
 		$PTSA8002 = $_POST['PTSA8002'];
@@ -1194,31 +1194,31 @@ elseif ($type==8 and $AR==2)
 		$PTSA8016 = $_POST['PTSA8016'];
 
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  A8001='$PTSA8001', A8002='$PTSA8002', A8003='$PTSA8003', A8004='$PTSA8004', A8005='$PTSA8005', A8006='$PTSA8006', A8007='$PTSA8007', A8008='$PTSA8008',
 				 A8009='$PTSA8009', A8010='$PTSA8010', A8011='$PTSA8011', A8012='$PTSA8012', A8013='$PTSA8013', A8014='$PTSA8014', A8015='$PTSA8015', A8016='$PTSA8016'
 		  WHERE division = $champ + 500 and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 		
 		
 //********************************************************************************
-// ******************* Récupération points TERRAIN des matchs RETOUR (8me)***********
+// ******************* Rï¿½cupï¿½ration points TERRAIN des matchs RETOUR (8me)***********
 		
 		$PTSR8001 = $_POST['PTSR8001'];
 		$PTSR8002 = $_POST['PTSR8002'];
@@ -1241,26 +1241,26 @@ elseif ($type==8 and $AR==2)
 		$PTSR8016 = $_POST['PTSR8016'];
 
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresR
           SET  R8001='$PTSR8001', R8002='$PTSR8002', R8003='$PTSR8003', R8004='$PTSR8004', R8005='$PTSR8005', R8006='$PTSR8006', R8007='$PTSR8007', R8008='$PTSR8008',
 			   R8009='$PTSR8009', R8010='$PTSR8010', R8011='$PTSR8011', R8012='$PTSR8012', R8013='$PTSR8013', R8014='$PTSR8014', R8015='$PTSR8015', R8016='$PTSR8016'
 		  WHERE division = $champ + 500 and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 			
 }
@@ -1274,7 +1274,7 @@ elseif ($type==8 and $AR==2)
 elseif ($type==4 and $AR==1)
 	{
 
-	//récupération des valeurs des champs:
+	//rï¿½cupï¿½ration des valeurs des champs:
 		  
 		$A4001 = $_POST['A4001'];
 		$A4002 = $_POST['A4002'];
@@ -1309,18 +1309,18 @@ mysql_select_db("onepip-france-db1");
 					 A1001='$A1001', A1002='$A1002'
 				WHERE division = $champ and annee = $annee " ;
 		 
-	//exécution de la requête SQL:
+	//exï¿½cution de la requï¿½te SQL:
 		$requete = mysql_query( $sql )   ;
 		 
 		 
-	//affichage des résultats, pour savoir si la modification a marchée:
+	//affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 		  if($requete)
 				{
-				echo("La modification a &eacute;t&eacute;  correctement effectu&eacute;e");
+				echo("La modification a Ã©tÃ©  correctement effectuÃ©e");
 				}
 		  	else
 				{
-				echo("La modification a échou&eacute; ") ;
+				echo("La modification a ï¿½chÃ©e; ") ;
 				}
 		mysql_close(); 
 	}
@@ -1334,7 +1334,7 @@ elseif ($type==4 and $AR==2)
 {
 
 //********************************************************************************
-// ******************* Récupération des scores des matchs ALLER (Quarts)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs ALLER (Quarts)***********
 	 
 		$A4001 = $_POST['A4001'];
 		$A4002 = $_POST['A4002'];
@@ -1347,31 +1347,31 @@ elseif ($type==4 and $AR==2)
 		$A4008 = $_POST['A4008'];
 		
 		 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  	A4001='$A4001', A4002='$A4002', A4003='$A4003', A4004='$A4004',
 					A4005='$A4005', A4006='$A4006', A4007='$A4007', A4008='$A4008'
 	        WHERE 	division = '$champ' and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 
 
 //********************************************************************************
-// ******************* Récupération des scores des matchs RETOUR (Quarts)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs RETOUR (Quarts)***********
 	 
 		$R4001 = $_POST['R4001'];
 		$R4002 = $_POST['R4002'];
@@ -1386,30 +1386,30 @@ elseif ($type==4 and $AR==2)
 		
 
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresR
             SET  R4001='$R4001', R4002='$R4002', R4003='$R4003', R4004='$R4004', 
 				 R4005='$R4005', R4006='$R4006', R4007='$R4007', R4008='$R4008'
 			WHERE division = '$champ' and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 
 //********************************************************************************
-// ******************* Récupération points TERRAIN des matchs ALLER (Quarts)***********
+// ******************* Rï¿½cupï¿½ration points TERRAIN des matchs ALLER (Quarts)***********
 	
 		$PTSA4001 = $_POST['PTSA4001'];
 		$PTSA4002 = $_POST['PTSA4002'];
@@ -1421,31 +1421,31 @@ elseif ($type==4 and $AR==2)
 		$PTSA4007 = $_POST['PTSA4007'];
 		$PTSA4008 = $_POST['PTSA4008'];
 		 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  	A4001='$PTSA4001', A4002='$PTSA4002', A4003='$PTSA4003', A4004='$PTSA4004',
 					A4005='$PTSA4005', A4006='$PTSA4006', A4007='$PTSA4007', A4008='$PTSA4008'
 			WHERE division = $champ + 500 and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 		
 		
 //********************************************************************************
-// ******************* Récupération points TERRAIN des matchs RETOUR (Quarts)***********
+// ******************* Rï¿½cupï¿½ration points TERRAIN des matchs RETOUR (Quarts)***********
 		
 		$PTSR4001 = $_POST['PTSR4001'];
 		$PTSR4002 = $_POST['PTSR4002'];
@@ -1457,26 +1457,26 @@ elseif ($type==4 and $AR==2)
 		$PTSR4007 = $_POST['PTSR4007'];
 		$PTSR4008 = $_POST['PTSR4008'];
 		 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresR
           SET  	R4001='$PTSR4001', R4002='$PTSR4002', R4003='$PTSR4003', R4004='$PTSR4004',
 				R4005='$PTSR4005', R4006='$PTSR4006', R4007='$PTSR4007', R4008='$PTSR4008'
 		  WHERE division = $champ + 500 and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 
 }	
@@ -1492,7 +1492,7 @@ elseif ($type==2 and $AR==1)
 	{
 	
 	//********************************************************************************
-// ******************* Récupération des scores des matchs (DEMI)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs (DEMI)***********
 	 
 		$A2001 = $_POST['A2001'];
 		$A2002 = $_POST['A2002'];
@@ -1503,26 +1503,26 @@ elseif ($type==2 and $AR==1)
 		$A1002 = $_POST['A1002'];
 		
 		 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "	UPDATE bdpfScoresA
             SET  	A2001='$A2001', A2002='$A2002', A2003='$A2003', A2004='$A2004',  
 					A1001='$A1001', A1002='$A1002'
 			WHERE division = $champ and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 	
 	}
@@ -1536,7 +1536,7 @@ elseif ($type==2 and $AR==1)
 elseif ($type==2 and $AR==2)
 {
 //********************************************************************************
-// ******************* Récupération des scores des matchs ALLER (demi)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs ALLER (demi)***********
 	 
 		$A2001 = $_POST['A2001'];
 		$A2002 = $_POST['A2002'];
@@ -1549,31 +1549,31 @@ elseif ($type==2 and $AR==2)
 	echo $A2001;
 	echo $A2002;	
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET 	 A2001='$A2001', A2002='$A2002', A2003='$A2003', A2004='$A2004', 
 					 A1001='$A1001', A1002='$A1002'
 			WHERE division = $champ and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 
 
 //********************************************************************************
-// ******************* Récupération des scores des matchs RETOUR (DEMI)***********
+// ******************* Rï¿½cupï¿½ration des scores des matchs RETOUR (DEMI)***********
 	 
 		$R2001 = $_POST['R2001'];
 		$R2002 = $_POST['R2002'];
@@ -1587,30 +1587,30 @@ elseif ($type==2 and $AR==2)
 		echo $R2001;
 		echo $R2002; 
 		 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresR
             SET  	R2001='$R2001', R2002='$R2002', R2003='$R2003', R2004='$R2004',  
 					R1001='$R1001', R1002='$R1002'
 			WHERE division = '$champ' and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 
 //********************************************************************************
-// ******************* Récupération points TERRAIN des matchs ALLER (DEMI)***********
+// ******************* Rï¿½cupï¿½ration points TERRAIN des matchs ALLER (DEMI)***********
 	
 		$PTSA2001 = $_POST['PTSA2001'];
 		$PTSA2002 = $_POST['PTSA2002'];
@@ -1621,31 +1621,31 @@ elseif ($type==2 and $AR==2)
 		$PTSA1002 = $_POST['PTSA1002'];
 		
 		 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresA
             SET  	A2001='$PTSA2001', A2002='$PTSA2002', A2003='$PTSA2003', A2004='$PTSA2004',
 					A1001='$PTSA1001', A1002='$PTSA1002'
 			WHERE division = $champ + 500 and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 		
 		
 //********************************************************************************
-// ******************* Récupération points TERRAIN des matchs RETOUR (DEMI)***********
+// ******************* Rï¿½cupï¿½ration points TERRAIN des matchs RETOUR (DEMI)***********
 		
 		$PTSR2001 = $_POST['PTSR2001'];
 		$PTSR2002 = $_POST['PTSR2002'];
@@ -1656,26 +1656,26 @@ elseif ($type==2 and $AR==2)
 		$PTSR1002 = $_POST['PTSR1002'];
 		
 		 
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpfScoresR
           SET  	R2001='$PTSR2001', R2002='$PTSR2002', R2003='$PTSR2003', R2004='$PTSR2004',
 		  		R1001='$PTSR1001', R1002='$PTSR1002'
 		  WHERE division = $champ + 500 and annee=$annee" ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 	  if($requete)
 		{
 		echo "<br />";
-		echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 		}
 	  else
 		{
 		echo "<br />";	
-		echo("La modification à échou&eacute;") ;
+		echo("La modification ï¿½ ï¿½Ã©ute;") ;
 		}
 			
 

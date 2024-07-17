@@ -38,9 +38,9 @@ ouverture ();
 if (isset ($nomLigue)) $nomLigue=$nomLigue; else $nomLigue="";
 
 if ($champ >= 991160 and $champ < 991270)
-	{ $nomLigue= "F&eacute;d&eacute;rale 3 - Excellence B -Poule 1 &agrave; 9";}	
+	{ $nomLigue= "Fédérale 3 - Excellence B -Poule 1 &agrave; 9";}	
  else
-	{ $nomLigue= "F&eacute;d&eacute;rale 3 - Excellence B -Poule 10 &agrave; 18";}
+	{ $nomLigue= "Fédérale 3 - Excellence B -Poule 10 &agrave; 18";}
  
 ?>
 

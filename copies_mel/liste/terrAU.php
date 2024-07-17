@@ -31,7 +31,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="137"> 
-      <div align="center"><font color="#000000" size="4">1re S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">1re Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#000000">Martres de Veyre</font></font></div>
@@ -39,7 +39,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="137"> 
-      <div align="center"><font color="#000000" size="4">2me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">2me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#000000"><font size="4">Saint 
@@ -48,7 +48,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="137"> 
-      <div align="center"><font color="#000000" size="4">3me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">3me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#000000">Malintrat</font></font></div>
@@ -56,16 +56,16 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="137"> 
-      <div align="center"><font color="#000000" size="4">4me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">4me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#000000"><font size="4">La 
-        Vall&eacute;e Verte</font></font></font></div>
+        Vallée Verte</font></font></font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="137"> 
-      <div align="center"><font color="#000000" size="4">R&eacute;serve</font></div>
+      <div align="center"><font color="#000000" size="4">Réserve</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#000000">B<font size="4">eaumont</font></font></font></div>
@@ -73,14 +73,14 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="137"> 
-      <div align="center"><font color="#000000" size="4">R&eacute;serve PH</font></div>
+      <div align="center"><font color="#000000" size="4">Réserve PH</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#000000">Montaigut Besse</font></font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
-    <td width="137"><font color="#000000" size="4">R&eacute;serve 1re s&eacute;rie</font></td>
+    <td width="137"><font color="#000000" size="4">Réserve 1re série</font></td>
     <td width="205"><font size="4">Saint Yorre</font></td>
   </tr>
 </table>

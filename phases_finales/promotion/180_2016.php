@@ -48,7 +48,7 @@ require ("../fonctions_phases_finales.php");
   <tr> 
     <td width="349" height="13"> 
       <div id="cal"><a href="../pagebarrages.php?variable_1=<?php echo $annee;?>">Barrages 
-        s&eacute;ries Territoriales</a></div>
+        séries Territoriales</a></div>
     </td>
     <td width="59" height="13">&nbsp;</td>
     <td width="31" height="13">&nbsp;</td>

@@ -1,5 +1,5 @@
 <?php
- if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÈclarÈe";
+ if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÔøΩclarÔøΩe";
 
 
 //echo $division;
@@ -23,7 +23,7 @@ classementParPoule($comite, $division);
 
 <table width="192" border="0" align="left" height="500" cellspacing="0">
   <tr> 
-    <th colspan="2" height="13">Qualifi&eacute;es en 8me</th>
+    <th colspan="2" height="13">Qualifi√©es en 8me</th>
   </tr>
   <tr> 
     <td width="38" height="13">&nbsp;</td>
@@ -34,7 +34,7 @@ classementParPoule($comite, $division);
       <div class="rangTitre" >Rang </div>
     </td>
     <td width="262" height="13"> 
-      <div class="rangTitre" >Qualifi&eacute;s en 8me</div>
+      <div class="rangTitre" >Qualifi√©s en 8me</div>
     </td>
   </tr>
   <tr> 

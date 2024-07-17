@@ -140,12 +140,12 @@ elseif ($cmt == "ab")
     <tr> 
       <td class="tab3" ><a href="page_occ_H.php#H">Honneur</a></td>
       <td class="tab3" ><a href="page_occ_PH.php#PH">Promotion</a> </td>
-      <td class="tab3" ><a href="page_occ_S1.php#S1">1re S&eacute;rie</a></td>
-	  <td class="tab3" ><a href="page_occ_S2.php#S2">2me S&eacute;rie</a></td>
+      <td class="tab3" ><a href="page_occ_S1.php#S1">1re Série</a></td>
+	  <td class="tab3" ><a href="page_occ_S2.php#S2">2me Série</a></td>
     </tr>
     <tr> 
-      <td  class="tab3" colspan="2"><a href="page_occ_S3S4.php">3me/ 4me S&eacute;rie </a></td>
-      <td  class="tab3" colspan="2"><a href="../feminine/index_fem.php">Comp&eacute;titions f&eacute;minines</a> </td>
+      <td  class="tab3" colspan="2"><a href="page_occ_S3S4.php">3me/ 4me Série </a></td>
+      <td  class="tab3" colspan="2"><a href="../feminine/index_fem.php">Compétitions féminines</a> </td>
     </tr>
   </table>
   <?php
@@ -157,13 +157,13 @@ elseif ($cmt == "au")
     <tr> 
       <td class="tab3"><a href="page_ara_H.php">Honneur</a> </td>
    	  <td class="tab3"><a href="page_ara_PH.php">Promotion</a></td>
-      <td class="tab3"><a href="page_ara_S1.php">1re S&eacute;rie</a></td>
-      <td class="tab3"><a href="page_ara_S2.php">2me S&eacute;rie</a></td>
+      <td class="tab3"><a href="page_ara_S1.php">1re Série</a></td>
+      <td class="tab3"><a href="page_ara_S2.php">2me Série</a></td>
     </tr>
     <tr> 
-      <td  class="tab3"  ><a href="page_ara_S3.php">3me S&eacute;rie</a></td>
-      <td  class="tab3"  ><a href="page_ara_S4.php">4me S&eacute;rie </a></td>
-      <td  class="tab3" colspan="2" > <a href="../feminine/index_fem.php">Comp&eacute;titions f&eacute;minines</a> </td>
+      <td  class="tab3"  ><a href="page_ara_S3.php">3me Série</a></td>
+      <td  class="tab3"  ><a href="page_ara_S4.php">4me Série </a></td>
+      <td  class="tab3" colspan="2" > <a href="../feminine/index_fem.php">Compétitions féminines</a> </td>
     </tr>
   </table>
   <?php

@@ -25,7 +25,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
   </tr>
   <tr > 
     <td class="ligneComite" colspan="3" >
-      <? echo "Finales territoriales du comit&eacute;  $comiteNom $annee";?>
+      <? echo "Finales territoriales du comité  $comiteNom $annee";?>
     </td>
   </tr>
 </table>
@@ -42,7 +42,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
 		scoreDemi ( $id, $annee, $bdcomiteAnnee)
 		
 		?>
-<p class="divisionDemi"> 2me s&eacute;rie</p>
+<p class="divisionDemi"> 2me série</p>
 	
 	<p class="demi1"> 
 	  <?php  echo $clubA ; ?>
@@ -117,7 +117,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
 		scoreDemi ( $id, $annee, $bdcomiteAnnee)
 		
 		?>
-<p class="divisionDemi"> 3me s&eacute;rie</p>
+<p class="divisionDemi"> 3me série</p>
 	
 	<p class="demi1"> 
 	  <?php  echo $clubA ; ?>
@@ -191,7 +191,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
 		scoreDemi ( $id, $annee, $bdcomiteAnnee)
 		
 		?>
-<p class="divisionDemi"> 4me s&eacute;rie</p>
+<p class="divisionDemi"> 4me série</p>
 	
 	<p class="demi1"> 
 	  <?php  echo $clubA ; ?>

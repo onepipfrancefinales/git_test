@@ -15,7 +15,7 @@ $sigle = "(".$sigleLigue.")";
 
 <br /><br /><br />
 <h1>
-	<?php echo " <strong> Equipes S&eacute;niors</strong>"; ?>  
+	<?php echo " <strong> Equipes Séniors</strong>"; ?>  
 </h1>
 <?php
  // *******         Affichage du palmares A             **********************
@@ -57,7 +57,7 @@ $reponse = $bdd->query("SELECT saison, division, champion
 										 }?>
 <br /><br />
 <h1>
-	<?php echo "<strong> Equipes F&eacute;minines </strong>";?>
+	<?php echo "<strong> Equipes Féminines </strong>";?>
 </h1>
 <?php
 //*********      palmares de la categorie F     ****************

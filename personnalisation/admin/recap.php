@@ -305,14 +305,14 @@ if (isset($nomPoule[4])) $nomPoule5 =$nomPoule[4];else $nomPoule5="";
 
 
 
-<div id="text">Liste de votre s&eacute;lection :</div><br>
+<div id="text">Liste de votre sélection :</div><br>
 <table align="center" border="1" bordercolor="#000000" cellpadding="0" cellspacing="0" width="600"> 
 	<tbody>
 		<tr bgcolor="#cccccc">
 			 <td width="29">&nbsp;	
 			 </td>		
     <td width="157"> 
-      <div align="center">Ligue / Comp&eacute;tititons </div>
+      <div align="center">Ligue / Compétititons </div>
     </td> 
 			<td valign="middle" width="311"> 
 				Division 

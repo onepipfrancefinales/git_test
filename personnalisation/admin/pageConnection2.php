@@ -55,14 +55,14 @@ $reponse = $bdd->query("	SELECT nom, id
 	//echo 	$nom.$verifId;
 	?>
 <?php
-//vérification de la validité du pseudo
+//vï¿½rification de la validitï¿½ du pseudo
 if ( $verifId == "")
 		{
 		echo "pseudo valide";
 		}
 	else
 		{
-		// Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
+		// Le visiteur n'a pas ï¿½tï¿½ reconnu comme ï¿½tant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
 						echo '<body onLoad="alert(\'Pseudo invalide\')">';
 						// puis on le redirige vers la page d'accueil
 						echo '<meta http-equiv="refresh" content="0;URL=pageConnection.php">';
@@ -70,7 +70,7 @@ if ( $verifId == "")
 	
 	
 	
-// Vérification de la validité du mot de passe
+// Vï¿½rification de la validitï¿½ du mot de passe
 			if ($creationMdp == $creationMdp2)
 					{
 					$bdd = new mysqli("localhost", "root","" , "onepip-france_db5");
@@ -107,8 +107,8 @@ if ( $verifId == "")
 					}
 			else 	
 					{
-					// Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
-					echo '<body onLoad="alert(\'Les mots de passe ne sont pas identiques, r&eacute;-essayez\')">';
+					// Le visiteur n'a pas ï¿½tï¿½ reconnu comme ï¿½tant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
+					echo '<body onLoad="alert(\'Les mots de passe ne sont pas identiques, rÃ©-essayez\')">';
 					// puis on le redirige vers la page d'accueil
 					echo '<meta http-equiv="refresh" content="0;URL=pageConnection.php">';
 					}
@@ -156,7 +156,7 @@ if ( $verifId == "")
         <div align="center"><br>
           <font color="#000000"><br>
           <font face="Arial, Helvetica, sans-serif" size="4"><b>Connectez vous 
-          et faites votre s&eacute;lection</b></font><br>
+          et faites votre sÃ©lection</b></font><br>
           </font>
           <p><font color="#000000"><br>
             <br>

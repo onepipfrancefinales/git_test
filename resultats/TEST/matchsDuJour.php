@@ -83,7 +83,7 @@ echo "totaux1 : ".$totaux;
 <p align="center"><b><font color="#000000" size="7" >Ligue Auvergne Rh&ocirc;ne Alpes</font>
 <?php matchsEnRetards('au', 10, $bdd) ;?> </font></b></p>
  
- <p align="center"><b><font color="#000000" size="7">Ligue Bourgogne Franche Comt&eacute;</font>
+ <p align="center"><b><font color="#000000" size="7">Ligue Bourgogne Franche Comté</font>
 <?php matchsEnRetards('pl', 11, $bdd) ;?> </font></b></p>
 
  <p align="center"><b><font color="#000000" size="7">Ligue Bretagne</font>
@@ -122,22 +122,22 @@ echo "totaux1 : ".$totaux;
 <?php matchsEnRetards('pro', 13, $bdd) ;//$nbre130= $nbreMatchs2;?> </font></b></p>
 
  
-<p align="center"><b><font color="#000000" size="7">F&eacute;d&eacute;rale 1</font>
+<p align="center"><b><font color="#000000" size="7">Fédérale 1</font>
 <?php matchsEnRetards('pro', 14, $bdd) ;//$nbre140= $nbreMatchs2?> </font></b></p>
 <p align="center"><b><font color="#000000" size="7"></font>
 <?php matchsEnRetards2('pro', 24, $bdd) ;//$nbre240= $nbreMatchs2?> </font></b></p>
 
-<p align="center"><b><font color="#000000" size="7">F&eacute;d&eacute;rale 2</font>
+<p align="center"><b><font color="#000000" size="7">Fédérale 2</font>
 <?php matchsEnRetards('pro', 15, $bdd) ;?> </font></b></p>
 <p align="center"><b><font color="#000000" size="7"></font>
 <?php matchsEnRetards2('pro', 25, $bdd) ;?> </font></b></p>
  
- <p align="center"><b><font color="#000000" size="7">F&eacute;d&eacute;rale 3</font>
+ <p align="center"><b><font color="#000000" size="7">Fédérale 3</font>
 <?php matchsEnRetards('fed3NE', 16, $bdd) ;?> </font></b></p>
   <p align="center"><b><font color="#000000" size="7"></font>
 <?php matchsEnRetards('fed3NE', 26, $bdd) ;?> </font></b></p>
  
- <p align="center"><b><font color="#000000" size="7">F&eacute;minines</font>
+ <p align="center"><b><font color="#000000" size="7">Féminines</font>
 <?php matchsEnRetards('pro', 85, $bdd) ;?> </font></b></p>
   
 

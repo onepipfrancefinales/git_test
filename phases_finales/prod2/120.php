@@ -299,7 +299,7 @@ MM_reloadPage(true);
       <div align="left"></div>
       <div align="left"><font face="Arial, Helvetica, sans-serif" size="2">(P) 
         </font><font face="Arial, Helvetica, sans-serif" size="2">Equipes promues 
-        - (R) Equipes rel&eacute;gu&eacute;es</font></div>
+        - (R) Equipes rel√©gu√©es</font></div>
     </td>
     <td width="101" height="19">&nbsp;</td>
     <td width="261" height="19"> 
@@ -334,7 +334,7 @@ MM_reloadPage(true);
     <td width="101" height="24">&nbsp;</td>
     <td width="261" height="24" valign="top"> <b> <font size="2" face="Arial, Helvetica, sans-serif"> 
       <?php if ($annee==2015)
-	echo "Agen : QualifiÈ 4 essais ‡ 2"; else echo ""; ?>
+	echo "Agen : QualifiÔøΩ 4 essais ÔøΩ 2"; else echo ""; ?>
       </font></b></td>
     <td width="49">&nbsp;</td>
     <td width="25">&nbsp;</td>

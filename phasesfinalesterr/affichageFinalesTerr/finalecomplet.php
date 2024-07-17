@@ -20,21 +20,21 @@ if ($page=="HPHS1")
 		{
 		$nom1="Honneur";
 		$nom2="Promotion Honneur";
-		$nom3="1re S&eacute;rie";
+		$nom3="1re Série";
 		$division=170;
 		}
 elseif ($page=="S2S3S4")
 		{
-		$nom1="2me S&eacute;rie";
-		$nom2="3me S&eacute;rie";
-		$nom3="4me S&eacute;rie";
+		$nom1="2me Série";
+		$nom2="3me Série";
+		$nom3="4me Série";
 		$division=200;
 		}
 elseif ($page=="RRPHR1")
 		{
-		$nom1="R&eacute;serve";
-		$nom2="R&eacute;serve Promotion";
-		$nom3="R&eacute;serve 1re S&eacute;rie";
+		$nom1="Réserve";
+		$nom2="Réserve Promotion";
+		$nom3="Réserve 1re Série";
 		$division=270;
 		
 		}		
@@ -58,7 +58,7 @@ elseif ($page=="RRPHR1")
   <tr >
     <td class="ligneComite" colspan="3" >
       <?php
-//	Traitement des comit�s (ab - ld - mpy - r) ==> Ligue Occitanie
+//	Traitement des comit�s (ab - ld - mpy - r) ==> Ligue Occitanie
 
 	if (($comite == 'ab' or $comite == 'ld' or $comite == 'mpy' or $comite == 'r' )and ($variable_1 < 2109 ))
 		{
@@ -81,9 +81,9 @@ elseif ($page=="RRPHR1")
   <tr > 
     <td class="ligneComite" colspan="3" > 
       <?php 	if ($annee > 2018)
-				$texte = "r&eacute;gionales de la ligue";
+				$texte = "régionales de la ligue";
 			else
-				$texte = "territoriales du comit&eacute;";
+				$texte = "territoriales du comité";
        echo "Finales $texte  $comiteNom $annee";
 	  ?>
     </td>

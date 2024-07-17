@@ -4,11 +4,11 @@ function suiviDuTraitement($division, $requete){
 
 if($requete)	
 	{
-	echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+	echo("La modification (".$division.") a été correctement effectuée");
 	echo "<br />";
 	}
 else{
-	echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+	echo("La modification (".$division.") a échoué") ;
 	echo "<br />";
 	}	
 }
@@ -451,7 +451,7 @@ elseif (substr($type,0,2)== '99' )
 	}	
 else 
 	{
-	echo "donn&eacute;es insuffisantes";
+	echo "données insuffisantes";
 	}
 
 echo "<br>";

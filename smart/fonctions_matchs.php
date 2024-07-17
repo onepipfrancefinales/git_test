@@ -74,7 +74,7 @@ function nb_equipes($id_champ, $idconnect)
 
 function aff_journee($champ, $bdd)
 {
- $legende="Journ&eacute;e N&deg;";
+ $legende="Journée N&deg;";
  $color=0;
  
  if (isset ($journee)) $journee = $journee; else $journee =($champ*100)+01;
@@ -194,7 +194,7 @@ function aff_journeeSupp($champ, $bdd)
 
  // cellule d'affichage des derniers r�sultats
  $color=0;
- $legende="Prochaine journ&eacute;e N&deg;";
+ $legende="Prochaine journée N&deg;";
   if (isset ($journee)) $journee = $journee; else $journee =($champ*1000)+01;
  $res3=$bdd->query("SELECT phpab_matchs.id_journee
 					FROM phpab_journees, phpab_matchs 
@@ -307,7 +307,7 @@ function classementDetaille($champ, $bdd)
 						 WHERE id_champ='$champ'");
 		   
   $nb_equipes=$res->fetch();
-  $legende="Classement g&eacute;n&eacute;ral";
+  $legende="Classement général";
   
   echo "<table class=\"tablephpab2\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphpab3\"><th colspan=\"14\">".$legende."</th></tr>\n";
   echo "<tr class=\"trphpab3\">

@@ -7,7 +7,7 @@
       <?php echo "Championnat de France";?>
       <?php echo $annee;?>
       : 
-      <?php echo "R&eacute;serve";?>
+      <?php echo "Réserve";?>
       </b></font></td>
   </tr>
   <tr valign="top" align="center"> 

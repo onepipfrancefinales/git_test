@@ -1,7 +1,7 @@
 <?php
 session_start();
 include("../saison.php");
-//$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 6me journ&eacute;e du 01 Novembre";
+//$message = "Arr&ecirc;t des compétitions &agrave; l'occasion de la 6me journée du 01 Novembre";
 //require '../connect/connexion2.php';
 include("../fichierConfig.php");
 require '../connect/connexion6.php';

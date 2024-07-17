@@ -339,7 +339,7 @@ elseif (substr($type,0,2)== '99' )
 	
 else 
 	{
-	echo "donn&eacute;es insuffisantes";
+	echo "données insuffisantes";
 	}
 
 echo "<br>";

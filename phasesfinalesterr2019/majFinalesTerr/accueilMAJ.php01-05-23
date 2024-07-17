@@ -43,7 +43,7 @@ echo $annee; ?></font></b></td>
   </tr>
   <tr> 
     <td width="40" bgcolor="#000000" align="center"><font size="6" color="#FFFFFF"><b><font face="Arial, Helvetica, sans-serif">2</font></b></font></td>
-    <td width="179" align="right"><b><font size="4" color="#FF0000">s&eacute;lectionner </font></b></td>
+    <td width="179" align="right"><b><font size="4" color="#FF0000">sélectionner </font></b></td>
     <td colspan="2" width="230"></td>
   </tr>
   <tr> 
@@ -57,7 +57,7 @@ echo $annee; ?></font></b></td>
     <td height="12" colspan="2" width="230"></td>
   </tr>
    <tr>
-    <td colspan="2" align="center"><font size="5"><b>Saisie des r&eacute;sulats</b></font></td>
+    <td colspan="2" align="center"><font size="5"><b>Saisie des résulats</b></font></td>
     <td colspan="2" width="230" align="center"><font size="5"><b>Saisie des clubs</b></font></td>
   </tr>
   <tr> 

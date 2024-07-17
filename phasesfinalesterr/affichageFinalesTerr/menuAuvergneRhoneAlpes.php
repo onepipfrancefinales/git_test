@@ -17,20 +17,20 @@
   <tr > 
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=ap&annee=2018&division=170">
-	  Comit&eacute; des Alpes</a>
+	  Comité des Alpes</a>
     </td>
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=au&annee=2018&division=170">
-	  Comit&eacute; Auvergne</a>
+	  Comité Auvergne</a>
     </td>
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=da&annee=2018&division=170">
-	  Comit&eacute; 
+	  Comité 
         Dr&ocirc;me Ard&egrave;che</a>
     </td>
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=ly&annee=2018&division=170">
-	  Comit&eacute; du lyonnais</a>
+	  Comité du lyonnais</a>
     </td>
   </tr>
 </table>

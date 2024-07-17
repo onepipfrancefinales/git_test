@@ -46,8 +46,8 @@
             <p align="center"><font size="6" color="#000000"><b>ET DES CLASSEMENTS</b></font></p>
             <p align="center">&nbsp;</p>
             <p align="center"><big style="color: rgb(255, 0, 0); font-weight: bold;"><big><b><font size="4" face="Arial, Helvetica, sans-serif">Saississez 
-              vous m&ecirc;me les r&eacute;sultats de votre club <br>
-              et mettez le classement &agrave; jour en temps r&eacute;el.</font></b></big></big><br
+              vous m&ecirc;me les résultats de votre club <br>
+              et mettez le classement &agrave; jour en temps réel.</font></b></big></big><br
  style="font-weight: bold;">
               <br>
             </p>
@@ -64,7 +64,7 @@
               <br style="font-weight: bold;">
               <span style="font-weight: bold;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<a
  style="color: rgb(0, 0, 0);" href="pageEquipe2.php">Le disposif peut il &ecirc;tre 
-              utilis&eacute; pour les &eacute;quipes II ?</a></span><br style="font-weight: bold;">
+              utilisé pour les équipes II ?</a></span><br style="font-weight: bold;">
               <br style="font-weight: bold;">
               <span style="font-weight: bold;"><a style="color: rgb(0, 0, 0);"
  href="pageSMS.php"><span style="font-weight: bold;"> <font color="#FFFFFF">DD</font>Comment 
@@ -88,12 +88,12 @@
               le monde, le principe&nbsp;du dispositif est le suivant :<br>
               &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
               &nbsp;&nbsp;<br>
-              le premier intervenant saisis les r&eacute;sultats de la rencontre.<br>
+              le premier intervenant saisis les résultats de la rencontre.<br>
               <br>
               Tous les autres intervenants valident ou invalident les informations 
               <br>
-              &nbsp;&nbsp;&nbsp;saisies en signalant une erreur &nbsp;comme indiqu&eacute; 
-              au bas de&nbsp;&nbsp;l'&eacute;cran ci dessous.</font></font><br>
+              &nbsp;&nbsp;&nbsp;saisies en signalant une erreur &nbsp;comme indiqué 
+              au bas de&nbsp;&nbsp;l'écran ci dessous.</font></font><br>
               <br>
               <br>
               <br>

@@ -29,7 +29,7 @@ elseif ($page=="saisieLieux")
 ?>
 
     
-<p align="center"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b><font size="3">Comit&eacute; 
+<p align="center"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b><font size="3">Comité 
   :</font> </b></font> 
    
   <select name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1">

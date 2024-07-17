@@ -135,7 +135,7 @@ echo "";
   ) Champion en titre, (P) Equipes Promues <br>
   <b><font color="#009900">Qualification aux phases finales</font></b><br>
   <b><font color="#0066CC">Qualification en H Cup</font></b><br>
-  <font color="#FF0000"><b>Equipes rel&eacute;gu&eacute;s</b></font><br>
+  <font color="#FF0000"><b>Equipes relégués</b></font><br>
   </font> </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: 3px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
   <div align="center"><i><b>Top 14 Top 14 Top 14 Top 14 Top 14 Top 14 Top 14 Top 

@@ -1,18 +1,18 @@
 <html>
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
 
-<?php // ******************   Récupération des variables   ***************** 
+<?php // ******************   Rï¿½cupï¿½ration des variables   ***************** 
  
 $type=$_GET['type']; 
 $annee=$_GET['annee']; 
 $comite=$_GET['comite'];
 $division=$_GET['division'];
   
-// ***************** Test des variables récupérées ****************
+// ***************** Test des variables rï¿½cupï¿½rï¿½es ****************
    echo "Comite : ".$comite; echo "<br />";
    echo "Type : ".$type;echo "<br />";
    echo "Annee : ".$annee;echo "<br />";
@@ -33,7 +33,7 @@ $phpbd_pfterr="php".''.$phpbd_pfterr;
 
  
  // -------Finale -------------------- 
- //récupération des valeurs des champs:
+ //rï¿½cupï¿½ration des valeurs des champs:
  if ($type == 1)
  	{
   	$A1001 = $_POST['A1001'];  
@@ -145,7 +145,7 @@ elseif ($type == 18)
 	}
 	
 	
-// -------  huitieme de Finale + Barrages (8 équipes)-------------------- 			
+// -------  huitieme de Finale + Barrages (8 ï¿½quipes)-------------------- 			
 elseif ($type == 17)		
 	{
 	$A1601 = $_POST['A1601'];  
@@ -199,7 +199,7 @@ elseif ($type == 17)
 elseif ($type == 19)		
 	{
 		
-//Récup des résultats des rencontres 8me ALLER (Goal average)
+//Rï¿½cup des rï¿½sultats des rencontres 8me ALLER (Goal average)
 	$A1601 = $_POST['A1601'];  
 	$A1602 = $_POST['A1602'];
 	$A1603 = $_POST['A1603'];
@@ -221,7 +221,7 @@ elseif ($type == 19)
 	
 	
 	
-//Récup des résultats des rencontres 8me ALLER (Points terrain)		
+//Rï¿½cup des rï¿½sultats des rencontres 8me ALLER (Points terrain)		
 
 	$A8001 = $_POST['A8001'];  
 	$A8002 = $_POST['A8002'];
@@ -260,7 +260,7 @@ elseif ($type == 19)
 	$A1002 = $_POST['A1002'];
 
 
-//Récup des résultats des rencontres 8me RETOUR (Goal average)
+//Rï¿½cup des rï¿½sultats des rencontres 8me RETOUR (Goal average)
 	 
 	$R1601 = $_POST['R1601'];  
 	$R1602 = $_POST['R1602'];
@@ -281,7 +281,7 @@ elseif ($type == 19)
 	$R1616 = $_POST['R1616'];
 
 
-//Récup des résultats des rencontres 8me RETOUR (Points terrain)	
+//Rï¿½cup des rï¿½sultats des rencontres 8me RETOUR (Points terrain)	
 
 	$R8001 = $_POST['R8001'];  
 	$R8002 = $_POST['R8002'];
@@ -400,12 +400,12 @@ if ($type == 1)
 
 	 if($requete)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
   }
@@ -428,12 +428,12 @@ require ("../../../connect1/connection2.php");
 	
 	 if($requete)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 	
@@ -461,12 +461,12 @@ $requete=$bdd->exec("UPDATE $phpbd_pfterr
 
 	 if($requete)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 
@@ -486,12 +486,12 @@ $requete=$bdd->exec("UPDATE $phpbd_pfterr
 			
 	 if($requete)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 	}
@@ -513,12 +513,12 @@ $requete=$bdd->exec("UPDATE $phpbd_pfterr
 			
     if($requete)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 	}
@@ -553,16 +553,16 @@ $requete=$bdd->exec("UPDATE $phpbd_pfterr
 
     if($requete)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 		
-//****Points et résultats des rencontres retour***************
+//****Points et rï¿½sultats des rencontres retour***************
 	$division = $division + 200;
 	echo $division; echo "<br />";
 	
@@ -580,18 +580,18 @@ $requete=$bdd->exec("UPDATE $phpbd_pfterr
 		  	WHERE division = '$division' and annee='$annee' ") ;	
 	  if($requete)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 	}
 	
 	
-	// *********huitieme de Finale + Barrages (8 équipes) ***************	
+	// *********huitieme de Finale + Barrages (8 ï¿½quipes) ***************	
 	
  elseif ($type == 17)
 	{ 
@@ -610,12 +610,12 @@ $requete=$bdd->exec("UPDATE $phpbd_pfterr
 
 	  if($requete)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 	}
@@ -648,11 +648,11 @@ $requete=$bdd->exec("UPDATE $phpbd_pfterr
 
   if($requete)
   	{
-    echo("La modification a été correctement effectuée");
+    echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
   	}
   else
   	{
-    echo("La modification à échouée") ;
+    echo("La modification ï¿½ ï¿½chouï¿½e") ;
  	}	
 	
 }	

@@ -11,10 +11,10 @@ if ($comite == "au" or $comite == "ap" or  $comite == "da" or  $comite == "ly")
   </tr>
   
   <tr> 
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=ap&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute; des <br> Alpes</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=au&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute;<br>Auvergne</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=da&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute;<br>Dr&ocirc;me Ard&egrave;che</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=ly&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute; du <br>Lyonnais</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=ap&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité des <br> Alpes</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=au&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Auvergne</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=da&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Dr&ocirc;me Ard&egrave;che</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=ly&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité du <br>Lyonnais</font></a></td>
   </tr>
 </table>
 <?php
@@ -31,10 +31,10 @@ elseif ($comite=="ab" or $comite=="ld" or $comite=="mpy" or $comite=="pc")
   </tr>
   
   <tr> 
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ab&comite=ab&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute;<br>Armagnac Bigorre</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ab&comite=ld&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute; du <br>Languedoc</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ab&comite=mpy&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute;<br>Midi Pyr&eacute;n&eacute;es</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ab&comite=pc&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute; du <br>Pays Catalan</font></a></td>   
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ab&comite=ab&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Armagnac Bigorre</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ab&comite=ld&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité du <br>Languedoc</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ab&comite=mpy&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Midi Pyrénées</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ab&comite=pc&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité du <br>Pays Catalan</font></a></td>   
   </tr>
 </table>
 <?php	
@@ -52,12 +52,12 @@ elseif ($comite == "ca" or $comite=="be" or $comite=="cbl" or $comite=="lm" or $
     <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=pa&champ=<?php echo substr($champ,0,3).'170';?>"><img src="../../images/comites/(PA).jpg" width="50" height="50"></a></td>
   </tr>
   <tr> 
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=be&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute; du <br>B&eacute;arn</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=cbl&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute;<br>Cote Basque Landes</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=ca&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute;<br>Cote d'Argent</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=lm&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute; du <br>Limousin</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=pch&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute;<br>Poitou Charente</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=pa&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comit&eacute;<br>P&eacute;rigord<br> Agenais</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=be&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité du <br>Béarn</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=cbl&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Cote Basque Landes</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=ca&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Cote d'Argent</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=lm&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité du <br>Limousin</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=pch&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Poitou Charente</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=ca&comite=pa&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Périgord<br> Agenais</font></a></td>
   </tr> 
 </table>
 <?php

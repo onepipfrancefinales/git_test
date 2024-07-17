@@ -6,10 +6,10 @@
              <p class="texte">Tout 
               Le monde, le principe&nbsp;du dispositif est le suivant :
             
-              Le premier intervenant saisis les r&eacute;sultats de la rencontre.<br>
+              Le premier intervenant saisis les résultats de la rencontre.<br>
               Tous les autres intervenants valident ou invalident les informations 
-              saisies en signalant une erreur &nbsp;comme indiqu&eacute; 
-              au bas de&nbsp;&nbsp;l'&eacute;cran ci dessous.</p>
+              saisies en signalant une erreur &nbsp;comme indiqué 
+              au bas de&nbsp;&nbsp;l'écran ci dessous.</p>
               <br>
               <br>
               <br>

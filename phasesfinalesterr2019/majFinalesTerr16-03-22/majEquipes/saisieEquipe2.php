@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -106,7 +106,7 @@ if (isset ($_POST['clubA1632'])) $clubA1632 = $_POST['clubA1632']; else $clubA16
 
 
 
-//récupération des valeurs des champs:
+//rï¿½cupï¿½ration des valeurs des champs:
 
 //**********  Finale ********************
 
@@ -129,11 +129,11 @@ if ($type==1)
 		
  			 if($req)
 					{
-					echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+					echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 					}
 			 else
 					{
-					echo("La modification à échoué") ;
+					echo("La modification ï¿½ ï¿½chouï¿½") ;
 					}
 				
 		}
@@ -164,11 +164,11 @@ if ($type==1)
 			
  			 if($req)
 					{
-					echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+					echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 					}
 			 else
 					{
-					echo("La modification à échoué") ;
+					echo("La modification ï¿½ ï¿½chouï¿½") ;
 					}			
 		}
 
@@ -203,11 +203,11 @@ elseif ($type==14 OR $type==15)
 
 			if($req)
 					{
-					echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+					echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 					}
 				  else
 					{
-					echo("La modification à échouée") ;
+					echo("La modification ï¿½ ï¿½chouï¿½e") ;
 					}
 		}
 
@@ -256,16 +256,16 @@ elseif ($type==13)
 			
  			 if($req)
 					{
-					echo("La modification a &eacute;t&eacute; correctement effectu&eacute;e");
+					echo("La modification a Ã©tÃ© correctement effectuÃ©e");
 					}
 				  else
 					{
-					echo("La modification à échouée") ;
+					echo("La modification ï¿½ ï¿½chouï¿½e") ;
 					}
 		 }
 		 
 		 
-//********** Huitième  de finale  (18) ********************
+//********** Huitiï¿½me  de finale  (18) ********************
 
 elseif ($type==18 or $type==19)
 		{
@@ -306,15 +306,15 @@ elseif ($type==18 or $type==19)
 
 			if($req)
 					{
-					echo("La modification (Huitieme) a &eacute;t&eacute; correctement effectu&eacute;e");
+					echo("La modification (Huitieme) a Ã©tÃ© correctement effectuÃ©e");
 					}
 				  else
 					{
-					echo("La modification à échoué") ;
+					echo("La modification ï¿½ ï¿½chouï¿½") ;
 					}
 		 }		 
 
-//********** Huitième  de finale avec 8 barragistes  (17)  ********************
+//********** Huitiï¿½me  de finale avec 8 barragistes  (17)  ********************
 
 elseif ($type==17)
 		{
@@ -371,11 +371,11 @@ elseif ($type==17)
 			
  			 if($req)
 					{
-					echo("La modification (Huitième avec barrages) a &eacute;t&eacute; correctement effectu&eacute;e");
+					echo("La modification (Huitiï¿½me avec barrages) Ã©eÃ©e; correctement effecÃ©e;e");
 					}
 				  else
 					{
-					echo("La modification à échoué") ;
+					echo("La modification ï¿½ ï¿½chouï¿½") ;
 					}
 		 }		 
 
@@ -440,11 +440,11 @@ elseif ($type==16)
 			
  			 if($req)
 					{
-					echo("La modification (Seizieme) a &eacute;t&eacute; correctement effectu&eacute;e");
+					echo("La modification (Seizieme) a Ã©tÃ© correctement effectuÃ©e");
 					}
 				  else
 					{
-					echo("La modification à &eacute;chou&eacute;") ;
+					echo("La modification ï¿½Ã©;choÃ©;") ;
 					}
 		 }		 
 		 
@@ -457,7 +457,7 @@ elseif ($type==16)
   </p>
 <p> 
  
-<?php echo "<a href=/phasesfinalesterr2019/majFinalesTerr/majEquipes/saisieEquipe.php?comite=$comite&annee=$annee ;> Retour m&ecirc;me comit&eacute;</a>" ; ?>
+<?php echo "<a href=/phasesfinalesterr2019/majFinalesTerr/majEquipes/saisieEquipe.php?comite=$comite&annee=$annee ;> Retour m&ecirc;me comitÃ©</a>" ; ?>
 
 
 <p>

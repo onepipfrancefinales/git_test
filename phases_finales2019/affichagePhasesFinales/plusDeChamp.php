@@ -13,7 +13,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><b><font face="Arial, Helvetica, sans-serif" size="4">Suppression du championnat 
-  de France pour cette cat&eacute;gorie.<br>
+  de France pour cette catégorie.<br>
   <br>
   <br>
   <br>

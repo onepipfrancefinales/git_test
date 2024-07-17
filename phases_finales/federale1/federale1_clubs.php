@@ -33,10 +33,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr bgcolor="#FFCC66"> 
     <td height="14" colspan="19"> 
-      <div align="center"><b><i>F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
+      <div align="center"><b><i>Fédérale 1 Jean PRAT - Fédérale 
+        1 Jean PRAT - Fédérale 1 Jean PRAT - Fédérale 
+        1 Jean PRAT - Fédérale 1 Jean PRAT - Fédérale 
+        1 Jean PRAT - Fédérale 1 Jean PRAT - Fédérale 
         1 Jean PRAT </i></b></div>
     </td>
   </tr>
@@ -778,7 +778,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td width="33">&nbsp;</td>
     <td width="22">&nbsp;</td>
     <td width="204"> 
-      <div align="center"><b>Mont&eacute;e en Pro D2</b></div>
+      <div align="center"><b>Montée en Pro D2</b></div>
     </td>
     <td width="28">&nbsp;</td>
     <td width="24">&nbsp;</td>

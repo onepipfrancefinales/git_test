@@ -396,7 +396,7 @@ require ("fonctions_phases_finales.php");
   </tr>
   <tr> 
     <td width="184" bgcolor="#FF9933"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">1re 
-      S&eacute;rie</font></b></td>
+      Série</font></b></td>
     <td width="14">&nbsp;</td>
     <td width="34">&nbsp;</td>
     <td width="184">&nbsp;</td>
@@ -549,7 +549,7 @@ require ("fonctions_phases_finales.php");
   </tr>
   <tr> 
     <td width="184" bgcolor="#FF9933"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">2me 
-      S&eacute;rie 
+      Série 
       <?php  $id = 995; 
 ?>
       </font></b></td>
@@ -705,7 +705,7 @@ require ("fonctions_phases_finales.php");
   </tr>
   <tr> 
     <td width="184" bgcolor="#FF9933"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">3me 
-      S&eacute;rie</font></b></td>
+      Série</font></b></td>
     <td width="14">&nbsp;</td>
     <td width="34">&nbsp;</td>
     <td width="184">&nbsp;</td>
@@ -858,7 +858,7 @@ require ("fonctions_phases_finales.php");
   </tr>
   <tr> 
     <td width="184" bgcolor="#FF9933"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">4me 
-      S&eacute;rie</font></b></td>
+      Série</font></b></td>
     <td width="14">&nbsp;</td>
     <td width="34">&nbsp;</td>
     <td width="184">&nbsp;</td>

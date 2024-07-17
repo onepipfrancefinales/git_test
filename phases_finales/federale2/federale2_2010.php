@@ -132,7 +132,7 @@ $clubA3203= 'Suresnes ';
 $clubA3204= ' Saint Claude';
 $clubA3205= ' Marcq-en-Baroeul';
 $clubA3206= 'Strasbourg ';
-$clubA3207= ' Mâcon';
+$clubA3207= ' Mï¿½con';
 $clubA3208= ' Blois';
 $clubA3209= ' Chateauneuf-Orange';
 $clubA3210= ' Saint-Etienne';
@@ -142,8 +142,8 @@ $clubA3213= 'Vichy ';
 $clubA3214= ' Grasse';
 $clubA3215= ' Annonay';
 $clubA3216= ' Monteux';
-$clubA3217= ' Guéret';
-$clubA3218= ' Céret';
+$clubA3217= ' Guï¿½ret';
+$clubA3218= ' Cï¿½ret';
 $clubA3219= ' Castanet';
 $clubA3220= ' Nontron';
 $clubA3221= ' Vendres-Lespignan';
@@ -163,14 +163,14 @@ $clubA1601= ' Lille';
 $clubA1603= ' Epernay';
 $clubA1605= ' Gennevilliers';
 $clubA1607= ' Arras';
-$clubA1609= ' Montluçon';
+$clubA1609= ' Montluï¿½on';
 $clubA1611= ' Marseille';
-$clubA1613= ' Carqueiranne-Hyères';
-$clubA1615= ' Montmélian';
+$clubA1613= ' Carqueiranne-Hyï¿½res';
+$clubA1615= ' Montmï¿½lian';
 $clubA1617= ' Carcassonne';
 $clubA1619= ' Gourdon';
 $clubA1621= ' Le Bugue';
-$clubA1623= ' Vallée du Girou';
+$clubA1623= ' Vallï¿½e du Girou';
 $clubA1625= ' Hagetmau';
 $clubA1627= ' Cognac';
 $clubA1629= ' Niort';
@@ -185,7 +185,7 @@ $clubA3203= ' Arras';
 $clubA3204= ' Villefranche sur Saone';
 $clubA3205= ' Suresnes';
 $clubA3206= ' Strasbourg';
-$clubA3207= ' Mâcon';
+$clubA3207= ' Mï¿½con';
 $clubA3208= ' Orsay';
 $clubA3209= ' Nice';
 $clubA3210= ' Vienne';
@@ -203,9 +203,9 @@ $clubA3221= ' Lormont';
 $clubA3222= ' La Teste';
 $clubA3223= ' Salles';
 $clubA3224= ' Cognac';
-$clubA3225= ' La Vallée du Girou';
+$clubA3225= ' La Vallï¿½e du Girou';
 $clubA3226= ' Castelsarrasin';
-$clubA3227= ' Argelès-Gazost';
+$clubA3227= ' Argelï¿½s-Gazost';
 $clubA3228= ' Rodez';
 $clubA3229= ' Peyrehorade';
 $clubA3230= ' Carcassonne';
@@ -219,14 +219,14 @@ $clubA1607= ' Lille';
 $clubA1609= ' Villeurbanne';
 $clubA1611= ' Bastia';
 $clubA1613= ' Romans';
-$clubA1615= ' Montmélian';
-$clubA1617= ' Ribérac';
+$clubA1615= ' Montmï¿½lian';
+$clubA1617= ' Ribï¿½rac';
 $clubA1619= ' Boucau Tarnos';
 $clubA1621= ' Langon';
 $clubA1623= ' Gourdon';
 $clubA1625= ' Morlaas';
 $clubA1627= ' Castanet';
-$clubA1629= ' Miélan-Mirande';
+$clubA1629= ' Miï¿½lan-Mirande';
 $clubA1631= ' Valence d Agen';
 }
 elseif ($annee==2006)
@@ -266,7 +266,7 @@ $clubA3232= ' Mielan-Mirande';
 
 $clubA1601= ' Vannes';
 $clubA1603= ' Dijon';
-$clubA1605= ' Montluçon';
+$clubA1605= ' Montluï¿½on';
 $clubA1607= ' Orleans';
 $clubA1609= ' Rumilly';
 $clubA1611= ' Sorgues';
@@ -285,7 +285,7 @@ $clubA1631= ' Aire sur Adour';
 }
 else
 {
-echo "<h3> <strong>Désolé, aucune donnée pour cette saison</h3> </strong>";
+echo "<h3> <strong>Dï¿½solï¿½, aucune donnï¿½e pour cette saison</h3> </strong>";
 }
 ?>
 
@@ -592,13 +592,13 @@ echo "<h3> <strong>Désolé, aucune donnée pour cette saison</h3> </strong>";
   ?>
     </b></font></div>
 </div>
-<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>FÃ©dÃ©rale 
+  2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 
+  FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 
+  2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 
+  FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 
+  2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 
+  FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 FÃ©dÃ©rale 2 </b></i></div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 40px; top: 842px; background-image:  url(../unique4.jpg); layer-background-image:  url(../unique4.jpg); border: 1px none #000000"> 
   <div align="center"> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
@@ -1448,7 +1448,7 @@ echo "<h3> <strong>Désolé, aucune donnée pour cette saison</h3> </strong>";
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    F&eacute;d&eacute;rale 2 </b></font></div>
+    FÃ©dÃ©rale 2 </b></font></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1364px; top: 684px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font color="#FF0000" face="Geneva, Arial, Helvetica, san-serif"size="5"><b>Blagnac 

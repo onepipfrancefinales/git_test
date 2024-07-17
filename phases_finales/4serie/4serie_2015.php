@@ -879,16 +879,16 @@ $clubA1632= ' Saint Julien en Genevois (AP) ';
 <div id="Layer4" style="position:absolute; width:2px; height:127px; z-index:6; left: 1039px; top: 595px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1080px; top: 636px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France<br>
-    4me S&eacute;rie 
+    4me Série 
     <?php echo $annee;?>
     </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>4me 
-  S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me 4me S&eacute;rie 4me S&eacute;rie 4me 
-  S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me</b></i></div>
+  Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me 4me Série 4me Série 4me 
+  Série 4me Série 4me Série 4me</b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1081px; top: 707px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000">
   <div align="center"><b><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="5">Paris 
     XO Rugby (IDF)</font></b></div>

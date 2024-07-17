@@ -617,7 +617,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <td width="39" height="12" bgcolor="#99CC33">&nbsp;</td>
     <td colspan="4" rowspan="4"> 
       <div align="center"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b></b></font></div>
-      <div align="center"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b><font size="6">Laroque-B&eacute;lesta 
+      <div align="center"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b><font size="6">Laroque-Bélesta 
         </font></b></font><font size="6"> 
         <?php 
 if ($A1001+$A1002>0)

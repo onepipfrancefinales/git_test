@@ -41,10 +41,10 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="../consultation/page_comite.php?variable_1=(LD)"><b>Languedoc</b></option>
           <option value="../consultation/page_comite.php?variable_1=(LM)"><b>Limousin</b></option>
           <option value="../consultation/page_comite.php?variable_1=(LY)"><b>Lyonnais</b></option>
-          <option value="../consultation//page_comite.php?variable_1=(MPY)"><b>Midi Pyr&eacute;n&eacute;es</b></option>
+          <option value="../consultation//page_comite.php?variable_1=(MPY)"><b>Midi Pyrénées</b></option>
           <option value="../consultation/page_comite.php?variable_1=(N)"><b>Normandie</b></option>
           <option value="../consultation/page_comite.php?variable_1=(PL)"><b>Pays de Loire</b></option>
-          <option value="../consultation/page_comite.php?variable_1=(PA)"><b>P&eacute;rigord Agenais</b></option>
+          <option value="../consultation/page_comite.php?variable_1=(PA)"><b>Périgord Agenais</b></option>
           <option value="../consultation/page_comite.php?variable_1=(PCH)"><b>Poitou Charente</b></option>
           <option value="../consultation/page_comite.php?variable_1=(PR)"><b>Provence</b></option>
           <option value="../consultation/page_comite.php?variable_1=(PC)"><b>Pays Catalan</b></option>

@@ -1,5 +1,5 @@
 <?php include("../saison.php");
-$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 6me journ&eacute;e du 01 Novembre";
+$message = "Arr&ecirc;t des compétitions &agrave; l'occasion de la 6me journée du 01 Novembre";
 require '../connect/connexion2.php';
 require '../Phpleague/phpce/consult/fonctions_matchs.php';
 require '../Phpleague/phpce/lang/lang_fr.php';
@@ -18,9 +18,9 @@ $comiteNom="du Centre";?>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
  <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title>Championnats r&eacute;gionaux ligue Centre Val de Loire</title>
+  <title>Championnats régionaux ligue Centre Val de Loire</title>
   <meta name="description"
- content=" Actualit&eacute;s des comp&eacute;titions r&eacute;gionales de la ligue Centre Val de Loire. (r&eacute;sultats, classements, stats, calendriers, palmar&egrave;s etc...) ">
+ content=" Actualités des compétitions régionales de la ligue Centre Val de Loire. (résultats, classements, stats, calendriers, palmar&egrave;s etc...) ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
@@ -54,9 +54,9 @@ $comiteNom="du Centre";?>
       <p><?php include("../01gauche.php");?> </p>
     </td>
     <td align="center" border color="#000000" bgcolor="#ffffff" width="650" height="1259" valign="top">      
-          <h1> Comp&eacute;titions R&eacute;gionales</h1>
+          <h1> Compétitions Régionales</h1>
           <h2 class ="titre"> Ligue Centre Val de Loire </h2>
-          <h2 class="commentaire">Le comit&eacute; territorial du Centre est devenu<br>
+          <h2 class="commentaire">Le comité territorial du Centre est devenu<br>
             la ligue Centre Val de Loire en 2018.</h2>
           
       <div align="center">
@@ -101,7 +101,7 @@ $comiteNom="du Centre";?>
 		  
          <?php include("../pub/pub_displayHorizontal.php"); ?>
           <div align="center">
-          <h5><a name="P"></a><a name="1"></a>1re/ 2me S&eacute;rie</h5>
+          <h5><a name="P"></a><a name="1"></a>1re/ 2me Série</h5>
           </div><br>
           <?php $champ = 191; AffichageLogos($champ, $comite, false, $bdd)?>
           <br>
@@ -116,7 +116,7 @@ $comiteNom="du Centre";?>
               </td>
               <td height="29"> 
                 <h3>Equipe II<br>
-                  <font color="#FF0000"><font size="2">Cette comp&eacute;tition 
+                  <font color="#FF0000"><font size="2">Cette compétition 
                   se joue &agrave; X</font></font></h3>
                 <?php $champ=9191 ; 
                  aff_journee($champ, $bdd);
@@ -130,7 +130,7 @@ $comiteNom="du Centre";?>
          <p class="ressource"> <?php echo $message;  ?></p>
 		  
          <div align="center">
-          <h5><a name="2"></a> 3me S&eacute;rie</h5>
+          <h5><a name="2"></a> 3me Série</h5>
          </div> <br>
        <?php $champ = 211; 
 			 AffichageLogos($champ, $comite, false, $bdd);
@@ -144,7 +144,7 @@ $comiteNom="du Centre";?>
       <?php include("../pub/pub_displayHorizontal.php"); ?>
      <br>
 	 <div align="center">
-          <h5><a name="3"></a><a name="4"></a> 4me S&eacute;rie</h5>
+          <h5><a name="3"></a><a name="4"></a> 4me Série</h5>
           </div><br>
           <?php 
 		  $champ = 221; 

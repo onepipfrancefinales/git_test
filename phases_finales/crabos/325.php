@@ -33,9 +33,9 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <table width="1100" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="22" colspan="12" bgcolor="#FFCC66"> 
-      <div align="center"><i><b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> 
-        <b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; 
-        CRABOS (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; CRABOS<b><i> (- 
+      <div align="center"><i><b><i>Juniors René CRABOS (- de 18 ans)</i></b> 
+        <b><i>Juniors René CRABOS (- de 18 ans)</i></b> <b><i>Juniors René 
+        CRABOS (- de 18 ans)</i></b> <b><i>Juniors René CRABOS<b><i> (- 
         de 18 ans)</i></b></i></b></i></div>
     </td>
   </tr>

@@ -1,5 +1,5 @@
 <?php
-//rÈcupÈration des valeurs des champs:
+//rÔøΩcupÔøΩration des valeurs des champs:
 
 $comite = $_GET['comite'];   
 $equipe1 = $_GET['equipe1'];
@@ -69,7 +69,7 @@ $score2 = $_GET['score2'];
 <div align="center"><br/>
   <br/>
   <font face="Arial, Helvetica, sans-serif" size="3" color="#FF0000"><b>Erreur 
-  de saisie : vous avez attribu&eacute; le point de bonus offensif aux 2 &eacute;quipes. 
+  de saisie : vous avez attribu√© le point de bonus offensif aux 2 √©quipes. 
   </b></font><br>
   <br/>
   <br/>

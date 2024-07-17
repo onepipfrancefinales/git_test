@@ -7,10 +7,10 @@
 <table width="1200" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="19" colspan="12" bgcolor="#FFCC66"> 
-      <div align="center"><i><b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> 
-        <b><i>Juniors Ren&eacute; CRABOS (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; 
-        CRABOS (- de 18 ans)</i></b> <b><i>Juniors Ren&eacute; CRABOS (- de 18ans)</i></b> 
-        <b><i>Juniors Ren&eacute; CRABOS </i></b></i></div>
+      <div align="center"><i><b><i>Juniors René CRABOS (- de 18 ans)</i></b> 
+        <b><i>Juniors René CRABOS (- de 18 ans)</i></b> <b><i>Juniors René 
+        CRABOS (- de 18 ans)</i></b> <b><i>Juniors René CRABOS (- de 18ans)</i></b> 
+        <b><i>Juniors René CRABOS </i></b></i></div>
     </td>
   </tr>
   <tr> 
@@ -399,7 +399,7 @@
         sont definies <br>
         par la FFR, apr&egrave;s chaque tour en<br>
         privilegiant des <br>
-        oppositions g&eacute;ographiques</font></div>
+        oppositions géographiques</font></div>
     </td>
     <td width="23" height="11">&nbsp;</td>
     <td width="150" height="11"> 

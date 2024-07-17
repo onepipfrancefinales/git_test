@@ -78,7 +78,7 @@ $query = "	SELECT $taille, nom
 							
 		if ($champion > 170 && $champion < 230 OR $champion > 270 ) 							   
 			{
-				echo "Comit&eacute;".' '.$comiteEnLettres;
+				echo "Comité".' '.$comiteEnLettres;
 				echo "<br />";
 				echo $poule; 
 			}

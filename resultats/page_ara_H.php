@@ -25,7 +25,7 @@ $forum = 7;
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <title>Championnats Régionaux de la ligue Auvergne Rhône Alpes</title>
   <meta name="description"
- content=" Résulats des compétitions régionales de la ligue Auvergne Rhone Alpes. Calendriers, résultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+ content=" Résulats des compétitions régionales de la ligue Auvergne Rhone Alpes. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
@@ -83,10 +83,10 @@ $forum = 7;
 		
 		
 		<div align="center"> <br>
-          <h1> Comp&eacute;titions R&eacute;gionales</h1>
+          <h1> Compétitions Régionales</h1>
           <h2 class ="titre">Ligue Auvergne Rh&ocirc;ne Alpes</h2>
-          <h2 class ="commentaire">La ligue Auvergne Rh&ocirc;ne Alpes est n&eacute;e de la fusion des comit&eacute;s territoriaux<br>
-            de l'Auvergne, du Lyonnais, des Alpes et du comit&eacute;<br>
+          <h2 class ="commentaire">La ligue Auvergne Rh&ocirc;ne Alpes est née de la fusion des comités territoriaux<br>
+            de l'Auvergne, du Lyonnais, des Alpes et du comité<br>
             Dr&ocirc;me Ard&egrave;che en janvier 2018.</h2>
           <br>
   <?php 
@@ -101,7 +101,7 @@ $forum = 7;
 	  <?php
     //require("comPerso.php");
          
-    echo "<h5> <a name=\"H\"></a>Pr&eacute; f&eacute;d&eacute;rale - Poule 1<br>
+    echo "<h5> <a name=\"H\"></a>Pré fédérale - Poule 1<br>
 	 <font face=\"Arial, Helvetica, sans-serif\" size=\"2\">(Ex honneur)</font></h5>";
 	$champ = 100171; $champ2 = 100271;
 	affichage($champ, $champ2, $comite, $bdd); 
@@ -110,14 +110,14 @@ $forum = 7;
 	
     require '../pub/pub_displayH_550.php';  
 	   
-	echo "<h5>Pr&eacute; f&eacute;d&eacute;rale - Poule 2<br> 
+	echo "<h5>Pré fédérale - Poule 2<br> 
 	 <font face=\"Arial, Helvetica, sans-serif\" size=\"2\">(Ex honneur)</font></h5>";
     $champ = 100172; $champ2 = 100272;
 	affichage($champ, $champ2, $comite, $bdd); 
 	journeesReportees($comite, $champ, $bdd);  
     perequation($comite, $champ, $bdd);
 	
-    echo " <h5>Pr&eacute; f&eacute;d&eacute;rale - Poule 3<br>
+    echo " <h5>Pré fédérale - Poule 3<br>
 	 <font face=\"Arial, Helvetica, sans-serif\" size=\"2\">(Ex honneur)</font></h5>";
     $champ = 100173; $champ2 = 100273;
 	affichage($champ, $champ2, $comite, $bdd); 
@@ -129,7 +129,7 @@ $forum = 7;
 	// include("comPerso2.php"); 
 		
           
-    echo "<h5>Pr&eacute; f&eacute;d&eacute;rale - Poule 4<br>
+    echo "<h5>Pré fédérale - Poule 4<br>
 	 <font face=\"Arial, Helvetica, sans-serif\" size=\"2\">(Ex honneur)</font></h5>";
     $champ = 100174; $champ2 = 100274;
 	affichage($champ, $champ2, $comite, $bdd);  

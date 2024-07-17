@@ -414,10 +414,10 @@ function clmntbdpl($champ,$smart, $bdd)
 function affichageTitreCompet($date, $champ, $ligue, $comite, $bdd)
 {
 	
-	if ($champ > 880000 and $champ < 880300){$champ = 880280; $champMax = 880300; $categorie = "F&eacute;minines ";}
-	elseif ($champ > 990000 and $champ < 990140){$champ = 990110; $champMax = 990140; $categorie = "Pro  - pr&eacute; pro";}
-	elseif ($champ > 990140 and $champ < 990170){$champ = 990140; $champMax = 990170; $categorie = "F&eacute;d&eacute;rales";}
-	elseif ($champ > 100170 and $champ < 220200){$champ = 100170; $champMax = 220200; $categorie = "R&eacute;gionales";}
+	if ($champ > 880000 and $champ < 880300){$champ = 880280; $champMax = 880300; $categorie = "Féminines ";}
+	elseif ($champ > 990000 and $champ < 990140){$champ = 990110; $champMax = 990140; $categorie = "Pro  - pré pro";}
+	elseif ($champ > 990140 and $champ < 990170){$champ = 990140; $champMax = 990170; $categorie = "Fédérales";}
+	elseif ($champ > 100170 and $champ < 220200){$champ = 100170; $champMax = 220200; $categorie = "Régionales";}
  // echo "<br />";
  
  //echo "<br />";
@@ -487,13 +487,13 @@ if ($page == "presentation"){
 	elseif	(substr($champ,3,3) == 285)
 	$division = "Elite 2";
 	elseif (substr($champ,4,1) == 9)
-	$division = "Fem F&eacute;d&eacute;rale 1";
+	$division = "Fem Fédérale 1";
 	elseif (substr($champ,3,2) == 14)
-	$division = "F&eacute;d&eacute;rale 1 - Espoir F&eacute;d 1 ";
+	$division = "Fédérale 1 - Espoir Féd 1 ";
 	elseif (substr($champ,3,2) == 15)
-	$division = "F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";
+	$division = "Fédérale 2 - Fédérale B";
 	elseif (substr($champ,3,2) == 16)
-	$division = "F&eacute;d&eacute;rale 3 - Excellence B";
+	$division = "Fédérale 3 - Excellence B";
 }
 elseif ($page == "resultats") {                                        
 if	(substr($champ,3,3) == 281 or substr($champ,3,3) == 282)
@@ -501,17 +501,17 @@ if	(substr($champ,3,3) == 281 or substr($champ,3,3) == 282)
 elseif	(substr($champ,3,3) == 285)
 	$division = "Elite 2";
 elseif (substr($champ,4,1) == 9)
-	$division = "Fem F&eacute;d&eacute;rale 1";
+	$division = "Fem Fédérale 1";
 elseif (substr($champ,3,2) == 14)
-	$division = "F&eacute;d&eacute;rale 1  ";
+	$division = "Fédérale 1  ";
 elseif (substr($champ,3,2) == 15)
-	$division = "F&eacute;d&eacute;rale 2 ";
+	$division = "Fédérale 2 ";
 elseif (substr($champ,3,2) == 16)
-	$division = "F&eacute;d&eacute;rale 3 ";
+	$division = "Fédérale 3 ";
 elseif (substr($champ,3,2) == 24)
-	$division = "Espoir F&eacute;d 1 ";
+	$division = "Espoir Féd 1 ";
 elseif (substr($champ,3,2) == 25)
-	$division = "F&eacute;d&eacute;rale B";
+	$division = "Fédérale B";
 elseif (substr($champ,3,2) == 26)
 	$division = "Excellence B";	
 
@@ -533,13 +533,13 @@ elseif (substr($champ,4,2) == 35  or substr($champ,4,2) == 36)
 
 
 if ($champ < 990000)
-	$categorie = "F&eacute;minines ";
+	$categorie = "Féminines ";
 elseif ($champ > 990000 and $champ < 990140)
-	$categorie = "Pro  - pr&eacute; pro";
+	$categorie = "Pro  - pré pro";
 elseif ($champ > 990140 and $champ < 990170)
-	$categorie = "Pro  - F&eacute;d&eacute;rale";
+	$categorie = "Pro  - Fédérale";
 elseif ($champ > 990170 and $champ < 990200)
-	$categorie = "R&eacute;gionale";
+	$categorie = "Régionale";
 
 $ligueMax = $ligue + 100000;	
 
@@ -792,11 +792,11 @@ if ($numero > 0)
 { 	
 	if ($page == "presentation"){	
 		if (substr($champ,3,2) == 16)
-		$division = "F&eacute;d&eacute;rale 3 - Excellence B";
+		$division = "Fédérale 3 - Excellence B";
 	}
 	elseif ($page == "resultats"){
 		if (substr($champ,3,2) == 16)
-		$division = "F&eacute;d&eacute;rale 3 ";
+		$division = "Fédérale 3 ";
 		elseif (substr($champ,3,2) == 26)
 		$division = "Excellence B";
 	}	
@@ -959,23 +959,23 @@ if ($numero > 0)
 
 if ($page=="presentation"){
 	if (substr($champ,2,3) == '017')
-		$division = "R&eacute;gionale 1 - Réserve rég 1";
+		$division = "Régionale 1 - Réserve rég 1";
 	elseif (substr($champ,2,3) == '018')
-		$division = "R&eacute;gionale 2 - Réserve rég 2";
+		$division = "Régionale 2 - Réserve rég 2";
 	elseif (substr($champ,2,3) == '019')
-		$division = "R&eacute;gionale 3";
+		$division = "Régionale 3";
 }
 elseif ($page=="resultats"){
 	if (substr($champ,2,3) == '017')
-	$division = "R&eacute;gionale 1";
+	$division = "Régionale 1";
 	elseif (substr($champ,2,3) == '018')
-	$division = "R&eacute;gionale 2";
+	$division = "Régionale 2";
 	elseif (substr($champ,2,3) == '019')
-	$division = "R&eacute;gionale 3";
+	$division = "Régionale 3";
 	elseif (substr($champ,2,3) == '027')
-	$division = "R&eacute;serve R&eacute;gionale 1";
+	$division = "Réserve Régionale 1";
 	elseif (substr($champ,2,3) == '918')
-	$division = "R&eacute;serve R&eacute;gionale 2";
+	$division = "Réserve Régionale 2";
 
 }
 //echo "champ : ".substr($champ,3,3);	

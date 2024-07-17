@@ -88,7 +88,7 @@ $clubA3256= ' Puylaurens (MPY) ';
 $clubA3257= ' Lacanau Ocean (CA)';
 $clubA3258= ' Pomarez (CBL)'; 
 
-$clubA3259= ' La Barguill�re (MPY) ';
+$clubA3259= ' La Barguill�re (MPY) ';
 $clubA3260= ' Cancon (PA) ';
 
 $clubA3261= ' Rabastens de Bigorre (AB) ';
@@ -1091,11 +1091,11 @@ $clubA3264= ' Caraman (MPY) ';
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 423px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 820px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
-  <div align="center"><i><b>2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie </b></i></div>
+  <div align="center"><i><b>2me Série 2me Série 2me Série 
+    2me Série 2me Série 2me Série 2me Série 2me Série 
+    2me Série 2me Série 2me Série 2me Série 2me Série 
+    2me Série 2me Série 2me Série 2me Série 2me Série 
+    2me Série 2me Série 2me Série 2me Série </b></i></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1494px; top: 688px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000">
   <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="5" color="#FF0000">Rabastens 
@@ -1105,5 +1105,5 @@ $clubA3264= ' Caraman (MPY) ';
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    2me S&eacute;rie </b></font></div>
+    2me Série </b></font></div>
 </div>

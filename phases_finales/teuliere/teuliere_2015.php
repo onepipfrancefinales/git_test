@@ -1109,7 +1109,7 @@ MM_reloadPage(true);
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 820px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer11" style="position:absolute; width:317px; height:31px; z-index:7; left: 1482px; top: 697px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"><font color="#FF0000" size="5"><b><font face="Arial, Helvetica, sans-serif">St 
-    M&eacute;dard en Jalles (CA)</font></b></font></div>
+    Médard en Jalles (CA)</font></b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
   <div align="center"><i><b>Cadets Jean TEULIERE (-16 ans) Cadets Jean TEULIERE 

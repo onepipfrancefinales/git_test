@@ -133,7 +133,7 @@ echo "</table>";
 <p align="center"><b><?php matchsEnRetards('au', 10, $bdd) ;?> </font></b></p> <hr />
 <p align="center"><?php matchsEnRetards2('au', 10, $bdd) ;?> </b></font>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Bourgogne Franche Comt&eacute;</font>
+ <p align="center"><b><font color="#000000" size="7">Ligue Bourgogne Franche Comté</font>
 <p align="center"><b><?php matchsEnRetards('pl', 11, $bdd) ;?> </font></b></p><hr />
 <p align="center"><?php matchsEnRetards2('pl', 11, $bdd) ;?> </b></font>
 
@@ -185,23 +185,23 @@ echo "</table>";
 <?php matchsEnRetards('pro', 13, $bdd) ;?> </font></b></p>
 
  
-<p align="center"><b><font color="#000000" size="7">F&eacute;d&eacute;rale 1</font>
+<p align="center"><b><font color="#000000" size="7">Fédérale 1</font>
 <?php matchsEnRetards('pro', 14, $bdd) ;?> </font></b><hr /></p>
 <p align="center"><?php matchsEnRetards2('pro', 24, $bdd) ;?> </font></b></p>
 
-<p align="center"><b><font color="#000000" size="7">F&eacute;d&eacute;rale 2</font>
+<p align="center"><b><font color="#000000" size="7">Fédérale 2</font>
 <?php matchsEnRetards('pro', 15, $bdd) ;?> </font></b><hr />
  <p align="center"><b><font color="#000000" size="7"></font>
 <?php matchsEnRetards2('pro', 25, $bdd) ;?> </font></b></p>
  
- <p align="center"><b><font color="#000000" size="7">F&eacute;d&eacute;rale 3</font>
+ <p align="center"><b><font color="#000000" size="7">Fédérale 3</font>
 <?php matchsEnRetards('fed3NE', 116, $bdd) ;?> </font></b>
 <?php matchsEnRetards('fed3NE', 216, $bdd) ;?> </font></b></p><hr />
 
   <p align="center"><b><font color="#000000" size="7"></font>
 <?php matchsEnRetards2('fed3NE', 126, $bdd) ;?> </font></b>
 <?php matchsEnRetards2('fed3NE', 226, $bdd) ;?> </font></b></p>
- <p align="center"><b><font color="#000000" size="7">F&eacute;minines</font>
+ <p align="center"><b><font color="#000000" size="7">Féminines</font>
 <?php matchsEnRetardsFem('pro', 28, $bdd) ;?> </font></b>
  
 

@@ -152,7 +152,7 @@ echo "";
     </font></font></b></font></font></b></font></div>
 </div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 55px; top: 361px; background-image:    url(../../phases_finales/titre2.jpg); layer-background-image:    url(../../phases_finales/titre2.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>Promotion r&eacute;serve</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>Promotion réserve</b></font></div>
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 293px; top: 363px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b> 
@@ -289,7 +289,7 @@ echo "";
     </font></font></b></font></font></b></font></div>
 </div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 52px; top: 228px; background-image:    url(../../phases_finales/titre2.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>r&eacute;serve</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>réserve</b></font></div>
 </div>
 <div id="Layer7" style="position:absolute; width:1000px; height:88px; z-index:13; left: -2px; top: 70px"> 
   <table width="100%" border="0" height="30">

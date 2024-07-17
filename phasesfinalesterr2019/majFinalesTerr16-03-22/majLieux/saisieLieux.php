@@ -60,7 +60,7 @@ $page="saisieLieux";
   </tr>
   <tr> 
     <td valign="top" height="25" width="17%"> 
-      <div align="center"><b>Ann&eacute;e</b></div>
+      <div align="center"><b>Année</b></div>
     </td>
     <td width="83%" valign="top" height="25" bgcolor="#000000"> 
       <div align="center"><font color="#FF0000"><b><font size="5" face="Arial, Helvetica, sans-serif"> 
@@ -70,7 +70,7 @@ $page="saisieLieux";
   </tr>
   <tr> 
     <td valign="top" height="21" width="17%"> 
-      <div align="center">Comit&eacute;</div>
+      <div align="center">Comité</div>
     </td>
     <td width="83%" valign="top" height="21" bgcolor="#009900"> 
       <div align="center"> <font color="#000000">

@@ -228,7 +228,7 @@ $clubA3264= ' Pays Catalan 1';
           <tr bgcolor="#FFFFFF"> 
             <td height="55" colspan="9" bgcolor="#FFFFFF"> 
               <div align="center"><font size="5" color="#000000"><b>Nombre de 
-                clubs qualifi&eacute;s par comit&eacute; (2015-2016)</b></font></div>
+                clubs qualifiés par comité (2015-2016)</b></font></div>
             </td>
           </tr>
           <tr> 
@@ -236,7 +236,7 @@ $clubA3264= ' Pays Catalan 1';
               <div align="center"><b>COMITES</b></div>
             </td>
             <td height="83" width="11%"> 
-              <div align="center"><b>Nombre de clubs qualifi&eacute;s</b><b> directement 
+              <div align="center"><b>Nombre de clubs qualifiés</b><b> directement 
                 en 32me</b></div>
             </td>
             <td height="83" width="9%"> 
@@ -251,7 +251,7 @@ $clubA3264= ' Pays Catalan 1';
             </td>
             <td height="83" width="12%"> 
               <div align="center"> 
-                <p><b>Nombre de clubs qualifi&eacute;s</b><b> directement en 32me</b></p>
+                <p><b>Nombre de clubs qualifiés</b><b> directement en 32me</b></p>
               </div>
             </td>
             <td height="83" width="9%"> 
@@ -272,7 +272,7 @@ $clubA3264= ' Pays Catalan 1';
             </td>
             <td height="24" width="9%">&nbsp; </td>
             <td height="24" width="10%">&nbsp; </td>
-            <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+            <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comté</td>
             <td width="12%" height="24"> 
               <div align="center">avec Bourgogne</div>
             </td>
@@ -386,7 +386,7 @@ $clubA3264= ' Pays Catalan 1';
             </td>
             <td width="9%">&nbsp; </td>
             <td width="10%">&nbsp; </td>
-            <td width="18%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+            <td width="18%" bgcolor="#FFFFFF">Midi Pyrénées</td>
             <td width="12%" bgcolor="#FFFFFF"> 
               <div align="center">5</div>
             </td>

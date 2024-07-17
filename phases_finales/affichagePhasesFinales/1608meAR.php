@@ -1,13 +1,13 @@
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="13" bgcolor="#FFCC66" colspan="17"> 
-      <div align="center"><i><b>F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 </b></i></div>
+      <div align="center"><i><b>Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 </b></i></div>
     </td>
   </tr>
   <tr> 
@@ -824,7 +824,7 @@
     <td width="25">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        F&eacute;d&eacute;rale 2 
+        Fédérale 2 
         <?php echo $annee;?>
         </b></font></div>
     </td>

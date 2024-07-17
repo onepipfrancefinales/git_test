@@ -60,7 +60,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     </tr>
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Championnat des Pyr&eacute;n&eacute;es $annee : 4me S&eacute;rie";?>
+        <? echo "Championnat des Pyrénées $annee : 4me Série";?>
         </font></b></font></td>
     </tr>
   </table>
@@ -70,10 +70,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <table width="1000" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="16" bgcolor="#FFCC66" colspan="12">
-      <div align="center"><i><b> S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-        4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me 
-        S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-        4me S&eacute;rie 4me S&eacute;rie 4me </b></i></div>
+      <div align="center"><i><b> Série 4me Série 4me Série 
+        4me Série 4me Série 4me Série 4me Série 4me 
+        Série 4me Série 4me Série 4me Série 4me Série 
+        4me Série 4me Série 4me </b></i></div>
     </td>
   </tr>
   <tr> 

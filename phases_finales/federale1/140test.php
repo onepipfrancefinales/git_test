@@ -35,14 +35,14 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr bgcolor="#FFCC66"> 
     <td height="9" colspan="15"> 
-      <div align="center"><b><i>F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
+      <div align="center"><b><i>Fédérale 1 Jean PRAT - Fédérale 
+        1 Jean PRAT - Fédérale 1 Jean PRAT - Fédérale 
+        1 Jean PRAT - Fédérale 1 Jean PRAT - Fédérale 
         1 Jean PRAT </i></b></div>
     </td>
     <td height="9">&nbsp;</td>
     <td height="9" colspan="5" bgcolor="#FF9900"> 
-      <div align="center"><b><i><font size="3">F&eacute;d&eacute;rale 1</font></i></b></div>
+      <div align="center"><b><i><font size="3">Fédérale 1</font></i></b></div>
     </td>
   </tr>
   <tr> 
@@ -418,7 +418,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
   <tr> 
     <td width="229" height="15"> 
-      <div id="coin5" >St M&eacute;dard en Jalles (CA) 
+      <div id="coin5" >St Médard en Jalles (CA) 
         <?php	echo $clubA8007; ?>
       </div>
     </td>

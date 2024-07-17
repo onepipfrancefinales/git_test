@@ -1,6 +1,6 @@
 <?php
 
- if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÈclarÈe";
+ if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÔøΩclarÔøΩe";
 
  ?>
  <!--
@@ -25,7 +25,7 @@ classementParPoints5poules($comite, $division);
     <td width="261"> </td>
   </tr>
   <tr> 
-    <th colspan="2">Equipes Qualifi&eacute;es</th>
+    <th colspan="2">Equipes Qualifi√©es</th>
   </tr>
   <tr> 
     <td colspan="2">&nbsp;</td>

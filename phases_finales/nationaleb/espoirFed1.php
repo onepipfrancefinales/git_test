@@ -61,9 +61,9 @@ $clubA4008="Rouen (N)";
   </tr>
   <tr bgcolor="#FFCC66"> 
     <td colspan="13" height="24"> 
-      <div align="center"><i><b>Espoir F&eacute;d&eacute;rale 1 ( -23ans ) -- 
-        Espoir F&eacute;d&eacute;rale 1 ( -23ans ) -- Espoir F&eacute;d&eacute;rale 
-        1 ( -23ans ) -- Espoir F&eacute;d&eacute;rale 1 ( -23ans ) -- Espoir F&eacute;d&eacute;rale 
+      <div align="center"><i><b>Espoir Fédérale 1 ( -23ans ) -- 
+        Espoir Fédérale 1 ( -23ans ) -- Espoir Fédérale 
+        1 ( -23ans ) -- Espoir Fédérale 1 ( -23ans ) -- Espoir Fédérale 
         1 ( -23ans ) -- </b></i></div>
     </td>
   </tr>

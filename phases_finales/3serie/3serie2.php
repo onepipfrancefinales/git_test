@@ -25,18 +25,18 @@ $clubA1613= ' Poitou-Charentes 1';
 $clubA1614= ' Limousin 1';
 
 $clubA1615= ' Auvergne 1';
-$clubA1616= ' Midi-Pyr�n�es 3 ';
+$clubA1616= ' Midi-Pyr�n�es 3 ';
 
-$clubA1617= ' P�rigord Agenais 1';
-$clubA1618= ' Midi-Pyr�n�es 2';
+$clubA1617= ' P�rigord Agenais 1';
+$clubA1618= ' Midi-Pyr�n�es 2';
 
-$clubA1619= ' C�te d Argent 1';
+$clubA1619= ' C�te d Argent 1';
 $clubA1620= ' Vainqueur LM 2 contre CBL 2 ';
 
 $clubA1621= ' Armagnac Bigorre 1';
-$clubA1622= ' Midi-Pyr�n�es 1';
+$clubA1622= ' Midi-Pyr�n�es 1';
 
-$clubA1623= ' C�te Basque Landes 1';
+$clubA1623= ' C�te Basque Landes 1';
 $clubA1624= ' Vainqueur BE 1 contre LD 2 ';
 
 $clubA1625= ' Languedoc 1';
@@ -451,7 +451,7 @@ $clubA1632= ' Vainqueur LY 3 contre AP 2 ';
     <tr bgcolor="#FFFFFF"> 
       <td height="55" colspan="9" bgcolor="#FFFFFF"> 
         <div align="center"><font size="5" color="#000000"><b>Nombre de clubs 
-          qualifi&eacute;s par comit&eacute; (2015-2016)</b></font></div>
+          qualifiés par comité (2015-2016)</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -459,7 +459,7 @@ $clubA1632= ' Vainqueur LY 3 contre AP 2 ';
         <div align="center"><b>COMITES</b></div>
       </td>
       <td height="83" width="11%"> 
-        <div align="center"><b>Nombre de clubs qualifi&eacute;s directement en 
+        <div align="center"><b>Nombre de clubs qualifiés directement en 
           16me</b></div>
       </td>
       <td height="83" width="9%"> 
@@ -474,7 +474,7 @@ $clubA1632= ' Vainqueur LY 3 contre AP 2 ';
       </td>
       <td height="83" width="12%"> 
         <div align="center"> 
-          <p><b>Nombre de clubs qualifi&eacute;s directement en 16me</b></p>
+          <p><b>Nombre de clubs qualifiés directement en 16me</b></p>
         </div>
       </td>
       <td height="83" width="9%"> 
@@ -499,7 +499,7 @@ $clubA1632= ' Vainqueur LY 3 contre AP 2 ';
       <td height="24" width="10%"> 
         <div align="center"><b><font size="4"></font></b></div>
       </td>
-      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comté</td>
       <td width="12%" height="24"> 
         <div align="center">avec Bourgogne</div>
       </td>
@@ -631,7 +631,7 @@ $clubA1632= ' Vainqueur LY 3 contre AP 2 ';
       <td width="10%"> 
         <div align="center"><b><font size="4"></font></b></div>
       </td>
-      <td width="18%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+      <td width="18%" bgcolor="#FFFFFF">Midi Pyrénées</td>
       <td width="12%" bgcolor="#FFFFFF"> 
         <div align="center">3</div>
       </td>
@@ -827,8 +827,8 @@ $clubA1632= ' Vainqueur LY 3 contre AP 2 ';
   </table>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>3me 
-  S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-  3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-  3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-  3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-  3me S&eacute;rie 3me S&eacute;rie</b></i></div>
+  Série 3me Série 3me Série 3me Série 3me Série 
+  3me Série 3me Série 3me Série 3me Série 3me Série 
+  3me Série 3me Série 3me Série 3me Série 3me Série 
+  3me Série 3me Série 3me Série 3me Série 3me Série 
+  3me Série 3me Série</b></i></div>

@@ -26,7 +26,7 @@ elseif ($go=="1")
 {
       $pseudo=addslashes($pseudo);
 
-       // On vérifie que le pseudo n'est pas utilisé
+       // On vï¿½rifie que le pseudo n'est pas utilisï¿½
        $resultat =$idconnect->query( "	SELECT * 
 										FROM phpab_membres 
 										WHERE pseudo='$pseudo'");
@@ -36,7 +36,7 @@ elseif ($go=="1")
        elseif (strlen($pseudo)<4 or strlen($pseudo)>20) {$message.=PRONO_INSCRIPTION_PSEUDO_TAILLE."<br />";}
        else {$pseudo_verif="ok";}
        
-       // On vérifie que le mail n'est pas utilisé
+       // On vï¿½rifie que le mail n'est pas utilisï¿½
        $resultat =$idconnect->query( "	SELECT * 
 										FROM phpab_membres 
 										WHERE mail='$mail'");
@@ -149,14 +149,14 @@ $sujet="France Finales Rugby App";
 
 $message="<html><head><title>phpabeague</title></head><body>
 <p><font size=\"2\" face=\"Verdana\">Bonjour et bienvenue sur France Finales Rugby, </font></p>
-<p><font size=\"2\" face=\"Verdana\">Vous venez de vous inscrire sur France Finales Rugby App. Vous pouvez désormais procéder à la mise à jours des résultats des rencontres de votre comité.</font></p>
+<p><font size=\"2\" face=\"Verdana\">Vous venez de vous inscrire sur France Finales Rugby App. Vous pouvez dï¿½sormais procï¿½der ï¿½ la mise ï¿½ jours des rï¿½sultats des rencontres de votre comitï¿½.</font></p>
 <p><font size=\"2\" face=\"Verdana\">Voici les informations qui vous
-permettront d'accéder à la mise à jours des résultats :</font></p>
+permettront d'accï¿½der ï¿½ la mise ï¿½ jours des rï¿½sultats :</font></p>
 <p><font face=\"Verdana\" size=\"2\">Login :&nbsp;  $pseudo 
 <br />
 Mot de passe :  $mdp </font></p>
 
-<p><font face=\"Verdana\" size=\"2\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmarès, etc...en consultant
+<p><font face=\"Verdana\" size=\"2\">Vous pouvez ï¿½galement consulter stats, classements complets, calendriers, les diffï¿½rents palmarï¿½s, etc...en consultant
 <a href=\"http://francefinalesrugby.franceserv.com\">France Finales Rugby</a> 
 </font></p>
 <br />
@@ -193,7 +193,7 @@ Sportivement</font></p>
 else
 {
   echo "<table align=\"center\">";
-  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"http://127.0.0.1/Phpleague/phpab/prono/index.php?page=inscription&gr_champ=5\">R&eacute;essayer</a></td></tr>";
+  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"http://127.0.0.1/Phpleague/phpab/prono/index.php?page=inscription&gr_champ=5\">RÃ©essayer</a></td></tr>";
   echo "</table>";
 }
 

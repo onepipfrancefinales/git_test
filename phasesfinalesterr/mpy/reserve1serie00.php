@@ -285,10 +285,10 @@ MM_reloadPage(true);
   <div align="center"><font color="#FFFFFF"><b>Quarts de finale</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 151px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b> R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re 
-    S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie 
-    R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 
-    1re S&eacute;rie R&eacute;serve 1re S&eacute;rie</b></i></div>
+  <div align="center"><i><b> Réserve 1re Série Réserve 1re 
+    Série Réserve 1re Série Réserve 1re Série 
+    Réserve 1re Série Réserve 1re Série Réserve 
+    1re Série Réserve 1re Série</b></i></div>
 </div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 46px; top: 195px; background-image:    url(../../phases_finales/titre2.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#000000"><b>Barrages</b></font></div>

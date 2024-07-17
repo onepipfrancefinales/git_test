@@ -39,8 +39,8 @@
             <p>
               <?php
               require("../../connect/connexion1.php");
-              echo "<BR/><h2><p> <strong> Comp&eacute;titions Europ&eacute;ennes  <BR/></strong></p></h2>";
-              echo "<h1><p> <strong> Challenge Europ&eacute;en<BR/><BR/></strong></p></h1>";
+              echo "<BR/><h2><p> <strong> Compétitions Européennes  <BR/></strong></p></h2>";
+              echo "<h1><p> <strong> Challenge Européen<BR/><BR/></strong></p></h1>";
               echo "<h1><p> <strong> Challenge Cup  <BR/></strong></p></h1>";
               ?>
             </p>

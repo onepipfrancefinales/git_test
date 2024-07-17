@@ -28,7 +28,7 @@ echo "Comite : ".$comite.' '.$codeLigue; echo "<br />";
 <body bgcolor="#FFFFFF" text="#000000">
 <table width="352">
   <tr bgcolor="#FFFFFF"> 
-    <td colspan="2"><div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie des &eacute;quipes</font></b></font></div></td>
+    <td colspan="2"><div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie des équipes</font></b></font></div></td>
   </tr>
   <tr> 
     <td bgcolor="#000000" width="37"><div align="center"><font size="6"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">3</font></b></font></div></td>
@@ -53,11 +53,11 @@ echo "Comite : ".$comite.' '.$codeLigue; echo "<br />";
     </td>
   </tr>
   <tr> 
-    <td valign="top" height="7" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Ann&eacute;e</font></div></td>
+    <td valign="top" height="7" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Année</font></div></td>
     <td width="74%" valign="top" height="7" bgcolor="#000000"><div align="center"><b><font size="5" color="#FFFFFF"><?php echo $annee; ?></font></b></div></td>
   </tr>
   <tr> 
-    <td valign="top" height="10" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Comit&eacute;</font></div></td>
+    <td valign="top" height="10" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Comité</font></div></td>
     <td width="74%" valign="top" height="10" bgcolor="#FF9933"><div align="center"><?php echo $comite.' '.$codeLigue;?></div></td>
   </tr>
   <tr> 
@@ -100,7 +100,7 @@ if ($type==1)
 <br>
  <form name="insertion" action="saisieEquipe2.php?type=<?php echo $type ; ?>&division=<?php echo $division ; ?>&comite=<?php echo $comite ; ?>&annee=<?php echo $annee ; ?>" method="POST">
 					    
-		<header><h1>  Division (<?php echo $division; ?>) Ann&eacute;e  <?php echo $annee; ?></h1></header>   
+		<header><h1>  Division (<?php echo $division; ?>) Année  <?php echo $annee; ?></h1></header>   
 <!-- ************  Finale   ************ -->			
 		
 	<p class="texte"> Finale </p>
@@ -127,7 +127,7 @@ elseif ($type==2 OR $type==3)
     ?>
   <form name="insertion" action="saisieEquipe2.php?type=<?php echo $type ; ?>&division=<?php echo $division ; ?>&comite=<?php echo $comite ; ?>&annee=<?php echo $annee ; ?>" method="POST">
 				  
-    <header><h1><?php echo "Division ( ".''.$division.''." )Ann&eacute;e ".''.$annee; ?> </h1></header>
+    <header><h1><?php echo "Division ( ".''.$division.''." )Année ".''.$annee; ?> </h1></header>
   
     <p class="texte"> Demi finale  </p>
 	  
@@ -160,7 +160,7 @@ elseif ($type==14 OR $type==15)
   <form name="insertion" action="saisieEquipe2.php?type=<?php echo $type ; ?>&division=<?php echo $division ; ?>&comite=<?php echo $comite ; ?>&annee=<?php echo $annee ; ?>" method="POST">
 						  <b><font size="4"> 
 						  			
-    <header><h1> <?php echo  "Division (".''.$division.''." ) Ann&eacute;e ".''.$annee; ?></h1></header>		  
+    <header><h1> <?php echo  "Division (".''.$division.''." ) Année ".''.$annee; ?></h1></header>		  
 	
 	<p class="texte"> Quarts de finale</p>
 			 
@@ -208,7 +208,7 @@ elseif ($type==13)
 						  			   
 	<input type="hidden" name="division" value="<?php echo($division) ;?>">
 						  
-	<header><h1> Division ( <?php echo $division; ?> ) Ann&eacute;e <?php echo $annee; ?> </h1></header>  
+	<header><h1> Division ( <?php echo $division; ?> ) Année <?php echo $annee; ?> </h1></header>  
 	  
 	<p class="texte">  Barrages </p>
 	      

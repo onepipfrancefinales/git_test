@@ -9,14 +9,14 @@
             <ul>
               <li><a href="pagePalmTerr.php?rang=170"><font size="2">Honneur</font></a></li>
               <li><a href="pagePalmTerr.php?rang=180"><font size="2">Promotion</font></a></li>
-              <li><a href="pagePalmTerr.php?rang=190"><font size="2">1re S&eacute;rie</font></a></li>
-              <li><a href="pagePalmTerr.php?rang=200"><font size="2">2me S&eacute;rie</font></a></li>
-              <li><a href="pagePalmTerr.php?rang=210"><font size="2">3me S&eacute;rie</font></a></li>
-              <li><a href="pagePalmTerr.php?rang=220"><font size="2">4me S&eacute;rie</font></a></li>
-              <li><a href="pagePalmTerr.php?rang=270"><font size="2">R&eacute;serve</font></a></li>
-			  <li><a href="pagePalmTerr.php?rang=9180"><font size="2">R&eacute;serve Promotion</font></a></li>
-			  <li><a href="pagePalmTerr.php?rang=9190"><font size="2">R&eacute;serve 1re Serie</font></a></li>
-			   <li><a href="pagePalmTerr.php?rang=9200"><font size="2">R&eacute;serve 2me Serie</font></a></li>
+              <li><a href="pagePalmTerr.php?rang=190"><font size="2">1re Série</font></a></li>
+              <li><a href="pagePalmTerr.php?rang=200"><font size="2">2me Série</font></a></li>
+              <li><a href="pagePalmTerr.php?rang=210"><font size="2">3me Série</font></a></li>
+              <li><a href="pagePalmTerr.php?rang=220"><font size="2">4me Série</font></a></li>
+              <li><a href="pagePalmTerr.php?rang=270"><font size="2">Réserve</font></a></li>
+			  <li><a href="pagePalmTerr.php?rang=9180"><font size="2">Réserve Promotion</font></a></li>
+			  <li><a href="pagePalmTerr.php?rang=9190"><font size="2">Réserve 1re Serie</font></a></li>
+			   <li><a href="pagePalmTerr.php?rang=9200"><font size="2">Réserve 2me Serie</font></a></li>
 			</ul>
           </li>
         </ul>
@@ -25,7 +25,7 @@
     <td width="33%" height="28"> 
       <div align="center"> 
         <ul class="menu-demo2">
-          <li><a href="#"><font size="2"><b> Par ann&eacute;es </b></font></a> 
+          <li><a href="#"><font size="2"><b> Par années </b></font></a> 
             <ul>
               <li><a href="page_palmares.php?rang=220"><font size="2">2010-2017</font></a></li>
               <li><a href="page_palmares.php?rang=250"><font size="2">2000-2009</font></a></li>

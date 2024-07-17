@@ -15,10 +15,10 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 <?php
  
 //if (isset ($_GET['AR'])) $AR = $_GET['AR']; else $AR = "non d�clar�e";
-if (isset ($_GET['type'])) $type = $_GET['type']; else $type = "non d&eacute;clar&eacute;e";
-if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee = " non d&eacute;clar&eacute;e";
-if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "non d&eacute;clar&eacute;e";
-if (isset ($_GET['phase'])) $phase = $_GET['phase']; else $phase = "non d&eacute;clar&eacute;e";
+if (isset ($_GET['type'])) $type = $_GET['type']; else $type = "non déclarée";
+if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee = " non déclarée";
+if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "non déclarée";
+if (isset ($_GET['phase'])) $phase = $_GET['phase']; else $phase = "non déclarée";
 
 //echo "AR : ".$AR;echo "<br/>";
 echo "type : ".$type;echo "<br/>";
@@ -65,35 +65,35 @@ $ad="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
           <option value=""><b>Barrages</b></option>
           <option value=""><b>----------------</b></option>
     <!--     
-		  <option value="<?php echo $adresse;?>?division=7150&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Barrages F&eacute;d 2</b></option>
-      <option value="<?php echo $adresse;?>?division=7160&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Barrages F&eacute;d 3</b></option>
+		  <option value="<?php echo $adresse;?>?division=7150&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Barrages Féd 2</b></option>
+      <option value="<?php echo $adresse;?>?division=7160&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Barrages Féd 3</b></option>
 		  <option value="<?php echo $adresse;?>?division=110&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Top 14</b></option>
       <option value="<?php echo $adresse;?>?division=120&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Pro D2</b></option>
       <option value="<?php echo $adresse;?>?division=115&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Barrage Top14 Pro D2 </b></option>
 		  <option value="<?php echo $adresse;?>?division=130&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Nationale</b></option>
-      <option value="<?php echo $adresse;?>?division=140&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>F&eacute;d&eacute;rale 1</b></option>
-      <option value="<?php echo $adresse;?>?division=150&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>F&eacute;d&eacute;rale 2</b></option>
-      <option value="<?php echo $adresse;?>?division=160&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>F&eacute;d&eacute;rale 3</b></option>
+      <option value="<?php echo $adresse;?>?division=140&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Fédérale 1</b></option>
+      <option value="<?php echo $adresse;?>?division=150&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Fédérale 2</b></option>
+      <option value="<?php echo $adresse;?>?division=160&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Fédérale 3</b></option>
       <option value="<?php echo $adresse;?>?division=170&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Honneur</b></option>
       <option value="<?php echo $adresse;?>?division=180&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Promotion</b></option>
-      <option value="<?php echo $adresse;?>?division=190&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>1re s&eacute;rie</b></option>
-      <option value="<?php echo $adresse;?>?division=200&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>2me s&eacute;rie</b></option>
-      <option value="<?php echo $adresse;?>?division=210&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>3me s&eacute;rie</b></option>
-      <option value="<?php echo $adresse;?>?division=220&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>4me s&eacute;rie</b></option>
+      <option value="<?php echo $adresse;?>?division=190&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>1re série</b></option>
+      <option value="<?php echo $adresse;?>?division=200&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>2me série</b></option>
+      <option value="<?php echo $adresse;?>?division=210&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>3me série</b></option>
+      <option value="<?php echo $adresse;?>?division=220&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>4me série</b></option>
       <option value=""><b>----------------</b></option>
-      <option value=""><b>F&eacute;minines</b></option>
+      <option value=""><b>Féminines</b></option>
       <option value=""><b>----------------</b></option>
       <option value="<?php echo $adresse;?>?division=280&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Elite 1 - Top 8</b></option>
       <option value="<?php echo $adresse;?>?division=285&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Elite 2</b></option>
-      <option value="<?php echo $adresse;?>?division=290&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>F&eacute;d&eacute;rale 1</b></option>
-      <option value="<?php echo $adresse;?>?division=295&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>F&eacute;d&eacute;rale 2</b></option>
+      <option value="<?php echo $adresse;?>?division=290&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Fédérale 1</b></option>
+      <option value="<?php echo $adresse;?>?division=295&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Fédérale 2</b></option>
       <option value=""><b>----------------</b></option>
-      <option value=""><b>R&eacute;serves</b></option>
+      <option value=""><b>Réserves</b></option>
       <option value=""><b>----------------</b></option>
-      <option value="<?php echo $adresse;?>?division=240&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Espoir F&eacute;d 1</b></option>
-      <option value="<?php echo $adresse;?>?division=250&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>F&eacute;d&eacute;rale B</b></option>
+      <option value="<?php echo $adresse;?>?division=240&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Espoir Féd 1</b></option>
+      <option value="<?php echo $adresse;?>?division=250&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Fédérale B</b></option>
       <option value="<?php echo $adresse;?>?division=260&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Excellence B</b></option>
-      <option value="<?php echo $adresse;?>?division=270&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>R&eacute;serve</b></option>
+      <option value="<?php echo $adresse;?>?division=270&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Réserve</b></option>
 		  <option value=""><b>----------------</b></option>
       <option value=""><b>Jeunes</b></option>
       <option value=""><b>----------------</b></option>
@@ -104,15 +104,15 @@ $ad="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
       <option value="<?php echo $adresse;?>?division=370&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>"><b>Teuliere</b></option>
       --> 
 
-  <option value="<?php echo $ad ;?>?division=7140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages F&eacute;d 1</b></option>
-	<option value="<?php echo $ad ;?>?division=7150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages F&eacute;d 2</b></option>
-  <option value="<?php echo $ad ;?>?division=7160&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages F&eacute;d 3 </b></option>
+  <option value="<?php echo $ad ;?>?division=7140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Féd 1</b></option>
+	<option value="<?php echo $ad ;?>?division=7150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Féd 2</b></option>
+  <option value="<?php echo $ad ;?>?division=7160&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Féd 3 </b></option>
 	<option value="<?php echo $ad ;?>?division=7150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Espoir Fed 1</b></option>
-	<option value="<?php echo $ad ;?>?division=7250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages F&eacute;d B</b></option>
+	<option value="<?php echo $ad ;?>?division=7250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Féd B</b></option>
   <option value="<?php echo $ad ;?>?division=7260&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Excellence B</b></option>
 
 <option value=""><b>----------------</b></option>
-<option value=""><b>S&eacute;niors I</b></option>
+<option value=""><b>Séniors I</b></option>
 <option value=""><b>----------------</b></option>
   <option value="<?php echo $ad ;?>?division=110&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Top14</b></option>
   <option value="<?php echo $ad ;?>?division=120&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Pro D2 </b></option>
@@ -120,29 +120,29 @@ $ad="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
   <option value="<?php echo $ad ;?>?division=130&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Nationale 1 </b></option>
 	<option value="<?php echo $ad ;?>?division=135&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Nationale 2 </b></option>
 	
-	<option value="<?php echo $ad ;?>?division=140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale 1 J Prat </b></option>
-  <option value="<?php echo $ad ;?>?division=150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale 2</b></option>
-  <option value="<?php echo $ad ;?>?division=160&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale 3 </b></option>
-  <option value="<?php echo $ad ;?>?division=170&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;gionale 1</b></option>
-  <option value="<?php echo $ad ;?>?division=180&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;gionale 2 </b></option>
-  <option value="<?php echo $ad ;?>?division=190&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;gionale 3 </b></option>
+	<option value="<?php echo $ad ;?>?division=140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 1 J Prat </b></option>
+  <option value="<?php echo $ad ;?>?division=150&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 2</b></option>
+  <option value="<?php echo $ad ;?>?division=160&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 3 </b></option>
+  <option value="<?php echo $ad ;?>?division=170&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 1</b></option>
+  <option value="<?php echo $ad ;?>?division=180&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 2 </b></option>
+  <option value="<?php echo $ad ;?>?division=190&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 3 </b></option>
     
   <option value=""><b>----------------</b></option>
-  <option value=""><b>R&eacute;serves</b></option>
+  <option value=""><b>Réserves</b></option>
   <option value=""><b>----------------</b></option>	
 	<option value="<?php echo $ad ;?>?division=225&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoir Elite</b></option>
 	<option value="<?php echo $ad ;?>?division=230&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoir Nat</b></option>
   <option value="<?php echo $ad ;?>?division=240&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoir Fed</b></option>
-  <option value="<?php echo $ad ;?>?division=250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale B</b></option>
+  <option value="<?php echo $ad ;?>?division=250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale B</b></option>
   <option value="<?php echo $ad ;?>?division=260&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Excellence B</b></option>
-	<option value="<?php echo $ad ;?>?division=270&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Res R&eacute;gionale</b></option>
+	<option value="<?php echo $ad ;?>?division=270&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Res Régionale</b></option>
 
   <option value=""><b>----------------</b></option>
   <option value=""><b>Féminines</b></option>
 <option value=""><b>----------------</b></option>  
     <option value="<?php echo $ad ;?>?division=280&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 1</b></option>
     <option value="<?php echo $ad ;?>?division=285&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 2</b></option>
-    <option value="<?php echo $ad ;?>?division=290&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>F&eacute;d&eacute;rale 1</b></option>
+    <option value="<?php echo $ad ;?>?division=290&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 1</b></option>
 
 <option value=""><b>----------------</b></option>
 <option value=""><b>Jeunes</b></option>
@@ -180,7 +180,7 @@ $ad="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
     </td>
   </tr>
   <tr> 
-    <td valign="top" height="25" width="17%" align="center"><b>Ann&eacute;e</b></td>
+    <td valign="top" height="25" width="17%" align="center"><b>Année</b></td>
     <td width="83%" valign="top" height="25" bgcolor="#000000"> 
       <div align="center"><font color="#FF0000"><b><font size="5" face="Arial, Helvetica, sans-serif"> 
         <?php echo $annee; ?>
@@ -214,12 +214,12 @@ $ad="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
           <p><b><font face="Arial, Helvetica, sans-serif">**Qualifié au nombre d'essais**<br>
           </font></b><font face="Arial, Helvetica, sans-serif">Affichage NE-', 
           saisir '444'</font></br>
-		  </font></b><font face="Arial, Helvetica, sans-serif">Afficher score r&eacute;el</font></p>
+		  </font></b><font face="Arial, Helvetica, sans-serif">Afficher score réel</font></p>
        
           <p><b><font face="Arial, Helvetica, sans-serif">**Tir aux but:**<br>
           </font></b><font face="Arial, Helvetica, sans-serif">Affichage Tab-', 
           saisir '555'</font></br>
-		  </font></b><font face="Arial, Helvetica, sans-serif">Afficher score r&eacute;el</font></p>
+		  </font></b><font face="Arial, Helvetica, sans-serif">Afficher score réel</font></p>
         
       <p><b><font face="Arial, Helvetica, sans-serif">**Disqualification**<br>
            </font></b><font face="Arial, Helvetica, sans-serif">Affichage '25,' 

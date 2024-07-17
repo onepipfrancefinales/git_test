@@ -222,10 +222,10 @@ MM_reloadPage(true);
   <div align="center"><font color="#FFFFFF"><b>Quarts de finale</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: -2px; top: 163px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;servee</b></i></div>
+  <div align="center"><i><b>Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réservee</b></i></div>
 </div>
    
 	   

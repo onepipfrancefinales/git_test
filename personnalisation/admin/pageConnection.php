@@ -57,11 +57,11 @@ content="Presentation de la competititon et de tous les champions de France 1re 
             <font size="4"><br>
             <b><font face="Arial, Helvetica, sans-serif" color="#000000">En un 
             seul clic, Sur une seule page, <br>
-            Toutes mes comp&eacute;titions et mes championnats</font></b> </font></p>
+            Toutes mes compétitions et mes championnats</font></b> </font></p>
           <p>&nbsp;</p>
-          <p><font size="4" face="Arial, Helvetica, sans-serif" color="#000000">Cr&eacute;er 
-            une page personnalis&eacute;e, en s&eacute;lectionnant, les comp&eacute;titions, 
-            les &eacute;quipes de votre choix (5 s&eacute;lections maximum), consultable 
+          <p><font size="4" face="Arial, Helvetica, sans-serif" color="#000000">Créer 
+            une page personnalisée, en sélectionnant, les compétitions, 
+            les équipes de votre choix (5 sélections maximum), consultable 
             en un clic.</font></p>
           <p><font color="#000000"><br>
             </font></p>

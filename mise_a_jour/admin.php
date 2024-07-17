@@ -40,7 +40,7 @@
   <tr> 
     <td width="13">&nbsp;</td>
     <td width="316"><a href="consulter_clubs_comite/00pagevoir.php">Consulter 
-      les clubs d'un comit&eacute;</a></td>
+      les clubs d'un comité</a></td>
     <td width="465">&nbsp;</td>
   </tr>
   <tr> 

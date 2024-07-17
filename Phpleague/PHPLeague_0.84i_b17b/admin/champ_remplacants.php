@@ -131,7 +131,7 @@ if ($NBR_MATCH > 0)
 		$CLUB_EXT = stripslashes($ROW1[1]);
 		$TXT_J    = '<div class="User"><a href="index.php?page=championnat&action=joueurs&champ='.$champ.'&annee='.$annee.'">Ajouter des joueurs</a></div>'."\n";
 
-		// Liste joueurs domicile ‡ supprimer
+		// Liste joueurs domicile ÔøΩ supprimer
 		$REQ3 = 'SELECT phpl_joueurs.nom, phpl_joueurs.prenom, phpl_compo.id, phpl_joueurs.id
 				FROM phpl_joueurs, phpl_compo, phpl_effectif
 				WHERE phpl_effectif.id_joueur=phpl_joueurs.id
@@ -154,7 +154,7 @@ if ($NBR_MATCH > 0)
 		$RES4      = mysql_query($REQ4);
 		$NBR_J_DOM = mysql_num_rows($RES4);
 
-		// Liste joueurs extÈrieur ‡ supprimer
+		// Liste joueurs extÔøΩrieur ÔøΩ supprimer
 		$REQ5 = 'SELECT phpl_joueurs.nom, phpl_joueurs.prenom, phpl_compo.id
 				FROM phpl_compo, phpl_joueurs, phpl_effectif
 				WHERE phpl_effectif.id_joueur=phpl_joueurs.id
@@ -166,7 +166,7 @@ if ($NBR_MATCH > 0)
 		$RES5 = mysql_query($REQ5);
 		$NBR5 = mysql_num_rows($RES5);
 
-		// Liste joueurs extÈrieur choix
+		// Liste joueurs extÔøΩrieur choix
 		$REQ6 = 'SELECT phpl_effectif.id, phpl_effectif.id_equipe, phpl_joueurs.nom, phpl_joueurs.prenom, phpl_effectif.id_joueur
 				FROM phpl_joueurs, phpl_clubs, phpl_equipes, phpl_effectif
 				WHERE phpl_effectif.id_equipe=phpl_equipes.id
@@ -343,7 +343,7 @@ if ($NBR_MATCH > 0)
 }
 else
 {
-	echo InfoReqSql('InfTitMatch', 0, 'highlight', 'alert', 'Aucun matchs renseign&eacute;s pour cette journ&eacute;e. Allez dans la rubrique [ <a href="index.php?page=championnat&amp;action=matchs&amp;champ='.$champ.'&amp;annee='.$annee.'&amp;numero='.$numero.'">Matchs</a> ]');
+	echo InfoReqSql('InfTitMatch', 0, 'highlight', 'alert', 'Aucun matchs renseign√©s pour cette journ√©e. Allez dans la rubrique [ <a href="index.php?page=championnat&amp;action=matchs&amp;champ='.$champ.'&amp;annee='.$annee.'&amp;numero='.$numero.'">Matchs</a> ]');
 }
 
 mysql_free_result($REQ1);

@@ -83,7 +83,7 @@ de France Groupe A1</font></b></font><font color="#000000"><br/>
 ( Clubs) </font><br/>
   <br/>
   <?php 
-$reponse = $bdd->query("SELECT * FROM bdequipe1 WHERE rang2='117'and titre='champion'ORDER BY saison DESC"); // Requête SQL
+$reponse = $bdd->query("SELECT * FROM bdequipe1 WHERE rang2='117'and titre='champion'ORDER BY saison DESC"); // Requï¿½te SQL
 while ($donnees = $reponse->fetch())
 { 
 ?>
@@ -103,7 +103,7 @@ de France Groupe A</font></b></font><font color="#000000"><br/>
 ( Clubs) </font><br/>
   <br/>
   <?php 
-$reponse = $bdd->query("SELECT * FROM bdequipe1 WHERE rang2='116'and titre='champion'ORDER BY saison DESC"); // Requête SQL
+$reponse = $bdd->query("SELECT * FROM bdequipe1 WHERE rang2='116'and titre='champion'ORDER BY saison DESC"); // Requï¿½te SQL
 while ($donnees = $reponse->fetch())
 { 
 ?>
@@ -123,7 +123,7 @@ de France 1re Division </font></b></font><font color="#000000"><br/>
 ( Clubs) </font><br/>
   <br/>
   <?php
-$reponse = $bdd->query("SELECT * FROM bdequipe1 WHERE rang2='114'and titre='champion'ORDER BY saison DESC"); // Requête SQL
+$reponse = $bdd->query("SELECT * FROM bdequipe1 WHERE rang2='114'and titre='champion'ORDER BY saison DESC"); // Requï¿½te SQL
 while ($donnees = $reponse->fetch())
 { 
 ?>
@@ -139,11 +139,11 @@ while ($donnees = $reponse->fetch())
   <br/>
   <br/>
 <font face="Arial, Helvetica, sans-serif" size="4"><b> <font size="5" color="#000000">Champions 
-de France 1re S&eacute;rie</font></b></font><font color="#000000"><br/>
+de France 1re SÃ©rie</font></b></font><font color="#000000"><br/>
 ( Clubs) </font><br/>
   <br/>
   <?php
-$reponse = $bdd->query("SELECT * FROM bdequipe1 WHERE championnat='de France' and rang2='111'and titre='champion'ORDER BY saison DESC"); // Requête SQL
+$reponse = $bdd->query("SELECT * FROM bdequipe1 WHERE championnat='de France' and rang2='111'and titre='champion'ORDER BY saison DESC"); // Requï¿½te SQL
 while ($donnees = $reponse->fetch())
 { 
 ?>

@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de donnÈes en PHP :: partie2</title>
+<title>modification de donnÔøΩes en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <?php $page="score"; ?>
@@ -172,7 +172,7 @@ require ("../../fonctionspfterrESDL2019.php");
   ?>
   <?php
  }
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
   </font></b> 
   <input type="hidden" name="division" value="<?php echo($division) ;?>">
@@ -260,14 +260,14 @@ mysql_close(); // DÈconnexion de MySQL
       <td width="167"><font face="Arial, Helvetica, sans-serif"> 
         <?php	echo $clubA8007; ?>
         <br>
-        8009 &agrave; d&eacute;finir<br>
+        8009 &agrave; d√©finir<br>
         <input type="text" name="A80072" value="<?php echo($result->A8007) ;?>" size="3">
         </font></td>
       <td width="5">&nbsp;</td>
       <td width="138"><font face="Arial, Helvetica, sans-serif"> 
         <?php	echo $clubA8007; ?>
         <br>
-        8010 &agrave; d&eacute;finir<br>
+        8010 &agrave; d√©finir<br>
         <input type="text" name="A80073" value="<?php echo($result->A8007) ;?>" size="3">
         </font></td>
     </tr>
@@ -276,14 +276,14 @@ mysql_close(); // DÈconnexion de MySQL
       <td width="167"><font face="Arial, Helvetica, sans-serif"> 
         <?php	echo $clubA8007; ?>
         <br>
-        8011&agrave; d&eacute;finir 
+        8011&agrave; d√©finir 
         <input type="text" name="A80075" value="<?php echo($result->A8007) ;?>" size="3">
         </font></td>
       <td width="5">&nbsp;</td>
       <td width="138"><font face="Arial, Helvetica, sans-serif"> 
         <?php	echo $clubA8007; ?>
         <br>
-        8012&agrave; d&eacute;finir<br>
+        8012&agrave; d√©finir<br>
         <input type="text" name="A80074" value="<?php echo($result->A8007) ;?>" size="3">
         </font></td>
     </tr>

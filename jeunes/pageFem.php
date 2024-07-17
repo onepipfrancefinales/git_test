@@ -41,8 +41,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
     &nbsp; </tr>
   <tr > 
 		<td class="fondFem" "colspan="2" height="25"> Toutes les poules et les 
-					informations sur les comp&eacute;titions<br>
-				et les &eacute;quipes f&eacute;minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
+					informations sur les compétitions<br>
+				et les équipes féminines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
 				</a>
 		</td>
   </tr>
@@ -68,8 +68,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   </tr>
   <tr > 
     <td colspan="2" height="9"> 
-      <div align="center"><font size="2"><i><font color="#000000">Pas d'&eacute;quipe 
-        du comit&eacute; dans cette comp&eacute;tition</font></i></font></div>
+      <div align="center"><font size="2"><i><font color="#000000">Pas d'équipe 
+        du comité dans cette compétition</font></i></font></div>
     </td>
   </tr>
   <tr > 
@@ -104,8 +104,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   </tr>
   <tr > 
     <td colspan="2" height="15"> 
-      <div align="center"><font size="2"><i><font color="#000000">Pas d'&eacute;quipe 
-        du comit&eacute; dans cette comp&eacute;tition</font></i></font></div>
+      <div align="center"><font size="2"><i><font color="#000000">Pas d'équipe 
+        du comité dans cette compétition</font></i></font></div>
     </td>
   </tr>
   <tr> 
@@ -113,8 +113,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 	</td>
   </tr>
   <tr > 
-    	<td  class="fondFem" colspan="2"> Toutes les poules et les informations sur les comp&eacute;titions<br />
-      		et les &eacute;quipes f&eacute;minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
+    	<td  class="fondFem" colspan="2"> Toutes les poules et les informations sur les compétitions<br />
+      		et les équipes féminines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
      		 </a>  
 	  	</td>
   </tr>

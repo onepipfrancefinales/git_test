@@ -14,7 +14,7 @@ $clubA8005= 'Lavaur ';
 $clubA8006 ='Aubenas ';
 
 $clubA8007= 'Lannemezan ';
-$clubA8008= 'Mauléon ';
+$clubA8008= 'Maulï¿½on ';
 
 
 
@@ -22,12 +22,12 @@ $clubA8009= ' Nafarroa ';
 $clubA8010= ' St Gaudens ';
 
 $clubA8011= 'Haute Bigorre ';
-$clubA8012= 'St Médard ';
+$clubA8012= 'St Mï¿½dard ';
 
 $clubA8013= ' Mouguerre ';
 $clubA8014= ' F.C.T.T ';
 
-$clubA8015= ' Montmélian ';
+$clubA8015= ' Montmï¿½lian ';
 $clubA8016= ' Thuir ';
 
 }
@@ -403,7 +403,7 @@ MM_reloadPage(true);
     </b></font></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 881px; top: 673px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
-  <div align="center"> <b><font color="#FF0000" size="5" face="Arial, Helvetica, sans-serif">Maul&eacute;on 
+  <div align="center"> <b><font color="#FF0000" size="5" face="Arial, Helvetica, sans-serif">MaulÃ©on 
     (BE) </font></b></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: 1px; top: 900px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 

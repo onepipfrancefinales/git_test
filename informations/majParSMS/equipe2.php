@@ -1,9 +1,9 @@
 
       <br>
-            <h2>Le disposif peut il &ecirc;tre utilis&eacute; pour les &eacute;quipes II ?</h2> 
+            <h2>Le disposif peut il &ecirc;tre utilisé pour les équipes II ?</h2> 
             <div class="texte">Oui, biensur !!!</div>
-             <div class="texte"> Il faut cependant un lien diff&eacute;rent de celui de l'&eacute;quipe Une.
-              La distinction se fait au niveau du premier &eacute;cran ou la mention &eacute;quipe II est surlign&eacute;e</div>
+             <div class="texte"> Il faut cependant un lien différent de celui de l'équipe Une.
+              La distinction se fait au niveau du premier écran ou la mention équipe II est surlignée</div>
              
               <div class="texte"> Il faut donc demander un deuxième lien.</div><br>
      <br>

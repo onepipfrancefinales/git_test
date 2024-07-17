@@ -41,11 +41,11 @@ if (isset ($_GET['type'])) $type = $_GET['type']; else $type='-';
     <td width="83%" valign="top" height="18" bgcolor="#0099FF"></td>
   </tr>
   <tr> 
-    <td valign="top" height="25" width="17%" align="center">Ann&eacute;e</td>
+    <td valign="top" height="25" width="17%" align="center">Année</td>
     <td width="83%" valign="top" height="25" bgcolor="#000000" align="center"><b><font color="#FF0000" size="5" face="Arial, Helvetica, sans-serif"><?php echo $annee; ?></font></b></td>
   </tr>
   <tr> 
-    <td valign="top" height="21" width="17%" align="center">Comit&eacute;</td>
+    <td valign="top" height="21" width="17%" align="center">Comité</td>
     <td width="83%" valign="top" height="21" bgcolor="#0099FF" align="center"><?php echo $comite;?></td>
   </tr>
   <tr> 

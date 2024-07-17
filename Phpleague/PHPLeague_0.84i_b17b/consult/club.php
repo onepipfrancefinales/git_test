@@ -66,7 +66,7 @@ if ($ACT_CLUB == 1)
 
 		if (!empty($ROW2['url_photo']) AND file_exists('../'.REP_IMG_EQUIPE.$ROW2['url_photo']))
 		{
-			echo '	<h5>'.FormatText('Photo de l\'&eacute;quipe').'</h5>
+			echo '	<h5>'.FormatText('Photo de l\'équipe').'</h5>
 	<div class="TxtCenter">'.Image('../'.REP_IMG_EQUIPE, $ROW2['url_photo'], '', '', 'LoadImg').'</div>'."\n\n";
 		}
 

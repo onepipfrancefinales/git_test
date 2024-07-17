@@ -1,6 +1,6 @@
 
 <?php
-  //r�cup�ration des valeurs des champs:
+  //r�cup�ration des valeurs des champs:
 
 $comite = $_GET['comite'];  
   
@@ -241,7 +241,7 @@ $date=new DateTime($dateBrute);
 $numeroJournee = substr("$journee", -2);
 ?><br>
 
-<?php //echo $numeroJournee.''."me journ&eacute;e"; ?>
+<?php //echo $numeroJournee.''."me journée"; ?>
 </p>
 
 <h3> 
@@ -286,12 +286,12 @@ $numeroJournee = substr("$journee", -2);
 		elseif ($bonusOffEquipe1 >= 1 AND $bonusDefEquipe1 == 0) 
 			echo "Bonus Offensif";
 		elseif ($bonusOffEquipe1 == 0 AND $bonusDefEquipe1 >= 1)
-			echo "Bonus D&eacute;fensif";
+			echo "Bonus Défensif";
 		elseif($bonusOffEquipe1 + $bonusDefEquipe1 == 2)
 		{
 		 	echo "Bonus Offensif" ; ?>
       <br />
-      <?php echo "Bonus  D&eacute;fensif";
+      <?php echo "Bonus  Défensif";
 			}
 			?>
     </td>
@@ -312,12 +312,12 @@ $numeroJournee = substr("$journee", -2);
 		elseif ($bonusOffEquipe2 >= 1 AND $bonusDefEquipe2 == 0) 
 			echo "Bonus Offensif";
 		elseif ($bonusOffEquipe2 == 0 AND $bonusDefEquipe2 >= 1)
-			echo "Bonus D&eacute;fensif";
+			echo "Bonus Défensif";
 		elseif($bonusOffEquipe2 + $bonusDefEquipe2 == 2)
 		{
 		 	echo "Bonus Offensif" ; ?>
       <br />
-      <?php echo "Bonus  D&eacute;fensif";
+      <?php echo "Bonus  Défensif";
 			}
 			?>
     </td>

@@ -981,19 +981,19 @@ echo "";
 <div id="Layer5" style="position:absolute; width:29px; height:22px; z-index:7; left: 251px; top: 223px"> 
   <div align="center"><b>GA</b></div>
 </div>
-<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 173px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 173px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 </b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1059px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> 
     <p><font size="5"><b>Champion de France
       <?php echo $annee;?>
       <br>
-      F&eacute;d&eacute;rale 2 </b></font></p>
+      Fédérale 2 </b></font></p>
   </div>
 </div>
 <div id="Layer5" style="position:absolute; width:35px; height:22px; z-index:7; left: 501px; top: 238px"> 

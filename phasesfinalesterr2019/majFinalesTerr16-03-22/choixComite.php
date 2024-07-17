@@ -33,11 +33,11 @@ elseif ($page=="saisieLieux")
 ?>
 
     
-<p align="center"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b><font size="3">Comit&eacute; 
+<p align="center"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b><font size="3">Comité 
   :</font> </b></font> 
    
   <select name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1">
-    <option selected>Par comit&eacute;</option>
+    <option selected>Par comité</option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?comite=au&annee=<?php echo $annee ;?>"><b>Auvergne Rhone Alpes</b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?comite=bg&annee=<?php echo $annee ;?>"><b>Bourgogne Franche Comte</b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?comite=br&annee=<?php echo $annee ;?>"><b>Bretagne</b></option>

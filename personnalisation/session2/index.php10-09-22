@@ -12,7 +12,7 @@ $comite = $_GET['comite'];
 ?>
 <html>
 <head>
-<title>Mise à jour des résultats</title>
+<title>Mise ï¿½ jour des rï¿½sultats</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="../../personnalisation/admin/formulaire.css"/> 
 <link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/smart/10.css"> 
@@ -26,7 +26,7 @@ $comite = $_GET['comite'];
     <td class="h22"> France Finales Rugby </td>
   </tr>
   <tr> 
-    <td class="h12" height="31"> Mise &agrave; jour des r&eacute;sultats</td>
+    <td class="h12" height="31"> Mise &agrave; jour des rÃ©sultats</td>
   </tr>
 </table>
 <p> 

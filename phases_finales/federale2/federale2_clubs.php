@@ -85,13 +85,13 @@ $clubA1632= ' 2me Poule 7';
 <table width="1600" border="0" align="left" height="500" cellspacing="0">
   <tr bgcolor="#FFCC66"> 
     <td colspan="17" height="21"> 
-      <div align="center"><i><b>F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
+      <div align="center"><i><b>Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
         2 </b></i></div>
     </td>
   </tr>

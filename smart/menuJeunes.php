@@ -64,11 +64,11 @@
             <li><a href="../pro/120.php">Pro D2</a></li>
             <li><font color="#000000">  - </font></li>
             <li><a href="../sommaire.php">Autres<br />
-              comit&eacute;s</a></li>
+              comités</a></li>
             <li><font color="#000000">  -</font> </li>
             <li><a href="../fem/280.php">Top 8</a></li>
             <li><a href="../fem/285.php">Elite 2</a></li>
-            <li><a href="../femfed/291.php">F&eacute;d XV</a> </li>
+            <li><a href="../femfed/291.php">Féd XV</a> </li>
           </ul>
         </li>
       </ul>

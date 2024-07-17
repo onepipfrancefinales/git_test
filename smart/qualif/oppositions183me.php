@@ -1,6 +1,6 @@
 <?php
- if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÈclarÈe";
- if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite = "Variable comite non dÈclarÈe";
+ if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÔøΩclarÔøΩe";
+ if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite = "Variable comite non dÔøΩclarÔøΩe";
  ?>
 
 <table width="95%" border="0" align="center" height="399" cellspacing="0">
@@ -14,7 +14,7 @@
     <td width="5%" height="13"> 
       <div class="rang" >Rang </div>
     </td>
-    <td width="50%" height="13">Qualifi&eacute;s en 8me </td>
+    <td width="50%" height="13">Qualifi√©s en 8me </td>
   </tr>
   <tr> 
     <td height="13" width="40%">&nbsp;</td>

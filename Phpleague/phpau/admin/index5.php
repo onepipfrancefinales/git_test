@@ -42,8 +42,8 @@ ouverture ();
   <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpau">Comit&eacute; 
-          Ligue Auvergne Rhône Alpes</font></td>
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpau">ComitÃ© 
+          Ligue Auvergne Rhï¿½ne Alpes</font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
@@ -84,7 +84,7 @@ ouverture ();
        else {include ("accueil.htm");}
                 }
      //  elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-     //  elseif ($identification == "non2") {echo "Identifiants erronés !";}
+     //  elseif ($identification == "non2") {echo "Identifiants erronï¿½s !";}
      //  else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
       else
     		 {

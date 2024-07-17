@@ -27,7 +27,7 @@ division($champ, $bdd);
 <link type="text/css" rel="stylesheet" href="paramTiroir.css">
 <link type="text/css" rel="stylesheet" href="../Phpleague/<?php echo "php".$comite;?>/league.css"/>
 <meta name="description" 
-content="R�sultat, classement, stats et infos de la poule nom de la poule nom de la competition">
+content="R�sultat, classement, stats et infos de la poule nom de la poule nom de la competition">
 <meta name="keywords"
 content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Francaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
@@ -51,16 +51,16 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 		  <td colspan="2" class="h12"> 
 			<?php nomLigue2($comite, $champ, $bdd);
 			
-			if ($champ == 990110 ){$ligne2="Comp&eacute;titions professionnellles";}
-			elseif ($champ == 990140){$ligne2="F&eacute;d&eacute;rale 1";}
-			elseif ($champ == 990150){$ligne2="F&eacute;d&eacute;rale 2";}
-			elseif ($champ == 160){$ligne2="F&eacute;d&eacute;rale 3";}
-			elseif ($champ == 240){$ligne2="Espoir F&eacute;d&eacute;rale 1";}
-			elseif ($champ == 250){$ligne2="F&eacute;d&eacute;rale B";}
+			if ($champ == 990110 ){$ligne2="Compétitions professionnellles";}
+			elseif ($champ == 990140){$ligne2="Fédérale 1";}
+			elseif ($champ == 990150){$ligne2="Fédérale 2";}
+			elseif ($champ == 160){$ligne2="Fédérale 3";}
+			elseif ($champ == 240){$ligne2="Espoir Fédérale 1";}
+			elseif ($champ == 250){$ligne2="Fédérale B";}
 			elseif ($champ == 260){$ligne2="Excellence B";}
-			elseif ($champ > 279 and $champ < 310 ){$ligne2="Comp&eacute;titions f&eacute;minines";}
+			elseif ($champ > 279 and $champ < 310 ){$ligne2="Compétitions féminines";}
 			
-			else{$ligne2 = "Comp&eacute;titions R&eacute;gionales";}
+			else{$ligne2 = "Compétitions Régionales";}
 			
 			
 			echo $ligne1."<br />".$ligne2;
@@ -128,7 +128,7 @@ else
   </div>
 </div>
 	
-	<!-- fin entete fig�e-------->
+	<!-- fin entete fig�e-------->
 	
 	
 <div class="container">	
@@ -278,7 +278,7 @@ elseif ( $comite == "f1" OR $comite == "fed2"
 	 
 	// echo $comite;
 	// echo "on continue1";
-	// fed 3 poule 8 � 15 ------*/
+	// fed 3 poule 8 � 15 ------*/
    if ($comite == "fed3NE")
    {
 	// echo "on continue2";

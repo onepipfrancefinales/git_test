@@ -34,7 +34,7 @@ nomChampionnat ($codeEquipe, $journee, $comite, $bdd);
       <td class="h22">France Finales Rugby</td>
     </tr>
     <tr>
-      <td class="h12"> Mise &agrave; jours des r&eacute;sultats <br /> <?php echo $nomChampionnat;?></td>
+      <td class="h12"> Mise &agrave; jours des résultats <br /> <?php echo $nomChampionnat;?></td>
     </tr>
   </tbody>
 </table>
@@ -85,7 +85,7 @@ echo "Dimanche".' '.$date->format('d M Y');
 $numeroJournee = substr("$journee", -2);
 
 echo "<br>";
-echo $numeroJournee.''."me journ&eacute;e"; 
+echo $numeroJournee.''."me journée"; 
  
 $dateDuJour = date("d M Y");
 $dateDuJourPlusUn = date("d M Y", strtotime("+1 day"));
@@ -191,7 +191,7 @@ rencontre</legend>
     </tbody>
   </table>
 
-  </fieldset> <fieldset > <legend > Bonus Offensif (si n&eacute;cessaire)</legend> 
+  </fieldset> <fieldset > <legend > Bonus Offensif (si nécessaire)</legend> 
   <table border="0" height="36" width="100%">
     <tbody>
       <tr>
@@ -235,11 +235,11 @@ rencontre</legend>
     </tbody>
   </table>
 
-  </fieldset> <fieldset id="test" > <legend> Bonus D&eacute;fensif</legend> 
+  </fieldset> <fieldset id="test" > <legend> Bonus Défensif</legend> 
   <table border="0" height="36" width="100%">
       
         
-      <td class="equipe" width="80%"> Les bonus d&eacute;fensifs sont g&eacute;r&eacute;s 
+      <td class="equipe" width="80%"> Les bonus défensifs sont gérés 
         automatiquement </td>
       
   </table>

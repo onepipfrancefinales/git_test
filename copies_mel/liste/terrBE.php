@@ -30,16 +30,16 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="136"> 
-      <div align="center"><font size="4">1re S&eacute;rie</font></div>
+      <div align="center"><font size="4">1re Série</font></div>
     </td>
     <td width="206"> 
-      <div align="center"><font size="4"><font size="4"><font size="4">S&eacute;vignacq 
+      <div align="center"><font size="4"><font size="4"><font size="4">Sévignacq 
         Th&egrave;ze</font></font></font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="136"> 
-      <div align="center"><font size="4">2me S&eacute;rie</font></div>
+      <div align="center"><font size="4">2me Série</font></div>
     </td>
     <td width="206"> 
       <div align="center"><font size="4"><font size="4">Bassin Arthez Lagor</font></font></div>
@@ -47,7 +47,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="136"> 
-      <div align="center"><font size="4">3me S&eacute;rie</font></div>
+      <div align="center"><font size="4">3me Série</font></div>
     </td>
     <td width="206"> 
       <div align="center"><font size="4"><font size="4">Buzy Ogeu</font></font></div>
@@ -55,7 +55,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="136"> 
-      <div align="center"><font size="4">4me S&eacute;rie</font></div>
+      <div align="center"><font size="4">4me Série</font></div>
     </td>
     <td width="206"> 
       <div align="center"><font size="4">US Aspoise</font></div>
@@ -63,7 +63,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="136"> 
-      <div align="center"><font size="4">R&eacute;serve</font></div>
+      <div align="center"><font size="4">Réserve</font></div>
     </td>
     <td width="206"> 
       <div align="center"><font size="4"><font size="4">Lembeye</font></font></div>
@@ -71,16 +71,16 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="136" height="26"> 
-      <div align="center"><font size="4">R&eacute;serve PH</font></div>
+      <div align="center"><font size="4">Réserve PH</font></div>
     </td>
     <td width="206" height="26"> 
-      <div align="center"><font size="4"><font size="4"><font size="4">Vall&eacute;e 
+      <div align="center"><font size="4"><font size="4"><font size="4">Vallée 
         de l'Escou </font></font></font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
-    <td width="136"><font size="4">R&eacute;serve 1re s&eacute;rie</font></td>
-    <td width="206"><font size="4"><font size="4"><font size="4">S&eacute;vignacq 
+    <td width="136"><font size="4">Réserve 1re série</font></td>
+    <td width="206"><font size="4"><font size="4"><font size="4">Sévignacq 
       Th&egrave;ze</font></font></font></td>
   </tr>
 </table>

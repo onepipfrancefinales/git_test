@@ -20,19 +20,19 @@ if ($cmt == 'f1' or $cmt==990140)
 ?>
 <br>
 <div align="center"> 
-<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>F&eacute;d&eacute;rale 1 </u></b></font><br><br>
+<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>Fédérale 1 </u></b></font><br><br>
 </div>
 
 <font size="4" face="Arial, Helvetica, sans-serif"><b>1.Phase finale </b></font><br>
-<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 Les qualifi&eacute;s (16)</u><br>
-Sont qualifi&eacute;s directement pour les 1/8&egrave;me de finale du championnat de France, les 1er, 2e de chaque poules <br><br>
-Sont qualifi&eacute;s pour les barrages les équipes classées 3me, 4me, 5me et 6me.
+<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 Les qualifiés (16)</u><br>
+Sont qualifiés directement pour les 1/8&egrave;me de finale du championnat de France, les 1er, 2e de chaque poules <br><br>
+Sont qualifiés pour les barrages les équipes classées 3me, 4me, 5me et 6me.
 Les vainqueurs de ces barrages participeront aux 1/8&egrave;me du champ de France.
     
-<p><u>1.2 Modalit&eacute;s des  rencontres</u><br>
+<p><u>1.2 Modalités des  rencontres</u><br>
   Les 1/8&egrave;mes , les quarts se jouent en rencontres Aller 
-  Retour ( les rencontres Aller auront lieu sur les terrains des &eacute;quipes 
-  les moins bien class&eacute;es) .<br>
+  Retour ( les rencontres Aller auront lieu sur les terrains des équipes 
+  les moins bien classées) .<br>
   les demi-finales et la finale se jouent sur une rencontre et sur terrain neutre. <br>
   </font> </p>
   
@@ -42,8 +42,8 @@ Les vainqueurs de ces barrages participeront aux 1/8&egrave;me du champ de Franc
 </p>
   
   
-<p><b><font size="4" >3.Rel&egrave;gation en F&eacute;d&eacute;rale 2</font></b><br>
-<font size="3" face="Arial, Helvetica, sans-serif">Les équipes classées 11me et 12me seront relèguées en f&eacute;d&eacute;rale 2.</font>
+<p><b><font size="4" >3.Rel&egrave;gation en Fédérale 2</font></b><br>
+<font size="3" face="Arial, Helvetica, sans-serif">Les équipes classées 11me et 12me seront relèguées en fédérale 2.</font>
 </p>
 
 </p><b><font size="4" face="Arial, Helvetica, sans-serif">4.Calendrier<br/></b>
@@ -66,31 +66,31 @@ elseif ($cmt == 'fed2' or $cmt==990150)
 ?>
 <br>
 <div align="center"> 
-<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>F&eacute;d&eacute;rale 2 </u></b></font><br><br>
+<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>Fédérale 2 </u></b></font><br><br>
 </div>
 
 <font size="4" face="Arial, Helvetica, sans-serif"><b>1.Phase finale </b></font><br>
-<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 les qualifi&eacute;s (32)</u><br>
-Sont qualifi&eacute;s directement pour les 1/16&egrave;me A/R du championnat de France, les 1er et 2e de chaque poules <br><br>
-Sont qualifi&eacute;s pour les barrages les équipes classées 3me, 4me, 5me et 6me.
+<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 les qualifiés (32)</u><br>
+Sont qualifiés directement pour les 1/16&egrave;me A/R du championnat de France, les 1er et 2e de chaque poules <br><br>
+Sont qualifiés pour les barrages les équipes classées 3me, 4me, 5me et 6me.
 Les vainqueurs de ces barrages participeront aux 16&egrave;me A/R du champ de France.
    
  
-<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalit&eacute;s des rencontres</u><br>
+<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalités des rencontres</u><br>
   Les 1/16&egrave;mes et 1/8&egrave;mes de finale se jouent en rencontres Aller 
-  Retour ( les rencontres Aller auront lieu sur les terrains des &eacute;quipes 
-  les moins bien class&eacute;es).<br>
+  Retour ( les rencontres Aller auront lieu sur les terrains des équipes 
+  les moins bien classées).<br>
   Les quarts, demi-finales et la finale se jouent sur une rencontre sur terrain neutre.</font><font size="3" face="Arial, Helvetica, sans-serif"> 
   sur terrain neutre. <br>
   </font> </p>
   
-<p><b><font size="4" face="Arial, Helvetica, sans-serif">2.Accession en F&eacute;d&eacute;rale 1 </font></b><br>
+<p><b><font size="4" face="Arial, Helvetica, sans-serif">2.Accession en Fédérale 1 </font></b><br>
   <font size="3" face="Arial, Helvetica, sans-serif">	
- Les 8 &eacute;quipes qualifi&eacute;es en quarts de finale seront promues en F&eacute;d&eacute;rale 1 la saison suivante. 24 equipes pourront acceder à la fédérale 1<br><br>
+ Les 8 équipes qualifiées en quarts de finale seront promues en Fédérale 1 la saison suivante. 24 equipes pourront acceder à la fédérale 1<br><br>
  </font></p>
  
-<p><b><font size="4" face="Arial, Helvetica, sans-serif">3.Rel&egrave;gation en F&eacute;d&eacute;rale 3</font></b><br>
-<font face="Arial, Helvetica, sans-serif" size="3">Les équipes classées 11me et 12 me de chaque poule seront relègués en  F&eacute;d&eacute;rale 3 la saison suivante.
+<p><b><font size="4" face="Arial, Helvetica, sans-serif">3.Rel&egrave;gation en Fédérale 3</font></b><br>
+<font face="Arial, Helvetica, sans-serif" size="3">Les équipes classées 11me et 12 me de chaque poule seront relègués en  Fédérale 3 la saison suivante.
  </font></p>
   
   
@@ -107,17 +107,17 @@ Les vainqueurs de ces barrages participeront aux 16&egrave;me A/R du champ de Fr
   
 <br>
 <div align="center"> 
-<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>F&eacute;d&eacute;rale B </u></b></font><br><br>
+<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>Fédérale B </u></b></font><br><br>
 </div>  
 
 <font size="4" face="Arial, Helvetica, sans-serif"><b>1.Phase finale </b></font><br>
-<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 les qualifi&eacute;s (32)</u><br>
-Sont qualifi&eacute;s directement pour les 1/16&egrave;me du championnat de France, les 1er et 2e de chaque poules <br><br>
-Sont qualifi&eacute;s pour les barrages les équipes classées 3me, 4me, 5me et 6me.
+<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 les qualifiés (32)</u><br>
+Sont qualifiés directement pour les 1/16&egrave;me du championnat de France, les 1er et 2e de chaque poules <br><br>
+Sont qualifiés pour les barrages les équipes classées 3me, 4me, 5me et 6me.
 Les vainqueurs de ces barrages participeront aux 16&egrave;me du champ de France.
    
  
-<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalit&eacute;s des rencontres</u><br>
+<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalités des rencontres</u><br>
   Toutes les confrontations ont lieu sur une seule rencontre.
   </font> </p>
 
@@ -147,27 +147,27 @@ elseif ($cmt == 'fed3GS' or $cmt == 'fed3NE' or $cmt == '991160' or $cmt == '992
 
 <br>
 <div align="center"> 
-<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>F&eacute;d&eacute;rale 3 </u></b></font><br><br>
+<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>Fédérale 3 </u></b></font><br><br>
 </div>
 
 <font size="4" face="Arial, Helvetica, sans-serif"><b>1.Phase finale </b></font><br>
-<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 Les qualifi&eacute;s (64)</u><br>
-Sont qualifi&eacute;s directement pour les 1/32&egrave;me A/R du championnat de France, les 1er et 2&egrave;me de chaque poules <br><br>
-Sont qualifi&eacute;s pour les barrages les équipes classées 3&egrave;me, 4&egrave;me et les 8 meilleurs 5&egrave;me.
+<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 Les qualifiés (64)</u><br>
+Sont qualifiés directement pour les 1/32&egrave;me A/R du championnat de France, les 1er et 2&egrave;me de chaque poules <br><br>
+Sont qualifiés pour les barrages les équipes classées 3&egrave;me, 4&egrave;me et les 8 meilleurs 5&egrave;me.
 Les vainqueurs de ces barrages participeront aux 1/32&egrave;me A/R du champ de France.
  
 
   
-<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalit&eacute;s des rencontres</u><br>
+<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalités des rencontres</u><br>
   Les 1/32&egrave;mes et 1/16&egrave;mes de finale se jouent en rencontres Aller 
-  Retour ( les rencontres Aller auront lieux sur les terrains des &eacute;quipes 
-  les moins bien class&eacute;es.<br>
+  Retour ( les rencontres Aller auront lieux sur les terrains des équipes 
+  les moins bien classées.<br>
   Les huitièmes, les quarts, demi-finales et la finale se jouent sur une rencontre sur terrain neutre. <br>
   </font></p> 
   
-<p><b><font size="4" face="Arial, Helvetica, sans-serif">2.Accession en F&eacute;d&eacute;rale 2 </font></b><br>
+<p><b><font size="4" face="Arial, Helvetica, sans-serif">2.Accession en Fédérale 2 </font></b><br>
   <font size="3" face="Arial, Helvetica, sans-serif">	
-  Les 8 &eacute;quipes qualifi&eacute;es en 1/8&egrave;me de finale seront promues en F&eacute;d&eacute;rale 2 la saison suivante.<br>
+  Les 8 équipes qualifiées en 1/8&egrave;me de finale seront promues en Fédérale 2 la saison suivante.<br>
 </font></p>
 
 
@@ -193,14 +193,14 @@ Les équipes classées 9&egrave;me et 10&egrave;me de chaque poule seront relèg
 <font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>Excellence B </u></b></font><br><br>
 </div>
 <font size="4" face="Arial, Helvetica, sans-serif"><b>1.Phase finale </b></font><br>
-<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 Les qualifi&eacute;s (64)</u><br>
-Sont qualifi&eacute;s directement pour les 1/32&egrave;me du championnat de France, les 1er et 2&egrave;me de chaque poules <br><br>
-Sont qualifi&eacute;s pour les barrages les équipes classées 3&egrave;me, 4&egrave;me et les 8 meilleurs 5&egrave;me.
+<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 Les qualifiés (64)</u><br>
+Sont qualifiés directement pour les 1/32&egrave;me du championnat de France, les 1er et 2&egrave;me de chaque poules <br><br>
+Sont qualifiés pour les barrages les équipes classées 3&egrave;me, 4&egrave;me et les 8 meilleurs 5&egrave;me.
 Les vainqueurs de ces barrages participeront aux 1/32&egrave;me du champ de France.
  
 
   
-<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalit&eacute;s des rencontres</u><br>
+<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalités des rencontres</u><br>
   Toutes les confrontations ont lieu sur une seule rencontre.
   </font></p> 
 
@@ -238,11 +238,11 @@ elseif ($cmt == 'elite1' or $cmt == '880280')
 </div>
 
 <font size="4" face="Arial, Helvetica, sans-serif"><b>1.Phase finale </b></font><br>
-<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 Les qualifi&eacute;s (8)</u><br>
-Sont qualifi&eacute;s directement pour les quarts du championnat de France, les 1er 2&egrave;me, 3&egrave;me et 4&egrave;me de chaque poule <br><br>
+<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 Les qualifiés (8)</u><br>
+Sont qualifiés directement pour les quarts du championnat de France, les 1er 2&egrave;me, 3&egrave;me et 4&egrave;me de chaque poule <br><br>
 
  
- <p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalit&eacute;s des rencontres</u><br>
+ <p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalités des rencontres</u><br>
  Les quarts de finale se jouent sur le terrain de l'équipe la mieux mieux classée.
   Les demi-finales et la finale se jouent sur terrain neutre. </font> </p> 
   </font> </p> 
@@ -286,19 +286,19 @@ elseif ($cmt == 'elite2' or $cmt == '880285')
 </div>
 
 <font size="4" face="Arial, Helvetica, sans-serif"><b>1.Phase finale </b></font><br>
-<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 les qualifi&eacute;s (4)</u><br>
-Sont qualifi&eacute;s en demi finale du championnat de France, les 1er, 2me, 3me et 4me de chaque poules <br><br>
+<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 les qualifiés (4)</u><br>
+Sont qualifiés en demi finale du championnat de France, les 1er, 2me, 3me et 4me de chaque poules <br><br>
 
  
 
   
-<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalit&eacute;s des rencontres</u><br>
+<p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalités des rencontres</u><br>
 Les demies finale se jouent sur le terrain de l'équipe la mieux mieux classée et la finale se jouent sur terrain neutre. </font> </p> 
 </font></p> 
   
 <p><b><font size="4" face="Arial, Helvetica, sans-serif">2.Accession en Elite 2 </font></b><br>
 <font size="3" face="Arial, Helvetica, sans-serif">	
-Les 8 &eacute;quipes qualifi&eacute;es en 8me de finale seront promues en F&eacute;d&eacute;rale 2 la saison suivante.<br>
+Les 8 équipes qualifiées en 8me de finale seront promues en Fédérale 2 la saison suivante.<br>
 </font></p>
 
 <p><b><font size="4" face="Arial, Helvetica, sans-serif">3.Rel&egrave;gation en Fédérale 1 </font></b>
@@ -329,17 +329,17 @@ elseif ($cmt == 'fem'  or $cmt == '880190')
 
 <br>
 <div align="center"> 
-<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>F&eacute;d&eacute;rale 1 </u></b></font><br><br>
+<font  size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b><u>Fédérale 1 </u></b></font><br><br>
 </div>
 
 <font size="4" face="Arial, Helvetica, sans-serif"><b>1.Phase finale </b></font><br>
-<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 les qualifi&eacute;s (8)</u><br>
-Sont qualifi&eacute;s directement pour les quarts de finale du championnat de France, les 1er et 2e de chaque poules <br><br>
+<font size="3" face="Arial, Helvetica, sans-serif"><u>1.1 les qualifiés (8)</u><br>
+Sont qualifiés directement pour les quarts de finale du championnat de France, les 1er et 2e de chaque poules <br><br>
 
  
 
   
- <p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalit&eacute;s des 
+ <p><font size="3" face="Arial, Helvetica, sans-serif"><u>1.2 Modalités des 
   rencontres</u><br>
   Les quarts de finale se jouent sur le terrain de l'équipe la mieux mieux classée.
   Les demies finale et la finale se jouent sur terrain neutre. </font> </p> 

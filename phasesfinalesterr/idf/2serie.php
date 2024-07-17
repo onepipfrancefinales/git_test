@@ -154,7 +154,7 @@ echo "";
     </font></b></font></div>
 </div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 55px; top: 299px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>3me S&eacute;rie</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>3me Série</b></font></div>
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 293px; top: 300px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b>
@@ -291,7 +291,7 @@ echo "";
     </font></b></font></div>
 </div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 52px; top: 193px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>2me S&eacute;rie</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>2me Série</b></font></div>
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 292px; top: 429px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF" face="Geneva, arial, Helvetica, san-serif"size="2"><b> 
@@ -472,7 +472,7 @@ echo "";
     </font></b></font></div>
 </div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 50px; top: 428px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>4me S&eacute;rie</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>4me Série</b></font></div>
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

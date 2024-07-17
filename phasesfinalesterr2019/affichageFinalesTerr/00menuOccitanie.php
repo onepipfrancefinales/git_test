@@ -19,19 +19,19 @@
   </tr>
   <tr> 
     <td width="237"> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ab&variable_1=2018"><font color="#FFFFFF">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ab&variable_1=2018"><font color="#FFFFFF">Comité 
         Armagnac Bigorre</font></a></div>
     </td>
     <td width="247"> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ld&variable_1=2018"><font color="#FFFFFF">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ld&variable_1=2018"><font color="#FFFFFF">Comité 
         du Languedoc</font></a></div>
     </td>
     <td width="245"> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=mpy&variable_1=2018"><font color="#FFFFFF">Comit&eacute; 
-        Midi Pyr&eacute;n&eacute;es</font></a></div>
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=mpy&variable_1=2018"><font color="#FFFFFF">Comité 
+        Midi Pyrénées</font></a></div>
     </td>
     <td width="253"> 
-      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=r&variable_1=2018"><font color="#FFFFFF">Comit&eacute; 
+      <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=r&variable_1=2018"><font color="#FFFFFF">Comité 
         Pays Catalans</font></a></div>
     </td>
   </tr>

@@ -118,7 +118,7 @@ $numeroJournee = substr("$journee", -2);
 
 ?><br>
 
-<?php echo $numeroJournee.''."me journ&eacute;e"; ?>
+<?php echo $numeroJournee.''."me journée"; ?>
 </p>
 
 <form id="form" name="form" method="post" action="validation.php?equipe1=<?php echo $equipe1; ?>&equipe2=<?php echo $equipe2; ?>&codeEquipe1=<?php echo $codeEquipe1; ?>&codeEquipe2=<?php echo $codeEquipe2; ?>&journee=<?php echo $journee; ?>&comite=<?php echo $comite; ?>">

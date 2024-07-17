@@ -47,7 +47,7 @@
     <td colspan="2" width="230">&nbsp;</td>
   </tr>
  <tr> 
-    <td colspan="2" align="center"><font size="5"><b>Saisie des r&eacute;sulats</b></font></td>
+    <td colspan="2" align="center"><font size="5"><b>Saisie des résulats</b></font></td>
     <td colspan="2" width="230" align="center"><font size="5"><b>Saisie des clubs</b></font></td>
   </tr>
   <tr> 

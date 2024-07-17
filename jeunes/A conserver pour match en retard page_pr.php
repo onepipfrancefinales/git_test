@@ -7,9 +7,9 @@
 <link type="text/css" rel="stylesheet" href="feuilledestyle2.css"/> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description"
-content="RÈsulats de toutes les compÈtitions territoriales sÈniors du comitÈ de Provence. Calendriers, rÈsultats et statistiques de l'honneur ‡ la 4me SÈrie, Èquipes II comprises. Egalement disponible les phases finales territoriales des annÈes prÈcÈdentes et les palmarËs territoriaux des differentes divisions du comitÈ.">
+content="RÔøΩsulats de toutes les compÔøΩtitions territoriales sÔøΩniors du comitÔøΩ de Provence. Calendriers, rÔøΩsultats et statistiques de l'honneur ÔøΩ la 4me SÔøΩrie, ÔøΩquipes II comprises. Egalement disponible les phases finales territoriales des annÔøΩes prÔøΩcÔøΩdentes et les palmarÔøΩs territoriaux des differentes divisions du comitÔøΩ.">
 <meta name="keywords"
-content="comitÈ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,FranÁaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitÔøΩ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,FranÔøΩaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -59,7 +59,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
       <td bgcolor="#ffffff" text="#000000" link="#000000" vlink="#000000" alink="#000000" height="5187" valign="top" width="550"> 
         <div align="center"> <br>
           <h1>CHAMPIONNATS TERRITORIAUX</h1>
-          <h2>Comit&eacute;s Provence</h2>
+          <h2>Comit√©s Provence</h2>
           <br>
           <table width="550" border="3" cellspacing="0" bordercolor="#000000" align="center" cellpadding="0">
             <tr bordercolor="#009966"> 
@@ -75,7 +75,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <tr bordercolor="#009966"> 
               <td height="5" valign="middle" align="center" bgcolor="#0099CC" bordercolor="#0099CC"> 
                 <div align="center"><a href="../page_comite.php?variable_1=(PR)" target="_blank" ><i><font face="Arial, Helvetica, sans-serif" color="#000000" size="3"><b>Acc&egrave;s 
-                  aux infos du comit&eacute;</b></font></i></a></div>
+                  aux infos du comit√©</b></font></i></a></div>
               </td>
             </tr>
             <tr bordercolor="#006699" valign="middle" bgcolor="#006699"> 
@@ -94,21 +94,21 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <div class="tab3"><a href="#P">Promotion</a></div>
               </td>
               <td class="tab3" width="96"> 
-                <div ><a href="#1">1re S&eacute;rie</a></div>
+                <div ><a href="#1">1re S√©rie</a></div>
               </td>
               <td  class="tab3" width="126"> 
-                <div ><a href="#2">2me S&eacute;rie</a></div>
+                <div ><a href="#2">2me S√©rie</a></div>
               </td>
             </tr>
             <tr> 
               <td  class="tab3" width="122" height="15"> 
-                <div><a href="#3">3me S&eacute;rie</a> </div>
+                <div><a href="#3">3me S√©rie</a> </div>
               </td>
               <td  class="tab3"width="140" height="15"> 
-                <div ><a href="#4">4me S&eacute;rie </a> </div>
+                <div ><a href="#4">4me S√©rie </a> </div>
               </td>
               <td  class="tab3"colspan="2" height="15"> 
-                <div ><a href="#fem">Comp&eacute;titions f&eacute;minines</a></div>
+                <div ><a href="#fem">Comp√©titions f√©minines</a></div>
               </td>
             </tr>
           </table>
@@ -166,10 +166,10 @@ height="510" width="290"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-	mysql_select_db("onepip-france-db3"); // SÈlection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+	mysql_select_db("onepip-france-db3"); // SÔøΩlection de la base onepip
   
-	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='171' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÍte SQL
+	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='171' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÔøΩte SQL
 	$result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -181,7 +181,7 @@ height="510" width="290"" type="text/html"   />
 	  ?>
                   <a href="LM/page_retards.php" target="_blank"> <h8> 
                   <?php echo " Rencontres 
-                  report&eacute;es "; ?>
+                  report√©es "; ?>
                   </h8> </a> 
                   <?php
 	}
@@ -200,11 +200,11 @@ height="510" width="290"" type="text/html"   />
                   complet</a> </h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-	mysql_select_db("onepip-france-db3"); // SÈlection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+	mysql_select_db("onepip-france-db3"); // SÔøΩlection de la base onepip
    
 $query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE phppr_journees.id_champ='271' and (phppr_clubs.id + 900000)=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and
- (phppr_clubs.id + 900000)=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÍte SQL
+ (phppr_clubs.id + 900000)=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÔøΩte SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -216,7 +216,7 @@ $result = mysql_query($query);
 	  ?>
                   <a href="PR/page_retards.php" target="_blank"> <h8> 
                   <?php echo " Rencontres 
-                  report&eacute;es "; ?>
+                  report√©es "; ?>
                   </h8> </a> 
                   <?php
 	}
@@ -265,10 +265,10 @@ height="450" width="290"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-	mysql_select_db("onepip-france-db3"); // SÈlection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+	mysql_select_db("onepip-france-db3"); // SÔøΩlection de la base onepip
   
-	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='185' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÍte SQL
+	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='185' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÔøΩte SQL
 	$result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -280,7 +280,7 @@ height="450" width="290"" type="text/html"   />
 	  ?>
                   <a href="PR/page_retards.php" target="_blank"> <h8> 
                   <?php echo " Rencontres 
-                  report&eacute;es "; ?>
+                  report√©es "; ?>
                   </h8> </a> 
                   <?php
 	}
@@ -299,11 +299,11 @@ height="450" width="290"" type="text/html"   />
                   complet</a> </h6>
                 <h6 > 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-	mysql_select_db("onepip-france-db3"); // SÈlection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+	mysql_select_db("onepip-france-db3"); // SÔøΩlection de la base onepip
    
 $query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE phppr_journees.id_champ='9185' and (phppr_clubs.id + 900000)=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and
- (phppr_clubs.id + 900000)=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÍte SQL
+ (phppr_clubs.id + 900000)=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÔøΩte SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -315,7 +315,7 @@ $result = mysql_query($query);
 	  ?>
                   <a href="PR/page_retards.php" target="_blank"> <h8> 
                   <?php echo " Rencontres 
-                  report&eacute;es "; ?>
+                  report√©es "; ?>
                   </h8> </a> 
                   <?php
 	}
@@ -339,8 +339,8 @@ $result = mysql_query($query);
                 <div id="annonce"> 
                   <p><b><font size="3"><a href="../copies_mel/pr/inscriptionsimple.php" target="_top"><font color="#000000" size="5">Inscrivez 
                     vous &agrave; la newsletter</font></a> <br>
-                    et recevez l'ensemble des classements des &eacute;quipes du 
-                    comit&eacute; <br>
+                    et recevez l'ensemble des classements des √©quipes du 
+                    comit√© <br>
                     <br>
                     <a href="http://francefinalesrugby.franceserv.com/copies_mel/0capture/comite/comite_pr.php" target="_blank"><font color="#0000FF" size="4">- 
                     - - Consultez le dernier envoi</font> - - -</a></font></b></p>
@@ -350,7 +350,7 @@ $result = mysql_query($query);
           </table>
           <br>
           <br>
-          <div id="h5"><a name="1"></a>1re S&eacute;rie</div>
+          <div id="h5"><a name="1"></a>1re S√©rie</div>
           <object data="http://francefinalesrugby.franceserv.com/Phpleague/phppr/consult/classement_matchs.php?champ=191"
 frameborder="no" 
 height="400" width="440"" type="text/html"   />
@@ -363,10 +363,10 @@ height="400" width="440"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-	mysql_select_db("onepip-france-db3"); // SÈlection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+	mysql_select_db("onepip-france-db3"); // SÔøΩlection de la base onepip
   
-	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='191' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÍte SQL
+	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='191' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÔøΩte SQL
 	$result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -378,7 +378,7 @@ height="400" width="440"" type="text/html"   />
 	  ?>
                   <a href="PR/page_retards.php" target="_blank"> <h8> 
                   <?php echo " Rencontres 
-                  report&eacute;es "; ?>
+                  report√©es "; ?>
                   </h8> </a> 
                   <?php
 	}
@@ -394,7 +394,7 @@ height="400" width="440"" type="text/html"   />
           </table>
           <br>
           <br>
-          <div id="h5"><a name="2"></a>2me S&eacute;rie</div>
+          <div id="h5"><a name="2"></a>2me S√©rie</div>
           <object data="http://francefinalesrugby.franceserv.com/Phpleague/phppr/consult/classement_matchs.php?champ=201"
 frameborder="no" 
 height="370" width="440"" type="text/html"   />
@@ -407,10 +407,10 @@ height="370" width="440"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-	mysql_select_db("onepip-france-db3"); // SÈlection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+	mysql_select_db("onepip-france-db3"); // SÔøΩlection de la base onepip
   
-	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='201' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÍte SQL
+	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='201' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÔøΩte SQL
 	$result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -422,7 +422,7 @@ height="370" width="440"" type="text/html"   />
 	  ?>
                   <a href="PR/page_retards.php" target="_blank"> <h8> 
                   <?php echo " Rencontres 
-                  report&eacute;es "; ?>
+                  report√©es "; ?>
                   </h8> </a> 
                   <?php
 	}
@@ -438,7 +438,7 @@ height="370" width="440"" type="text/html"   />
           </table>
           <br>
           <br>
-          <div id="h5"><a name="3"></a><a name="4"></a>3me / 4me S&eacute;rie</div>
+          <div id="h5"><a name="3"></a><a name="4"></a>3me / 4me S√©rie</div>
           <object data="http://francefinalesrugby.franceserv.com/Phpleague/phppr/consult/classement_matchs.php?champ=221"
 frameborder="no" 
 height="370" width="440"" type="text/html"   />
@@ -451,10 +451,10 @@ height="370" width="440"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-	mysql_select_db("onepip-france-db3"); // SÈlection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+	mysql_select_db("onepip-france-db3"); // SÔøΩlection de la base onepip
   
-	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='221' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÍte SQL
+	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='221' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // RequÔøΩte SQL
 	$result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -466,7 +466,7 @@ height="370" width="440"" type="text/html"   />
 	  ?>
                   <a href="PR/page_retards.php" target="_blank"> <h8> 
                   <?php echo " Rencontres 
-                  report&eacute;es "; ?>
+                  report√©es "; ?>
                   </h8> </a> 
                   <?php
 	}
@@ -507,21 +507,21 @@ height="370" width="440"" type="text/html"   />
                 <div class="tab3"><a href="#P">Promotion</a></div>
               </td>
               <td class="tab3" width="96"> 
-                <div ><a href="#1">1re S&eacute;rie</a></div>
+                <div ><a href="#1">1re S√©rie</a></div>
               </td>
               <td  class="tab3" width="126"> 
-                <div ><a href="#2">2me S&eacute;rie</a></div>
+                <div ><a href="#2">2me S√©rie</a></div>
               </td>
             </tr>
             <tr> 
               <td  class="tab3" width="122" height="15"> 
-                <div><a href="#3">3me S&eacute;rie</a> </div>
+                <div><a href="#3">3me S√©rie</a> </div>
               </td>
               <td  class="tab3"width="140" height="15"> 
-                <div ><a href="#4">4me S&eacute;rie </a> </div>
+                <div ><a href="#4">4me S√©rie </a> </div>
               </td>
               <td  class="tab3"colspan="2" height="15"> 
-                <div ><a href="#fem">Comp&eacute;titions f&eacute;minines</a></div>
+                <div ><a href="#fem">Comp√©titions f√©minines</a></div>
               </td>
             </tr>
           </table>
@@ -539,7 +539,7 @@ height="370" width="440"" type="text/html"   />
             <tr bordercolor="#009966"> 
               <td height="5" valign="middle" align="center" bgcolor="#0099CC" bordercolor="#0099CC"> 
                 <div align="center"><a href="../page_comite.php?variable_1=(PR)" target="_blank" ><i><font face="Arial, Helvetica, sans-serif" color="#000000" size="3"><b>Acc&egrave;s 
-                  aux infos du comit&eacute;</b></font></i></a></div>
+                  aux infos du comit√©</b></font></i></a></div>
               </td>
             </tr>
             <tr bordercolor="#006699" valign="middle" bgcolor="#006699"> 
@@ -586,8 +586,8 @@ height="370" width="440"" type="text/html"   />
             <tr bordercolor="#FFCCFF" bgcolor="#FF9933"> 
               <td colspan="2" height="25"> 
                 <div align="center"><b><font color="#000000">Toutes les poules 
-                  et les informations sur les comp&eacute;titions<br>
-                  et les &eacute;quipes f&eacute;minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
+                  et les informations sur les comp√©titions<br>
+                  et les √©quipes f√©minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
                   </a></font></b></div>
               </td>
             </tr>
@@ -614,7 +614,7 @@ height="370" width="440"" type="text/html"   />
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
               <td colspan="2" height="9"> 
                 <div align="center"><font size="2"><i><font color="#000000">Pas 
-                  d'&eacute;quipe du comit&eacute; dans cette comp&eacute;tition</font></i></font></div>
+                  d'√©quipe du comit√© dans cette comp√©tition</font></i></font></div>
               </td>
             </tr>
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
@@ -645,7 +645,7 @@ height="370" width="440"" type="text/html"   />
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
               <td colspan="2" height="19"> 
                 <div align="center"><font size="2"><i><font color="#000000">Pas 
-                  d'&eacute;quipe du comit&eacute; dans cette comp&eacute;tition</font></i></font></div>
+                  d'√©quipe du comit√© dans cette comp√©tition</font></i></font></div>
               </td>
             </tr>
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
@@ -653,7 +653,7 @@ height="370" width="440"" type="text/html"   />
             </tr>
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
               <td colspan="2" height="47"> 
-                <h2>F&eacute;d&eacute;rale &agrave; XV</h2>
+                <h2>F√©d√©rale &agrave; XV</h2>
               </td>
             </tr>
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
@@ -679,8 +679,8 @@ height="370" width="440"" type="text/html"   />
             <tr bordercolor="#FFCCFF" bgcolor="#FF9933"> 
               <td colspan="2"> 
                 <div align="center"><b><font color="#000000">Toutes les poules 
-                  et les informations sur les comp&eacute;titions<br>
-                  et les &eacute;quipes f&eacute;minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
+                  et les informations sur les comp√©titions<br>
+                  et les √©quipes f√©minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
                   </a></font></b></div>
               </td>
             </tr>

@@ -27,7 +27,7 @@ seizieme2019 ($comite, $division, $annee, $bdd)
 						  
 	<input type="hidden" name="division" value="<?php echo($division) ;?>">
 	<header>		
-		<h1> Division(<?php echo $division; ?>) Ann&eacute;e  <?php echo $annee; ?></h1>
+		<h1> Division(<?php echo $division; ?>) Année  <?php echo $annee; ?></h1>
     </header>   
      
 	<p class="texte"> 16me de finale  </p>

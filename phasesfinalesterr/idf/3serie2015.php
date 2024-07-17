@@ -20,7 +20,7 @@ MM_reloadPage(true);
 </script>
 <body bgcolor="#E8E8E8">
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 55px; top: 249px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>3me S&eacute;rie</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>3me Série</b></font></div>
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 293px; top: 238px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF" face="Geneva, arial, Helvetica, san-serif"size="2"><b>Acheres</b></font> 
@@ -65,7 +65,7 @@ echo "";
   </font></b></font></div>
 <div id="Layer2" style="position:absolute; width:216px; height:28px; z-index:10; left: 765px; top: 245px"> 
   <div align="center"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
-    <font size="6"> <font color="#FF0000">Ach&eacute;res</font></font></b></font></div>
+    <font size="6"> <font color="#FF0000">Achéres</font></font></b></font></div>
 </div>
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 287px; top: 387px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b>Les 
@@ -162,7 +162,7 @@ echo "";
     </b></font></font></div>
 </div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 50px; top: 390px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>4me S&eacute;rie</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>4me Série</b></font></div>
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -197,7 +197,7 @@ echo "";
     complet des Finales territoriales d'ile de France qui auront lieu le 26 Avril 
     au</font></b></font></a><font face="Arial, Helvetica, sans-serif"><br>
     <font color="#FF0000" size="4"><b><br>
-    <font size="5">Rugby Club Vall&eacute;e de Montmorency</font></b></font><br>
+    <font size="5">Rugby Club Vallée de Montmorency</font></b></font><br>
     (Andilly &#150; Enghien &#150; Groslay &#150; Margency &#150; Montmorency 
     - Soisy)</font></div>
 </div>

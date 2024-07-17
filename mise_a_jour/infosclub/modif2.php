@@ -2,12 +2,12 @@
  <?php // J'ai choisi le mot de passe "pasUnRobot
 if (isset($_POST['mot_de_passe'])) // Si la variable existe
 {
-    // On se crÈe une variable $mot_de_passe avec le mot de passe entrÈ
+    // On se crÔøΩe une variable $mot_de_passe avec le mot de passe entrÔøΩ
     $mot_de_passe = $_POST['mot_de_passe'];
 }
 else // La variable n'existe pas encore
 {
-    $mot_de_passe = ""; // On crÈe une variable $mot_de_passe vide
+    $mot_de_passe = ""; // On crÔøΩe une variable $mot_de_passe vide
 }
 if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
 {
@@ -17,7 +17,7 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
 <html>
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <title>modification de donnÈes du club</title>
+ <title>modification de donnÔøΩes du club</title>
  <meta name=viewport content="width=device-width, initial-scale=1">
  <script language="JavaScript">
  <!--
@@ -57,14 +57,14 @@ require ("../../connect/connexion1.php") ;
 		$ligue = $donnees['ligue'];
 		$equipe_fem = $donnees['equipe_fem'];
 		
-		$A1601 = $donnees['A1601'];// prÈsident
+		$A1601 = $donnees['A1601'];// prÔøΩsident
 		$A1602 = $donnees['A1602'];// secretaire
 		$A1603 = $donnees['A1603'];// contact
 		$A1604 = $donnees['A1604'];// siege
 		$A1605 = $donnees['A1605'];// adresse
 		$A1606 = $donnees['A1606'];// cp
 		$A1607 = $donnees['A1607'];// ville
-		$A1608 = $donnees['A1608'];// tÈl
+		$A1608 = $donnees['A1608'];// tÔøΩl
 		$A1609 = $donnees['A1609'];
 		
 		$A1610 = $donnees['A1610'];
@@ -88,7 +88,7 @@ require ("../../connect/connexion1.php") ;
 		$A1627 = $donnees['A1627'];
 		$A1628 = $donnees['A1628'];
 		$A1629 = $donnees['A1629'];
-		$A1630 = $donnees['A1630'];// trÈsorier
+		$A1630 = $donnees['A1630'];// trÔøΩsorier
 		$A1631 = $donnees['A1629'];
 		$A1632 = $donnees['A1632'];	
  }
@@ -104,7 +104,7 @@ require ("../../connect/connexion1.php") ;
       <td colspan="2">&nbsp;</td>
     </tr>
     <tr> 
-      <td>cr&eacute;ation du club :</td>
+      <td>cr√©ation du club :</td>
       <td align="left"> <input type="text" name="A1624" value="<?php echo $A1624 ;?>" size="6"></td>
      
     </tr>
@@ -112,11 +112,11 @@ require ("../../connect/connexion1.php") ;
       <td colspan="2" bgcolor="#FF0000"><b></b><b></b><b>BUREAU</b></td>
     </tr>
     <tr> 
-      <td>Pr&eacute;sident </td>
+      <td>Pr√©sident </td>
       <td align="left"><input type="text" name="A1601" value="<?php echo $A1601 ;?>" size="50"></td>
     </tr>
     <tr > 
-      <td>Tr&eacute;sorier</td>
+      <td>Tr√©sorier</td>
       <td align="left"><input type="text" name="A1630" value="<?php echo $A1630 ;?>" size="50"></td>
     </tr>
     <tr> 
@@ -147,7 +147,7 @@ require ("../../connect/connexion1.php") ;
       <td align="left"><input type="text" name="A1607" value="<?php echo $A1607 ;?>" size="25"></td>
     </tr>
     <tr> 
-      <td>T&eacute;l</td>
+      <td>T√©l</td>
       <td align="left"><input type="text" name="A1608" value="<?php echo $A1608 ;?>" size="15"></td>
     </tr>
     <tr align="center"> 
@@ -180,7 +180,7 @@ require ("../../connect/connexion1.php") ;
     </tr>
     <tr>
 	  <!--1614-->	
-      <td>capacit&eacute;</td>
+      <td>capacit√©</td>
       <td align="left"><input type="text" name="A1614" value="<?php echo $A1614 ;?>" size="6"></td>
      
     </tr>
@@ -267,7 +267,7 @@ require ("../../connect/connexion1.php") ;
   </table>
 </form>
 <?php
- echo "<a href=../../consultation/pageclub00.php?champion=$id>retour vers la page pr&eacute;c&eacute;dente</a>";
+ echo "<a href=../../consultation/pageclub00.php?champion=$id>retour vers la page pr√©c√©dente</a>";
 ?> 
 <p>&nbsp;<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- modif_16me2 -->

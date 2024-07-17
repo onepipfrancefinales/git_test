@@ -131,7 +131,7 @@ $width = "70%";
 <br>
 <table width="<?php echo $width;?>" class="marginAuto borderWidth1" >
   <tr > 
-    <td class="titre" colspan="2">Section f&eacute;minine : </td>
+    <td class="titre" colspan="2">Section féminine : </td>
   </tr>
   <tr > 
     <td class="titreGauche" width="25%"> Nom/ Entente : </td>
@@ -197,7 +197,7 @@ require ("../connect/connexion1.php") ;
 //****************     Palmares européens      *******************************
 $table="bdeurope";
 nbreTitreEU($nomChampion, $bdd);
-if ($nombreTitreEU > 0 ){echo "<h2> Titres Europ&eacute;ens </h2>";}?>
+if ($nombreTitreEU > 0 ){echo "<h2> Titres Européens </h2>";}?>
 <div id="palmares" ass="center">
   <?php palmaresEU($nomChampion, $bdd);?>
 </div>

@@ -9,7 +9,7 @@ $clubA1603 = 'Paris 15 (IDF)';
 $clubA1604 = 'Arras (FL)';
 $clubA1605 = 'Nanterre (IDF)';
 $clubA1606 = 'Havre RC (N)';
-$clubA1607 = 'Clermont la �Plaine (AU)';
+$clubA1607 = 'Clermont la �Plaine (AU)';
 $clubA1608 = 'Saint Genevieve (IDF)';
 
 
@@ -762,16 +762,16 @@ $clubA1632 = 'Limoges (LM)';
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    F&eacute;d&eacute;rale &agrave; XV</b></font></div>
+    Fédérale &agrave; XV</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>F&eacute;minine F&eacute;d&eacute;rale &agrave; XV 
-    F&eacute;minine F&eacute;d&eacute;rale &agrave; XV F&eacute;minine F&eacute;d&eacute;rale 
-    &agrave; XV F&eacute;minine F&eacute;d&eacute;rale &agrave; XV F&eacute;minine 
-    F&eacute;d&eacute;rale &agrave; XV F&eacute;minine F&eacute;d&eacute;rale 
-    &agrave; XV F&eacute;minine F&eacute;d&eacute;rale &agrave; XV F&eacute;minine 
-    F&eacute;d&eacute;rale &agrave; XV F&eacute;minine F&eacute;d&eacute;rale 
-    &agrave; XV F&eacute;mini</b></i></div>
+  <div align="center"><i><b>Féminine Fédérale &agrave; XV 
+    Féminine Fédérale &agrave; XV Féminine Fédérale 
+    &agrave; XV Féminine Fédérale &agrave; XV Féminine 
+    Fédérale &agrave; XV Féminine Fédérale 
+    &agrave; XV Féminine Fédérale &agrave; XV Féminine 
+    Fédérale &agrave; XV Féminine Fédérale 
+    &agrave; XV Fémini</b></i></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1081px; top: 707px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000">
   <div align="center"><b><font size="5" face="Arial, Helvetica, sans-serif" color="#FF0000">La 

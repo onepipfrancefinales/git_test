@@ -2,17 +2,17 @@
 <br>
 <div class="texte"> Demandez par SMS au<b> 06.82.24.70.57</b> ou par courriel
   (<b>francefinalesrugby@free. fr</b>), un lien qui vous permettra durant
-  toute la saison, de saisir les r&eacute;sultats et de mettre &agrave;
+  toute la saison, de saisir les résultats et de mettre &agrave;
   jour le classement
 
   <br /><br />
-  Il suffit simplement de pr&eacute;ciser
-  le nom du club dans le message.<br /> Un lien vous sera communiqué et vous obtiendrez un &eacute;cran de ce type
+  Il suffit simplement de préciser
+  le nom du club dans le message.<br /> Un lien vous sera communiqué et vous obtiendrez un écran de ce type
 </div>
 <br />
 <div class="texte">
   cette mise
-  &agrave; jour peur &ecirc;tre effectu&eacute;e &agrave; partir
+  &agrave; jour peur &ecirc;tre effectuée &agrave; partir
   d'un smartphone, d'une tablette, d'un PC ou d'un Apple
 </div>
 <br />
@@ -26,8 +26,8 @@
 <br />
 <div class="texte">
   vous confirmez&nbsp;vous accedez &agrave; l'application smarphone Vous
-  saississez scores et bonus comme indiqu&eacute; puis vous Valider.&nbsp;
-  Un &eacute;cran de confirmation vous est propos&eacute;.</div>
+  saississez scores et bonus comme indiqué puis vous Valider.&nbsp;
+  Un écran de confirmation vous est proposé.</div>
 <br>
 <br>
 
@@ -38,7 +38,7 @@
 <hr />
 <br>
 <div class="texte"> Si vous confirmez&nbsp;vous accedez &agrave; l'application smarphone
-  avec r&eacute;sultats et classement &agrave; jour, sinon vous pouvez
+  avec résultats et classement &agrave; jour, sinon vous pouvez
   modifier votre saisie.
 </div>
 

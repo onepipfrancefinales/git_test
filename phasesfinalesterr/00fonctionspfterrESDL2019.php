@@ -14,29 +14,29 @@ elseif ($division == 180)
 //	echo "Promotion honneur Promotion honneur Promotion honneur Promotion honneur Promotion honneur  Promotion honneur  ";
 	echo "- Promotion honneur -";
 elseif ($division == 190)
-//	echo "1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie ";
-	echo "- 1re S&eacute;rie -";
+//	echo "1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série ";
+	echo "- 1re Série -";
 elseif ($division == 200)
-	echo "2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie ";
+	echo "2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série ";
 
 elseif ($division == 210)
-	echo "3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie ";
+	echo "3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série ";
 
 elseif ($division == 220)
-	echo "4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie ";	
+	echo "4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série ";	
 
 elseif ($division == 270)
-	echo "R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve ";
+	echo "Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve ";
 elseif ($division == 9180)
-	echo "R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion ";		
+	echo "Réserve Promotion Réserve Promotion Réserve Promotion Réserve Promotion Réserve Promotion Réserve Promotion ";		
 elseif ($division == 9190)
-	echo "R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie ";
+	echo "Réserve 1re Série Réserve 1re Série Réserve 1re Série Réserve 1re Série Réserve 1re Série Réserve 1re Série ";
 elseif ($division == 9200)
-	echo "R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve";
+	echo "Réserve 2me Série Réserve 2me Série Réserve 2me Série Réserve 2me Série Réserve 2me Série Réserve 2me Série Réserve";
 elseif ($division == 9210)
-	echo "R&eacute;serve 3me S&eacute;rie R&eacute;serve 3me S&eacute;rie R&eacute;serve 3me S&eacute;rie R&eacute;serve 3me S&eacute;rie R&eacute;serve 3me S&eacute;rie R&eacute;serve 3me S&eacute;rie R&eacute;serve ";
+	echo "Réserve 3me Série Réserve 3me Série Réserve 3me Série Réserve 3me Série Réserve 3me Série Réserve 3me Série Réserve ";
 elseif ($division == 9220)
-	echo "R&eacute;serve 4me S&eacute;rie R&eacute;serve 4me S&eacute;rie R&eacute;serve 4me S&eacute;rie R&eacute;serve 4me S&eacute;rie R&eacute;serve 4me S&eacute;rie R&eacute;serve 4me S&eacute;rie R&eacute;serve  ";
+	echo "Réserve 4me Série Réserve 4me Série Réserve 4me Série Réserve 4me Série Réserve 4me Série Réserve 4me Série Réserve  ";
 
 }
 
@@ -52,13 +52,13 @@ elseif ($division == 9220)
 //				Demi finale												*/
 //				Demi finale aller-retour								*/
 //				Quarts	(ligne 822)                                     */
-//		        huiti�me (ligne 1256)                                    */
-//              huiti�me  + Barrages                                     */
+//		        huiti�me (ligne 1256)                                    */
+//              huiti�me  + Barrages                                     */
 //				Seizieme (ligne 1850)                                    */
 //***********************************************************************/
 
 
-//***** R�cup�ration des variables *******************************
+//***** R�cup�ration des variables *******************************
 
 
 
@@ -111,7 +111,7 @@ function logo2019 ($bdcomiteClub, $champion)
 	
 	if (isset ($champion)) $champion = $champion; else $champion='-';
 	if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite='-';
-	if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee='Pas de variable declar�e';
+	if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee='Pas de variable declar�e';
 	
 	$bdcomiteClub="php".''.$comite.''."_clubs";
 	
@@ -185,7 +185,7 @@ function finale2019 ($bdcomiteClub, $division, $annee)
 
 	}
 
-	 //*********** R�cup�ration des r�sultats et traitements *****************************
+	 //*********** R�cup�ration des r�sultats et traitements *****************************
 
 	global $A2001;global $A2002;global $A2003;global $A2004;
 
@@ -268,7 +268,7 @@ function demi2019 ($bdcomiteClub, $division, $annee)
 	 if (isset ($tabEquipes[3])) $clubA2004 = $tabEquipes[3]; else $clubA2004='-';
 	}
 	
-	//*********** R�cup�ration des r�sultats et traitements *****************************
+	//*********** R�cup�ration des r�sultats et traitements *****************************
 
 	global $A2001;global $A2002;global $A2003;global $A2004;
 
@@ -365,7 +365,7 @@ function demiAR2019 ($bdcomiteClub, $division, $annee)
 	}
 
 	
-//*********** R�cup�ration des r�sultats et traitements *****************************
+//*********** R�cup�ration des r�sultats et traitements *****************************
 //	ALLER : GA
 	global $A4001;global $A4002;global $A4003;global $A4004;
 //   Pts
@@ -570,7 +570,7 @@ echo $bdcomite_pfterr;
 
 
 	}
-		//***************    R�cup�ration des scores  *************
+		//***************    R�cup�ration des scores  *************
 
 	global $A4001;global $A4002;global $A4003;global $A4004;
 	global $A4005;global $A4006;global $A4007;global $A4008;
@@ -861,7 +861,7 @@ function huitieme2019 ($bdcomiteClub, $division, $annee)
 	$bdcomite_pfterr = $comite.''."_pfterr_r";
 	
 	
-//*******************    R�cup�rations des Equipes	**********************************
+//*******************    R�cup�rations des Equipes	**********************************
 
 global $clubA8001;global $clubA8002;global $clubA8003;global $clubA8004;
 global $clubA8005;global $clubA8006;global $clubA8007;global $clubA8008;
@@ -919,7 +919,7 @@ global $clubA1001;global $clubA1002;global $champion;
 	}
 	
 	
-//*******************    R�cup�rations des scores	**********************************
+//*******************    R�cup�rations des scores	**********************************
 
 global $A8001;global $A8002;global $A8003;global $A8004;
 global $A8005;global $A8006;global $A8007;global $A8008;
@@ -936,7 +936,7 @@ global $A1001;global $A1002;
 
 //***********************************************************************/
 //																		*/
-//---------------huiti�mes de Finale : scores      ------------------	*/
+//---------------huiti�mes de Finale : scores      ------------------	*/
 //																		*/
 //***********************************************************************/
 
@@ -1051,11 +1051,11 @@ global $A1001;global $A1002;
 
 		
 //************************************************************************************
-//*******************    R�cup�rations des Scores	**********************************
+//*******************    R�cup�rations des Scores	**********************************
 //************************************************************************************
 
 
-// Traitement des r�sultats des 8me
+// Traitement des r�sultats des 8me
 
 
 if ($A8001+$A8002 > 0)	{	if ($A8001>$A8002)	{$clubA4001=$clubA8001;	} else	{$clubA4001=$clubA8002;	}}	else{	$A8001="-";	$A8002="-";	$quart1="-";}
@@ -1103,7 +1103,7 @@ function huitiemeEtBarrages2019 ($bdcomiteClub, $division, $annee)
 	$bdcomite_pfterr = $comite.''."_pfterr_r";
 	
 	
-//*******************    R�cup�rations des Equipes	**********************************
+//*******************    R�cup�rations des Equipes	**********************************
 
 
 	global $clubA1601;global $clubA1602;global $clubA1603;global $clubA1604;
@@ -1157,7 +1157,7 @@ function huitiemeEtBarrages2019 ($bdcomiteClub, $division, $annee)
 
 	}
 	echo $clubA1601;
-//******** Equipes qualifi�es directement *******		
+//******** Equipes qualifi�es directement *******		
 	
 	
 	$tabEquipes = array();
@@ -1201,7 +1201,7 @@ function huitiemeEtBarrages2019 ($bdcomiteClub, $division, $annee)
 	}
 	
 	
-//*******************    R�cup�rations des scores	**********************************
+//*******************    R�cup�rations des scores	**********************************
 
 
 
@@ -1223,7 +1223,7 @@ function huitiemeEtBarrages2019 ($bdcomiteClub, $division, $annee)
 
 //***********************************************************************/
 //																		*/
-//---------------huiti�mes et barrages de Finale : scores      ------------------	*/
+//---------------huiti�mes et barrages de Finale : scores      ------------------	*/
 //																		*/
 //***********************************************************************/
 
@@ -1342,11 +1342,11 @@ function huitiemeEtBarrages2019 ($bdcomiteClub, $division, $annee)
 
 		
 //************************************************************************************
-//*******************    R�cup�rations des Scores	**********************************
+//*******************    R�cup�rations des Scores	**********************************
 //************************************************************************************
 
 
-// Traitement des r�sultats des barrages et des 8me
+// Traitement des r�sultats des barrages et des 8me
 
 
 //verifier les oppossitions
@@ -1405,7 +1405,7 @@ if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite='-';
 	$bdcomite_pfterr = $comite.''."_pfterr_r";
 	
 	
-	//*******************    R�cup�rations des Equipes	**********************************
+	//*******************    R�cup�rations des Equipes	**********************************
 
 global $clubA1601;global $clubA1602;global $clubA1603;global $clubA1604;
 global $clubA1605;global $clubA1606;global $clubA1607;global $clubA1608;
@@ -1498,7 +1498,7 @@ if (isset ($tabEquipes[31])) $clubA1632 = $tabEquipes[31]; else $clubA1632='-';
 
 //***********************************************************************/
 //																		*/
-//-----------  seizieme de Finale : Traitements des r�sultats--------	*/
+//-----------  seizieme de Finale : Traitements des r�sultats--------	*/
 //																		*/
 //***********************************************************************/
 
@@ -1697,7 +1697,7 @@ global $A1001;global $A1002;
 						$A1002 = $row[1];
 						}							
 
-//****** traitement r�sultats 16me de finale  *********	
+//****** traitement r�sultats 16me de finale  *********	
 		
 if ($A1601+$A1602 > 0)	{if ($A1601>$A1602)	{$clubA8001=$clubA1601;	} else	{$clubA8001=$clubA1602;	}}	else {	$A1601="-";	$A1602="-";	$quart1="-";}
 if ($A1603+$A1604 > 0)	{if ($A1603>$A1604)	{$clubA8002=$clubA1603;	} else  {$clubA8002=$clubA1604; }}  else {  $A1603="-";	$A1604="-";	$quart1="-";}

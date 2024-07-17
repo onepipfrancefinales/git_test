@@ -257,7 +257,7 @@ $resultat=$idconnect->query("SELECT phpab_matchs.id
   
     if (mysqli_num_rows($resultat)=="0") 
 		{
-		echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journ&eacute;e Inexistante</div></td></tr>";
+		echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journée Inexistante</div></td></tr>";
 		}
 
       while ($row=mysqli_fetch_array($resultat) and $i<$nb_matchs)

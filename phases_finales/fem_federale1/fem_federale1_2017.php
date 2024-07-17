@@ -36,10 +36,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <table width="1200" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td colspan="13" bgcolor="#FFCC66"> 
-      <div align="center"><i><b>F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine 
-        F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 1 -- 
-        F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 
-        1 -- F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 
+      <div align="center"><i><b>Féminine Fédérale 1 -- Féminine 
+        Fédérale 1 -- Féminine Fédérale 1 -- 
+        Féminine Fédérale 1 -- Féminine Fédérale 
+        1 -- Féminine Fédérale 1 -- Féminine Fédérale 
         1</b></i></div>
     </td>
   </tr>
@@ -134,7 +134,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td height="2" width="17">&nbsp;</td>
     <td colspan="3" height="67" rowspan="3"> 
       <div align="center"><b><font size="5"><b>Champion de France 2017<br>
-        F&eacute;d&eacute;rale 1</b></font></b></div>
+        Fédérale 1</b></font></b></div>
     </td>
   </tr>
   <tr> 
@@ -313,10 +313,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
   <tr> 
     <td colspan="13" bgcolor="#FFCC66"> 
-      <div align="center"><i><b>F&eacute;minine F&eacute;d&eacute;rale 2-- F&eacute;minine 
-        F&eacute;d&eacute;rale 2-- F&eacute;minine F&eacute;d&eacute;rale 2-- 
-        F&eacute;minine F&eacute;d&eacute;rale 2-- F&eacute;minine F&eacute;d&eacute;rale 
-        2-- F&eacute;minine F&eacute;d&eacute;rale 2-- F&eacute;minine F&eacute;d&eacute;rale 
+      <div align="center"><i><b>Féminine Fédérale 2-- Féminine 
+        Fédérale 2-- Féminine Fédérale 2-- 
+        Féminine Fédérale 2-- Féminine Fédérale 
+        2-- Féminine Fédérale 2-- Féminine Fédérale 
         2 </b></i></div>
     </td>
   </tr>
@@ -389,7 +389,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td height="9" width="17">&nbsp;</td>
     <td colspan="3" height="88" rowspan="5"> 
       <div align="center"><b><font size="5"><b>Champion de France 2017<br>
-        F&eacute;d&eacute;rale 2</b></font></b></div>
+        Fédérale 2</b></font></b></div>
     </td>
   </tr>
   <tr> 

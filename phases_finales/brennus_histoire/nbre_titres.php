@@ -132,7 +132,7 @@
     <tr> 
       <td width="69">&nbsp;</td>
       <td width="165"> 
-        <div align="center">CA B&eacute;glais </div>
+        <div align="center">CA Béglais </div>
       </td>
       <td width="82">&nbsp;</td>
       <td width="156">2 fois champions</td>
@@ -243,12 +243,12 @@
     </tr>
   </table>
 </div>
-<h2><font size="3">*Le club parisien a remport&eacute; 8 titres sous le nom de 
+<h2><font size="3">*Le club parisien a remporté 8 titres sous le nom de 
   Stade Fran&ccedil;ais et 5 sous le nom de Stade Fran&ccedil;ais CASG</font></h2>
-<p>**Bordeaux a remport&eacute; son 1er titre sous le nom de Stade Bordelais.</p>
-<p>***3 noms diff&eacute;rents: AS Perpignan (Arlequins perpignanais) 1914, US 
+<p>**Bordeaux a remporté son 1er titre sous le nom de Stade Bordelais.</p>
+<p>***3 noms différents: AS Perpignan (Arlequins perpignanais) 1914, US 
   Perpignan 1921 et 1924, USAP (Union Sportive des Arlequins Perpignanais) ensuite 
-  r&eacute;sultant de la fusion des 2 premiers..<br>
+  résultant de la fusion des 2 premiers..<br>
 </p>
 </body>
 </html>

@@ -27,7 +27,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 
 
 <br/><br/><br/>
-<p class="texteGras">Pr&eacute;sident : </p>
+<p class="texteGras">Président : </p>
 
 <p class="texte">
 <?php echo $donnees['president'];?><br />
@@ -41,7 +41,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <br>
 <p class="texteGras">Contacts </p>
 <p class="texte"> 
-<b>T&eacute;l :</b>   <?php echo $donnees['tel']; ?>
+<b>Tél :</b>   <?php echo $donnees['tel']; ?>
   <br />
   <b>Fax :</b> 
   <?php echo $donnees['fax']; ?>
@@ -93,9 +93,9 @@ $reponse = mysql_query("SELECT *
 								?>
 							  
 							<hr />
-							<h1> Pr&eacute;sentation du comit&eacute; :</h1>
+							<h1> Présentation du comité :</h1>
 							<p class="texte">
-							Le comit&eacute;  se compose  des <?php echo $donnees['nbre_dep'];?> d&eacute;partements  suivants :
+							Le comité  se compose  des <?php echo $donnees['nbre_dep'];?> départements  suivants :
 							<br />
 							<?php
 							echo $donnees['dep1'].'<br/>'. $donnees['dep2'].'<br/>'.$donnees['dep3'].'<br/>'.$donnees['dep4'].'<br/>'.$donnees['dep5'].'<br/>'. $donnees['dep6'].' '.$donnees['dep7'].' '.$donnees['dep8'].' '.$donnees['dep9'].' '. $donnees['dep10'].' '.$donnees['dep11'].' '.$donnees['dep12'];
@@ -125,8 +125,8 @@ $reponse = mysql_query("SELECT *
 							
 							echo 
 							"<strong> Nbre de clubs : </strong>".' '.$nb_equipe_tt[0].'<br/><br/>'
-							.'<strong> Effectif s&eacute;nior : </strong>'.' '.$donnees['nbre_senior'].'<br/>'
-							.'<strong> Effectif F&eacute;minin : </strong>'.' '.$donnees['nbre_feminine'].'<br/>'
+							.'<strong> Effectif sénior : </strong>'.' '.$donnees['nbre_senior'].'<br/>'
+							.'<strong> Effectif Féminin : </strong>'.' '.$donnees['nbre_feminine'].'<br/>'
 							.'<strong> Effectif Jeune : </strong>'.' '.$donnees['nbre_jeune'].'<br/>'
 							.'<strong> Effectif dirigeant : </strong>'.' '.$donnees['nbre_dirigeant'].'<br/><br/>';
 							
@@ -170,12 +170,12 @@ $reponse = mysql_query("SELECT *
 <?php 
 echo
 "<strong>Nbre de clubs professionnels :</strong> ".' '.$nb_equipe_pro[0].'<br/>'
-.'<strong> Nbre de clubs en f&eacute;d&eacute;rale 1 :</strong>'.' '.$nb_equipe_fed1[0].'<br/>'
-.'<strong> Nbre de clubs en f&eacute;d&eacute;rale 2 :</strong>'.' '.$nb_equipe_fed2[0].'<br/>'
-.'<strong> Nbre de clubs en f&eacute;d&eacute;rale 3 :</strong>'.' '.$nb_equipe_fed3[0].'<br/>'
-.'<strong> Nbre de clubs dans les comp&eacute;titions territoriales : </strong>'.' '. $nb_equipe_terr.'<br/>'.'<br/>'
+.'<strong> Nbre de clubs en fédérale 1 :</strong>'.' '.$nb_equipe_fed1[0].'<br/>'
+.'<strong> Nbre de clubs en fédérale 2 :</strong>'.' '.$nb_equipe_fed2[0].'<br/>'
+.'<strong> Nbre de clubs en fédérale 3 :</strong>'.' '.$nb_equipe_fed3[0].'<br/>'
+.'<strong> Nbre de clubs dans les compétitions territoriales : </strong>'.' '. $nb_equipe_terr.'<br/>'.'<br/>'
 
-.'<strong> Nbre de clubs f&eacute;minins: </strong>'.' '.$nb_equipe_fem[0].'<strong> dont </strong>'.'  '.$donnees['fem_elite'].' en &eacute;lite'.'<br/><br/>';
+.'<strong> Nbre de clubs féminins: </strong>'.' '.$nb_equipe_fem[0].'<strong> dont </strong>'.'  '.$donnees['fem_elite'].' en élite'.'<br/><br/>';
 ?>
 </p>
 
@@ -184,7 +184,7 @@ echo
 <br/>
 
 
-<h1>Palmar&egrave;s S&eacute;lections territoriales</h1>
+<h1>Palmar&egrave;s Sélections territoriales</h1>
   
 
 <br>
@@ -201,7 +201,7 @@ echo
 
 <br>
 <h1>Palmar&egrave;s national </h1>
-<h3> (Les dix derniers titres du comit&eacute;)</h3>
+<h3> (Les dix derniers titres du comité)</h3>
 
 
 <p class="texte18">
@@ -314,7 +314,7 @@ echo "<a href=palm_terr2tableau.php?variable_1=$sigle target=_blank> Tous les ch
   <br>
 <font color="#FF0000">_______________________________________________________</font> 
 <p>&nbsp;</p>
-<h1>Clubs du comit&eacute;</h1>
+<h1>Clubs du comité</h1>
 <br />
  
 <h3>Clubs professionnels :</h3>
@@ -341,11 +341,11 @@ echo "<a href=palm_terr2tableau.php?variable_1=$sigle target=_blank> Tous les ch
 				}
 	 ?>
 </p>
-<h3>F&eacute;d&eacute;rale 1 :</h3> 
+<h3>Fédérale 1 :</h3> 
 <p class="afficheEquipe">
   <?php $query = "	SELECT bdsaisons.id, bdclubs.nom_1
 					FROM bdsaisons, bdclubs 
-					WHERE bdsaisons.code_bdsaison=bdclubs.code and bdsaisons.siglecomite='$sigle' and ($terr_annee like 'Federale 1%'  OR $terr_annee like 'F&eacute;d&eacute;rale%')";
+					WHERE bdsaisons.code_bdsaison=bdclubs.code and bdsaisons.siglecomite='$sigle' and ($terr_annee like 'Federale 1%'  OR $terr_annee like 'Fédérale%')";
 						$result = mysql_query($query);
 						 while($row = mysql_fetch_array($result))
 								{                        
@@ -358,11 +358,11 @@ echo "<a href=palm_terr2tableau.php?variable_1=$sigle target=_blank> Tous les ch
 								}
 			 ?>
 </p>
-<h3>F&eacute;d&eacute;rale 2 :</h3> 
+<h3>Fédérale 2 :</h3> 
 <p class="afficheEquipe"> 
 	<?php $query = "	SELECT bdsaisons.id, bdclubs.nom_1
 						FROM bdsaisons, bdclubs 
-						WHERE bdsaisons.code_bdsaison=bdclubs.code and bdsaisons.siglecomite='$sigle' and ($terr_annee='Federale 2' OR $terr_annee='F&eacute;d&eacute;rale 2') ";
+						WHERE bdsaisons.code_bdsaison=bdclubs.code and bdsaisons.siglecomite='$sigle' and ($terr_annee='Federale 2' OR $terr_annee='Fédérale 2') ";
 							$result = mysql_query($query);
 							while($row = mysql_fetch_array($result))
 								{                        
@@ -377,12 +377,12 @@ echo "<a href=palm_terr2tableau.php?variable_1=$sigle target=_blank> Tous les ch
 	 ?>
 </p>
 
-<h3>F&eacute;d&eacute;rale 3 :</h3> 
+<h3>Fédérale 3 :</h3> 
 <p class="afficheEquipe">
 
 		<?php $query = "	SELECT bdsaisons.id, bdclubs.nom_1
 							FROM bdsaisons, bdclubs 
-							WHERE bdsaisons.code_bdsaison=bdclubs.code and bdsaisons.siglecomite='$sigle' and ($terr_annee='Federale 3' OR $terr_annee = 'F&eacute;d&eacute;rale 3')";
+							WHERE bdsaisons.code_bdsaison=bdclubs.code and bdsaisons.siglecomite='$sigle' and ($terr_annee='Federale 3' OR $terr_annee = 'Fédérale 3')";
 		$result = mysql_query($query);
 				 while($row = mysql_fetch_array($result))
 					{                         
@@ -400,7 +400,7 @@ echo "<a href=palm_terr2tableau.php?variable_1=$sigle target=_blank> Tous les ch
 <br />
 <h3>
   <?php if ($sigle=="(BE)")
-		echo "Honneur/ Promotion honneur / 1re S&eacute;rie :";
+		echo "Honneur/ Promotion honneur / 1re Série :";
 		else
 		echo "Honneur/ Promotion honneur :" ?>
 </h3> 
@@ -427,7 +427,7 @@ echo "<a href=palm_terr2tableau.php?variable_1=$sigle target=_blank> Tous les ch
   <?php if ($sigle=="(BE)")
 		echo "";
 		else
-		echo "1re / 2me S&eacute;rie :"?>
+		echo "1re / 2me Série :"?>
 </h3> 
  <p class="afficheEquipe">
 
@@ -449,9 +449,9 @@ echo "<a href=palm_terr2tableau.php?variable_1=$sigle target=_blank> Tous les ch
 <br />
 <h3>
   <?php if ($sigle=="(BE)")
-		echo "2me / 3me / 4me S&eacute;rie :";
+		echo "2me / 3me / 4me Série :";
 		else
-		echo "3me / 4me S&eacute;rie :"?>
+		echo "3me / 4me Série :"?>
 </h3> 
 <p class="afficheEquipe">
 	<?php $query = "	SELECT bdsaisons.id, bdclubs.nom_1
@@ -470,7 +470,7 @@ echo "<a href=palm_terr2tableau.php?variable_1=$sigle target=_blank> Tous les ch
 	mysql_close(); 	?>
 </p>
 <p>&nbsp;</p>
-<h3>Equipes f&eacute;minines :</h3>
+<h3>Equipes féminines :</h3>
 <p class="afficheEquipe">
   <?php require ("connection4.php") ; ?>
   <?php

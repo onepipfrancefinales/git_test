@@ -154,19 +154,19 @@ $clubB4S12= ' Provence 2';
 </div>
 <div id="Layer1" style="position:absolute; width:195px; height:25px; z-index:1; top: 113px; left: 555px; background-color: #FFCC33; layer-background-color: #FFCC33; border: 1px none #000000"> 
   <div align="center"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">1re 
-    S&eacute;rie</font></b></div>
+    Série</font></b></div>
 </div>
 <div id="Layer1" style="position:absolute; width:195px; height:25px; z-index:1; top: 115px; left: 820px; background-color: #FFCC33; layer-background-color: #FFCC33; border: 1px none #000000"> 
   <div align="center"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">2me 
-    S&eacute;rie</font></b></div>
+    Série</font></b></div>
 </div>
 <div id="Layer1" style="position:absolute; width:195px; height:25px; z-index:1; top: 117px; left: 1082px; background-color: #FFCC33; layer-background-color: #FFCC33; border: 1px none #000000"> 
   <div align="center"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">3me 
-    S&eacute;rie</font></b></div>
+    Série</font></b></div>
 </div>
 <div id="Layer1" style="position:absolute; width:195px; height:25px; z-index:1; top: 118px; left: 1334px; background-color: #FFCC33; layer-background-color: #FFCC33; border: 1px none #000000"> 
   <div align="center"><b><font color="#0033CC" face="Arial, Helvetica, sans-serif">4me 
-    S&eacute;rie</font></b></div>
+    Série</font></b></div>
 </div>
 <div id="Layer1" style="position:absolute; width:1237px; height:25px; z-index:1; top: 55px; left: 97px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"> 
   <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="5">Barrages 

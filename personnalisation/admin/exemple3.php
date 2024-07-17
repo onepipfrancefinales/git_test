@@ -1,13 +1,13 @@
 
 
 <?php
-// On dÈmarre la session (ceci est indispensable dans toutes les pages de notre section membre)
+// On dÔøΩmarre la session (ceci est indispensable dans toutes les pages de notre section membre)
 session_start ();
 
-// On rÈcupËre nos variables de session
+// On rÔøΩcupÔøΩre nos variables de session
 if (isset($_SESSION['login']) && isset($_SESSION['pwd']) && isset($_SESSION['id'])) {
 
-	// On teste pour voir si nos variables ont bien ÈtÈ enregistrÈes
+	// On teste pour voir si nos variables ont bien ÔøΩtÔøΩ enregistrÔøΩes
 	echo '<html>';
 	echo '<head>';
 	echo '<title>Page de notre section membre</title>';
@@ -22,16 +22,16 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd']) && isset($_SESSION['id'
   </tr>
   <tr> 
     <td class="user"> <a href="../affichage/pagePerso.php">Consulter 
-      ma s&eacute;l&eacute;ction</a> </td>
+      ma s√©l√©ction</a> </td>
     <td class="user" width="294"> <a href="pageChoix.php#zone4">Modifier /supprimer</a> 
     </td>
     <td class="user"> 
       <?php
 				// On affiche un lien pour fermer notre session
-				echo '<a href="./logout.php">D&eacute;connection</a>';
+				echo '<a href="./logout.php">D√©connection</a>';
 				}
 				else {
-					echo 'Les variables ne sont pas dÈclarÈes.';
+					echo 'Les variables ne sont pas dÔøΩclarÔøΩes.';
 				}
 			?>
     </td>

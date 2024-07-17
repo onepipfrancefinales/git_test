@@ -15,16 +15,16 @@
     <td   width="33%" height="28"> 
 	  <ul class="menu-demo2">
           
-        <li><a href="#"><b><font color="#FFFFFF">F&eacute;d&eacute;rales</font></b></a> 
+        <li><a href="#"><b><font color="#FFFFFF">Fédérales</font></b></a> 
           <ul>
-            <li><a href="171.php?comite=f1&champ=990141">F&eacute;d 
+            <li><a href="171.php?comite=f1&champ=990141">Féd 
               1</a></li>
-            <li><a href="171.php?comite=fed2&champ=990151">F&eacute;d 
+            <li><a href="171.php?comite=fed2&champ=990151">Féd 
               2</a></li>
-            <li><a href="171.php?comite=fed3NE&champ=161">F&eacute;d 
+            <li><a href="171.php?comite=fed3NE&champ=161">Féd 
               3</a></li>
             <li><a href="171.php?comite=f1&champ=990241">Nat B</a></li>
-            <li><a href="171.php?comite=fed2&champ=990251">F&eacute;d 
+            <li><a href="171.php?comite=fed2&champ=990251">Féd 
               B</a></li>
             <li><a href="171.php?comite=fed3NE&champ=261">Excel 
               B</a></li>
@@ -44,7 +44,7 @@
             <li><font color="#000000"> - - - - - -</font> </li>
             <li><a href="171.php?comite=fem&champ=280">Elite 1</a></li>
             <li><a href="171.php?comite=fem&champ=285">Elite 2</a></li>
-            <li><a href="171.php?comite=fem&champ=291">F&eacute;d </a> </li>
+            <li><a href="171.php?comite=fem&champ=291">Féd </a> </li>
           </ul>
         </li>
       </ul>

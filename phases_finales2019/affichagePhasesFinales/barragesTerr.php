@@ -513,7 +513,7 @@ trenteDeuxieme2019 ($division, $annee);
   <tr> 
     <td colspan="18" bgcolor="#FF9933"><b></b> 
       <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="4">1re 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -750,7 +750,7 @@ trenteDeuxieme2019 ($division, $annee);
   <tr> 
     <td colspan="18" bgcolor="#FF9933"> 
       <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="4">2me 
-        S&eacute;rie 
+        Série 
         <?php  $id = 995; 
 ?>
         </font></b></div>
@@ -987,7 +987,7 @@ trenteDeuxieme2019 ($division, $annee);
   <tr> 
     <td colspan="18" bgcolor="#FF9933">
       <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="4">3me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -1221,7 +1221,7 @@ trenteDeuxieme2019 ($division, $annee);
   <tr> 
     <td colspan="18" bgcolor="#FF9933">
       <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="4">4me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 

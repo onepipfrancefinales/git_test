@@ -14,31 +14,31 @@ elseif ($division == 180)
 //	echo "Promotion honneur Promotion honneur Promotion honneur Promotion honneur Promotion honneur  Promotion honneur  ";
 	echo "- Promotion honneur -";
 elseif ($division == 190)
-//	echo "1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie ";
-	echo "- 1re S&eacute;rie -";
+//	echo "1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série 1re Série ";
+	echo "- 1re Série -";
 elseif ($division == 200)
-//	echo "2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie ";
-	echo "- 2me S&eacute;rie -";
+//	echo "2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série 2me Série ";
+	echo "- 2me Série -";
 elseif ($division == 210)
-//	echo "3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie ";
-	echo "- 3me S&eacute;rie -";
+//	echo "3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série 3me Série ";
+	echo "- 3me Série -";
 elseif ($division == 220)
-//	echo "4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie ";	
-	echo "- 4me S&eacute;rie -";
+//	echo "4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série 4me Série ";	
+	echo "- 4me Série -";
 elseif ($division == 270)
-//	echo "R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve ";
-	echo "- R&eacute;serve honneur -";
+//	echo "Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve Réserve ";
+	echo "- Réserve honneur -";
 elseif ($division == 9180)
-//	echo "R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion R&eacute;serve Promotion ";		
-	echo "- R&eacute;serve promotion honneur -";
+//	echo "Réserve Promotion Réserve Promotion Réserve Promotion Réserve Promotion Réserve Promotion Réserve Promotion ";		
+	echo "- Réserve promotion honneur -";
 elseif ($division == 9190)
-//	echo "R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie ";
-	echo "- R&eacute;serve S&eacute;rie -";
+//	echo "Réserve 1re Série Réserve 1re Série Réserve 1re Série Réserve 1re Série Réserve 1re Série Réserve 1re Série ";
+	echo "- Réserve Série -";
 elseif ($division == 9200)
-	echo "- R&eacute;serve 2me S&eacute;rie -";
-//	echo "R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve";
+	echo "- Réserve 2me Série -";
+//	echo "Réserve 2me Série Réserve 2me Série Réserve 2me Série Réserve 2me Série Réserve 2me Série Réserve 2me Série Réserve";
 else
-		echo "R&eacute;serve 4me S&eacute;rie  ";
+		echo "Réserve 4me Série  ";
 
 }
 ?>
@@ -60,7 +60,7 @@ function barragesQuarts($annee, $bdd)
 {
 //require ("../../connect1/connection2.php");
 
-//-------S�lection des dates et lieux des rencontres-------------------------
+//-------S�lection des dates et lieux des rencontres-------------------------
 global $barrage;
 global $quart1; global $quart2; global $quart3;global $quart4;
 global $demi1; global $demi2; global $finale;
@@ -86,7 +86,7 @@ $requete =$bdd->query( "SELECT barrage, Quart4, Quart3, Quart2, Quart1, Demi1, D
 			}
 
 
-//--------S�lection des �quipes --------------------------------
+//--------S�lection des �quipes --------------------------------
 	
 	global $clubA8001;global $clubA8002;global $clubA8003;global $clubA8004;
 	global $clubA8005;global $clubA8006;global $clubA8007;global $clubA8008;
@@ -249,7 +249,7 @@ $requete =$bdd->query ("SELECT bdclubs.nom_1
 ?> 
 
 <?php 
-// ----R�cup�ration des scores des barrages----------------------
+// ----R�cup�ration des scores des barrages----------------------
 
 if (isset ($A8001)) $A8001 = $A8001; else $A8001='-'; 
 if (isset ($A8002)) $A8002 = $A8002; else $A8002='-'; 
@@ -299,7 +299,7 @@ $query =$bdd->query( "	SELECT id,  A8001, A8002, A8003, A8004, A8005, A8006, A80
 					}
  
  
-// ----R�cup�ration des scores des Quarts----------------------
+// ----R�cup�ration des scores des Quarts----------------------
 
 $result =$bdd->query( "	SELECT id,  A4001, A4002,  A4003, A4004, A4005, A4006, A4007 ,A4008
 			FROM  $bdcomiteAnnee 
@@ -322,7 +322,7 @@ $result =$bdd->query( "	SELECT id,  A4001, A4002,  A4003, A4004, A4005, A4006, A
 <?php	$clubA="-"; ?>
 
 <?php
-//------Barrages------Affichage r�sultats---------
+//------Barrages------Affichage r�sultats---------
 if (is_numeric($A8001) && is_numeric($A8002))
 {
 	if (($A8001==NULL) OR ($A8001 + $A8002 == 0)) $A8001="-"; else { $A8001=$A8001; }
@@ -392,7 +392,7 @@ if (is_numeric($A8007) && is_numeric($A8008))
 
 
  <?php
- //-----------------S�l�ction des equipes qualifi�es en quarts----------------
+ //-----------------S�l�ction des equipes qualifi�es en quarts----------------
  
  //clubA4001
 $requete =$bdd->query( "SELECT bdclubs.nom_1
@@ -472,7 +472,7 @@ $requete =$bdd->query("SELECT bdclubs.nom_1
 
 
 <?php 
-// --------R�cup�ration des scores des demis et de la finale----------------------
+// --------R�cup�ration des scores des demis et de la finale----------------------
 $result =$bdd->query( "	SELECT id,  A2001, A2002,  A2003, A2004 , A1001 , A1002
 			FROM  $bdcomiteAnnee
 			WHERE id='$division' "); 

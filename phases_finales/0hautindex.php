@@ -1,9 +1,9 @@
 <html>
 <head>
 <meta name="description"
-content="Le site non officiel du ComitÈ Midi PyrÈnÈes de rugby : Histoire, clubs, calendrier des matches, compÈtitions, rÈsultats, la Coupe du Monde ‡ Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
+content="Le site non officiel du ComitÔøΩ Midi PyrÔøΩnÔøΩes de rugby : Histoire, clubs, calendrier des matches, compÔøΩtitions, rÔøΩsultats, la Coupe du Monde ÔøΩ Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
 <meta name="keywords"
-content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,FranÁaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,Equipe,France,Chelem,V,Nations,Webb Ellis, Brennus,Passe,Rives,Blanco,Sella,Ibanez,Transformation,Essai,MÍlÈe,Touche,PÈnalitÈ,En-Avant,Terrain,Mi-temps,Stade,Maillot,XV,Quinze,Jeu,Buteur,Pilier,Talonneur,Calendrier,Match,Elite,Professionnel,Poule,Saison,Championnat,Tournoi,Coupe du Monde,Tri-Series,Arbitre,CompÈtition,Tri-Nations,ComitÈs,Spanghero,Federation,Union,French,Rugby player,players,Sport,Ball,Oval,Team,Slam,Pass,Conversion,Try,Scrum,Touch,Penalty,Knock-on,Pitch,Half-time,Stadium,Jersey,XV,Fifteen,Game,Goal,kicker,Prop,forward,Hooker,Calendar,Professional,PoolSeason,Championship,Tournament,World Cup,Tri-Series,Referee,Competition,Committees,Matches">
+content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,FranÔøΩaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,Equipe,France,Chelem,V,Nations,Webb Ellis, Brennus,Passe,Rives,Blanco,Sella,Ibanez,Transformation,Essai,MÔøΩlÔøΩe,Touche,PÔøΩnalitÔøΩ,En-Avant,Terrain,Mi-temps,Stade,Maillot,XV,Quinze,Jeu,Buteur,Pilier,Talonneur,Calendrier,Match,Elite,Professionnel,Poule,Saison,Championnat,Tournoi,Coupe du Monde,Tri-Series,Arbitre,CompÔøΩtition,Tri-Nations,ComitÔøΩs,Spanghero,Federation,Union,French,Rugby player,players,Sport,Ball,Oval,Team,Slam,Pass,Conversion,Try,Scrum,Touch,Penalty,Knock-on,Pitch,Half-time,Stadium,Jersey,XV,Fifteen,Game,Goal,kicker,Prop,forward,Hooker,Calendar,Professional,PoolSeason,Championship,Tournament,World Cup,Tri-Series,Referee,Competition,Committees,Matches">
 <meta name="classification" content="Sport,Rugby">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="resource-type" content="document">
@@ -53,15 +53,15 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           D2</a></font></b></font></div>
       </td>
       <td bordercolor="#FFFFFF" height="25" bgcolor="#0091D7" width="107" valign="middle"> 
-        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=<?php echo $annee;?>" target="_top">F√©d√©rale 
           1 </a></b></font></div>
       </td>
       <td height="25" bordercolor="#FFFFFF" bgcolor="#0091D7" width="99" valign="middle"> 
-        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale2/pagefederale2.php?variable_1=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale2/pagefederale2.php?variable_1=<?php echo $annee;?>" target="_top">F√©d√©rale 
           2 </a></b></font></div>
       </td>
       <td width="101" bgcolor="#0091D7" height="25" valign="middle"> 
-        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale3/pagefederale3.php?variable_1=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale3/pagefederale3.php?variable_1=<?php echo $annee;?>" target="_top">F√©d√©rale 
           3 </a></b></font></div>
       </td>
       <td width="91" bgcolor="#00CC99" height="25" valign="middle"> 
@@ -72,7 +72,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           B </a></b></font></div>
       </td>
       <td width="109" bgcolor="#00CC99" height="25" valign="middle"> 
-        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=<?php echo $annee;?>" target="_top">F√©d√©rale 
           B</a></b></font></div>
       </td>
       <td width="126" bgcolor="#00CC99" height="25" valign="middle"> 
@@ -123,26 +123,26 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/promotion/pagepromotion.php?variable_1=<?php echo $annee;?>" target="_top">Promotion</a></b></font></div>
       </td>
       <td width="101" bgcolor="#04ADFF" height="30" valign="middle"> 
-        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/1serie/page1serie.php?variable_1=<?php echo $annee;?>" target="_top">1<font size="1">&eacute;re</font> 
-          S&eacute;rie</a></b></font></div>
+        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/1serie/page1serie.php?variable_1=<?php echo $annee;?>" target="_top">1<font size="1">√©re</font> 
+          S√©rie</a></b></font></div>
       </td>
       <td width="91" bgcolor="#04ADFF" height="30" valign="middle"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top">2<font size="1">i&egrave;me</font> 
-          S&eacute;rie</a></b></font></div>
+          S√©rie</a></b></font></div>
       </td>
       <td width="111" bgcolor="#04ADFF" height="30" valign="middle"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top">3<font size="1">i&egrave;me</font> 
-          S&eacute;rie</a></b></font></div>
+          S√©rie</a></b></font></div>
       </td>
       <td width="109" bgcolor="#04ADFF" height="30" valign="middle"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top">4<font size="1">i&egrave;me</font> 
-          S&eacute;rie</a></b></font></div>
+          S√©rie</a></b></font></div>
       </td>
       <td bgcolor="#00CC99" height="30" width="126" valign="middle"> 
-        <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#330000"><font color="#000000"><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">R&eacute;serve 
+        <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#330000"><font color="#000000"><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">R√©serve 
           &agrave; XII</a></font></font></b></div>
       </td>
-      <td bgcolor="#FF00FF" height="30" align="center" valign="middle"><font size="2" face="Arial, Helvetica, sans-serif" color="#CCCCCC"><font color="#FFFFFF"><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=<?php echo $annee;?>"><b>F&eacute;d&eacute;rale 
+      <td bgcolor="#FF00FF" height="30" align="center" valign="middle"><font size="2" face="Arial, Helvetica, sans-serif" color="#CCCCCC"><font color="#FFFFFF"><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=<?php echo $annee;?>"><b>F√©d√©rale 
         1</b></a></font></font></td>
       <td align="center" nowrap height="30" width="89" bgcolor="#993399" valign="MIDDLE"><a href="http://francefinalesrugby.franceserv.com/phases_finales/phliponeau/pagephliponeau.php?variable_1=<?php echo $annee;?>">Phliponeau</a></td>
       <td align="center" nowrap height="30" width="89" bgcolor="#993399" valign="MIDDLE"><a href="http://francefinalesrugby.franceserv.com/phases_finales/gaudermen/pagegaudermen.php?variable_1=<?php echo $annee;?>">Gaudermen</a></td>

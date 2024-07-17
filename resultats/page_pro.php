@@ -22,7 +22,7 @@ $comiteNom="";
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
- <meta name="description" content="Résulats de toutes les compétitions Professionnelles. Calendriers, résultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmar�s territoriaux des differentes divisions du comit&eacute;.">
+ <meta name="description" content="Résulats de toutes les compétitions Professionnelles. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmar�s territoriaux des differentes divisions du comité.">
  <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
  <meta name="classification" content="Sport,Rugby">
  <meta name="resource-type" content="document">
@@ -77,9 +77,9 @@ $comiteNom="";
           <tr> 
               <td height="135" border color="#000000"> 
                 <div align="center"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere" target="_top"><img src="../images/images%20GOOGLE%20PLAY2.jpg" width="254" height="83" border="0"></a></div>
-                <div align="center"><font face="Arial, Helvetica, sans-serif"><b><font color="#000000">T&eacute;l&eacute;charger 
+                <div align="center"><font face="Arial, Helvetica, sans-serif"><b><font color="#000000">Télécharger 
                   l'appli</font> <font color="#FF0000">France Finales Rugby App</font><br>
-                  <font color="#000000">pour consulter r&eacute;sultats et classements</font></b></font></div>
+                  <font color="#000000">pour consulter résultats et classements</font></b></font></div>
               </td>
             </tr>
         </table>

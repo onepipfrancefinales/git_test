@@ -5,8 +5,8 @@ $CHOIX = isset($_REQUEST['chx']) ? $_REQUEST['chx'] : NULL;
 switch($CHOIX)
 {
 	case 'phpinfo';	$STITRE = ' &#062; Information PHP'; break;
-	case 'meminfo';	$STITRE = ' &#062; Information m&eacute;moire'; break;
-	case 'bddinfo';	$STITRE = ' &#062; Base de donn&eacute;es'; break;
+	case 'meminfo';	$STITRE = ' &#062; Information mÃ©moire'; break;
+	case 'bddinfo';	$STITRE = ' &#062; Base de donnÃ©es'; break;
 	default:        $STITRE = ''; break;
 }
 
@@ -16,8 +16,8 @@ switch($CHOIX)
 
 <div class="Cadre">
 	<a href="?page=maintenance&amp;chx=phpinfo">Info. configuration</a>
-	<a href="?page=maintenance&amp;chx=meminfo">Info. m&eacute;moire</a>
-	<a href="?page=maintenance&amp;chx=bddinfo">Base de donn&eacute;es</a>
+	<a href="?page=maintenance&amp;chx=meminfo">Info. mÃ©moire</a>
+	<a href="?page=maintenance&amp;chx=bddinfo">Base de donnÃ©es</a>
 </div>
 
 <?php
@@ -54,7 +54,7 @@ switch($CHOIX)
 
 <div id="tabsInfPhp">
 	<ul>
-		<li><a href="maint_infophp.php?chx=1">Général</a></li>
+		<li><a href="maint_infophp.php?chx=1">Gï¿½nï¿½ral</a></li>
 		<li><a href="maint_infophp.php?chx=2">Configuration</a></li>
 		<li><a href="maint_infophp.php?chx=3">Modules</a></li>
 		<li><a href="maint_infophp.php?chx=4">Environnement</a></li>
@@ -67,7 +67,7 @@ switch($CHOIX)
 	break;
 
 
-	// Information mémoire
+	// Information mï¿½moire
 	case 'meminfo':
 
 		$MEM_LIMIT = (int) ini_get('memory_limit');
@@ -90,16 +90,16 @@ switch($CHOIX)
 	<table class="Large50P">
 		<thead>
 			<tr class="ui-widget-header">
-				<th colspan="2">M&eacute;moire volatile</th>
+				<th colspan="2">MÃ©moire volatile</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr class="ligne1">
-				<td class="Large50P">M&eacute;moire allou&eacute;e</td>
+				<td class="Large50P">MÃ©moire allouÃ©e</td>
 				<td><?php echo $VAL_MEM_LIMIT; ?></td>
 			</tr>
 			<tr class="ligne2">
-				<td>M&eacute;moire utilis&eacute;e</td>
+				<td>MÃ©moire utilisÃ©e</td>
 				<td><?php echo $VAL_MEM_USED; ?></td>
 			</tr>
 				<?php if (!empty($MEM_POURCENT)) { ?>
@@ -121,14 +121,14 @@ switch($CHOIX)
 	break;
 
 
-	// Information base de données
+	// Information base de donnï¿½es
 	case 'bddinfo':
 ?>
 <table class="Large100P ui-widget ui-widget-content">
 	<caption>
 		<a href="?page=maintenance&amp;chx=bddanal">Analyse des tables</a>
-		<a href="?page=maintenance&amp;chx=bddcheck">Intégrit&eacute; des tables</a>
-		<a href="?page=maintenance&amp;chx=bddrepar">R&eacute;paration des tables</a>
+		<a href="?page=maintenance&amp;chx=bddcheck">Intï¿½grÃ©e; des tables</a>
+		<a href="?page=maintenance&amp;chx=bddrepar">RÃ©paration des tables</a>
 		<a href="?page=maintenance&amp;chx=bddopt">Optimiser les tables</a>
 	</caption>
 	<thead>
@@ -182,7 +182,7 @@ switch($CHOIX)
 <?php
 	break;
 
-	// Analyse de la base de données
+	// Analyse de la base de donnï¿½es
 	case 'bddanal':
 		echo '	<table class="Large50P ui-widget ui-widget-content">
 		<caption>
@@ -230,7 +230,7 @@ switch($CHOIX)
 	</table>'."\n\n";
 	break;
 
-	// Contrôle de l'intégrité des tables
+	// Contrï¿½le de l'intï¿½gritï¿½ des tables
 	case 'bddcheck':
 		$REQ1 = mysql_query('SHOW TABLES');
 
@@ -245,7 +245,7 @@ switch($CHOIX)
 		}
 	break;
 
-	// Réparation des tables
+	// Rï¿½paration des tables
 	case 'bddrepar':
 		$REQ1 = mysql_query('SHOW TABLES');
 

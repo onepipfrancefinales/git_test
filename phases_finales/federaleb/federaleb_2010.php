@@ -3,16 +3,16 @@
 <?php
 if ($annee==2010)
 {
-$clubA1601= ' Belv�s ';
-$clubA1602= ' C�ret';
+$clubA1601= ' Belv�s ';
+$clubA1602= ' C�ret';
 $clubA1603= ' Fleurance ';
 $clubA1604= ' L Isle Jourdain ';
 $clubA1605= ' Macon';
 $clubA1606= ' Saint-savin ';
-$clubA1607= ' Carqueiranne-Hy�res ';
+$clubA1607= ' Carqueiranne-Hy�res ';
 $clubA1608= ' Nimes ';
 
-$clubA1609= ' Rib�rac';
+$clubA1609= ' Rib�rac';
 $clubA1610= ' Agde';
 $clubA1611= ' Salles ';
 $clubA1612= ' Boucau Tarnos';
@@ -23,7 +23,7 @@ $clubA1616= ' Arras';
 
 $clubA1617= ' Grasse ';
 $clubA1618= ' Vienne ';
-$clubA1619= ' Saint-Raphael-Fr�jus';
+$clubA1619= ' Saint-Raphael-Fr�jus';
 $clubA1620= ' Beaurepaire';
 $clubA1621= ' Suresnes';
 $clubA1622= ' Le Creusot';
@@ -38,7 +38,7 @@ $clubA1627= ' Nevers ';
 $clubA1628= ' Orsay';
 $clubA1629= ' Lombez Samatan';
 $clubA1630= ' Nafarroa';
-$clubA1631= ' Mi�lan-Mirande';
+$clubA1631= ' Mi�lan-Mirande';
 $clubA1632= ' Aire sur Adour';
 
 
@@ -876,16 +876,16 @@ else
   <div align="center"> <font size="5"><b>Champion de France
     <?php echo $annee;?>
     <br>
-    F&eacute;d&eacute;rale B </b></font></div>
+    Fédérale B </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B 
-    F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B 
-    F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B 
-    F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B 
-    F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B 
-    F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B 
-    F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B</b></i></div>
+  <div align="center"><i><b>Fédérale B Fédérale B 
+    Fédérale B Fédérale B Fédérale B 
+    Fédérale B Fédérale B Fédérale B 
+    Fédérale B Fédérale B Fédérale B 
+    Fédérale B Fédérale B Fédérale B 
+    Fédérale B Fédérale B Fédérale B 
+    Fédérale B Fédérale B</b></i></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1081px; top: 707px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000">
   <div align="center"> <font color="#FF0000" size="6"><b>Nimes (PR)</b></font></div>

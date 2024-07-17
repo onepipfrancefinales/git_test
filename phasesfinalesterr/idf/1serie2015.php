@@ -161,10 +161,10 @@ MM_reloadPage(true);
   <div align="center"><font color="#FFFFFF"><b>Quarts de finale</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 166px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
-  <div align="center"><i><b>1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-    1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-    1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 1re S&eacute;rie 
-    1re S&eacute;rie 1re S&eacute;rie </b></i></div>
+  <div align="center"><i><b>1re Série 1re Série 1re Série 
+    1re Série 1re Série 1re Série 1re Série 1re Série 
+    1re Série 1re Série 1re Série 1re Série 1re Série 
+    1re Série 1re Série </b></i></div>
 </div>
    
 	   
@@ -207,7 +207,7 @@ MM_reloadPage(true);
     complet des Finales territoriales d'ile de France qui auront lieu le 26 Avril 
     au</font></b></font></a><font face="Arial, Helvetica, sans-serif"><br>
     <font color="#FF0000" size="4"><b><br>
-    <font size="5">Rugby Club Vall&eacute;e de Montmorency</font></b></font><br>
+    <font size="5">Rugby Club Vallée de Montmorency</font></b></font><br>
     (Andilly &#150; Enghien &#150; Groslay &#150; Margency &#150; Montmorency 
     - Soisy)</font></div>
 </div>

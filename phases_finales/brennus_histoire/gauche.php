@@ -8,7 +8,7 @@
 <table width="205" border="1" align="center">
   <tr> 
     <td width="195"> 
-      <div align="center"><a href="pagerecords1.php">Nombre d'&eacute;ditions</a></div>
+      <div align="center"><a href="pagerecords1.php">Nombre d'éditions</a></div>
     </td>
   </tr>
   <tr> 
@@ -28,7 +28,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div align="center"><a href="pagerecords3.php">Meilleure s&eacute;rie</a></div>
+      <div align="center"><a href="pagerecords3.php">Meilleure série</a></div>
     </td>
   </tr>
   <tr> 
@@ -38,7 +38,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div align="center"><a href="pagerecords4.php">Joueurs les plus titr&eacute;s</a></div>
+      <div align="center"><a href="pagerecords4.php">Joueurs les plus titrés</a></div>
     </td>
   </tr>
   <tr> 
@@ -48,7 +48,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div align="center"><a href="pagerecords5.php"> les plus titr&eacute;s</a></div>
+      <div align="center"><a href="pagerecords5.php"> les plus titrés</a></div>
     </td>
   </tr>
   <tr> 

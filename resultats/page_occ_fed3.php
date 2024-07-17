@@ -1,6 +1,6 @@
 <?php 
 session_start ();
-$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 6me journ&eacute;e du 01 Novembre";
+$message = "Arr&ecirc;t des compétitions &agrave; l'occasion de la 6me journée du 01 Novembre";
 //require '../connect/connexion2.php';
 require '../connect/connexion6.php';
 include("../saison.php");
@@ -27,7 +27,7 @@ $comiteNom="Occitanie";?>
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
 <title>Ligue <?php echo $comiteNom;?></title>
-<meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+<meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
 <meta name="classification" content="Sport,Rugby">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="resource-type" content="document">
@@ -74,11 +74,11 @@ $comiteNom="Occitanie";?>
       </td>
       <td bordercolor="#000000" bgcolor="#ffffff" width="650" height="1901" valign="top"> 
         <div align="center"><br>
-          <h1> Comp&eacute;titions R&eacute;gionales</h1>
+          <h1> Compétitions Régionales</h1>
           <h2 class="titre">Ligue Occitanie</h2>
-          <h2 class="commentaire">La ligue Occitanie est n&eacute;e de la fusion des comit&eacute;s territoriaux<br>
-            du Languedoc, de l'Armagnac Bigorre, du pays Catalan et du comit&eacute;<br>
-            Midi Pyr&eacute;n&eacute;es en janvier 2018.</h2>
+          <h2 class="commentaire">La ligue Occitanie est née de la fusion des comités territoriaux<br>
+            du Languedoc, de l'Armagnac Bigorre, du pays Catalan et du comité<br>
+            Midi Pyrénées en janvier 2018.</h2>
             <br>
 		  <?php 
 		  include("liensDivers.php");  

@@ -286,7 +286,7 @@ $clubA1632 = '1er poule 8';
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"><b><font size="3" face="Arial, Helvetica, sans-serif" color="#FFFFFF">6</font></b></div>
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"><b><font size="3" face="Arial, Helvetica, sans-serif" color="#FFFFFF">2</font></b></div>
     <div id="Layer9" style="position:absolute; width:200px; height:20px; z-index:2; left: 0px; top: 20px; background-image:  url(../unique4.jpg); layer-background-image:  url(../unique4.jpg); border: 1px none #000000"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="2">St 
-      M&eacute;dard en Jalle (CA)</font></b></div>
+      Médard en Jalle (CA)</font></b></div>
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 231px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"><font color="#FFFFFF"><b><font face="Arial, Helvetica, sans-serif" color="#FFCC33" size="2">31</font></b></font></div>
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 231px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"><font color="#FFFFFF"><b><font face="Arial, Helvetica, sans-serif" color="#FFCC33" size="2">18</font></b></font></div>
     
@@ -551,16 +551,16 @@ echo "";
 <div id="Layer5" style="position:absolute; width:29px; height:22px; z-index:7; left: 251px; top: 223px"> 
   <div align="center"><b>GA</b></div>
 </div>
-<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 173px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 173px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 </b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1059px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France 2015<br>
-    F&eacute;d&eacute;rale 2 </b></font></div>
+    Fédérale 2 </b></font></div>
 </div>
 <div id="Layer5" style="position:absolute; width:35px; height:22px; z-index:7; left: 501px; top: 238px"> 
   <div align="center"><b>PTS</b></div>

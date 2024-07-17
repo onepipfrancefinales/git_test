@@ -4,11 +4,11 @@ function suiviDuTraitement($division, $requete){
 
 if($requete)	
 	{
-	echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+	echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 	echo "<br />";
 	}
 else{
-	echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+	echo("La modification (".$division.") a Ã©chouÃ©") ;
 	echo "<br />";
 	}	
 }
@@ -23,7 +23,7 @@ function traitementScores ($debut, $fin)
 	global ${"clubA".($i)};
 	//if (isset (${"A".($i)})) ${"A".($i)}=${"A".($i)};${"A".($i)}='-';
 	
-	//Qualifié d'office
+	//Qualifiï¿½ d'office
 	
 	
 	if (${"A".($i)} == '999')	{${"A".($i)}="Q"; }
@@ -32,7 +32,7 @@ function traitementScores ($debut, $fin)
 	//if (${"A".($i)} == '-')     {${"clubA".($i+1)}="-"; }
 	
 	
-	// non affichage d'un équipe
+	// non affichage d'un ï¿½quipe
 	/*
 	if ($clubA2001 == '99999'  or $clubA2001 == '-')   
 		$clubA2002 = "-";
@@ -76,7 +76,7 @@ $reponse = $bdd->query("SELECT *
 									}									
 }
 
-// Récupération du nom de la division
+// Rï¿½cupï¿½ration du nom de la division
 function nomDivision($division)
 {
 global $nomDivision;	

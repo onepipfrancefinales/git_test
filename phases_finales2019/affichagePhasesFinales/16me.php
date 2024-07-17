@@ -9,7 +9,7 @@
 		{
 		?>
       <a href="../affichagePhasesFinales/pagebarrages.php?annee=<?php echo $annee;?>&division=990">Barrages 
-      s&eacute;ries Territoriales</a> 
+      séries Territoriales</a> 
       <?php
 		}
 		?>

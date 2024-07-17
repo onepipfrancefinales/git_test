@@ -13,7 +13,7 @@ echo "<br>";
 $bdpf="bdpffrance";
 $anneeMoins1 = $annee - 1;
  echo  "Saison : ".$anneeMoins1." - ".$annee;?></h2>
- S&eacute;niors I 
+ Séniors I 
   <?php
   require '../../connect/connexion1.php';
   for ($i=110; $i<=190; $i=$i+10)
@@ -43,7 +43,7 @@ $anneeMoins1 = $annee - 1;
 }
 ?>
 <hr />
-S&eacute;niors 2 
+Séniors 2 
 <?php
   require '../../connect/connexion1.php';
   
@@ -99,7 +99,7 @@ S&eacute;niors 2
 }
 ?>
 <hr />
-F&eacute;minines 
+Féminines 
 <?php
   require '../../connect/connexion1.php';
   for ($i=280; $i<=295; $i=$i+5)

@@ -304,22 +304,22 @@ $clubA1613= ' Bretagne 1';
 $clubA1614= ' Vainqueur CE 2 contre LM 2 ';
 
 $clubA1615= ' Poitou Charente 1';
-$clubA1616= ' P�rigord Agenais 1 ';
+$clubA1616= ' P�rigord Agenais 1 ';
 
-$clubA1617= ' Midi Pyr�n�es 1';
+$clubA1617= ' Midi Pyr�n�es 1';
 $clubA1618= ' Vainqueur PA 2 contre CA 2 ';
 
-$clubA1619= ' C�te Basque Landes 1 ';
+$clubA1619= ' C�te Basque Landes 1 ';
 $clubA1620= ' Armagnac Bigorre 1 ';
 
 $clubA1621= ' Cote d Argent 1';
 $clubA1622= ' Vainqueur BE 1 contre R 1';
 
 $clubA1623= ' Limousin 1 ';
-$clubA1624= ' Midi-Pyr�n�es 3 ';
+$clubA1624= ' Midi-Pyr�n�es 3 ';
 
 $clubA1625= ' Languedoc 1';
-$clubA1626= ' Midi-Pyr�n�es 1';
+$clubA1626= ' Midi-Pyr�n�es 1';
 
 $clubA1627= ' Provence 1';
 $clubA1628= ' Vainqueur DA 1 contre AU 2 ';
@@ -329,7 +329,7 @@ $clubA1630= ' Vainqueur CAZ 1 contre PR 2 ';
 
 $clubA1631= ' Auvergne 1';
 $clubA1632= ' Alpes 1';
-echo "<h3> <strong> D�sol�, aucune donn�e pour cette saison</h3> </strong>";
+echo "<h3> <strong> D�sol�, aucune donn�e pour cette saison</h3> </strong>";
 }
 ?>
  
@@ -3022,14 +3022,14 @@ echo "";
   <div align="center"> <font size="5"><b>Champion de France
     <?php echo $annee;?>
     <br>
-    4me S&eacute;rie </b></font></div>
+    4me Série </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>4me 
-  S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-  4me S&eacute;rie 4me S&eacute;rie 4me 4me S&eacute;rie 4me S&eacute;rie 4me 
-  S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me</b></i></div>
+  Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me Série 4me Série 4me Série 
+  4me Série 4me Série 4me 4me Série 4me Série 4me 
+  Série 4me Série 4me Série 4me</b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1081px; top: 707px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font color="#FF0000" face="Geneva, Arial, Helvetica, san-serif"size="5"><b> 
     <?php 

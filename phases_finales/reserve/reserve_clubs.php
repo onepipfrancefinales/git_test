@@ -6,15 +6,15 @@ $id = 210;
 <link rel="stylesheet" type="text/css" href="../2.css">
 
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comités territoriaux, Tous les championnats de rugby, fédérale 2, fédérale 3, fédérale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitï¿½s territoriaux, Tous les championnats de rugby, fï¿½dï¿½rale 2, fï¿½dï¿½rale 3, fï¿½dï¿½rale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re Série</title>
+<title>1re Sï¿½rie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 </head>
@@ -42,18 +42,18 @@ $clubA1613= ' Poitou-Charentes 1';
 $clubA1614= ' Limousin 1';
 
 $clubA1615= ' Auvergne 1';
-$clubA1616= ' Midi-Pyrénées 3 ';
+$clubA1616= ' Midi-Pyrï¿½nï¿½es 3 ';
 
-$clubA1617= ' Périgord Agenais 1';
-$clubA1618= ' Midi-Pyrénées 2';
+$clubA1617= ' Pï¿½rigord Agenais 1';
+$clubA1618= ' Midi-Pyrï¿½nï¿½es 2';
 
-$clubA1619= ' Côte d Argent 1';
+$clubA1619= ' Cï¿½te d Argent 1';
 $clubA1620= ' Barrage LM 2 contre CBL 2 ';
 
 $clubA1621= ' Armagnac Bigorre 1';
-$clubA1622= ' Midi-Pyrénées 1';
+$clubA1622= ' Midi-Pyrï¿½nï¿½es 1';
 
-$clubA1623= ' Côte Basque Landes 1';
+$clubA1623= ' Cï¿½te Basque Landes 1';
 $clubA1624= ' Barrage BE 1 contre LD 2 ';
 
 $clubA1625= ' Languedoc 1';
@@ -72,12 +72,12 @@ $clubA1632= ' Barrage LY 3 contre AP 2 ';
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="20" bgcolor="#FFCC66" colspan="15"> 
-      <div align="center"><i><b>R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve</b></i></div>
+      <div align="center"><i><b>RÃ©serve RÃ©serve RÃ©serve RÃ©serve 
+        RÃ©serve RÃ©serve RÃ©serve RÃ©serve RÃ©serve 
+        RÃ©serve RÃ©serve RÃ©serve RÃ©serve RÃ©serve 
+        RÃ©serve RÃ©serve RÃ©serve RÃ©serve RÃ©serve 
+        RÃ©serve RÃ©serve RÃ©serve RÃ©serve RÃ©serve 
+        RÃ©serve RÃ©serve</b></i></div>
     </td>
   </tr>
   <tr> 
@@ -239,7 +239,7 @@ $clubA1632= ' Barrage LY 3 contre AP 2 ';
           <tr bgcolor="#FFFFFF"> 
             <td height="55" colspan="7" bgcolor="#FFFFFF"> 
               <div align="center"><font size="5" color="#000000"><b>Nombre de 
-                clubs qualifi&eacute;s par comit&eacute;</b></font></div>
+                clubs qualifiÃ©s par comitÃ©</b></font></div>
             </td>
           </tr>
           <tr> 
@@ -247,7 +247,7 @@ $clubA1632= ' Barrage LY 3 contre AP 2 ';
               <div align="center"><b>COMITES</b></div>
             </td>
             <td height="83" width="15%"> 
-              <div align="center"><b>Nombre de clubs qualifi&eacute;s en 16me</b></div>
+              <div align="center"><b>Nombre de clubs qualifiÃ©s en 16me</b></div>
             </td>
             <td height="83" width="10%"> 
               <div align="center"><b>Nbre de clubs dans la division</b></div>
@@ -258,7 +258,7 @@ $clubA1632= ' Barrage LY 3 contre AP 2 ';
             </td>
             <td height="83" width="17%"> 
               <div align="center"> 
-                <p><b>Nombre de clubs qualifi&eacute;s en 16me</b></p>
+                <p><b>Nombre de clubs qualifiÃ©s en 16me</b></p>
               </div>
             </td>
             <td height="83" width="18%" bgcolor="#FFFFFF"> 
@@ -277,7 +277,7 @@ $clubA1632= ' Barrage LY 3 contre AP 2 ';
             <td height="24" width="10%"> 
               <div align="center"><b><font color="#000000"><font size="4"></font></font></b></div>
             </td>
-            <td width="20%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+            <td width="20%" height="24" bgcolor="#FFFFFF">Franche ComtÃ©</td>
             <td width="17%" height="24"> 
               <div align="center">avec Bourgogne</div>
             </td>
@@ -354,7 +354,7 @@ $clubA1632= ' Barrage LY 3 contre AP 2 ';
               <div align="center">1</div>
             </td>
             <td width="10%">&nbsp;</td>
-            <td width="20%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+            <td width="20%" bgcolor="#FFFFFF">Midi PyrÃ©nÃ©es</td>
             <td width="17%" bgcolor="#FFFFFF"> 
               <div align="center">3</div>
             </td>

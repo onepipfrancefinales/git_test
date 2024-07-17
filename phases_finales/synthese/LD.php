@@ -1,5 +1,5 @@
 <head>
-<title>Clubs du comite du Languedoc Qualifi�s en Championnats de France</title>
+<title>Clubs du comite du Languedoc Qualifi�s en Championnats de France</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 
@@ -87,7 +87,7 @@
         <p align="center">&nbsp;</p>
         <p align="center"><img src="http://francefinalesrugby.franceserv.com/images/comites/(LD).jpg" width="150" height="160" align="top"></p>
         <p align="center"><br>
-          <font size="6" face="Lucida Handwriting"><b><font size="5">Equipes qualifi&eacute;es 
+          <font size="6" face="Lucida Handwriting"><b><font size="5">Equipes qualifiées 
           en Championnat de France</font></b></font></p>
         <table width="383" border="1" cellspacing="0" bordercolor="#000000" align="center">
           <tr> 
@@ -97,9 +97,9 @@
           </tr>
           <tr> 
             <td colspan="2" bgcolor="#FFCC33"> 
-              <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;titions 
+              <div align="center"><font color="#000000" size="4"><b><font size="5">Compétitions 
                 <br>
-                S&eacute;niors</font></b></font></div>
+                Séniors</font></b></font></div>
             </td>
           </tr>
           <tr> 
@@ -130,7 +130,7 @@
           </tr>
           <tr> 
             <td width="169" height="33"> 
-              <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2015"><font color="#000000">F&eacute;d&eacute;rale 
+              <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2015"><font color="#000000">Fédérale 
                 1</font></a></font></b></div>
             </td>
             <td width="204" height="33" bgcolor="#009933"> 
@@ -140,7 +140,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale2/pagefederale2.php?variable_1=2015"><font color="#000000">F&eacute;d&eacute;rale 
+              <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale2/pagefederale2.php?variable_1=2015"><font color="#000000">Fédérale 
                 2</font></a></font></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
@@ -150,7 +150,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale3/pagefederale3.php?variable_1=2015"><font color="#000000">F&eacute;d&eacute;rale 
+              <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale3/pagefederale3.php?variable_1=2015"><font color="#000000">Fédérale 
                 3</font></a></font></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
@@ -160,7 +160,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en quarts</div>
+              <div align="center">Eliminé en quarts</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Gruissan</font></div>
@@ -168,7 +168,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en 16me de finale</div>
+              <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Castelnaudary</font></div>
@@ -176,7 +176,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Avenir Blanc Bleu</font></div>
@@ -184,7 +184,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Vendres Lespignan</font></div>
@@ -201,7 +201,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 8me de finale</div>
+              <div align="center">Eliminé en 8me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Fleury Salles Coursan</font></div>
@@ -209,7 +209,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 16me de finale</div>
+              <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Sigean Port la Nouvelle</font></div>
@@ -217,7 +217,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 16me de finale</div>
+              <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Valras Plage</font></div>
@@ -245,7 +245,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en 16me de finale</div>
+              <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Couiza Esperaza</font></div>
@@ -253,7 +253,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en 16me de finale</div>
+              <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Tauch Corbi&egrave;res</font></div>
@@ -262,7 +262,7 @@
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
               <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/1serie/page1serie.php?variable_1=2015"><font color="#000000">1re 
-                S&eacute;rie</font></a></font></b></div>
+                Série</font></a></font></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
               <div align="center"><b><font size="4"><b><font size="3" color="#FFFFFF" face="Arial, Helvetica, sans-serif">St 
@@ -271,7 +271,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 8me de finale</div>
+              <div align="center">Eliminé en 8me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Alaric</font></div>
@@ -279,7 +279,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 16me de finale</div>
+              <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Nissan Colombiers</font></div>
@@ -287,7 +287,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Trebes</font></div>
@@ -296,7 +296,7 @@
           <tr> 
             <td width="169"> 
               <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=2015"><font color="#000000">2me 
-                S&eacute;rie</font></a></font></b></div>
+                Série</font></a></font></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
               <div align="center"><b><font size="4"><b><font size="4" color="#FFFFFF" face="Arial, Helvetica, sans-serif">Rabastens 
@@ -306,7 +306,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en demi</div>
+              <div align="center">Eliminé en demi</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Saint Jean de Vedas</font></div>
@@ -314,7 +314,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en 16me de finale</div>
+              <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Maureilhan</font></div>
@@ -322,7 +322,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Nevian Canet</font></div>
@@ -331,7 +331,7 @@
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
               <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=2015"><font color="#000000">3me 
-                S&eacute;rie</font></a></font></b></div>
+                Série</font></a></font></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
               <div align="center"><b><font size="4"><b><font size="4" color="#FFFFFF" face="Arial, Helvetica, sans-serif">Servette 
@@ -340,7 +340,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 16me de finale</div>
+              <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Villeneuve le Comptal</font></div>
@@ -348,7 +348,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC" height="25"> 
-              <div align="center">Elimin&eacute; en barrage</div>
+              <div align="center">Eliminé en barrage</div>
             </td>
             <td width="204" bgcolor="#CCCCCC" height="25"> 
               <div align="center"><font color="#FF0000">La Palme</font></div>
@@ -357,7 +357,7 @@
           <tr> 
             <td width="169"> 
               <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=2015"><font color="#000000">4me 
-                S&eacute;rie</font></a></font></b></div>
+                Série</font></a></font></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
               <div align="center"><b><font size="4"><b><font size="4" face="Arial, Helvetica, sans-serif" color="#FFFFFF">Paris 
@@ -366,7 +366,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en quarts</div>
+              <div align="center">Eliminé en quarts</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Narbonne Plage</font></div>
@@ -382,9 +382,9 @@
           </tr>
           <tr> 
             <td colspan="2" height="57" bgcolor="#FFCC33"> 
-              <div align="center"><b><font color="#000000" size="4"><font size="5">Comp&eacute;titions 
+              <div align="center"><b><font color="#000000" size="4"><font size="5">Compétitions 
                 <br>
-                F&eacute;minines</font></font></b></div>
+                Féminines</font></font></b></div>
             </td>
           </tr>
           <tr> 
@@ -411,7 +411,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2015"><font color="#000000" size="4">F&eacute;minine 
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2015"><font color="#000000" size="4">Féminine 
                 &agrave; XV</font></a></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
@@ -421,7 +421,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en Quarts</div>
+              <div align="center">Eliminé en Quarts</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">RC Narbonne</font></div>
@@ -429,7 +429,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 16me </div>
+              <div align="center">Eliminé en 16me </div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">AS Beziers</font></div>
@@ -441,7 +441,7 @@
           <tr> 
             <td colspan="2" bgcolor="#FFCC33" height="58"> 
               <div align="center"> 
-                <p><font color="#000000" size="4"><b><font size="5">Comp&eacute;titions 
+                <p><font color="#000000" size="4"><b><font size="5">Compétitions 
                   <br>
                   Equipe II</font></b></font></p>
               </div>
@@ -462,7 +462,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=2015"><font color="#000000" size="4">F&eacute;d&eacute;rale 
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=2015"><font color="#000000" size="4">Fédérale 
                 B</font></a></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
@@ -482,7 +482,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Gruissan</font></div>
@@ -490,7 +490,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Vendres Lespignan</font></div>
@@ -498,7 +498,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=2015"><font color="#000000" size="4">R&eacute;serve 
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=2015"><font color="#000000" size="4">Réserve 
                 &agrave; XII</font></a></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
@@ -507,7 +507,7 @@
             </td>
           </tr>
           <tr> 
-            <td width="169">Elimin&eacute; en 16me de finale</td>
+            <td width="169">Eliminé en 16me de finale</td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Bedarieux</font></div>
             </td>
@@ -519,7 +519,7 @@
           </tr>
           <tr> 
             <td colspan="2" bgcolor="#FFCC33"> 
-              <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;tition<br>
+              <div align="center"><font color="#000000" size="4"><b><font size="5">Compétition<br>
                 Entreprises / Corpo</font></b></font></div>
             </td>
           </tr>
@@ -544,7 +544,7 @@
           </tr>
           <tr> 
             <td colspan="2" bgcolor="#FFCC33"> 
-              <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;tition<br>
+              <div align="center"><font color="#000000" size="4"><b><font size="5">Compétition<br>
                 Jeunes</font></b></font></div>
             </td>
           </tr>
@@ -563,7 +563,7 @@
           </tr>
           <tr> 
             <td width="169" height="37"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/belascain/pagebelascain.php?variable_1=2015"><font color="#000000" size="4">B&eacute;lascain</font></a></b></div>
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/belascain/pagebelascain.php?variable_1=2015"><font color="#000000" size="4">Bélascain</font></a></b></div>
             </td>
             <td width="204" height="37" bgcolor="#009933"> 
               <div align="center"><font size="4"><font size="4"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Grenade 
@@ -581,7 +581,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 8me de finale</div>
+              <div align="center">Eliminé en 8me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">RC Narbonne</font></div>
@@ -607,7 +607,7 @@
           </tr>
           <tr> 
             <td width="169" height="22" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204" height="22" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Quillan Limoux</font></div>
@@ -615,7 +615,7 @@
           </tr>
           <tr> 
             <td width="169" height="20" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204" height="20" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Salanque Sigean</font></div>
@@ -623,7 +623,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Vendres Lespignan</font></div>
@@ -631,7 +631,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Bleu Blanc</font></div>
@@ -657,7 +657,7 @@
           </tr>
           <tr> 
             <td width="169" bgcolor="#CCCCCC"> 
-              <div align="center">Elimin&eacute; en 8me de finale</div>
+              <div align="center">Eliminé en 8me de finale</div>
             </td>
             <td width="204" bgcolor="#CCCCCC"> 
               <div align="center"><font color="#FF0000">Montpellier RC</font></div>
@@ -670,12 +670,12 @@
             <td width="204" bgcolor="#009933"> 
               <div align="center"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">RC 
                 Orleans (CE)<br>
-                St M&eacute;dard en Jalles (CBL)</font></b></font></font></font></font></font></font></font></font></div>
+                St Médard en Jalles (CBL)</font></b></font></font></font></font></font></font></font></font></div>
             </td>
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center">Elimin&eacute; en 32me de finale</div>
+              <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="204"> 
               <div align="center"><font color="#FF0000">Fleury Salles Coursan</font></div>

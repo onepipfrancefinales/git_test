@@ -68,33 +68,33 @@ $clubA3241= ' Alpes 1';
 $clubA3242= ' Provence 2 ';
 
 $clubA3243= ' Armagnac Bigorre 2';
-$clubA3244= ' Midi-Pyrénées 2';
+$clubA3244= ' Midi-Pyrï¿½nï¿½es 2';
 
 $clubA3245= ' Pays Catalan 1';
 $clubA3246= ' Languedoc 2';
 
 $clubA3247= ' Bearn 1 ';
-$clubA3248= ' Midi-Pyrénées 6';
+$clubA3248= ' Midi-Pyrï¿½nï¿½es 6';
 
 $clubA3249= ' Provence 1';
 $clubA3250= ' Languedoc 3 ';
 
 $clubA3251= ' Cote Basque Landes 1';
-$clubA3252= ' Midi-Pyrénées 5';
+$clubA3252= ' Midi-Pyrï¿½nï¿½es 5';
 
 
 $clubA3253= ' Perigord Agenais 1';
 $clubA3254= ' Barrage AB 3 -  BE 2';
 
 $clubA3255= ' Limousin 2';
-$clubA3256= ' Midi-Pyrénées 3';
+$clubA3256= ' Midi-Pyrï¿½nï¿½es 3';
 
 
 $clubA3257= ' Cote d Argent 1';
 $clubA3258= ' Cote Basque Landes 2';
 
 
-$clubA3259= ' Midi-Pyrénées 1';
+$clubA3259= ' Midi-Pyrï¿½nï¿½es 1';
 $clubA3260= ' Perigord Agenais 3';
  
 
@@ -102,7 +102,7 @@ $clubA3261= ' Armagnac Bigorre  1';
 $clubA3262= ' Perigord Agenais 2';
 
 $clubA3263= ' Cote d Argent 2';
-$clubA3264= ' Midi-Pyrénées 4';
+$clubA3264= ' Midi-Pyrï¿½nï¿½es 4';
 ?>
 
 <body bgcolor="#FFFFFF">
@@ -624,7 +624,7 @@ $clubA3264= ' Midi-Pyrénées 4';
     <tr bgcolor="#FFFFFF"> 
       <td height="55" colspan="9" bgcolor="#FFFFFF"> 
         <div align="center"><font size="5" color="#000000"><b>Nombre de clubs 
-          qualifi&eacute;s par comit&eacute; (2014-2015)</b></font></div>
+          qualifiÃ©s par comitÃ© (2014-2015)</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -632,7 +632,7 @@ $clubA3264= ' Midi-Pyrénées 4';
         <div align="center"><b>COMITES</b></div>
       </td>
       <td height="83" width="11%"> 
-        <div align="center"><b>Nombre de clubs qualifi&eacute;s</b><b> directement 
+        <div align="center"><b>Nombre de clubs qualifiÃ©s</b><b> directement 
           en 32me</b></div>
       </td>
       <td height="83" width="9%"> 
@@ -647,7 +647,7 @@ $clubA3264= ' Midi-Pyrénées 4';
       </td>
       <td height="83" width="12%"> 
         <div align="center"> 
-          <p><b>Nombre de clubs qualifi&eacute;s</b><b> directement en 32me</b></p>
+          <p><b>Nombre de clubs qualifiÃ©s</b><b> directement en 32me</b></p>
         </div>
       </td>
       <td height="83" width="9%"> 
@@ -670,7 +670,7 @@ $clubA3264= ' Midi-Pyrénées 4';
       <td height="24" width="10%"> 
         <div align="center"><b><font color="#000000"><font size="4"></font></font></b></div>
       </td>
-      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+      <td width="18%" height="24" bgcolor="#FFFFFF">Franche ComtÃ©</td>
       <td width="12%" height="24"> 
         <div align="center">voir Bourgogne</div>
       </td>
@@ -796,7 +796,7 @@ $clubA3264= ' Midi-Pyrénées 4';
       <td width="10%"> 
         <div align="center"><b><font color="#000000"><font size="4"></font></font></b></div>
       </td>
-      <td width="18%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+      <td width="18%" bgcolor="#FFFFFF">Midi PyrÃ©nÃ©es</td>
       <td width="12%" bgcolor="#FFFFFF"> 
         <div align="center">6</div>
       </td>

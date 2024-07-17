@@ -21,7 +21,7 @@ content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulous
       <?php echo "Championnat de France";?>
       <?php echo $annee;?>
       : 
-      <?php echo "F&eacute;d&eacute;rale 3";?>
+      <?php echo "Fédérale 3";?>
       </font></b></font></td>
   </tr>
   <tr valign="top" align="center"> 

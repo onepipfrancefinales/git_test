@@ -39,7 +39,7 @@ $club_ext        = isset($_POST['club_ext']) ? $_POST['club_ext'] : NULL;
 $club_dom        = isset($_POST['club_dom']) ? $_POST['club_dom'] : NULL;
 
 
-echo InfoReqSql('Info', 0, 'error', 'alert', 'En cours de correction. DÈsolÈ de la gËne occasionnÈe.');
+echo InfoReqSql('Info', 0, 'error', 'alert', 'En cours de correction. DÔøΩsolÔøΩ de la gÔøΩne occasionnÔøΩe.');
 
 
 if (NbrRecord('id', 'phpl_championnats') > 0)
@@ -78,7 +78,7 @@ if (!empty($champ))
 	<div class="Cadre">
 		<label>Saison</label>
 		<?php echo champ_choix2($champ, $club); ?>
-		<label>Choix de la journ&eacute;e</label>
+		<label>Choix de la journ√©e</label>
 		<?php echo match_by_club($champ, $id_match, $club); ?>
 	</div>
 
@@ -204,7 +204,7 @@ if (!empty($champ))
 
 			if ($nbav2 == 1) { $S = ''; } else { $S = 's'; }
 
-			echo InfoReqSql('InfSendMail', 0, 'error', 'alert', $nbav2.' mail'.$S.' non envoy&eacute;'.$S);
+			echo InfoReqSql('InfSendMail', 0, 'error', 'alert', $nbav2.' mail'.$S.' non envoy√©'.$S);
 		}
 		//--------------
 
@@ -242,7 +242,7 @@ if (!empty($champ))
 		</table>
 	</fieldset>
 	<fieldset>
-		<legend>S&eacute;lection des joueurs</legend>
+		<legend>S√©lection des joueurs</legend>
 		<table class="Large100P ui-widget ui-widget-content">
 <?php
 		effectif($club, $champ, $convoc['convoques']);

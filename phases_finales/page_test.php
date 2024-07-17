@@ -6,16 +6,16 @@
 <link type="text/css" rel="stylesheet" href="feuilledestyletest2.css"/> 
 
 <meta name="description"
-content="Le site non officiel du Comit� Midi Pyr�n�es de rugby : Histoire, clubs, calendrier des matches, comp�titions, r�sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
+content="Le site non officiel du Comit� Midi Pyr�n�es de rugby : Histoire, clubs, calendrier des matches, comp�titions, r�sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
 <meta name="keywords"
-content="comit� Bourgogne, Rugby breton,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comit� Bourgogne, Rugby breton,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
 <meta charset="UTF-8">
-<title>Championnats Territoriaux comit� Bretagne</title>
+<title>Championnats Territoriaux comit� Bretagne</title>
 <script language="JavaScript">
 <!--
 function MM_openBrWindow(theURL,winName,features) { //v2.0
@@ -67,7 +67,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <tr > 
               <td height="5" > 
                 <p class="coindroit"><a href="../page_comite.php?variable_1=(AU)" target="_blank" >Acc&egrave;s 
-                  aux infos du comit&eacute;</a></p>
+                  aux infos du comité</a></p>
               </td>
             </tr>
             <tr bordercolor="#006699" valign="middle" bgcolor="#006699"> 
@@ -86,21 +86,21 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <a href="#PH">Promotion</a>
               </td>
               <td class="tab3" width="96"> 
-               <a href="#1">1re S&eacute;rie</a>
+               <a href="#1">1re Série</a>
               </td>
               <td  class="tab3" width="126"> 
-                 <a href="#2">2me S&eacute;rie</a>
+                 <a href="#2">2me Série</a>
               </td>
             </tr>
             <tr> 
               <td  class="tab3" width="122" height="15"> 
-                <a href="#3">3me S&eacute;rie</a> 
+                <a href="#3">3me Série</a> 
               </td>
               <td  class="tab3"width="140" height="15"> 
-                <a href="#4">4me S&eacute;rie </a> 
+                <a href="#4">4me Série </a> 
               </td>
               <td  class="tab3"colspan="2" height="15"> 
-               <a href="#fem">Comp&eacute;titions f&eacute;minines</a>
+               <a href="#fem">Compétitions féminines</a>
               </td>
             </tr>
           </table>
@@ -110,10 +110,10 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
           <table width="550" border="3" bgcolor="#CCCCCC">
             <tr> 
               <td height="135" bordercolor="#000000"> 
-                <div align="center"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere" target="_blank"><font face="Arial, Helvetica, sans-serif"><b><font color="#000000" size="5">T&eacute;l&eacute;charger 
+                <div align="center"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere" target="_blank"><font face="Arial, Helvetica, sans-serif"><b><font color="#000000" size="5">Télécharger 
                   l'appli</font> <font color="#FF0000" size="5">France Finales 
                   Rugby App</font><br>
-                  <font color="#000000" size="4">pour consulter r&eacute;sultats 
+                  <font color="#000000" size="4">pour consulter résultats 
                   et classements</font></b></font><br>
                   <br>
                   <img src="../images/images%20GOOGLE%20PLAY2.jpg" width="254" height="83" border="0"></a></div>
@@ -147,8 +147,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
     
 	$query = "SELECT  phptest_matchs.id_equipe_dom, phptest_matchs.id_equipe_ext, phptest_matchs.id_journee, phptest_matchs.date_reelle, phptest_matchs.buts_dom, phptest_matchs.buts_ext, phptest_journees.date_prevue, phptest_journees.id_champ, phptest_clubs.nom, phptest_clubs.id FROM  phptest_matchs, phptest_journees, phptest_clubs WHERE phptest_clubs.id=phptest_matchs.id_equipe_dom and phptest_matchs.id_journee= phptest_journees.id and phptest_matchs.date_reelle != phptest_journees.date_prevue and phptest_clubs.id=phptest_matchs.id_equipe_dom and phptest_matchs.buts_dom is NULL and phptest_matchs.buts_ext is NULL"; 
 	$result = mysql_query($query);
@@ -162,7 +162,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 	  ?>
                   <a href="TEST/page_retards_TEST.php" target="_blank">
                   <h8><?php echo " Rencontres 
-                  report&eacute;es "; ?></h8>
+                  reportées "; ?></h8>
                   </a> 
                   <?php
 	}
@@ -178,7 +178,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
               <td width="220" height="59"> 
                 <h6><a href="TEST/241.php" target="_blank">Plus d'infos </a></h6>
                 <h6><a href="TEST/calendrier/241.php" target="_blank">Calendrier complet</a> </h6>
-                <h6 ><a href="TEST/page_retards_TEST.php" target="_blank"><h8> Rencontres report&eacute;es </h8></a></h6>
+                <h6 ><a href="TEST/page_retards_TEST.php" target="_blank"><h8> Rencontres reportées </h8></a></h6>
               </td>
             </tr>
           </table>
@@ -187,9 +187,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <tr> 
               <td height="135"> 
                 <div align="center"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere" target="_blank"><img src="../images/images%20GOOGLE%20PLAY2.jpg" width="254" height="83" border="0"></a></div>
-                <div align="center"><font face="Arial, Helvetica, sans-serif"><b>T&eacute;l&eacute;charger 
+                <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Télécharger 
                   l'appli <font color="#FF0000">France Finales Rugby App</font><br>
-                  pour consulter r&eacute;sultats et classements</b></font></div>
+                  pour consulter résultats et classements</b></font></div>
                 </td>
             </tr>
           </table>
@@ -340,8 +340,8 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
             <tr bordercolor="#FFCCFF" bgcolor="#FF9933"> 
               <td colspan="2" height="25"> 
                 <div align="center">Toutes les poules et les informations sur 
-                  les comp&eacute;titions<br />
-                  et les &eacute;quipes f&eacute;minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
+                  les compétitions<br />
+                  et les équipes féminines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
                   </a></div>
               </td>
             </tr>
@@ -367,8 +367,8 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
             </tr>
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
               <td colspan="2" height="9"> 
-                <div align="center"><font size="2">Pas d'&eacute;quipe du comit&eacute; 
-                  dans cette comp&eacute;tition</font></div>
+                <div align="center"><font size="2">Pas d'équipe du comité 
+                  dans cette compétition</font></div>
               </td>
             </tr>
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
@@ -418,7 +418,7 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
             </tr>
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
               <td colspan="2" height="47"> 
-                <h2>F&eacute;d&eacute;rale &agrave; XV</h2>
+                <h2>Fédérale &agrave; XV</h2>
               </td>
             </tr>
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
@@ -429,7 +429,7 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
             <tr bordercolor="#FFCCFF" bgcolor="#FFCCFF"> 
               <td colspan="2"> 
                 <p align="center"><object data="http://francefinalesrugby.franceserv.com/Phpleague/phpfemfed/consult/miniseul.php?
-					champmini=301&typemini=G�n�ral &presentationmini=2&lienmini=non &classmini=1" frameborder="no" height="200" width="220"" type="text/html"   />
+					champmini=301&typemini=G�n�ral &presentationmini=2&lienmini=non &classmini=1" frameborder="no" height="200" width="220"" type="text/html"   />
                   </object></p>
               </td>
             </tr>
@@ -445,8 +445,8 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
             <tr bordercolor="#FFCCFF" bgcolor="#FF9933"> 
               <td colspan="2"> 
                 <div align="center">Toutes les poules et les informations sur 
-                  les comp&eacute;titions<br>
-                  et les &eacute;quipes f&eacute;minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
+                  les compétitions<br>
+                  et les équipes féminines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_blank">ICI 
                   </a></div>
               </td>
             </tr>
@@ -496,21 +496,21 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
                 <a href="#PH">Promotion</a>
               </td>
               <td class="tab3" width="96"> 
-               <a href="#1">1re S&eacute;rie</a>
+               <a href="#1">1re Série</a>
               </td>
               <td  class="tab3" width="126"> 
-                <a href="#2">2me S&eacute;rie</a>
+                <a href="#2">2me Série</a>
               </td>
             </tr>
             <tr> 
              	<td  class="tab3" width="122" height="15"> 
-                	<a href="#3">3me S&eacute;rie</a> 
+                	<a href="#3">3me Série</a> 
               	</td>
               	<td  class="tab3" width="140" height="15"> 
-                	<a href="#4">4me S&eacute;rie </a>
+                	<a href="#4">4me Série </a>
               	</td>
               	<td  class="tab3"colspan="2" height="15"> 
-            	 	 <a href="#fem">Comp&eacute;titions f&eacute;minines</a>
+            	 	 <a href="#fem">Compétitions féminines</a>
              	 </td>
             </tr>
           </table>
@@ -528,7 +528,7 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
             <tr bordercolor="#009966"> 
               <td height="5" valign="middle" align="center" bgcolor="#0099CC" bordercolor="#0099CC"> 
                 <p class="coindroit"><a href="../page_comite.php?variable_1=(AU)" target="_blank" >Acc&egrave;s 
-                  aux infos du comit&eacute;</a></p>
+                  aux infos du comité</a></p>
               </td>
             </tr>
             <tr bordercolor="#006699" valign="middle" bgcolor="#006699"> 

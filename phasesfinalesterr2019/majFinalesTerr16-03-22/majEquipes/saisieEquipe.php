@@ -30,7 +30,7 @@ echo $comite;
   <tr bgcolor="#FFFFFF"> 
     <td colspan="2">
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie 
-        des &eacute;quipes</font></b></font></div>
+        des équipes</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -73,7 +73,7 @@ echo $comite;
   </tr>
   <tr> 
     <td valign="top" height="7" width="26%"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif">Ann&eacute;e</font></div>
+      <div align="center"><font face="Arial, Helvetica, sans-serif">Année</font></div>
     </td>
     <td width="74%" valign="top" height="7" bgcolor="#000000"> 
       <div align="center"><b><font size="5" color="#FFFFFF"> 
@@ -83,7 +83,7 @@ echo $comite;
   </tr>
   <tr> 
     <td valign="top" height="10" width="26%"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif">Comit&eacute;</font></div>
+      <div align="center"><font face="Arial, Helvetica, sans-serif">Comité</font></div>
     </td>
     <td width="74%" valign="top" height="10" bgcolor="#FF9933"> 
       <div align="center"> 
@@ -141,7 +141,7 @@ require '../../../connect1/connection2.php';
 <form name="insertion" action="saisieEquipe2.php?type=<?php echo $type ; ?>&division=<?php echo $division ; ?>&comite=<?php echo $comite ; ?>&annee=<?php echo $annee ; ?>" method="POST">
 					    
 		<header>		
-      <h1>  Division    (<?php echo $division; ?>) Ann&eacute;e     <?php echo $annee; ?></h1>
+      <h1>  Division    (<?php echo $division; ?>) Année     <?php echo $annee; ?></h1>
        </header>   
 <!-- ************  Finale   ************ -->			
 		
@@ -182,7 +182,7 @@ elseif ($type==2 OR $type==3)
 				  
 	  
 		 <header>
-  <h1><?php echo "Division ( ".''.$division.''." )Ann&eacute;e ".''.$annee; ?> </h1>
+  <h1><?php echo "Division ( ".''.$division.''." )Année ".''.$annee; ?> </h1>
   </header>
   
        <p class="texte">
@@ -225,7 +225,7 @@ elseif ($type==14 OR $type==15)
 						  		
 		
 		<header>				  
-	<h1> <?php echo  "Division (".''.$division.''." ) Ann&eacute;e ".''.$annee; ?></h1>
+	<h1> <?php echo  "Division (".''.$division.''." ) Année ".''.$annee; ?></h1>
 		</header>		  
 		 <p class="texte">
 	  Quarts de finale
@@ -275,7 +275,7 @@ elseif ($type==14 OR $type==15)
 						
 						
 						
-<!-- ************ Barrages(8 �quipes) Quarts (4 �quipes)   ************
+<!-- ************ Barrages(8 �quipes) Quarts (4 �quipes)   ************
 -->
 						
 		<?php		
@@ -313,7 +313,7 @@ elseif ($type==13)
 	<header>	  
   <h1> Division ( 
     <?php echo $division; ?>
-    ) Ann&eacute;e 
+    ) Année 
     <?php echo $annee; ?>
   </h1>
     </header>  

@@ -319,7 +319,7 @@ function classementDetaille($champ, $bdd)
 						 WHERE id_champ='$champ'");
 
   $nb_equipes = $res->fetch();
-  $legende = "Classement g&eacute;n&eacute;ral";
+  $legende = "Classement général";
 
   echo "<table class=\"tablephpau2\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphpau3\"><th colspan=\"14\">" . $legende . "</th></tr>\n";
   echo "<tr class=\"trphpau3\">

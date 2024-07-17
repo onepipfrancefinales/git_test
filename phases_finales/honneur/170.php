@@ -9,7 +9,7 @@
   <tr> 
     <td width="385" height="13"> 
       <div id="cal"><a href="../pagebarrages.php?variable_1=<?php echo $annee;?>">Barrages 
-        s&eacute;ries Territoriales</a></div>
+        séries Territoriales</a></div>
     </td>
     <td width="56" height="13">&nbsp;</td>
     <td width="7" height="13">&nbsp;</td>

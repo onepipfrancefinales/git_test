@@ -3,11 +3,11 @@
   <tr> 
     <td width="730" height="15">
       <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagePalmares.php?division=160" target="_top"><font size="5" color="#000000">Palmar&egrave;s 
-        champions de F&eacute;d&eacute;rale 3</font></a></b></div>
+        champions de Fédérale 3</font></a></b></div>
     </td>
     <td width="730" height="15" valign="top">
       <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagePalmares.php?division=160" target="_top"><font size="5" color="#000000">Palmar&egrave;s 
-        champions de F&eacute;d&eacute;rale 3</font></a></b></div>
+        champions de Fédérale 3</font></a></b></div>
     </td>
   </tr>
   <tr> 

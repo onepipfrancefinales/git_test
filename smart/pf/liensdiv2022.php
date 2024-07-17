@@ -5,16 +5,16 @@
     <td class="coin8"><a href="pagePhaseFinale.php?division=130&annee=<?php echo $annee;?>">Nationale</a></td>
 	<td class="coin9"><a href="pagePhaseFinale.php?division=280&annee=<?php echo $annee;?>">Elite 1</a></td>
     <td class="coin9"><a href="pagePhaseFinale.php?division=285&annee=<?php echo $annee;?>">Elite 2</a></td>
-    <td class="coin9"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>">F&eacute;d 1</a></td>
+    <td class="coin9"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>">Féd 1</a></td>
     
   </tr>
   <tr> 
-    <td class="coin8"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $annee;?>">F&eacute;d1</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=150&annee=<?php echo $annee;?>">F&eacute;d2</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=160&annee=<?php echo $annee;?>">F&eacute;d3</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $annee;?>">F&eacute;dB</a></td>
+    <td class="coin8"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $annee;?>">Féd1</a></td>
+    <td class="coin8"><a href="pagePhaseFinale.php?division=150&annee=<?php echo $annee;?>">Féd2</a></td>
+    <td class="coin8"><a href="pagePhaseFinale.php?division=160&annee=<?php echo $annee;?>">Féd3</a></td>
+    <td class="coin8"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $annee;?>">FédB</a></td>
     <td class="coin8"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $annee;?>">ExcB</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>"><font size="2">R&eacute;s</a></td>
+    <td class="coin8"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>"><font size="2">Rés</a></td>
   </tr>
   <tr> 
     <td class="coin8"><a href="pagePhaseFinale.php?division=170&annee=<?php echo $annee;?>">H</a></td>

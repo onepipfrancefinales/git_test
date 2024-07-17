@@ -756,7 +756,7 @@ $A2004="25";
         sont definies <br>
         par la FFR, apr&egrave;s chaque tour en<br>
         privilegiant des <br>
-        oppositions g&eacute;ographiques</font></div>
+        oppositions géographiques</font></div>
     </td>
     <td width="69" height="11">&nbsp;</td>
     <td width="263" height="11"> 

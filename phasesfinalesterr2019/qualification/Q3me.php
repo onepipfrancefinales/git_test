@@ -1,7 +1,7 @@
 <?php
 
- if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÈclarÈe";
- if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite = "Variable comite non dÈclarÈe";
+ if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "Variable Division non dÔøΩclarÔøΩe";
+ if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite = "Variable comite non dÔøΩclarÔøΩe";
  ?>
  
  
@@ -27,7 +27,7 @@ classementParPoints8poules($comite, $division);
  
 <table width="192" border="0" align="left" height="399" cellspacing="0">
   <tr> 
-    <th colspan="2" height="13">Equipes Qualifi&eacute;es</th>
+    <th colspan="2" height="13">Equipes Qualifi√©es</th>
   </tr>
   <tr> 
     <td width="38" height="13">&nbsp;</td>
@@ -37,7 +37,7 @@ classementParPoints8poules($comite, $division);
     <td width="38" height="13"> 
       <div class="rangTitre" >Rang </div>
     </td>
-    <td width="262" height="13"><div class="rangTitre" >Qualifi&eacute;s en 8me </div></td>
+    <td width="262" height="13"><div class="rangTitre" >Qualifi√©s en 8me </div></td>
   </tr>
   <tr> 
     <td colspan="2" height="13">Classement des 1er de poule</td>

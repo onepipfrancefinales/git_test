@@ -45,16 +45,16 @@ elseif ($page=="saisieLieux")
     <option selected></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=170&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Honneur</b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=180&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Promotion </b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=190&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>1re s&eacute;rie </b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=200&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>2me s&eacute;rie </b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=210&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>3me s&eacute;rie</b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=220&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>4me s&eacute;rie</b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=270&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;s Honneur</b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9180&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;s promotion</b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9190&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;s 1re s&eacute;rie</b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9200&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;s 2me s&eacute;rie</b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9210&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;s 3me s&eacute;rie</b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9220&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>R&eacute;s 4me s&eacute;rie</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=190&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>1re série </b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=200&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>2me série </b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=210&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>3me série</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=220&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>4me série</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=270&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Rés Honneur</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9180&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Rés promotion</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9190&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Rés 1re série</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9200&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Rés 2me série</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9210&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Rés 3me série</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=9220&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Rés 4me série</b></option>
   
   	 <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=171&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>171(tableau2)</b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=172&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>172 (tableau3)</b></option>

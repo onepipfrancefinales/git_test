@@ -37,7 +37,7 @@
           <table class="tab4" width="540" align="center" >
             <tr> 
               <td class="tab3" width="260"> 
-                <input type="button" value="Imprimer les r&eacute;sultats" onClick="window.print()" name="Bouton2">
+                <input type="button" value="Imprimer les résultats" onClick="window.print()" name="Bouton2">
               </td>
               <td class="tab3" width="264"> 
                 <input type="button" onClick="twFermer()" value="Fermer la fen&ecirc;tre" name="button2">
@@ -47,7 +47,7 @@
           <br />
             
          
-        <h1>R&eacute;sultats</h1>
+        <h1>Résultats</h1>
         </form>
      
 <object data="http://francefinalesrugby.franceserv.com/Phpleague/<?php echo "php".''.$comite; ?>/consult/detaileq.php?champ=<?php echo $champ; ?>&id_equipe=<?php echo $equipe; ?>"
@@ -58,7 +58,7 @@ height="700" width="800"" type="text/html" align="top"   />
 			  <table class="tab4" width="540" align="center" >
 				<tr> 
 				  <td class="tab3" width="260"> 
-					<input type="button" value="Imprimer les r&eacute;sultats" onClick="window.print()" name="Bouton22">
+					<input type="button" value="Imprimer les résultats" onClick="window.print()" name="Bouton22">
 				  </td>
 				  <td class="tab3" width="264"> 
 					<input type="button" onClick="twFermer()" value="Fermer la fen&ecirc;tre" name="button22">

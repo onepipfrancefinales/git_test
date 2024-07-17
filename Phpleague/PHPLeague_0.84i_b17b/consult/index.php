@@ -26,7 +26,7 @@ if ($ACT_MENU == 1)
 }
 else
 {
-	echo '	<div class="Large40P TblCenter Info TxtCenter"><p>Menu d&eacute;sactiv&eacute par l\'administrateur.</p></div>'."\n";
+	echo '	<div class="Large40P TblCenter Info TxtCenter"><p>Menu désactiv&eacute par l\'administrateur.</p></div>'."\n";
 }
 
 ?>

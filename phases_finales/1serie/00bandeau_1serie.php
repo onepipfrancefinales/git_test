@@ -6,7 +6,7 @@
     <tr valign="top" align="center"> 
       <td colspan="14" bgcolor="006699" height="28">
 	  	<font size="5" color="#FFCC00"><b>
-        	<?php echo "Championnat de France".' '.$annee.''." : 1re S&eacute;rie";?>
+        	<?php echo "Championnat de France".' '.$annee.''." : 1re Série";?>
        </b></font></td>
     </tr>
     <tr valign="top" align="center"> 

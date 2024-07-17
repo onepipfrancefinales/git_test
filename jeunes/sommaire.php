@@ -18,22 +18,22 @@
 	</td>
     
 	<td class="tab3">
-	 	<a href="#1">1re S&eacute;rie</a> 
+	 	<a href="#1">1re Série</a> 
 	</td>
     
 	<td  class="tab3"> 
-		<a href="#2">2me S&eacute;rie</a> 
+		<a href="#2">2me Série</a> 
 	</td>
   </tr>
   <tr> 
     <td  class="tab3"  > 
-		<a href="#3">3me S&eacute;rie</a> 
+		<a href="#3">3me Série</a> 
     </td>
     <td  class="tab3"  > 
-		<a href="#4">4me S&eacute;rie </a> 
+		<a href="#4">4me Série </a> 
     </td>
     <td  class="tab3" colspan="2" > 
-		<a href="#fem">Comp&eacute;titions f&eacute;minines</a>
+		<a href="#fem">Compétitions féminines</a>
 	 </td>
   </tr>
 </table>

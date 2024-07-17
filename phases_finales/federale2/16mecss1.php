@@ -35,14 +35,14 @@ require ("../fonctions_phases_finales.php");
 </p>
 <table width="1740" border="0" align="left" height="500" cellspacing="0">
   <tr> 
-    <td height="13" bgcolor="#FFCC66" colspan="17"><i><b>F&eacute;d&eacute;rale 
-      2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-      2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-      2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-      2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-      2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-      2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-      2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 </b></i></td>
+    <td height="13" bgcolor="#FFCC66" colspan="17"><i><b>Fédérale 
+      2 Fédérale 2 Fédérale 2 Fédérale 
+      2 Fédérale 2 Fédérale 2 Fédérale 
+      2 Fédérale 2 Fédérale 2 Fédérale 
+      2 Fédérale 2 Fédérale 2 Fédérale 
+      2 Fédérale 2 Fédérale 2 Fédérale 
+      2 Fédérale 2 Fédérale 2 Fédérale 
+      2 Fédérale 2 Fédérale 2 </b></i></td>
   </tr>
   <tr> 
     <td width="198" height="13">&nbsp;</td>
@@ -939,7 +939,7 @@ require ("../fonctions_phases_finales.php");
     <td width="201" align="left" height="17"> 
       <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1413px; top: 628px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
         <div align="center"> <font size="5"><b>Champion de France <br>
-          3me S&eacute;rie 
+          3me Série 
           <?php echo $annee;?>
           </b></font></div>
       </div>

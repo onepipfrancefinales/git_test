@@ -17,31 +17,31 @@
     <td class="equipeI" > <a href="pagehonneur.php?variable_1=<?php echo $annee;?>" target="_top">Promotion</a> 
     </td>
     <td class="equipeI" >
-	 	<a href="pagehonneur.php?variable_1=<?php echo $annee;?>" target="_top">1&eacute;re  S&eacute;rie</a> </td>
+	 	<a href="pagehonneur.php?variable_1=<?php echo $annee;?>" target="_top">1ére  Série</a> </td>
     <td class="equipeI" > 
-		<a href="page2serie.php?variable_1=<?php echo $annee;?>" target="_top">2i&egrave;meS&eacute;rie</a> 
+		<a href="page2serie.php?variable_1=<?php echo $annee;?>" target="_top">2i&egrave;meSérie</a> 
     </td>
     <td class="equipeI" >
-		<a href="page2serie.php?variable_1=<?php echo $annee;?>" target="_top">3i&egrave;meS&eacute;rie</a> 
+		<a href="page2serie.php?variable_1=<?php echo $annee;?>" target="_top">3i&egrave;meSérie</a> 
     </td>
     <td class="vide" colspan="2" > 
 		<a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(IDF)" target="_blank">Palmar&egrave;s territorial</a> </td>
  	 </tr>
   <tr > 
-    <td class="equipeIItitre"   > R&eacute;serve </td>
+    <td class="equipeIItitre"   > Réserve </td>
     <td class="equipeII"  >
-	 	<a href="pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">R&eacute;serve</a> 
+	 	<a href="pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">Réserve</a> 
     </td>
     <td class="equipeII"  > 
 		<a href="pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">Promotion</a> 
     </td>
     <td class="equipeII" >
-	 <a href="pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">1re S&eacute;rie</a> </td>
+	 <a href="pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">1re Série</a> </td>
     <td class="equipeII"  > 
       <div id="equipeII" ></div>
     </td>
     <td class="equipeI"  > 
-	<a href="page2serie.php?variable_1=<?php echo $annee;?>" target="_top">4i&egrave;meS&eacute;rie</a> 
+	<a href="page2serie.php?variable_1=<?php echo $annee;?>" target="_top">4i&egrave;meSérie</a> 
     </td>
     <td  class="france" colspan="2" > 
 	<a href="http://francefinalesrugby.franceserv.com/phases_finales/honneur/pagehonneur.php?variable_1=<?php echo $annee;?>" target="_blank">Championnat 

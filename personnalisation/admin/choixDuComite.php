@@ -31,7 +31,7 @@ if (restore) selObj.selectedIndex=0;
 
 <div align="center"><b><font color="#ff0000" face="Arial, Helvetica, sans-serif" size="5"><br>
 <a name="zone1"></a><br>
-Faites votre s&eacute;lection</font></b><br>
+Faites votre sélection</font></b><br>
 <br>
 </div>
 <br>
@@ -42,25 +42,25 @@ Faites votre s&eacute;lection</font></b><br>
 $adresse="pageChoix.php?comiteA=" ;?>
 
 
-<div id="text"> 1/ S&eacute;lectionnez une ligue ou une comp&eacute;tition :
+<div id="text"> 1/ Sélectionnez une ligue ou une compétition :
 <hr> <br>
 
 </div>
 
 <select name="select2" onchange="MM_jumpMenu('parent',this,0)" size="1">
-<option value=personnalisation/admin/pageChoix.php selected>S&eacute;lectionner un comit&eacute; ou une comp&eacute;tition</option>
+<option value=personnalisation/admin/pageChoix.php selected>Sélectionner un comité ou une compétition</option>
 <option value="<?php echo $adresse; ?>phppro&poule=1">Pro</option>
-<option value="<?php echo $adresse; ?>phpf1&poule=1">F&eacute;d&eacute;rale
+<option value="<?php echo $adresse; ?>phpf1&poule=1">Fédérale
 1</option>
-<option value="<?php echo $adresse; ?>phpfed2&poule=1">F&eacute;d&eacute;rale
+<option value="<?php echo $adresse; ?>phpfed2&poule=1">Fédérale
 2</option>
-<option value="<?php echo $adresse; ?>phpfed3NE&poule=1">F&eacute;d&eacute;rale
+<option value="<?php echo $adresse; ?>phpfed3NE&poule=1">Fédérale
 3(P1 a P7)</option>
-<option value="<?php echo $adresse; ?>phpfed3G&poule=1">F&eacute;d&eacute;rale
+<option value="<?php echo $adresse; ?>phpfed3G&poule=1">Fédérale
 3(P9 a P15)</option>
-<option value="<?php echo $adresse; ?>phpfem&poule=1">F&eacute;minines</option>
+<option value="<?php echo $adresse; ?>phpfem&poule=1">Féminines</option>
 <option value="<?php echo $adresse; ?>phpau&poule=1">Ligue Auvergne Rh&ocirc;ne Alpes</option>
-<option value="<?php echo $adresse; ?>phpbg&poule=1">Ligue Bourgogne Franche Comt&eacute;</option>
+<option value="<?php echo $adresse; ?>phpbg&poule=1">Ligue Bourgogne Franche Comté</option>
 <option value="<?php echo $adresse; ?>phpbr&poule=1">Ligue Bretagne</option>
 <option value="<?php echo $adresse; ?>phpce&poule=1">Ligue Centre Val de Loire</option>
 <option value="<?php echo $adresse; ?>phpal&poule=l">Ligue Grand Est</option>
@@ -75,14 +75,14 @@ $adresse="pageChoix.php?comiteA=" ;?>
 
 <div id="choixComite"> <font color="#000000"><br>
 
-<?php //*********** comp�tition ou comit� ************
+<?php //*********** comp�tition ou comit� ************
 echo "comiteA : ".$comiteA;
 if ($comiteA == "phpfem" OR $comiteA == "phpfed2" OR $comiteA == "phpf1" OR $comiteA == "phpfed3NE" OR $comiteA == "phpfed3GS" OR $comiteA == "phppro")
-		$texte= "Comp&eacute;titions ";
+		$texte= "Compétitions ";
 else 
 		$texte="Ligue"; 
 ?>
- S&eacute;lection : </font>
+ Sélection : </font>
 
  <?php 
  if (isset ($comiteTtesLettres)) $comiteTtesLettres = $comiteTtesLettres; else $comiteTtesLettres="NC";
@@ -103,7 +103,7 @@ echo $texte.' '.$comiteTtesLettres; ?></div>
 <br>
  <a name="zone2"></a><br>
 
-<div id="text"> 2/ S&eacute;lectionnez une division ou une poule propos&eacute;e ci dessous 
+<div id="text"> 2/ Sélectionnez une division ou une poule proposée ci dessous 
   :<br>
 
 <hr></div>
@@ -112,7 +112,7 @@ echo $texte.' '.$comiteTtesLettres; ?></div>
 <div id="text">
 <p><br>
 
-<?php //***************  S�lection de la base de donn�es *****************
+<?php //***************  S�lection de la base de donn�es *****************
 
 if ($comiteA == "phpfed2" OR $comiteA == "phpf1" OR $comiteA=="phpfed3NE" OR $comiteA == "phpfed3GS" OR $comiteA == "phppro")
 	include ("../../connect1/connection3.php");
@@ -122,7 +122,7 @@ else
 </p>
 
 <p>
-<?php // ********** affichage des comp�titions du comit� ***************
+<?php // ********** affichage des comp�titions du comit� ***************
 
 if ($comiteA !="")
 {
@@ -164,7 +164,7 @@ $reponse = $bdd->query("	SELECT id, nom
  </p>
 <hr></div>
 
-<p><font size="4"> <i><b><font size="5">Vous avez s&eacute;lectionn&eacute; la comp&eacute;titon de la<br>
+<p><font size="4"> <i><b><font size="5">Vous avez sélectionné la compétiton de la<br>
 <?php 
 
 echo "<br />";

@@ -118,7 +118,7 @@ $clubA3203= 'Suresnes ';
 $clubA3204= ' Saint Claude';
 $clubA3205= ' Marcq-en-Baroeul';
 $clubA3206= 'Strasbourg ';
-$clubA3207= ' M�con';
+$clubA3207= ' M�con';
 $clubA3208= ' Blois';
 $clubA3209= ' Chateauneuf-Orange';
 $clubA3210= ' Saint-Etienne';
@@ -128,8 +128,8 @@ $clubA3213= 'Vichy ';
 $clubA3214= ' Grasse';
 $clubA3215= ' Annonay';
 $clubA3216= ' Monteux';
-$clubA3217= ' Gu�ret';
-$clubA3218= ' C�ret';
+$clubA3217= ' Gu�ret';
+$clubA3218= ' C�ret';
 $clubA3219= ' Castanet';
 $clubA3220= ' Nontron';
 $clubA3221= ' Vendres-Lespignan';
@@ -149,14 +149,14 @@ $clubA1601= ' Lille';
 $clubA1603= ' Epernay';
 $clubA1605= ' Gennevilliers';
 $clubA1607= ' Arras';
-$clubA1609= ' Montlu�on';
+$clubA1609= ' Montlu�on';
 $clubA1611= ' Marseille';
-$clubA1613= ' Carqueiranne-Hy�res';
-$clubA1615= ' Montm�lian';
+$clubA1613= ' Carqueiranne-Hy�res';
+$clubA1615= ' Montm�lian';
 $clubA1617= ' Carcassonne';
 $clubA1619= ' Gourdon';
 $clubA1621= ' Le Bugue';
-$clubA1623= ' Vall�e du Girou';
+$clubA1623= ' Vall�e du Girou';
 $clubA1625= ' Hagetmau';
 $clubA1627= ' Cognac';
 $clubA1629= ' Niort';
@@ -171,7 +171,7 @@ $clubA3203= ' Arras';
 $clubA3204= ' Villefranche sur Saone';
 $clubA3205= ' Suresnes';
 $clubA3206= ' Strasbourg';
-$clubA3207= ' M�con';
+$clubA3207= ' M�con';
 $clubA3208= ' Orsay';
 $clubA3209= ' Nice';
 $clubA3210= ' Vienne';
@@ -189,9 +189,9 @@ $clubA3221= ' Lormont';
 $clubA3222= ' La Teste';
 $clubA3223= ' Salles';
 $clubA3224= ' Cognac';
-$clubA3225= ' La Vall�e du Girou';
+$clubA3225= ' La Vall�e du Girou';
 $clubA3226= ' Castelsarrasin';
-$clubA3227= ' Argel�s-Gazost';
+$clubA3227= ' Argel�s-Gazost';
 $clubA3228= ' Rodez';
 $clubA3229= ' Peyrehorade';
 $clubA3230= ' Carcassonne';
@@ -205,19 +205,19 @@ $clubA1607= ' Lille';
 $clubA1609= ' Villeurbanne';
 $clubA1611= ' Bastia';
 $clubA1613= ' Romans';
-$clubA1615= ' Montm�lian';
-$clubA1617= ' Rib�rac';
+$clubA1615= ' Montm�lian';
+$clubA1617= ' Rib�rac';
 $clubA1619= ' Boucau Tarnos';
 $clubA1621= ' Langon';
 $clubA1623= ' Gourdon';
-$clubA1625= ' Morla�s';
+$clubA1625= ' Morla�s';
 $clubA1627= ' Castanet';
-$clubA1629= ' Mi�lan-Mirande';
+$clubA1629= ' Mi�lan-Mirande';
 $clubA1631= ' Valence d'Agen';
 }
 else
 {
-echo "d�sol�, pas de donn�es pour cette saison";
+echo "d�sol�, pas de donn�es pour cette saison";
 }
 ?>
 
@@ -3146,11 +3146,11 @@ echo "";
 <div id="Layer4" style="position:absolute; width:2px; height:80px; z-index:6; left: 954px; top: 760px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 423px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 820px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
-<div id="Layer2" style="position:absolute; width:1820px; height:20px; z-index:4; left: -2px; top: 151px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 
-  F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-  2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1820px; height:20px; z-index:4; left: -2px; top: 151px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 Fédérale 2 Fédérale 2 
+  Fédérale 2 Fédérale 2 Fédérale 2 Fédérale 
+  2 Fédérale 2 Fédérale 2 </b></i></div>

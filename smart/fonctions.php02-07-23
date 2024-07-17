@@ -86,18 +86,18 @@ if (substr($champ,-3) > 279 AND substr($champ,-3) < 300 )
 
 
 
-if ($champ == 990110 ){$ligne2="Comp&eacute;titions professionnellles";}
-			elseif ($champ == 990140){$ligne2="F&eacute;d&eacute;rale 1";}
-			elseif ($champ == 990150){$ligne2="F&eacute;d&eacute;rale 2";}
-			elseif ($champ == 991160){$ligne2="F&eacute;d&eacute;rale 3";}
-			elseif ($champ == 992160){$ligne2="F&eacute;d&eacute;rale 3";}
-			elseif ($champ == 990240){$ligne2="Espoir F&eacute;d&eacute;rale 1";}
-			elseif ($champ == 990250){$ligne2="F&eacute;d&eacute;rale B";}
+if ($champ == 990110 ){$ligne2="Compétitions professionnellles";}
+			elseif ($champ == 990140){$ligne2="Fédérale 1";}
+			elseif ($champ == 990150){$ligne2="Fédérale 2";}
+			elseif ($champ == 991160){$ligne2="Fédérale 3";}
+			elseif ($champ == 992160){$ligne2="Fédérale 3";}
+			elseif ($champ == 990240){$ligne2="Espoir Fédérale 1";}
+			elseif ($champ == 990250){$ligne2="Fédérale B";}
 			elseif ($champ == 991260){$ligne2="Excellence B";}
 			elseif ($champ == 992260){$ligne2="Excellence B";}
-			elseif ($champ == 880280){$ligne2="Comp&eacute;titions f&eacute;minines";}
+			elseif ($champ == 880280){$ligne2="Compétitions féminines";}
 			
-			else{$ligne2 = "Comp&eacute;titions R&eacute;gionales";}
+			else{$ligne2 = "Compétitions Régionales";}
 
 
 //echo $ligne1."<br />".$ligne2;

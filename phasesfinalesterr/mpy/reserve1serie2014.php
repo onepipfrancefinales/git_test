@@ -134,10 +134,10 @@ MM_reloadPage(true);
   <div align="center"><font color="#FFFFFF"><b>Quarts de finale</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 164px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re 
-    S&eacute;rieR&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie 
-    R&eacute;serve 1re S&eacute;rie R&eacute;serve 1re S&eacute;rie R&eacute;serve 
-    1re S&eacute;rie R&eacute;serve 1re S&eacute;rie</b></i></div>
+  <div align="center"><i><b>Réserve 1re Série Réserve 1re 
+    SérieRéserve 1re Série Réserve 1re Série 
+    Réserve 1re Série Réserve 1re Série Réserve 
+    1re Série Réserve 1re Série</b></i></div>
 </div>
    
 	   

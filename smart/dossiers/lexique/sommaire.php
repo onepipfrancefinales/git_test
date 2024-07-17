@@ -6,14 +6,14 @@
     </td>
     <td height="21" bgcolor="#FF0000"> 
       <div align="center"><b><a href="page.php?page=<?php echo "lexique2";?>"><font color="#000000">Phrases<br>
-        c&eacute;lebres </font></a></b></div>
+        célebres </font></a></b></div>
     </td>
     <td height="21" bgcolor="#FF0000"> 
       <div align="center"><b><a href="page.php?page=<?php echo "lexique3";?>"><font color="#000000">Citations</font></a></b></div>
     </td>
     <td height="21" bordercolor="#000000" bgcolor="#FF0000"> 
       <p align="center"><b><a href="page.php?page=<?php echo "lexique4";?>"><font color="#000000">Expressions<br>
-        m&eacute;diatiques</font></a></b></p>
+        médiatiques</font></a></b></p>
     </td>
   </tr>
   <tr> 

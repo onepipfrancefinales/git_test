@@ -22,7 +22,7 @@ $journee=$_GET['journee'];
       <td class="h22">France Finales Rugby </td>
     </tr>
     <tr>  
-      <td class="h12"> Mise &agrave; jours des r&eacute;sultats <br /> <?php echo $nomChampionnat; ?> </td>
+      <td class="h12"> Mise à jours des résultats <br /> <?php echo $nomChampionnat; ?> </td>
     </tr>
   </tbody>
 </table>
@@ -30,7 +30,7 @@ $journee=$_GET['journee'];
 		
   <p class="equipe"> <br></p>
   <fieldset> 
-    <legend > Vous n'avez pas s&eacute;l&eacute;ctionn&eacute; la bonne journ&eacute;e	</legend> 
+    <legend > Vous n'avez pas séléctionné la bonne journée	</legend> 
   </fieldset>
   <br><br><br>
   <p class="tab3">

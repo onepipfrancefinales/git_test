@@ -56,47 +56,47 @@ $clubA3234= ' Alpes 2';
 $clubA3235= ' Auvergne 2';
 $clubA3236= ' Barrage DA 2 - PR 3 ';
 
-$clubA3237= ' Côte d Azur 1';
+$clubA3237= ' Cï¿½te d Azur 1';
 $clubA3238= ' Provence 2';
 
 $clubA3239= ' Languedoc 1';
 $clubA3240= '  Barrage PC 2 - MPY 7';
 
-$clubA3241= ' Drôme Ardèche 1';
+$clubA3241= ' Drï¿½me Ardï¿½che 1';
 $clubA3242= ' Alpes 1 ';
 
 $clubA3243= ' Armagnac Bigorre 2 ';
-$clubA3244= ' Midi-Pyénées 2 ';
+$clubA3244= ' Midi-Pyï¿½nï¿½es 2 ';
 
 $clubA3245= ' Pays Catalan 1';
 $clubA3246= ' Languedoc 2';
 
 $clubA3247= ' Bearn 1 ';
-$clubA3248= ' Midi-Pyénées 6 ';
+$clubA3248= ' Midi-Pyï¿½nï¿½es 6 ';
 
 $clubA3249= ' Provence 1';
 $clubA3250= ' Languedoc 3';
 
-$clubA3251= ' Côte Basque Landes 1 ';
-$clubA3252= ' Midi-Pyénées 5 ';
+$clubA3251= ' Cï¿½te Basque Landes 1 ';
+$clubA3252= ' Midi-Pyï¿½nï¿½es 5 ';
 
-$clubA3253= ' Périgord Agenais 1 ';
+$clubA3253= ' Pï¿½rigord Agenais 1 ';
 $clubA3254= 'Barrage  AB 3 - BE 2 ';
 
 $clubA3255= ' Limousin 2 ';
-$clubA3256= ' Midi-Pyénées 3 ';
+$clubA3256= ' Midi-Pyï¿½nï¿½es 3 ';
 
-$clubA3257= ' Côte d Argent 1';
-$clubA3258= ' Côte Basque Landes 2'; 
+$clubA3257= ' Cï¿½te d Argent 1';
+$clubA3258= ' Cï¿½te Basque Landes 2'; 
 
-$clubA3259= ' Midi-Pyénées 1 ';
-$clubA3260= ' Périgord Agenais 3 ';
+$clubA3259= ' Midi-Pyï¿½nï¿½es 1 ';
+$clubA3260= ' Pï¿½rigord Agenais 3 ';
 
 $clubA3261= ' Armagnac Bigorre 1 ';
-$clubA3262= ' Périgord Agenais 2';
+$clubA3262= ' Pï¿½rigord Agenais 2';
 
-$clubA3263= ' Côte d Argent 2 ';
-$clubA3264= ' Midi-Pyénées 4 ';
+$clubA3263= ' Cï¿½te d Argent 2 ';
+$clubA3264= ' Midi-Pyï¿½nï¿½es 4 ';
 
 
 ?>
@@ -604,11 +604,11 @@ $clubA3264= ' Midi-Pyénées 4 ';
   <div align="center"><font color="#FFFFFF"><b>16me de finale</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
-  <div align="center"><i><b>2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
+  <div align="center"><i><b>2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
+    2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
+    2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
+    2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
+    2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
     </b></i></div>
 </div>
 <div id="Layer3" style="position:absolute; width:99px; height:20px; z-index:5; left: 26px; top: 200px; background-image:  url(../barrage.jpg); layer-background-image:  url(../barrage.jpg); border: 1px none #000000"> 
@@ -619,7 +619,7 @@ $clubA3264= ' Midi-Pyénées 4 ';
     <tr bgcolor="#FFFFFF"> 
       <td height="55" colspan="9" bgcolor="#FFFFFF"> 
         <div align="center"><font size="5" color="#000000"><b>Nombre de clubs 
-          qualifi&eacute;s par comit&eacute; (2014-2015)</b></font></div>
+          qualifiÃ©s par comitÃ© (2014-2015)</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -627,7 +627,7 @@ $clubA3264= ' Midi-Pyénées 4 ';
         <div align="center"><b>COMITES</b></div>
       </td>
       <td height="83" width="11%"> 
-        <div align="center"><b>Nombre de clubs qualifi&eacute;s</b><b> directement 
+        <div align="center"><b>Nombre de clubs qualifiÃ©s</b><b> directement 
           en 32me</b></div>
       </td>
       <td height="83" width="9%"> 
@@ -642,7 +642,7 @@ $clubA3264= ' Midi-Pyénées 4 ';
       </td>
       <td height="83" width="12%"> 
         <div align="center"> 
-          <p><b>Nombre de clubs qualifi&eacute;s</b><b> directement en 32me</b></p>
+          <p><b>Nombre de clubs qualifiÃ©s</b><b> directement en 32me</b></p>
         </div>
       </td>
       <td height="83" width="9%"> 
@@ -667,7 +667,7 @@ $clubA3264= ' Midi-Pyénées 4 ';
       <td height="24" width="10%"> 
         <div align="center"><b><font size="4"><font size="4"><font color="#000000"></font></font></font></b></div>
       </td>
-      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+      <td width="18%" height="24" bgcolor="#FFFFFF">Franche ComtÃ©</td>
       <td width="12%" height="24"> 
         <div align="center">avec Bourgogne</div>
       </td>
@@ -797,7 +797,7 @@ $clubA3264= ' Midi-Pyénées 4 ';
       <td width="10%"> 
         <div align="center"><b><font size="4"><font size="4"><font color="#000000"></font></font></font></b></div>
       </td>
-      <td width="18%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+      <td width="18%" bgcolor="#FFFFFF">Midi PyrÃ©nÃ©es</td>
       <td width="12%" bgcolor="#FFFFFF"> 
         <div align="center">6</div>
       </td>

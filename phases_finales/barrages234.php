@@ -36,7 +36,7 @@ require ("fonctions_phases_finales.php");
   <tr> 
     <td colspan="18" bgcolor="#FF9933"> 
       <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="4">2me 
-        S&eacute;rie 
+        Série 
         <?php  $id = 995; 
 ?>
         </font></b></div>
@@ -273,7 +273,7 @@ require ("fonctions_phases_finales.php");
   <tr> 
     <td colspan="18" bgcolor="#FF9933">
       <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="4">3me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -507,7 +507,7 @@ require ("fonctions_phases_finales.php");
   <tr> 
     <td colspan="18" bgcolor="#FF9933">
       <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="4">4me 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
   </tr>
   <tr> 

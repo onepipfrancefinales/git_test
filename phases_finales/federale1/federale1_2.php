@@ -512,14 +512,14 @@ MM_reloadPage(true);
 <div id="Layer4" style="position:absolute; width:3px; height:45px; z-index:6; left: 304px; top: 265px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:3px; height:45px; z-index:6; left: 305px; top: 565px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: 0px; top: 147px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>F&eacute;d&eacute;rale 1</b></i> <b><i><b>F&eacute;d&eacute;rale 
-    1</b></i> <b><i><b>F&eacute;d&eacute;rale 1</b></i> <b><i><b>F&eacute;d&eacute;rale 
-    1</b></i> <b><i><b>F&eacute;d&eacute;rale 1</b></i> <b><i><b>F&eacute;d&eacute;rale 
-    1</b></i> <b><i><b>F&eacute;d&eacute;rale 1</b></i> <b><i><b>F&eacute;d&eacute;rale 
-    1</b></i> <b><i><b>F&eacute;d&eacute;rale 1</b></i> <b><i><b>F&eacute;d&eacute;rale 
-    1</b></i> <b><i><b>F&eacute;d&eacute;rale 1</b></i> <b><i><b>F&eacute;d&eacute;rale 
-    1</b></i> <b><i><b>F&eacute;d&eacute;rale 1</b></i> <b><i><b>F&eacute;d&eacute;rale 
-    1</b></i> <b><i><b>F&eacute;d&eacute;rale 1</b></i></b></b></b></b></b></b></b></b></b></b></b></b></b></b></div>
+  <div align="center"><i><b>Fédérale 1</b></i> <b><i><b>Fédérale 
+    1</b></i> <b><i><b>Fédérale 1</b></i> <b><i><b>Fédérale 
+    1</b></i> <b><i><b>Fédérale 1</b></i> <b><i><b>Fédérale 
+    1</b></i> <b><i><b>Fédérale 1</b></i> <b><i><b>Fédérale 
+    1</b></i> <b><i><b>Fédérale 1</b></i> <b><i><b>Fédérale 
+    1</b></i> <b><i><b>Fédérale 1</b></i> <b><i><b>Fédérale 
+    1</b></i> <b><i><b>Fédérale 1</b></i> <b><i><b>Fédérale 
+    1</b></i> <b><i><b>Fédérale 1</b></i></b></b></b></b></b></b></b></b></b></b></b></b></b></b></div>
 </div>
 <div id="Layer4" style="position:absolute; width:2px; height:80px; z-index:6; left: 598px; top: 516px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer5" style="position:absolute; width:35px; height:22px; z-index:7; left: 237px; top: 221px"> 
@@ -553,7 +553,7 @@ MM_reloadPage(true);
 </div>
 <p>&nbsp;</p><div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 919px; top: 477px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France<br>
-    F&eacute;d&eacute;rale 1 
+    Fédérale 1 
     <?php echo $annee;?>
     </b></font></div>
 </div>

@@ -33,23 +33,23 @@
           <option value="divisions/pagetop14.php"><b>TOP 14</b></option>
           <option value="divisions/pageproD2.php"><b>Pro D2</b></option>
           <option value="divisions/pagejprat.php"><b>Jean Prat</b></option>
-          <option value="divisions/pagefederale1.php"><b>F&eacute;d&eacute;rale 1</b></option>
-          <option value="divisions/pagefederale2.php"><b>F&eacute;d&eacute;rale 2</b></option>
-          <option value="divisions/pagefederale3.php"><b>F&eacute;d&eacute;rale 3</b></option>
+          <option value="divisions/pagefederale1.php"><b>Fédérale 1</b></option>
+          <option value="divisions/pagefederale2.php"><b>Fédérale 2</b></option>
+          <option value="divisions/pagefederale3.php"><b>Fédérale 3</b></option>
           <option value="divisions/pagehonneur.php"><b>Honneur</b></option>
           <option value="divisions/pagepromotion.php"><b>Promotion </b></option>
-          <option value="divisions/page1serie.php"><b>1&egrave;re S&eacute;rie</b></option>
-          <option value="divisions/page2serie.php"><b>2i&eacute;me S&eacute;rie</b></option>
-          <option value="divisions/page3serie.php"><b>3i&eacute;me Serie</b></option>
-          <option value="divisions/page4serie.php"><b>4i&eacute;me S&eacute;rie</b></option>
+          <option value="divisions/page1serie.php"><b>1&egrave;re Série</b></option>
+          <option value="divisions/page2serie.php"><b>2iéme Série</b></option>
+          <option value="divisions/page3serie.php"><b>3iéme Serie</b></option>
+          <option value="divisions/page4serie.php"><b>4iéme Série</b></option>
           <option>------------------------------</option>
           <option>EQUIPES II</option>
           <option>-------------------</option>
           <option value="divisions/pageespoir.php">Espoir</option>
           <option value="divisions/pagenationaleb.php"><b>Nationale B</b></option>
-          <option value="divisions/pagefederaleB.php"><b>F&eacute;d&eacute;rale B</b></option>
+          <option value="divisions/pagefederaleB.php"><b>Fédérale B</b></option>
           <option value="divisions/pageexcellenceB.php"><b>Excellence B</b></option>
-          <option value="divisions/pagereserve.php"><b>R&eacute;serve</b></option>
+          <option value="divisions/pagereserve.php"><b>Réserve</b></option>
           <option>--------------------</option>
           <option>FEMININES</option>
           <option>----------------------</option>
@@ -77,8 +77,8 @@
           <option value="divisions/pagedumanoir.php"><b>Du Manoir</b></option>
           <option value="divisions/pageessor.php"><b>Essor</b></option>
           <option value="divisions/pagechespoir.php"><b>Espoir</b></option>
-          <option value="divisions/pageesperance.php"><b>Esp&eacute;rance</b></option>
-          <option value="divisions/pageamitie.php"><b>Amiti&eacute;</b></option>
+          <option value="divisions/pageesperance.php"><b>Espérance</b></option>
+          <option value="divisions/pageamitie.php"><b>Amitié</b></option>
           <option value="divisions/pagecoupedefrance.php"><b>Coupe de France</b></option>
     </select>
   </p>
@@ -116,9 +116,9 @@
       <option value="120">4me Serie</option>
       <option value="135">Espoir</option>
       <option value="140">Nationale B</option>
-      <option value="150">F�d�rale B</option>
+      <option value="150">F�d�rale B</option>
       <option value="160">Excellence B</option>
-      <option value="170">R�serve</option>
+      <option value="170">R�serve</option>
     </select>
   </p>
   <p>entente 
@@ -140,9 +140,9 @@
       <option value="120">4me Serie</option>
       <option value="135">Espoir</option>
       <option value="140">Nationale B</option>
-      <option value="150">F�d�rale B</option>
+      <option value="150">F�d�rale B</option>
       <option value="160">Excellence B</option>
-      <option value="170">R�serve</option>
+      <option value="170">R�serve</option>
     </select>
   </p>
   <p> champion_entente 
@@ -159,7 +159,7 @@
     </select>
   </p>
   <p>comite1 <select name="comite1" onChange="MM_jumpMenu('parent',this,0)" size="1">
-          <option selected>Par comit&eacute;</option>
+          <option selected>Par comité</option>
           
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AP)">Alpes</option>
 		  <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AL)"><b>Alsace Lorraine</b></option>
@@ -180,10 +180,10 @@
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(LD)"><b>Languedoc</b></option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(LM)"><b>Limousin</b></option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(LY)"><b>Lyonnais</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(MPY)"><b>Midi Pyr&eacute;n&eacute;es</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(MPY)"><b>Midi Pyrénées</b></option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(N)"><b>Normandie</b></option>
 		  <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PL)"><b>Pays de Loire</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PA)"><b>P�rigord Agenais</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PA)"><b>P�rigord Agenais</b></option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PCH)"><b>Poitou Charente</b></option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PR)"><b>Provence</b></option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(R)"><b>Roussillon</b></option>
@@ -193,7 +193,7 @@
   </p>
   <p>comite2 
     <select name="select3" onChange="MM_jumpMenu('parent',this,0)" size="1">
-      <option selected>Par comit&eacute;</option>
+      <option selected>Par comité</option>
       <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AP)">Alpes</option>
       <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AL)"><b>Alsace 
       Lorraine</b></option>
@@ -222,11 +222,11 @@
       <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(LM)"><b>Limousin</b></option>
       <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(LY)"><b>Lyonnais</b></option>
       <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(MPY)"><b>Midi 
-      Pyr&eacute;n&eacute;es</b></option>
+      Pyrénées</b></option>
       <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(N)"><b>Normandie</b></option>
       <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PL)"><b>Pays 
       de Loire</b></option>
-      <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PA)"><b>P�rigord 
+      <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PA)"><b>P�rigord 
       Agenais</b></option>
       <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PCH)"><b>Poitou 
       Charente</b></option>

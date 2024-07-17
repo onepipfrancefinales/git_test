@@ -19,32 +19,32 @@ if ($page=="HPHS1")
 		if ($annee < 2023){	
 			$nom1="Honneur";
 			$nom2="Promotion Honneur";
-			$nom3="1re S&eacute;rie";
+			$nom3="1re Série";
 		}
 		else{
-			$nom1="R&eacute;gionale 1";
-			$nom2="R&eacute;gionale 2";
-			$nom3="R&eacute;gionale 3";
+			$nom1="Régionale 1";
+			$nom2="Régionale 2";
+			$nom3="Régionale 3";
 		}
 		$division = $codeLigue + 170;
 		}
 elseif ($page=="S2S3S4")
 		{
-		$nom1="2me S&eacute;rie";
-		$nom2="3me S&eacute;rie";
-		$nom3="4me S&eacute;rie";
+		$nom1="2me Série";
+		$nom2="3me Série";
+		$nom3="4me Série";
 		$division= $codeLigue + 200;
 		}
 elseif ($page=="RRPHR1")
 		{
 		if ($annee < 2023){	
-			$nom1="R&eacute;serve";
-			$nom2="R&eacute;serve Promotion";
-			$nom3="R&eacute;serve 1re S&eacute;rie";
+			$nom1="Réserve";
+			$nom2="Réserve Promotion";
+			$nom3="Réserve 1re Série";
 		}
 		else{
-			$nom1="R&eacute;s r&eacute;gionale 1";
-			$nom2="R&eacute;s r&eacute;gionale 2";
+			$nom1="Rés régionale 1";
+			$nom2="Rés régionale 2";
 			$nom3="-";
 		}	
 		$division= $codeLigue + 270;

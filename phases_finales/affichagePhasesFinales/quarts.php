@@ -16,9 +16,9 @@
   </tr>
   <tr> 
     <td colspan="13" bgcolor="#FFCC66"> 
-      <div align="center"><i><b>F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine 
-        F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 1 -- 
-        F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine</b></i></div>
+      <div align="center"><i><b>Féminine Fédérale 1 -- Féminine 
+        Fédérale 1 -- Féminine Fédérale 1 -- 
+        Féminine Fédérale 1 -- Féminine</b></i></div>
     </td>
   </tr>
   <tr> 

@@ -228,7 +228,7 @@ echo "";
     complet des Finales territoriales d'ile de France qui auront lieu le 26 Avril 
     au</font></b></font></a><font face="Arial, Helvetica, sans-serif"><br>
     <font color="#FF0000" size="4"><b><br>
-    <font size="5">Rugby Club Vall&eacute;e de Montmorency</font></b></font><br>
+    <font size="5">Rugby Club Vallée de Montmorency</font></b></font><br>
     (Andilly &#150; Enghien &#150; Groslay &#150; Margency &#150; Montmorency 
     - Soisy)</font></div>
 </div>

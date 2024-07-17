@@ -57,7 +57,7 @@ $clubA3235= ' Provence 1';
 $clubA3236= ' Drome Ardeche 2 ';
 
 $clubA3237= ' Alpes 2';
-$clubA3238= ' Drôme Ardèche 1';
+$clubA3238= ' Drï¿½me Ardï¿½che 1';
 
 $clubA3239= ' Languedoc 1';
 $clubA3240= ' Provence 4 ';
@@ -72,22 +72,22 @@ $clubA3245= ' Provence 2';
 $clubA3246= ' Languedoc 2';
 
 $clubA3247= ' Armagnac Bigorre 1';
-$clubA3248= ' Midi-Pyrénées 3 ';
+$clubA3248= ' Midi-Pyrï¿½nï¿½es 3 ';
 
-$clubA3249= ' Périgord Agenais 2 ';
+$clubA3249= ' Pï¿½rigord Agenais 2 ';
 $clubA3250= ' Limousin 2';
 
 $clubA3251= ' Cote d Argent 1';
-$clubA3252= ' Midi-Pyrénées 2 ';
+$clubA3252= ' Midi-Pyrï¿½nï¿½es 2 ';
 
 $clubA3253= ' Limousin 1';
-$clubA3254= ' Midi-Pyrénées 5';
+$clubA3254= ' Midi-Pyrï¿½nï¿½es 5';
 
 $clubA3255= ' Bearn 1';
 $clubA3256= ' Armagnac Bigorre 2 ';
 
 $clubA3257= ' Perigord Agenais 1';
-$clubA3258= ' Midi-Pyrénées 4';
+$clubA3258= ' Midi-Pyrï¿½nï¿½es 4';
  
 $clubA3259= ' Cote basque Landes 2';
 $clubA3260= ' Barrage CA 3 -  BE 2';
@@ -602,7 +602,7 @@ $clubA3264= ' Pays Catalan 1';
     <tr bgcolor="#FFFFFF"> 
       <td height="55" colspan="9" bgcolor="#FFFFFF"> 
         <div align="center"><font size="5" color="#000000"><b>Nombre de clubs 
-          qualifi&eacute;s par comit&eacute; (2015-2016)</b></font></div>
+          qualifiÃ©s par comitÃ© (2015-2016)</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -610,7 +610,7 @@ $clubA3264= ' Pays Catalan 1';
         <div align="center"><b>COMITES</b></div>
       </td>
       <td height="83" width="11%"> 
-        <div align="center"><b>Nombre de clubs qualifi&eacute;s</b><b> directement 
+        <div align="center"><b>Nombre de clubs qualifiÃ©s</b><b> directement 
           en 32me</b></div>
       </td>
       <td height="83" width="9%"> 
@@ -625,7 +625,7 @@ $clubA3264= ' Pays Catalan 1';
       </td>
       <td height="83" width="12%"> 
         <div align="center"> 
-          <p><b>Nombre de clubs qualifi&eacute;s</b><b> directement en 32me</b></p>
+          <p><b>Nombre de clubs qualifiÃ©s</b><b> directement en 32me</b></p>
         </div>
       </td>
       <td height="83" width="9%"> 
@@ -646,7 +646,7 @@ $clubA3264= ' Pays Catalan 1';
       </td>
       <td height="24" width="9%">&nbsp; </td>
       <td height="24" width="10%">&nbsp; </td>
-      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+      <td width="18%" height="24" bgcolor="#FFFFFF">Franche ComtÃ©</td>
       <td width="12%" height="24"> 
         <div align="center">avec Bourgogne</div>
       </td>
@@ -760,7 +760,7 @@ $clubA3264= ' Pays Catalan 1';
       </td>
       <td width="9%">&nbsp; </td>
       <td width="10%">&nbsp; </td>
-      <td width="18%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+      <td width="18%" bgcolor="#FFFFFF">Midi PyrÃ©nÃ©es</td>
       <td width="12%" bgcolor="#FFFFFF"> 
         <div align="center">5</div>
       </td>

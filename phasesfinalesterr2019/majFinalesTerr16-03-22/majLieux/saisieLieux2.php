@@ -1,18 +1,18 @@
 <html>
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
 
-<?php // ******************   Récupération des variables   ***************** ?>
+<?php // ******************   Rï¿½cupï¿½ration des variables   ***************** ?>
  
  <?php $type=$_GET['type']; ?>
  <?php $annee=$_GET['annee']; ?>
  <?php  $comite=$_GET['comite'];?>
  <?php  $division=$_GET['division'];?>
   
-<?php // ***************** Test des variables récupérées ****************
+<?php // ***************** Test des variables rï¿½cupï¿½rï¿½es ****************
    echo $comite; echo "<br />";
    echo $type;echo "<br />";
    echo $annee;echo "<br />";
@@ -79,12 +79,12 @@
 
     if($req)
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 	  else
 		{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}
 	
@@ -93,7 +93,7 @@
 ?>
   <?php
 
-//mysql_close(); // Déconnexion de MySQL
+//mysql_close(); // Dï¿½connexion de MySQL
 ?>
   </p>
 <p>&nbsp; </p>

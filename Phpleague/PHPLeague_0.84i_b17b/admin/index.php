@@ -22,7 +22,7 @@ if (version_compare(PHP_VERSION, '5.1.0', '>='))
 
 if (version_compare(PHP_VERSION, '6.0.0') >= 0)
 {
-    $VER_PHP = 'Votre version PHP : '.PHP_VERSION.'.<br />PHPLeague peut comporter des erreurs à cause des fonctions obsolètes.';
+    $VER_PHP = 'Votre version PHP : '.PHP_VERSION.'.<br />PHPLeague peut comporter des erreurs ï¿½ cause des fonctions obsolï¿½tes.';
 }
 else
 {
@@ -35,7 +35,7 @@ if (VerifSession($user_pseudo, $user_mdp) == 1)
 {
 	if (is_dir('../install/') == TRUE)
 	{
-		$FOLD_INST = InfoReqSql('InfInst', 0, 'error', 'alert', 'Dossier "install" encore présent. Par mesure de sécurités, je vous conseille de le supprimer.');
+		$FOLD_INST = InfoReqSql('InfInst', 0, 'error', 'alert', 'Dossier "install" encore prï¿½sent. Par mesure de sï¿½curitï¿½s, je vous conseille de le supprimer.');
 	}
 	else
 	{
@@ -109,7 +109,7 @@ elseif ($identification == 'err1')
 }
 elseif ($identification == 'err2')
 {
-	$ERR = 'Identifiants erronés !';
+	$ERR = 'Identifiants erronï¿½s !';
 	include('menu.non-identifie.htm');
 }
 else
@@ -165,7 +165,7 @@ if (VerifSession($user_pseudo, $user_mdp) == 1)
 	</div>
 
 	<div id="footer">
-		<a>PHPLeague <?php echo VER; ?></a> - Copyright &copy; 2004-<?php echo date('Y'); ?> - Tous droits r&eacute;serv&eacute;s - <a href="mailto:Alexis@univert.org">Alexis MANGIN</a>
+		<a>PHPLeague <?php echo VER; ?></a> - Copyright &copy; 2004-<?php echo date('Y'); ?> - Tous droits rÃ©servÃ©s - <a href="mailto:Alexis@univert.org">Alexis MANGIN</a>
 	</div>
 
 </div>

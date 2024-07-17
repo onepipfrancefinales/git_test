@@ -36,7 +36,7 @@ elseif ($go=="1")
 {
       $pseudo=addslashes($pseudo);
 
-       // On v�rifie que le pseudo n'est pas utilis�
+       // On v�rifie que le pseudo n'est pas utilis�
        $resultat = $idconnect->query("SELECT * FROM phpab_membres where pseudo='$pseudo'");
        //$resultat=mysql_query($requete);
        $nb_pseudo=mysqli_num_rows($resultat);
@@ -44,7 +44,7 @@ elseif ($go=="1")
        elseif (strlen($pseudo)<4 or strlen($pseudo)>20) {$message.=PRONO_INSCRIPTION_PSEUDO_TAILLE."<br />";}
        else {$pseudo_verif="ok";}
        
-       // On v�rifie que le mail
+       // On v�rifie que le mail
        $resultat = $idconnect->query( "
 					SELECT * 
 					FROM phpab_membres 
@@ -132,14 +132,14 @@ $sujet="France Finales Rugby App";
 
 $message="<html><head><title>phpabeague</title></head><body>
 <p><font size=\"2\" face=\"Verdana\">Bonjour et bienvenue sur France Finales Rugby, </font></p>
-<p><font size=\"2\" face=\"Verdana\">Vous venez de vous inscrire sur France Finales Rugby App. Vous pouvez d&eacute;sormais proc&eacute;der &agrave; la mise &agrave; jours des r&eacute;sultats des rencontres de votre comit&eacute;.</font></p>
+<p><font size=\"2\" face=\"Verdana\">Vous venez de vous inscrire sur France Finales Rugby App. Vous pouvez désormais procéder &agrave; la mise &agrave; jours des résultats des rencontres de votre comité.</font></p>
 <p><font size=\"2\" face=\"Verdana\">Voici les informations qui vous
-permettront d'acc&eacute;der &agrave; la mise &agrave; jours des r&eacute;sultats :</font></p>
+permettront d'accéder &agrave; la mise &agrave; jours des résultats :</font></p>
 <p><font face=\"Verdana\" size=\"2\">Login :&nbsp;  $pseudo 
 <br />
 Mot de passe :  $mdp </font></p>
 
-<p><font face=\"Verdana\" size=\"2\">Vous pouvez &eacute;galement consulter stats, classements complets, calendriers, les diff&eacute;rents palmar&egrave;s, etc...en consultant
+<p><font face=\"Verdana\" size=\"2\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmar&egrave;s, etc...en consultant
 <a href=\"http://francefinalesrugby.franceserv.com\">France Finales Rugby</a> 
 </font></p>
 <br />
@@ -186,7 +186,7 @@ echo "-----------------------"; echo "<br/>";
 else
 {
  echo "<table align=\"center\">";
-  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\">".R�essayer."</a></td></tr>";
+  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\">".R�essayer."</a></td></tr>";
   echo "</table>";
 }
 

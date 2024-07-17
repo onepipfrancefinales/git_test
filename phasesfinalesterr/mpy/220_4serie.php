@@ -59,7 +59,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     </tr>
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Finales territoriales du comit&eacute;  des Pyr&eacute;n&eacute;es $annee";?>
+        <? echo "Finales territoriales du comité  des Pyrénées $annee";?>
         </font></b></font></td>
     </tr>
   </table>
@@ -68,10 +68,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <br>
 <table width="1000" border="0" align="left" height="500" cellspacing="0">
   <tr> 
-    <td height="13" bgcolor="#FFCC66" colspan="12"><i><b>me S&eacute;rie 4me S&eacute;rie 
-      4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me 
-      S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-      4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me </b></i></td>
+    <td height="13" bgcolor="#FFCC66" colspan="12"><i><b>me Série 4me Série 
+      4me Série 4me Série 4me Série 4me Série 4me 
+      Série 4me Série 4me Série 4me Série 4me Série 
+      4me Série 4me Série 4me Série 4me </b></i></td>
   </tr>
   <tr> 
     <td width="160" height="13">&nbsp;</td>

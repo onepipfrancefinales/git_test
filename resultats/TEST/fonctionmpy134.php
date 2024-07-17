@@ -73,7 +73,7 @@ $reponse = $bdd->query( "	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe
 				// if ($val1 + $val2 < 4   )
 				//	{   
 					 
-					$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journ&eacute;e :<br>";
+					$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journée :<br>";
 				//	}
 			}
 	echo "<br><br>";
@@ -204,7 +204,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
 			//	 if ($val1 + $val2 < 4   )
 			//		{   
 					   
-		 	$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journ&eacute;e :<br>";
+		 	$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journée :<br>";
 			//}
 		 }	
 	echo "<br><br>";	
@@ -289,7 +289,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
     <tr> 
       <td colspan="4" height="18" bgcolor="#FF0000"> 
         <div align="center"><font size="5" face="Arial, Helvetica, sans-serif"><b>1re 
-          S&eacute;rie </b></font></div>
+          Série </b></font></div>
       </td>
       <td width="171" height="18" bgcolor="#FF0000">&nbsp;</td>
     </tr>
@@ -334,7 +334,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
 				// if ($val1 + $val2 < 4   )
 				//	{   
 					    
-				$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journ&eacute;e :";
+				$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journée :";
 				echo "<br>";
 				//}
 		}
@@ -419,7 +419,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
     <tr> 
       <td colspan="4" height="18" bgcolor="#FF0000"> 
         <div align="center"><font size="5" face="Arial, Helvetica, sans-serif"><b>2me 
-          S&eacute;rie </b></font></div>
+          Série </b></font></div>
       </td>
       <td width="171" height="18" bgcolor="#FF0000">&nbsp;</td>
     </tr>
@@ -467,7 +467,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
 			//	 if ($val1 + $val2 < 4   )
 			//		{   
 					     
-		 		$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journ&eacute;e :<br>";
+		 		$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journée :<br>";
 			//	}
 			}
 	echo "<br><br>";
@@ -552,7 +552,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
     <tr> 
       <td colspan="4" height="32" bgcolor="#FF0000"> 
         <div align="center"><font size="5" face="Arial, Helvetica, sans-serif"><b>3me 
-          / 4me S&eacute;rie</b></font></div>
+          / 4me Série</b></font></div>
       </td>
       <td width="171" height="32" bgcolor="#FF0000">&nbsp;</td>
     </tr>
@@ -600,7 +600,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
 			//	 if ($val1 + $val2 < 4   )
 			//		{   
 					     
-		 			$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journ&eacute;e :<br>";
+		 			$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journée :<br>";
 			//		}
 			}
 	echo "<br><br>";
@@ -684,7 +684,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
     </tr>
     <tr> 
       <td colspan="4" height="9" bgcolor="#0066CC"> 
-        <div align="center"><font size="5" face="Arial, Helvetica, sans-serif"><b>R&eacute;serves</b></font></div>
+        <div align="center"><font size="5" face="Arial, Helvetica, sans-serif"><b>Réserves</b></font></div>
       </td>
       <td width="171" height="9" bgcolor="#0066CC">&nbsp;</td>
     </tr>
@@ -732,7 +732,7 @@ $reponse = $bdd->query("	SELECT  $phpmatchs.id_equipe_dom, $phpmatchs.id_equipe_
 				 if ($val1 + $val2 < 4   )
 					{   
 					     
-		 			$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journ&eacute;e :<br>";
+		 			$journee="$row[2]"-("$row[7]"*100); echo $journee ."me journée :<br>";
 					}
 			}		
 	echo "<br><br>";

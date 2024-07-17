@@ -31,13 +31,13 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="13" bgcolor="#FFCC66" colspan="15"> 
-      <div align="center"><i><b>F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale 
-        B F&eacute;d&eacute;rale B F&eacute;d&eacute;rale B</b></i></div>
+      <div align="center"><i><b>Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B Fédérale 
+        B Fédérale B Fédérale B</b></i></div>
     </td>
   </tr>
   <tr> 
@@ -644,7 +644,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
       <div align="center"><font size="5"><b>Champion de France 
         <?php echo $annee;?>
         <br>
-        F&eacute;d&eacute;rale B </b></font></div>
+        Fédérale B </b></font></div>
     </td>
   </tr>
   <tr> 

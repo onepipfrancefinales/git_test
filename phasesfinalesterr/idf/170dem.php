@@ -25,7 +25,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
   </tr>
   <tr > 
     <td class="ligneComite" colspan="3" >
-      <? echo "Finales territoriales du comit&eacute;  $comiteNom $annee";?>
+      <? echo "Finales territoriales du comité  $comiteNom $annee";?>
     </td>
   </tr>
 </table>
@@ -195,7 +195,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
 		?>
 
 
-<p class="divisionDemi"> 1re s&eacute;rie</p>
+<p class="divisionDemi"> 1re série</p>
 	
 	<p class="demi1"> 
 	  <?php  echo $clubA ; ?>

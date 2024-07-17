@@ -120,10 +120,10 @@ MM_reloadPage(true);
   <div align="center"><font color="#FFFFFF"><b>Quarts de finale</b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 162px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve</b></i></div>
+  <div align="center"><i><b>Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve</b></i></div>
 </div>
    
 	   
@@ -284,7 +284,7 @@ MM_reloadPage(true);
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b>12</b></font></div>
     </div>
     <div id="Layer9" style="position:absolute; width:200px; height:20px; z-index:2; left: 0px; top: 20px; background-image:    url(../../phases_finales/unique30.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
-      <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b>Vall&eacute;e 
+      <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b>Vallée 
         de Girou</b></font></div>
     </div>
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 

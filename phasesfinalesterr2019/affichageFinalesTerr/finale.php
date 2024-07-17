@@ -20,7 +20,7 @@ if ($page=="HPHS1")
 		if ($annee < 2023){	
 		$nom1="Honneur";
 		$nom2="Promotion Honneur";
-		$nom3="1re S&eacute;rie";
+		$nom3="1re Série";
 		}
 		else{
 		$nom1="Régionale 1";
@@ -31,17 +31,17 @@ if ($page=="HPHS1")
 		}
 elseif ($page=="S2S3S4")
 		{
-		$nom1="2me S&eacute;rie";
-		$nom2="3me S&eacute;rie";
-		$nom3="4me S&eacute;rie";
+		$nom1="2me Série";
+		$nom2="3me Série";
+		$nom3="4me Série";
 		$division = $codeLigue + 200;
 		}
 elseif ($page=="RRPHR1")
 		{
 		if ($annee < 2023){	
-		$nom1="R&eacute;serve";
-		$nom2="R&eacute;serve Promotion";
-		$nom3="R&eacute;serve 1re S&eacute;rie";
+		$nom1="Réserve";
+		$nom2="Réserve Promotion";
+		$nom3="Réserve 1re Série";
 		}
 		else{
 		$nom1="Rés régionale 1";

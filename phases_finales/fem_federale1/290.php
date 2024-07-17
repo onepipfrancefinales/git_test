@@ -53,10 +53,10 @@ $clubA4008=$clubA3208;
   </tr>
   <tr bgcolor="#FFCC66"> 
     <td colspan="13"> 
-      <div align="center"><i><b>F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine 
-        F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 1 -- 
-        F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 
-        1 -- F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 
+      <div align="center"><i><b>Féminine Fédérale 1 -- Féminine 
+        Fédérale 1 -- Féminine Fédérale 1 -- 
+        Féminine Fédérale 1 -- Féminine Fédérale 
+        1 -- Féminine Fédérale 1 -- Féminine Fédérale 
         1</b></i></div>
     </td>
   </tr>

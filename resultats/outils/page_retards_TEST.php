@@ -22,7 +22,7 @@
       <div align="center"><font size="3"><b><font face="Arial, Helvetica, sans-serif"> 
         <script type="text/javascript"><!--
 google_ad_client = "pub-9177538664500260";
-/* 728x90, date de crÈation 19/05/10 */
+/* 728x90, date de crÔøΩation 19/05/10 */
 google_ad_slot = "7132874515";
 google_ad_width = 728;
 google_ad_height = 90;
@@ -46,7 +46,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     <td height="250" width="581" align="center" valign="top" bordercolor="#000000" bgcolor="#FFFFFF"> 
       <p align="center"><font size="3"><b><font face="Arial, Helvetica, sans-serif"><br>
         <script type="text/javascript" language="javascript">
- <!-- DÈbut
+ <!-- DÔøΩbut
  function twFermer() {
    window.close();
  }
@@ -62,7 +62,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                 <div align="center"> <font size="3"><b><font face="Arial, Helvetica, sans-serif"> 
                   </font></b></font></div>
                 <div align="center"> <font size="3"><b><font face="Arial, Helvetica, sans-serif"> 
-                  <input type="button" onClick="twFermer()" value="Fermer la fenÍtre" name="button">
+                  <input type="button" onClick="twFermer()" value="Fermer la fenÔøΩtre" name="button">
                   </font></b></font></div>
               </td>
             </tr>
@@ -70,7 +70,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
           <font size="3"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">- 
           - -<br>
           </font> <font face="Geneva, Arial, Helvetica, san-serif" size="6">Rencontres 
-          report&eacute;es </font></b></font></div>
+          report√©es </font></b></font></div>
       </form>
       <div align="center"> 
         <?php include "matchs_reportes1.php"?>

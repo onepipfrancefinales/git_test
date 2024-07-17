@@ -36,10 +36,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <table width="1200" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td colspan="13" bgcolor="#FFCC66"> 
-      <div align="center"><i><b>F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine 
-        F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 1 -- 
-        F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 
-        1 -- F&eacute;minine F&eacute;d&eacute;rale 1 -- F&eacute;minine F&eacute;d&eacute;rale 
+      <div align="center"><i><b>Féminine Fédérale 1 -- Féminine 
+        Fédérale 1 -- Féminine Fédérale 1 -- 
+        Féminine Fédérale 1 -- Féminine Fédérale 
+        1 -- Féminine Fédérale 1 -- Féminine Fédérale 
         1</b></i></div>
     </td>
   </tr>
@@ -134,7 +134,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td height="2" width="17">&nbsp;</td>
     <td colspan="3" height="67" rowspan="3"> 
       <div align="center"><b><font size="5"><b>Champion de France 2018<br>
-        F&eacute;d&eacute;rale 1</b></font></b></div>
+        Fédérale 1</b></font></b></div>
     </td>
   </tr>
   <tr> 
@@ -248,7 +248,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td width="229" height="2">&nbsp;</td>
     <td width="54" height="2">&nbsp;</td>
     <td width="222" height="2"> 
-      <div id="coin4" >AS &nbsp;B&eacute;ziers (LD)</div>
+      <div id="coin4" >AS &nbsp;Béziers (LD)</div>
     </td>
     <td width="46" height="2"> 
       <div id="coin4" >9</div>
@@ -262,7 +262,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
   <tr> 
     <td width="229" height="17"> 
-      <div id="coin4" >AS &nbsp;B&eacute;ziers (LD)</div>
+      <div id="coin4" >AS &nbsp;Béziers (LD)</div>
     </td>
     <td width="54" height="17"> 
       <div id="coin4" >8</div>
@@ -313,10 +313,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
   <tr> 
     <td colspan="13" bgcolor="#FFCC66"> 
-      <div align="center"><i><b>F&eacute;minine F&eacute;d&eacute;rale 2-- F&eacute;minine 
-        F&eacute;d&eacute;rale 2-- F&eacute;minine F&eacute;d&eacute;rale 2-- 
-        F&eacute;minine F&eacute;d&eacute;rale 2-- F&eacute;minine F&eacute;d&eacute;rale 
-        2-- F&eacute;minine F&eacute;d&eacute;rale 2-- F&eacute;minine F&eacute;d&eacute;rale 
+      <div align="center"><i><b>Féminine Fédérale 2-- Féminine 
+        Fédérale 2-- Féminine Fédérale 2-- 
+        Féminine Fédérale 2-- Féminine Fédérale 
+        2-- Féminine Fédérale 2-- Féminine Fédérale 
         2 </b></i></div>
     </td>
   </tr>
@@ -375,7 +375,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
   <tr> 
     <td width="229" height="9"> 
-      <div id="coin4" >Jou&eacute; (CE)</div>
+      <div id="coin4" >Joué (CE)</div>
     </td>
     <td width="54" height="9"> 
       <div id="coin4" >33</div>
@@ -389,14 +389,14 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td height="9" width="17">&nbsp;</td>
     <td colspan="3" height="88" rowspan="5"> 
       <div align="center"><b><font size="5"><b>Champion de France 2018<br>
-        F&eacute;d&eacute;rale 2</b></font></b></div>
+        Fédérale 2</b></font></b></div>
     </td>
   </tr>
   <tr> 
     <td width="229" height="2"> </td>
     <td width="54" height="2"> </td>
     <td width="222" height="2"> 
-      <div id="coin4" >Jou&eacute; (CE)</div>
+      <div id="coin4" >Joué (CE)</div>
     </td>
     <td width="46" height="2"> 
       <div id="coin4" >10</div>
@@ -411,7 +411,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td width="229" height="12">&nbsp;</td>
     <td width="54" height="12">&nbsp;</td>
     <td width="222" height="12"> 
-      <div id="coin4" >P&eacute;rigueux (PA)</div>
+      <div id="coin4" >Périgueux (PA)</div>
     </td>
     <td width="46" height="12"> 
       <div id="coin4" >15</div>
@@ -435,7 +435,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
   <tr> 
     <td width="229" height="12"> 
-      <div id="coin4" >P&eacute;rigueux (PA)</div>
+      <div id="coin4" >Périgueux (PA)</div>
     </td>
     <td width="54" height="12"> 
       <div id="coin4" >15</div>
@@ -453,7 +453,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td width="222" height="16">&nbsp;</td>
     <td width="46" height="16">&nbsp;</td>
     <td width="222" align="left" height="16"> 
-      <div id="coin4" >P&eacute;rigueux (PA)</div>
+      <div id="coin4" >Périgueux (PA)</div>
     </td>
     <td width="35" height="16"> 
       <div id="coin4" >17</div>

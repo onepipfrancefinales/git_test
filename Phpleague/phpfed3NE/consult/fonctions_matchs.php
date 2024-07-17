@@ -145,7 +145,7 @@ return  $jourDeLaSemaine;
 
 function aff_journee($champ, $bdd)
 {
-  $legende = "Journ&eacute;e N&deg;";
+  $legende = "Journée N&deg;";
   $color = 0;
 
   if (isset($journee)) $journee = $journee;
@@ -273,7 +273,7 @@ function aff_journeeSupp($champ, $bdd)
 
   // cellule d'affichage des derniers r�sultats
   $color = 0;
-  $legende = "Prochaine journ&eacute;e N&deg;";
+  $legende = "Prochaine journée N&deg;";
   if (isset($journee)) $journee = $journee;
   else $journee = ($champ * 1000) + 01;
   $res3 = $bdd->query("SELECT phpfed3NE_matchs.id_journee

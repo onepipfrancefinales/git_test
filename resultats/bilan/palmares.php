@@ -28,7 +28,7 @@ require ("../../connect/connexion1.php") ;
 { 
 	if ($champion = $donnees['champion'] )
 		{
-		echo "<h2> Titres Europ&eacute;ens </h2>";
+		echo "<h2> Titres Européens </h2>";
 		}
 
  //************************************** Palmares EU  *******************************************

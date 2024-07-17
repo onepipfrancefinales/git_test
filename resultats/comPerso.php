@@ -14,11 +14,11 @@
         <div align="center"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&hl=fr" target="_blank"><img src="http://francefinalesrugby.franceserv.com/images/telechargement.jpg" width="100" height="97" border="0"></a></div>
       </td>
       <td height="77" bordercolor="#000000" width="426"> 
-        <div align="center"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&hl=fr" target="_blank"><font face="Arial, Helvetica, sans-serif"><b><font color="#000000" size="5">T&eacute;l&eacute;charger 
+        <div align="center"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&hl=fr" target="_blank"><font face="Arial, Helvetica, sans-serif"><b><font color="#000000" size="5">Télécharger 
           l'appli</font><br>
           <font color="#FF0000" size="5">France Finales Rugby App</font></b></font></a><br>
-          <font color="#000000">pour consulter r&eacute;sultats et classements<br>
-          d&eacute;s la fin des rencontres</font></div>
+          <font color="#000000">pour consulter résultats et classements<br>
+          dés la fin des rencontres</font></div>
       </td>
     </tr>
   </table>

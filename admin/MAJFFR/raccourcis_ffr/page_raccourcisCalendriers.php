@@ -7,7 +7,7 @@
 
 require '../../../connect1/connection1.php';
 
-// ***** Fédérale *****
+// ***** Fï¿½dï¿½rale *****
 $requete =$bdd->query ("SELECT H, PH, S1, S2, S3
 						FROM accesFFR
 						WHERE sigle = 'FED'");
@@ -24,7 +24,7 @@ $requete =$bdd->query ("SELECT H, PH, S1, S2, S3
 
 
 					
-// ***** Féminines *****					
+// ***** Fï¿½minines *****					
 
 $requete =$bdd->query ("SELECT H, PH, S1, S2, S3, S4
 			FROM accesFFR
@@ -42,7 +42,7 @@ $requete =$bdd->query ("SELECT H, PH, S1, S2, S3, S4
 
 					}
 
-// ***** Auvergne Rhône Alpes *****		
+// ***** Auvergne Rhï¿½ne Alpes *****		
 
 
 $requete =$bdd->query ("SELECT H, PH, S1, S2, S3, S4, ResH, ResPH, ResS1, ResS2 
@@ -436,7 +436,7 @@ $requete =$bdd->query ("SELECT H, PH, S1, S2, S3, S4, ResH, ResPH, ResS1, ResS2
   </tr>
   <tr> 
     <td height="29" width="7%" bgcolor="#9999CC"> 
-      <div align="center"><font color="#000000" face="Arial, Helvetica, sans-serif"><b>F&eacute;m</b></font></div>
+      <div align="center"><font color="#000000" face="Arial, Helvetica, sans-serif"><b>FÃ©m</b></font></div>
     </td>
     <td height="29" width="6%" bgcolor="#9999CC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><a href="calendrier.php?codeFFR=<?php echo $FEMH; ?>" target="_blank"> 

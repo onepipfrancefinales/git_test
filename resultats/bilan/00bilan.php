@@ -23,7 +23,7 @@
 </table>
 
 
-    <h1>Saisons pr&eacute;c&eacute;dentes</h1>
+    <h1>Saisons précédentes</h1>
 	
   <table width="550" border="0" cellspacing="0">
     <tr bgcolor="#CCCCCC" > 
@@ -74,7 +74,7 @@
   <hr /><hr />
   <p>
   <h1>Saison <?php echo $saison-1; echo " - "; echo $saison; ?></h1>
-  <!-- D�nomination de la comp�tition -->
+  <!-- D�nomination de la comp�tition -->
   <p><font color="#FF0000"><b><font face="Arial, Helvetica, sans-serif" size="5">
     <?php
   //$comite= substr ($comite,0,3);
@@ -89,15 +89,15 @@
 	 elseif (substr($champ,3,2) == 13)
 		  echo "Nationale";
 	 elseif (substr($champ,3,2) == 14)
-		  echo "F&eacute;d&eacute;rale 1";
+		  echo "Fédérale 1";
 	 elseif (substr($champ,3,2)== 15)
-		  echo "F&eacute;d&eacute;rale 2";
+		  echo "Fédérale 2";
 	}
   
   elseif ($phpComite == "phpfedNE3" )
 	{
 	 if (substr($champ,3,2) == 16)
-		  echo "F&eacute;d&eacute;rale 3";
+		  echo "Fédérale 3";
 	}
   else
   {
@@ -110,10 +110,10 @@
   
  <br />
   <p><b><font size="4" face="Arial, Helvetica, sans-serif"><font color="#000000">Classement 
-    g&eacute;n&eacute;ral<br>
+    général<br>
     </font> 
  
-    <!-- Classement g�n�ral de la poule -->
+    <!-- Classement g�n�ral de la poule -->
    
     <?php 	
 	classementDetaille($champ, $bdd);
@@ -139,11 +139,11 @@ echo "<br />";echo "<br />";echo "<br />";
  
 
  
-  <h3><font color="#000000" face="Arial, Helvetica, sans-serif"> Journ&eacute;e(s) report&eacute;e(s)</font></h3>
+  <h3><font color="#000000" face="Arial, Helvetica, sans-serif"> Journée(s) reportée(s)</font></h3>
   <?php //journeesReporteesCovid($comite, $champ, $bdd);  ?>
  
   <font color="#000000"><b><font size="4" face="Arial, Helvetica, sans-serif">Calendrier 
-    et r&eacute;sultats de<br>
+    et résultats de<br>
     <?php echo $nom; ?>
     </font></b></font> 
    <?php oppositionsDetaillees($champ, $id_equipe, false, $bdd);?>
@@ -151,12 +151,12 @@ echo "<br />";echo "<br />";echo "<br />";
   <hr><br>
  <h1> Quelques Stats</h1> 
   <!-- font size="3" face="Arial, Helvetica, sans-serif" color="#FF0000">Victoires 
-    cons&eacute;cutives</font>
+    consécutives</font>
 	-->	
     <table width="400" border="0" height="250">
       <tr> 
-        <td class = "stats"  bgcolor="#CCCCCC">R&eacute;sultats &agrave; domicile</td>
-        <td class = "stats"  bgcolor="#CCCCCC">R&eacute;sultats &agrave; l'exterieur </td>
+        <td class = "stats"  bgcolor="#CCCCCC">Résultats &agrave; domicile</td>
+        <td class = "stats"  bgcolor="#CCCCCC">Résultats &agrave; l'exterieur </td>
       </tr>
       <tr bgcolor="#FFFFFF"> 
         <td class = "stats" >Nbre de match : <?php echo $matchDomicile ?></td>
@@ -171,8 +171,8 @@ echo "<br />";echo "<br />";echo "<br />";
   <br>
   <table width="73%" border="0" cellspacing="0" cellpadding="0">
     <tr> 
-      <td class ="moyPP" colspan="2"> Points marqu&eacute;s par match </td>
-      <td class ="moyPC" colspan="2"> Points encaiss&eacute;s par match </td>
+      <td class ="moyPP" colspan="2"> Points marqués par match </td>
+      <td class ="moyPC" colspan="2"> Points encaissés par match </td>
     </tr>
     <tr> 
       <td class ="moyPP" colspan="2"> 
@@ -240,7 +240,7 @@ echo "<br />";echo "<br />";echo "<br />";
         <font size="2"> points par match</font></font></b></td>
     </tr>
     <tr> 
-      <td class="QLiens">Meilleure d&eacute;fense de la poule : </td>
+      <td class="QLiens">Meilleure défense de la poule : </td>
       <td class="QLiens">    <?php echo $nomMeilleureDefense; ?></td>
       <td width="20%"><b><font color="#000000" size="3" face="Arial, Helvetica, sans-serif"> 
         <?php echo round($moyenneMeilleureDefense); ?>
@@ -251,11 +251,11 @@ echo "<br />";echo "<br />";echo "<br />";
     </font></h1>
   <hr>
   <div align="left"><a href="javascript:history.go(-1)"><font color="#000099"><i><b>&lt;--- 
-    Retour r&eacute;sultats du comit&eacute;</b></i></font></a></div>
+    Retour résultats du comité</b></i></font></a></div>
   <hr>
   <br>
   <p class="QLiens">
-    Calendrier et r&eacute;sulats des rencontres de la poule
+    Calendrier et résulats des rencontres de la poule
   </p>
   
  <?php calendrier($champ, false, $bdd);?>
@@ -266,11 +266,11 @@ echo "<br />";echo "<br />";echo "<br />";
     <br> <?php echo $nom; ?></font></b><br>
     </font></p>
 	</p>
-  <font class="QLiens"><a href="/consultation/pageclub00.php?champion=<?php echo $equipe; ?>" target="_blank"><font color="#000000">Compl&eacute;ter 
+  <font class="QLiens"><a href="/consultation/pageclub00.php?champion=<?php echo $equipe; ?>" target="_blank"><font color="#000000">Compléter 
     les infos du club</font></a>
     </p>
     <font class="QLiens"><a href="../../dirigeant/calendrier/pageCalendrier.php?idEquipe=<?php echo $equipe; ?>&comite=<?php echo substr($comite,3,5); ?>" target="_blank"> 
-    <font color="#000000">T&eacute;l&eacute;charger le calendrier du club</font></a><br>
+    <font color="#000000">Télécharger le calendrier du club</font></a><br>
   <hr />
     <h1>  Palmar&egrave;s </h1> 
   <br>

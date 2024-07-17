@@ -6,7 +6,7 @@ if ($id < 170)
 	}
 else
 	{
-	echo "Comit&eacute; " .''.$comiteEntier.''." : ".''.$division; 
+	echo "Comité " .''.$comiteEntier.''." : ".''.$division; 
 	}
 ?>
 </h5>

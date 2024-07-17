@@ -24,7 +24,7 @@ $comiteNom="Alsace Lorraine";?>
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
 <title><?php echo $champReg;?> Grand Est</title>
-<meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+<meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
 <meta name="classification" content="Sport,Rugby">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 <meta name="resource-type" content="document">
@@ -66,7 +66,7 @@ $comiteNom="Alsace Lorraine";?>
           <h1> Compétitions Régionales</h1>
           <h2 class="titre">Ligue du Grand Est </h2>
           <h2 class="commentaire">La ligue Grand Est est née de la fusion des<br>
-            comit&eacute;s territoriaux Lorraine et Alsace.<br></h2>
+            comités territoriaux Lorraine et Alsace.<br></h2>
 <?php 
 	include("liensDivers.php");  
     include("sommaires.php");

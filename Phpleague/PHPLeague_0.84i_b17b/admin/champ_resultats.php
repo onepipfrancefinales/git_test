@@ -86,7 +86,7 @@ if ($action2 == 1)
 		mysql_query($requete);
 	}     
 
-	echo InfoReqSql('InfUpdGrp', 0, 'highlight', 'info', 'Pensez à générer vos <a href="index.php?page=groupes_championnats">pronostics</a>.');
+	echo InfoReqSql('InfUpdGrp', 0, 'highlight', 'info', 'Pensez ï¿½ gï¿½nï¿½rer vos <a href="index.php?page=groupes_championnats">pronostics</a>.');
 	echo InfoReqSql('InfUpd', 1, 'highlight', 'check', ADMIN_RESULT_CREA1);
 
 	include('generer.php');
@@ -205,7 +205,7 @@ if ($NBR1 > 0)
 }
 else
 {
-	echo InfoReqSql('Info', 0, 'highlight', 'alert', 'Aucun matchs renseign&eacute;s pour cette journ&eacute;e. Allez dans la rubrique [ <a href="index.php?page=championnat&amp;action=matchs&amp;champ='.$champ.'&amp;annee='.$annee.'&amp;numero='.$numero.'">Matchs</a> ]');
+	echo InfoReqSql('Info', 0, 'highlight', 'alert', 'Aucun matchs renseignÃ©s pour cette journÃ©e. Allez dans la rubrique [ <a href="index.php?page=championnat&amp;action=matchs&amp;champ='.$champ.'&amp;annee='.$annee.'&amp;numero='.$numero.'">Matchs</a> ]');
 }
 
 ?>

@@ -43,7 +43,7 @@ ORDER by phpab_matchs.date_reelle desc, phpab_clubs.nom desc
 LIMIT $debut, $fin ");
 $i=0;
 //$result=mysql_query($query);
-if (mysqli_num_rows( $result )=="0") {echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journ&eacute;e Inexistante</div></td></tr>";}
+if (mysqli_num_rows( $result )=="0") {echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journée Inexistante</div></td></tr>";}
 while ($row=mysqli_fetch_array($result) and $i<10)
   {
 $clubs_nom = stripslashes($row[0]);

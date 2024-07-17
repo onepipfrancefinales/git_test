@@ -26,7 +26,7 @@
         Organisateur</font></b></div>
     </td>
     <td width="119"> 
-      <div align="center"><font color="#FFFFFF"><b><font size="5">Ann&eacute;e</font></b></font></div>
+      <div align="center"><font color="#FFFFFF"><b><font size="5">Année</font></b></font></div>
     </td>
     <td width="383"> 
       <div align="center"><b><font color="#FFFFFF" size="5">Champion du monde</font></b></div>
@@ -77,7 +77,7 @@
       <div align="center"><b><font size="5">2011</font></b></div>
     </td>
     <td width="383"> 
-      <div align="center"><b><font size="5">Nouvelle Z&eacute;lande</font></b></div>
+      <div align="center"><b><font size="5">Nouvelle Zélande</font></b></div>
     </td>
     <td width="399" valign="top"> 
       <div align="center"><font size="4">France</font></div>
@@ -163,7 +163,7 @@
       <div align="center"><b><font size="5">1987</font></b></div>
     </td>
     <td width="383"> 
-      <div align="center"><b><font size="5">Nouvelle Z&eacute;lande</font></b></div>
+      <div align="center"><b><font size="5">Nouvelle Zélande</font></b></div>
     </td>
     <td width="399" valign="top"> 
       <div align="center"><font size="4">France</font></div>
@@ -210,7 +210,7 @@
     <td width="231">&nbsp;</td>
     <td width="119">&nbsp;</td>
     <td width="383"> 
-      <div align="center"><b><font size="5">Nouvelle Z&eacute;lande</font></b></div>
+      <div align="center"><b><font size="5">Nouvelle Zélande</font></b></div>
     </td>
     <td width="399"> <b><font color="#000000" size="5">2 titres (1987, 2011)</font></b></td>
   </tr>

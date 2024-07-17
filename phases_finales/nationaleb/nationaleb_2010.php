@@ -4,14 +4,14 @@
 if ($annee==2010)
 {
 $clubA8001= ' Bobigny (IDF)';
-$clubA8002= ' Périgueux';
+$clubA8002= ' Pï¿½rigueux';
 $clubA8003= ' Marseille-Vitrolles ';
 $clubA8004= ' Chateaurenard';
 $clubA8005= ' Beziers ';
 $clubA8006= ' Orthez  ';
-$clubA8007= ' Vallée du Girou (MPY)';
+$clubA8007= ' Vallï¿½e du Girou (MPY)';
 $clubA8008= ' Saint Jean de Luz (CBL)';
-$clubA8009= ' Saint-Médard ';
+$clubA8009= ' Saint-Mï¿½dard ';
 $clubA8010= ' Tyrosse (CBL)';
 $clubA8011= ' Valence d Agen (MPY)';
 $clubA8012= ' Limoges ';
@@ -417,5 +417,5 @@ MM_reloadPage(true);
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 881px; top: 673px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <b><font color="#FF0000" size="5" face="Arial, Helvetica, sans-serif">La 
-    Vall&eacute;e de Girou (MPY) </font></b></div>
+    VallÃ©e de Girou (MPY) </font></b></div>
 </div>

@@ -37,12 +37,12 @@ require ("../fonctions_phases_finales.php");
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="25" bgcolor="#FFCC66" colspan="15"> 
-      <p><i><b>R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve </b></i></p>
+      <p><i><b>Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve </b></i></p>
     </td>
   </tr>
   <tr> 
@@ -167,7 +167,7 @@ require ("../fonctions_phases_finales.php");
     <td rowspan="6" width="25"><img src="../../images/accolade.png" width="8" height="127"></td>
     <td colspan="4"> 
       <div align="center"><b><font size="3" face="Arial, Helvetica, sans-serif" color="#FF0000">Cette 
-        ann&eacute;e la comp&eacute;tition se d&eacute;roule &agrave; XV</font></b></div>
+        année la compétition se déroule &agrave; XV</font></b></div>
     </td>
     <td width="51">&nbsp;</td>
     <td width="20">&nbsp;</td>
@@ -625,10 +625,10 @@ require ("../fonctions_phases_finales.php");
     <td width="21" height="11">&nbsp;</td>
     <td rowspan="4" height="31" align="left" bgcolor="#CCCCCC" width="213"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
-        sont d&eacute;finies <br>
+        sont définies <br>
         par la FFR, apr&egrave;s chaque tour en<br>
-        privil&eacute;giant des <br>
-        oppositions g&eacute;ographiques</font></div>
+        privilégiant des <br>
+        oppositions géographiques</font></div>
     </td>
     <td width="51" height="11">&nbsp;</td>
     <td width="243" height="11"> 
@@ -729,7 +729,7 @@ require ("../fonctions_phases_finales.php");
     <td width="51">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        R&eacute;serve 
+        Réserve 
         <?php echo $annee;?>
         </b></font></div>
     </td>

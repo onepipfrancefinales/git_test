@@ -17,7 +17,7 @@
     <td width="33%"> 	
         <ul class="menu-demo2" >
           
-        <li><a href="#"><b> <font color="#FFFFFF">S&eacute;niors I</font></b></a> 
+        <li><a href="#"><b> <font color="#FFFFFF">Séniors I</font></b></a> 
           <ul>
             <font size="2"> 
             <?php					 
@@ -43,10 +43,10 @@
    <td   width="33%" height="28"> 
 	  <ul class="menu-demo2">
           
-        <li><a href="#"><b><font color="#FFFFFF">S&eacute;niors II</font></b></a> 
+        <li><a href="#"><b><font color="#FFFFFF">Séniors II</font></b></a> 
           <ul>
-				<li><a href="171.php?comite=idf&champ=271">R&eacute;s P1</a></li>
-				<li><a href="171.php?comite=idf&champ=272">R&eacute;s P2</a></li>
+				<li><a href="171.php?comite=idf&champ=271">Rés P1</a></li>
+				<li><a href="171.php?comite=idf&champ=272">Rés P2</a></li>
 				<li><a href="171.php?comite=idf&champ=9181">PH P1</a></li>
 				<li><a href="171.php?comite=idf&champ=9182">PH P2</a></li>
 							 
@@ -62,11 +62,11 @@
           <ul>
             <li><a href="171.php?comite=pro&champ=110">Top 14</a></li>
             <li><a href="171.php?comite=pro&champ=120">Pro D2</a></li>
-            <li><a href="171.php?comite=pro&champ=1411">F&eacute;d 
+            <li><a href="171.php?comite=pro&champ=1411">Féd 
               1</a></li>
-		    <li><a href="171.php?comite=pro&champ=151">F&eacute;d 
+		    <li><a href="171.php?comite=pro&champ=151">Féd 
               2</a></li>
-		    <li><a href="171.php?comite=pro&champ=161">F&eacute;d 
+		    <li><a href="171.php?comite=pro&champ=161">Féd 
               3</a></li>
 		    <li><font color="#000000">  - </font></li>
             <li><a href="sommaire.php">Autres<br />
@@ -74,7 +74,7 @@
             <li><font color="#000000">  -</font> </li>
             <li><a href="171.php?comite=fem&champ=280">Top 8</a></li>
             <li><a href="171.php?comite=fem&champ=285">Elite 2</a></li>
-            <li><a href="171.php?comite=fem&champ=291">F&eacute;d </a> </li>
+            <li><a href="171.php?comite=fem&champ=291">Féd </a> </li>
           </ul>
         </li>
       </ul>

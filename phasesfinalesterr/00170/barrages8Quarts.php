@@ -71,7 +71,7 @@ else
   <tr valign="top" align="center"> 
     <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
       </font><font size="5"><b><font color="#FFCC00"> 
-      <? echo "Championnat des Pyr&eacute;n&eacute;es".' '.$annee.' '." : ".'  '.$division;?>
+      <? echo "Championnat des Pyrénées".' '.$annee.' '." : ".'  '.$division;?>
       </font></b></font></b></font></td>
   </tr>
 </table>

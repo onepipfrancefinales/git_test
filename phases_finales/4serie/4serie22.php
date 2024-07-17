@@ -442,7 +442,7 @@ $clubA1632= ' Saint Julien en Genevois (AP) ';
     <tr bgcolor="#FFFFFF"> 
       <td height="55" colspan="9" bgcolor="#FFFFFF"> 
         <div align="center"><font size="5" color="#000000"><b>Nombre de clubs 
-          qualifi&eacute;s par comit&eacute; (2014-2015)</b></font></div>
+          qualifiés par comité (2014-2015)</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -450,7 +450,7 @@ $clubA1632= ' Saint Julien en Genevois (AP) ';
         <div align="center"><b>COMITES</b></div>
       </td>
       <td height="83" width="11%"> 
-        <div align="center"><b>Nombre de clubs qualifi&eacute;s directement en 
+        <div align="center"><b>Nombre de clubs qualifiés directement en 
           16me</b></div>
       </td>
       <td height="83" width="9%"> 
@@ -465,7 +465,7 @@ $clubA1632= ' Saint Julien en Genevois (AP) ';
       </td>
       <td height="83" width="12%"> 
         <div align="center"> 
-          <p><b>Nombre de clubs qualifi&eacute;s directement en 16me</b></p>
+          <p><b>Nombre de clubs qualifiés directement en 16me</b></p>
         </div>
       </td>
       <td height="83" width="9%"> 
@@ -488,7 +488,7 @@ $clubA1632= ' Saint Julien en Genevois (AP) ';
       <td height="24" width="10%"> 
         <div align="center"><b><font size="4"></font></b></div>
       </td>
-      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comt&eacute;</td>
+      <td width="18%" height="24" bgcolor="#FFFFFF">Franche Comté</td>
       <td width="12%" height="24"> 
         <div align="center">avec Bourgogne</div>
       </td>
@@ -606,7 +606,7 @@ $clubA1632= ' Saint Julien en Genevois (AP) ';
       <td width="10%"> 
         <div align="center"><b><font size="4"></font></b></div>
       </td>
-      <td width="18%" bgcolor="#FFFFFF">Midi Pyr&eacute;n&eacute;es</td>
+      <td width="18%" bgcolor="#FFFFFF">Midi Pyrénées</td>
       <td width="12%" bgcolor="#FFFFFF"> 
         <div align="center">3</div>
       </td>
@@ -787,10 +787,10 @@ $clubA1632= ' Saint Julien en Genevois (AP) ';
   </table>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
-  <div align="center"><i><b>me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-    4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-    4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
-    4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me 4me 
-    S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 4me S&eacute;rie 
+  <div align="center"><i><b>me Série 4me Série 4me Série 
+    4me Série 4me Série 4me Série 4me Série 4me Série 
+    4me Série 4me Série 4me Série 4me Série 4me Série 
+    4me Série 4me Série 4me Série 4me Série 4me 4me 
+    Série 4me Série 4me Série 4me Série 4me Série 
     4me</b></i></div>
 </div>

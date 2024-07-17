@@ -29,7 +29,7 @@ huitieme2019 ($comite, $division, $annee, $bdd) ;
 						  
 				  
 <header>		  
- <h1> Division ) Ann&eacute;e  <?php echo $annee; ?></h1>
+ <h1> Division ) Année  <?php echo $annee; ?></h1>
 </header>          
      <p class="texte">
 	  8me de finale

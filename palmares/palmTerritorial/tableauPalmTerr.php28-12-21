@@ -76,7 +76,7 @@ MM_reloadPage(true);
     </td>
     <td colspan="3" height="128" valign="middle"> 
       <p align="center"><font size="7" color="#FFFFFF">Champions territoriaux du</font></p>
-      <p align="center"><font size="7"><b><strong> <?php echo "Comit&eacute;".' '.$nomComite; ?></b></strong> </font> 
+      <p align="center"><font size="7"><b><strong> <?php echo "Comité".' '.$nomComite; ?></b></strong> </font> 
     </td>
     <td colspan="2" height="96" valign="top" width="138"> 
       <div align="center"><font size="5"><b> <strong> </strong> 
@@ -109,13 +109,13 @@ if (isset($comite)) $comite = $comite; else $comite ="comite inconnu";
   <tr bgcolor="#FFFFFF"> 
     <td height="20" colspan="7"><font color="#000000" face="Arial, Helvetica, sans-serif" size="4"><b>Depuis 
       la saison 2018-2019, Le <strong> 
-      <?php echo "Comit&eacute;".' '.$nomComite; ?>
+      <?php echo "Comité".' '.$nomComite; ?>
       </strong> 
       <?php 
 	  if ($id==15 or $id==24 or $id==16 or $id==17 or $id==11 or $id==23 or $id==25 or $id==30 or $id==31 or $id==21 or $id==34)
 	  echo "est devenu la ligue" ;
 	  else
-	  echo "a int&eacute;gr&eacute; la ligue";
+	  echo "a intégré la ligue";
 	  ?>
       <strong> 
       <?php 
@@ -131,10 +131,10 @@ if (isset($comite)) $comite = $comite; else $comite ="comite inconnu";
     <th height="20" width="200">honneur</th>
     <th height="20" width="200">promotion <br>
       honneur</th>
-    <th height="20" width="200">1re s&eacute;rie</th>
-    <th height="20" width="200">2me s&eacute;rie</th>
-    <th height="20" width="200">3me s&eacute;rie</th>
-    <th height="20" width="200">4me s&eacute;rie</th>
+    <th height="20" width="200">1re série</th>
+    <th height="20" width="200">2me série</th>
+    <th height="20" width="200">3me série</th>
+    <th height="20" width="200">4me série</th>
   </tr>
   <tr> 
     <td width="34"> 
@@ -208,7 +208,7 @@ if (isset($comite)) $comite = $comite; else $comite ="comite inconnu";
   </tr>
 </table>
 <?php //require 'tableauPalmTerr2.php';?>
-<p align="center"><b><font size="6" color="#FFFFFF">Equipes r&eacute;serves</font></b></p>
+<p align="center"><b><font size="6" color="#FFFFFF">Equipes réserves</font></b></p>
 <p align="center">&nbsp;</p>
 <table width="1072" border="0" align="center" height="73">
   <tr> 
@@ -216,8 +216,8 @@ if (isset($comite)) $comite = $comite; else $comite ="comite inconnu";
     <th height="20" width="262">honneur</th>
     <th height="20" width="336">promotion <br>
       honneur</th>
-    <th height="20" width="270">1re s&eacute;rie</th>
-    <th height="20" width="227">2me s&eacute;rie</th>
+    <th height="20" width="270">1re série</th>
+    <th height="20" width="227">2me série</th>
   </tr>
   <tr> 
     <td width="83" height="20"> 

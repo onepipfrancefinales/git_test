@@ -71,10 +71,10 @@ MM_reloadPage(true);
 <table width="1000" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="13" bgcolor="#FFCC66" colspan="12">
-      <div align="center"><i></i><i><b>R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-        R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve</b></i></div>
+      <div align="center"><i></i><i><b>Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve Réserve 
+        Réserve Réserve Réserve Réserve</b></i></div>
     </td>
   </tr>
   <tr> 
@@ -631,7 +631,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div align="center"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b><font size="6"> 
         </font></b></font></div>
       <div align="center"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b><font size="6"> 
-        Vall&eacute;e de Girou 
+        Vallée de Girou 
         <?php 
 if ($A1001+$A1002>0)
 {	

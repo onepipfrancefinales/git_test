@@ -22,9 +22,9 @@ $sigleLigue="(ARA)";
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title>Championnats R&eacute;gionaux de la ligue Auvergne Rh&ocirc;ne ALpes</title>
+  <title>Championnats Régionaux de la ligue Auvergne Rh&ocirc;ne ALpes</title>
   <meta name="description"
- content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+ content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
@@ -62,10 +62,10 @@ $sigleLigue="(ARA)";
       <td bgcolor="#006699" valign="top" width="225" height="1609"><p><?php include("../01gauche.php");?> </p></td>
       <td bgcolor="#ffffff" width="650" height="1609" valign="top"> 
         <div align="center"> <br>
-          <h1>Comp&eacute;titions R&eacute;gionales</h1>
+          <h1>Compétitions Régionales</h1>
           <h2 class ="titre">Ligue Auvergne Rh&ocirc;ne Alpes</h2>
-          <h2 class ="commentaire">La ligue Auvergne Rh&ocirc;ne Alpes est n&eacute;e de la fusion des comit&eacute;s territoriaux<br>
-            de l'Auvergne, du Lyonnais, des Alpes et du comit&eacute;<br>
+          <h2 class ="commentaire">La ligue Auvergne Rh&ocirc;ne Alpes est née de la fusion des comités territoriaux<br>
+            de l'Auvergne, du Lyonnais, des Alpes et du comité<br>
             Dr&ocirc;me Ard&egrave;che en janvier 2018.</font></h2>
  <?php 
 	include("liensDivers.php"); 
@@ -74,7 +74,7 @@ $sigleLigue="(ARA)";
     echo "<hr />"." <hr />";
     //require("comPerso.php"); 
          
-    echo "<h5><a name=\"P\"></a>R&eacute;gionale 1 - Poule 1<br>
+    echo "<h5><a name=\"P\"></a>Régionale 1 - Poule 1<br>
 	 <font size=\"2\" face=\"Arial, Helvetica, sans-serif\">(Ex promotion honneur) 
             </font><br><br></h5>";
 	$champ = 100181; $champ2 = 109181;
@@ -84,7 +84,7 @@ $sigleLigue="(ARA)";
 	
 	require '../pub/pub_displayH_550.php';   
 	 
-    echo "<h5>R&eacute;gionale 1 - Poule 2<br>
+    echo "<h5>Régionale 1 - Poule 2<br>
 	 <font size=\"2\" face=\"Arial, Helvetica, sans-serif\">(Ex promotion honneur) 
             </font><br><br></h5>";
     $champ = 100182; $champ2 = 109182;
@@ -92,7 +92,7 @@ $sigleLigue="(ARA)";
 	journeesReportees($comite, $champ, $bdd);   
     perequation($comite, $champ, $bdd);
 	
-	echo "<h5>R&eacute;gionale 1 - Poule 3<br>
+	echo "<h5>Régionale 1 - Poule 3<br>
 	 <font size=\"2\" face=\"Arial, Helvetica, sans-serif\">(Ex promotion honneur) 
             </font><br><br></h5>";
 	$champ = 100183; $champ2 = 109183;
@@ -102,7 +102,7 @@ $sigleLigue="(ARA)";
 	
 	require '../pub/pub_displayH_550.php';   
          
-    echo "<h5>R&eacute;gionale 1 - Poule 4<br>
+    echo "<h5>Régionale 1 - Poule 4<br>
  <font size=\"2\" face=\"Arial, Helvetica, sans-serif\">(Ex promotion honneur) 
             </font><br><br></h5>";	
 	$champ = 100184; $champ2 = 109184;

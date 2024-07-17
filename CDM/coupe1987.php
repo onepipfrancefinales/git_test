@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr" class="client-nojs">
 <head>
-<meta charset="UTF-8" /><title>Coupe du monde de rugby à XV 1987 </title>
+<meta charset="UTF-8" /><title>Coupe du monde de rugby ï¿½ XV 1987 </title>
 <meta name="generator" content="MediaWiki 1.22wmf8" />
 
 
@@ -64,7 +64,7 @@
       <tr> 
         <td width="729"> 
           <div align="center"><span dir="auto"><font size="7"><b><font size="5">(Nouvelle 
-            Z&eacute;lande)</font></b></font></span></div>
+            ZÃ©lande)</font></b></font></span></div>
         </td>
       </tr>
     </table>
@@ -131,7 +131,7 @@
               <td align="left" width="20"> 
                 <div align="center">3</div>
               </td>
-              <td align="left" width="137"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13">&#160;États-Unis</td>
+              <td align="left" width="137"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13">&#160;ï¿½tats-Unis</td>
               <td width="43"><b>5</b></td>
               <td width="44">3</td>
               <td width="28">1</td>
@@ -203,7 +203,7 @@
                 <div align="center">21</div>
               </td>
               <td width="111"> <img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"> 
-                <b>États-Unis</b></td>
+                <b>ï¿½tats-Unis</b></td>
               <td width="131">Ballymore Stadium</td>
               <td width="72"> 
                 <div align="center">Brisbane</div>
@@ -257,7 +257,7 @@
                 <div align="center">12</div>
               </td>
               <td width="111"><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"> 
-                États-Unis</td>
+                ï¿½tats-Unis</td>
               <td width="131">Ballymore Stadium</td>
               <td width="72"> 
                 <div align="center">Brisbane</div>
@@ -284,7 +284,7 @@
                 <div align="center">6</div>
               </td>
               <td width="111"><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"> 
-                États-Unis</td>
+                ï¿½tats-Unis</td>
               <td width="131">Concord Oval</td>
               <td width="72"> 
                 <div align="center">Sydney</div>
@@ -328,9 +328,9 @@
     <table width="1156" border="1" bordercolor="#000000" cellspacing="0">
       <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -581,9 +581,9 @@
     <table width="1151" border="1" bordercolor="#000000">
       <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -638,7 +638,7 @@
             <tr bgcolor="#CCFFCC" align="center"> 
               <td align="left" width="8">1</td>
               <td align="left" width="161"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle- 
-                Zélande</td>
+                Zï¿½lande</td>
               <td width="26"><b>9</b></td>
               <td width="25">3</td>
               <td width="16">3</td>
@@ -690,7 +690,7 @@
                 <div align="center">22 mai</div>
               </td>
               <td height="35" width="23%"> 
-                <div align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zélande</b></div>
+                <div align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zï¿½lande</b></div>
               </td>
               <td height="35" width="4%"> 
                 <p align="center">70</p>
@@ -738,7 +738,7 @@
                 <div align="center">27 mai</div>
               </td>
               <td width="23%"> 
-                <div align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zélande</b></div>
+                <div align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zï¿½lande</b></div>
               </td>
               <td width="4%"> 
                 <div align="center">74</div>
@@ -809,7 +809,7 @@
                 <div align="center">1er juin</div>
               </td>
               <td width="23%"> 
-                <div align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zélande</b></div>
+                <div align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zï¿½lande</b></div>
               </td>
               <td width="4%"> 
                 <div align="center">46</div>
@@ -835,9 +835,9 @@
     <table width="1151" border="1" bordercolor="#000000" cellspacing="0">
       <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -903,7 +903,7 @@
             </tr>
             <tr bgcolor="#CCFFCC" align="center"> 
               <td align="left" width="9">2</td>
-              <td align="left" width="106"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13">&#160;Écosse</td>
+              <td align="left" width="106"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13">&#160;ï¿½cosse</td>
               <td width="34"><b>8</b></td>
               <td width="15">3</td>
               <td width="17">2</td>
@@ -1061,9 +1061,9 @@
     <table width="1151" border="1" bordercolor="#000000" cellspacing="0">
       <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -1187,7 +1187,7 @@
         </tr>
         <tr> 
           <td height="8" width="5"></td>
-          <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="257"><font color="#000000" size="4">&#160;<b>&#160;Nouvelle-Zélande</b></font></td>
+          <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="257"><font color="#000000" size="4">&#160;<b>&#160;Nouvelle-Zï¿½lande</b></font></td>
           <td rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="90"><font color="#000000" size="4">&#160;<b>29</b></font></td>
         </tr>
         <tr> 
@@ -1203,7 +1203,7 @@
         </tr>
         <tr> 
           <td height="8" width="5"></td>
-          <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="287"><font size="4">&#160;<b>&#160;Nouvelle-Zélande</b></font></td>
+          <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="287"><font size="4">&#160;<b>&#160;Nouvelle-Zï¿½lande</b></font></td>
           <td rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="69"><font size="4">&#160;<b>30</b></font></td>
         </tr>
         <tr> 
@@ -1214,17 +1214,17 @@
         </tr>
         <tr> 
           <td height="8" width="5"></td>
-          <td style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="287"><font size="4">&#160;&#160;Écosse</font></td>
+          <td style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="287"><font size="4">&#160;&#160;ï¿½cosse</font></td>
           <td align="center" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="69"><font size="4">&#160;<b>3</b></font></td>
           <td rowspan="5" style="border-width:2px 3px 1px 0;border-style:solid;border-color:#000" width="78">&#160;</td>
-          <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="245"><font size="4">&#160;<b>&#160;Nouvelle-Zélande</b></font></td>
+          <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="245"><font size="4">&#160;<b>&#160;Nouvelle-Zï¿½lande</b></font></td>
           <td rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="79"><font size="4">&#160;<b>49</b></font></td>
         </tr>
         <tr> 
           <td height="8" width="5"></td>
           <td colspan="2" rowspan="2" valign="bottom" style="line-height:15px;">&#160;<small><i>8 
             juin - Brisbane (Ballymore Stadium)</i></small></td>
-          <td colspan="2" rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#EBF5FF"><b><font color="#000000" size="4">Troisième 
+          <td colspan="2" rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#EBF5FF"><b><font color="#000000" size="4">Troisiï¿½me 
             place</font></b></td>
         </tr>
         <tr> 

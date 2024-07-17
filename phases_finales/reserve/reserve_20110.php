@@ -696,17 +696,17 @@ else
 <div id="Layer4" style="position:absolute; width:2px; height:127px; z-index:6; left: 1039px; top: 595px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1080px; top: 636px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France<br>
-    R&eacute;serve 
+    Réserve 
     <?php echo $annee;?>
     </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 176px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
-  <div align="center"><i><b>R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve 
-    R&eacute;serve R&eacute;serve R&eacute;serve R&eacute;serve </b></i></div>
+  <div align="center"><i><b>Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve Réserve 
+    Réserve Réserve Réserve Réserve </b></i></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1081px; top: 707px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000">
   <div align="center"> </div>

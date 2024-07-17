@@ -194,7 +194,7 @@ $date=new DateTime($dateBrute);
 echo "Dimanche".' '.$date->format('d M Y'); 
 $numeroJournee = substr("$journee", -2);
 echo "<br>";
-echo $numeroJournee.''."me journ&eacute;e"; ?>
+echo $numeroJournee.''."me journée"; ?>
 </p>
 
 <h3> 
@@ -248,23 +248,23 @@ echo $numeroJournee.''."me journ&eacute;e"; ?>
 		if (isset($totalBonusEquipe1)) $totalBonusEquipe1 = $totalBonusEquipe1; else $totalBonusEquipe1=0;
 		if ($totalBonusEquipe1 == 0)
 			{
-			//echo "Non renseign&eacute;";	
+			//echo "Non renseigné";	
 			echo "Pas de bonus";
 			}
 		elseif ($totalBonusEquipe1 == 2)
 			{
-			//echo "Non renseign&eacute;";	
-			echo "Bonus Offensif et D&eacute;fensif" ; 
+			//echo "Non renseigné";	
+			echo "Bonus Offensif et Défensif" ; 
 			
 			}
 		elseif ($totalBonusEquipe1 == 1 AND ($score2-$score1)<=7 AND ($score2-$score1)>0)
 			{
-			//echo "Non renseign&eacute;";	
-			echo "Bonus D&eacute;fensif";
+			//echo "Non renseigné";	
+			echo "Bonus Défensif";
 			}
 		else
 			{
-			//echo "Non renseign&eacute;";	
+			//echo "Non renseigné";	
 		 	echo "Bonus Offensif" ; 
 			}
 	
@@ -286,22 +286,22 @@ echo $numeroJournee.''."me journ&eacute;e"; ?>
 	  if (isset($totalBonusEquipe2)) $totalBonusEquipe2=$totalBonusEquipe2; else $totalBonusEquipe2=0;
 		if ($totalBonusEquipe2 == 0)
 			{
-		//	echo "Non renseign&eacute;";
+		//	echo "Non renseigné";
 			echo "Pas de bonus";
 			}
 		elseif ($totalBonusEquipe2 == 2)
 			{
-		//	echo "Non renseign&eacute;";
-			echo "Bonus Offensif et D&eacute;fensif" ;
+		//	echo "Non renseigné";
+			echo "Bonus Offensif et Défensif" ;
 			}
 		elseif ($totalBonusEquipe2 == 1 AND ($score1-$score2)<=7 AND ($score1-$score2)>0)
 			{
-		//	echo "Non renseign&eacute;";
-			echo "Bonus D&eacute;fensif";
+		//	echo "Non renseigné";
+			echo "Bonus Défensif";
 			}
 		else
 			{
-		//	echo "Non renseign&eacute;";
+		//	echo "Non renseigné";
 		 	echo "Bonus Offensif" ; 
 			}
 

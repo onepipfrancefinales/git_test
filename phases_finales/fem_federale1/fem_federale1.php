@@ -102,13 +102,13 @@ MM_reloadPage(true);
   </div>
 </div>
 <div id="Layer2" style="position:absolute; width:1571px; height:20px; z-index:4; left: 0px; top: 173px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>F&eacute;minines F&eacute;d&eacute;rale 1</b></i> 
-    - <b><i>F&eacute;minines F&eacute;d&eacute;rale 1</i> <i>F&eacute;d&eacute;rale 
-    1</i> - <i>F&eacute;minines </i> <i>F&eacute;d&eacute;rale 1</i> <i>F&eacute;d&eacute;rale 
-    1</i> - <i>F&eacute;minines </i> <i>F&eacute;d&eacute;rale 1</i> - <i>F&eacute;minines 
-    </i> <i>F&eacute;d&eacute;rale 1</i> - <i>F&eacute;minines </i> <i>F&eacute;d&eacute;rale 
-    1</i> - <i>F&eacute;minines </i> <i>F&eacute;d&eacute;rale 1</i> - <i>F&eacute;minines 
-    </i> <i>F&eacute;d&eacute;rale 1</i> - <i>F&eacute;minines </i> <i>F&eacute;d&eacute;rale 
+  <div align="center"><i><b>Féminines Fédérale 1</b></i> 
+    - <b><i>Féminines Fédérale 1</i> <i>Fédérale 
+    1</i> - <i>Féminines </i> <i>Fédérale 1</i> <i>Fédérale 
+    1</i> - <i>Féminines </i> <i>Fédérale 1</i> - <i>Féminines 
+    </i> <i>Fédérale 1</i> - <i>Féminines </i> <i>Fédérale 
+    1</i> - <i>Féminines </i> <i>Fédérale 1</i> - <i>Féminines 
+    </i> <i>Fédérale 1</i> - <i>Féminines </i> <i>Fédérale 
     1</i> </b></div>
 </div>
 <div id="Layer4" style="position:absolute; width:2px; height:80px; z-index:6; left: 355px; top: 508px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
@@ -116,5 +116,5 @@ MM_reloadPage(true);
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 733px; top: 479px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France <br>
-    F&eacute;minines F&eacute;d&eacute;rale 1</b></font></div>
+    Féminines Fédérale 1</b></font></div>
 </div>

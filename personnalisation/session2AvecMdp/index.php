@@ -14,7 +14,7 @@
     <td class="h22"> France Finales Rugby </td>
   </tr>
   <tr> 
-    <td class="h12" height="31"> Mise &agrave; jour des r&eacute;sultats</td>
+    <td class="h12" height="31"> Mise &agrave; jour des résultats</td>
   </tr>
 </table>
 <p> 

@@ -659,7 +659,7 @@
     <td width="23">&nbsp;</td>
     <td rowspan="3" colspan="2"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        B&eacute;lascain 
+        Bélascain 
         <?php echo $annee;?>
         </b></font></div>
     </td>

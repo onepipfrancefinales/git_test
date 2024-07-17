@@ -29,33 +29,33 @@
   <tr > 
     <td> 
 		<a href="pageAffichage.php?page=HPHS1&comite=be&annee=2018&division=170"> 
-      		Comit&eacute; du B&eacute;arn 
+      		Comité du Béarn 
 		</a> 
 	</td>
     <td> 
 	     <a href="pageAffichage.php?page=HPHS1&comite=cbl&annee=2018&division=170">
-	         Comit&eacute; C&ocirc;te Basque Landes 
+	         Comité C&ocirc;te Basque Landes 
 	     </a>
     </td>
     <td> 
 	     <a href="pageAffichage.php?page=HPHS1&comite=ca&annee=2018&division=170">
-	         Comit&eacute; C&ocirc;tes d'Argent
+	         Comité C&ocirc;tes d'Argent
 	    </a>
     </td>
     <td> 
 	     <a href="pageAffichage.php?page=HPHS1&comite=lm&annee=2018&division=170">
-	           Comit&eacute; du Limousin
+	           Comité du Limousin
 		 </a>
     </td>
     <td> 
 	     <a href="pageAffichage.php?page=HPHS1&comite=pch&annee=2018&division=170">
-		       Comit&eacute; Poitou Charente
+		       Comité Poitou Charente
 		</a> 
 	
     </td>
     <td > 
       <a href="pageAffichage.php?page=HPHS1&comite=pa&annee=2018&division=170">
-	  		Comit&eacute; P&eacute;rigord Agenais
+	  		Comité Périgord Agenais
 	 </a>
     </td>
   </tr>

@@ -20,7 +20,7 @@ $anneemoins = $annee -1;
   <tr > 
     <td class="ligneComiteA" colspan="3" > 
       <?php
-//	Traitement des comités (ab - ld - mpy - r) ==> Ligue Occitanie
+//	Traitement des comitï¿½s (ab - ld - mpy - r) ==> Ligue Occitanie
 
 	if (($comite == 'ab' or $comite == 'ld' or $comite == 'mpy' or $comite == 'r' )and ($annee < 2109 ))
 		{
@@ -34,7 +34,7 @@ $anneemoins = $annee -1;
 			
 
 
-//	Traitement des comités (be - ca - cbl - lm - pa - pch ) ==> Ligue Auvergne Rhone Alpes		 
+//	Traitement des comitï¿½s (be - ca - cbl - lm - pa - pch ) ==> Ligue Auvergne Rhone Alpes		 
 	if ($comite == 'be' or $comite == 'ca' or $comite == 'cbl' or $comite == 'lm' or $comite == 'pa' or $comite == 'pch' )
 		{
 		include("menuNouvelleAquitaine.php");
@@ -46,9 +46,9 @@ $anneemoins = $annee -1;
   <tr > 
     <td class="ligneComite" colspan="3" > 
       <?php 	if ($annee > 2018)
-				$texte = "r&eacute;gionales de la ligue";
+				$texte = "rÃ©gionales de la ligue";
 			else
-				$texte = "territoriales du comit&eacute;";
+				$texte = "territoriales du comitÃ©";
 		 echo "Finales $texte   $annee";		
      //  echo "Finales $texte  $comiteNom $annee";
 	  ?>

@@ -220,9 +220,9 @@ division($champ, $bdd);
 							elseif ($champ == 990130) echo "Nationale";
 							elseif ($champ == 990135) echo "Nationale 2 - Poule 1";
 							elseif ($champ == 990136) echo "Nationale 2 - Poule 2";
-							elseif ($champ == 816281 or $champ == 816282) echo "Elite 1  - Poule " . substr($champ, -1);
-							elseif ($champ == 816285) echo "Elite 2";
-							//elseif  ($champ >= 816291 and $champ < 816295) echo "F&eacute;d&eacute;rale 1 - Poule ".substr($champ,-1);
+							elseif ($champ == 880281) echo "Elite 1";
+							elseif ($champ == 880285) echo "Elite 2";
+							elseif ($champ >= 880291 and $champ < 880295) echo "Fédérale 1 - Poule ".substr($champ,-1);
 							elseif ($champ >= 992161 and $champ < 992169) echo "Poule " . intval($pouleGS);
 							elseif ($champ >= 992261 and $champ < 992269) echo "Poule " . intval($pouleGS);
 							else  echo "Poule " . intval($poule); ?>

@@ -1077,10 +1077,10 @@ $A4008='20 ';
     <td width="201" height="20">&nbsp;</td>
     <td colspan="3" height="75" rowspan="4" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
-        sont d&eacute;finies <br>
+        sont définies <br>
         par la FFR, apr&egrave;s chaque tour <br>
-        en privil&eacute;giant des <br>
-        oppositions g&eacute;ographiques</font></div>
+        en privilégiant des <br>
+        oppositions géographiques</font></div>
     </td>
     <td width="23" height="20">&nbsp;</td>
     <td width="198" height="20"> 

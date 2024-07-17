@@ -41,13 +41,13 @@ require ("../fonctions_phases_finalesAR.php");
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="13" bgcolor="#FFCC66" colspan="18"> 
-      <div align="center"><i><b>F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 
-        2 F&eacute;d&eacute;rale 2 F&eacute;d&eacute;rale 2 </b></i></div>
+      <div align="center"><i><b>Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 Fédérale 
+        2 Fédérale 2 Fédérale 2 </b></i></div>
     </td>
   </tr>
   <tr> 
@@ -1223,7 +1223,7 @@ require ("../fonctions_phases_finalesAR.php");
     <td width="488">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        F&eacute;d&eacute;rale 2 
+        Fédérale 2 
         <?php echo $annee;?>
         </b></font></div>
     </td>
@@ -1634,8 +1634,8 @@ require ("../fonctions_phases_finalesAR.php");
     <td width="229">&nbsp;</td>
     <td width="35">&nbsp;</td>
     <td colspan="3" align="left" rowspan="4">Rencontre a rejouer suite &agrave; 
-      la r&eacute;clamation de Saint Jean d'Angely, qui leur reprochaient d'avoir 
-      simul&eacute; une m&ecirc;l&eacute;e alors que leurs premi&egrave;res lignes 
+      la réclamation de Saint Jean d'Angely, qui leur reprochaient d'avoir 
+      simulé une m&ecirc;lée alors que leurs premi&egrave;res lignes 
       valides se trouvaient sur le banc </td>
     <td width="10">&nbsp;</td>
     <td width="76">&nbsp;</td>

@@ -433,10 +433,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td width="31" height="11">&nbsp;</td>
     <td colspan="2" height="11" rowspan="4" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
-        sont d&eacute;finies <br>
+        sont définies <br>
         par la FFR, apr&egrave;s chaque tour en<br>
-        privil&eacute;giant des <br>
-        oppositions g&eacute;ographiques</font></div>
+        privilégiant des <br>
+        oppositions géographiques</font></div>
     </td>
     <td width="23" height="11">&nbsp;</td>
     <td width="150" height="11"> 

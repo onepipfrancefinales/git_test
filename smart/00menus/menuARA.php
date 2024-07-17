@@ -38,7 +38,7 @@
     </td>
     <td   width="15%" height="28" valign="top"> 
       <ul class="menu-demo2">
-        <li><font size="2"><a href="#"><b> <font color="#FFFFFF">1-2 s&eacute;rie</font></b></a> 
+        <li><font size="2"><a href="#"><b> <font color="#FFFFFF">1-2 série</font></b></a> 
           </font> 
           <ul>
             <li><a href="171.php?champ=191&comite=au">P1</a></li>
@@ -53,7 +53,7 @@
     </td>
     <td   width="15%" height="28" valign="top"> 
       <ul class="menu-demo2">
-        <li><font size="2"><a href="#"><b> <font color="#FFFFFF">3-4 s&eacute;rie</font> 
+        <li><font size="2"><a href="#"><b> <font color="#FFFFFF">3-4 série</font> 
           </b></a> </font> 
           <ul>
             <li><a href="171.php?champ=211&comite=au">P1</a></li>
@@ -71,14 +71,14 @@
           compets</font></b></a> </font> 
           <ul>
             <li><a href="171.php?champ=110&comite=pro">Pro</a></li>
-            <li><a href="171.php?champ=141&comite=f1"> F&eacute;d1</a></li>
-            <li><a href="171.php?champ=151&comite=fed2"> F&eacute;d2</a></li>
-            <li><a href="171.php?champ=161&comite=fed3GS"> F&eacute;d3</a></li>
+            <li><a href="171.php?champ=141&comite=f1"> Féd1</a></li>
+            <li><a href="171.php?champ=151&comite=fed2"> Féd2</a></li>
+            <li><a href="171.php?champ=161&comite=fed3GS"> Féd3</a></li>
             <li> ---</li>
             <li><a href="sommaire.php">Autres<br>
               ligues</a></li>
             <li>---</li>
-            <li><a href="171.php?champ=271&comite=ca"> F&eacute;m</a></li>
+            <li><a href="171.php?champ=271&comite=ca"> Fém</a></li>
           </ul>
         </li>
       </ul>

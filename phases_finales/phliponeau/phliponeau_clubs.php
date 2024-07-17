@@ -833,7 +833,7 @@
     <td width="23"></td>
     <td colspan="3" rowspan="3"> 
       <div id="titre">champion de France <br>
-        2me S&eacute;rie
+        2me Série
         <?php echo $annee;?>
        </div>
     </td>

@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de donn�es en PHP :: partie2</title>
+<title>modification de donn�es en PHP :: partie2</title>
 
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
@@ -31,10 +31,10 @@ mysql_select_db("onepip-france-db2");
       <td width="177">&nbsp;</td>
       <td width="78">Honneur</td>
       <td width="86">Promotion</td>
-      <td width="62">1re S&eacute;rie</td>
-      <td width="62">2me S&eacute;rie</td>
-      <td width="62">3me S&eacute;rie</td>
-      <td width="68">4me S&eacute;rie</td>
+      <td width="62">1re Série</td>
+      <td width="62">2me Série</td>
+      <td width="62">3me Série</td>
+      <td width="68">4me Série</td>
       <td width="80">&nbsp;</td>
     </tr>
     <tr align="center"> 
@@ -111,10 +111,10 @@ mysql_select_db("onepip-france-db2");
     <td width="177">&nbsp;</td>
     <td width="78">Honneur</td>
     <td width="86">Promotion</td>
-    <td width="62">1re S&eacute;rie</td>
-    <td width="62">2me S&eacute;rie</td>
-    <td width="62">3me S&eacute;rie</td>
-    <td width="68">4me S&eacute;rie</td>
+    <td width="62">1re Série</td>
+    <td width="62">2me Série</td>
+    <td width="62">3me Série</td>
+    <td width="68">4me Série</td>
     <td width="80">&nbsp;</td>
   </tr>
   <tr align="center"> 
@@ -189,7 +189,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      Comit&eacute; Armagnac Bigorre</font></td>
+      Comité Armagnac Bigorre</font></td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeAB2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -216,7 +216,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Auvergne</td>
+      </font>Comité Auvergne</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeAU2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -243,7 +243,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comite du B&eacute;arn</td>
+      </font>Comite du Béarn</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeBE2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -270,7 +270,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Bourgogne</td>
+      </font>Comité Bourgogne</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeBG2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -297,7 +297,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Bretagne</td>
+      </font>Comité Bretagne</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeBR2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -324,7 +324,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Centre</td>
+      </font>Comité Centre</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeCE2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -378,7 +378,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Cote d'argent</td>
+      </font>Comité Cote d'argent</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeCA2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -513,7 +513,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Limousin</td>
+      </font>Comité Limousin</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeLM2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -540,7 +540,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Lyonnais</td>
+      </font>Comité Lyonnais</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeLY2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -567,7 +567,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Midi Pyr&eacute;n&eacute;es</td>
+      </font>Comité Midi Pyrénées</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeMPY2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -594,7 +594,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Normandie</td>
+      </font>Comité Normandie</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeN2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -621,7 +621,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Pays de Loire</td>
+      </font>Comité Pays de Loire</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneePL2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -648,7 +648,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Perigord Agenais</td>
+      </font>Comité Perigord Agenais</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneePA2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -675,7 +675,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Poitou Charente</td>
+      </font>Comité Poitou Charente</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneePCH2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -702,7 +702,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Provence</td>
+      </font>Comité Provence</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneePR2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -729,7 +729,7 @@ mysql_select_db("onepip-france-db2");
 		 }
 
 ?>
-      </font>Comit&eacute; Pays Catalan</td>
+      </font>Comité Pays Catalan</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneePC2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -761,7 +761,7 @@ mysql_select_db("onepip-france-db3");
 
 
 ?>
-      </font>Comp&eacute;titons Pro</td>
+      </font>Compétitons Pro</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneePRO2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -788,7 +788,7 @@ mysql_select_db("onepip-france-db3");
 		 }
 
 ?>
-      </font>Comp&eacute;titions F&eacute;d&eacute;rale 1</td>
+      </font>Compétitions Fédérale 1</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeFED12" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -815,7 +815,7 @@ mysql_select_db("onepip-france-db3");
 		 }
 
 ?>
-      </font>Comp&eacute;titions F&eacute;d&eacute;rale 2</td>
+      </font>Compétitions Fédérale 2</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeFED22" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -842,7 +842,7 @@ mysql_select_db("onepip-france-db3");
 		 }
 
 ?>
-      </font>Comp&eacute;titions F&eacute;d&eacute;rale 3/NE</td>
+      </font>Compétitions Fédérale 3/NE</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeFED3NE2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -869,7 +869,7 @@ mysql_select_db("onepip-france-db3");
 		 }
 
 ?>
-      </font>Comp&eacute;titions F&eacute;d&eacute;rale 3/GS</td>
+      </font>Compétitions Fédérale 3/GS</td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneeFEM2" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>
@@ -896,7 +896,7 @@ mysql_select_db("onepip-france-db3");
 		 }
 
 mysql_close();?>
-      Comp&eacute;titions F&eacute;minines </font></td>
+      Compétitions Féminines </font></td>
     <td width="78"><font face="Arial, Helvetica, sans-serif"> 
       <input type="text" name="anneePC72" value="<?php echo($result->annee) ;?>" size="3">
       </font></td>

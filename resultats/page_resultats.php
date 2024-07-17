@@ -143,7 +143,7 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
           <a href="page_fed1.php">4 poules de 12 (<?php echo $FEDd1 . " clubs"; ?>)</a>
         </p>
         <br>
-        <p class="terr3 marginAuto">Fédérale 2 - F&eacute;d&eacute;rale B <br>
+        <p class="terr3 marginAuto">Fédérale 2 - Fédérale B <br>
           <a href="page_fed2.php">8 poules de 12 (<?php echo $FED2 . " clubs"; ?>)</a>
         </p>
         <br>

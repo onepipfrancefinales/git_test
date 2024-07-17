@@ -1,5 +1,5 @@
 <?php 
-$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 4me journ&eacute;e du 01 Novembre";
+$message = "Arr&ecirc;t des compétitions &agrave; l'occasion de la 4me journée du 01 Novembre";
 require '../connect/connexion2.php';
 require '../Phpleague/phppl/consult/fonctions_matchs.php';
 require '../Phpleague/phppl/lang/lang_fr.php';
@@ -20,9 +20,9 @@ $comiteNom="Pays de Loire";?>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title>Championnats Territoriaux comit&eacute; <?php echo $comiteNom;?></title>
+  <title>Championnats Territoriaux comité <?php echo $comiteNom;?></title>
   <meta name="description"
- content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+ content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
@@ -55,9 +55,9 @@ $comiteNom="Pays de Loire";?>
       <td border color="#000000" bgcolor="#ffffff" height="1192"
  width="650" valign="top"> 
         <div align="center"><br>
-          <h1> Comp&eacute;titions R&eacute;gionales</h1>
+          <h1> Compétitions Régionales</h1>
           <h2 class="titre">Ligue Pays de la Loire</h2>
-          <h2 class="commentaire">Le comit&eacute; territorial Pays de la Loire est devenu<br>
+          <h2 class="commentaire">Le comité territorial Pays de la Loire est devenu<br>
             la ligue Pays de la Loire en 2018.</h2>
 			<br>
           
@@ -97,7 +97,7 @@ $comiteNom="Pays de Loire";?>
            echo "<p class=\"ressource\">".$message."</p>";  
              include("../pub/pub_displayHorizontal.php");?>
          
-          <h5><a name="1"></a><a name="2"></a>1re/ 2me S&eacute;rie</h5>
+          <h5><a name="1"></a><a name="2"></a>1re/ 2me Série</h5>
           
 		  <?php 
 		  	 AffichageLogos($champ, $comite, false, $bdd);
@@ -111,7 +111,7 @@ $comiteNom="Pays de Loire";?>
 			
 			  include("../pub/pub_displayHorizontal.php");?> 
 			
-          <h5><a name="1"></a><a name="2"></a>3me / 4me S&eacute;rie
+          <h5><a name="1"></a><a name="2"></a>3me / 4me Série
           </h5>
           <?php $champ = 211; AffichageLogos($champ, $comite, false, $bdd);?>
          

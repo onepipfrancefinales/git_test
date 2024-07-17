@@ -38,17 +38,17 @@ ouverture ();
 if (isset ($nomLigue)) $nomLigue=$nomLigue; else $nomLigue="";
 
 if ($champ >= 990110 and $champ < 990140)
-	{ $nomLigue= "Comp&eacute;titions professionnelles";}
+	{ $nomLigue= "Compétitions professionnelles";}
  elseif (($champ >= 990140 and $champ < 990150) or ($champ >= 990240 and $champ < 990250)) 
-	{ $nomLigue= "F&eacute;d&eacute;rale 1 - Espoir F&eacute;d&eacute;rale";}
+	{ $nomLigue= "Fédérale 1 - Espoir Fédérale";}
  elseif (($champ >= 990150 and $champ < 990160) or ($champ >= 990250 and $champ < 990260)) 
-	{ $nomLigue= "F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B";}
+	{ $nomLigue= "Fédérale 2 - Fédérale B";}
   elseif (($champ >= 990650 and $champ < 990660) or ($champ >= 990750 and $champ < 990760)) 
-	{ $nomLigue= "F&eacute;d&eacute;rale 2 - F&eacute;d&eacute;rale B - test";}
+	{ $nomLigue= "Fédérale 2 - Fédérale B - test";}
  elseif ($champ >= 880280 and $champ < 880350) 
-	{ $nomLigue= "Comp&eacute;titions f&eacute;minines";}
+	{ $nomLigue= "Compétitions féminines";}
   else
-  { $nomLigue= "Comp&eacute;titions test";}
+  { $nomLigue= "Compétitions test";}
 ?>
 
 <div align="center">

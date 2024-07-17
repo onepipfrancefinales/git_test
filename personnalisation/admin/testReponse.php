@@ -17,7 +17,7 @@ echo '<br />'; ?>
 		  </td>
 
 		  <td> 
-			<a href="./logout.php">D&eacute;connection</a>
+			<a href="./logout.php">DÃ©connection</a>
 		 </td>
     </tr>
   </tbody>
@@ -32,7 +32,7 @@ echo $id;
 echo "<br />"; 
 echo "------------------------"; ?>
 <?php
-//************ recuperation de la réponse    ************
+//************ recuperation de la rï¿½ponse    ************
 
  $reponse=$_GET['reponse']; 
 
@@ -44,7 +44,7 @@ echo "------------------------"; ?>
 			?>
 			
 			<br /> 
-			<?php echo "Réponse : ".''. $reponse; ?><br>
+			<?php echo "Rï¿½ponse : ".''. $reponse; ?><br>
 			<?php echo "comite : ".''. $comite; ?><br>
 			<?php echo "division : ".''. $division; ?> <br>
 			
@@ -65,7 +65,7 @@ echo "------------------------"; ?>
 			
 			echo "taille : ".''. $taille; ?> <br>
 
-			<?php //********** Détermination de la valeur de la variable $type ********** 
+			<?php //********** Dï¿½termination de la valeur de la variable $type ********** 
 
 			$phpComiteDivisions = $comite.''."_divisions"; 
 			echo $phpComiteDivisions; ?>
@@ -254,7 +254,7 @@ $bdd->exec( "UPDATE personnel
 //$requete = mysql_query( $sql ) ; 
 ?>
 <?php
-echo "Relecture après modif de la base";
+echo "Relecture aprï¿½s modif de la base";
 ?><br>
 <?php echo $id.' '.$nom .' '.$mdp .' '.$prenom .' '.$comite1 .' '.$division1.' '.$type1.' '.$taille1 .' '.
 													$comite2 .' '.$division2.' '.$type2.' '.$taille2 .' '.

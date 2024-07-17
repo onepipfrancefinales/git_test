@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -8,16 +8,16 @@
 <?php 
 
 
-// ******************   Récupération des variables   ***************** 
+// ******************   Rï¿½cupï¿½ration des variables   ***************** 
  require ("../../fonctionsChampFrance2019.php"); 
  $type=$_GET['type']; 
  //$annee=$_GET['annee']; 
-if ( isset ($_GET['phase'])) $phase=$_GET['phase']; else $phase="non déclarée";
-if ( isset ($_GET['division'])) $division=$_GET['division']; else $division="non déclarée";
-if ( isset ($_GET['annee'])) $saison=$_GET['annee']; else $saison="non déclarée";
-if ( isset ($_GET['annee'])) $annee=$_GET['annee']; else $annee="non déclarée";
+if ( isset ($_GET['phase'])) $phase=$_GET['phase']; else $phase="non dï¿½clarï¿½e";
+if ( isset ($_GET['division'])) $division=$_GET['division']; else $division="non dï¿½clarï¿½e";
+if ( isset ($_GET['annee'])) $saison=$_GET['annee']; else $saison="non dï¿½clarï¿½e";
+if ( isset ($_GET['annee'])) $annee=$_GET['annee']; else $annee="non dï¿½clarï¿½e";
   
- // ***************** Test des variables récupérées ****************
+ // ***************** Test des variables rï¿½cupï¿½rï¿½es ****************
   
    echo "type : ".$type;echo "<br />";
    echo "annee : ".$annee;echo "<br />";
@@ -34,11 +34,11 @@ require '../../../connect/connexion1.php';
  
   
 //*******************************************************************
-//**************    trente deuxième de Finale    ********************
+//**************    trente deuxiï¿½me de Finale    ********************
 //*******************************************************************
 
-// les scores des 32me sont insérès dans la table bdpffrance (avec les nom des equipes)
-// les scores  des  16me, 8me quarts demi et finale sont insérès dans la table bdpffrance_2
+// les scores des 32me sont insï¿½rï¿½s dans la table bdpffrance (avec les nom des equipes)
+// les scores  des  16me, 8me quarts demi et finale sont insï¿½rï¿½s dans la table bdpffrance_2
 
 if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32')	{	
 	if (substr ($type,1,2 ) == "32" or substr($division,0,1)==7){
@@ -55,17 +55,17 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 		
 		if($requete)	
 		{
-		echo("La modification (".$division.") a &eacute;t&eacute; correctement effectu&eacute;e");
+		echo("La modification (".$division.") a Ã©tÃ© correctement effectuÃ©e");
 		echo "<br />";
 		}
 		else{
-		echo("La modification (".$division.") a &eacute;chou&eacute;") ;
+		echo("La modification (".$division.") a Ã©chouÃ©") ;
 		echo "<br />";
 		}		
 	}
 	else{
 		 //*******************************************************************
-		 //**************    trente deuxième de Finale  (A/R)  ********************
+		 //**************    trente deuxiï¿½me de Finale  (A/R)  ********************
 		 //*******************************************************************
 		
 		 //********   GA aller   *********
@@ -238,7 +238,7 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 		 //********************    huitieme   (A/R)   ******************
 		 //************************************************************* 
 		 
-	 //Récup des résultats des rencontres 8me ALLER (Goal average)
+	 //Rï¿½cup des rï¿½sultats des rencontres 8me ALLER (Goal average)
 	 for($i = 8001; $i < 8017 ; $i++) {
 		 $scoreA="A".$i; 
 		 $score="A".$i;
@@ -254,7 +254,7 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 		 
 		 
 		 
-	 //Récup des résultats des rencontres 8me ALLER (Points terrain)
+	 //Rï¿½cup des rï¿½sultats des rencontres 8me ALLER (Points terrain)
 	 $division = $division +1;
 	 for($i = 8001; $i < 8017; $i++) {
 		 $scoreApts="A".$i;
@@ -269,7 +269,7 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 		}
 	 suiviDuTraitement($division, $requete);
 
-	 //Récup des résultats des rencontres 8me RETOUR (Goal average)
+	 //Rï¿½cup des rï¿½sultats des rencontres 8me RETOUR (Goal average)
 	 $division = $division +1;
 	 for($i = 8001; $i < 8017; $i++) {
 		 $scoreR="A".$i;
@@ -284,7 +284,7 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 		}
 	 suiviDuTraitement($division, $requete); 
 
-	 //Récup des résultats des rencontres 8me RETOUR (Points terrain)	
+	 //Rï¿½cup des rï¿½sultats des rencontres 8me RETOUR (Points terrain)	
 	 $division = $division +1;
 	 for($i=8001; $i<8017; $i++) {
 		 $scoreRpts="A".$i; 
@@ -461,7 +461,7 @@ elseif ( $phase == '2'){
 }
 
 // -------Finale -------------------- 
- //récupération des valeurs des champs:
+ //rï¿½cupï¿½ration des valeurs des champs:
 
 elseif ( $phase == '1'){
 

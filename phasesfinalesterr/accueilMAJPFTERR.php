@@ -40,14 +40,14 @@ echo $annee;
       <div align="center"><font size="6" color="#FFFFFF"><b><font face="Arial, Helvetica, sans-serif">2</font></b></font></div>
     </td>
     <td width="204"> 
-      <div align="right"><b><font size="4" color="#FF0000">s&eacute;lectionner 
+      <div align="right"><b><font size="4" color="#FF0000">sélectionner 
         une </font></b></div>
     </td>
     <td colspan="2"><b><font size="4" color="#FF0000"> saisie</font></b></td>
   </tr>
   <tr> 
     <td colspan="2" height="48"> 
-      <div align="center"><font size="5"><b>Saisie des r&eacute;sulats</b></font></div>
+      <div align="center"><font size="5"><b>Saisie des résulats</b></font></div>
     </td>
     <td colspan="2" height="48"> 
       <div align="center"><font size="5"><b>Saisie des clubs</b></font></div>
@@ -56,7 +56,7 @@ echo $annee;
   <tr> 
     <td bgcolor="#FF0000" colspan="2"> 
       <div align="center"><font color="#FFFFFF"><b><font size="5" face="Arial, Helvetica, sans-serif">Midi 
-        Pyr&eacute;n&eacute;es</font></b></font></div>
+        Pyrénées</font></b></font></div>
     </td>
     <td bgcolor="#FF0000" colspan="2"> 
       <div align="center"><font size="5" face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>uniquement</b></font></div>

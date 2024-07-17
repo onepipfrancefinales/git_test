@@ -24,14 +24,14 @@
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="9" colspan="15" bgcolor="#FFCC66"> 
-      <div align="center"><b><i>F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
-        1 Jean PRAT - F&eacute;d&eacute;rale 1 Jean PRAT - F&eacute;d&eacute;rale 
+      <div align="center"><b><i>Fédérale 1 Jean PRAT - Fédérale 
+        1 Jean PRAT - Fédérale 1 Jean PRAT - Fédérale 
+        1 Jean PRAT - Fédérale 1 Jean PRAT - Fédérale 
         1 Jean PRAT </i></b></div>
     </td>
     <td height="9" bgcolor="#FFCC66" width="28">&nbsp;</td>
     <td height="9" colspan="5" bgcolor="#FF9900"> 
-      <div align="center"><b><i><font size="3">F&eacute;d&eacute;rale 1</font></i></b></div>
+      <div align="center"><b><i><font size="3">Fédérale 1</font></i></b></div>
     </td>
   </tr>
   <tr> 

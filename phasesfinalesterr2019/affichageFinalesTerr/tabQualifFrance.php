@@ -4,29 +4,29 @@
 
 
 
-<h2>Modalit&eacute;s de qualification aux championnats de France 2019 </h2>
-<P>14 Equipes de la ligue sont engag&eacute;es en championnat de France 2019.<br>
-<P>10 directements qualifi&eacute;es en 32 de finale et 4 qualifi&eacute;es pour 
+<h2>Modalités de qualification aux championnats de France 2019 </h2>
+<P>14 Equipes de la ligue sont engagées en championnat de France 2019.<br>
+<P>10 directements qualifiées en 32 de finale et 4 qualifiées pour 
   disputer un barrage
 <P><a href="../../phases_finales/honneur/pagehonneur.php?variable_1=2019&annee=2019"><font color="#FF0000"><b>Oppositions 
   des 32me de finales honneur 2019</b></font></a> 
-<P><b><font size="3" face="Arial, Helvetica, sans-serif">3 Possibilit&eacute;s 
+<P><b><font size="3" face="Arial, Helvetica, sans-serif">3 Possibilités 
   d'acceder aux championnats de france </font></b>
 <P> <b><font face="Arial, Helvetica, sans-serif">-1-</font></b> Toutes les equipes 
-  qualifi&eacute;es pour les quarts de finales du championnat d'occitanie (Tableau 
+  qualifiées pour les quarts de finales du championnat d'occitanie (Tableau 
   1)<br>
-  seront engag&eacute;es pour les 32me de finale (8 equipes). 
-<P>-<b>2-</b> Dans le tableau 2, les &eacute;quipes &eacute;limin&eacute;es du 
+  seront engagées pour les 32me de finale (8 equipes). 
+<P>-<b>2-</b> Dans le tableau 2, les équipes éliminées du 
   tableau 1 se rencontreront en quarts demis et finale.<br>
-<P>les equipes finalistes seront qualifi&eacute;es directement pour les 32me de 
-  fnales et les 2 &eacute;quipes &eacute;limin&eacute;es en demi finale<br>
-  participeront au barrages d'accession des 32me du championnat de France (4 &eacute;quipes 
+<P>les equipes finalistes seront qualifiées directement pour les 32me de 
+  fnales et les 2 équipes éliminées en demi finale<br>
+  participeront au barrages d'accession des 32me du championnat de France (4 équipes 
   : 2 directes et 2 barrages). 
 <P>&nbsp;
-<P><b>-3-</b>Le tableau 3 est compos&eacute; des &eacute;quipes class&eacute;es 
-  de 20 &agrave; 36. elles se rencontreront en barrages pour les &eacute;quipes 
-  les plus mal class&eacute;es, puis en huitit&egrave;me , quarts demi et finale.<br>
-  les 2 &eacute;quipes qui attteindront la finale seront qualifi&eacute;es pour 
+<P><b>-3-</b>Le tableau 3 est composé des équipes classées 
+  de 20 &agrave; 36. elles se rencontreront en barrages pour les équipes 
+  les plus mal classées, puis en huitit&egrave;me , quarts demi et finale.<br>
+  les 2 équipes qui attteindront la finale seront qualifiées pour 
   les barrages d'accession aux 32me de finale du champ de France (2 equipes barragistes)
 <P>&nbsp;
 <P><br>

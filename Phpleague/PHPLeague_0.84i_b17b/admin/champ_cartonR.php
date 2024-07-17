@@ -295,7 +295,7 @@ $y=0;
 }
 else
 {
-	echo InfoReqSql('InfCRMatch', 0, 'highlight', 'alert', 'Aucun matchs renseign&eacute;s pour cette journ&eacute;e. Allez dans la rubrique [ <a href="index.php?page=championnat&amp;action=matchs&amp;champ='.$champ.'&amp;annee='.$annee.'&amp;numero='.$numero.'">Matchs</a> ]');
+	echo InfoReqSql('InfCRMatch', 0, 'highlight', 'alert', 'Aucun matchs renseignés pour cette journée. Allez dans la rubrique [ <a href="index.php?page=championnat&amp;action=matchs&amp;champ='.$champ.'&amp;annee='.$annee.'&amp;numero='.$numero.'">Matchs</a> ]');
 }
 
 ?>

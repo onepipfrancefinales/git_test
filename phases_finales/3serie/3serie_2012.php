@@ -84,18 +84,18 @@ $clubA1613= ' Poitou-Charentes 1';
 $clubA1614= ' Limousin 1';
 
 $clubA1615= ' Auvergne 1';
-$clubA1616= ' Midi-Pyrénées 3 ';
+$clubA1616= ' Midi-Pyrï¿½nï¿½es 3 ';
 
-$clubA1617= ' Périgord Agenais 1';
-$clubA1618= ' Midi-Pyrénées 2';
+$clubA1617= ' Pï¿½rigord Agenais 1';
+$clubA1618= ' Midi-Pyrï¿½nï¿½es 2';
 
-$clubA1619= ' Côte d Argent 1';
+$clubA1619= ' Cï¿½te d Argent 1';
 $clubA1620= ' Vainqueur LM 2 contre CBL 2 ';
 
 $clubA1621= ' Armagnac Bigorre 1';
-$clubA1622= ' Midi-Pyrénées 1';
+$clubA1622= ' Midi-Pyrï¿½nï¿½es 1';
 
-$clubA1623= ' Côte Basque Landes 1';
+$clubA1623= ' Cï¿½te Basque Landes 1';
 $clubA1624= ' Vainqueur BE 1 contre AB 2 ';
 
 $clubA1625= ' Languedoc 1';
@@ -109,7 +109,7 @@ $clubA1630= ' Vainqueur CAZ 1 contre DA 1 ';
 
 $clubA1631= ' Bourgogne 1 ';
 $clubA1632= ' Vainqueur LY 3 contre AP 2 '; 
-echo "<h3> <strong>Désolé, aucune donnée pour cette saison</h3> </strong>";
+echo "<h3> <strong>Dï¿½solï¿½, aucune donnï¿½e pour cette saison</h3> </strong>";
 }
 
 ?>
@@ -999,14 +999,14 @@ echo "<h3> <strong>Désolé, aucune donnée pour cette saison</h3> </strong>";
   <div align="center"> <font size="5"><b>Champion de France
     <?php echo $annee;?>
     <br>
-    3me S&eacute;rie </b></font></div>
+    3me SÃ©rie </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 176px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
-  <div align="center"><i><b>3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-    3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-    3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-    3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-    3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie</b></i></div>
+  <div align="center"><i><b>3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 
+    3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 
+    3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 
+    3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 
+    3me SÃ©rie 3me SÃ©rie 3me SÃ©rie 3me SÃ©rie</b></i></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1081px; top: 707px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000">
   <div align="center"> <b><font color="#FF0000" size="5" face="Arial, Helvetica, sans-serif">Pomarez 

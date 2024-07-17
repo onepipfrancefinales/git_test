@@ -1731,7 +1731,7 @@ $clubA6464=  '  Belves	(PA)  ';
     <td width="38">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        F&eacute;d&eacute;rale 3 
+        Fédérale 3 
         <?php echo $annee;?>
         </b></font></div>
     </td>
@@ -1953,7 +1953,7 @@ $clubA6464=  '  Belves	(PA)  ';
     <td width="194" align="left" height="6">&nbsp;</td>
     <td width="38" height="6">&nbsp;</td>
     <td colspan="3" height="37" valign="middle" rowspan="2" bgcolor="#FFFF00"> 
-      <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="5" color="#FF0000">P&eacute;rigueux<br>
+      <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="5" color="#FF0000">Périgueux<br>
         (PA) </font></b></div>
     </td>
   </tr>

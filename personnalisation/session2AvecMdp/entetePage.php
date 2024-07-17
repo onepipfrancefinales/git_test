@@ -1,13 +1,13 @@
 
 
 <?php
-// On démarre la session (ceci est indispensable dans toutes les pages de notre section membre)
+// On dï¿½marre la session (ceci est indispensable dans toutes les pages de notre section membre)
 session_start ();
 
-// On récupère nos variables de session
+// On rï¿½cupï¿½re nos variables de session
 if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
 
-	// On teste pour voir si nos variables ont bien été enregistrées
+	// On teste pour voir si nos variables ont bien ï¿½tï¿½ enregistrï¿½es
 //	echo '<html>';
 //	echo '<head>';
 //	echo '<title>Page de notre section membre</title>';
@@ -20,7 +20,7 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
  
 <?php	
 // On affiche un lien pour fermer notre session
-	echo '<a href="logout.php"><div align="right"><font color="#000000">D&eacute;connection</a></font>';
+	echo '<a href="logout.php"><div align="right"><font color="#000000">DÃ©connection</a></font>';
 ?>
  
 <?php

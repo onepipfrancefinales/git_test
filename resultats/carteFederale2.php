@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Carte des clubs de F&eacute;d&eacute;rale 2</title>
+<title>Carte des clubs de Fédérale 2</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 

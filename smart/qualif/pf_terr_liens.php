@@ -39,7 +39,7 @@
   </tr>
   <tr> 
     <td width="14%"> 
-      <div id="coin8" ><font size="1">R&eacute;serve</font></div>
+      <div id="coin8" ><font size="1">Réserve</font></div>
     </td>
     <td width="17%"> 
       <div id="coin8" ><a href="../qualif/pageQualif.php?division=270&annee=<?php echo $annee; ?>&comite=<?php echo $comite;?>">H</a></div>

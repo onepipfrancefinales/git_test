@@ -86,7 +86,7 @@
     </div>
     <div id="Layer9" style="position:absolute; width:200px; height:20px; z-index:2; left: 0px; top: 20px; background-image:    url(../../phases_finales/unique3.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b>Laroque 
-        B&eacute;lesta </b></font></div>
+        Bélesta </b></font></div>
     </div>
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b><font face="Arial, Helvetica, sans-serif">17</font> 
@@ -149,7 +149,7 @@
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"><b><font color="#FFFFFF" size="3" face="Arial, Helvetica, sans-serif">23</font> 
       </b></div>
     <div id="Layer9" style="position:absolute; width:200px; height:20px; z-index:2; left: 0px; top: 20px; background-image:    url(../../phases_finales/unique30.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b>La 
-      Vall&eacute;e de Girou</b></font></div>
+      Vallée de Girou</b></font></div>
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"><b><font color="#FFFFFF" size="3" face="Arial, Helvetica, sans-serif">24 
       </font> </b></div>
   </div>
@@ -160,7 +160,7 @@
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"><b><font color="#FFFFFF" size="3" face="Arial, Helvetica, sans-serif">24 
       </font> </b></div>
     <div id="Layer9" style="position:absolute; width:200px; height:20px; z-index:2; left: 0px; top: 20px; background-image:    url(../../phases_finales/unique30.jpg); layer-background-image:    url(../../phases_finales/unique3.jpg); border: 1px none #000000"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b>Laroque 
-      B&eacute;lesta </b></font></div>
+      Bélesta </b></font></div>
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"><b><font color="#FFFFFF" size="3" face="Arial, Helvetica, sans-serif">09</font> 
       </b></div>
   </div>

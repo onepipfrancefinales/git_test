@@ -11,7 +11,7 @@
   </font></h2>
 				
 <h2> <font color="#000000" size="4"><b>
-  <?php echo "( Ex comit&eacute;".' '.$nomComite.''." )";?>
+  <?php echo "( Ex comité".' '.$nomComite.''." )";?>
   </b></font></h2>
 <div align="center">
   <?php
@@ -32,7 +32,7 @@ $width = "70%";
   </tr>
 
  <tr > 
-    <td class="titreGauche" colspan="2" width="30%">Cr&eacute;ation du club : </td>
+    <td class="titreGauche" colspan="2" width="30%">Création du club : </td>
     <td class="saisieGras" width="70%"> <?php echo $dateCreation;?></td>
   </tr>
 </table>
@@ -42,15 +42,15 @@ $width = "70%";
     <td class="titre" colspan="2" width="100%"> Bureau </td>
   </tr>
   <tr> 
-    <td class="titreGauche" width="30%">Pr&eacute;sident : </td>
+    <td class="titreGauche" width="30%">Président : </td>
     <td class="saisieGras" width="70%"><?php echo $president;?> </td>
   </tr>
   <tr   > 
-    <td class="titreGauche" >  Tr&eacute;sorier : </td>
+    <td class="titreGauche" >  Trésorier : </td>
     <td class="saisieGras" > <?php echo $tresorier;?> </td>
   </tr>
   <tr > 
-    <td class="titreGauche"> Secr&eacute;taire : </td>
+    <td class="titreGauche"> Secrétaire : </td>
     <td class="saisieGras"><?php echo $secretaire;?></td>
   </tr>
   <tr > 
@@ -99,7 +99,7 @@ $width = "70%";
     <td class="saisie" width="80%">  <?php echo $telStade;?>  </td>
   </tr>
   <tr > 
-    <td  class="titreGauche" >capacit&eacute; : </td>
+    <td  class="titreGauche" >capacité : </td>
     <td class="saisie">  <?php echo $capacite;?> </td>
   </tr>
 </table>
@@ -140,7 +140,7 @@ $width = "70%";
 <br>
 <table width="<?php echo $width;?>" border="1" align="center" cellspacing="0" cellpadding="0" >
   <tr > 
-    <td class="titre" colspan="2">Section f&eacute;minine : </td>
+    <td class="titre" colspan="2">Section féminine : </td>
   </tr>
   <tr > 
     <td class="titreGauche" width="25%"> Nom/ Entente : </td>
@@ -203,7 +203,7 @@ require ("../connect1/connection1.php") ;
 
 //****************     Palmares européens      *******************************
 nbreTitreEU($nomChampion, $bdd);
-if ($nombreTitreEU > 0 ){echo "<h2> Titres Europ&eacute;ens </h2>";}?>
+if ($nombreTitreEU > 0 ){echo "<h2> Titres Européens </h2>";}?>
 <div id="palmares">
   <?php// palmaresEU($nomChampion, $bdd);?>
 </div>
@@ -269,7 +269,7 @@ if ($nombreTitre > 0 )	{echo "<h2> Cadets </h2>";}?>
  <br />
  <hr />				
 
-<h1>Saisons pr&eacute;c&eacute;dentes</h1>
+<h1>Saisons précédentes</h1>
 			<p>&nbsp; 
 			
 <table width="<?php echo $width;?>" bordercolor="#CCCCCC" border="0" cellpadding="0" cellspacing="0" align="center">

@@ -222,5 +222,5 @@ MM_reloadPage(true);
   ) Champion en titre, (P) Equipes Promues <br>
   Qualification aux phases finales<br>
   Qualification en H Cup<br>
-  Equipes rel&eacute;gu&eacute;s surlign&eacute;es en rouge<br>
+  Equipes relégués surlignées en rouge<br>
   </font> </div>

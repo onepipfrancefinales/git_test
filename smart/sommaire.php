@@ -45,20 +45,20 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
   <tr> 
     <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=990110">Nationale</a></td>
-    <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=990140">F&eacute;d&eacute;rale 1</a></td>
+    <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=990140">Fédérale 1</a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=990150">F&eacute;d&eacute;rale 2</a></td>
-    <td class="coin_fed"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS">F&eacute;d&eacute;rale 3</a></td>
+    <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=990150">Fédérale 2</a></td>
+    <td class="coin_fed"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS">Fédérale 3</a></td>
   </tr>
   <tr>
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=880281">F&eacute;minines</a></td>
+    <td class="coin_fed"><a href="171.php?bddComite=pro&comite=pro&champ=880281">Féminines</a></td>
     <td></td>
   </tr>
   <tr> 
@@ -71,7 +71,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=bg&bddComite=pl&champ=110171">Ligue Bourgogne Franche Comt&eacute; </a></td>
+    <td colspan="2" class="coin"><a href="171.php?comite=bg&bddComite=pl&champ=110171">Ligue Bourgogne Franche Comté </a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>

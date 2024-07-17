@@ -29,15 +29,15 @@
           D2</a></div>
       </td>
       <td height="13" width="121"> 
-        <div id="equipeIfed"><a href="/phases_finales/federale1/pagefederale1.php?variable_1=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div id="equipeIfed"><a href="/phases_finales/federale1/pagefederale1.php?variable_1=<?php echo $annee;?>" target="_top">Fédérale 
           1 </a></div>
       </td>
       <td height="13" width="106"> 
-        <div id="equipeIfed"><a href="/phases_finales/federale2/pagefederale2.php?variable_1=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div id="equipeIfed"><a href="/phases_finales/federale2/pagefederale2.php?variable_1=<?php echo $annee;?>" target="_top">Fédérale 
           2 </a></div>
       </td>
       <td width="99" height="13"> 
-        <div id="equipeIfed"><a href="/phases_finales/federale3/pagefederale3.php?variable_1=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div id="equipeIfed"><a href="/phases_finales/federale3/pagefederale3.php?variable_1=<?php echo $annee;?>" target="_top">Fédérale 
           3 </a></div>
       </td>
       <td width="111" height="13"> 
@@ -45,7 +45,7 @@
           B </a></div>
       </td>
       <td width="105" height="13"> 
-        <div id="equipeII"><a href="/phases_finales/federaleb/pagefederaleb.php?variable_1=<?php echo $annee;?>" target="_top">F&eacute;d&eacute;rale 
+        <div id="equipeII"><a href="/phases_finales/federaleb/pagefederaleb.php?variable_1=<?php echo $annee;?>" target="_top">Fédérale 
           B</a></div>
       </td>
       <td width="115" height="13"> 
@@ -53,7 +53,7 @@
           B </a></div>
       </td>
       <td width="125" height="13"> 
-        <div id="equipeII"><a href="/phases_finales/reserve/pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">R&eacute;serve</a></div>
+        <div id="equipeII"><a href="/phases_finales/reserve/pagereserve.php?variable_1=<?php echo $annee;?>" target="_top">Réserve</a></div>
       </td>
       <td height="13" width="122"> 
         <div align="center"></div>
@@ -88,27 +88,27 @@
         <div id="equipeIterr"><a href="/phases_finales/promotion/pagepromotion.php?variable_1=<?php echo $annee;?>" target="_top">Promotion</a></div>
       </td>
       <td width="99" height="30"> 
-        <div id="equipeIterr"><a href="/phases_finales/1serie/page1serie.php?variable_1=<?php echo $annee;?>" target="_top">1<font size="1">&eacute;re</font> 
-          S&eacute;rie</a></div>
+        <div id="equipeIterr"><a href="/phases_finales/1serie/page1serie.php?variable_1=<?php echo $annee;?>" target="_top">1<font size="1">ére</font> 
+          Série</a></div>
       </td>
       <td width="111" height="30"> 
         <div id="equipeIterr"><a href="/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top">2<font size="1">i&egrave;me</font> 
-          S&eacute;rie</a></div>
+          Série</a></div>
       </td>
       <td width="105" height="30"> 
         <div id="equipeIterr"><a href="/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top">3<font size="1">i&egrave;me</font> 
-          S&eacute;rie</a></div>
+          Série</a></div>
       </td>
       <td width="115" height="30"> 
         <div id="equipeIterr"><a href="/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top">4<font size="1">i&egrave;me</font> 
-          S&eacute;rie</a></div>
+          Série</a></div>
       </td>
       <td height="30" width="125"> 
         <div id="equipeFEM"><a href="/phases_finales/feminines/pagefeminines.php?variable_1=<?php echo $annee;?>&annee=<?php echo $annee;?>&champ=285">Top 
           8 / Elite 2</a></div>
       </td>
       <td height="30" align="center" width="122"> 
-        <div id="equipeFEM"><a href="/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=<?php echo $annee;?>">F&eacute;d&eacute;rale</a></DIV>
+        <div id="equipeFEM"><a href="/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=<?php echo $annee;?>">Fédérale</a></DIV>
       </td>
       <td align="center" nowrap height="30" width="106"> 
         <div id="equipeJ"><a href="/phases_finales/phliponeau/pagephliponeau.php?variable_1=<?php echo $annee;?>">Phliponeau</a></div>

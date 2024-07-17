@@ -512,7 +512,7 @@ echo "";
 	echo $clubA1000;
 	
   ?>
-        Vall&eacute;e de Girou</font></b></font></div>
+        Vallée de Girou</font></b></font></div>
     </td>
     <td rowspan="4" width="19">&nbsp;</td>
   </tr>

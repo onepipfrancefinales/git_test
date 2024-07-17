@@ -293,7 +293,7 @@ $clubA1632= ' Lesparre Medoc (CA)';
 }
 else
 {
-echo "d�sol�, pas de donn�es pour cette saison";
+echo "d�sol�, pas de donn�es pour cette saison";
 }
 ?>
 
@@ -2991,7 +2991,7 @@ echo "";
 <div id="Layer4" style="position:absolute; width:2px; height:127px; z-index:6; left: 1039px; top: 595px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1080px; top: 636px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France<br>
-    R&eacute;serve &agrave; XII 
+    Réserve &agrave; XII 
     <?php echo $annee;?>
     </b></font></div>
 </div>
@@ -3019,9 +3019,9 @@ echo "";
   ?>
     </b></font></div>
 </div>
-<div id="Layer2" style="position:absolute; width:1382px; height:20px; z-index:4; left: -2px; top: 151px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>R&eacute;serve 
-  &agrave; XII R&eacute;serve &agrave; XII R&eacute;serve &agrave; XII R&eacute;serve 
-  &agrave; XII R&eacute;serve &agrave; XII R&eacute;serve &agrave; XII R&eacute;serve 
-  &agrave; XII R&eacute;serve &agrave; XII R&eacute;serve &agrave; XII R&eacute;serve 
-  &agrave; XII R&eacute;serve &agrave; XII R&eacute;serve &agrave; XII R&eacute;serve 
-  &agrave; XII R&eacute;serve &agrave; XII </b></i></div>
+<div id="Layer2" style="position:absolute; width:1382px; height:20px; z-index:4; left: -2px; top: 151px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Réserve 
+  &agrave; XII Réserve &agrave; XII Réserve &agrave; XII Réserve 
+  &agrave; XII Réserve &agrave; XII Réserve &agrave; XII Réserve 
+  &agrave; XII Réserve &agrave; XII Réserve &agrave; XII Réserve 
+  &agrave; XII Réserve &agrave; XII Réserve &agrave; XII Réserve 
+  &agrave; XII Réserve &agrave; XII </b></i></div>

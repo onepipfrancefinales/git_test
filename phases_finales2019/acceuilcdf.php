@@ -73,7 +73,7 @@ MM_reloadPage(true);
     <td>&nbsp;</td>
     <td colspan="3" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Times New Roman, Times, serif"><b><i><font size="6" color="#000000">Championnats 
-        &eacute;lites</font></i></b></font></div>
+        élites</font></i></b></font></div>
     </td>
     <td>&nbsp;</td>
   </tr>
@@ -148,7 +148,7 @@ MM_reloadPage(true);
     <td bgcolor="#CCCCCC" width="193"> 
       <div align="center"><font face="Times New Roman, Times, serif"><b><i><font size="6" color="#000000">Championnats 
         <br>
-        de F&eacute;d&eacute;rales</font></i></b></font></div>
+        de Fédérales</font></i></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -156,19 +156,19 @@ MM_reloadPage(true);
   </tr>
   <tr> 
     <td height="21" bgcolor="#000000" width="193">
-      <div align="center"><a href="federale1/pagefederale1.php?variable_1=<?php echo $annee;?>" target="_top"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">F&eacute;d&eacute;rale 
+      <div align="center"><a href="federale1/pagefederale1.php?variable_1=<?php echo $annee;?>" target="_top"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Fédérale 
         1</font></b></a></div>
     </td>
   </tr>
   <tr> 
     <td bgcolor="#000000" width="193"> 
-      <div align="center"><a href="federale2/pagefederale2.php?variable_1=<?php echo $annee;?>" target="_top"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">F&eacute;d&eacute;rale 
+      <div align="center"><a href="federale2/pagefederale2.php?variable_1=<?php echo $annee;?>" target="_top"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Fédérale 
         2 </font></b></a></div>
     </td>
   </tr>
   <tr> 
     <td bgcolor="#000000" width="193"> 
-      <div align="center"><a href="federale3/pagefederale3.php?variable_1=<?php echo $annee;?>" target="_top"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">F&eacute;d&eacute;rale 
+      <div align="center"><a href="federale3/pagefederale3.php?variable_1=<?php echo $annee;?>" target="_top"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Fédérale 
         3 </font></b></a></div>
     </td>
   </tr>
@@ -177,12 +177,12 @@ MM_reloadPage(true);
   </tr>
   <tr> 
     <td width="193"> 
-      <div align="center"><font face="Times New Roman, Times, serif"><b><i><font size="6" color="#000000">F&eacute;minins</font></i></b></font></div>
+      <div align="center"><font face="Times New Roman, Times, serif"><b><i><font size="6" color="#000000">Féminins</font></i></b></font></div>
     </td>
   </tr>
   <tr> 
     <td bgcolor="#000000" width="193"> 
-      <div align="center"><font size="2" face="Arial, Helvetica, sans-serif" color="#FFFFFF"><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=<?php echo $annee;?>"><b><font size="3" color="#FFFFFF">F&eacute;d&eacute;rale 
+      <div align="center"><font size="2" face="Arial, Helvetica, sans-serif" color="#FFFFFF"><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=<?php echo $annee;?>"><b><font size="3" color="#FFFFFF">Fédérale 
         &agrave; XV</font></b></a></font></div>
     </td>
   </tr>
@@ -238,8 +238,8 @@ MM_reloadPage(true);
       <div align="center"></div>
     </td>
     <td width="97" bgcolor="#000000"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/1serie/page1serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">1&eacute;re 
-        S&eacute;rie</font></a></b></font></div>
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/1serie/page1serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">1ére 
+        Série</font></a></b></font></div>
     </td>
   </tr>
   <tr bordercolor="#FFFFFF"> 
@@ -284,12 +284,12 @@ MM_reloadPage(true);
     </td>
     <td width="89" bgcolor="#000000"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"></a><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"></a><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">2i&egrave;me 
-        S&eacute;rie</font></a></b></font></div>
+        Série</font></a></b></font></div>
     </td>
     <td width="99" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"></a></b></font></td>
     <td width="98" bgcolor="#000000"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">4i&egrave;me 
-        S&eacute;rie</font></a></b></font></div>
+        Série</font></a></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -306,7 +306,7 @@ MM_reloadPage(true);
   <tr> 
     <td bgcolor="#000000" height="42" bordercolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">3i&egrave;me 
-        S&eacute;rie</font></a></b></font></div>
+        Série</font></a></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -354,7 +354,7 @@ MM_reloadPage(true);
   <tr> 
     <td width="71">&nbsp;</td>
     <td colspan="2" bgcolor="#000000"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">F�d�rale 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">F�d�rale 
         B</font></a></b></font></div>
     </td>
     <td width="60">&nbsp;</td>
@@ -370,7 +370,7 @@ MM_reloadPage(true);
   <tr> 
     <td width="71">&nbsp;</td>
     <td colspan="2" bgcolor="#000000" height="24"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">R&eacute;serve 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">Réserve 
         &agrave; XII</font></a></b></font></div>
     </td>
     <td width="60">&nbsp;</td>
@@ -483,7 +483,7 @@ MM_reloadPage(true);
   <tr> 
     <td bgcolor="#FFFFCC"> 
       <div align="center"><font color="#000000"><b><font size="6" color="#FF0000">Synth&egrave;se 
-        par comit&eacute; des clubs qualifi&eacute;s en <br>
+        par comité des clubs qualifiés en <br>
         championnat de France en 2015</font></b></font></div>
     </td>
   </tr>
@@ -506,7 +506,7 @@ MM_reloadPage(true);
         Bigorre</font></a></div>
     </td>
     <td width="64"> 
-      <div align="center"><a href="synthese/BE.php" target="_blank"><font color="#000000">B&eacute;arn</font></a></div>
+      <div align="center"><a href="synthese/BE.php" target="_blank"><font color="#000000">Béarn</font></a></div>
     </td>
     <td width="84"> 
       <div align="center"><a href="synthese/BG.php" target="_blank"><font color="#000000">Bourgogne</font></a></div>
@@ -554,7 +554,7 @@ MM_reloadPage(true);
       <div align="center"><a href="synthese/LY.php" target="_blank"><font color="#000000">Lyonnais</font></a></div>
     </td>
     <td width="75"> 
-      <div align="center"><a href="synthese/MPY.php" target="_blank"><font color="#000000">Pyr&eacute;n&eacute;es</font></a></div>
+      <div align="center"><a href="synthese/MPY.php" target="_blank"><font color="#000000">Pyrénées</font></a></div>
     </td>
     <td width="76"> 
       <div align="center"><a href="synthese/N.php" target="_blank"><font color="#000000">Normandie</font></a></div>
@@ -564,7 +564,7 @@ MM_reloadPage(true);
         Catalan</font></a></div>
     </td>
     <td width="64"> 
-      <div align="center"><a href="synthese/PA.php" target="_blank"><font color="#000000">P&eacute;rigord 
+      <div align="center"><a href="synthese/PA.php" target="_blank"><font color="#000000">Périgord 
         Agenais</font></a></div>
     </td>
     <td width="84"> 

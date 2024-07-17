@@ -21,7 +21,7 @@ $page="saisieLieux";
   <tr bgcolor="#FFFFFF"> 
     <td colspan="2">
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie 
-        des &eacute;quipes</font></b></font></div>
+        des équipes</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -56,11 +56,11 @@ $page="saisieLieux";
     </td>
   </tr>
   <tr> 
-    <td valign="top" height="7" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Ann&eacute;e</font></div></td>
+    <td valign="top" height="7" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Année</font></div></td>
     <td width="74%" valign="top" height="7" bgcolor="#000000"><div align="center"><b><font size="5" color="#FFFFFF"><?php echo $annee; ?></font></b></div></td>
   </tr>
   <tr> 
-    <td valign="top" height="10" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Comit&eacute;</font></div></td>
+    <td valign="top" height="10" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Comité</font></div></td>
     <td width="74%" valign="top" height="10" bgcolor="#FF9933"><div align="center"><?php echo $comite.' - '; echo $codeLigue?></div></td>
   </tr>
   <tr> 

@@ -867,7 +867,7 @@ $A3264= '	14	 ';
         sont definies <br>
         par la FFR, apr&egrave;s chaque tour <br>
         en privilegiant des <br>
-        oppositions g&eacute;ographiques</font></div>
+        oppositions géographiques</font></div>
     </td>
     <td width="30" height="11">&nbsp;</td>
     <td width="197" height="11"> 
@@ -1564,14 +1564,14 @@ $A3264= '	14	 ';
   </tr>
   <tr> 
     <td colspan="16">Indiquer les clubs participants dans un entente au nom peu 
-      &eacute;vocateur.</td>
+      évocateur.</td>
     <td width="32">&nbsp;</td>
     <td width="19">&nbsp;</td>
   </tr>
   <tr> 
     <td colspan="16"><b><font face="Arial, Helvetica, sans-serif">Entente 4 Cantons 
       (PA)</font></b><font face="Arial, Helvetica, sans-serif">: regroupement 
-      des clubs du Haut Agenais (Viller&eacute;al, Monflanquin, Castillonn&egrave;s, 
+      des clubs du Haut Agenais (Villeréal, Monflanquin, Castillonn&egrave;s, 
       Lacapelle et Cancon)</font></td>
     <td width="32">&nbsp;</td>
     <td width="19">&nbsp;</td>

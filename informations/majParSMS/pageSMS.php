@@ -46,8 +46,8 @@
             <p align="center"><font size="6" color="#000000"><b>ET DES CLASSEMENTS</b></font></p>
             <p align="center">&nbsp;</p>
             <p align="center"><big style="color: rgb(255, 0, 0); font-weight: bold;"><big><b><font size="4" face="Arial, Helvetica, sans-serif">Saississez 
-              vous m&ecirc;me les r&eacute;sultats de votre club <br>
-              et mettez le classement &agrave; jour en temps r&eacute;el.</font></b></big></big><br
+              vous m&ecirc;me les résultats de votre club <br>
+              et mettez le classement &agrave; jour en temps réel.</font></b></big></big><br
  style="font-weight: bold;">
               <br>
             </p>
@@ -64,7 +64,7 @@
               <br style="font-weight: bold;">
               <span style="font-weight: bold;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<a
  style="color: rgb(0, 0, 0);" href="pageEquipe2.php">Le 
-              disposif peut il &ecirc;tre utilis&eacute; pour les &eacute;quipes 
+              disposif peut il &ecirc;tre utilisé pour les équipes 
               II ?</a></span><br style="font-weight: bold;">
               <br style="font-weight: bold;">
               <span style="font-weight: bold;"><a style="color: rgb(0, 0, 0);"
@@ -82,25 +82,25 @@
             &nbsp;&nbsp;&nbsp; <br>
             &nbsp;<big><big><span
  style="font-weight: bold;"> <font size="4" face="Times New Roman, Times, serif" color="#FF0000">Comment 
-            retrouver les liens de mis&nbsp;&agrave; jour d'une journ&eacute;e 
+            retrouver les liens de mis&nbsp;&agrave; jour d'une journée 
             &agrave; l'autre ?</font></span></big></big></span><br>
             <br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<big>&nbsp;<font size="4" face="Arial, Helvetica, sans-serif"> 
-            Plusieurs possiblit&eacute;s :</font></big><font size="4" face="Arial, Helvetica, sans-serif"><br>
+            Plusieurs possiblités :</font></big><font size="4" face="Arial, Helvetica, sans-serif"><br>
             <br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
             &nbsp;&nbsp;&nbsp; - Mettre le lien re&ccedil;u en <span
  style="font-weight: bold;">favori dans votre navigateur.</span><br>
             <br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-            &nbsp;&nbsp; &nbsp;&nbsp;- Cr&eacute;er un <span
+            &nbsp;&nbsp; &nbsp;&nbsp;- Créer un <span
  style="font-weight: bold;">raccourci sur le bureau</span> de votre smartphone<br>
             <br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; - Faire un recherche dans votre appli 
             &nbsp;SMS pour retrouver &nbsp;notre conversation<br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; rechercher le num&eacute;ro 
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; rechercher le numéro 
             : 06.82.24.70.57<br>
             <br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 

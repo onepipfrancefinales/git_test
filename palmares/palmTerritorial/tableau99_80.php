@@ -56,10 +56,10 @@ MM_reloadPage(true);
     <th height="20" width="200">honneur</th>
     <th height="20" width="200">promotion <br>
       honneur</th>
-    <th height="20" width="200">1re s&eacute;rie</th>
-    <th height="20" width="200">2me s&eacute;rie</th>
-    <th height="20" width="200">3me s&eacute;rie</th>
-    <th height="20" width="200">4me s&eacute;rie</th>
+    <th height="20" width="200">1re série</th>
+    <th height="20" width="200">2me série</th>
+    <th height="20" width="200">3me série</th>
+    <th height="20" width="200">4me série</th>
   </tr>
   <tr> 
     <td width="34"> 

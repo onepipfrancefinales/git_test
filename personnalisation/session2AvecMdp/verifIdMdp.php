@@ -29,8 +29,8 @@ $reponse = $bdd->query("SELECT nom ,mdp
 								
 //mysql_close(); ?>
 <?php
-// On définit un login et un mot de passe de base pour tester notre exemple. 
-//Cependant, vous pouvez très bien interroger votre base de données afin de savoir si le visiteur 
+// On dï¿½finit un login et un mot de passe de base pour tester notre exemple. 
+//Cependant, vous pouvez trï¿½s bien interroger votre base de donnï¿½es afin de savoir si le visiteur 
 //qui se connecte est bien membre de votre site
 //$login_valide = $loginA;
 //$pwd_valide = $pwdA;
@@ -39,22 +39,22 @@ $reponse = $bdd->query("SELECT nom ,mdp
 //$login_valide = "moi";
 //$pwd_valide = "lemien";
 
-// on teste si nos variables sont définies
+// on teste si nos variables sont dï¿½finies
 
 	//if (isset($_POST['login']) && isset($_POST['pwd'])) 
 	if (isset($login) && isset($pwd)) 	
 	{
-	// on vérifie les informations du formulaire, 
-	//à savoir si le pseudo saisi est bien un pseudo autorisé, de même pour le mot de passe
+	// on vï¿½rifie les informations du formulaire, 
+	//ï¿½ savoir si le pseudo saisi est bien un pseudo autorisï¿½, de mï¿½me pour le mot de passe
 	
 		//if ($login_valide == $_POST['login'] && $pwd_valide == $_POST['pwd'])
 		if ($login_valide == $login && $pwd_valide == $pwd)
 		{
-			// dans ce cas, tout est ok, on peut démarrer notre session
-			// on la démarre :)
+			// dans ce cas, tout est ok, on peut dï¿½marrer notre session
+			// on la dï¿½marre :)
 			
 				session_start ();
-			// on enregistre les paramètres de notre visiteur comme variables de session ($login et $pwd) 
+			// on enregistre les paramï¿½tres de notre visiteur comme variables de session ($login et $pwd) 
 			//(notez bien que l'on utilise pas le $ pour enregistrer ces variables)
 				
 				//$_SESSION['login'] = $_POST['login'];
@@ -68,7 +68,7 @@ $reponse = $bdd->query("SELECT nom ,mdp
 			}
 			else 
 			{
-			// Le visiteur n'a pas été reconnu comme étant membre de notre site. 
+			// Le visiteur n'a pas ï¿½tï¿½ reconnu comme ï¿½tant membre de notre site. 
 			//	On utilise alors un petit javascript lui signalant ce fait
 				
 				echo '<body onLoad="alert(\'Membre non reconnu...\')">';
@@ -80,13 +80,13 @@ $reponse = $bdd->query("SELECT nom ,mdp
 	}
 else 
 	{
-	echo 'Les variables du formulaire ne sont pas déclarées.';
+	echo 'Les variables du formulaire ne sont pas dï¿½clarï¿½es.';
 	}
 ?>
 
 <html>
 <head>
-<title>Mise à jour des résultats</title>
+<title>Mise ï¿½ jour des rï¿½sultats</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/personnalisation/admin/formulaire.css"/> 
 <link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/smart/10.css"> 
@@ -100,7 +100,7 @@ else
     <td class="h22"> France Finales Rugby </td>
   </tr>
   <tr> 
-    <td class="h12" height="31"> Mise &agrave; jour des r&eacute;sultats</td>
+    <td class="h12" height="31"> Mise &agrave; jour des rÃ©sultats</td>
   </tr>
 </table>
 <p> 

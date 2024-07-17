@@ -1395,7 +1395,7 @@ require ("../fonctions_phases_finalesAR.php");
     <td width="31">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        F&eacute;d&eacute;rale 3 
+        Fédérale 3 
         <?php echo $annee;?>
         </b></font></div>
     </td>

@@ -66,12 +66,12 @@ require ("connection.php") ;
  ?>
         <?php
 
-$reponse = mysql_query("SELECT * FROM bdcomite WHERE sigle='$sigle' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdcomite WHERE sigle='$sigle' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
         <strong> 
-        <?php echo "Comit&eacute;"?>
+        <?php echo "ComitÃ©"?>
         <?php echo $donnees['nom'];?>
         </strong> 
         <?php
@@ -88,7 +88,7 @@ require ("connection.php") ;
  ?>
         <?php
 
-$reponse = mysql_query("SELECT * FROM bdcomite WHERE sigle='$sigle' "); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdcomite WHERE sigle='$sigle' "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -158,10 +158,10 @@ echo honneur 2001;
     <td>&nbsp;</td>
     <td>honneur</td>
     <td>promotion honneur</td>
-    <td>1re s&eacute;rie</td>
-    <td>2me s&eacute;rie</td>
-    <td>3me s&eacute;rie</td>
-    <td>4me s&eacute;rie</td>
+    <td>1re sÃ©rie</td>
+    <td>2me sÃ©rie</td>
+    <td>3me sÃ©rie</td>
+    <td>4me sÃ©rie</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -321,7 +321,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 $reponse = mysql_query("SELECT champion 
 						FROM bdequipe1 
 						WHERE comite1='$sigle' and division='promotion honneur' and rang2=1 and titre='Champion'  and categorie='A' 
-						ORDER BY saison desc limit 0,10"); // Requête SQL
+						ORDER BY saison desc limit 0,10"); // Requï¿½te SQL
 
  
 
@@ -482,7 +482,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 $reponse = mysql_query("SELECT saison 
 						FROM bdequipe1 
 						WHERE comite1='$sigle'and division='honneur' and rang2=1 and titre='Champion' and categorie='A' 
-						ORDER BY saison desc limit 10,10"); // Requête SQL
+						ORDER BY saison desc limit 10,10"); // Requï¿½te SQL
 
  
 
@@ -540,7 +540,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <p align="center"> <font color="#000000"> 
         <?php
 
-$reponse = mysql_query("SELECT * FROM bdequipe1 WHERE comite1='$sigle'and division='promotion honneur' and rang2=1 and titre='Champion' and categorie='A' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe1 WHERE comite1='$sigle'and division='promotion honneur' and rang2=1 and titre='Champion' and categorie='A' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 
@@ -598,7 +598,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle' and division='2me Serie'  and titre='Champion'and rang2=1  and categorie='A' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle' and division='2me Serie'  and titre='Champion'and rang2=1  and categorie='A' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 
@@ -626,7 +626,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle' and division='3me Serie'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle' and division='3me Serie'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -727,7 +727,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='honneur'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='honneur'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -755,7 +755,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='promotion honneur' and rang2=1 and titre='Champion' and categorie='A' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='promotion honneur' and rang2=1 and titre='Champion' and categorie='A' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -783,7 +783,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='1re Serie'  and titre='Champion' and rang2=1  and categorie='A' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='1re Serie'  and titre='Champion' and rang2=1  and categorie='A' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -811,7 +811,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='2me Serie'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='2me Serie'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -839,7 +839,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='3me Serie'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='3me Serie'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -866,7 +866,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <p align="center"> <font color="#000000"> 
         <?php
 
-$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='4me Serie'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT champion FROM bdequipe1 WHERE comite1='$sigle'and division='4me Serie'  and titre='Champion' and rang2=1 and categorie='A' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -886,7 +886,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <font color="#000000"> 
       <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
       </font></td>
   </tr>
@@ -919,7 +919,7 @@ mysql_close(); // Déconnexion de MySQL
 <table cellspacing="0" cellpadding="0" border="0" align="center" width="1150">
   <tr> 
     <td colspan="8" height="42" valign="top"> 
-      <div align="center"><b><font size="6" color="#FFFFFF">Equipes r&eacute;serves</font></b></div>
+      <div align="center"><b><font size="6" color="#FFFFFF">Equipes rÃ©serves</font></b></div>
     </td>
   </tr>
   <tr bgcolor="#000000"> 
@@ -997,7 +997,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='honneur' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 0,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='honneur' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 0,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1025,7 +1025,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='promotion honneur' and rang2='2'and titre='Champion'  and categorie='B' order by saison desc limit 0,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='promotion honneur' and rang2='2'and titre='Champion'  and categorie='B' order by saison desc limit 0,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1053,7 +1053,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='1re Serie' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 0,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='1re Serie' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 0,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1081,7 +1081,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='2me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 0,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='2me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 0,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1109,7 +1109,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='3me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 0,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='3me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 0,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1137,7 +1137,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='4me Serie' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 0,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='4me Serie' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 0,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1175,7 +1175,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <p align="center"> <font color="#000000"> 
         <?php
 
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='honneur' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='honneur' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1203,7 +1203,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='honneur' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='honneur' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1231,7 +1231,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='promotion honneur' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='promotion honneur' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1258,7 +1258,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <p align="center"> <font color="#000000"> 
         <?php
 
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='1re Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='1re Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1286,7 +1286,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='2me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='2me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1314,7 +1314,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='3me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='3me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1342,7 +1342,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='4me Serie' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 10,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='4me Serie' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 10,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1381,7 +1381,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='honneur' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle' and division='honneur' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1409,7 +1409,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='honneur' and rang2=2 and titre='Champion' and categorie='B' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='honneur' and rang2=2 and titre='Champion' and categorie='B' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1496,7 +1496,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='2me Serie' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='2me Serie' and rang2='2' and titre='Champion' and categorie='B' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1524,7 +1524,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <?php
 
  
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='3me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='3me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :
@@ -1551,7 +1551,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <p align="center"> <font color="#000000"> 
         <?php
 
-$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='4me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 20,10"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdequipe2 WHERE comite1='$sigle'and division='4me Serie' and rang2='2' and titre='Champion'  and categorie='B' order by saison desc limit 20,10"); // Requï¿½te SQL
 
  
 // On fait une boucle pour lister tout ce que contient la table :

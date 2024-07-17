@@ -31,7 +31,7 @@ division($champ, $bdd);
 <link type="text/css" rel="stylesheet" href="paramTiroir.css">
 <link type="text/css" rel="stylesheet" href="../Phpleague/<?php echo "php".$bddComite;?>/league.css"/>
 <meta name="description" 
-content="Résultat, classement, stats et infos de la poule nom de la poule nom de la competition">
+content="Rï¿½sultat, classement, stats et infos de la poule nom de la poule nom de la competition">
 <meta name="keywords"
 content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Francaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
@@ -120,7 +120,7 @@ elseif ($bddComite=="fed3NE")
   </div>
 </div>
 	
-	<!-- fin entete figée-------->
+	<!-- fin entete figï¿½e-------->
 	
 	 
 <div class="container">	
@@ -171,23 +171,23 @@ if ($bddComite =="pro" OR $bddComite == "fed3NE")
 //	if (substr($champ,-1)==0)
 //	$champ=$champ+1;
 	
-	// divisions élites
+	// divisions ï¿½lites
 	if ($champ == 990110)
 	{$tabLigue = array(990110, 990120, 990130);}
 	
-	// Fédérale 1
+	// Fï¿½dï¿½rale 1
 	elseif ($champ== 990140)
 	{$tabLigue = array(990141, 990142, 990143, 990144);}
 	elseif ($champ== 990240)
 	{$tabLigue = array(990241, 990242, 990243, 990244);}
 
-	// Fédérale 2
+	// Fï¿½dï¿½rale 2
 	elseif ($champ== 990150)
 	{$tabLigue = array(990151, 990152, 990153, 990154, 990155, 990156, 990157, 990158);}
 	elseif ($champ== 990250)
 	{$tabLigue = array(990251, 990252, 990253, 990254, 990255, 990256, 990257, 990258);}
 
-	// Fédérale 3
+	// Fï¿½dï¿½rale 3
 	elseif ($champ == 991160 OR $champ == 992160)
 	{$tabLigue = array(	991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168 ,991169, 
 						992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168 ,992169 );}
@@ -195,7 +195,7 @@ if ($bddComite =="pro" OR $bddComite == "fed3NE")
 	{$tabLigue = array(	991261, 991262, 991263, 991264, 991265, 991266, 991267, 991268 ,991269, 
 						992261, 992262, 992263, 992264, 992265, 992266, 992267, 992268 ,992269 );}
 	
-	// Féminines
+	// Fï¿½minines
 	elseif ($champ == 880280)
 	{$tabLigue = array(880281, 880282, 880285, 880291, 880292, 880293, 880294);}
 	
@@ -214,7 +214,7 @@ if ($bddComite =="pro" OR $bddComite == "fed3NE")
 				elseif  ($champ == 990130) echo "Nationale";
 				elseif  ($champ == 880281 or $champ == 880282) echo "Elite 1  - Poule ".substr($champ,-1);
 				elseif  ($champ == 880285) echo "Elite 2";
-				elseif  ($champ >= 880291 and $champ < 880295) echo "F&eacute;d&eacute;rale 1 - Poule ".substr($champ,-1);
+				elseif  ($champ >= 880291 and $champ < 880295) echo "FÃ©dÃ©rale 1 - Poule ".substr($champ,-1);
 				elseif  ($champ >= 992161 and $champ < 992170) echo "Poule ".intval($pouleGS);
 				elseif  ($champ >= 992261 and $champ < 992270) echo "Poule ".intval($pouleGS);
 				else  echo "Poule ".intval($poule)?>
@@ -309,7 +309,7 @@ elseif ( $bddComite == "au" OR $bddComite == "ca" OR $bddComite == "ab")
 /*
   if ($comite == "pl")
    {
-		//Bourgogne Franche Comté
+		//Bourgogne Franche Comtï¿½
 		if ($champ == 110171)
 		{$tabLigue = array(110171, 110181, 110201, 110211, 110221, 110271);}
       

@@ -21,7 +21,7 @@ function verifClubsPresents($comite ,$debut ,$fin, $bdd)
 	if ( $idPresent [0] != 1)
 	{
 	echo "<br />";
-	echo "L &eacute;quipe ".${"clubA".$i}." n'est pas pr&eacute;sente dans la table php_clubs"."<br />" ;
+	echo "L équipe ".${"clubA".$i}." n'est pas présente dans la table php_clubs"."<br />" ;
 	${"clubA".$i} ='99999';
 	}
   }

@@ -40,7 +40,7 @@ trenteDeuxieme2019 ($division, $annee);
     <td colspan="2"><div align="center"><b><font size="5" face="Arial, Helvetica, sans-serif">Maj Champ de France <?php echo $annee;?></font></b></div></td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
-    <td colspan="2"><div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie des &eacute;quipes</font></b></font></div></td>
+    <td colspan="2"><div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie des équipes</font></b></font></div></td>
   </tr>
   <tr> 
     <td width="37" bgcolor="#000000"><div align="center"><font size="6"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">3</font></b></font></div></td>
@@ -60,7 +60,7 @@ trenteDeuxieme2019 ($division, $annee);
     <td width="74%" valign="top" height="17" bgcolor="#0099FF"><div align="center"> </div></td>
   </tr>
   <tr> 
-    <td valign="top" height="23" width="26%"><div align="center">Ann&eacute;e</div></td>
+    <td valign="top" height="23" width="26%"><div align="center">Année</div></td>
     <td width="74%" valign="top" height="23" bgcolor="#000000"><div align="center"><b><font size="5" color="#FFFFFF"><?php echo $annee; ?></font></b></div></td>
   </tr>
   <tr> 
@@ -115,7 +115,7 @@ if ($type == 90000000001 or $type == 90000000011)
 				 
 	<input type="hidden" name="division" value="<?php echo($division) ;?>">
 				  
-	<header><h1><?php echo "Division ( ".''.$division.''." )Ann&eacute;e ".''.$annee; ?> </h1></header>
+	<header><h1><?php echo "Division ( ".''.$division.''." )Année ".''.$annee; ?> </h1></header>
   
     <p class="texte">Finale </p>
 	  
@@ -171,7 +171,7 @@ elseif ($type == 90000000002  or $type == 90000000004)
 				  <input type="hidden" name="division" value="<?php echo($division) ;?>">
 				  
 		 <header>
-  <h1><?php echo "Division ( ".''.$division.''." )Ann&eacute;e ".''.$annee; ?> </h1>
+  <h1><?php echo "Division ( ".''.$division.''." )Année ".''.$annee; ?> </h1>
   </header>
   
        <p class="texte">
@@ -227,7 +227,7 @@ elseif ($type==90000000402 or  $type == 90000000804)
 						  </font></b> 
 						  <input type="hidden" name="division" value="<?php echo($division) ;?>">
 		
-	<header><h1> <?php echo  "Division (".''.$division.''." ) Ann&eacute;e ".''.$annee; ?></h1></header>		  
+	<header><h1> <?php echo  "Division (".''.$division.''." ) Année ".''.$annee; ?></h1></header>		  
 	<p class="texte"> Quarts de finale  </p>
 			 
 	<h3>1</h3>
@@ -260,7 +260,7 @@ elseif ($type==90000000402 or  $type == 90000000804)
 	<a href="../accueilMAJ.php" target="_top">Retour </a> 
 </form>
 										
-<!-- ************ Barrages(8 �quipes) Quarts (4 �quipes)   ************-->
+<!-- ************ Barrages(8 �quipes) Quarts (4 �quipes)   ************-->
 						
 <?php		
 	}
@@ -290,7 +290,7 @@ elseif ($type==13)
 						  <input type="hidden" name="division" value="<?php echo($division) ;?>">
 						  
   
-	<header><h1> Division (<?php echo $division; ?>) Ann&eacute;e  <?php echo $annee; ?> </h1></header>  
+	<header><h1> Division (<?php echo $division; ?>) Année  <?php echo $annee; ?> </h1></header>  
 	  
 	<p class="texte"> Barrages  </p>
 	      

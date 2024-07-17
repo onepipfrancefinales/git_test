@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de donn&eacute; es en PHP :: partie2</title>
+<title>modification de donné es en PHP :: partie2</title>
 
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="../maj.css">

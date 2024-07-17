@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>modification de données en PHP :: partie2</title>
+    <title>modification de donnï¿½es en PHP :: partie2</title>
   </head>
 <body>
 <b> <font size="4"> 
@@ -16,13 +16,13 @@ require ("connect.php") ;
 $nid  = $_GET['nid'] ;
   echo "$nid";
  
-  //requête SQL:
+  //requï¿½te SQL:
   
  
-  //exécution de la requête:
+  //exï¿½cution de la requï¿½te:
   $requete = mysql_query( "SELECT * FROM infosclub WHERE id = ".$nid ) ;
  echo "$nid"; echo "$nid";
-  //affichage des données:
+  //affichage des donnï¿½es:
   if( $result = mysql_fetch_object( $requete ) )
   {
   ?>
@@ -55,7 +55,7 @@ $nid  = $_GET['nid'] ;
       <td width="228">&nbsp;</td>
     </tr>
     <tr align="center"> 
-      <td width="175">Pr&eacute;sident</td>
+      <td width="175">PrÃ©sident</td>
       <td width="539"> 
         <div align="left"> 
           <input type="text" name="siege2" value="<?php echo($result->president) ;?>" size="30">
@@ -154,7 +154,7 @@ $nid  = $_GET['nid'] ;
       <td width="228">&nbsp;</td>
     </tr>
     <tr align="center"> 
-      <td width="175">Comit&eacute;</td>
+      <td width="175">ComitÃ©</td>
       <td width="539">&nbsp;</td>
       <td width="228">&nbsp;</td>
     </tr>

@@ -25,7 +25,7 @@ huitieme2019 ($comite, $division, $annee, $bdd) ;
   <form name="insertion" action="saisieEquipe2.php?type=<?php echo $type ; ?>&division=<?php echo $division ; ?>&comite=<?php echo $comite ; ?>&annee=<?php echo $annee ; ?>" method="POST">
 						 	   
 	<input type="hidden" name="division" value="<?php echo($division) ;?>">		  
-	<header><h1> Division ) Ann&eacute;e  <?php echo $annee; ?></h1></header>          
+	<header><h1> Division ) Année  <?php echo $annee; ?></h1></header>          
     
 	<p class="texte">8me de finale</p>
 	   

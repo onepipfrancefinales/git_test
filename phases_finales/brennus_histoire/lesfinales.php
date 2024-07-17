@@ -200,7 +200,7 @@
     </td>
     <td width="148" height="28">Stade Toulousain </td>
     <td width="79" height="28">05-00 </td>
-    <td width="104" height="28">B&eacute;ziers</td>
+    <td width="104" height="28">Béziers</td>
   </tr>
   <tr> 
     <td width="33">22</td>
@@ -361,7 +361,7 @@
     <td width="116">Stade Fran&ccedil;ais </td>
     <td width="148">Inter-Nos </td>
     <td width="79">18-00 </td>
-    <td width="104">B&eacute;con-les-Bruy&egrave;res </td>
+    <td width="104">Bécon-les-Bruy&egrave;res </td>
   </tr>
   <tr> 
     <td width="33">2</td>
@@ -369,7 +369,7 @@
     <td width="116">Stade Fran&ccedil;ais</td>
     <td width="148">RC. France </td>
     <td width="79">07-03 </td>
-    <td width="104">B&eacute;con-les-Bruy&egrave;res </td>
+    <td width="104">Bécon-les-Bruy&egrave;res </td>
   </tr>
   <tr> 
     <td width="33">1</td>
@@ -680,7 +680,7 @@
   <br>
   18/05/1958 </p>
 <p>FC Lourdais<br>
-  FC Mazam&eacute;tain <br>
+  FC Mazamétain <br>
   <br>
   25-08 <br>
   <br>
@@ -774,7 +774,7 @@
   28/05/1967<br>
   <br>
   US Montalbanaise<br>
-  CA B&eacute;glais <br>
+  CA Béglais <br>
   <br>
   11-03 <br>
   <br>
@@ -795,7 +795,7 @@
 <p>68<br>
   <br>
   28/05/1969 </p>
-<p>CA B&eacute;glais<br>
+<p>CA Béglais<br>
   Stade Toulousain <br>
   <br>
   11-09 <br>
@@ -897,7 +897,7 @@
   27/05/1979 <br>
   <br>
   RC Narbonnais<br>
-  Stade Bagn&eacute;rais <br>
+  Stade Bagnérais <br>
   <br>
   10-00 <br>
   <br>
@@ -917,7 +917,7 @@
   <br>
   23/05/1981 </p>
 <p>AS Biterroise<br>
-  Stade Bagn&eacute;rais <br>
+  Stade Bagnérais <br>
   <br>
   22-13 <br>
   <br>
@@ -1110,7 +1110,7 @@
   <br>
   15/07/2000 </p>
 <p>Stade Fran&ccedil;ais CASG<br>
-  US Colum&eacute;rine <br>
+  US Columérine <br>
   <br>
   28-23 <br>
   <br>
@@ -1227,7 +1227,7 @@
   04/06/2011 </p>
 <p><br>
   Stade Toulousain<br>
-  RC Montpellier H&eacute;rault </p>
+  RC Montpellier Hérault </p>
 <p>15-10<br>
   <br>
   Saint-Denis</p>

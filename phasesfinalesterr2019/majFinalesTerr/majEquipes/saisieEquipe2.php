@@ -348,7 +348,7 @@ function verifClubsPresents($comite ,$debut ,$fin, $bdd)
   </p>
 <p> 
  
-<?php echo "<a href=/phasesfinalesterr2019/majFinalesTerr/majEquipes/saisieEquipe.php?comite=$comite&annee=$annee ;> Retour m&ecirc;me comit&eacute;</a>" ; ?>
+<?php echo "<a href=/phasesfinalesterr2019/majFinalesTerr/majEquipes/saisieEquipe.php?comite=$comite&annee=$annee ;> Retour m&ecirc;me comité</a>" ; ?>
 
 
 <p>

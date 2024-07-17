@@ -82,15 +82,15 @@
         <li><a href="#"><b> <font color="#FFFFFF">Autres</font></b></a> 
           <ul>
             <li><a href="171.php?champ=110&comite=pro">Pro</a></li>
-            <li><a href="171.php?champ=141&comite=f1"> F&eacute;d1</a></li>
-            <li><a href="171.php?champ=151&comite=fed2"> F&eacute;d2</a></li>
-            <li><a href="171.php?champ=161&comite=fed3GS"> F&eacute;d3 
+            <li><a href="171.php?champ=141&comite=f1"> Féd1</a></li>
+            <li><a href="171.php?champ=151&comite=fed2"> Féd2</a></li>
+            <li><a href="171.php?champ=161&comite=fed3GS"> Féd3 
               </a></li>
             <li> ---</li>
             <li><a href="sommaire.php">Autres<br>
               ligues</a></li>
             <li>---</li>
-            <li><a href="171.php?champ=271&comite=ca"> F&eacute;m</a></li>
+            <li><a href="171.php?champ=271&comite=ca"> Fém</a></li>
           </ul>
         </li>
       </ul>

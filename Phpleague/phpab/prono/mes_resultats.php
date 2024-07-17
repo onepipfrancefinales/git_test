@@ -34,7 +34,7 @@
             </tr>
 
 <?php
-//Général
+//Gï¿½nï¿½ral
  //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
   
 $result=$idconnect->query("
@@ -58,7 +58,7 @@ while ($row=mysqli_fetch_array($result))
    {
      $moyenne_generale= $row["points"]/$row["participation"];
      $reussite=$row["points"]/(($row["pts_prono_participation"]+$row["pts_prono_exact"])*$row["participation"])*100;
-     echo "<tr><td><div class=\"blanc\"><b>Général</b></div></td>";
+     echo "<tr><td><div class=\"blanc\"><b>Gï¿½nï¿½ral</b></div></td>";
      echo "<td><div class=\"blanc\">";
      affiche_clmnt_general ($user_id, $gr_champ, $idconnect);
      echo "</div></td>";
@@ -102,7 +102,7 @@ while ($row=mysqli_fetch_array($result))
    echo "<td><div class=\"blanc\">";printf ("%.1f",$progression);  echo "%</div></td></tr>";
    }
 
-  elseif ($non_classe!="1") {echo "<tr><td colspan=7 align=center><div class=\"blanc\">Non class&eacute;</div></td></tr>";$non_classe="1";}
+  elseif ($non_classe!="1") {echo "<tr><td colspan=7 align=center><div class=\"blanc\">Non classÃ©</div></td></tr>";$non_classe="1";}
 
 
 }

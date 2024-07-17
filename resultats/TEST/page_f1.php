@@ -1,5 +1,5 @@
 <?php 
-//$message = "Arr&ecirc;t des comp&eacute;titions &agrave; l'occasion de la 7me journ&eacute;e du 01 Novembre";
+//$message = "Arr&ecirc;t des compétitions &agrave; l'occasion de la 7me journée du 01 Novembre";
 require '../connect/connexion3.php';
 include("../saison.php");
 include("fonctions.php");
@@ -9,7 +9,7 @@ $division = 140;
 $comite="phpf1";
 $CMT="fed1";
 $cmt="f1";
-$comiteNom="F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
+$comiteNom="Fédérale 1 - Espoirs Fédérale 1";
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ $comiteNom="F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
  <title>Championnat de France <?php echo $comiteNom;?></title>
  <meta name="description"
- content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+ content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
  <meta name="classification" content="Sport,Rugby">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <meta name="resource-type" content="document">
@@ -54,7 +54,7 @@ $comiteNom="F&eacute;d&eacute;rale 1 - Espoirs F&eacute;d&eacute;rale 1";
  bordercolor="#000000" bgcolor="#ffffff" width="650" valign="top"> 
         <div align="center"><br>
            <h1> CHAMPIONNAT DE FRANCE </h1> 
-          <h2 class ="titre">F&eacute;d&eacute;rale 1 - Espoir</h2> 
+          <h2 class ="titre">Fédérale 1 - Espoir</h2> 
           <br />
 		  <?php require 'liensDiversFed.php'?>
           <table align="center" bordercolor="#000000" width="500">

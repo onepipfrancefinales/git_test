@@ -57,47 +57,47 @@ $clubA3234= ' Alpes 2';
 $clubA3235= ' Auvergne 2';
 $clubA3236= ' Vainqueur DA 2 contre PR 3 ';
 
-$clubA3237= ' Côte d Azur 1';
+$clubA3237= ' Cï¿½te d Azur 1';
 $clubA3238= ' Provence 2';
 
 $clubA3239= ' Languedoc 1';
 $clubA3240= '  Vainqueur R 2 contre MPY 7';
 
-$clubA3241= ' Drôme Ardèche 1';
+$clubA3241= ' Drï¿½me Ardï¿½che 1';
 $clubA3242= ' Alpes 1 ';
 
 $clubA3243= ' Armagnac Bigorre 2 ';
-$clubA3244= ' Midi-Pyénées 2 ';
+$clubA3244= ' Midi-Pyï¿½nï¿½es 2 ';
 
 $clubA3245= ' Pays Catalan 1';
 $clubA3246= ' Languedoc 2';
 
 $clubA3247= ' Bearn 1 ';
-$clubA3248= ' Midi-Pyénées 6 ';
+$clubA3248= ' Midi-Pyï¿½nï¿½es 6 ';
 
 $clubA3249= ' Provence 1';
 $clubA3250= ' Languedoc 3';
 
-$clubA3251= ' Côte Basque Landes 1 ';
-$clubA3252= ' Midi-Pyénées 5 ';
+$clubA3251= ' Cï¿½te Basque Landes 1 ';
+$clubA3252= ' Midi-Pyï¿½nï¿½es 5 ';
 
-$clubA3253= ' Périgord Agenais 1 ';
+$clubA3253= ' Pï¿½rigord Agenais 1 ';
 $clubA3254= ' Vainqueur  AB 3 contre BE 2 ';
 
 $clubA3255= ' Limousin 2 ';
-$clubA3256= ' Midi-Pyénées 3 ';
+$clubA3256= ' Midi-Pyï¿½nï¿½es 3 ';
 
-$clubA3257= ' Côte d Argent 1';
-$clubA3258= ' Côte Basque Landes 2'; 
+$clubA3257= ' Cï¿½te d Argent 1';
+$clubA3258= ' Cï¿½te Basque Landes 2'; 
 
-$clubA3259= ' Midi-Pyénées 1 ';
-$clubA3260= ' Périgord Agenais 3 ';
+$clubA3259= ' Midi-Pyï¿½nï¿½es 1 ';
+$clubA3260= ' Pï¿½rigord Agenais 3 ';
 
 $clubA3261= ' Armagnac Bigorre 1 ';
-$clubA3262= ' Périgord Agenais 2';
+$clubA3262= ' Pï¿½rigord Agenais 2';
 
-$clubA3263= ' Côte d Argent 1 ';
-$clubA3264= ' Midi-Pyénées 4 ';
+$clubA3263= ' Cï¿½te d Argent 1 ';
+$clubA3264= ' Midi-Pyï¿½nï¿½es 4 ';
 }
 
 else
@@ -963,11 +963,11 @@ else
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 423px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer4" style="position:absolute; width:2px; height:40px; z-index:6; left: 694px; top: 820px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 175px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000">
-  <div align="center"><i><b>2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 
-    2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie 2me S&eacute;rie </b></i></div>
+  <div align="center"><i><b>2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
+    2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
+    2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
+    2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 
+    2me SÃ©rie 2me SÃ©rie 2me SÃ©rie 2me SÃ©rie </b></i></div>
 </div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1494px; top: 688px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
 </div>
@@ -975,5 +975,5 @@ else
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    2me S&eacute;rie </b></font></div>
+    2me SÃ©rie </b></font></div>
 </div>

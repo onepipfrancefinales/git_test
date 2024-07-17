@@ -1046,7 +1046,7 @@ function effectif($id_club, $id_champ, $effectif_choisis)
 
 		echo '			<tbody>
 				<tr class="'.$CLASS.'">
-					<td colspan="4">Aucun joueur pour cette &eacute;quipe.</td>
+					<td colspan="4">Aucun joueur pour cette équipe.</td>
 				</tr>
 			</tbody>'."\n";
 	}
@@ -1639,7 +1639,7 @@ function phpinfo1($return=false){
 				<td>'.$pi['PHP Configuration']['System'].'</td>
 			</tr>
 			<tr>
-				<td>G&eacute;n&eacute;ration du syst&egrave;me</td>
+				<td>Génération du syst&egrave;me</td>
 				<td>'.$pi['PHP Configuration']['Build Date'].'</td>
 			</tr>
 		</tbody>
@@ -1656,7 +1656,7 @@ function phpinfo2($INFO)
 	phpinfo($INFO);
 
 	$i       = 0;
-	$phpinfo = array('R&eacute;sultat' => array());
+	$phpinfo = array('Résultat' => array());
 
 	if (preg_match_all('#(?:<h2>(?:<a name=".*?">)?(.*?)(?:</a>)?</h2>)|(?:<tr(?: class=".*?")?><t[hd](?: class=".*?")?>(.*?)\s*</t[hd]>(?:<t[hd](?: class=".*?")?>(.*?)\s*</t[hd]>(?:<t[hd](?: class=".*?")?>(.*?)\s*</t[hd]>)?)?</tr>)#s', ob_get_clean(), $matches, PREG_SET_ORDER))
 

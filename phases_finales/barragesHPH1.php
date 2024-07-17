@@ -562,7 +562,7 @@ require ("fonctions_phases_finales.php");
   <tr> 
     <td colspan="17" bgcolor="#FF9933"><b></b> 
       <div align="center"><b><font color="#000000" face="Arial, Helvetica, sans-serif" size="4">1re 
-        S&eacute;rie</font></b></div>
+        Série</font></b></div>
     </td>
     <td width="40">&nbsp;</td>
   </tr>

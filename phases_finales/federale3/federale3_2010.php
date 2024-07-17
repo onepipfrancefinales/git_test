@@ -1286,16 +1286,16 @@ else
   <div align="center"> <b><font size="5" color="#FF0000" face="Arial, Helvetica, sans-serif">Vendres 
     Lespignan (LD) </font></b></div>
 </div>
-<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 
-  3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 
-  F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 F&eacute;d&eacute;rale 3 </b></i></div>
+<div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: -2px; top: 174px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 Fédérale 
+  3 Fédérale 3 Fédérale 3 Fédérale 3 
+  Fédérale 3 Fédérale 3 Fédérale 3 </b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1495px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> <font size="5"><b>Champion de France <br>
-    F&eacute;d&eacute;rale 3 
+    Fédérale 3 
     <?php echo $annee;?>
     </b></font><font color="#FF0000" face="Geneva, Arial, Helvetica, san-serif"size="5"><b> 
     </b></font></div>

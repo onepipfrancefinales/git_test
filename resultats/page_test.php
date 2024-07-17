@@ -5,11 +5,11 @@
 <link type="text/css" rel="stylesheet" href="resultat.css"/> 
 <link type="text/css" rel="stylesheet" href="../ligne1.css"/>
 <meta name="description"
-content="Le site non officiel du Comit&eacute; Midi Pyr&eacute;n&eacute;es de rugby : Histoire, clubs, calendrier des matches, comp&eacute;titions, 
-r&eacute;sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, 
+content="Le site non officiel du Comité Midi Pyrénées de rugby : Histoire, clubs, calendrier des matches, compétitions, 
+résultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, 
 history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
 <meta name="keywords"
-content="comit&eacute; Bourgogne, Rugby breton,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comité Bourgogne, Rugby breton,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -62,7 +62,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <tr > 
               <td class="coindroit" height="5" > 
                 <a href="../page_comite.php?annee=(MPY)" target="_top" >Acc&egrave;s 
-                  aux infos du comit&eacute;</a>
+                  aux infos du comité</a>
               </td>
             </tr>
             <tr bordercolor="#006699" valign="middle" bgcolor="#006699"> 
@@ -100,8 +100,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-	mysql_select_db("onepip-france-db3"); // S&eacute;lection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_select_db("onepip-france-db3"); // Sélection de la base onepip
     
 	$query = "SELECT  Phpmpy_matchs.id_equipe_dom, Phpmpy_matchs.id_equipe_ext, Phpmpy_matchs.id_journee, Phpmpy_matchs.date_reelle, phptest_matchs.buts_dom, phptest_matchs.buts_ext, phptest_journees.date_prevue, phptest_journees.id_champ, phptest_clubs.nom, phptest_clubs.id FROM  phptest_matchs, phptest_journees, phptest_clubs 
 	WHERE phptest_clubs.id=phptest_matchs.id_equipe_dom and phptest_matchs.id_journee= phptest_journees.id and phptest_matchs.date_reelle != phptest_journees.date_prevue and phptest_clubs.id=phptest_matchs.id_equipe_dom and phptest_matchs.buts_dom is NULL and phptest_matchs.buts_ext is NULL"; 
@@ -116,7 +116,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 	  ?>
                   <a href="TEST/page_retards_TEST.php" target="_top">
                   <h8><?php echo " Rencontres 
-                  report&eacute;es "; ?></h8>
+                  reportées "; ?></h8>
                   </a> 
                   <?php
 	}
@@ -151,7 +151,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 	  ?>
                   <h8>
                   <?php echo " Rencontres 
-                  report&eacute;es "; ?>
+                  reportées "; ?>
                   </h8> 
                   <?php
 	}
@@ -170,9 +170,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <tr> 
               <td height="135"> 
                 <div align="center"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere" target="_top"><img src="../images/images%20GOOGLE%20PLAY2.jpg" width="254" height="83" border="0"></a></div>
-                <div align="center"><font face="Arial, Helvetica, sans-serif"><b>T&eacute;l&eacute;charger 
+                <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Télécharger 
                   l'appli <font color="#FF0000">France Finales Rugby App</font><br>
-                  pour consulter r&eacute;sultats et classements</b></font></div>
+                  pour consulter résultats et classements</b></font></div>
                 </td>
             </tr>
           </table>
@@ -285,7 +285,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <tr bordercolor="#009966"> 
               <td  class="coindroit" height="5" valign="middle" align="center" bgcolor="#0099CC" bordercolor="#0099CC"> 
                 <a href="../page_comite.php?annee=(AU)" target="_top" >Acc&egrave;s 
-                aux infos du comit&eacute;</a> </td>
+                aux infos du comité</a> </td>
             </tr>
             <tr bordercolor="#006699" valign="middle" bgcolor="#006699"> 
               <td height="40" colspan="2" align="center"> 
@@ -338,8 +338,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             </tr>
             <tr > 
               <td colspan="2" height="9"> 
-                <div align="center"><font size="2">Pas d'&eacute;quipe du comit&eacute; 
-                  dans cette comp&eacute;tition</font></div>
+                <div align="center"><font size="2">Pas d'équipe du comité 
+                  dans cette compétition</font></div>
               </td>
             </tr>
             <tr > 
@@ -411,8 +411,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <tr> 
               <td colspan="2" bgcolor="#FF9933" bordercolor="#FFCCFF"> 
                 <div align="center">Toutes les poules et les informations sur 
-                  les comp&eacute;titions<br>
-                  et les &eacute;quipes f&eacute;minines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_top">ICI 
+                  les compétitions<br>
+                  et les équipes féminines <a href="http://francefinalesrugby.franceserv.com/feminine/index_fem.php" target="_top">ICI 
                   </a></div>
               </td>
             </tr>

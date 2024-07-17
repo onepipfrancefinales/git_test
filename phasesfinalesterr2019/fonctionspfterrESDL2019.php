@@ -30,23 +30,23 @@ if ($division == 170)
 elseif ($division == 180)
 	echo "- Promotion honneur -";
 elseif ($division == 190)
-	echo "- 1re S&eacute;rie -";
+	echo "- 1re Série -";
 elseif ($division == 200)
-	echo "- 2me S&eacute;rie -";
+	echo "- 2me Série -";
 elseif ($division == 210)
-	echo "- 3me S&eacute;rie -";
+	echo "- 3me Série -";
 elseif ($division == 220)
-	echo "- 4me S&eacute;rie -";
+	echo "- 4me Série -";
 elseif ($division == 270)
-	echo "- R&eacute;serve honneur -";
+	echo "- Réserve honneur -";
 elseif ($division == 9180)	
-	echo "- R&eacute;serve promotion honneur -";
+	echo "- Réserve promotion honneur -";
 elseif ($division == 9190)
-	echo "- R&eacute;serve S&eacute;rie -";
+	echo "- Réserve Série -";
 elseif ($division == 9200)
-	echo "- R&eacute;serve 2me S&eacute;rie -";
+	echo "- Réserve 2me Série -";
 else
-	echo "R&eacute;serve 4me S&eacute;rie  ";
+	echo "Réserve 4me Série  ";
 }
 
 
@@ -287,19 +287,19 @@ if (substr($division,-4)=='0170')
 elseif(substr($division,-4)=='0180')
 	$division = "Promotion honneur";
 elseif(substr($division,-4)=='0190')
-	$division = "1re s&eacute;rie";
+	$division = "1re série";
 elseif(substr($division,-4)=='0200')
-	$division = "2me s&eacute;rie";
+	$division = "2me série";
 elseif(substr($division,-4)=='0210')
-	$division = "3me s&eacute;rie";
+	$division = "3me série";
 elseif(substr($division,-4)=='0220')
-	$division = "4me s&eacute;rie";
+	$division = "4me série";
 elseif(substr($division,-4)=='0270')
-	$division = "R&eacute;serve honneur";
+	$division = "Réserve honneur";
 elseif(substr($division,-4)=='9180')
-	$division = "R&eacute;serve promotion honneur";
+	$division = "Réserve promotion honneur";
 elseif(substr($division,-4)=='9190')
-	$division = "R&eacute;serve  1re s&eacute;rie";	
+	$division = "Réserve  1re série";	
 }
 function afficheDivisionChampionLigue($division, $annee)
 {
@@ -311,19 +311,19 @@ if (substr($division,-4)=='0170'){
 elseif(substr($division,-4)=='0180') {
 	if ($annee < 2023) {$division = "Promotion honneur";} else {$division = "Régionale 2"; }}
 elseif(substr($division,-4)=='0190') { 
-	if ($annee < 2023) {$division = "1re s&eacute;rie";} else {$division = "Régionale 3"; }}
+	if ($annee < 2023) {$division = "1re série";} else {$division = "Régionale 3"; }}
 elseif(substr($division,-4)=='0200')
-	$division = "2me s&eacute;rie";
+	$division = "2me série";
 elseif(substr($division,-4)=='0210')
-	$division = "3me s&eacute;rie";
+	$division = "3me série";
 elseif(substr($division,-4)=='0220')
-	$division = "4me s&eacute;rie";
+	$division = "4me série";
 elseif(substr($division,-4)=='0270') {
-	if ($annee < 2023) { $division = "R&eacute;serve honneur";} else { $division = "Réserve régionale 1"; }}
+	if ($annee < 2023) { $division = "Réserve honneur";} else { $division = "Réserve régionale 1"; }}
 elseif(substr($division,-4)=='9180') {
-	if ($annee < 2023) { $division = "R&eacute;serve promotion honneur" ;}else {$division = "Réserve régionale 2"; }}
+	if ($annee < 2023) { $division = "Réserve promotion honneur" ;}else {$division = "Réserve régionale 2"; }}
 elseif(substr($division,-4)=='9190')
-	$division = "R&eacute;serve  1re s&eacute;rie";	
+	$division = "Réserve  1re série";	
 }
 
 function champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd)

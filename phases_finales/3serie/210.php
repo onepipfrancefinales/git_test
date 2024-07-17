@@ -2,18 +2,18 @@
 <table width="1500" border="0" align="left" height="500" cellspacing="0">
   <tr> 
     <td height="20" bgcolor="#FFCC66" colspan="15"> 
-      <div align="center"><i><b>3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-        3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me 
-        S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
-        3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me 
-        S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 3me S&eacute;rie 
+      <div align="center"><i><b>3me Série 3me Série 3me Série 
+        3me Série 3me Série 3me Série 3me Série 3me 
+        Série 3me Série 3me Série 3me Série 3me Série 
+        3me Série 3me Série 3me Série 3me Série 3me 
+        Série 3me Série 3me Série 3me Série 3me Série 
         </b></i></div>
     </td>
   </tr>
   <tr> 
     <td width="231" height="13"> 
       <div id="cal"><a href="../pagebarrages.php?variable_1=<?php echo $annee;?>">Barrages 
-        s&eacute;ries Territoriales</a></div>
+        séries Territoriales</a></div>
     </td>
     <td width="34" height="13">&nbsp;</td>
     <td width="45" height="13">&nbsp;</td>
@@ -697,7 +697,7 @@
     <td width="26">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div id="titre">Champion de France<br>
-        3me S&eacute;rie 
+        3me Série 
         <?php echo $annee;?>
       </div>
     </td>

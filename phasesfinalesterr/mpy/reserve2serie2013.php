@@ -339,10 +339,10 @@ echo "";
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 269px; top: 195px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
   <div align="center"><font color="#FFFFFF"><b>Quarts de finale</b></font></div>
 </div>
-<div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 152px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>R&eacute;serve 
-  2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie 
-  R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 
-  2me S&eacute;rie R&eacute;serve 2me S&eacute;rie R&eacute;serve 2me S&eacute;rie</b></i></div>
+<div id="Layer2" style="position:absolute; width:1000px; height:20px; z-index:4; left: 0px; top: 152px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"><i><b>Réserve 
+  2me Série Réserve 2me Série Réserve 2me Série 
+  Réserve 2me Série Réserve 2me Série Réserve 
+  2me Série Réserve 2me Série Réserve 2me Série</b></i></div>
    
 	   
 <div id="Layer4" style="position:absolute; width:1px; height:102px; z-index:6; left: 418px; top: 439px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>

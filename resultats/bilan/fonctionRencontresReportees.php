@@ -55,7 +55,7 @@ $query = "	SELECT c.nom ,  m.id_equipe_ext,  m.id_journee,  m.date_reelle
 						}
 		if ($test > 0)
 			{
-	  echo "Rencontres   de la poule report&eacute;es"; 
+	  echo "Rencontres   de la poule reportées"; 
 	  echo "<br>";
 	  		}
 ?>
@@ -79,7 +79,7 @@ $query = "	SELECT c.nom ,  m.id_equipe_ext,  m.id_journee,  m.date_reelle
 					$result = 	mysql_query($query);		
 					while($row = mysql_fetch_array($result))
 						{    	
-							echo "Journ&eacute;e ".''.substr($row[2],3,2)."<br>";			
+							echo "Journée ".''.substr($row[2],3,2)."<br>";			
 						}
 	echo "<br>";
 ?>
@@ -149,7 +149,7 @@ $query = "	SELECT c.nom ,  m.id_equipe_ext,  m.id_journee,  m.date_reelle
 					while($row = mysql_fetch_array($result))
 						{    	
 						$dateUS = $row[3];			
-						echo "Report&eacute;e au ".''.date('d-m-Y',strtotime($dateUS)).''."<br>";;
+						echo "Reportée au ".''.date('d-m-Y',strtotime($dateUS)).''."<br>";;
 						}
 	echo "<br>";
 ?>
