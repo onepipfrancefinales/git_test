@@ -23,7 +23,7 @@ elseif ($cmt =="pro")
 <table class = "marginAuto width550  borderWidth3" >
    <tr class="fond" >
     <td   rowspan="3"   > 
-      <h4 ><a  class="decorationNone" href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=110&annee=<?php echo $finSaison;?>"
+      <h4 ><a  class="decorationNone colorWhite" href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=110&annee=<?php echo $finSaison;?>"
 		target="_top">Phases finales <br> Championnat de France</a></h4></td>
     <td class="tabHautDroit"> <a href="/palmares/palmNational/pagePalmares.php?division=110" target="_top">Palmarès Top 14</a></td>
   </tr>

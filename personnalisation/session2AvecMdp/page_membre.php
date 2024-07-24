@@ -4,32 +4,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link type="text/css" rel="stylesheet" href="../../smart/10.css"> 
 <meta name=viewport content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="CSS.css">
 </head>
 
-<body bgcolor="#FFFFFF" text="#000000">
-<table width="100%" border="1">
+<body>
+<table class="borderWidth1 width100PC">
   <tr> 
     <td class="h22"> France Finales Rugby </td>
   </tr>
   <tr> 
-    <td class="h12" height="39"> Mise &agrave; jour des résultats</td>
+    <td class="h12" height="39"> Mise à jour des résultats</td>
   </tr>
 </table>
 
-<?php include ("entetePage.php"); 
+<?php include "entetePage.php"; 
 require '../../fonctions.php';
 //********* Recheche du club (E) *********
-require ("../../connect/connexion1.php") ; 
+require "../../connect/connexion1.php" ; 
 infosclub($idFfr, $bdd);
-//echo "<br>";
-//echo $sigleComite;echo "<br>";
-//echo $id;echo "<br>";
-//echo $nomChampion;echo "<br>";
-//echo $numLigue;echo "<br>";
-//echo "<br>";
 
-require ("../../connect/connexion6.php") ; 
-
+require "../../connect/connexion6.php" ; 
 appartientA('pro', $id,  $bdd);
 $resultatPro = $resultat;
 
@@ -74,19 +68,9 @@ elseif ($numLigue ==20)
 	{$bddComite="ab"; $comite="ab";}
 	
 	
-/*
-echo "<br />";
-	echo "bddComite : ".$bddComite;
-	echo "<br />";
-	echo "comite : ".$comite;
-	echo "<br />";
-	echo "id : ".$id;
-	echo "<br />";
-*/	
 	require ("../../connect/connexion6.php") ;
 	$comite_equipes = "php".''.$bddComite.''."_equipes";
-//echo "comite_equipes : ".$comite_equipes;
-//echo "<br />";	
+	
 	$reponse = $bdd->query (" SELECT id_champ
 								FROM $comite_equipes
 								WHERE id = '$id' ");
@@ -95,16 +79,8 @@ echo "<br />";
 		$poule = $donnees['id_champ'];
 		}	
 
-
-			//echo "<br />";
-			//echo "poule : ".$poule;
-
-
 //********* Recheche de la journee (J) *********
-
-
 $phpcomite_journees="php".''.$bddComite.''."_journees";
-//echo $phpcomite_journees;echo "<br />";
 
 				$nbreDeJournee=$bdd->query("	SELECT MAX(numero)
 							FROM $phpcomite_journees
@@ -113,17 +89,11 @@ $phpcomite_journees="php".''.$bddComite.''."_journees";
 				$nbreDeJournee=$nbreDeJournee->fetch();
 																				
 $derniereJournee=$nbreDeJournee[0];
-//echo "Nombre de journee : ".''.$derniereJournee;
 
-?>
-<p align="center"> 
-<?php
 $phpcomite_matchs= "php".''.$bddComite.''."_matchs";				
 	
 $journeeMini = ($poule * 100) + 1;
 $journeeMaxi = ($poule * 100 ) + $derniereJournee; 
-//echo $journeeMini;echo "<br />";
-//echo $journeeMaxi;echo "<br />";
 			
 	if (isset($journee)) $journee = $journee ; else $journee =""; 			
 	$result =$bdd->query("	SELECT DISTINCT id_journee
@@ -139,38 +109,30 @@ $journeeMaxi = ($poule * 100 ) + $derniereJournee;
 								$journee = $row[0];
 								//echo $journee; echo "<br />";
 								}
-//var_dump ($journee);
-//echo "journee : ".$journee;																										
+																									
 if ($journee == NULL)
  $journee=$journeeMini;
 else
 $journee=$journee+1;
-
 $journeeActuelle=substr($journee,-2);
-
-//echo $journee;echo "<br />";
-//echo  $journeeActuelle;
 ?>
-  <font size="5"> <b> 
-  <?php echo $nomChampion; ?>
-   </b></font></p>
-<div align="center"> 
+
+<div class="marginAuto size5 center"> 
+  
+ <b> <?php echo $nomChampion; ?></b> 
+   
+<br>
   <?php 
   $logo = substr($id,-5);
   {print("<img src=\"/images/blasons200_200/$logo.gif\" >");}	?>
- 
+  
   <hr />
 
 	</div>
 	
-<div align="left"> </div>
-	
-
-
-<div align="left"><br>
-	</div>
-	<p align="center"> <font face="Arial, Helvetica, sans-serif" size="3"><a href="/resultatsFranceservCom/retourAvecMdp.php?E=<?php echo $id; ?>&bddC=<?php echo $bddComite; ?>&C=<?php echo $comite; ?>&J=<?php echo $journee; ?>&JMAX=<?php echo $derniereJournee; ?>"><font color="#000000"><b>Mise 
-	  &agrave; jour Equipe Une </b></font></a></font> <br>
+	<p class="center size3 style">
+		<a href="/resultatsFranceservCom/retourAvecMdp.php?E=<?php echo $id; ?>&bddC=<?php echo $bddComite; ?>&C=<?php echo $comite; ?>&J=<?php echo $journee; ?>&JMAX=<?php echo $derniereJournee; ?>">
+		<b>Mise à jour Equipe Une </b></a> <br>
 	  <?php
 	//******** Modif des variableS pour les equipes II  *******
 	
@@ -188,7 +150,8 @@ $journeeActuelle=substr($journee,-2);
 	//echo "journee : ".$journee;
 ?>	
 
-<p align="center"><font face="Arial, Helvetica, sans-serif" size="3"><a href="/resultatsFranceservCom/retourAvecMdp.php?E=<?php echo $id; ?>&bddC=<?php echo $bddComite; ?>&C=<?php echo $comite; ?>&J=<?php echo $journee; ?>&JMAX=<?php echo $derniereJournee;?>"><font color="#000000"><b>Mise 
-  &agrave; jour Equipe II </b></font></a></font></p>
+<p class="center size3 style">
+	<a href="/resultatsFranceservCom/retourAvecMdp.php?E=<?php echo $id; ?>&bddC=<?php echo $bddComite; ?>&C=<?php echo $comite; ?>&J=<?php echo $journee; ?>&JMAX=<?php echo $derniereJournee;?>"><b>
+	Mise à jour Equipe II </b></p>
 </body>
 </html>

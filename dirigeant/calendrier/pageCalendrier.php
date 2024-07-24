@@ -55,8 +55,10 @@ calendrier ($equipe, $bddComite, $divisionChiffre, $nbreJourneeMax, $bdd);
 <head>
   <link type="text/css" rel="stylesheet" href="../../ligne1.css">
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
-  <title>Championnats Territoriaux comit&eacute; <?php echo $comiteNom;?></title>
-  <meta name="description" content=" R&eacute;sulats des comp&eacute;titions territoriales du comit&eacute; Armagnac Bigorre. Calendriers, r&eacute;sultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
+  <link type="text/css" rel="stylesheet" href="../../resultats/resultat.css">
+  <link type="text/css" rel="stylesheet" href="../../lienNoir.css">
+  <title>Championnats Territoriaux comité; <?php echo $comiteNom;?></title>
+  <meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me S&eacute;rie, &eacute;quipes II comprises. Egalement disponible les phases finales territoriales des ann&eacute;es pr&eacute;c&eacute;dentes et les palmares territoriaux des diff&eacute;erentes divisions du comit&eacute;. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
@@ -87,16 +89,17 @@ calendrier ($equipe, $bddComite, $divisionChiffre, $nbreJourneeMax, $bdd);
       </td>
     </tr>
     
-	<tr valign="middle">
-      <td bgcolor="#006699" valign="top" width="225" height="89"> 
+	<tr>
+     <!-- Colonne centrale -->
+      <td class="colonneDroiteGauche"> 
         <p><?php include("../../01gauche.php");?> </p>
       </td>
-      <td bordercolor="#000000" bgcolor="#ffffff" width="650" valign="top" height="89"> 
+      <td class="colonneCentrale"> 
         <div align="center"> 
           <?php include("impressionCalendrier0.php"); ?>
           <p>&nbsp;</p>
 		  
-		  <hr/>
+		   <hr/>
   
           <p>
           <table width="593" border="0" align="center">
@@ -116,49 +119,54 @@ calendrier ($equipe, $bddComite, $divisionChiffre, $nbreJourneeMax, $bdd);
                   <font face="Times New Roman, Times, serif" size="3"> <font size="2" face="Arial, Helvetica, sans-serif"> 
                   <font color="#000000"> 
                   <?php
-			//*******  Affichage palmares Equipe Une ********
-		require '../../connect/connexion1.php';
-		infosclub($idFfr, $bdd);
-		palmaresEquipes ($idFfr, "bdequipe1", $bdd);
-		if  ($nbreTitre > 5)
-			$nbreTitreAffiches = 6;
-		else 
-			$nbreTitreAffiches = $nbreTitre;
-			for ($i=0; $i<	$nbreTitreAffiches; $i++)
-					{
-					echo ${"saison".$i}.' '.${"titre".$i}.' '.${"championnat".$i}.' '.${"division".$i}."<br />";
-         		  	}				
-			
-			?>
+            //*******  Affichage palmares Equipe Une ********
+          require '../../connect/connexion1.php';
+          infosclub($idFfr, $bdd);
+          palmaresEquipes ($idFfr, "bdequipe1", $bdd);
+          if  ($nbreTitre > 5)
+            $nbreTitreAffiches = 6;
+          else 
+            $nbreTitreAffiches = $nbreTitre;
+            for ($i=0; $i<	$nbreTitreAffiches; $i++)
+                {
+                echo ${"saison".$i}.' '.${"titre".$i}.' '.${"championnat".$i}.' '.${"division".$i}."<br />";
+                      }				
+            
+            ?>
                   </font></font></font></p>
                 <p align="center"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#000000">Equipe 
                   II</font></b><br>
 				  <font face="Times New Roman, Times, serif" size="3"> <font size="2" face="Arial, Helvetica, sans-serif"> 
                   <font color="#000000"> 
                   <?php
-			//*******  palmares Equipe II ********
-			
-			require '../../connect/connexion1.php';
-		palmaresEquipes ($idFfr, "bdequipe2", $bdd);
-		if  ($nbreTitre > 5)
-		$nbreTitreAffiches = 6;
-		else 
-		$nbreTitreAffiches = $nbreTitre;
-				for ($i=0; $i<	$nbreTitreAffiches; $i++)
-					{
-					echo ${"saison".$i}.' '.${"titre".$i}.' '.${"championnat".$i}.' '.${"division".$i}."<br />";
-            		}
-			
-			?>
-			</font></font></font></p>
-              </td>
-        <td width="294" valign="middle"> 
-          <table width="250" border="1" bordercolor="#000000" height="357" align="center">
+            //*******  palmares Equipe II ********
+            
+            require '../../connect/connexion1.php';
+          palmaresEquipes ($idFfr, "bdequipe2", $bdd);
+          if  ($nbreTitre > 5)
+          $nbreTitreAffiches = 6;
+          else 
+          $nbreTitreAffiches = $nbreTitre;
+              for ($i=0; $i<	$nbreTitreAffiches; $i++)
+                {
+                echo ${"saison".$i}.' '.${"titre".$i}.' '.${"championnat".$i}.' '.${"division".$i}."<br />";
+                      }
+            
+            ?>
+            </font></font></font></p>
+      </td>
+      <!-- Colonne de droite -->
+        <td class="colonneDroiteGauche"> 
+          
+        
+        
+        
+        <table width="250" border="1" bordercolor="#000000" height="357" align="center">
             <tr> 
               
                     <td height="328"> <font color="#000000">
                       <?php
-		echo "<br />";?>
+		        echo "<br />";?>
                       </font> 
                       <p align="center"> <font color="#000000"> 
                         <?php echo "Ligue r&eacute;gionale";?>
@@ -168,16 +176,19 @@ calendrier ($equipe, $bddComite, $divisionChiffre, $nbreJourneeMax, $bdd);
                       <p align="center"><strong> <font size="6" color="#000000">
                         <?php echo $sigle; ?>
                         </font></strong> </p>
-         <p align="center"><strong><font size="6"> 
-         <?php 
-		  $logo = substr ($equipe, -5);
-		 {print("<img src=\"/images/blasons200_200/$logo.gif\" >");}
-		 ?>
+             <p align="center"><strong><font size="6"> 
+                 <?php 
+		          $logo = substr ($equipe, -5);
+		            {print("<img src=\"/images/blasons200_200/$logo.gif\" >");}
+		           ?>
                   </font></strong></p>
                 <p align="center"><strong> <font size="6"> </font></strong></p>
               </td>
             </tr>
-          </table>
+        </table>
+
+
+
           <div align="center"></div>
           <div align="center"></div>
         </td>
@@ -339,42 +350,12 @@ calendrier ($equipe, $bddComite, $divisionChiffre, $nbreJourneeMax, $bdd);
 		</p>
       </td>
     </tr>
-    <tr>
-    <th colspan="3" bgcolor="#ffffff" height="77" valign="top">
-     <div align="center">
-      
-	  <table border="1" bordercolor="#006699" width="100%">
-        <tbody>
-          <tr>
-           <td>
-			<?php include("../../comitebas.php");    ?> 
-		   </td>
-          </tr>
-          <tr>
-           <td>
-		    <?php include("../../pub1.php");  ?> 
-		   </td>
-          </tr>
-          <tr>
-           <td>
-            <?php include("../../bas.php"); ?>
-           </td>
-          </tr>
-        </tbody>
-       </table>
-	   
-      </div>
-     </th>
-    </tr>
-  </tbody>
+  
 </table>
 </div>
-<footer> </footer>
-<div id="9129-5">
-<script src="//ads.themoneytizer.com/s/gen.js?type=5">
-			</script>
-<script
- src="//ads.themoneytizer.com/s/requestform.js?siteId=9129&amp;formatId=5">
-			</script></div>
+<footer>
+  
+</footer>
+
 </body>
 </html>

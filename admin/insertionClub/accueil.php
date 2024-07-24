@@ -1,51 +1,55 @@
-<html>
+<!DOCTYPE html PUBLIC>       
+<html lang="fr">
 <head>
 <title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<script language="JavaScript">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link type="text/css" rel="stylesheet" href="../../ligne1.css">
 <!--
+<script language="JavaScript">
+
 function MM_jumpMenu(targ,selObj,restore){ //v3.0
   eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
   if (restore) selObj.selectedIndex=0;
 }
-//-->
+
 </script>
+//-->
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
 <p><font size="5"><b>Insertion d'un nouveau club dans les tables</b></font></p>
-<p><font size="4" face="Arial, Helvetica, sans-serif">bdclubs (Identifiants du club)<br>
+<p class="size4 styleArial">bdclubs (Identifiants du club)<br>
   infosClub (infos sur le clubs)<br>
-  bdsaisons (historique des saisons précé;dentes)</font></p>
+  bdsaisons (historique des saisons précé;dentes)</p>
   <hr />
 <form name="form1" method="POST" action="retour.php">
   <p></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">Nom Usuel : 
+  <p class="size4 styleArial">Nom Usuel : 
     <input type="text" name="nom">
-    </font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">Nom complet : 
+    </p>
+    <p class="size4 styleArial">Nom complet : 
     <input type="text" name="nomComplet">
-    </font></p>
-	 <p><font size="4" face="Arial, Helvetica, sans-serif">Saison : 
+    </p>
+    <p class="size4 styleArial">Saison : 
     <input type="text" name="saison">
-    </font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">Pour saisir l'id consulter 
+    </p>
+    <p class="size4 styleArial">Pour saisir l'id consulter 
     la liste des clubs par Id (<a href="../consultation/listeClubsParNom.php" target="_blank">liste 
-    par ID</a>)</font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">Id 2029076: 
+    par ID</a>)</p>
+    <p class="size4 styleArial">Id 2029076: 
     <input type="text" name="id">
-    </font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">IdFFR (1234M): 
+    </p>
+    <p class="size4 styleArial">IdFFR (1234M): 
     <input type="text" name="idffr">
-    </font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">type d'équipe : 
+    </p>
+    <p class="size4 styleArial">type d'équipe : 
     <select name="type" size="1" required>
       <option selected>Type d'équipe</option>
       <option value="F">Equipe féminine</option>
       <option value="M">Equipe Masculine</option>
     </select>
-    </font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">Comite : 
+    </p>
+    <p class="size4 styleArial">Comite : 
     <select name="comite" size="1" required>
       <option selected>Comité</option>
       <option value="(AP)">Alpes</option>
@@ -75,8 +79,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <option value="(PR)">Provence</option>
       <option value="(PC)">Pays Catalan</option>
     </select>
-    </font></p>
-  <p><font size="4" face="Arial, Helvetica, sans-serif">Ligue : 
+    </p>
+    <p class="size4 styleArial">Ligue : 
     <select name="ligue"  size="1" required>
       <option selected>Ligue</option>
       <option value="10">Auvergne Rhone Alpes</option>
@@ -93,7 +97,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <option value="21">Pays de la Loire</option>
       <option value="22">Provence Alpes Cote d'Azur</option>
     </select>
-    </font> </p>
+    </p>
   <p>&nbsp;</p>
   <p>
     <input type="submit" name="Submit" value="Valider">

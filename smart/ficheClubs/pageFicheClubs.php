@@ -3,28 +3,37 @@ require ("../../saison.php");
 require ("../../fonctions.php");
 $chaine = $_GET['champion'];
 
-if (is_numeric($chaine))
- {
-	//echo "numerique";
-	if(strlen($chaine)==5){
- 	 $equipe = $chaine;
-	$id = substr($chaine,0,2);
-	}
-	else {
- 	 $equipe = substr($chaine,2,5);
-	 $numLigue=substr($chaine,0,2);
-	 $id = substr($chaine,2,2);
-	}
+ if (is_int($chaine)) {
+
+  //   echo " numerique"; echo "<br/>";
+   $equipe = substr($chaine, 2, 5);
+   $numLigue = substr($chaine, 0, 2);
+   $id = substr($chaine, 2, 2);
+  // echo $id;
+ }
+ 
+ 
+ //Evaluation de la variable chaine si textuelle
+ else {
+  // echo " non numerique";echo "<br/>";
+   require '../../connect/connexion1.php';
+   infosclub($chaine, $bdd);
+   $equipe = $numLigue . $code;
+   $id = substr($id, 2, 2);
+  // echo $id;
  }
 
  
 require '../../connect/connexion1.php'; 
+nomComite (0,$id, $bdd);
 infosclub($chaine, $bdd);
 nomLigue ($numLigue, $bdd);
+affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($chaine, $bdd);
 saisons($code, $annee, $bdd);
-nomComite ($sigleComite, 0, $bdd);
-affichageSaisonEnCours($equipe, $bdd);
+
+
+
 ?>
 
 <html>
@@ -32,6 +41,7 @@ affichageSaisonEnCours($equipe, $bdd);
  <title>Fiche club <?php echo $nomChampion; ?></title>
 <content="Présentation de club <?php echo $nomChampion; ?>">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link type="text/css" rel="stylesheet" href="../../ligne1.css">
  <link rel="stylesheet" type="text/css" href="../menu_smart2.css">  
  <link type="text/css" rel="stylesheet" href="../10.css">
  <link type="text/css" rel="stylesheet" href="paramTiroir.css">

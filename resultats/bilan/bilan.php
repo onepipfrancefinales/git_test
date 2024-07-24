@@ -1,7 +1,7 @@
-<table width="600" border="0" cellspacing="0" cellpadding="2" align="center">
+<table width="600" class="marginAuto borderNone">
   <tr>
     <td width="572">&nbsp;</td>
-    <td width="133" align="center"> </td>
+    <td width="133" > </td>
   </tr>
   <tr>
     <td width="572">
@@ -28,7 +28,7 @@
 
 <h1>Saisons précédentes </h1>
 
-<table width="550" border="0" cellspacing="0" align="center">
+<table width="550" class="marginAuto borderNone">
   <!-- Dernière saison : saison -1 ans -->
   <tr class="ligneGrise">
     <td class="saison">
@@ -206,7 +206,7 @@
   <!-- font size="3" face="Arial, Helvetica, sans-serif" color="#FF0000">Victoires 
     consécutives</font>
   -->
-  <table width="400" border="0" height="250" align="center">
+  <table width="400" class="marginAuto borderWidth1">
     <tr>
       <td class="stats">Résultats à domicile</td>
       <td class="stats">Résultats à l'exterieur </td>
@@ -230,7 +230,7 @@
 
   <h1>Moyennes</h1>
   <br>
-  <table width="73%" border="0"  align="center">
+  <table width="73%" class="marginAuto borderNone">
     <tr>
       <td class="moyPP" colspan="2"> Points marqués par match </td>
       <td class="moyPC" colspan="2"> Points encaisses par match </td>
@@ -257,7 +257,7 @@
     </tr>
   </table>
   <br>
-  <table width="73%" border="1" cellspacing="0" cellpadding="0" align="center">
+  <table width="73%" class="marginAuto borderWidth1">
     <tr>
       <td class="moyVert"> Moyenne à domicile </td>
       <td class="moyVert"> Moyenne à l'exterieur </td>
@@ -298,7 +298,7 @@
   <br>
   <hr>
   <br>
-  <table width="72%" border="0" align="center">
+  <table width="72%" class="marginAuto borderNone">
     <tr>
       <td class="QLiens">Meilleure attaque de la poule :</td>
       <td class="QLiens">

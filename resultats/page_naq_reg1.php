@@ -120,7 +120,35 @@ $comiteNom = "Cote d'Argent"; ?>
           perequation($comite, $champ, $bdd);
           echo "<br>" . "<br>";
         };
-    
+
+if ($lien == 19) {
+ 
+ 
+  echo " <hr>" . "<hr>";
+  echo "<h1> Promotion Régionale 3 </h1>";
+
+
+        foreach ($tableauPromoNAQ3 as $champ) {
+
+          
+            $competition =  "Promotion".' '.$REG3;
+            $champ2 = 0;
+            $nomSerie = "(Ex 3me/ 4me série)";
+          
+          echo "  <br>" . "<br>";
+          echo "<h5>" .  $competition . " - " . "Poule " . (substr($champ, -1))-4;
+          echo "<br>"; ?>
+
+          <span class="size2"><?php  echo $nomSerie; ?> </span>
+        <?php
+          echo "</h5>";
+          echo  "<br>" . "<br>" . "<br>";
+          affichage($champ, $champ2, $comite, $bdd);
+          journeesReportees($comite, $champ, $bdd);
+          perequation($comite, $champ, $bdd);
+          echo "<br>" . "<br>";
+        };
+      };
    
         include "liensDiversBas.php";
         ?>

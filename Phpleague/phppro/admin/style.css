@@ -1,5 +1,7 @@
 a:link {color: #3b487f; text-decoration:underline;}
+/*
 a:visited {color: #3b487f; text-decoration:underline;}
+*/
 a:active {color: #3b487f; text-decoration:none;}
 A:hover {color:#3b487f; text-decoration:none;}
 A {color: #3b487f; text-decoration: underline;}

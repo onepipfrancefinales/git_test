@@ -333,5 +333,59 @@ function cssColonne ($trigrammeLigue) {
 }
 
 
+function  tabNbreClubs () {
+
+	$tabTrigrammeLigue =   array("ARA" , "BFC", "BRE", "CVL", "COR", "GES", "HDF", "IDF", "NOR", "NAQ", "OCC", "PCA", "PDL" );
+	$tabLigue =   array(10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 21);
+	$tabDivision = array(110, 120, 130, 135, 140, 150, 160, 170, 180, 190);
+	$tabNomDivision = array ("TOP14", "PROD2", "NAT1", "NAT2", "FED1", "FED2", "FED3",  "REG1", "REG2", "REG3");
+	
+	foreach ($tabLigue as $idLigue) {
+	global $sigleLigue;
+	  if ($idLigue == 10)
+		$sigleLigue = "ARA";
+	  elseif ($idLigue == 11)
+		$sigleLigue = "BRE";
+	  elseif ($idLigue == 12)
+		$sigleLigue = "BFC";
+	  elseif ($idLigue == 13)
+		$sigleLigue = "CVL";
+	  elseif ($idLigue == 14)
+		$sigleLigue = "COR";
+	  elseif ($idLigue == 15)
+		$sigleLigue = "GES";
+	  elseif ($idLigue == 16)
+		$sigleLigue = "HDF";
+	  elseif ($idLigue == 17)
+		$sigleLigue = "IDF";
+	  elseif ($idLigue == 18)
+		$sigleLigue = "NOR";
+	  elseif ($idLigue == 19)
+		$sigleLigue = "NAQ";
+	  elseif ($idLigue == 20)
+		$sigleLigue = "OCC";
+	  elseif ($idLigue == 21)
+		$sigleLigue = "PDL";
+	  elseif ($idLigue == 22)
+		$sigleLigue = "PCA";
+	/*
+	structureLigue($idLigue, $bdd); ${$sigleLigue."110"} = $d110;
+									${$sigleLigue."120"} = $d120; 
+									${$sigleLigue."130"} = $d130;
+									${$sigleLigue."135"} = $d135;
+									${$sigleLigue."140"} = $d140; 
+									${$sigleLigue."150"} = $d150;
+									${$sigleLigue."160"} = $d160;
+									${$sigleLigue."170"} = $d170;
+									${$sigleLigue."180"} = $d180; 
+									${$sigleLigue."190"} = $d190;
+
+	*/								
+	}
+
+
+}
+
+
 
 ?>

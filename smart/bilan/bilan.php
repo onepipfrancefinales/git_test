@@ -216,14 +216,14 @@ if ($equipe > 90000000) {
 <?php clmnt($champ, true, $bdd); ?>
 
 <hr />
-
+<!--
 <h2 class="marginAuto">Evolution du classement</h2>
 
 <?php //require '../../resultats/bilan/graphiqueTest2.php';?>
 
 <p>Prochainement</p>
-
-
+-->
+<br /><br />
 <h2 class="marginAuto">Suivi des résultats des rencontres </h2>
 <p class="marginAuto"><?php evolutionResultatsSmart ($equipe, $comite, $champ, $bdd);?></p>
 <br />

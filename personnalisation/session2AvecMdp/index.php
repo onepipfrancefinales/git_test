@@ -1,15 +1,16 @@
 <html>
 <head>
-<title>Mise � jour des r�sultats</title>
+<title>Mise à jour des résultats</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="/personnalisation/admin/formulaire.css"/> 
 <link type="text/css" rel="stylesheet" href="/smart/10.css"> 
 <link type="text/css" rel="stylesheet" href="CSS.css">
+
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<table width="100%" border="1">
+<table class="borderWidth1 width100PC">
   <tr> 
     <td class="h22"> France Finales Rugby </td>
   </tr>
@@ -18,7 +19,7 @@
   </tr>
 </table>
 <p> 
-  <?php include ("saisieIdentifiant.php");?>
+  <?php include "saisieIdentifiant.php";?>
 </p>
 
 <p>l' identifiants et le mot de passe sont le code FFR du club<br>
@@ -27,19 +28,17 @@
 <p> 
   <link type="text/css" rel="stylesheet" href="/personnalisation/admin/formulaire.css"/>
   <b>Exemple :</b> Identifiant : 3345A<br>
-  <font color="#FFFFFF"><a href="../../smart/dossiers/sommaire.php"><font color="#FFFFFF">pagetest</font></a>ssss</font>Mot 
-  de passe 3345A<br>
+ Mot de passe : 3345A<br>
 </p>
 <hr />
-<table width="234" align="center">
-  <tbody> 
+<table class="marginAuto" >
   <tr> 
     <td> 
-      <h3 align="center"><a href="../../smart/sommaire.php"><font face="Arial, Helvetica, sans-serif" size="3">Retour 
-        &agrave; l'appli</font></a></h3> 
+      <h3 class="style">
+        <a href="../../smart/sommaire.php">Retour à l'appli</a>
+    </h3> 
     </td>
   </tr>
-  </tbody> 
 </table>
 </body>
 </html>

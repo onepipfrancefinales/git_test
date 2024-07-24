@@ -198,7 +198,7 @@ division($champ, $bdd);
 				// définiton de l'ancre -->
 
 				$ancre = substr($champ, -1);
-				$pref = 7;
+				$pref = 8;
 				$ancreGS = $pref + $ancre;
 
 				if ($champ >= 992161 and $champ < 992169) $ancre = intval($ancreGS);

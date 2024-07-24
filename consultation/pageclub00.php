@@ -8,22 +8,22 @@ $chaine = $_GET['champion'];
 //Evaluation de la variable chaine si numérique
 if (is_int($chaine)) {
 
- //   echo " numerique"; echo "<br/>";
+  //   echo " numerique"; echo "<br/>";
   $equipe = substr($chaine, 2, 5);
   $numLigue = substr($chaine, 0, 2);
   $id = substr($chaine, 2, 2);
- // echo $id;
+  // echo $id;
 }
 
 
 //Evaluation de la variable chaine si textuelle
 else {
- // echo " non numerique";echo "<br/>";
+  // echo " non numerique";echo "<br/>";
   require '../connect/connexion1.php';
   infosclub($chaine, $bdd);
   $equipe = $numLigue . $code;
   $id = substr($id, 2, 2);
- // echo $id;
+  // echo $id;
 }
 
 //echo $numLigue;;echo "<br/>";
@@ -81,78 +81,55 @@ saisons($code, $annee, $bdd);
 
 </head>
 
-<body >
-    <table width="1250"  class="marginAuto">
-      <tr>
-        <td colspan="3">
-          <?php include("../images/page_image_al.php"); ?>
-        </td>
-      </tr>
-      <tr >
-        <td colspan="3"><?php include("../01ligne.php"); ?></td>
-      </tr>
-      <tr >
-        <td class="colonne">
-          <?php include("../01gauche.php"); ?>
-        </td>
-        <td class="centreDePage">
-          <?php
-          if ($code > 0) {
-            include("00clubs.php");
-          } else {
-            include("02clubs.php");
-          }
-          ?>
-        </td>
-        <td class="colonne">
-          <?php include("../00droite.php"); ?>
-        </td>
-      </tr>
-    </table>
-    <table width="1100" align="center">
-      <tr valign="top" align="center">
-        <td bgcolor="#006699" valign="middle" align="center" height="15">
-          <b>
-            <font color="#FFFFFF" size="+2">
+<body>
+  <table width="1250" class="marginAuto">
+    <tr>
+      <td colspan="3">
+        <?php include("../images/page_image_al.php"); ?>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><?php include("../01ligne.php"); ?></td>
+    </tr>
+    <tr>
+      <td class="colonne">
+        <?php include("../01gauche.php"); ?>
+      </td>
+      <td class="centreDePage">
+        <?php
+        if ($code > 0) {
+          include("00clubs.php");
+        } else {
+          include("02clubs.php");
+        }
+        ?>
+      </td>
+      <td class="colonne">
+        <?php include("../00droite.php"); ?>
+      </td>
+    </tr>
+  </table>
+  <table class="marginAuto" width="1100">
+    <tr>
+      <td class="backgroundWhite" >
+        <br> <br>
+        <hr color="#FF0000" width="600">
+        </hr>
+        <h2 class="colorRed bold">
+          Photos du club
+        </h2>
+        <iframe src="/00messagerie/<?php echo $sigleComite; ?>/?id=1&album=<?php echo $code; ?>" width="1000" height="400" scrolling="yes" frameborder="0"></iframe>
 
-              <?php //echo $comite; 
-              ?>
-
-
-            </font>
-          </b>
-        </td>
-      </tr>
-      <tr>
-        <td bgcolor="#FFFFFF">
-          <p align="center">
-            <?php // echo $id; //echo $sigleComite; 
-            ?>
-          </p>
-          <p align="center">
-            <font color="#FF0000">____________________________________________________</font>
-          </p>
-          <div align="center">
-            <p>
-              <font color="#FF0000"><b>
-                  <font size="+2">Photos du club</font>
-                </b></font>
-            </p>
-            <?php //$sigleComite ="(MPY)";//$id =29076;
-            ?>
-            <iframe src="/00messagerie/<?php echo $sigleComite; ?>/?id=1&album=<?php echo $code; ?>" width="1000" height="400" scrolling="yes" frameborder="0"></iframe>
-          </div>
-        </td>
-      </tr>
-      <tr bgcolor="#FFFFFF">
-        <td>
-          <div align="center">
-            <font color="#000000"><b>
-                <?php include("../bas2.php");   ?>
-              </b></font>
-          </div>
-        </td>
-      </tr>
-    </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <?php include("../bas2.php");   ?>
+      </td>
+    </tr>
+  </table>
 </body>
+<footer>
+</footer>
+
 </html>

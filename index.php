@@ -35,9 +35,7 @@ $annee = 2022;
     </tr>
     <tr>
       <td colspan="3">
-
         <?php include("01ligne.php"); ?>
-
       </td>
     </tr>
     <tr class="colonne">
@@ -80,17 +78,18 @@ $annee = 2022;
           <table width="557" border="0" align="center">
             <tr class="backgroundRouge">
               <td class="colorWhite size4 style" colspan="3">
-                <b> LES METHODES POUR ACCEDER A </b>
+                <b>  ACCEDER A L'APPLICATION</b>
               </td>
             </tr>
             <tr class="backgroundRouge">
               <td class="colorWhite size4 style" colspan="3">
-                <b> L'APPLICATION SMARTPHONE </b>
+                <b> SMARTPHONE </b>
               </td>
             </tr>
             <tr class="backgroundBlanc">
               <td colspan="3">&nbsp;</td>
             </tr>
+            <!-- 
             <tr>
               <td colspan="3" class="backgroundBleu colorWhite size4 style">
                 <b>
@@ -105,9 +104,12 @@ $annee = 2022;
                 <p>
                 <div class="colorBlack size4">Télécharger l'application </br>
 
-                  <b><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
+                  <b>
+                   
+                    <a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank">
                       France Finales Rugby App
                     </a></b> sur Google Play.
+
                 </div>
 
 
@@ -117,13 +119,14 @@ $annee = 2022;
               </td>
               <td class="backgroundBlanc"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank"><img src="images/logo_google.jpg" alt="logo google" height="176" width="215"></a></td>
             </tr>
+            -->
             <tr>
               <td colspan="3" class="backgroundBlanc"></td>
             </tr>
             <tr>
               <td colspan="3" class="backgroundBleu colorWhite size4 style"><b>
-                  Installation d'un lien pour les
-                  Apple
+                  Installation d'un lien pour les smartphones
+                
                 </b></td>
             </tr>
             <tr>
@@ -137,8 +140,8 @@ $annee = 2022;
               <td class="colorTexte">
                 <p>
                   Pour les utilisateurs de smartphones
-                  et de tablettes
-                  <span> <b>Apple</b></span>
+                
+                
                   ,<br>
                   Cliquer sur le lien ci-dessous et mettre
                   l'adresse de ce dernier en favori.
@@ -149,8 +152,7 @@ $annee = 2022;
                 </p>
 
                 <p>
-                  https://francefinalesrugby.fr/<br>
-                  smart/sommaire.php
+                  https://francefinalesrugby.fr/smart/sommaire.php<br>
                 </p>
 
               </td>

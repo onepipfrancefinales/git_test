@@ -1,7 +1,5 @@
-
-
 <?php
-// On d�marre la session (ceci est indispensable dans toutes les pages de notre section membre)
+// On démarre la session (ceci est indispensable dans toutes les pages de notre section membre)
 session_start ();
 
 // On r�cup�re nos variables de session
@@ -20,7 +18,7 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
  
 <?php	
 // On affiche un lien pour fermer notre session
-	echo '<a href="logout.php"><div align="right"><font color="#000000">Déconnection</a></font>';
+	echo '<a href="logout.php"><div align="right"><font color="#000000">Déconnexion</a></font>';
 ?>
  
 <?php
@@ -28,7 +26,7 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
 else {
 	echo 'Vous devez vous identifier pour acceder &agrave; cette espace.';
 //	echo '<br />';
-	echo '<a href="index.php">Connection</a>';
+	echo '<a href="index.php">Connexion</a>';
 }
 $idFfr=$_SESSION['login'];
 //echo $idFfr;

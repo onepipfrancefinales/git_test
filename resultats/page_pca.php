@@ -1,6 +1,7 @@
 <?php 
 session_start ();
 include("../saison.php");
+include("../fichierConfig.php");
 require '../connect/connexion6.php';
 require '../Phpleague/phpidf/consult/fonctions_matchs.php';
 require '../Phpleague/phpidf/lang/lang_fr.php';
@@ -72,84 +73,43 @@ $comiteNom="Provence";
 	include("sommaires.php");       
 	echo "<hr>"."<hr>";
 	
-	// require("comPerso.php");
 
-	/*
-	echo   "<br>"."<h5><a name=\"H\"></a>$FED3 - $P1<br><br></h5>";
-	$champ = 220161; $champ2 = 220261;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-    perequation($comite, $champ, $bdd);
-	
-	echo   "<br>"."<h5><a name=\"H\"></a>$FED3 - $P2<br><br></h5>";
-	$champ = 220162; $champ2 = 220262;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-    perequation($comite, $champ, $bdd);
-	
-	echo   "<br>"."<h5><a name=\"H\"></a>$FED3 - $P3<br><br></h5>";
-	$champ = 220163; $champ2 = 220263;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-    perequation($comite, $champ, $bdd);
-	
-	*/
-	
-	
-	
-	echo   "<br>"."<h5><a name=\"R1\"></a>".$REG1."<br>
-	 <font face=\"Arial, Helvetica, sans-serif\" size=\"2\">(Ex honneur/ promotion honneur)</font></h5>";
-	$champ = 220171; $champ2 = 220271;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-    perequation($comite, $champ, $bdd);
-	
-    // include("comPerso2.php");  
-         
-	echo   "<br>"."<h5><a name=\"R2\"></a>".$REG2." - ".$P1."<br />
-	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS1S2."  
-            </font> <br><br></h5>";	
-	$champ = 220181; $champ2 = 0;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-	perequation($comite, $champ, $bdd);
- 
-	echo   "<br>"."<h5></a>".$REG2." - ".$P2."<br />
-	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS1S2." 
-            </font> <br><br></h5>";	
-	$champ = 220182; $champ2 = 0;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-	perequation($comite, $champ, $bdd);
+	$tableauCompetition = $tableauPCA;
 
-
-  echo   "<br>"."<h5></a>"."Réserve ".$REG2." <br />
-	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS1S2." 
-            </font> <br><br></h5>";	
-	$champ = 229181; $champ2 = 0;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-	perequation($comite, $champ, $bdd);
-	
-    //require '../pub/pub_displayH_550.php';
-    //include("comPerso2.php");
-
-	echo   "<br>"."<h5><a name=\"R3\"></a>".$REG3." - ".$P1."<br />
-	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS3S4." 
-            </font> <br><br></h5>";	
-	$champ = 220191; $champ2 = 0;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-    perequation($comite, $champ, $bdd);
-	
-	echo   "<br>"."<h5>".$REG3." - ".$P2."<br />
-	<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">".$EXS3S4." 
-            </font> <br><br></h5>";	
-	$champ = 220192; $champ2 = 0;
-	affichage($champ, $champ2, $comite, $bdd);  
-	journeesReportees($comite, $champ, $bdd);
-	perequation($comite, $champ, $bdd);
-	
+	foreach ($tableauCompetition as $champ) {
+  
+	  // echo $champ;
+	  $idCompetition = substr($champ, -3, 2);
+	  // echo $idCompetition;
+	  if ($idCompetition == 17) {
+		$competition =  $REG1;
+		$champ2 = $champ + 100;
+		$nomSerie = "(Ex honneur/ promotion honneur)";
+	  } else if ($idCompetition == 18) {
+		$competition =  $REG2;
+		$champ2 = $champ + 9000;
+		$nomSerie = "(Ex 1re/ 2me série)";
+	  } else if ($idCompetition == 19) {
+		$competition =  $REG3;
+		$champ2 = 0;
+		$nomSerie = "(Ex 3me/ 4me série)";
+	  }
+  
+	  echo "  <br>" . "<br>";
+	  echo "<h5>" .  $competition . " - " . "Poule " . substr($champ, -1);
+	  echo "<br>"; ?>
+  
+	  <span class="size2"> <?php echo $nomSerie; ?> </span>
+	<?php
+  
+  
+	  echo "</h5>";
+	  echo  "<br>" . "<br>" . "<br>";
+	  affichage($champ, $champ2, $comite, $bdd);
+	  journeesReportees($comite, $champ, $bdd);
+	  perequation($comite, $champ, $bdd);
+	  echo "<br>" . "<br>";
+	}
  
 	include "liensDiversBas.php";
   ?>

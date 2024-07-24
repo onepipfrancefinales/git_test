@@ -35,10 +35,10 @@ if (isset($_POST['A1631']))$A1631 = $_POST['A1631'];else $A1631="";
 if (isset($_POST['A1632']))$A1632 = $_POST['A1632'];else $A1632="";
 
  
-  //r�cup�ration de l'identifiant de la personne:
+  //récupération de l'identifiant de la personne:
   $id  = $_POST["id"] ;
  
-  //cr�ation de la requ�te SQL:
+  //création de la requ�te SQL:
   $bdd->exec( "UPDATE infosclub
            SET A1601='$A1601', A1602='$A1602',A1603='$A1603', A1604='$A1604',A1605='$A1605', A1606='$A1606',A1607='$A1607', A1608='$A1608', A1609='$A1609', A1610='$A1610',A1611='$A1611', A1612='$A1612',A1613='$A1613', A1614='$A1614',A1615='$A1615', A1616='$A1616',
 		       A1617='$A1617', A1618='$A1618',A1619='$A1619', A1620='$A1620',A1621='$A1621', A1622='$A1622',A1623='$A1623', A1624='$A1624',A1625='$A1625', A1626='$A1626',A1627='$A1627', A1628='$A1628',A1629='$A1629', A1630='$A1630',A1631='$A1631', A1632='$A1632'
@@ -50,7 +50,7 @@ if (isset($_POST['A1632']))$A1632 = $_POST['A1632'];else $A1632="";
   }
   else
   {
-    echo("La modification &agrave;  échouée") ;
+    echo("La modification à échouée") ;
   }
 
   echo "<br />";
@@ -60,8 +60,11 @@ if (isset($_POST['A1632']))$A1632 = $_POST['A1632'];else $A1632="";
  ?>
 <p>
 <p> 
+<!--
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+-->
   <!-- modif 3_16me -->
+   <!--
   <ins class="adsbygoogle"
      style="display:inline-block;width:970px;height:250px"
      data-ad-client="ca-pub-9177538664500260"
@@ -71,7 +74,9 @@ if (isset($_POST['A1632']))$A1632 = $_POST['A1632'];else $A1632="";
 </script>
 <p>&nbsp;
 <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+-->
 <!-- modif_16me2 -->
+ <!--
 <ins class="adsbygoogle"
      style="display:inline-block;width:970px;height:250px"
      data-ad-client="ca-pub-9177538664500260"
@@ -79,3 +84,4 @@ if (isset($_POST['A1632']))$A1632 = $_POST['A1632'];else $A1632="";
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+-->

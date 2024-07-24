@@ -16,11 +16,10 @@ td.saisie{color:#000000;text-align:center;font-size: 18px;font-family: arial;}
 .info{color:#000000;text-align:left;font-size: 16px;font-family: arial;}
 
 .saisonPaireNG{Font-Weight: Normal;background-color:#FFFFFF;font-family: arial;font-size: 17px;color:#000000;text-align:left;}
-.saisonImpaireNG{Font-Weight: Normal;background-color:#CCCCCC;font-family: arial;font-size: 17px;color:#000000;text-align:left;}
+.saisonImpaireNG{Font-Weight: Normal;background-color:#CCCCCC;font-family: arial;font-size: 17px;color:#000000;text-align:left}
 
-.saisonPaire{Font-Weight: Bold; background-color:#FFFFFF; font-family: arial;font-size: 17px;color:#000000;text-align:left;}
-.saisonImpaire{Font-Weight: Bold; background-color:#CCCCCC; font-family: arial;font-size: 17px;color:#000000;
-text-align:left;}
+.saisonPaire{Font-Weight: Bold; background-color:#FFFFFF; font-family: arial;font-size: 17px;color:#000000;}
+.saisonImpaire{Font-Weight: Bold; background-color:#CCCCCC; font-family: arial;font-size: 17px;color:#000000;}
 
 #saisonEnCours{margin: 0px auto;text-align:center;width:300px;font-weight: Bold;font-family: arial;font-size: 19px;color:#000000;background-color:yellow;}
 

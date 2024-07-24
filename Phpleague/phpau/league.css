@@ -1,4 +1,4 @@
-/* --------- Général --------- */
+/* --------- Gï¿½nï¿½ral --------- */
 
 BODY.phpau { color: #000000;  font-size:10pt; font-family: arial;}
 td {font-size:10pt; font-family: arial;color: #000000}
@@ -9,11 +9,12 @@ table {font-size:10pt; font-family: arial;}
 /* --------- couleurs des liens --------- */
 
 a:link {color: #3b487f; text-decoration:underline;}
+/*
 a:visited {color: #3b487f; text-decoration:underline;}
 a:active {color: #3b487f; text-decoration:none;}
 A:hover {color:#3b487f; text-decoration:none;}
 A {color: #3b487f; text-decoration: underline;}
-
+*/
 A.blanc {color: #FFFFFF; text-decoration:none;}
 a.blanc:link {color: #FFFFFF; text-decoration:none;}
 a.blanc:visited {color: #FFFFFF; text-decoration:none;}
@@ -33,15 +34,15 @@ TABLE.tablephpau2 {border-style: solid; border-color:#3B487F; border-width: 2;} 
 
 TR.accession {background-color: #ccffcc} /* couleur partie accession ou coupe d'europe */
 TR.barrage {background-color: #66CCFF} /* couleur partie barrage ou coupe d'europe*/
-TR.relegation {background-color: #FFcc99} /* couleur partie relégation */
+TR.relegation {background-color: #FFcc99} /* couleur partie relï¿½gation */
 
-TR.ligne1 {background-color: #E5E5E5} /* première ligne grise du classement */
+TR.ligne1 {background-color: #E5E5E5} /* premiï¿½re ligne grise du classement */
 TR.ligne2 {background-color: #FFFFFF} /* seconde ligne blanche du classement */
 
 TD.domicile {color: #000000;text-align:right; ;width:40%}
 TD.tiret{color: #000000;text-align:center; width:20%}
 TD.exterieur {color: #000000;text-align:left; ;width:40%}
-/* --------- tableau journée --------- */
+/* --------- tableau journï¿½e --------- */
 
 TR.date {color: #ff0000; background-color: #0066cc} /* date des rencontres*/
 
@@ -51,9 +52,9 @@ TR.date {color: #ff0000; background-color: #0066cc} /* date des rencontres*/
 .alignGauche{text-align:letf;color: #ff0000;}/* Colonne 2,3 et 4*/
 /* --------- calendrier ---------- */
 
-font.victoire {color: #339933} /* couleur du texte désignant une victoire */
-font.nul {color: #ff9933} /* couleur du texte désignant un nul */
-font.defaite {color: #FF3300} /* couleur du texte désignant une défaite */
+font.victoire {color: #339933} /* couleur du texte dï¿½signant une victoire */
+font.nul {color: #ff9933} /* couleur du texte dï¿½signant un nul */
+font.defaite {color: #FF3300} /* couleur du texte dï¿½signant une dï¿½faite */
 td.cld1 {text-align:right; width:40%} /* cellule gauche tableau */
 td.cld2 {text-align:left; width:40%} /* cellule droite tableau */
 

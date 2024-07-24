@@ -1,9 +1,26 @@
+
+ <?php // J'ai choisi le mot de passe "pasUnRobot
+if (isset($_POST['mot_de_passe'])) // Si la variable existe
+{
+    // On se cr�e une variable $mot_de_passe avec le mot de passe entr�
+    $mot_de_passe = $_POST['mot_de_passe'];
+}
+else // La variable n'existe pas encore
+{
+    $mot_de_passe = ""; // On cr�e une variable $mot_de_passe vide
+}
+if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
+{
+
+?>
+
 <html>
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <title>modification de donn�es du club</title>
+ <title>modification de données du club</title>
+ <meta name=viewport content="width=device-width, initial-scale=1">
  <script language="JavaScript">
- <!--
+ 
  function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
@@ -21,12 +38,7 @@
 require ("../../connect/connexion1.php") ;
  ?>
   </font></b> <b><font size="4">
-  <?php
-  
-  $id  = $_GET["idPersonne"] ;
-
- 
-?>
+  <?php  $id  = $_GET["idClub"] ;?>
   </font></b>
 <input type="hidden" name="id" value="<?php echo($id) ;?>">
   <table border="0" cellspacing="2" cellpadding="2" width="100%">
@@ -36,8 +48,8 @@ require ("../../connect/connexion1.php") ;
     <tr align="center"> 
       <td colspan="2" > 
         
-        <?php
-$reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'"); 
+    <?php
+	$reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'"); 
 	While ($donnees = $reponse->fetch() )
 		{
 		$id = $donnees['id'];	
@@ -45,14 +57,14 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
 		$ligue = $donnees['ligue'];
 		$equipe_fem = $donnees['equipe_fem'];
 		
-		$A1601 = $donnees['A1601'];// pr�sident
+		$A1601 = $donnees['A1601'];// président
 		$A1602 = $donnees['A1602'];// secretaire
 		$A1603 = $donnees['A1603'];// contact
 		$A1604 = $donnees['A1604'];// siege
 		$A1605 = $donnees['A1605'];// adresse
 		$A1606 = $donnees['A1606'];// cp
 		$A1607 = $donnees['A1607'];// ville
-		$A1608 = $donnees['A1608'];// t�l
+		$A1608 = $donnees['A1608'];// tél
 		$A1609 = $donnees['A1609'];
 		
 		$A1610 = $donnees['A1610'];
@@ -70,13 +82,13 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
 		$A1621 = $donnees['A1621'];// commentaire 1
 		$A1622 = $donnees['A1622'];// commentaire 2
 		$A1623 = $donnees['A1623'];// commentaire 3
-		$A1624 = $donnees['A1624'];
+		$A1624 = $donnees['A1624'];// création
 		$A1625 = $donnees['A1625'];
 		$A1626 = $donnees['A1626'];
 		$A1627 = $donnees['A1627'];
 		$A1628 = $donnees['A1628'];
 		$A1629 = $donnees['A1629'];
-		$A1630 = $donnees['A1630'];// tr�sorier
+		$A1630 = $donnees['A1630'];// trésorier
 		$A1631 = $donnees['A1629'];
 		$A1632 = $donnees['A1632'];	
  }
@@ -92,7 +104,7 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
       <td colspan="2">&nbsp;</td>
     </tr>
     <tr> 
-      <td>création du club :</td>
+      <td>cr&eacute;ation du club :</td>
       <td align="left"> <input type="text" name="A1624" value="<?php echo $A1624 ;?>" size="6"></td>
      
     </tr>
@@ -100,11 +112,11 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
       <td colspan="2" bgcolor="#FF0000"><b></b><b></b><b>BUREAU</b></td>
     </tr>
     <tr> 
-      <td>Président </td>
+      <td>Pr&eacute;sident </td>
       <td align="left"><input type="text" name="A1601" value="<?php echo $A1601 ;?>" size="50"></td>
     </tr>
     <tr > 
-      <td>Trésorier</td>
+      <td>Tr&eacute;sorier</td>
       <td align="left"><input type="text" name="A1630" value="<?php echo $A1630 ;?>" size="50"></td>
     </tr>
     <tr> 
@@ -135,7 +147,7 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
       <td align="left"><input type="text" name="A1607" value="<?php echo $A1607 ;?>" size="25"></td>
     </tr>
     <tr> 
-      <td>Tél</td>
+      <td>T&eacute;l</td>
       <td align="left"><input type="text" name="A1608" value="<?php echo $A1608 ;?>" size="15"></td>
     </tr>
     <tr align="center"> 
@@ -168,7 +180,7 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
     </tr>
     <tr>
 	  <!--1614-->	
-      <td>capacité</td>
+      <td>capacit&eacute;</td>
       <td align="left"><input type="text" name="A1614" value="<?php echo $A1614 ;?>" size="6"></td>
      
     </tr>
@@ -249,12 +261,14 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
     </tr>
     <tr align="center" valign="top"> 
       <td colspan="2"> 
-        <input type="submit" value="modifier" name="submit">
+        <input type="submit" value="Valider" name="submit">
       </td>
     </tr>
   </table>
 </form>
-
+<?php
+ echo "<a href=../../consultation/pageclub00.php?champion=$id>retour vers la page pr&eacute;c&eacute;dente</a>";
+?> 
 <p>&nbsp;<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- modif_16me2 -->
 <ins class="adsbygoogle"
@@ -264,3 +278,12 @@ $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script></p>
+
+<?php
+}
+else
+{
+echo "erreur de saisie";	
+require "mdp.php";	
+}
+?>

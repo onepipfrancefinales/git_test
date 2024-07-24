@@ -2,12 +2,16 @@
 require("../saison.php");
 require("../consultation/fonctions.php");
 require("../connect/connexion1.php");
-$tabTrigrammeLigue =   array("ARA" , "BFC", "BRE", "CVL", "COR", "GES", "HDF", "IDF", "NOR", "NAQ", "OCC", "PDL", "PCA" );
-$tabLigue =   array(10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22);
+
+
+//tabNbreClubs();
+//echo $sigleLigue;
+
+
+$tabTrigrammeLigue =   array("ARA" , "BFC", "BRE", "CVL", "COR", "GES", "HDF", "IDF", "NOR", "NAQ", "OCC", "PCA", "PDL" );
+$tabLigue =   array(10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 21);
 $tabDivision = array(110, 120, 130, 135, 140, 150, 160, 170, 180, 190);
 $tabNomDivision = array ("TOP14", "PROD2", "NAT1", "NAT2", "FED1", "FED2", "FED3",  "REG1", "REG2", "REG3");
-
-
 
 foreach ($tabLigue as $idLigue) {
 
@@ -48,6 +52,8 @@ structureLigue($idLigue, $bdd); ${$sigleLigue."110"} = $d110;
                                 ${$sigleLigue."170"} = $d170;
                                 ${$sigleLigue."180"} = $d180; 
                                 ${$sigleLigue."190"} = $d190;
+
+                                
 }
 
 

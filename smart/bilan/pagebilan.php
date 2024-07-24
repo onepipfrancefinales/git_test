@@ -28,7 +28,9 @@ nomDivision($phpComite, $champ, $bdd);
 
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
  <title><?php echo $equipe; ?></title>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -41,10 +43,10 @@ nomDivision($phpComite, $champ, $bdd);
  <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body  text="#000000" bgcolor="#CCCCCC" align="center">
+<body  class="backgroundCCCCCC center">
  <div class="fixed-header">
   <div class="container">
-   <table width="100%" border="1" align="center">
+   <table width="100%" class="marginAuto borderWidth1">
     <tr> 
       <td width= "5%"class="h22"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20"></a></td>
 	  <td width= "95%"class="h22"> France Finales Rugby </td>

@@ -10,11 +10,12 @@ table {font-size:10pt; font-family: arial;}
 /* --------- couleurs des liens --------- */
 
 a:link {color: #3b487f; text-decoration:underline;}
+/*
 a:visited {color: #3b487f; text-decoration:underline;}
 a:active {color: #3b487f; text-decoration:none;}
 A:hover {color:#3b487f; text-decoration:none;}
 A {color: #3b487f; text-decoration: underline;}
-
+*/
 A.blanc {color: #FFFFFF; text-decoration:none;}
 a.blanc:link {color: #FFFFFF; text-decoration:none;}
 a.blanc:visited {color: #FFFFFF; text-decoration:none;}

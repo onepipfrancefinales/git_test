@@ -26,9 +26,6 @@ echo $resultat;
 //*******************************************************
 function affichageSaisonEnCours($equipe, $bdd)
 {
-
-
-	
 	$equipe = substr($equipe, 2, 5);
 //	echo $equipe;
  global $saisonEnCours, $saisonEnCoursChiffre;
@@ -43,6 +40,9 @@ function affichageSaisonEnCours($equipe, $bdd)
 	{ 
 	 $saisonEnCours=$row[0];
 	 $saisonEnCoursChiffre=$row[1];
+
+
+
 	}
 /*
 	$requete =$bdd->query( "SELECT en_cours 

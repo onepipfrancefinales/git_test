@@ -8,13 +8,13 @@
 // ***** Fédérales *****	
 			$NAT1 = 21949;
 			$NAT2 = 21950;
-			$FED1 = 21948;
-			$FED2 = 0;
-			$FED3 = 0;
-			$NAT2B = 0;
+		
+      $FED1 = 21948;
+			$FED2 = 21947;
+			$FED3 = 21946;
 			$FED1B = 21968;
-			$FED2B = 0;
-			$FED3B = 0;
+			$FED2B = 21983;
+			$FED3B = 21967;
 										
 // ***** Féminines *****					
 
@@ -40,11 +40,11 @@
 					$BREResPH = 0;
 								
 // ***** Bourgogne *****															
-					$BFCH = 21957;
-					$BFCPH = 0;
-					$BFCS1 = 0;
-					$BFCResH = 0;
-					$BFCResPH = 0;
+					$BFCH = 0;
+					$BFCPH = 21957;
+					$BFCS1 = 21959;
+					$BFCResH = 21956;
+					$BFCResPH = 21958;
 					
 // ***** centre val de loire *****					
 					$CVLH = 0;
@@ -55,7 +55,7 @@
 
 // ***** Grand Est *****	
 					$GESH =21940;
-					$GESPH = 0;
+					$GESPH = 21941;
 					$GESS1 = 0;
 					$GESResH = 21941;
 					$GESResPH = 0;
@@ -82,10 +82,10 @@
 					$NORResPH = 21954;
 						
 // ***** Nouvelle Aquitaine *****				
-					$NAQH = 0;
-					$NAQPH = 0;
-					$NAQS1 = 0;
-					$NAQResH = 0;
+					$NAQH = 21974;
+					$NAQPH = 21975;
+					$NAQS1 = 21981;
+					$NAQResH = 21982;
 					$NAQResPH = 0;
 						
 // ***** Occitanie *****		

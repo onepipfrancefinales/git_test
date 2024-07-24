@@ -1,16 +1,24 @@
 
-
+.style {font-family: sans-serif;}
 
 a
 {
 text-decoration: none;
 color: #000000;
 }
+.size5 {font-size: 25px;}
+.borderWidth1 {border: 1px solid;}
 
+.width100PC {width:100%;}
+.width95PC {width:95%;}
+.width80PC {width:80%;}
 
+.backgroundCCCCCC{background-color: #CCCCCC;}
+.marginAuto {
+    margin : auto;
+}
 
-
-
+.center{text-align: center;}
 /*Equipe I et II*/
 h3{ 
 color: #000000;

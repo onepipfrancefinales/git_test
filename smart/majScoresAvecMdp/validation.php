@@ -32,9 +32,10 @@ $championnat = substr("$journee",0 , 6);
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link type="text/css" rel="stylesheet" href="majScore.css">
 <meta name=viewport content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="../../personnalisation/session2AvecMdp/CSS.css">
 </head>
 <body>
-<table width="100%" border="1" align="center">
+<table class="borderWidth1 width95PC">
   <tr> 
     <td class="h22"> France Finales Rugby </td>
   </tr>
@@ -43,10 +44,10 @@ $championnat = substr("$journee",0 , 6);
   </tr>
 </table>
 <br>
-<h3> 
+<h3 class="borderWidth1 width95PC"> 
   SCORE DE LA RENCONTRE</h3> 
 <br>
-<table width="100%" border="0">
+<table class="borderWidth1 width95PC">
   <tr> 
     <td class="equipe"  width="80%" height="19"> 
         <?php echo $equipe1; 
@@ -96,7 +97,7 @@ if (strlen($codeEquipe) == 8)
 
 
 <br />
-<h3>BONUS</h3> 
+<h3 class="borderWidth1 width95PC">BONUS</h3> 
 
 <?php
 //echo $score1 ;
@@ -162,7 +163,7 @@ if ($score1 < $score2 and ($score2 - $score1 <= 7))
 
 <p> 
   
-<table width="100%" border="0">
+<table width="100%">
   <tr valign="top"> 
     <td class="equipe"  width="49%" height="19"> 
       <?php echo $equipe1; ?>
@@ -188,7 +189,7 @@ if ($score1 < $score2 and ($score2 - $score1 <= 7))
   </tr>
 </table>
 <hr />
-<table width="100%" border="0">
+<table width="100%">
   <tr valign="top"> 
     <td class="equipe" width="49%"> 
       <?php echo $equipe2; ?>
@@ -229,11 +230,11 @@ if (strlen($codeEquipe) == 7)
 
 ?>
 
-<p class="tab4"> 
-<a href="traitement.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee; ?>&codeEquipe1=<?php echo $codeEquipe1; ?>&codeEquipe2=<?php echo $codeEquipe2; ?>&score1=<?php echo $score1; ?>&score2=<?php echo $score2; ?>&bonusDefEquipe1=<?php echo $bonusDefEquipe1; ?>&bonusDefEquipe2=<?php echo $bonusDefEquipe2; ?>&bonusOffEquipe1=<?php echo $bonusOffEquipe1; ?>&bonusOffEquipe2=<?php echo $bonusOffEquipe2; ?>">Confirmer et acc&egrave;der <br />au nouveau classement</a>
+<p class="tab4 width95PC"> 
+<a href="traitement.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee; ?>&codeEquipe1=<?php echo $codeEquipe1; ?>&codeEquipe2=<?php echo $codeEquipe2; ?>&score1=<?php echo $score1; ?>&score2=<?php echo $score2; ?>&bonusDefEquipe1=<?php echo $bonusDefEquipe1; ?>&bonusDefEquipe2=<?php echo $bonusDefEquipe2; ?>&bonusOffEquipe1=<?php echo $bonusOffEquipe1; ?>&bonusOffEquipe2=<?php echo $bonusOffEquipe2; ?>">Confirmer et accèder <br />au nouveau classement</a>
 </p>
 
-<p class="tab3">
+<p class="tab3 width95PC">
 <a href="saisie.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee ; ?>&codeEquipe=<?php echo $codeEquipe; ?>&maxJournee=<?php echo $maxJournee; ?>&score1=<?php echo $score1; ?>&score2=<?php echo $score2; ?>">Retour pour modif</a>
  
 </p>
