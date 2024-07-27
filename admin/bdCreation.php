@@ -15,7 +15,7 @@ content="Presentation de la competititon et de tous les champions de France 1re 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 </head>
 <body>
-<form id="form2" name="form1" method="POST" action="http://francefinalesrugby.franceserv.com/personnalisation/admin/pageConnection2.php">
+<form id="form2" name="form1" method="POST" action="http://francefinalesrugby.fr/personnalisation/admin/pageConnection2.php">
   <fieldset> <legend> S'inscrire</legend> 
   <p>Saisir votre pseudo : 
     <input id="input" type="text" name="creationNom" maxlength="25" autofocus/>

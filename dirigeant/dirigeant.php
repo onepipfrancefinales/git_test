@@ -1,128 +1,81 @@
 
-<table width="550" border="0" class="marginAuto">
- 
- 
-  <tr> 
-    <td colspan="2"> 
-      <div align="center"> 
-        <p><b><a href="../personnalisation/session2/index.php"><font color="#000000" size="4"> 
-          <font size="5"><br>
-          <br>
-          Mettez à jour résultats et classements de vos équipes</font></font></a></b></p>
-        <p><b><font size="5"><a href="../personnalisation/session2/index.php"><font color="#000000" size="4">(mise 
-          à jour possible a partir d'un PC ou d'un smartphone)</font><br>
-          </a> </font> </b> </p>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td colspan="2"> 
-      <div align="center"></div>
-    </td>
-  </tr>
-  <tr> 
-    <td colspan="2" bgcolor="#FFCC66"> 
-      <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="5">Feuille 
-        de match</font></b></div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="365">&nbsp;</td>
-    <td width="175">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td colspan="2"> 
-      <div align="center"><font size="5"><b><a href="feuilleMatch/connexion/page_FM.php"><font face="Arial, Helvetica, sans-serif" color="#000000">R&eacute;alisez 
-        vos feuilles de matchs <br>
-        en moins de 2 minutes.</font></a></b></font><font color="#000000"><a href="feuilleMatch/connexion/page_FM.php"><br>
-        <font face="Arial, Helvetica, sans-serif" size="6"><b>Testez de suite 
-        !!!</b></font></a> </font></div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="365">&nbsp;</td>
-    <td width="175">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td colspan="2" height="67">
-      <div align="center"><font color="#000000"><a href="feuilleMatch/connexion/page_FM.php"><font face="Arial, Helvetica, sans-serif" size="6"><b><font color="#000000"><img src="feuilleMatch/images/enteteFFR.png" width="552" height="119"></font></b></font></a></font><font face="Arial, Helvetica, sans-serif" size="6"><b></b></font></div>
-    </td>
-  </tr>
-  
-  <tr> 
-    <td colspan="2" height="30" bgcolor="#FFCC66"> 
-      <div align="center"><font size="5" face="Arial, Helvetica, sans-serif"><b>Calendrier 
-        de votre saison</b></font></div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="365" height="8"> 
-      <div align="center"></div>
-    </td>
-    <td width="175" height="8">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td colspan="2" height="67"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif" size="4"><b><font color="#000000">Imprimer 
-        le calendrier de votre &eacute;quipe<br>
-        </font></b> <font size="3" color="#000000">(optimis&eacute; pour les poules 
-        de 10 clubs)</font></font></div>
-    </td>
-  </tr>
-  <tr bgcolor="#0099FF"> 
-    <td colspan="2" height="67"> 
-      <p class="texte" align="center"><a href="calendrier/pageCalendrier2.php">cliquez 
-        ici</a></p>
-    </td>
-  </tr>
-  <tr> 
-    <td width="365" height="16">&nbsp;</td>
-    <td width="175" height="16">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td width="365" height="20">&nbsp;</td>
-    <td width="175" height="20">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td width="365" height="24">&nbsp;</td>
-    <td width="175" height="24">&nbsp;</td>
-  </tr>
-</table>
+<?php
+$nomChampion="2345A";
+$pattern="/[0-9]{4}[A-Z]{1}/i";
+echo "test :".preg_match($pattern, $nomChampion);
+echo "<br>";
+$str = "Apples and bananas.";
+$pattern = "/ba(na){2}/i";
+echo preg_match($pattern, $str);
+?>
+
+<div class="titreEncadre">  Mise à jour des résultats</div>
+
+<p class="bold size4 styleArial"><a href="../personnalisation/session2/index.php">
+
+    Mettez à jour résultats et classements de vos équipes></a></p>
+<p class="bold size4 styleArial"><a href="../personnalisation/session2/index.php">
+    (mise à jour possible a partir d'un PC ou d'un smartphone)<br>
+  </a> </p>
+<br>
+<div class="titreEncadre">  Calendrier de votre saison</div>
 
 
-<br><br><br>
+
+<p class="size4 center styleArial bold">
+  Imprimer le calendrier de votre équipe<br>
+  <span class="size3 center">(optimisé pour les poules de 10 clubs)</span>
+</p>
+
+<div bgcolor="#0099FF">
+
+  <p class="texte"><a href="calendrier/pageCalendrier2.php">cliquez ici</a></p>
+</div>
 
 
-<table class="marginAuto">
- 
 
-  <tr bgcolor="#FFCC66"> 
-    <td colspan="2" > 
-      <div class="bold styleArial size5">Compléter le fiche d'information votre club</div>
-    </td>
-    
-  </tr>
-  
-  <tr> 
-    <td width="365" height="24">&nbsp;</td>
-    <td width="175" height="24">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td width="365" height="24">http:///Phpleague/phpmpy/consult/detaileq.php?champ=171&amp;id_equipe=29007</td>
-    <td width="175" height="24">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td width="365" height="24">&nbsp;</td>
-    <td width="175" height="24">&nbsp;</td>
-  </tr>
-  <tr> 
-    <td width="365" height="67">&nbsp;</td>
-    <td width="175" height="67">&nbsp;</td>
-  </tr>
-</table>
- 
+<div class="titreEncadre">  Compléter le fiche d'information votre club</div>
+
+<p class="bold styleArial size5">Compléter le fiche d'information votre club</p>
 
 
+
+
+
+
+<p>http:///Phpleague/phpmpy/consult/detaileq.php?champ=171&amp;id_equipe=29007</p>
+
+
+
+<div class="titreEncadre">  Feuille de match</div>
+
+
+<p class="size5 styleArial">
+  <a href="feuilleMatch/connexion/page_FM.php">Réalisez vos feuilles de matchs <br>
+    en moins de 2 minutes.</a><br>
+  <span class="styleArial size6 bold">Testez de suite !!!</span>
+</p>
+
+
+
+<div>
+  <a href="feuilleMatch/connexion/page_FM.php"><img src="feuilleMatch/images/enteteFFR.png" width="552" height="119"></a>
+
+</div>
+
+<style>
+.titreEncadre {
+  font-size: 25px;
+  width:550px;
+  font-weight: bold;
+  border: 1px solid;
+  background:#FFCC66;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+  margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+</style>

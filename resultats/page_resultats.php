@@ -176,11 +176,7 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
         </p>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+     
         <p class="backgroundBlack marginAuto size6 colorWhite width550">
           <b>Compétitions régionales</b>
         </p>
@@ -244,8 +240,7 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
 
         <br>
         <br>
-        <br>
-        <br>
+       
        
         <h3 class="center colorBlack style">Répartition des clubs par divisions et par ligues</h3>
         <table class="width95PC marginAuto" style="border: 3px  solid purple;  border-collapse: collapse">
@@ -377,7 +372,11 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
         </table>
         <br>
         <br>
-
+        <?php
+        require "tableauEffectifsClubs.php";
+        ?>
+         <br>
+         <br>
       </td>
       <td class="colonne">
         <?php include("../00droite.php");  ?>

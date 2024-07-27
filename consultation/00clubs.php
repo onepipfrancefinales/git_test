@@ -234,9 +234,10 @@ else
     if ($smart == true)
     echo "<h2 class=\"size4\"> Titres Européens </h2>";
     else
+    
     echo "<h2> Titres Européens </h2>";
   } ?>
-  <div id="palmares" ass="center">
+  <div id="palmares" class="center">
     <?php palmaresEU($nomChampion, $bdd); ?>
   </div>
 

@@ -29,7 +29,7 @@
 					$ARAH = 0;
 					$ARAPH = 0;
 					$ARAS1 = 0;
-					$ARAResH =0;
+					$ARAResH =21992;
 					$ARAResPH = 0;
 				
 // ***** Bretagne *****									
