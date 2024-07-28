@@ -28,7 +28,7 @@
 // ***** Auvergne Rhône Alpes *****	
 					$ARAH = 0;
 					$ARAPH = 0;
-					$ARAS1 = 0;
+					$ARAS1 = 21986;
 					$ARAResH =21992;
 					$ARAResPH = 0;
 				
@@ -86,7 +86,7 @@
 					$NAQPH = 21975;
 					$NAQS1 = 21981;
 					$NAQResH = 21982;
-					$NAQResPH = 0;
+					$NAQResPH = 21984;
 						
 // ***** Occitanie *****		
 					$OCCH = 0;

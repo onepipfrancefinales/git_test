@@ -28,7 +28,7 @@ $chaine = $_GET['champion'];
 require '../../connect/connexion1.php'; 
 nomComite (0,$id, $bdd);
 infosclub($chaine, $bdd);
-nomLigue ($numLigue, $bdd);
+nomLiguePalm ($numLigue, $bdd);
 affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($chaine, $bdd);
 saisons($code, $annee, $bdd);
@@ -71,7 +71,7 @@ saisons($code, $annee, $bdd);
    $smart = true;
    require '../../consultation/00clubs.php';
    require '../bas2.php';
-   include("../../pub/pub_displayCarre.php");
+ //  include("../../pub/pub_displayCarre.php");
    ?>
  </div>
 </body>

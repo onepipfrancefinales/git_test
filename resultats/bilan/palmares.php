@@ -6,23 +6,21 @@ if (strlen($id_equipe) > 7)
 
 	
 	
-require ("../../connect/connexion1.php") ;
-//palmaresEU($id_equipe, $bdd);
- 
+require "../../connect/connexion1.php" ;
+require '../../fonctions.php';
+
+  /*********************  Affichage  de la categorie eu  ********************************/
  $reponse = $bdd->query("SELECT nom_1
 						FROM bdclubs
 						WHERE id='$id_equipe' and type = 'M'");
- while ($row = $reponse->fetch() )
+ while ($row = $reponse->fetch())
 	{ 
 	$champion = $row[0];
 	}
-
-
- //**********************/Affichage  de la categorie eu  *******************************
-
+/*
  $reponse = $bdd->query("SELECT champion
 						FROM bdeurope 
-						WHERE champion='$champion' and categorie='eu'  
+						WHERE champion='$champion'  and categorie='eu'  
 						LIMIT 0,1");
 	
  while ($donnees = $reponse->fetch() )
@@ -31,26 +29,35 @@ require ("../../connect/connexion1.php") ;
 		{
 		echo "<h2> Titres Européens </h2>";
 		}
+	}
+*/
+//echo "champion : ".$champion;
+//echo "champion : ".$id_equipe;
+
+	$nbTitreEU = array();
+		global $nombreTitreEU;
+
+		$nbTitreEU = $bdd->query("
+		   SELECT COUNT(*)
+		   FROM bdeurope  
+		   WHERE champion='$champion'  or champion='$id_equipe' 
+		   AND categorie='EU' ");
+
+		$nbTitreEU = $nbTitreEU->fetch();
+		$nombreTitreEU = $nbTitreEU[0];
+
+ 
+ if ($nombreTitreEU > 0)
+		{
+		echo "<h2> Titres Européens </h2>";
+		}
 
  //************************************** Palmares EU  *******************************************
-
- $reponse = $bdd->query("SELECT saison, titre, division
-						FROM bdeurope 
-						WHERE champion='$champion' and categorie='eu'  
-						ORDER BY saison DESC");
-									
- while ($donnees = $reponse->fetch() )
-	{ 
-	?>
-	<div class="palmares">	<?php echo $donnees['saison'].' '.$donnees['titre'].' '.$donnees['division'];?>
-	</div>
-	<?php
-	}
-		
-}
-								
-								
 ?>
+
+ <div class="palmares">	<?php palmaresEU($id_equipe, $bdd); ?></div>
+
+
 
 <?php  //****************        Affichage  de la categorie A            *******************************
 

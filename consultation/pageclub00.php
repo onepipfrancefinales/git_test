@@ -37,7 +37,7 @@ require '../connect/connexion1.php';
 
 nomComite(0, $id, $bdd);
 infosclub($chaine, $bdd);
-nomLigue($numLigue, $bdd);
+nomLiguePalm($numLigue, $bdd);
 affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);

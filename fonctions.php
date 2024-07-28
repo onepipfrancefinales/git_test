@@ -109,7 +109,7 @@ $saisonEnCours=$row[0];
 	//**************   Nom de la Ligue **********************
 	//*******************************************************
 
-	function nomLigue($numLigue, $bdd)
+	function nomLiguePalm($numLigue, $bdd)
 	{
 		if ($numLigue > 0) {
 			global $nomLigue;
@@ -270,17 +270,13 @@ $saisonEnCours=$row[0];
 	function palmaresEU($id_equipe, $bdd)
 	{
 		
-		
 		$reponse1=$bdd->query("SELECT nom_1
 		FROM bdclubs
 		WHERE id=$id_equipe");
 			while ($donnees = $reponse1->fetch()) {
 				$nomChampion = $donnees['nom_1'];
 			}
-echo "<br>";
-echo $nomChampion;
-echo $id_equipe;
-echo "<br>";
+
 		$reponse = $bdd->query("SELECT *
 						FROM bdeurope
 						WHERE champion='$id_equipe'  or champion='$nomChampion' 

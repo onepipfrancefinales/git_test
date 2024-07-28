@@ -355,6 +355,8 @@
   <h1> Palmarès </h1>
   <br>
 
-  <?php  include("palmares.php"); ?>
+  <?php 
+  
+  include "palmares.php"; ?>
   <br>
   <br>

@@ -1925,9 +1925,7 @@ function nomClub($equipe, $bdd)
 function nomLigue($equipe, $bdd)
 {
 	global $nomLigue;
-
 	$numLigue = substr($equipe, 0, 2);
-
 	$reponse = $bdd->query("
 		    SELECT nom
 		    FROM bdligue 

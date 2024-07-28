@@ -11,10 +11,10 @@ $lang_fr = "../../Phpleague/" . $comite . "/lang/lang_fr.php";
 //require $lang_fr;
 require "../../Phpleague/" . $comite . "/consult/fonctions_matchs.php";
 require "../../Phpleague/" . $comite . "/lang/lang_fr.php";
-require("../../saison.php");
-require("../fonctions.php");
-//require("../../fonctions.php");
-require("../../connect/connexion1.php");
+require "../../saison.php";
+require "../fonctions.php";
+
+require "../../connect/connexion1.php";
 
 
 nomClub($equipe, $bdd);
@@ -22,7 +22,7 @@ nomLigue($equipe, $bdd);
 affichage5Saisons($finSaison, $equipe, $champ, $phpComite, $bdd);
 
 //connection à la base de données
-require("../../connect/connexion6.php");
+require "../../connect/connexion6.php";
 
 nomDivision($phpComite, $champ, $bdd);
 //meilleureAttaque($phpComite, $champ, $bdd);
