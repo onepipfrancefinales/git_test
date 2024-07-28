@@ -26,11 +26,11 @@
 				//	$FEMS4 = $row[5];
 					
 // ***** Auvergne Rhône Alpes *****	
-					$ARAH = 0;
-					$ARAPH = 0;
+					$ARAH = 0000;
+					$ARAPH = 0000;
 					$ARAS1 = 21986;
 					$ARAResH =21992;
-					$ARAResPH = 0;
+					$ARAResPH = 0000;
 				
 // ***** Bretagne *****									
 					$BREH = 0;
