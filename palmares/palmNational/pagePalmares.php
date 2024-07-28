@@ -52,8 +52,9 @@ else $base = '-';
 				if ($division == 110)
 					require("top14.php");
 				else {
-
+						// A partir de la saison 2023
 					require("palmaresLigues2023.php");
+						// De la saison 2019 à la saison 2022
 					require("palmaresLigues.php");
 					echo "<hr />";
 					echo "<i>" . "Saison 2018-2019 : Réformes Territoriales";
@@ -61,22 +62,8 @@ else $base = '-';
 					echo "Les 27 comités territoriaux métropolitains sont transformés en 13 ligues régionales,
 							identiques aux nouvelles régions administratives françaises." . "</i>";
 					echo "<br>" . "<hr>";
+						// Saison antérieure à la saiaon 2019
 					require("palmares.php");
-					/*
-					if ($division == '170' or $division == '180' or $division == '190' or $division == '2070') {
-						//require("palmaresLigues2023.php");
-						//require("palmares2023.php");
-					}
-
-					require("palmaresLigues.php");
-					echo "<hr>";
-					echo "<i>" . "Saison 2018-2019 : Réformes Territoriales";
-					echo "<br>";
-					echo "Les 27 comités territoriaux métropolitains sont transformés en 13 ligues régionales,
-						identiques aux nouvelles régions administratives françaises.			" . "</i>";
-					echo "<br>" . "<hr>";
-					require("palmares.php");
-					*/
 				}
 				?>
 			</td>
@@ -88,7 +75,6 @@ else $base = '-';
 			<?php include("../../footer.php");  ?>
 		</tr>
 	</table>
-	<footer> </footer>
+<footer> </footer>
 </body>
-
 </html>

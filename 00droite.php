@@ -50,8 +50,7 @@
         <select class="inputG" name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1"  title="Recherche par comité">
           <option selected>Par comité</option>
           <option value="/consultation/page_comite.php?variable_1=(AP)">Alpes</option>
-          <option value="/consultation/page_comite.php?variable_1=(AL)">Alsace 
-          Lorraine</option>
+          <option value="/consultation/page_comite.php?variable_1=(AL)">Alsace Lorraine</option>
           <option value="/consultation/page_comite.php?variable_1=(AB)">Armagnac Bigorre</option>
           <option value="/consultation/page_comite.php?variable_1=(AU)">Auvergne</option>
           <option value="/consultation/page_comite.php?variable_1=(BE)">Béarn</option>
@@ -119,11 +118,6 @@
         <b><a href="mailto:francefinalesrugby@free.fr">--Signaler  une erreur--</a><br>
         </b>
       </p>
-      
-        <?php //include("pub/pub6.php");?>
-   
-        <?php //include("pub/pub10.php");?>
-     
     </td>
   </tr>
 </table>

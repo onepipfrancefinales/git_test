@@ -141,7 +141,8 @@ elseif ($division<380)
 		 
 }			 
 	// challenges		 
-else
+/*
+	else
 {
 $reponse = $bdd->query("	SELECT saison, champion, comite1  
 	FROM bdchallenges 
@@ -155,4 +156,5 @@ $reponse = $bdd->query("	SELECT saison, champion, comite1
 		echo "</h4>";  
 	}			 							 
 }
+	*/
  ?>

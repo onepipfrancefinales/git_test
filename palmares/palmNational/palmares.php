@@ -1,5 +1,6 @@
 
 <?php
+
  require ("../../connect/connexion1.php") ; 
 
 if ($division<230)
@@ -91,5 +92,5 @@ else
 }
 echo "<br>";
 echo "<br>";
-//include("../../pub/pub_carre.php"); 
+
 ?>

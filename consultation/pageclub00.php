@@ -1,8 +1,9 @@
 <?php
-require("../saison.php");
-require("../fonctions.php");
-$chaine = $_GET['champion'];
+require "../saison.php";
+require "../fonctions.php";
 
+$chaine = $_GET['champion'];
+echo $chaine;
 
 //echo "chaine : ".$chaine; echo "<br/>";
 //Evaluation de la variable chaine si numérique
@@ -12,7 +13,7 @@ if (is_int($chaine)) {
   $equipe = substr($chaine, 2, 5);
   $numLigue = substr($chaine, 0, 2);
   $id = substr($chaine, 2, 2);
-  // echo $id;
+  
 }
 
 
@@ -21,9 +22,11 @@ else {
   // echo " non numerique";echo "<br/>";
   require '../connect/connexion1.php';
   infosclub($chaine, $bdd);
+  $idComplet=$id;
+  echo $idComplet;
   $equipe = $numLigue . $code;
   $id = substr($id, 2, 2);
-  // echo $id;
+   
 }
 
 //echo $numLigue;;echo "<br/>";

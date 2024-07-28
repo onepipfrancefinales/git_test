@@ -1,5 +1,6 @@
 
 <?php
+/*
 $nomChampion="2345A";
 $pattern="/[0-9]{4}[A-Z]{1}/i";
 echo "test :".preg_match($pattern, $nomChampion);
@@ -7,6 +8,7 @@ echo "<br>";
 $str = "Apples and bananas.";
 $pattern = "/ba(na){2}/i";
 echo preg_match($pattern, $str);
+*/
 ?>
 
 <div class="titreEncadre">  Mise à jour des résultats</div>
