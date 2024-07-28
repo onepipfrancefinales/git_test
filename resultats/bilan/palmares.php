@@ -1,16 +1,17 @@
 <?php
-if (isset ($_GET['id_equipe'])) $idChampion = $_GET['id_equipe']; else $idChampion = "-";
-//echo "champion".$idChampion;
-if (strlen($idChampion) > 7)
-	$idChampion = substr($idChampion,-7);
-
+if (isset ($_GET['id_equipe'])) $id_equipe = $_GET['id_equipe']; else $id_equipe = "-";
+//echo "champion".$id_equipe;
+if (strlen($id_equipe) > 7)
+	$id_equipe = substr($id_equipe,-7);
 
 	
+	
 require ("../../connect/connexion1.php") ;
+//palmaresEU($id_equipe, $bdd);
  
  $reponse = $bdd->query("SELECT nom_1
 						FROM bdclubs
-						WHERE id='$idChampion' and type = 'M'");
+						WHERE id='$id_equipe' and type = 'M'");
  while ($row = $reponse->fetch() )
 	{ 
 	$champion = $row[0];

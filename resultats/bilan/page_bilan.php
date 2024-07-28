@@ -13,6 +13,7 @@ require "../../Phpleague/" . $comite . "/consult/fonctions_matchs.php";
 require "../../Phpleague/" . $comite . "/lang/lang_fr.php";
 require("../../saison.php");
 require("../fonctions.php");
+//require("../../fonctions.php");
 require("../../connect/connexion1.php");
 
 

@@ -25,7 +25,7 @@ if ($smart == true) {
 } else {
 ?>
   <div class="colorWhite">
-  <?php echo $idComplet; ?></div> 
+  <?php echo $id_equipe; ?></div> 
   <h1 class="colorRed"> <?php echo $nomLong; ?> </h1>
   <br>
 
@@ -230,7 +230,7 @@ else
 
   //****************     Palmares européens      *******************************
   $table = "bdeurope";
-  nbreTitreEU($idComplet, $bdd);
+  nbreTitreEU($id_equipe, $bdd);
   if ($nombreTitreEU > 0) {
     if ($smart == true)
     echo "<h2 class=\"size4\"> Titres Européens </h2>";
@@ -239,7 +239,7 @@ else
     echo "<h2> Titres Européens </h2>";
   } ?>
   <div id="palmares" class="center">
-    <?php palmaresEU($idComplet, $bdd);  ?>
+    <?php palmaresEU($id_equipe, $bdd);  ?>
   </div>
 
   <?php

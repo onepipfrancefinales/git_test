@@ -18,6 +18,7 @@ $chaine = $_GET['champion'];
   // echo " non numerique";echo "<br/>";
    require '../../connect/connexion1.php';
    infosclub($chaine, $bdd);
+   $id_equipe=$id;
    $equipe = $numLigue . $code;
    $id = substr($id, 2, 2);
   // echo $id;
