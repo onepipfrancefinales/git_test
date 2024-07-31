@@ -3,7 +3,6 @@
 
 <head>
 	<meta charset=UTF-8>
-
 </head>
 
 <body>
@@ -15,10 +14,7 @@
 
 	<a href="accueil.php">retour Accueil </a>
 	<?php
-
 	require '../../connect/connexion1.php';
-
-
 	if (isset($_GET['annee']))
 		$annee = $_GET['annee'];
 	if (isset($_GET['division']))

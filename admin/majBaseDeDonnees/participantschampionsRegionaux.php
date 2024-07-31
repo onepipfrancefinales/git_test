@@ -31,12 +31,17 @@ require("../../phasesfinalesterr2019/fonctionspfterrESDL2019.php");
 //$tabLigue  = array('CVL', 'OCC', 'PDL');	
 //$tabLigue  = array('BRE');
 //$tabLigue  = array('OCC');	
+if ($annee > 2022)
+$divisionMax = 190;
+else
+$divisionMax = 220;
+echo "divisionMax :".$divisionMax;
 
 if (isset($_POST['selection'])) {
 	if (!empty($_POST['tabLigue'])) {
 		foreach ($_POST['tabLigue'] as $ligue) {
 
-			for ($division1 = 170; $division1 < 230; $division1 = $division1 + 10) {
+			for ($division1 = 170; $division1 < $divisionMax ; $division1 = $division1 + 10) {
 				if ($ligue == "ARA") {
 					$division = 10 * 10000 + $division1;
 					$comite = "au";
