@@ -2,27 +2,32 @@
 <!DOCTYPE html PUBLIC>       
 <html lang="fr">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <title>modification de données du club</title>
+ <title>Modification des données du club</title>
  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
+ <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
+ <link type="text/css" rel="stylesheet" href="../../resultats/resultat.css">
  <meta name=viewport content="width=device-width, initial-scale=1">
-  <!--
- <script language="JavaScript">
-
- function MM_reloadPage(init) {  //reloads the window if Nav4 resized
-  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
-    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
-  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
- }
- MM_reloadPage(true);
  
- </script>
-  -->
 </head>
 
+
 <body>
-
-
-<br><br><br><br><br><br><br>
+<table class="table">
+    <tr>
+      <td colspan="3"> <img src="../../images/banniere_haut/stade10.jpg" height="150" width="1250"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><?php include("../../01ligne.php"); ?></td>
+    </tr>
+   
+    <tr>
+	  <!-- Colonne de gauche --> 
+      <td class = "colonneDroiteGauche"><p><?php include("../../01gauche.php");?> </p></td>
+      
+	  <!-- Colonne centrale --> 
+	  <td class = "colonneCentrale"> 
+       
+    <br><br><br><br><br><br><br>
 <p align="center"> 
 <?php 
 $idClub = $_GET['idClub']; 
@@ -44,12 +49,24 @@ saississez \"pasUnRobot\" et validez ";
 
 
 <br>
-<?php
+ </td>
+      <td class = "colonneDroiteGauche"> 
+        <p><?php  include("../../00droite.php"); ?> </p>
+      </td>
+    </tr>
+   
+</table>
+ </body>
+  <footer> 
+  <table class="tableauBas">
+  <tr class="largueurTab">
+    <td><?php include("../../comitebas.php"); ?></td>
+  </tr>
 
-//include("modif2.php");
-?>
-</body>
-<footer>
-  
-</footer>
-</html>
+  <tr class="largueurTab">
+    <td class="ligneBlanche"><?php include("../../bas.php"); ?></td>
+  </tr> 
+</table>
+  </footer>
+
+</html> 

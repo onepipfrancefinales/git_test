@@ -31,10 +31,11 @@ require("../../phasesfinalesterr2019/fonctionspfterrESDL2019.php");
 //$tabLigue  = array('CVL', 'OCC', 'PDL');	
 //$tabLigue  = array('BRE');
 //$tabLigue  = array('OCC');	
-if ($annee > 2022)
-$divisionMax = 190;
-else
-$divisionMax = 220;
+
+
+
+$annee > 2022 ? $divisionMax =200 : $divisionMax =230;
+
 echo "divisionMax :".$divisionMax;
 
 if (isset($_POST['selection'])) {

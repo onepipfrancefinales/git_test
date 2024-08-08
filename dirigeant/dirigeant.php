@@ -13,9 +13,9 @@ echo preg_match($pattern, $str);
 
 <div class="titreEncadre">  Mise à jour des résultats</div>
 
-<p class="bold size4 styleArial"><a href="../personnalisation/session2/index.php">
+<p class="bold size4 styleArial"><a href="../informations/majParSMS/pageOutil.php">
 
-    Mettez à jour résultats et classements de vos équipes></a></p>
+    Mettez à jour résultats et classements de vos équipes</a></p>
 <p class="bold size4 styleArial"><a href="../personnalisation/session2/index.php">
     (mise à jour possible a partir d'un PC ou d'un smartphone)<br>
   </a> </p>
@@ -29,7 +29,7 @@ echo preg_match($pattern, $str);
   <span class="size3 center">(optimisé pour les poules de 10 clubs)</span>
 </p>
 
-<div bgcolor="#0099FF">
+
 
   <p class="texte"><a href="calendrier/pageCalendrier2.php">cliquez ici</a></p>
 </div>
@@ -38,14 +38,27 @@ echo preg_match($pattern, $str);
 
 <div class="titreEncadre">  Compléter le fiche d'information votre club</div>
 
-<p class="bold styleArial size5">Compléter le fiche d'information votre club</p>
 
 
 
 
+<form action="../consultation/pageclub00.php" method="GET">
+      
+		
+		
+      <fieldset class="fieldsetG"> 
+        <legend >
+          Palmarès par club
+         </legend> 
+           <br>
+            <input class="inputG" type="text" name="champion"  title="Saisissez le nom  ou le code FFR de votre club">
+           <br>
+            <input class="inputG" type="submit" value="Valider">
+          </fieldset> 
+        </form>
 
 
-<p>http:///Phpleague/phpmpy/consult/detaileq.php?champ=171&amp;id_equipe=29007</p>
+
 
 
 

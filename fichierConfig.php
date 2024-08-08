@@ -29,7 +29,7 @@ $tableauFem = array(880281, 880285, 880291, 880292, 880293, 880294);
 
 //ARA
 $tableauARA1 = array(100171, 100172, 100173, 100174 );
-$tableauARA2 = array(100181, 100182, 100183, 100184);
+$tableauARA2 = array(100181, 100182, 100183, 100184, 100185, 100186);
 $tableauARA3 = array(100191, 100192, 100193, 100194, 100195, 100196);
 $tableauRES_ARA1= array(100271, 100272, 100273, 100274);
 $tableauRES_ARA2= array(109181, 109182, 109183, 109184, 109185, 109186, 109187, 109188);
@@ -69,14 +69,9 @@ $tableauIDF = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 1701
 // Normandi
 $tableauNOR = array(180171, 180181, 180191, 180271, 189181);
 // Provence alpes Cotes d'Azur
-$tableauPCA = array(220171, 220172, 220173, 220174, 220175, 220176, 220177, 
-		                   220191, 220192, 220193, 220194, 220195,
-						   220271, 220272, 220273, 220274, 220275, 220276, 220277
-						   );
+$tableauPCA = array(220171, 220181, 220182, 220191, 220192  );
    
 /*****  Mise à jour des bases de données ********/
-
-
 
 // liste des lignes a rajouter aux tables bdpffrance, bdpffrance_2 et bdpffrance_dates
 // pour chaque nouvelle saison.

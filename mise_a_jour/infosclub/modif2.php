@@ -1,4 +1,31 @@
-<?php // J'ai choisi le mot de passe "pasUnRobot
+<!DOCTYPE html PUBLIC>       
+<html lang="fr">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>Modification des données du club</title>
+ <link type="text/css" rel="stylesheet" href="../../ligne1.css">
+ <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
+ <link type="text/css" rel="stylesheet" href="../../resultats/resultat.css">
+ <meta name=viewport content="width=device-width, initial-scale=1">
+ 
+</head>
+
+<body>
+<table class="table">
+    <tr>
+      <td colspan="3"> <img src="../../images/banniere_haut/stade10.jpg" height="150" width="1250"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><?php include("../../01ligne.php"); ?></td>
+    </tr>
+   
+    <tr>
+	  <!-- Colonne de gauche --> 
+      <td class = "colonneDroiteGauche"><p><?php include("../../01gauche.php");?> </p></td>
+      
+	  <!-- Colonne centrale --> 
+	  <td class = "colonneCentrale"> 
+       
+    <?php // J'ai choisi le mot de passe "pasUnRobot
 if (isset($_POST['mot_de_passe'])) // Si la variable existe
 {
   // On se cr�e une variable $mot_de_passe avec le mot de passe entr�
@@ -9,15 +36,9 @@ if (isset($_POST['mot_de_passe'])) // Si la variable existe
 }
 if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
 {
-
-
-
-
   require("../../connect/connexion1.php");
-  $id  = $_GET["idClub"]; ?>
+  $id  = $_GET["idClub"]; 
 
-
-  <?php
   $reponse = $bdd->query("SELECT * FROM infosclub WHERE id='$id'");
   while ($donnees = $reponse->fetch()) {
     $id = $donnees['id'];
@@ -60,32 +81,24 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
     $A1631 = $donnees['A1629'];
     $A1632 = $donnees['A1632'];
   }
+
+  echo $ligue;
   ?>
 
-  <!DOCTYPE html PUBLIC>
-  <html lang="fr">
-
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>modification de données du club</title>
-    <link type="text/css" rel="stylesheet" href="../../ligne1.css">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-  </head>
-
-  <body>
+ 
     <form name="insertion" action="modif3.php?" method="POST">
 
       <input type="hidden" name="id" value="<?php echo ($id); ?>">
 
   <h1 class="center bold" ><?php echo $club; ?></h1>
   
-  <table style="width: auto">
+  <table class="marginAuto" style="width: auto">
         <tr>
           <td>Création du club</td>
           <td class="alignLeft paddingBottom25"> <input type="text" name="A1624" value="<?php echo $A1624; ?>" size="6"></td>
         </tr>
         <tr>
-          <td colspan="2" class="backgroundRed center bold">BUREAU</td>
+          <td colspan="2" class="backgroundRed center bold colorWhite">BUREAU</td>
         </tr>
         <tr>
           <td>Président</td>
@@ -104,7 +117,7 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
           <td class="alignLeft paddingBottom25"><input type="text" name="A1603" value="<?php echo $A1603; ?>" size="50"></td>
         </tr>
         <tr>
-          <td colspan="2" class="backgroundRed center bold" >SIEGE</td>
+          <td colspan="2" class="backgroundRed center bold colorWhite" >SIEGE</td>
         </tr>
         <tr>
           <td >Siège</td>
@@ -127,7 +140,7 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
           <td class="alignLeft paddingBottom25"><input type="text" name="A1608" value="<?php echo $A1608; ?>" size="15"></td>
         </tr>
         <tr>
-          <td colspan="2" class="backgroundRed center bold">STADE</td>
+          <td colspan="2" class="backgroundRed center bold colorWhite">STADE</td>
         </tr>
         <tr>
           <!--1609-->
@@ -161,7 +174,7 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
 
         </tr>
         <tr>
-          <td colspan="2" class="backgroundRed center bold ">CONTACT</td>
+          <td colspan="2" class="backgroundRed center bold colorWhite">CONTACT</td>
         </tr>
         <tr>
           <!--1620-->
@@ -189,7 +202,7 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
           <td class="alignLeft paddingBottom25"><input type="text" name="A1619" value="<?php echo $A1619; ?>" size="30"></td>
         </tr>
         <tr>
-          <td colspan="2" class="backgroundRed center bold">SECTION FEMININE</td>
+          <td colspan="2" class="backgroundRed center bold colorWhite">SECTION FEMININE</td>
         </tr>
         <tr>
           <!--1631-->
@@ -202,7 +215,7 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
           <td class="alignLeft paddingBottom25"><input type="text" name="A1632" value="<?php echo $A1632; ?>" size="50"></td>
         </tr>
         <tr>
-          <td colspan="2" class="backgroundRed center bold">DATES IMPORTANTES</td>
+          <td colspan="2" class="backgroundRed center bold colorWhite">DATES IMPORTANTES</td>
         </tr>
         <tr>
           <!--1621-->
@@ -251,9 +264,24 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
   require "mdp.php";
 }
   ?>
-  </body>
-  <footer>
+ </td>
+      <td class = "colonneDroiteGauche"> 
+        <p><?php  include("../../00droite.php"); ?> </p>
+      </td>
+    </tr>
+   
+</table>
+ </body>
+  <footer> 
+  <table class="tableauBas">
+  <tr class="largueurTab">
+    <td><?php include("../../comitebas.php"); ?></td>
+  </tr>
 
+  <tr class="largueurTab">
+    <td class="ligneBlanche"><?php include("../../bas.php"); ?></td>
+  </tr> 
+</table>
   </footer>
 
-  </html>
+</html> 

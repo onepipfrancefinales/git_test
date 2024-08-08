@@ -121,6 +121,17 @@ $bdd->exec("INSERT INTO infosclub
 				   '$saison','$vide','$vide', '$vide','$vide','$vide','$vide','$vide','$vide'  )");
 
 
+echo "<hr />";
+echo "table chgmtNomClub"; echo "<br />";echo "<br />";
+
+
+
+$bdd->exec("INSERT INTO chgmtNomClub(id,idffr)
+			VALUES('$id','$idffr')");
+
+echo "1- id :".$id; echo "<br />";
+echo "2- idffr : ".$idffr; echo "<br />";			
+
 
 echo "<hr />";
 echo "table bdsaisons"; echo "<br />";echo "<br />";

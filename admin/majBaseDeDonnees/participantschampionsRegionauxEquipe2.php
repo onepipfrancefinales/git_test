@@ -22,7 +22,7 @@ if (isset($type))
 	;
 else
 	$type = 0;	
-	$annee = '2022';	
+	$annee = '2024';	
 
 //$tabLigue  = //
 //$tabLigue  = array('CVL', 'OCC', 'PDL');	

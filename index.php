@@ -1,7 +1,12 @@
 <?php
 session_start();
 require 'saison.php';
-$annee = 2022;
+require 'consultation/fonctions.php';
+require 'connect/connexion1.php';
+require 'resultats/constantes.php';
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -54,6 +59,8 @@ $annee = 2022;
 
 
         <br>
+
+        <?php  require "resultats/tableauEffectifsClubs.php";  ?>
         <hr>
         <br>
         <br>

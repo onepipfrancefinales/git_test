@@ -1,6 +1,6 @@
 <?php
-$localHost = true; // connexion en local
-//$localHost = false;// connexion en ligne
+//$localHost = true; // connexion en local
+$localHost = false;// connexion en ligne
 
 setlocale(LC_TIME, 'fr_FR');
 date_default_timezone_set('Europe/Paris');
@@ -21,7 +21,7 @@ if (date('m', time()) > 07 and date('m', time()) <= 12) {
 
     $debutSaison = $annee;
     $finSaison = $annee + 1;
-
+   $datePhasesFinales = $debutSaison;
 }
 //Du 1er Janvier à fin juillet
 else {

@@ -6,7 +6,10 @@ $champReg =  "Championnats Régionaux de la ligue";
 
 
 // Divisions
-
+$TOP14 = "Top 14";
+$PROD2 = "Pro D2";
+$NAT1 = "Nationale 1";
+$NAT2 = "Nationale 2";
 $FED1 = "Fédérale 1";
 $FED2 = "Fédérale 2";
 $FED3 = "Fédérale 3";

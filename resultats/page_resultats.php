@@ -1,7 +1,8 @@
 <?php 
-require("../saison.php");
-require("../consultation/fonctions.php");
-require("../connect/connexion1.php");
+require '../saison.php';
+require '../consultation/fonctions.php';
+require '../connect/connexion1.php';
+require 'constantes.php';
 
 
 //tabNbreClubs();
@@ -53,11 +54,12 @@ structureLigue($idLigue, $bdd); ${$sigleLigue."110"} = $d110;
                                 ${$sigleLigue."180"} = $d180; 
                                 ${$sigleLigue."190"} = $d190;
 
-                                
+                             
 }
 
 
 // totaux par ligues
+
 foreach ($tabTrigrammeLigue as $trigrammeLigue) {
 
 ${"totaux".$trigrammeLigue} = ${$trigrammeLigue."110"} + ${$trigrammeLigue."120"} + ${$trigrammeLigue."130"} + ${$trigrammeLigue."135"} + ${$trigrammeLigue."140"} 
@@ -80,6 +82,8 @@ $REG2  = $ARA180 + $BFC180 + $BRE180 + $CVL180 + $COR180 + $GES180 + $HDF180 + $
 $REG3  = $ARA190 + $BFC190 + $BRE190 + $CVL190 + $COR190 + $GES190 + $HDF190 + $IDF190 + $NOR190 + $NAQ190 + $OCC190 + $PDL190 + $PCA190;
 
 $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + $REG3;
+
+
 ?>
 
 <!DOCTYPE html>
@@ -372,9 +376,7 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
         </table>
         <br>
         <br>
-        <?php
-        require "tableauEffectifsClubs.php";
-        ?>
+        <?php  require "tableauEffectifsClubs.php";  ?>
          <br>
          <br>
       </td>

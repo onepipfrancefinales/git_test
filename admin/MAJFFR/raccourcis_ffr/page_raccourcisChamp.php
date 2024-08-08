@@ -27,7 +27,7 @@
 					
 // ***** Auvergne Rhône Alpes *****	
 					$ARAH = 21991;
-					$ARAPH = 0000;
+					$ARAPH = 21971;
 					$ARAS1 = 21986;
 					$ARAResH =21992;
 					$ARAResPH = 0000;
@@ -103,11 +103,11 @@
 					$PDLResPH = 0;
 
 // ***** Provence *****	
-					$PCAH = 10;
-					$PCAPH = 10;
-					$PCAS1 = 10;
-					$PCAResH = 10;
-					$PCAResPH = 10;
+					$PCAH = 21998;
+					$PCAPH = 21999;
+					$PCAS1 = 22000;
+					$PCAResH = 22001;
+					$PCAResPH = 22002;
 				
 ?>
 <table border="1" width="750">
