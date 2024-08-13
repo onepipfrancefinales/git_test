@@ -174,7 +174,7 @@
         <div class="center"><img src="../images/ligues/BFC.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3">
-        <div class="style size5"> <b><a href="page_ligue.php?idLigue=10">Ligue Bourgogne France Comté</a></b></div>
+        <div class="style size5"> <b><a href="page_ligue.php?idLigue=11">Ligue Bourgogne France Comté</a></b></div>
       </td>
     </tr>
     <tr>
@@ -213,7 +213,7 @@
         <div class="center"><img src="../images/ligues/BRE.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="5">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Bretagne</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=12">Ligue Bretagne</a></b></div>
       </td>
     </tr>
     <tr>
@@ -248,7 +248,7 @@
         <div class="center"><img src="../images/ligues/CVL.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="5" bgcolor="#CCCCCC">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Centre Val de Loire</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=13">Ligue Centre Val de Loire</a></b></div>
       </td>
     </tr>
     <tr>
@@ -283,7 +283,7 @@
         <div class="center"><img src="../images/ligues/COR.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="86" bgcolor="#CCCCCC">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Corse</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=14">Ligue Corse</a></b></div>
       </td>
     </tr>
     <tr>
@@ -318,7 +318,7 @@
         <div class="center"><img src="../images/ligues/GES.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="42">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Grand Est</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=15">Ligue Grand Est</a></b></div>
       </td>
     </tr>
     <tr>
@@ -353,7 +353,7 @@
         <div class="center"><img src="../images/ligues/HDF.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="5">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Hauts de France</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=16">Ligue Hauts de France</a></b></div>
       </td>
     </tr>
     <tr>
@@ -399,7 +399,7 @@
         <div class="center"><img src="../images/ligues/IDF.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="5" bgcolor="#CCCCCC">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Ile de France</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=17">Ligue Ile de France</a></b></div>
 
       </td>
     </tr>
@@ -434,7 +434,7 @@
         <div class="center"><img src="../images/ligues/NOR.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="5" bgcolor="#CCCCCC">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Normandie</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=18">Ligue Normandie</a></b></div>
       </td>
     </tr>
     <tr>
@@ -465,7 +465,7 @@
         <div class="center"><img src="../images/ligues/NAQ.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="5" bgcolor="#CCCCCC">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Nouvelle Aquitaine</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=19">Ligue Nouvelle Aquitaine</a></b></div>
       </td>
     </tr>
     <tr>
@@ -539,7 +539,7 @@
         <div class="center"><img src="../images/ligues/OCC.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="5">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Occitanie</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=20">Ligue Occitanie</a></b></div>
       </td>
     </tr>
     <tr>
@@ -586,7 +586,7 @@
         <div class="center"><img src="../images/ligues/PDL.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="5" bgcolor="#CCCCCC">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Pays de la Loire</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=21">Ligue Pays de la Loire</a></b></div>
       </td>
     </tr>
     <tr>
@@ -617,7 +617,7 @@
         <div class="center"><img src="../images/ligues/PCA.jpg" width="100" height="100"></div>
       </td>
       <td colspan="3" height="87">
-        <div class="style size5"><b><a href="page_ligue.php?idLigue=10">Ligue Provence Alpes Côte d'Azur</a></b></div>
+        <div class="style size5"><b><a href="page_ligue.php?idLigue=22">Ligue Provence Alpes Côte d'Azur</a></b></div>
       </td>
     </tr>
     <tr>

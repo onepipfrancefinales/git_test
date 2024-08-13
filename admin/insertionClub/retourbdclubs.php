@@ -1,11 +1,11 @@
 <?php
 
 $table = $_GET['table'];
-echo "test passage 1 : ".$table;
+
 require '../../connect/connexion1.php';
 
 if ($table == "bdClubs") {
-	echo "test passage 2 : ".$table;
+	
 	echo "<h2>" . "Table bdclubs" . "</h2>";
 
 	// Récupèration des données
@@ -24,7 +24,7 @@ if ($table == "bdClubs") {
 	if (isset($_POST['comite'])) $comite = $_POST['comite'];
 
 
-	// affichade des données	
+	// affichage des données	
 
 	echo "1- id :" . $id;
 	echo "<br />";
@@ -56,7 +56,7 @@ if ($table == "bdClubs") {
 	
 $bdd->exec("UPDATE bdclubs
 			SET nom_1='$nom_1',nom_2='$nom_2',nom_3='$nom_3',nom_4='$nom_4',
-				   fusion='$fusion',idffr= '$idffr', type='$type',sigle ='$sigle', ligue='$ligue',
+				   fusion='$fusion',idffr= '$idffr', type ='$type',sigle ='$sigle', ligue='$ligue',
 				   siglecomite= '$sigleComite', comite='$comite'
 			WHERE id ='$id'");
 

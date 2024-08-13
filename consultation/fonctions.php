@@ -1,9 +1,265 @@
 <?php
+function fusionDeClubs ($equipe, $nouveauClub, $bdd) {
+	global $clubFusion1, $clubFusion2, $clubFusion3, $fusion1, $fusion2, $fusion3, $anneeFusion, $nouveauNomClub;
+	$res = $bdd->query("SELECT fusion1, fusion2, fusion3, annee, nom
+				   FROM chgmtNomClub 
+				   WHERE id = '$equipe' 
+					");
+
+	while ($row = $res->fetch()) {
+		$fusion1 = $row[0];
+		$fusion2 = $row[1];
+		$fusion3 = $row[2];
+		$anneeFusion = $row[3];
+		$nouveauNomClub = $row[4];
+	}
+
+	// bdclubs : Récupèration du nom et sigle
+
+	$res1 = $bdd->query("SELECT sigle, nom_1 , fusion
+				   FROM bdclubs 
+				   WHERE id = '$fusion1' 
+					");
+
+	while ($row = $res1->fetch()) {
+		$clubFusion1 = $row[0];
+		$clubNom1 = $row[1];
+		$statut1 = $row[2];
+	}
+
+	$res2 = $bdd->query("SELECT sigle, nom_1 , fusion
+				   FROM bdclubs 
+				   WHERE id = '$fusion2' 
+					");
+
+	while ($row = $res2->fetch()) {
+		$clubFusion2 = $row[0];
+		$clubNom2 = $row[1];
+		$statut2 = $row[2];
+	}
+
+	$res3 = $bdd->query("SELECT sigle, nom_1 ,fusion
+	FROM bdclubs 
+	WHERE id = '$fusion3' 
+	 ");
+
+while ($row = $res3->fetch()) {
+$clubFusion3 = $row[0];
+$clubNom3 = $row[1];
+$statut3 = $row[2];
+
+}
+
+// bdequipe1 Récupèration d'un tableau comportant les titres des équipes premières
+ $tabPalmEquipe1 = array();
+
+ /************ Equipe 1*************************/
+
+ if ($nouveauClub == 0) {
+$saisonClub1 = array();
+$titreClub1 =array();
+$divisionClub1 = array();
+$championnatClub1 = array();
+$championClub1= array();
+
+	// nombre de titres
+	$nbreTitreClub1 = $bdd->query("SELECT COUNT(*)
+	FROM bdequipe1 
+	WHERE champion ='$clubNom1'  AND (titre = 'Champion' OR titre ='Vice champion')
+	");
+
+	$row=$nbreTitreClub1->fetch();
+	$nbTitreClub1= $row[0]; 
+	/*-------------------------*/
+	
+	$resClub1 = $bdd->query("SELECT saison, titre, championnat, division, champion
+	FROM bdequipe1 
+	WHERE  champion ='$clubNom1'  AND (titre = 'Champion' OR titre ='Vice champion')
+	 ");
+
+while ($row = $resClub1->fetch()) {
+$saisonClub1[] = $row[0];
+$titreClub1[] = $row[1];
+$championnatClub1[] = $row[2];
+$divisionClub1[] = $row[3];
+$championClub1[] = $row[4];
+}
+
+for ($i=0; $i<=$nbTitreClub1-1; $i++)
+{
+	echo "<div id=\"palmares\" class=\"center\">";
+    echo  $saisonClub1[$i].' '.$titreClub1[$i].' '.$championnatClub1[$i].' '.$divisionClub1[$i].' '."(".$clubNom1.")"."<br>";
+	echo "<div>";
+}
+}
+/************ Equipe 2*************************/
+
+
+if ($nouveauClub == 0) {
+$saisonClub2 = array();
+$titreClub2 =array();
+$divisionClub2 = array();
+$championnatClub2 = array();
+$championClub2= array();
+
+	// nombre de titres
+	$nbreTitreClub2 = $bdd->query("SELECT COUNT(*)
+	FROM bdequipe1 
+	WHERE champion ='$clubNom2'  AND (titre = 'Champion' OR titre ='Vice champion')
+	");
+
+	$row=$nbreTitreClub2->fetch();
+	$nbTitreClub2= $row[0]; 
+
+
+
+
+
+$resClub2 = $bdd->query("SELECT saison, titre, championnat, division, champion
+	FROM bdequipe1 
+	WHERE  champion ='$clubNom2'  AND (titre = 'Champion' OR titre ='Vice champion')
+	 ");
+
+while ($row = $resClub2->fetch()) {
+	$saisonClub2[] = $row[0];
+	$titreClub2[] = $row[1];
+	$championnatClub2[] = $row[2];
+	$divisionClub2[] = $row[3];
+	$championClub2[] = $row[4];
+
+//echo $saisonClub2.' '.$titreClub2.' '.$divisionClub2.' '.$championnatClub2 .' '."(".$clubNom2.")"."<br>";
+
+}
+
+for ($i=0; $i<=$nbTitreClub2-1; $i++)
+{
+	echo   $saisonClub2[$i].' '.$titreClub2[$i].' '.$championnatClub2[$i].' '.$divisionClub2[$i].' '."(".$clubNom2.")"."<br>";
+}
+}
+/*********************  Equipe 3 *************************** */
+if ($nouveauClub == 0) {
+$saisonClub3 = array();
+$titreClub3 =array();
+$divisionClub3 = array();
+$championnatClub3 = array();
+$championClub3= array();
+
+	// nombre de titres
+	$nbreTitreClub3 = $bdd->query("SELECT COUNT(*)
+	FROM bdequipe1 
+	WHERE champion ='$clubNom3'  AND (titre = 'Champion' OR titre ='Vice champion')
+	");
+
+	$row=$nbreTitreClub3->fetch();
+	$nbTitreClub3= $row[0]; 
+
+
+$resClub3 = $bdd->query("SELECT saison, titre, championnat, division, champion 
+	FROM bdequipe1 
+	WHERE  champion ='$clubNom3'  AND (titre = 'Champion' OR titre ='Vice champion')
+	 ");
+
+while ($row = $resClub3->fetch()) {
+	$saisonClub3[] = $row[0];
+	$titreClub3[] = $row[1];
+	$championnatClub3[] = $row[2];
+	$divisionClub3[] = $row[3];
+	$championClub3[] = $row[4];
+}
+for ($i=0; $i<=$nbTitreClub3-1; $i++)
+{
+echo  $saisonClub3[$i].' '.$titreClub3[$i].' '.$championnatClub3[$i].' '.$divisionClub3[$i].' '."(".$clubNom3.")"."<br>";
+}
+}	
+//print_r($tabPalmEquipe1);
+//echo count($tabPalmEquipe1);echo "<br>";
+//echo $tabPalmEquipe1[0];echo $tabPalmEquipe1[1];echo $tabPalmEquipe1[2];echo $tabPalmEquipe1[3];echo $tabPalmEquipe1[4];
+
+//bd equipe2 toDo
+/*
+echo "<br>";
+echo "--------------------------------------";
+echo "<br>";
+$tabPalmEquipeTest = array (
+	array (
+	"saison" => $saisonClub1,
+	"titre"=> $titreClub1,
+	"championnat"=> $championnatClub1,
+	"division"=> $divisionClub1,
+	"champion"=> $championClub1,
+	),
+	array (
+		"saison" => $saisonClub2,
+		"titre"=> $titreClub2,
+		"championnat"=> $championnatClub2,
+		"division"=> $divisionClub2,
+		"champion"=> $championClub2,
+		),
+		array (
+			"saison" => $saisonClub3,
+			"titre"=> $titreClub3,
+			"championnat"=> $championnatClub3,
+			"division"=> $divisionClub3,
+			"champion"=> $championClub3,
+			),
+
+);
+*/
+//	var_dump($tabPalmEquipeTest);
+	//asort($tabPalmEquipeTest("saison"));
+	//echo $tabPalmEquipeTest['saison'][0].' '.$tabPalmEquipeTest['titre'][0].' '.$tabPalmEquipeTest['championnnat'][0].' '.$tabPalmEquipeTest['division'][0].' '.$tabPalmEquipeTest['saison'][0].' '.$tabPalmEquipeTest['champion'][0];
+//	echo "<br>";
+//	echo "--------------------------------------";
+//	echo "<br>";
+//	echo "test : ".$tabPalmEquipeTest[0]["saison"];
+
+//	echo "<br>";
+
+/*	
+$employee = array( 
+    array( 
+        "name" => "Thomas Judell", 
+        "address" => "Paris", 
+        "email" => "thomas.judell@gmail.com", 
+    ), 
+    array( 
+        "name" => "Emily sosan", 
+        "address" => "Lile", 
+        "email" => "emily.sosan@gmail.com", 
+    ), 
+    array( 
+        "name" => "Zineb sofia", 
+        "address" => "Nantes", 
+        "email" => "zineb.sofia@gmail.com", 
+    ) 
+); 
+  
+echo "L'adresse de Thomas Judell est : " . $employee[0]["address"] . "\n"; 
+echo "L'adresse email de Emily sosan est : " . $employee[1]["email"]; 
+  
+*/
+}
+/*******************************************/
+
+function consultationEvolutionClub ($equipe, $bdd)
+{
+	global $fusion;
+	$reponse = $bdd->query("SELECT COUNT(*)
+	FROM chgmtNomClub
+	WHERE id = '$equipe' and fusion1 IS NOT NULL
+	");
+
+	$row=$reponse->fetch();
+	$presence= $row[0]; 
+
+	if ($presence >0) $fusion = true; else	$fusion = false;
+}
+
+
 //Affichage du logo et du nom du club par division, par ligue et par genre 
 function clubsParLigue($idLigue, $type, $var1, $bdd)
 {
   global $nbreEquipe;
-  
   $reponse = $bdd->query("
 			 SELECT COUNT(*)
 			 FROM bdsaisons, bdclubs

@@ -54,7 +54,7 @@ color: #FFFFFF;font-weight: bold;text-decoration: none;border-radius:10px 10px 1
 
 p{text-align: center;}
 
-a{text-decoration: none; color:#FFFFFF;}
+a{text-decoration: none; }
 
 /*titre France Finales Rugby*/
 .h22{  background-color:#006699;color:white;font-size:24px;text-align:center;font-family:Arial;Font-weight:bold;}

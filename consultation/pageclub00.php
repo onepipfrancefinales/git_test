@@ -1,8 +1,10 @@
 <?php
 require "../saison.php";
 require "../fonctions.php";
-
+require "fonctions.php";
 $chaine = $_GET['champion'];
+//$nouveauClub = $_GET['nouveauClub'];
+if (isset($_GET['nouveauClub'])) {$nouveauClub =$_GET['nouveauClub'];} else  {$nouveauClub = 0;}
 
 
 //echo "chaine : ".$chaine; echo "<br/>";
@@ -42,8 +44,8 @@ affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);
 
-
-//echo "nomComite : ".$nomComite;
+consultationEvolutionClub ($equipe, $bdd);
+fusionDeClubs ($equipe, $nouveauClub, $bdd) ;
 ?>
 
 

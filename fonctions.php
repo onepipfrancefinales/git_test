@@ -61,7 +61,7 @@ $saisonEnCours=$row[0];
 
 	function infosclub($chaine, $bdd)
 	{
-		global $nomLong, $comite, $id, $sigleComite, $nomChampion, $numLigue, $code, $idFfr;
+		global $nomLong, $comite, $id, $sigleComite, $nomChampion, $numLigue, $code, $idFfr, $statut;
 
 		global $chaine2;
 		if (is_numeric($chaine)) {
@@ -76,7 +76,7 @@ $saisonEnCours=$row[0];
 						WHERE substr(id,-5) = $chaine2 and  type ='M' ");
 		} else {
 			$chaine2 = $chaine;
-			$requete = $bdd->query("SELECT sigle, siglecomite, id, nom_1 , ligue, comite, idffr
+			$requete = $bdd->query("SELECT sigle, siglecomite, id, nom_1 , ligue, comite, idffr, fusion
 							FROM bdclubs  
 							WHERE (nom_1 ='$chaine2'
 							OR nom_2 ='$chaine2'
@@ -102,6 +102,7 @@ $saisonEnCours=$row[0];
 			$numLigue = $row[4];
 			$idFfr = $row[6];
 			$code = substr($id, -5);
+			$statut = $row[7];
 		}
 	}
 

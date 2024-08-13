@@ -65,50 +65,50 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 	<td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=au&bddComite=au&champ=100171">Ligue Auvergne Rh&ocirc;ne Alpes</a></td>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=au&bddComite=au&champ=100171">Ligue Auvergne Rhône Alpes</a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=bg&bddComite=pl&champ=110171">Ligue Bourgogne Franche Comté </a></td>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=bg&bddComite=pl&champ=110171">Ligue Bourgogne Franche Comté </a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=br&bddComite=pl&champ=120171">Ligue Bretagne</a></td>
+    <td colspan="2" class="coin"><a  class="colorWhite" href="171.php?comite=br&bddComite=pl&champ=120171">Ligue Bretagne</a></td>
   </tr>
  <tr> 
     <td colspan="2"><?php include("../pub/pub25.php");?></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=ce&bddComite=pl&champ=130171">Ligue Centre Val de Loire</a></td>
+    <td colspan="2" class="coin"><a  class="colorWhite" href="171.php?comite=ce&bddComite=pl&champ=130171">Ligue Centre Val de Loire</a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=al&bddComite=idf&champ=150171">Ligue Grand Est</a></td>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=al&bddComite=idf&champ=150171">Ligue Grand Est</a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=fl&bddComite=pl&champ=160171">Ligue Hauts de France</a> </td>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=fl&bddComite=pl&champ=160171">Ligue Hauts de France</a> </td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=idf&bddComite=idf&champ=170171">Ligue Ile de France</a>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=idf&bddComite=idf&champ=170171">Ligue Ile de France</a>
     </td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=pl&bddComite=pl&champ=210171">Ligue Pays de la Loire</a></td>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=pl&bddComite=pl&champ=210171">Ligue Pays de la Loire</a></td>
   </tr>
 <tr> 
     <td colspan="2" > <?php	include("../pub/pub25.php");?>    </td>
@@ -117,25 +117,25 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2"  class="coin"><a href="171.php?comite=n&bddComite=idf&champ=180171">Ligue Normandie</a></td>
+    <td colspan="2"  class="coin"><a class="colorWhite" href="171.php?comite=n&bddComite=idf&champ=180171">Ligue Normandie</a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=ca&bddComite=ca&champ=190171">Ligue Nouvelle Aquitaine</a></td>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=ca&bddComite=ca&champ=190171">Ligue Nouvelle Aquitaine</a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=ab&bddComite=ab&champ=200171">Ligue Occitanie</a></td>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=ab&bddComite=ab&champ=200171">Ligue Occitanie</a></td>
   </tr>
   <tr> 
    <td colspan="2"></td>
   </tr>
   <tr> 
-    <td colspan="2" class="coin"><a href="171.php?comite=pr&bddComite=idf&champ=220171">Ligue Provence Alpes C&ocirc;te d'Azur</a></td>
+    <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=pr&bddComite=idf&champ=220171">Ligue Provence Alpes C&ocirc;te d'Azur</a></td>
   </tr>
   <tr> 
     <td colspan="2"></td>

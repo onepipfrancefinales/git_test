@@ -1,7 +1,9 @@
 <?php
 require ("../../saison.php");
 require ("../../fonctions.php");
+require '../../consultation/fonctions.php';
 $chaine = $_GET['champion'];
+$nouveauClub = $_GET['nouveauClub'];
 
  if (is_int($chaine)) {
 
@@ -33,7 +35,8 @@ affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($chaine, $bdd);
 saisons($code, $annee, $bdd);
 
-
+consultationEvolutionClub ($equipe, $bdd);
+fusionDeClubs ($equipe, $bdd) ;
 
 ?>
 
