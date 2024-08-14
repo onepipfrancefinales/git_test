@@ -193,6 +193,21 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
     </tr>
   </table>
   <br>
+  <table width="<?php echo $width; ?>" class="marginAuto borderWidth1">
+    <tr>
+      <td class="titre" colspan="2"> Changement de nom : </td>
+    </tr>
+    <tr>
+      <td class="titreGauche" width="25%"> : </td>
+      <td class="saisie" width="75%"><?php echo $chgmntDate; ?></td>
+    </tr>
+    <tr>
+      <td class="titreGauche"> Niveau :</td>
+      <td class="saisie"><?php echo $chgmntNom; ?> </td>
+    </tr>
+  </table>
+  
+  <br>
   <table class="marginAuto borderWidth1" width="<?php echo $width; ?>">
     <tr>
       <td class="titre"> Dates importantes </td>

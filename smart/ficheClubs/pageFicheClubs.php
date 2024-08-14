@@ -36,7 +36,7 @@ bdInfosClub($chaine, $bdd);
 saisons($code, $annee, $bdd);
 
 consultationEvolutionClub ($equipe, $bdd);
-fusionDeClubs ($equipe, $bdd) ;
+fusionDeClubs2 ($equipe,$nouveauClub, $bdd) ;
 
 ?>
 

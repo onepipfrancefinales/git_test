@@ -1,4 +1,57 @@
 <?php
+function fusionDeClubs2 ($equipe, $nouveauClub, $bdd) {
+	global $clubFusion1, $clubFusion2, $clubFusion3, $fusion1, $fusion2, $fusion3, $anneeFusion, $nouveauNomClub;
+	$res = $bdd->query("SELECT fusion1, fusion2, fusion3, annee, nom
+				   FROM chgmtNomClub 
+				   WHERE id = '$equipe' 
+					");
+
+	while ($row = $res->fetch()) {
+		$fusion1 = $row[0];
+		$fusion2 = $row[1];
+		$fusion3 = $row[2];
+		$anneeFusion = $row[3];
+		$nouveauNomClub = $row[4];
+	}
+
+	// bdclubs : Récupèration du nom et sigle
+
+	$res1 = $bdd->query("SELECT sigle, nom_1 , fusion
+				   FROM bdclubs 
+				   WHERE id = '$fusion1'");
+
+	while ($row = $res1->fetch()) {
+		$clubFusion1 = $row[0];
+		$clubNom1 = $row[1];
+		$statut1 = $row[2];
+	}
+
+	$res2 = $bdd->query("SELECT sigle, nom_1 , fusion
+				   FROM bdclubs 
+				   WHERE id = '$fusion2'");
+
+	while ($row = $res2->fetch()) {
+		$clubFusion2 = $row[0];
+		$clubNom2 = $row[1];
+		$statut2 = $row[2];
+	}
+
+	$res3 = $bdd->query("SELECT sigle, nom_1 ,fusion
+	FROM bdclubs 
+	WHERE id = '$fusion3'");
+
+while ($row = $res3->fetch()) {
+$clubFusion3 = $row[0];
+$clubNom3 = $row[1];
+$statut3 = $row[2];
+
+}
+}
+
+
+
+
+
 function fusionDeClubs ($equipe, $nouveauClub, $bdd) {
 	global $clubFusion1, $clubFusion2, $clubFusion3, $fusion1, $fusion2, $fusion3, $anneeFusion, $nouveauNomClub;
 	$res = $bdd->query("SELECT fusion1, fusion2, fusion3, annee, nom
