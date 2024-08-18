@@ -201,9 +201,9 @@ $bdd->exec("UPDATE infosclub
 				 A1630='$A1630', A1631='$A1631', A1632='$A1632' 
 			WHERE id ='$idReduit' ");
 
-} else if ($table == "chgmtNomClub") {
+} else if ($table == "bdfusion") {
 
-	echo  "<h2>" . "Table chgmtNomClub" . "</h2>";
+	echo  "<h2>" . "Table bdfusion" . "</h2>";
 
 	// récupèration des données
 	if (isset($_POST['idReduit'])) $idReduit = $_POST['idReduit'];
@@ -237,7 +237,7 @@ $bdd->exec("UPDATE infosclub
 	// Enregistrement des données
 
 
-$reponse = $bdd->query("UPDATE chgmtNomClub
+$reponse = $bdd->query("UPDATE bdfusion
 						SET nom='$nom', logo='$logo', annee='$annee',  fusion1='$fusion1',  fusion2='$fusion2', fusion3='$fusion3' 
 						WHERE  idffr='$idffr'"); 
         

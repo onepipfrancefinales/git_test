@@ -20,17 +20,19 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="AA2.css">
+<link type="text/css" rel="stylesheet" href="../../ligne1.css">
 <link type="text/css" rel="stylesheet" href="../10.css">
 </head>
 
  
 <body bgcolor="#CCCCCC">
- <table width="100%" border="1">
+ <table class="width100PC borderWidth1">
   <tr> 
-    <td class ="h22">France Finales Rugby</td>
+  <td class="h22 width5PC"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20" alt="fléche retour"></a></td>
+  <td class="h22 "> France Finales Rugby </td>
   </tr>
   <tr> 
-    <td class ="h12">Championnats<br> de France<br><font size="4">(Phases finales)</font></td>
+    <td colspan="2" class ="h12">Championnats<br> de France<br><font size="4">(Phases finales)</font></td>
   </tr>
 </table>
 <br>

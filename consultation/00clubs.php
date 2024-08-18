@@ -5,11 +5,13 @@ if ($smart == true) {
   <br>
 
   <h1 class="size6 colorRed">
-  <?php echo $nomLong; ?> </h1>
-  <h1 class="size6 colorBlack"><?php echo "Ligue" . ' ' . $nomLigue; ?></h1>
+    <?php echo $nomLong; ?> </h1>
+  <h1 class="size5 colorBlack"><?php echo "Ligue" . ' ' . $nomLigue; ?></h1>
   <h2 class="size2"><?php echo "( Ex comité" . ' ' . $nomComite . '' . " )"; ?> </h2>
   <div class="center">
-  <?php { print("<img src=\"/../images/blasons200_200/$code.gif\" >");  } ?>
+    <?php {
+      print("<img src=\"/../images/blasons200_200/$code.gif\" >");
+    } ?>
   </div>
   <br>
   <br>
@@ -18,12 +20,14 @@ if ($smart == true) {
 ?>
   <div class="colorWhite"><?php echo $id_equipe; ?></div>
 
-  <h1 class="colorRed"> <?php echo $nomLong ; ?> </h1>
+  <h1 class="colorRed"> <?php echo $nomLong; ?> </h1>
   <br>
   <h1 class="colorBlack"> <?php echo "Ligue" . ' ' . $nomLigue; ?></h1>
   <h2 class="size4 bold"> <?php echo "( Ex comité" . ' ' . $nomComite . '' . " )"; ?></h2>
   <div class="center">
-  <?php { print("<img src=\"/../images/blasons200_200/$code.gif\" >");}
+  <?php {
+    print("<img src=\"/../images/blasons200_200/$code.gif\" >");
+  }
 
   echo "<br>";
   echo "<br>";
@@ -31,7 +35,8 @@ if ($smart == true) {
 
 
 
-if ($smart == true)   $width = "100%";else  $width = "90%";
+if ($smart == true)   $width = "100%";
+else  $width = "90%";
   ?>
   </div>
 
@@ -43,26 +48,28 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
 
 
     <?php
-    if ($fusion == true) { 
-      if ($smart== true) {$URL ="/smart/ficheClubs/pageFicheClubs.php?champion=";} 
-      else
-       {$URL="/consultation/pageclub00.php?champion=";}
-      ?>
+    if ($fusion == true) {
+      if ($smart == true) {
+        $URL = "/smart/ficheClubs/pageFicheClubs.php?champion=";
+      } else {
+        $URL = "/consultation/pageclub00.php?champion=";
+      }
+    ?>
       <tr>
         <td class="titreGauche" colspan="2" width="30%">Fusion en : </td>
         <td class="saisieGras" width="70%"> <?php echo $anneeFusion; ?></td>
       </tr>
       <tr>
         <td class="titreGauche" colspan="2" width="30%">entre les clubs suivants : </td>
-        <td style="font-size: 18px;font-family: arial;font-weight: Bold;" width="70%"> <?php echo "<a  href=/.$URL". substr($fusion1, -5)."&nouveauClub=".$id_equipe . ">$clubFusion1</a> "; ?></td>
+        <td style="font-size: 18px;font-family: arial;font-weight: Bold;" width="70%"> <?php echo "<a  href=/.$URL" . substr($fusion1, -5) . "&nouveauClub=" . $id_equipe . ">$clubFusion1</a> "; ?></td>
       </tr>
       <tr>
         <td class="titreGauche" colspan="2" width="30%"> </td>
-        <td style="font-size: 18px;font-family: arial;font-weight: Bold;" width="70%"><?php echo "<a href=/.$URL". substr($fusion2, -5) ."&nouveauClub=".$id_equipe . ">$clubFusion2</a> "; ?></td>
+        <td style="font-size: 18px;font-family: arial;font-weight: Bold;" width="70%"><?php echo "<a href=/.$URL" . substr($fusion2, -5) . "&nouveauClub=" . $id_equipe . ">$clubFusion2</a> "; ?></td>
       </tr>
       <tr>
         <td class="titreGauche" colspan="2" width="30%"> </td>
-        <td style="font-size: 18px;font-family: arial;font-weight: Bold;" width="70%"><?php echo "<a href=/.$URL". substr($fusion3, -5) ."&nouveauClub=".$id_equipe . ">$clubFusion3</a> "; ?></td>
+        <td style="font-size: 18px;font-family: arial;font-weight: Bold;" width="70%"><?php echo "<a href=/.$URL" . substr($fusion3, -5) . "&nouveauClub=" . $id_equipe . ">$clubFusion3</a> "; ?></td>
       </tr>
     <?php
     } else {
@@ -193,20 +200,10 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
     </tr>
   </table>
   <br>
-  <table width="<?php echo $width; ?>" class="marginAuto borderWidth1">
-    <tr>
-      <td class="titre" colspan="2"> Changement de nom : </td>
-    </tr>
-    <tr>
-      <td class="titreGauche" width="25%"> : </td>
-      <td class="saisie" width="75%"><?php echo $chgmntDate; ?></td>
-    </tr>
-    <tr>
-      <td class="titreGauche"> Niveau :</td>
-      <td class="saisie"><?php echo $chgmntNom; ?> </td>
-    </tr>
-  </table>
-  
+
+  <?php changementNom($id_equipe, $width, $bdd);  ?>
+
+
   <br>
   <table class="marginAuto borderWidth1" width="<?php echo $width; ?>">
     <tr>
@@ -229,18 +226,18 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
     </tr>
   </table>
   <br>
-<?php
+  <?php
   if ($smart != 1) {
-    ?>
-  <table class="marginAuto borderWidth1" width="80%">
-    <tr>
-      <td colspan="6" class="backgroundRed borderColorBlack">
-        <div class="center backgroundRed  bold colorWhite">
-          <?php echo "<a class=\"colorWhite\" href=/mise_a_jour/infosclub/mdp.php?idClub=$code target=_blank>Modifier la fiche du club</a> "; ?>
-        </div>
-      </td>
-    </tr>
-  </table>
+  ?>
+    <table class="marginAuto borderWidth1" width="80%">
+      <tr>
+        <td colspan="6" class="backgroundRed borderColorBlack">
+          <div class="center backgroundRed  bold colorWhite">
+            <?php echo "<a class=\"colorWhite\" href=/mise_a_jour/infosclub/mdp.php?idClub=$code target=_blank>Modifier la fiche du club</a> "; ?>
+          </div>
+        </td>
+      </tr>
+    </table>
   <?php
   }
   ?>
@@ -283,14 +280,32 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
   $table = "bdequipe1";
   $categorie = "A";
   nbreTitre($nomChampion, $table, $categorie, $bdd);
-  if ($nombreTitre > 0) {
+  $nbreTitreChampion = $nombreTitre;
+
+  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  $nbreTitreFusion1 = $nombreTitre;
+
+  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  $nbreTitreFusion2 = $nombreTitre;
+
+  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  $nbreTitreFusion3 = $nombreTitre;
+
+  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  $nbreTitreFusion4 = $nombreTitre;
+
+
+
+  if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
     if ($smart == true)
       echo "<h2 class=\"size4\"> Equipe Une </h2>";
     else
       echo "<h2> Equipe Une </h2>";
   } ?>
   <div id="palmares" class="center">
-    <?php palmares($nomChampion, $table, $categorie, $bdd); ?>
+    <?php
+    palmares($nomChampion, $table, $categorie, $bdd);
+    fusionDeClubsEquipe1($nouveauClub, $nouveauClub, $bdd); ?>
   </div>
 
   <?php
@@ -298,7 +313,21 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
   $table = "bdequipe2";
   $categorie = "B";
   nbreTitre($nomChampion, $table, $categorie, $bdd);
-  if ($nombreTitre > 0) {
+  $nbreTitreChampion = $nombreTitre;
+
+  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  $nbreTitreFusion1 = $nombreTitre;
+
+  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  $nbreTitreFusion2 = $nombreTitre;
+
+  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  $nbreTitreFusion3 = $nombreTitre;
+
+  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  $nbreTitreFusion4 = $nombreTitre;
+
+  if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
     if ($smart == true)
       echo "<h2 class=\"size4\"> Equipe II </h2>";
     else
@@ -306,6 +335,7 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
   } ?>
   <div id="palmares" class="center">
     <?php palmares($nomChampion, $table, $categorie, $bdd); ?>
+    <?php fusionDeClubsEquipe2($nouveauClub, $nouveauClub, $bdd); ?>
   </div>
 
   <?php
@@ -313,7 +343,21 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
   $table = "bdchallenges";
   $categorie = "C";
   nbreTitre($nomChampion, $table, $categorie, $bdd);
-  if ($nombreTitre > 0) {
+  $nbreTitreChampion = $nombreTitre;
+
+  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  $nbreTitreFusion1 = $nombreTitre;
+
+  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  $nbreTitreFusion2 = $nombreTitre;
+
+  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  $nbreTitreFusion3 = $nombreTitre;
+
+  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  $nbreTitreFusion4 = $nombreTitre;
+
+  if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
     if ($smart == true)
       echo "<h2 class=\"size4\"> Challenges Nationaux </h2>";
     else
@@ -327,8 +371,22 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
   //****************     Palmares Reichels & Juniors      *******************************
   $table = "bdjeunes";
   $categorie = "D";
-  nbreTitre($nomChampion, $table, $categorie, $bdd);
-  if ($nombreTitre > 0) {
+   nbreTitre($nomChampion, $table, $categorie, $bdd);
+  $nbreTitreChampion = $nombreTitre;
+
+  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  $nbreTitreFusion1 = $nombreTitre;
+
+  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  $nbreTitreFusion2 = $nombreTitre;
+
+  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  $nbreTitreFusion3 = $nombreTitre;
+
+  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  $nbreTitreFusion4 = $nombreTitre;
+
+  if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
     if ($smart == true)
       echo "<h2 class=\"size4\"> Reichels & Juniors </h2>";
     else
@@ -336,14 +394,29 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
   } ?>
   <div id="palmares" class="center">
     <?php palmares($nomChampion, $table, $categorie, $bdd); ?>
+    <?php fusionDeClubsJeunes($nouveauClub, $nouveauClub, $bdd); ?>
   </div>
 
   <?php
   //****************     Palmares cadets      *******************************
   $table = "bdjeunes";
   $categorie = "E";
-  nbreTitre($nomChampion, $table, $categorie, $bdd);
-  if ($nombreTitre > 0) {
+ nbreTitre($nomChampion, $table, $categorie, $bdd);
+  $nbreTitreChampion = $nombreTitre;
+
+  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  $nbreTitreFusion1 = $nombreTitre;
+
+  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  $nbreTitreFusion2 = $nombreTitre;
+
+  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  $nbreTitreFusion3 = $nombreTitre;
+
+  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  $nbreTitreFusion4 = $nombreTitre;
+
+  if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
     if ($smart == true)
       echo "<h2 class=\"size4\"> Cadets </h2>";
     else
@@ -354,8 +427,9 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
   </div>
 
   <br>
-<?php fusionDeClubs ($nouveauClub, $nouveauClub, $bdd);?>
-<br>
+  <?php //fusionDeClubs ($nouveauClub, $nouveauClub, $bdd);
+  ?>
+  <br>
   <hr width="70%" style="color:red; height:1px ">
 
 
@@ -368,55 +442,58 @@ if ($smart == true)   $width = "100%";else  $width = "90%";
 
 
 
-if ( $nouveauClub !=0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3 ))
-{
+  if ($nouveauClub != 0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3)) {
   ?>
-<div class="size3 styleArial center">
+    <div class="size3 styleArial center">
+      <?php
+      echo "<br>";
+      echo "Fusion en " . $anneeFusion . " avec le(s) club(s) de " . "<br>";
+
+      if ($equipe == $fusion1) {
+        echo $clubFusion2 . "<br>" . $clubFusion3;
+      } elseif ($equipe == $fusion2) {
+        echo $clubFusion1 . "<br>" . $clubFusion3;
+      } elseif ($equipe == $fusion3) {
+        echo $clubFusion1 . "<br>" . $clubFusion3;
+      }
+
+      echo "<br>";
+      echo "pour donner naissance au club" . "<br>";
+      echo "<br>";
+
+      if ($smart == 1) {
+        $URL = "/smart/ficheClubs/pageFicheClubs.php?champion=";
+      } else {
+        $URL = "/consultation/pageclub00.php?champion=";
+      }
+
+
+      ?>
+    </div>
+    <div id="saisonEnCours" class="colorBlack"> <a class="colorBlack" href=<?php echo $URL . substr($nouveauClub, -5); ?>><?php echo $nouveauNomClub; ?></a> </div><br>
+
+
+
   <?php
-  echo "<br>";
-echo "Fusion en ".$anneeFusion." avec le(s) club(s) de "."<br>";
-
-if ($equipe == $fusion1) {echo $clubFusion2."<br>".$clubFusion3;}
-elseif ($equipe == $fusion2) {echo $clubFusion1."<br>".$clubFusion3;}
-elseif ($equipe == $fusion3) {echo $clubFusion1."<br>".$clubFusion3;}
-
-echo "<br>";
-echo "pour donner naissance au club". "<br>";
-echo "<br>";
-
-if ($smart == 1) {$URL ="/smart/ficheClubs/pageFicheClubs.php?champion=";} 
-else
- {$URL="/consultation/pageclub00.php?champion=";}
-
-
-?>
-</div>
-<div id="saisonEnCours" class="colorBlack"> <a   class="colorBlack" href=<?php echo $URL.substr($nouveauClub, -5); ?>><?php echo $nouveauNomClub; ?></a> </div><br>
-                     
-                    
-                    
-                    <?php
-}
-else
-{
-  if ($smart == 1)
-    echo "<h1 class=\"size4\">" . "Saison " . $debutSaison . '  - ' . $finSaison . "</h1>";
-  else
-    echo "<h1>" . "Saison " . $debutSaison . ' - ' . $finSaison . "</h1>";
+  } else {
+    if ($smart == 1)
+      echo "<h1 class=\"size4\">" . "Saison " . $debutSaison . '  - ' . $finSaison . "</h1>";
+    else
+      echo "<h1>" . "Saison " . $debutSaison . ' - ' . $finSaison . "</h1>";
 
   ?>
 
-  <div id="saisonEnCours">
-    <?php
-    if ($saisonEnCoursChiffre > 0)  echo "- " . $saisonEnCours . " -";
-    else echo "-";
-    ?>
-  </div>
-  <br>
+    <div id="saisonEnCours">
+      <?php
+      if ($saisonEnCoursChiffre > 0)  echo "- " . $saisonEnCours . " -";
+      else echo "-";
+      ?>
+    </div>
+    <br>
   <?php
-}
-?> 
-<hr width="70%" style="color:red; height:1px ">
+  }
+  ?>
+  <hr width="70%" style="color:red; height:1px ">
 
 
   <?php
@@ -434,15 +511,19 @@ else
 
 
 
-$min = 1;
-$max = 15;
+    $min = 1;
+    $max = 15;
 
-if ($fusion == true){  $max = $finSaison - $anneeFusion;}
+    if ($fusion == true) {
+      $max = $finSaison - $anneeFusion;
+    }
 
 
 
 
-if ($nouveauClub !=0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3)) {   $min = $finSaison - $anneeFusion;}
+    if ($nouveauClub != 0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3)) {
+      $min = $finSaison - $anneeFusion;
+    }
 
     for ($i = $min; $i < $max; $i = $i + 2) {
     ?>
@@ -453,7 +534,7 @@ if ($nouveauClub !=0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 ||
       </tr>
       <tr>
         <?php
-        
+
         $debut = ($debutSaison - $i);
         $fin = $finSaison - $i;
         if ($smart == true)
@@ -493,8 +574,8 @@ if ($nouveauClub !=0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 ||
       </tr>
 
     <?php
-    
-  }
+
+    }
     ?>
   </table>
 

@@ -131,5 +131,9 @@ while ($row = $reponse->fetch())
 <?php
 }
 echo "<br />";
+
 }
+
+
+require '../majScores/bas.php';
 ?>

@@ -38,13 +38,13 @@ echo "Bdd et Ligue choisies  : ".$bddComitePlusId;
       de ligue</font> </b></font> 
       <select name="bddComitePlusId"  size="1">
         <option selected>Ligue</option>
-        <option value="phppr-99"><b>F&eacute;d&eacute;rale 1</b></option>
-        <option value="phppr-99"><b>F&eacute;d&eacute;rale 2</b></option>
-        <option value="phpfe-99"><b>F&eacute;d&eacute;rale 3</b></option>
-        <option value="phppr-99"><b>Comp&eacute;titions f&eacute;minines</b></option>
+        <option value="phppr-99"><b>Fédérale 1</b></option>
+        <option value="phppr-99"><b>Fédérale 2</b></option>
+        <option value="phpfe-99"><b>Fédérale 3</b></option>
+        <option value="phppr-99"><b>Compétitions féminines</b></option>
         <option value="phpau-10"><b>Auvergne Rhone Alpes</b></option>
         
-		<option value="phppl-11"><b>Bourgogne Franche Comt&eacute;</b></option>
+		<option value="phppl-11"><b>Bourgogne Franche Comté</b></option>
         <option value="phppl-12"><b>Bretagne</b></option>
         <option value="phppl-13"><b>Centre Val de Loire</b></option>
         <option value="phpid-15"><b>Grand Est</b></option>

@@ -48,7 +48,7 @@ nomDivision($phpComite, $champ, $bdd);
   <div class="container">
    <table width="100%" class="marginAuto borderWidth1">
     <tr> 
-      <td width= "5%"class="h22"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20"></a></td>
+      <td width= "5%"class="h22"><a href="javascript:history.go(-1)"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20"></a></td>
 	  <td width= "95%"class="h22"> France Finales Rugby </td>
     </tr>
     <tr> 

@@ -1,14 +1,20 @@
 
 <?php
-/*
-$nomChampion="2345A";
-$pattern="/[0-9]{4}[A-Z]{1}/i";
-echo "test :".preg_match($pattern, $nomChampion);
-echo "<br>";
-$str = "Apples and bananas.";
-$pattern = "/ba(na){2}/i";
-echo preg_match($pattern, $str);
-*/
+$test = 2;
+
+$somme = $test + $test+2;
+echo $somme;
+
+for($i = 1; $i < 5; $i++)
+{
+  
+
+${"clubA".$i} = 4563;
+ 
+}
+echo $clubA1; echo "<br>";
+echo $clubA2; echo "<br>";
+echo $clubA3; echo "<br>";
 ?>
 
 <div class="titreEncadre">  Mise à jour des résultats</div>

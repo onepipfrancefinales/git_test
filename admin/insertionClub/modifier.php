@@ -290,15 +290,15 @@ while ($row = $reponse->fetch())
 </form>
 
 <hr/>
-<!------------  chgmtNomClub ----------->
-<h2> chgmtNomClub (Suivi des changements d'un club (nom, fusion, logo))</h2>
+<!------------  bdfusion ----------->
+<h2> bdfusion (Suivi des changements d'un club (nom, fusion, logo))</h2>
 
 
 <?php
 
 
 $reponse = $bdd->query("SELECT *
-						FROM chgmtNomClub
+						FROM bdfusion
 						WHERE idffr ='$idffr'"); 
 
 while ($row = $reponse->fetch())
@@ -310,7 +310,7 @@ while ($row = $reponse->fetch())
 ?>
 
 
-<form name="form1" method="POST" action="retourbdclubs.php?table=chgmtNomClub">
+<form name="form1" method="POST" action="retourbdclubs.php?table=bdfusion">
 <div class=" formatInput">id (réduit) : 
     <input type="text" name="idReduit" value="<?php echo $idReduit ;?>" readonly>
   </div>

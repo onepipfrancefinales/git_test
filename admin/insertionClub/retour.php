@@ -122,11 +122,11 @@ $bdd->exec("INSERT INTO infosclub
 
 
 echo "<hr />";
-echo "table chgmtNomClub"; echo "<br />";echo "<br />";
+echo "table bdfusion"; echo "<br />";echo "<br />";
 
 
 
-$bdd->exec("INSERT INTO chgmtNomClub(id,idffr)
+$bdd->exec("INSERT INTO bdfusion(id,idffr)
 			VALUES('$id','$idffr')");
 
 echo "1- id :".$id; echo "<br />";

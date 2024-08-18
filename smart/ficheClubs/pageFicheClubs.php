@@ -59,7 +59,7 @@ fusionDeClubs2 ($equipe,$nouveauClub, $bdd) ;
    
     <table width="98%" border="1">
      <tr> 
-      <td width= "5%"class="h22" height="20"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" height="20"></a></td>
+      <td width= "5%"class="h22" height="20"><a href="javascript:history.go(-1)"><img src="../../images/smart/flecheGauche.jpg" height="20"></a></td>
 	  <td width= "95%"class="h22" height="20"> France Finales Rugby </td>
      </tr>
      <tr> 

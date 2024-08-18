@@ -30,8 +30,8 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <p align="center"><img src="/images/123.jpg" width="120" height="120"></p>
 <table width="100%" align="center">
   <tr> 
-    <td colspan="2" class="france"><a href="pf/accueil.php?annee=<?php echo $finSaison;?>">Championnats 
-        de France <?php echo $finSaison;?></a></td>
+    <td colspan="2" class="france"><a href="pf/accueil.php?annee=<?php echo $datePhasesFinales;?>">Championnats 
+        de France <?php echo $datePhasesFinales;?></a></td>
   </tr>
   <tr> 
     <td colspan="2" ></td>
@@ -144,11 +144,11 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2" height="8"></td>
   </tr>
   <tr> 
-    <td height="25" colspan="2" class="france"><a href="pf/accueil.php?annee=<?php echo $finSaison;?>">Championnats de France <?php echo $finSaison;?></a></td>
+    <td height="25" colspan="2" class="france"><a href="pf/accueil.php?annee=<?php echo $datePhasesFinales;?>">Championnats de France <?php echo $datePhasesFinales;?></a></td>
   </tr>
 </table>
 
-  <?php	
+  <?php
 include("../pub/pub25.php"); 
 require ("bas.php");
 include("../pub/pub_displayCarre.php"); 

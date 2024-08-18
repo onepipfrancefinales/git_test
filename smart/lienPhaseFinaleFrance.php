@@ -21,7 +21,7 @@ $division =substr($champ,3,3);
 <!-- Affichage des phases finales champ de France -->
 <td class="france"> 
 	<a href="pf/pagePhaseFinale.php?annee=2024&division=<?php echo $division ;?>"> 
- 		<font color="#FFFFFF">Phases finales champ de France <?php echo $finSaison;?></font>
+ 		<font color="#FFFFFF">Phases finales champ de France <?php echo $finSaison -1;?></font>
 	</a>
 </td>
 <tr>
@@ -34,7 +34,7 @@ if ($cmt == 990140 or $cmt== 990150 or $cmt == 991160 or $cmt == 992160 or $cmt 
 {
 	?>
 	<td class="bulleReglement"> 
-		 <a href="javascript:ouvrirPopup('/resultats/reglements2023_2024.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=516, height=600, menubar=no')">Modalit&eacutes de qualification</a>	
+		 <a href="javascript:ouvrirPopup('/resultats/reglements2024_2025.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=516, height=600, menubar=no')">Modalit&eacutes de qualification</a>	
 	</td>
 <?php
 }
@@ -42,7 +42,7 @@ elseif ($cmt == 816216)
 {
 	?>
 	<td class="bulleReglement"> 
-		 <a href="javascript:ouvrirPopup('/resultats/reglements2022_2023.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=516, height=600, menubar=no')">Modalit&eacutes de qualification</a>	
+		 <a href="javascript:ouvrirPopup('/resultats/reglements2024_2025.php?cmt=<?php echo $cmt; ?>','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=516, height=600, menubar=no')">Modalit&eacutes de qualification</a>	
 	</td>
 <?php
 }

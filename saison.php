@@ -17,11 +17,14 @@ echo "<br/>";
 echo "<br/>";
 */
 // Du 1er Aout à Décembre
+global $finSaison, $debutSaison;
+
 if (date('m', time()) > 07 and date('m', time()) <= 12) {
 
     $debutSaison = $annee;
     $finSaison = $annee + 1;
-   $datePhasesFinales = $debutSaison;
+    $datePhasesFinales = $debutSaison;
+
 }
 //Du 1er Janvier à fin juillet
 else {

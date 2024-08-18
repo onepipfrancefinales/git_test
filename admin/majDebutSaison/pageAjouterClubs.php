@@ -20,9 +20,9 @@
         <option value="130"><b>Nationale 1</b></option>
         <option value="135"><b>Nationale 2</b></option>
         <option value="Aucune sélection"><b>-----------</b></option>
-        <option value="140"><b>F&eacute;d&eacute;rale 1</b></option>
-        <option value="150"><b>F&eacute;d&eacute;rale 2</b></option>
-        <option value="160"><b>F&eacute;d&eacute;rale 3</b></option>
+        <option value="140"><b>Fédérale 1</b></option>
+        <option value="150"><b>Fédérale 2</b></option>
+        <option value="160"><b>Fédérale 3</b></option>
        <option value="Aucune sélection"><b>-----------</b></option>
         <option value="170"><b>Régionale 1</b></option>
         <option value="180"><b>Régionale 2</b></option>
