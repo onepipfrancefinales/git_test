@@ -8,10 +8,10 @@
 <h2 align="center"><br>
   Clubs les plus titr&eacute;s</h2>
 <h2 align="center">&nbsp;</h2>
-<div align="center"><font color="#000000" size="4" face="Arial, Helvetica, sans-serif">121&eacute;ditions</font><font face="Arial, Helvetica, sans-serif" size="4"><br>
-  119 champions titr&eacute;s<br>
+<div align="center"><font color="#000000" size="4" face="Arial, Helvetica, sans-serif">122 éditions</font><font face="Arial, Helvetica, sans-serif" size="4"><br>
+  119 champions titrés<br>
   x champions diff&eacute;rents<br>
-  CIdessous le d&eacute;tails des diff&eacute;rents palmar&eacute;s</font> </div>
+  Ci-dessous le d&eacute;tails des diff&eacute;rents palmar&eacute;s</font> </div>
 <h2 align="center">&nbsp;</h2>
 <div align="center">
   <table width="547" border="1">
@@ -37,11 +37,11 @@
       </td>
       <td width="146"> 
         <div align="center">
-          <p>21 fois champions</p>
+          <p>23 fois champions</p>
           </div>
       </td>
       <td width="123"> 
-        <p>2021-2019-2012-2011-2008-2001-1999<br>
+        <p>2024-2023-2021-2019-2012-2011-2008-2001-1999<br>
           1997-1996-1995-1994-1989-1986-1985-1947-1927-1926-1924-1923-1922-1912</p>
       </td>
     </tr>

@@ -287,7 +287,7 @@ echo "<a href=../palmares/palmNational/pagePalmLigue.php?idLigue=$idLigue > Tous
   <?php
   //  $saisonChoisie=$_GET['saisonChoisie'];  
   //echo "$saison1";  
-  $saisonChoisie = 2022;
+  $saisonChoisie = 2024;
   echo $saisonChoisie; 
 ?>
 <font></h1>

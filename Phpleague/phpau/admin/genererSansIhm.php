@@ -1,11 +1,18 @@
-<?php 
+<?php
+
+echo "champRecup genererSansIhm : ".$champRecup;echo "<br />";
+
+require "../../../fichierConfig.php" ;
 require "../../Phpleague/phpau/config2.php";
 require '../../Phpleague/phpau/admin/fonctions.php';
 include("../../Phpleague/phpau/lang/lang_fr.php");
 ouverture();
 
+
+$tableauARA1 = array(100171, 100172, 100173, 100174 );
+
 if ($champRecup == 100171)
-	$tableau =$tableauARA1;	
+	$tableau =array(100171, 100172, 100173, 100174 );	
 elseif ($champRecup == 100181)
 	$tableau = $tableauARA2;	
 elseif ($champRecup == 100191)
@@ -15,14 +22,20 @@ elseif ($champRecup == 100271)
 elseif ($champRecup == 109181)
 	$tableau = $tableauRES_ARA2;	
 
-
+	foreach ($tableau as $champ)
+	{	
+		//echo $champDiv;echo "<br />";
+		//for ($champ =$champDiv; $champ <$champDiv+8; $champ++)
+		//{	
+		echo $champ;echo "<br />";
+	}
 //for ($champDiv = $champRecup ; $champDiv < 220 ; $champDiv=$champDiv+10)
 foreach ($tableau as $champ)
 {	
 	//echo $champDiv;echo "<br />";
 	//for ($champ =$champDiv; $champ <$champDiv+8; $champ++)
 	//{	
-	//echo $champ;echo "<br />";
+	echo $champ;echo "<br />";
  affich_champ ($champ, $idconnect); 
 
 	include ("tps1.php3"); 

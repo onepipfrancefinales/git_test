@@ -49,7 +49,10 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 </p>
 
 	 
-   <hr>
+  
+
+
+<hr>
 	
 	
 	
@@ -57,28 +60,6 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 
 
-
-<?php
-/*
-	echo "<br/>";
-			echo " Enregistrement de la finale dans la table bdequipeI ";
-			echo "<br/>";
-
-			echo "<br/>";
-			echo $id1 . ';' . $annee . ';' . $ivision . ';' . "Vainqueur" . ';' . $equipe1 . ';' . $pays1 . ';' . $equipe2 . ';'.  $pays2  . $score1 . ';' . $score2 . ';' . $lieu . ';' . $public . ';' . "1" . ';' . "EU";
-			echo "<br />";
-			echo $id2 . ';' . $annee . ';' . $division . ';' . "Finaliste" . ';' . $equipe2 . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "A";
-
-			$bdd->exec("INSERT INTO  bdeurope
-			VALUES ( '$id1', '$annee', '$division', 'Vainqueur', '$equipe1', '$pays1', '$equipe2',
-			'$pays2', '$score1', '$score2', '$lieu', '$public' ,'1', 'EU'),
-			
-			( '$id1', '$annee', '$division', 'Finaliste', '$equipe2', '$pays2', '-',
-			'-', '$score1', '$score2', '$lieu', '$public' ,'1', 'EU')
-			 ");
-			 */
-
-?>
 
  
  

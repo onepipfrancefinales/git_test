@@ -15,8 +15,8 @@
 <body>
   <?php
   // ***** Fédérales *****	
-  $TOP14 = 0;
-  $PROD2 = 0;
+  $TOP14 = 21979;
+  $PROD2 = 21980;
   $NAT1 = 21949;
   $NAT2 = 21950;
 
@@ -41,7 +41,7 @@
   $ARAPH = 21971;
   $ARAS1 = 21986;
   $ARAResH = 21992;
-  $ARAResPH = 0000;
+  $ARAResPH = 21985;
 
   // ***** Bretagne *****									
   $BREH = 0;
@@ -88,7 +88,8 @@
   // ***** Normandie *****	
   $NORH = 21951;
   $NORPH = 21953;
-  $NORS1 = 0;
+  $NORS1 = 22003;
+  $NORS2 = 22004;
   $NORResH = 21952;
   $NORResPH = 21954;
 
@@ -380,7 +381,7 @@
       </td>
       <td><a href="<?php echo $adresseFFR.$NORS1; ?>" target="_blank"><?php echo $NORS1; ?></a>
       </td>
-      <td class="backgroundBlack"></td>
+      <td><a href="<?php echo $adresseFFR.$NORS2; ?>" target="_blank"><?php echo $NORS2; ?></td>
       <td><a href="<?php echo $adresseFFR.$NORResH; ?>" target="_blank"><?php echo $NORResH; ?></a>
       </td>
       <td><a href="<?php echo $adresseFFR.$NORResPH; ?>" target="_blank"><?php echo $NORResPH; ?></a>

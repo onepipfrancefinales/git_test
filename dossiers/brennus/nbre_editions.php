@@ -5,10 +5,10 @@
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
-<h2>Nombre d'&eacute;ditions : <font size="6" color="#FF0000">121</font> &eacute;ditions 
+<h2>Nombre d'&eacute;ditions : <font size="6" color="#FF0000">122</font> &eacute;ditions 
 </h2>
 <h2>&nbsp;</h2>
-<h2>Nombre de finales <font color="#FF0000">118</font> finales</h2>
+<h2>Nombre de finales <font color="#FF0000">119</font> finales</h2>
 <h2> car les 3 premi&egrave;res &eacute;ditions se disput&eacute;es sous la forme 
   de poule (1896, 1897 et 1898)</h2>
 <h2>et 2020 pas de finale organis&eacute;e en raison de la crise sanitaire de 

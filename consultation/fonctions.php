@@ -22,7 +22,7 @@ function changementNom($id_equipe, $width, $bdd)
 
 		$res = $bdd->query("SELECT annee, nom
 	FROM bdchange_nom 
-	WHERE id_equipe = '$id_equipe'  
+	WHERE id_equipe = '$id_equipe' ORDER BY 'id' DESC
 	 ");
 
 		while ($row = $res->fetch()) {
@@ -38,7 +38,7 @@ function changementNom($id_equipe, $width, $bdd)
 
 			<?php
 
-			for ($i = $nbreChangement; $i >= 0; $i--) {
+			for ($i =0; $i <= $nbreChangement; $i++) {
 
 			?>
 				<tr>

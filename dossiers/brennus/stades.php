@@ -6,8 +6,8 @@
 
 <body bgcolor="#FFFFFF" text="#000000">
 <p align="center"><br>
-  <b><font size="5" color="#000000" face="Arial, Helvetica, sans-serif">18 Enceintes 
-  sportives -</font> <font color="#000000" size="5" face="Arial, Helvetica, sans-serif">13 
+  <b><font size="5" color="#000000" face="Arial, Helvetica, sans-serif">19 Enceintes 
+  sportives -</font> <font color="#000000" size="5" face="Arial, Helvetica, sans-serif">14 
   villes</font></b><br>
 </p>
 <table width="917" border="1">
@@ -219,8 +219,17 @@
     <td width="157">2016</td>
     <td width="300"><img src="images/stades/camp%20nou.jfif" width="300" height="150"></td>
   </tr>
+  <tr> 
+    <td width="230">Orange Vélodrome</td>
+    <td width="98">Marseille</td>
+    <td width="98"> 
+      <div align="center">1</div>
+    </td>
+    <td width="157">2024</td>
+    <td width="300"><img src="images/stades/orangeVelodrome.jpg" width="300" height="150"></td>
+  </tr>
 </table>
-<p><font face="Arial, Helvetica, sans-serif" size="5"><b>13 villes</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="5"><b>14 villes</b></font></p>
 <table width="970" border="1">
   <tr bgcolor="#0066CC"> 
     <td height="41" width="95">Villes</td>
@@ -357,6 +366,14 @@
     </td>
     <td width="469">2016 (1)</td>
     <td width="405">Camp Nou</td>
+  </tr>
+  <tr> 
+    <td width="95">Marseille</td>
+    <td width="69"> 
+      <div align="center">1</div>
+    </td>
+    <td width="469">2024 (1)</td>
+    <td width="405">Orange vélodrome</td>
   </tr>
 </table>
 <p>&nbsp;</p>

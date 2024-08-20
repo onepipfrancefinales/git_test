@@ -299,9 +299,14 @@ else  $width = "90%";
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
     if ($smart == true)
       echo "<h2 class=\"size4\"> Equipe Une </h2>";
-    else
-      echo "<h2> Equipe Une </h2>";
-  } ?>
+    else {
+    ?>
+    <div id="palmares" class="center">
+    <?php  echo "<h2> Equipe Une </h2>";  ?>
+      </div>
+      <?php
+  } 
+ } ?>
   <div id="palmares" class="center">
     <?php
     palmares($nomChampion, $table, $categorie, $bdd);
