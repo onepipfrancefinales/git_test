@@ -142,7 +142,7 @@ if (isset($tabChampion[$i])) $champion[$i] = $tabChampion[$i];
 <p>&nbsp;</p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">USA Perpignan : 16 finales 
   / 7 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">AS B&eacute;ziers :15 finales 
+<p><font face="Arial, Helvetica, sans-serif" size="3">AS Béziers :15 finales 
   / 11 victoures</font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">Agen : 14 finales / 8 victoires</font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">AS Montfrrand : 14 finales 
@@ -214,7 +214,7 @@ if (isset($tabChampion[$i])) $champion[$i] = $tabChampion[$i];
   1 victoire<br>
   </font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">SCUF 2 finales / 0 victoire<br>
-  Stade bagn&eacute;rais 2 finales / 0 victoire<br>
+  Stade bagnérais 2 finales / 0 victoire<br>
   </font><font face="Arial, Helvetica, sans-serif" size="3">Montpellier HR : 2 
   finales / 0 victoire</font></p>
 <p>&nbsp;</p>
@@ -230,7 +230,7 @@ if (isset($tabChampion[$i])) $champion[$i] = $tabChampion[$i];
 <p><font face="Arial, Helvetica, sans-serif" size="3">Stade Rochelais : 1 finale 
   / 0 victoire<br>
   US Carcassonne : 1 finale / 0 victoire<br>
-  FC L&eacute;zignan : 1finale / 0 victoire<br>
+  FC Lézignan : 1finale / 0 victoire<br>
   US Cognac : 1 finale/ 0 victoire<br>
   SC Mazamet : 1 finale/ 0 victoire<br>
   Nice UR : 1 finale/ victoire<br>

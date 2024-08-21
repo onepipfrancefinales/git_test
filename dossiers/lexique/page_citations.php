@@ -67,14 +67,14 @@ content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees R
               </td>
               <td width="194" height="21" bgcolor="#FF0000"> 
                 <div align="center"><b><a href="page_phrasecelebre.php">Phrases<br>
-                  c&eacute;lebres </a></b></div>
+                  célebres </a></b></div>
               </td>
               <td width="155" height="21" bgcolor="#FF0000"> 
                 <div align="center"><b><a href="page_citations.php">Citations</a></b></div>
               </td>
               <td width="209" height="21" bordercolor="#000000" bgcolor="#FF0000"> 
                 <p align="center"><b><a href="page_exprrmediarique.php">Expressions<br>
-                  m&eacute;diatiques</a></b></p>
+                  médiatiques</a></b></p>
               </td>
             </tr>
           </table>

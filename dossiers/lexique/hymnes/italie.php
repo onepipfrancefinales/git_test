@@ -21,19 +21,19 @@
       <br>
       
       <p> <span class="gras">L'Italia s'è desta,</span><br>
-        L'Italie s'est r&eacute;veill&eacute;e,<br>
+        L'Italie s'est réveillée,<br>
         <span class="gras">Dell'elmo di Scipio</span><br>
         Dans le casque de Scipion<br>
         <span class="gras">S'è cinta la testa.</span><br>
-        Elle s'est ferm&eacute; la t&ecirc;te.<br>
+        Elle s'est fermé la t&ecirc;te.<br>
         <span class="gras">Dov'è la Vittoria ?</span><br>
         O&ugrave; est la victoire ?<br>
         <span class="gras">Le porga la chioma,</span><br>
         Elle porte une crinière,<br>
-        <span class="gras">Ch&eacute; schiava di Roma</span><br>
+        <span class="gras">Ché schiava di Roma</span><br>
         Esclave de Rome<br>
         <span class="gras">Iddio la cre&ograve;.</span><br>
-        Les dieux la cr&eacute;èrent.<br>
+        Les dieux la créèrent.<br>
         <span class="gras">Stringiamci a coorte</span><br>
         Rassemblons-nous en cohorte <br>
         <span class="gras">Siam pronti alla morte</span><br>
@@ -44,19 +44,19 @@
       <p><span class="gras">Noi siamo da secoli</span><br>
         Nous sommes depuis des siècles<br>
         <span class="gras">Calpesti, derisi,</span><br>
-        Pi&eacute;tin&eacute;s, m&eacute;pris&eacute;s,<br>
-        <span class="gras">Perch&eacute; non siam popolo,</span><br>
+        Piétinés, méprisés,<br>
+        <span class="gras">Perché non siam popolo,</span><br>
         Parce que nous ne sommes pas un peuple,<br>
-        <span class="gras">Perch&eacute; siam divisi.</span><br>
-        Parce que nous sommes divis&eacute;s. <br>
+        <span class="gras">Perché siam divisi.</span><br>
+        Parce que nous sommes divisés. <br>
         <span class="gras">Raccolgaci un'unica</span><br>
         Rallions-nous en un seul<br>
         <span class="gras">Bandiera, una speme :</span><br>
-        Drapeau, une &eacute;sperance :<br>
+        Drapeau, une ésperance :<br>
         <span class="gras">Di fonderci insieme</span><br>
         De fusionner tous ensemble<br>
         <span class="gras">Gi&agrave; l'ora suon&ograve;.</span><br>
-        D&eacute;j&agrave; l'heure sonne.<br>
+        Déj&agrave; l'heure sonne.<br>
         <span class="gras">Stringiamci a coorte</span><br>
         Rassemblons-nous en cohorte<br>
         <span class="gras">Siam pronti alla morte</span><br>
@@ -69,7 +69,7 @@
         <span class="gras">L'unione e l'amore</span><br>
         L'union et l'amour<br>
         <span class="gras">Rivelano ai Popoli</span><br>
-        R&eacute;vèlent aux peuples<br>
+        Révèlent aux peuples<br>
         <span class="gras">Le vie del Signore ;</span><br>
         Les voies du Seigneur ;<br>
         <span class="gras">Giuriamo far libero</span><br>
@@ -113,16 +113,16 @@
       <p><span class="gras">Son giunchi che piegano</span><br>
         Se sont des jonques qui plient<br>
         <span class="gras">Le spade vendute :</span><br>
-        Les &eacute;p&eacute;es vendues : <br>
+        Les épées vendues : <br>
         <span class="gras">Gi&agrave; l'Aquila d'Austria</span><br>
-        D&eacute;j&agrave; l'Aigle d'Autriche<br>
+        Déj&agrave; l'Aigle d'Autriche<br>
         <span class="gras">Le penne ha perdute.</span><br>
         A perdu ses plumes.<br>
         <span class="gras">Il sangue d'Italia,</span><br>
         Le sang d'Italie,<br>
         <span class="gras">Il sangue Polacco,</span><br>
         Le sang polonais,<br>
-        <span class="gras">Bev&eacute;, col cosacco,</span><br>
+        <span class="gras">Bevé, col cosacco,</span><br>
         Il a bu, avec le cosaque, <br>
         <span class="gras">Ma il cor le bruci&ograve;.</span><br>
         Mais son coeur lui br&ucirc;le. <br>

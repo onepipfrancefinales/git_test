@@ -30,7 +30,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="146"> 
-      <div align="center">1re S&eacute;rie</div>
+      <div align="center">1re Série</div>
     </td>
     <td width="226"> 
       <div align="center"><font size="4">Paysac Savignac</font></div>
@@ -38,7 +38,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="146"> 
-      <div align="center">2me S&eacute;rie</div>
+      <div align="center">2me Série</div>
     </td>
     <td width="226"> 
       <div align="center"><font size="4">Limoges EC</font></div>
@@ -46,7 +46,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="146"> 
-      <div align="center">3me S&eacute;rie</div>
+      <div align="center">3me Série</div>
     </td>
     <td width="226"> 
       <div align="center"><font size="4">Saint Aulaire</font></div>
@@ -54,7 +54,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="146"> 
-      <div align="center">4me S&eacute;rie</div>
+      <div align="center">4me Série</div>
     </td>
     <td width="226"> 
       <div align="center"><font size="4">Orgnac sur Vezerz</font></div>
@@ -62,19 +62,19 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="146"> 
-      <div align="center">R&eacute;serve</div>
+      <div align="center">Réserve</div>
     </td>
     <td width="226"> 
       <div align="center"><font size="4">Pompadour</font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
-    <td width="146">R&eacute;serve PH</td>
+    <td width="146">Réserve PH</td>
     <td width="226"><font size="4">Le Palais dur Vienne</font></td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="146"> 
-      <div align="center">R&eacute;serve 1re s&eacute;rie</div>
+      <div align="center">Réserve 1re série</div>
     </td>
     <td width="226"> 
       <div align="center"><font size="4">Chasteaux</font></div>

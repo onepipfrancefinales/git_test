@@ -22,7 +22,7 @@
         <span class="gras">Come the power and the glory </span><br>
         Vienne la puissance et la gloire <br>
         <span class="gras">We have come to answer </span><br>
-        Nous sommes venus pour r&eacute;pondre <br>
+        Nous sommes venus pour répondre <br>
         <span class="gras">Our Country's call </span><br>
         A l'appel de notre pays <br>
         <span class="gras">From the four proud provinces of Ireland </span><br>
@@ -34,15 +34,15 @@
         <span class="gras">Together standing tall </span><br>
         Ensemble nous faisons face <br>
         <span class="gras">Shoulder to shoulder </span><br>
-        Epaule contre &eacute;paule <br>
+        Epaule contre épaule <br>
         <span class="gras">We'll answer Ireland's call </span><br>
-        Nous r&eacute;pondrons &agrave; l'appel de notre pays<br></p>
+        Nous répondrons &agrave; l'appel de notre pays<br></p>
         --------------------------------------------------------------------
         <p>
 		<span class="gras">From the mighty Glens of Antrim </span><br>
         Depuis les redoutables Glens of Antrim(en Irlande du Nord) <br>
         <span class="gras">From the rugged hills of Galway </span><br>
-        Jusqu'aux falaises escarp&eacute;es de Galway <br>
+        Jusqu'aux falaises escarpées de Galway <br>
         <span class="gras">From the walls of Limerick </span><br>
         Depuis les murs de Limerick <br>
         <span class="gras">And Dublin Bay </span><br>
@@ -55,7 +55,7 @@
         <span class="gras">And heads unbowing </span><br>
         C&#156;ur d'acier <br>
         <span class="gras">Vowing never to be broken </span><br>
-        Jurant de ne jamais &ecirc;tre bris&eacute;es <br>
+        Jurant de ne jamais &ecirc;tre brisées <br>
         <span class="gras">We will fight, until </span><br>
         Nous combattons jusqu'&agrave; ce que <br>
         <span class="gras">We can fight no more </span><br>

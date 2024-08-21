@@ -89,7 +89,7 @@ mysql_close(); // D�connexion de MySQL
 <br>
 <table border="1" align="center" cellspacing="0" cellpadding="2" width="500" bordercolor="#99CCFF">
   <tr align="center" bordercolor="#FFFFFF"> 
-    <td colspan="2"><font color="#000000">Cr&eacute;ation du club : </font></td>
+    <td colspan="2"><font color="#000000">Création du club : </font></td>
     <td width="360"> <strong> <b><font color="#000000"><font color="#000000" size="4"> 
       <?php
 require ("connection.php") ;
@@ -112,7 +112,7 @@ While ($donnees = mysql_fetch_array($reponse) )
   </tr>
   <tr align="center" bordercolor="#FFFFFF" bgcolor="#FFFFFF"> 
     <td width="110"> 
-      <div align="right"><b><font color="#000000">Pr&eacute;sident :</font> </b></div>
+      <div align="right"><b><font color="#000000">Président :</font> </b></div>
     </td>
     <td width="384"><strong><font color="#000000"> 
       <?php echo $donnees['A1601'];?>
@@ -128,7 +128,7 @@ While ($donnees = mysql_fetch_array($reponse) )
   </tr>
   <tr align="center" bordercolor="#FFFFFF" bgcolor="#FFFFFF"> 
     <td width="110"> 
-      <div align="right"><b><font color="#000000">Tr&eacute;sorier :</font></b></div>
+      <div align="right"><b><font color="#000000">Trésorier :</font></b></div>
     </td>
     <td width="384">&nbsp;</td>
   </tr>
@@ -206,7 +206,7 @@ While ($donnees = mysql_fetch_array($reponse) )
   </tr>
   <tr align="center" bordercolor="#FFFFFF"> 
     <td width="117"> 
-      <div align="right"><font color="#000000">capacit&eacute; :</font></div>
+      <div align="right"><font color="#000000">capacité :</font></div>
     </td>
     <td> 
       <div align="center"><font color="#000000"> 

@@ -25,12 +25,12 @@
       <div align="center">Promotion</div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4">Val&eacute;e de Montmorency</font></div>
+      <div align="center"><font size="4">Valée de Montmorency</font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center">1re S&eacute;rie</div>
+      <div align="center">1re Série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Senlis</font></div>
@@ -38,7 +38,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center">2me S&eacute;rie</div>
+      <div align="center">2me Série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Alfortville</font></div>
@@ -46,7 +46,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center">3me S&eacute;rie</div>
+      <div align="center">3me Série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Sainte Geneviève</font></div>
@@ -54,7 +54,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center">4me S&eacute;rie</div>
+      <div align="center">4me Série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Conflans Herblaye</font></div>
@@ -62,7 +62,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center">R&eacute;serve</div>
+      <div align="center">Réserve</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Cergy Pontoise</font></div>
@@ -70,7 +70,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center">R&eacute;serve PH</div>
+      <div align="center">Réserve PH</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Triel les Mureaux</font></div>

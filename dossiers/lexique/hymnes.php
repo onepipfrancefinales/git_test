@@ -11,7 +11,7 @@
   </tr>
   <tr> 
     <td colspan="4">
-      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misphère 
+      <div align="center"><font color="#000000" size="5"><b><font size="6">Hémisphère 
         Nord</font></b></font></div>
     </td>
   </tr>
@@ -84,7 +84,7 @@
   </tr>
   <tr> 
     <td colspan="4"> 
-      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misphère 
+      <div align="center"><font color="#000000" size="5"><b><font size="6">Hémisphère 
         Sud</font></b></font></div>
     </td>
   </tr>
@@ -96,7 +96,7 @@
   <tr> 
     <td width="75" rowspan="2"><img src="../../images/drapeaux/Grand_format/NZ.png" width="75" height="50"></td>
     <td width="204"><b><font size="5" face="Arial, Helvetica, sans-serif" color="#000000">Nouvelle 
-      Z&eacute;lande</font></b></td>
+      Zélande</font></b></td>
     <td width="80" rowspan="2"><img src="../../images/drapeaux/Grand_format/AUS.png" width="75" height="50"></td>
     <td width="223"><b><font size="5" face="Arial, Helvetica, sans-serif" color="#000000">Australie</font></b></td>
   </tr>
@@ -152,19 +152,19 @@
           d'Italia</b><br>
           Frères d'Italie,<br>
           <b>L'Italia s'è desta,</b><br>
-          L'Italie s'est r&eacute;veill&eacute;e,<br>
+          L'Italie s'est réveillée,<br>
           <b>Dell'elmo di Scipio</b><br>
           Dans le casque de Scipion<br>
           <b>S'è cinta la testa.</b><br>
-          Elle s'est ferm&eacute; la t&ecirc;te.<br>
+          Elle s'est fermé la t&ecirc;te.<br>
           <b>Dov'è la Vittoria ?</b><br>
           O&ugrave; est la victoire ?<br>
           <b>Le porga la chioma,</b><br>
           Elle porte une crinière,<br>
-          <b>Ch&eacute; schiava di Roma</b><br>
+          <b>Ché schiava di Roma</b><br>
           Esclave de Rome<br>
           <b>Iddio la cre&ograve;.</b><br>
-          Les dieux la cr&eacute;èrent.<br>
+          Les dieux la créèrent.<br>
           <b>Stringiamci a coorte</b><br>
           Rassemblons-nous en cohorte <br>
           <b>Siam pronti alla morte</b><br>
@@ -180,19 +180,19 @@
         siamo da secoli</b><br>
         Nous sommes depuis des siècles<br>
         <b>Calpesti, derisi,</b><br>
-        Pi&eacute;tin&eacute;s, m&eacute;pris&eacute;s,<br>
-        <b>Perch&eacute; non siam popolo,</b><br>
+        Piétinés, méprisés,<br>
+        <b>Perché non siam popolo,</b><br>
         Parce que nous ne sommes pas un peuple,<br>
-        <b>Perch&eacute; siam divisi.</b><br>
-        Parce que nous sommes divis&eacute;s. <br>
+        <b>Perché siam divisi.</b><br>
+        Parce que nous sommes divisés. <br>
         <b>Raccolgaci un'unica</b><br>
         Rallions-nous en un seul<br>
         <b>Bandiera, una speme :</b><br>
-        Drapeau, une &eacute;sperance :<br>
+        Drapeau, une ésperance :<br>
         <b>Di fonderci insieme</b><br>
         De fusionner tous ensemble<br>
         <b>Gi&agrave; l'ora suon&ograve;.</b><br>
-        D&eacute;j&agrave; l'heure sonne.<br>
+        Déj&agrave; l'heure sonne.<br>
         <b>Stringiamci a coorte</b><br>
         Rassemblons-nous en cohorte<br>
         <b>Siam pronti alla morte</b><br>
@@ -205,7 +205,7 @@
         <b>L'unione e l'amore</b><br>
         L'union et l'amour<br>
         <b>Rivelano ai Popoli</b><br>
-        R&eacute;vèlent aux peuples<br>
+        Révèlent aux peuples<br>
         <b>Le vie del Signore ;</b><br>
         Les voies du Seigneur ;<br>
         <b>Giuriamo far libero</b><br>
@@ -249,16 +249,16 @@
         giunchi che piegano</b><br>
         Se sont des jonques qui plient<br>
         <b>Le spade vendute :</b><br>
-        Les &eacute;p&eacute;es vendues : <br>
+        Les épées vendues : <br>
         <b>Gi&agrave; l'Aquila d'Austria</b><br>
-        D&eacute;j&agrave; l'Aigle d'Autriche<br>
+        Déj&agrave; l'Aigle d'Autriche<br>
         <b>Le penne ha perdute.</b><br>
         A perdu ses plumes.<br>
         <b>Il sangue d'Italia,</b><br>
         Le sang d'Italie,<br>
         <b>Il sangue Polacco,</b><br>
         Le sang polonais,<br>
-        <b>Bev&eacute;, col cosacco,</b><br>
+        <b>Bevé, col cosacco,</b><br>
         Il a bu, avec le cosaque, <br>
         <b>Ma il cor le bruci&ograve;.</b><br>
         Mais son coeur lui br&ucirc;le. <br>
@@ -291,13 +291,13 @@
         <p>&nbsp;</p>
         <p><b><font size="4" face="Arial, Helvetica, sans-serif">Allons enfants 
           de la Patrie<br>
-          Le jour de gloire est arriv&eacute;!<br>
+          Le jour de gloire est arrivé!<br>
           Contre nous de la tyrannie,<br>
-          L'&eacute;tendard sanglant est lev&eacute;, (bis)<br>
+          L'étendard sanglant est levé, (bis)<br>
           Entendez-vous dans les campagnes<br>
-          Mugir ces f&eacute;roces soldats?<br>
+          Mugir ces féroces soldats?<br>
           Ils viennent jusque dans nos bras<br>
-          &Eacute;gorger nos fils, nos compagnes!<br>
+          égorger nos fils, nos compagnes!<br>
           Aux armes, citoyens<br>
           Formez vos bataillons<br>
           Marchons, marchons!<br>
@@ -330,16 +330,16 @@
         That fought and died for<br>
         Ceux qui ont combattu et sont morts<br>
         Your wee bit Hill and Glen<br>
-        Pour tes petits monts et vall&eacute;es<br>
+        Pour tes petits monts et vallées<br>
         And stood against him<br>
-        Pour s'&ecirc;tre oppos&eacute;s<br>
+        Pour s'&ecirc;tre opposés<br>
         Proud Edward's Army<br>
-        A l'arm&eacute;e du fier Edward<br>
+        A l'armée du fier Edward<br>
         And sent him homeward, Tae think again<br>
-        Et l'avoir renvoy&eacute; chez lui pour qu'il y r&eacute;fl&eacute;chisse 
+        Et l'avoir renvoyé chez lui pour qu'il y réfléchisse 
         &agrave; 2 fois<br>
         These days are past now and in the past they must remain <br>
-        A pr&eacute;sent ces temps sont r&eacute;volus et dans le pass&eacute; 
+        A présent ces temps sont révolus et dans le passé 
         ils doivent demeurer <br>
         For we can still rise now and be the nation again<br>
         Mais nous pouvons toujours nous relever et une fois encore former cette 
@@ -389,7 +389,7 @@
         Le plus beau jour que je puisse dire<br>
         Coming for to carry me home <br>
         When Jesus washed my sins away <br>
-        Quand J&eacute;sus est venu me purger de mes p&eacute;ch&eacute;s<br>
+        Quand Jésus est venu me purger de mes péchés<br>
         Coming for to carry me home. </font></b></font></div>
     </td>
   </tr>
@@ -418,7 +418,7 @@
         <b>Come the power and the glory </b><br>
         Vienne la puissance et la gloire <br>
         <b>We have come to answer </b><br>
-        Nous sommes venus pour r&eacute;pondre <br>
+        Nous sommes venus pour répondre <br>
         <b>Our Country's call </b><br>
         A l'appel de notre pays <br>
         <b>From the four proud provinces of Ireland </b><br>
@@ -429,14 +429,14 @@
         <b>Together standing tall </b><br>
         Ensemble nous faisons face <br>
         <b>Shoulder to shoulder </b><br>
-        Epaule contre &eacute;paule <br>
+        Epaule contre épaule <br>
         <b>We'll answer Ireland's call </b><br>
-        Nous r&eacute;pondrons &agrave; l'appel de notre pays<br>
+        Nous répondrons &agrave; l'appel de notre pays<br>
         --------------------------------------------------------------------<br>
         <b>From the mighty Glens of Antrim </b><br>
         Depuis les redoutables Glens of Antrim(en Irlande du Nord) <br>
         <b>From the rugged hills of Galway </b><br>
-        Jusqu'aux falaises escarp&eacute;es de Galway <br>
+        Jusqu'aux falaises escarpées de Galway <br>
         <b>From the walls of Limerick </b><br>
         Depuis les murs de Limerick <br>
         <b>And Dublin Bay </b><br>
@@ -449,7 +449,7 @@
         <b>And heads unbowing </b><br>
         C&#156;ur d'acier <br>
         <b>Vowing never to be broken </b><br>
-        Jurant de ne jamais &ecirc;tre bris&eacute;es <br>
+        Jurant de ne jamais &ecirc;tre brisées <br>
         <b>We will fight, until </b><br>
         Nous combattons jusqu'&agrave; ce que <br>
         <b>We can fight no more </b><br>
@@ -551,43 +551,43 @@
       <p align="center"><font size="4" face="Arial, Helvetica, sans-serif"><br>
         <font color="#000000">(en isixhosa)</font></font><font size="4" face="Arial, Helvetica, sans-serif" color="#000000"> 
         <b>Nkosi Sikekel'iAfrika</b><br>
-        Dieu b&eacute;nisse l'Afrique<br>
+        Dieu bénisse l'Afrique<br>
         <b>Maluphakanyasw'uphondo lwayo</b><br>
-        Puisse sa corne s'&eacute;lever vers les cieux<br>
+        Puisse sa corne s'élever vers les cieux<br>
         <b>Yiswa imithandazo yethu</b><br>
         Que Dieu entende nos prières<br>
         <b>Nkosi sikelela, thina lusapho lwayo </b><br>
-        Et nous b&eacute;nisse, nous Ses enfants (d'Afrique)<br>
+        Et nous bénisse, nous Ses enfants (d'Afrique)<br>
         <br>
         --------------------------------------------------------------------<br>
         <br>
         (en sesotho) <b>Morena boloka sechaba sa heso</b><br>
-        Que Dieu b&eacute;nisse notre nation<br>
+        Que Dieu bénisse notre nation<br>
         <b>O fedise dintwa le matshwenyeho</b><br>
         Et qu'il supprime toute guerre et toute souffrance<br>
         <b>O se boloke (O se boloke) sechaba sa heso </b><br>
-        Pr&eacute;servez (bis) notre nation<br>
+        Préservez (bis) notre nation<br>
         <b>Sechaba sa South Africa, South Africa </b><br>
-        Pr&eacute;servez notre nation sud-africaine, l'Afrique du Sud <br>
+        Préservez notre nation sud-africaine, l'Afrique du Sud <br>
         <br>
         --------------------------------------------------------------------<br>
         <br>
         (en afrikaans) <b>Uit die blou van onse hemel</b><br>
-        R&eacute;sonnant depuis nos cieux d'azur<br>
+        Résonnant depuis nos cieux d'azur<br>
         <b>Uit die diepte van ons see </b><br>
         Et nos mers profondes <br>
         <b>Oor ons ewige gebergtes</b><br>
-        Au-del&agrave; de nos monts &eacute;ternels<br>
+        Au-del&agrave; de nos monts éternels<br>
         <b>Waar die kranse antwoord gee</b><br>
-        O&ugrave; rebondit l'&eacute;cho <br>
+        O&ugrave; rebondit l'écho <br>
         --------------------------------------------------------------------<br>
         <br>
         (en anglais) <b>Sounds the call to come together</b><br>
-        L'appel &agrave; l'unit&eacute; rententit<br>
+        L'appel &agrave; l'unité rententit<br>
         <b>And united we will stand </b><br>
         Et c'est unis que nous serons <br>
         <b>Let us live and strive for freedom</b><br>
-        Vivons et luttons pour que la libert&eacute;<br>
+        Vivons et luttons pour que la liberté<br>
         <b>In South Africa our Land</b><br>
         Triomphe en Afrique du Sud, notre nation.</font><font size="4" face="Arial, Helvetica, sans-serif"><br>
         <br>
@@ -601,7 +601,7 @@
     <td height="51" width="393"> 
       <div align="center"><b><font size="6" face="Arial, Helvetica, sans-serif" color="#000000">God 
         Defend New zealand<br>
-        (Dieu protège la Nouvelle Z&eacute;lande !)</font></b></div>
+        (Dieu protège la Nouvelle Zélande !)</font></b></div>
     </td>
     <td height="51" width="98"> 
       <div align="center"><b><img src="../../images/drapeaux/Grand_format/NZ.png" width="75" height="50"></b></div>
@@ -614,38 +614,38 @@
         <font color="#000000">(en maori) <b>E Ihowa Atua</b><br>
         Dieu des nations, &agrave; tes pieds<br>
         <b>O nga iwi matou ra</b><br>
-        Nous nous rassemblons li&eacute;s d'amour<br>
+        Nous nous rassemblons liés d'amour<br>
         <b>ata whakarongona;</b><br>
-        &Eacute;coute nos voix, nous te prions<br>
+        écoute nos voix, nous te prions<br>
         <b>Me aroha noa</b><br>
         Dieu protège notre pays libre<br>
         <b>Kia hua ko te pai;</b><br>
-        D&eacute;fends l'&eacute;toile triple du Pacifique<br>
+        Défends l'étoile triple du Pacifique<br>
         <b>Kia tau to atawhai</b><br>
         Des flèches du conflit et de la guerre<br>
         <b>Manaakitia mai</b><br>
         Fais entendre ses louanges partout<br>
         <b>Aotearoa</b><br>
-        Dieu protège la Nouvelle-Z&eacute;lande. <br>
+        Dieu protège la Nouvelle-Zélande. <br>
         <br>
         --------------------------------------------------------------------<br>
         <br>
         (en anglais) <b>God of Nations at Thy feet</b><br>
         Dieu des nations, &agrave; tes pieds<br>
         <b>In the bonds of love we meet</b><br>
-        Nous nous rassemblons li&eacute;s d'amour<br>
+        Nous nous rassemblons liés d'amour<br>
         <b>Hear our voices, we entreat</b><br>
-        &Eacute;coute nos voix, nous te prions<br>
+        écoute nos voix, nous te prions<br>
         <b>God defend our free land</b><br>
         Dieu protège notre pays libre<br>
         <b>Guard Pacific&#146;s triple star</b><br>
-        D&eacute;fends l'&eacute;toile triple du Pacifique<br>
+        Défends l'étoile triple du Pacifique<br>
         <b>From the shafts of strife and war</b><br>
         Des flèches du conflit et de la guerre<br>
         <b>Make her praises heard afar</b><br>
         Fais entendre ses louanges partout<br>
         <b>God defend New Zealand ! </b><br>
-        Dieu protège la Nouvelle-Z&eacute;lande ! </font><iframe width="420" height="315" src="https://www.youtube.com/embed/An5Hyoq-lXQ" frameborder="0" allowfullscreen></iframe></font></p>
+        Dieu protège la Nouvelle-Zélande ! </font><iframe width="420" height="315" src="https://www.youtube.com/embed/An5Hyoq-lXQ" frameborder="0" allowfullscreen></iframe></font></p>
     </td>
   </tr>
   <tr> 
@@ -665,19 +665,19 @@
     <td colspan="3"> 
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b><font color="#000000">Australians 
         all let us rejoice</font></b><font color="#000000"><br>
-        Australiens laissons-nous tous r&eacute;jouir<br>
+        Australiens laissons-nous tous réjouir<br>
         <b>For we are young and free</b><br>
         Car nous sommes jeunes et libres<br>
         <b>We've golden soil and wealth for toil</b><br>
-        Nous avons du sol dor&eacute; et de la richesse pour le labeur<br>
+        Nous avons du sol doré et de la richesse pour le labeur<br>
         <b>Our home is girt by sea</b><br>
         Notre patrie est ceinte par la mer<br>
         <b>Our land abounds in Nature's gifts</b><br>
         Notre terre abonde sous les cadeaux de la nature<br>
         <b>Of beauty rich and rare</b><br>
-        De beaut&eacute; riche et rare<br>
+        De beauté riche et rare<br>
         <b>In history's page, let every stage</b><br>
-        Dans la page de l'histoire, que chaque &eacute;poque<br>
+        Dans la page de l'histoire, que chaque époque<br>
         <b>Advance Australia fair ! </b><br>
         Avance la belle Australie ! <br>
         <b>In joyful strains then let us sing</b><br>

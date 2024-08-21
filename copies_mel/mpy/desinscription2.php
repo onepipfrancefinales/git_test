@@ -28,7 +28,7 @@ mail($to, $subject, $msg);
 
 
  if (mail($to, $subject, $msg)) {  
-    echo "D&eacute;sincription r&eacute;ussie : ".$objet.  
+    echo "Désincription réussie : ".$objet.  
     " pour $sto."; 
 	echo $adresse.$msg;
   } 
@@ -43,7 +43,7 @@ mail($to, $subject, $msg);
   <tr> 
     <td colspan="3"> 
       <div align="center"><a href="http://francefinalesrugby.franceserv.com/page_resultats.php"><font size="4">Retour 
-        aux r&eacute;sutats et aux classements </font></a> </div>
+        aux résutats et aux classements </font></a> </div>
       <div align="center"></div>
     </td>
   </tr>

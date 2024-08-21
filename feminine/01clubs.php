@@ -104,7 +104,7 @@ mysql_close(); // D�connexion de MySQL
 <p>
 <table border="1" align="center" cellspacing="0" cellpadding="2" width="500" bordercolor="#CCCCCC">
   <tr align="center" bordercolor="#FFFFFF"> 
-    <td colspan="2"><font color="#000000">Cr&eacute;ation du club : </font></td>
+    <td colspan="2"><font color="#000000">Création du club : </font></td>
     <td width="277"> <strong> <b><font color="#000000"><font size="4"> </font><font color="#000000" size="4"> 
       <?php
 require ("connection.php") ;
@@ -127,7 +127,7 @@ While ($donnees = mysql_fetch_array($reponse) )
   </tr>
   <tr align="center" bordercolor="#FFFFFF"> 
     <td width="106"> 
-      <div align="right"><b><font color="#000000">Pr&eacute;sident :</font> </b></div>
+      <div align="right"><b><font color="#000000">Président :</font> </b></div>
     </td>
     <td width="388"><strong><font color="#000000"> 
       <?php echo $donnees['A1601'];?>
@@ -215,7 +215,7 @@ While ($donnees = mysql_fetch_array($reponse) )
   </tr>
   <tr align="center" bordercolor="#FFFFFF"> 
     <td width="116" bordercolor="#FFFFFF"> 
-      <div align="right"><font color="#000000">capacit&eacute; :</font></div>
+      <div align="right"><font color="#000000">capacité :</font></div>
     </td>
     <td width="378"><font color="#000000"> 
       <?php echo $donnees['A1614'];?>

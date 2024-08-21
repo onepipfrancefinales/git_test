@@ -64,7 +64,7 @@ content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees R
           <p align="center"><font color="#000000"> </font><font color="#000000"><br>
             <b> </b></font></p>
           <p><font size="7"><b><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="6"><br>
-            Lecture et &eacute;coute des <br>
+            Lecture et écoute des <br>
             chants et hymnes du rugby</font></b></font><br>
             <br>
 			<hr/>

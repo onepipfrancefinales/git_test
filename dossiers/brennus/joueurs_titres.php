@@ -8,7 +8,7 @@
 <div align="center">
   <p>&nbsp;</p>
   <p><font size="4"><b><font size="6" face="Verdana, Arial, Helvetica, sans-serif">- 
-    Les joueurs les plus titr&eacute;s -</font></b></font></p>
+    Les joueurs les plus titrés -</font></b></font></p>
   <p>&nbsp;</p>
   <p><font face="Arial, Helvetica, sans-serif" size="5"><b>10 fois champions</b></font><br>
   </p>
@@ -24,7 +24,7 @@
     </tr>
     <tr> 
       <td width="318"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
   </table>
@@ -50,7 +50,7 @@
       </td>
       <td width="232"> 
         <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>Michel 
-          Palmi&eacute;</b></font></div>
+          Palmié</b></font></div>
       </td>
       <td width="190"> 
         <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>Alain 
@@ -59,13 +59,13 @@
     </tr>
     <tr> 
       <td width="227"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
       <td width="232"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
       <td width="190"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
   </table>
@@ -81,7 +81,7 @@
         <div align="center">J. Cantoni </div>
       </td>
       <td width="176"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
     <tr> 
@@ -129,7 +129,7 @@
         <div align="center">R. Astre </div>
       </td>
       <td width="219"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
     <tr> 
@@ -137,7 +137,7 @@
         <div align="center">H. Cabrol </div>
       </td>
       <td width="219"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
     <tr> 
@@ -145,7 +145,7 @@
         <div align="center">M. Fabre </div>
       </td>
       <td width="219"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
     <tr> 
@@ -158,7 +158,7 @@
     </tr>
     <tr> 
       <td width="265"> 
-        <div align="center">T. Mant&eacute;rola </div>
+        <div align="center">T. Mantérola </div>
       </td>
       <td width="219"> 
         <div align="center">FC Lourdes</div>
@@ -177,7 +177,7 @@
         <div align="center">A. Paco </div>
       </td>
       <td width="219" height="24"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
     <tr> 
@@ -201,15 +201,15 @@
         <div align="center">O. Saisset </div>
       </td>
       <td width="219"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
     <tr> 
       <td width="265"> 
-        <div align="center">A. S&eacute;nal </div>
+        <div align="center">A. Sénal </div>
       </td>
       <td width="219"> 
-        <div align="center">AS B&eacute;ziers</div>
+        <div align="center">AS Béziers</div>
       </td>
     </tr>
     <tr> 
@@ -239,7 +239,7 @@
   <table width="467" border="1">
     <tr> 
       <td width="256"> 
-        <div align="center">J&eacute;r&ocirc;me Fillol</div>
+        <div align="center">Jér&ocirc;me Fillol</div>
       </td>
       <td width="195">&nbsp;</td>
     </tr>
@@ -251,7 +251,7 @@
     </tr>
     <tr> 
       <td width="256"> 
-        <div align="center">H&eacute;lier Thil</div>
+        <div align="center">Hélier Thil</div>
       </td>
       <td width="195">&nbsp;</td>
     </tr>
@@ -293,7 +293,7 @@
     </tr>
     <tr> 
       <td width="256"> 
-        <div align="center">Andr&eacute; Laffont</div>
+        <div align="center">André Laffont</div>
       </td>
       <td width="195">&nbsp;</td>
     </tr>

@@ -28,15 +28,15 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">1re S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">1re Série</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4"><font color="#FFFFFF"><font size="4"><font size="4"><font size="4"><font color="#FFFFFF"><font size="4"><font size="4"><font color="#000000">Gr&eacute;sivaudan</font></font></font></font></font><font color="#000000"></font></font></font></font></font></div>
+      <div align="center"><font size="4"><font color="#FFFFFF"><font size="4"><font size="4"><font size="4"><font color="#FFFFFF"><font size="4"><font size="4"><font color="#000000">Grésivaudan</font></font></font></font></font><font color="#000000"></font></font></font></font></font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">2me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">2me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#FFFFFF"><font size="4"><font size="4"><font color="#000000">Grenoble 
@@ -45,7 +45,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">3me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">3me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#FFFFFF"><font size="4"><font size="4"><font color="#000000">Saint 
@@ -54,7 +54,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">4me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000" size="4">4me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#FFFFFF"><font size="4"><font size="4"><font color="#000000">Faverges</font></font></font></font></font></div>
@@ -62,7 +62,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000" size="4">R&eacute;serve</font></div>
+      <div align="center"><font color="#000000" size="4">Réserve</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font color="#FFFFFF"><font size="4"><font size="4"><font color="#000000">Ugine 

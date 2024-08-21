@@ -84,7 +84,7 @@
     <td width="300"><img src="images/stades/Lescure-e1589917165744.jpg" width="300" height="150"></td>
   </tr>
   <tr> 
-    <td width="230" height="74">V&eacute;lodrome du parc des Princes</td>
+    <td width="230" height="74">Vélodrome du parc des Princes</td>
     <td width="98" height="74">Paris</td>
     <td width="98" height="74"> 
       <div align="center">7</div>
@@ -126,12 +126,12 @@
   <tr> 
     <td width="230">
       <p><br>
-        B&eacute;con les Bruyères<br>
-        Stade, Stade Dubonnet Courbevoie-B&eacute;con-les-Bruyères 1 500 
+        Bécon les Bruyères<br>
+        Stade, Stade Dubonnet Courbevoie-Bécon-les-Bruyères 1 500 
         spectateurs.</p>
       <p>&nbsp;</p>
       <p>terrain de l&#146;Inter-Nos (International Athletic Club) </p>
-      <p>B&eacute;con-les-Bruyères &agrave; Courbevoie, rue Lambrechts</p>
+      <p>Bécon-les-Bruyères &agrave; Courbevoie, rue Lambrechts</p>
     </td>
     <td width="98"><br>
     </td>
@@ -143,7 +143,7 @@
   </tr>
   <tr> 
     <td width="230" height="83">Terrain du stade francais<br>
-      V&eacute;lodrome</td>
+      Vélodrome</td>
     <td width="98" height="83">Courbevoie</td>
     <td width="98" height="83"> 
       <div align="center">2</div>
@@ -184,7 +184,7 @@
   <tr> 
     <td width="230"><br>
       Parc des Sports de Sauclières</td>
-    <td width="98">B&eacute;ziers</td>
+    <td width="98">Béziers</td>
     <td width="98"> 
       <div align="center">1</div>
     </td>
@@ -313,8 +313,8 @@
     </td>
     <td width="405" height="19"> 
       <p>terrain de l&#146;Inter-Nos (International Athletic Club</p>
-      <p>B&eacute;con les Bruyères<br>
-        V&eacute;lodrome</p>
+      <p>Bécon les Bruyères<br>
+        Vélodrome</p>
       <p>Terrain du stade francais</p>
       <p>&nbsp;</p>
     </td>

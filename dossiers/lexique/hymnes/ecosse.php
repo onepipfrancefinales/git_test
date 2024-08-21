@@ -24,16 +24,16 @@
         <span class="gras">That fought and died for</span><br>
         Ceux qui ont combattu et sont morts<br>
         <span class="gras">Your wee bit Hill and Glen</span><br>
-        Pour tes petits monts et vall&eacute;es<br>
+        Pour tes petits monts et vallées<br>
         <span class="gras">And stood against him</span><br>
-        Pour s'&ecirc;tre oppos&eacute;s<br>
+        Pour s'&ecirc;tre opposés<br>
         <span class="gras">Proud Edward's Army</span><br>
-        A l'arm&eacute;e du fier Edward</span><br>
+        A l'armée du fier Edward</span><br>
         <span class="gras">And sent him homeward, Tae think again</span><br>
-        Et l'avoir renvoy&eacute; chez lui pour qu'il y r&eacute;fl&eacute;chisse 
+        Et l'avoir renvoyé chez lui pour qu'il y réfléchisse 
         &agrave; 2 fois<br>
         <span class="gras">These days are past now and in the past they must remain</span> <br>
-        A pr&eacute;sent ces temps sont r&eacute;volus et dans le pass&eacute; 
+        A présent ces temps sont révolus et dans le passé 
         ils doivent demeurer <br>
        <span class="gras">For we can still rise now and be the nation again</span><br>
         Mais nous pouvons toujours nous relever et une fois encore former cette 
@@ -83,7 +83,7 @@
         Le plus beau jour que je puisse dire<br>
        <span class="gras"> Coming for to carry me home </span><br>
        <span class="gras"> When Jesus washed my sins away </span><br>
-        Quand J&eacute;sus est venu me purger de mes p&eacute;ch&eacute;s<br>
+        Quand Jésus est venu me purger de mes péchés<br>
        <span class="gras"> Coming for to carry me home.</span> 
     <br>
 	</td>

@@ -20,7 +20,7 @@
         2</font></a></b></font></div>
     </td>
     <td height="29" width="114" bordercolor="#0000FF"> 
-      <div align="center"><font color="#FFFFFF"><b><a href="resultats/page_federale1.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+      <div align="center"><font color="#FFFFFF"><b><a href="resultats/page_federale1.php"><font color="#FFFFFF">Fédérale 
         1</font></a></b></font></div>
     </td>
     <td height="29" width="136" bordercolor="#0000FF"> 

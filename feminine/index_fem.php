@@ -6,9 +6,9 @@ include("../saison.php");
 <head>
 
 <meta name="description"
-content="tous les champions de france de rugby, presentation de tous les clubs de rugby francais, Champions des differents comitÈs territoriaux, Tous les championnats de rugby, fÈdÈrale 2, fÈdÈrale 3, fÈdÈrale 1, top 14.">
+content="tous les champions de france de rugby, presentation de tous les clubs de rugby francais, Champions des differents comitÔøΩs territoriaux, Tous les championnats de rugby, fÔøΩdÔøΩrale 2, fÔøΩdÔøΩrale 3, fÔøΩdÔøΩrale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,FranÁaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,FranÔøΩaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -75,7 +75,7 @@ MM_reloadPage(true);
             <br>
             Toutes les compositions et calendriers des poules de Elite 1 ,Elite 
             2</font></b></p>
-          <p><b><font color="#FF0000" size="6">et F&eacute;d&eacute;rale &agrave; 
+          <p><b><font color="#FF0000" size="6">et F√©d√©rale &agrave; 
             XV <br>
             </font></b></p>
           <p>&nbsp;</p>
@@ -86,7 +86,7 @@ MM_reloadPage(true);
           <table width="90%" border="0">
             <tr bgcolor="#FF0000"> 
               <td colspan="2"> 
-                <div align="center"><b><font color="#FFFFFF" size="6">Nouveaut&eacute;</font></b></div>
+                <div align="center"><b><font color="#FFFFFF" size="6">Nouveaut√©</font></b></div>
               </td>
             </tr>
             <tr> 
@@ -95,20 +95,20 @@ MM_reloadPage(true);
             <tr> 
               <td colspan="2"> 
                 <p align="left"><font size="4" color="#000000"><br>
-                  D&eacute;veloppement d'un l'application</font><font color="#000000"> 
+                  D√©veloppement d'un l'application</font><font color="#000000"> 
                   </font><font size="4"><font color="#000000">smartphone </font></font></p>
                 <p align="left"><font size="4"><b><font color="#000000">France 
                   Finales Rugby App<br>
                   <br>
                   </font></b></font><font size="4" color="#000000">Cette application 
-                  permet de consulter l'ensemble des r&eacute;sultats et des classements 
+                  permet de consulter l'ensemble des r√©sultats et des classements 
                   sur tablettes et smartphones.</font></p>
                 <p align="left"><font size="4" color="#000000">De plus, elle permet 
-                  la mise &agrave; jours des r&eacute;sultats et des classements 
+                  la mise &agrave; jours des r√©sultats et des classements 
                   depuis un smartphone de facon simple et rapide.<font size="5"> 
                   <b><font color="#FF0000">Testez l&agrave;</font></b></font> 
                   <b><font size="5" color="#FF0000">!! </font></b><br>
-                  Nous attendons vos reactions pour l'am&eacute;liorer, la changer, 
+                  Nous attendons vos reactions pour l'am√©liorer, la changer, 
                   la modifier ou .... </font></p>
               </td>
             </tr>
@@ -124,7 +124,7 @@ MM_reloadPage(true);
             <tr> 
               <td width="59%" height="198"> 
                 <p> <font color="#000000" size="4"><br>
-                  T&eacute;l&eacute;charger l'application</font><font color="#000000"> 
+                  T√©l√©charger l'application</font><font color="#000000"> 
                   </font><font size="4"><b><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&hl=fr" target="_blank"> 
                   <font color="#000000"> France Finales Rugby App</font></a></b><font color="#000000"> 
                   sur Google Play.</font></font></p>
@@ -161,7 +161,7 @@ MM_reloadPage(true);
                 l'adresse de ce dernier en favori. </font></td>
             </tr>
           </table>
-          <p><b><font size="6"><a href="http://coupesdumondederugbyfeminin.franceserv.com/" target="_blank">&eacute;di&eacute;</a></font></b></p>
+          <p><b><font size="6"><a href="http://coupesdumondederugbyfeminin.franceserv.com/" target="_blank">√©di√©</a></font></b></p>
           <table width="90%" border="0">
             <tr> 
               <td>&nbsp;</td>

@@ -25,7 +25,7 @@
   </tr>
   <tr> 
     <td colspan="5"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif"><a href="pagevideo.php?choix=<?php echo "ama";?>"><font color="#000000"><b><i>S&eacute;rie 
+      <div align="center"><font face="Arial, Helvetica, sans-serif"><a href="pagevideo.php?choix=<?php echo "ama";?>"><font color="#000000"><b><i>Série 
         : Quand tu joues au Rugby Amateur</i></b></font></a> </font></div>
     </td>
   </tr>

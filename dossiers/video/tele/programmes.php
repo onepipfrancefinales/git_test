@@ -28,7 +28,7 @@
     <td colspan="3"> 
       <div align="center"><b><font size="4"><b><font size="4"><b><font size="5" color="#FF0000" face="Arial, Helvetica, sans-serif">TOP 
         14 :</font></b></font></b></font><font face="Arial, Helvetica, sans-serif"><b><font color="#FF0000" size="5"> 
-        12me Journ&eacute;e</font></b></font></b></div>
+        12me Journée</font></b></font></b></div>
     </td>
   </tr>
   <tr bgcolor="#333333"> 

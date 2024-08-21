@@ -19,19 +19,19 @@
 	<br><br>
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><span class="gras"><font color="#000000">Australians 
         all let us rejoice</font></span><font color="#000000"><br>
-        Australiens laissons-nous tous r&eacute;jouir<br>
+        Australiens laissons-nous tous réjouir<br>
         <span class="gras">For we are young and free</span><br>
         Car nous sommes jeunes et libres<br>
         <span class="gras">We've golden soil and wealth for toil</span><br>
-        Nous avons du sol dor&eacute; et de la richesse pour le labeur<br>
+        Nous avons du sol doré et de la richesse pour le labeur<br>
         <span class="gras">Our home is girt by sea</span><br>
         Notre patrie est ceinte par la mer<br>
         <span class="gras">Our land abounds in Nature's gifts</span><br>
         Notre terre abonde sous les cadeaux de la nature<br>
         <span class="gras">Of beauty rich and rare</span><br>
-        De beaut&eacute; riche et rare<br>
+        De beauté riche et rare<br>
         <span class="gras">In history's page, let every stage</span><br>
-        Dans la page de l'histoire, que chaque &eacute;poque<br>
+        Dans la page de l'histoire, que chaque époque<br>
         <span class="gras">Advance Australia fair ! </span><br>
         Avance la belle Australie ! <br>
         <span class="gras">In joyful strains then let us sing</span><br>

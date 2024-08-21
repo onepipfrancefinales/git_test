@@ -84,14 +84,14 @@ MM_reloadPage(true);
               </td>
               <td width="194" height="21" bgcolor="#FF0000"> 
                 <div align="center"><a href="page_phrasecelebre.php">Phrases<br>
-                  c&eacute;lebres </a></div>
+                  célebres </a></div>
               </td>
               <td width="155" height="21" bgcolor="#FF0000"> 
                 <div align="center"><a href="page_citations.php">Citations</a></div>
               </td>
               <td width="209" height="21" bordercolor="#000000" bgcolor="#FF0000"> 
                 <p align="center"><a href="page_exprrmediarique.php">Expressions<br>
-                  m&eacute;diatiques</a></p>
+                  médiatiques</a></p>
               </td>
             </tr>
           </table>

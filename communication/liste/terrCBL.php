@@ -24,12 +24,12 @@
       <div align="center"><font size="4">Promotion</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4"><font size="4">Salies de B&eacute;arn</font></font></div>
+      <div align="center"><font size="4"><font size="4">Salies de Béarn</font></font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">1re S&eacute;rie</font></div>
+      <div align="center"><font size="4">1re Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Saint Martin de Seignanx</font></font></div>
@@ -37,7 +37,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font size="4">2me S&eacute;rie</font></div>
+      <div align="center"><font size="4">2me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Ciboure</font></font></div>
@@ -45,7 +45,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">3me S&eacute;rie</font></div>
+      <div align="center"><font size="4">3me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Ascain</font></font></div>
@@ -53,7 +53,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font size="4">4me S&eacute;rie</font></div>
+      <div align="center"><font size="4">4me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Saint Jean de Marsacq</font></font></div>
@@ -61,7 +61,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">R&eacute;serve</font></div>
+      <div align="center"><font size="4">Réserve</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Capbreton Hossegor</font></div>

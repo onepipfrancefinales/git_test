@@ -96,18 +96,18 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         <p>&nbsp;</p>
         <p><a href="http://francefinalesrugby.franceserv.com/resultats/page_pro.php"><font color="#FFFFFF">TOP14/ 
           Pro D2<br>
-          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale1.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale1.php"><font color="#FFFFFF">Fédérale 
           1<br>
-          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale2.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale2.php"><font color="#FFFFFF">Fédérale 
           2 </font></a><br>
-          <a href="http://francefinalesrugby.franceserv.com/resultats/page_federale3_2.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          <a href="http://francefinalesrugby.franceserv.com/resultats/page_federale3_2.php"><font color="#FFFFFF">Fédérale 
           3 </font></a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">Honneur/ 
           promotion </font> </a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">1re 
-          2me S&eacute;rie</font></a><br>
+          2me Série</font></a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">3me 
-          4me S&eacute;rie </font></a></p>
+          4me Série </font></a></p>
       </div>
       <div align="center"> 
         <p>&nbsp;</p>
@@ -126,7 +126,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p><a href="http://francefinalesrugby.franceserv.com/copies_mel/ab/inscription.php"><font color="#FFFFFF" size="5"><b>Envoyez 
-          l'ensemble des classements du comit&eacute; &agrave; votre<br>
+          l'ensemble des classements du comité &agrave; votre<br>
           </b></font></a><a href="http://francefinalesrugby.franceserv.com/copies_mel/ab/inscription.php"><font color="#FFFFFF" size="5"><b>entourage</b></font></a></p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
@@ -142,18 +142,18 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         <p>&nbsp;</p>
         <p><a href="http://francefinalesrugby.franceserv.com/resultats/page_pro.php"><font color="#FFFFFF">TOP14/ 
           Pro D2<br>
-          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale1.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale1.php"><font color="#FFFFFF">Fédérale 
           1<br>
-          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale2.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale2.php"><font color="#FFFFFF">Fédérale 
           2 </font></a><br>
-          <a href="http://francefinalesrugby.franceserv.com/resultats/page_federale3_2.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          <a href="http://francefinalesrugby.franceserv.com/resultats/page_federale3_2.php"><font color="#FFFFFF">Fédérale 
           3 </font></a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">Honneur/ 
           promotion </font> </a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">1re 
-          2me S&eacute;rie</font></a><br>
+          2me Série</font></a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">3me 
-          4me S&eacute;rie</font></a></p>
+          4me Série</font></a></p>
       </div>
       <div align="center"> 
         <p>&nbsp;</p>
@@ -162,7 +162,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr> 
     <td height="23" colspan="2"> 
-      <div align="center">Le comit&eacute; en quelques chiffres</div>
+      <div align="center">Le comité en quelques chiffres</div>
     </td>
   </tr>
   <tr> 
@@ -202,7 +202,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr> 
     <td height="18" colspan="2" bgcolor="#FF0000"> 
-      <div align="center"><b><font color="#FFFFFF" size="6">Le comit&eacute; en 
+      <div align="center"><b><font color="#FFFFFF" size="6">Le comité en 
         quelques chiffres</font></b></div>
     </td>
   </tr>
@@ -213,7 +213,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr> 
     <td height="59" colspan="2" bgcolor="#FF0000"> 
-      <p align="center"><b><font size="7" color="#FFFFFF">votre club pr&eacute;f&eacute;r&eacute;</font><font size="7" color="#FFFFFF"> 
+      <p align="center"><b><font size="7" color="#FFFFFF">votre club préféré</font><font size="7" color="#FFFFFF"> 
         </font></b></p>
     </td>
   </tr>
@@ -222,7 +222,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <p align="center"><font size="5" color="#000000"><font size="4" face="Lucida Calligraphy"><br>
         Consulter </font></font><font size="4" color="#000000" face="Lucida Calligraphy">les 
         infomations, les grandes dates du club, le palmarès et les perfomances 
-        des performances des saisons pr&eacute;c&eacute;dentes.<br>
+        des performances des saisons précédentes.<br>
         </font></p>
     </td>
   </tr>
@@ -255,7 +255,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   <tr> 
     <td height="42" colspan="2"> 
       <div align="center"><font size="4"><font face="Lucida Calligraphy"><br>
-        Consultez le palmarès territorial de votre comit&eacute; des &eacute;quipes 
+        Consultez le palmarès territorial de votre comité des équipes 
         une et deux.<br>
         Nous vous proposons deux formats. Aidez nous &agrave; complèter 
         ou &agrave; corriger les erreurs qui ont pu se glisser dans nos tableaux.<br>
@@ -318,11 +318,11 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     <td height="44" width="204"> 
       <p align="center"><a href="http://francefinalesrugby.franceserv.com/divisions/pagejprat.php"><font size="4"><b><br>
         Jean Prat</b></font></a><b><font size="4"><br>
-        <a href="http://francefinalesrugby.franceserv.com/divisions/pagefederale1.php" target="_blank">F&eacute;d&eacute;rale 
+        <a href="http://francefinalesrugby.franceserv.com/divisions/pagefederale1.php" target="_blank">Fédérale 
         1<br>
-        </a><a href="http://francefinalesrugby.franceserv.com/divisions/pagefederale2.php" target="_blank">F&eacute;d&eacute;rale 
+        </a><a href="http://francefinalesrugby.franceserv.com/divisions/pagefederale2.php" target="_blank">Fédérale 
         2</a><br>
-        <a href="http://francefinalesrugby.franceserv.com/divisions/pagefederale3.php">F&eacute;d&eacute;rale 
+        <a href="http://francefinalesrugby.franceserv.com/divisions/pagefederale3.php">Fédérale 
         3</a><br>
         </font></b></p>
     </td>
@@ -342,13 +342,13 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         <a href="http://francefinalesrugby.franceserv.com/divisions/pagepromotion.php" target="_blank">Promotion 
         honneur</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/page1serie.php" target="_blank">1re 
-        S&eacute;rie</a><br>
+        Série</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/page2serie.php" target="_blank">2me 
-        S&eacute;rie</a><br>
+        Série</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/page3serie.php" target="_blank">3me 
-        S&eacute;rie</a><br>
+        Série</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/page4serie.php" target="_blank">4me 
-        S&eacute;rie</a></font></b></p>
+        Série</a></font></b></p>
     </td>
     <td height="44" width="204"> 
       <div align="center"><a href="http://francefinalesrugby.franceserv.com/divisions/pagereichelA_espoirs.php" target="_blank"><font size="4"><b><br>
@@ -356,11 +356,11 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         <a href="http://francefinalesrugby.franceserv.com/divisions/pageespoir.php" target="_blank">Espoir</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/pagenationaleb.php" target="_blank">Nationale 
         B</a><br>
-        <a href="http://francefinalesrugby.franceserv.com/divisions/pagefederaleb.php" target="_blank">F&eacute;d&eacute;rale 
+        <a href="http://francefinalesrugby.franceserv.com/divisions/pagefederaleb.php" target="_blank">Fédérale 
         B</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/pageexcellenceb.php" target="_blank">Excellence 
         B</a><br>
-        <a href="http://francefinalesrugby.franceserv.com/divisions/pagereserve.php" target="_blank">R&eacute;serve</a><br>
+        <a href="http://francefinalesrugby.franceserv.com/divisions/pagereserve.php" target="_blank">Réserve</a><br>
         </font></b></div>
     </td>
   </tr>
@@ -374,7 +374,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <div align="center"><b><font size="5">Elite</font></b></div>
     </td>
     <td height="44" bgcolor="#CCCCCC" width="204"> 
-      <div align="center"><b><font size="5">F&eacute;d&eacute;rale</font></b></div>
+      <div align="center"><b><font size="5">Fédérale</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -386,11 +386,11 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       </div>
     </td>
     <td height="125" width="204"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed1.php" target="_blank">F&eacute;d&eacute;rale 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed1.php" target="_blank">Fédérale 
         1</a><br>
-        <a href="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed2.php">F&eacute;d&eacute;rale 
+        <a href="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed2.php">Fédérale 
         2</a><br>
-        <a href="%22http://francefinalesrugby.franceserv.com/divisions/page_fem_fed3.php" target="_blank">F&eacute;d&eacute;rale 
+        <a href="%22http://francefinalesrugby.franceserv.com/divisions/page_fem_fed3.php" target="_blank">Fédérale 
         3 &agrave; XII</a></font></b></div>
     </td>
   </tr>
@@ -412,7 +412,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     <td height="12" width="231"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/divisions/pagereichelA.php" target="_blank"><br>
         Reichel A</a><a href="http://francefinalesrugby.franceserv.com/divisions/pagereichelB.php" target="_blank"><br>
-        B&eacute;lascain (ex Reichel B)</a><br>
+        Bélascain (ex Reichel B)</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/pagebalandrade.php" target="_blank">Balandrade</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/pagephliponeau.php" target="_blank">Phliponeau</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/pagedanet.php" target="_blank">Danet</a></font></b></div>
@@ -434,8 +434,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         Du Manoir</b></font></a><b><font size="4"><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/pageessor.php" target="_blank">Essor</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/pagechespoir.php" target="_blank">Espoir<br>
-        </a></font></b><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/divisions/pageesperance.php" target="_blank">Esp&eacute;rance</a><br>
-        <a href="http://francefinalesrugby.franceserv.com/divisions/pageamitie.php" target="_blank">Amiti&eacute;</a><br>
+        </a></font></b><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/divisions/pageesperance.php" target="_blank">Espérance</a><br>
+        <a href="http://francefinalesrugby.franceserv.com/divisions/pageamitie.php" target="_blank">Amitié</a><br>
         <a href="http://francefinalesrugby.franceserv.com/divisions/pagecoupedefrance.php" target="_blank">Coupe 
         </a></font></b></p>
     </td>
@@ -464,8 +464,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td height="16" colspan="4" bordercolor="#000000"> 
-      <div align="center">Si vous ne souhaitez plus recevoir les r&eacute;sultats 
-        du comit&eacute; du Armagnac Bigorre,cliquez <a href="http://francefinalesrugby.franceserv.com/copies_mel/ab/desinscription.php">ICI</a></div>
+      <div align="center">Si vous ne souhaitez plus recevoir les résultats 
+        du comité du Armagnac Bigorre,cliquez <a href="http://francefinalesrugby.franceserv.com/copies_mel/ab/desinscription.php">ICI</a></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 

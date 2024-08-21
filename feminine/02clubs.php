@@ -21,7 +21,7 @@
 <div align="right"></div>
 <p><font color="#FF0000">
 <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
-    <option selected>Par comit&eacute;</option>
+    <option selected>Par comité</option>
     <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AP)">Alpes</option>
     <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AL)"><b>Alsace 
     Lorraine</b></option>
@@ -50,11 +50,11 @@
     <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(LM)"><b>Limousin</b></option>
     <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(LY)"><b>Lyonnais</b></option>
     <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(MPY)"><b>Midi 
-    Pyr&eacute;n&eacute;es</b></option>
+    Pyrénées</b></option>
     <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(N)"><b>Normandie</b></option>
     <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PL)"><b>Pays 
     de Loire</b></option>
-    <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PA)"><b>P�rigord 
+    <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PA)"><b>P�rigord 
     Agenais</b></option>
     <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(PCH)"><b>Poitou 
     Charente</b></option>

@@ -127,7 +127,7 @@ height="270" width="220"" type="text/html"   />
             <tr bordercolor="#000000"> 
               <td height="5" valign="top" colspan="2"> 
                 <div align="center"><b><i><font size="2" color="#000000">Classement 
-                  complet, stats, grahiques et calendriers en s&eacute;lectionnant<font color="#FF0000"> 
+                  complet, stats, grahiques et calendriers en sélectionnant<font color="#FF0000"> 
                   </font></font></i><font size="2" color="#000000">'Classement 
                   complet'</font></b></div>
               </td>

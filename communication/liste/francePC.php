@@ -13,9 +13,9 @@
   </tr>
   <tr> 
     <td colspan="2" bgcolor="#FFCC33"> 
-      <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;titions 
+      <div align="center"><font color="#000000" size="4"><b><font size="5">Compétitions 
         <br>
-        S&eacute;niors</font></b></font></div>
+        Séniors</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -43,28 +43,28 @@
   </tr>
   <tr> 
     <td width="213" height="33"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">F&eacute;d&eacute;rale 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">Fédérale 
         1- Accès Pro D2</font></a></font></b></div>
     </td>
     <td width="237" height="33" bgcolor="#FFFFFF">&nbsp;</td>
   </tr>
   <tr> 
     <td width="213" height="22"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">F&eacute;d&eacute;rale1 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">Fédérale1 
         - J.Prat</font></a></font></b></div>
     </td>
     <td width="237" height="22" bgcolor="#FFFFFF">&nbsp;</td>
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale2/pagefederale2.php?variable_1=2018"><font color="#000000">F&eacute;d&eacute;rale 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale2/pagefederale2.php?variable_1=2018"><font color="#000000">Fédérale 
         2</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#CCCCCC">&nbsp;</td>
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale3/pagefederale3.php?variable_1=2018"><font color="#000000">F&eacute;d&eacute;rale 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale3/pagefederale3.php?variable_1=2018"><font color="#000000">Fédérale 
         3</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF">&nbsp;</td>
@@ -119,7 +119,7 @@
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/1serie/page1serie.php?variable_1=2018"><font color="#000000">1re 
-        S&eacute;rie</font></a></font></b></div>
+        Série</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#CCCCCC">&nbsp;</td>
   </tr>
@@ -138,7 +138,7 @@
   <tr> 
     <td width="213"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=2018"><font color="#000000">2me 
-        S&eacute;rie</font></a></font></b></div>
+        Série</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF">&nbsp;</td>
   </tr>
@@ -157,7 +157,7 @@
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=2018"><font color="#000000">3me 
-        S&eacute;rie</font></a></font></b></div>
+        Série</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#CCCCCC">&nbsp;</td>
   </tr>
@@ -176,7 +176,7 @@
   <tr> 
     <td width="213"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=2018"><font color="#000000">4me 
-        S&eacute;rie</font></a></font></b></div>
+        Série</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF">&nbsp;</td>
   </tr>
@@ -202,9 +202,9 @@
   </tr>
   <tr> 
     <td colspan="2" height="57" bgcolor="#FFCC33"> 
-      <div align="center"><b><font color="#000000" size="4"><font size="5">Comp&eacute;titions 
+      <div align="center"><b><font color="#000000" size="4"><font size="5">Compétitions 
         <br>
-        F&eacute;minines</font></font></b></div>
+        Féminines</font></font></b></div>
     </td>
   </tr>
   <tr> 
@@ -237,7 +237,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2018"><font color="#000000" size="4">F&eacute;d&eacute;rale 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2018"><font color="#000000" size="4">Fédérale 
         1 </font></a></b></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
@@ -246,7 +246,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#FFFFFF"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2018"><font color="#000000" size="4">F&eacute;d&eacute;rale 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2018"><font color="#000000" size="4">Fédérale 
         2</font></a></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
@@ -267,7 +267,7 @@
   <tr> 
     <td colspan="2" bgcolor="#FFCC33" height="56"> 
       <div align="center"> 
-        <p><font color="#000000" size="4"><b><font size="5">Comp&eacute;titions 
+        <p><font color="#000000" size="4"><b><font size="5">Compétitions 
           <br>
           Equipe II</font></b></font></p>
       </div>
@@ -291,7 +291,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=2018"><font color="#000000" size="4">F&eacute;d&eacute;rale 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=2018"><font color="#000000" size="4">Fédérale 
         B</font></a></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"><i>16me de finale</i></td>
@@ -324,7 +324,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=2018"><font color="#000000" size="4">R&eacute;serve 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=2018"><font color="#000000" size="4">Réserve 
         &agrave; XII</font></a></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF">&nbsp;</td>
@@ -342,7 +342,7 @@
   </tr>
   <tr> 
     <td colspan="2" bgcolor="#FFCC33"> 
-      <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;tition<br>
+      <div align="center"><font color="#000000" size="4"><b><font size="5">Compétition<br>
         Entreprises / Corpo</font></b></font></div>
     </td>
   </tr>
@@ -366,7 +366,7 @@
   </tr>
   <tr> 
     <td colspan="2" bgcolor="#FFCC33"> 
-      <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;tition<br>
+      <div align="center"><font color="#000000" size="4"><b><font size="5">Compétition<br>
         Jeunes</font></b></font></div>
     </td>
   </tr>
@@ -382,7 +382,7 @@
   </tr>
   <tr> 
     <td width="213" height="37"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/belascain/pagebelascain.php?variable_1=2018"><font color="#000000" size="4">B&eacute;lascain</font></a></b></div>
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/belascain/pagebelascain.php?variable_1=2018"><font color="#000000" size="4">Bélascain</font></a></b></div>
     </td>
     <td width="237" height="37" bgcolor="#FFFFFF"><i>8me de finale</i></td>
   </tr>

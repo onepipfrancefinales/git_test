@@ -56,7 +56,7 @@
                Confonds leurs complots,<br>
        
 	   <span class="gras">Frustrate their knavish tricks,</span><br>
-        D&eacute;joue leurs conspirations de filou !<br>
+        Déjoue leurs conspirations de filou !<br>
        
 	   <span class="gras">On Thee our hopes we fix,</span><br>
         En Toi, nous mettons notre espoir ;<br>
@@ -69,13 +69,13 @@
        Veuille bien verser sur elle<br>
        
 	   <span class="gras">On her be pleased to pour;</span><br>
-         Tes dons les plus pr&eacute;cieux ;<br>
+         Tes dons les plus précieux ;<br>
         
 		<span class="gras">Long may she reign;</span><br>
-        Puisse-t-elle r&eacute;gner longuement ;<br>
+        Puisse-t-elle régner longuement ;<br>
         
 		<span class="gras">May she defend our laws,</span><br>
-       Puisse-t-elle d&eacute;fendre nos lois</span><br>
+       Puisse-t-elle défendre nos lois</span><br>
        
 	   <span class="gras">And ever give us cause</span><br>
         Et nous donner toujours raison<br>

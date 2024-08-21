@@ -14,7 +14,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=nbreEditions">Nombre d'&eacute;ditions</a></div>
+      <div id="sommaireRecords"><a href="pagerecords.php?page=nbreEditions">Nombre d'éditions</a></div>
     </td>
   </tr>
   <tr> 
@@ -42,7 +42,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=series">Meilleure s&eacute;rie</a></div>
+      <div id="sommaireRecords"><a href="pagerecords.php?page=series">Meilleure série</a></div>
     </td>
   </tr>
   <tr> 
@@ -53,7 +53,7 @@
   <tr> 
     <td width="195"> 
       <div id="sommaireRecords"><a href="pagerecords.php?page=joueurs_titres">Joueurs 
-        les plus titr&eacute;s</a></div>
+        les plus titrés</a></div>
     </td>
   </tr>
   <tr> 
@@ -64,7 +64,7 @@
   <tr> 
     <td width="195"> 
       <div id="sommaireRecords"><a href="pagerecords.php?page=nbre_titres"> Clubs les 
-        plus titr&eacute;s</a></div>
+        plus titrés</a></div>
     </td>
   </tr>
   <tr> 

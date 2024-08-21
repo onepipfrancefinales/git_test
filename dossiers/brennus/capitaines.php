@@ -9,7 +9,7 @@
 <p align="center"><b><font size="6" face="Verdana, Arial, Helvetica, sans-serif">- 
   Capitaine le plus jeune -</font></b> </p>
 <p align="center"><font face="Arial, Helvetica, sans-serif" size="3">Capitaine 
-  de l'&eacute;quipe championnat de France &agrave; 23ans</font></p>
+  de l'équipe championnat de France &agrave; 23ans</font></p>
 <table width="139" border="0" align="center" height="227">
   <tr> 
     <td height="132"><img src="images/joueurs/330px-Richard_Astre_(1970).jpg" width="130" height="154" border="1"></td>
@@ -22,7 +22,7 @@
   </tr>
   <tr> 
     <td> 
-      <div align="center">AS B&eacute;ziers</div>
+      <div align="center">AS Béziers</div>
     </td>
   </tr>
 </table>
@@ -31,10 +31,10 @@
 <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
 <p align="center"><b><font size="6" face="Verdana, Arial, Helvetica, sans-serif">- 
-  Capitaines les plus titr&eacute;s -</font></b><font face="Verdana, Arial, Helvetica, sans-serif" size="6"><br>
+  Capitaines les plus titrés -</font></b><font face="Verdana, Arial, Helvetica, sans-serif" size="6"><br>
   </font></p>
 <p align="center"><font face="Arial, Helvetica, sans-serif" size="3">6 fois champions 
-  de France en qualit&eacute; de capitaine</font></p>
+  de France en qualité de capitaine</font></p>
 <p align="center">&nbsp;</p>
 <table width="232" border="0" align="center">
   <tr>
@@ -67,7 +67,7 @@
   </tr>
   <tr>
     <td>
-      <div align="center">A.S. B&eacute;ziers</div>
+      <div align="center">A.S. Béziers</div>
     </td>
   </tr>
 </table>

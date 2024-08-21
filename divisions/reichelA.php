@@ -18,10 +18,10 @@ Reichel A </strong></p></h1>";
   6 autres clubs sur d�cision d�une commission de la FFR. Phase de poules, puis 
   16 clubs qualifi�s pour les huiti�mes de finale. </font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3"> A partir de la saison 2014-2015, 
-  cette comp&eacute;tition fusionne avec la competition Espoirs, sous le nom de 
-  <b>REICHEL/ESPOIRS</b> r&eacute;serv&eacute;e aux licenci&eacute;s de moins 
+  cette compétition fusionne avec la competition Espoirs, sous le nom de 
+  <b>REICHEL/ESPOIRS</b> réservée aux licenciés de moins 
   22 ans (18, 19, 20 et 21 ans). <a href="pagereichelA_espoirs.php" target="_top"><font color="#000000">Palmarès 
-  de cette nouvelle comp&eacute;tition.</font></a><br/>
+  de cette nouvelle compétition.</font></a><br/>
   <br/>
   </font> <br/>
   <?php

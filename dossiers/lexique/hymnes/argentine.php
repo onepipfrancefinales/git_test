@@ -17,16 +17,16 @@
         
 		
         <span class="gras">  O&iacute;d, mortales, el grito sagrado:</span><br>
-		   Mortels ! &Eacute;coutez le cri sacr&eacute; :<br>
+		   Mortels ! écoutez le cri sacré :<br>
 		
         <span class="gras">  &iexcl;Libertad, Libertad, Libertad!</span><br>
-		   &laquo; Libert&eacute;, libert&eacute;, libert&eacute; ! &raquo;<br>
+		   &laquo; Liberté, liberté, liberté ! &raquo;<br>
 		          
         <span class="gras">  O&iacute;d el ruido de rotas cadenas,</span><br>
-		   Entendez le son des cha&icirc;nes bris&eacute;es,<br>
+		   Entendez le son des cha&icirc;nes brisées,<br>
 		  
          <span class="gras"> Ved en trono a la noble igualdad.</span>
-		  Voyez tr&ocirc;ner la noble &eacute;galit&eacute;.</p>
+		  Voyez tr&ocirc;ner la noble égalité.</p>
 		  
 -------------------------------------------------------------------
         <p><span class="gras">Ya su trono dign&iacute;simo abrieron</span><br>
@@ -49,14 +49,14 @@
 		   Au grand peuple argentin, salut ! &raquo;</p>
 		  
         <p><span class="gras">Y los libres del mundo responden:</span><br>
-		 <p>Et tous les peuples libres du monde r&eacute;pondent :<br>
+		 <p>Et tous les peuples libres du monde répondent :<br>
 		
          <span class="gras"> Al gran pueblo Argentino salud.</span></p>
        &laquo; Au grand peuple argentin, salut ! &raquo;</p>
 	---------------------------------------------------------------- 
 	 <p>Refrain<br>
        <span class="gras">   Sean eternos los laureles </span><br>
-		  Puissent &ecirc;tre &eacute;ternels les lauriers<br>
+		  Puissent &ecirc;tre éternels les lauriers<br>
 		   
          <span class="gras">  Que supimos conseguir...</span><br>
 		  Que nous s&ucirc;mes obtenir,<br>
@@ -65,7 +65,7 @@
 		  Que nous s&ucirc;mes obtenir.<br>
 		  
          <span class="gras">  &iexcl;Coronados de gloria vivamos</span><br>
-		  Vivons couronn&eacute;s de gloire<br>
+		  Vivons couronnés de gloire<br>
 		  
         <span class="gras">   O juremos con gloria morir!</span><br>
 		  Ou jurons de mourir glorieusement !<br>
@@ -76,13 +76,13 @@
         <span class="gras">   &iexcl;O juremos con gloria morir!</span></p>
 		  Ou jurons de mourir glorieusement !</p>
 		  
-        <p>Mortels ! &Eacute;coutez le cri sacr&eacute; :<br>
+        <p>Mortels ! écoutez le cri sacré :<br>
 		
-          &laquo; Libert&eacute;, libert&eacute;, libert&eacute; ! &raquo;<br>
+          &laquo; Liberté, liberté, liberté ! &raquo;<br>
 		  
-          Entendez le son des cha&icirc;nes bris&eacute;es,<br>
+          Entendez le son des cha&icirc;nes brisées,<br>
 		  
-          Voyez tr&ocirc;ner la noble &eacute;galit&eacute;.</p>
+          Voyez tr&ocirc;ner la noble égalité.</p>
 	------------------------------------------------------------------	  
 		  
         <p>Les provinces-unies du sud,<br>
@@ -96,19 +96,19 @@
           Au grand peuple argentin, salut ! &raquo;</p>
 		  
 		  
-        <p>Et tous les peuples libres du monde r&eacute;pondent :<br>
+        <p>Et tous les peuples libres du monde répondent :<br>
 		
           &laquo; Au grand peuple argentin, salut ! &raquo;</p>
 		  
 	-----------------------------------------------------------------	  
         <p>Refrain<br>
-          Puissent &ecirc;tre &eacute;ternels les lauriers<br>
+          Puissent &ecirc;tre éternels les lauriers<br>
 		  
           Que nous s&ucirc;mes obtenir,<br>
 		  
           Que nous s&ucirc;mes obtenir.<br>
 		  
-          Vivons couronn&eacute;s de gloire<br>
+          Vivons couronnés de gloire<br>
 		  
           Ou jurons de mourir glorieusement !<br>
 		  

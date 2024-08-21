@@ -47,11 +47,11 @@ mysql_close(); // D�connexion de MySQL
 <p>&nbsp;</p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">Armelle Auclair est une 
   joueuse de rugby &agrave; XV disparue tragiquement le 13 juillet 2002 &agrave; 
-  Maul&eacute;on-Licharre, &agrave; l'&acirc;ge de 28 ans. Armelle Auclair a &eacute;t&eacute; 
-  s&eacute;lectionn&eacute;e &agrave; onze reprises en &eacute;quipe de France. 
-  Elle a contribu&eacute; au Grand Chelem de l'&eacute;quipe de France en 2002, 
+  Mauléon-Licharre, &agrave; l'&acirc;ge de 28 ans. Armelle Auclair a été 
+  sélectionnée &agrave; onze reprises en équipe de France. 
+  Elle a contribué au Grand Chelem de l'équipe de France en 2002, 
   &agrave; la troisième place obtenue lors de la Coupe du monde de rugby 
-  &agrave; XV f&eacute;minin 2002. Elle rejoint le club de Saint-Orens rugby f&eacute;minin 
-  lors de l'&eacute;t&eacute; 2001, elle a jou&eacute; au poste de deuxième 
+  &agrave; XV féminin 2002. Elle rejoint le club de Saint-Orens rugby féminin 
+  lors de l'été 2001, elle a joué au poste de deuxième 
   ligne.</font><br>
 </p>

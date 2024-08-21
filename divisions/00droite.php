@@ -40,7 +40,7 @@ MM_reloadPage(true);
       <p>&nbsp;</p>
       <p>
         <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
-          <option selected>Par comit&eacute;</option>
+          <option selected>Par comité</option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AP)">Alpes</option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AL)">Alsace Lorraine</option>
           <option value="http://francefinalesrugby.franceserv.com/page_comite.php?variable_1=(AB)">Armagnac Bigorre</option>

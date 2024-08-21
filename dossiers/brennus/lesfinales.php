@@ -144,8 +144,8 @@
       <div align="center"> juin 2020</div>
     </td>
     <td colspan="5"> 
-      <div align="center">Edition annul&eacute;e en raison du COVID 19 et de la 
-        pèriode de confinement intaur&eacute;e du 17 mars au 11 mai</div>
+      <div align="center">Edition annulée en raison du COVID 19 et de la 
+        pèriode de confinement intaurée du 17 mars au 11 mai</div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
@@ -351,7 +351,7 @@
       <div align="center">Stade Toulousain</div>
     </td>
     <td width="199" height="23"> 
-      <div align="center">RC Montpellier H&eacute;rault </div>
+      <div align="center">RC Montpellier Hérault </div>
     </td>
     <td width="68" height="23"> 
       <div align="center">15-10</div>
@@ -1035,7 +1035,7 @@
       <div align="center">AS Beziers</div>
     </td>
     <td width="199"> 
-      <div align="center">Stade Bagn&eacute;rais</div>
+      <div align="center">Stade Bagnérais</div>
     </td>
     <td width="68"> 
       <div align="center">22-13 </div>
@@ -1079,7 +1079,7 @@
       <div align="center">RC Narbonnais</div>
     </td>
     <td width="199"> 
-      <div align="center">Stade Bagn&eacute;rais</div>
+      <div align="center">Stade Bagnérais</div>
     </td>
     <td width="68"> 
       <div align="center">10-00 </div>
@@ -1296,7 +1296,7 @@
       <div align="center">28/05/1969 </div>
     </td>
     <td width="216" height="17"> 
-      <div align="center">CA B&eacute;glais</div>
+      <div align="center">CA Béglais</div>
     </td>
     <td width="199" height="17"> 
       <div align="center">Stade Toulousain </div>
@@ -1343,7 +1343,7 @@
       <div align="center">US Montalban</div>
     </td>
     <td width="199" height="5"> 
-      <div align="center">CA B&eacute;glais </div>
+      <div align="center">CA Béglais </div>
     </td>
     <td width="68" height="5"> 
       <div align="center">11-03 </div>
@@ -2358,7 +2358,7 @@
     </td>
     <td width="217" height="2"> 
       <div align="center">Parc des Sports de Sauclières<br>
-        B&eacute;ziers</div>
+        Béziers</div>
     </td>
     <td width="95" height="2">&nbsp;</td>
   </tr>
@@ -2485,7 +2485,7 @@
       <div align="center">08/04/1911 </div>
     </td>
     <td width="216"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="199"> 
       <div align="center">SCUF </div>
@@ -2510,7 +2510,7 @@
       <div align="center">FC Lyon</div>
     </td>
     <td width="199" height="26"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="68" height="26"> 
       <div align="center">13-08 </div>
@@ -2529,7 +2529,7 @@
       <div align="center">04/04/1909 </div>
     </td>
     <td width="216"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="199"> 
       <div align="center">Stade Toulousain </div>
@@ -2554,7 +2554,7 @@
       <div align="center">Stade Fran&ccedil;ais </div>
     </td>
     <td width="199"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="68"> 
       <div align="center">16-03 </div>
@@ -2573,7 +2573,7 @@
       <div align="center">24/07/1907 </div>
     </td>
     <td width="216"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="199"> 
       <div align="center">Stade Fran&ccedil;ais </div>
@@ -2595,7 +2595,7 @@
       <div align="center">08/04/1906</div>
     </td>
     <td width="216"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="199"> 
       <div align="center">Stade Fran&ccedil;ais </div>
@@ -2617,7 +2617,7 @@
       <div align="center">16/04/1905 </div>
     </td>
     <td width="216"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="199"> 
       <div align="center">Stade Fran&ccedil;ais </div>
@@ -2639,7 +2639,7 @@
       <div align="center">27/03/1904 </div>
     </td>
     <td width="216"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="199"> 
       <div align="center">Stade Fran&ccedil;ais</div>
@@ -2686,7 +2686,7 @@
       <div align="center">Racing Club de France </div>
     </td>
     <td width="199"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="68"> 
       <div align="center">06-00 </div>
@@ -2706,7 +2706,7 @@
       <div align="center">Stade Fran&ccedil;ais</div>
     </td>
     <td width="199" height="25"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club</div>
+      <div align="center">Stade Bordelais Université Club</div>
     </td>
     <td width="68" height="25"> 
       <div align="center">Forfait du SBUC</div>
@@ -2718,7 +2718,7 @@
     <td width="95" height="25">&nbsp;</td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
-    <td colspan="6" height="25"> disqualification du SBUC (joueurs non qualifi&eacute;s) 
+    <td colspan="6" height="25"> disqualification du SBUC (joueurs non qualifiés) 
       - match &agrave; rejouer, forfait de SBUC - Stade Fran&ccedil;ais Champion 
       de France</td>
     <td width="95" height="25">&nbsp;</td>
@@ -2731,7 +2731,7 @@
       <div align="center">31/03/1901 </div>
     </td>
     <td width="216" height="25"> 
-      <div align="center">Stade Bordelais Universit&eacute; Club </div>
+      <div align="center">Stade Bordelais Université Club </div>
     </td>
     <td width="199" height="25"> 
       <div align="center">Stade Fran&ccedil;ais</div>
@@ -2802,7 +2802,7 @@
       <div align="center">Stade Fran&ccedil;ais</div>
     </td>
     <td width="199">&nbsp;</td>
-    <td colspan="3">Comp&eacute;tition organig&eacute;e sous la forme de poules</td>
+    <td colspan="3">Compétition organigée sous la forme de poules</td>
   </tr>
   <tr> 
     <td width="74" bgcolor="#CCCCCC"> 
@@ -2815,7 +2815,7 @@
       <div align="center">Stade Fran&ccedil;ais</div>
     </td>
     <td width="199" bgcolor="#CCCCCC">&nbsp;</td>
-    <td colspan="3" bgcolor="#CCCCCC">Comp&eacute;tition organig&eacute;e sous 
+    <td colspan="3" bgcolor="#CCCCCC">Compétition organigée sous 
       la forme de poules</td>
   </tr>
   <tr> 
@@ -2835,7 +2835,7 @@
       <div align="center">12-00 </div>
     </td>
     <td width="217"> 
-      <div align="center">Stade V&eacute;lodrome<br>
+      <div align="center">Stade Vélodrome<br>
         Courbevoie </div>
     </td>
     <td width="95"> 
@@ -2847,9 +2847,9 @@
       <div align="center">5</div>
     </td>
     <td width="84">&nbsp;</td>
-    <td colspan="2">Egalit&eacute; entre les 2 poules : une finale est organis&eacute;e 
+    <td colspan="2">Egalité entre les 2 poules : une finale est organisée 
       le 05/04/1896</td>
-    <td colspan="3">Comp&eacute;tition organig&eacute;e sous la forme de poules</td>
+    <td colspan="3">Compétition organigée sous la forme de poules</td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="74"> 
@@ -2868,7 +2868,7 @@
       <div align="center">16-00 </div>
     </td>
     <td width="217"> 
-      <div align="center">Stade V&eacute;lodrome<br>
+      <div align="center">Stade Vélodrome<br>
         Courbevoie </div>
     </td>
     <td width="95"> 
@@ -2892,7 +2892,7 @@
       <div align="center">18-00 </div>
     </td>
     <td width="217"> 
-      <div align="center">B&eacute;con-les-Bruyères<br>
+      <div align="center">Bécon-les-Bruyères<br>
         Courbevoie </div>
     </td>
     <td width="95"> 
@@ -2916,7 +2916,7 @@
       <div align="center">07-03 </div>
     </td>
     <td width="217" height="22"> 
-      <div align="center">B&eacute;con-les-Bruyères<br>
+      <div align="center">Bécon-les-Bruyères<br>
         Courbevoie </div>
     </td>
     <td width="95" height="22"> 

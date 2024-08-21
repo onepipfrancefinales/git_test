@@ -125,7 +125,7 @@
   <tr> 
     <td colspan="5" height="53"> 
       <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="5">https://bfmbusiness.bfmtv.com/mediaplayer/video/les-news-l-histoire-du-bouclier-de-brennus-0306-1080380.htmlressources 
-        utilis&eacute;es</font></b></div>
+        utilisées</font></b></div>
     </td>
   </tr>
 </table>

@@ -11,7 +11,7 @@
   </tr>
   <tr> 
     <td colspan="4"> 
-      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misphère 
+      <div align="center"><font color="#000000" size="5"><b><font size="6">Hémisphère 
         Nord</font></b></font></div>
     </td>
   </tr>
@@ -103,7 +103,7 @@
   </tr>
   <tr> 
     <td colspan="4"> 
-      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misphère 
+      <div align="center"><font color="#000000" size="5"><b><font size="6">Hémisphère 
         Sud</font></b></font></div>
     </td>
   </tr>
@@ -124,7 +124,7 @@
   </tr>
   <tr> 
     <td width="204"><b><font size="5" face="Arial, Helvetica, sans-serif" color="#000000"><a href="page_hymnes.php?pays=nze">Nouvelle 
-      Z&eacute;lande</a> </font></b></td>
+      Zélande</a> </font></b></td>
     <td width="223"><b><font size="5" face="Arial, Helvetica, sans-serif" color="#000000"><a href="page_hymnes.php?pays=aus">Australie</a></font></b></td>
   </tr>
   <tr> 

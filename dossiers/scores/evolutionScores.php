@@ -17,7 +17,7 @@
   l'essai. L'essai vaut aujourd'hui 5 points. (voir points)</font></p>
 <p>&nbsp;</p>
 <p align="left"><b><font face="Arial, Helvetica, sans-serif" size="3">Tableau 
-  de l'&eacute;volution de points</font></b></p>
+  de l'évolution de points</font></b></p>
 <p>&nbsp;</p>
 
 <table width="311" border="1" align="center" >
@@ -39,7 +39,7 @@
       <div align="center"><font size="3"><b><font face="Arial, Helvetica, sans-serif">Transformation</font></b></font></div>
     </td>
     <td> 
-      <div align="center"><font size="3"><b><font face="Arial, Helvetica, sans-serif">P&eacute;nalit&eacute;</font></b></font></div>
+      <div align="center"><font size="3"><b><font face="Arial, Helvetica, sans-serif">Pénalité</font></b></font></div>
     </td>
     <td> 
       <div align="center"><font size="3"><b><font face="Arial, Helvetica, sans-serif">DropGoal</font></b></font></div>
@@ -224,7 +224,7 @@
     </td>
     <td bgcolor="#00FF00" height="2"> 
       <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">bonus 
-        d&eacute;fensif</font></div>
+        défensif</font></div>
     </td>
     <td height="2"><font size="2" face="Arial, Helvetica, sans-serif"></font></td>
     <td height="2"><font size="2" face="Arial, Helvetica, sans-serif"></font></td>
@@ -233,8 +233,8 @@
   </tr>
 </table>
 <p>&nbsp;</p>
-<p class="nom">D&eacute;finitions 
-  des diff&eacute;rents types de marque</font><font size="3"><br>
+<p class="nom">Définitions 
+  des différents types de marque</font><font size="3"><br>
   <br>
   </font></b>
   
@@ -242,52 +242,52 @@
   adverse.</span><br></p>
   
 <p class="nom">Transformation<span class="def"> 
-  : lorsqu'un essai a &eacute;t&eacute; marqu&eacute;, l'&eacute;quipe a la possibilit&eacute; 
-  de marquer des points suppl&eacute;mentaires. Son buteur doit, d'un coup de 
-  pied tomb&eacute; ou plac&eacute;, faire passer le ballon entre les poteaux. 
-  S'il r&eacute;ussit, deux points suppl&eacute;mentaires sont accord&eacute;s 
-  &agrave; l'&eacute;quipe. </span><br></p>
+  : lorsqu'un essai a été marqué, l'équipe a la possibilité 
+  de marquer des points supplémentaires. Son buteur doit, d'un coup de 
+  pied tombé ou placé, faire passer le ballon entre les poteaux. 
+  S'il réussit, deux points supplémentaires sont accordés 
+  &agrave; l'équipe. </span><br></p>
  
-  <p class="nom">P&eacute;nalit&eacute;<span class="def"> : en cas de faute d'un joueur, l'arbitre siffle 
-  une p&eacute;nalit&eacute; au b&eacute;n&eacute;fice de l'&eacute;quipe adverse, 
-  qui se voit rendre le ballon. L'&eacute;quipe qui b&eacute;n&eacute;ficie de 
-  la faute a alors le choix entre taper en touche (voir p&eacute;naltouche), demander 
-  une m&ecirc;l&eacute;e, ou jouer la faute &quot; &agrave; la main &quot; (comme 
-  pour un bras cass&eacute; ou en faisant simplement une passe). Ce terme d&eacute;signe 
-  aussi le coup de pied plac&eacute; ou tomb&eacute; du joueur qui tente d'exp&eacute;dier 
-  le ballon entre les poteaux adverses. R&eacute;ussi, il vaut trois points.
+  <p class="nom">Pénalité<span class="def"> : en cas de faute d'un joueur, l'arbitre siffle 
+  une pénalité au bénéfice de l'équipe adverse, 
+  qui se voit rendre le ballon. L'équipe qui bénéficie de 
+  la faute a alors le choix entre taper en touche (voir pénaltouche), demander 
+  une m&ecirc;lée, ou jouer la faute &quot; &agrave; la main &quot; (comme 
+  pour un bras cassé ou en faisant simplement une passe). Ce terme désigne 
+  aussi le coup de pied placé ou tombé du joueur qui tente d'expédier 
+  le ballon entre les poteaux adverses. Réussi, il vaut trois points.
   </span><br></p>
   
   <p class="nom">Drop-goal<span class="def"> (de 
-  l'anglais dropped goal, but tomb&eacute;): coup de pied frappant le ballon juste 
+  l'anglais dropped goal, but tombé): coup de pied frappant le ballon juste 
   après le rebond et qui le fait passer entre les poteaux adverses en cours 
-  de jeu (on dit qu'on passe un drop). Souvent abr&eacute;g&eacute; en &quot; 
+  de jeu (on dit qu'on passe un drop). Souvent abrégé en &quot; 
   drop &quot;.</span><br></p>
 
 <p class="nom">Un but de marque <span class="def">
   est un ancien scoring mouvement dans le football de rugby. Cela s'est produit 
-  lorsqu'un joueur a &laquo;marqu&eacute;&raquo; la balle en faisant une bonne 
+  lorsqu'un joueur a &laquo;marqué&raquo; la balle en faisant une bonne 
   prise et en criant &laquo;marque&raquo;. De cette position, le joueur ne pouvait 
-  pas &ecirc;tre plaqu&eacute;. Le joueur avait alors la possibilit&eacute; d'un 
-  coup franc, qui pouvait &ecirc;tre consid&eacute;r&eacute; comme un coup de 
-  pied, un coup de pied tomb&eacute;, un bott&eacute; de d&eacute;gagement ou 
+  pas &ecirc;tre plaqué. Le joueur avait alors la possibilité d'un 
+  coup franc, qui pouvait &ecirc;tre considéré comme un coup de 
+  pied, un coup de pied tombé, un botté de dégagement ou 
   un coup de pied. </span><br></p>
   
-<p class="nom"> Coup de pied franc ou coup franc <span class="def">: sanction ordonn&eacute;e par l'arbitre après certaines 
-  actions de gravit&eacute; &quot; moyenne &quot; (ex. : trop de joueurs en touche...). 
-  Contrairement &agrave; la p&eacute;nalit&eacute;, il ne permet pas de tenter 
-  un tir au but direct et une touche trouv&eacute;e suit la règle ordinaire. 
-  Il peut &ecirc;tre jou&eacute; par n'importe quel type de coup de pied, ou &ecirc;tre 
-  remplac&eacute; par une m&ecirc;l&eacute;e, sur demande de l'&eacute;quipe b&eacute;n&eacute;ficiaire. 
-  Le coup de pied doit &ecirc;tre jou&eacute; sur ou derrière la marque, 
+<p class="nom"> Coup de pied franc ou coup franc <span class="def">: sanction ordonnée par l'arbitre après certaines 
+  actions de gravité &quot; moyenne &quot; (ex. : trop de joueurs en touche...). 
+  Contrairement &agrave; la pénalité, il ne permet pas de tenter 
+  un tir au but direct et une touche trouvée suit la règle ordinaire. 
+  Il peut &ecirc;tre joué par n'importe quel type de coup de pied, ou &ecirc;tre 
+  remplacé par une m&ecirc;lée, sur demande de l'équipe bénéficiaire. 
+  Le coup de pied doit &ecirc;tre joué sur ou derrière la marque, 
   sur une ligne passant par cette marque. Le botteur n'a pas le droit de feindre 
   un coup de pied franc. Dès qu'il amorce son mouvement pour botter, l'adversaire 
-  peut charger. Les joueurs de l'&eacute;quipe adverse doivent se replier en direction 
+  peut charger. Les joueurs de l'équipe adverse doivent se replier en direction 
   de leur propre ligne de but et se placer au moins &agrave; 10 mètres 
   de la marque du coup de pied franc ou atteindre leur propre ligne de but, si 
-  celle-ci est plus proche de la marque. &Eacute;galement appel&eacute; bras cass&eacute;. 
-  Le coup de pied de renvoi sur arr&ecirc;t de vol&eacute;e ressemble au coup 
-  franc, avec la nuance que c'est l'auteur du marque qui doit ex&eacute;cuter 
+  celle-ci est plus proche de la marque. également appelé bras cassé. 
+  Le coup de pied de renvoi sur arr&ecirc;t de volée ressemble au coup 
+  franc, avec la nuance que c'est l'auteur du marque qui doit exécuter 
   le renvoi.</span><br></p>
 
 <p align="left"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2">Cliquer 

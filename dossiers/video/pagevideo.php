@@ -70,11 +70,11 @@ content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees R
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="6">Quelques 
-            vid&eacute;os<br>
+            vidéos<br>
             </font></b></font></p>
-          <p><font face="Arial, Helvetica, sans-serif" size="3" color="#000000">S&eacute;lection 
-            de quelques vid&eacute;os class&eacute;es par th&eacute;mes, et je 
-            vous recommande tout particulièrement la s&eacute;rie &quot;Quand 
+          <p><font face="Arial, Helvetica, sans-serif" size="3" color="#000000">Sélection 
+            de quelques vidéos classées par thémes, et je 
+            vous recommande tout particulièrement la série &quot;Quand 
             tu joues au rygby amateur&quot;<br>
             <br>
             </font></p>

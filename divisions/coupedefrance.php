@@ -51,16 +51,16 @@ require ("../connection.php") ;
 <br/>
 <br/>
   <font face="Times New Roman, Times, serif" size="4">Le climat de la finale de 
-  1951 (un derby!) est si d&eacute;testable que les Anglais, qui ne voient pas 
-  cette &eacute;preuve d'un très bon &#156;il, en demandent &agrave; mots 
-  couverts l'interdiction. Le Pr&eacute;sident de la FFR de l'&eacute;poque s'ex&eacute;cutera 
-  sans coup f&eacute;rir (la France vient tout juste de r&eacute;int&eacute;grer 
-  avec difficult&eacute;s le tournoi des cinq nations quatre ans auparavant), 
-  au pr&eacute;texte d'un calendrier annuel trop charg&eacute; pour les clubs 
-  (le championnat est d'ailleurs d&eacute;sormais jou&eacute; par matches simples 
-  la m&ecirc;me ann&eacute;e). Moins &acirc;pre &agrave; la victoire, le Challenge 
+  1951 (un derby!) est si détestable que les Anglais, qui ne voient pas 
+  cette épreuve d'un très bon &#156;il, en demandent &agrave; mots 
+  couverts l'interdiction. Le Président de la FFR de l'époque s'exécutera 
+  sans coup férir (la France vient tout juste de réintégrer 
+  avec difficultés le tournoi des cinq nations quatre ans auparavant), 
+  au prétexte d'un calendrier annuel trop chargé pour les clubs 
+  (le championnat est d'ailleurs désormais joué par matches simples 
+  la m&ecirc;me année). Moins &acirc;pre &agrave; la victoire, le Challenge 
   Yves du Manoir prit le relais dès la saison suivante, après 13 
-  ann&eacute;es d'absence.</font></i></p>
+  années d'absence.</font></i></p>
 <p>&nbsp;</p>
 <p><font face="Times New Roman, Times, serif"><i><font size="4">Sous l'impulsion 
   d'Albert Ferrasse, l'�preuve rena�t de ses cendres pour la saison 1983-84, pour 
@@ -153,7 +153,7 @@ mysql_close(); // D�connexion de MySQL
 ?>
 </p>
 <p><i><font face="Times New Roman, Times, serif" size="4">La Coupe de la Ligue 
-  est remplac&eacute;e par le Challenge Sud-Radio</font></i> </p>
+  est remplacée par le Challenge Sud-Radio</font></i> </p>
 <p><br/>
   
   <?php

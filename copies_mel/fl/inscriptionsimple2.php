@@ -18,7 +18,7 @@ $to = 'onepip-france@franceserv.com';
 $subject = $_POST['champion'];
  
 // Message
-$msg = ' Demande d inscription à la newsletter du comite FL';
+$msg = ' Demande d inscription ï¿½ la newsletter du comite FL';
 
 
 // Function mail()
@@ -28,12 +28,12 @@ mail($to, $subject, $msg);
 
 ?>
 
-<p><b><font size="5">Demande enregistr&eacute;e</font></b></p>
+<p><b><font size="5">Demande enregistrÃ©e</font></b></p>
 <table width="494" border="0">
   <tr> 
     <td colspan="3"> 
       <div align="center"><a href="http://francefinalesrugby.franceserv.com/page_resultats.php"><font size="6">Retour 
-        aux résutats et aux classements </font></a> </div>
+        aux rï¿½sutats et aux classements </font></a> </div>
       <div align="center"></div>
     </td>
   </tr>

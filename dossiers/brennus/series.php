@@ -140,7 +140,7 @@ echo $saison[$i].' '.$champion[$i]."<br />";
 <p>&nbsp;</p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">USA Perpignan : 16 finales 
   / 7 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">AS B&eacute;ziers :15 finales 
+<p><font face="Arial, Helvetica, sans-serif" size="3">AS Béziers :15 finales 
   / 11 victoures</font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">Agen : 14 finales / 8 victoires</font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">AS Montfrrand : 14 finales 
@@ -212,7 +212,7 @@ echo $saison[$i].' '.$champion[$i]."<br />";
   1 victoire<br>
   </font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">SCUF 2 finales / 0 victoire<br>
-  Stade bagn&eacute;rais 2 finales / 0 victoire<br>
+  Stade bagnérais 2 finales / 0 victoire<br>
   </font><font face="Arial, Helvetica, sans-serif" size="3">Montpellier HR : 2 
   finales / 0 victoire</font></p>
 <p>&nbsp;</p>
@@ -227,7 +227,7 @@ echo $saison[$i].' '.$champion[$i]."<br />";
   </font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">US Carcassonne : 1 finale 
   / 0 victoire<br>
-  FC L&eacute;zignan : 1finale / 0 victoire<br>
+  FC Lézignan : 1finale / 0 victoire<br>
   US Cognac : 1 finale/ 0 victoire<br>
   SC Mazamet : 1 finale/ 0 victoire<br>
   Nice UR : 1 finale/ victoire<br>
@@ -242,11 +242,11 @@ echo $saison[$i].' '.$champion[$i]."<br />";
 
 
 <p><b><font size="6" face="Verdana, Arial, Helvetica, sans-serif"><br>
-  - Meilleure s&eacute;rie pour un club -</font></b><br>
+  - Meilleure série pour un club -</font></b><br>
 </p>
 <p align="center">&nbsp;</p>
 <p align="center"><b><font face="Arial, Helvetica, sans-serif" size="4">4 titres 
-  cons&eacute;cutifs</font></b></p>
+  consécutifs</font></b></p>
 <p> <font face="Arial, Helvetica, sans-serif" size="3">SBUC 1904 &agrave; 1907</font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3"> Stade Toulousain 1994 &agrave; 
   1997 </font></p>
@@ -261,7 +261,7 @@ echo $saison[$i].' '.$champion[$i]."<br />";
 <p>&nbsp;</p>
 <p><b><font size="4" face="Arial, Helvetica, sans-serif">2 titres consecutifs</font></b></p>
 <p></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">AS B&eacute;ziers (1983-1984) 
+<p><font face="Arial, Helvetica, sans-serif" size="3">AS Béziers (1983-1984) 
   (1980-1981) (1977-1978) (1974-1975) (1971-1972)</font></p>
 <p><font size="3" face="Arial, Helvetica, sans-serif">Stade Toulousain (1985-1986) 
   (1926-1927) (2011-2012)</font></p>
@@ -273,8 +273,8 @@ echo $saison[$i].' '.$champion[$i]."<br />";
   </font></p>
 <p><b><font size="6" face="Verdana, Arial, Helvetica, sans-serif"><br>
   <br>
-  - Meilleure s&eacute;rie pour des joueurs </font></b></p>
-<p><b><font face="Arial, Helvetica, sans-serif" size="4">4 titres cons&eacute;cutifs</font></b></p>
+  - Meilleure série pour des joueurs </font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="4">4 titres consécutifs</font></b></p>
 <p></p>
 <p></p>
 <p></p>
@@ -282,14 +282,14 @@ echo $saison[$i].' '.$champion[$i]."<br />";
 <p></p>
 <p align="left"><b><font size="3" face="Arial, Helvetica, sans-serif">5 joueurs 
   du SBUC, de 1904 &agrave; 1907</font></b><font size="3" face="Arial, Helvetica, sans-serif">: 
-  Bruneau - Dufourcq Lacassagne (2 fois ouvreur - 2 fois &frac12;-de-m&ecirc;l&eacute;e) 
+  Bruneau - Dufourcq Lacassagne (2 fois ouvreur - 2 fois &frac12;-de-m&ecirc;lée) 
   - Laporte - Tilh</font></p>
 <p align="left"><font size="3" face="Arial, Helvetica, sans-serif"><b>8 joueurs 
   du Stade Toulousain, en 1994-1997 a verifier</b> </font></p>
 <p align="left"><font size="3" face="Arial, Helvetica, sans-serif">Belot - Berty 
   - Califano - Castaignède - Cazalbou - Deylaud - Miorin - Soula </font></p>
 <p align="left"><font size="3" face="Arial, Helvetica, sans-serif"><b>Beno&icirc;t 
-  August</b>, champion quatre fois cons&eacute;cutivement<br>
+  August</b>, champion quatre fois consécutivement<br>
   en 2003, 2004 avec le Stade Fran&ccedil;ais et en 2005, 2006 avec le Biarritz 
   Olympique. </font></p>
 <p>&nbsp;</p>

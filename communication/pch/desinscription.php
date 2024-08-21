@@ -12,8 +12,8 @@
   </tr>
   <tr> 
     <td colspan="3"> 
-      <div align="center"><font size="4"><b>Pour se d&eacute;sinscrire saississsez 
-        votre m&eacute;l ci-dessous</b></font></div>
+      <div align="center"><font size="4"><b>Pour se désinscrire saississsez 
+        votre mél ci-dessous</b></font></div>
       <div align="center"> 
         <form action="http://francefinalesrugby.franceserv.com/copies_mel/pch/desinscription2.php" method="POST">
         <p align="center"> 

@@ -50,23 +50,23 @@ MM_reloadPage(true);
           D2</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pagejprat.php"><b>Jean 
           Prat</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/pagefederale1.php"><b>F&eacute;d&eacute;rale 
+          <option value="http://francefinalesrugby.franceserv.com/divisions/pagefederale1.php"><b>Fédérale 
           1</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/pagefederale2.php"><b>F&eacute;d&eacute;rale 
+          <option value="http://francefinalesrugby.franceserv.com/divisions/pagefederale2.php"><b>Fédérale 
           2</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/pagefederale3.php"><b>F&eacute;d&eacute;rale 
+          <option value="http://francefinalesrugby.franceserv.com/divisions/pagefederale3.php"><b>Fédérale 
           3</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pagehonneur.php"><b>Honneur</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pagepromotion.php"><b>Promotion 
           </b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/page1serie.php"><b>1ère 
-          S&eacute;rie</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/page2serie.php"><b>2i&eacute;me 
-          S&eacute;rie</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/page3serie.php"><b>3i&eacute;me 
+          Série</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/divisions/page2serie.php"><b>2iéme 
+          Série</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/divisions/page3serie.php"><b>3iéme 
           Serie</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/page4serie.php"><b>4i&eacute;me 
-          S&eacute;rie</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/divisions/page4serie.php"><b>4iéme 
+          Série</b></option>
           <option>------------------------------</option>
           <option>EQUIPES II</option>
           <option>-------------------</option>
@@ -74,11 +74,11 @@ MM_reloadPage(true);
           <option value="http://francefinalesrugby.franceserv.com/divisions/pageespoir.php">Espoir</option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pagenationaleb.php"><b>Nationale 
           B</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/pagefederaleb.php"><b>F&eacute;d&eacute;rale 
+          <option value="http://francefinalesrugby.franceserv.com/divisions/pagefederaleb.php"><b>Fédérale 
           B</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pageexcellenceb.php"><b>Excellence 
           B</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/pagereserve.php"><b>R&eacute;serve</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/divisions/pagereserve.php"><b>Réserve</b></option>
           <option>--------------------</option>
           <option>FEMININES</option>
           <option>----------------------</option>
@@ -113,8 +113,8 @@ MM_reloadPage(true);
           Manoir</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pageessor.php"><b>Essor</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pagechespoir.php"><b>Espoir</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/pageesperance.php"><b>Esp&eacute;rance</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/pageamitie.php"><b>Amiti&eacute;</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/divisions/pageesperance.php"><b>Espérance</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/divisions/pageamitie.php"><b>Amitié</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pagecoupedefrance.php"><b>Coupe 
           de France</b></option>
         </select>
@@ -128,7 +128,7 @@ MM_reloadPage(true);
       <table width="95%" border="1" height="120" bgcolor="#0066FF" bordercolor="#000000">
         <tr> 
           <td align="center" valign="top" bordercolor="#000000" bgcolor="#00CCFF"> 
-            <p><b>Palmarès Europ&eacute;ens</b></p>
+            <p><b>Palmarès Européens</b></p>
             <p> 
               <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="3">
                 <option>--------------------------------</option>

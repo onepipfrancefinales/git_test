@@ -28,12 +28,12 @@ mail($to, $subject, $msg);
  
 ?>
 
-<p><b><font size="5">D&eacute;sinscription r&eacute;ussie</font></b></p>
+<p><b><font size="5">Désinscription réussie</font></b></p>
 <table width="494" border="0">
   <tr> 
     <td colspan="3"> 
       <div align="center"><a href="http://francefinalesrugby.franceserv.com/page_resultats.php"><font size="6">Retour 
-        aux r�sutats et aux classements </font></a> </div>
+        aux r�sutats et aux classements </font></a> </div>
       <div align="center"></div>
     </td>
   </tr>

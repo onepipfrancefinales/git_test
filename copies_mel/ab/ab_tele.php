@@ -33,11 +33,11 @@
     </td>
     <td height="177" valign="top"> 
       <p align="center"><b><font size="5"><br>
-        <font size="6" color="#FF0000">Nouveaut&eacute; :<br>
+        <font size="6" color="#FF0000">Nouveauté :<br>
         </font></font></b></p>
       <p align="center"><b><font size="6" color="#000000">Nous vous proposons 
-        les retransmissions de toutes les rencontres du Top 14 et des comp&eacute;titions 
-        Europ&eacute;ennes en direct.<br>
+        les retransmissions de toutes les rencontres du Top 14 et des compétitions 
+        Européennes en direct.<br>
         </font></b></p>
     </td>
     <td rowspan="4" bgcolor="#000000" height="408" width="151" valign="top"><img src="http://francefinalesrugby.franceserv.com/images/comites/(AB).jpg" width="150" height="160" align="top"> 
@@ -46,18 +46,18 @@
         <p>&nbsp;</p>
         <p><a href="http://francefinalesrugby.franceserv.com/resultats/page_pro.php"><font color="#FFFFFF">TOP14/ 
           Pro D2<br>
-          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale1.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale1.php"><font color="#FFFFFF">Fédérale 
           1<br>
-          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale2.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          </font></a><a href="http://francefinalesrugby.franceserv.com/resultats/page_federale2.php"><font color="#FFFFFF">Fédérale 
           2 </font></a><br>
-          <a href="http://francefinalesrugby.franceserv.com/resultats/page_federale3_2.php"><font color="#FFFFFF">F&eacute;d&eacute;rale 
+          <a href="http://francefinalesrugby.franceserv.com/resultats/page_federale3_2.php"><font color="#FFFFFF">Fédérale 
           3 </font></a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">Honneur/ 
           promotion </font> </a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">1re 
-          2me S&eacute;rie</font></a><br>
+          2me Série</font></a><br>
           <a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php"><font color="#FFFFFF">3me 
-          4me S&eacute;rie </font></a></p>
+          4me Série </font></a></p>
       </div>
     </td>
   </tr>
@@ -83,8 +83,8 @@
           - Attendre 30 secondes et fermer les 2 ou 3 fen&ecirc;tres publicitaires 
           qui se sont ouvertes</font></font></b></font><font face="Arial, Helvetica, sans-serif">.<br>
           <b><font size="4">- Vous voila tranquille pour toute la retransmission.</font></b></font></p>
-        <p><b><font color="#FF0000" size="4">Attention : Refusez tous les t&eacute;l&eacute;chargements 
-          et/ou toutes les mises &agrave; jour propos&eacute;es</font></b></p>
+        <p><b><font color="#FF0000" size="4">Attention : Refusez tous les téléchargements 
+          et/ou toutes les mises &agrave; jour proposées</font></b></p>
       </div>
     </td>
   </tr>
@@ -95,8 +95,8 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td height="2" colspan="3" bordercolor="#000000"> 
-      <div align="center">Si vous ne souhaitez plus recevoir les r&eacute;sultats 
-        du comit&eacute; du Armagnac Bigorre,cliquez <a href="http://francefinalesrugby.franceserv.com/copies_mel/ab/desinscription.php">ICI</a> 
+      <div align="center">Si vous ne souhaitez plus recevoir les résultats 
+        du comité du Armagnac Bigorre,cliquez <a href="http://francefinalesrugby.franceserv.com/copies_mel/ab/desinscription.php">ICI</a> 
       </div>
     </td>
   </tr>

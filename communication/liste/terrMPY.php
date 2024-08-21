@@ -30,7 +30,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center">1re S&eacute;rie</div>
+      <div align="center">1re Série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Montrejeau</font></div>
@@ -38,7 +38,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center">2me S&eacute;rie</div>
+      <div align="center">2me Série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Boulogne sur Gesse</font></div>
@@ -46,7 +46,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center">3me S&eacute;rie</div>
+      <div align="center">3me Série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">XV de la Save</font></div>
@@ -54,7 +54,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center">4me S&eacute;rie</div>
+      <div align="center">4me Série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Chalabre</font></div>
@@ -62,15 +62,15 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center">R&eacute;serve</div>
+      <div align="center">Réserve</div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4">L&eacute;guevin</font></div>
+      <div align="center"><font size="4">Léguevin</font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center">R&eacute;serve PH</div>
+      <div align="center">Réserve PH</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">TEC</font></div>
@@ -78,14 +78,14 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center">R&eacute;serve 1re s&eacute;rie</div>
+      <div align="center">Réserve 1re série</div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">L'Union</font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
-    <td width="113">R&eacute;serve 2me s&eacute;rie</td>
+    <td width="113">Réserve 2me série</td>
     <td width="205"><font size="4">Viviez</font></td>
   </tr>
 </table>

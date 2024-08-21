@@ -10,14 +10,14 @@
   <table width="685" border="1" height="166">
     <tr> 
       <td height="37" colspan="2" bgcolor="#003366"> 
-        <div align="center"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">S&eacute;ances 
-          vid&eacute;o </font></b></div>
+        <div align="center"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">Séances 
+          vidéo </font></b></div>
       </td>
     </tr>
     <tr> 
       <td height="37" colspan="2"> 
         <p><a href="video/pagevideo.php?choix=<?php echo "ama";?>"><font size="4" color="#000000"><font face="Arial, Helvetica, sans-serif" size="5"><br>
-          S&eacute;rie : P&eacute;rip&eacute;tie d'un joueur amateur</font></font></a></p>
+          Série : Péripétie d'un joueur amateur</font></font></a></p>
         <p><font face="Arial, Helvetica, sans-serif" size="5"><a href="video/pagevideo.php?choix=<?php echo "cau";?>"><font color="#000000">Causeries</font></a><br>
           <a href="video/pagevideo.php?choix=<?php echo "pla";?>"><font color="#000000">Plaquages</font></a><br>
           <a href="video/pagevideo.php?choix=<?php echo "ess";?>"><font color="#000000">Essais<br>
@@ -53,13 +53,13 @@
             </font></p>
           <p><font face="Arial, Helvetica, sans-serif" size="4"><br>
             1896</font><font face="Arial, Helvetica, sans-serif" size="5"> Top14 
-            1re s&eacute;rie<br>
-            F&eacute;d&eacute;rale <font size="4">Groupe B</font></font><br>
+            1re série<br>
+            Fédérale <font size="4">Groupe B</font></font><br>
             Elite 1 <font size="4" face="Arial, Helvetica, sans-serif">Alamercery<br>
             Jeunes 1989<br>
-            <font size="3">honneur <b>pr&eacute;-f&eacute;d&eacute;rale <br>
+            <font size="3">honneur <b>pré-fédérale <br>
             </b>Nationale <font size="4">Danet</font><br>
-            r&eacute;gionale 2</font></font></p>
+            régionale 2</font></font></p>
         </div>
       </td>
     </tr>
@@ -93,13 +93,13 @@
       <td height="37" width="329"> 
         <div align="center"> 
           <p><font color="#000000"><a href="lexique/pageLexique.php?sommaire=4"><font color="#000000" size="4" ><br>
-            <font size="5" face="Arial, Helvetica, sans-serif">Expressions m&eacute;diatiques</font></font></a></font><font size="5" face="Arial, Helvetica, sans-serif"><br>
+            <font size="5" face="Arial, Helvetica, sans-serif">Expressions médiatiques</font></font></a></font><font size="5" face="Arial, Helvetica, sans-serif"><br>
             <font color="#000000"><a href="lexique/pageLexique.php?sommaire=1&lettre=0"><font color="#000000">Lexique 
             du rugby</font></a></font><br>
             <font color="#000000"><a href="lexique/pageLexique.php?sommaire=2"><font color="#000000" >Expressions 
             du rugby</font></a></font></font><a href="lexique/pageLexique.php?sommaire=3"><br>
             <font color="#000000" size="5" face="Arial, Helvetica, sans-serif">Phrases 
-            c&eacute;l&eacute;bres</font></a><br>
+            célébres</font></a><br>
             <br>
           </p>
         </div>
@@ -113,7 +113,7 @@
     <tr> 
       <td height="37" colspan="2" bgcolor="#003366"> 
         <div align="center"><font color="#FFFFFF" size="5" face="Arial, Helvetica, sans-serif"></font></div>
-        <div align="center"><font color="#FFFFFF" size="5" face="Arial, Helvetica, sans-serif"><b>G&eacute;ographie</b></font></div>
+        <div align="center"><font color="#FFFFFF" size="5" face="Arial, Helvetica, sans-serif"><b>Géographie</b></font></div>
       </td>
     </tr>
     <tr> 
@@ -140,12 +140,12 @@
       </td>
       <td height="37" width="340" bgcolor="#003366"> 
         <div align="center"><b><font color="#FFFFFF" size="5" face="Arial, Helvetica, sans-serif">Sports 
-          c&eacute;r&eacute;bral</font></b></div>
+          cérébral</font></b></div>
       </td>
     </tr>
     <tr> 
       <td height="149" width="340"> 
-        <div align="center"><font color="#000000" size="5" face="Arial, Helvetica, sans-serif"><!--<a href="jeux/accueil.php">-->M&eacute;mory<!--</a>--></font></div>
+        <div align="center"><font color="#000000" size="5" face="Arial, Helvetica, sans-serif"><!--<a href="jeux/accueil.php">-->Mémory<!--</a>--></font></div>
       </td>
     </tr>
     <tr> 

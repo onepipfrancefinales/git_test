@@ -30,7 +30,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="139"> 
-      <div align="center">1re S&eacute;rie</div>
+      <div align="center">1re Série</div>
     </td>
     <td width="217"> 
       <div align="center"><font size="4">Mezin</font></div>
@@ -38,7 +38,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="139"> 
-      <div align="center">2me S&eacute;rie</div>
+      <div align="center">2me Série</div>
     </td>
     <td width="217"> 
       <div align="center"><font size="4">Le Buisson</font></div>
@@ -46,7 +46,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="139"> 
-      <div align="center">3me S&eacute;rie</div>
+      <div align="center">3me Série</div>
     </td>
     <td width="217"> 
       <div align="center"><font size="4">Buzet</font></div>
@@ -54,7 +54,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="139"> 
-      <div align="center">4me S&eacute;rie</div>
+      <div align="center">4me Série</div>
     </td>
     <td width="217"> 
       <div align="center"><font size="4">Lanquais</font></div>
@@ -62,7 +62,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="139"> 
-      <div align="center">R&eacute;serve</div>
+      <div align="center">Réserve</div>
     </td>
     <td width="217"> 
       <div align="center"><font size="4">Villeneuve sur Lot</font></div>
@@ -70,14 +70,14 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="139"> 
-      <div align="center">R&eacute;serve PH</div>
+      <div align="center">Réserve PH</div>
     </td>
     <td width="217"> 
       <div align="center"><font size="4">Saint Astier Neuvic</font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
-    <td width="139">R&eacute;serve 1re s&eacute;rie</td>
+    <td width="139">Réserve 1re série</td>
     <td width="217"><font size="4">Castillonnes</font></td>
   </tr>
 </table>

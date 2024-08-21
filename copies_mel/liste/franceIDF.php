@@ -13,9 +13,9 @@
   </tr>
   <tr> 
     <td colspan="2" bgcolor="#FFCC33"> 
-      <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;titions 
+      <div align="center"><font color="#000000" size="4"><b><font size="5">Compétitions 
         <br>
-        S&eacute;niors</font></b></font></div>
+        Séniors</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -35,10 +35,10 @@
     </td>
   </tr>
   <tr> 
-    <td width="213"><font color="#000000">Elimin&eacute;e en demi finale</font></td>
+    <td width="213"><font color="#000000">Eliminée en demi finale</font></td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Racing 
-        M&eacute;tro 92</font></div>
+        Métro 92</font></div>
     </td>
   </tr>
   <tr> 
@@ -53,7 +53,7 @@
   </tr>
   <tr> 
     <td width="213" height="33"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">F&eacute;d 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">Féd 
         1- Accès Pro D2</font></a></font></b></div>
     </td>
     <td width="237" height="33" bgcolor="#009900"> 
@@ -71,7 +71,7 @@
   </tr>
   <tr> 
     <td width="213" height="22"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">F&eacute;d&eacute;rale1 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">Fédérale1 
         - J.Prat</font></a></font></b></div>
     </td>
     <td width="237" height="22" bgcolor="#FFFFFF"> 
@@ -80,7 +80,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale2/pagefederale2.php?variable_1=2018"><font color="#000000">F&eacute;d&eacute;rale 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale2/pagefederale2.php?variable_1=2018"><font color="#000000">Fédérale 
         2</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
@@ -89,7 +89,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 8me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 8me de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Beauvais</font></div>
@@ -97,7 +97,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 8me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 8me de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Orsay</font></div>
@@ -105,7 +105,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center">Elimin&eacute;e en16me de finale</div>
+      <div align="center">Eliminée en16me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Drancy</font></div>
@@ -113,7 +113,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale3/pagefederale3.php?variable_1=2018"><font color="#000000">F&eacute;d&eacute;rale 
+      <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale3/pagefederale3.php?variable_1=2018"><font color="#000000">Fédérale 
         3</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
@@ -131,7 +131,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 16me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 16me de finale</font></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font color="#FF0000"><font face="Arial, Helvetica, sans-serif">Courbevoie</font></font></div>
@@ -139,7 +139,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 16me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 16me de finale</font></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font color="#FF0000"><font face="Arial, Helvetica, sans-serif">Gretz 
@@ -148,7 +148,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Sucy 
@@ -157,7 +157,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Houilles</font></div>
@@ -165,7 +165,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Compiegne</font></div>
@@ -181,7 +181,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en quarts de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en quarts de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font color="#000000"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Versailles</font></font></div>
@@ -189,7 +189,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 8me de finale<b></b></font></div>
+      <div align="center"><font color="#000000">Eliminée en 8me de finale<b></b></font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">MLSGP</font></div>
@@ -197,7 +197,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 8me de finale<b></b></font></div>
+      <div align="center"><font color="#000000">Eliminée en 8me de finale<b></b></font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font color="#FF0000"><font face="Arial, Helvetica, sans-serif">Clichy</font></font></div>
@@ -205,7 +205,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC" height="24"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC" height="24"> 
       <div align="center"><font color="#000000"><font face="Arial, Helvetica, sans-serif" color="#000000"><font color="#FF0000">Sarcelles</font></font></font></div>
@@ -213,7 +213,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC" height="17"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC" height="17"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Bagneux</font></div>
@@ -221,7 +221,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC" height="18"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC" height="18"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Cergy 
@@ -246,23 +246,23 @@
   </tr>
   <tr> 
     <td width="213" height="15"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en quarts de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en quarts de finale</font></div>
     </td>
     <td width="237" bgcolor="#FFFFFF" height="15"> 
-      <p align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Vall&eacute;e 
+      <p align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Vallée 
         de Montmorency</font></p>
     </td>
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en quarts de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en quarts de finale</font></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Montesson</font></div>
     </td>
   </tr>
   <tr> 
-    <td width="213"><font color="#000000">Elimin&eacute;e en 8me de finale</font></td>
+    <td width="213"><font color="#000000">Eliminée en 8me de finale</font></td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Aulnay 
         sous bois</font></div>
@@ -270,7 +270,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Garches</font></div>
@@ -278,7 +278,7 @@
   </tr>
   <tr> 
     <td width="213" height="18"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF" height="18"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Saint 
@@ -288,7 +288,7 @@
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/1serie/page1serie.php?variable_1=2018"><font color="#000000">1re 
-        S&eacute;rie</font></a></font></b></div>
+        Série</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font color="#000000"><i>32me de finale</i></font></div>
@@ -302,7 +302,7 @@
     </td>
   </tr>
   <tr> 
-    <td width="213" bgcolor="#CCCCCC"><font color="#000000">Elimin&eacute;e en 
+    <td width="213" bgcolor="#CCCCCC"><font color="#000000">Eliminée en 
       quarts de finale</font></td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Paris 
@@ -310,14 +310,14 @@
     </td>
   </tr>
   <tr> 
-    <td width="213" bgcolor="#CCCCCC"><font color="#000000">Elimin&eacute;e en 
+    <td width="213" bgcolor="#CCCCCC"><font color="#000000">Eliminée en 
       quarts de finale</font></td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Senlis</font></div>
     </td>
   </tr>
   <tr> 
-    <td width="213" bgcolor="#CCCCCC"><font color="#000000">Elimin&eacute;e en 
+    <td width="213" bgcolor="#CCCCCC"><font color="#000000">Eliminée en 
       8me de finale</font></td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Gouaix 
@@ -326,7 +326,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center">Elimin&eacute;e en16me de finale</div>
+      <div align="center">Eliminée en16me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Yerres</font></div>
@@ -334,7 +334,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC" height="3"> 
-      <div align="center">Elimin&eacute;e en16me de finale</div>
+      <div align="center">Eliminée en16me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC" height="3"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">L'Isle 
@@ -344,7 +344,7 @@
   <tr> 
     <td width="213"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=2018"><font color="#000000">2me 
-        S&eacute;rie</font></a></font></b></div>
+        Série</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font color="#000000"><i>32me de finale</i></font></div>
@@ -360,7 +360,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en quarts de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en quarts de finale</font></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><font color="#FF0000">Athis 
@@ -369,7 +369,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Dourdan</font></div>
@@ -377,7 +377,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Alfortville</font></div>
@@ -385,7 +385,7 @@
   </tr>
   <tr> 
     <td width="213" height="2"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF" height="2"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Epinay</font></div>
@@ -393,7 +393,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Bords 
@@ -403,14 +403,14 @@
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=2018"><font color="#000000">3me 
-        S&eacute;rie</font></a></font></b></div>
+        Série</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font color="#000000"><i>16me de finale</i></font></div>
     </td>
   </tr>
   <tr> 
-    <td width="213" bgcolor="#CCCCCC"><font color="#000000">Elimin&eacute;e endemi 
+    <td width="213" bgcolor="#CCCCCC"><font color="#000000">Eliminée endemi 
       finale</font></td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><font color="#FF0000">Sainte 
@@ -419,7 +419,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC" height="26"> 
-      <div align="center">Elimin&eacute;e en 8me de finale</div>
+      <div align="center">Eliminée en 8me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC" height="26"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><font color="#FF0000">Arpajon</font></font></div>
@@ -427,7 +427,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC" height="26"> 
-      <div align="center">Elimin&eacute;e en16me de finale</div>
+      <div align="center">Eliminée en16me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC" height="26"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><font color="#FF0000">Nanterre</font></font></div>
@@ -436,7 +436,7 @@
   <tr> 
     <td width="213"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=2018"><font color="#000000">4me 
-        S&eacute;rie</font></a></font></b></div>
+        Série</font></a></font></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font color="#000000"><i>16me de finale</i></font></div>
@@ -450,7 +450,7 @@
     </td>
   </tr>
   <tr> 
-    <td width="213" height="22"><font color="#000000">Elimin&eacute;e en quarts 
+    <td width="213" height="22"><font color="#000000">Eliminée en quarts 
       de finale</font><font face="Arial, Helvetica, sans-serif"><b></b></font></td>
     <td width="237" bgcolor="#FFFFFF" height="22"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><font color="#FF0000">Chalons 
@@ -459,7 +459,7 @@
   </tr>
   <tr> 
     <td width="213" height="20"> 
-      <div align="center">Elimin&eacute;e en 8me de finale</div>
+      <div align="center">Eliminée en 8me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF" height="20"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><font color="#FF0000">Sevres 
@@ -476,9 +476,9 @@
   </tr>
   <tr> 
     <td colspan="2" height="57" bgcolor="#FFCC33"> 
-      <div align="center"><b><font color="#000000" size="4"><font size="5">Comp&eacute;titions 
+      <div align="center"><b><font color="#000000" size="4"><font size="5">Compétitions 
         <br>
-        F&eacute;minines</font></font></b></div>
+        Féminines</font></font></b></div>
     </td>
   </tr>
   <tr> 
@@ -506,7 +506,7 @@
   </tr>
   <tr> 
     <td width="213" height="25"> 
-      <div align="center">Elimin&eacute;e en quarts de finale</div>
+      <div align="center">Eliminée en quarts de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF" height="25"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><font color="#FF0000">Stade 
@@ -515,7 +515,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2018"><font color="#000000" size="4">F&eacute;d&eacute;rale 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2018"><font color="#000000" size="4">Fédérale 
         1 </font></a></b></div>
     </td>
     <td width="237" bgcolor="#009900"> 
@@ -525,7 +525,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#FFFFFF"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2018"><font color="#000000" size="4">F&eacute;d&eacute;rale 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=2018"><font color="#000000" size="4">Fédérale 
         2</font></a></b></div>
     </td>
     <td width="237" bgcolor="#009900"> 
@@ -534,14 +534,14 @@
     </td>
   </tr>
   <tr> 
-    <td width="213" bgcolor="#FFFFFF">Elimin&eacute;e en quarts de finale</td>
+    <td width="213" bgcolor="#FFFFFF">Eliminée en quarts de finale</td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">SCUF-PORC</font></div>
     </td>
   </tr>
   <tr> 
     <td width="213" bgcolor="#FFFFFF"> 
-      <div align="center">Elimin&eacute;e en 8me de finale</div>
+      <div align="center">Eliminée en 8me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Sainte 
@@ -554,7 +554,7 @@
   <tr> 
     <td colspan="2" bgcolor="#FFCC33" height="56"> 
       <div align="center"> 
-        <p><font color="#000000" size="4"><b><font size="5">Comp&eacute;titions 
+        <p><font color="#000000" size="4"><b><font size="5">Compétitions 
           <br>
           Equipe II</font></b></font></p>
       </div>
@@ -578,7 +578,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=2018"><font color="#000000" size="4">F&eacute;d&eacute;rale 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/federaleb/pagefederaleb.php?variable_1=2018"><font color="#000000" size="4">Fédérale 
         B</font></a></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
@@ -587,20 +587,20 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en quarts de finale</div>
+      <div align="center">Eliminée en quarts de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">PUC</font></div>
     </td>
   </tr>
   <tr> 
-    <td width="213">Elimin&eacute;e en 16me de finale</td>
+    <td width="213">Eliminée en 16me de finale</td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Plaisir</font></div>
     </td>
   </tr>
   <tr> 
-    <td width="213">Elimin&eacute;e en 16me de finale</td>
+    <td width="213">Eliminée en 16me de finale</td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Ris 
         Orangis</font></div>
@@ -625,7 +625,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center">Elimin&eacute;e en 8me de finale</div>
+      <div align="center">Eliminée en 8me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Boulogne 
@@ -634,7 +634,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Pontault 
@@ -643,7 +643,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Gretz 
@@ -652,7 +652,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Sucy 
@@ -661,7 +661,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Houilles</font></div>
@@ -669,7 +669,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">SCUF 
@@ -678,7 +678,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=2018"><font color="#000000" size="4">R&eacute;serve</font></a></b></div>
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/reserve/pagereserve.php?variable_1=2018"><font color="#000000" size="4">Réserve</font></a></b></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font color="#000000"><i>16me de finale</i></font></div>
@@ -693,7 +693,7 @@
     </td>
   </tr>
   <tr> 
-    <td width="213">Elimin&eacute;e en demi finale</td>
+    <td width="213">Eliminée en demi finale</td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Triel 
         les Mureaux</font></div>
@@ -701,7 +701,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 16me de finale</div>
+      <div align="center">Eliminée en 16me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Cergy 
@@ -715,7 +715,7 @@
   </tr>
   <tr> 
     <td colspan="2" bgcolor="#FFCC33"> 
-      <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;tition<br>
+      <div align="center"><font color="#000000" size="4"><b><font size="5">Compétition<br>
         Entreprises / Corpo</font></b></font></div>
     </td>
   </tr>
@@ -739,7 +739,7 @@
   </tr>
   <tr> 
     <td colspan="2" bgcolor="#FFCC33"> 
-      <div align="center"><font color="#000000" size="4"><b><font size="5">Comp&eacute;tition<br>
+      <div align="center"><font color="#000000" size="4"><b><font size="5">Compétition<br>
         Jeunes</font></b></font></div>
     </td>
   </tr>
@@ -757,7 +757,7 @@
   </tr>
   <tr> 
     <td width="213" height="19"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/belascain/pagebelascain.php?variable_1=2018"><font color="#000000" size="4">B&eacute;lascain</font></a></b></div>
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/belascain/pagebelascain.php?variable_1=2018"><font color="#000000" size="4">Bélascain</font></a></b></div>
     </td>
     <td width="237" height="19" bgcolor="#009900"> 
       <div align="center"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b>Issoire 
@@ -766,7 +766,7 @@
   </tr>
   <tr> 
     <td width="213" height="18"> 
-      <div align="center">Elimin&eacute;e en 8me de finale</div>
+      <div align="center">Eliminée en 8me de finale</div>
     </td>
     <td width="237" height="18" bgcolor="#FFFFFF"> 
       <div align="center"><font color="#000000"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Suresnes</font></font></div>
@@ -782,7 +782,7 @@
     </td>
   </tr>
   <tr> 
-    <td width="213" bgcolor="#CCCCCC">Elimin&eacute;e en quarts de finale</td>
+    <td width="213" bgcolor="#CCCCCC">Eliminée en quarts de finale</td>
     <td width="237" bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" color="#FF0000">RC 
       de France</font></td>
   </tr>
@@ -804,15 +804,15 @@
     </td>
   </tr>
   <tr> 
-    <td width="213">Elimin&eacute;e en quarts de finale</td>
+    <td width="213">Eliminée en quarts de finale</td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Versailles/ 
-        V&eacute;lizy</font></div>
+        Vélizy</font></div>
     </td>
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 8me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 8me de finale</font></div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><font color="#FF0000">P.U.C</font></font></div>
@@ -839,7 +839,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 8me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 8me de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Courbevoie</font></div>
@@ -847,7 +847,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 16me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 16me de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Pontault 
@@ -856,7 +856,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 16me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 16me de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">SCUF</font></div>
@@ -864,7 +864,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 16me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 16me de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Garches 
@@ -873,7 +873,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 32me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 32me de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font color="#FF0000" face="Arial, Helvetica, sans-serif">Bords 
@@ -882,7 +882,7 @@
   </tr>
   <tr> 
     <td width="213" bgcolor="#CCCCCC"> 
-      <div align="center"><font color="#000000">Elimin&eacute;e en 32me de finale</font></div>
+      <div align="center"><font color="#000000">Eliminée en 32me de finale</font></div>
     </td>
     <td width="237" bgcolor="#CCCCCC"> 
       <div align="center"><font color="#FF0000" face="Arial, Helvetica, sans-serif">Yerres</font></div>
@@ -897,7 +897,7 @@
     </td>
   </tr>
   <tr> 
-    <td width="213">Elimin&eacute;e en quarts de finale</td>
+    <td width="213">Eliminée en quarts de finale</td>
     <td width="237" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif" color="#FF0000">RC 
       de France</font></td>
   </tr>
@@ -928,7 +928,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 8me de finale</div>
+      <div align="center">Eliminée en 8me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Paris 
@@ -937,7 +937,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 8me de finale</div>
+      <div align="center">Eliminée en 8me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Surenes</font></div>
@@ -945,7 +945,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Rueil</font></div>
@@ -953,7 +953,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Anthony 
@@ -962,7 +962,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Senlis</font></div>
@@ -970,7 +970,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Val 
@@ -979,7 +979,7 @@
   </tr>
   <tr> 
     <td width="213"> 
-      <div align="center">Elimin&eacute;e en 32me de finale</div>
+      <div align="center">Eliminée en 32me de finale</div>
     </td>
     <td width="237" bgcolor="#FFFFFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Versailles</font></div>

@@ -6,12 +6,12 @@
 
 <body bgcolor="#FFFFFF" text="#000000">
 <h2 align="center"><br>
-  Clubs les plus titr&eacute;s</h2>
+  Clubs les plus titrés</h2>
 <h2 align="center">&nbsp;</h2>
 <div align="center"><font color="#000000" size="4" face="Arial, Helvetica, sans-serif">122 éditions</font><font face="Arial, Helvetica, sans-serif" size="4"><br>
   119 champions titrés<br>
-  x champions diff&eacute;rents<br>
-  Ci-dessous le d&eacute;tails des diff&eacute;rents palmar&eacute;s</font> </div>
+  x champions différents<br>
+  Ci-dessous le détails des différents palmarés</font> </div>
 <h2 align="center">&nbsp;</h2>
 <div align="center">
   <table width="547" border="1">
@@ -60,7 +60,7 @@
         </td>
     </tr>
     <tr> 
-      <td colspan="4"><font size="3"><i>Le club parisien a remport&eacute; 8 titres 
+      <td colspan="4"><font size="3"><i>Le club parisien a remporté 8 titres 
         sous le nom de Stade Fran&ccedil;ais et 5 sous le nom de Stade Fran&ccedil;ais 
         CASG</i></font></td>
     </tr>
@@ -114,7 +114,7 @@
     </tr>
     <tr> 
       <td colspan="4" height="26" valign="top"> 
-        <div align="center"><i>Bordeaux a remport&eacute; son 1er titre sous le 
+        <div align="center"><i>Bordeaux a remporté son 1er titre sous le 
           nom de Stade Bordelais.</i></div>
       </td>
     </tr>
@@ -136,7 +136,7 @@
       <td colspan="4" height="75"> <i>AS Perpignan (Arlequins perpignanais) 1914, 
         <br>
         US Perpignan 1921 et 1924, <br>
-        USAP (Union Sportive des Arlequins Perpignanais) ensuite r&eacute;sultant 
+        USAP (Union Sportive des Arlequins Perpignanais) ensuite résultant 
         de la fusion des 2 premiers.</i></td>
     </tr>
     <tr> 
@@ -224,7 +224,7 @@
         <div align="center"></div>
       </td>
       <td width="162"> 
-        <div align="center">CA B&eacute;glais </div>
+        <div align="center">CA Béglais </div>
       </td>
       <td width="146"> 
         <div align="center">2 fois champions</div>

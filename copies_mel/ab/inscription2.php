@@ -9,7 +9,7 @@
 $to1 = $_POST['adresse1'];
 $subject1 = ' Resultats et classements de toutes les equipes Armagnac Bigorre';
 $msg1 = ' Bonjour,
-Une de vos connaissance vous invite à consulter les résultats, les classements et les stats des clubs du comité Armagnac Bigorre à partir de l adresse ci dessous
+Une de vos connaissance vous invite ï¿½ consulter les rï¿½sultats, les classements et les stats des clubs du comitï¿½ Armagnac Bigorre ï¿½ partir de l adresse ci dessous
 http://francefinalesrugby.franceserv.com/resultats/page_ab.php 
 Bonne consultation
 Sportivement 
@@ -35,7 +35,7 @@ mail($to3, $subject1, $msg1);
 ?>
 <?php
 $to4 = 'onepip-france@franceserv.com';
-$subject4 = ' Comité du Armagnac Bigorre';
+$subject4 = ' Comitï¿½ du Armagnac Bigorre';
 $msg4 = $_POST['adresse1'];
 $msg5 = $_POST['adresse2'];
 $msg6 = $_POST['adresse3'];
@@ -44,12 +44,12 @@ mail($to4, $subject4, $msg4);
 mail($to4, $subject4, $msg5);
 mail($to4, $subject4, $msg6);
 ?>
-<p><b><font size="5">Envoi r&eacute;ussi</font></b></p>
+<p><b><font size="5">Envoi rÃ©ussi</font></b></p>
 <table width="494" border="0">
   <tr> 
     <td colspan="3"> 
       <div align="center"><a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php "><font size="6">Retour 
-        aux résutats et aux classements </font></a> </div>
+        aux rï¿½sutats et aux classements </font></a> </div>
       <div align="center"></div>
     </td>
   </tr>

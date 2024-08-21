@@ -30,7 +30,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000">1re S&eacute;rie</font></div>
+      <div align="center"><font color="#000000">1re Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Trie sur Ba&iuml;se</font></div>
@@ -38,7 +38,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font color="#000000">2me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000">2me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Gondrin</font></div>
@@ -46,7 +46,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000">3me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000">3me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Vic en Bigorre</font></div>
@@ -54,7 +54,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font color="#000000">4me S&eacute;rie</font></div>
+      <div align="center"><font color="#000000">4me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Villecomtal</font></div>
@@ -62,7 +62,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font color="#000000">R&eacute;serve</font></div>
+      <div align="center"><font color="#000000">Réserve</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">RC Auch</font></div>
@@ -70,7 +70,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font color="#000000">R&eacute;serve PH</font></div>
+      <div align="center"><font color="#000000">Réserve PH</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"></font></div>

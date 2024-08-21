@@ -25,7 +25,7 @@
         <tr> 
           <td width="83">1892 </td>
           <td width="891">Pour la 1ère finale, le Racing Club de France 
-            a pour capitaine le P&eacute;ruvien Carlos Gonzalez de Candamo</td>
+            a pour capitaine le Péruvien Carlos Gonzalez de Candamo</td>
         </tr>
         <tr> 
           <td width="83"> 
@@ -33,8 +33,8 @@
             <p>1893</p>
           </td>
           <td width="891"> 
-            <p> La finale Stade Fran&ccedil;ais - RCF est arbitr&eacute;e par 
-              un N&eacute;o-Z&eacute;landais, Thomas Ryan</p>
+            <p> La finale Stade Fran&ccedil;ais - RCF est arbitrée par 
+              un Néo-Zélandais, Thomas Ryan</p>
           </td>
         </tr>
         <tr> 
@@ -43,20 +43,20 @@
         </tr>
         <tr> 
           <td width="83">1899</td>
-          <td width="891">Le Stade Bordelais Universit&eacute; Club est le premier 
+          <td width="891">Le Stade Bordelais Université Club est le premier 
             club non parisien &agrave; participer &agrave; une finale</td>
         </tr>
         <tr> 
           <td width="83">1901</td>
-          <td width="891"> Le Stade Fran&ccedil;ais est d&eacute;clar&eacute; 
-            vainqueur par disqualification du SBUC malgr&eacute; la victoire de 
+          <td width="891"> Le Stade Fran&ccedil;ais est déclaré 
+            vainqueur par disqualification du SBUC malgré la victoire de 
             ce dernier par 3 &agrave; 0. En effet, &agrave; la suite de la fusion 
             des clubs du Stade Bordelais et du Bordeaux UC, trois joueurs de ce 
             club n'ont pas les trois mois d'appartenance au club requis pour &ecirc;tre 
-            qualifi&eacute;s: Moyzes - Cazala et Lannes. L'USFSA annule le r&eacute;sultat 
-            et d&eacute;cide que la finale sera rejou&eacute;e &agrave; Paris. 
-            Jugeant son honneur bafou&eacute;, le SBUC refuse le jugement et le 
-            Stade Fran&ccedil;ais est d&eacute;clar&eacute; champion de France 
+            qualifiés: Moyzes - Cazala et Lannes. L'USFSA annule le résultat 
+            et décide que la finale sera rejouée &agrave; Paris. 
+            Jugeant son honneur bafoué, le SBUC refuse le jugement et le 
+            Stade Fran&ccedil;ais est déclaré champion de France 
           </td>
         </tr>
         <tr> 
@@ -69,12 +69,12 @@
         </tr>
         <tr> 
           <td width="83">1902</td>
-          <td width="891"> La finale RCF - SBUC est arbitr&eacute;e par le Gallois 
+          <td width="891"> La finale RCF - SBUC est arbitrée par le Gallois 
             Basil G. Wood </td>
         </tr>
         <tr> 
           <td width="83">1904</td>
-          <td width="891"> Le Stade Bordelais Universit&eacute; Club est le premier 
+          <td width="891"> Le Stade Bordelais Université Club est le premier 
             club non parisien &agrave; s'adjuger le titre de Champion de France 
           </td>
         </tr>
@@ -85,10 +85,10 @@
         <tr> 
           <td width="83">1912</td>
           <td width="891"> 
-            <div align="center">L'&eacute;quipe du Stade Toulousain, Championne 
+            <div align="center">L'équipe du Stade Toulousain, Championne 
               de France, compte dans ses rangs, au poste d'ailier, le joueur au 
               patronyme le plus long du rugby fran&ccedil;ais: Marie-Joseph Fulcrand 
-              Pierre B&eacute;rard Latreille de Fozières </div>
+              Pierre Bérard Latreille de Fozières </div>
           </td>
         </tr>
         <tr> 
@@ -99,8 +99,8 @@
         </tr>
         <tr> 
           <td width="83">1922</td>
-          <td width="891"> La finale se d&eacute;roule entre Toulouse et Bayonne. 
-            Pour la 1ère fois, les amateurs de balle ovale peuvent &eacute;couter 
+          <td width="891"> La finale se déroule entre Toulouse et Bayonne. 
+            Pour la 1ère fois, les amateurs de balle ovale peuvent écouter 
             la retransmission du match &agrave; la TSF </td>
         </tr>
         <tr> 
@@ -108,23 +108,23 @@
           <td width="891" height="9">&nbsp;</td>
         </tr>
         <tr> 
-          <td colspan="2"><b>Finale radiodiffus&eacute;e</b></td>
+          <td colspan="2"><b>Finale radiodiffusée</b></td>
         </tr>
         <tr> 
           <td width="83">13 Mai 1923</td>
           <td width="891"> La finale du Championnat de France est, pour la 1ère 
-            fois, radiodiffus&eacute;e </td>
+            fois, radiodiffusée </td>
         </tr>
         <tr> 
-          <td colspan="2"><b>Finale rejou&eacute;e</b></td>
+          <td colspan="2"><b>Finale rejouée</b></td>
         </tr>
         <tr> 
           <td width="83">1925</td>
           <td width="891"> A Toulon, la rencontre entre l'US Perpignannaise et 
             l'AS Carcassonnaise se solde par un score nul 0 &agrave; 0. Le règlement 
-            pr&eacute;voit des prolongations. Au bout de 5 minutes de jeu, en 
+            prévoit des prolongations. Au bout de 5 minutes de jeu, en 
             raison de la pluie incessante, l'arbitre, Robert Vigne, en accord 
-            avec les deux capitaines arr&ecirc;te la rencontre. Le match est rejou&eacute; 
+            avec les deux capitaines arr&ecirc;te la rencontre. Le match est rejoué 
             une semaine plus tard et voit la victoire de Narbonne sur l'US Perpignannaise, 
             5 &agrave; 0 </td>
         </tr>
@@ -137,7 +137,7 @@
         </tr>
         <tr> 
           <td width="83">1926</td>
-          <td width="891"> Andr&eacute; P&eacute;pion remporte son 3ème 
+          <td width="891"> André Pépion remporte son 3ème 
             titre de Champion de France avec le Stade Toulousain. Il occupe le 
             poste d'arrière alors qu'il jouait 2ème ligne pour les 
             deux premiers titres.</td>
@@ -163,8 +163,8 @@
         <tr> 
           <td width="83">1906</td>
           <td width="891">1906 L'un des Champions de France a pour nom Charcot 
-            et pr&eacute;nom Jean. Il deviendra l'un des explorateurs mondiaux 
-            les plus r&eacute;put&eacute;s </td>
+            et prénom Jean. Il deviendra l'un des explorateurs mondiaux 
+            les plus réputés </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -172,9 +172,9 @@
         </tr>
         <tr> 
           <td width="83">1908</td>
-          <td width="891">1908 La finale Stade Fran&ccedil;ais - SBUC est arbitr&eacute;e 
+          <td width="891">1908 La finale Stade Fran&ccedil;ais - SBUC est arbitrée 
             par l'Anglais Frank C. Porter-Irwin. A l'issue de la rencontre, l'arbitre 
-            est port&eacute; en triomphe par les joueurs </td>
+            est porté en triomphe par les joueurs </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -191,14 +191,14 @@
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
-          <td width="891">1915 -1919 Suspension de toutes comp&eacute;titions 
+          <td width="891">1915 -1919 Suspension de toutes compétitions 
             durant le 1er conflit mondial</td>
         </tr>
         <tr> 
           <td width="83">1920</td>
           <td width="891"><br>
-            1920 L'arbitre de la finale, Octave L&eacute;ry, devient, quelques 
-            mois plus tard, le 1er Pr&eacute;sident de la F&eacute;d&eacute;ration 
+            1920 L'arbitre de la finale, Octave Léry, devient, quelques 
+            mois plus tard, le 1er Président de la Fédération 
             Fran&ccedil;aise de Rugby (FFR) </td>
         </tr>
         <tr> 
@@ -207,7 +207,7 @@
         </tr>
         <tr> 
           <td width="83">1926</td>
-          <td width="891">1926 Andr&eacute; P&eacute;pion remporte son 3ème 
+          <td width="891">1926 André Pépion remporte son 3ème 
             titre de Champion de France avec le Stade Toulousain. Il occupe le 
             poste d'arrière alors qu'il jouait 2ème ligne pour les 
             deux premiers titres. Insolite! </td>
@@ -220,7 +220,7 @@
           <td width="83">1927</td>
           <td width="891"> 
             <p>29 Mai 1927 Le jour de la finale entre le Stade Toulousain et le 
-              Stade Fran&ccedil;ais, Aim&eacute; Cassayet, h&eacute;ros l&eacute;gendaire 
+              Stade Fran&ccedil;ais, Aimé Cassayet, héros légendaire 
               du rugby fran&ccedil;ais, est conduit &agrave; sa dernière 
               demeure <br>
             </p>
@@ -233,16 +233,16 @@
         </tr>
         <tr> 
           <td width="83">1930</td>
-          <td width="891">26 Avril 1930 18 Mai 1930 D&eacute;cembre 1930 L'unit&eacute; 
+          <td width="891">26 Avril 1930 18 Mai 1930 Décembre 1930 L'unité 
             du rugby fran&ccedil;ais explose. Face aux problèmes du Championnat 
-            imput&eacute;s &agrave; la FFR, 6 clubs, le Stade Fran&ccedil;ais, 
-            le SBUC, le Stade Toulousain, l'Aviron Bayonnais, l'USAP et Pau d&eacute;cident 
-            de cr&eacute;er le &quot; Challenge des 6 &quot; dont la 1ère 
-            &eacute;dition est gagn&eacute;e par ToulouseLe SU Agenais bat l'US 
+            imputés &agrave; la FFR, 6 clubs, le Stade Fran&ccedil;ais, 
+            le SBUC, le Stade Toulousain, l'Aviron Bayonnais, l'USAP et Pau décident 
+            de créer le &quot; Challenge des 6 &quot; dont la 1ère 
+            édition est gagnée par ToulouseLe SU Agenais bat l'US 
             Quillannaise 4 &agrave; 0 après prolongationsLe groupe des 
             6 est rejoint par 9 autres clubs (Lyon, Bordeaux, Grenoble, Limoges, 
             Biarritz, Carcassonne, Nantes, Tarbes, Narbonne). Le but de ce groupement 
-            concerne la d&eacute;fense de l'amateurisme </td>
+            concerne la défense de l'amateurisme </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -255,9 +255,9 @@
         <tr> 
           <td width="83">1931</td>
           <td width="891">24 Janvier 1931 19 Mai 1931 Le groupe des 15 fonde l'UFRA 
-            (Union Fran&ccedil;aise du Rugby Amateur). Deux comp&eacute;titions 
+            (Union Fran&ccedil;aise du Rugby Amateur). Deux compétitions 
             distinctes auront lieu, celle de la FFR et celle de l'UFRA Le Lyonnais 
-            Claudel est expuls&eacute; par l'arbitre. Le m&ecirc;me sc&eacute;nario 
+            Claudel est expulsé par l'arbitre. Le m&ecirc;me scénario 
             se reproduit en 1932. En 1933, il ne dispute pas la finale </td>
         </tr>
         <tr> 
@@ -268,8 +268,8 @@
           <td width="83">1932</td>
           <td width="891"> 
             <p> </p>
-            <p>5 Mai 1932 La FFR et l'UFRA signent l'accord de r&eacute;unification 
-              par leur Pr&eacute;sident respectif, Roger Dantou et Edouard de 
+            <p>5 Mai 1932 La FFR et l'UFRA signent l'accord de réunification 
+              par leur Président respectif, Roger Dantou et Edouard de 
               Luze </p>
           </td>
         </tr>
@@ -316,12 +316,12 @@
         <tr> 
           <td width="83">1947</td>
           <td width="891">1947 La finale Toulouse - Agen se dispute &agrave; Toulouse, 
-            malgr&eacute; les protestations des Agenais. A la 24ème minute 
+            malgré les protestations des Agenais. A la 24ème minute 
             de jeu, l'arbitre, Monsieur Maurice Delmas, demande &agrave; l'Agenais 
             Guy Basquet, coupable d'un mauvais geste, de regagner les vestiaires. 
             Celui-ci refuse. Les Agenais, solidaires, menacent de quitter le terrain 
-            si l'arbitre maintient sa d&eacute;cision. Il faut l'intervention 
-            du Pr&eacute;sident de la F&eacute;d&eacute;ration Fran&ccedil;aise 
+            si l'arbitre maintient sa décision. Il faut l'intervention 
+            du Président de la Fédération Fran&ccedil;aise 
             de Rugby, Alfred Eluère, pour trouver une solution originale! 
             Basquet reste hors du terrain jusqu'&agrave; la mi-temps pour y revenir 
             ensuite. Sans le savoir, Alfred Eluère vient d'inventer l'exclusion 
@@ -336,7 +336,7 @@
           <td width="83">1949</td>
           <td width="891">1949 Le match entre le Castres Olympique et le Stade 
             Montois se solde, après prolongations, par un match nul 3 &agrave; 
-            3. Le match rejou&eacute; une semaine plus tard voit la victoire de 
+            3. Le match rejoué une semaine plus tard voit la victoire de 
             Castres 14 &agrave; 3 </td>
         </tr>
         <tr> 
@@ -357,10 +357,10 @@
         </tr>
         <tr> 
           <td width="83">1953</td>
-          <td width="891">1953 Le FC Lourdes est la 1ère &eacute;quipe 
-            &agrave; r&eacute;aliser le doubl&eacute; Championnat de France-Challenge 
-            Yves du ManoirLors de la finale, un certain Andr&eacute; Boniface, 
-            19 ans, dispute au poste de centre son premier match dans l'&eacute;quipe 
+          <td width="891">1953 Le FC Lourdes est la 1ère équipe 
+            &agrave; réaliser le doublé Championnat de France-Challenge 
+            Yves du ManoirLors de la finale, un certain André Boniface, 
+            19 ans, dispute au poste de centre son premier match dans l'équipe 
             première de Mont-de-Marsan </td>
         </tr>
         <tr> 
@@ -386,7 +386,7 @@
         </tr>
         <tr> 
           <td width="83">1962</td>
-          <td width="891">1962 L'Agenais, Serge M&eacute;ricq, marque l'essai 
+          <td width="891">1962 L'Agenais, Serge Méricq, marque l'essai 
             victorieux en renversant le poteau de touche ; plus tard, les images 
             montreront qu'il avait bel et bien mis le pied en touche ; &agrave; 
             quoi tiennent les grandes victoires !</td>
@@ -397,10 +397,10 @@
         </tr>
         <tr> 
           <td width="83">1966</td>
-          <td width="891">1966 La finale entre Agen et Dax se transforme en v&eacute;ritable 
-            pugilat faisant plusieurs bless&eacute;s. A l'issue de la partie, 
+          <td width="891">1966 La finale entre Agen et Dax se transforme en véritable 
+            pugilat faisant plusieurs blessés. A l'issue de la partie, 
             la FFR suspend &quot;sine die&quot; les Dacquois Berho et C. Lassère 
-            et l'Agenais Lagiewski. Un an plus tard, la sanction est lev&eacute;e! 
+            et l'Agenais Lagiewski. Un an plus tard, la sanction est levée! 
           </td>
         </tr>
         <tr> 
@@ -410,8 +410,8 @@
         <tr> 
           <td width="83">1967</td>
           <td width="891">1967 Montauban gagne la finale du Championnat puis quelques 
-            jours plus tard celle du Challenge de l'Esp&eacute;rance. C'est la 
-            seule &eacute;quipe &agrave; avoir r&eacute;ussi ce doubl&eacute; 
+            jours plus tard celle du Challenge de l'Espérance. C'est la 
+            seule équipe &agrave; avoir réussi ce doublé 
           </td>
         </tr>
         <tr> 
@@ -420,14 +420,14 @@
         </tr>
         <tr> 
           <td width="83">1968</td>
-          <td width="891">1968 A la suite des &eacute;v&eacute;nements sociaux 
+          <td width="891">1968 A la suite des événements sociaux 
             intervenus en Mai, la finale ne se dispute que le 16 Juin. Le match 
             entre le FC Lourdais et le RC Toulonnais se termine, après 
             prolongations, sur le score nul de 9 &agrave; 9. En raison de la date 
-            tardive, le match n'est pas rejou&eacute;. Le FC Lourdais est d&eacute;clar&eacute; 
-            vainqueur au b&eacute;n&eacute;fice des essais (2 &agrave; 0). Dans 
-            l'&eacute;quipe lourdaise figurent deux joueurs, Andr&eacute; Campaès 
-            et Jean Gachassin, vainqueurs, cette m&ecirc;me ann&eacute;e, du Grand 
+            tardive, le match n'est pas rejoué. Le FC Lourdais est déclaré 
+            vainqueur au bénéfice des essais (2 &agrave; 0). Dans 
+            l'équipe lourdaise figurent deux joueurs, André Campaès 
+            et Jean Gachassin, vainqueurs, cette m&ecirc;me année, du Grand 
             Chelem </td>
         </tr>
         <tr> 
@@ -445,7 +445,7 @@
         </tr>
         <tr> 
           <td width="83">1975</td>
-          <td width="891">1975 Lors de la finale B&eacute;ziers - Brive, le Biterrois 
+          <td width="891">1975 Lors de la finale Béziers - Brive, le Biterrois 
             Lavagne devient le premier rempla&ccedil;ant d'une finale </td>
         </tr>
         <tr> 
@@ -463,8 +463,8 @@
         </tr>
         <tr> 
           <td width="83">1977</td>
-          <td width="891">1977 Les Biterrois Alain Paco et Michel Palmi&eacute; 
-            deviennent Champions de France après avoir remport&eacute; 
+          <td width="891">1977 Les Biterrois Alain Paco et Michel Palmié 
+            deviennent Champions de France après avoir remporté 
             le Grand Chelem et avant de remporter le Challenge Du Manoir </td>
         </tr>
         <tr> 
@@ -482,12 +482,12 @@
         <tr> 
           <td width="83">1981</td>
           <td width="891">1981 Pour la 1ère fois de son histoire, la finale 
-            se d&eacute;roule en nocturne au Parc des Princes &agrave; Paris et 
-            oppose l'AS Biterroise au Stade Bagn&eacute;rais, qui plus est en 
-            pr&eacute;sence de Fran&ccedil;ois Mitterrand, Pr&eacute;sident de 
-            la R&eacute;publique nouvellement &eacute;lu. Dans l'&eacute;quipe 
-            de B&eacute;ziers, Pierre Lacans est le seul joueur &agrave; avoir 
-            remport&eacute; quelques semaines plus t&ocirc;t le Grand Chelem </td>
+            se déroule en nocturne au Parc des Princes &agrave; Paris et 
+            oppose l'AS Biterroise au Stade Bagnérais, qui plus est en 
+            présence de Fran&ccedil;ois Mitterrand, Président de 
+            la République nouvellement élu. Dans l'équipe 
+            de Béziers, Pierre Lacans est le seul joueur &agrave; avoir 
+            remporté quelques semaines plus t&ocirc;t le Grand Chelem </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -495,10 +495,10 @@
         </tr>
         <tr> 
           <td width="83">1983</td>
-          <td width="891">28 Mai 1983 La finale oppose B&eacute;ziers &agrave; 
-            Nice. Avant la fin de la partie et au grand dam de l'arbitre, Ren&eacute; 
+          <td width="891">28 Mai 1983 La finale oppose Béziers &agrave; 
+            Nice. Avant la fin de la partie et au grand dam de l'arbitre, René 
             Hourquet, le terrain est envahi par les supporters avant que la raison 
-            ne l'emporte et laisse la fin du match se d&eacute;rouler </td>
+            ne l'emporte et laisse la fin du match se dérouler </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -511,11 +511,11 @@
         <tr> 
           <td width="83">1984</td>
           <td width="891">1984 L'AS Biterroise et le SU Agenais font match nul, 
-            après prolongations, 21 &agrave; 21. L'&eacute;quipe de France 
-            partant en tourn&eacute;e, il n'est pas pr&eacute;vu que le match 
-            puisse &ecirc;tre rejou&eacute;. On a alors recours aux tirs au but 
-            (victoire de B&eacute;ziers sur Agen 3 &agrave; 1). Une telle issue 
-            ne s'est jamais renouvel&eacute;e </td>
+            après prolongations, 21 &agrave; 21. L'équipe de France 
+            partant en tournée, il n'est pas prévu que le match 
+            puisse &ecirc;tre rejoué. On a alors recours aux tirs au but 
+            (victoire de Béziers sur Agen 3 &agrave; 1). Une telle issue 
+            ne s'est jamais renouvelée </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -533,8 +533,8 @@
         </tr>
         <tr> 
           <td width="83">1988</td>
-          <td width="891">1988 L'arbitre Michel Lamoulie, bless&eacute; en cours 
-            de match, est remplac&eacute; par Ren&eacute; Hourquet </td>
+          <td width="891">1988 L'arbitre Michel Lamoulie, blessé en cours 
+            de match, est remplacé par René Hourquet </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -545,8 +545,8 @@
           <td width="891">1990 Le Racing Club de France bat le SU Agenais 22 &agrave; 
             12 après prolongations. Les joueurs du RCF, du moins ceux appartenant 
             au &quot;Show Bizz&quot; comme Lafond, Blanc ou autre Mesnel, se sont 
-            pr&eacute;sent&eacute;s sur le terrain avec un n&#156;ud papillon 
-            rose, devenu l'emblème de la marque de v&ecirc;tements cr&eacute;&eacute;e 
+            présentés sur le terrain avec un n&#156;ud papillon 
+            rose, devenu l'emblème de la marque de v&ecirc;tements créée 
             par Franck Mesnel. A la mi-temps, leur complice, Y. Rousset est venu 
             leur servir le champagne! </td>
         </tr>
@@ -556,7 +556,7 @@
         </tr>
         <tr> 
           <td width="83">1991</td>
-          <td width="891">1991 Le CA B&eacute;glais devient Champion de France 
+          <td width="891">1991 Le CA Béglais devient Champion de France 
             gr&acirc;ce &agrave; sa fameuse tortue (pack). Pour l'occasion, les 
             trois joueurs de la 1ère ligne, S. Simon, V. Moscato et Ph. 
             Gimbert se font raser le cr&acirc;ne quelques jours avant le match 
@@ -581,14 +581,14 @@
           <td width="83">1993</td>
           <td width="891">1993 Le Castres Olympique bat le FC Grenoble 14 &agrave; 
             11, match qui fit couler beaucoup d'encre après que l'arbitre 
-            eut accord&eacute; probablement par erreur un essai aux Castrais. 
-            Gary Whetton en profite pour devenir le 1er N&eacute;o-Z&eacute;landais 
+            eut accordé probablement par erreur un essai aux Castrais. 
+            Gary Whetton en profite pour devenir le 1er Néo-Zélandais 
             champion de France. Au cours de la m&ecirc;me saison, lors du quart 
             de finale entre Castres et Narbonne, l'arbitre, Mr Gaillegot commet 
-            une erreur en ne voyant pas l'entr&eacute;e d'un 5ème rempla&ccedil;ant 
-            (nombre limit&eacute; &agrave; 4) pour l'&eacute;quipe de Castres. 
-            Après r&eacute;clamation du club de Narbonne, le match est 
-            rejou&eacute; et remport&eacute;, &agrave; nouveau, par Castres </td>
+            une erreur en ne voyant pas l'entrée d'un 5ème rempla&ccedil;ant 
+            (nombre limité &agrave; 4) pour l'équipe de Castres. 
+            Après réclamation du club de Narbonne, le match est 
+            rejoué et remporté, &agrave; nouveau, par Castres </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -596,14 +596,14 @@
         </tr>
         <tr> 
           <td width="83">1995</td>
-          <td width="891">Christophe Deylau, ouvreur du stade toulousain, &eacute;tablit 
+          <td width="891">Christophe Deylau, ouvreur du stade toulousain, établit 
             un nouveau record du nombre de points inscrits en finale de championnat 
             avec 26 points</td>
         </tr>
         <tr> 
           <td width="83">1997</td>
           <td width="891">31 Mai 1997 Le Stade Toulousain remporte son 4ème 
-            titre cons&eacute;cutif</td>
+            titre consécutif</td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -614,29 +614,29 @@
           <td width="891" bgcolor="#00FF00">Le 16 Mai 1998 1ère finale 
             au Stade de France. Le Stade Fran&ccedil;ais l'emporte face &agrave; 
             l'USAP. La 1ère ligne du Stade Fran&ccedil;ais n'est ni plus 
-            ni moins compos&eacute;e des trois joueurs au cr&acirc;ne ras&eacute; 
+            ni moins composée des trois joueurs au cr&acirc;ne rasé 
             de Bègles de 1991 mais version &quot;chevelus&quot;.La mondialisation 
-            ne touche pas que l'&eacute;conomie. Jugeons-en plut&ocirc;t.L'&eacute;quipe 
-            du Stade Fran&ccedil;ais, Championne de France pr&eacute;sente:. un 
-            Fidjien, Bolo-Bolo. un Franco-Portugais, Gomès. deux N&eacute;o-Z&eacute;landais, 
+            ne touche pas que l'économie. Jugeons-en plut&ocirc;t.L'équipe 
+            du Stade Fran&ccedil;ais, Championne de France présente:. un 
+            Fidjien, Bolo-Bolo. un Franco-Portugais, Gomès. deux Néo-Zélandais, 
             Mytton et Ross. un Italo-Argentin, Dominguez. un Anglais, Pool-Jones.Il 
             faut remonter &agrave; 1914 pour trouver un Anglais Champion de France, 
-            si l'on ose dire!. Avant Mytton et Ross, un autre N&eacute;o-Z&eacute;landais 
-            avait soulev&eacute; le bouclier, Gary Whetton avec le Castres Olympique, 
+            si l'on ose dire!. Avant Mytton et Ross, un autre Néo-Zélandais 
+            avait soulevé le bouclier, Gary Whetton avec le Castres Olympique, 
             en 1993. Un autre &quot;Black&quot; fut finaliste avec Bourgoin en 
             1997, Geany. Dominguez est le premier Argentin Champion, mais si l'on 
-            se r&eacute;fère &agrave; ses origines italiennes, on ne manquera 
+            se réfère &agrave; ses origines italiennes, on ne manquera 
             pas de rappeler le titre de Zani en 1964 avec Agen et celui de Lanfranchi 
-            avec Grenoble en 1954Lors de cette m&ecirc;me finale, d&eacute;cid&eacute;ment 
+            avec Grenoble en 1954Lors de cette m&ecirc;me finale, décidément 
             très riche en faits marquants, on notera que deux frères 
-            &eacute;taient oppos&eacute;s, Marc Li&eacute;vremont, du Stade Fran&ccedil;ais 
-            et Thomas Li&eacute;vremont de l'USAP. Cette situation n'&eacute;tait 
-            pas in&eacute;dite &eacute;tant intervenue deux autres fois, en 1909, 
-            avec Fernand Perrens du SBUC et Andr&eacute; Perrens du Stade Toulousain, 
+            étaient opposés, Marc Liévremont, du Stade Fran&ccedil;ais 
+            et Thomas Liévremont de l'USAP. Cette situation n'était 
+            pas inédite étant intervenue deux autres fois, en 1909, 
+            avec Fernand Perrens du SBUC et André Perrens du Stade Toulousain, 
             en 1958, avec Thomas (dit Diochet) Manterola du FC Lourdais et Dominique 
-            Manterola du SC Mazam&eacute;tain. Les premiers nomm&eacute;s furent 
+            Manterola du SC Mazamétain. Les premiers nommés furent 
             les vainqueursEnfin, pour clore cette longue liste, Ga&euml;l Arandiga, 
-            de l'USAP, avait commenc&eacute; la saison avec le club de MontpellierD&eacute;cid&eacute;ment, 
+            de l'USAP, avait commencé la saison avec le club de MontpellierDécidément, 
             il n'y a plus de saison! </td>
         </tr>
         <tr> 
@@ -646,7 +646,7 @@
         <tr> 
           <td width="83" height="32">1999</td>
           <td width="891" height="32">1999 Le 100ème titre de Champion 
-            a &eacute;t&eacute; remport&eacute; par le Stade Toulousain. C'est 
+            a été remporté par le Stade Toulousain. C'est 
             aussi la 15ème victoire du club en finale. Record absolu.</td>
         </tr>
         <tr> 
@@ -655,10 +655,10 @@
         </tr>
         <tr> 
           <td width="83">2000</td>
-          <td width="891">2000 La finale se joue le 15 Juillet, record de long&eacute;vit&eacute; 
-            pour le Championnat.. Le Stade Fran&ccedil;ais, vainqueur, s'est pr&eacute;sent&eacute; 
-            sans entra&icirc;neur, le dernier en date, Georges Coste, ayant &eacute;t&eacute; 
-            licenci&eacute; trois mois auparavant </td>
+          <td width="891">2000 La finale se joue le 15 Juillet, record de longévité 
+            pour le Championnat.. Le Stade Fran&ccedil;ais, vainqueur, s'est présenté 
+            sans entra&icirc;neur, le dernier en date, Georges Coste, ayant été 
+            licencié trois mois auparavant </td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -667,10 +667,10 @@
         <tr> 
           <td width="83">2001</td>
           <td width="891">2001 Le Stade Toulousain conna&icirc;t &agrave; nouveau 
-            le sacre, avec une &eacute;quipe constitu&eacute;e uniquement de joueurs 
+            le sacre, avec une équipe constituée uniquement de joueurs 
             fran&ccedil;ais et sous la houlette d'un entra&icirc;neur fran&ccedil;ais. 
-            Face &agrave; elle, l'AS Montferrand ne peut rien malgr&eacute; ses 
-            coachs australiens et quelques joueurs &eacute;trangers pour lesquels 
+            Face &agrave; elle, l'AS Montferrand ne peut rien malgré ses 
+            coachs australiens et quelques joueurs étrangers pour lesquels 
             Brennus riment surtout avec bonus </td>
         </tr>
         <tr> 
@@ -700,9 +700,9 @@
         <tr> 
           <td width="83">2004</td>
           <td width="891">2004 On pourrait parler de Championnat de France pour 
-            les &eacute;trangers : 7 sur la feuille de match du Stade Fran&ccedil;ais 
-            et 7 sur celle de l' USAP ! 43 points sur 58 ont &eacute;t&eacute; 
-            marqu&eacute;s par des &eacute;trangers. Un grand risque pour l' &eacute;quipe 
+            les étrangers : 7 sur la feuille de match du Stade Fran&ccedil;ais 
+            et 7 sur celle de l' USAP ! 43 points sur 58 ont été 
+            marqués par des étrangers. Un grand risque pour l' équipe 
             nationale </td>
         </tr>
         <tr> 
@@ -711,8 +711,8 @@
         </tr>
         <tr> 
           <td width="83">2005</td>
-          <td width="891">Dimitri Yachvili, demi de m&eacute;l&eacute;e du Biarritz 
-            Olympique, &eacute;tablit un nouveau record du nombre de points inscrits 
+          <td width="891">Dimitri Yachvili, demi de mélée du Biarritz 
+            Olympique, établit un nouveau record du nombre de points inscrits 
             en finale de championnat avec 29 points</td>
         </tr>
         <tr> 
@@ -722,16 +722,16 @@
         <tr> 
           <td width="83">2006</td>
           <td width="891">10 Juin 2006 Le Biarritz Olympique en marquant 43 points 
-            au Stade Toulousain devient le club ayant marqu&eacute; le plus de 
+            au Stade Toulousain devient le club ayant marqué le plus de 
             points lors d'une finale du Championnat de France </td>
         </tr>
         <tr> 
           <td width="83">2007</td>
           <td width="891">9 Juin 2007 Clermont-Ferrand joue la 8ème finale 
-            de son histoire et conna&icirc;t sa 8ème d&eacute;faite! Autre 
-            record dans cette finale, le nombre de joueurs &eacute;trangers dans 
-            les XV de d&eacute;part, 8 &agrave; Clermont, 5 au Stade Fran&ccedil;ais 
-            Paris .Le Capitaine du Stade Fran&ccedil;ais Paris est le 1er &eacute;tranger 
+            de son histoire et conna&icirc;t sa 8ème défaite! Autre 
+            record dans cette finale, le nombre de joueurs étrangers dans 
+            les XV de départ, 8 &agrave; Clermont, 5 au Stade Fran&ccedil;ais 
+            Paris .Le Capitaine du Stade Fran&ccedil;ais Paris est le 1er étranger 
             &agrave; soulever le bouclier de Brennus </td>
         </tr>
         <tr> 
@@ -741,9 +741,9 @@
         <tr> 
           <td width="83" height="50">2008</td>
           <td width="891" height="50">28 Juin 2008 Clermont-Ferrand joue la 9ème 
-            finale de son histoire et conna&icirc;t sa 9ème d&eacute;faite! 
-            Record &eacute;gal&eacute; dans cette finale, le nombre de joueurs 
-            &eacute;trangers dans les XV de d&eacute;part, 7 &agrave; Clermont, 
+            finale de son histoire et conna&icirc;t sa 9ème défaite! 
+            Record égalé dans cette finale, le nombre de joueurs 
+            étrangers dans les XV de départ, 7 &agrave; Clermont, 
             6 au Stade Toulousain</td>
         </tr>
         <tr> 
@@ -757,7 +757,7 @@
         <tr> 
           <td width="83" height="19">2009</td>
           <td width="891" height="19">6 Juin 2009 Clermont-Ferrand joue la 10ème 
-            finale de son histoire et conna&icirc;t sa 10ème d&eacute;faite!</td>
+            finale de son histoire et conna&icirc;t sa 10ème défaite!</td>
         </tr>
         <tr> 
           <td width="83">&nbsp;</td>
@@ -775,7 +775,7 @@
         </tr>
         <tr> 
           <td width="83">2012</td>
-          <td width="891">2012 Aucun essai n'a &eacute;t&eacute; marqu&eacute; 
+          <td width="891">2012 Aucun essai n'a été marqué 
             lors des demi-finales et de la finale. </td>
         </tr>
         <tr> 
@@ -784,15 +784,15 @@
         </tr>
         <tr> 
           <td width="83">2016</td>
-          <td width="891">2016, première finale d&eacute;localis&eacute;e 
-            &agrave; l'&eacute;tranger</td>
+          <td width="891">2016, première finale délocalisée 
+            &agrave; l'étranger</td>
         </tr>
         <tr> 
           <td width="83">2020</td>
-          <td width="891">2020 La finale du championnat de France est annul&eacute;e 
-            suite &agrave; l'&eacute;pid&eacute;mie du Covid 19 qui imposera un 
+          <td width="891">2020 La finale du championnat de France est annulée 
+            suite &agrave; l'épidémie du Covid 19 qui imposera un 
             confinement du 19 Mars au 11 mai et un interdiction de toutes pratiques 
-            sportives durant cette p&eacute;riode</td>
+            sportives durant cette période</td>
         </tr>
       </table>
       <p><br>

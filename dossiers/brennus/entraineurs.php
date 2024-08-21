@@ -9,7 +9,7 @@
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p><font size="4"><b><font size="6" face="Verdana, Arial, Helvetica, sans-serif">- 
-    Entra&icirc;neur le plus titr&eacute;</font></b></font><font face="Verdana, Arial, Helvetica, sans-serif"><b> 
+    Entra&icirc;neur le plus titré</font></b></font><font face="Verdana, Arial, Helvetica, sans-serif"><b> 
     <font size="6">-<br>
     </font></b></font></p>
   <table width="230" border="1">
@@ -29,9 +29,9 @@
   </table>
   <p><br>
     <br>
-    Guy Novès a remport&eacute; 10 titres avec le Stade Toulousain en qualit&eacute; 
+    Guy Novès a remporté 10 titres avec le Stade Toulousain en qualité 
     d'entraineur (1989, 94, 95, 96, 97, 99, 2001, 2008, 2011, 2012 )<br>
-    et 2 titres en 1985 et 1986 en qualit&eacute; de joueur.<br>
+    et 2 titres en 1985 et 1986 en qualité de joueur.<br>
     <br>
   </p>
 </div>

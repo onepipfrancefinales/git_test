@@ -17,7 +17,7 @@
       <div align="center"><font size="4">Honneur</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4"><font size="4">S&eacute;te</font></font></div>
+      <div align="center"><font size="4"><font size="4">Séte</font></font></div>
     </td>
   </tr>
   <tr> 
@@ -30,16 +30,16 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">1re S&eacute;rie</font></div>
+      <div align="center"><font size="4">1re Série</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4"><font size="4">Saint Andre&eacute; de 
+      <div align="center"><font size="4"><font size="4">Saint Andreé de 
         R.</font></font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font size="4">2me S&eacute;rie</font></div>
+      <div align="center"><font size="4">2me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4">Bessan</font></div>
@@ -47,7 +47,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">3me S&eacute;rie</font></div>
+      <div align="center"><font size="4">3me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">RC Pezens</font></font></div>
@@ -55,7 +55,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font size="4">4me S&eacute;rie</font></div>
+      <div align="center"><font size="4">4me Série</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Caunes Minervois</font></font></div>
@@ -63,7 +63,7 @@
   </tr>
   <tr bgcolor="#CCCCCC"> 
     <td width="113"> 
-      <div align="center"><font size="4">R&eacute;serve</font></div>
+      <div align="center"><font size="4">Réserve</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Avenir Bleu et Blanc</font></font></div>
@@ -71,7 +71,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td width="113"> 
-      <div align="center"><font size="4">R&eacute;serve PH</font></div>
+      <div align="center"><font size="4">Réserve PH</font></div>
     </td>
     <td width="205"> 
       <div align="center"><font size="4"><font size="4">Nissan Colombiers</font></font></div>
