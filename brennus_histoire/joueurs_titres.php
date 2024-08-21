@@ -54,7 +54,7 @@
       </td>
       <td width="190"> 
         <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>Alain 
-          Est&egrave;ve </b></font></div>
+          Estève </b></font></div>
       </td>
     </tr>
     <tr> 

@@ -62,7 +62,7 @@ mysql_close(); // D�connexion de MySQL
   au Boucau Stade avant de rejoindre l&#146;Aviron Bayonnais avec qui il remporta 
   le Challenge Yves du Manoir en 1980 et disputa la finale du Championnat de France 
   en 1982.<br>
-  Il termina sa carri&egrave;re &agrave; l&#146;US Bardos avant de devenir l&#146;entra&icirc;neur 
+  Il termina sa carrière &agrave; l&#146;US Bardos avant de devenir l&#146;entra&icirc;neur 
   puis le manager de l&#146;Aviron Bayonnais. Il décéda brutalement 
   d&#146;une rupture d&#146;anévrisme le 8 janvier 2004 &agrave; l&#146;&acirc;ge 
   de 50 ans.<br>

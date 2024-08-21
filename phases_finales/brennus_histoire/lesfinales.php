@@ -361,7 +361,7 @@
     <td width="116">Stade Fran&ccedil;ais </td>
     <td width="148">Inter-Nos </td>
     <td width="79">18-00 </td>
-    <td width="104">Bécon-les-Bruy&egrave;res </td>
+    <td width="104">Bécon-les-Bruyères </td>
   </tr>
   <tr> 
     <td width="33">2</td>
@@ -369,7 +369,7 @@
     <td width="116">Stade Fran&ccedil;ais</td>
     <td width="148">RC. France </td>
     <td width="79">07-03 </td>
-    <td width="104">Bécon-les-Bruy&egrave;res </td>
+    <td width="104">Bécon-les-Bruyères </td>
   </tr>
   <tr> 
     <td width="33">1</td>
@@ -1021,7 +1021,7 @@
   <br>
   01/06/1991<br>
   <br>
-  CA B&egrave;gles Bordeaux<br>
+  CA Bègles Bordeaux<br>
   Stade Toulousain <br>
   <br>
   19-10 <br>

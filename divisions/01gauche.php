@@ -30,7 +30,7 @@ MM_reloadPage(true);
         
       <form action="http://francefinalesrugby.franceserv.com/pageannee.php" method="POST">
         <p> 
-          <input type="submit" value="par année" name="submit33" />
+          <input type="submit" value="par annï¿½e" name="submit33" />
         </p>
         <p>
           <input type="text" name="saison" maxlength="4" size="8" />
@@ -59,7 +59,7 @@ MM_reloadPage(true);
           <option value="http://francefinalesrugby.franceserv.com/divisions/pagehonneur.php"><b>Honneur</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/pagepromotion.php"><b>Promotion 
           </b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/page1serie.php"><b>1&egrave;re 
+          <option value="http://francefinalesrugby.franceserv.com/divisions/page1serie.php"><b>1Ã¨re 
           S&eacute;rie</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/page2serie.php"><b>2i&eacute;me 
           S&eacute;rie</b></option>
@@ -84,9 +84,9 @@ MM_reloadPage(true);
           <option>----------------------</option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php"><b>Elite 1 TOP 10</b></option>
           <option value="http://francefinalesrugby.franceserv.com/divisions/page_fem_elite2.php"><b>Elite 2</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed1.php"><b>Fédérale 1</b></option>
-          <option value="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed2.php"><b>Fédérale 2</b></option>
-		  <option value="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed3.php"><b>Fédérale 3 à XII</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed1.php"><b>Fï¿½dï¿½rale 1</b></option>
+          <option value="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed2.php"><b>Fï¿½dï¿½rale 2</b></option>
+		  <option value="http://francefinalesrugby.franceserv.com/divisions/page_fem_fed3.php"><b>Fï¿½dï¿½rale 3 ï¿½ XII</b></option>
          
           <option>------------------</option>
           <option>REICHELS</option>
@@ -128,7 +128,7 @@ MM_reloadPage(true);
       <table width="95%" border="1" height="120" bgcolor="#0066FF" bordercolor="#000000">
         <tr> 
           <td align="center" valign="top" bordercolor="#000000" bgcolor="#00CCFF"> 
-            <p><b>Palmar&egrave;s Europ&eacute;ens</b></p>
+            <p><b>PalmarÃ¨s Europ&eacute;ens</b></p>
             <p> 
               <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="3">
                 <option>--------------------------------</option>
@@ -146,14 +146,14 @@ MM_reloadPage(true);
         <p>&nbsp;</p>
         <p>
           <?php
- //Connexion à MySQL
+ //Connexion ï¿½ MySQL
 //$bd=mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
 //mysql_select_db("onepip-france-db1");
 
 // -------
-// ETAPE 1 : on vérifie si l'IP se trouve déjà dans la table
-// Pour faire ça, on n'a qu'à compter le nombre d'entrées dont le champ "ip" est l'adresse ip du visiteur
+// ETAPE 1 : on vï¿½rifie si l'IP se trouve dï¿½jï¿½ dans la table
+// Pour faire ï¿½a, on n'a qu'ï¿½ compter le nombre d'entrï¿½es dont le champ "ip" est l'adresse ip du visiteur
 //$retour = mysql_query('SELECT COUNT(*) AS nbre_entrees FROM connectes WHERE ip=\'' . $_SERVER['REMOTE_ADDR'] . '\'');
 //$donnees = mysql_fetch_array($retour);
 
@@ -161,25 +161,25 @@ MM_reloadPage(true);
 //{
 //    mysql_query('INSERT INTO connectes VALUES(\'' . $_SERVER['REMOTE_ADDR'] . '\', ' . time() . ')');
 //}
-//else // L'ip se trouve déjà dans la table, on met juste à jour le timestamp
+//else // L'ip se trouve dï¿½jï¿½ dans la table, on met juste ï¿½ jour le timestamp
 //{
 //    mysql_query('UPDATE connectes SET timestamp=' . time() . ' WHERE ip=\'' . $_SERVER['REMOTE_ADDR'] . '\'');
 //}
 
 // -------
-// ETAPE 2 : on supprime toutes les entrées dont le timestamp est plus vieux que 5 minutes
+// ETAPE 2 : on supprime toutes les entrï¿½es dont le timestamp est plus vieux que 5 minutes
 //
-// On stocke dans une variable le timestamp qu'il était il y a 5 minutes :
-//$timestamp_5min = time() - (60 * 5); // 60 * 5 = nombre de secondes écoulées en 5 minutes
+// On stocke dans une variable le timestamp qu'il ï¿½tait il y a 5 minutes :
+//$timestamp_5min = time() - (60 * 5); // 60 * 5 = nombre de secondes ï¿½coulï¿½es en 5 minutes
 //mysql_query('DELETE FROM connectes WHERE timestamp < ' . $timestamp_5min);
 
 // -------
-// ETAPE 3 : on compte le nombre d'ip stockées dans la table. C'est le nombre de visiteurs connectés
+// ETAPE 3 : on compte le nombre d'ip stockï¿½es dans la table. C'est le nombre de visiteurs connectï¿½s
 //$retour = mysql_query('SELECT COUNT(*) AS nbre_entrees FROM connectes');
 //$donnees = mysql_fetch_array($retour);
 
-// Ouf ! On n'a plus qu'à afficher le nombre de connectés !
-//echo '<p>Il y a ' . $donnees['nbre_entrees'] . ' connectés</p>';
+// Ouf ! On n'a plus qu'ï¿½ afficher le nombre de connectï¿½s !
+//echo '<p>Il y a ' . $donnees['nbre_entrees'] . ' connectï¿½s</p>';
 
 //mysql_close ($bd);
 //mysql_close (mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"));

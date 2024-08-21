@@ -126,12 +126,12 @@
   <tr> 
     <td width="230">
       <p><br>
-        B&eacute;con les Bruy&egrave;res<br>
-        Stade, Stade Dubonnet Courbevoie-B&eacute;con-les-Bruy&egrave;res 1 500 
+        B&eacute;con les Bruyères<br>
+        Stade, Stade Dubonnet Courbevoie-B&eacute;con-les-Bruyères 1 500 
         spectateurs.</p>
       <p>&nbsp;</p>
       <p>terrain de l&#146;Inter-Nos (International Athletic Club) </p>
-      <p>B&eacute;con-les-Bruy&egrave;res &agrave; Courbevoie, rue Lambrechts</p>
+      <p>B&eacute;con-les-Bruyères &agrave; Courbevoie, rue Lambrechts</p>
     </td>
     <td width="98"><br>
     </td>
@@ -183,7 +183,7 @@
   </tr>
   <tr> 
     <td width="230"><br>
-      Parc des Sports de Saucli&egrave;res</td>
+      Parc des Sports de Sauclières</td>
     <td width="98">B&eacute;ziers</td>
     <td width="98"> 
       <div align="center">1</div>
@@ -313,7 +313,7 @@
     </td>
     <td width="405" height="19"> 
       <p>terrain de l&#146;Inter-Nos (International Athletic Club</p>
-      <p>B&eacute;con les Bruy&egrave;res<br>
+      <p>B&eacute;con les Bruyères<br>
         V&eacute;lodrome</p>
       <p>Terrain du stade francais</p>
       <p>&nbsp;</p>
@@ -349,7 +349,7 @@
       <div align="center">1</div>
     </td>
     <td width="469">1921 (1)</td>
-    <td width="405">Parc des Sports de Saucli&egrave;res</td>
+    <td width="405">Parc des Sports de Sauclières</td>
   </tr>
   <tr> 
     <td width="95">Narbonne</td>

@@ -782,7 +782,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
   <tr> 
     <td width="229" height="2"> 
-      <div id="coin5" >Bagn&egrave;res de Bigorre (AB) 
+      <div id="coin5" >Bagnères de Bigorre (AB) 
         <?php	echo $clubA8015; ?>
       </div>
     </td>

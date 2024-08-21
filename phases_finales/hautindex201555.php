@@ -100,15 +100,15 @@ MM_reloadPage(true);
           Série</a></b></font></div>
       </td>
       <td width="111" bgcolor="#04ADFF" height="30" valign="middle"> 
-        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top">2<font size="1">i&egrave;me</font> 
+        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top">2<font size="1">ième</font> 
           Série</a></b></font></div>
       </td>
       <td width="105" bgcolor="#04ADFF" height="30" valign="middle"> 
-        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top">3<font size="1">i&egrave;me</font> 
+        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top">3<font size="1">ième</font> 
           Série</a></b></font></div>
       </td>
       <td width="115" bgcolor="#04ADFF" height="30" valign="middle"> 
-        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top">4<font size="1">i&egrave;me</font> 
+        <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top">4<font size="1">ième</font> 
           Série</a></b></font></div>
       </td>
       <td bgcolor="#FF00FF" height="30" width="125" valign="middle"> 

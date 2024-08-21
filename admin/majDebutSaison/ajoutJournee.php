@@ -1,3 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+
+
+  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
+  <title><?php echo $champReg; ?> Maj des résultats  </title>
+  <meta name="description"
+    content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+  <meta name="classification" content="Sport,Rugby">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="resource-type" content="document">
+  <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+  <meta name="author" content="Equipe Onepip">
+  <meta name="robots" content="All">
+</head>
+
+<body>
+<div class= "alignementGauche">
+
+
+
 <?php
 //récuperation des variables
 require 'testmethodebonus.php';	
@@ -68,7 +92,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	
 	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
      {
-			echo 'Upload effectu&eacute; avec succ&egrave;s !';
+			echo 'Upload effectu&eacute; avec succès !';
 			echo "<br/>";
 			echo "----------------------------";
 			echo "<br/>";
@@ -387,9 +411,9 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	      $finPouleTraite = 17919122;
 	}
 	//NOR
-	elseif (substr($id,0,6) == 116171){
-		  $debutPouleTraite = 11617101;
-	      $finPouleTraite = 11622122;
+	elseif (substr($id,0,6) == 180171){
+		  $debutPouleTraite = 18017101;
+	      $finPouleTraite = 18022122;
 	}
 	elseif (substr($id,0,6) == 116271){
 		  $debutPouleTraite = 11627101;
@@ -708,3 +732,7 @@ echo "champRecup : ".$champRecup;echo "<br />";
 require "../../Phpleague/$ligue/admin/genererSansIhm.php";
 require '../majScores/bas.php';
 ?>
+</div>
+</body>
+
+</html>

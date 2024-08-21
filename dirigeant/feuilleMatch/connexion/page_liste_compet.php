@@ -28,7 +28,7 @@ $id_equipe = $_POST['id_equipe'];
 //echo "id_equipe : ".$id_equipe;echo "<br />";
 
 //********************************************************************
-//        Récupération de l'identifiant "Onepip", du nom etc ....
+//        Rï¿½cupï¿½ration de l'identifiant "Onepip", du nom etc ....
 //                 a partir de l'identifiant FFR
 //********************************************************************
 
@@ -50,12 +50,12 @@ $reponse = $bdd->query("SELECT id, sigle,comite, code, siglecomite, ligue
 if ($numeroLigue == 10)
 	{
 	$comite = "au";
-	$ligue="Auvergne Rhône Alpes";
+	$ligue="Auvergne Rhï¿½ne Alpes";
 	}	
 elseif ($numeroLigue == 11)
 {
 	$comite = "bg";
-	$ligue="Auvergne Rhône Alpes";
+	$ligue="Auvergne Rhï¿½ne Alpes";
 	}
 elseif ($numeroLigue == 12)
 	{	
@@ -111,7 +111,7 @@ elseif ($numeroLigue == 21)
 elseif ($numeroLigue == 22)
 	{
 	$comite = "pr";
-	$ligue="Provence Alpes Côte d'Azur";
+	$ligue="Provence Alpes Cï¿½te d'Azur";
 	}
 		
 
@@ -137,7 +137,7 @@ elseif ($numeroLigue == 22)
 require   "../../../connect1/connection3.php";
 
  
-//  *********   recherche d'un club féminin  ************
+//  *********   recherche d'un club fï¿½minin  ************
 	$reponse = $bdd->query("SELECT id_club 
 							FROM phpfem_equipes
 							WHERE id_club='$equipe'"); 
@@ -208,7 +208,7 @@ require   "../../../connect1/connection3.php";
 
 //mysql_close();
 
- // Définition des parametres de la connexion à la BD
+ // Dï¿½finition des parametres de la connexion ï¿½ la BD
 
 
 
@@ -262,7 +262,7 @@ $logo=substr($equipe, -5);
     <font size="3"> <br>
     <br>
     <br>
-    <font face="Arial, Helvetica, sans-serif" size="4">A la premi&egrave;re connection 
+    <font face="Arial, Helvetica, sans-serif" size="4">A la premiÃ¨re connection 
     le mot de passe est identique &agrave; l'identifiant</font></font></p>
   <form name="form1" method="POST" action="page_liste_competMDP.php?id_equipe=<?php echo $id_equipe;?>&type=S1&equipe=<?php echo $equipe;?>&login=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&connect=<?php echo $connect; ?>&reserve=<?php echo $reserve; ?> ">
     <table width="932" border="0" bordercolor="#000000" cellspacing="0" cellpadding="1">

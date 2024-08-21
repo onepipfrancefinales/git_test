@@ -3,9 +3,9 @@
 <html>
 <head>
 <meta name="description"
-content="RÈsulats de toutes les compÈtitions Professionnelles. Calendriers, rÈsultats et statistiques de l'honneur ‡ la 4me SÈrie, Èquipes II comprises. Egalement disponible les phases finales territoriales des annÈes prÈcÈdentes et les palmarËs territoriaux des differentes divisions du comitÈ.">
+content="RÔøΩsulats de toutes les compÔøΩtitions Professionnelles. Calendriers, rÔøΩsultats et statistiques de l'honneur ÔøΩ la 4me SÔøΩrie, ÔøΩquipes II comprises. Egalement disponible les phases finales territoriales des annÔøΩes prÔøΩcÔøΩdentes et les palmarÔøΩs territoriaux des differentes divisions du comitÔøΩ.">
 <meta name="keywords"
-content="comitÈ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,FranÁaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitÔøΩ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,FranÔøΩaise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -56,7 +56,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   finale Top 14</a></font></b></div>
               </td>
               <td height="21" valign="top" align="center" colspan="2" width="227"> 
-                <div align="center"><b><font color="#FFFFFF"> <a href="http://francefinalesrugby.franceserv.com/divisions/pagetop14.php" target="_top">Palmar&egrave;s 
+                <div align="center"><b><font color="#FFFFFF"> <a href="http://francefinalesrugby.franceserv.com/divisions/pagetop14.php" target="_top">Palmar√®s 
                   Top 14</a></font></b></div>
               </td>
             </tr>
@@ -64,7 +64,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
               <td height="21" valign="top" colspan="2" align="center"><b><font color="#FFFFFF"><a href="http://francefinalesrugby.franceserv.com/phases_finales/prod2/pageprod2.php?variable_1=<?php echo $saison;?>" target="_top">Phase 
                 finale Pro D2</a></font></b> </td>
               <td height="21" valign="top" align="center"> 
-                <div align="center"><font color="#FFFFFF"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pageproD2.php" target="_top">Palmar&egrave;s 
+                <div align="center"><font color="#FFFFFF"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pageproD2.php" target="_top">Palmar√®s 
                   Pro D2</a></b></font></div>
               </td>
             </tr>
@@ -105,11 +105,11 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <tr bordercolor="#000000"> 
               <td height="7" valign="top" colspan="3"> 
                 <div align="center"><font size="5"><iframe src="http://francefinalesrugby.franceserv.com/Phpleague/phpfem/consult/miniseul.php?
-champmini=280&typemini=GÈnÈral
+champmini=280&typemini=GÔøΩnÔøΩral
 &presentationmini=2&lienmini=non
 &classmini=1" frameborder="no" 
 height="370" width="240"><object data="http://francefinalesrugby.franceserv.com/Phpleague/phpfem/consult/miniseul.php?
-champmini=280&typemini=GÈnÈral
+champmini=280&typemini=GÔøΩnÔøΩral
 &presentationmini=2&lienmini=non
 &classmini=1" frameborder="no" 
 height="270" width="220"" type="text/html"   />
@@ -171,13 +171,13 @@ height="270" width="220"" type="text/html"   />
             <tr> 
               <td height="7" valign="top" colspan="3"> 
                 <div align="center"><font size="5"><object data="http://francefinalesrugby.franceserv.com/Phpleague/phpfem/consult/miniseul.php?
-champmini=290&typemini=GÈnÈral
+champmini=290&typemini=GÔøΩnÔøΩral
 &presentationmini=2&lienmini=non
 &classmini=1" frameborder="no" 
 height="270" width="220"" type="text/html"   />
                   </object> </font></div>
                 <div align="center"><font size="5"><iframe src="http://francefinalesrugby.franceserv.com/Phpleague/phppro/consult/miniseul.php?
-champmini=120&typemini=GÈnÈral
+champmini=120&typemini=GÔøΩnÔøΩral
 &presentationmini=2&lienmini=non
 &classmini=1" frameborder="no" 
 height="400" width="240"></iframe> </font></div>
@@ -222,7 +222,7 @@ height="400" width="240"></iframe> </font></div>
                   finale Top 14</a></font></b></div>
               </td>
               <td height="21" valign="top" align="center" colspan="2" width="227"> 
-                <div align="center"><b><font color="#FFFFFF"> <a href="http://francefinalesrugby.franceserv.com/divisions/pagetop14.php" target="_top">Palmar&egrave;s 
+                <div align="center"><b><font color="#FFFFFF"> <a href="http://francefinalesrugby.franceserv.com/divisions/pagetop14.php" target="_top">Palmar√®s 
                   Top 14</a></font></b></div>
               </td>
             </tr>
@@ -230,7 +230,7 @@ height="400" width="240"></iframe> </font></div>
               <td height="21" valign="top" colspan="2" align="center"><b><font color="#FFFFFF"><a href="http://francefinalesrugby.franceserv.com/phases_finales/prod2/pageprod2.php?variable_1=<?php echo $saison;?>" target="_top">Phase 
                 finale Pro D2</a></font></b> </td>
               <td height="21" valign="top" align="center"> 
-                <div align="center"><font color="#FFFFFF"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pageproD2.php" target="_top">Palmar&egrave;s 
+                <div align="center"><font color="#FFFFFF"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pageproD2.php" target="_top">Palmar√®s 
                   Pro D2</a></b></font></div>
               </td>
             </tr>
@@ -266,7 +266,7 @@ height="400" width="240"></iframe> </font></div>
                 <div align="center">&nbsp;
                   <script type="text/javascript"><!--
 google_ad_client = "pub-9177538664500260";
-/* 728x90, date de crÈation 19/05/10 */
+/* 728x90, date de crÔøΩation 19/05/10 */
 google_ad_slot = "7132874515";
 google_ad_width = 728;
 google_ad_height = 90;

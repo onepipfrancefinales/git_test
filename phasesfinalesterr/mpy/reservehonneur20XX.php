@@ -125,7 +125,7 @@ MM_reloadPage(true);
   <table width="100%" border="0" height="30">
     <tr valign="top" align="center"> 
       <td colspan="12" bgcolor="006699" height="28"><font size="5" color="#FFCC00"><b> 
-        <? echo "Championnat des Pyr&egrave;n&egrave;es";?>
+        <? echo "Championnat des Pyrènèes";?>
         <? echo "Reserve Honneur";?>
         </b></font></td>
     </tr>

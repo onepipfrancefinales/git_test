@@ -11,7 +11,7 @@
   </tr>
   <tr> 
     <td colspan="4"> 
-      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misph&egrave;re 
+      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misphère 
         Nord</font></b></font></div>
     </td>
   </tr>
@@ -103,7 +103,7 @@
   </tr>
   <tr> 
     <td colspan="4"> 
-      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misph&egrave;re 
+      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misphère 
         Sud</font></b></font></div>
     </td>
   </tr>

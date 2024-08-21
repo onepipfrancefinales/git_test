@@ -36,7 +36,7 @@ require ("../connect2.php") ;
   </tr>
 </table>
 <br><br>
-<div id="palmares" > Palmar&egrave;s 
+<div id="palmares" > Palmarès 
         <?php 	echo $annee;?>
       </div>
 <br>

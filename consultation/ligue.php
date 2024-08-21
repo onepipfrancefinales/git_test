@@ -283,7 +283,7 @@ echo "<a href=../palmares/palmNational/pagePalmLigue.php?idLigue=$idLigue > Tous
   </select>
 </form>
 -->
-<h1 ><font color="#000000">Palmar&egrave;s Régional 
+<h1 ><font color="#000000">Palmarès Régional 
   <?php
   //  $saisonChoisie=$_GET['saisonChoisie'];  
   //echo "$saison1";  

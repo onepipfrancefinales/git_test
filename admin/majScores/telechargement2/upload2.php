@@ -24,7 +24,7 @@ $fichier=$_FILES['fichier2']['name'];
 $fichierChemin = $_FILES['fichier2']['tmp_name'];
 
 echo "fichierChemin temporaire :".$fichierChemin;
-//**********   Recherche du  caractère de séparation  **********************
+//**********   Recherche du  caractï¿½re de sï¿½paration  **********************
 
 $fichierA = fopen($fichierChemin, 'r+');
 
@@ -32,7 +32,7 @@ $fichierA = fopen($fichierChemin, 'r+');
 $fichierLigne = fgets($fichierA, 4096); 
 
 
-//recherche des caractere de séparation
+//recherche des caractere de sï¿½paration
 
 $caratereSeparation =",";
 //echo "<br/>";
@@ -64,7 +64,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 {
      //On formate le nom du fichier ici...
     // $fichier = strtr($fichier, 
-    //      'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜİàáâãäåçèéêëìíîïğòóôõöùúûüıÿ', 
+    //      'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 
     //      'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
     // $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
    
@@ -75,9 +75,9 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	//var_dump($fichier) ;echo "<br/>";
 	//var_dump($dossier) ;echo "<br/>";
 	
-	 if(move_uploaded_file($_FILES['fichier2']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+	 if(move_uploaded_file($_FILES['fichier2']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ï¿½a a fonctionnï¿½...
      {
-          echo 'Upload effectu&eacute; avec succ&egrave;s !';echo "<br/>";
+          echo 'Upload effectu&eacute; avec succÃ¨s !';echo "<br/>";
      }
      else //Sinon (la fonction renvoie FALSE).
      {
@@ -91,7 +91,7 @@ else
 }
 
 
-// ****** Connection à la base ******
+// ****** Connection ï¿½ la base ******
 //$connect ="connection2"; 
 if ($ligueComite == "phpf1" or $ligueComite == "phpfed2" or $ligueComite == "phpfed3NE" or $ligueComite == "phpfed3GS" or $ligueComite == "phpfem")
 require '../../../connect1/connection3.php';

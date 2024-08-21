@@ -775,5 +775,5 @@ $clubA1632= ' Saint Jean de Maurienne (AP) ';
   Série 3me Série 3me Série 3me</b></i></div>
 <div id="Layer11" style="position:absolute; width:306px; height:33px; z-index:7; left: 1081px; top: 707px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000">
   <div align="center"><font size="5" color="#FF0000"><b><font face="Arial, Helvetica, sans-serif">Servette 
-    de Gen&egrave;ve (LY) </font></b></font></div>
+    de Genève (LY) </font></b></font></div>
 </div>

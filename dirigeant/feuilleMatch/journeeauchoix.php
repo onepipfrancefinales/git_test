@@ -51,7 +51,7 @@
     </td>
     <td width="292" height="37" bgcolor="#CCCCCC"><b><a href="page_FM.php"><font face="Arial, Helvetica, sans-serif"><b><font size="4">D&eacute;connexion</font></b></font></a></b></td>
     <td colspan="3" height="37" bgcolor="#CC6633" width="653"> 
-      <div align="center"><font size="4"><b><font size="4"><b><font face="Arial, Helvetica, sans-serif"><a href="page_liste_compet2.php?reserve=<?php echo $reserve;?>&equipe=<?php echo $equipe;?>&id_equipe=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&php=<?php echo $php; ?>&connect=<?php echo $connect; ?>">Acc&egrave;s 
+      <div align="center"><font size="4"><b><font size="4"><b><font face="Arial, Helvetica, sans-serif"><a href="page_liste_compet2.php?reserve=<?php echo $reserve;?>&equipe=<?php echo $equipe;?>&id_equipe=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&php=<?php echo $php; ?>&connect=<?php echo $connect; ?>">Acc√®s 
         au calendrier Equipe R&eacute;serve</a></font></b></font></b></font></div>
     </td>
   </tr>
@@ -107,7 +107,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
         <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
     </td>
     <td width="230" height="23"> 
@@ -130,7 +130,7 @@ while ($row = mysql_fetch_array($result) )
 }
 ?>
         <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
         </b></div>
     </td>
@@ -160,7 +160,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
         <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
         </b></div>
     </td>
@@ -189,7 +189,7 @@ while ($row = mysql_fetch_array($result) )
 }
 ?>
       <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
     </td>
     <td width="81" height="23"> 
@@ -218,7 +218,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
       <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
     </td>
     <td width="189" height="23"> 
@@ -246,7 +246,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
       <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
     </td>
   </tr>
@@ -583,7 +583,7 @@ while ($row = mysql_fetch_array($result) )
 }
 ?>
       <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
     </td>
     <td width="81">
@@ -612,7 +612,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
       <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
     </td>
     <td width="189">
@@ -640,7 +640,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
       <?php
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
     </td>
   </tr>

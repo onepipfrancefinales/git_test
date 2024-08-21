@@ -13,7 +13,7 @@ echo "<h1><p> <strong> Champions de France Cadets Gaudermen </strong></p></h1>";
   moins de 16 ans (Cadets 1re ann&eacute;e). Cette comp&eacute;tition est obligatoire 
   pour les associations qui ont en leur sein un groupement sportif disputant les 
   Comp&eacute;titions Professionnelles et ouverte aux associations de Divisions 
-  F&eacute;d&eacute;rales (32 &eacute;quipes ou regroupements) apr&egrave;s agr&eacute;ment 
+  F&eacute;d&eacute;rales (32 &eacute;quipes ou regroupements) apr√®s agr&eacute;ment 
   de la Commission Nationale <br>
   A partir de la saison 2014-2015 cette comp&eacute;tition est r&eacute;serv&eacute;e 
   aux licenci&eacute;s de 14 ans.<br>
@@ -32,7 +32,7 @@ require ("../connection.php") ;
 
 
 
-$reponse = mysql_query("SELECT * FROM bdjeunes WHERE rang='365'and titre='champion'ORDER BY saison DESC"); // RequÍte SQL
+$reponse = mysql_query("SELECT * FROM bdjeunes WHERE rang='365'and titre='champion'ORDER BY saison DESC"); // RequÔøΩte SQL
  
 // On fait une boucle pour lister tout ce que contient la table :
 while ($donnees = mysql_fetch_array($reponse) )
@@ -43,7 +43,7 @@ while ($donnees = mysql_fetch_array($reponse) )
    </font></font>  <br/><br/>
   <?php
  }
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
 <br>
 <br>
@@ -51,11 +51,11 @@ mysql_close(); // DÈconnexion de MySQL
 <p align="center">Pierre Gaudermen est n&eacute; le 20 octobre 1882 &agrave; Paris. 
   A l&#146;image d&#146;autres grands sportifs de cette &eacute;poque, il pratique 
   et excelle dans plusieurs disciplines. Au rugby, il &eacute;volue au poste de 
-  troisi&egrave;me ligne centre d&#146;abord au Stade Fran&ccedil;ais puis au 
+  troisi√®me ligne centre d&#146;abord au Stade Fran&ccedil;ais puis au 
   Racing Club de France. Il fut avec le premier, Champion de France en 1903 et 
   finaliste en 1904. Il connut une s&eacute;lection en &eacute;quipe de France 
   en 1906. Ses performances en aviron lui ont aussi valu de participer aux Jeux 
-  Olympiques de 1912. Il combattit durant la Premi&egrave;re Guerre Mondiale en 
+  Olympiques de 1912. Il combattit durant la Premi√®re Guerre Mondiale en 
   tant qu&#146;aviateur.<br>
-  Apr&egrave;s le conflit, il devient un important dirigeant de la F&eacute;d&eacute;ration 
+  Apr√®s le conflit, il devient un important dirigeant de la F&eacute;d&eacute;ration 
   Fran&ccedil;aise de Rugby. Il meurt &agrave; Paris le 18 d&eacute;cembre 1948.</p>

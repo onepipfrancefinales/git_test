@@ -56,7 +56,7 @@ $NBR_DIVISION = NbrRecord('id', 'phpl_divisions');
 		</form>
 
 		<div id="dialog01" title="Cr&eacute;ation de la saison">
-			<p>Entrer la 1&egrave;re ann&eacute;e de la saison.</p>
+			<p>Entrer la 1ère ann&eacute;e de la saison.</p>
 		</div>
 
 		<form method="post" action="">
@@ -131,7 +131,7 @@ $NBR_DIVISION = NbrRecord('id', 'phpl_divisions');
 		</form>
 
 		<div id="dialog04" title="Suppression d'une saison">
-			<p>Si vous supprimez une saison utilis&eacute;e dans un championnat, ce dernier ne fonctionnera plus ! Soyez donc tr&egrave;s vigilant lors de la suppression.</p>
+			<p>Si vous supprimez une saison utilis&eacute;e dans un championnat, ce dernier ne fonctionnera plus ! Soyez donc très vigilant lors de la suppression.</p>
 		</div>
 		<?php } ?>
 
@@ -155,7 +155,7 @@ $NBR_DIVISION = NbrRecord('id', 'phpl_divisions');
 		</form>
 
 		<div id="dialog05" title="Suppression d'un division">
-			<p>Si vous supprimez une division utilis&eacute;e dans un championnat, ce dernier ne fonctionnera plus ! Soyez donc tr&egrave;s vigilant lors de la suppression.</p>
+			<p>Si vous supprimez une division utilis&eacute;e dans un championnat, ce dernier ne fonctionnera plus ! Soyez donc très vigilant lors de la suppression.</p>
 		</div>
 		<?php } ?>
 	</div>

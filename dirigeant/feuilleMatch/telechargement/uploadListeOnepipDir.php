@@ -13,7 +13,7 @@ $fichier=$_FILES['fichier']['name'];
 $fichierChemin = $_FILES['fichier']['tmp_name'];
 */
 
-//**********   Recherche du  caractère de séparation  **********************
+//**********   Recherche du  caractï¿½re de sï¿½paration  **********************
 /*
 $fichierA = fopen($fichierChemin, 'r+');
 echo "fichier :".$fichierA;
@@ -21,7 +21,7 @@ echo "fichier :".$fichierA;
 $fichierLigne = fgets($fichierA, 4096); 
 
 
-//recherche des caractere mentionne dans la première ligne
+//recherche des caractere mentionne dans la premiï¿½re ligne
 if (preg_match('#;#', $fichierLigne))
 {
 //echo "Caractere de separation reconnu (;) ";
@@ -59,7 +59,7 @@ $extension = strrchr($_FILES['fichier']['name'], '.');
 
 
 
-//Début des vérifications de sécurité...
+//Dï¿½but des vï¿½rifications de sï¿½curitï¿½...
 
 /*
 if(!in_array($extension, $extensions)) //Si l'extension n'est pas dans le tableau
@@ -76,7 +76,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 {
      //On formate le nom du fichier ici...
      $fichier = strtr($fichier, 
-          'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 
+          'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 
           'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
      $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
    
@@ -91,9 +91,9 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	echo "<br/>";
 
 	
-	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ï¿½a a fonctionnï¿½...
      {
-          echo 'Transfert des licences effectu&eacute; avec succ&egrave;s !';echo "<br/>";
+          echo 'Transfert des licences effectu&eacute; avec succÃ¨s !';echo "<br/>";
      }
      else //Sinon (la fonction renvoie FALSE).
      {
@@ -129,7 +129,7 @@ else
 	}
 
 
-// ****** Connection à la base ******
+// ****** Connection ï¿½ la base ******
  
 if ($connect == "connection2")
 require '../../../connect/connection2.php';
@@ -165,7 +165,7 @@ else
 	$fp = fopen("$cheminn", "r"); 
 	
 	$nbreDeLigne = count(file("$cheminn"));
-	echo "Nombre de licence intégré : ".$nbreDeLigne;
+	echo "Nombre de licence intï¿½grï¿½ : ".$nbreDeLigne;
 	echo "<br/>";
 	echo "<br/>";
    $caratereSeparation =",";

@@ -202,7 +202,7 @@ $clubA8016="Nimes (PR)";
     <td width="28" bgcolor="#FFCC66">&nbsp;</td>
     <td valign="top" width="36"> </td>
     <td valign="top" colspan="3"> 
-      <div align="center"><b><font face="Arial, Helvetica, sans-serif">Acc&egrave;s 
+      <div align="center"><b><font face="Arial, Helvetica, sans-serif">Accès 
         direct en pro D2</font></b></div>
     </td>
     <td valign="top" width="24">&nbsp;</td>
@@ -849,7 +849,7 @@ $clubA8016="Nimes (PR)";
     <td width="34" height="3">&nbsp;</td>
     <td width="28" height="3" bgcolor="#FFCC66">&nbsp;</td>
     <td valign="top" height="3" colspan="5"> 
-      <div align="center"><b><font face="Arial, Helvetica, sans-serif">Acc&egrave;s 
+      <div align="center"><b><font face="Arial, Helvetica, sans-serif">Accès 
         en pro D2</font></b></div>
     </td>
   </tr>

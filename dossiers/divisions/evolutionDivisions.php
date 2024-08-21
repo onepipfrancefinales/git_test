@@ -35,9 +35,9 @@
   <p><b><font size="4" face="Arial, Helvetica, sans-serif">I - Compétitions 
     Séniors</font></b></p>
   <p><font face="Arial, Helvetica, sans-serif" size="3" color="#000000">Chaque 
-    division donne acc&egrave;s &agrave; des phases finale et attribue au vainqueur 
+    division donne accès &agrave; des phases finale et attribue au vainqueur 
     le titre de champion de France de la catégorie.<br>
-    De mani&egrave;re générale, les meilleures équipes d'une 
+    De manière générale, les meilleures équipes d'une 
     divisions accedent &agrave; la division supérieur <br>
     et les plus mal classées sont reléguées dans la division 
     inférieure</font></p>
@@ -5131,12 +5131,12 @@
     deux grandes catégories</p>
   <p>Une catégorie qui comprend les jeunes qui sont issus de l'école 
     de rugby (les cadets et U15 et u16 depuis 2019)<br>
-    cette catégorie comprend les divisions Teuli&egrave;re ,Gaudermen et 
+    cette catégorie comprend les divisions Teulière ,Gaudermen et 
     Alamercery<br>
     <br>
     Gaudermen et Alamercery : compétitions réservés aux clubs 
     de l'élite.</p>
-  <p>Teuli&egrave;re et U16 : compétitions réservés aux clubs 
+  <p>Teulière et U16 : compétitions réservés aux clubs 
     de fédérales.<br>
   </p>
   <p>l'autre catégorie, qui selon les périodes sera de 2 ou 3 ans 
@@ -5419,7 +5419,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1991</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5433,7 +5433,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1992</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5447,7 +5447,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1993</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5461,7 +5461,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1994</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5475,7 +5475,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1995</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5489,7 +5489,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1996</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5503,7 +5503,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1997</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5517,7 +5517,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1998</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5531,7 +5531,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>1999</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5545,7 +5545,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2000</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF" height="23"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF" height="23"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5559,7 +5559,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2001</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5573,7 +5573,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2002</b></font></div>
       </td>
       <td width="85" height="4" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5587,7 +5587,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2003</b></font></div>
       </td>
       <td width="85" height="4" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5601,7 +5601,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2004</b></font></div>
       </td>
       <td width="85" height="4" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" height="16" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5615,7 +5615,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2005</b></font></div>
       </td>
       <td width="85" height="4" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5629,7 +5629,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">2006</font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"></font></td>
       <td width="48" bgcolor="#FFFFFF"> 
@@ -5641,7 +5641,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">2007</font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5655,7 +5655,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">2008</font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5669,7 +5669,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">2009</font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF" height="23"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF" height="23"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5683,7 +5683,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">2010</font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" height="16" bgcolor="#FFFFFF"> 
         <div align="center"><font face="Arial, Helvetica, sans-serif"></font></div>
@@ -5702,7 +5702,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2011</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Gaudermen</font></div>
@@ -5716,7 +5716,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2012</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Gaudermen</font></div>
@@ -5730,7 +5730,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2013</b></font></div>
       </td>
       <td width="85" height="2" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" height="2" bgcolor="#FFFFFF"> 
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Gaudermen</font></div>
@@ -5744,7 +5744,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2014</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF" height="21"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF" height="21"> 
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Gaudermen</font></div>
@@ -5758,7 +5758,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2015</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Gaudermen</font></div>
@@ -5772,7 +5772,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2016</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Gaudermen</font></div>
@@ -5786,7 +5786,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2017</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF"> 
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Gaudermen</font></div>
@@ -5800,7 +5800,7 @@
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>2018</b></font></div>
       </td>
       <td width="85" bgcolor="#FFFFFF" height="22"> 
-        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teuli&egrave;re</font></div>
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Teulière</font></div>
       </td>
       <td width="102" bgcolor="#FFFFFF" height="22"> 
         <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Gaudermen</font></div>
@@ -5811,7 +5811,7 @@
     </tr>
     <tr> 
       <td colspan="4" height="16" bgcolor="#CCCCCC"><font size="2" face="Arial, Helvetica, sans-serif">La 
-        catégorie Teuli&egrave;re devient U16 et la catégorie Balandrade 
+        catégorie Teulière devient U16 et la catégorie Balandrade 
         devient U18</font></td>
     </tr>
     <tr> 
@@ -7536,7 +7536,7 @@
         <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">La 
           catégorie Phliponeau est supprimé<br>
           <br>
-          La catégorie Teuli&egrave;re devient U16 et la catégorie 
+          La catégorie Teulière devient U16 et la catégorie 
           Balandrade devient U18</font></div>
         <font color="#000000" size="2" face="Arial, Helvetica, sans-serif"></font><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"></font><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"></font><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"></font><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"></font><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"></font><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"></font></td>
     </tr>

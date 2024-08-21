@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../style2.css">
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comit&egrave;s territoriaux, Tous les championnats de rugby, f&egrave;d&egrave;rale 2, f&egrave;d&egrave;rale 3, f&egrave;d&egrave;rale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitès territoriaux, Tous les championnats de rugby, fèdèrale 2, fèdèrale 3, fèdèrale 1, top 14.">
 <meta name="keywords"
 content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
@@ -79,7 +79,7 @@ $anneeplus = $annee+1;
     </tr>
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
-        <?php echo "Finales territoriales du comit&egrave; des Pyrénées $annee";?>
+        <?php echo "Finales territoriales du comitè des Pyrénées $annee";?>
         </font></b></font></td>
     </tr>
   </table>

@@ -5,12 +5,12 @@
 		target="_top"><font color="#FFFFFF">Phases finales régionales</font></a></h4>
     </td>
     <td class="tabHautDroit"> <a href="/palmares/palmTerritorial/tableauPalmReg.php?sigleLigue=<?php echo $sigleLigue;?>"
-		target="_top">Palmar&egrave;s régional</a>
+		target="_top">Palmarès régional</a>
 	</td>
   </tr>
   <tr> 
     <td class="tabHautDroit" height="25"> <a href="../consultation/page_Ligue.php?idLigue=<?php echo $idLigue;?>"
-		target="_top">Acc&egrave;s aux infos de la ligue</a>
+		target="_top">Accès aux infos de la ligue</a>
 	</td>
   </tr>
   <tr class="fond" valign="middle">     

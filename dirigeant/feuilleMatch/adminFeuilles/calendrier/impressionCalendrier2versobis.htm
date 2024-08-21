@@ -63,11 +63,11 @@ MM_reloadPage(true);
               <div align="center"> 
                 <p><b><font size="5"> 
                   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-mysql_select_db("onepip-france-db1"); // SÈlection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+mysql_select_db("onepip-france-db1"); // SÔøΩlection de la base onepip
 ?>
                   <?php
-$reponse = mysql_query("SELECT sigle,comite, code, nom_1, nom_2, nom_3, nom_4 FROM bdclubs WHERE code='$equipe'"); // RequÍte SQL 
+$reponse = mysql_query("SELECT sigle,comite, code, nom_1, nom_2, nom_3, nom_4 FROM bdclubs WHERE code='$equipe'"); // RequÔøΩte SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -79,14 +79,14 @@ While ($donnees = mysql_fetch_array($reponse) )
                   <?php
  }
 
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
                   </font></strong><br>
                   </font></b></p>
                 <table width="250" border="1" bordercolor="#000000" cellspacing="1">
                   <tr> 
                     <td bgcolor="#CCCCCC"> 
-                      <div align="center"><b><font size="5">Palmar&egrave;s</font></b></div>
+                      <div align="center"><b><font size="5">Palmar√®s</font></b></div>
                     </td>
                   </tr>
                 </table>
@@ -96,8 +96,8 @@ mysql_close(); // DÈconnexion de MySQL
                   </font><font face="Times New Roman, Times, serif" size="3"><font size="2" face="Arial, Helvetica, sans-serif"> 
                   </font><font face="Times New Roman, Times, serif" size="3"><font size="2" face="Arial, Helvetica, sans-serif"> 
                   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-mysql_select_db("onepip-france-db1"); // SÈlection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+mysql_select_db("onepip-france-db1"); // SÔøΩlection de la base onepip
 ?>
                   <?php
 $reponse = mysql_query("SELECT saison, titre, championnat, division FROM bdequipe1 
@@ -124,7 +124,7 @@ While ($donnees = mysql_fetch_array($reponse) )
                   <font size="3" face="Arial, Helvetica, sans-serif"> <font face="Times New Roman, Times, serif"> 
                   <font face="Arial, Helvetica, sans-serif" size="2"> 
                   <?php
-$reponse = mysql_query("SELECT saison, titre, championnat, division FROM bdequipe2 WHERE entente='$nom1' or entente='$nom2' or entente='$nom3' or entente='$nom4'ORDER BY  saison DESC  "); // RequÍte SQL 
+$reponse = mysql_query("SELECT saison, titre, championnat, division FROM bdequipe2 WHERE entente='$nom1' or entente='$nom2' or entente='$nom3' or entente='$nom4'ORDER BY  saison DESC  "); // RequÔøΩte SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 	{ 
             $saison=$donnees['saison'];
@@ -157,7 +157,7 @@ While ($donnees = mysql_fetch_array($reponse) )
                         <?php
  
 
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
                         </font></strong></p>
                     </td>
@@ -192,11 +192,11 @@ mysql_close(); // DÈconnexion de MySQL
               <div align="center"> 
                 <p><b><font size="5"> 
                   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-mysql_select_db("onepip-france-db1"); // SÈlection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+mysql_select_db("onepip-france-db1"); // SÔøΩlection de la base onepip
 ?>
                   <?php
-$reponse = mysql_query("SELECT sigle,comite, code, nom_1, nom_2, nom_3, nom_4 FROM bdclubs WHERE code='$equipe'"); // RequÍte SQL 
+$reponse = mysql_query("SELECT sigle,comite, code, nom_1, nom_2, nom_3, nom_4 FROM bdclubs WHERE code='$equipe'"); // RequÔøΩte SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -208,14 +208,14 @@ While ($donnees = mysql_fetch_array($reponse) )
                   <?php
  }
 
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
                   </font></strong><br>
                   </font></b></p>
                 <table width="250" border="1" bordercolor="#000000" cellspacing="1">
                   <tr> 
                     <td bgcolor="#CCCCCC"> 
-                      <div align="center"><b><font size="5">Palmar&egrave;s</font></b></div>
+                      <div align="center"><b><font size="5">Palmar√®s</font></b></div>
                     </td>
                   </tr>
                 </table>
@@ -223,11 +223,11 @@ mysql_close(); // DÈconnexion de MySQL
                   Fanion</font></b><br>
                   <font face="Times New Roman, Times, serif" size="3"> <font size="2" face="Arial, Helvetica, sans-serif"> 
                   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-mysql_select_db("onepip-france-db1"); // SÈlection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+mysql_select_db("onepip-france-db1"); // SÔøΩlection de la base onepip
 ?>
                   <?php
-$reponse = mysql_query("SELECT saison, titre, championnat, division FROM bdequipe1 WHERE entente='$nom1' or entente='$nom2' or entente='$nom3' or entente='$nom4' ORDER BY saison DESC LIMIT 0,5 "); // RequÍte SQL 
+$reponse = mysql_query("SELECT saison, titre, championnat, division FROM bdequipe1 WHERE entente='$nom1' or entente='$nom2' or entente='$nom3' or entente='$nom4' ORDER BY saison DESC LIMIT 0,5 "); // RequÔøΩte SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 	{ 
             $saison=$donnees['saison'];
@@ -247,7 +247,7 @@ While ($donnees = mysql_fetch_array($reponse) )
                   <font size="3" face="Arial, Helvetica, sans-serif"> <font face="Times New Roman, Times, serif"> 
                   <font face="Arial, Helvetica, sans-serif" size="2"> 
                   <?php
-$reponse = mysql_query("SELECT saison, titre, championnat, division FROM bdequipe2 WHERE entente='$nom1' or entente='$nom2' or entente='$nom3' or entente='$nom4'ORDER BY  saison DESC  "); // RequÍte SQL 
+$reponse = mysql_query("SELECT saison, titre, championnat, division FROM bdequipe2 WHERE entente='$nom1' or entente='$nom2' or entente='$nom3' or entente='$nom4'ORDER BY  saison DESC  "); // RequÔøΩte SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 	{ 
             $saison=$donnees['saison'];
@@ -272,11 +272,11 @@ While ($donnees = mysql_fetch_array($reponse) )
                     <td height="328"> 
                       <p align="center"><strong> 
                         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-mysql_select_db("onepip-france-db1"); // SÈlection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+mysql_select_db("onepip-france-db1"); // SÔøΩlection de la base onepip
 ?>
                         <?php
-$reponse = mysql_query("SELECT sigle,comite, code, nom_1, nom_2, nom_3, nom_4 FROM bdclubs WHERE code='$equipe'"); // RequÍte SQL 
+$reponse = mysql_query("SELECT sigle,comite, code, nom_1, nom_2, nom_3, nom_4 FROM bdclubs WHERE code='$equipe'"); // RequÔøΩte SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -298,7 +298,7 @@ While ($donnees = mysql_fetch_array($reponse) )
                         <?php
  }
 
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
                         </font></strong></p>
                     </td>

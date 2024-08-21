@@ -55,13 +55,13 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   finales territoriales</a></h4>
               </td>
               <td  class="coindroit" height="19" width="227" "> 
-                <a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?annee=(MPY)"  target="_top">Palmar&egrave;s 
+                <a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?annee=(MPY)"  target="_top">Palmarès 
                   territorial</a>
               </td>
             </tr>
             <tr > 
               <td class="coindroit" height="5" > 
-                <a href="../page_comite.php?annee=(MPY)" target="_top" >Acc&egrave;s 
+                <a href="../page_comite.php?annee=(MPY)" target="_top" >Accès 
                   aux infos du comité</a>
               </td>
             </tr>
@@ -279,12 +279,12 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   finales territoriales</a> </h4>
               </td>
               <td class="coindroit" height="21" valign="middle" bgcolor="#0099CC" align="center" width="227" bordercolor="#0099CC"> 
-                <a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?annee=(AU)"  target="_top">Palmar&egrave;s 
+                <a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?annee=(AU)"  target="_top">Palmarès 
                 territorial</a> </td>
             </tr>
             <tr bordercolor="#009966"> 
               <td  class="coindroit" height="5" valign="middle" align="center" bgcolor="#0099CC" bordercolor="#0099CC"> 
-                <a href="../page_comite.php?annee=(AU)" target="_top" >Acc&egrave;s 
+                <a href="../page_comite.php?annee=(AU)" target="_top" >Accès 
                 aux infos du comité</a> </td>
             </tr>
             <tr bordercolor="#006699" valign="middle" bgcolor="#006699"> 
@@ -432,7 +432,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   <tr bordercolor="#FF9966" bgcolor="#FF9933" valign="middle"> 
                     <td class="tab3" height="43" width="223" align="center"> <a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?annee=<?php echo $saison;?>" target="_top">Championnat 
                       de France</a> </td>
-                    <td class="tab3" height="43" width="231" align="center"> <a href="http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php">Palmar&egrave;s 
+                    <td class="tab3" height="43" width="231" align="center"> <a href="http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php">Palmarès 
                       </a> </td>
                   </tr>
                 </table>

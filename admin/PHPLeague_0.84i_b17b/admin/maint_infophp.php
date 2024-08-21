@@ -46,7 +46,7 @@ switch($CHOIX)
 				<td>'.$VER_CLI_MYSQL.'</td>
 			</tr>
 			<tr class="ligne2">
-				<td>Syst&egrave;me</td>
+				<td>Système</td>
 				<td>'.$_SERVER['SERVER_SOFTWARE'].'</td>
 			</tr>
 			<tr class="ligne1">

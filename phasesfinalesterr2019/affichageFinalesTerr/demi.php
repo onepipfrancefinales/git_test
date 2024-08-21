@@ -52,7 +52,7 @@ elseif ($page=="RRPHR1")
 ?>
 
 <br />
-<div id="palmares2" > Palmar&egrave;s <?php echo $annee;?></div>
+<div id="palmares2" > Palmarès <?php echo $annee;?></div>
 
 <?php
 	$division=$division;

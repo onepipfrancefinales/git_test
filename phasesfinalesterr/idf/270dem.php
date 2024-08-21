@@ -30,7 +30,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
   </tr>
 </table>
 <br />
-<div id="palmares2" > Palmar&egrave;s 
+<div id="palmares2" > Palmarès 
   <?php 	echo $annee;?>
 </div>
 

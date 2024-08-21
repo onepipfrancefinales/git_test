@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="../2.css">
 </head>
 <?php
-$clubAchamp = '1er de la saion réguli&egrave;re';
+$clubAchamp = '1er de la saion régulière';
 $clubA2001 = '2me de poule';
 $clubA2002 = '3me de poule';
 $clubA2003 = '4me de poule';

@@ -23,7 +23,7 @@
   </tr>
   <tr> 
     <td colspan="2" align="center"><a href="/admin/majScores/choixComiteJournee.php">Suppression d'une journ&eacute;e</a></td>
-    <td width="176" bgcolor="#FFFFFF" align="center"><a href="/admin/MAJFFR/raccourcis_ffr/page_raccourcisChamp.php" target="_blank">Acc&egrave;s donn&eacute;es FFR</a></td>
+    <td width="176" bgcolor="#FFFFFF" align="center"><a href="/admin/MAJFFR/raccourcis_ffr/page_raccourcisChamp.php" target="_blank">Accès donn&eacute;es FFR</a></td>
     <td width="201" align="center"><a href="../../../resultats/TEST/calendrier.php" target="_blank">Consult des rencontres &agrave; venir</a></td>
   </tr>
   <tr> 

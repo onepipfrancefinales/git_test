@@ -16,7 +16,7 @@
             </td>
             <td>
             
-      <h3>Teuli&egrave;re A - Poule 1</h3>
+      <h3>Teulière A - Poule 1</h3>
 <?php $comite="phpteu";?><?php $CMT="TEU";?><?php $cmt="teu";?><?php $id=37001 ; $height=400; ?><?php require ("maquette.php") ; ?>
             </td>
           </tr>
@@ -66,7 +66,7 @@ complet</a> </h6>
             </td>
             <td>
             
-      <h3>Teuli&egrave;re A - Poule 2</h3>
+      <h3>Teulière A - Poule 2</h3>
 <?php $comite="phpteu";?><?php $CMT="TEU";?><?php $cmt="teu";?><?php $id=37002 ; $height=400; ?><?php require ("maquette.php") ; ?>
             </td>
           </tr>

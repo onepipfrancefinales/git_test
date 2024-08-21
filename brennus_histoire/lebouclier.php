@@ -21,19 +21,19 @@
     </td>
     <td width="673"><b><font size="5">caractéristiques :</font></b> 
       <p><font face="Arial, Helvetica, sans-serif" size="3">Le Bouclier de Brennus 
-        constitue le trophée des Champions de France depuis la 1&egrave;re 
+        constitue le trophée des Champions de France depuis la 1ère 
         finale du Championnat de France en 1892. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Bouclier damasquiné, 
         il présente en son centre les &#147;armes&#148; de l&#146;USFSA 
-        (Union des Sociétés Fran&ccedil;aises des Sports Ath&egrave;tiques) 
+        (Union des Sociétés Fran&ccedil;aises des Sports Athètiques) 
         qui - &agrave; l&#146;époque, gérait le rugby fran&ccedil;ais 
         - sous forme de deux anneaux enlacés et offre comme devise &#147;Ludus 
         pro patria&#148; (&#147;le jeu pour la patrie&#148;).</font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Le Bouclier de Brennus 
-        p&egrave;se 16,850kg pour une épaisseur de 3cm, une largeur de 
+        pèse 16,850kg pour une épaisseur de 3cm, une largeur de 
         76cm et une hauteur de 101cm.</font></p>
-      <p><font face="Arial, Helvetica, sans-serif" size="3">Son origine est tr&egrave;s 
-        controversée. Beaucoup, aujourd&#146;hui encore, consid&egrave;rent 
+      <p><font face="Arial, Helvetica, sans-serif" size="3">Son origine est très 
+        controversée. Beaucoup, aujourd&#146;hui encore, considèrent 
         que son concepteur est Charles Brennus, figure emblématique du 
         rugby fran&ccedil;ais et créateur du club du SCUF.</font></p>
 </td>
@@ -64,9 +64,9 @@
       <p><font face="Arial, Helvetica, sans-serif" size="3">Toutefois, si Charles 
         Brennus a sans nul doute ciselé le Bouclier, le mérite de 
         la conception revient probablement &agrave; Pierre de Coubertin, Secrétaire 
-        Général de l&#146;USFSA en 1892, arbitre de la 1&egrave;re 
+        Général de l&#146;USFSA en 1892, arbitre de la 1ère 
         finale et défenseur acharné des valeurs sportives et de 
-        l&#146;amateurisme de cette fin de si&egrave;cle. Précisons aussi 
+        l&#146;amateurisme de cette fin de siècle. Précisons aussi 
         que le &#147;ciseleur&#148; s&#146;appelait de son vrai nom, Brennus Ambiorix 
         Crosnier.</font></p>
 </td>
@@ -79,14 +79,14 @@
       <p><font size="5"><b>Le cérémonial</b></font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Ce trophée 
         sera donc remis en 1892 au Racing Club de France puis dispara&icirc;tra 
-        (myst&egrave;re !) jusqu&#146;en 1911. </font></p>
+        (mystère !) jusqu&#146;en 1911. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Remis au Stade Toulousain 
         en 1912, il fut ignoré les deux années suivantes par Bayonne 
         et le SCUF pour revenir sur le pré en 1914 pour honorer Perpignan. 
         </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Ce n&#146;est qu&#146;&agrave; 
         partir de 1920 que le trophée est confié pour une année 
-        enti&egrave;re au Champion. Le premier &laquo; gardien &raquo; fut le 
+        entière au Champion. Le premier &laquo; gardien &raquo; fut le 
         Stadoceste Tarbais. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Ce n&#146;est qu&#146;&agrave; 
         la mort de Charles Brennus en 1943 que le bouclier fut remis officiellement 
@@ -95,8 +95,8 @@
         le bouclier se trouvait sur le terrain durant la partie, gardé 
         par deux joueurs du SCUF, club de toujours de Charles Brennus. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">En 1951, le capitaine 
-        de l&#146;US Carmaux, &laquo; Nénou &raquo; Pag&egrave;s, vainqueur 
-        de la finale, refusa de le recevoir apr&egrave;s un combat tr&egrave;s 
+        de l&#146;US Carmaux, &laquo; Nénou &raquo; Pagès, vainqueur 
+        de la finale, refusa de le recevoir après un combat très 
         &acirc;pre face &agrave; Tarbes. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">L&#146;année 
         suivante, le protocole fut changé. Le bouclier restait sur le terrain 

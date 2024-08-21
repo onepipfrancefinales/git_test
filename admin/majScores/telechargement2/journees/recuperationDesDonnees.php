@@ -61,7 +61,7 @@ echo "Division : ".' '.$borne1.' '."<br />";
 echo "Journ&eacute;e &agrave; supprimer : ".''.$borne2.' '."<br />";
 
 //*****************************************
-//****** choix de la base de données ******
+//****** choix de la base de donnï¿½es ******
 //*****************************************
 
 if ($comite=="phpf1" or $comite=="phpfed2" or $comite=="phpfed3NE" or $comite=="phpfed3GS" or $comite=="phpfem")
@@ -77,7 +77,7 @@ $comiteMatchs=$comite.''."_matchs";
 $comiteMatchsSAUV = $comiteMatchs.''."SAUV";
 
 //******************************************
-//***** Suppression de la sélection ********
+//***** Suppression de la sï¿½lection ********
 //******************************************
 
 if ($type == "journee")
@@ -98,16 +98,16 @@ else
 				WHERE id_journee BETWEEN $borne1 AND $borne2");
 }
 //*******************************************************
-//******** Création et Sauvegarde de la table ***********
+//******** Crï¿½ation et Sauvegarde de la table ***********
 //*******************************************************
 		
-		//insertion des données
+		//insertion des donnï¿½es
 $bdd->exec("INSERT INTO $comiteMatchsSAUV
 			SELECT *
 			FROM $comiteMatchs");
 
 //***************************************************
-//************* Mise à jours des classements ********
+//************* Mise ï¿½ jours des classements ********
 //***************************************************
 
 echo "<br />";
@@ -132,13 +132,13 @@ $fichier=$_FILES['fichier']['name'];
 $fichierChemin = $_FILES['fichier']['tmp_name'];
 echo "fichierChemin temporaire :".$fichierChemin;
 
-//**********   Recherche du  caractère de séparation  **********************
+//**********   Recherche du  caractï¿½re de sï¿½paration  **********************
 $fichierA = fopen($fichierChemin, 'r+');
 
 //Recuperation de la 1re ligne du fichier
 $fichierLigne = fgets($fichierA, 4096); 
 
-//recherche des caractere de séparation
+//recherche des caractere de sï¿½paration
 $caratereSeparation =",";
 
 //************************************
@@ -159,9 +159,9 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	echo "<br/>";
 	
 	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) 
-		 //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+		 //Si la fonction renvoie TRUE, c'est que ï¿½a a fonctionnï¿½...
      {
-          echo 'Upload effectu&eacute; avec succ&egrave;s !';echo "<br/>";
+          echo 'Upload effectu&eacute; avec succÃ¨s !';echo "<br/>";
      }
      else //Sinon (la fonction renvoie FALSE).
      {
@@ -173,7 +173,7 @@ else
      echo $erreur;
 }
 
-// ****** Connection à la base ******
+// ****** Connection ï¿½ la base ******
  require '../../connect1/connection3.php';
 
 
@@ -234,7 +234,7 @@ $fichier=$_FILES['fichier2']['name'];
 $fichierChemin = $_FILES['fichier2']['tmp_name'];
 
 echo "fichierChemin temporaire :".$fichierChemin;
-//**********   Recherche du  caractère de séparation  **********************
+//**********   Recherche du  caractï¿½re de sï¿½paration  **********************
 
 $fichierA = fopen($fichierChemin, 'r+');
 
@@ -242,7 +242,7 @@ $fichierA = fopen($fichierChemin, 'r+');
 $fichierLigne = fgets($fichierA, 4096); 
 
 
-//recherche des caractere de séparation
+//recherche des caractere de sï¿½paration
 
 $caratereSeparation =",";
 //echo "<br/>";
@@ -267,7 +267,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 {
      //On formate le nom du fichier ici...
     // $fichier = strtr($fichier, 
-    //      'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 
+    //      'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 
     //      'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
     // $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
    
@@ -277,9 +277,9 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	//var_dump($dossier) ;echo "<br/>";
 	
 	 if(move_uploaded_file($_FILES['fichier2']['tmp_name'], $cheminn.$fichier))
-		 //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+		 //Si la fonction renvoie TRUE, c'est que ï¿½a a fonctionnï¿½...
      {
-          echo 'Upload effectu&eacute; avec succ&egrave;s !';echo "<br/>";
+          echo 'Upload effectu&eacute; avec succÃ¨s !';echo "<br/>";
      }
      else //Sinon (la fonction renvoie FALSE).
      {
@@ -291,7 +291,7 @@ else
      echo $erreur;
 }
 echo "comite :".$comite;
-// ****** Connection à la base ******
+// ****** Connection ï¿½ la base ******
 //$connect ="connection2"; 
 if ($ligueComite == "phpf1" or $ligueComite == "phpfed2" or $ligueComite == "phpfed3NE" or $ligueComite == "phpfed3GS" or $ligueComite == "phpfem")
 require '../../connect1/connection3.php';

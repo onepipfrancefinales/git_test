@@ -260,7 +260,7 @@
   
   <p class="nom">Drop-goal<span class="def"> (de 
   l'anglais dropped goal, but tomb&eacute;): coup de pied frappant le ballon juste 
-  apr&egrave;s le rebond et qui le fait passer entre les poteaux adverses en cours 
+  après le rebond et qui le fait passer entre les poteaux adverses en cours 
   de jeu (on dit qu'on passe un drop). Souvent abr&eacute;g&eacute; en &quot; 
   drop &quot;.</span><br></p>
 
@@ -273,17 +273,17 @@
   pied, un coup de pied tomb&eacute;, un bott&eacute; de d&eacute;gagement ou 
   un coup de pied. </span><br></p>
   
-<p class="nom"> Coup de pied franc ou coup franc <span class="def">: sanction ordonn&eacute;e par l'arbitre apr&egrave;s certaines 
+<p class="nom"> Coup de pied franc ou coup franc <span class="def">: sanction ordonn&eacute;e par l'arbitre après certaines 
   actions de gravit&eacute; &quot; moyenne &quot; (ex. : trop de joueurs en touche...). 
   Contrairement &agrave; la p&eacute;nalit&eacute;, il ne permet pas de tenter 
-  un tir au but direct et une touche trouv&eacute;e suit la r&egrave;gle ordinaire. 
+  un tir au but direct et une touche trouv&eacute;e suit la règle ordinaire. 
   Il peut &ecirc;tre jou&eacute; par n'importe quel type de coup de pied, ou &ecirc;tre 
   remplac&eacute; par une m&ecirc;l&eacute;e, sur demande de l'&eacute;quipe b&eacute;n&eacute;ficiaire. 
-  Le coup de pied doit &ecirc;tre jou&eacute; sur ou derri&egrave;re la marque, 
+  Le coup de pied doit &ecirc;tre jou&eacute; sur ou derrière la marque, 
   sur une ligne passant par cette marque. Le botteur n'a pas le droit de feindre 
-  un coup de pied franc. D&egrave;s qu'il amorce son mouvement pour botter, l'adversaire 
+  un coup de pied franc. Dès qu'il amorce son mouvement pour botter, l'adversaire 
   peut charger. Les joueurs de l'&eacute;quipe adverse doivent se replier en direction 
-  de leur propre ligne de but et se placer au moins &agrave; 10 m&egrave;tres 
+  de leur propre ligne de but et se placer au moins &agrave; 10 mètres 
   de la marque du coup de pied franc ou atteindre leur propre ligne de but, si 
   celle-ci est plus proche de la marque. &Eacute;galement appel&eacute; bras cass&eacute;. 
   Le coup de pied de renvoi sur arr&ecirc;t de vol&eacute;e ressemble au coup 

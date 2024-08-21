@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta name="description"
-content="Le site non officiel du Comit&egrave; Midi Pyr&egrave;n&egrave;es de rugby : Histoire, clubs, calendrier des matches, comp&egrave;titions, r&egrave;sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
+content="Le site non officiel du Comitè Midi Pyrènèes de rugby : Histoire, clubs, calendrier des matches, compètitions, rèsultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
 <meta name="keywords"
-content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,Equipe,France,Chelem,V,Nations,Webb Ellis, Brennus,Passe,Rives,Blanco,Sella,Ibanez,Transformation,Essai,M�l&egrave;e,Touche,P&egrave;nalit&egrave;,En-Avant,Terrain,Mi-temps,Stade,Maillot,XV,Quinze,Jeu,Buteur,Pilier,Talonneur,Calendrier,Match,Elite,Professionnel,Poule,Saison,Championnat,Tournoi,Coupe du Monde,Tri-Series,Arbitre,Comp&egrave;tition,Tri-Nations,Comit&egrave;s,Spanghero,Federation,Union,French,Rugby player,players,Sport,Ball,Oval,Team,Slam,Pass,Conversion,Try,Scrum,Touch,Penalty,Knock-on,Pitch,Half-time,Stadium,Jersey,XV,Fifteen,Game,Goal,kicker,Prop,forward,Hooker,Calendar,Professional,PoolSeason,Championship,Tournament,World Cup,Tri-Series,Referee,Competition,Committees,Matches">
+content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,Equipe,France,Chelem,V,Nations,Webb Ellis, Brennus,Passe,Rives,Blanco,Sella,Ibanez,Transformation,Essai,M�lèe,Touche,Pènalitè,En-Avant,Terrain,Mi-temps,Stade,Maillot,XV,Quinze,Jeu,Buteur,Pilier,Talonneur,Calendrier,Match,Elite,Professionnel,Poule,Saison,Championnat,Tournoi,Coupe du Monde,Tri-Series,Arbitre,Compètition,Tri-Nations,Comitès,Spanghero,Federation,Union,French,Rugby player,players,Sport,Ball,Oval,Team,Slam,Pass,Conversion,Try,Scrum,Touch,Penalty,Knock-on,Pitch,Half-time,Stadium,Jersey,XV,Fifteen,Game,Goal,kicker,Prop,forward,Hooker,Calendar,Professional,PoolSeason,Championship,Tournament,World Cup,Tri-Series,Referee,Competition,Committees,Matches">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -47,13 +47,13 @@ content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulous
       <div id="equipeI" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=190&page=HPHS1" target="_top">1éreSérie</a></div>
     </td>
     <td width="115" height="10"> 
-      <div id="equipeI" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=200&page=HPHS1" target="_top">2i&egrave;meSérie</a></div>
+      <div id="equipeI" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=200&page=HPHS1" target="_top">2ièmeSérie</a></div>
     </td>
     <td width="124" height="10"> 
-      <div id="equipeI" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=210&page=HPHS1" target="_top">3i&egrave;meSérie</a></div>
+      <div id="equipeI" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=210&page=HPHS1" target="_top">3ièmeSérie</a></div>
     </td>
     <td colspan="2"  height="10" valign="top" bgcolor="#6699FF"> <a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(MPY)" target="_blank"> 
-      Palmar&egrave;s terrirorial</a></td>
+      Palmarès terrirorial</a></td>
   </tr>
   <tr valign="top" align="center"> 
     <td width="63" height="2" valign="top"> 
@@ -72,10 +72,10 @@ content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulous
       <div id="equipeII" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=9190&page=HPHS1" target="_top">1éreSérie</a></div>
     </td>
     <td width="115" height="2" valign="top"> 
-      <div id="equipeII" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=9200&page=HPHS1" target="_top">2i&egrave;meSérie</a></div>
+      <div id="equipeII" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=9200&page=HPHS1" target="_top">2ièmeSérie</a></div>
     </td>
     <td width="124" valign="top"> 
-      <div id="equipeI" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=220&page=HPHS1" target="_top">4i&egrave;meSérie</a></div>
+      <div id="equipeI" ><a href="pagehonneur.php?variable_1=<?php echo $saison;?>&comite=<?php echo $comite;?>&division=220&page=HPHS1" target="_top">4ièmeSérie</a></div>
     </td>
     <td  height="2" valign="top" colspan="2"> 
       <div id="france"><font color="#006699"><a href="http://francefinalesrugby.franceserv.com/phases_finales/honneur/pagehonneur.php?variable_1=<?php echo $saison;?>" target="_blank">Championnat 

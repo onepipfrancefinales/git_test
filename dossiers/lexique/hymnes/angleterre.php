@@ -14,7 +14,7 @@
     <td colspan="3">
       <div align="center"><font size="6" face="Arial, Helvetica, sans-serif"><b>God 
         Save the Queen <br>
-        (Que Dieu prot&egrave;ge la Reine)</b></font></div>
+        (Que Dieu protège la Reine)</b></font></div>
     </td>
   </tr>
   <tr> 
@@ -23,13 +23,13 @@
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>God save our gracious Queen,<br>
-        Que Dieu prot&egrave;ge notre gracieuse Reine,<br>
+        Que Dieu protège notre gracieuse Reine,<br>
      
 		<span class="gras">Long live our noble Queen,</span><br>
          Longue vie &agrave; notre noble Reine,<br>
       ! 
 		<span class="gras">God save the Queen!</span><br>
-        Que Dieu prot&egrave;ge la Reine !<br>
+        Que Dieu protège la Reine !<br>
        
 		<span class="gras">Send her victorious,</span><br>
         Rends-la victorieuse,<br>
@@ -38,10 +38,10 @@
          Heureuse et glorieuse ;<br>
 
 		<span class="gras">Long to reign over us;</span><br>
-              Que soit long son r&egrave;gne sur nous,<br>
+              Que soit long son règne sur nous,<br>
       
 		<span class="gras">God save the Queen!</span> <br>
-      Que Dieu prot&egrave;ge la Reine</p>
+      Que Dieu protège la Reine</p>
 	  -----------------------------------------------------------
 	  <p><span class="gras">O Lord, our God, arise,</span><br>
         &Ocirc; Seigneur, notre Dieu, surgis<br>
@@ -62,7 +62,7 @@
         En Toi, nous mettons notre espoir ;<br>
        
 	   <span class="gras">God save us all!</span><br>
-      Que Dieu nous prot&egrave;ge tous !</p>
+      Que Dieu nous protège tous !</p>
 	  
 	 -------------------------------------------
 	 <p><span class="gras">Thy choicest gifts in store</span><br>
@@ -84,7 +84,7 @@
                 De chanter avec c&#156;ur et &agrave; pleine voix :<br>
         
 		<span class="gras">God save the Queen!
-		Que Dieu prot&egrave;ge la Reine !
+		Que Dieu protège la Reine !
 		</p>
     <br/><br/>
 	</td>

@@ -11,7 +11,7 @@
    <form action="http://francefinalesrugby.franceserv.com/admin/mdp/page_supprimer2.php" method="POST">
   <p> N&deg; de Base de donn&eacute;es 
     <input type="text" name="bd" maxlength="1" />
-    Rep&egrave;re comite 
+    RepÃ¨re comite 
     <input type="text" name="comite" maxlength="6" />
     ID 
     <input type="text" name="ID" maxlength="6" />
@@ -29,14 +29,14 @@
 </body>
 </html>
  <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db$bd"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db$bd"); // Sï¿½lection de la base onepip
 ?>
   <?php
-//mysql_query("DELETE FROM phpaucomite_membres WHERE id ='4' "); // Requête SQL
+//mysql_query("DELETE FROM phpaucomite_membres WHERE id ='4' "); // Requï¿½te SQL
 ?>
 
    <?php
  
-//mysql_close(); // Déconnexion de MySQL
+//mysql_close(); // Dï¿½connexion de MySQL
 ?>

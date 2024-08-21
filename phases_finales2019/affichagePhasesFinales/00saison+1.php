@@ -1223,7 +1223,7 @@ elseif ($division == 210 or $division == 220 or $division == 150)
     <td height="24" width="23%"> 
       <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif" color="#000000">8</font></div>
@@ -1563,7 +1563,7 @@ elseif ($division ==180)
     <td height="24" width="23%"> 
       <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif">7</font></div>
@@ -1900,7 +1900,7 @@ elseif ($division == 190)
     <td height="24" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font size="4" color="#000000" face="Arial, Helvetica, sans-serif">7</font></div>
@@ -2237,7 +2237,7 @@ elseif ($division == 200)
     <td height="24" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000" size="4">7</font></div>
@@ -2575,7 +2575,7 @@ elseif ($division == 210)
     <td height="24" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font color="#000000" size="4" face="Arial, Helvetica, sans-serif">3</font></div>
@@ -2913,7 +2913,7 @@ elseif ($division == 220)
     <td height="24" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif">3</font></div>

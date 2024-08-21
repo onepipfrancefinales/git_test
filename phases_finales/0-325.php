@@ -397,7 +397,7 @@
     <td colspan="2" height="42" rowspan="4" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
         sont definies <br>
-        par la FFR, apr&egrave;s chaque tour en<br>
+        par la FFR, après chaque tour en<br>
         privilegiant des <br>
         oppositions géographiques</font></div>
     </td>

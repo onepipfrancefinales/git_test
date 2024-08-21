@@ -3,14 +3,14 @@
 <html lang="fr">
  
  <head> 
- <meta name="description" content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comités territoriaux, Tous les championnats de rugby, fédérale 2, fédérale 3, fédérale 1, top 14.">
+ <meta name="description" content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitï¿½s territoriaux, Tous les championnats de rugby, fï¿½dï¿½rale 2, fï¿½dï¿½rale 3, fï¿½dï¿½rale 1, top 14.">
 <meta name=viewport content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Française,honneur,promotion honneur,Sport,Ballon,Ovale,">
+<meta name="keywords" content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Franï¿½aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document"> 
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby"> 
 <meta name="author" content="Equipe Onepip"> 
-<meta name="robots" content="All"> <title>1re Série</title>
+<meta name="robots" content="All"> <title>1re Sï¿½rie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,16 +19,16 @@
  <?php // J'ai choisi le mot de passe "kangou
 if (isset($_POST['mot_de_passe'])) // Si la variable existe
 {
-    // On se crée une variable $mot_de_passe avec le mot de passe entré
+    // On se crï¿½e une variable $mot_de_passe avec le mot de passe entrï¿½
     $mot_de_passe = $_POST['mot_de_passe'];
 }
 else // La variable n'existe pas encore
 {
-    $mot_de_passe = ""; // On crée une variable $mot_de_passe vide
+    $mot_de_passe = ""; // On crï¿½e une variable $mot_de_passe vide
 }
 if ($mot_de_passe == "kangou") // Si le mot de passe est bon
 {
-// On affiche la page cachée.
+// On affiche la page cachï¿½e.
 ?>
 <script language="JavaScript">
 <!--
@@ -54,7 +54,7 @@ MM_reloadPage(true);
   <tbody> 
   <tr> 
     <td colspan="3" bgcolor="#FFCCFF"> 
-      <div id="cal">Phases r&eacute;guli&egrave;res</div>
+      <div id="cal">Phases r&eacute;guliÃ¨res</div>
     </td>
   </tr>
   <tr> 
@@ -110,7 +110,7 @@ MM_reloadPage(true);
   </tr>
   <tr> 
     <td colspan="3" bgcolor="#FFCCFF"> 
-      <div id="equipeIpro"><a href="MAJFFR/raccourcis_ffr/page_raccourcis.htm" target="_blank"><font color="#FFFF99"><i><font color="#FFFF66">Acc&egrave;s 
+      <div id="equipeIpro"><a href="MAJFFR/raccourcis_ffr/page_raccourcis.htm" target="_blank"><font color="#FFFF99"><i><font color="#FFFF66">AccÃ¨s 
         aux r&eacute;sultats (ffr et autres) </font></i></font></a></div>
     </td>
   </tr>
@@ -129,7 +129,7 @@ MM_reloadPage(true);
   <tr> 
     <td style="text-align: center; font-weight: bold;" colspan="3" bgcolor="#FFCCFF"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><big><a
- href="/resultats/TEST/matchsPrevus.php">Matchs Prévus</a></big>&nbsp;</font></div>
+ href="/resultats/TEST/matchsPrevus.php">Matchs Prï¿½vus</a></big>&nbsp;</font></div>
     </td>
   </tr>
   <tr> 
@@ -280,7 +280,7 @@ MM_reloadPage(true);
       <div align="center"><font
  face="Arial, Helvetica, sans-serif"><a
  href="ajoutTable/saisie_nouveau_club.php" target="_top">Ajout d'un club dans 
-        les différentes tables</a></font></div>
+        les diffï¿½rentes tables</a></font></div>
     </td>
   </tr>
   <tr> 
@@ -293,7 +293,7 @@ MM_reloadPage(true);
     <td colspan="3" bgcolor="#66FFCC"> 
       <div align="center"><font
  face="Arial, Helvetica, sans-serif"><a href="consultation/listeClubsParId.php">Liste 
-        des clubs classée par Id</a></font></div>
+        des clubs classï¿½e par Id</a></font></div>
     </td>
   </tr>
   <tr> 
@@ -301,7 +301,7 @@ MM_reloadPage(true);
  height="8" colspan="3" bgcolor="#66FFCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><a
  href="consultation/listeClubsParNom.php">L</a></font><a href="consultation/listeClubsParNom.php"><font
- face="Arial, Helvetica, sans-serif">iste des clubs classée par Nom de club</font></a></div>
+ face="Arial, Helvetica, sans-serif">iste des clubs classï¿½e par Nom de club</font></a></div>
     </td>
   </tr>
   <tr> 

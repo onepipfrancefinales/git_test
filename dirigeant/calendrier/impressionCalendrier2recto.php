@@ -39,7 +39,7 @@ require 'fonctionsDonnees.php';
               <br>
               <table width="250" border="1"  cellspacing="1">
                 <tr>
-                  <td bgcolor="#CCCCCC"><div align="center"><b><font size="5">Palmar&egrave;s</font></b></div></td>
+                  <td bgcolor="#CCCCCC"><div align="center"><b><font size="5">Palmarès</font></b></div></td>
                 </tr>
               </table>
                 <p align="center"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#000000">Equipe 
@@ -131,7 +131,7 @@ require 'fonctionsDonnees.php';
               <table width="250" border="1" cellspacing="1">
                 <tr> 
                   <td bgcolor="#CCCCCC"> 
-                    <div align="center"><b><font size="5">Palmar&egrave;s</font></b></div>
+                    <div align="center"><b><font size="5">Palmarès</font></b></div>
                   </td>
                 </tr>
               </table>
@@ -226,7 +226,7 @@ require 'fonctionsDonnees.php';
               <table width="250" border="1" cellspacing="1">
                 <tr> 
                   <td bgcolor="#CCCCCC"> 
-                    <div align="center"><b><font size="5">Palmar&egrave;s</font></b></div>
+                    <div align="center"><b><font size="5">Palmarès</font></b></div>
                   </td>
                 </tr>
               </table>
@@ -321,7 +321,7 @@ require 'fonctionsDonnees.php';
                 </font></b></p>
     <table width="250" border="1" cellspacing="1">
         <tr> 
-            <td bgcolor="#CCCCCC" align="center"><b><font size="5">Palmar&egrave;s</font></b></td>
+            <td bgcolor="#CCCCCC" align="center"><b><font size="5">Palmarès</font></b></td>
 		</tr>
     </table>
 	 <p align="center"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#000000">Equipe 

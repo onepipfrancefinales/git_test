@@ -1635,11 +1635,11 @@ function phpinfo1($return=false){
 				<td><b>'.$pi['PHP Configuration']['PHP Version'].'</b></td>
 			</tr>
 			<tr>
-				<td>Syst&egrave;me</td>
+				<td>Système</td>
 				<td>'.$pi['PHP Configuration']['System'].'</td>
 			</tr>
 			<tr>
-				<td>Génération du syst&egrave;me</td>
+				<td>Génération du système</td>
 				<td>'.$pi['PHP Configuration']['Build Date'].'</td>
 			</tr>
 		</tbody>

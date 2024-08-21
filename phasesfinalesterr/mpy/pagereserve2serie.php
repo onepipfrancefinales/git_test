@@ -1,7 +1,7 @@
 <?php $annee=$_GET['variable_1'];?>
 <html>
 <head>
-<title>Championnat des Pyr&egrave;n&egrave;es 2me S&egrave;rie R&egrave;serve<?php echo $annee;?></title>
+<title>Championnat des Pyrènèes 2me Sèrie Rèserve<?php echo $annee;?></title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>

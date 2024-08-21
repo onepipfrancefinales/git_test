@@ -52,7 +52,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
        </fieldset > </p>
       <p>&nbsp;</p>
        <form action="../pageclub00.php" method="GET">
-        <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par club</legend> 
+        <fieldset id="fieldsetG"> <legend id="legendG"> Palmarès par club</legend> 
        
          <input id="inputG" type="text" name="champion" />
      

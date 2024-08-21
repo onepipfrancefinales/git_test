@@ -3,39 +3,39 @@
 define('CONFIG_SERVER',   '127.0.0.1');  // Adresse du serveur FTP
 define('CONFIG_USERNAME', 'root');  // Nom d'utilisateur
 define('CONFIG_PASSWORD', '');  // Mot de passe
-define('CONFIG_TIMEOUT',  5);      // Délai de connexion, en secondes
+define('CONFIG_TIMEOUT',  5);      // Dï¿½lai de connexion, en secondes
 
 	
 if(! empty($_FILES['fichier']) && $_FILES['fichier']['error'] == UPLOAD_ERR_OK && is_uploaded_file($_FILES['fichier']['tmp_name']))
 	
 {
  
-  $file = $_FILES['fichier']['tmp_name'];   // Le fichier téléversé
+  $file = $_FILES['fichier']['tmp_name'];   // Le fichier tï¿½lï¿½versï¿½
 	if ($fonction == 1)
 	$dest = '127.0.0.1/dirigeant/feuilleMatch/telechargement/joueurs/' . $_FILES['fichier']['name']; // Sa destination
 	else
 	$dest = '/127.0.0.1/dirigeant/feuilleMatch/telechargement/dirigeants/' . $_FILES['fichier']['name']; // Sa destination  
-  $conn_id = ftp_connect(CONFIG_SERVER);   // Création de la connexion au serveur FTP
+  $conn_id = ftp_connect(CONFIG_SERVER);   // Crï¿½ation de la connexion au serveur FTP
 
   if(empty($conn_id))
   {
-    // echo "Le fichier téléversé : ".$file; echo "<br/>";
+    // echo "Le fichier tï¿½lï¿½versï¿½ : ".$file; echo "<br/>";
 	//echo "Sa destination : ".$dest; echo "<br/>";
-	echo 'Échec de la connexion à ' . CONFIG_SERVER;
+	echo 'ï¿½chec de la connexion ï¿½ ' . CONFIG_SERVER;
   }
   else
   {
-    // Définition du délai de connexion
+    // Dï¿½finition du dï¿½lai de connexion
     ftp_set_option($conn_id, FTP_TIMEOUT_SEC, CONFIG_TIMEOUT);
 
-    echo 'Connecté au serveur FTP.<br/>';
+    echo 'Connectï¿½ au serveur FTP.<br/>';
 	if ($fonction==1)
 	$fichierATraite = substr($dest,81);
 	else
 	$fichierATraite = substr($dest,84);
 	
 	echo $fichierATraite;echo "<br/>";
-	echo "Le fichier téléversé : ".$file; echo "<br/>";
+	echo "Le fichier tï¿½lï¿½versï¿½ : ".$file; echo "<br/>";
 	echo "Sa destination : ".$dest; echo "<br/>";echo "<br/>";
     
     // Identification avec le nom d'utilisateur et le mot de passe
@@ -43,7 +43,7 @@ if(! empty($_FILES['fichier']) && $_FILES['fichier']['error'] == UPLOAD_ERR_OK &
 	ftp_pasv($conn_id, true);
     if(!$login_result)
     {	
-      echo 'Échec d\'identification à ' . CONFIG_SERVER;
+      echo 'ï¿½chec d\'identification ï¿½ ' . CONFIG_SERVER;
     }
     else
     {
@@ -53,9 +53,9 @@ if(! empty($_FILES['fichier']) && $_FILES['fichier']['error'] == UPLOAD_ERR_OK &
 	  if(ftp_put($conn_id, $dest, $file, FTP_BINARY))
 	  //if(ftp_put($conn_id, $dest, $file, FTP_ASCII))
 		  
-		echo "Le fichier a &eacute;t&eacute;  envoy&eacute; avec succ&egrave;s";
+		echo "Le fichier a &eacute;t&eacute;  envoy&eacute; avec succÃ¨s";
       else  
-        echo "Problème lors de l'envoi du fichier";
+        echo "Problï¿½me lors de l'envoi du fichier";
     }
     // Fermeture de la connexion
     ftp_close($conn_id);

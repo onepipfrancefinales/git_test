@@ -38,7 +38,7 @@
   </tr>
   <tr> 
     <td width="16%"> 
-      <div align="center"><a href="accueil.php?table=parametres">Param&egrave;tres</a></div>
+      <div align="center"><a href="accueil.php?table=parametres">Paramètres</a></div>
     </td>
     <td width="16%"> 
       <div align="center"><a href="accueil.php?table=saisons">Saisons</a></div>

@@ -26,7 +26,7 @@
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=da&annee=2018&division=170">
 	  Comité 
-        Dr&ocirc;me Ard&egrave;che</a>
+        Dr&ocirc;me Ardèche</a>
     </td>
     <td> 
       <a href="pageAffichage.php?page=HPHS1&comite=ly&annee=2018&division=170">

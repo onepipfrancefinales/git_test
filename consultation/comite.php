@@ -71,7 +71,7 @@
 </form>
 <br />
 
-<h1><font color = "#FF0000" >Palmar&egrave;s Territorial 
+<h1><font color = "#FF0000" >Palmarès Territorial 
     <?php //  $saisonChoisie=$_GET['saisonChoisie'];  ?>
    <?php //echo "$saison1";  ?>
     <?php echo "$saisonChoisie";  ?></font></h1>

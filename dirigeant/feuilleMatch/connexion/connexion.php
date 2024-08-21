@@ -73,7 +73,7 @@ action="/dirigeant/feuilleMatch/connexion/page_liste_compet.php" method="POST">
 <p align="left"><font color="#000000"><b><font size="4" face="Arial, Helvetica, sans-serif">- 
   Sauvegarde de vos feuilles de macths (&eacute;quipe I et &eacute;quipe II).</font></b></font></p>
 <p align="left"><font color="#000000"><b><font size="4" face="Arial, Helvetica, sans-serif">- 
-  Gestion de tous les Dirigeants Acc&egrave;s Terrain.</font></b></font></p>
+  Gestion de tous les Dirigeants Accès Terrain.</font></b></font></p>
 <p align="left"><font color="#000000"><b><font size="4" face="Arial, Helvetica, sans-serif">- 
   Prise en compte des sp&eacute;cificit&eacute;s entre les comp&eacute;titons 
   f&eacute;d&eacute;rales et territoriales (nbre de joueurs, nbre entraineur, 

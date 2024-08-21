@@ -121,7 +121,7 @@ $bdcomiteAnnee=("php".''.$comite.''."_pf".''.$annee);
     <td width="36" height="13">&nbsp;</td>
     <td width="93" align="left" height="13"> </td>
     <td colspan="4" align="left" height="13" bgcolor="#FFFF00"> 
-      <div id="palmares" > Palmar&egrave;s 
+      <div id="palmares" > Palmarès 
      <?php
  			echo $annee;    
 	 ?>

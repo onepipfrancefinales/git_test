@@ -11,7 +11,7 @@
   </tr>
   <tr> 
     <td colspan="4">
-      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misph&egrave;re 
+      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misphère 
         Nord</font></b></font></div>
     </td>
   </tr>
@@ -84,7 +84,7 @@
   </tr>
   <tr> 
     <td colspan="4"> 
-      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misph&egrave;re 
+      <div align="center"><font color="#000000" size="5"><b><font size="6">H&eacute;misphère 
         Sud</font></b></font></div>
     </td>
   </tr>
@@ -150,21 +150,21 @@
         <p><iframe width="420" height="315" src="https://www.youtube.com/embed/EU4hCykeX_Q" frameborder="0" allowfullscreen></iframe></p>
         <p><iframe width="420" height="315" src="https://www.youtube.com/embed/EU4hCykeX_Q" frameborder="0" allowfullscreen><font size="4" face="Arial, Helvetica, sans-serif"><b>Fratelli 
           d'Italia</b><br>
-          Fr&egrave;res d'Italie,<br>
-          <b>L'Italia s'&egrave; desta,</b><br>
+          Frères d'Italie,<br>
+          <b>L'Italia s'è desta,</b><br>
           L'Italie s'est r&eacute;veill&eacute;e,<br>
           <b>Dell'elmo di Scipio</b><br>
           Dans le casque de Scipion<br>
-          <b>S'&egrave; cinta la testa.</b><br>
+          <b>S'è cinta la testa.</b><br>
           Elle s'est ferm&eacute; la t&ecirc;te.<br>
-          <b>Dov'&egrave; la Vittoria ?</b><br>
+          <b>Dov'è la Vittoria ?</b><br>
           O&ugrave; est la victoire ?<br>
           <b>Le porga la chioma,</b><br>
-          Elle porte une crini&egrave;re,<br>
+          Elle porte une crinière,<br>
           <b>Ch&eacute; schiava di Roma</b><br>
           Esclave de Rome<br>
           <b>Iddio la cre&ograve;.</b><br>
-          Les dieux la cr&eacute;&egrave;rent.<br>
+          Les dieux la cr&eacute;èrent.<br>
           <b>Stringiamci a coorte</b><br>
           Rassemblons-nous en cohorte <br>
           <b>Siam pronti alla morte</b><br>
@@ -178,7 +178,7 @@
       </iframe></font><iframe width="420" height="315" src="https://www.youtube.com/embed/EU4hCykeX_Q" frameborder="0" allowfullscreen>
       <p align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>Noi 
         siamo da secoli</b><br>
-        Nous sommes depuis des si&egrave;cles<br>
+        Nous sommes depuis des siècles<br>
         <b>Calpesti, derisi,</b><br>
         Pi&eacute;tin&eacute;s, m&eacute;pris&eacute;s,<br>
         <b>Perch&eacute; non siam popolo,</b><br>
@@ -205,7 +205,7 @@
         <b>L'unione e l'amore</b><br>
         L'union et l'amour<br>
         <b>Rivelano ai Popoli</b><br>
-        R&eacute;v&egrave;lent aux peuples<br>
+        R&eacute;vèlent aux peuples<br>
         <b>Le vie del Signore ;</b><br>
         Les voies du Seigneur ;<br>
         <b>Giuriamo far libero</b><br>
@@ -225,7 +225,7 @@
       <p align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>Dall'Alpi 
         a Sicilia</b><br>
         Des Alpes &agrave; la Sicile<br>
-        <b>Dovunque &egrave; Legnano,</b><br>
+        <b>Dovunque è Legnano,</b><br>
         O&ugrave; que soit Legnano, <br>
         <b>Ogn'uom di Ferruccio</b><br>
         Chaque homme de Ferrucci <br>
@@ -442,7 +442,7 @@
         <b>And Dublin Bay </b><br>
         Et la baie de Dublin <br>
         <b>From the four proud provinces of Ireland</b><br>
-        Des quatre fi&egrave;res provinces d'Irlande <br>
+        Des quatre fières provinces d'Irlande <br>
         --------------------------------------------------------------------<br>
         <b>Hearts of steel </b><br>
         Et t&ecirc;tes qui ne s'abaissent pas <br>
@@ -455,7 +455,7 @@
         <b>We can fight no more </b><br>
         Nous ne puissions plus combattre<br>
         <b>For the four proud provinces of Ireland </b><br>
-        Pour les quatre fi&egrave;res provinces d'Irlande</font></font> <font color="#000000"><iframe width="420" height="315" src="https://www.youtube.com/embed/B_GcpcFAbnQ" frameborder="0" allowfullscreen></iframe></font> 
+        Pour les quatre fières provinces d'Irlande</font></font> <font color="#000000"><iframe width="420" height="315" src="https://www.youtube.com/embed/B_GcpcFAbnQ" frameborder="0" allowfullscreen></iframe></font> 
       </div>
     </td>
   </tr>
@@ -555,7 +555,7 @@
         <b>Maluphakanyasw'uphondo lwayo</b><br>
         Puisse sa corne s'&eacute;lever vers les cieux<br>
         <b>Yiswa imithandazo yethu</b><br>
-        Que Dieu entende nos pri&egrave;res<br>
+        Que Dieu entende nos prières<br>
         <b>Nkosi sikelela, thina lusapho lwayo </b><br>
         Et nous b&eacute;nisse, nous Ses enfants (d'Afrique)<br>
         <br>
@@ -601,7 +601,7 @@
     <td height="51" width="393"> 
       <div align="center"><b><font size="6" face="Arial, Helvetica, sans-serif" color="#000000">God 
         Defend New zealand<br>
-        (Dieu prot&egrave;ge la Nouvelle Z&eacute;lande !)</font></b></div>
+        (Dieu protège la Nouvelle Z&eacute;lande !)</font></b></div>
     </td>
     <td height="51" width="98"> 
       <div align="center"><b><img src="../../images/drapeaux/Grand_format/NZ.png" width="75" height="50"></b></div>
@@ -618,15 +618,15 @@
         <b>ata whakarongona;</b><br>
         &Eacute;coute nos voix, nous te prions<br>
         <b>Me aroha noa</b><br>
-        Dieu prot&egrave;ge notre pays libre<br>
+        Dieu protège notre pays libre<br>
         <b>Kia hua ko te pai;</b><br>
         D&eacute;fends l'&eacute;toile triple du Pacifique<br>
         <b>Kia tau to atawhai</b><br>
-        Des fl&egrave;ches du conflit et de la guerre<br>
+        Des flèches du conflit et de la guerre<br>
         <b>Manaakitia mai</b><br>
         Fais entendre ses louanges partout<br>
         <b>Aotearoa</b><br>
-        Dieu prot&egrave;ge la Nouvelle-Z&eacute;lande. <br>
+        Dieu protège la Nouvelle-Z&eacute;lande. <br>
         <br>
         --------------------------------------------------------------------<br>
         <br>
@@ -637,15 +637,15 @@
         <b>Hear our voices, we entreat</b><br>
         &Eacute;coute nos voix, nous te prions<br>
         <b>God defend our free land</b><br>
-        Dieu prot&egrave;ge notre pays libre<br>
+        Dieu protège notre pays libre<br>
         <b>Guard Pacific&#146;s triple star</b><br>
         D&eacute;fends l'&eacute;toile triple du Pacifique<br>
         <b>From the shafts of strife and war</b><br>
-        Des fl&egrave;ches du conflit et de la guerre<br>
+        Des flèches du conflit et de la guerre<br>
         <b>Make her praises heard afar</b><br>
         Fais entendre ses louanges partout<br>
         <b>God defend New Zealand ! </b><br>
-        Dieu prot&egrave;ge la Nouvelle-Z&eacute;lande ! </font><iframe width="420" height="315" src="https://www.youtube.com/embed/An5Hyoq-lXQ" frameborder="0" allowfullscreen></iframe></font></p>
+        Dieu protège la Nouvelle-Z&eacute;lande ! </font><iframe width="420" height="315" src="https://www.youtube.com/embed/An5Hyoq-lXQ" frameborder="0" allowfullscreen></iframe></font></p>
     </td>
   </tr>
   <tr> 

@@ -272,7 +272,7 @@ echo "<br />";echo "<br />";echo "<br />";
     <font class="QLiens"><a href="../../dirigeant/calendrier/pageCalendrier.php?idEquipe=<?php echo $equipe; ?>&comite=<?php echo substr($comite,3,5); ?>" target="_blank"> 
     <font color="#000000">Télécharger le calendrier du club</font></a><br>
   <hr />
-    <h1>  Palmar&egrave;s </h1> 
+    <h1>  Palmarès </h1> 
   <br>
     <?php include("palmares.php");  ?>
     <br>

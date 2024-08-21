@@ -25,7 +25,7 @@
     </td>
     <td> 
       <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=da&variable_1=2018"><font color="#FFFFFF">Comité 
-        Dr&ocirc;me Ard&egrave;che</font></a></div>
+        Dr&ocirc;me Ardèche</font></a></div>
     </td>
     <td> 
       <div align="center"><a href="pageAffichage.php?page=HPHS1&comite=ly&variable_1=2018"><font color="#FFFFFF">Comité 

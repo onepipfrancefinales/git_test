@@ -473,11 +473,11 @@ MM_reloadPage(true);
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
         </font><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Championnat des Pyr&egrave;n&egrave;es";?>
+        <? echo "Championnat des Pyrènèes";?>
         </font><font size="5" color="#FFCC00"><b> 
         <?php echo $annee;?>
         </b></font><font color="#FFCC00"> : 
-        <? echo "Reserve 1re S&egrave;rie";?>
+        <? echo "Reserve 1re Sèrie";?>
         </font></b></font></b></font></td>
     </tr>
   </table>

@@ -121,7 +121,7 @@ else
       <td class="saisie" colspan="2"> <?php echo $cpStade; ?> <?php echo $villeStade; ?> </td>
     </tr>
     <tr>
-      <td class="titreGauche" width="20%"> T&egrave;l : </td>
+      <td class="titreGauche" width="20%"> Tèl : </td>
       <td class="saisie" width="80%"> <?php echo $telStade; ?> </td>
     </tr>
     <tr>

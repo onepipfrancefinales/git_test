@@ -31,7 +31,7 @@ MM_reloadPage(true);
       <p> 
         
       <form action="../palmares/palmNational/pageannee.php" method="POST">
-        <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par Année</legend> 
+        <fieldset id="fieldsetG"> <legend id="legendG"> Palmarès par Année</legend> 
         <p> 
        <input id="inputGA" type="text" name="saison" maxlength="4" size="8" >
           <br>
@@ -44,7 +44,7 @@ MM_reloadPage(true);
 		
 		
       <br />
-      <p>  <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par 
+      <p>  <fieldset id="fieldsetG"> <legend id="legendG"> Palmarès par 
         divisions</legend> <br />
           <select id="inputG" name="select4" onChange="MM_jumpMenu('parent',this,0)" size="14">
           <option selected>------------</option>

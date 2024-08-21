@@ -200,7 +200,7 @@ if (isset($tabChampion[$i])) $champion[$i] = $tabChampion[$i];
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>3 participations</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">CA B&egrave;gles 3 finales 
+<p><font face="Arial, Helvetica, sans-serif" size="3">CA Bègles 3 finales 
   /2 victoires</font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">Olympique 3 finales / 1 
   victoire<br>

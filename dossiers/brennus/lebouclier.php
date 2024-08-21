@@ -15,19 +15,19 @@
     </td>
     <td width="673"><b><font size="5">caract&eacute;ristiques :</font></b> 
       <p><font face="Arial, Helvetica, sans-serif" size="3">Le Bouclier de Brennus 
-        constitue le troph&eacute;e des Champions de France depuis la 1&egrave;re 
+        constitue le troph&eacute;e des Champions de France depuis la 1ère 
         finale du Championnat de France en 1892. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Bouclier damasquin&eacute;, 
         il pr&eacute;sente en son centre les &#147;armes&#148; de l&#146;USFSA 
-        (Union des Soci&eacute;t&eacute;s Fran&ccedil;aises des Sports Ath&egrave;tiques) 
+        (Union des Soci&eacute;t&eacute;s Fran&ccedil;aises des Sports Athètiques) 
         qui - &agrave; l&#146;&eacute;poque, g&eacute;rait le rugby fran&ccedil;ais 
         - sous forme de deux anneaux enlac&eacute;s et offre comme devise &#147;Ludus 
         pro patria&#148; (&#147;le jeu pour la patrie&#148;).</font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Le Bouclier de Brennus 
-        p&egrave;se 16,850kg pour une &eacute;paisseur de 3cm, une largeur de 
+        pèse 16,850kg pour une &eacute;paisseur de 3cm, une largeur de 
         76cm et une hauteur de 101cm.</font></p>
-      <p><font face="Arial, Helvetica, sans-serif" size="3">Son origine est tr&egrave;s 
-        controvers&eacute;e. Beaucoup, aujourd&#146;hui encore, consid&egrave;rent 
+      <p><font face="Arial, Helvetica, sans-serif" size="3">Son origine est très 
+        controvers&eacute;e. Beaucoup, aujourd&#146;hui encore, considèrent 
         que son concepteur est Charles Brennus, figure embl&eacute;matique du 
         rugby fran&ccedil;ais et cr&eacute;ateur du club du SCUF.</font></p>
 </td>
@@ -57,9 +57,9 @@
       <p><font face="Arial, Helvetica, sans-serif" size="3">Toutefois, si Charles 
         Brennus a sans nul doute cisel&eacute; le Bouclier, le m&eacute;rite de 
         la conception revient probablement &agrave; Pierre de Coubertin, Secr&eacute;taire 
-        G&eacute;n&eacute;ral de l&#146;USFSA en 1892, arbitre de la 1&egrave;re 
+        G&eacute;n&eacute;ral de l&#146;USFSA en 1892, arbitre de la 1ère 
         finale et d&eacute;fenseur acharn&eacute; des valeurs sportives et de 
-        l&#146;amateurisme de cette fin de si&egrave;cle. Pr&eacute;cisons aussi 
+        l&#146;amateurisme de cette fin de siècle. Pr&eacute;cisons aussi 
         que le &#147;ciseleur&#148; s&#146;appelait de son vrai nom, Brennus Ambiorix 
         Crosnier.</font></p>
 </td>
@@ -73,14 +73,14 @@
       <p><font size="5"><b>Le c&eacute;r&eacute;monial</b></font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Ce troph&eacute;e 
         sera donc remis en 1892 au Racing Club de France puis dispara&icirc;tra 
-        (myst&egrave;re !) jusqu&#146;en 1911. </font></p>
+        (mystère !) jusqu&#146;en 1911. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Remis au Stade Toulousain 
         en 1912, il fut ignor&eacute; les deux ann&eacute;es suivantes par Bayonne 
         et le SCUF pour revenir sur le pr&eacute; en 1914 pour honorer Perpignan. 
         </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Ce n&#146;est qu&#146;&agrave; 
         partir de 1920 que le troph&eacute;e est confi&eacute; pour une ann&eacute;e 
-        enti&egrave;re au Champion. Le premier &laquo; gardien &raquo; fut le 
+        entière au Champion. Le premier &laquo; gardien &raquo; fut le 
         Stadoceste Tarbais. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Ce n&#146;est qu&#146;&agrave; 
         la mort de Charles Brennus en 1943 que le bouclier fut remis officiellement 
@@ -89,8 +89,8 @@
         le bouclier se trouvait sur le terrain durant la partie, gard&eacute; 
         par deux joueurs du SCUF, club de toujours de Charles Brennus. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">En 1951, le capitaine 
-        de l&#146;US Carmaux, &laquo; N&eacute;nou &raquo; Pag&egrave;s, vainqueur 
-        de la finale, refusa de le recevoir apr&egrave;s un combat tr&egrave;s 
+        de l&#146;US Carmaux, &laquo; N&eacute;nou &raquo; Pagès, vainqueur 
+        de la finale, refusa de le recevoir après un combat très 
         &acirc;pre face &agrave; Tarbes. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">L&#146;ann&eacute;e 
         suivante, le protocole fut chang&eacute;. Le bouclier restait sur le terrain 

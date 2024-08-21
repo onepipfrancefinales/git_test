@@ -48,7 +48,7 @@
     </td>
     <td colspan="5"> 
       <div align="center">Edition annul&eacute;e en raison du COVID 19 et de la 
-        p&egrave;riode de confinement intaur&eacute;e du 17 mars au 11 mai</div>
+        pèriode de confinement intaur&eacute;e du 17 mars au 11 mai</div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
@@ -637,7 +637,7 @@
       <div align="center">01/06/1991</div>
     </td>
     <td width="216"> 
-      <div align="center">CA B&egrave;gles Bordeaux</div>
+      <div align="center">CA Bègles Bordeaux</div>
     </td>
     <td width="199"> 
       <div align="center">Stade Toulousain</div>
@@ -2613,7 +2613,7 @@
       <div align="center">18-00 </div>
     </td>
     <td width="227"> 
-      <div align="center">B&eacute;con-les-Bruy&egrave;res - Courbevoie </div>
+      <div align="center">B&eacute;con-les-Bruyères - Courbevoie </div>
     </td>
     <td width="95"> 
       <div align="center">1 500</div>
@@ -2636,7 +2636,7 @@
       <div align="center">07-03 </div>
     </td>
     <td width="227" height="22"> 
-      <div align="center">B&eacute;con-les-Bruy&egrave;res - Courbevoie </div>
+      <div align="center">B&eacute;con-les-Bruyères - Courbevoie </div>
     </td>
     <td width="95" height="22"> 
       <div align="center">1 200</div>

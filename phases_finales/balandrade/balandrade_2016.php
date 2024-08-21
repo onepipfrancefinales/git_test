@@ -608,7 +608,7 @@ $clubA1632= '	 Strasbourg (AL)	 ';
     <td colspan="2" height="51" rowspan="4" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
         sont définies <br>
-        par la FFR, apr&egrave;s chaque tour <br>
+        par la FFR, après chaque tour <br>
         en privilégiant des <br>
         oppositions géographiques</font></div>
     </td>

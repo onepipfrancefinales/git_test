@@ -11,7 +11,7 @@
    <tr> 
     <td class = "none" colspan="4" height="22" bgcolor="#333333"><a href="/resultats/page_resultats.php"><font size="4">Résultats &amp; classements</font></a></td>
     <td class = "none" colspan="4" height="22" bgcolor="#333333"><a href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?annee=2023&division=110"><font size="4">Championnats de France</font></a></td>
-    <td class = "none" colspan="4" height="22" bgcolor="#333333"><a href="/palmares/palmTerritorial/pagePalmares.php" target="_top"><font size="4">Palmar&egrave;s Régionaux &amp; Territoriaux</font></a></td>
+    <td class = "none" colspan="4" height="22" bgcolor="#333333"><a href="/palmares/palmTerritorial/pagePalmares.php" target="_top"><font size="4">Palmarès Régionaux &amp; Territoriaux</font></a></td>
    </tr>
    <tr bgcolor="#CCCCCC"> 
     <td colspan="12" height="12">&nbsp;</td>

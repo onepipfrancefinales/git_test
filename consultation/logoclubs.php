@@ -76,7 +76,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/consultation/page_recherche_comite.php?variable_1=(CBL)">C&ocirc;te Basque Landes</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(CA)">C&ocirc;te d'Argent</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(CAZ)">C&ocirc;te d'Azur</option>
-          <option value="/consultation/page_recherche_comite.php?variable_1=(DA)">Dr&ocirc;me Ard&egrave;che</option>
+          <option value="/consultation/page_recherche_comite.php?variable_1=(DA)">Dr&ocirc;me Ardèche</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(FL)">Flandres</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(FC)">Franche Comté</option>
           <option value="/consultation/page_recherche_comite.php?variable_1=(IDF)">Ile de France</option>

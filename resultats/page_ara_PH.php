@@ -66,7 +66,7 @@ $sigleLigue="(ARA)";
           <h2 class ="titre">Ligue Auvergne Rh&ocirc;ne Alpes</h2>
           <h2 class ="commentaire">La ligue Auvergne Rh&ocirc;ne Alpes est née de la fusion des comités territoriaux<br>
             de l'Auvergne, du Lyonnais, des Alpes et du comité<br>
-            Dr&ocirc;me Ard&egrave;che en janvier 2018.</font></h2>
+            Dr&ocirc;me Ardèche en janvier 2018.</font></h2>
  <?php 
 	include("liensDivers.php"); 
     include("sommaires.php");  

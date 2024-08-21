@@ -51,7 +51,7 @@ MM_reloadPage(true);
     </tr>
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Finales territoriales du comit&egrave; des Pyr&egrave;n&egrave;es $annee";?>
+        <? echo "Finales territoriales du comitè des Pyrènèes $annee";?>
         </font></b></font></td>
     </tr>
   </table>

@@ -283,12 +283,12 @@ MM_reloadPage(true);
       <div align="center"><font size="2" face="Arial, Helvetica, sans-serif" color="#FFFFFF"><img src="../images/b2.jpg" width="89" height="126"></font></div>
     </td>
     <td width="89" bgcolor="#000000"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"></a><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"></a><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">2i&egrave;me 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"></a><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"></a><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">2ième 
         Série</font></a></b></font></div>
     </td>
     <td width="99" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"></a></b></font></td>
     <td width="98" bgcolor="#000000"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">4i&egrave;me 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">4ième 
         Série</font></a></b></font></div>
     </td>
   </tr>
@@ -305,7 +305,7 @@ MM_reloadPage(true);
   </tr>
   <tr> 
     <td bgcolor="#000000" height="42" bordercolor="#FFFFFF"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">3i&egrave;me 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top"><font size="3" color="#FFFFFF">3ième 
         Série</font></a></b></font></div>
     </td>
   </tr>
@@ -482,7 +482,7 @@ MM_reloadPage(true);
 <table width="600" border="1" bordercolor="#000000" cellspacing="0" align="center">
   <tr> 
     <td bgcolor="#FFFFCC"> 
-      <div align="center"><font color="#000000"><b><font size="6" color="#FF0000">Synth&egrave;se 
+      <div align="center"><font color="#000000"><b><font size="6" color="#FF0000">Synthèse 
         par comité des clubs qualifiés en <br>
         championnat de France en 2015</font></b></font></div>
     </td>

@@ -1,7 +1,7 @@
 <?php $annee=$_GET['variable_1'];?>
 <html>
 <head>
-<title>Championnat des Pyr&egrave;n&egrave;es Honneur</title>
+<title>Championnat des Pyrènèes Honneur</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body bgcolor="#EAECEB" text="#000000">

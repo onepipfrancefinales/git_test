@@ -49,7 +49,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -106,7 +106,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -169,7 +169,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -223,7 +223,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -283,7 +283,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -337,7 +337,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -396,7 +396,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -451,7 +451,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -509,7 +509,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -607,7 +607,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -706,7 +706,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font>
 <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -803,7 +803,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -1193,7 +1193,7 @@ echo "";
     </tr>
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Finales territoriales du comit&egrave; des Pyr&egrave;n&egrave;es $annee";?>
+        <? echo "Finales territoriales du comitè des Pyrènèes $annee";?>
         </font></b></font></td>
     </tr>
   </table>

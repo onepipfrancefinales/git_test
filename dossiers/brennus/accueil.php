@@ -82,7 +82,7 @@
     <td height="75" width="3%">&nbsp;</td>
     <td height="75" colspan="2" bgcolor="#FFFFFF"> 
       <div align="center"><i><a href="page1refois.php"><font face="Arial, Helvetica, sans-serif" size="5"><b><font color="#000000">les 
-        Premi&egrave;res fois</font></b></font></a></i></div>
+        Premières fois</font></b></font></a></i></div>
     </td>
   </tr>
   <tr> 

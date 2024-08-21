@@ -1095,7 +1095,7 @@ else
 <div id="Layer11" style="position:absolute; width:306px; height:59px; z-index:7; left: 1495px; top: 615px; background-color: #FFFF00; layer-background-color: #FFFF00; border: 1px none #000000"> 
   <div align="center"> 
     <p><font size="5"><b>Champion de France <br>
-      Cadets Teuli&egrave;res 
+      Cadets Teulières 
       <?php echo $annee;?>
       </b></font></p>
   </div>

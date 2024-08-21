@@ -12,7 +12,7 @@
   disputé sous le forme de poules en 1896, 1897 et 1898 .<br>
   <br>
   <font color="#000000" size="3">Malgré un championnat en poule en 1896, 
-  il fallu organiser un finale du fait de l'égalité des deux premi&egrave;res 
+  il fallu organiser un finale du fait de l'égalité des deux premières 
   équipes</font></h2>
     </body>
 </html>

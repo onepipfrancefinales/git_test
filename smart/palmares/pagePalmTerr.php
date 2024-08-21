@@ -39,7 +39,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>Palmar&egrave;s Territorial</title>
+<title>Palmarès Territorial</title>
 <link type="text/css" rel="stylesheet" href="../10.css"> 
 <?php if ($bddComite=="au" OR $bddComite=="ca" OR $bddComite=="ab")
 {

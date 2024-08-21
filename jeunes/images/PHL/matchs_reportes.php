@@ -9,12 +9,12 @@
   <tr> 
     <td height="15"> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db2"); // S&egrave;lection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db2"); // SÃ¨lection de la base onepip
 
 ?>
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -39,11 +39,11 @@ $result = mysql_query($query);
   <tr valign="top"> 
     <td width="106" height="24"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  $journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journ&egrave;e :";
+		  $journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journÃ¨e :";
 		  echo "<br>";
 		}
 
@@ -52,7 +52,7 @@ $result = mysql_query($query);
       </h7> </td>
     <td width="167" height="24"> 
       <h3>   <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -67,7 +67,7 @@ $result = mysql_query($query);
     <td width="155" height="24"> 
       <h4>   <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and
- phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -79,11 +79,11 @@ $result = mysql_query($query);
      </td>
     <td width="85" height="24"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "Pr&egrave;vue le"; 
+		  echo "PrÃ¨vue le"; 
 		  echo "<br>";
 		}
 
@@ -92,7 +92,7 @@ $result = mysql_query($query);
       </h7> </td>
     <td width="152" height="24"> 
       <h5>     <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -106,11 +106,11 @@ $result = mysql_query($query);
     <td width="92" height="24"> <font size="3"><font face="Arial, Helvetica, sans-serif"> 
       <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "report&egrave;e au ";
+		  echo "reportÃ¨e au ";
 		  echo "<br>";
 		}
 
@@ -120,7 +120,7 @@ $result = mysql_query($query);
     <td width="153" height="24"> 
       <h6> 
         <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -149,7 +149,7 @@ $result = mysql_query($query);
   <tr> 
     <td height="52"> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -172,12 +172,12 @@ echo "<br>";	echo "<br>";
   <tr valign="top"> 
     <td width="106" height="25"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
 		  $journee="$row[2]"-("$row[7]"*100); echo "$journee"; 
-		  echo "me journ&egrave;e :";
+		  echo "me journÃ¨e :";
           echo "<br>";
 		 }
 
@@ -186,7 +186,7 @@ $result = mysql_query($query);
       </h7> </td>
     <td width="167" height="25"> 
       <h3>   <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -201,7 +201,7 @@ $result = mysql_query($query);
     <td width="155" height="25"> 
       <h4>  <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190' and phpcbl_journees.id_champ>'180'and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and
- phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -214,11 +214,11 @@ $result = mysql_query($query);
     </td>
     <td width="85" height="25"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "Pr&egrave;vue le"; 
+		  echo "PrÃ¨vue le"; 
 		  echo "<br>";
 		}
 
@@ -227,7 +227,7 @@ $result = mysql_query($query);
       </h7> </td>
     <td width="152" height="25"> 
       <h5>   <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -240,11 +240,11 @@ $result = mysql_query($query);
     </td>
     <td width="92" height="25"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "report&egrave;e au ";
+		  echo "reportÃ¨e au ";
 		  echo "<br>";
 		}
 
@@ -254,7 +254,7 @@ $result = mysql_query($query);
     <td width="153" height="25"> 
       <h6> 
         <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'190'and phpcbl_journees.id_champ>'180' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -284,7 +284,7 @@ $result = mysql_query($query);
   <tr> 
     <td height="52"> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -297,7 +297,7 @@ echo "<br>";	echo "<br>";
       <?php if ($journee1>1)
 		 {
 	?>
-      <h1> <span>     <?php echo " 1re S&egrave;rie";?></span></h1>
+      <h1> <span>     <?php echo " 1re SÃ¨rie";?></span></h1>
         
     </td>
   </tr>
@@ -306,11 +306,11 @@ echo "<br>";	echo "<br>";
   <tr valign="top"> 
     <td width="106" height="2"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  $journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journ&egrave;e :";
+		  $journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journÃ¨e :";
 		  echo "<br>";
 		}
 
@@ -320,7 +320,7 @@ $result = mysql_query($query);
     <td width="170" height="2"> 
       <h3> 
         <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -339,7 +339,7 @@ $result = mysql_query($query);
       <h4> 
         <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200' and phpcbl_journees.id_champ>'190'and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and
- phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -353,11 +353,11 @@ $result = mysql_query($query);
     </td>
     <td width="85" height="2"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		 	echo "Pr&egrave;vue le"; 
+		 	echo "PrÃ¨vue le"; 
 			echo "<br>";
 		}
 
@@ -366,7 +366,7 @@ $result = mysql_query($query);
       </h7> </td>
     <td width="152" height="2"> 
       <h5>  <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -379,11 +379,11 @@ $result = mysql_query($query);
     </td>
     <td width="92" height="2"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "report&egrave;e au ";
+		  echo "reportÃ¨e au ";
 		  echo "<br>";
 		 }
 
@@ -393,7 +393,7 @@ $result = mysql_query($query);
     <td width="153" height="2"> 
       <h6> 
         <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'200'and phpcbl_journees.id_champ>'190' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -422,7 +422,7 @@ $result = mysql_query($query);
   <tr> 
     <td height="52"> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -438,7 +438,7 @@ echo "<br>";	echo "<br>";
 		 {
 	?>
       <h1> <span> 
-        <?php echo " 2me S&egrave;rie";?>
+        <?php echo " 2me SÃ¨rie";?>
         </span></h1>
     </td>
   </tr>
@@ -447,11 +447,11 @@ echo "<br>";	echo "<br>";
   <tr valign="top"> 
     <td width="106" height="25"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		$journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journ&egrave;e :";
+		$journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journÃ¨e :";
 		echo "<br>";
 		}
 
@@ -461,7 +461,7 @@ $result = mysql_query($query);
     <td width="167" height="25"> 
       <h3> 
         <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -477,7 +477,7 @@ $result = mysql_query($query);
       <h4> 
         <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210' and phpcbl_journees.id_champ>'200'and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and
- phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -490,11 +490,11 @@ $result = mysql_query($query);
     </td>
     <td width="85" height="25"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "Pr&egrave;vue le"; 
+		  echo "PrÃ¨vue le"; 
 		echo "<br>";
 		}
 
@@ -504,7 +504,7 @@ $result = mysql_query($query);
     <td width="152" height="25"> 
       <h5> 
         <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -518,11 +518,11 @@ $result = mysql_query($query);
     </td>
     <td width="92" height="25"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		 echo "report&egrave;e au ";
+		 echo "reportÃ¨e au ";
 		 echo "<br>";
 		}
 
@@ -532,7 +532,7 @@ $result = mysql_query($query);
     <td width="153" height="25"> 
       <h6> 
         <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'210'and phpcbl_journees.id_champ>'200' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -562,7 +562,7 @@ $result = mysql_query($query);
   <tr> 
     <td height="29"> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -578,7 +578,7 @@ echo "<br>";	echo "<br>";
 		 {
 	?>
       <h1> <span> 
-        <?php echo " 3me/ 4me S&egrave;rie";?>
+        <?php echo " 3me/ 4me SÃ¨rie";?>
         </span></h1>
     </td>
   </tr>
@@ -587,11 +587,11 @@ echo "<br>";	echo "<br>";
   <tr valign="top"> 
     <td width="106" height="23"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  $journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journ&egrave;e :";
+		  $journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journÃ¨e :";
 		echo "<br>";
 		}
 
@@ -601,7 +601,7 @@ $result = mysql_query($query);
     <td width="170" height="23"> 
       <h3> 
           <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -619,7 +619,7 @@ $result = mysql_query($query);
       <h4> 
         <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230' and phpcbl_journees.id_champ>'210'and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_ext and
- phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -633,11 +633,11 @@ $result = mysql_query($query);
       </td>
     <td width="85" height="23"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "Pr&egrave;vue le"; 
+		  echo "PrÃ¨vue le"; 
 		  echo "<br>";
 		}
 
@@ -646,7 +646,7 @@ $result = mysql_query($query);
       </h7></td>
     <td width="152" height="23"> 
       <h5>    <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -659,11 +659,11 @@ $result = mysql_query($query);
     </td>
     <td width="92" height="23"> <h7> 
       <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "report&egrave;e au ";
+		  echo "reportÃ¨e au ";
 		  echo "<br>";
 		 }
 
@@ -673,7 +673,7 @@ $result = mysql_query($query);
     <td width="153" height="23"> 
       <h6> 
         <?php
-$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+$query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ<'230'and phpcbl_journees.id_champ>'210' and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -704,7 +704,7 @@ $result = mysql_query($query);
     <td height="52"> 
       <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ>'270' and (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and
- (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -720,7 +720,7 @@ echo "<br>";	echo "<br>";
 		 {
 	?>
       <h1> <span> 
-        <?php echo " R&egrave;serve";?>
+        <?php echo " RÃ¨serve";?>
         </span></h1>
     </td>
   </tr>
@@ -730,11 +730,11 @@ echo "<br>";	echo "<br>";
     <td width="106" height="21"> <h7> 
       <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ>'270' and (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and
- (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		$journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journ&egrave;e :";
+		$journee="$row[2]"-("$row[7]"*100); echo "$journee"; echo "me journÃ¨e :";
 		echo "<br>";
 		}
 
@@ -745,7 +745,7 @@ $result = mysql_query($query);
        
    <h3>     <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ>'270' and (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and
- (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -760,7 +760,7 @@ $result = mysql_query($query);
     <td width="155" height="21"> 
    <h4>   <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE  phpcbl_journees.id_champ>'270' and phpcbl_clubs.id+900000=phpcbl_matchs.id_equipe_ext and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and phpcbl_clubs.id+900000=phpcbl_matchs.id_equipe_ext and
- phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -774,11 +774,11 @@ $result = mysql_query($query);
     <td width="85" height="21"> <h7> 
       <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ>'270' and (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and
- (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "Pr&egrave;vue le"; 
+		  echo "PrÃ¨vue le"; 
 		  echo "<br>";
 		}
 
@@ -788,7 +788,7 @@ $result = mysql_query($query);
     <td width="152" height="21"> 
       <h5>   <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ>'270' and (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and
- (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -802,11 +802,11 @@ $result = mysql_query($query);
     <td width="92" height="21"> <h7> 
       <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ>'270' and (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and
- (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
-		  echo "report&egrave;e au ";
+		  echo "reportÃ¨e au ";
 		  echo "<br>";
 		}
 
@@ -817,7 +817,7 @@ $result = mysql_query($query);
       <h6> 
         <?php
 $query = "SELECT  phpcbl_matchs.id_equipe_dom, phpcbl_matchs.id_equipe_ext, phpcbl_matchs.id_journee, phpcbl_matchs.date_reelle, phpcbl_matchs.buts_dom, phpcbl_matchs.buts_ext, phpcbl_journees.date_prevue, phpcbl_journees.id_champ, phpcbl_clubs.nom, phpcbl_clubs.id FROM  phpcbl_matchs, phpcbl_journees, phpcbl_clubs WHERE phpcbl_journees.id_champ>'270' and (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.id_journee= phpcbl_journees.id and phpcbl_matchs.date_reelle != phpcbl_journees.date_prevue and
- (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requête SQL
+ (phpcbl_clubs.id + 900000)=phpcbl_matchs.id_equipe_dom and phpcbl_matchs.buts_dom is NULL and phpcbl_matchs.buts_ext is NULL"; // Requï¿½te SQL
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
          {    
@@ -852,7 +852,7 @@ $result = mysql_query($query);
 			{
 			?>
   
-<h1><?php echo "aucune rencontre report&egrave;";?></h1>
+<h1><?php echo "aucune rencontre reportÃ¨";?></h1>
   
 
 <?php
@@ -861,7 +861,7 @@ $result = mysql_query($query);
 
 <?php
 
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // DÃ¨connexion de MySQL
 ?>
 </body>
 </html>

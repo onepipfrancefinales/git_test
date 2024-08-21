@@ -18,7 +18,7 @@
       <div align="center"><a href="pagerecords.php">Les records</a></div>
     </td>
     <td> 
-      <div align="center"><a href="page1refois.php">Les premi&egrave;res fois</a></div>
+      <div align="center"><a href="page1refois.php">Les premières fois</a></div>
     </td>
     <td> 
       <div align="center"><a href="pagebrenus.php">Le Brennus</a></div>

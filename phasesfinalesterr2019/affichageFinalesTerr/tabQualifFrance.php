@@ -25,7 +25,7 @@
 <P>&nbsp;
 <P><b>-3-</b>Le tableau 3 est composé des équipes classées 
   de 20 &agrave; 36. elles se rencontreront en barrages pour les équipes 
-  les plus mal classées, puis en huitit&egrave;me , quarts demi et finale.<br>
+  les plus mal classées, puis en huititème , quarts demi et finale.<br>
   les 2 équipes qui attteindront la finale seront qualifiées pour 
   les barrages d'accession aux 32me de finale du champ de France (2 equipes barragistes)
 <P>&nbsp;

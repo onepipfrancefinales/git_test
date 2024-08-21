@@ -104,7 +104,7 @@
             : 06.82.24.70.57<br>
             <br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -Enfin dern&egrave;re solution 
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -Enfin dernère solution 
             re-demander par SMS ou par e-mail le ou les liens<br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; au 06.82.24.70.57</font></font><br>

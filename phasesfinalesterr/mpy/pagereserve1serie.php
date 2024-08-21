@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Championnat de France 1re S&egrave;rie</title>
+<title>Championnat de France 1re Sèrie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body bgcolor="#EAECEB" text="#000000">

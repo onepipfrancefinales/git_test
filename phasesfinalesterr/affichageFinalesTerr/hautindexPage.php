@@ -35,12 +35,12 @@
     <td class="equipeI" >
 	 	<a href="pageAffichage.php?page=HPHS1&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=190" target="_top">1ére  Série</a> </td>
     <td class="equipeI" > 
-		<a href="pageAffichage.php?page=S2S3S4&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=200" target="_top">2i&egrave;meSérie</a> 
+		<a href="pageAffichage.php?page=S2S3S4&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=200" target="_top">2ièmeSérie</a> 
     </td>
     <td class="equipeI" >
-		<a href="pageAffichage.php?page=S2S3S4&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=210" target="_top">3i&egrave;meSérie</a> 
+		<a href="pageAffichage.php?page=S2S3S4&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=210" target="_top">3ièmeSérie</a> 
     </td>
-    <td class="vide" colspan="2" > <a href="../../palmares/palmTerritorial/tableauPalmTerr.php?variable_1=<?php echo $comiteMaj; ?>" target="_blank">Palmar&egrave;s 
+    <td class="vide" colspan="2" > <a href="../../palmares/palmTerritorial/tableauPalmTerr.php?variable_1=<?php echo $comiteMaj; ?>" target="_blank">Palmarès 
       régional </a></td>
  	 </tr>
   <tr > 
@@ -57,7 +57,7 @@
       <div id="equipeII" ></div>
     </td>
     <td class="equipeI"  > 
-	<a href="pageAffichage.php?page=S2S3S4&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=220" target="_top">4i&egrave;meSérie</a> 
+	<a href="pageAffichage.php?page=S2S3S4&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=220" target="_top">4ièmeSérie</a> 
     </td>
     <td  class="france" colspan="2" > 
 	<a href="/phases_finales/honneur/pagehonneur.php?variable_1=<?php echo $annee;?>" target="_blank">Championnat 

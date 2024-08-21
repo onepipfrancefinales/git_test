@@ -167,12 +167,12 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr> 
     <td height="23" colspan="2"> 
-      <div align="center"><a href="#1">Pamar&egrave;s territoriales</a></div>
+      <div align="center"><a href="#1">Pamarès territoriales</a></div>
     </td>
   </tr>
   <tr> 
     <td height="23" colspan="2"> 
-      <div align="center"><a href="#1">Pamar&egrave;s National</a></div>
+      <div align="center"><a href="#1">Pamarès National</a></div>
     </td>
   </tr>
   <tr> 
@@ -221,7 +221,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     <td height="14" colspan="2"> 
       <p align="center"><font size="5" color="#000000"><font size="4" face="Lucida Calligraphy"><br>
         Consulter </font></font><font size="4" color="#000000" face="Lucida Calligraphy">les 
-        infomations, les grandes dates du club, le palmar&egrave;s et les perfomances 
+        infomations, les grandes dates du club, le palmarès et les perfomances 
         des performances des saisons pr&eacute;c&eacute;dentes.<br>
         </font></p>
     </td>
@@ -248,16 +248,16 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr> 
     <td height="42" colspan="2" bgcolor="#FF0000"> 
-      <div align="center"><font size="4"><b><font size="7" color="#FFFFFF">Palmar&egrave;s 
+      <div align="center"><font size="4"><b><font size="7" color="#FFFFFF">Palmarès 
         territorial</font></b></font></div>
     </td>
   </tr>
   <tr> 
     <td height="42" colspan="2"> 
       <div align="center"><font size="4"><font face="Lucida Calligraphy"><br>
-        Consultez le palmar&egrave;s territorial de votre comit&eacute; des &eacute;quipes 
+        Consultez le palmarès territorial de votre comit&eacute; des &eacute;quipes 
         une et deux.<br>
-        Nous vous proposons deux formats. Aidez nous &agrave; compl&egrave;ter 
+        Nous vous proposons deux formats. Aidez nous &agrave; complèter 
         ou &agrave; corriger les erreurs qui ont pu se glisser dans nos tableaux.<br>
         </font></font></div>
     </td>
@@ -286,7 +286,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr> 
     <td height="14" colspan="2" bgcolor="#FF0000"> 
-      <div align="center"><font size="4"><b><font size="7" color="#FFFFFF">Palmar&egrave;s 
+      <div align="center"><font size="4"><b><font size="7" color="#FFFFFF">Palmarès 
         National</font></b></font></div>
     </td>
   </tr>

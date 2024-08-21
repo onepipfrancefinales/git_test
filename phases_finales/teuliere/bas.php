@@ -2,12 +2,12 @@
 <table width="1460" border="0" height="22" align="left">
   <tr> 
     <td width="730" height="15">
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagePalmares.php?division=370" target="_top"><font size="5" color="#000000">Palmar&egrave;s 
-        champions de France Teuli&egrave;re</font></a></b></div>
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagePalmares.php?division=370" target="_top"><font size="5" color="#000000">Palmarès 
+        champions de France Teulière</font></a></b></div>
     </td>
     <td width="730" height="15" valign="top">
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagePalmares.php?division=370" target="_top"><font size="5" color="#000000">Palmar&egrave;s 
-        champions de France Teuli&egrave;re</font></a><a href="http://francefinalesrugby.franceserv.com/divisions/pagephliponeau.php" target="_top"></a></b></div>
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagePalmares.php?division=370" target="_top"><font size="5" color="#000000">Palmarès 
+        champions de France Teulière</font></a><a href="http://francefinalesrugby.franceserv.com/divisions/pagephliponeau.php" target="_top"></a></b></div>
     </td>
   </tr>
   <tr> 

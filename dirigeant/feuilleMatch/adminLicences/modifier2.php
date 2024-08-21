@@ -45,7 +45,7 @@ require   "../../../connect1/connection3.php";
 
  									 }
 									 
-//mysql_close(); // DÈconnexion de MySQL
+//mysql_close(); // DÔøΩconnexion de MySQL
 */
 ?>
   </font></b> 
@@ -109,7 +109,7 @@ else
 require   "../../../connect1/connection3.php";
 ?>
         <?php
-// vÈrification des la saisie 
+// vÔøΩrification des la saisie 
 
 		
 $reponse = $bdd->query("SELECT COUNT(id)
@@ -137,7 +137,7 @@ $reponse = $bdd->query("SELECT nom, prenom, licence, type_licence, premiereLigne
 									$premiereLigne = $donnees['premiereLigne'];
 									 }
 
-//mysql_close(); // DÈconnexion de MySQL
+//mysql_close(); // DÔøΩconnexion de MySQL
 
 
 ?>
@@ -186,7 +186,7 @@ $reponse = $bdd->query("SELECT nom, prenom, licence, type_licence, premiereLigne
       </td>
       <td width="272" height="22"><font size="3">En</font><font size="3"> cas 
         de tutorat, ajouter un <b><font face="Arial, Helvetica, sans-serif">T</font></b>, 
-        apr&egrave;s la couleur de la licence sans espace.</font></td>
+        apr√®s la couleur de la licence sans espace.</font></td>
     </tr>
     <tr align="center"> 
       <td width="263">&nbsp;</td>

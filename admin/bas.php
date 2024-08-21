@@ -42,7 +42,7 @@
         et remplace</a></div>
     </td>
     <td width="176" bgcolor="#FFFFFF"> 
-      <div align="center"><a href="/admin/MAJFFR/raccourcis_ffr/page_raccourcisChamp.php" target="_blank">Acc&egrave;s 
+      <div align="center"><a href="/admin/MAJFFR/raccourcis_ffr/page_raccourcisChamp.php" target="_blank">Accès 
         donn&eacute;es FFR</a></div>
     </td>
     <td width="201"> 

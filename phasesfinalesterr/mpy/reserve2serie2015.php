@@ -193,8 +193,8 @@ MM_reloadPage(true);
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
         </font><font size="5"><b><font color="#FFCC00"> 
-        <? echo "Championnat des Pyr&egrave;n&egrave;es";?>
-        <? echo "R&egrave;serve 2me S&egrave;rie";?>
+        <? echo "Championnat des Pyrènèes";?>
+        <? echo "Rèserve 2me Sèrie";?>
         </font></b></font></b></font></td>
     </tr>
   </table>
@@ -240,7 +240,7 @@ MM_reloadPage(true);
 </div>
 <div id="Layer5" style="position:absolute; width:200px; height:56px; z-index:14; left: 760px; top: 441px"> 
   <div align="center"><b><font size="5" color="#FF0000" face="Arial, Helvetica, sans-serif">Sainte 
-    Foy de Peyroli&egrave;res</font></b></div>
+    Foy de Peyrolières</font></b></div>
 </div>
 <div id="Layer6" style="position:absolute; width:98px; height:60px; z-index:11; left: 834px; top: 502px"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="4"><b> 
   </b></font><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="2"><b> 

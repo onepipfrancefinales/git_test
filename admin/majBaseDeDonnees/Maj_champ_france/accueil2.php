@@ -18,7 +18,7 @@
   <br />
   <font size="3" face="Arial, Helvetica, sans-serif"> <b> 
   <?php echo $id; ?>
-  Saisie des résultats des <br />
+  Saisie des rï¿½sultats des <br />
   <?php echo $niv; ?>
   de Finale</b></font></p>
 <p><b><font face="Arial, Helvetica, sans-serif" size="3"><a href="accueilsaisiescore.php?annee=<?php $annee; ?>">Changer 
@@ -138,7 +138,7 @@
   <tr> 
     <td width="160"><font face="Arial, Helvetica, sans-serif">290</font><font face="Arial, Helvetica, sans-serif"> 
       - F&eacute;d&eacute;rale &agrave; XV</font></td>
-    <td width="170"><font face="Arial, Helvetica, sans-serif">370 - Teuli&egrave;re</font></td>
+    <td width="170"><font face="Arial, Helvetica, sans-serif">370 - TeuliÃ¨re</font></td>
   </tr>
   <tr> 
     <td width="160">&nbsp;</td>

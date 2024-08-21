@@ -59,11 +59,11 @@ if (isset($nb)) $nb = $nb; else $nb="";
 $nom=str_replace(' ','-',$nom);
 $nom = strtoupper ($nom);
 
-// **** traitement du Prénom ****** 
+// **** traitement du Prï¿½nom ****** 
 $prenom=str_replace(' ','-',$prenom);
 $prenom = strtoupper(substr($prenom, 0, 1)).strtolower(substr($prenom, 1));
 
-// **** traitement du numéro de la licence ****** 
+// **** traitement du numï¿½ro de la licence ****** 
 $annee = substr($licence,0,4);
 $deux = substr($licence,4,2);
 $un = substr($licence,6,1);
@@ -123,7 +123,7 @@ $sql =" INSERT INTO $phpComite_joueurs (nom,    nom_cache, 	prenom,	date_naissan
 
 if ($bdd->query($sql) === TRUE) {
 	echo "<br />";
-    echo "Nouvelle licence cr&eacute;&eacute;e avec succ&egrave;s";
+    echo "Nouvelle licence cr&eacute;&eacute;e avec succÃ¨s";
 } else {
     echo "Error: " . $sql . "<br>" . $bdd->error;
 }
@@ -151,7 +151,7 @@ $sql =" INSERT INTO $phpComite_joueurs (nom,    nom_cache, 	prenom,	date_naissan
 
 if ($bdd->query($sql) === TRUE) {
 	echo "<br />";
-    echo "Nouvelle licence cr&eacute;&eacute;e avec succ&egrave;s";
+    echo "Nouvelle licence cr&eacute;&eacute;e avec succÃ¨s";
 } else {
     echo "Error: " . $sql . "<br>" . $bdd->error;
 }
@@ -171,7 +171,7 @@ $sql =" INSERT INTO $phpComite_joueurs (nom,    nom_cache, 	prenom,	date_naissan
 
 if ($bdd->query($sql) === TRUE) {
 	echo "<br />";
-    echo "Nouvelle licence cr&eacute;&eacute;e avec succ&egrave;s";
+    echo "Nouvelle licence cr&eacute;&eacute;e avec succÃ¨s";
 } else {
     echo "Error: " . $sql . "<br>" . $bdd->error;
 }
@@ -234,7 +234,7 @@ $bdd->close();
 		
 		
 
-echo 'Le jeu a bien été ajouté !';
+echo 'Le jeu a bien ï¿½tï¿½ ajoutï¿½ !';
   if ($req)
                {
              echo 'Enregistrement effectue';

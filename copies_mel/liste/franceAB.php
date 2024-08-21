@@ -48,7 +48,7 @@
   <tr> 
     <td width="213" height="33"> 
       <div align="center"><font color="#000000"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018">Fédérale 
-        1- Acc&egrave;s Pro D2</a></font></b></font></div>
+        1- Accès Pro D2</a></font></b></font></div>
     </td>
     <td width="237" height="33" bgcolor="#009900"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b><font color="#FFFFFF">Rugby 
@@ -56,7 +56,7 @@
     </td>
   </tr>
   <tr> 
-    <td width="213" height="19"><font color="#000000"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018">Acc&egrave;s 
+    <td width="213" height="19"><font color="#000000"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018">Accès 
       Pro D2</a></font></b></font></td>
     <td width="237" height="19" bgcolor="#009900"><b><font face="Arial, Helvetica, sans-serif"><b><font color="#FFFFFF">Bourg 
       en Bresse (LY)</font></b></font></b></td>
@@ -532,7 +532,7 @@
   <tr> 
     <td width="213"><font color="#000000">Eliminée en 16me de finale</font></td>
     <td width="237" bgcolor="#FFFFFF"> 
-      <div align="center"><font size="3" face="Arial, Helvetica, sans-serif" color="#FF0000">Bagn&egrave;res 
+      <div align="center"><font size="3" face="Arial, Helvetica, sans-serif" color="#FF0000">Bagnères 
         de Bigorre</font></div>
     </td>
   </tr>
@@ -614,7 +614,7 @@
   </tr>
   <tr> 
     <td width="213" height="26"> 
-      <div align="center"><font color="#000000"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2018"><font size="4">Teuli&egrave;re</font></a></b></font></div>
+      <div align="center"><font color="#000000"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2018"><font size="4">Teulière</font></a></b></font></div>
     </td>
     <td width="237" bgcolor="#FFFFFF" height="26"> 
       <div align="center"><font color="#000000"><i>32me de finale</i></font></div>

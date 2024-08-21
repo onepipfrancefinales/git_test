@@ -477,7 +477,7 @@
               <div align="center">Eliminé en 32me de finale</div>
             </td>
             <td width="249"> 
-              <div align="center"><font color="#FF0000">Sainte Foy de Peyroli&egrave;res</font></div>
+              <div align="center"><font color="#FF0000">Sainte Foy de Peyrolières</font></div>
             </td>
           </tr>
           <tr> 
@@ -503,7 +503,7 @@
             </td>
             <td width="249" bgcolor="#009933"> 
               <div align="center"><b><font size="4"><b><font size="4" color="#FFFFFF" face="Arial, Helvetica, sans-serif">Servette 
-                de Gen&egrave;ve (LY)</font></b></font></b></div>
+                de Genève (LY)</font></b></font></b></div>
             </td>
           </tr>
           <tr bgcolor="#CCCCCC"> 
@@ -1099,7 +1099,7 @@
           </tr>
           <tr> 
             <td width="207"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teuli&egrave;re</font></a></b></div>
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teulière</font></a></b></div>
             </td>
             <td width="249" bgcolor="#009933"> 
               <div align="center"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">RC 

@@ -830,7 +830,7 @@ for($I = count($Tableau) - 2;$I >= 0; $I--) {
  }
 }
  
-echo "<br />Apr&egrave; s:";
+echo "<br />Aprè s:";
 for($L = 0; $L < count($Tableau); $L++) {
   echo $Tableau[$L].", ";
 }

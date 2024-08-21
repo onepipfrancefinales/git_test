@@ -1079,7 +1079,7 @@ elseif ($division > 160 and  $division < 230 or $division == 150)
     <td height="24" width="23%"> 
       <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>6</b></font></div>
@@ -1419,7 +1419,7 @@ elseif ($division ==180)
     <td height="24" width="23%"> 
       <div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif"><b><font size="4">6</font></b></font></div>
@@ -1725,7 +1725,7 @@ elseif ($division == 190)
   <tr bgcolor="#009933"> 
     <td height="55" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Nombre 
-        de clubs qualifiés par Ligues - 1&egrave;re série</font></b></font></div>
+        de clubs qualifiés par Ligues - 1ère série</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -1756,7 +1756,7 @@ elseif ($division == 190)
     <td height="24" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><b><font size="4" face="Arial, Helvetica, sans-serif">5</font></b></div>
@@ -2062,7 +2062,7 @@ elseif ($division == 200)
   <tr bgcolor="#009933"> 
     <td height="55" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Nombre 
-        de clubs qualifiés par Ligues - 2&egrave;me série</font></b></font></div>
+        de clubs qualifiés par Ligues - 2ème série</font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -2093,7 +2093,7 @@ elseif ($division == 200)
     <td height="24" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="4"><b>5</b></font></div>
@@ -2400,7 +2400,7 @@ elseif ($division == 210)
     <td height="55" bgcolor="#009933" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Nombre 
         de clubs qualifiés par Ligues</font><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"> 
-        - 3&egrave;me série</font></b></font></b></font></div>
+        - 3ème série</font></b></font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -2432,7 +2432,7 @@ elseif ($division == 210)
     <td height="24" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="4"><b>6</b></font></div>
@@ -2740,7 +2740,7 @@ elseif ($division == 220)
     <td height="55" colspan="5"> 
       <div align="center"><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Nombre 
         de clubs qualifiés par Ligues</font><font size="5" color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"> 
-        - 4&egrave;me série</font></b></font></b></font></div>
+        - 4ème série</font></b></font></b></font></div>
     </td>
   </tr>
   <tr> 
@@ -2771,7 +2771,7 @@ elseif ($division == 220)
     <td height="24" width="23%"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
         - Alpes -Lyonnais - <br>
-        Dr&ocirc;me Ard&egrave;che </font></div>
+        Dr&ocirc;me Ardèche </font></div>
     </td>
     <td height="24" width="15%"> 
       <div align="center"><font size="4" face="Arial, Helvetica, sans-serif"><b>5</b></font></div>

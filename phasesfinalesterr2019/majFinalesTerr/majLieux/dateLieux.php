@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de donn�es en PHP :: partie2</title>
+<title>modification de donn�es en PHP :: partie2</title>
 <link rel="stylesheet" type="text/css" href="../maj.css">
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
@@ -36,7 +36,7 @@ afficheLieux ($division, $annee, $comite, $bdd);
 <hr />
 <h2>  Dates  <font size="2">(<font face="Arial, Helvetica, sans-serif">ex : 25 Mai 2019)</font></font></h2>
 
-<h3>Huiti&egrave;me :    <input type="text" name="D8000" value="<?php echo $D8000 ;?>" size="30"> 
+<h3>Huitième :    <input type="text" name="D8000" value="<?php echo $D8000 ;?>" size="30"> 
 <h3>Quarts :  <input type="text" name="D4000" value="<?php echo $D4000 ;?>" size="30">
 <h3>Demi :  <input type="text" name="D2000" value="<?php echo $D2000 ;?>" size="30">
 <h3>Finale : <input type="text" name="D1000" value="<?php echo $D1000 ;?>" size="30">
@@ -44,7 +44,7 @@ afficheLieux ($division, $annee, $comite, $bdd);
    
 <hr />
 <h2>  Lieux  </h2>
-<h4>Huiti&egrave;me </h4>
+<h4>Huitième </h4>
           
 <h4><?php //echo $D8000; ?></h4> 
             

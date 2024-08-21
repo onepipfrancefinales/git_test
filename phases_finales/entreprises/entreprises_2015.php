@@ -14,7 +14,7 @@ MM_reloadPage(true);
 </script>
 <body bgcolor="#FFFFFF">
 <div id="Layer1" style="position:absolute; width:200px; height:20px; z-index:3; left: 42px; top: 297px; background-image:  url(../unique3.jpg); layer-background-image:  url(../unique3.jpg); border: 1px none #000000"> 
-  <div align="center"><b><font size="2" color="#FFFFFF" face="Arial, Helvetica, sans-serif">Panth&egrave;res 
+  <div align="center"><b><font size="2" color="#FFFFFF" face="Arial, Helvetica, sans-serif">Panthères 
     roses <i>Trept</i> (LY)</font></b> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"></div>
     <div id="Layer9" style="position:absolute; width:200px; height:20px; z-index:2; left: 0px; top: 20px; background-image:  url(../unique3.jpg); layer-background-image:  url(../unique3.jpg); border: 1px none #000000"> 

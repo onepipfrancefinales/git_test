@@ -5,9 +5,9 @@ if (isset($_GET['choix'])) $choix = $_GET['choix'];
 <html>
 <head>
 <meta name="description"
-content="Le site non officiel du Comité Midi Pyrénées de rugby : Histoire, clubs, calendrier des matches, compétitions, résultats, la Coupe du Monde à Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
+content="Le site non officiel du Comitï¿½ Midi Pyrï¿½nï¿½es de rugby : Histoire, clubs, calendrier des matches, compï¿½titions, rï¿½sultats, la Coupe du Monde ï¿½ Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
 <meta name="keywords"
-content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitï¿½ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -74,7 +74,7 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
             </font></b></font></p>
           <p><font face="Arial, Helvetica, sans-serif" size="3" color="#000000">S&eacute;lection 
             de quelques vid&eacute;os class&eacute;es par th&eacute;mes, et je 
-            vous recommande tout particuli&egrave;rement la s&eacute;rie &quot;Quand 
+            vous recommande tout particuliÃ¨rement la s&eacute;rie &quot;Quand 
             tu joues au rygby amateur&quot;<br>
             <br>
             </font></p>

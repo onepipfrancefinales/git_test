@@ -49,13 +49,13 @@ if ($action2 == 'modifupd')
 
 	if ($REQ1)
 	{
-		echo InfoReqSql('InfClubUpd', 1, 'highlight', 'check', 'Mise à jour du nom effectuée avec succès');
+		echo InfoReqSql('InfClubUpd', 1, 'highlight', 'check', 'Mise ï¿½ jour du nom effectuï¿½e avec succï¿½s');
 
 		include('generer.php');
 	}
 	else
 	{
-		echo InfoReqSql('InfClubUpd', 0, 'error', 'alert', GestErreur('Mise à jour non effectuée. Erreur', $REQ1));
+		echo InfoReqSql('InfClubUpd', 0, 'error', 'alert', GestErreur('Mise ï¿½ jour non effectuï¿½e. Erreur', $REQ1));
 	}
 }
 
@@ -109,7 +109,7 @@ if ($action3 == 'supp')
 
 <div id="tabsequipe">
 	<ul>
-		<li><a href="#tabsequipe-1">Création</a></li>
+		<li><a href="#tabsequipe-1">Crï¿½ation</a></li>
 		<li><a href="#tabsequipe-2">Edition</a></li>
 		<li><a href="#tabsequipe-3">Modification</a></li>
 	</ul>
@@ -140,8 +140,8 @@ if ($action3 == 'supp')
 		</form>
 
 		<div id="dialog01" title="Ajout de clubs">
-			<p><u>Championnat à nombre d'équipe impair</u> :<br />En plus des équipes de votre championnat, créez une équipe nommé "<b>exempte</b>" (sans majuscule) afin d'avoir un nombre pair.</p>
-			<p>Lors de la création des matchs, l'équipe étant exclue jouera contre l'équipe "exempte".</p>
+			<p><u>Championnat ï¿½ nombre d'ï¿½quipe impair</u> :<br />En plus des ï¿½quipes de votre championnat, crï¿½ez une ï¿½quipe nommï¿½ "<b>exempte</b>" (sans majuscule) afin d'avoir un nombre pair.</p>
+			<p>Lors de la crï¿½ation des matchs, l'ï¿½quipe ï¿½tant exclue jouera contre l'ï¿½quipe "exempte".</p>
 		</div>
 
 		<form method="post" action="" id="formEquipSupp1">
@@ -170,7 +170,7 @@ if ($action3 == 'supp')
 
 		<div id="dialog02" title="Suppression de clubs">
 			<p><?php echo ADMIN_EQUIPE_3; ?>.</p>
-			<p>Si vous supprimez un club utilis&eacute; dans un championnat, ce dernier ne fonctionnera plus !<br />Soyez donc tr&egrave;s vigilant lors de la suppression d'un club.</p>
+			<p>Si vous supprimez un club utilis&eacute; dans un championnat, ce dernier ne fonctionnera plus !<br />Soyez donc trÃ¨s vigilant lors de la suppression d'un club.</p>
 		</div>
 
 	</div>
@@ -229,7 +229,7 @@ if ($action3 == 'supp')
 
 		<div id="dialog04" title="Suppression de clubs">
 			<p><?php echo ADMIN_EQUIPE_3; ?>.</p>
-			<p>Si vous supprimez un club utilis&eacute; de <b><?php echo affich_champ($champ); ?></b>, ce dernier ne fonctionnera plus !<br />Soyez donc tr&egrave;s vigilant lors de la suppression d'un club.</p>
+			<p>Si vous supprimez un club utilis&eacute; de <b><?php echo affich_champ($champ); ?></b>, ce dernier ne fonctionnera plus !<br />Soyez donc trÃ¨s vigilant lors de la suppression d'un club.</p>
 		</div>
 	</div>
 
@@ -238,7 +238,7 @@ if ($action3 == 'supp')
 			<table class="Large50P ui-widget ui-widget-content">
 				<thead>
 					<tr class="ui-widget-header">
-						<th colspan="3">Modification du nom de l'équipe</th>
+						<th colspan="3">Modification du nom de l'ï¿½quipe</th>
 					</tr>
 				</thead>
 				<tbody>

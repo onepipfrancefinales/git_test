@@ -10,7 +10,7 @@
 <form action="http://francefinalesrugby.franceserv.com/admin/mdp/page_modifier2.php" method="POST">
   <p> N&deg; de Base de donn&eacute;es 
     <input type="text" name="bd" maxlength="1" />
-    Rep&egrave;re comite 
+    Repère comite 
     <input type="text" name="comite" maxlength="6" />
     ID 
     <input type="text" name="ID" maxlength="6" />

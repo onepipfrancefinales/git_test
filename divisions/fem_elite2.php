@@ -24,7 +24,7 @@ require ("../connection.php") ;
 
 echo "<h1><p> <strong> Champions de France <br>
 Elite 2 Armelle Auclair <BR/></strong></p></h1>";
-$reponse = mysql_query("SELECT * FROM bdfem WHERE rang='285'and titre='champion'ORDER BY saison DESC"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdfem WHERE rang='285'and titre='champion'ORDER BY saison DESC"); // Requï¿½te SQL
  
 // On fait une boucle pour lister tout ce que contient la table :
 while ($donnees = mysql_fetch_array($reponse) )
@@ -35,7 +35,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </font></font> <br><br>
 <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 <p>
   <?php
@@ -50,8 +50,8 @@ mysql_close(); // Déconnexion de MySQL
   Maul&eacute;on-Licharre, &agrave; l'&acirc;ge de 28 ans. Armelle Auclair a &eacute;t&eacute; 
   s&eacute;lectionn&eacute;e &agrave; onze reprises en &eacute;quipe de France. 
   Elle a contribu&eacute; au Grand Chelem de l'&eacute;quipe de France en 2002, 
-  &agrave; la troisi&egrave;me place obtenue lors de la Coupe du monde de rugby 
+  &agrave; la troisiÃ¨me place obtenue lors de la Coupe du monde de rugby 
   &agrave; XV f&eacute;minin 2002. Elle rejoint le club de Saint-Orens rugby f&eacute;minin 
-  lors de l'&eacute;t&eacute; 2001, elle a jou&eacute; au poste de deuxi&egrave;me 
+  lors de l'&eacute;t&eacute; 2001, elle a jou&eacute; au poste de deuxiÃ¨me 
   ligne.</font><br>
 </p>

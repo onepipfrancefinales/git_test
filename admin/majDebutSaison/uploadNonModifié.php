@@ -1,5 +1,5 @@
 <?php
-//récuperation des variables
+//rï¿½cuperation des variables
 if (isset ($_GET['ligue'])) $ligue = $_GET['ligue']; else $ligue = "";
 if (isset ($_GET['base'])) $base = $_GET['base']; else $base = "";
 
@@ -27,7 +27,7 @@ $fichier=$_FILES['fichier']['name'];
 $fichierChemin = $_FILES['fichier']['tmp_name'];
 
 
-//**********   Recherche du  caractère de séparation  **********************
+//**********   Recherche du  caractï¿½re de sï¿½paration  **********************
 
 $fichierA = fopen($fichierChemin, 'r+');
 
@@ -35,7 +35,7 @@ $fichierA = fopen($fichierChemin, 'r+');
 $fichierLigne = fgets($fichierA, 4096); 
 
 
-//recherche des caractere de séparation
+//recherche des caractere de sï¿½paration
 
 $caratereSeparation =",";
 
@@ -61,7 +61,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 {
     //On formate le nom du fichier ici...
     // $fichier = strtr($fichier, 
-    //      'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 
+    //      'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 
     //      'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
     // $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
 
@@ -70,9 +70,9 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	var_dump($fichier) ;echo "<br/>";
 	var_dump($dest) ;echo "<br/>";
 	
-	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ï¿½a a fonctionnï¿½...
      {
-			echo 'Upload effectu&eacute; avec succ&egrave;s !';
+			echo 'Upload effectu&eacute; avec succÃ¨s !';
 			echo "<br/>";
 			echo "----------------------------";
 			echo "<br/>";
@@ -86,7 +86,7 @@ else
 {
      echo $erreur;
 }
-// ****** Conneion à la base ******
+// ****** Conneion ï¿½ la base ******
 
 
 require '../../connect/connexion6.php';
@@ -102,10 +102,10 @@ $fp = fopen("$cheminn$fichier", "r");
 if ($base == "equipes")
 	{ 
 	 $table = $ligue."_equipes";
-	 // lecture de la première ligne
+	 // lecture de la premiï¿½re ligne
 	 $ligne1 = fgets($fp);
  
-	 //Etude de la première ligne
+	 //Etude de la premiï¿½re ligne
 	 $liste = explode( $caratereSeparation,$ligne1);
 	 $id = $liste[0]; 
 	 $id_champ = $liste[1]; 
@@ -120,7 +120,7 @@ if ($base == "equipes")
 	 // vidage de la table
 	 // $bdd->exec("DELETE FROM $table"); 
 				
-	 //enregistrement de la première ligne deans la table
+	 //enregistrement de la premiï¿½re ligne deans la table
 	 if ($penalite>0)
 	 {
 	 $bdd->exec("INSERT INTO $table (id, id_champ, id_club, penalite)
@@ -180,10 +180,10 @@ if ($base == "equipes")
 if ($base == "journees")
 		{ 
 		$table = $ligue."_journees";
-		// lecture de la première ligne
+		// lecture de la premiï¿½re ligne
 		$ligne1 = fgets($fp);
  
-		//Etude de la première ligne
+		//Etude de la premiï¿½re ligne
 		$liste = explode( $caratereSeparation,$ligne1);
 				$numero = $liste[0]; 
 				$date_prevue = $liste[1]; 
@@ -193,7 +193,7 @@ if ($base == "journees")
 		// vidage de la table
 		//$bdd->exec("DELETE FROM $table "); 
 				
-		//enregistrement de la première ligne deans la table
+		//enregistrement de la premiï¿½re ligne deans la table
 		$bdd->exec("INSERT INTO $table
 				  VALUES ('$numero' , '$date_prevue', '$id', '$id_champ')"); 
 				 
@@ -236,10 +236,10 @@ if ($base == "matchs")
 	//echo "journeeDebut : ".$journeeDebut;
 	//echo "<br />";
 		$table = $ligue."_matchs";
-		// lecture de la première ligne
+		// lecture de la premiï¿½re ligne
 		$ligne1 = fgets($fp);
  
-		//Etude de la première ligne
+		//Etude de la premiï¿½re ligne
 		$liste = explode( $caratereSeparation,$ligne1);
 				$id = $liste[0]; 
 				$id_equipe_dom = $liste[1]; 
@@ -259,7 +259,7 @@ if ($base == "matchs")
 		// vidage de la table
 		//$bdd->exec("DELETE FROM $table  "); 
 				
-		//enregistrement de la première ligne deans la table
+		//enregistrement de la premiï¿½re ligne deans la table
 		if (is_numeric($buts_dom) + is_numeric($buts_ext) > 0)
 		{
 		$bdd->exec("INSERT INTO $table

@@ -34,8 +34,8 @@
 	   <p>Que veut cette horde d&#146;esclaves,<br>
           De tra&icirc;tres, de rois conjur&eacute;s ?<br>
           Pour qui ces ignobles entraves,<br>
-          Ces fers d&egrave;s longtemps pr&eacute;par&eacute;s ?<br>
-          Ces fers d&egrave;s longtemps pr&eacute;par&eacute;s ?<br>
+          Ces fers dès longtemps pr&eacute;par&eacute;s ?<br>
+          Ces fers dès longtemps pr&eacute;par&eacute;s ?<br>
           Fran&ccedil;ais, pour nous, ah ! quel outrage !<br>
           Quels transports il doit exciter !<br>
           C&#146;est nous qu&#146;on ose m&eacute;diter<br>
@@ -47,7 +47,7 @@
           Qu&#146;un sang impur<br>
           Abreuve nos sillons !</p>
        ----------------------------------------------
-	   <p>Quoi ! des cohortes &eacute;trang&egrave;res<br>
+	   <p>Quoi ! des cohortes &eacute;trangères<br>
           Feraient la loi dans nos foyers !<br>
           Quoi ! ces phalanges mercenaires<br>
           Terrasseraient nos fiers guerriers !<br>
@@ -87,7 +87,7 @@
           Mais ces despotes sanguinaires,<br>
           Mais ces complices de Bouill&eacute;,<br>
           Tous ces tigres qui, sans piti&eacute;,<br>
-          D&eacute;chirent le sein de leur m&egrave;re !</p>
+          D&eacute;chirent le sein de leur mère !</p>
         --------------------------------------
 		
 		<p>Aux armes, citoyens,<br>
@@ -114,9 +114,9 @@
           Abreuve nos sillons !</p>
        ----------------------------------------
 
-	   <p>Nous entrerons dans la carri&egrave;re<br>
+	   <p>Nous entrerons dans la carrière<br>
           Quand nos a&icirc;n&eacute;s n&#146;y seront plus,<br>
-          Nous y trouverons leur poussi&egrave;re<br>
+          Nous y trouverons leur poussière<br>
           Et la trace de leurs vertus<br>
           Et la trace de leurs vertus<br>
           Bien moins jaloux de leur survivre<br>

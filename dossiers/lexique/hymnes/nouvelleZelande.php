@@ -13,7 +13,7 @@
     <td height="51" width="393"> 
       <div align="center"><b><font size="6" face="Arial, Helvetica, sans-serif" color="#000000">God 
         Defend New zealand<br>
-        (Dieu prot&egrave;ge la Nouvelle Z&eacute;lande !)</font></b></div>
+        (Dieu protège la Nouvelle Z&eacute;lande !)</font></b></div>
     </td>
     <td height="51" width="98"> 
       <div align="center"><b><img src="../../../images/drapeaux/Grand_format/NZ.png" width="75" height="50"></b></div>
@@ -30,15 +30,15 @@
         <b>ata whakarongona;</b><br>
         &Eacute;coute nos voix, nous te prions<br>
         <b>Me aroha noa</b><br>
-        Dieu prot&egrave;ge notre pays libre<br>
+        Dieu protège notre pays libre<br>
         <b>Kia hua ko te pai;</b><br>
         D&eacute;fends l'&eacute;toile triple du Pacifique<br>
         <b>Kia tau to atawhai</b><br>
-        Des fl&egrave;ches du conflit et de la guerre<br>
+        Des flèches du conflit et de la guerre<br>
         <b>Manaakitia mai</b><br>
         Fais entendre ses louanges partout<br>
         <b>Aotearoa</b><br>
-        Dieu prot&egrave;ge la Nouvelle-Z&eacute;lande. <br>
+        Dieu protège la Nouvelle-Z&eacute;lande. <br>
         <br>
         --------------------------------------------------------------------<br>
         <br>
@@ -49,15 +49,15 @@
         <b>Hear our voices, we entreat</b><br>
         &Eacute;coute nos voix, nous te prions<br>
         <b>God defend our free land</b><br>
-        Dieu prot&egrave;ge notre pays libre<br>
+        Dieu protège notre pays libre<br>
         <b>Guard Pacific&#146;s triple star</b><br>
         D&eacute;fends l'&eacute;toile triple du Pacifique<br>
         <b>From the shafts of strife and war</b><br>
-        Des fl&egrave;ches du conflit et de la guerre<br>
+        Des flèches du conflit et de la guerre<br>
         <b>Make her praises heard afar</b><br>
         Fais entendre ses louanges partout<br>
         <b>God defend New Zealand ! </b><br>
-        Dieu prot&egrave;ge la Nouvelle-Z&eacute;lande ! <br>
+        Dieu protège la Nouvelle-Z&eacute;lande ! <br>
 <br>
 </font><iframe width="420" height="315" src="https://www.youtube.com/embed/An5Hyoq-lXQ" frameborder="0" allowfullscreen></iframe></font></p>
     </td>

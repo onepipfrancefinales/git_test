@@ -139,7 +139,7 @@ define("ADMIN_PARAM_MSG5","Nombre d'équipe pour l'accession directe ?");
 define("ADMIN_PARAM_MSG6","Nombre d'équipe pour l'accession en barrages ?");
 define("ADMIN_PARAM_MSG7","Nombre d'équipe pour la relégation ?");
 define("ADMIN_PARAM_MSG8","Votre équipe préférée ?");
-define("ADMIN_PARAM_TITRE","Param&egrave;tres de");
+define("ADMIN_PARAM_TITRE","Paramètres de");
 define("ADMIN_TAPVERT_TITRE","Points Bonus");
 define("ADMIN_PARAM_MSG9","Points prono exact");  
 define("ADMIN_PARAM_MSG10","Points participation � un prono");
@@ -163,7 +163,7 @@ define("ADMIN_BUTEUR_TITRE","Buteurs de");
 
 //Graphiques
 define("ADMIN_GRAPH_TITRE","Résultats et classement mis 	&agrave; jours ");
-define("ADMIN_GRAPH","La création des graphiques et des classements a été réalisée avec succ&egrave;s"); //0.82
+define("ADMIN_GRAPH","La création des graphiques et des classements a été réalisée avec succès"); //0.82
 define("ADMIN_GRAPH_PRONO","Le classement des membres a �t� r�alis�e avec succ�s"); //0.82
 define("ADMIN_GRAPH_1","La cr�ation des graphiques a �chou�, veuillez r�essayer !");
 define("ADMIN_GRAPH_2","Cette manoeuvre est � effectuer apr�s chaque ajout de r�sultats. Elle peut prendre un certain temps...");
@@ -220,7 +220,7 @@ define("ADMIN_CLASSE_GEST","Gestion des clubs");  // 0.82
 define("ADMIN_GESTEQUIPE_TITRE","Consultation des clubs");  // 0.82
 define("ADMIN_GESTEQUIPE_2","Choisissez un club : ");  // 0.82
 define("ADMIN_EQUIPE_17","Edition des renseignements de l'�quipe");
-define("ADMIN_GESTEQUIPE_1","R�glage des param&egrave;tres de : "); // 0.82
+define("ADMIN_GESTEQUIPE_1","R�glage des paramètres de : "); // 0.82
 define("ADMIN_GESTEQUIPE_3","Nom du renseignement"); // 0.82
 define("ADMIN_GESTEQUIPE_4","Valeur du renseignement"); // 0.82
 define("ADMIN_EQUIPE_5","Url");
@@ -242,7 +242,7 @@ define("ADMIN_RENS_1"," dans la classe : ");
 define("ADMIN_RENS_2","Vous n'avez pas le droit de supprimer ce renseignement car il est utilis� ");
 define("ADMIN_RENS_3"," fois dans les renseignements.");
 define("ADMIN_RENS_4","<b>Ins�rez</b> les renseignements dans les classes :");
-define("ADMIN_RENS_5","<b>Supprimez</b> les param&egrave;tres des renseignements (Choix multiple possible avec la touche SHIFT et CTRL) : ");
+define("ADMIN_RENS_5","<b>Supprimez</b> les paramètres des renseignements (Choix multiple possible avec la touche SHIFT et CTRL) : ");
 define("ADMIN_RENS_6"," dans ");
 define("ADMIN_RENS_7","Ajouter");
 define("ADMIN_RENS_8","Supprimer");

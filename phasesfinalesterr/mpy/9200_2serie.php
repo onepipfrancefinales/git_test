@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="../style2.css">
 <?php $annee=$_GET['variable_1'];?>
 <meta name="description"
-content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comit&egrave;s territoriaux, Tous les championnats de rugby, f&egrave;d&egrave;rale 2, f&egrave;d&egrave;rale 3, f&egrave;d&egrave;rale 1, top 14.">
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comitès territoriaux, Tous les championnats de rugby, fèdèrale 2, fèdèrale 3, fèdèrale 1, top 14.">
 <meta name="keywords"
 content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
@@ -12,7 +12,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>1re S&egrave;rie</title>
+<title>1re Sèrie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 </head>
@@ -114,7 +114,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td width="160" height="26"> 
       <?php 
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db3"); // S&egrave;lection de la base onepip	   
+mysql_select_db("onepip-france-db3"); // Sèlection de la base onepip	   
 $query = "SELECT  phpmpy_clubs.nom, phpmpy_clubs.url_logo FROM phpmpy_pf$annee, phpmpy_clubs WHERE phpmpy_pf$annee.clubA8005=phpmpy_clubs.id and phpmpy_pf$annee.id='9200'";
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
@@ -668,7 +668,7 @@ echo "";
     <td width="160"><font size="2" face="Arial, Helvetica, sans-serif"><strong> 
       <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db3"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db3"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='9200' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 {      
@@ -755,7 +755,7 @@ echo "";
     <td colspan="3" height="24"><font size="2" face="Arial, Helvetica, sans-serif"><b><i> 
       <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db3"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db3"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='9200' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -954,7 +954,7 @@ echo "";
       <strong> 
       <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db3"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db3"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='9200' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 {    
@@ -1022,7 +1022,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <strong> 
       <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db3"); // S&egrave;lection de la base onepip	  
+mysql_select_db("onepip-france-db3"); // Sèlection de la base onepip	  
 $reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='9200' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1084,7 +1084,7 @@ echo "";
     <td width="160"> <strong> 
       <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db3"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db3"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='9200' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 {     

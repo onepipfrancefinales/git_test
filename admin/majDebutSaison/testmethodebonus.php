@@ -1,3 +1,8 @@
+
+
+
+
+
 <?php
 function bonusDefensif($equipeTraitee, $id_journee, $ligue, $bdd)
 {

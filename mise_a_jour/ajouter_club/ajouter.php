@@ -38,7 +38,7 @@
           <option value="divisions/pagefederale3.php"><b>Fédérale 3</b></option>
           <option value="divisions/pagehonneur.php"><b>Honneur</b></option>
           <option value="divisions/pagepromotion.php"><b>Promotion </b></option>
-          <option value="divisions/page1serie.php"><b>1&egrave;re Série</b></option>
+          <option value="divisions/page1serie.php"><b>1ère Série</b></option>
           <option value="divisions/page2serie.php"><b>2iéme Série</b></option>
           <option value="divisions/page3serie.php"><b>3iéme Serie</b></option>
           <option value="divisions/page4serie.php"><b>4iéme Série</b></option>

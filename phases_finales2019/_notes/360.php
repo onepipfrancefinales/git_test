@@ -432,7 +432,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2" height="31" rowspan="4" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
         sont définies <br>
-        par la FFR, apr&egrave;s chaque tour en<br>
+        par la FFR, après chaque tour en<br>
         privilégiant des <br>
         oppositions géographiques</font></div>
     </td>

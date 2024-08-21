@@ -54,7 +54,7 @@
   <tr> 
     <td width="214" height="33"> 
       <div align="center"><b><font size="4"><a href="http://francefinalesrugby.franceserv.com/phases_finales/federale1/pagefederale1.php?variable_1=2018"><font color="#000000">F 
-        1- Acc&egrave;s Pro D2</font></a></font></b></div>
+        1- Accès Pro D2</font></a></font></b></div>
     </td>
     <td width="236" height="33" bgcolor="#009900"> 
       <div align="center"><font color="#000000"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF" size="3">Provence 
@@ -63,7 +63,7 @@
   </tr>
   <tr> 
     <td width="214" height="15"> 
-      <div align="center"><b><font face="Arial, Helvetica, sans-serif">Acc&egrave;s 
+      <div align="center"><b><font face="Arial, Helvetica, sans-serif">Accès 
         Pro D2</font></b></div>
     </td>
     <td width="236" height="15" bgcolor="#009900"> 
@@ -761,7 +761,7 @@
   </tr>
   <tr> 
     <td width="214" height="23"> 
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2018"><font color="#000000" size="4">Teuli&egrave;re</font></a></b></div>
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2018"><font color="#000000" size="4">Teulière</font></a></b></div>
     </td>
     <td width="236" bgcolor="#FFFFFF" height="23"> 
       <div align="center"><i>32me de finale</i></div>

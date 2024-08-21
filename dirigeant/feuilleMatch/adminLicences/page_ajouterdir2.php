@@ -41,12 +41,12 @@ if (isset ($_POST['fonction'])) $typeLicenceEnvoie = $_POST['fonction'];else $ty
 $nomDir=str_replace(' ','-',$nomDir);
 $nomDir = strtoupper ($nomDir);
 
-// **** traitement du Prénom ****** 
+// **** traitement du Prï¿½nom ****** 
 $prenomDir=str_replace(' ','-',$prenomDir);
 $prenomDir = strtoupper(substr($prenomDir, 0, 1)).strtolower(substr($prenomDir, 1));
 
 
-// **** traitement du numéro de la licence ******
+// **** traitement du numï¿½ro de la licence ******
 $annee = substr($licenceDir,0,4);
 $deux = substr($licenceDir,4,2);
 $un = substr($licenceDir,6,1);
@@ -78,8 +78,8 @@ $licenceDirAffichage = $annee." ".$deux." ".$un." ".$fin;
 
 <?php
 //require("../../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db2"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db2"); // Sï¿½lection de la base onepip
 
 //$nb=mysql_query("SELECT MAX(id_perso) 
 //				FROM $bdcomite 
@@ -196,7 +196,7 @@ $sql =" INSERT INTO $phpComite_joueurs (nom,    nom_cache, 	prenom,	date_naissan
 
 if ($bdd->query($sql) === TRUE) {
 	echo "<br />";
-    echo "Nouvelle licence cr&eacute;&eacute;e avec succ&egrave;s";
+    echo "Nouvelle licence cr&eacute;&eacute;e avec succÃ¨s";
 } else {
     echo "Error: " . $sql . "<br>" . $bdd->error;
 }
@@ -224,7 +224,7 @@ $sql =" INSERT INTO $phpComite_joueurs (nom,    nom_cache, 	prenom,	date_naissan
 
 if ($bdd->query($sql) === TRUE) {
 	echo "<br />";
-    echo "Nouvelle licence cr&eacute;&eacute;e avec succ&egrave;s";
+    echo "Nouvelle licence cr&eacute;&eacute;e avec succÃ¨s";
 } else {
     echo "Error: " . $sql . "<br>" . $bdd->error;
 }

@@ -18,10 +18,10 @@ MM_reloadPage(true);
   <table width="100%" border="0" height="30">
     <tr valign="top" align="center"> 
       <td colspan="12" bgcolor="006699" height="28"><font size="5" color="#FFCC00"><b> 
-        <? echo "Championnat des Pyr&egrave;n&egrave;es";?>
+        <? echo "Championnat des Pyrènèes";?>
         <?php echo $annee;?>
         : 
-        <? echo "R&egrave;serve Honneur";?>
+        <? echo "Rèserve Honneur";?>
         </b></font></td>
     </tr>
     <tr valign="top" align="center"> 
@@ -56,7 +56,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 228px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -97,7 +97,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -176,7 +176,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -215,7 +215,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -292,7 +292,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -331,7 +331,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -407,7 +407,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -446,7 +446,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -522,7 +522,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -561,7 +561,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -605,7 +605,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -645,7 +645,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b> </font></div>
     </div>
@@ -688,7 +688,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -727,7 +727,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -770,7 +770,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font>
 <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -809,7 +809,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -1171,14 +1171,14 @@ echo "";
 	   
 <div id="Layer4" style="position:absolute; width:1px; height:102px; z-index:6; left: 534px; top: 452px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer3" style="position:absolute; width:160px; height:20px; z-index:5; left: 46px; top: 179px; background-image:    url(../../phases_finales/titre.jpg); layer-background-image:    url(../../phases_finales/titre.jpg); border: 1px none #000000"> 
-  <div align="center"><font color="#FFFFFF"><b>Huiti&egrave;me</b></font></div>
+  <div align="center"><font color="#FFFFFF"><b>Huitième</b></font></div>
 </div>
 <div id="Layer4" style="position:absolute; width:1px; height:102px; z-index:6; left: 533px; top: 252px; background-color: #FF0000; layer-background-color: #FF0000; border: 1px none #000000"></div>
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 743px; top: 364px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='270' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1188,14 +1188,14 @@ while ($donnees = mysql_fetch_array($reponse) )
   <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
 ?>
   </strong></i></b></font></div>
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 307px; top: 217px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='270' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1205,14 +1205,14 @@ while ($donnees = mysql_fetch_array($reponse) )
   <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
 ?>
   </strong></i></b></font></div>
 <div id="Layer7" style="position:absolute; width:193px; height:15px; z-index:12; left: 301px; top: 415px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='270' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1222,14 +1222,14 @@ while ($donnees = mysql_fetch_array($reponse) )
   <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
 ?>
   </strong></i></b></font></div>
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 543px; top: 468px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='270' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1239,14 +1239,14 @@ while ($donnees = mysql_fetch_array($reponse) )
   <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
 ?>
   </strong></i></b></font></div>
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 537px; top: 270px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='270' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1256,14 +1256,14 @@ while ($donnees = mysql_fetch_array($reponse) )
   <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
 ?>
   </strong></i></b></font></div>
 <div id="Layer7" style="position:absolute; width:200px; height:15px; z-index:12; left: 303px; top: 306px"><font size="2" face="Arial, Helvetica, sans-serif"> 
   <b><i> 
   <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='270' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1273,7 +1273,7 @@ while ($donnees = mysql_fetch_array($reponse) )
   <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
 ?>
   </strong></i></b></font></div>
 <div id="Layer2" style="position:absolute; width:234px; height:28px; z-index:10; left: 728px; top: 439px"> 
@@ -1370,7 +1370,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -1409,7 +1409,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -1485,7 +1485,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -1524,7 +1524,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -1599,7 +1599,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -1638,7 +1638,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -1715,7 +1715,7 @@ $result = mysql_query($query);
     <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
     </b></font> 
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result20.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
@@ -1754,7 +1754,7 @@ $result = mysql_query($query);
         <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
        ?>
         </b></font></div>
     </div>
@@ -1816,7 +1816,7 @@ while ($donnees = mysql_fetch_array($reponse) )
   <b><font face="Arial, Helvetica, sans-serif"><i> 
   <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='270' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1827,7 +1827,7 @@ while ($donnees = mysql_fetch_array($reponse) )
   <?php
  
  }
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
 ?>
   </strong></i></font></b></font></div>
 <div id="Layer6" style="position:absolute; width:994px; height:55px; z-index:8; left: 1px; top: 610px"> 

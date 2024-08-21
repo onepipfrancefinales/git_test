@@ -35,7 +35,7 @@
 		  <p>Les provinces-unies du sud,<br>
          
 
-		 Ont maintenant ouvert leur tr&egrave;s honorable tr&ocirc;ne.<br>
+		 Ont maintenant ouvert leur très honorable tr&ocirc;ne.<br>
           Et tous les peuples Unis du Sud:<br>
 		  
           
@@ -87,7 +87,7 @@
 		  
         <p>Les provinces-unies du sud,<br>
 		
-          Ont maintenant ouvert leur tr&egrave;s honorable tr&ocirc;ne.<br>
+          Ont maintenant ouvert leur très honorable tr&ocirc;ne.<br>
 		  
           Et tous les peuples Unis du Sud:<br>
 		  

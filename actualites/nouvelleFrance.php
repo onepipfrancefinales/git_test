@@ -22,7 +22,7 @@
 <p align="center"><font face="Arial, Helvetica, sans-serif" size="3" color="#000000"><b><font color="#FF0000">3</font></b>- 
   La <b>ligue </b><b>Auvergne Rh&ocirc;ne Alpes (ARA </b>)est n&eacute;e de la 
   fusion des comit&eacute;s territoriaux<br>
-  de l'Auvergne, du Lyonnais, des Alpes et du comit&eacute; Dr&ocirc;me Ard&egrave;che.</font> 
+  de l'Auvergne, du Lyonnais, des Alpes et du comit&eacute; Dr&ocirc;me Ardèche.</font> 
   <br>
   <font face="Arial, Helvetica, sans-serif" size="3" color="#000000">Elle compte 
   287 clubs</font></p>

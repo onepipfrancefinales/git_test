@@ -136,7 +136,7 @@
     </td>
     <td width="38">&nbsp;</td>
     <td width="258" bgcolor="#993333"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif"><a href="clubs32me.php?id=370">Teuli&egrave;re</a></font></div>
+      <div align="center"><font face="Arial, Helvetica, sans-serif"><a href="clubs32me.php?id=370">Teulière</a></font></div>
     </td>
   </tr>
   <tr> 

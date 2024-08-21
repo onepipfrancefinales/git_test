@@ -48,13 +48,13 @@ content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulous
         <div id="equipeI" ><A HREF="page1serie.php?variable_1=<?php echo $saison;?>" TARGET="_top">1éreSérie</A></DIV>
       </TD>
       <TD WIDTH="110" HEIGHT="10"> 
-        <div id="equipeI" ><A HREF="page2serie.php?variable_1=<?php echo $saison;?>" TARGET="_top">2i&egrave;meSérie</A></DIV>
+        <div id="equipeI" ><A HREF="page2serie.php?variable_1=<?php echo $saison;?>" TARGET="_top">2ièmeSérie</A></DIV>
       </TD>
       <TD WIDTH="110" HEIGHT="10"> 
-        <div id="equipeI" ><A HREF="page3serie.php?variable_1=<?php echo $saison;?>" TARGET="_top">3i&egrave;meSérie</A></DIV>
+        <div id="equipeI" ><A HREF="page3serie.php?variable_1=<?php echo $saison;?>" TARGET="_top">3ièmeSérie</A></DIV>
       </TD>
       <TD colspan="2"  HEIGHT="10" valign="top"> 
-        <div id="vide" ><a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(MPY)" target="_blank">Palmar&egrave;s 
+        <div id="vide" ><a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(MPY)" target="_blank">Palmarès 
           territorial</a></DIV>
       </TD>
     </TR>
@@ -75,10 +75,10 @@ content="Comite Midi Pyrenees de Rugby, Comite Midi Pyrenees Rugby,Stade toulous
         <div id="equipeII" ><A HREF="pagereserve1serie.php?variable_1=<?php echo $saison;?>" TARGET="_top">1éreSérie</A></DIV>
       </TD>
       <TD WIDTH="110" HEIGHT="2" valign="top"> 
-        <div id="equipeII" ><A HREF="pagereserve2serie.php?variable_1=<?php echo $saison;?>" TARGET="_top">2i&egrave;meSérie</A></DIV>
+        <div id="equipeII" ><A HREF="pagereserve2serie.php?variable_1=<?php echo $saison;?>" TARGET="_top">2ièmeSérie</A></DIV>
       </TD>
       <TD WIDTH="110" valign="top"> 
-        <div id="equipeI" ><a href="page4serie.php?variable_1=<?php echo $saison;?>" target="_top">4i&egrave;meSérie</a></div>
+        <div id="equipeI" ><a href="page4serie.php?variable_1=<?php echo $saison;?>" target="_top">4ièmeSérie</a></div>
       </TD>
       <TD  HEIGHT="2" valign="top" colspan="2"> 
         <div id="france"><font color="#006699"><a href="http://francefinalesrugby.franceserv.com/phases_finales/honneur/pagehonneur.php?variable_1=<?php echo $saison;?>" target="_blank">Championnat 

@@ -62,7 +62,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 	  <fieldset class="fieldsetG"> 
 	    <legend class="legendG"> 
-		Palmar&egrave;s par divisions
+		Palmarès par divisions
 		</legend> 
 		<br>
         <select class="inputG" name="select4" onChange="MM_jumpMenu('parent',this,0)" size="14"  title="Recherche par divisions">
@@ -116,7 +116,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/palmares/palmNational/pagePalmares.php?division=360">-------------------</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=360">Alamercery</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=365">Gaudermen</option>
-          <option value="/palmares/palmNational/pagePalmares.php?division=370">U16 (Ex Teuli&egrave;re)</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=370">U16 (Ex Teulière)</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=370">------------------</option>
           <option>CHALLENGES</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=380">----------------</option>

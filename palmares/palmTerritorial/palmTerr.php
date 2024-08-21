@@ -3,7 +3,7 @@
 <table width="550" border="0" cellspacing="0" cellpadding="0">
   <tr bgcolor="#000000"> 
     <td colspan="7"> 
-      <div align="center"><b><font color="#FFFFFF" size="6">Palmar&egrave;s territoriaux 
+      <div align="center"><b><font color="#FFFFFF" size="6">Palmarès territoriaux 
         </font></b></div>
     </td>
   </tr>
@@ -33,8 +33,8 @@
 <p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=29" target="_top">MIDI PYRENEES</a></p>
 <p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=30" target="_top">NORMANDIE</a></p>
 <p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=31" target="_top">PAYS DE LOIRE</a></p>
-<p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=32" target="_top">PERIGORD   AGENAIS</a></p>
-<p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=33" target="_top">POITOU   CHARENTE</a></p>
+<p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=32" target="_top">PERIGORD AGENAIS</a></p>
+<p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=33" target="_top">POITOU CHARENTE</a></p>
 <p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=34" target="_top">PROVENCE</a></p>
 <p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=35" target="_top">PAYS CATALAN</a></p>
 

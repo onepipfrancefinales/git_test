@@ -28,7 +28,7 @@ if ($division==180 or $division ==200)
 <P>&nbsp; 
 <P><font face="Arial, Helvetica, sans-serif"><b>-3-</b>Le tableau 3 est composé 
   des équipes classées de 17 &agrave; 28. elles se rencontreront 
-  en barrages pour les équipes les plus mal classées, puis en huitit&egrave;me 
+  en barrages pour les équipes les plus mal classées, puis en huititème 
   , quarts demi et finale.<br>
   les 2 équipes qui attteindront la finale seront qualifiées pour 
   les barrages d'accession aux 32me de finale du champ de France (2 equipes barragistes) 
@@ -66,7 +66,7 @@ elseif ($division==190)
 <P><font color="#000000" face="Arial, Helvetica, sans-serif"><b>-3-</b>Le tableau 
   3 est composé des équipes classées de 17 &agrave; 28. elles 
   se rencontreront en barrages pour les équipes les plus mal classées, 
-  puis en huitit&egrave;me , quarts demi et finale.<br>
+  puis en huititème , quarts demi et finale.<br>
   les 2 équipes qui attteindront la finale seront qualifiées pour 
   les barrages d'accession aux 32me de finale du champ de France (2 equipes barragistes) 
   </font>

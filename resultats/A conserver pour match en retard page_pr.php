@@ -68,13 +68,13 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   finales territoriales</a></H4>
               </td>
               <td height="21" valign="middle" bgcolor="#0099CC" align="center" width="227" bordercolor="#0099CC"> 
-                <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(PR)"  target="_blank"><i><font color="#000000" face="Arial, Helvetica, sans-serif">Palmar&egrave;s 
+                <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(PR)"  target="_blank"><i><font color="#000000" face="Arial, Helvetica, sans-serif">Palmarès 
                   territorial</font></i></a></b></div>
               </td>
             </tr>
             <tr bordercolor="#009966"> 
               <td height="5" valign="middle" align="center" bgcolor="#0099CC" bordercolor="#0099CC"> 
-                <div align="center"><a href="../page_comite.php?variable_1=(PR)" target="_blank" ><i><font face="Arial, Helvetica, sans-serif" color="#000000" size="3"><b>Acc&egrave;s 
+                <div align="center"><a href="../page_comite.php?variable_1=(PR)" target="_blank" ><i><font face="Arial, Helvetica, sans-serif" color="#000000" size="3"><b>Accès 
                   aux infos du comité</b></font></i></a></div>
               </td>
             </tr>
@@ -532,13 +532,13 @@ height="370" width="440"" type="text/html"   />
                   finales territoriales</a></H4>
               </td>
               <td height="21" valign="middle" bgcolor="#0099CC" align="center" width="227" bordercolor="#0099CC"> 
-                <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(PR)"  target="_blank"><i><font color="#000000" face="Arial, Helvetica, sans-serif">Palmar&egrave;s 
+                <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(PR)"  target="_blank"><i><font color="#000000" face="Arial, Helvetica, sans-serif">Palmarès 
                   territorial</font></i></a></b></div>
               </td>
             </tr>
             <tr bordercolor="#009966"> 
               <td height="5" valign="middle" align="center" bgcolor="#0099CC" bordercolor="#0099CC"> 
-                <div align="center"><a href="../page_comite.php?variable_1=(PR)" target="_blank" ><i><font face="Arial, Helvetica, sans-serif" color="#000000" size="3"><b>Acc&egrave;s 
+                <div align="center"><a href="../page_comite.php?variable_1=(PR)" target="_blank" ><i><font face="Arial, Helvetica, sans-serif" color="#000000" size="3"><b>Accès 
                   aux infos du comité</b></font></i></a></div>
               </td>
             </tr>
@@ -709,7 +709,7 @@ height="370" width="440"" type="text/html"   />
                         de France</a></b></font></div>
                     </td>
                     <td height="42" width="231" align="center"> 
-                      <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b><a href="javascript:;" onClick="MM_openBrWindow('http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php','','scrollbars=yes,width=1025,height=700')">Palmar&egrave;s 
+                      <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b><a href="javascript:;" onClick="MM_openBrWindow('http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php','','scrollbars=yes,width=1025,height=700')">Palmarès 
                         </a></b></font></div>
                     </td>
                   </tr>

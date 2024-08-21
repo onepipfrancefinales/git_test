@@ -11,7 +11,7 @@
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td colspan="4" height="64"> 
-      <div align="center"><font size="7"><b>Palmar&egrave;s </b></font></div>
+      <div align="center"><font size="7"><b>Palmarès </b></font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 

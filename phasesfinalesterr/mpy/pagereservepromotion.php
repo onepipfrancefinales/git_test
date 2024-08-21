@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Championnat des Pyr&egrave;n&egrave;es R&egrave;serve Promotion</title>
+<title>Championnat des Pyrènèes Rèserve Promotion</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body bgcolor="#EAECEB" text="#000000">

@@ -110,7 +110,7 @@ if (isset ($_GET['type']))  $type = $_GET['type'];						else $type= "Variable ty
   
         <p class="texte18"> N&deg; de licence : 
           <input  name="licence" maxlength="13" type="number"  required/>
-          <font size="2">(13 caract&egrave;res)</font><br>
+          <font size="2">(13 caractères)</font><br>
           <br>
 		  	<!--
           Cat&eacute;gorie de licence : 

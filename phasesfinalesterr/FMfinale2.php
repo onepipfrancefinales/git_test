@@ -39,7 +39,7 @@ MM_reloadPage(true);
           la mairie, chez un sponsor....</p>
         <p>Pour le support d'impression on peut également tout envisager 
           ( papier, bristol, plastifié, encadré, avec une image 
-          en arri&egrave;re plan, couleurs, noir et blanc, etc..</p>
+          en arrière plan, couleurs, noir et blanc, etc..</p>
         <p>Pour tous contacts ou renseignements </p>
         <p align="center"><a a href="mailto:francefinalesrugby.free.fr/"><font color="#FF0000"><b>francefinalesrugby@free.fr</b></font></a><br>
           <b><font color="#FF0000">06.82.24.70.57 </font></b></p>

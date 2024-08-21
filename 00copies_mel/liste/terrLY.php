@@ -25,7 +25,7 @@
       <div align="center"><font size="4">Promotion</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4"><font size="4">Servette de Gen&egrave;ve</font></font></div>
+      <div align="center"><font size="4"><font size="4">Servette de Genève</font></font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 

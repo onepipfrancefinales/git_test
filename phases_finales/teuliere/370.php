@@ -863,7 +863,7 @@ $A3264= '	13	 ';
     <td colspan="3" height="75" rowspan="4" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
         sont définies <br>
-        par la FFR, apr&egrave;s chaque tour <br>
+        par la FFR, après chaque tour <br>
         en privilégiant des <br>
         oppositions géographiques</font></div>
     </td>
@@ -989,7 +989,7 @@ $A3264= '	13	 ';
     <td width="23">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        Teuli&egrave;res 
+        Teulières 
         <?php echo $annee;?>
         </b></font></div>
     </td>

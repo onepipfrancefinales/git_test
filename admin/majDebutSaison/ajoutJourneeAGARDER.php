@@ -65,7 +65,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	
 	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
      {
-			echo 'Upload effectu&eacute; avec succ&egrave;s !';
+			echo 'Upload effectu&eacute; avec succès !';
 			echo "<br/>";
 			echo "----------------------------";
 			echo "<br/>";

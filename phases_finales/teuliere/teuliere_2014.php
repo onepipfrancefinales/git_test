@@ -12,7 +12,7 @@ $clubA3205= 'Bourges (CE)';
 $clubA3206= 'Suresnes (IDF)';
 $clubA3207= 'RCN XV () ';
 $clubA3208= 'Langon (CA)';
-$clubA3209= 'XV de Vendée ()';
+$clubA3209= 'XV de Vendï¿½e ()';
 $clubA3210= 'Perigueux (PA)';
 $clubA3211= 'Sud Bassin ()';
 $clubA3212= 'Puilboreau (PCH)';
@@ -1157,7 +1157,7 @@ else
   <div align="center"> <font size="5"><b>Champion de France 
     <?php echo $annee;?>
     <br>
-    Cadets Teuli&egrave;re </b></font></div>
+    Cadets TeuliÃ¨re </b></font></div>
 </div>
 <div id="Layer2" style="position:absolute; width:1600px; height:20px; z-index:4; left: 1px; top: 900px; background-color: #FFCC66; layer-background-color: #FFCC66; border: 1px none #000000"> 
   <p align="center"><a href="http://francefinalesrugby.franceserv.com/divisions/page1serie.php"></a> 

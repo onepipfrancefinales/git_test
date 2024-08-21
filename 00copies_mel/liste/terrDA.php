@@ -24,7 +24,7 @@
       <div align="center"><font color="#000000" size="4">Promotion</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4" color="#000000">Donz&egrave;re</font></div>
+      <div align="center"><font size="4" color="#000000">Donzère</font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 
@@ -56,7 +56,7 @@
       <div align="center"><font color="#000000" size="4">4me S&eacute;rie</font></div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4" color="#000000">SC Ouv&egrave;ze Payre</font></div>
+      <div align="center"><font size="4" color="#000000">SC Ouvèze Payre</font></div>
     </td>
   </tr>
   <tr bgcolor="#CCCCCC"> 

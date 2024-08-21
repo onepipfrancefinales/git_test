@@ -36,7 +36,7 @@
       <h4><a href="modifMDP.php?id_equipe=<?php echo $id_equipe;?>&type=<?php echo $type;?>&connect=<?php echo $connect;?>&comite=<?php echo $comite;?>&equipe=<?php echo $equipe;?>">Modifier son Mot de passe</a></h4>
     </td>
     <td height="76" bgcolor="#CC6633" rowspan="2"> 
-      <h4><a href="page_liste_compet1.php?reserve=<?php echo $reserve;?>&type=S2&equipe=<?php echo $equipe;?>&id_equipe=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&connect=<?php echo $connect; ?>"><font size="5">Acc&egrave;s 
+      <h4><a href="page_liste_compet1.php?reserve=<?php echo $reserve;?>&type=S2&equipe=<?php echo $equipe;?>&id_equipe=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&connect=<?php echo $connect; ?>"><font size="5">Acc√®s 
         au calendrier de l'Equipe R&eacute;serve</font></a></h4>
     </td>
   </tr>
@@ -168,7 +168,7 @@ $reponse = $bdd->query("	SELECT $bdmatchsid, $bdmatchsidjournee, $bdmatchsidequi
      							echo " <br/>";
 							}
 
-        $reponse->closeCursor(); // Termine le traitement de la requÍte
+        $reponse->closeCursor(); // Termine le traitement de la requÔøΩte
 ?>
       </div>
     </td>
@@ -372,7 +372,7 @@ $reponse = $bdd->query("	SELECT id, equipe_dom, equipe_ext
 							}
 ?>
         <?php
-//mysql_close(); // DÈconnexion de MySQL
+//mysql_close(); // DÔøΩconnexion de MySQL
 ?>
       </div>
     </td>

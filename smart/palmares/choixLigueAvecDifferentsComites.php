@@ -13,7 +13,7 @@ if ($comite == "au" or $comite == "ap" or  $comite == "da" or  $comite == "ly")
   <tr> 
     <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=ap&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité des <br> Alpes</font></a></td>
     <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=au&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Auvergne</font></a></td>
-    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=da&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Dr&ocirc;me Ard&egrave;che</font></a></td>
+    <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=da&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité<br>Dr&ocirc;me Ardèche</font></a></td>
     <td align="center"><a href="../palmares/pagePalmTerr.php?bddComite=au&comite=ly&champ=<?php echo substr($champ,0,3).'170';?>"><font color="#000000">Comité du <br>Lyonnais</font></a></td>
   </tr>
 </table>

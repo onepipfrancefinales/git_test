@@ -32,7 +32,7 @@ MM_reloadPage(true);
       <td colspan="12" bgcolor="#EAECEB" height="28"> 
         <div id="Layer4" style="position:absolute; width:285px; height:29px; z-index:9; left: 133px; top: 33px"><font size="5">Dimanche 
           </font></div>
-        <div id="Layer4" style="position:absolute; width:200px; height:29px; z-index:9; left: 654px; top: 32px"><font size="5"><b>Palmar&egrave;s</b></font></div>
+        <div id="Layer4" style="position:absolute; width:200px; height:29px; z-index:9; left: 654px; top: 32px"><font size="5"><b>Palmarès</b></font></div>
         
       </td>
     </tr>

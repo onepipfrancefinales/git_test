@@ -48,7 +48,7 @@
         <span class="gras">And Dublin Bay </span><br>
         Et la baie de Dublin <br>
         <span class="gras">From the four proud provinces of Ireland</span><br>
-        Des quatre fi&egrave;res provinces d'Irlande <br></p>
+        Des quatre fières provinces d'Irlande <br></p>
         --------------------------------------------------------------------
         <p><span class="gras">Hearts of steel </span><br>
         Et t&ecirc;tes qui ne s'abaissent pas <br>
@@ -61,7 +61,7 @@
         <span class="gras">We can fight no more </span><br>
         Nous ne puissions plus combattre<br>
         <span class="gras">For the four proud provinces of Ireland </span><br>
-        Pour les quatre fi&egrave;res provinces d'Irlande</p>
+        Pour les quatre fières provinces d'Irlande</p>
 		<br><br>
     </td>
   </tr>

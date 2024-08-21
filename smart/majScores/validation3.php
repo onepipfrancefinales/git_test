@@ -324,7 +324,7 @@ elseif ($bddComite =='fed3NE' OR $bddComite =='fed3ne')
   </tr>
 </table>
 <p class="tab4"> 
-<a href="../171.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ; ?>">Confirmer ces r&eacutesultats et <br />acc&egrave;der au nouveau classement</a>
+<a href="../171.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ; ?>">Confirmer ces r&eacutesultats et <br />accèder au nouveau classement</a>
 </p>
 
 

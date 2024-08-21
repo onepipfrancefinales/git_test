@@ -804,7 +804,7 @@ $A3264= '	8	 ';
     <td colspan="3" height="75" rowspan="4" bgcolor="#CCCCCC"> 
       <div align="center"><font face="Arial, Helvetica, sans-serif">Les oppositions 
         sont definies <br>
-        par la FFR, apr&egrave;s chaque tour <br>
+        par la FFR, après chaque tour <br>
         en privilegiant des <br>
         oppositions géographiques</font></div>
     </td>
@@ -1443,7 +1443,7 @@ $A3264= '	8	 ';
   <tr> 
     <td colspan="16"><b><font face="Arial, Helvetica, sans-serif">Entente 4 Cantons 
       (PA)</font></b><font face="Arial, Helvetica, sans-serif">: regroupement 
-      des clubs du Haut Agenais (Villeréal, Monflanquin, Castillonn&egrave;s, 
+      des clubs du Haut Agenais (Villeréal, Monflanquin, Castillonnès, 
       Lacapelle et Cancon)</font></td>
     <td width="32">&nbsp;</td>
     <td width="19">&nbsp;</td>

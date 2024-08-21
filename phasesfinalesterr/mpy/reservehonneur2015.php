@@ -170,7 +170,7 @@ MM_reloadPage(true);
     <tr valign="top" align="center"> 
       <td colspan="3" bgcolor="#006699" height="31"><font size="5"><b><font color="#FFCC00"> 
         </font><font size="5" color="#FFCC00"><b>
-        <? echo "Championnat des Pyr&egrave;n&egrave;es";?>
+        <? echo "Championnat des Pyrènèes";?>
         <? echo $annee;?>
         <? echo "Reserve Honneur";?>
         </b></font></b></font></td>

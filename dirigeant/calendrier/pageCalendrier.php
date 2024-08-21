@@ -109,7 +109,7 @@ calendrier ($equipe, $bddComite, $divisionChiffre, $nbreJourneeMax, $bdd);
                   <table width="250" border="1"  cellspacing="1">
                     <tr> 
                       <td bgcolor="#CCCCCC" height="29"> 
-                        <div align="center"><b><font size="5" color="#000000">Palmar&egrave;s</font></b></div>
+                        <div align="center"><b><font size="5" color="#000000">Palmarès</font></b></div>
                       </td>
                     </tr>
                   </table>

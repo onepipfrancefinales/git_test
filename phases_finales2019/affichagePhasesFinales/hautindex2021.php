@@ -29,15 +29,15 @@
       <td height="30" bgcolor="EAECEB" width="106"><div class="equipeIterr"><a href="pagePhaseFinale.php?division=180&annee=<?php echo $annee;?>" target="_top">Promotion</a></div></td>
       <td width="99" height="30"><div class="equipeIterr"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $annee;?>" target="_top">1<font size="1">ére</font>Série</a></div></td>
       <td width="111" height="30">
-      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=200&annee=<?php echo $annee;?>" target="_top">2&egrave;me 
+      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=200&annee=<?php echo $annee;?>" target="_top">2ème 
         Série</a></div>
     </td>
       <td width="105" height="30">
-      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=210&annee=<?php echo $annee;?>" target="_top">3&egrave;me 
+      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=210&annee=<?php echo $annee;?>" target="_top">3ème 
         Série</a></div>
     </td>
       <td width="115" height="30">
-      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=220&annee=<?php echo $annee;?>" target="_top">4&egrave;me 
+      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=220&annee=<?php echo $annee;?>" target="_top">4ème 
         Série</a></div>
     </td>
       <td height="30" width="125"><div class="equipeFEM"><a href="pagePhaseFinale.php?division=280&annee=<?php echo $annee;?>">Elite 1 / Elite 2</a></div></td>

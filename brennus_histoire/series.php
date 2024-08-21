@@ -35,7 +35,7 @@
 <p>5 joueurs du SBUC, de 1904 &agrave; 1907: Bruneau - Dufourcq Lacassagne (2 
   fois ouvreur - 2 fois &frac12;-de-m&ecirc;lée) - Laporte - Tilh</p>
 <p>8 joueurs du Stade Toulousain, en 2003, 2004, 2005 et 2006: Belot - Berty - 
-  Califano - Castaign&egrave;de - Cazalbou - Deylaud - Miorin - Soulapour Beno&icirc;t 
+  Califano - Castaignède - Cazalbou - Deylaud - Miorin - Soulapour Beno&icirc;t 
   August, en 2003, 2004, 2005 et 2006: </p>
 <p>&nbsp;</p>
 <p>a retrouver</p>

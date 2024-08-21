@@ -17,7 +17,7 @@ $chaine = strtolower($chaine);
 echo "<br/>";
 ?>
 <?php
-$reponse = mysql_query("SELECT * FROM bdclubs WHERE code='$chaine'or nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdclubs WHERE code='$chaine'or nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); // Requï¿½te SQL
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -56,7 +56,7 @@ foreach($coordonnees as $cle1 => $element1)
 <?php
  }
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 <?php
 require ("connection.php") ;
@@ -69,7 +69,7 @@ $champion == $_post['champion']; //
 ?>
 
 <?php
-$reponse = mysql_query("SELECT * FROM bdclubs WHERE code='$chaine' or nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); // Requête SQL 
+$reponse = mysql_query("SELECT * FROM bdclubs WHERE code='$chaine' or nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); // Requï¿½te SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -98,7 +98,7 @@ MM_reloadPage(true);
 <?php
  }
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 </strong>
 <p>
@@ -111,7 +111,7 @@ require ("connection.php") ;
  ?>
       </font><font size="4"> 
       <?php
-$reponse = mysql_query("SELECT * FROM infosclub WHERE id='$id'"); // Requête SQL 
+$reponse = mysql_query("SELECT * FROM infosclub WHERE id='$id'"); // Requï¿½te SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -154,7 +154,7 @@ While ($donnees = mysql_fetch_array($reponse) )
 <table border="1" align="center" cellspacing="0" cellpadding="0" width="500" bordercolor="#CCCCCC">
   <tr align="center" bordercolor="#FFFFFF"> 
     <td colspan="2"> 
-      <div align="center"><font color="#FF0000"><b>Si&egrave;ge</b></font></div>
+      <div align="center"><font color="#FF0000"><b>SiÃ¨ge</b></font></div>
     </td>
   </tr>
   <tr align="center" bordercolor="#FFFFFF"> 
@@ -175,7 +175,7 @@ While ($donnees = mysql_fetch_array($reponse) )
   </tr>
   <tr align="center" bordercolor="#FFFFFF"> 
     <td width="99"> 
-      <div align="right"><font color="#000000">T&egrave;l :</font></div>
+      <div align="right"><font color="#000000">TÃ¨l :</font></div>
     </td>
     <td width="395"><font color="#000000"> 
       <?php echo $donnees['A1608'];?>
@@ -207,7 +207,7 @@ While ($donnees = mysql_fetch_array($reponse) )
   </tr>
   <tr align="center" bordercolor="#FFFFFF"> 
     <td width="116" height="24" bordercolor="#FFFFFF"> 
-      <div align="right"><font color="#000000">T&egrave;l : </font></div>
+      <div align="right"><font color="#000000">TÃ¨l : </font></div>
     </td>
     <td width="378" height="24"><font color="#000000"> 
       <?php echo $donnees['A1613'];?>
@@ -339,7 +339,7 @@ While ($donnees = mysql_fetch_array($reponse) )
 <?php
  }
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 </strong><br>
 <table border="1" align="center" cellspacing="0" cellpadding="0" width="540" bordercolor="#0000FF">
@@ -354,7 +354,7 @@ mysql_close(); // Déconnexion de MySQL
   </tr>
 </table>
 <p><font color="#FF0000">______________________________________________________</font></p>
-<p align="center"><b><font color="#FF0000"size="+2">Palmarès</font></b></p>
+<p align="center"><b><font color="#FF0000"size="+2">Palmarï¿½s</font></b></p>
 
 
 
@@ -396,7 +396,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 
 <?php
 }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 
 
@@ -430,7 +430,7 @@ while ($donnees = mysql_fetch_array($reponse) )
   <?php echo "<br/>";?>
  
 </p>
-<p align="center"><b><font color="#FF0000"size="+2">Saisons précédentes</font></b></p>
+<p align="center"><b><font color="#FF0000"size="+2">Saisons prï¿½cï¿½dentes</font></b></p>
 <p>&nbsp; 
 <table width="450" bordercolor="#CCCCCC" border="0" cellpadding="0" cellspacing="0" align="center">
   <tr bgcolor="#FFFFFF"> 

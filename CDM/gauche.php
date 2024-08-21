@@ -24,7 +24,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <div align="center"> 
         <p><font color="#FFFFFF">--------</font><br>
           <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
-            <option selected>Fiches de pr�sentation des pays</option>
+            <option selected>Fiches de pr�sentation des pays</option>
             <option value="http://coupedumondexv.free.fr/pagepays.php?variable_1=AFS">Afrique 
             du Sud</option>
             <option value="http://coupedumondexv.free.fr/pagepays.php?variable_1=ANG">Angleterre</option>
@@ -122,7 +122,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr bgcolor="#006699"> 
     <td colspan="2"> 
-      <div align="center"><b><font size="5" color="#FFFFFF">Palmar&egrave;s</font></b></div>
+      <div align="center"><b><font size="5" color="#FFFFFF">Palmarès</font></b></div>
     </td>
   </tr>
   <tr> 
@@ -131,7 +131,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr> 
     <td colspan="2"> 
-      <div align="center"><font size="5"><a href="Ppalmares.php"><b>Palmar&egrave;s</b></a></font></div>
+      <div align="center"><font size="5"><a href="Ppalmares.php"><b>Palmarès</b></a></font></div>
     </td>
   </tr>
   <tr> 

@@ -49,7 +49,7 @@ echo $nom1;
               <table width="250" border="1" bordercolor="#000000" cellspacing="1">
                 <tr>
                   <td bgcolor="#CCCCCC"> 
-                    <div align="center"><b><font size="5">Palmar&egrave;s</font></b></div>
+                    <div align="center"><b><font size="5">Palmarès</font></b></div>
                   </td>
                 </tr>
               </table>
@@ -109,7 +109,7 @@ echo $nom1;
               <table width="250" border="1" bordercolor="#000000" cellspacing="1">
                 <tr> 
                   <td bgcolor="#CCCCCC"> 
-                    <div align="center"><b><font size="5">Palmar&egrave;s</font></b></div>
+                    <div align="center"><b><font size="5">Palmarès</font></b></div>
                   </td>
                 </tr>
               </table>
@@ -172,7 +172,7 @@ echo $nom1;
               <table width="250" border="1" bordercolor="#000000" cellspacing="1">
                 <tr> 
                   <td bgcolor="#CCCCCC"> 
-                    <div align="center"><b><font size="5">Palmar&egrave;s</font></b></div>
+                    <div align="center"><b><font size="5">Palmarès</font></b></div>
                   </td>
                 </tr>
               </table>
@@ -234,7 +234,7 @@ echo $nom1;
               <table width="250" border="1" bordercolor="#000000" cellspacing="1">
                 <tr> 
                   <td bgcolor="#CCCCCC"> 
-                    <div align="center"><b><font size="5">Palmar&egrave;s</font></b></div>
+                    <div align="center"><b><font size="5">Palmarès</font></b></div>
                   </td>
                 </tr>
               </table>

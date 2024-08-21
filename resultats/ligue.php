@@ -184,7 +184,7 @@ echo
 <br/>
 
 
-<h1>Palmar&egrave;s Sélections territoriales</h1>
+<h1>Palmarès Sélections territoriales</h1>
   
 
 <br>
@@ -200,7 +200,7 @@ echo
 <br>
 
 <br>
-<h1>Palmar&egrave;s national </h1>
+<h1>Palmarès national </h1>
 <h3> (Les dix derniers titres du comité)</h3>
 
 
@@ -234,7 +234,7 @@ echo "<a href=page_palm_comite.php?variable_1=$sigle > Tous les champions nation
 <hr />
 <br />
 
-<h1>Palmar&egrave;s Territorial 
+<h1>Palmarès Territorial 
     <?php  $saison1=$saison-1;  ?>
    <?php echo "$saison1";  ?> <?php// echo "$saison";  ?></h1>
 

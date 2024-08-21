@@ -16,7 +16,7 @@
       <div align="center"><b><a href="pagerecords.php?page=nbre_titres">Les records</a></b></div>
     </td>
     <td height="27"> 
-      <div align="center"><b><a href="page1refois.php">les premi&egrave;res fois</a></b></div>
+      <div align="center"><b><a href="page1refois.php">les premières fois</a></b></div>
     </td>
   </tr>
   <tr> 

@@ -19,9 +19,9 @@ $fichier = basename($_FILES['avatar']['name']);
 //echo "club : ".$club;echo "<br/>";
 //echo "dossier : ".$dossier;echo "<br/>";
 //echo "chemin:".$_FILES['avatar']['tmp_name'];echo "<br/>";
-//echo "fichier à traité:".$fichierATraite; echo "<br/>";
+//echo "fichier ï¿½ traitï¿½:".$fichierATraite; echo "<br/>";
 $fichier = $fichierATraite;
-//**********   Recherche du  caractère de séparation  **********************
+//**********   Recherche du  caractï¿½re de sï¿½paration  **********************
 /*
 $fichier = fopen($fichier, 'r+');
 
@@ -39,7 +39,7 @@ echo "Caractere de separation reconnu (,) ";
 $caratereSeparation =",";
 }
 else
-echo "aucun caractère de séparation reconnu";
+echo "aucun caractï¿½re de sï¿½paration reconnu";
 
 //************************************
 
@@ -56,7 +56,7 @@ $taille_maxi = 100000;
 $taille = filesize($_FILES['avatar']['tmp_name']);
 $extensions = array('.doc', '.ods', '.csv', '.txt');
 $extension = strrchr($_FILES['avatar']['name'], '.'); 
-//Début des vérifications de sécurité...
+//Dï¿½but des vï¿½rifications de sï¿½curitï¿½...
 
 
 if(!in_array($extension, $extensions)) //Si l'extension n'est pas dans le tableau
@@ -71,15 +71,15 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 {
      //On formate le nom du fichier ici...
      $fichier = strtr($fichier, 
-          'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 
+          'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 
           'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
      $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
     
 	
 	
-	 if(move_uploaded_file($_FILES['avatar']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+	 if(move_uploaded_file($_FILES['avatar']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ï¿½a a fonctionnï¿½...
      {
-          echo 'Upload effectu&eacute; avec succ&egrave;s !';
+          echo 'Upload effectu&eacute; avec succÃ¨s !';
      }
      else //Sinon (la fonction renvoie FALSE).
      {

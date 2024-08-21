@@ -51,7 +51,7 @@
     </td>
     <td width="292" height="37" bgcolor="#CCCCCC"><b><a href="page_FM.php"><font face="Arial, Helvetica, sans-serif"><b><font size="4">D&eacute;connexion</font></b></font></a></b></td>
     <td colspan="3" height="37" bgcolor="#CC6633" width="653"> 
-      <div align="center"><font size="4"><b><font size="4"><b><font face="Arial, Helvetica, sans-serif"><a href="page_liste_compet2.php?reserve=<?php echo $reserve;?>&equipe=<?php echo $equipe;?>&id_equipe=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&php=<?php echo $php; ?>&connect=<?php echo $connect; ?>">Acc&egrave;s 
+      <div align="center"><font size="4"><b><font size="4"><b><font face="Arial, Helvetica, sans-serif"><a href="page_liste_compet2.php?reserve=<?php echo $reserve;?>&equipe=<?php echo $equipe;?>&id_equipe=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&php=<?php echo $php; ?>&connect=<?php echo $connect; ?>">AccÃ¨s 
         au calendrier Equipe R&eacute;serve</a></font></b></font></b></font></div>
     </td>
   </tr>
@@ -107,7 +107,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
         <?php
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
     </td>
     <td width="230" height="23"> 
@@ -130,7 +130,7 @@ while ($row = mysql_fetch_array($result) )
 }
 ?>
         <?php
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
         </b></div>
     </td>
@@ -160,7 +160,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
         <?php
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
         </b></div>
     </td>
@@ -189,7 +189,7 @@ while ($row = mysql_fetch_array($result) )
 }
 ?>
       <?php
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
     </td>
     <td width="81" height="23"> 
@@ -218,7 +218,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
       <?php
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
     </td>
     <td width="189" height="23"> 
@@ -246,7 +246,7 @@ while ($row = mysql_fetch_array($result) )
 
 ?>
       <?php
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
     </td>
   </tr>
@@ -417,7 +417,7 @@ echo "";
       <?php 
 	  if ($equipe==$equipe_dom or $equipe==$equipe_ext)
 		
-	  echo "  </b> <a href=\"http://francefinalesrugby.franceserv.com/admin/feuille_matchA/page_select_joueurs.php?php=$php&connect=$connect&id_equipe=$id_equipe&equipe=$equipe&comite=$comite&code_div=$row[1]&equipeA=$equipeA&equipeB=$equipeB&comite=$comite&date=$row[3]&code_match=$idF\" target=_top >Réaliser</a>";
+	  echo "  </b> <a href=\"http://francefinalesrugby.franceserv.com/admin/feuille_matchA/page_select_joueurs.php?php=$php&connect=$connect&id_equipe=$id_equipe&equipe=$equipe&comite=$comite&code_div=$row[1]&equipeA=$equipeA&equipeB=$equipeB&comite=$comite&date=$row[3]&code_match=$idF\" target=_top >Rï¿½aliser</a>";
       else
 	  echo "";
 	

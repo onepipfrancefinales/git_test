@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta name="description"
-content="tous les champions de france de rugby, presentation de tous les clubs de rugby francais, Champions des differents comitÈs territoriaux, Tous les championnats de rugby, fÈdÈrale 2, fÈdÈrale 3, fÈdÈrale 1, top 14.">
+content="tous les champions de france de rugby, presentation de tous les clubs de rugby francais, Champions des differents comitÔøΩs territoriaux, Tous les championnats de rugby, fÔøΩdÔøΩrale 2, fÔøΩdÔøΩrale 3, fÔøΩdÔøΩrale 1, top 14.">
 <meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,FranÁaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
+content="Brennus,Comite Midi Pyrenees de Rugby,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,FranÔøΩaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -86,7 +86,7 @@ $reponse = $bdd->query("SELECT sigle,comite, code
         <div align="center"></div>
       </td>
       <td height="211" width="706"> 
-        <div align="center"><b><b><font face="Arial, Helvetica, sans-serif">Acc&egrave;s 
+        <div align="center"><b><b><font face="Arial, Helvetica, sans-serif">Acc√®s 
           aux Feuilles de match<br>
           pour les cat&eacute;gories suivantes</font></b><font size="5" face="Arial, Helvetica, sans-serif"><a href="../feuille_match1/page_consulter.php?equipe=<?php echo $equipe; ?>&comite=<?php echo $comite; ?>&id_equipe=<?php echo $id_equipe; ?>&connect=<?php echo $connect; ?>"><br>
           </a></font></b><font face="Arial, Helvetica, sans-serif"><br>
@@ -175,7 +175,7 @@ $nombreCadets=($somme[0])/6;
           <?php
 
           
-//mysql_close(); // DÈconnexion de MySQL
+//mysql_close(); // DÔøΩconnexion de MySQL
 ?>
           </b></font><br/>
           </b></div>

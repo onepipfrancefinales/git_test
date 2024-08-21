@@ -793,7 +793,7 @@ MM_reloadPage(true);
       <div id="Layer4" style="position:absolute; width:315px; height:63px; z-index:1; top: 243px; left: -187px"> 
         <div align="left">Rencontre a rejouer suite &agrave; la réclamation 
           des Hauts-Savoyards, qui leur reprochaient d'avoir simulé une 
-          m&ecirc;lée alors que leurs premi&egrave;res lignes valides se 
+          m&ecirc;lée alors que leurs premières lignes valides se 
           trouvaient sur le banc<br>
         </div>
       </div>

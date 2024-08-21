@@ -13,7 +13,7 @@ $division =$champ2*10;
 </tr>
 <tr>
  <td class="franceBleu"><a href="palmares/pagePalmTerr.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ ;?>"> 
- 		Palmar&egrave;s régional</a></td>
+ 		Palmarès régional</a></td>
 </tr>
 </table>
 

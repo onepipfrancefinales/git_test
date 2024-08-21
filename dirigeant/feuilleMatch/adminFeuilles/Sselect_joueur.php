@@ -10,7 +10,7 @@
     <td valign="middle" bgcolor="#CCCCCC">
       <p><font face="Arial, Helvetica, sans-serif"><b><font size="5"><font color="#FF0000"><font size="6"><font color="#003399"> 
         <?php if($fanionOuReserve<900000)
-echo "- - -  Equipe Premi&egrave;re -  - -";
+echo "- - -  Equipe PremiÃ¨re -  - -";
 else
 echo "- - - Equipe R&eacute;serve - - -";
 ?>
@@ -60,8 +60,8 @@ if($equipe==$equipeA)
 	 // echo $terrain;
 ?>
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
         <?php
 $reponse = mysql_query("	SELECT sigle,comite, code 
@@ -76,8 +76,8 @@ $reponse = mysql_query("	SELECT sigle,comite, code
         <?php //echo $bdcomite;?>
         <?php
 require ("../../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 
 
 ?>
@@ -197,7 +197,7 @@ $reponse = mysql_query("SELECT nom, prenom, id_perso
       <td width="240" height="25"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">61 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 60,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 60,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -218,7 +218,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="25"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">81 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 80,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 80,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -241,7 +241,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="32"><font face="Arial, Helvetica, sans-serif">2 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY  nom_cache LIMIT 1,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY  nom_cache LIMIT 1,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -258,7 +258,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="32"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">22 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 21,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 21,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -276,7 +276,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="32"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">42 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 41,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 41,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -294,7 +294,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="32"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">62 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 61,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 61,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -314,7 +314,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="32"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">82 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 81,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 81,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -336,7 +336,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240"><font face="Arial, Helvetica, sans-serif">3 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 2,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 2,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -353,7 +353,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">23 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 22,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 22,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -371,7 +371,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">43 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 42,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 42,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -389,7 +389,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">63 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 62,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 62,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -409,7 +409,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">83 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 82,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 82,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -431,7 +431,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240"><font face="Arial, Helvetica, sans-serif">4 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 3,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 3,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -448,7 +448,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">24 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 23,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 23,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -466,7 +466,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">44 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 43,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 43,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -484,7 +484,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">64 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 63,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 63,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -504,7 +504,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">84 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 83,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 83,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -526,7 +526,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240"><font face="Arial, Helvetica, sans-serif">5 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 4,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 4,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -543,7 +543,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">25 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 24,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 24,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -561,7 +561,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">45 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 44,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 44,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -579,7 +579,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">65 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 64,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 64,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -599,7 +599,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">85 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 84,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 84,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -621,7 +621,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="26"><font face="Arial, Helvetica, sans-serif">6 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 5,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 5,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -638,7 +638,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="26" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">26 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 25,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 25,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -656,7 +656,7 @@ $nom26= $donnees['nom'];
       <td height="26" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">46 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 45,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 45,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -674,7 +674,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="26"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">66 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 65,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 65,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -694,7 +694,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="26"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">86 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 85,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 85,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -716,7 +716,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240"><font face="Arial, Helvetica, sans-serif">7 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 6,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 6,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -733,7 +733,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">27 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 26,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 26,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -751,7 +751,7 @@ $nom27= $donnees['nom'];
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">47 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 46,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 46,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -769,7 +769,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">67 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 66,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 66,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -789,7 +789,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">87 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 86,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 86,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -811,7 +811,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240"><font face="Arial, Helvetica, sans-serif">8 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 7,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 7,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -828,7 +828,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">28 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'   ORDER BY nom_cache LIMIT 27,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'   ORDER BY nom_cache LIMIT 27,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -846,7 +846,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">48 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 47,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 47,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -864,7 +864,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">68 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 67,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 67,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -884,7 +884,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">88 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 87,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 87,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -906,7 +906,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="2"><font face="Arial, Helvetica, sans-serif">9 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 8,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 8,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -923,7 +923,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="2" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">29 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'   ORDER BY nom_cache LIMIT 28,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'   ORDER BY nom_cache LIMIT 28,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -941,7 +941,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="2" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">49 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 48,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 48,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -959,7 +959,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="2"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">69 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 68,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 68,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -979,7 +979,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="2"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">89 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 88,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 88,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1001,7 +1001,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240"><font face="Arial, Helvetica, sans-serif">10 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 9,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 9,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1018,7 +1018,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">30 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 29,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 29,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1036,7 +1036,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">50 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 49,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 49,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1054,7 +1054,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">70 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 69,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 69,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1074,7 +1074,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">90 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 89,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 89,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1096,7 +1096,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="21"><font face="Arial, Helvetica, sans-serif">11 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 10,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 10,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1113,7 +1113,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="21" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">31 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 30,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 30,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1131,7 +1131,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="21" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">51 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 50,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 50,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1149,7 +1149,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="21"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">71 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 70,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 70,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1169,7 +1169,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="21"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">91 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 90,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 90,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1191,7 +1191,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="22"><font face="Arial, Helvetica, sans-serif">12 
         <?php
-$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 11,1"); // Requête SQL
+$reponse = mysql_query("SELECT  nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 11,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1208,7 +1208,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="22" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">32 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 31,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 31,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1226,7 +1226,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="22" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">52 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 51,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 51,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1244,7 +1244,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="22"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">72 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 71,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 71,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1264,7 +1264,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="22"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">92 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 91,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'   and photo='1' ORDER BY nom_cache LIMIT 91,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1286,7 +1286,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="31"><font face="Arial, Helvetica, sans-serif">13 
         <?php
-$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 12,1"); // Requête SQL
+$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 12,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1303,7 +1303,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="31" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">33 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 32,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 32,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1321,7 +1321,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="31" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">53 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 52,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 52,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1339,7 +1339,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="31"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">73 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 72,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 72,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1359,7 +1359,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="31"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">93 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 92,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 92,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1381,7 +1381,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="22"><font face="Arial, Helvetica, sans-serif">14 
         <?php
-$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 13,1"); // Requête SQL
+$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 13,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1398,7 +1398,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="22" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">34 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 33,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 33,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1417,7 +1417,7 @@ while ($donnees = mysql_fetch_array($reponse) )
         <div align="left"><font face="Arial, Helvetica, sans-serif">54 
           <?php	
 		
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'   ORDER BY nom_cache LIMIT 53,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'   ORDER BY nom_cache LIMIT 53,1"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 	{ 
  	$nom54= $donnees['nom'];
@@ -1438,7 +1438,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="22"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">74 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 73,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 73,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1458,7 +1458,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="22"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">94 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 93,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 93,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1480,7 +1480,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="13"><font face="Arial, Helvetica, sans-serif">15 
         <?php
-$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 14,1"); // Requête SQL
+$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 14,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1497,7 +1497,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="13" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">35 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 34,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 34,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1515,7 +1515,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="13" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">55 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'   ORDER BY nom_cache LIMIT 54,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'   ORDER BY nom_cache LIMIT 54,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1536,7 +1536,7 @@ echo $nom55.' '.$prenom55;
       <td width="240" height="13"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">75 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 74,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 74,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1556,7 +1556,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="13"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">95 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 94,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 94,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1578,7 +1578,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="20"><font face="Arial, Helvetica, sans-serif">16 
         <?php
-$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 15,1"); // Requête SQL
+$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 15,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1595,7 +1595,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="20" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">36 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 35,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 35,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1613,7 +1613,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="20" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">56 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 55,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 55,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1631,7 +1631,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="20"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">76 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 75,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 75,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1651,7 +1651,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="20"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">96
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 95,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 95,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1673,7 +1673,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="2"><font face="Arial, Helvetica, sans-serif">17 
         <?php
-$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 16,1"); // Requête SQL
+$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 16,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1690,7 +1690,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="2" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">37 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 36,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1' ORDER BY nom_cache LIMIT 36,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1708,7 +1708,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="2" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">57 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 56,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 56,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1726,7 +1726,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="2"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">77 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 76,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 76,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1746,7 +1746,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="2"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">97 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 96,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 96,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1768,7 +1768,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="29"><font face="Arial, Helvetica, sans-serif">18 
         <?php
-$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 17,1"); // Requête SQL
+$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 17,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1785,7 +1785,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="29" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">38 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 37,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 37,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1803,7 +1803,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="29" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">58 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 57,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 57,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1821,7 +1821,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="29"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">78 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 77,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 77,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1841,7 +1841,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="29"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">98 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 97,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 97,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1863,7 +1863,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="12"><font face="Arial, Helvetica, sans-serif">19 
         <?php
-$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 18,1"); // Requête SQL
+$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 18,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1880,7 +1880,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="12" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">39 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 38,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 38,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1898,7 +1898,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="12" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">59 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 58,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 58,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1916,7 +1916,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="12"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">79 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 78,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 78,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1936,7 +1936,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="12"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">99 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 98,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 98,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1958,7 +1958,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <tr> 
       <td width="240" height="36"><font face="Arial, Helvetica, sans-serif">20 
         <?php
-$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 19,1"); // Requête SQL
+$reponse = mysql_query("SELECT   nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1' ORDER BY nom_cache LIMIT 19,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1975,7 +1975,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="36" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">40 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 39,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe' and photo='1'  ORDER BY nom_cache LIMIT 39,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -1993,7 +1993,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td height="36" width="240"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">60 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 59,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 59,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -2011,7 +2011,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="36"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">80 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 79,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 79,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -2031,7 +2031,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <td width="240" height="36"> 
         <div align="left"><font face="Arial, Helvetica, sans-serif">100 
           <?php
-$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 99,1"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, id_perso FROM $bdcomite WHERE club='$equipe'  and photo='1'  ORDER BY nom_cache LIMIT 99,1"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 

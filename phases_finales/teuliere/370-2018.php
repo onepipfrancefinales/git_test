@@ -1219,7 +1219,7 @@ require ("../fonctions_phases_finalesJeunes.php");
     <td width="23">&nbsp;</td>
     <td colspan="3" rowspan="3"> 
       <div align="center"><font size="5"><b>Champion de France <br>
-        Cadets Teuli&egrave;re
+        Cadets Teulière
         <?php echo $annee;?>
         </b></font></div>
     </td>

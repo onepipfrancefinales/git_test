@@ -141,7 +141,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
           	<td height="42" width="248">  <a href="http://francefinalesrugby.franceserv.com/phases_finales/fem_federale1/pagefem_federale1.php?variable_1=<?php echo $saison;?>" target="_blank">Championnat 
             							de France</a>
 			</td>
-          <td height="42" width="206" > <a href="javascript:;" onClick="MM_openBrWindow('http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php','','scrollbars=yes,width=1025,height=700')">Palmar&egrave;s</a> 
+          <td height="42" width="206" > <a href="javascript:;" onClick="MM_openBrWindow('http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php','','scrollbars=yes,width=1025,height=700')">Palmarès</a> 
           </td>
         </tr>
       </table>

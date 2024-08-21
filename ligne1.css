@@ -183,6 +183,10 @@ a.decorationNone{
     text-decoration:none;
 }
 
+a.decorationNoneWhite{
+    text-decoration:none;
+    color:White;
+}
 
 a.visited{
     text-decoration:none;

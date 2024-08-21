@@ -10,7 +10,7 @@ echo "Ligue choisie : ".$comite;
 <br>
 <a href="choixComite.php">Modifier choix Ligue </a><br>
 <hr/>
-<b>2/S&eacute;lection du fichier (caract&egrave;re de s&eacute;paration la virgule)</b> 
+<b>2/S&eacute;lection du fichier (caractère de s&eacute;paration la virgule)</b> 
 <p>&nbsp;</p>
 <p> 
   <?php require 'formulaire1.htm';?>

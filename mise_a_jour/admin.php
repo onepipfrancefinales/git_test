@@ -62,7 +62,7 @@
     <td width="13">&nbsp;</td>
     <td width="316"><a href="http://francefinalesrugby.franceserv.com/Copie de recupdonnee/modif1_demi.php" target="_blank">Mise 
       a jour bdclubs</a></td>
-    <td width="465">Palmar&egrave;s</td>
+    <td width="465">Palmarès</td>
   </tr>
   <tr> 
     <td width="13">&nbsp;</td>

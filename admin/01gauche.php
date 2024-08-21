@@ -31,7 +31,7 @@ MM_reloadPage(true);
       <p>&nbsp;
       <p><br>
       <form action="http://francefinalesrugby.franceserv.com/divisions/pageannee.php" method="POST">
-        <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par Ann&eacute;e</legend> 
+        <fieldset id="fieldsetG"> <legend id="legendG"> Palmarès par Ann&eacute;e</legend> 
         <p> 
           <input id="inputGA" type="text" name="saison" maxlength="4" size="8" >
         </p>
@@ -44,7 +44,7 @@ MM_reloadPage(true);
 		
 		
       <br>
-      <p> <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s par 
+      <p> <fieldset id="fieldsetG"> <legend id="legendG"> Palmarès par 
         divisions</legend> <br />
         <select id="inputG" name="select4" onChange="MM_jumpMenu('parent',this,0)" size="14">
           <option selected>------------</option>
@@ -137,7 +137,7 @@ MM_reloadPage(true);
       
             
       
-            <p> <fieldset id="fieldsetG"> <legend id="legendG"> Palmar&egrave;s Europ&eacute;ens</legend> 
+            <p> <fieldset id="fieldsetG"> <legend id="legendG"> Palmarès Europ&eacute;ens</legend> 
               <br />
         <select id="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="4">
           <option>--------------------------------</option>

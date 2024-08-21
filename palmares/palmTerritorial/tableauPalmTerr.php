@@ -3,9 +3,8 @@
 require("../../connect/connexion1.php");
 require '../fonctionsPalmares.php';
 //if (isset($id)) $id = $id; else $id=0;
-if (isset($_GET['paramIdComite'])) $id = $_GET['paramIdComite'];
-else $id = 0;
-
+if (isset($_GET['paramIdComite'])) $id = $_GET['paramIdComite']; else $id = 0;
+if (isset($_GET['terr'])) $terr = $_GET['terr']; else $terr ='terr';
 $sigle = 0;
 nomComite($sigle, $id, $bdd);
 
@@ -134,24 +133,52 @@ nomLigue($idLigue, $sigleLigue, $bdd)
       <td class="equipes width200"> <?php palmares($comite, 220, $bdd, $debut, $fin); ?></td>
     </tr>
   </table>
-  <table class="borderNone marginAuto width1150">
-    <tr >
-      <td  >
-          <a class="alignRight colorWhite" href="tableauPalmTerr2.php?paramIdComite=<?php echo $id; ?>">Consulter
-              les palmarès des saisons 1999 -1980</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-         <b> <?php //  include("../../pub/pub1.php");   ?></b>
-      </td>
-    </tr>
-    <tr>
-      <td ></td>
-    </tr>
-  </table>
-  <?php //require 'tableauPalmTerr2.php';
-  ?>
+ 
+ 
+<!--  saisons 1999 - 1980  -->
+  <?php 
+   if ($id == 29 or $id == 12  or $id == 15)
+  {
+  if ($terr == 'terr'  ) { ?> 
+  <br>
+  <div class="center styleArial">
+          <a class="colorWhite" href="tableauPalmTerr.php?paramIdComite=<?php echo $id; ?>&terr=terr2">Consulter les palmarès des saisons 1999 -1980</a>
+          <br>
+          <br>
+             <?php
+            }
+            ?>
+</div>
+
+   <?php  if ($terr == "terr2" or $terr == "terr3") {            
+ require 'tableauPalmTerr2.php'; 
+  
+
+}
+
+// saison 1979 - 1960
+
+   if ($terr == "terr2" ) { ?>
+
+<div class="center styleArial">
+          <br>
+          <a class="colorWhite" href="tableauPalmTerr.php?paramIdComite=<?php echo $id; ?>&terr=terr3">Consulter
+              les palmarès des saisons 1979 -1960</a>
+              <br>   
+             
+             <?php
+            }
+}
+
+            ?>
+</div>
+
+<?php  if ($terr == "terr3") {            
+ require 'tableauPalmTerr3.php';  
+ }
+?>
+
+<!--
   <p class=" center size6 colorWhite"><b>Equipes réserves</b></p>
   
   <table class="borderNone marginAuto width1000">
@@ -170,7 +197,7 @@ nomLigue($idLigue, $sigleLigue, $bdd)
       <td class="equipes width200"><?php palmares2($comite, 9200, $bdd); ?></td>
     </tr>
   </table>
-
+-->
   <table class="borderNone marginAuto width1250">
     <tr>
       <td>

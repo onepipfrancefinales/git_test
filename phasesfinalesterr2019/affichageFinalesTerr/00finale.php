@@ -50,7 +50,7 @@ elseif ($page=="RRPHR1")
 
 <br>
 <br>
-<div id="palmares" > Palmar&egrave;s 
+<div id="palmares" > Palmarès 
         <?php 	echo $annee;?>
       </div>
 <br>

@@ -2,6 +2,8 @@
 require "../../Phpleague/phpidf/config2.php";
 require '../../Phpleague/phpidf/admin/fonctions.php';
 include("../../Phpleague/phpidf/lang/lang_fr.php");
+include("../../../fichierConfig.php");
+
 ouverture();
 
 echo "<br />";
@@ -11,24 +13,27 @@ echo "<hr />";
 if (isset($champRecup)) $champRecup=$champRecup; else $champRecup=0;
 
 if ($champRecup == 150171)
-	$tableau = array(150171, 150181, 150182, 150201, 150202,  150203);	
+$tableau = $tableauGES;	
+	//$tableau = array(150171, 150181, 150182, 150201, 150202,  150203);	
 elseif ($champRecup == 150271)
 	$tableau = array(150271);	
 	
 elseif ($champRecup == 170171)
-	$tableau = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 170201, 170202, 170211, 170212);	
+$tableau = $tableauBFC;	
+	///$tableau = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 170201, 170202, 170211, 170212);	
 elseif ($champRecup == 170271)
 	$tableau = array(170271, 170272, 179181, 179182, 179183);	
 		
 elseif ($champRecup == 180171)
+//$tableau = $tableauNOR;	
 	$tableau = array(180171, 180181, 180201, 180202, 180203);	
 elseif ($champRecup == 180271)
 	$tableau = array(180271, 189181);	
 
 
 elseif ($champRecup == 220171)
-	$tableau = array(220171, 220181, 220182,
-					 220191, 220192);
+$tableau = $tableauPCA;	
+	//$tableau = array(220171, 220181, 220182, 220191, 220192);
 elseif ($champRecup == 220271)
 	$tableau = array(220271);
 

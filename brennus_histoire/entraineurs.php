@@ -29,7 +29,7 @@
   </table>
   <p><br>
     <br>
-    Guy Nov&egrave;s a remport&eacute; 10 titres avec le Stade Toulousain en qualit&eacute; 
+    Guy Novès a remport&eacute; 10 titres avec le Stade Toulousain en qualit&eacute; 
     d'entraineur (1989, 94, 95, 96, 97, 99, 2001, 2008, 2011, 2012 )<br>
     et 2 titres en 1985 et 1986 en qualit&eacute; de joueur.<br>
     <br>

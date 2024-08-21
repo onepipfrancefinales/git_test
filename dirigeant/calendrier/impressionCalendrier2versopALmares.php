@@ -47,8 +47,8 @@ MM_reloadPage(true);
             <td height="370" width="272" valign="top"> 
               <p><b><font size="5"> 
                 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ‡ MySQL
-mysql_select_db("onepip-france-db1"); // SÈlection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ÔøΩ MySQL
+mysql_select_db("onepip-france-db1"); // SÔøΩlection de la base onepip
 ?>
                 <?php
 $reponse = mysql_query("SELECT sigle,comite, code, nom_1, nom_2, nom_3, nom_4 
@@ -65,7 +65,7 @@ $reponse = mysql_query("SELECT sigle,comite, code, nom_1, nom_2, nom_3, nom_4
                 <?php
  }
 
-mysql_close(); // DÈconnexion de MySQL
+mysql_close(); // DÔøΩconnexion de MySQL
 ?>
                 </font></strong></font></b>
               <div id="image">
@@ -90,7 +90,7 @@ mysql_select_db("onepip-france-db1");
                 <table width="250" border="1" bordercolor="#000000" cellspacing="1">
                   <tr> 
                     <td bgcolor="#CCCCCC"> 
-                      <div align="center"><b><font size="5">Palmar&egrave;s <font size="3">(Extrait)</font></font></b></div>
+                      <div align="center"><b><font size="5">Palmar√®s <font size="3">(Extrait)</font></font></b></div>
                     </td>
                   </tr>
                 </table>

@@ -38,13 +38,13 @@
   vous pouvez modifier votre feuille de match en cliquant sur modifier (modification 
   possible depuis un smartphone, cas par exemple d'un joueur qui se blesse &agrave; 
   l'&eacute;chauffement. )</font></p>
-<p align="left"><font face="Arial, Helvetica, sans-serif"><b>Gestion des premi&egrave;res 
+<p align="left"><font face="Arial, Helvetica, sans-serif"><b>Gestion des premières 
   lignes</b><br>
-  Par d&eacute;faut, pour un joueur autoris&eacute; &agrave; jouer en premi&egrave;re, 
+  Par d&eacute;faut, pour un joueur autoris&eacute; &agrave; jouer en première, 
   la mention GTD s'affiche dans la colonne de gauche. Vous avez la possibilit&eacute; 
   d'affiner cet affichage, en choisissant une des combinaisons suivantes GT , 
   GD, TD, G , T, D ou encore supprimer cette autorisation en inscrivant 0 dans 
-  la rubrique Premi&egrave;re ligne.<br>
+  la rubrique Première ligne.<br>
   </font></p>
 <p align="left">&nbsp;</p>
 </body>

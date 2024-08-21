@@ -120,15 +120,15 @@ MM_reloadPage(true);
           Série</a></div>
       </td>
       <td width="111" height="30"> 
-        <div id="equipeIterr"><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top">2<font size="1">i&egrave;me</font> 
+        <div id="equipeIterr"><a href="http://francefinalesrugby.franceserv.com/phases_finales/2serie/page2serie.php?variable_1=<?php echo $annee;?>" target="_top">2<font size="1">ième</font> 
           Série</a></div>
       </td>
       <td width="105" height="30"> 
-        <div id="equipeIterr"><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top">3<font size="1">i&egrave;me</font> 
+        <div id="equipeIterr"><a href="http://francefinalesrugby.franceserv.com/phases_finales/3serie/page3serie.php?variable_1=<?php echo $annee;?>" target="_top">3<font size="1">ième</font> 
           Série</a></div>
       </td>
       <td width="115" height="30"> 
-        <div id="equipeIterr"><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top">4<font size="1">i&egrave;me</font> 
+        <div id="equipeIterr"><a href="http://francefinalesrugby.franceserv.com/phases_finales/4serie/page4serie.php?variable_1=<?php echo $annee;?>" target="_top">4<font size="1">ième</font> 
           Série</a></div>
       </td>
       <td height="30" width="125"> 

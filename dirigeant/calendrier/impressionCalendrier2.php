@@ -20,7 +20,7 @@ if (isset( $equipeR)) $equipeR = $equipeR; else $equipeR="";
 
 //echo "id_equipe : ".$id_equipe;echo "<br />";
 $id_equipe="5157F";
-// déclaration des fichiers contenant des fonctions
+// dï¿½claration des fichiers contenant des fonctions
 
 require '../feuilleMatch/fonctions.php';
 
@@ -67,7 +67,7 @@ NbreDeJournee ($comite, $equipe, $bdd);echo "<br / >";
       <tr> 
         
       <td width="289"> 
-        <div align="center"><b><font size="3">Palmar&egrave;s </font></b> </div>
+        <div align="center"><b><font size="3">PalmarÃ¨s </font></b> </div>
         <p align="center"><b><font face="Arial, Helvetica, sans-serif" size="2">Equipe 
             Fanion</font></b><br>
           <font color="#FF0000">

@@ -20,7 +20,7 @@ $comiteNom="du Centre";?>
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <title>Championnats régionaux ligue Centre Val de Loire</title>
   <meta name="description"
- content=" Actualités des compétitions régionales de la ligue Centre Val de Loire. (résultats, classements, stats, calendriers, palmar&egrave;s etc...) ">
+ content=" Actualités des compétitions régionales de la ligue Centre Val de Loire. (résultats, classements, stats, calendriers, palmarès etc...) ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">

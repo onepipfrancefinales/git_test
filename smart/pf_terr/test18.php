@@ -235,7 +235,7 @@
   </tr>
   <?php if ($comite == "au"){ ?> 
  <tr> 
-    <td class="coin4" colspan="2" size="2"><?php echo "Champion Dr&ocirc;me Ard&egrave;che"?></td>
+    <td class="coin4" colspan="2" size="2"><?php echo "Champion Dr&ocirc;me Ardèche"?></td>
   </tr>
  <?php } ?>
   <tr> 

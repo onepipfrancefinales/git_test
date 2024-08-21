@@ -12,7 +12,7 @@
   1898 .<br>
   <br>
   <font color="#000000" size="3">Malgr&eacute; un championnat en poule en 1896, 
-  il fallu organiser un finale du fait de l'&eacute;galit&eacute; des deux premi&egrave;res 
+  il fallu organiser un finale du fait de l'&eacute;galit&eacute; des deux premières 
   &eacute;quipes</font></h2>
 <h2>pas de finale en 2020</h2>
 <h2><font size="3" color="#000000">Changement de nom</font></h2>

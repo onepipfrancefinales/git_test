@@ -595,7 +595,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="48">&nbsp;</td>
     <td width="195"> 
-      <div id="coin5" >Drome Ard&egrave;che 2 </div>
+      <div id="coin5" >Drome Ardèche 2 </div>
     </td>
     <td width="29"> 
       <div id="coin5" > - </div>
@@ -609,7 +609,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="49">&nbsp;</td>
     <td width="185"> 
-      <div id="coin5" > Dr&ocirc;me Ard&egrave;che 2</div>
+      <div id="coin5" > Dr&ocirc;me Ardèche 2</div>
     </td>
     <td width="24"> 
       <div id="coin5" > - </div>
@@ -731,7 +731,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="45">&nbsp;</td>
     <td width="157"> 
-      <div id="coin5" > Dr&ocirc;me Ard&egrave;che 1</div>
+      <div id="coin5" > Dr&ocirc;me Ardèche 1</div>
     </td>
     <td width="20"> 
       <div id="coin5" > - </div>
@@ -768,7 +768,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="51">&nbsp;</td>
     <td width="167"> 
-      <div id="coin4" > Dr&ocirc;me Ard&egrave;che 1</div>
+      <div id="coin4" > Dr&ocirc;me Ardèche 1</div>
     </td>
     <td width="13"> 
       <div id="coin4" > - </div>
@@ -818,7 +818,7 @@ $clubB4S12= ' Provence 2';
     </td>
     <td width="48">&nbsp;</td>
     <td width="192"> 
-      <div id="coin4" > Dr&ocirc;me Ard&egrave;che 2</div>
+      <div id="coin4" > Dr&ocirc;me Ardèche 2</div>
     </td>
     <td width="29"> 
       <div id="coin4" > - </div>

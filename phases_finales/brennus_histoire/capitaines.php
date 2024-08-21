@@ -14,9 +14,9 @@
 <p align="center">&nbsp;</p>
 <p align="center"><font size="4"><b><font size="5">Entra&icirc;neur le plus titré</font></b></font><br>
   <br>
-  G. Nov&egrave;s* 10 titres avec le Stade Toulousain en 1989, 94, 95, 96, 97, 
+  G. Novès* 10 titres avec le Stade Toulousain en 1989, 94, 95, 96, 97, 
   99, 2001, 2008, 2011, 2012 <br>
-  *Comme joueur, Nov&egrave;s a remporté 2 titres en 1985 et 1986 <br>
+  *Comme joueur, Novès a remporté 2 titres en 1985 et 1986 <br>
   <br>
 </p>
 <p align="center"><b><font size="5">Le plus de finales gagnées</font></b></p>

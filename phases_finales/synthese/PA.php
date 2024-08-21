@@ -326,7 +326,7 @@
             </td>
             <td width="210" bgcolor="#009933"> 
               <div align="center"><b><font size="4"><b><font size="4" color="#FFFFFF" face="Arial, Helvetica, sans-serif">Servette 
-                de Gen&egrave;ve (LY)</font><font size="4"></font><font size="4"></font></b></font></b></div>
+                de Genève (LY)</font><font size="4"></font><font size="4"></font></b></font></b></div>
             </td>
           </tr>
           <tr> 
@@ -647,7 +647,7 @@
           </tr>
           <tr> 
             <td width="195"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teuli&egrave;re</font></a><br>
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teulière</font></a><br>
                 Co-champions</b></div>
             </td>
             <td width="210" bgcolor="#009933"> 

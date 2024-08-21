@@ -100,7 +100,7 @@ $phpComite_joueurs = "php".$comite."_joueurs";
   Couleur de licence : 
   <?php echo $type_licence;?>
   <br/>
- <!-- Premi&egrave;re ligne : -->
+ <!-- Première ligne : -->
   <?php// echo $premiereLigne;?>
   </font><b><font size="6"><br/>
   <br/>

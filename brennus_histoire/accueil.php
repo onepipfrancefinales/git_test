@@ -39,7 +39,7 @@
   </tr>
   <tr> 
     <td height="30" width="29%"> 
-      <div align="right"><a href="page1refois.php"><font face="Arial, Helvetica, sans-serif" size="5"><b>Premi&egrave;res 
+      <div align="right"><a href="page1refois.php"><font face="Arial, Helvetica, sans-serif" size="5"><b>Premières 
         fois</b></font></a></div>
     </td>
     <td height="30" width="24%">&nbsp;</td>

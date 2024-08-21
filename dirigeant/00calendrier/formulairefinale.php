@@ -15,7 +15,7 @@
   <?php $bdfeuilleB=$_GET['bdfeuilleB']; ?><?php echo $bdfeuilleB; ?>
 <body bgcolor="#FFFFFF" text="#000000">
 <div align="left"><font size="6" face="Arial, Helvetica, sans-serif"><b>Formulaire 
-  &agrave; compl&egrave;ter pour cr&eacute;er une rencontre </b><b></b></font> 
+  &agrave; complèter pour cr&eacute;er une rencontre </b><b></b></font> 
 </div>
 <form method="post" action="formulairefinale2.php?comite=<?php echo $comite;?>&php=<?php echo $php;?>&connect=<?php echo $connect;?>&id_equipe=<?php echo $id_equipe;?>&equipe=<?php echo $equipe;?>&bdfeuilleA=<?php echo $bdfeuilleA;?>&bdfeuilleB=<?php echo $bdfeuilleB;?>">
   <p> Equipe A 

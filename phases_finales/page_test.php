@@ -60,13 +60,13 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   finales territoriales</a></h4>
               </td>
               <td height="19" width="227" "> 
-                <p class="coindroit"><a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(AU)"  target="_blank">Palmar&egrave;s 
+                <p class="coindroit"><a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(AU)"  target="_blank">Palmarès 
                   territorial</a></p>
               </td>
             </tr>
             <tr > 
               <td height="5" > 
-                <p class="coindroit"><a href="../page_comite.php?variable_1=(AU)" target="_blank" >Acc&egrave;s 
+                <p class="coindroit"><a href="../page_comite.php?variable_1=(AU)" target="_blank" >Accès 
                   aux infos du comité</a></p>
               </td>
             </tr>
@@ -475,7 +475,7 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
                         de France</a></p>
                     </td>
                     <td height="43" width="231" align="center"> 
-                      <p class="tab3"><a href="http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php">Palmar&egrave;s 
+                      <p class="tab3"><a href="http://francefinalesrugby.franceserv.com/divisions/page_fem_elite1.php">Palmarès 
                         </a></p>
                     </td>
                   </tr>
@@ -521,13 +521,13 @@ frameborder="no" height="380" width="300" type="text/html" align="top"   />
                   finales territoriales</a> </h4>
               </td>
               <td height="21" valign="middle" bgcolor="#0099CC" align="center" width="227" bordercolor="#0099CC"> 
-                <p class="coindroit"> <a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(AU)"  target="_blank">Palmar&egrave;s 
+                <p class="coindroit"> <a href="http://francefinalesrugby.franceserv.com/palm_terr2tableau.php?variable_1=(AU)"  target="_blank">Palmarès 
                   territorial</a></p>
               </td>
             </tr>
             <tr bordercolor="#009966"> 
               <td height="5" valign="middle" align="center" bgcolor="#0099CC" bordercolor="#0099CC"> 
-                <p class="coindroit"><a href="../page_comite.php?variable_1=(AU)" target="_blank" >Acc&egrave;s 
+                <p class="coindroit"><a href="../page_comite.php?variable_1=(AU)" target="_blank" >Accès 
                   aux infos du comité</a></p>
               </td>
             </tr>

@@ -121,7 +121,7 @@ MM_reloadPage(true);
   <tr bgcolor="#FFFFFF" valign="middle"> 
     <td colspan="8" height="53" bgcolor="#FFFFFF"> 
       <div align="center"><font color="#000000"><b> 
-        <?php   include("../../pub/pub1.php"); ?>
+        <?php //  include("../../pub/pub1.php"); ?>
         </b></font></div>
     </td>
   </tr>

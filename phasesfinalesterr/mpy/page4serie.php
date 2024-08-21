@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<title>Championnat des Pyr&egrave;n&egrave;es 4me S&egrave;rie</title>
+<title>Championnat des Pyrènèes 4me Sèrie</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body bgcolor="#EAECEB" text="#000000">

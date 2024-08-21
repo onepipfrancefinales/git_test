@@ -198,7 +198,7 @@ echo $saison[$i].' '.$champion[$i]."<br />";
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>3 participations</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">CA B&egrave;gles 3 finales 
+<p><font face="Arial, Helvetica, sans-serif" size="3">CA Bègles 3 finales 
   /2 victoires</font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">Olympique 3 finales / 1 
   victoire<br>
@@ -287,7 +287,7 @@ echo $saison[$i].' '.$champion[$i]."<br />";
 <p align="left"><font size="3" face="Arial, Helvetica, sans-serif"><b>8 joueurs 
   du Stade Toulousain, en 1994-1997 a verifier</b> </font></p>
 <p align="left"><font size="3" face="Arial, Helvetica, sans-serif">Belot - Berty 
-  - Califano - Castaign&egrave;de - Cazalbou - Deylaud - Miorin - Soula </font></p>
+  - Califano - Castaignède - Cazalbou - Deylaud - Miorin - Soula </font></p>
 <p align="left"><font size="3" face="Arial, Helvetica, sans-serif"><b>Beno&icirc;t 
   August</b>, champion quatre fois cons&eacute;cutivement<br>
   en 2003, 2004 avec le Stade Fran&ccedil;ais et en 2005, 2006 avec le Biarritz 

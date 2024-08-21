@@ -10,7 +10,7 @@
             <div class="texte"> - Faire un recherche dans votre appli SMS pour retrouver &nbsp;notre conversation<br>
              rechercher le numéro : 06.82.24.70.57</div>
             <br>
-            <div class="texte"> -Enfin dern&egrave;re solution re-demander par SMS ou par e-mail le ou les liens au 06.82.24.70.57</div><br>
+            <div class="texte"> -Enfin dernère solution re-demander par SMS ou par e-mail le ou les liens au 06.82.24.70.57</div><br>
       <br>
       
      

@@ -23,12 +23,12 @@ $equipe2 = "Excellence B";
  target="_top"><font color="#FFFFFF">Phase finale du<br>
         championnat de France</font></a></h4>
     </td>
-    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division; ?>">Palmar&egrave;s 
+    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division; ?>">Palmarès 
       <?php echo $equipe1;?>
       </a> </td>
   </tr>
   <tr bordercolor="#009966"> 
-    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division+100; ?>">Palmar&egrave;s <?php echo $equipe2; ?></a> </td>
+    <td class="bleuClair"> <a href="../palmares/palmNational/pagePalmares.php?division=<?php echo $division+100; ?>">Palmarès <?php echo $equipe2; ?></a> </td>
   </tr>
 </table>
 

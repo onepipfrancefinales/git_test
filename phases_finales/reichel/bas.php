@@ -2,11 +2,11 @@
 <table width="1460" border="0" height="22" align="left">
   <tr> 
     <td width="730" height="15">
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagereichelA.php" target="_top"><font size="5" color="#000000">Palmar&egrave;s 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagereichelA.php" target="_top"><font size="5" color="#000000">Palmarès 
         champions de France Reichel</font></a></b></div>
     </td>
     <td width="730" height="15" valign="top">
-      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagereichelA.php" target="_top"><font size="5" color="#000000">Palmar&egrave;s 
+      <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/divisions/pagereichelA.php" target="_top"><font size="5" color="#000000">Palmarès 
         champions de France Reichel</font></a><a href="http://francefinalesrugby.franceserv.com/divisions/pagephliponeau.php" target="_top"></a></b></div>
     </td>
   </tr>

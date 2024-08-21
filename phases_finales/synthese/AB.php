@@ -164,7 +164,7 @@
               <div align="center">Eliminé en 8me de finale</div>
             </td>
             <td width="250" bgcolor="#FFFFFF"> 
-              <div align="center"><font color="#FF0000">Bagn&egrave;res de Bigorre</font></div>
+              <div align="center"><font color="#FF0000">Bagnères de Bigorre</font></div>
             </td>
           </tr>
           <tr> 
@@ -344,7 +344,7 @@
             </td>
             <td width="250" bgcolor="#009933"> 
               <div align="center"><b><font size="4" color="#FFFFFF" face="Arial, Helvetica, sans-serif">Servette 
-                de Gen&egrave;ve (LY)</font></b></div>
+                de Genève (LY)</font></b></div>
             </td>
           </tr>
           <tr> 
@@ -697,7 +697,7 @@
           </tr>
           <tr> 
             <td width="181"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teuli&egrave;re</font></a><br>
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teulière</font></a><br>
                 Co-champions</b></div>
             </td>
             <td width="250" bgcolor="#009933"> 

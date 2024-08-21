@@ -13,16 +13,16 @@
   masculins (18 ans et plus). </b><br>
   <br>
   S'il y a match nul &agrave; la fin de la dur&eacute;e r&eacute;glementaire d'un 
-  match &eacute;liminatoire, l'arbitre doit, apr&egrave;s un repos de cinq minutes, 
+  match &eacute;liminatoire, l'arbitre doit, après un repos de cinq minutes, 
   prolonger la partie de vingt minutes (dix minutes de chaque c&ocirc;t&eacute;) 
   sans repos au changement de camp. <br>
   <br>
-  Si, apr&egrave;s cette prolongation, le score du match est toujours nul, il 
+  Si, après cette prolongation, le score du match est toujours nul, il 
   ne sera pas rejou&eacute; : l'&eacute;quipe d&eacute;clar&eacute;e gagnante 
   sera celle qui aura dans l'ordre : <br>
   1- Marqu&eacute; le plus grand nombre d'essais au cours du match ; <br>
   2- R&eacute;ussi le plus grand nombre de tirs au but effectu&eacute;s dans les 
-  conditions d&eacute;finies dans les r&egrave;gles du jeu n&deg; 9). </font></p>
+  conditions d&eacute;finies dans les règles du jeu n&deg; 9). </font></p>
 <p>&nbsp;</p>
 <p><font face="Arial, Helvetica, sans-serif"><b>454-3 - Matches aller et retour 
   en phases finales. </b><br>
@@ -39,8 +39,8 @@
   3- Marqu&eacute; le plus grand nombre d'essais au cours des deux rencontres, 
   <br>
   4- R&eacute;ussi le plus grand nombre de tirs au but effectu&eacute;s &agrave; 
-  l'issue du 2&egrave;me match dans les conditions &eacute;nonc&eacute;es dans 
-  les r&egrave;gles du jeu (r&egrave;gle n&deg; 9). <br>
+  l'issue du 2ème match dans les conditions &eacute;nonc&eacute;es dans 
+  les règles du jeu (règle n&deg; 9). <br>
   </font></p>
 <p>&nbsp;</p>
 <p><font face="Arial, Helvetica, sans-serif"><b>ARTICLE 455 - MATCH NUL EN FINALE 
@@ -48,7 +48,7 @@
   <br>
   Pour les cat&eacute;gories seniors masculins (y compris les Reichel-Espoirs) 
   des comp&eacute;titions f&eacute;d&eacute;rales, en cas d'&eacute;galit&eacute; 
-  au score apr&egrave;s les prolongations, il sera fait application des modalit&eacute;s 
+  au score après les prolongations, il sera fait application des modalit&eacute;s 
   de l'article 454 ci-dessus. <br>
   <br>
   <b>Pour les f&eacute;minines</b> et pour les cat&eacute;gories masculines &quot; 

@@ -1,35 +1,37 @@
 <?php
-
-echo "champRecup genererSansIhm : ".$champRecup;echo "<br />";
-
-require "../../../fichierConfig.php" ;
 require "../../Phpleague/phpau/config2.php";
 require '../../Phpleague/phpau/admin/fonctions.php';
 include("../../Phpleague/phpau/lang/lang_fr.php");
+include("../../../fichierConfig.php");
 ouverture();
 
 
-$tableauARA1 = array(100171, 100172, 100173, 100174 );
+
+
+
+echo "<br />";
+echo "champRecup : ".$champRecup;
+echo "<br />";
+echo "<hr />";
+if (isset($champRecup)) $champRecup=$champRecup; else $champRecup=0;
+
+echo "champRecup genererSansIhm : ".$champRecup;echo "<br />";
+
 
 if ($champRecup == 100171)
-	$tableau =array(100171, 100172, 100173, 100174 );	
+$tableau = array(100171, 100172, 100173, 100174 );
 elseif ($champRecup == 100181)
-	$tableau = $tableauARA2;	
+$tableau = array(100181, 100182, 100183, 100184, 100185, 100186);
 elseif ($champRecup == 100191)
-	$tableau = $tableauARA3;	
+$tableau = array(100191, 100192, 100193, 100194, 100195, 100196);
 elseif ($champRecup == 100271)
-	$tableau = $tableauRES_ARA1;		
+$tableau = array(100271, 100272, 100273, 100274);
 elseif ($champRecup == 109181)
-	$tableau = $tableauRES_ARA2;	
+$tableau = array(109181, 109182, 109183, 109184, 109185, 109186);
 
-	foreach ($tableau as $champ)
-	{	
-		//echo $champDiv;echo "<br />";
-		//for ($champ =$champDiv; $champ <$champDiv+8; $champ++)
-		//{	
-		echo $champ;echo "<br />";
-	}
+
 //for ($champDiv = $champRecup ; $champDiv < 220 ; $champDiv=$champDiv+10)
+
 foreach ($tableau as $champ)
 {	
 	//echo $champDiv;echo "<br />";

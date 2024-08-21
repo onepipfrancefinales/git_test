@@ -23,7 +23,7 @@
     </tr>
     <tr> 
       <td width="142"> 
-        <div align="center">A. Est&egrave;ve </div>
+        <div align="center">A. Estève </div>
       </td>
       <td width="176"> 
         <div align="center">AS Beziers</div>

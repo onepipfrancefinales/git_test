@@ -324,7 +324,7 @@ $numeroJournee = substr("$journee", -2);
   </tr>
 </table>
 <p class="tab4"> 
-<a href="http://francefinalesrugby.franceserv.com/smart/<?php echo $comite; ?>/171.php?champion=<?php echo $codeChampionnat; ?>">Confirmer ces r&eacutesultats et <br />acc&egrave;der au nouveau classement</a>
+<a href="http://francefinalesrugby.franceserv.com/smart/<?php echo $comite; ?>/171.php?champion=<?php echo $codeChampionnat; ?>">Confirmer ces r&eacutesultats et <br />accèder au nouveau classement</a>
 </p>
 
 

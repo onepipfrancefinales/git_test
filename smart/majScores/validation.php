@@ -230,7 +230,7 @@ if (strlen($codeEquipe) == 7)
 ?>
 
 <p class="tab4"> 
-<a href="traitement.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee; ?>&codeEquipe1=<?php echo $codeEquipe1; ?>&codeEquipe2=<?php echo $codeEquipe2; ?>&score1=<?php echo $score1; ?>&score2=<?php echo $score2; ?>&bonusDefEquipe1=<?php echo $bonusDefEquipe1; ?>&bonusDefEquipe2=<?php echo $bonusDefEquipe2; ?>&bonusOffEquipe1=<?php echo $bonusOffEquipe1; ?>&bonusOffEquipe2=<?php echo $bonusOffEquipe2; ?>">Confirmer et acc&egrave;der <br />au nouveau classement</a>
+<a href="traitement.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee; ?>&codeEquipe1=<?php echo $codeEquipe1; ?>&codeEquipe2=<?php echo $codeEquipe2; ?>&score1=<?php echo $score1; ?>&score2=<?php echo $score2; ?>&bonusDefEquipe1=<?php echo $bonusDefEquipe1; ?>&bonusDefEquipe2=<?php echo $bonusDefEquipe2; ?>&bonusOffEquipe1=<?php echo $bonusOffEquipe1; ?>&bonusOffEquipe2=<?php echo $bonusOffEquipe2; ?>">Confirmer et accèder <br />au nouveau classement</a>
 </p>
 
 <p class="tab3">

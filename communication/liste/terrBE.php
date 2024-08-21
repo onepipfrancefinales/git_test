@@ -34,7 +34,7 @@
     </td>
     <td width="206"> 
       <div align="center"><font size="4"><font size="4"><font size="4">S&eacute;vignacq 
-        Th&egrave;ze</font></font></font></div>
+        Thèze</font></font></font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
@@ -81,7 +81,7 @@
   <tr bgcolor="#CCCCCC"> 
     <td width="136"><font size="4">R&eacute;serve 1re s&eacute;rie</font></td>
     <td width="206"><font size="4"><font size="4"><font size="4">S&eacute;vignacq 
-      Th&egrave;ze</font></font></font></td>
+      Thèze</font></font></font></td>
   </tr>
 </table>
 </body>

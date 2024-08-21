@@ -94,16 +94,16 @@
       </td>
       <td width="111" height="30"> 
         
-      <div id="equipeIterr"><a href="pagePhaseFinale.php?division=200&annee=<?php echo $annee;?>" target="_top>2<font size="1">2&egrave;me 
+      <div id="equipeIterr"><a href="pagePhaseFinale.php?division=200&annee=<?php echo $annee;?>" target="_top>2<font size="1">2ème 
         Série</a></div>
       </td>
       <td width="105" height="30"> 
         
-      <div id="equipeIterr"><a href="pagePhaseFinale.php?division=210&annee=<?php echo $annee;?>" target="_top>3<font size="1">3&egrave;meSérie</a></div>
+      <div id="equipeIterr"><a href="pagePhaseFinale.php?division=210&annee=<?php echo $annee;?>" target="_top>3<font size="1">3èmeSérie</a></div>
       </td>
       <td width="115" height="30"> 
         
-      <div id="equipeIterr"><a href="pagePhaseFinale.php?division=220&annee=<?php echo $annee;?>" target="_top>4<font size="1">4&egrave;meSérie</a></div>
+      <div id="equipeIterr"><a href="pagePhaseFinale.php?division=220&annee=<?php echo $annee;?>" target="_top>4<font size="1">4èmeSérie</a></div>
       </td>
       
     <td height="30" width="125"> <div id="equipeII"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">R�serve </a></div></td>

@@ -115,7 +115,7 @@ MM_reloadPage(true);
               </td>
               <td bordercolor="#000000" height="61" width="230" bgcolor="#FF0000"> 
                 <div align="center"> 
-                  <p><font color="#FFFFFF"><b>Vous avez d&egrave;s &agrave; présent 
+                  <p><font color="#FFFFFF"><b>Vous avez dès &agrave; présent 
                     la possibilité d'insérer les informations concernant 
                     vos clubs (Bureau, site internet, contact etc...) en passant 
                     par le menu déroulant des comités, ou en inserant 
@@ -190,7 +190,7 @@ MM_reloadPage(true);
             <tr bgcolor="#0066FF"> 
               <td colspan="2"> 
                 <div align="center"><b><font color="#FFFFFF">En cas d'erreur, 
-                  d'oubli, ou de probl&egrave;me technique</font></b></div>
+                  d'oubli, ou de problème technique</font></b></div>
               </td>
             </tr>
             <tr bgcolor="#FFCCFF"> 

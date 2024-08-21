@@ -32,7 +32,7 @@ if (strlen($idFfr)<5)
 $id_equipe="5157F";
 else 
 $id_equipe =$idFfr;
-// dÈclaration des fichiers contenant des fonctions
+// dÔøΩclaration des fichiers contenant des fonctions
 
 //require '../feuilleMatch/fonctions.php';
 
@@ -109,7 +109,7 @@ calendrier ($equipe, $comite, $divisionChiffre, $nbreJourneeMax, $bdd);
                   <table width="250" border="1" bordercolor="#000000" cellspacing="1">
                     <tr> 
                       <td bgcolor="#CCCCCC" height="29"> 
-                        <div align="center"><b><font size="5" color="#000000">Palmar&egrave;s</font></b></div>
+                        <div align="center"><b><font size="5" color="#000000">Palmar√®s</font></b></div>
                       </td>
                     </tr>
                   </table>

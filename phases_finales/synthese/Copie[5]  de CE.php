@@ -114,7 +114,7 @@
                 14</font></a></font></b></div>
             </td>
             <td width="184"> 
-              <div align="center"><i>Avant derni&egrave;re journée</i></div>
+              <div align="center"><i>Avant dernière journée</i></div>
             </td>
           </tr>
           <tr bgcolor="#CCCCCC"> 
@@ -689,7 +689,7 @@
           </tr>
           <tr> 
             <td width="210"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teuli&egrave;re</font></a></b></div>
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teulière</font></a></b></div>
             </td>
             <td width="184"> 
               <div align="center"><font size="4"><b>8me de finale</b></font></div>

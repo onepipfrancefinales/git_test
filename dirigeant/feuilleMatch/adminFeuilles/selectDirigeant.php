@@ -114,7 +114,7 @@ if ($nbreDeNomDifferent[0]< $effectif)
 	<font face="Arial, Helvetica, sans-serif"><font color="#000000" size="3"><b>
 <br />
 <?php
-echo "Il vous faut modifier leurs noms en ajoutant la ou les premi&egrave;res lettres de leurs pr&eacute;noms pour permettre de les diff&eacute;rencier.";
+echo "Il vous faut modifier leurs noms en ajoutant la ou les premières lettres de leurs pr&eacute;noms pour permettre de les diff&eacute;rencier.";
 	}
 ?>
        </b></font></font></font><hr />
@@ -122,7 +122,7 @@ echo "Il vous faut modifier leurs noms en ajoutant la ou les premi&egrave;res le
 	   
       <p><font color="#003399"><b> <font size="5">
         <?php if($fanionOuReserve<90000000)
-echo "- - -  Equipe Premi&egrave;re -  - -";
+echo "- - -  Equipe Première -  - -";
 else
 echo "- - - Equipe R&eacute;serve - - -";
 ?>

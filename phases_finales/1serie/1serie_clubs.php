@@ -310,7 +310,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
             <td height="24" width="23%"> 
               <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">Auvergne 
                 - Alpes -Lyonnais - <br>
-                Dr&ocirc;me Ard&egrave;che </font></div>
+                Dr&ocirc;me Ardèche </font></div>
             </td>
             <td height="24" width="15%"> 
               <div align="center"><font size="4" color="#000000" face="Arial, Helvetica, sans-serif">7</font></div>

@@ -49,7 +49,7 @@
       <div align="center">3me S&eacute;rie</div>
     </td>
     <td width="205"> 
-      <div align="center"><font size="4">Sainte Genevi&egrave;ve</font></div>
+      <div align="center"><font size="4">Sainte Geneviève</font></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF"> 

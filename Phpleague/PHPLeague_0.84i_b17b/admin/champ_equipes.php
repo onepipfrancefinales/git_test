@@ -170,7 +170,7 @@ if ($action3 == 'supp')
 
 		<div id="dialog02" title="Suppression de clubs">
 			<p><?php echo ADMIN_EQUIPE_3; ?>.</p>
-			<p>Si vous supprimez un club utilisé dans un championnat, ce dernier ne fonctionnera plus !<br />Soyez donc tr&egrave;s vigilant lors de la suppression d'un club.</p>
+			<p>Si vous supprimez un club utilisé dans un championnat, ce dernier ne fonctionnera plus !<br />Soyez donc très vigilant lors de la suppression d'un club.</p>
 		</div>
 
 	</div>
@@ -229,7 +229,7 @@ if ($action3 == 'supp')
 
 		<div id="dialog04" title="Suppression de clubs">
 			<p><?php echo ADMIN_EQUIPE_3; ?>.</p>
-			<p>Si vous supprimez un club utilisé de <b><?php echo affich_champ($champ); ?></b>, ce dernier ne fonctionnera plus !<br />Soyez donc tr&egrave;s vigilant lors de la suppression d'un club.</p>
+			<p>Si vous supprimez un club utilisé de <b><?php echo affich_champ($champ); ?></b>, ce dernier ne fonctionnera plus !<br />Soyez donc très vigilant lors de la suppression d'un club.</p>
 		</div>
 	</div>
 

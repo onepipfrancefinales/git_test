@@ -256,7 +256,7 @@
               <div align="center">Eliminé en 16me de finale</div>
             </td>
             <td width="204"> 
-              <div align="center"><font color="#FF0000">Tauch Corbi&egrave;res</font></div>
+              <div align="center"><font color="#FF0000">Tauch Corbières</font></div>
             </td>
           </tr>
           <tr> 
@@ -335,7 +335,7 @@
             </td>
             <td width="204" bgcolor="#009933"> 
               <div align="center"><b><font size="4"><b><font size="4" color="#FFFFFF" face="Arial, Helvetica, sans-serif">Servette 
-                de Gen&egrave;ve (LY)</font></b></font></b></div>
+                de Genève (LY)</font></b></font></b></div>
             </td>
           </tr>
           <tr> 
@@ -665,7 +665,7 @@
           </tr>
           <tr> 
             <td width="169"> 
-              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teuli&egrave;re</font></a></b></div>
+              <div align="center"><b><a href="http://francefinalesrugby.franceserv.com/phases_finales/teuliere/pageteuliere.php?variable_1=2015"><font color="#000000" size="4">Teulière</font></a></b></div>
             </td>
             <td width="204" bgcolor="#009933"> 
               <div align="center"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><font size="4"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">RC 

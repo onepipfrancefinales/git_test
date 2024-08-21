@@ -99,17 +99,17 @@
       </td>
       <td width="111" height="30"> 
         
-      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=200&annee=<?php echo $annee;?>" target="_top>2<font size="1">2&egrave;me 
+      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=200&annee=<?php echo $annee;?>" target="_top>2<font size="1">2ème 
         Série</a></div>
       </td>
       <td width="105" height="30"> 
         
-      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=210&annee=<?php echo $annee;?>" target="_top>3<font size="1">3&egrave;me 
+      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=210&annee=<?php echo $annee;?>" target="_top>3<font size="1">3ème 
         Série</a></div>
       </td>
       <td width="115" height="30"> 
         
-      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=220&annee=<?php echo $annee;?>" target="_top>4<font size="1">4&egrave;me 
+      <div class="equipeIterr"><a href="pagePhaseFinale.php?division=220&annee=<?php echo $annee;?>" target="_top>4<font size="1">4ème 
         Série</a></div>
       </td>
       

@@ -4,7 +4,7 @@
 <table width="550" border="0" cellspacing="0" cellpadding="0">
   <tr bgcolor="#000000"> 
     <td colspan="7"> 
-      <div align="center"><b><font color="#FFFFFF" size="6">Palmar&egrave;s régionaux</font></b></div>
+      <div align="center"><b><font color="#FFFFFF" size="6">Palmarès régionaux</font></b></div>
     </td>
   </tr>
 </table>

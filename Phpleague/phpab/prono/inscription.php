@@ -139,7 +139,7 @@ permettront d'accéder &agrave; la mise &agrave; jours des résultats :</font></
 <br />
 Mot de passe :  $mdp </font></p>
 
-<p><font face=\"Verdana\" size=\"2\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmar&egrave;s, etc...en consultant
+<p><font face=\"Verdana\" size=\"2\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmarès, etc...en consultant
 <a href=\"http://francefinalesrugby.franceserv.com\">France Finales Rugby</a> 
 </font></p>
 <br />

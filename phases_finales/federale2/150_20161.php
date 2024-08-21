@@ -1635,7 +1635,7 @@ require ("../fonctions_phases_finalesAR.php");
     <td width="35">&nbsp;</td>
     <td colspan="3" align="left" rowspan="4">Rencontre a rejouer suite &agrave; 
       la réclamation de Saint Jean d'Angely, qui leur reprochaient d'avoir 
-      simulé une m&ecirc;lée alors que leurs premi&egrave;res lignes 
+      simulé une m&ecirc;lée alors que leurs premières lignes 
       valides se trouvaient sur le banc </td>
     <td width="10">&nbsp;</td>
     <td width="76">&nbsp;</td>

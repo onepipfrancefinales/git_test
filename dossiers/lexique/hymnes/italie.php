@@ -13,27 +13,27 @@
   </tr>
   <tr> 
     <td colspan="3" align="center"><span class="gras"><font face="Arial, Helvetica, sans-serif" size="6" color="#000000">Fratelli d'Italia<br>
-        (Fr&egrave;res d'Italie)</font></span></div>
+        (Frères d'Italie)</font></span></div>
     </td>
   </tr>
   <tr> 
     <td colspan="3" class="texte"> 
       <br>
       
-      <p> <span class="gras">L'Italia s'&egrave; desta,</span><br>
+      <p> <span class="gras">L'Italia s'è desta,</span><br>
         L'Italie s'est r&eacute;veill&eacute;e,<br>
         <span class="gras">Dell'elmo di Scipio</span><br>
         Dans le casque de Scipion<br>
-        <span class="gras">S'&egrave; cinta la testa.</span><br>
+        <span class="gras">S'è cinta la testa.</span><br>
         Elle s'est ferm&eacute; la t&ecirc;te.<br>
-        <span class="gras">Dov'&egrave; la Vittoria ?</span><br>
+        <span class="gras">Dov'è la Vittoria ?</span><br>
         O&ugrave; est la victoire ?<br>
         <span class="gras">Le porga la chioma,</span><br>
-        Elle porte une crini&egrave;re,<br>
+        Elle porte une crinière,<br>
         <span class="gras">Ch&eacute; schiava di Roma</span><br>
         Esclave de Rome<br>
         <span class="gras">Iddio la cre&ograve;.</span><br>
-        Les dieux la cr&eacute;&egrave;rent.<br>
+        Les dieux la cr&eacute;èrent.<br>
         <span class="gras">Stringiamci a coorte</span><br>
         Rassemblons-nous en cohorte <br>
         <span class="gras">Siam pronti alla morte</span><br>
@@ -42,7 +42,7 @@
         L'Italie nous appelle. </p>
       --------------------------------------------------------------- 
       <p><span class="gras">Noi siamo da secoli</span><br>
-        Nous sommes depuis des si&egrave;cles<br>
+        Nous sommes depuis des siècles<br>
         <span class="gras">Calpesti, derisi,</span><br>
         Pi&eacute;tin&eacute;s, m&eacute;pris&eacute;s,<br>
         <span class="gras">Perch&eacute; non siam popolo,</span><br>
@@ -69,7 +69,7 @@
         <span class="gras">L'unione e l'amore</span><br>
         L'union et l'amour<br>
         <span class="gras">Rivelano ai Popoli</span><br>
-        R&eacute;v&egrave;lent aux peuples<br>
+        R&eacute;vèlent aux peuples<br>
         <span class="gras">Le vie del Signore ;</span><br>
         Les voies du Seigneur ;<br>
         <span class="gras">Giuriamo far libero</span><br>
@@ -89,7 +89,7 @@
       ---------------------------------------------------------- 
       <p><span class="gras">Dall'Alpi a Sicilia</span><br>
         Des Alpes &agrave; la Sicile<br>
-        <span class="gras">Dovunque &egrave; Legnano,</span><br>
+        <span class="gras">Dovunque è Legnano,</span><br>
         O&ugrave; que soit Legnano, <br>
         <span class="gras">Ogn'uom di Ferruccio</span><br>
         Chaque homme de Ferrucci <br>

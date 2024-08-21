@@ -125,12 +125,12 @@
   <tr> 
     <td width="230">
       <p><br>
-        B&eacute;con les Bruy&egrave;res<br>
-        Stade, Stade Dubonnet Courbevoie-B&eacute;con-les-Bruy&egrave;res 1 500 
+        B&eacute;con les Bruyères<br>
+        Stade, Stade Dubonnet Courbevoie-B&eacute;con-les-Bruyères 1 500 
         spectateurs.</p>
       <p>&nbsp;</p>
       <p>terrain de l&#146;Inter-Nos (International Athletic Club) </p>
-      <p>e B&eacute;con-les-Bruy&egrave;res &agrave; Courbevoie, rue Lambrechts</p>
+      <p>e B&eacute;con-les-Bruyères &agrave; Courbevoie, rue Lambrechts</p>
     </td>
     <td width="73"><br>
     </td>
@@ -182,7 +182,7 @@
   </tr>
   <tr> 
     <td width="230"><br>
-      Parc des Sports de Saucli&egrave;res</td>
+      Parc des Sports de Sauclières</td>
     <td width="73">B&eacute;ziers</td>
     <td width="155"> 
       <div align="center">1</div>
@@ -303,7 +303,7 @@
     </td>
     <td width="405" height="19"> 
       <p>terrain de l&#146;Inter-Nos (International Athletic Club</p>
-      <p>B&eacute;con les Bruy&egrave;res<br>
+      <p>B&eacute;con les Bruyères<br>
         V&eacute;lodrome</p>
       <p>Terrain du stade francais</p>
       <p>&nbsp;</p>
@@ -339,7 +339,7 @@
       <div align="center">1</div>
     </td>
     <td width="469">1921 (1)</td>
-    <td width="405">Parc des Sports de Saucli&egrave;res</td>
+    <td width="405">Parc des Sports de Sauclières</td>
   </tr>
   <tr> 
     <td width="95">Narbonne</td>
@@ -391,18 +391,18 @@
       r&eacute;ponses, celles du Racing Club de France et du Stade Fran&ccedil;ais. 
       A la cl&eacute; pour le club victorieux un Bouclier grav&eacute; par un 
       certain Charles Brennus. Le Championnat de France de rugby est n&eacute;. 
-      <p>Un an tout juste apr&egrave;s leur premi&egrave;re confrontation, les 
+      <p>Un an tout juste après leur première confrontation, les 
         deux clubs se retrouvent ainsi en &laquo; finale &raquo; sur la Pelouse 
-        de Bagatelle pr&egrave;s du Bois de Boulogne, sur un terrain r&eacute;cemment 
+        de Bagatelle près du Bois de Boulogne, sur un terrain r&eacute;cemment 
         acquis et am&eacute;nag&eacute; par le Polo Club de Paris. 2 000 personnes 
         s&#146;y rassemblent pour assister &agrave; cette rencontre de &laquo; 
         football-rugby &raquo;. Du jamais-vu. Les gardes du bois doivent d&eacute;gager 
-        les apprentis spectateurs qui empi&egrave;tent sur le terrain. Pour l&#146;heure, 
+        les apprentis spectateurs qui empiètent sur le terrain. Pour l&#146;heure, 
         rien n&#146;est encore pr&eacute;vu pour s&eacute;parer le terrain des 
         spectateurs.</p>
       <p>La rencontre arbitr&eacute;e par le Baron Pierre de Coubertin se solde 
         par la victoire du Racing sur le score de 4 &agrave; 3. Cette finale est 
-        la premi&egrave;re et derni&egrave;re disput&eacute;e &agrave; Bagatelle. 
+        la première et dernière disput&eacute;e &agrave; Bagatelle. 
         Aujourd&#146;hui, le terrain est d&eacute;di&eacute; uniquement &agrave; 
         la pratique du Polo.</p>
     </td>
@@ -417,7 +417,7 @@
     </td>
     <td width="466"> 
       <p>Les finales 1893 et 1894 sont organis&eacute;es sur le terrain de l&#146;Inter-Nos 
-        (International Athletic Club) de B&eacute;con-les-Bruy&egrave;res &agrave; 
+        (International Athletic Club) de B&eacute;con-les-Bruyères &agrave; 
         Courbevoie, rue Lambrechts. Les deux rencontres attirent respectivement 
         1 500 et 1 200 spectateurs et sont remport&eacute;es par le Stade Fran&ccedil;ais, 
         d&#146;abord contre le Racing, (7-3), puis Inter-Nos (18-0) qui joue portant 
@@ -426,10 +426,10 @@
         Capitale, l&#146;USFSA y dispute &eacute;galement les rencontres de son 
         premier championnat d&#146;Association en 1894. Le Racing et le Stade 
         profite aussi des instillation de l&#146;Inter-Nos pour affronter les 
-        premi&egrave;res &eacute;quipes anglaises en tourn&eacute;e ( Oxford, 
+        premières &eacute;quipes anglaises en tourn&eacute;e ( Oxford, 
         Rosslyn Park).</p>
-      <p>L&#146;Inter Nos dispara&icirc;t peu apr&egrave;s pour laisser place 
-        au Cosmopolitan Club qui ne suivit gu&egrave;re. Le terrain est &eacute;galement 
+      <p>L&#146;Inter Nos dispara&icirc;t peu après pour laisser place 
+        au Cosmopolitan Club qui ne suivit guère. Le terrain est &eacute;galement 
         utilis&eacute; un temps par les Soccers de White Rovers . Actuellement, 
         le Rugby Club de Courbevoie &eacute;volue &agrave; l&#146;Espace Jean-Pierre 
         Rives situ&eacute; non loin de l&#146;ancien terrain de l&#146;Inter-Nos.</p>
@@ -457,7 +457,7 @@
         pr&eacute;c&eacute;dente le match d&#146;appui de la finale du Championnat 
         de France d&#146;Association USFSA disput&eacute; entre le Standard Athletic 
         Club et les White Rovers (2-0). La finale de rugby se solde, elle, par 
-        un troisi&egrave;me succ&egrave;s de rang pour le Stade fran&ccedil;ais 
+        un troisième succès de rang pour le Stade fran&ccedil;ais 
         (victoire 16-0 sur l&#146;Olympique de paris).</p>
       <p>&nbsp;</p>
     </td>
@@ -474,7 +474,7 @@
       l&#146;Olympique prend sa revanche sur le Stade et remporte le Brennus (12-0). 
       Les deux saisons suivantes, la phase de poule d&eacute;signe un vainqueur 
       unique (le Stade Fran&ccedil;ais), et la France du Rugby est priv&eacute;e 
-      de finale pour la premi&egrave;re (et derni&egrave;re) fois de son histoire.</td>
+      de finale pour la première (et dernière) fois de son histoire.</td>
   </tr>
   <tr> 
     <td width="43">1898</td>
@@ -489,10 +489,10 @@
     <td width="466">La saison 1899 est historique: les clubs de province font 
       enfin leur entr&eacute;e dans la comp&eacute;tition. Dor&eacute;navant, 
       la Province et Paris envoient chacun un repr&eacute;sentant dans une finale 
-      disput&eacute;e alternativement &agrave; Paris et en Province. Pour la premi&egrave;re 
+      disput&eacute;e alternativement &agrave; Paris et en Province. Pour la première 
       &eacute;dition de ce championnat nouvelle version, le Stade Bordelais affronte 
       le Stade Fran&ccedil;ais sur le terrain du Stade Bordelais au Bouscat, Route 
-      du M&eacute;doc (Stade Sainte-Germaine). Pour leur premi&egrave;re participation, 
+      du M&eacute;doc (Stade Sainte-Germaine). Pour leur première participation, 
       les Girondins l&#146;emportent devant 3 000 spectateurs sur le score de 
       5 &agrave; 3.</td>
   </tr>
@@ -503,12 +503,12 @@
     <td width="466"> 
       <p>De retour en r&eacute;gion parisienne, la finale du championnat 1900 
         se tient &agrave; , sur les terrains du Racing am&eacute;nag&eacute;s 
-        depuis 1893 place Collange, le long du cimeti&egrave;re. Un terrain selon 
+        depuis 1893 place Collange, le long du cimetière. Un terrain selon 
         Charles de Brennus &laquo; o&ugrave; l&#146;herbe se dispute aux pierres 
         et aux tessons de bouteille &raquo;.</p>
       <p>Le 22 avril 1900, le Racing Club de France y lamine le Stade Bordelais 
         sur le score de 37 &agrave; 3. Le Racing redevient ainsi champion huit 
-        ans apr&egrave;s le premier titre de 1892. Disput&eacute;e devant 1 500 
+        ans après le premier titre de 1892. Disput&eacute;e devant 1 500 
         spectateur, l&#146;exp&eacute;rience levalloisienne n&#146;est pas renouvel&eacute;e.</p>
     </td>
   </tr>
@@ -521,7 +521,7 @@
       quatre fois la victoire, mais n&#146;est sacr&eacute; que trois fois. En 
       effet, la victoire bordelaise en 1901 sur le Stade Fran&ccedil;ais est annul&eacute;e 
       par l&#146;USFSA qui d&eacute;cide de faire rejouer la finale &agrave; Paris, 
-      des joueurs bordelais ayant &eacute;t&eacute; qualifi&eacute;s irr&eacute;guli&egrave;rement. 
+      des joueurs bordelais ayant &eacute;t&eacute; qualifi&eacute;s irr&eacute;gulièrement. 
       Le club bordelais refusant cette d&eacute;cision, le Stade Fran&ccedil;ais 
       est d&eacute;clar&eacute; vainqueur de cette &eacute;dition.</td>
   </tr>
@@ -559,7 +559,7 @@
     <td width="468">La Faisanderie (Saint Cloud)</td>
     <td width="466">&nbsp;</td>
     <td width="466">En 1904, Stade Fran&ccedil;ais et Stade Bordelais se retrouvent 
-      une nouvelle fois. Selon la r&egrave;gle de l&#146;alternance, la finale 
+      une nouvelle fois. Selon la règle de l&#146;alternance, la finale 
       doit se d&eacute;rouler &agrave; Paris sur le terrain du club Parisien &agrave; 
       Saint-Cloud. Devant 2 000 spectateurs, les Provinciaux font tomber le Stade 
       Fran&ccedil;ais 6-3.</td>
@@ -638,35 +638,35 @@
   </tr>
   <tr> 
     <td width="43">1921</td>
-    <td width="468">Parc des Sports de Saucli&egrave;res (B&eacute;ziers)</td>
+    <td width="468">Parc des Sports de Sauclières (B&eacute;ziers)</td>
     <td width="466">&nbsp;</td>
     <td width="466"> 
       <p> : (1)</p>
       <p><br>
-        Apr&egrave;s cinq ann&eacute;es de suspension caus&eacute;es par la Grande 
+        Après cinq ann&eacute;es de suspension caus&eacute;es par la Grande 
         Guerre, et un dernier championnat organis&eacute;e par l&#146;USFSA, c&#146;est 
         au tour de la F&eacute;d&eacute;ration Fran&ccedil;aise de Rugby, fond&eacute;e 
         deux ans plus t&ocirc;t de prendre &agrave; sa charge le championnat, 
         qui sera d&eacute;sormais compos&eacute; de phases &eacute;liminatoires, 
         puis de phases de poule d&eacute;signant les finalistes. Autre nouveaut&eacute;: 
-        la finale se jouera sur terrain neutre. Apr&egrave;s de multiples atermoiements, 
+        la finale se jouera sur terrain neutre. Après de multiples atermoiements, 
         le terrain de l&#146;AS B&eacute;ziers sera d&eacute;sign&eacute; comme 
-        lieu de cette premi&egrave;re finale entre l&#146;USAP et le Stade Toulousain. 
-        Apr&egrave;s son titre de 1920, l&#146;USAP y signera un doubl&eacute; 
+        lieu de cette première finale entre l&#146;USAP et le Stade Toulousain. 
+        Après son titre de 1920, l&#146;USAP y signera un doubl&eacute; 
         en dominant Toulouse (5-0).</p>
       <p>l&#146;AS B&eacute;ziers, dernier des grands clubs du Languedoc Roussillon 
         a voire le jour en 1911, avait &eacute;galement &eacute;t&eacute; le premier 
         &agrave; se doter d&#146;une enceinte &agrave; la hauteur de ses ambitions: 
         Inaugur&eacute; en 1913, le Parc des Sports de l&#146;ASB D&#146;une capacit&eacute; 
-        th&eacute;orique de 10 000 places, Saucli&egrave;res accueillera pour 
+        th&eacute;orique de 10 000 places, Sauclières accueillera pour 
         cette finale jusqu&#146;&agrave; 20 000 personnes! Les supporters des 
         2 &eacute;quipes avaient envahi le stade six heures avant le coup d&#146;envoi 
         pour prendre d&#146;assaut les places non num&eacute;rot&eacute;s. Des 
         gradins de fortune seront &eacute;galement am&eacute;nag&eacute;s &agrave; 
-        la va vite. Par la suite c&#146;est &agrave; Saucli&egrave;res que s&#146;&eacute;criera 
+        la va vite. Par la suite c&#146;est &agrave; Sauclières que s&#146;&eacute;criera 
         la l&eacute;gende de l&#146;AS B&eacute;ziers qui y remportera 11 Brennus, 
         dont dix de 1971 &agrave; 1984! Depuis le d&eacute;part des rugbymen de 
-        Saucli&egrave;res en 1989 pour le Stade de la M&eacute;diterran&eacute;e, 
+        Sauclières en 1989 pour le Stade de la M&eacute;diterran&eacute;e, 
         l&#146;enceinte est d&eacute;di&eacute;e au football.</p>
     </td>
   </tr>
@@ -689,15 +689,15 @@
     <td width="466"> 
       <p><br>
       </p>
-      <p>Le 5 avril 1908, les deux Stades se retrouvaient une septi&egrave;me 
-        fois en finale et pour la cinqui&egrave;me fois de suite! Ce sera la derni&egrave;re. 
-        Apr&egrave;s s&#146;&ecirc;tre inclin&eacute; les quatre fois pr&eacute;c&eacute;dentes 
+      <p>Le 5 avril 1908, les deux Stades se retrouvaient une septième 
+        fois en finale et pour la cinquième fois de suite! Ce sera la dernière. 
+        Après s&#146;&ecirc;tre inclin&eacute; les quatre fois pr&eacute;c&eacute;dentes 
         contre les Bordelais, les Parisiens se d&eacute;font devant 10 000 spectateurs 
-        des Girondins (16-3). Ce huiti&egrave;me titre devait &ecirc;tre le dernier 
+        des Girondins (16-3). Ce huitième titre devait &ecirc;tre le dernier 
         du Stade avant celui de&#133; 1998. La r&eacute;forme du championnat qui 
-        d&egrave;s l&#146;ann&eacute;e suivante ne garantit plus une place de 
-        finaliste &agrave; un club parisien n&#146;y est pas &eacute;trang&egrave;re.</p>
-      <p>Cette derni&egrave;re finale bordelo-parisienne se d&eacute;roule au 
+        dès l&#146;ann&eacute;e suivante ne garantit plus une place de 
+        finaliste &agrave; un club parisien n&#146;y est pas &eacute;trangère.</p>
+      <p>Cette dernière finale bordelo-parisienne se d&eacute;roule au 
         Stade du Matin (actuel Stade Yves-du-Manoir). Il en sera de m&ecirc;me 
         en 1913 et en 1923. Le site avait &eacute;t&eacute; reconverti en 1907 
         par le journal &laquo; Le Matin &raquo; (d&#146;o&ugrave; son nom) pour 
@@ -711,8 +711,8 @@
       <p>V&eacute;ritable temple du sport fran&ccedil;ais jusqu&#146;&agrave; 
         la reconstruction du Parc des Princes en 1972, l&#146;enceinte deviendra 
         le lieu de pr&eacute;dilections des &eacute;quipes de France de rugby 
-        et de football durant pr&egrave;s de 50 ans. Pourtant, et tr&egrave;s 
-        &eacute;tonnamment, la finale du championnat 1923 sera la derni&egrave;re 
+        et de football durant près de 50 ans. Pourtant, et très 
+        &eacute;tonnamment, la finale du championnat 1923 sera la dernière 
         disput&eacute;e &agrave; Colombes.</p>
       <p>Avec l&#146;inauguration du Stade du Matin (Colombes) en 1907, le Racing 
         d&eacute;laisse rapidement Levallois. Le terrain n&#146;existe plus aujourd&#146;hui.</p>
@@ -734,7 +734,7 @@
         Narbonne abrite sa seule et unique finale le 3 mai 1925. Devant 20 000 
         spectateurs, l&#146;USAP y d&eacute;fait l&#146;US Carcassonne sur le 
         score de 5 &agrave; 0. Le Stade Maraussan avait &eacute;t&eacute; am&eacute;nag&eacute; 
-        vers 1907, et d&egrave;s 1908 on trouve t&eacute;moignage d&#146;affluence 
+        vers 1907, et dès 1908 on trouve t&eacute;moignage d&#146;affluence 
         allant jusqu&#146;&agrave; 3 000 personnes. Le Stade rebaptis&eacute; 
         par la suite du nom d&#146;un ancien joueur narbonnais, Aim&eacute; Cassayet, 
         accompagnera le club narbonnais jusqu&#146;&agrave; l&#146;inauguration 
@@ -769,7 +769,7 @@
         &agrave; Sainte-Germaine. Quatre ans plus tard, la donne avait chang&eacute;, 
         et un nouveau stade avait vu le jour &agrave; Bordeaux: Le parc Lescure. 
         Tout juste inaugur&eacute; le 24 mars pr&eacute;c&eacute;dent, l&#146;enceinte 
-        accueille sa premi&egrave;re comp&eacute;tition d&#146;importance d&egrave;s 
+        accueille sa première comp&eacute;tition d&#146;importance dès 
         le 24 avril en recevant Toulousains et Perpignanais pour une r&eacute;&eacute;dition 
         de la finale 1920. Plus r&eacute;alistes, les Toulousains l&#146;emportent 
         3-0 devant 20 000 spectateurs.</p>
@@ -778,15 +778,15 @@
         du Monde 1938, Lescure pourra alors accueillir jusqu&#146;&agrave; 26 
         000 spectateurs, puis un peu plus de 40 000 suite &agrave; la disparition 
         de la piste cycliste. La capacit&eacute; de l&#146;enceinte sera ensuite 
-        ramen&eacute;e &agrave; 34 000 places apr&egrave;s l&#146;organisation 
+        ramen&eacute;e &agrave; 34 000 places après l&#146;organisation 
         de la Coupe du Monde 1998.</p>
-      <p>Apr&egrave;s cette premi&egrave;re finale, Lescure en accueillera dix 
-        par la suite. A l&#146;occasion de la derni&egrave;re tenue de la finale 
+      <p>Après cette première finale, Lescure en accueillera dix 
+        par la suite. A l&#146;occasion de la dernière tenue de la finale 
         &agrave; Lescure en 1971, Bordeaux f&ecirc;tera le premier des dix titres 
         remport&eacute;s par les Bitt&eacute;rois dans les ann&eacute;es 70 et 
         80. Si aujourd&#146;hui, Lescure, rebaptis&eacute; depuis Stade Chaban 
         Delmas, n&#146;a plus droit aux honneur des finales (r&eacute;serv&eacute;es 
-        au Stade de France), il continue &agrave; r&eacute;guli&egrave;rement 
+        au Stade de France), il continue &agrave; r&eacute;gulièrement 
         accueillir des demi-finales de Top 14.</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
@@ -843,13 +843,13 @@
         et futur fondateur du tour de France, le v&eacute;lodrome accueille l&#146;arriv&eacute;e 
         du premier Tour de France en 1903, ainsi que&#133; les 64 arriv&eacute;es 
         suivantes! L&#146;enceinte re&ccedil;oit &eacute;galement de prestigieuses 
-        rencontres de football (finales du Championnat USFSA, premi&egrave;re 
+        rencontres de football (finales du Championnat USFSA, première 
         rencontre de l&#146;&eacute;quipe de France disput&eacute;e en France 
         contre la suisse en 1905, etc.), ainsi que, bien sur, des rencontres de 
         rugby. Outre cette finale 1902, le v&eacute;lodrome habite aussi les finales 
-        1906 et 1910, la premi&egrave;re rencontre du XV de France contre les 
+        1906 et 1910, la première rencontre du XV de France contre les 
         All Blacks en 1906, etc.</p>
-      <p>Devant le succ&egrave;s populaire, l&#146;enceinte est par la suite agrandie 
+      <p>Devant le succès populaire, l&#146;enceinte est par la suite agrandie 
         et peut bient&ocirc;t accueillir jusqu&#146;&agrave; 10 000 personnes 
         (la finale 1910 entre Lyon et Bordeaux se joue ainsi devant 8 000 supporters). 
         Dans le cadre des Jeux Olympiques de 1924, sa capacit&eacute; passe &agrave; 
@@ -863,7 +863,7 @@
     <td width="468">&nbsp;</td>
     <td width="466">&nbsp;</td>
     <td width="466"> 
-      <p>En 1932, apr&egrave;s 270 jours de travaux, l&#146;enceinte rouvre ses 
+      <p>En 1932, après 270 jours de travaux, l&#146;enceinte rouvre ses 
         portes. Elle dispose alors de 45 000 places, ainsi que d&#146;une nouvelle 
         piste cycliste. Ecrin majestueux, le nouveau Parc des Princes doit toutefois 
         attendre plus de trente ans avant qu&#146;une nouvelle finale y soit organis&eacute;e 
@@ -876,7 +876,7 @@
       <p>L&#146;&eacute;v&eacute;nement se d&eacute;roule ainsi au Parc des Princes 
         jusqu&#146;en 1946, signant en 1944 un nouveau record d&#146;affluence 
         avec 35 000 spectateurs. Le championnat ne reviendra &agrave; Paris qu&#146;en 
-        1974 dans un Parc des Princes enti&egrave;rement r&eacute;nov&eacute;. 
+        1974 dans un Parc des Princes entièrement r&eacute;nov&eacute;. 
         Il y signera ,cette fois, un bail de 25 ans.</p>
     </td>
   </tr>
@@ -888,7 +888,7 @@
     <td width="466"> 
       <p><br>
       </p>
-      <p>Le championnat connait en 1909 sa premi&egrave;re grande r&eacute;forme 
+      <p>Le championnat connait en 1909 sa première grande r&eacute;forme 
         depuis l&#146;ouverture aux clubs venus de Province . D&eacute;sormais, 
         chaque comit&eacute;s (11 alors) enverra son repr&eacute;sentant concourir 
         en matchs &eacute;liminatoires jusqu&#146;&agrave; la finale. Ainsi se 
@@ -897,15 +897,15 @@
         nouveau du Stade Toulousain. L&#146;exp&eacute;rience bordelaise fera 
         la diff&eacute;rence et le Stade s&#146;imposera 17-0 devant les yeux 
         de 15 000 toulousains d&eacute;pit&eacute;s. Avec six titres, le SBUC 
-        affiche alors le deuxi&egrave;me plus beau palmar&egrave;s du rugby fran&ccedil;ais. 
+        affiche alors le deuxième plus beau palmarès du rugby fran&ccedil;ais. 
         Il remportera son dernier titre deux ans plus tard.</p>
       <p>N&eacute; en 1907 de la fusion du SOET (finaliste de la comp&eacute;tition 
         en 1903) et d&#146;autres clubs toulousains. Le Stade Toulousain n&#146;avait 
         pas tard&eacute; &agrave; se forger une enceinte &agrave; la hauteur de 
-        ses tr&egrave;s hautes aspirations. Gr&acirc;ce &agrave; une souscription 
+        ses très hautes aspirations. Gr&acirc;ce &agrave; une souscription 
         lanc&eacute; par le pr&eacute;sident du stade, un certain Ernest Wallon, 
         une enceinte d&eacute;di&eacute;e au rugby et au Stade avait &eacute;t&eacute; 
-        inaugur&eacute;e d&egrave;s 1907: le Stade des Ponts-Jumeaux. L&#146;enceinte 
+        inaugur&eacute;e dès 1907: le Stade des Ponts-Jumeaux. L&#146;enceinte 
         sera modernis&eacute;e en 1921, puis baptis&eacute;e du nom d&#146;Ernest 
         Wallon. A la fin des ann&eacute;es 70, les Toulousains seront expropri&eacute;s 
         de leur stade, et trouvera refuge non loin de l&agrave;, aux Sept-Deniers.</p>
@@ -919,12 +919,12 @@
     <td width="466">&nbsp;</td>
     <td width="466"> 
       <p>En 1951, le championnat qui compte 48 &eacute;quipes regroup&eacute;es 
-        en huit poules de six s&#146;est install&eacute; &agrave; Toulouse. Apr&egrave;s 
-        quatre derni&egrave;res &eacute;ditions jou&eacute;es au Stade des Ponts 
+        en huit poules de six s&#146;est install&eacute; &agrave; Toulouse. Après 
+        quatre dernières &eacute;ditions jou&eacute;es au Stade des Ponts 
         Jumeaux, la finale 1951 entre Tarbes et Carmaux (victoire de Carmaux 14-12), 
-        se d&eacute;roule pour la premi&egrave;re fois au nouveau stade municipal 
-        de la ville. Le Stadium devient &agrave; cette occasion la troisi&egrave;me 
-        enceinte toulousaine, apr&egrave;s la Prairie des Filtres et les Ponts 
+        se d&eacute;roule pour la première fois au nouveau stade municipal 
+        de la ville. Le Stadium devient &agrave; cette occasion la troisième 
+        enceinte toulousaine, après la Prairie des Filtres et les Ponts 
         Jumeaux, &agrave; accueillir la manifestation.</p>
       <p>Situ&eacute; sur l&#146;&icirc;le du Ramier, le projet du Stadium remontait 
         au d&eacute;but des ann&eacute;es 30, mais n&#146;avait pas abouti &agrave; 
@@ -936,7 +936,7 @@
         capacit&eacute; est aujourd&#146;hui de 33 150 places.</p>
       <p>Au total, le Stadium accueillera 13 finales au total en 22 ans. Le stade 
         conna&icirc;tra m&ecirc;me l&#146;insigne honneur d&#146;&ecirc;tre, &agrave; 
-        ce jour, la derni&egrave;re enceinte de Province &agrave; accueillir l&#146;&eacute;v&eacute;nement 
+        ce jour, la dernière enceinte de Province &agrave; accueillir l&#146;&eacute;v&eacute;nement 
         le 12 mai 1974.</p>
     </td>
   </tr>
@@ -1052,9 +1052,9 @@
       <p><br>
         D&eacute;sireuse de ne faire disputer des finales que dans des grandes 
         villes et dans de grands stades, la F&eacute;d&eacute;ration se tourne 
-        en 1957 vers Lyon et le Stade de Gerland. La deuxi&egrave;me plus grande 
+        en 1957 vers Lyon et le Stade de Gerland. La deuxième plus grande 
         agglom&eacute;ration de France n&#146;avait alors encore jamais accueilli 
-        l&#146;&eacute;v&egrave;nement. Pour cette premi&egrave;re &eacute;dition 
+        l&#146;&eacute;vènement. Pour cette première &eacute;dition 
         disput&eacute;e &agrave; Lyon, 30 000 spectateurs sont rassembl&eacute;s 
         &agrave; g<br>
         Gerland pour assister au sacre du FC Lourdes sur le Racing. Les quatre 
@@ -1065,7 +1065,7 @@
         &agrave; la manifestation de sports de masse, l&#146;enceinte se tournera 
         vers un sport plus &eacute;litiste avec l&#146;arriv&eacute;e de l&#146;Olympique 
         Lyonnais en 1950. En vue de l&#146;Euro 1984, Gerland verra sa capacit&eacute; 
-        port&eacute;e de 40 000 &agrave; pr&egrave;s de 52 000 places. Les travaux 
+        port&eacute;e de 40 000 &agrave; près de 52 000 places. Les travaux 
         rendus n&eacute;cessaires par l&#146;organisation de la Coupe du Monde 
         1998 rabaissera ensuite la capacit&eacute; de Gerland &agrave; 41 000 
         places.</p>
@@ -1075,7 +1075,7 @@
         Olympique Universitaire, descendant du FC Lyon, champion en 1908, pourrait 
         alors en profiter. Enfin, il faut signaler que tout comme Bordeaux, si 
         Gerland n&#146;a plus accueilli de finale depuis plus de 35 ans, il continue 
-        a r&eacute;guli&egrave;rement recevoir des demi-finales de Top 14.</p>
+        a r&eacute;gulièrement recevoir des demi-finales de Top 14.</p>
     </td>
   </tr>
   <tr> 
@@ -1093,8 +1093,8 @@
       <p> : 1974-1997 (24)</p>
       <p><br>
         La r&eacute;alisation dans les ann&eacute;es 60 d&#146;un p&eacute;riph&eacute;rique 
-        autour de Paris signait la fin de l&#146;ancien Parc des Princes. D&egrave;s 
-        1967, deux premi&egrave;res tribunes avaient &eacute;t&eacute; d&eacute;truites, 
+        autour de Paris signait la fin de l&#146;ancien Parc des Princes. Dès 
+        1967, deux premières tribunes avaient &eacute;t&eacute; d&eacute;truites, 
         et si des matchs continuaient bien &agrave; s&#146;y d&eacute;rouler jusqu&#146;en 
         1970, l&#146;ancien v&eacute;lodrome &eacute;tait pourtant bel et bien 
         condamn&eacute;.</p>
@@ -1102,7 +1102,7 @@
         stade national &agrave; m&ecirc;me de prendre le relais du vieillissant 
         Colombes, la reconstruction du Parc &eacute;tait lanc&eacute;e. Le projet 
         est publi&eacute; dans la presse d&eacute;but 1969: l&#146;&#156;uvre, 
-        toute en b&eacute;ton arm&eacute;, offrira une capacit&eacute; de pr&egrave;s 
+        toute en b&eacute;ton arm&eacute;, offrira une capacit&eacute; de près 
         de 50 000 places, toute assises, et pr&eacute;sentera un visage r&eacute;solument 
         moderne. Le premier match s&#146;y d&eacute;roule le 25 match 1972.</p>
       <p>Plus grande et plus moderne enceinte de France, le Parc accueille bient&ocirc;t 
@@ -1112,11 +1112,11 @@
         accueillera &eacute;galement six finales de Coupe d&#146;Europe (cinq 
         en football, et une en rugby), des rencontres de Coupe du monde de football 
         et de rugby, ainsi que la finale de l&#146;Euro 84.</p>
-      <p>La premi&egrave;re finale du championnat s&#146;y dispute le 12 mai 1974, 
+      <p>La première finale du championnat s&#146;y dispute le 12 mai 1974, 
         et oppose l&#146;AS B&eacute;ziers au RC Narbonne. A cette occasion, les 
-        Bitterois remportent leur quatri&egrave;me titre (16-14) devant 40 609 
+        Bitterois remportent leur quatrième titre (16-14) devant 40 609 
         spectateurs, signant ainsi un nouveau record d&#146;affluence. D&eacute;sormais 
-        l&#146;&eacute;v&egrave;nement ne se d&eacute;roulera plus qu&#146;au 
+        l&#146;&eacute;vènement ne se d&eacute;roulera plus qu&#146;au 
         Parc. Sur les 24 finales disput&eacute;es au Parc, celle de 1985 entre 
         le Stade Toulousain et le RC Toulon (36-22) sera celle qui attirera le 
         moins de public avec 37 000 spectateurs.</p>
@@ -1131,7 +1131,7 @@
     <td width="468">Stade de France (Saint Denis)</td>
     <td width="466">&nbsp;</td>
     <td width="466"> 
-      <p>Le 31 mars 1997, le Parc abrite sa derni&egrave;re finale entre le Stade 
+      <p>Le 31 mars 1997, le Parc abrite sa dernière finale entre le Stade 
         Toulousain et Bourgoin. 43 841 spectateurs assistent alors aux adieux 
         au Parc, et &agrave; la victoire toulousaine (12-6). D&eacute;sormais 
         le Parc s&#146;effacera au profit de la nouvelle enceinte fran&ccedil;aises 
@@ -1141,13 +1141,13 @@
         la Coupe du Monde 1998. Le cahier des charges stipulait que la finale 
         se tienne dans un stade de 80 000 places. L&#146;Etat allait alors mettre 
         en branle le projet &laquo; Grand Stade &raquo;. Les travaux d&eacute;butaient 
-        en mars 1995, la premi&egrave;re pierre &eacute;tait pos&eacute;e en septembre, 
+        en mars 1995, la première pierre &eacute;tait pos&eacute;e en septembre, 
         et finalement le &laquo; Stade de France &raquo; ouvrait ses portes en 
         janvier 1998.</p>
-      <p>La FFR profite de ce nouvel &eacute;crin pour y transporter d&egrave;s 
+      <p>La FFR profite de ce nouvel &eacute;crin pour y transporter dès 
         1998 l&#146;&eacute;preuve reine du rugby fran&ccedil;ais. Le 16 mai 1998, 
         le Stade Fran&ccedil;ais retrouve l&#146;&eacute;preuve dans ce tout nouveau 
-        stade, plus de 60 ans apr&egrave;s l&#146;avoir quitt&eacute;e en 1927! 
+        stade, plus de 60 ans après l&#146;avoir quitt&eacute;e en 1927! 
         Devant 78 000 spectateurs (nouveau record d&#146;affluence, &eacute;videmment), 
         le Stade Fran&ccedil;ais reconqu&eacute;rait le titre en dominant l&#146;USAP 
         34-07. Depuis, hormis la finale 2000 qui s&#146;est jou&eacute;e en plein 
@@ -1166,7 +1166,7 @@
         de Football six ans plus tard. Tous les plus grands stades du pays sont 
         r&eacute;quisitionn&eacute;s pour l&#146;occasion &agrave; commencer par 
         le Stade de France, ce qui obliqe le rugby fran&ccedil;ais &agrave; chercher 
-        hors de os fronti&egrave;res de quoi habiter sa finale annuelle. Barcelone 
+        hors de os frontières de quoi habiter sa finale annuelle. Barcelone 
         et le stade mythique du Barca sont pr&eacute;f&eacute;r&eacute;e notamment 
         &agrave; Londres et l&#146;Italie.</p>
       <p>Le Racing y domine Toulon devant 99 124 spectateurs, un record toutes 

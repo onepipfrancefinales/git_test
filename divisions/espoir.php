@@ -27,13 +27,13 @@ Espoir <BR/></strong></p></h1>";
   arrivée avec le professionnalisme est obligatoire pour les 30 clubs professionnels 
   et a remplacé le championnat des équipes réserves de l'élite. 
   Ce championnat s'adresse au joueurs de moins de 23 ans. Chaque club a toutefois 
-  la possibilité d'int&egrave;grer &agrave; l'équipe des joueurs 
-  de premi&egrave;re ligne de moins de 25 ans, ainsi que quatre autres joueurs 
+  la possibilité d'intègrer &agrave; l'équipe des joueurs 
+  de première ligne de moins de 25 ans, ainsi que quatre autres joueurs 
   de plus de 25 ans. </font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="3">A partir de la saison 2014-2015, 
   cette compétition fusionne avec la competition Reichel A, sous le nom 
   de <b>REICHEL/ESPOIRS</b> réservée aux licenciés de moins 
-  22 ans (18, 19, 20 et 21 ans). <a href="pagereichelA_espoirs.php"><font color="#000000">Palmar&egrave;s 
+  22 ans (18, 19, 20 et 21 ans). <a href="pagereichelA_espoirs.php"><font color="#000000">Palmarès 
   de cette nouvelle compétition</font></a><font color="#000000">.</font></font></p>
 <p> 
   <?php

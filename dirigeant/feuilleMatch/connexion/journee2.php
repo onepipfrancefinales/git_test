@@ -39,7 +39,7 @@
       <h4>&nbsp;</h4>
     </td>
     <td height="76" bgcolor="#FFCC00" rowspan="2"> 
-      <h4><a href="page_liste_compet1.php?reserve=<?php echo $reserve;?>&type=S1&equipe=<?php echo $equipe;?>&id_equipe=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&connect=<?php echo $connect; ?>"><font size="5">Acc&egrave;s 
+      <h4><a href="page_liste_compet1.php?reserve=<?php echo $reserve;?>&type=S1&equipe=<?php echo $equipe;?>&id_equipe=<?php echo $id_equipe;?>&comite=<?php echo $comite; ?>&connect=<?php echo $connect; ?>"><font size="5">Accès 
         au calendrier de l'Equipe Une</font></a></h4>
     </td>
   </tr>

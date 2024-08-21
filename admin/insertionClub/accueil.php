@@ -64,7 +64,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <option value="(CBL)">Côte Basque Landes</option>
       <option value="(CA)">Côte d'Argent</option>
       <option value="(CAZ)">Côte d'Azur</option>
-      <option value="(DA)">Drôme Ard&egrave;che</option>
+      <option value="(DA)">Drôme Ardèche</option>
       <option value="(FL)">Flandres</option>
       <option value="(FC)">Franche Comt&eacute;</option>
       <option value="(IDF)">Ile de France</option>

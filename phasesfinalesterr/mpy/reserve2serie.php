@@ -1156,10 +1156,10 @@ echo "";
   <table width="100%" border="0" height="30">
     <tr valign="top" align="center"> 
       <td colspan="12" bgcolor="006699" height="28"><font size="5" color="#FFCC00"><b> 
-        <? echo "Championnat des Pyr&egrave;n&egrave;es";?>
+        <? echo "Championnat des Pyrènèes";?>
         <?php echo $annee;?>
         : 
-        <? echo "Reserve 2me S&egrave;rie";?>
+        <? echo "Reserve 2me Sèrie";?>
         </b></font></td>
     </tr>
     <tr valign="top" align="center"> 
@@ -1225,7 +1225,7 @@ echo "";
   </b></font><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="4"><b> 
   <?php
 mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
-mysql_select_db("onepip-france-db1"); // S&egrave;lection de la base onepip
+mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $query = "SELECT Phpmpy_clubs.id, nom, url_logo FROM Phpmpy_clubs WHERE Phpmpy_clubs.id='29053'";
 $result = mysql_query($query);
          while($row = mysql_fetch_array($result))
@@ -1241,7 +1241,7 @@ $result = mysql_query($query);
  
  }
 
-mysql_close(); // D&egrave;connexion de MySQL
+mysql_close(); // Dèconnexion de MySQL
 ?>
   </b></font><font color="#FFFFFF" face="Geneva, arial, Helvetica, san-serif"size="2"><b> 
   </b></font></div>

@@ -23,7 +23,7 @@ $fichier=$_FILES['fichier']['name'];
 $fichierChemin = $_FILES['fichier']['tmp_name'];
 
 
-//**********   Recherche du  caractère de séparation  **********************
+//**********   Recherche du  caractï¿½re de sï¿½paration  **********************
 
 $fichierA = fopen($fichierChemin, 'r+');
 
@@ -31,7 +31,7 @@ $fichierA = fopen($fichierChemin, 'r+');
 $fichierLigne = fgets($fichierA, 4096); 
 
 
-//recherche des caractere de séparation
+//recherche des caractere de sï¿½paration
 
 $caratereSeparation =",";
 
@@ -61,7 +61,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 {
      //On formate le nom du fichier ici...
     // $fichier = strtr($fichier, 
-    //      'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜİàáâãäåçèéêëìíîïğòóôõöùúûüıÿ', 
+    //      'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 
     //      'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
     // $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
    
@@ -72,9 +72,9 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	var_dump($fichier) ;echo "<br/>";
 	var_dump($dossier) ;echo "<br/>";
 	
-	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+	 if(move_uploaded_file($_FILES['fichier']['tmp_name'], $cheminn.$fichier)) //Si la fonction renvoie TRUE, c'est que ï¿½a a fonctionnï¿½...
      {
-			echo 'Upload effectu&eacute; avec succ&egrave;s !';
+			echo 'Upload effectu&eacute; avec succÃ¨s !';
 			echo "<br/>";
 			echo "----------------------------";
 			echo "<br/>";
@@ -91,7 +91,7 @@ else
 }
 
 
-// ****** Connection à la base ******
+// ****** Connection ï¿½ la base ******
 //$connect ="connection2"; 
 if ($ligue == "phpf1" or $ligue == "phpfed2" or $ligue == "phpfed3NE" or $ligue == "phpfed3GS" or $ligue == "phpfem")
 require '../../../connect/connection3.php';

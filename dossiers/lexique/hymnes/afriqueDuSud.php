@@ -27,7 +27,7 @@
         <b>Maluphakanyasw'uphondo lwayo</b><br>
         Puisse sa corne s'&eacute;lever vers les cieux<br>
         <b>Yiswa imithandazo yethu</b><br>
-        Que Dieu entende nos pri&egrave;res<br>
+        Que Dieu entende nos prières<br>
         <b>Nkosi sikelela, thina lusapho lwayo </b><br>
         Et nous b&eacute;nisse, nous Ses enfants (d'Afrique)<br>
         <br>
