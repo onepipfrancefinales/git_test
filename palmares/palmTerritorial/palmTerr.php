@@ -37,6 +37,4 @@
 <p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=33" target="_top">POITOU CHARENTE</a></p>
 <p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=34" target="_top">PROVENCE</a></p>
 <p class="terr"><a href="<?php echo $adresse; ?>?paramIdComite=35" target="_top">PAYS CATALAN</a></p>
-
-
 </html>

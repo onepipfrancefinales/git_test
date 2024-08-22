@@ -137,7 +137,7 @@ nomLigue($idLigue, $sigleLigue, $bdd)
  
 <!--  saisons 1999 - 1980  -->
   <?php 
-   if ($id == 29 or $id == 12  or $id == 15)
+   if ($id == 29 or $id == 12  or $id == 15 or $id == 19)
   {
   if ($terr == 'terr'  ) { ?> 
   <br>

@@ -478,7 +478,7 @@ $nbreLignes = $row[0];
 echo "<br>";
 echo "********************                    *************************";echo "<br>";
 echo "<br>";
-echo "Championnat". ' '."journée ". substr($id_journee,6,2);
+echo "Championnat". ' '."journée ". substr($id_journee,6,2); echo "<br />";
 echo "nombre de lignes traitées : ".$nbreLignes; echo "<br />";
 echo "<br>";	echo "<br>";
 echo "***********    lecture des lignes du fichier     ********* "; echo "<br>";
@@ -529,7 +529,7 @@ $buts_ext = intval($buts_ext);
 		 $buts_domBdd[] = $row[5];
 		 $buts_extBdd[] = $row[6];
 		}
-		
+	// test 1 : scores inscrits en base et non présents dans le fichier
 	if ($buts_domBdd[$i] + $buts_extBdd[$i]  > 0 and $buts_dom + $buts_ext == 0) {
 		echo "<br>";
 		echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
@@ -542,8 +542,8 @@ $buts_ext = intval($buts_ext);
 	} elseif ($buts_domBdd[$i] + $buts_extBdd[$i] == 0 and  $buts_dom + $buts_ext > 0) {
 		
 
-		
-		
+		// test 2 : Pas de scores en base  et  scores présents dans le fichier 
+		 
 		echo $i . ' - '. $id . ' ' . "test2 : ". $ligne. "<br>";
 		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
@@ -568,8 +568,8 @@ $buts_ext = intval($buts_ext);
 			$row = $requete->fetch();
 			$presence = $row[0];
 
-			echo "presence de la rencontre retour : " . $presence;
-
+			echo "Présence de la rencontre retour : " . $presence;
+echo "----------";
 			if ($presence == 1) {
 				
 				$idChampRetour =  substr($id_journee,0,6,);
@@ -606,7 +606,8 @@ echo "numero : ".$numero;echo "<br>";
 	//TODO	 traiter la journée à sélectionner		
 			//	$numero = 12;
 				
-				$reponse = $bdd->query("SELECT date_prevue
+				$reponse = $bdd->query("SELECT date_prev
+				ue
 					FROM $tableJournees
 					WHERE id_champ = '$idChampRetour' and numero = '$numero'");
 
@@ -632,7 +633,7 @@ echo "numero : ".$numero;echo "<br>";
 			//}
 		}
 	}
-	
+	// test 3 scores présents en base et dans le fichier
 	elseif ( $buts_domBdd[$i] + $buts_extBdd[$i] != 0 and  $buts_dom + $buts_ext !=0){	 
 	
 		echo $i . ' - '. $id . ' ' . "test3 : ". $ligne. "<br>";
@@ -655,9 +656,10 @@ echo "numero : ".$numero;echo "<br>";
 	//			WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");
 		}
 		
+
+		/********************************************************************* */	
 	
-	
-	//2-traitement du bonus offensif
+	//2-traitement du bonus défensif
 	
 	$bonusDef = 8;
 		
@@ -678,11 +680,14 @@ echo "numero : ".$numero;echo "<br>";
 	if (($buts_dom < $buts_ext) and (($buts_ext - $buts_dom) < $bonusDef) and $bonusDeLaJournee == 0){	
 	$equipeTraitee = $id_equipe_dom;
 	bonusDefensif($equipeTraitee, $id_journee, $ligue, $bdd); }
+
 	
-	//2-traitement du bonus offensif
+//**************************************************************** */
+
+	// 3-traitement du bonus offensif
 	$bonusOff=24 ;
 
-	//cas 2.3 : récupération des données dans la table equipesresultats pour l'équipe qui se déplace
+	//cas 3.1 : récupération des données dans la table equipesresultats pour l'équipe qui se déplace
 	$equipeTraitee = $id_equipe_ext;
 	bonusDeLaJournee($equipeTraitee, $id_journee, $ligue, $bdd);
 	
@@ -691,7 +696,7 @@ echo "numero : ".$numero;echo "<br>";
 	$equipeTraitee = $id_equipe_ext;
 	bonusOffensif($equipeTraitee, $id_journee, $ligue, $bdd);}
 
-	//cas 2.4 : récupération des données dans la table equipesresultats pour l'équipe qui reçoit	
+	//cas 3.2 : récupération des données dans la table equipesresultats pour l'équipe qui reçoit	
 	$equipeTraitee = $id_equipe_dom;
 	bonusDeLaJournee($equipeTraitee, $id_journee, $ligue, $bdd);	
 
