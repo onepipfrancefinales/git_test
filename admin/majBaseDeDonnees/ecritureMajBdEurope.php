@@ -56,8 +56,7 @@ echo $table;
 
 		$bdd->exec("INSERT INTO  bdchange_nom
 			 VALUES ( '$id', '$id_equipe', '$idffr', '$logo', '$annee', '$nom')");
-	} 
-	else if($table == "fusion" ) {
+	} else if ($table == "fusion") {
 
 		$id =  $_POST['id'];
 		$idffr =  $_POST['idffr'];
@@ -75,8 +74,17 @@ echo $table;
 		$bdd->exec("INSERT INTO  bdfusion
 			 VALUES ( '$id', '$idffr', '$nom', '$logo', '$annee', '$fusion1', '$fusion2', '$fusion3', '$fusion4')");
 
-	}
-	else {
+		$tabFusions = array ($fusion1, $fusion2, $fusion3, $fusion4);
+
+		foreach ($tabFusions as $fusion) {
+
+			if ($fusion > 0) {
+			$bdd->exec("UPDATE  bdclubs
+			SET fusion = $id
+			WHERE id= $fusion");
+			}
+		}
+	} else {
 
 		$annee =  $_POST['annee'];
 		$division =  $_POST['division'];

@@ -1910,13 +1910,14 @@ function nombreEquipe($phpComite, $champ, $bdd)
 //   Affichage du nom du club
 function nomClub($equipe, $bdd)
 {
-	global $nom;
+	global $nom, $ancienComite;
 
-	$reponse = $bdd->query("SELECT sigle
+	$reponse = $bdd->query("SELECT sigle, comite
 						FROM bdclubs 
 						WHERE id=$equipe OR id=$equipe - 90000000");
 	while ($donnees = $reponse->fetch()) {
 		$nom = $donnees['sigle'];
+		$ancienComite =$donnees['comite'];
 	}
 }
 

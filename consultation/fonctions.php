@@ -52,9 +52,9 @@ function changementNom($id_equipe, $width, $bdd)
 		}
 	}
 
-	function fusionDeClubs2($equipe, $nouveauClub, $bdd)
+	function fusionDeClubs2($equipe, $bdd)
 	{
-		global $clubNom1, $clubNom2, $clubNom3, $clubFusion1, $clubFusion2, $clubFusion3, $clubFusion4, $fusion1, $fusion2, $fusion3, $anneeFusion, $nouveauNomClub;
+		global $clubNom1, $clubNom2, $clubNom3, $clubNom4, $clubFusion1, $clubFusion2, $clubFusion3, $clubFusion4, $fusion1, $fusion2, $fusion3, $fusion4, $anneeFusion, $nouveauNomClub;
 
 		$res = $bdd->query("SELECT fusion1, fusion2, fusion3, fusion4, annee, nom
 				   FROM bdfusion 

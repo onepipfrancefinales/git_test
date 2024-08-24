@@ -71,6 +71,10 @@ else  $width = "90%";
         <td class="titreGauche" colspan="2" width="30%"> </td>
         <td style="font-size: 18px;font-family: arial;font-weight: Bold;" width="70%"><?php echo "<a href=/.$URL" . substr($fusion3, -5) . "&nouveauClub=" . $id_equipe . ">$clubFusion3</a> "; ?></td>
       </tr>
+      <tr>
+        <td class="titreGauche" colspan="2" width="30%"> </td>
+        <td style="font-size: 18px;font-family: arial;font-weight: Bold;" width="70%"><?php echo "<a href=/.$URL" . substr($fusion4, -5) . "&nouveauClub=" . $id_equipe . ">$clubFusion4</a> "; ?></td>
+      </tr>
     <?php
     } else {
     ?>
@@ -446,8 +450,49 @@ else  $width = "90%";
 
 
 
+if ($statut > 0)
+{  fusionDeClubs2($statut, $bdd);
 
-  if ($nouveauClub != 0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3)) {
+?>
+  <div class="size3 styleArial center">
+  <?php
+  echo "<br>";
+  echo "Fusion en " . $anneeFusion . " avec le(s) club(s) de " . "<br>";
+
+  if ($equipe == $fusion1) {
+    echo $clubFusion2 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
+  } elseif ($equipe == $fusion2) {
+    echo $clubFusion1 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
+  } elseif ($equipe == $fusion3) {
+    echo $clubFusion2 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
+  }  elseif ($equipe == $fusion4) {
+    echo $clubFusion1 . "<br>" . $clubFusion2 . "<br>" . $clubFusion3;
+  }
+
+  echo "<br>";
+  echo "pour donner naissance au club" . "<br>";
+  echo "<br>";
+
+  if ($smart == 1) {
+    $URL = "/smart/ficheClubs/pageFicheClubs.php?champion=";
+  } else {
+    $URL = "/consultation/pageclub00.php?champion=";
+  }
+
+
+  ?>
+</div>
+<div id="saisonEnCours" class="colorBlack"> <a class="colorBlack" href=<?php echo $URL . substr($statut, -5); ?>><?php echo $nouveauNomClub; ?></a> </div><br>
+
+
+<?php
+
+
+
+
+}
+
+ else if ($nouveauClub != 0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3 || $nouveauClub != $fusion4 )) {
   ?>
     <div class="size3 styleArial center">
       <?php
@@ -455,11 +500,13 @@ else  $width = "90%";
       echo "Fusion en " . $anneeFusion . " avec le(s) club(s) de " . "<br>";
 
       if ($equipe == $fusion1) {
-        echo $clubFusion2 . "<br>" . $clubFusion3;
+        echo $clubFusion2 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
       } elseif ($equipe == $fusion2) {
-        echo $clubFusion1 . "<br>" . $clubFusion3;
+        echo $clubFusion1 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
       } elseif ($equipe == $fusion3) {
-        echo $clubFusion1 . "<br>" . $clubFusion3;
+        echo $clubFusion2 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
+      }  elseif ($equipe == $fusion4) {
+        echo $clubFusion1 . "<br>" . $clubFusion2 . "<br>" . $clubFusion3;
       }
 
       echo "<br>";
@@ -522,9 +569,10 @@ else  $width = "90%";
     if ($fusion == true) {
       $max = $finSaison - $anneeFusion;
     }
-
-
-
+    if ($statut > 0) $nouveauClub = $statut;
+   if ($nouveauClub != 0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3)) {
+      $min = $finSaison - $anneeFusion;
+    }
 
     if ($nouveauClub != 0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3)) {
       $min = $finSaison - $anneeFusion;
@@ -583,9 +631,5 @@ else  $width = "90%";
     }
     ?>
   </table>
-
-
   <br><br><br>
-
-
   </html>

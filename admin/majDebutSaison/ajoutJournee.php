@@ -569,7 +569,7 @@ $buts_ext = intval($buts_ext);
 			$presence = $row[0];
 
 			echo "Présence de la rencontre retour : " . $presence;
-echo "----------";
+			echo "----------";echo "<br>";
 			if ($presence == 1) {
 				
 				$idChampRetour =  substr($id_journee,0,6,);
@@ -606,8 +606,7 @@ echo "numero : ".$numero;echo "<br>";
 	//TODO	 traiter la journée à sélectionner		
 			//	$numero = 12;
 				
-				$reponse = $bdd->query("SELECT date_prev
-				ue
+				$reponse = $bdd->query("SELECT date_prevue
 					FROM $tableJournees
 					WHERE id_champ = '$idChampRetour' and numero = '$numero'");
 

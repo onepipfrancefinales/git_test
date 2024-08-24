@@ -333,30 +333,25 @@
 
   <p class="QLiens"> Calendrier et résulats des rencontres de la poule</p>
 
-  <?php //calendrier($champ, false, $bdd); ?>
+  <?php calendrier($champ, false, $bdd); ?>
 
   <hr>
 
-  <p class="titreRouge1">Quelques liens concernant <br>
+  <p class="titreRouge1">Informations complémentaires concernant <br>
     <?php echo $nom; ?>
-  </p>
 
-  <p class="QLiens"><a href="/consultation/pageclub00.php?champion=<?php echo $equipe; ?>" target="_blank">
-      Compléter les infos du club
-    </a>
-  </p>
-  <p class="QLiens"><a
-      href="../../dirigeant/calendrier/pageCalendrier.php?idEquipe=<?php echo $equipe; ?>&champ=<?php echo $champ; ?>&comite=<?php echo substr($comite, 3, 6); ?>"
-      target="_top">
-      Télécharger le calendrier du club
-    </a>
-  </p></br>
-  <hr>
-  <h1> Palmarès </h1>
-  <br>
-
-  <?php 
+  <h3 class="QLiens" style="margin-left: 16%"><a href="/consultation/pageclub00.php?champion=<?php echo $equipe; ?>">
   
-  include "palmares.php"; ?>
+  <br>
+  Infos du club,<br>
+  Bureau, contacts,<br>
+  Résultats des saisons précédentes,<br>
+  Palmarès,<br>
+  etc ...<br>
+</h3>
+  <hr>
+  
+
+
   <br>
   <br>

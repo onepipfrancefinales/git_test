@@ -9,9 +9,9 @@ foreach ($tabLigue as $idLigue) {
   if ($idLigue == 10)
     $sigleLigue = "ARA";
   elseif ($idLigue == 11)
-    $sigleLigue = "BRE";
-  elseif ($idLigue == 12)
     $sigleLigue = "BFC";
+  elseif ($idLigue == 12)
+    $sigleLigue = "BRE";
   elseif ($idLigue == 13)
     $sigleLigue = "CVL";
   elseif ($idLigue == 14)
@@ -106,9 +106,6 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
           <?php  }   
          ?>
 
-         
-         
-         
          
           <tr class="backgroundGrey">
             <td class="border style bold">Totaux</td>

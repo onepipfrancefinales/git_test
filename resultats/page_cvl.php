@@ -65,9 +65,9 @@ $comiteNom = "du Centre"; ?>
     <tr>
       <!-- Colonne de gauche -->
       <td class="colonneDroiteGauche">
-        
-          <?php include("../01gauche.php"); ?>
-        
+
+        <?php include("../01gauche.php"); ?>
+
       </td>
 
       <!-- Colonne centrale -->
@@ -100,7 +100,8 @@ $comiteNom = "du Centre"; ?>
             $nomSerie = "(Ex honneur/ promotion honneur)";
           } else if ($idCompetition == 18) {
             $competition =  $REG2;
-            $champ2 = $champ + 9000;
+          //  $champ2 = $champ + 9000;
+            $champ2 = 0;
             $nomSerie = "(Ex 1re/ 2me série)";
           } else if ($idCompetition == 19) {
             $competition =  $REG3;
@@ -114,8 +115,6 @@ $comiteNom = "du Centre"; ?>
 
           <span class="size2"> <?php echo $nomSerie; ?> </span>
         <?php
-
-
           echo "</h5>";
           echo  "<br>" . "<br>" . "<br>";
           affichage($champ, $champ2, $comite, $bdd);
@@ -123,31 +122,17 @@ $comiteNom = "du Centre"; ?>
           perequation($comite, $champ, $bdd);
           echo "<br>" . "<br>";
         }
-
-
-
-
-
-
         include "liensDiversBas.php";
-
         ?>
-
-
-
       </td>
       <!-- Colonne de droite -->
       <td class="colonneDroiteGauche">
-
         <?php include("../00droite.php"); ?>
-
       </td>
     </tr>
   </table>
-
   <footer>
     <?php include("../footer.php"); ?>
   </footer>
 </body>
-
 </html>

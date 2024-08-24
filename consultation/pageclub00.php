@@ -45,7 +45,7 @@ bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);
 
 consultationEvolutionClub ($equipe, $bdd);
-fusionDeClubs2 ($equipe, $nouveauClub, $bdd) ;
+fusionDeClubs2 ($equipe, $bdd) ;
 
 //changementNom ($equipe, $width, $bdd);
 

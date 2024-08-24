@@ -58,16 +58,16 @@
   $BFCResPH = 21958;
 
   // ***** centre val de loire *****					
-  $CVLH = 0;
-  $CVLPH = 0;
-  $CVLS1 = 0;
-  $CVLResH = 0;
+  $CVLH = 22010;
+  $CVLPH = 22011;
+  $CVLS1 = 22012;
+  $CVLResH = 22009;
   $CVLResPH = 0;
 
   // ***** Grand Est *****	
   $GESH = 21940;
   $GESPH = 21941;
-  $GESS1 = 0;
+  $GESS1 = 21942;
   $GESResH = 21941;
   $GESResPH = 0;
 
@@ -79,10 +79,10 @@
   $HDFResPH = 0;
 
   // ***** ile de france *****							
-  $IDFH = 0;
-  $IDFPH = 0;
+  $IDFH = 21987;
+  $IDFPH = 21988;
   $IDFS1 = 0;
-  $IDFResH = 0;
+  $IDFResH = 21989;
   $IDFResPH = 0;
 
   // ***** Normandie *****	
@@ -102,15 +102,15 @@
   $NAQResPH = 21984;
 
   // ***** Occitanie *****		
-  $OCCH = 0;
-  $OCCPH = 0;
+  $OCCH = 22018;
+  $OCCPH = 22020;
   $OCCS1 = 0;
-  $OCCResH = 0;
+  $OCCResH = 22019;
   $OCCResPH = 0;
 
   // ***** Pays de la Loire *****		
-  $PDLH = 0;
-  $PDLPH = 0;
+  $PDLH = 21961;
+  $PDLPH = 22005;
   $PDLS1 = 0;
   $PDLResH = 0;
   $PDLResPH = 0;
