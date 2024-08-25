@@ -80,7 +80,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2" class="coin"><a  class="colorWhite" href="171.php?comite=br&bddComite=pl&champ=120171">Ligue Bretagne</a></td>
   </tr>
  <tr> 
-    <td colspan="2"><?php include("../pub/pub25.php");?></td>
+    <td colspan="2"><br></td>
   </tr>
   <tr> 
     <td colspan="2" class="coin"><a  class="colorWhite" href="171.php?comite=ce&bddComite=pl&champ=130171">Ligue Centre Val de Loire</a></td>
@@ -111,7 +111,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td colspan="2" class="coin"><a class="colorWhite" href="171.php?comite=pl&bddComite=pl&champ=210171">Ligue Pays de la Loire</a></td>
   </tr>
 <tr> 
-    <td colspan="2" > <?php	include("../pub/pub25.php");?>    </td>
+    <td colspan="2" > <br>    </td>
   </tr>
   <tr> 
     <td colspan="2"></td>
@@ -149,7 +149,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 </table>
 
   <?php
-include("../pub/pub25.php"); 
+
 require ("bas.php");
 include("../pub/pub_displayCarre.php"); 
 ?>

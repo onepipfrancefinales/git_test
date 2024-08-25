@@ -33,11 +33,11 @@ division($champ, $bdd);
 <html lang="fr">
 
 <head>
-	
+
 	<title>Resultats et classement</title>
 	<link rel="stylesheet" type="text/css" href="menu_smart2.css">
 	<link type="text/css" rel="stylesheet" href="10.css">
-	<link type="text/css" rel="stylesheet" href="../ligne1.css" >
+	<link type="text/css" rel="stylesheet" href="../ligne1.css">
 	<link type="text/css" rel="stylesheet" href="paramTiroir.css">
 	<link type="text/css" rel="stylesheet" href="../Phpleague/<?php echo "php" . $bddComite; ?>/league.css">
 	<meta name="description" content="Resultat, classement, stats et infos de la poule nom de la poule nom de la competition">
@@ -71,7 +71,7 @@ division($champ, $bdd);
 					</td>
 				</tr>
 			</table>
-			<table class="width100PC" >
+			<table class="width100PC">
 				<tr>
 					<td>
 
@@ -107,7 +107,7 @@ division($champ, $bdd);
 
 				require("sommaireParticulier.php");
 			}
-	?>
+			?>
 			<hr>
 
 		</div>
@@ -155,8 +155,7 @@ division($champ, $bdd);
 				$tabLigue = $tableau110;
 			// Fédérale 1
 			elseif ($champ == 990140) {
-				$tabLigue = $tableauFed1 ;	
-				;
+				$tabLigue = $tableauFed1;;
 			} elseif ($champ == 990240) {
 				$tabLigue = $tableauFed1B;
 			}
@@ -169,9 +168,8 @@ division($champ, $bdd);
 			}
 
 			// Fédérale 3
-			elseif ($champ == 991161 or $champ == 992161 ) {
+			elseif ($champ == 991161 or $champ == 992161) {
 				$tabLigue =  $tableauSmartFed3;
-			
 			} elseif ($champ == 991261 or $champ == 992261) {
 				$tabLigue = $tableauSmartResFed3;
 			}
@@ -186,8 +184,8 @@ division($champ, $bdd);
 
 				//echo "champ : ".$champ;
 				//Traitement du numéro des poules
-				
-					$poule = substr($champ, -1);
+
+				$poule = substr($champ, -1);
 
 
 				//echo "poule 1 ".$poule;
@@ -210,7 +208,7 @@ division($champ, $bdd);
 
 				<a name="<?php echo $ancre; ?>"></a>
 
-				<table class="width90PC marginAuto" border="1" >
+				<table class="width90PC marginAuto" style = "padding-bottom : 10px">
 					<tr>
 						<td class="titre ">
 							<?php
@@ -222,20 +220,18 @@ division($champ, $bdd);
 							elseif ($champ == 990136) echo "Nationale 2 - Poule 2";
 							elseif ($champ == 880281) echo "Elite 1";
 							elseif ($champ == 880285) echo "Elite 2";
-							elseif ($champ >= 880291 and $champ < 880295) echo "Fédérale 1 - Poule ".substr($champ,-1);
+							elseif ($champ >= 880291 and $champ < 880295) echo "Fédérale 1 - Poule " . substr($champ, -1);
 							elseif ($champ >= 992161 and $champ < 992169) echo "Poule " . intval($pouleGS);
 							elseif ($champ >= 992261 and $champ < 992269) echo "Poule " . intval($pouleGS);
 							else  echo "Poule " . intval($poule); ?>
 						</td>
 					</tr>
 				</table>
-				<br>
+
 				<div class="center">
 
 					<?php
-
-
-					//echo $nbreChamp;
+					if ($champ > 990000)
 					AffichageLogos($champ, $phpComite, true, $bdd); ?>
 				</div>
 				<?php
@@ -245,19 +241,18 @@ division($champ, $bdd);
 				journeesReportees($phpComite, $champ, $bdd);
 				perequation($phpComite, $champ, $bdd); ?>
 				<br>
-				<table class= "width90PC marginAuto ">
-					<tr >
-						<td class=" size4 colorRed backgroundYellow"><a style ="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>" target="_blank">
-									<b>--	Calendrier complet -- </a></td>
+				<table class="width90PC marginAuto ">
+					<tr>
+						<td class=" size4 colorRed backgroundYellow"><a style="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>" target="_blank">
+								<b>-- Calendrier complet -- </a></td>
 					</tr>
 				</table>
 
 			<?php aff_journeeSupp($champ,  $bdd);
 
-				include("../pub/pub25.php");
 
 
-				echo "<hr>" . "<hr>";
+				echo "<hr>";
 				echo "<br>";
 
 
@@ -282,28 +277,21 @@ division($champ, $bdd);
 				else
 					$finChamp = $champ + $max;
 			}
-	
+
 			echo "<br>";
 
 			for ($i = $champ; $i < $finChamp; $i++) {
 				divisionPlusPoule($bddComite, $champ, $bdd);
 			?>
 
-				<table class="width90PC marginAuto" border="1">
+				<table class="width90PC marginAuto" style = "padding-bottom : 10px" >
 					<tr>
 						<td class="titre"><?php echo $poule; ?></td>
 					</tr>
 				</table>
 
-				<br>
 				<div class="center">
-		
-		<?php
-
-					echo "<br>";
-
-					//echo $nbreChamp;
-					AffichageLogos($champ, $phpComite, true, $bdd); ?>
+					<?php AffichageLogos($champ, $phpComite, true, $bdd); ?>
 				</div>
 				<?php
 				aff_journee($champ, $bdd);
@@ -312,17 +300,15 @@ division($champ, $bdd);
 				journeesReportees($phpComite, $champ, $bdd);
 				perequation($phpComite, $champ, $bdd);		?>
 				<br>
-				<table class="width90PC marginAuto"  >
+				<table class="width90PC marginAuto">
 					<tr>
-						<td class="size4 colorRed backgroundYellow decorationNone"><a style ="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
-								<b>--	Calendrier complet -- </a></td>
+						<td class="size4 colorRed backgroundYellow decorationNone"><a style="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
+								<b>-- Calendrier complet -- </a></td>
 					</tr>
 				</table>
 
 			<?php aff_journeeSupp($champ,  $bdd);
-
-				include("../pub/pub25.php");
-				echo "<hr>" . "<hr>";
+				echo "<hr>";
 				echo "<br>";
 				$champ = $champ + 1;
 				$nbreChamp = $nbreChamp + 1;
@@ -340,18 +326,15 @@ division($champ, $bdd);
 				require("../connect/connexion6.php");
 				divisionPlusPoule($bddComite, $champ, $bdd);
 			?>
-				<table class="width90PC marginAuto" border="1" >
+				<table class="width90PC marginAuto" style = "padding-bottom : 10px">
 					<tr>
 						<td class="titre"><?php echo $poule; ?></td>
 					</tr>
 				</table>
-				<br>
-				<div align="center">
-					<?php
-					//echo $nbreChamp ;
-					AffichageLogos($champ, "php" . $bddComite, true, $bdd); ?></div>
-				<?php
 
+				<div class="center">
+					<?php AffichageLogos($champ, "php" . $bddComite, true, $bdd); ?></div>
+				<?php
 				aff_journee($champ, $bdd);
 				maj($champ, true, 'php' . $comite, $bdd);
 				clmnt($champ, true, $bdd);
@@ -360,17 +343,14 @@ division($champ, $bdd);
 				perequation($phpComite, $champ, $bdd);
 				?>
 				<br>
-				<table class= "width90PC marginAuto" >
+				<table class="width90PC marginAuto">
 					<tr>
-						<td class="size4 colorRed backgroundYellow"><a style ="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
-							<b>-- Calendrier complet --	</a></td>
+						<td class="size4 colorRed backgroundYellow"><a style="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">
+								<b>-- Calendrier complet -- </a></td>
 					</tr>
 				</table>
 
-				<?php aff_journeeSupp($champ,  $bdd);
-
-				include("../pub/pub25.php"); ?>
-				<hr>
+				<?php aff_journeeSupp($champ,  $bdd); ?>
 				<hr>
 				<br>
 

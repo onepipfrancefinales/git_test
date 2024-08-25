@@ -1,5 +1,4 @@
-<?php // $sigle = $_GET['variable_1'];
-?>
+
 
 
 <!DOCTYPE html>
@@ -14,11 +13,11 @@
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  
   <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../resultats/resultat.css">
-  
+  <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <title>Comité <?php echo $titre; ?> </title>
 
 </head>

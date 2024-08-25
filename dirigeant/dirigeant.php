@@ -1,21 +1,9 @@
 
-<?php
-$test = 2;
 
-$somme = $test + $test+2;
-echo $somme;
 
-for($i = 1; $i < 5; $i++)
-{
-  
 
-${"clubA".$i} = 4563;
- 
-}
-echo $clubA1; echo "<br>";
-echo $clubA2; echo "<br>";
-echo $clubA3; echo "<br>";
-?>
+
+
 
 <div class="titreEncadre">  Mise à jour des résultats</div>
 
