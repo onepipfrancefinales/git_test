@@ -104,7 +104,7 @@
   // ***** Occitanie *****		
   $OCCH = 22018;
   $OCCPH = 22020;
-  $OCCS1 = 0;
+  $OCCS1 = 22021;
   $OCCResH = 22019;
   $OCCResPH = 0;
 

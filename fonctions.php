@@ -148,9 +148,9 @@ $saisonEnCours=$row[0];
 
 	function bdInfosClub($code, $bdd)
 	{
-		global $dateCreation, $president, $tresorier, $secretaire, $contact, $siege, $idFFR,
+		global $dateCreation, $president, $vicePresident, $tresorier, $secretaire, $contact, $siege, $idFFR,
 			$adresse, $cp, $ville,	$tel, $nomStade,	$adresseStade, $cpStade, $villeStade,
-			$telStade, $capacite, $site, $courriel, $correspondant,	$sigle, $couleurs, $comite1,
+			$telStade, $capacite, $site, $courriel, $correspondant,	$sigle, $couleurs, $vicePresident,
 			$nomEntente, $niveau, $info1,	$info2, $info3, $info4, $info5;
 
 		$reponse = $bdd->query("
@@ -173,8 +173,7 @@ $saisonEnCours=$row[0];
 			$villeStade = $donnees['A1612'];
 			$telStade = $donnees['A1613'];
 			$capacite = $donnees['A1614'];
-
-			$comite1 = $donnees['A1615'];
+			$vicePresident = $donnees['A1615'];
 			$courriel = $donnees['A1616'];
 			$correspondant = $donnees['A1617'];
 			$sigle = $donnees['A1618'];
@@ -190,7 +189,7 @@ $saisonEnCours=$row[0];
 			$tresorier =	$donnees['A1630'];
 			$nomEntente = $donnees['A1631'];
 			$niveau = $donnees['A1632'];
-			//echo "test".$idFFR;
+			
 		}
 	}
 
@@ -270,13 +269,13 @@ $saisonEnCours=$row[0];
 
 	function palmaresEU($id_equipe, $bdd)
 	{
-		
-		$reponse1=$bdd->query("SELECT nom_1
+
+		$reponse1 = $bdd->query("SELECT nom_1
 		FROM bdclubs
 		WHERE id=$id_equipe");
-			while ($donnees = $reponse1->fetch()) {
-				$nomChampion = $donnees['nom_1'];
-			}
+		while ($donnees = $reponse1->fetch()) {
+			$nomChampion = $donnees['nom_1'];
+		}
 
 		$reponse = $bdd->query("SELECT *
 						FROM bdeurope
@@ -287,8 +286,8 @@ $saisonEnCours=$row[0];
 			$saison = $donnees['saison'];
 			$titre = $donnees['titre'];
 			$division = $donnees['division'];
-		
-		echo $saison . ' ' . $titre . ' ' . $division . '' . "<br />";
+
+			echo $saison . ' ' . $titre . ' ' . $division . '' . "<br />";
 		}
 	}
 	?>

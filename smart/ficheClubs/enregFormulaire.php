@@ -36,18 +36,24 @@ if (isset($_POST['A1630']))$A1630 = $_POST['A1630'];else $A1630=""; //Bureau -> 
 if (isset($_POST['A1631']))$A1631 = $_POST['A1631'];else $A1631=""; // nom Entente
 if (isset($_POST['A1632']))$A1632 = $_POST['A1632'];else $A1632=""; // niveau
 
+ 
+
 for ($i=1601; $i < 1633; $i++)
 {
   ${"A".$i} = strtr(${"A".$i},"'"," ");
 }
 
-  //récupération de l'identifiant de la personne:
+
+//récupération de l'identifiant de la personne:
   $id  = $_POST["id"] ;
  
   //création de la requête SQL:
   $bdd->exec( "UPDATE infosclub
-           SET A1601='$A1601', A1602='$A1602',A1603='$A1603', A1604='$A1604',A1605='$A1605', A1606='$A1606',A1607='$A1607', A1608='$A1608', A1609='$A1609', A1610='$A1610',A1611='$A1611', A1612='$A1612',A1613='$A1613', A1614='$A1614',A1615='$A1615', A1616='$A1616',
-		       A1617='$A1617', A1618='$A1618',A1619='$A1619', A1620='$A1620',A1621='$A1621', A1622='$A1622',A1623='$A1623', A1624='$A1624',A1625='$A1625', A1626='$A1626',A1627='$A1627', A1628='$A1628',A1629='$A1629', A1630='$A1630',A1631='$A1631', A1632='$A1632'
+           SET A1601='$A1601', A1602='$A1602', A1603='$A1603', A1604='$A1604', A1605='$A1605', A1606='$A1606',A1607='$A1607',
+               A1608='$A1608', A1609='$A1609', A1610='$A1610', A1611='$A1611', A1612='$A1612',A1613='$A1613', A1614='$A1614',
+               A1615='$A1615', A1616='$A1616', A1617='$A1617', A1618='$A1618', A1619='$A1619', A1620='$A1620',A1621='$A1621', 
+               A1622='$A1622', A1623='$A1623', A1624='$A1624', A1625='$A1625', A1626='$A1626',A1627='$A1627', A1628='$A1628',
+               A1629='$A1629', A1630='$A1630', A1631='$A1631', A1632='$A1632'
            WHERE id = '$id' " );
 /*
   if($bdd)
@@ -66,12 +72,7 @@ for ($i=1601; $i < 1633; $i++)
   */
  ?>
  <html>
-<!--
- &#039;
-  -->
  <script>
-window.location = "https://francefinalesrugby.fr/consultation/pageclub00.php?champion=<?php echo $id; ?>";
+ window.location = "https://francefinalesrugby.fr/smart/ficheClubs/pageFicheClubs.php?champion=<?php echo $id; ?>";
  </script>
  </html>
-
- 

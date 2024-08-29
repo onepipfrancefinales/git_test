@@ -94,8 +94,12 @@ else  $width = "90%";
       <td class="titre" colspan="2" width="100%"> Bureau </td>
     </tr>
     <tr>
-      <td class="titreGauche" width="30%">Président : </td>
+      <td class="titreGauche" width="30%">Président(s) : </td>
       <td class="saisieGras" width="70%"><?php echo $president; ?> </td>
+    </tr>
+    <tr>
+      <td class="titreGauche" width="30%">Vice Président(s) : </td>
+      <td class="saisieGras" width="70%"><?php echo $vicePresident; ?> </td>
     </tr>
     <tr>
       <td class="titreGauche"> Trésorier : </td>
@@ -237,12 +241,29 @@ else  $width = "90%";
       <tr>
         <td colspan="6" class="backgroundRed borderColorBlack">
           <div class="center backgroundRed  bold colorWhite">
-            <?php echo "<a class=\"colorWhite\" href=/mise_a_jour/infosclub/mdp.php?idClub=$code target=_blank>Modifier la fiche du club</a> "; ?>
+            <?php echo "<a class=\"colorWhite\" href=/mise_a_jour/infosclub/mdp.php?idClub=$code target=_top>Modifier la fiche du club</a> "; ?>
           </div>
         </td>
       </tr>
     </table>
   <?php
+  }
+  else
+  {
+
+    ?>
+    <table class="marginAuto borderWidth1" width="80%">
+      <tr>
+        <td colspan="6" class="backgroundRed borderColorBlack">
+          <div class="center backgroundRed  bold colorWhite">
+            <?php echo "<a class=\"colorWhite\" href=../ficheClubs/mdp.php?idClub=$code target=_top>Modifier la fiche du club</a> "; ?>
+          </div>
+        </td>
+      </tr>
+    </table>
+  <?php
+
+
   }
   ?>
   <br>

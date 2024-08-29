@@ -4,23 +4,14 @@
 <title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link type="text/css" rel="stylesheet" href="../../ligne1.css">
-<!--
-<script language="JavaScript">
 
-function MM_jumpMenu(targ,selObj,restore){ //v3.0
-  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
-  if (restore) selObj.selectedIndex=0;
-}
-
-</script>
-//-->
 </head>
 
-<body bgcolor="#FFFFFF" text="#000000">
-<p><font size="5"><b>Insertion d'un nouveau club dans les tables</b></font></p>
+<body>
+<p class="size5 bold">Insertion d'un nouveau club dans les tables</p>
 <p class="size4 styleArial">bdclubs (Identifiants du club)<br>
   infosClub (infos sur le clubs)<br>
-  bdsaisons (historique des saisons précé;dentes)</p>
+  bdsaisons (historique des saisons précédentes)</p>
   <hr />
 <form name="form1" method="POST" action="retour.php">
   <p></p>
@@ -49,7 +40,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <option value="M">Equipe Masculine</option>
     </select>
     </p>
-    <p class="size4 styleArial">Comite : 
+    <p class="size4 styleArial">Comité : 
     <select name="comite" size="1" required>
       <option selected>Comité</option>
       <option value="(AP)">Alpes</option>
@@ -74,7 +65,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       <option value="(MPY)">Midi Pyr&eacute;n&eacute;es</option>
       <option value="(N)">Normandie</option>
       <option value="(PL)">Pays de Loire</option>
-      <option value="(PA)">P&eacute;rigord Agenais</option>
+      <option value="(PA)">Périgord Agenais</option>
       <option value="(PCH)">Poitou Charente</option>
       <option value="(PR)">Provence</option>
       <option value="(PC)">Pays Catalan</option>
