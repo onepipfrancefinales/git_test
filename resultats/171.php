@@ -27,7 +27,7 @@ division($champ, $bdd);
 <link type="text/css" rel="stylesheet" href="paramTiroir.css">
 <link type="text/css" rel="stylesheet" href="../Phpleague/<?php echo "php".$comite;?>/league.css"/>
 <meta name="description" 
-content="R�sultat, classement, stats et infos de la poule nom de la poule nom de la competition">
+content="Résultats, classements, stats et infos de toutes les compétitions de rugby (Du Top 14 à la régionale 3)">
 <meta name="keywords"
 content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Francaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">

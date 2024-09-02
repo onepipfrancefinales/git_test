@@ -522,6 +522,8 @@ function calendrier($champ, $smart, $bdd)
 					  WHERE id_champ='$champ'");
   //nbre de journees      
   $tabNbre_journees = $result->fetch();
+
+
   $journee_milieu = $tabNbre_journees[0] / 2;
 
   $color = 0;

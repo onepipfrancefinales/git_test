@@ -319,7 +319,7 @@ echo $numeroJournee.''."me journée"; ?>
   </tr>
 </table>
 <p class="tab4"> 
-<a href="../171.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ; ?>">Confirmer ces r&eacutesultats et <br />accèder au nouveau classement</a>
+<a href="../171.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ; ?>">Confirmer ces résultats et <br />accèder au nouveau classement</a>
 </p>
 
 

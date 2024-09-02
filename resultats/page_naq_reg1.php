@@ -121,11 +121,23 @@ $comiteNom = "Cote d'Argent"; ?>
           echo "<br>" . "<br>";
         };
 
-if ($lien == 19) {
+if ($lien == 18) {
+  echo " <hr>" . "<hr>";
+  echo "<h2> Réserve Régionale 2 (suite...)</h2>";
+  echo "<h5>" .  "Poule 7" ."</h5>";
+ affichage(199187, 0, $comite, $bdd);
+  echo "  <br>" . "<br>";
+echo "<h5>"  . "Poule 8" ."</h5>";
+  affichage(199188, 0, $comite, $bdd);
+        //  journeesReportees($comite, $champ, $bdd);
+        //  perequation($comite, $champ, $bdd);
+
+ }
+ else if ($lien == 19) {
  
  
   echo " <hr>" . "<hr>";
-  echo "<h1> Promotion Régionale 3 </h1>";
+  echo "<h1>. Promotion Régionale 3 </h1>";
 
 
         foreach ($tableauPromoNAQ3 as $champ) {
@@ -140,7 +152,7 @@ if ($lien == 19) {
           echo "<br>"; ?>
 
           <span class="size2"><?php  echo $nomSerie; ?> </span>
-        <?php
+         <?php
           echo "</h5>";
           echo  "<br>" . "<br>" . "<br>";
           affichage($champ, $champ2, $comite, $bdd);
@@ -148,8 +160,8 @@ if ($lien == 19) {
           perequation($comite, $champ, $bdd);
           echo "<br>" . "<br>";
         };
-      };
-   
+      }
+    
         include "liensDiversBas.php";
         ?>
              

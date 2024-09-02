@@ -30,9 +30,10 @@ $championnat = substr("$journee",0 , 6);
 <head>
 <title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link type="text/css" rel="stylesheet" href="majScore.css">
+
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="../../personnalisation/session2AvecMdp/CSS.css">
+<link type="text/css" rel="stylesheet" href="majScore.css">
 </head>
 <body>
 <table class="borderWidth1 width95PC">
@@ -230,11 +231,11 @@ if (strlen($codeEquipe) == 7)
 
 ?>
 
-<p class="tab4 width95PC"> 
+<p class="tab4 width95PC colorWhite"> 
 <a href="traitement.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee; ?>&codeEquipe1=<?php echo $codeEquipe1; ?>&codeEquipe2=<?php echo $codeEquipe2; ?>&score1=<?php echo $score1; ?>&score2=<?php echo $score2; ?>&bonusDefEquipe1=<?php echo $bonusDefEquipe1; ?>&bonusDefEquipe2=<?php echo $bonusDefEquipe2; ?>&bonusOffEquipe1=<?php echo $bonusOffEquipe1; ?>&bonusOffEquipe2=<?php echo $bonusOffEquipe2; ?>">Confirmer et accèder <br />au nouveau classement</a>
 </p>
 
-<p class="tab3 width95PC">
+<p class="tab3 width95PC colorWhite">
 <a href="saisie.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&journee=<?php echo $journee ; ?>&codeEquipe=<?php echo $codeEquipe; ?>&maxJournee=<?php echo $maxJournee; ?>&score1=<?php echo $score1; ?>&score2=<?php echo $score2; ?>">Retour pour modif</a>
  
 </p>

@@ -73,7 +73,7 @@ $tableauBRE = array(120171, 120181, 120191, 120192);
 //Centre Val de Loire
 $tableauCVL = array(130171, 130181, 130191, 130192,);
 //Hauts De France
-$tableauHDF = array(160171, 160181, 160191, 160192);
+$tableauHDF = array(160171, 160181, 160182, 160191, 160192);
 //Pays De la Loire
 $tableauPDL = array(210171, 210181, 210191,);
 
@@ -82,9 +82,9 @@ $tableauPDL = array(210171, 210181, 210191,);
 
 
 //Grand ESt
-$tableauGES = array(150171, 150181, 150182, 150191, 150192, 150271);
+$tableauGES = array(150171, 150181, 150182, 150191, 150192, 150193);
 //Ile De France
-$tableauIDF = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 170193);
+$tableauIDF = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 170193, 170194);
 // Normandi
 $tableauNOR = array(180171, 180181, 180191, 180192);
 // Provence alpes Cotes d'Azur

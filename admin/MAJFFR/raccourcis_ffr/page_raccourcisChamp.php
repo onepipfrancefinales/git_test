@@ -72,16 +72,16 @@
   $GESResPH = 0;
 
   // ***** Hauts de France *****					
-  $HDFH = 0;
-  $HDFPH = 0;
-  $HDFS1 = 0;
-  $HDFResH = 0;
-  $HDFResPH = 0;
+  $HDFH = 22016;
+  $HDFPH = 22027;
+  $HDFS1 = 22029;
+  $HDFResH = 22026;
+  $HDFResPH = 22028;
 
   // ***** ile de france *****							
   $IDFH = 21987;
   $IDFPH = 21988;
-  $IDFS1 = 0;
+  $IDFS1 = 22032;
   $IDFResH = 21989;
   $IDFResPH = 0;
 
@@ -104,9 +104,9 @@
   // ***** Occitanie *****		
   $OCCH = 22018;
   $OCCPH = 22020;
-  $OCCS1 = 22021;
+  $OCCS1 = 22022;
   $OCCResH = 22019;
-  $OCCResPH = 0;
+  $OCCResPH = 22021;
 
   // ***** Pays de la Loire *****		
   $PDLH = 21961;
