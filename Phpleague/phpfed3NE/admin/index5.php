@@ -114,14 +114,27 @@ ouverture ();
   -->
   </center>
 </div>
-<?php //$championnat = (substr($championnat,0,5)*10);echo "championnat2 -> champ2 : ".$championnat;
+<?php 
 
+
+////echo "championnat :".$championnat;echo "<br>";
+//echo substr($championnat,2,1);echo "<br>";
+
+
+if  (substr($championnat,2,1)== 1)
+$poule = substr($championnat,-1);
+else
+$poule= substr($championnat,-1)+8;
+
+//echo "<br>";
+
+//echo "poule : ".$poule;
 ?>
 
             
 
-<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=fed3NE&bddComite=fed3NE&champ=<?php echo $championnat;?>&comite2=fed3GS">
-            
+<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=fed3NE&bddComite=fed3NE&champ=991161&comite2=fed3GS&poule=<?php echo $poule;?>">
+                   
 </body>
 
 </html>

@@ -83,7 +83,7 @@ $comiteNom = "Bretagne";
           if (substr($champ, 3, 2) == 17) {
             $competiton = "Régionale 1";
             $nomSerie = "(Ex honneur/ promotion honneur)";
-            $champ2 =  0;
+            $champ2 = $champ + 100;
           } else if (substr($champ, 3, 2) == 18) {
             $competiton = "Régionale 2";
             $nomSerie = "(Ex 1re/ 2me série)";

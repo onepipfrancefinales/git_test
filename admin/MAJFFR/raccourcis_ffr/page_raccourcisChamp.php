@@ -44,10 +44,10 @@
   $ARAResPH = 21985;
 
   // ***** Bretagne *****									
-  $BREH = 0;
-  $BREPH = 0;
-  $BRES1 = 0;
-  $BREResH = 0;
+  $BREH = 22023;
+  $BREPH = 22024;
+  $BRES1 = 22025;
+  $BREResH = 22030;
   $BREResPH = 0;
 
   // ***** Bourgogne *****															
@@ -111,8 +111,8 @@
   // ***** Pays de la Loire *****		
   $PDLH = 21961;
   $PDLPH = 22005;
-  $PDLS1 = 0;
-  $PDLResH = 0;
+  $PDLS1 = 21960;
+  $PDLResH = 21962;
   $PDLResPH = 0;
 
   // ***** Provence *****	

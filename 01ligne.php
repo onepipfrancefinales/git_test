@@ -5,7 +5,8 @@
     <td class = "none" colspan="2"><a href="/index.php">Accueil</a></td>
     <td class = "none" colspan="4"><a href="/dossiers/pageDossiers.php">Histoires/ chansons /vidéos/ jeux...</a></td>
     <td class = "none" colspan="3"><a href="/dirigeant/pageDirigeant.php">Coin des dirigeants</a></td>
-    <td class = "none" colspan="2"><a href="/admin/page_admin.php">Admin</a></td>
+    <td class = "none" colspan="2"><a href="/personnalisation/session2AvecMdp/index.php">Admin</a></td>
+   <!-- <td class = "none" colspan="2"><a href="/admin/page_admin.php">Admin</a></td> -->
    </tr>
    <tr class="ligneNoireLight"> 
     <td class = "none" colspan="4"  ><a href="/resultats/page_resultats.php">Résultats & classements</a></td>
@@ -24,7 +25,7 @@
     <td class = "none backgroundNoir" colspan="2"><a href="/resultats/page_fed1.php"  title="Auvergne">Fédérale 1</a></td>
     <td class = "none backgroundNoir" colspan="2" ><a href="/resultats/page_fed2.php"  title="Auvergne">Fédérale 2</a></td>
     <td class = "none backgroundNoir" colspan="2" ><a href="/resultats/page_fed3.php?code=NE"  title="Auvergne">Fédérale 3( P1 à P8)</a></td>
-    <td class = "none backgroundNoir" colspan="3" ><a href="/resultats/page_fed3.php?code=GS"  title="Auvergne">Fédérale 3 ( P10 à P16)</a></td>
+    <td class = "none backgroundNoir" colspan="3" ><a href="/resultats/page_fed3.php?code=GS"  title="Auvergne">Fédérale 3 ( P9 à P16)</a></td>
     <td class = "none backgroundNoir" ><a href="/feminine/page_elite1.php">Féminines</a></td>
    </tr>
    

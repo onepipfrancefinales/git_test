@@ -47,6 +47,7 @@ while ($donnees = $reponse->fetch()) {
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
 </head>

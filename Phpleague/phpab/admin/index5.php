@@ -114,9 +114,16 @@ ouverture ();
   </center>
 </div>
 <?php $championnat = (substr($championnat,0,5)*10)+1;?>
+
+<!--
 <meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=ab&bddComite=ab&champ=<?php echo $championnat; ?>">
+            -->
 
 
+<script language="javascript">
+location="../../../smart/171.php?comite=ab&bddComite=ab&champ=<?php echo $championnat; ?>"; 
+</script>
+            
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <?php
-//récupération des valeurs des champs:
+//rï¿½cupï¿½ration des valeurs des champs:
 if (isset($_GET['bddComite']))$bddComite = $_GET['bddComite']; 
 if (isset($_GET['comite']))$comite = $_GET['comite'];  
 if (isset($_GET['equipe1'])) $equipe1 = $_GET['equipe1'];
@@ -28,7 +28,7 @@ $championnat = substr("$journee",0 ,6);
 $champ = substr("$journee",0 ,6);
 //*****************************************************************************
 //********                                                            *********
-// *******    Données de la journée récupèrer a partir du formulaire  *********
+// *******    Donnï¿½es de la journï¿½e rï¿½cupï¿½rer a partir du formulaire  *********
 //********                                                            *********
 //*****************************************************************************
 require ("../../connect/connexion6.php"); 
@@ -63,7 +63,7 @@ echo "<br />";echo "<br />";
 */
 //************************************************************************************
 //********                                                                   *********
-// *******    Données recupèrees dans les table equipes et equipesresultats  *********
+// *******    Donnï¿½es recupï¿½rees dans les table equipes et equipesresultats  *********
 //********                                                                   *********
 //************************************************************************************
 /*
@@ -165,7 +165,7 @@ $phpcomite_equipesResultat = $phpcomite."_equipesresultat";
 */
 //*************************************************************************
 //********                                                        *********
-// *******                      Traitement des données            *********
+// *******                      Traitement des donnï¿½es            *********
 //********                                                        *********
 //**************************************************************************
 /*
@@ -174,7 +174,7 @@ echo "***** Traitement des donnees   *****";echo "<br />";
 echo "***********************************************";echo "<br />";
 */
 
-//récupération de l'id à modifier
+//rï¿½cupï¿½ration de l'id ï¿½ modifier
 /*
 $reponse = $bdd->query( "SELECT id
 						FROM $phpcomite_matchs
@@ -187,9 +187,9 @@ $reponse = $bdd->query( "SELECT id
 echo "id : ".$id;echo "<br/>";
 */
 // Equipe 1	
-	//Bonus déja acquis + bonus de la journée pour la table equipes
+	//Bonus dï¿½ja acquis + bonus de la journï¿½e pour la table equipes
 	$eq1TotalBonusTableEquipes=$bonusEquipe1TableEquipes + $bonusOffEquipe1DeLaJournee + $bonusDefEquipe1DeLaJournee;
-	//Bonus de la journée
+	//Bonus de la journï¿½e
 	$eq1BonusJourneeTableEquipesResultat = $bonusDefEquipe1DeLaJournee + $bonusOffEquipe1DeLaJournee;
 	//Totaux des bonus offesifs
 	$eq1TotauxBonusOffensifs = $bonusOffEquipe1DeLaJournee + $bonusOffEquipe1TableEquipesResultat;
@@ -203,9 +203,9 @@ echo "id : ".$id;echo "<br/>";
 */
 
 // Equipe 2	
-	//Bonus déja acquis + bonus de la journée pour la table equipes
+	//Bonus dï¿½ja acquis + bonus de la journï¿½e pour la table equipes
 	$eq2TotalBonusTableEquipes=$bonusEquipe2TableEquipes + $bonusOffEquipe2DeLaJournee + $bonusDefEquipe2DeLaJournee;
-	//Bonus de la journée
+	//Bonus de la journï¿½e
 	$eq2BonusJourneeTableEquipesResultat = $bonusDefEquipe2DeLaJournee + $bonusOffEquipe2DeLaJournee;
 	//Totaux des bonus offesifs
 	$eq2TotauxBonusOffensifs = $bonusOffEquipe2DeLaJournee + $bonusOffEquipe2TableEquipesResultat;
@@ -261,7 +261,7 @@ if ($bonusDeLaJourneeAcquisEquipe1 == 0 and ($bonusOffEquipe1DeLaJournee + $bonu
 				SET $J = '$eq1BonusJourneeTableEquipesResultat'
 				WHERE id='$codeEquipe1' ") ;
 
-	//** - 2.2.2 - Prise en charge du bonus offensif (journée + déjà acquis)
+	//** - 2.2.2 - Prise en charge du bonus offensif (journï¿½e + dï¿½jï¿½ acquis)
 
 	if ($bonusOffEquipe1DeLaJournee > 0){
 	 
@@ -269,7 +269,7 @@ if ($bonusDeLaJourneeAcquisEquipe1 == 0 and ($bonusOffEquipe1DeLaJournee + $bonu
 				SET penaliteOff = '$eq1TotauxBonusOffensifs'
 				WHERE id ='$codeEquipe1' ") ;}
 	else{
-	//** - 2.2.3 Prise en charge du bonus defensif (journée + déjà acquis)
+	//** - 2.2.3 Prise en charge du bonus defensif (journï¿½e + dï¿½jï¿½ acquis)
 	 $sql3=$bdd->exec("UPDATE $phpcomite_equipesResultat
 				SET penaliteDef = '$eq1TotauxBonusDefensifs'
 				WHERE id='$codeEquipe1' ") ;}	
@@ -297,7 +297,7 @@ if ($bonusDeLaJourneeAcquisEquipe2 == 0 and ($bonusOffEquipe2DeLaJournee + $bonu
 				SET $J = '$eq2BonusJourneeTableEquipesResultat'
 				WHERE id='$codeEquipe2' ") ;
 
-	//** - 2.2.2 - Prise en charge du bonus offensif (journée + déjà acquis)
+	//** - 2.2.2 - Prise en charge du bonus offensif (journï¿½e + dï¿½jï¿½ acquis)
 	
 	if ($bonusOffEquipe2DeLaJournee > 0){
 	 
@@ -305,7 +305,7 @@ if ($bonusDeLaJourneeAcquisEquipe2 == 0 and ($bonusOffEquipe2DeLaJournee + $bonu
 				SET penaliteOff = $eq2TotauxBonusOffensifs
 				WHERE id ='$codeEquipe2' ") ;}
 	else{
-	//** - 2.2.3 Prise en charge du bonus defensif (journée + déjà acquis)
+	//** - 2.2.3 Prise en charge du bonus defensif (journï¿½e + dï¿½jï¿½ acquis)
 	 $sql3=$bdd->exec("UPDATE $phpcomite_equipesResultat
 				SET penaliteDef = $eq2TotauxBonusDefensifs
 				WHERE id='$codeEquipe2' ") ;}	
@@ -316,7 +316,8 @@ if ($bddComite== 'fed3ne' OR $bddComite=='pro' OR $bddComite== 'fed3NE')
 {	
 	$champ = substr($journee,0,6);	
 }
-//echo $champ;
+//echo "<br>";
+//echo "bddComite : ".$bddComite;
 ?>
 			
  <meta http-equiv="refresh" content="0; URL=/Phpleague/<?php echo "php".$bddComite; ?>/admin/index5.php?page=championnat&action=generer&champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>">

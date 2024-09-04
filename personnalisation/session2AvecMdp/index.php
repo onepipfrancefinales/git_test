@@ -35,7 +35,7 @@
   <tr> 
     <td> 
       <h3 class="style">
-        <a href="../../smart/sommaire.php">Retour à l'appli</a>
+        <a href="../../index.php">Retour à l'appli</a>
     </h3> 
     </td>
   </tr>
