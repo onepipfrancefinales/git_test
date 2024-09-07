@@ -49,7 +49,7 @@
         <div align="center"> 
           <p><font size="5" face="Arial, Helvetica, sans-serif"><a href="divisions/accueil.php"><br>
             Evolution des divisions<br>
-            du rugby Fran&ccedil;ais</a><br>
+            du rugby Français</a><br>
             </font></p>
           <p><font face="Arial, Helvetica, sans-serif" size="4"><br>
             1896</font><font face="Arial, Helvetica, sans-serif" size="5"> Top14 
@@ -80,7 +80,7 @@
     </tr>
     <tr> 
       <td height="37" width="329" bgcolor="#003366"> 
-        <div align="center"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">Fran&ccedil;ais</font></b></div>
+        <div align="center"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">Français</font></b></div>
       </td>
       <td height="37" width="340" bgcolor="#003366"> 
         <div align="center"><b><font color="#FFFFFF" size="5" face="Arial, Helvetica, sans-serif"> 

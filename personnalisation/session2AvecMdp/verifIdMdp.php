@@ -117,7 +117,7 @@ echo $login.' '.$pwd;echo "<br />";?>
   </tbody> 
 </table>
 
-<br/ ><br/ ><br/ ><br/ >
+<br/><br/><br/><br/>
 <hr />
 <table width="234" align="center">
   <tbody> 

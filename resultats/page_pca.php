@@ -87,7 +87,7 @@ $comiteNom="Provence";
 		$nomSerie = "(Ex honneur/ promotion honneur)";
 	  } else if ($idCompetition == 18) {
 		$competition =  $REG2;
-		$champ2 = $champ + 9000;
+		$champ2 = 229181;
 		$nomSerie = "(Ex 1re/ 2me série)";
 	  } else if ($idCompetition == 19) {
 		$competition =  $REG3;

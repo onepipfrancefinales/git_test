@@ -1,6 +1,6 @@
  <?php 
  if (isset($_GET['chanson'])) $chanson= $_GET['chanson'];
- //echo $chanson;
+ echo $chanson;
  ?> 
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
@@ -60,7 +60,7 @@ content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees R
 				echo "<br/>"; 
 				echo "<hr />";echo "<hr />";
 					echo "<br/>"; 
-			
+		
 	switch ($chanson){
 		case "51j" :  require 'chansons/51JeTaime.htm';
 		break;
@@ -70,22 +70,22 @@ content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees R
 		break;
 		case "fan" : require "chansons/fanchon.htm";		
 		break;	
-		case "ieu" : require "chansons/IlEstUnCoinDeFrance.htm";
+		case "ieu" : require "chansons/ilEstUnCoinDeFrance.htm";
 		break;
-		case "ldd" : require "chansons/LaDigueDuCul.htm";		
+		case "ldd" : require "chansons/laDigueDuCul.htm";		
 		break;		
-		case "lar" : require "chansons/Larirette.htm";
+		case "lar" : require "chansons/larirette.htm";
 		break;
-		case "lsa" : require "chansons/LaSalope.htm";		
+		case "lsa" : require "chansons/laSalope.htm";		
 		break;	
 		//------------------------------------------------------
-		case "fdm" : require "chansons/fetesdeMauleon.htm";
+		case "fdm" : require "chansons/fetesDeMauleon.htm";
 		break;
 		case "lco" : require "chansons/copainsDabord.htm";
 		break;
 		case "lch" : require "chansons/leChasseur.htm";
 		break;
-		case "iws" : require "chansons/IWillSurvive.htm";
+		case "iws" : require "chansons/iWillSurvive.htm";
 		break;
 		case "lld" : require "chansons/lesLacsDuConnemara.htm";
 		break;
