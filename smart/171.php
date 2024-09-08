@@ -52,7 +52,8 @@ division($champ, $bdd);
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
 </head>
 
-<body class="backgroundCCCCCC">
+<body 
+>
 	<div class="fixed-header">
 		<div class="container">
 			<table class="width98PC borderColorBlack borderWidth1">
@@ -210,7 +211,7 @@ division($champ, $bdd);
 
 				<table class="width90PC marginAuto" style = "padding-bottom : 10px">
 					<tr>
-						<td class="titre ">
+						<td class="titre  ">
 							<?php
 
 							if ($champ == 990110) echo "TOP 14";

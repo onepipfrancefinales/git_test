@@ -86,7 +86,7 @@ else
 
 <html>
 <head>
-<title>Mise � jour des r�sultats</title>
+<title>Mise à jour des résultats</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/personnalisation/admin/formulaire.css"/> 
 <link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/smart/10.css"> 
@@ -100,7 +100,7 @@ else
     <td class="h22"> France Finales Rugby </td>
   </tr>
   <tr> 
-    <td class="h12" height="31"> Mise &agrave; jour des résultats</td>
+    <td class="h12" height="31"> Mise à jour des résultats</td>
   </tr>
 </table>
 <p> 
@@ -124,7 +124,7 @@ echo $login.' '.$pwd;echo "<br />";?>
   <tr> 
     <td> 
       <h3 align="center"><a href="../../smart/sommaire.php"><font face="Arial, Helvetica, sans-serif" size="3">Retour 
-        &agrave; l'appli</font></a></h3> 
+        à l'appli</font></a></h3> 
     </td>
   </tr>
   </tbody> 

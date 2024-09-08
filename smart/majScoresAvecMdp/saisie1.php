@@ -228,7 +228,7 @@ echo $bddComite;echo "<br />";
 			<table class="marginAuto" >
 				<tr>
 					<td bgcolor="#CCCCCC" class=" style size3 colorBlack">
-						<a href="../sommaire.php">Retour à l'appli</a>
+						<a href="../../index.php">Retour à l'appli</a>
 					</td>
 				</tr>
 			</table>

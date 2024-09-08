@@ -21,7 +21,6 @@ p.equipeChamp{font-size: 26px; font-family: arial; text-align: center; font-weig
 td.titre-haut{color: #FFFFFF;font-size: 25px;font-family: arial;text-align: center;font-weight: bold;background-color: #006699}
 
 
-
 div.titre3{
 height:25px;border-style:double;border-style:2px solid #405864;color: #000000;font-size: 25px;font-family: arial;text-align: center;font-weight: bold; background-color: #FFFFFF}
 
@@ -31,7 +30,7 @@ color: #FFFFFF;font-size: 25px;font-family: arial;text-align: center;font-weight
 
 
 td.titre{
-color: #000000;font-size: 25px;font-family: arial;text-align: center;font-weight: bold; background-color: #FFFFFF}
+color: #000000;font-size: 25px;font-family: arial;text-align: center;font-weight: bold; background-color: #FFFFFF;border: 1px solid; border-color: #000000}
 
 td.champion{
 color: #000000;font-size: 25px;font-family: arial;text-align: center;font-weight: bold; background-color: #FF0000}
