@@ -46,7 +46,7 @@ infosclub($id, $bdd);
  <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body text="#000000" bgcolor="#CCCCCC">
+<body text="#000000" >
  <div class="fixed-header">
    <div class="container">
    

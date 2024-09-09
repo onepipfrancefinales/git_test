@@ -86,7 +86,7 @@ $tableauGES = array(150171, 150181, 150182, 150191, 150192, 150193);
 //Ile De France
 $tableauIDF = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 170193, 170194);
 // Normandi
-$tableauNOR = array(180171, 180181, 180191, 180192);
+$tableauNOR = array(180171, 180181, 180191);
 // Provence alpes Cotes d'Azur
 $tableauPCA = array(220171, 220181, 220182, 220191, 220192  );
    

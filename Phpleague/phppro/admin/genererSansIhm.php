@@ -14,7 +14,7 @@ if (isset($champRecup)) $champRecup=$champRecup; else $champRecup=0;
 if ($champRecup == 990141)
 	$tableau = array(990141, 990142, 990143, 990144);	
 elseif ($champRecup == 990241)
-	$tableau = array(990141, 990242, 990243, 990244);	
+	$tableau = array(990241, 990242, 990243, 990244);	
 //fed2
 elseif ($champRecup == 990151)
 	$tableau = array(990151, 990152, 990153, 990154,990155, 990156, 990157, 990158);	
@@ -27,15 +27,19 @@ $tableau = array(990651, 990652, 990653, 990654,990655, 990656, 990657, 990658);
 elseif ($champRecup == 990751)
 $tableau = array(990751, 990752, 990753, 990754,990755, 990756, 990757, 990758);	
 //fed3NE
+/*
 elseif ($champRecup == 991161)
 	$tableau = array(991161, 991162, 991163, 991164,991165, 991166, 991167, 991168, 991169);	
 elseif ($champRecup == 991251)
 	$tableau = array(991261, 991262, 991263, 991264,991265, 991266, 991267, 991268, 991269);
+*/
 //fed3GS
+/*
 elseif ($champRecup == 992161)
 	$tableau = array(992161, 992162, 992163, 992164,992165, 992166, 992167, 992168, 992169);	
 elseif ($champRecup == 992251)
 	$tableau = array(992261, 992262, 992263, 992264,992265, 992266, 992267, 992268, 992269);
+*/
 //fem
 elseif ($champRecup == 880285)
 	$tableau = array(880281, 880282, 880285, 880191,880192, 880193, 880194);	

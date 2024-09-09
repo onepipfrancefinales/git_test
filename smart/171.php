@@ -62,11 +62,17 @@ division($champ, $bdd);
 					<td class="h22 width95PC"> France Finales Rugby </td>
 				</tr>
 				<tr>
-					<td colspan="2" class="h12">
+					<td colspan="2" class="h12" >
+						
+						
+					<span class="borderWidth1 borderColorBlack" >
 						<?php
 						//affichage du type de championnat
 						//	et de la division
 						nomLigue2($bddComite, $champ, $bdd);
+						?>
+						</span>
+						<?php
 						echo $ligne1 . "<br>" . $ligne2;
 						?>
 					</td>

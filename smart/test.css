@@ -11,7 +11,7 @@
     .fixed-header, .fixed-footer{
         width: 100%;
         position: fixed;        
-        background: #CCCCCC;
+     /*   background: #CCCCCC; */
         padding: 10px 0;
         color: #fff;
 		height:280px;

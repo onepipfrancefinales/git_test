@@ -43,16 +43,16 @@ nomDivision($phpComite, $champ, $bdd);
  <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body  class="backgroundCCCCCC center">
+<body  class="center">
  <div class="fixed-header">
   <div class="container">
-   <table width="100%" class="marginAuto borderWidth1">
+   <table width="95%" class="marginAuto borderWidth1 borderColorBlack">
     <tr> 
       <td width= "5%"class="h22"><a href="javascript:history.go(-1)"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20"></a></td>
-	  <td width= "95%"class="h22"> France Finales Rugby </td>
+	  <td class="h22"> France Finales Rugby </td>
     </tr>
     <tr> 
-      <td colspan="2" class="h12"><?php echo $nom; ?> </td>
+      <td colspan="2" class=" h12 marginAuto borderWidth1 borderColorBlack"><?php echo $nom; ?> </td>
     </tr>
    </table>
   </div>

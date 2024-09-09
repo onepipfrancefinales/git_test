@@ -53,11 +53,11 @@ fusionDeClubs2 ($equipe, $bdd) ;
  <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body text="#000000" bgcolor="#CCCCCC">
+<body text="#000000">
  <div class="fixed-header">
    <div class="container">
    
-    <table width="98%" border="1">
+    <table width="98%" class="borderWidth1 borderColorBlack">
      <tr> 
       <td width= "5%"class="h22" height="20"><a href="javascript:history.go(-1)"><img src="../../images/smart/flecheGauche.jpg" height="20"></a></td>
 	  <td width= "95%"class="h22" height="20"> France Finales Rugby </td>
