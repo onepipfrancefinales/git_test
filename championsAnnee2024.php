@@ -105,7 +105,7 @@
 	</tr>
 	<tr class="size4">
 		<td class="styleDivision">Fédérale 1 :</td>
-		<td class="style size4">Aviron Bayonnais (NAQ)</td>
+		<td class="style size4">AS Bayonne (NAQ)</td>
 		<td><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=290&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a></td>
 	</tr>
 
