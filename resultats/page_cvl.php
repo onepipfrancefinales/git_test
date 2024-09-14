@@ -9,12 +9,12 @@ require '../Phpleague/phppl/consult/fonctions_matchs.php';
 require '../Phpleague/phppl/lang/lang_fr.php';
 include("fonctions.php");
 require "constantes.php";
-$champLigue = 13;
-$sigleLigue = "(CVL)";
+//$champLigue = 13;
+//$sigleLigue = "(CVL)";
 $comite = "phppl";
 $CMT = "CE";
 $cmt = "ce";
-$comiteNom = "du Centre"; ?>
+//$comiteNom = "du Centre"; ?>
 
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
@@ -26,15 +26,13 @@ $comiteNom = "du Centre"; ?>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title>
-    <?php echo $champReg; ?> Centre Val de loire
-  </title>
-  <meta name="description" content=" Actualités des compétitions régionales de la ligue Centre Val de Loire. (résultats, classements, stats, calendriers, palmarès etc...) ">
+  <title>Ligue de rugby Centre Val de loire : Résultats et classements  </title>
+  <meta name="description" content=" Ligue de rugby Centre Val de Loire, résultats, classements, phases finales et palmarès des compétitions régionales. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe Onepip">
+  <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
   <script>
     function ouvrirPopup(page, nom, options) {

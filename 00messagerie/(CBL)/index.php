@@ -4,23 +4,28 @@
 #          ---------------------------------------------------------------------------
 #                     /index.php
 #          --------------------------------------
-#          Copyright © 2005-2006 LECOINTRE Adrien
+#          Copyright ï¿½ 2005-2006 LECOINTRE Adrien
 #          --------------------------------------
 #          Site Internet : http://www.phprog.com/
 #          e-mail : adrien.lecointre@phprog.com
 #          ---------------------------------------------------------------------------
 #          Ce fichier est une partie de PHProg.
 #          PHProg est un programme libre, vous pouvez le redistribuer
-#          et/ou le modifier selon les termes de la Licence Publique Générale
-#          GNU publiée par la Free Software Foundation version 2.
-#          PHProg est distribué car potentiellement utile, mais
+#          et/ou le modifier selon les termes de la Licence Publique Gï¿½nï¿½rale
+#          GNU publiï¿½e par la Free Software Foundation version 2.
+#          PHProg est distribuï¿½ car potentiellement utile, mais
 #          SANS AUCUNE GARANTIE, ni explicite ni implicite, y compris les
-#          garanties de commercialisation ou d'adaptation dans un but spécifique.
-#          Reportez-vous à la Licence Publique Générale GNU version 2 pour plus de
-#          détails.
-#          Licence Publique Générale GNU version 2 disponible sous /docs/licence/
+#          garanties de commercialisation ou d'adaptation dans un but spï¿½cifique.
+#          Reportez-vous ï¿½ la Licence Publique Gï¿½nï¿½rale GNU version 2 pour plus de
+#          dï¿½tails.
+#          Licence Publique Gï¿½nï¿½rale GNU version 2 disponible sous /docs/licence/
 ###################################################
 ?>
+
+
+
+
+
 <?php
 #init var
 $dossier=null;
@@ -118,7 +123,7 @@ if (test_admin()) {
 </table>
 <div align="center" height="15">
 <span class="texte-pied">
-Powered by <a class="pied" href="http://www.phprog.com/" title="PHProg : Album photo en PHP, publiez vos photos sur Internet">PHProg</a> Copyright © 2005-2006
+Powered by <a class="pied" href="http://www.phprog.com/" title="PHProg : Album photo en PHP, publiez vos photos sur Internet">PHProg</a> Copyright ï¿½ 2005-2006
 </span>
 </div>
 </div>

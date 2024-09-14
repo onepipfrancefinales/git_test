@@ -7,13 +7,12 @@ require '../Phpleague/phpidf/consult/fonctions_matchs.php';
 require '../Phpleague/phpidf/lang/lang_fr.php';
 include("fonctions.php");
 require 'constantes.php';
-$champLigue=15;
-$sigleLigue="(GES)";
-
+//$champLigue=15;
+//$sigleLigue="(GES)";
 $comite="phpidf";
 $CMT="AL";
 $cmt="al"; 
-$comiteNom="Alsace Lorraine";?> 
+//$comiteNom="Alsace Lorraine";?> 
 
 <!DOCTYPE html PUBLIC>       
 <html lang="fr">
@@ -24,13 +23,13 @@ $comiteNom="Alsace Lorraine";?>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-<title><?php echo $champReg;?> Grand Est</title>
-<meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+<title>Ligue de rugby Grand Est : Résultats et classements</title>
+<meta name="description" content=" Ligue de rugby Grand Est, résultats, classements, phases finales et palmarès des compétitions régionales.">
 <meta name="classification" content="Sport,Rugby">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-<meta name="author" content="Equipe Onepip">
+<meta name="author" content="Equipe France Finales Rugby">
 <meta name="robots" content="All">
   <script language="JavaScript">
    function ouvrirPopup(page,nom,options) {
@@ -124,9 +123,8 @@ $comiteNom="Alsace Lorraine";?>
       </td>
     </tr>
   </table>
-<?php include("piedDePage.php"); ?>
 		<footer>
-			
+		<?php include("piedDePage.php"); ?>	
 		</footer>
 	</body>
 </html>

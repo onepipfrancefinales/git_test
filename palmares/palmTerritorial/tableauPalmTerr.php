@@ -18,9 +18,11 @@ nomLigue($idLigue, $sigleLigue, $bdd)
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<title> Palmarès du comité <?php echo $nomComite; ?></title>
+<meta name="description" content="Palmarès régionals du comité <?php echo $nomComite; ?>">
+<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmTerritorial/tableauPalmTerr.php?paramIdComite=<?php echo $id;?>" >
   <link type="text/css" rel="stylesheet" href="../../ligne1.css" >
   <link type="text/css" rel="stylesheet" href="palmaresTerr.css" >
-  <title> Champions territoriaux  <?php echo $sigle; ?></title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 

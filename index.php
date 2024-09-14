@@ -26,17 +26,17 @@ require 'resultats/constantes.php';
 
 <head>
   <meta name="google-adsense-account" content="ca-pub-9177538664500260">
-  <title>France Finales Rugby</title>
-  <link rel="canonical" href="https://francefinalesrugby/index.fr ">
+  <title>France Finales Rugby </title>
+  <link rel="canonical" href="https://francefinalesrugby.fr ">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link type="text/css" rel="stylesheet" href="ligne1.css">
   <link type="text/css" rel="stylesheet" href="lienNoir.css">
   <link type="text/css" rel="stylesheet" href="formulaireDG.css">
-  <meta name="description" content=" Résulats des compétitions Fédérales et régionales. Egalement disponible les phases finales Régionales et nationales. ">
+  <meta name="description" content=" Site dédié aux compétitions de rugby Porfessionnelles, Fédérales et régionales (présentation des clubs, résultats, classements, palmarès, etc... ">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
-  <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+  <meta name="copyright" content="Comite France Finale">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
 
@@ -67,18 +67,20 @@ require 'resultats/constantes.php';
       <td class="backgroundBlanc">
 
         <br> <br>
-        <?php include("championsAnnee2024.php");  ?>
+       
+ <?php  require "resultats/tableauEffectifsClubs.php";  ?>
 
-
+        <br>  <br>
         <br>
-
-        <?php  require "resultats/tableauEffectifsClubs.php";  ?>
+        <hr>
+ <?php include("championsAnnee2024.php");  ?>
+ <br>
         <hr>
         <br>
         <br>
         <b>
           <div class="colorBlack style size5">Pyramide
-            des divisions pour la depuis la <br>
+            des divisions depuis la <br>
             saison 2022-2023</div>
         </b>
 

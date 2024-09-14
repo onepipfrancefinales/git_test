@@ -32,7 +32,9 @@ nomDivision($phpComite, $champ, $bdd);
 <html lang="fr">
 
 <head>
- <title><?php echo $equipe; ?></title>
+ <title>Suivi sportif <?php echo $nom; ?></title>
+ <link rel="canonical" href="https://francefinalesrugby.fr/smart/bilan/pagebilan.php?comite=<?php echo $comite;?>&champ=<?php echo $champ;?>&id_equipe=<?php echo $id_equipe;?>" >
+ <meta name="description" content="Suivi des performances et des résultats du <?php echo $nom; ?>">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
  <link rel="stylesheet" type="text/css" href="../menu_smart2.css"> 

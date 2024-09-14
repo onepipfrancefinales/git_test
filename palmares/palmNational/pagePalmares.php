@@ -10,15 +10,15 @@ else $base = '-';
 <html lang="fr">
 
 <head>
-	<meta name="description" content="Palmarès des champions de france par divisions et pas années">
-	<meta name="keywords" content="Presentation de la competititon et de tous les champions de France 1re Serie. Palmares complet de la 1re Serie.">
+<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmares.php?division=<?php echo $division;?>" >
+	<meta name="description" content="Palmarès des champions de france de rugby par divisions et par années">
 	<meta name="classification" content="Sport,Rugby">
 	<meta name="resource-type" content="document">
 	<meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-	<meta name="author" content="Equipe Onepip">
+	<meta name="author" content="Equipe France Finales Rugby">
 	<meta name="viewport" content="width=device-width">
 	<meta name="robots" content="All">
-	<title>Champions de FRANCE </title>
+	<title>Champions de FRANCE de rugby à XV</title>
 	<link type="text/css" rel="stylesheet" href="palmares.css">
 	<link type="text/css" rel="stylesheet" href="../../ligne1.css">
 	<link type="text/css" rel="stylesheet" href="../../formulaireDG.css">

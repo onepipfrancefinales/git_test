@@ -13,12 +13,11 @@ rechercheInfosLigues($idLigue, $bdd);
 <head>
 	<link rel="canonical" href="https://francefinalesrugby.fr/consultation/page_ligue.php" >
 	<meta name="description" content="Tout sur le comité territorial <?php echo $nomComite; ?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comit�); les effectifs; les palmar�s nationaux; les palmar�s territoriaux et l'ensemble des clubs composant le comit� avec un lien pour acc�der aux diff�rents clubs.">
-	<meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 	<meta name="classification" content="Sport,Rugby">
 	<meta name="resource-type" content="document">
 	<meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="author" content="Equipe Onepip">
+	<meta name="author" content="Equipe France Finales Rugby">
 	<meta name="robots" content="All">
 	<link type="text/css" rel="stylesheet" href="../formulaireDG.css">
 	<link type="text/css" rel="stylesheet" href="../ligne1.css" >

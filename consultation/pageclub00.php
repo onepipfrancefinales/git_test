@@ -4,7 +4,11 @@ require "../fonctions.php";
 require "fonctions.php";
 $chaine = $_GET['champion'];
 //$nouveauClub = $_GET['nouveauClub'];
-if (isset($_GET['nouveauClub'])) {$nouveauClub =$_GET['nouveauClub'];} else  {$nouveauClub = 0;}
+if (isset($_GET['nouveauClub'])) {
+  $nouveauClub = $_GET['nouveauClub'];
+} else {
+  $nouveauClub = 0;
+}
 
 
 //echo "chaine : ".$chaine; echo "<br/>";
@@ -15,19 +19,39 @@ if (is_int($chaine)) {
   $equipe = substr($chaine, 2, 5);
   $numLigue = substr($chaine, 0, 2);
   $id = substr($chaine, 2, 2);
-  
 }
 
 
 //Evaluation de la variable chaine si textuelle
 else {
   // echo " non numerique";echo "<br/>";
+
+  //echo "chaine".$chaine;
+
   require '../connect/connexion1.php';
+
+
+  rechercheParNomDeVille($chaine, $bdd);
+
+  echo "nombre de clubs :" . $nbreDeClub;
+
+  /*
+  echo "donnee1 : ".$nbreDeClub;
+  echo "donnee2 : ".$tabClubs[0];
+  echo "donnee2 : ".$tabClubs[1];
+  echo "donnee2 : ".$tabClubs[2];
+
+*/
+
+
+
+
+
+
   infosclub($chaine, $bdd);
-  $id_equipe=$id;
+  $id_equipe = $id;
   $equipe = $numLigue . $code;
   $id = substr($id, 2, 2);
-   
 }
 
 //echo $numLigue;;echo "<br/>";
@@ -44,8 +68,8 @@ affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);
 
-consultationEvolutionClub ($equipe, $bdd);
-fusionDeClubs2 ($equipe, $bdd) ;
+consultationEvolutionClub($equipe, $bdd);
+fusionDeClubs2($equipe, $bdd);
 
 //changementNom ($equipe, $width, $bdd);
 
@@ -55,21 +79,20 @@ fusionDeClubs2 ($equipe, $bdd) ;
 
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta name="description" content=" <?php echo $titre; ?> : Présentation du club (Bureau; Si�ge; Stade; Contacts); les grandes du dates du club; les palmar�s; les r�sultats du clubs au cours des derni�res saisons et un album photos d�di� au club..">
-  <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+<link rel="canonical" href="https://francefinalesrugby.fr/consultation/pageclub00.php?champion=<?php echo $chaine;?>" >
+  <meta name="description" content="Présentation du club de <?php echo $nomLong; ?> (Bureau; Siège; Stade; Contacts; palmarès)">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe Onepip">
+  <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <link type="text/css" rel="stylesheet" href="pgclub00.css">
   <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
-  <title> fiche club </title>
+  <title> Présentation du club : <?php echo $nomLong; ?> </title>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -104,10 +127,16 @@ fusionDeClubs2 ($equipe, $bdd) ;
       </td>
       <td class="centreDePage">
         <?php
-        if ($code > 0) {
-          include("00clubs.php");
+        if ($nbreDeClub < 2) {
+
+          if ($code > 0) {
+            include("00clubs.php");
+          } else {
+            include("02clubs.php");
+          }
         } else {
-          include("02clubs.php");
+
+          include('modaleRecherche.php');
         }
         ?>
       </td>
@@ -118,7 +147,10 @@ fusionDeClubs2 ($equipe, $bdd) ;
   </table>
   <table class="marginAuto" width="1100">
     <tr>
-      <td class="backgroundWhite" >
+      <?php
+    if ($nbreDeClub < 2) {
+      ?>   
+    <td class="backgroundWhite">
         <br> <br>
         <hr color="#FF0000" width="600">
         </hr>
@@ -128,6 +160,9 @@ fusionDeClubs2 ($equipe, $bdd) ;
         <iframe src="/00messagerie/<?php echo $sigleComite; ?>/?id=1&album=<?php echo $code; ?>" width="1000" height="400" scrolling="yes" frameborder="0"></iframe>
 
       </td>
+      <?php
+    }
+    ?>
     </tr>
     <tr>
       <td>

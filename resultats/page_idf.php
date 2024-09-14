@@ -7,12 +7,12 @@ require '../Phpleague/phpidf/consult/fonctions_matchs.php';
 require '../Phpleague/phpidf/lang/lang_fr.php';
 include("fonctions.php");
 require "constantes.php";
-$champLigue = 17;
-$sigleLigue = "(IDF)";
+//$champLigue = 17;
+//$sigleLigue = "(IDF)";
 $comite = "phpidf";
 $CMT = "IDF";
 $cmt = "idf";
-$comiteNom = "Ile de France";
+//$comiteNom = "Ile de France";
 ?>
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
@@ -24,15 +24,14 @@ $comiteNom = "Ile de France";
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title><?php echo $champReg; ?> Ile de France</title>
-
+  <title>Ligue de rugby Ile de France : Résultats et classements</title>
   <meta name="google-adsense-account" content="ca-pub-9177538664500260">
-  <meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+  <meta name="description" content="Ligue de rugby Ile de France, résultats, classements, phases finales et palmarès des compétitions régionales.">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe Onepip">
+  <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
 
 

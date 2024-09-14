@@ -25,12 +25,12 @@ $comiteNom = "Bourgogne"; ?>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title><?php echo $champReg; ?> Bourgogne franche Comté</title>
-  <meta name="description" content=" Résulats des compétitions territoriales du comité; Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+  <title>Ligue de rugby Bourgogne Franche Comté : Résultats et classements</title>
+  <meta name="description" content=" Ligue de rugby Bourgogne Franche Comté, résultats, classements, phases finales et palmarès des compétitions régionales. ">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe Onepip">
+  <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
   <script>
     function ouvrirPopup(page, nom, options) {

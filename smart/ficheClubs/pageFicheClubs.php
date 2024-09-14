@@ -42,8 +42,9 @@ fusionDeClubs2 ($equipe, $bdd) ;
 
 <html>
 <head>
- <title>Fiche club <?php echo $nomChampion; ?></title>
-<content="Présentation de club <?php echo $nomChampion; ?>">
+ <title>Fiche club <?php echo $nomLong; ?></title>
+ <link rel="canonical" href="https://francefinalesrugby.fr/smart/ficheClubs/pageFicheClubs.php?champion=<?php echo $id_equipe;?>" >
+ <meta name="description" content="Présentation du club <?php echo $nomLong; ?> (bureau, contact, palmarès, etc...">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
  <link rel="stylesheet" type="text/css" href="../menu_smart2.css">  

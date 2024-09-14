@@ -7,16 +7,15 @@ require '../Phpleague/phpidf/consult/fonctions_matchs.php';
 require '../Phpleague/phpidf/lang/lang_fr.php';
 include("fonctions.php");
 require "constantes.php";
-
-$sigleLigue="(PCA)";
-$champLigue=22;
+//$sigleLigue="(PCA)";
+//$champLigue=22;
 $comite="phpidf";
 $CMT="PR";
 $cmt="pr";
-$comiteNom="Provence";
+//$comiteNom="Provence";
 ?>
   
-  <!DOCTYPE html PUBLIC>
+<!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
 <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_pca.php/" />
@@ -25,14 +24,13 @@ $comiteNom="Provence";
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title>Championnats Territoriaux comité <?php echo $comiteNom;?></title>
-  <meta name="description"
- content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+  <title>Ligue de rugby Provence Alpes Côte d'Azur : Résultats et classements</title>
+  <meta name="description" content="Ligue de rugby Provence Alpes Côte d'Azur, résultats, classements, phases finales et palmarès des compétitions régionales.">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe Onepip">
+  <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
     <script language="JavaScript">
    function ouvrirPopup(page,nom,options) {
@@ -73,7 +71,6 @@ $comiteNom="Provence";
 	include("sommaires.php");       
 	echo "<hr>"."<hr>";
 	
-
 	$tableauCompetition = $tableauPCA;
 
 	foreach ($tableauCompetition as $champ) {
@@ -95,14 +92,12 @@ $comiteNom="Provence";
 		$nomSerie = "(Ex 3me/ 4me série)";
 	  }
   
-	  echo "  <br>" . "<br>";
+	  echo "<br>" . "<br>";
 	  echo "<h5>" .  $competition . " - " . "Poule " . substr($champ, -1);
 	  echo "<br>"; ?>
   
 	  <span class="size2"> <?php echo $nomSerie; ?> </span>
 	<?php
-  
-  
 	  echo "</h5>";
 	  echo  "<br>" . "<br>" . "<br>";
 	  affichage($champ, $champ2, $comite, $bdd);
@@ -112,16 +107,13 @@ $comiteNom="Provence";
 	}
  
 	include "liensDiversBas.php";
-  ?>
-       
+  ?>   
  </td>
       <td class = "colonneDroiteGauche"> 
         <p><?php include("../00droite.php"); ?> </p>
       </td>
-    </tr>
-   
+    </tr> 
 </table>
-
   <footer> 
    <?php include("piedDePage.php"); ?>
   </footer>

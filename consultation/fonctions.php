@@ -1,13 +1,54 @@
 <?php
+
+function rechercheParNomDeVille($chaine, $bdd) {
+
+Global $nbreDeClub, $tabClubs, $tabId, $tabType;
+	
+	$reponse = $bdd->query("SELECT COUNT(*)
+							FROM bdclubs
+							WHERE nom_4 ='$chaine'");
+
+	$row = $reponse->fetch();
+	$nbreDeClub = $row[0];
+//echo "nombre de clubs : ".$nbreDeClub;
+
+if ($nbreDeClub > 1) {
+
+$tabClubs =array();
+$tabId =array();
+$tabType =array();
+
+$reponse = $bdd->query("SELECT sigle, id ,type
+							FROM bdclubs
+							WHERE nom_4 ='$chaine'");
+
+
+while ($row = $reponse->fetch()) {
+	$tabClubs[] = $row[0];
+	$tabId[] = $row[1];
+	$tabType[] = $row[2];
+
+}
+
+for ($i=0; $i <=$nbreDeClub; $i++) {
+//echo $tabId[$i]."-".$tabClubs[$i]."-".$tabType[$i]."<br>";
+}
+
+}
+
+}
+
+
+
+
 function changementNom($id_equipe, $width, $bdd)
 {
 
 	//echo "id_equipe".$id_equipe;
 
-	$reponse = $bdd->query("	
-	SELECT COUNT(*)
-		FROM bdchange_nom 
-	WHERE id_equipe = '$id_equipe' 
+	$reponse = $bdd->query("SELECT COUNT(*)
+							FROM bdchange_nom 
+							WHERE id_equipe = '$id_equipe' 
 	
 	 ");
 

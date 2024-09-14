@@ -28,7 +28,7 @@ $sigleLigue = "(ARA)";
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <title><?php echo $champReg; ?> Auvergne Rhône ALpes  </title>
   <meta name="description"
-    content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+    content=" Ligue AURA de rugby, Résulats des compétitions régionales de rugby, comité des Alpes, comité Drôme Ardèche, comité Auvergne, comité du Lyonnais. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">

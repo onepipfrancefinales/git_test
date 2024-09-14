@@ -283,7 +283,7 @@ echo "<a href=../palmares/palmNational/pagePalmLigue.php?idLigue=$idLigue > Tous
   </select>
 </form>
 -->
-<h1 ><font color="#000000">Palmarès Régional 
+<h1 ><font color="#000000">Palmar&egrave;s Régional 
   <?php
   //  $saisonChoisie=$_GET['saisonChoisie'];  
   //echo "$saison1";  
@@ -412,7 +412,7 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 </p>
 <p>&nbsp;</p>
 <hr /><hr />
-<h3>Que sont ils devenus ? : </h3>
+
 <p> 
   <?php // require ("../connect1/connection1.php") ;?>
   <?php
@@ -433,14 +433,76 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 echo "<br/>";
 ?>
 </p>
-<h3>Clubs en sommeils : </h3>
-<p>
-
-
-<?php require ("../connect/connexion1.php") ; ?>
 
 
 
-<?php  // include("pub_carre.php");  ?>
+<style>
+.accordion {
+  margin-left: 150px;
+  font-family:arial;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 23px;
+  transition: 0.4s;
+}
 
-	
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+
+
+<button class="accordion ">Clubs en sommeil</button>
+<div class="panel">
+  <?php
+$tabTest = array(1,12,3,5,6,5,6); 
+foreach ($tabTest as $test)
+{
+  echo $test; echo"<br>";
+}
+?>
+<p></p>
+</div>
+
+<button class="accordion">Que sont ils de venus?</button>
+<div class="panel">
+  <p></p>
+</div>
+<!--
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>

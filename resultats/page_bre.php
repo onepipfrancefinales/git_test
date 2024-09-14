@@ -7,12 +7,12 @@ require '../Phpleague/phppl/consult/fonctions_matchs.php';
 require '../Phpleague/phppl/lang/lang_fr.php';
 include("fonctions.php");
 require "constantes.php";
-$champLigue = 12;
-$sigleLigue="(BRE)";
+//$champLigue = 12;
+//$sigleLigue="(BRE)";
 $comite = "phppl";
 $CMT = "BR";
 $cmt = "br";
-$comiteNom = "Bretagne";
+//$comiteNom = "Bretagne";
 ?>
 
 <!DOCTYPE html PUBLIC>
@@ -25,13 +25,13 @@ $comiteNom = "Bretagne";
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title> <?php echo $champReg; ?> Bretagne</title>
-  <meta name="description" content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+  <title> Ligue de Bretagne - Résultats et classements</title>
+  <meta name="description" content="Ligue de rugby Bretagne, résultats, classements, phases finales et palmarès des compétitions régionales. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe Onepip">
+  <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
   <script>
     function ouvrirPopup(page, nom, options) {

@@ -7,12 +7,12 @@ require '../Phpleague/phpidf/consult/fonctions_matchs.php';
 require '../Phpleague/phpidf/lang/lang_fr.php';
 include("fonctions.php");
 require "constantes.php";
-$champLigue=18;
-$sigleLigue="(NOR)";
+//$champLigue=18;
+//$sigleLigue="(NOR)";
 $comite="phpidf";
 $CMT="N";
 $cmt="n";
-$comiteNom="Normandie";?>
+//$comiteNom="Normandie";?>
 
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
@@ -23,14 +23,14 @@ $comiteNom="Normandie";?>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title><?php echo $champReg;?> Normandie</title>
+  <title>Ligue de rugby Normandie : Résultats et classements</title>
   <meta name="description"
- content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+ content="Ligue de rugby Normandie, résultats, classements, phases finales et palmarès des compétitions régionales. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe Onepip">
+  <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
   
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"

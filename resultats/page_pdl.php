@@ -8,13 +8,12 @@ require '../Phpleague/phppl/lang/lang_fr.php';
 
 include("fonctions.php");
 require "constantes.php";
-$champLigue=21;
-$sigleLigue="(PDL)";
+//$champLigue=21;
+//$sigleLigue="(PDL)";
 $cmt="pl";
 $comite="phppl";
 $CMT="PL";
-
-$comiteNom="Pays de Loire";?>
+//$comiteNom="Pays de Loire";?>
  
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
@@ -25,14 +24,14 @@ $comiteNom="Pays de Loire";?>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title><?php echo $champReg;?> Pays de la Loire</title>
+  <title>Ligue de rugby Pays de la Loire : Résultats et classsements</title>
   <meta name="description"
- content=" Résulats des compétitions territoriales du comité Armagnac Bigorre. Calendriers, résultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+ content=" Ligue de rugby Pays de  la Loire , résultats, classements, phases finales et palmarès des compétitions régionales. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe Onepip">
+  <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
     <script language="JavaScript">
    function ouvrirPopup(page,nom,options) {

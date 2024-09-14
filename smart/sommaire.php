@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta name="description"
-content="Resultat, classement, stats et infos de la poule nom de la poule nom de la competition">
-<meta name="keywords"
-content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Francaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
+<meta name="description"content="Résultats, classements, stats et infos des compétitions Francaises de rugby.">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>France Finales Rugby App</title>
+<link rel="canonical" href="https://francefinalesrugby.fr/smart/sommaire.php">
+<title>France Finales Rugby</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="10.css"> 

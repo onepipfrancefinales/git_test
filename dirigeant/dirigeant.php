@@ -1,3 +1,31 @@
+<html>
+    <head>
+        
+        <style>
+            #myDialog {
+                border: 2px solid gray;
+                border-radius: 40px;
+            }
+        </style>
+    </head>
+    <body>
+      <?php $tabLigue=array(1,2,3); ?>
+        <dialog id="myDialog">
+        <?php    
+        foreach ($tabLigue as $idLigue) {
+echo $idLigue."<br>";
+
+        }?>
+        <p>Koor.fr Dialog demonstration</p>
+            
+            <form method="dialog">
+                <button>Annuler</button>
+            </form>
+        </dialog>
+        <button onclick="myDialog.showModal();">Open dialog box</button>
+    </body>
+
+
 <div class="titreEncadre"> Mise à jour des résultats</div>
 
 <p class="bold size4 styleArial"><a href="../informations/majParSMS/pageOutil.php">

@@ -23,29 +23,26 @@ $phpcomite_divisions = "php" . '' . $bddComite . '' . "_divisions";
 $id = $champ - 1;
 include("../saison.php");
 
-
 require("../connect/connexion1.php");
-
 division($champ, $bdd);
-
+nomLigue2($bddComite, $champ, $bdd);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
 
-	<title>Resultats et classement</title>
+	<title>Résultats et classements <?php echo $ligne1 ." ". $ligne2;?></title>
 	<link rel="stylesheet" type="text/css" href="menu_smart2.css">
 	<link type="text/css" rel="stylesheet" href="10.css">
 	<link type="text/css" rel="stylesheet" href="../ligne1.css">
 	<link type="text/css" rel="stylesheet" href="paramTiroir.css">
 	<link type="text/css" rel="stylesheet" href="../Phpleague/<?php echo "php" . $bddComite; ?>/league.css">
 	<meta name="description" content="Resultat, classement, stats et infos de la poule nom de la poule nom de la competition">
-	<meta name="keywords" content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Francaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
 	<meta name="classification" content="Sport,Rugby">
 	<meta name="resource-type" content="document">
 	<meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-	<meta name="author" content="Equipe Onepip">
+	<meta name="author" content="Equipe France Finales Rugby">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="robots" content="All">
 	<meta name=viewport content="width=device-width, initial-scale=1">
@@ -65,11 +62,11 @@ division($champ, $bdd);
 					<td colspan="2" class="h12" >
 						
 						
-					<span class="borderWidth1 borderColorBlack" >
+					<span class=" borderColorBlack" >
 						<?php
 						//affichage du type de championnat
 						//	et de la division
-						nomLigue2($bddComite, $champ, $bdd);
+						//nomLigue2($bddComite, $champ, $bdd);
 						?>
 						</span>
 						<?php
@@ -217,7 +214,7 @@ division($champ, $bdd);
 
 				<table class="width90PC marginAuto" style = "padding-bottom : 10px">
 					<tr>
-						<td class="titre  ">
+						<td class="titrePlus  ">
 							<?php
 
 							if ($champ == 990110) echo "TOP 14";
@@ -293,7 +290,7 @@ division($champ, $bdd);
 
 				<table class="width90PC marginAuto" style = "padding-bottom : 10px" >
 					<tr>
-						<td class="titre"><?php echo $poule; ?></td>
+						<td class="titrePlus"><?php echo $poule; ?></td>
 					</tr>
 				</table>
 
@@ -335,7 +332,7 @@ division($champ, $bdd);
 			?>
 				<table class="width90PC marginAuto" style = "padding-bottom : 10px">
 					<tr>
-						<td class="titre"><?php echo $poule; ?></td>
+						<td class="titrePlus"><?php echo $poule; ?></td>
 					</tr>
 				</table>
 
@@ -349,7 +346,7 @@ division($champ, $bdd);
 				journeesReportees($phpComite, $champ, $bdd);
 				perequation($phpComite, $champ, $bdd);
 				?>
-				<br>
+				
 				<table class="width90PC marginAuto">
 					<tr>
 						<td class="size4 colorRed backgroundYellow"><a style="text-decoration:none; color: red" href="calendrier.php?champ=<?php echo $champ; ?>&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>" target="_blank">

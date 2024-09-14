@@ -24,6 +24,6 @@
   </tr>
   <tr> 
     <td colspan="2" class="coin_fed"><a href="mailto:francefinalesrugby@free.fr">Contact Mél</a></td>
-    <td class="coin_fed"><a href="../personnalisation/session2/">Admin</a></td>
+    <td class="coin_fed"><a href="/personnalisation/session2AvecMdp/index.php">Admin</a></td>
   </tr>
 </table>

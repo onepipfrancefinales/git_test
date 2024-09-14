@@ -75,7 +75,7 @@ $TT = $TOP14 + $PROD2 + $NAT1 + $NAT2 + $FED1 + $FED2 + $FED3 + $REG1 + $REG2 + 
 
 <!------>
 
-<h3 class="center colorBlack style">Répartition des clubs par divisions et par ligues pour la saison 2024-2025</h3>
+<h2 class="center colorBlack styleArial">Répartition des clubs par divisions et par ligues <br>pour la saison 2024-2025</h2>
         <table class="width95PC marginAuto" style="border: 3px  solid purple;  border-collapse: collapse">
           
           <tr class="border">

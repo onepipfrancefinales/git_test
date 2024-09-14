@@ -1,12 +1,20 @@
  <?php 
 $annee=$_GET['annee'];
 $division=$_GET['division'];
+require ("../../phases_finales2019/fonctionsChampFrance2019.php");  
+require '../../connect/connexion5.php';
+nomDivision($division);
+
+
 //if (isset ($_GET['type2'])) $type2=$_GET['type2'];else $type2="";
 //echo "type = ".$type2;?>
 <!DOCTYPE html >
 <html lang="fr">
   <head>
-   <title>Championnat de France <?php echo $annee;?></title>
+   <title>Championnat de France <?php echo $annee .' '.$nomDivision;?></title>
+   <link rel="canonical" href="https://francefinalesrugby.fr/smart/pf/pagePhaseFinale.php?division=<?php echo $division;?>&annee=<?php echo $annee;?>" >
+   <meta name="description" content="Phase finale <?php echo $annee;?> du championnat de France <?php echo $nomDivision; ?>">
+ 
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <!--<link rel="stylesheet" type="text/css" href="../2.css">-->
    <link rel="stylesheet" type="text/css" href="AA2.css">  
@@ -18,9 +26,7 @@ $division=$_GET['division'];
 
 <body class="backgroundEAECEB colorBlack" >
  <?php
-require ("../../phases_finales2019/fonctionsChampFrance2019.php");  
-require '../../connect/connexion5.php';
-nomDivision($division);
+
 
 require '../../connect/connexion1.php';
 
