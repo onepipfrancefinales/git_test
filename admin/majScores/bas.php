@@ -49,7 +49,7 @@
       <td width="389" colspan="2"><a href="/phases_finales2019/test.php?choix=990141"></a></td>
     </tr>
     <tr>
-      <td width="389"><!--<a href="/admin/majScores/telechargement/pageTraitementBonusOffensifs2.php">xxxTraitement Bonusxxx</a>-->
+      <td width="389"><a href="/admin/page_admin.php">maj phpleague</a></td>
       <td width="395"><!--<a href="/admin/majScores/telechargement/pageCumulPts.php">xxxCumul pts Bonusxxx</a>--></td>
     </tr>
     <tr>
