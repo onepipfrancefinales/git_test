@@ -68,8 +68,8 @@
   $GESH = 21940;
   $GESPH = 21941;
   $GESS1 = 21942;
-  $GESResH = 21941;
-  $GESResPH = 0;
+  $GESResH = 22036;
+  $GESResPH = 22038;
 
   // ***** Hauts de France *****					
   $HDFH = 22016;

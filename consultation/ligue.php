@@ -153,15 +153,20 @@ structureLigue($idLigue, $bdd);
 <h1  > Structure de la ligue :<br></h1>
 <table width="407" class="marginAuto">
  <tr> 
-    <td width="150" class="texte18">  </td>
-    <td width="80" class="texte18"> <span class=" size2">(En nombre de clubs) </span></td>
+    <td width="150" class="texte18"> Divisions </td>
+    <td width="80" class="texte18"> <span class=" size2">(En nombre de clubs actifs) </span></td>
  </tr>
  <tr> 
-    <td width="150" class="texte18">Professionnel : </td>
+    <td colspan="2"> 
+      <hr />
+    </td>
+  </tr>
+ <tr> 
+    <td width="150" class="texte18">Professionnelles : </td>
     <td width="80" class="texte18"><?php echo ($d110+$d120);?></td>
   </tr>
-  <tr bgcolor="#CCCCCC"> 
-    <td class="texte18">  Nationale : </td>
+  <tr class="backgroundCCCCCC"> 
+    <td class="texte18">  Nationales : </td>
     <td class="texte18"><?php echo ($d130+$d135);?></td>
   </tr>
   <tr> 
@@ -174,7 +179,7 @@ structureLigue($idLigue, $bdd);
     <td class="texte18">Fédérale  1 : </td>
     <td class="texte18"><?php echo $d140;?></td>
   </tr>
-  <tr bgcolor="#CCCCCC"> 
+  <tr class="backgroundCCCCCC"> 
     <td class="texte18">Fédérale 2 :</td>
     <td class="texte18"><?php echo $d150;?></td>
   </tr>
@@ -187,22 +192,22 @@ structureLigue($idLigue, $bdd);
       <hr />
     </td>
   </tr>
-  <tr bgcolor="#CCCCCC"> 
-    <td class="texte18">Régional 1 : </td>
+  <tr class="backgroundCCCCCC"> 
+    <td class="texte18">Régionale 1 : </td>
     <td class="texte18"> <?php if($d170 > 0) echo $d170;?></td>
   </tr>
   <tr> 
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td class="texte18">Régional 2 : </td>
+    <td class="texte18">Régionale 2 : </td>
     <td class="texte18">  <?php if($d180 > 0) echo $d180;?></td>
   </tr>
-  <tr bgcolor="#CCCCCC"> 
-    <td colspan="4" bgcolor="#FFFFFF"></td>
+  <tr class="backgroundCCCCCC"> 
+    <td colspan="4" ></td>
   </tr>
-  <tr bgcolor="#CCCCCC"> 
-    <td class="texte18">Régional 3 :</td>
+  <tr class="backgroundCCCCCC"> 
+    <td class="texte18">Régionale 3 :</td>
     <td class="texte18"><?php if($d190 >0) echo $d190;?> </td>
   </tr>
  
@@ -216,9 +221,17 @@ structureLigue($idLigue, $bdd);
     <td class="texte18">Féminines Elite:</td>
     <td class="texte18"><?php  if($d281 >0) echo ($d281+$d285); ?></td>
   </tr>
-    <tr> 
+  </tr>
+  <tr class="backgroundCCCCCC"> 
     <td class="texte18">Féminines Fédérale:</td>
     <td class="texte18"><?php  if($d291 >0) echo ($d291+$d301); ?></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> <hr /></td>
+  </tr>
+  <tr> 
+    <td class="texte18 bold">Total :</td>
+    <td class="texte18 bold"><?php echo ($d110+$d120+$d130+$d135+$d140+$d150+$d160+$d170+$d180+$d190+$d291+$d301); ?></td>
   </tr>
 </table>
 
@@ -236,7 +249,7 @@ structureLigue($idLigue, $bdd);
 <br>
 
 <br>
-<h1><font color="#000000">Palmars national </font></h1>
+<h1><font color="#000000">Palmarès national </font></h1>
 <h3><font size="3"> (Les dix derniers titres de la ligue)</font></h3>
 <p class="texte18">
 <?php
@@ -283,7 +296,7 @@ echo "<a href=../palmares/palmNational/pagePalmLigue.php?idLigue=$idLigue > Tous
   </select>
 </form>
 -->
-<h1 ><font color="#000000">Palmar&egrave;s Régional 
+<h1 ><font color="#000000">Palmarès Régional 
   <?php
   //  $saisonChoisie=$_GET['saisonChoisie'];  
   //echo "$saison1";  
@@ -374,34 +387,35 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 <br>
 <h1>Clubs de la ligue</h1>
 <br />
-<h3> Clubs professionnels :</h3>
+<h3> Clubs professionnels <span class="size3 ">(<?php echo $d110+$d120;?> clubs)</span> :</h3>
  <p class="afficheEquipe"> 
  <?php  
  clubsParLigue($idLigue, "M", 110, $bdd);
  clubsParLigue($idLigue, "M", 120, $bdd);
  ?>
  </p>
-<h3> Nationales :</h3> 
+<h3> Nationales <span class="size3 ">(<?php echo $d130+$d135;?> clubs)</span> :</h3> 
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 130, $bdd); ?></p>
+<p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 135, $bdd); ?></p>
 
-<h3>Fédérale 1 :</h3> 
+<h3>Fédérale 1 <span class="size3 ">(<?php echo $d140;?> clubs)</span> :</h3> 
 <p class="afficheEquipe"> <?php clubsParLigue($idLigue, "M", 140, $bdd);?></p>
-<h3>Fédérale 2 :</h3> 
+<h3>Fédérale 2 <span class="size3 ">(<?php echo $d150;?> clubs)</span> :</h3> 
 <p class="afficheEquipe"> <?php clubsParLigue($idLigue, "M", 150, $bdd);?></p>
 
-<h3>Fédérale 3 :</h3> 
+<h3>Fédérale 3 <span class="size3 ">(<?php echo $d160;?> clubs)</span> :</h3> 
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 160, $bdd);?></p>
 <br />
 <h3>
  
 
-<h3>Régionale 1 :</h3>
+<h3>Régionale 1 <span class="size3 ">(<?php echo $d170;?> clubs)</span> :</h3>
  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 170, $bdd);?></p> 
  
- <h3>Régionale 2 :</h3> 
+ <h3>Régionale 2 <span class="size3 ">(<?php echo $d180;?> clubs)</span> :</h3> 
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 180, $bdd);?></p>
 
-<h3>Régionale 3 :</h3> 
+<h3>Régionale 3 <span class="size3 ">(<?php echo $d190;?> clubs)</span> :</h3> 
  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 190, $bdd);?></p>
 
 <h3>Equipes féminines :</h3>
@@ -444,7 +458,7 @@ echo "<br/>";
   color: red;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 80%;
   border: none;
   text-align: left;
   outline: none;
@@ -453,7 +467,7 @@ echo "<br/>";
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: white; 
 }
 
 .panel {
@@ -465,31 +479,22 @@ echo "<br/>";
 </style>
 </head>
 <body>
-
-
-
-<button class="accordion ">Clubs en sommeil</button>
+<button class="accordion ">Ententes, regroupements, fusions : <span class="size3">(Cliquer pour ouvrir)</span></button>
 <div class="panel">
-  <?php
-$tabTest = array(1,12,3,5,6,5,6); 
-foreach ($tabTest as $test)
-{
-  echo $test; echo"<br>";
-}
-?>
-<p></p>
+  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 950, $bdd);?></p>
 </div>
 
-<button class="accordion">Que sont ils de venus?</button>
+
+<button class="accordion ">Clubs en sommeil : <span class="size3">(Cliquer pour ouvrir)</span></button>
+<div class="panel">
+  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 980, $bdd);?></p>
+</div>
+
+<button class="accordion">Que sont ils devenus ? : <span class="size3">(Cliquer pour ouvrir)</span></button>
 <div class="panel">
   <p></p>
 </div>
-<!--
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
--->
+
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
