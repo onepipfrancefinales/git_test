@@ -88,9 +88,10 @@ else
 <head>
 <title>Mise à jour des résultats</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/personnalisation/admin/formulaire.css"/> 
-<link type="text/css" rel="stylesheet" href="http://francefinalesrugby.franceserv.com/smart/10.css"> 
+<link type="text/css" rel="stylesheet" href="personnalisation/admin/formulaire.css"/> 
+<link type="text/css" rel="stylesheet" href="smart/10.css"> 
 <link type="text/css" rel="stylesheet" href="CSS.css">
+<link type="text/css" rel="stylesheet" href="/smart/10.css"> 
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
@@ -104,9 +105,24 @@ else
   </tr>
 </table>
 <p> 
-  <?php echo "L'identifiant et/ou le mot de passe saisis ne sont pas reconnus ";echo "<br />";
-echo $login.' '.$pwd;echo "<br />";?>
+  <?php 
+echo "L'identifiant et/ou le mot de passe saisis ne sont pas reconnus "
+."<br>"
+."Identifiant saisi : ".$login
+."<br>"
+."Mot de passe saisi : ".$pwd
+."<br>";?>
 </p>
+<p>
+
+
+Vous pouvez contacter pas SMS le 06.82.24.70.57 pour communiquer<br>
+le nom du club et l'identifiant que vous utilisez pour vérifier <br>
+leurs précenses dans notre base de données.
+</p>
+
+
+
 <table width="234" align="center">
   <tbody> 
   <tr> 

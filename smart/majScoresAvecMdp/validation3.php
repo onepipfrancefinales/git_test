@@ -185,7 +185,7 @@ include ("toutesJournees.php");
 $numeroJournee = substr("$journee", -2);
 ?>
 <p class="equipe"> <font face="Arial, Helvetica, sans-serif" color="#FF0000" size="3"><b> 
-  Cette journ&eacutee a d&eacutej&agrave; &eacutet&eacute renseign&eacutee. vous 
+  Cette journée a déjà été renseignée. vous 
   pouvez confirmer ou signaler une erreur. </b></font><br/>
 <?php 
 if (isset($dateBrute)) $dateBrute = $dateBrute;else $dateBrute = $date ;
@@ -304,7 +304,7 @@ echo $numeroJournee.''."me journée"; ?>
 			echo "Non renseigné";
 		 //	echo "Bonus Offensif" ; 
 			}
-
+/*
 
 	if ($bddComite== 'fed3ne' OR $bddComite=='pro' OR $bddComite== 'fed3NE')
 	{	
@@ -312,14 +312,35 @@ echo $numeroJournee.''."me journée"; ?>
 	}
 	else
 	$champ = substr($journee,0,6);
-			
+	*/
+
+
+
+	if (substr($championnat, 2, 1) == 1)
+	$poule = substr($championnat, -1);
+  else
+	$poule = substr($championnat, -1) + 8;
+	
+	if (substr($championnat, 3, 1) == 1) {
+		$champ = 991161;
+	  } else {
+		$champ = 991261;
+	  }
+
+
+
 			
 			?>
     </td>
   </tr>
 </table>
 <p class="tab4"> 
+	<!--
 <a href="../171.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ; ?>">Confirmer ces résultats et <br />accèder au nouveau classement</a>
+-->
+<a href="../171.php?champ=<?php echo $champ; ?>&comite=fed3NE&bddComite=fed3NE&comite2=fed3GS&ancre=<?php echo "#".$poule; ?>">Confirmer ces résultats et <br />accèder au nouveau classement</a>
+
+
 </p>
 
 

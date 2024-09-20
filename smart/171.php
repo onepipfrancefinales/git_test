@@ -11,6 +11,12 @@ if (isset($_GET['champ'])) {
 if (isset($_GET['bddComite'])) {
 	$bddComite = $_GET['bddComite'];
 }
+if (isset($_GET['ancre'])) {
+	$ancre = $_GET['ancre'];
+}
+
+
+
 
 require '../resultats/fonctions.php';
 require 'fonctions.php';

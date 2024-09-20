@@ -30,7 +30,7 @@ $division =substr($champ,3,3);
 <?php 
 
 
-if ($cmt == 990140 or $cmt== 990150 or $cmt == 991160 or $cmt == 992160 or $cmt == 990240 or $cmt == 990250 or $cmt == 9912160 or $cmt == 9922160)
+if ($cmt == 990140 or $cmt== 990150 or $cmt == 991161 or $cmt == 992161 or $cmt == 990240 or $cmt == 990250 or $cmt == 9912161 or $cmt == 9922161)
 {
 	?>
 	<td class="bulleReglement"> 

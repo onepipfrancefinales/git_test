@@ -36,6 +36,10 @@ font.phpfed3NE {color: #3b487f; font-size: 18pt;  font-weight: bold }
 
 .popper { POSITION: center; VISIBILITY: hidden }
 
+.center {
+    text-align: center;
+}
+
 
 
 
