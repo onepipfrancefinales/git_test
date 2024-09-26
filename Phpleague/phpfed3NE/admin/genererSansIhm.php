@@ -10,49 +10,15 @@ echo "<br />";
 echo "<hr />";
 if (isset($champRecup)) ; else $champRecup=0;
 
-//fed1
-if ($champRecup == 990141)
-	$tableau = array(990141, 990142, 990143, 990144);	
-elseif ($champRecup == 990241)
-	$tableau = array(990141, 990242, 990243, 990244);	
-//fed2
-elseif ($champRecup == 990151)
-	$tableau = array(990151, 990152, 990153, 990154,990155, 990156, 990157, 990158);	
-elseif ($champRecup == 990251)
-	$tableau = array(990251, 990252, 990253, 990254,990255, 990256, 990257, 990258);	
-
 //fed3 Equipes I
-elseif ($champRecup == 991161 OR $champRecup == 992161 )
-	$tableau = array( 991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168, 991169,
-	                  992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168, 992169);	
-//fed3 Equipes I - Poules 1 à 9					 
-//elseif ($champRecup == 991161)
-//	$tableau = array( 991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168, 991169);
-
-//fed3 Equipes I - Poules 10 à 18	                 					 
-//elseif ($champRecup == 992161)
-//	$tableau = array( 992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168, 992169);	
+if ($champRecup == 991161 OR $champRecup == 992161 )
+	$tableau = array( 991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168,
+	                  992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168);	
 
 //fed3 Equipes II
 elseif ($champRecup == 991261 OR  $champRecup == 992261)
-	$tableau = array( 991261, 991262, 991263, 991264, 991265, 991266, 991267, 991268, 991269,
-	                  992261, 992262, 992263, 992264, 992265, 992266, 992267, 992268, 992269);
-					 
-//fed3 Equipes II - Poules 1 à 9
-//elseif ($champRecup == 991261)
-//	$tableau = array( 991261, 991262, 991263, 991264, 991265, 991266, 991267, 991268, 991269,);
-					 
-//fed3 Equipes II - Poules 10 à 18
-elseif ($champRecup == 992261)
-	$tableau = array( 992261, 992262, 992263, 992264, 992265, 992266, 992267, 992268, 992269);
-
-
-
-
-//fem
-elseif ($champRecup == 816285)
-	$tableau = array(816281, 816282, 816285, 816191,816192, 816193, 816194);	
-
+	$tableau = array( 991261, 991262, 991263, 991264, 991265, 991266, 991267, 991268,
+	                  992261, 992262, 992263, 992264, 992265, 992266, 992267, 992268);
 
 //for ($champ =$champRecup; $champ <$champRecup+8; $champ++)
 foreach ($tableau as $champ)
@@ -157,6 +123,3 @@ foreach ($tableau as $champ)
 
 }
 ?>
-<!--
-</td></tr></table>
--->

@@ -175,9 +175,9 @@ function aff_journee($champ, $bdd)
 		 echo "<td class=\"exterieur\">".$clubs_nom1."</td>";	
 		
 ?>
-<!--   		<td><div align="right" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php echo $DebMarqueur1.$clubs_nom.$FinMarqueur1;?></font></div></td>
-			<td><div align="center"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php echo $domproba.' - '.$extproba;?></font></div></td>
-		    <td><div align="left" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php echo$DebMarqueur2.$clubs_nom1.$FinMarqueur2;?></font></div></td>		   
+<!--   		<td><div align="right" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php //echo $DebMarqueur1.$clubs_nom.$FinMarqueur1;?></font></div></td>
+			<td><div align="center"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php //echo $domproba.' - '.$extproba;?></font></div></td>
+		    <td><div align="left" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php //echo $DebMarqueur2.$clubs_nom1.$FinMarqueur2;?></font></div></td>		   
 --->
 <?php
          echo "</tr>\n";
@@ -284,9 +284,9 @@ $minute = 0;$heure = 0;  $jour = 0; $mois = 0;$annee = 0;
 // ***********************
 function classementDetaille($champ, $bdd)
 {
-  $comite ="phppl";
-  $lien="oui";
-  $type= "GENERAL";
+//  $comite ="phppl";
+//  $lien="oui";
+//  $type= "GENERAL";
   $legende = "";
  
  //bar�mes du championnat
@@ -298,7 +298,7 @@ function classementDetaille($champ, $bdd)
 	{
 	$accession = $row[0];
 	$barrage = $row[1];
-	$relegation =  $row[2]; 
+//	$relegation =  $row[2]; 
 	}
 	
 	
@@ -314,26 +314,26 @@ function classementDetaille($champ, $bdd)
 
 	<th align=\"center\">".CLMNT_POSITION."</th>
 	<th align=\"left\">".CLMNT_EQUIPE."</th>
-	<th align=\"left\">".CLMNT_POINTS."</th>
-	<th align=\"left\">".CLMNT_JOUES."</th>
-	<th align=\"left\">".CLMNT_VICTOIRES."</th>
-	<th align=\"left\">".CLMNT_NULS."</th>
-	<th align=\"left\">".CLMNT_DEFAITES."</th>
-	<th align=\"left\">".CLMNT_BUTSPOUR."</th>
-	<th align=\"left\">".CLMNT_BUTSCONTRE."</th>
-	<th align=\"left\">".CLMNT_DIFF."</th>
-	<th align=\"left\">".CLMNT_PEN."</th>
-	<th align=\"left\">".PTS_ADMIN."</th>
-	<th align=\"left\">".JOURPERE."</th>
-	<th align=\"left\"></th></tr>\n";
+	<th align=\"center\">".CLMNT_POINTS."</th>
+	<th align=\"center\">".CLMNT_JOUES."</th>
+	<th align=\"center\">".CLMNT_VICTOIRES."</th>
+	<th align=\"center\">".CLMNT_NULS."</th>
+	<th align=\"center\">".CLMNT_DEFAITES."</th>
+	<th align=\"center\">".CLMNT_BUTSPOUR."</th>
+	<th align=\"center\">".CLMNT_BUTSCONTRE."</th>
+	<th align=\"center\">".CLMNT_DIFF."</th>
+	<th align=\"center\">".CLMNT_PEN."</th>
+	<th align=\"center\">".PTS_ADMIN."</th>
+	<th align=\"center\">".JOURPERE."</th>
+	<th align=\"center\"></th></tr>\n";
 
  //  if (isset ($legende)) $legende =$legende;else $legende= "";
  // if ($debut=="1" and $fin==$nb_journees)
  // {
-	$nom = array();
-	$points= array();
-	$joues = array();
-	$id_equipe = array();
+//	$nom = array();
+///	$points= array();
+//	$joues = array();
+//	$id_equipe = array();
 
 	$res=$bdd->query("SELECT NOM, POINTS, JOUES, G, N, P, BUTSPOUR, BUTSCONTRE, DIFF, PEN, PTS_ADMIN, JOURPERE
 					  FROM phppl_clmnt_cache 
@@ -360,11 +360,17 @@ function classementDetaille($champ, $bdd)
       echo "<td><div align=\"center\"><font color=\"#000000\"> $pl</font> </div></td>";
       $pl++;
       $x=0;
-	  //colonne x de 0 � 11 --  Equipe Points .....Bonus Admin Pereq
+//colonne 2
+echo "<td><div align=\"left\"><font color=\"#000000\"> $row[0]</font> </div></td>";
+//$pl++;
+$x=1;
+
+
+	  //colonne x de 2 à 11 --  Equipe Points .....Bonus Admin Pereq
 	  while($x<12)
 	  {
-		echo "<td><div align=\"left\">";   
-         if ($x==0)
+		echo "<td><div align=\"center\">";   
+         if ($x==2)
 		  {
 		  // echo "<a href=/resultats/bilan/page_bilan.php?comite=$comite&amp;champ=$champ target=\"_top\">$row[$x]</a>";
 		  echo "$row[$x]";
@@ -379,7 +385,7 @@ function classementDetaille($champ, $bdd)
 	echo "</div></tr>\n";
 	}
  echo "</table>";
-// echo "Admin correspond aux points  (p�r�quations,etc...)";
+// echo "Admin correspond aux points  (péréquations,etc...)";
  echo "<br />";
 }
 
@@ -612,6 +618,8 @@ if ($smart == false)
 
 //************************
 // *** REMPLI LA TABLE CLMNT
+
+/*
 function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
 {
 	 
@@ -890,7 +898,7 @@ else
 //$resultat=mysqli_query($requete) or die (mysqli_error());
 //mysql_query("UNLOCK TABLES") or die (mysql_error());
 }
-
+*/
 function clmnt($champ,$smart, $bdd)
 {
   $comite ="phppl";
@@ -989,7 +997,7 @@ function clmnt($champ,$smart, $bdd)
 }		
 
 
-
+/*
 function Buteur($legende, $requete, $type, $EquipeFetiche, $champ, $debut, $fin, $equipe, $complet)
 {
 echo "<table class=\"tablephppl2\" align=\"center\" cellspacing=\"0\" width=\"80%\" bgcolor=\"#FFFFFF\"><tr class=\"trphppl3\"><th colspan=\"11\">".$legende."<br /></th></tr>\n";
@@ -1042,7 +1050,7 @@ $total="-1";
 if (!isset($complet)) {echo "<tr><td align=\"right\" colspan=\"4\"><a href=\"buteur.php?champ=$champ&amp;complet=1&amp;type=$type&amp;equipe=$equipe&amp;debut=$debut&amp;fin=$fin\">".PRONO_CLASSEMENT_COMPLET."</a></td></tr>";}
 echo "</table>";
 }
-
+*/
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Titre       : Add-on Gestion des clubs (fiches clubs), mini-classement,                     //
@@ -1087,7 +1095,7 @@ echo "</table>";
 //        }
 //        }
 
-
+/*
 function clmntmini($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $phpplEAGUE_RACINE, $id_equipe_fetiche)
 {
 
@@ -1229,7 +1237,9 @@ $action=0;
         }
         echo "</table>\n";
    }
+*/
 
+/*
 function clmntmini_barre($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
 {
 echo "<table class=tablephppl2 align=\"center\" cellspacing=\"0\" width=\"200\"><tr class=trphppl3><th colspan=10>".$legendemini;
@@ -1311,7 +1321,9 @@ elseif ($pl<$av){$pl++;}
 
 echo "</table>";
 }
+*/
 
+/*
 function clmntred($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini, $champmini, $requetemini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
 {
 echo "<table class=tablephppl2 align=\"center\" cellspacing=\"0\"  width=\"200\"><tr class=trphppl3><th colspan=10>".$legendemini;
@@ -1363,7 +1375,8 @@ $pl=1;
 
         echo "</table>";
 }
-
+*/
+/*
 function clmnt_barrered($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
 {
 //mise en forme du mini classement
@@ -1425,7 +1438,8 @@ $action=0;
         }
         echo "</table>";
    }
-
+*/
+/*
 function demande_champ ()
 {
 // pour quel championnat ?
@@ -1464,7 +1478,8 @@ function demande_champ ()
         <input type="submit" value="<?php print $button; ?>"></div></form>
   <?php
 }
-
+*/
+/*
 function demande_equipe($champ)
 {
   
@@ -1494,7 +1509,7 @@ echo "<input type=\"hidden\" name=\"champ\" value=\"$champ\">";
 echo "<input type=\"submit\" value=\"$button\">";
 echo "</form>";
 }
-
+*/
 //********************************************************************
 
 
@@ -1682,9 +1697,9 @@ $result=$bdd->query("SELECT cldom.nom as cldom, clext.nom as clext, $php_matchs.
 		 echo "<td class=\"exterieur\">".$clubs_nom1."</td>";	
 		
 ?>
-<!--   		<td><div align="right" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php// echo $DebMarqueur1.$clubs_nom.$FinMarqueur1;?></font></div></td>
-			<td><div align="center"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php// echo $domproba.' - '.$extproba;?></font></div></td>
-		    <td><div align="left" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php// echo $DebMarqueur2.$clubs_nom1.$FinMarqueur2;?></font></div></td>		   
+<!--   		<td><div align="right" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php // echo $DebMarqueur1.$clubs_nom.$FinMarqueur1;?></font></div></td>
+			<td><div align="center"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php // echo $domproba.' - '.$extproba;?></font></div></td>
+		    <td><div align="left" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php // echo $DebMarqueur2.$clubs_nom1.$FinMarqueur2;?></font></div></td>		   
 --->
 <?php
          echo "</tr>\n";
@@ -2010,9 +2025,9 @@ $result=$bdd->query("SELECT cldom.nom as cldom, clext.nom as clext, $php_matchs.
 		 echo "<td class=\"exterieur\">".$clubs_nom1."</td>";	
 		
 ?>
-<!--   		<td><div align="right" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php// echo $DebMarqueur1.$clubs_nom.$FinMarqueur1;?></font></div></td>
-			<td><div align="center"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php// echo $domproba.' - '.$extproba;?></font></div></td>
-		    <td><div align="left" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php// echo$DebMarqueur2.$clubs_nom1.$FinMarqueur2;?></font></div></td>		   
+<!--   		<td><div align="right" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php // echo $DebMarqueur1.$clubs_nom.$FinMarqueur1;?></font></div></td>
+			<td><div align="center"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php // echo $domproba.' - '.$extproba;?></font></div></td>
+		    <td><div align="left" width="40%"><font color="#000000" face="Arial, Helvetica, sans-serif" size="2"><?php // echo$DebMarqueur2.$clubs_nom1.$FinMarqueur2;?></font></div></td>		   
 --->
 <?php
          echo "</tr>\n";

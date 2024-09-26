@@ -2,7 +2,7 @@
 require "../../Phpleague/phppl/config2.php";
 require '../../Phpleague/phppl/admin/fonctions.php';
 include("../../Phpleague/phppl/lang/lang_fr.php");
-include("../../../fichierConfig.php");
+include("../../fichierConfig.php");
 ouverture();
 
 echo "<br />";
@@ -10,37 +10,16 @@ echo "champRecup : ".$champRecup;
 echo "<br />";
 echo "<hr />";
 
-if ($champRecup == 110171)
-$tableau = $tableauBFC;	
-	//$tableau = array(120171, 120181, 120191, 120192, 120193);	
-elseif ($champRecup == 110271)
-	$tableau = array(120271, 129181);
-
-
-elseif ($champRecup == 120171)
-	//$tableau = array(120171, 120181, 120191, 120192, 120211, 120212);	
-	$tableau = $tableauBRE;	
-elseif ($champRecup == 120271)
-	$tableau = array(120271, 129181);	
-
-
-elseif ($champRecup == 130171)
-$tableau = $tableauCVL;	
-	//$tableau = array(130171, 130172, 130191, 130211, 130213);	
-elseif ($champRecup == 130271)
-	$tableau = array(130271, 130272);		
-
-elseif ($champRecup == 160171)
-$tableau = $tableauHDF;	
-	//$tableau = array(160171, 160181, 160201, 160202,  160203);	
-elseif ($champRecup == 160271)
-	$tableau = array(160271, 169181);	
-
-elseif ($champRecup == 210171)
-$tableau = $tableauPDL;	
-	//$tableau = array(210171, 210191, 210211, 210212);
-elseif ($champRecup == 210271)
-	$tableau = array(210271);
+	if ($champRecup == 110171) {$tableau = $tableauBFC;	}	
+elseif ($champRecup == 110271) { $tableau = array(120271, 129181);}
+elseif ($champRecup == 120171) { $tableau = $tableauBRE;	}
+elseif ($champRecup == 120271) { $tableau = array(120271, 129181);}
+elseif ($champRecup == 130171) { $tableau = $tableauCVL;	}
+elseif ($champRecup == 130271) { $tableau = array(130271, 130272);}		
+elseif ($champRecup == 160171) { $tableau = $tableauHDF;	}	
+elseif ($champRecup == 160271) { $tableau = array(160271, 169181);}	
+elseif ($champRecup == 210171) { $tableau = $tableauPDL;	}
+elseif ($champRecup == 210271) { $tableau = array(210271);}
 
 
 

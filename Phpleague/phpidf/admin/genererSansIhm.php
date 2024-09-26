@@ -1,8 +1,8 @@
 <?php 
 require "../../Phpleague/phpidf/config2.php";
 require '../../Phpleague/phpidf/admin/fonctions.php';
-include("../../Phpleague/phpidf/lang/lang_fr.php");
-include("../../../fichierConfig.php");
+include "../../Phpleague/phpidf/lang/lang_fr.php";
+include "../../fichierConfig.php";
 
 ouverture();
 

@@ -121,7 +121,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 		echo "<td class=\"verticalAlign\"> ";
 		echo "<h3 class=\"center \">Equipe I </h3>";
 		aff_journee($champ, $bdd);
-		maj($champ, false, $comite, $bdd);
+	//	maj($champ, false, $comite, $bdd);
 		clmnt($champ, false, $bdd);
 		aff_journeeSupp($champ,  $bdd);
 		echo "</td>";
@@ -132,7 +132,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 		if (substr($champ, 3, 2) > 17)
 			$champ = $champ + 9000;
 		else $champ = $champ + 100;
-		maj($champ, false, $comite, $bdd);
+	//	maj($champ, false, $comite, $bdd);
 		clmnt($champ2, false, $bdd);
 		aff_journeeSupp($champ2,  $bdd);
 		echo "</td>";
@@ -144,7 +144,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 	} else {
 		AffichageLogos($champ, $comite, false, $bdd);
 		aff_journee($champ, $bdd);
-		maj($champ, false, $comite, $bdd);
+	//	maj($champ, false, $comite, $bdd);
 		clmnt($champ, false, $bdd);
 		aff_journeeSupp($champ,  $bdd);
 		//echo "<p class=\"ressource\">". messages ($champ);  </."</p>";
@@ -156,7 +156,6 @@ function affichage($champ, $champ2, $comite, $bdd)
 
 function affichageFacebook($champ, $comite, $bdd)
 {
-
 
 	//AffichageLogos($champ, $comite, false, $bdd);
 	//aff_journee($champ, $bdd);
