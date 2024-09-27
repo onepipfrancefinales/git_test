@@ -8,12 +8,12 @@ require '../Phpleague/phppl/lang/lang_fr.php';
 
 include("fonctions.php");
 require "constantes.php";
-//$champLigue=21;
-//$sigleLigue="(PDL)";
+$champLigue=21;
+$sigleLigue="(PDL)";
 $cmt="pl";
 $comite="phppl";
 $CMT="PL";
-//$comiteNom="Pays de Loire";?>
+$comiteNom="Pays de Loire";?>
  
 <!DOCTYPE html PUBLIC>
 <html lang="fr">

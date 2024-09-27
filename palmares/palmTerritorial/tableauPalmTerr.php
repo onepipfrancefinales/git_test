@@ -30,7 +30,7 @@ nomLigue($idLigue, $sigleLigue, $bdd)
 
 <body class="backgroundBlack">
 
-  <table class="borderNone marginAuto width1250">
+  <table>
     <tr>
       <td> <?php include("../../images/page_image_al.php"); ?></td>
     </tr>
@@ -117,13 +117,13 @@ nomLigue($idLigue, $sigleLigue, $bdd)
       </td>
     </tr>
     <tr>
-      <th class="width50"></th>
-      <th class="width200">honneur</th>
-      <th class="width200">promotion <br>honneur</th>
-      <th class="width200">1re série</th>
-      <th class="width200">2me série</th>
-      <th class="width200">3me série</th>
-      <th class="width200">4me série</th>
+      <th class="equipeI width50"></th>
+      <th class="equipeI width200">honneur</th>
+      <th class="equipeI width200">promotion <br>honneur</th>
+      <th class="equipeI width200">1re série</th>
+      <th class="equipeI width200">2me série</th>
+      <th class="equipeI width200">3me série</th>
+      <th class="equipeI width200">4me série</th>
     </tr>
     <tr>
       <td class="equipes "> <?php saison(170, $comite, $bdd, $debut, $fin); ?></td>
@@ -135,87 +135,92 @@ nomLigue($idLigue, $sigleLigue, $bdd)
       <td class="equipes width200"> <?php palmares($comite, 220, $bdd, $debut, $fin); ?></td>
     </tr>
   </table>
- 
- 
-<!--  saisons 1999 - 1980  -->
-  <?php 
-   if ($id == 29 or $id == 12  or $id == 15 or $id == 19)
-  {
-  if ($terr == 'terr'  ) { ?> 
-  <br>
-  <div class="center styleArial">
-          <a class="colorWhite" href="tableauPalmTerr.php?paramIdComite=<?php echo $id; ?>&terr=terr2">Consulter les palmarès des saisons 1999 -1980</a>
-          <br>
-          <br>
-             <?php
-            }
-            ?>
+  <?php
+  if ( $id != 28  or $id != 11  or $id != 30 or $id != 20 or $id != 33 or $id != 32 or $id != 26 or $id != 35 or $id != 31)
+  { ?> 
+
+<button class="accordion ">Palmarès des saisons 1999 - 1980 <span class="size3">(Cliquer pour ouvrir)</span></button>
+<div class="panel">
+  <p class="afficheEquipe"><?php  require 'tableauPalmTerr2.php'; ?></p>
 </div>
 
-   <?php  if ($terr == "terr2" or $terr == "terr3") {            
- require 'tableauPalmTerr2.php'; 
-  
-
-}
-
-// saison 1979 - 1960
-
-   if ($terr == "terr2" ) { ?>
-
-<div class="center styleArial">
-          <br>
-          <a class="colorWhite" href="tableauPalmTerr.php?paramIdComite=<?php echo $id; ?>&terr=terr3">Consulter
-              les palmarès des saisons 1979 -1960</a>
-              <br>   
-             
-             <?php
-            }
-}
-
-            ?>
-</div>
-
-<?php  if ($terr == "terr3") {            
- require 'tableauPalmTerr3.php';  
+<?php
  }
 ?>
 
-<!--
-  <p class=" center size6 colorWhite"><b>Equipes réserves</b></p>
-  
-  <table class="borderNone marginAuto width1000">
-    <tr>
-      <th class="width50"></th>
-      <th class="width200">honneur</th>
-      <th  class="width200">promotion <br>honneur</th>
-      <th  class="width200">1re série</th>
-      <th  class="width200">2me série</th>
-    </tr>
-    <tr>
-      <td class="equipes"><?php saison2(270, $comite, $bdd); ?></td>
-      <td class="equipes width200"><?php palmares2($comite, 270, $bdd); ?></td>
-      <td class="equipes width200"><?php palmares2($comite, 9180, $bdd); ?></td>
-      <td class="equipes width200"><?php palmares2($comite, 9190, $bdd); ?></td>
-      <td class="equipes width200"><?php palmares2($comite, 9200, $bdd); ?></td>
-    </tr>
-  </table>
--->
-  <table class="borderNone marginAuto width1250">
-    <tr>
-      <td>
-        <?php include("../../comitebas.php");?>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <?php // include("../../pub/1.php"); ?>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <?php include("../../bas.php");?>
-      </td>
-    </tr>
-  </table>
+
+ <?php
+
+if ( $id == 12  or $id == 19  or $id == 25 or $id == 29)
+  { ?> 
+
+
+
+<button class="accordion ">Palmarès des saisons 1979 - 1960 <span class="size3">(Cliquer pour ouvrir)</span></button>
+<div class="panel">
+  <p class="afficheEquipe"><?php  require 'tableauPalmTerr3.php'; ?></p>
+</div>
+
+<?php
+ }
+?>
+
+
+
+<button class="accordion">Seniors II : <span class="size3">(Cliquer pour ouvrir)</span></button>
+<div class="panel">
+  <p class="afficheEquipe"><?php  require 'tableauPalmTerrRes.php'; ?></p></p>
+</div>
+
 </body>
+<footer>
+<?php include("footer.php");?>
+</footer>
 </html>
+
+<style>
+.accordion {
+  margin: auto;
+  font-family:arial;
+  background-color: black;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 1250px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 23px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: black; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: black;
+  overflow: hidden;
+}
+</style>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>

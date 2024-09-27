@@ -9,12 +9,12 @@ require '../Phpleague/phppl/consult/fonctions_matchs.php';
 require '../Phpleague/phppl/lang/lang_fr.php';
 include("fonctions.php");
 require "constantes.php";
-//$champLigue = 13;
-//$sigleLigue = "(CVL)";
+$champLigue = 13;
+$sigleLigue = "(CVL)";
 $comite = "phppl";
 $CMT = "CE";
 $cmt = "ce";
-//$comiteNom = "du Centre"; ?>
+$comiteNom = "du Centre"; ?>
 
 <!DOCTYPE html PUBLIC>
 <html lang="fr">

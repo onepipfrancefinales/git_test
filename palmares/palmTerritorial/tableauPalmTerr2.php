@@ -1,19 +1,16 @@
-  <br>
-  <br>
-
-  <?php
+<?php
   $debut = 1999;
   $fin = 1979;
   ?>
   <table class="borderNone marginAuto width1250  backgroundBlack">
     <tr>
-      <th class="width50"></th>
-      <th class="width200">honneur</th>
-      <th class="width200">promotion <br>honneur</th>
-      <th class="width200">1re série</th>
-      <th class="width200">2me série</th>
-      <th class="width200">3me série</th>
-      <th class="width200">4me série</th>
+      <th class="equipeI width50"></th>
+      <th class="equipeI width200">honneur</th>
+      <th class="equipeI width200">promotion <br>honneur</th>
+      <th class="equipeI width200">1re série</th>
+      <th class="equipeI width200">2me série</th>
+      <th class="equipeI width200">3me série</th>
+      <th class="equipeI width200">4me série</th>
     </tr>
     <tr>
       <td class="equipes "> <?php saison(170, $comite, $bdd, $debut, $fin); ?></td>

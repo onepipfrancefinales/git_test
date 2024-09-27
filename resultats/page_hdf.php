@@ -7,12 +7,12 @@ require '../Phpleague/phppl/consult/fonctions_matchs.php';
 require '../Phpleague/phppl/lang/lang_fr.php';
 include 'fonctions.php';
 require 'constantes.php';
-//$champLigue = 16;
-//$sigleLigue = "(HDF)";
+$champLigue = 16;
+$sigleLigue = "(HDF)";
 $comite = "phppl";
 $CMT = "FL";
 $cmt = "fl";
-//$comiteNom = "des Flandres"; ?>
+$comiteNom = "des Flandres"; ?>
 
 
 <!DOCTYPE html PUBLIC>

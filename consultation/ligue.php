@@ -477,23 +477,8 @@ echo "<br/>";
   overflow: hidden;
 }
 </style>
-</head>
-<body>
-<button class="accordion ">Ententes, regroupements, fusions : <span class="size3">(Cliquer pour ouvrir)</span></button>
-<div class="panel">
-  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 950, $bdd);?></p>
-</div>
 
 
-<button class="accordion ">Clubs en sommeil : <span class="size3">(Cliquer pour ouvrir)</span></button>
-<div class="panel">
-  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 980, $bdd);?></p>
-</div>
-
-<button class="accordion">Que sont ils devenus ? : <span class="size3">(Cliquer pour ouvrir)</span></button>
-<div class="panel">
-  <p></p>
-</div>
 
 <script>
 var acc = document.getElementsByClassName("accordion");

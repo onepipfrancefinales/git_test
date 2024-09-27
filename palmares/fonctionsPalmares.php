@@ -353,7 +353,7 @@ function palmares2($comite, $rang, $bdd)
 	// d�claration des toutes les variables en variables globales soit( $honneur2018, $honneur2017, $honneur2016,....)
 
 	$tabPalmaresHonneur = array();
-	for ($i = $maxAnnee; $i > 2000; $i--) {
+	for ($i = $maxAnnee; $i > 1990; $i--) {
 		global ${"honneur" . ($i)};
 
 		// requete permettant de r�cup�rer les champions du comit� demand�
@@ -372,9 +372,8 @@ function palmares2($comite, $rang, $bdd)
 		// affectation  des variables  
 		//echo $i; //echo "<br>";
 		//echo $nbre; echo "<br>";
-		//echo $tabPalmaresHonneur[0];		
-		if (isset($tabPalmaresHonneur[$nbre])) ${"honneur" . ($i)} = $tabPalmaresHonneur[$nbre];
-		else ${"honneur" . ($i)} = '-';
+		//echo $tabPalmaresHonneur[20];		
+		if (isset($tabPalmaresHonneur[$nbre])) ${"honneur" . ($i)} = $tabPalmaresHonneur[$nbre];else ${"honneur" . ($i)} = '-';
 		echo substr(${"honneur" . ($i)}, 0, 30);
 		echo "<br><hr>";
 		$nbre = $nbre + 1;
@@ -386,10 +385,10 @@ function saison2($rang, $comite, $bdd)
 {
 	$nbre = 0;
 
-	// Recherche de la derniere ann�e enregistr�e
+	// Recherche de la derniere année enregistr�e
 	$reponse = $bdd->query("SELECT MAX(saison)
 				FROM bdequipe2
-				WHERE (rang='$rang' or rang='$rang+9000') 
+				WHERE (rang='$rang' or rang='$rang + 9000') 
 				AND comite1 ='$comite' 
 				AND championnat != 'de France' 
 				AND titre='Champion'
@@ -399,7 +398,10 @@ function saison2($rang, $comite, $bdd)
 	}
 
 	// d�claration des toutes les variables en variables globales soit( $honneur2018, $honneur2017, $honneur2016,....)
-	for ($i = $maxAnnee; $i > 2000; $i--) {
+	
+	$tabPalmaresHonneur =array();	
+	
+	for ($i = $maxAnnee; $i > 1990; $i--) {
 
 		global ${"honneur" . ($i)};
 
@@ -408,7 +410,7 @@ function saison2($rang, $comite, $bdd)
 		$reponse = $bdd->query("SELECT  champion
 				 FROM bdequipe2
 				 WHERE  saison=$i 
-				 and (rang='$rang' or rang='$rang+9000') 
+				 and (rang='$rang' or rang='$rang + 9000') 
 				 and comite1 ='$comite' 
 				 and championnat != 'de France' 
 				 and titre='Champion'
@@ -420,8 +422,7 @@ function saison2($rang, $comite, $bdd)
 		//echo $i; //echo "<br>";
 		//echo $nbre; echo "<br>";
 
-		if (isset($tabPalmaresHonneur[$nbre])) ${"honneur" . ($i)} = $tabPalmaresHonneur[$nbre];
-		else ${"honneur" . ($i)} = '-';
+		if (isset($tabPalmaresHonneur[$nbre])) ${"honneur". ($i)} = $tabPalmaresHonneur[$nbre];	else ${"honneur" . ($i)} = '-';
 		echo $i;
 		echo "<br><hr>";
 		$nbre = $nbre + 1;

@@ -7,12 +7,12 @@ require '../Phpleague/phpidf/consult/fonctions_matchs.php';
 require '../Phpleague/phpidf/lang/lang_fr.php';
 include("fonctions.php");
 require "constantes.php";
-//$champLigue = 17;
-//$sigleLigue = "(IDF)";
+$champLigue = 17;
+$sigleLigue = "(IDF)";
 $comite = "phpidf";
 $CMT = "IDF";
 $cmt = "idf";
-//$comiteNom = "Ile de France";
+$comiteNom = "Ile de France";
 ?>
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
