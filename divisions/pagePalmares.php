@@ -1,4 +1,7 @@
-<?php $division = $_GET['division'];  ?>
+<?php 
+$division = $_GET['division']; 
+require '../palmares/fonctionsPalmares.php'; 
+ ?>
 <!DOCTYPE html>  
 <head>
 <meta name="description"

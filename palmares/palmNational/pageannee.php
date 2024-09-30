@@ -1,5 +1,6 @@
-<?php $annee = $_POST['saison'];
-//echo $annee;
+<?php 
+$annee = $_POST['saison'];
+require '../fonctionsPalmares.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,62 +21,55 @@
 </head>
 
 <body>
-    <table class="marginAuto width1250"  >
-      <tr>
-        <td colspan="3" > 
-          <?php include("../../images/page_image_al.php");  ?> 
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <?php include("../../01ligne.php");   ?>
-        </td>
-      </tr>
-      <tr>
-        <td class="colonne">
-          <?php include("../../01gauche.php");  ?>
-        </td>
-        <td  class="centreDePage"> <br>
-          <br>
-          <br>
-          <div id="titre"> Champions de France <?php echo  $annee; ?></div>
-          <br>
-          <br>
-          <table class="marginAuto">
-            <tr>
-              <td>
-                <div id="lienfinale"> <?php echo "<a href=pagefinaleannee.php?variable_1=".$annee.">Consulter les finales (oppositions et scores)</a> "; ?></div>
-              </td>
-            </tr>
-          </table>
-          <br> <br> <br>
-          <?php include("annee.php");  ?>
-        </td>
-        <td class="colonne">
-          <?php include("../../00droite.php");    ?>
-        </td>
-      </tr>
-       </table>
-        <table class="marginAuto backgroundBlanc" >
-          <tr>
-            <td ><?php include("../../comitebas.php"); ?></td>
-          </tr>
+  <table class="marginAuto width1250">
+    <tr>
+      <td colspan="3">
+        <?php include("../../images/page_image_al.php");  ?>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <?php include("../../01ligne.php");   ?>
+      </td>
+    </tr>
+    <tr>
+      <td class="colonne">
+        <?php include("../../01gauche.php");  ?>
+      </td>
+      <td class="centreDePage"> <br>
+        <br>
+        <br>
+        <div id="titre"> Champions de France <?php echo  $annee; ?></div>
+        <br>
+        <br>
+        <table class="marginAuto">
           <tr>
             <td>
-               <?php  //include("../../pub/pub1.php");    ?>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <?php include("../../bas.php"); ?>
+              <div id="lienfinale"> <?php echo "<a href=pagefinaleannee.php?variable_1=" . $annee . ">Consulter les finales (oppositions et scores)</a> "; ?></div>
             </td>
           </tr>
         </table>
-    
-       
-
+        <br> <br> <br>
+        <?php include("annee.php");  ?>
+      </td>
+      <td class="colonne">
+        <?php include("../../00droite.php");    ?>
+      </td>
+    </tr>
+  </table>
+  <table class="marginAuto backgroundBlanc">
+    <tr>
+      <td><?php include("../../comitebas.php"); ?></td>
+    </tr>
+    <tr>
+      <td>
+        <?php  //include("../../pub/pub1.php");    
+        ?>
+      </td>
+    </tr>
+  </table>
 </body>
-
-
-
+<footer>
+<?php include("../../bas.php"); ?>
+</footer>
 </html>

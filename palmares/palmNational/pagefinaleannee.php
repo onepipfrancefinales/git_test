@@ -1,7 +1,11 @@
-<?php $annee = $_GET['variable_1']; ?>
+<?php $annee = $_GET['variable_1']; 
+require '../fonctionsPalmares.php';
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
+<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagefinaleannee.php?variable_1=<?php echo $annee; ?>">
 <meta name="description" content="Le site non officiel du Comité Midi Pyrénées de rugby : Histoire, clubs, calendrier des matches, comp�titions, r�sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
 <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
@@ -38,7 +42,7 @@
       </tr>
       <tr valign="middle" align="center" bgcolor="#FFFFFF">
         <td height="24" colspan="3">
-          <font color="#FFFFFF"></font>
+          
           <font color="#FFFFFF">
             <?php include("../../pub/pub12.php");   ?>
           </font>
@@ -46,7 +50,7 @@
       </tr>
       <tr valign="middle" align="center" bgcolor="#000000">
         <td width="225" height="505" bgcolor="#006699" align="center" valign="top">
-          <div align="center"> </div>
+        
           <div align="center">
 
             <?php include("../../01gauche.php");    ?>
@@ -59,7 +63,6 @@
 
 
           <?php include("finaleannee.php");   ?>
-
         </td>
         <td height="505" bgcolor="#006699" width="225" valign="top">
           <p>
@@ -76,16 +79,7 @@
                   <?php include("../../comitebas.php");   ?>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <?php include("../../pub/pub1.php");   ?>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <?php include("../../bas.php");  ?>
-                </td>
-              </tr>
+            
             </table>
           </div>
         </th>
@@ -93,6 +87,7 @@
     </table>
   </div>
   <footer>
+  <?php include("../../bas.php");  ?>
     <!--	
       <div id="9129-5"><script src="//ads.themoneytizer.com/s/gen.js?type=5">
 			</script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=9129&formatId=5" >

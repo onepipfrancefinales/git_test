@@ -244,6 +244,29 @@ $saisonEnCours=$row[0];
 		}
 	}
 
+
+
+	function palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd) {
+
+
+		$reponse = $bdd->query("SELECT saison, titre, championnat, division
+								FROM $table
+								WHERE categorie='$categorie' AND (entente='$id_equipe' OR entente='$nomChampion')   
+		ORDER BY saison desc");
+
+while ($donnees = $reponse->fetch()) {
+echo $donnees['saison'] . ' ' . $donnees['titre'] . ' ' . $donnees['championnat'] . ' ' . $donnees['division']
+. "<br />";
+}
+
+
+	}
+
+
+
+
+
+
 	//**************************************************
 
 	/*****Europe  */

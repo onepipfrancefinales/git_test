@@ -10,7 +10,7 @@ else $base = '-';
 <html lang="fr">
 
 <head>
-<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmares.php?division=<?php echo $division;?>" >
+	<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmares.php?division=<?php echo $division; ?>">
 	<meta name="description" content="Palmarès des champions de france de rugby par divisions et par années">
 	<meta name="classification" content="Sport,Rugby">
 	<meta name="resource-type" content="document">
@@ -52,9 +52,9 @@ else $base = '-';
 				if ($division == 110)
 					require("top14.php");
 				else {
-						// A partir de la saison 2023
+					// A partir de la saison 2023
 					require("palmaresLigues2023.php");
-						// De la saison 2019 à la saison 2022
+					// De la saison 2019 à la saison 2022
 					require("palmaresLigues.php");
 					echo "<hr />";
 					echo "<i>" . "Saison 2018-2019 : Réformes Territoriales";
@@ -62,7 +62,7 @@ else $base = '-';
 					echo "Les 27 comités territoriaux métropolitains sont transformés en 13 ligues régionales,
 							identiques aux nouvelles régions administratives françaises." . "</i>";
 					echo "<br>" . "<hr>";
-						// Saison antérieure à la saiaon 2019
+					// Saison antérieure à la saiaon 2019
 					require("palmares.php");
 				}
 				?>
@@ -71,10 +71,11 @@ else $base = '-';
 				<?php include("../../00droite.php"); ?>
 			</td>
 		</tr>
-		<tr>
-			<?php include("../../footer.php");  ?>
-		</tr>
 	</table>
-<footer> </footer>
+
 </body>
+<footer> 
+	<?php include("../../footer.php");  ?>
+</footer>
+
 </html>

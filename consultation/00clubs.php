@@ -453,7 +453,7 @@ else  $width = "90%";
       echo "<h2> Cadets </h2>";
   } ?>
   <div id="palmares" class="center">
-    <?php palmares($nomChampion, $table, $categorie, $bdd); ?>
+    <?php palmaresParClub($nomChampion,$id_equipe, $table, $categorie, $bdd);  ?>
   </div>
 
   <br>

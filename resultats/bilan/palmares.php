@@ -207,7 +207,7 @@ $reponse = $bdd->query("SELECT entente
 		while ($donnees = $reponse->fetch() )
 			{ 
 			?>
-			<div class="palmares"><?php echo $donnees['saison'].' '.$donnees['titre'].' '.$donnees['championnat'].' '.$donnees['division'].' '. $donnees['champion_entente'];?></div>
+			<div class="palmares"><?php //echo $donnees['saison'].' '.$donnees['titre'].' '.$donnees['championnat'].' '.$donnees['division'].' '. $donnees['champion_entente'];?></div>
 			
    		 	
 <?php

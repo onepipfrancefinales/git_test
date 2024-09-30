@@ -51,7 +51,7 @@
   $BREResPH = 0;
 
   // ***** Bourgogne *****															
-  $BFCH = 21995;
+  $BFCH = 21955;
   $BFCPH = 21957;
   $BFCS1 = 21959;
   $BFCResH = 21956;

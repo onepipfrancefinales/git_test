@@ -11,7 +11,7 @@ echo "<hr />";
 if (isset($champRecup)) ; else $champRecup=0;
 
 //fed3 Equipes I
-if ($champRecup == 991161 OR $champRecup == 992161 )
+if ($champRecup == 991161 OR $champRecup == 991261 )
 	$tableau = array( 991161, 991162, 991163, 991164, 991165, 991166, 991167, 991168,
 	                  992161, 992162, 992163, 992164, 992165, 992166, 992167, 992168);	
 

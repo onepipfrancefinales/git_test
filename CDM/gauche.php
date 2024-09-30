@@ -131,7 +131,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   </tr>
   <tr> 
     <td colspan="2"> 
-      <div align="center"><font size="5"><a href="Ppalmares.php"><b>Palmarès</b></a></font></div>
+      <div align="center"><font size="5"><a href="palmares.php"><b>Palmarès</b></a></font></div>
     </td>
   </tr>
   <tr> 
