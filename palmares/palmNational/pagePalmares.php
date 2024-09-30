@@ -5,6 +5,7 @@ if (isset($nomDivision));
 else $nomDivision = '*';
 if (isset($base));
 else $base = '-';
+require '../fonctionsPalmares.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">

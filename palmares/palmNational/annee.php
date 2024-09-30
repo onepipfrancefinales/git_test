@@ -62,70 +62,11 @@
 	<?php
 
 
-	$table = "bdjeunes";
-	$minRang = 360;
-	$maxRang = 380;
-	palmaresParAnnee($annee, $table , $minRang, $maxRang, $bdd);
-	/*
-	function palmaresParAnnee($annee, $table, $minRang, $maxRang, $bdd) {
-
-	$tabDivision = array();
-	$tabChampion = array();
-	$tabComite = array();
-
-	$reponse = $bdd->query("SELECT division, champion, comite1 
-						FROM $table
-						WHERE saison='$annee' and titre = 'champion' 
-						AND rang < $maxRang and rang >= $minRang 
-						AND rang2 < $maxRang and rang2 >= $minRang 
-						ORDER BY rang");
-
-	while ($donnees =  $reponse->fetch()) {
-		$tabDivision[] = $donnees['division'];
-		$tabChampion[] = $donnees['champion'];
-		$tabComite[] = $donnees['comite1'];
-	}
-
-	$pattern = "/[0-9]{7}/i";
-	$tabNom = array();
-
-	for ($i = 0; $i < count($tabDivision); $i++) {
-
-		if (preg_match($pattern, $tabChampion[$i]) == 1) {
-
-			$reponseCode = $bdd->query("SELECT nom_1
-										FROM bdclubs 
-										WHERE id=' $tabChampion[$i]' ");
-
-			while ($donnees =  $reponseCode->fetch()) {
-				$champion = $donnees['nom_1'];
-			}
-
-			array_push($tabNom, $champion);
-		} else {
-			array_push($tabNom, $tabChampion[$i]);
-		}
-		echo  $tabDivision[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
-		echo "<br>";
-	}
-	}
-
-*/
-
-
-	/*
-	$reponse = $bdd->query("SELECT division, champion, comite1 
-									FROM bdjeunes 
-									WHERE saison='$annee' and titre='champion' 
-									and rang<380 and rang>=360 
-									and rang2<380 and rang2>=360 
-									order by rang");
-	while ($donnees =  $reponse->fetch() )
-			{ 
-			echo $donnees['division']." : ".  $donnees['champion']."  ". $donnees['comite1'];
-			echo "<br>";																									
-			}
-*/
+	//$table = "bdjeunes";	
+	//$minRang = 360;	
+	//$maxRang = 380;
+	palmaresParAnnee($annee, "bdjeunes" , 360, 380, $bdd);
+	
 	?>
 </p>
 <br><br>

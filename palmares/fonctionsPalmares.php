@@ -298,6 +298,7 @@ function palmaresParFinales($annee, $table, $minRang, $maxRang, $bdd)
 
 	for ($i = 0; $i < count($tabDivision); $i++) {
 
+		// traitement du champion
 		if (preg_match($pattern, $tabChampion[$i]) == 1) {
 
 			$reponseCode = $bdd->query("SELECT nom_1
@@ -312,8 +313,7 @@ function palmaresParFinales($annee, $table, $minRang, $maxRang, $bdd)
 			array_push($tabNomChamp, $tabChampion[$i]);
 		}
 
-		/*////////////////////////////////////////////////////////////*/
-
+		// traitement du vice champion
 		if (preg_match($pattern, $tabViceChampion[$i]) == 1) {
 
 			$reponseCode = $bdd->query("SELECT nom_1
@@ -403,7 +403,7 @@ function palmaresParDivision($division, $table, $bdd)
 		$tabChampion[] = $donnees['champion'];
 		$tabComite[] = $donnees['comite1'];
 
-/*
+
 		if ($donnees['saison'] == '2018' and $division == '330') {
 			echo "<h1><font color=\"#000000\">";
 			echo "Jules Balandrade";
@@ -415,18 +415,10 @@ function palmaresParDivision($division, $table, $bdd)
 			echo "<br />";
 			echo "</font></h1>";
 		}
-
-*/
-		//echo "<h4>";
-		//echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 
-		//echo "</h4>";
-
-
 	}
 
 	$pattern = "/[0-9]{7}/i";
 	$tabNom = array();
-	//echo count($tabChampion);
 
 	for ($i = 0; $i < count($tabChampion); $i++) {
 
@@ -449,12 +441,6 @@ function palmaresParDivision($division, $table, $bdd)
 		echo "</h4>";
 	}
 }
-
-
-
-
-
-
 
 ?>
 <?php
