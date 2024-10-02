@@ -1,16 +1,13 @@
-<table width="792" border="0">
+<table class="width750 borderNone colorWhite">
   <tr> 
-    <td ></td>
-    <td width="56"> </td>
-    <td align="center"><a href="tableauPalmTerr.php?paramIdComite=21"><font color="FFFFFF">Comité <br>cote d'Azur</Font></a></td>
-    <td width="92" align="center"><a href="tableauPalmTerr.php?paramIdComite=21"><img src="../../images/comites/(CAZ).jpg" width="50" height="50"></a></td>
-    <td align="right"><a href="tableauPalmTerr.php?paramIdComite=34"><font color="FFFFFF">Comité<br>Provence</Font></a></td>
-    <td width="85" align="left"><a href="tableauPalmTerr.php?paramIdComite=34"><img src="../../images/comites/(PR).jpg" width="50" height="50"></a></td>
-    <td ></td>
-    <td width="96" ></td>
+    <td><a class="decorationNoneWhite center"href="tableauPalmTerr.php?paramIdComite=21">Comité <br>cote d'Azur</a></td>
+    <td  class="width100"><a href="tableauPalmTerr.php?paramIdComite=21"><img src="../../images/comites/(CAZ).jpg" width="50" height="50"></a></td>
+   
+    <td><a class="decorationNoneWhite center" href="tableauPalmTerr.php?paramIdComite=34">Comité<br>Provence</a></td>
+    <td  class="width100"><a href="tableauPalmTerr.php?paramIdComite=34"><img src="../../images/comites/(PR).jpg" width="50" height="50"></a></td>
   </tr>
-  <tr bgcolor="#FFFFFF"> 
-    <td colspan="8"><hr/></td>
+  <tr class="backgroundWhite"> 
+    <td colspan="12"><hr> </td>
   </tr>
 </table>
 

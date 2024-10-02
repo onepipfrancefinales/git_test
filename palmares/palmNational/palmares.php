@@ -26,6 +26,11 @@ elseif($division<500)
 	$table="bdchallenges";
 	$titre="Challenge de ";
 	}
+elseif($division==500)
+	{
+	$table="bdequipe1";
+	$titre="Champion de France ";
+	}
 
 $reponse = $bdd->query("SELECT division
 						FROM bddivisions 
@@ -68,7 +73,7 @@ else
 	while ($donnees =  $reponse->fetch()  )
 	{ 
 	 echo "</h4>";
-  	 echo $donnees['saison'].' - '.$donnees['champion'].$donnees['comite1']; 
+  	 echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 
 	 echo "</h4>"; 									
 	}			 							 
 }

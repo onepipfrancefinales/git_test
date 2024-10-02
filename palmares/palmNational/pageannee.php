@@ -6,6 +6,7 @@ require '../fonctionsPalmares.php';
 <html lang="fr">
 
 <head>
+<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pageannee.php">
   <meta name="description" content="Tous les Champions de France <?php echo $annee; ?> de rugby à XV. Compétitions pro; compétitions fédérales; compétitions territoriales; Compétitions féminines; compétitions juniors et cadets">
   <meta name="keywords" content="Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
   <meta name="classification" content="Sport,Rugby">

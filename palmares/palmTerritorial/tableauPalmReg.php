@@ -52,7 +52,8 @@ nomLigue($idLigue, $sigleLigue, $bdd);
           require 'comitesOCC.php';
         elseif ($sigleLigue == "NAQ")
           require 'comitesNAQ.php';
-
+       elseif ($sigleLigue == "PCA")
+          require 'comitesPCA.php';
         else
           require 'comitesAutres.php';
         ?>

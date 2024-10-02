@@ -26,8 +26,6 @@ nomLigue($idLigue, $sigleLigue, $bdd)
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 
-
-
 <body class="backgroundBlack">
 
   <table>
@@ -50,7 +48,9 @@ nomLigue($idLigue, $sigleLigue, $bdd)
           require 'comitesOCC.php';
         elseif ($sigleLigue == "NAQ")
           require 'comitesNAQ.php';
-        else
+        elseif ($sigleLigue == "PCA")
+          require 'comitesPCA.php';
+          else
           require 'comitesAutres.php';
         ?>
       </td>

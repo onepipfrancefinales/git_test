@@ -83,13 +83,12 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/palmares/palmNational/pagePalmares.php?division=200">2me Série</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=210">3me Série</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=220">4me Série</option>
-          <option value="/palmares/palmNational/pageentreprise.php">Entreprise</option>
           <option value="/palmares/palmNational/pageentreprise.php">-------------------</option>
           <option> EQUIPES II </option>
-          <option value="/palmares/palmNational/pageespoir.php">-------------------</option>
-          <option value="/palmares/palmNational/pageespoir.php">Espoir</option>
-          <option value="/palmares/palmNational/pagePalmares.php?division=240">Nationale 
-          B</option>
+          <option value="/palmares/palmNational/pageentreprise.php">-------------------</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=225">Espoirs Elites</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=230">Espoirs Nationaux</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=240">Espoirs Fédéraux</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=250">Fédérale B</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=260">Excellence B</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=270">Réserve</option>
@@ -126,6 +125,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/palmares/palmNational/pagePalmares.php?division=420">Essor</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=440">Espoir</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=390">Coupe de France</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=500">Entreprise</option>
         </select>
         </fieldset > <br>
      

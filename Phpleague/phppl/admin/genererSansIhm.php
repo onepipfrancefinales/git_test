@@ -1,8 +1,8 @@
 <?php 
-require "../../Phpleague/phppl/config2.php";
+require '../../Phpleague/phppl/config2.php';
 require '../../Phpleague/phppl/admin/fonctions.php';
-include("../../Phpleague/phppl/lang/lang_fr.php");
-include("../../fichierConfig.php");
+include '../../Phpleague/phppl/lang/lang_fr.php';
+include '../../fichierConfig.php';
 ouverture();
 
 echo "<br />";
@@ -14,8 +14,8 @@ echo "<hr />";
 elseif ($champRecup == 110271) { $tableau = array(120271, 129181);}
 elseif ($champRecup == 120171) { $tableau = $tableauBRE;	}
 elseif ($champRecup == 120271) { $tableau = array(120271, 129181);}
-elseif ($champRecup == 130171) { $tableau = $tableauCVL;	}
-elseif ($champRecup == 130271) { $tableau = array(130271, 130272);}		
+elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130191, 130192, 130271);	}
+//elseif ($champRecup == 130271) { $tableau = array(130271, 130272);}		
 elseif ($champRecup == 160171) { $tableau = $tableauHDF;	}	
 elseif ($champRecup == 160271) { $tableau = array(160271, 169181);}	
 elseif ($champRecup == 210171) { $tableau = $tableauPDL;	}

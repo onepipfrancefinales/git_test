@@ -18,6 +18,7 @@ if ($division < 230) {
 	$titre = "Challenge de ";
 }
 
+
 $reponse = $bdd->query("SELECT division
 						FROM bddivisions 
 						WHERE id ='$division' and annee != '2023' ");
@@ -25,7 +26,7 @@ while ($donnees =  $reponse->fetch()) {
 	$nomDivision = $donnees['division'];
 }
 
-if ($division == '170' or $division == '180' or $division == '190' or $division == '270') {
+if ($division == '170' or $division == '180' or $division == '190' or $division == '270' ) {
 ?>
 	<br>
 	<h1 class="colorBlack">
@@ -81,7 +82,7 @@ if ($division < 380) {
 
 	while ($donnees =  $reponse->fetch()) {
 		echo "<h4>";
-		echo $donnees['saison'] . ' - ' . $donnees['champion'] . $donnees['comite1'];
+		echo $donnees['saison'] . ' - ' . $donnees['champion'] .' '. $donnees['comite1'];
 		echo "</h4>";
 	}
 }

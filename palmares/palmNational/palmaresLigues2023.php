@@ -29,6 +29,11 @@ elseif($division<500)
 	$base="bdchallenges";
 	$titre="Challenge de ";
 	}
+	elseif ($division == 500) {
+		$base = "bdequipe1";
+		$titre = "Champions de France ";
+	}
+	
 
 $reponse = $bdd->query("SELECT division
 						FROM bddivisions 

@@ -216,14 +216,13 @@ $saisonEnCours=$row[0];
 	}
 
 	//*****************************************
-	function nbreTitre($nomChampion, $table, $categorie, $bdd)
+	function nbreTitre($nomChampion,  $id_equipe, $table, $categorie, $bdd)
 	{
 		$nbTitre = array();
 		global $nombreTitre;
 		$nbTitre = $bdd->query("SELECT COUNT(*)
 					  FROM $table  
-					  WHERE entente='$nomChampion' 
-					  AND categorie='$categorie' ");
+					  WHERE categorie='$categorie' AND (entente='$nomChampion' OR entente='$id_equipe')  ");
 
 		$nbTitre = $nbTitre->fetch();
 		$nombreTitre = $nbTitre[0];
@@ -247,8 +246,6 @@ $saisonEnCours=$row[0];
 
 
 	function palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd) {
-
-
 		$reponse = $bdd->query("SELECT saison, titre, championnat, division
 								FROM $table
 								WHERE categorie='$categorie' AND (entente='$id_equipe' OR entente='$nomChampion')   

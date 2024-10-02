@@ -304,19 +304,19 @@ else  $width = "90%";
   //****************     Palmares équipes Unes      *******************************
   $table = "bdequipe1";
   $categorie = "A";
-  nbreTitre($nomChampion, $table, $categorie, $bdd);
+  nbreTitre($nomChampion, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreChampion = $nombreTitre;
 
-  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  nbreTitre($clubNom1, $id_equipe,$table, $categorie, $bdd);
   $nbreTitreFusion1 = $nombreTitre;
 
-  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  nbreTitre($clubNom2, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion2 = $nombreTitre;
 
-  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  nbreTitre($clubNom3, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion3 = $nombreTitre;
 
-  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  nbreTitre($clubNom4, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion4 = $nombreTitre;
 
 
@@ -342,19 +342,19 @@ else  $width = "90%";
   //****************     Palmares équipes II      *******************************
   $table = "bdequipe2";
   $categorie = "B";
-  nbreTitre($nomChampion, $table, $categorie, $bdd);
+  nbreTitre($nomChampion, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreChampion = $nombreTitre;
 
-  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  nbreTitre($clubNom1, $id_equipe,$table, $categorie, $bdd);
   $nbreTitreFusion1 = $nombreTitre;
 
-  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  nbreTitre($clubNom2, $id_equipe,$table, $categorie, $bdd);
   $nbreTitreFusion2 = $nombreTitre;
 
-  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  nbreTitre($clubNom3, $id_equipe,$table, $categorie, $bdd);
   $nbreTitreFusion3 = $nombreTitre;
 
-  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  nbreTitre($clubNom4, $id_equipe,$table, $categorie, $bdd);
   $nbreTitreFusion4 = $nombreTitre;
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
@@ -372,19 +372,19 @@ else  $width = "90%";
   //****************     Palmares challenges      *******************************
   $table = "bdchallenges";
   $categorie = "C";
-  nbreTitre($nomChampion, $table, $categorie, $bdd);
+  nbreTitre($nomChampion, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreChampion = $nombreTitre;
 
-  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  nbreTitre($clubNom1, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion1 = $nombreTitre;
 
-  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  nbreTitre($clubNom2, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion2 = $nombreTitre;
 
-  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  nbreTitre($clubNom3, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion3 = $nombreTitre;
 
-  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  nbreTitre($clubNom4, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion4 = $nombreTitre;
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
@@ -401,19 +401,19 @@ else  $width = "90%";
   //****************     Palmares Reichels & Juniors      *******************************
   $table = "bdjeunes";
   $categorie = "D";
-   nbreTitre($nomChampion, $table, $categorie, $bdd);
+   nbreTitre($nomChampion, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreChampion = $nombreTitre;
 
-  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  nbreTitre($clubNom1, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion1 = $nombreTitre;
 
-  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  nbreTitre($clubNom2, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion2 = $nombreTitre;
 
-  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  nbreTitre($clubNom3, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion3 = $nombreTitre;
 
-  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  nbreTitre($clubNom4, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion4 = $nombreTitre;
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
@@ -431,19 +431,19 @@ else  $width = "90%";
   //****************     Palmares cadets      *******************************
   $table = "bdjeunes";
   $categorie = "E";
- nbreTitre($nomChampion, $table, $categorie, $bdd);
+ nbreTitre($nomChampion, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreChampion = $nombreTitre;
 
-  nbreTitre($clubNom1, $table, $categorie, $bdd);
+  nbreTitre($clubNom1, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion1 = $nombreTitre;
 
-  nbreTitre($clubNom2, $table, $categorie, $bdd);
+  nbreTitre($clubNom2, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion2 = $nombreTitre;
 
-  nbreTitre($clubNom3, $table, $categorie, $bdd);
+  nbreTitre($clubNom3, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion3 = $nombreTitre;
 
-  nbreTitre($clubNom4, $table, $categorie, $bdd);
+  nbreTitre($clubNom4, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion4 = $nombreTitre;
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
@@ -453,7 +453,7 @@ else  $width = "90%";
       echo "<h2> Cadets </h2>";
   } ?>
   <div id="palmares" class="center">
-    <?php palmaresParClub($nomChampion,$id_equipe, $table, $categorie, $bdd);  ?>
+    <?php palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd);  ?>
   </div>
 
   <br>

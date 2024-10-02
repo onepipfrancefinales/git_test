@@ -1,8 +1,4 @@
-<?php require ("../../connect/connexion1.php") ; ?>  
-
-
-<br /><br />
-
+<br ><br>
 
 <?php
 echo "<h1><p> <strong> Titres nationaux de la ligue <br />".$nomLigue."</strong></p></h1>";
@@ -13,115 +9,65 @@ $sigle = "(".$sigleLigue.")";
 
 ?>
 
-<br /><br /><br />
+<br><br><br>
 <h1>
 	<?php echo " <strong> Equipes Séniors</strong>"; ?>  
 </h1>
 <?php
  // *******         Affichage du palmares A             **********************
-$reponse = $bdd->query("SELECT saison, division, champion 
-						FROM bdequipe1 
-						WHERE comite1='$sigle' AND titre='champion' AND championnat='de France'AND categorie='A' AND rang < 225
-						ORDER BY saison DESC"); 
-								while ($donnees = $reponse->fetch() )
-										{ 
-											?><h4>
-											<?php echo $donnees['saison']; ?>
-											Champion de France 
-											<?php echo $donnees['division']; ?>
-											:<strong> 
-											<?php echo $donnees['champion']; ?>
-											</strong></h4>
-											<?php
-										 }
+ $table = "bdequipe1";
+ $categorie ="A";
+ 
+ palmaresParLigue($sigle, $table, $categorie, $bdd);
 ?>
 
-<br /><br /><h1>
+<br /><br />
+<h1>
 	<?php echo "<strong> Equipes II </strong>";?>
 </h1>
 
 <?php //*******************       Palmares de la categorie B      *******************
+$table = "bdequipe2";
+$categorie ="B";
 
-$reponse = $bdd->query("SELECT saison, division, champion  
-						FROM bdequipe2 
-						WHERE comite1='$sigle' and titre='champion' and championnat='de France' and categorie='B' 
-						ORDER BY saison DESC"); 
-								while ($donnees = $reponse->fetch() )
-										{ 
-										?>
-										<h4><?php echo $donnees['saison']; ?>
-										Champion de France 
-										<?php echo $donnees['division']; ?>
-										: <strong> 	<?php echo $donnees['champion']; ?>	</strong></h4>
-										  <?php
-										 }?>
+palmaresParLigue($sigle, $table, $categorie, $bdd);
+ ?>
 <br /><br />
 <h1>
 	<?php echo "<strong> Equipes Féminines </strong>";?>
 </h1>
 <?php
 //*********      palmares de la categorie F     ****************
+$table = "bdfem";
+$categorie ="F";
 
-$reponse = $bdd->query("SELECT saison, division, champion  
-						FROM bdfem 
-						WHERE comite1='$sigle'and titre='champion' and categorie='F' 
-						ORDER BY saison DESC"); 
-							while ($donnees = $reponse->fetch() )
-									{ 
-									?>
-									 <h4><?php echo $donnees['saison']; ?>
-									  Champion de France
-									  <?php echo $donnees['division']; ?>
-									  : 
-									  <strong><?php echo $donnees['champion']; ?></strong>
-									  </h4>
-									  <?php
-									 }?>
-<br /><br />
+palmaresParLigue($sigle, $table, $categorie, $bdd);
+?>
+<br><br>
 <h1>
 <?php echo " <strong> Reichels & Juniors <BR/></strong>";?>
 </h1>
 
 <?php
 //********   Palmares de la categorie D  **********
+$table = "bdjeunes";
+$categorie ="D";
 
-$reponse = $bdd->query("SELECT saison, division, champion  
-						FROM bdjeunes 
-						WHERE comite1='$sigle' and titre='champion' and championnat='de France'and rang>0 and categorie='D' 
-						ORDER BY saison DESC"); 
-								while ($donnees = $reponse->fetch() )
-											{ 
-											?><h4>
-											<?php echo $donnees['saison']; ?>
-											  Champion de France
-											  <?php echo $donnees['division']; ?>
-											  : 
-											  <strong><?php echo $donnees['champion']; ?></strong>
-											  </h4>
-											  <?php
-											 }?>
-<br /><br />
+palmaresParLigue($sigle, $table, $categorie, $bdd);
+?>
+
+											
+<br><br >
+
 <h1>						 
 <?php echo " <strong> Cadets </strong>"; ?>
 </h1>
 
 <?php
 //********* palmares de la categorie E ********
+$table = "bdjeunes";
+$categorie ="E";
 
-$reponse =$bdd->query("SELECT saison, division, champion  
-						FROM bdjeunes 
-						WHERE comite1='$sigle' and titre='champion' and rang2>2 and categorie='E' order by saison DESC"); 
-								while ($donnees = $reponse->fetch() )
-										{ 
-										?>
-										<h4><?php echo $donnees['saison']; ?>
-										  Champion de France
-										  <?php echo $donnees['division']; ?>
-										  : 
-										  <strong><?php echo $donnees['champion']; ?></strong></h4>
-										   <?php
-										 }?>
-<br /><br />										 
-
-	</body>
-</html>
+palmaresParLigue($sigle, $table, $categorie, $bdd);
+?>
+<br><br >										 
