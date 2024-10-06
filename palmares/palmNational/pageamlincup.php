@@ -1,14 +1,15 @@
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
 <head>
-  <meta name="description" content="Pr�sentation de la comp�tititon Juniors Danet(-19ans) et de tous les champions de France Danet; Palmar�s complet Juniors Danet.">
-  <meta name="keywords" content="Juniors Danat,Juniors Danet,Danet,Championnat de France Juniors, Juniors, -de 19 ans,Champions de France de -19 ans">
+<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pageamlincup.php">
+  <meta name="description" content="Palmarès du challenge Européen.">
+  <meta name="keywords" content="Amlin Cup, Challenge Européen">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <title>Challenge Européen</title>
+  <title>Palmarès du Challenge Européen</title>
   <link type="text/css" rel="stylesheet" href="../../ligne1.css" />
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="palmares.css" />

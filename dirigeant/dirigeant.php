@@ -1,6 +1,6 @@
 <html>
     <head>
-        
+        <h2>test<sup>3</sup></h2>
         <style>
             #myDialog {
                 border: 2px solid gray;
@@ -24,6 +24,16 @@ echo $idLigue."<br>";
         </dialog>
         <button onclick="myDialog.showModal();">Open dialog box</button>
     </body>
+
+
+
+
+  
+
+
+
+
+
 
 
 <div class="titreEncadre"> Mise à jour des résultats</div>
@@ -87,4 +97,11 @@ echo $idLigue."<br>";
     margin-left: auto;
     margin-right: auto;
   }
+
+
+
+
+
+
+
 </style>

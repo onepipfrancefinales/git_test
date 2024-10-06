@@ -10,16 +10,12 @@ echo "champRecup : ".$champRecup;
 echo "<br />";
 echo "<hr />";
 
-	if ($champRecup == 110171) {$tableau = $tableauBFC;	}	
-elseif ($champRecup == 110271) { $tableau = array(120271, 129181);}
-elseif ($champRecup == 120171) { $tableau = $tableauBRE;	}
-elseif ($champRecup == 120271) { $tableau = array(120271, 129181);}
-elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130191, 130192, 130271);	}
-//elseif ($champRecup == 130271) { $tableau = array(130271, 130272);}		
-elseif ($champRecup == 160171) { $tableau = $tableauHDF;	}	
-elseif ($champRecup == 160271) { $tableau = array(160271, 169181);}	
-elseif ($champRecup == 210171) { $tableau = $tableauPDL;	}
-elseif ($champRecup == 210271) { $tableau = array(210271);}
+	if ($champRecup == 110171) {$tableau = array(110171, 110172, 110181,  110191, 110192, 110193, 110271, 110272, 119181);}	//BFC
+elseif ($champRecup == 120171) { $tableau = array(120171, 120181, 120191, 120192, 120271, 129181);} //BRE
+elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130191, 130192, 130271);}// CVL
+elseif ($champRecup == 160171) { $tableau = array(160171, 160181, 160182, 160191, 160192,160271, 169181,169182);}	//HDF
+elseif ($champRecup == 210171) { $tableau = array(210171, 210181, 210191,210271);} // PDL
+
 
 
 

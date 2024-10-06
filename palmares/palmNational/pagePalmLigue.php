@@ -5,16 +5,11 @@ require '../../consultation/fonctions.php';
 require '../../palmares/fonctionsPalmares.php';
 rechercheInfosLigues($idLigue, $bdd);
 ?>
-
-
 <html>
-
 <head>
 <link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmLigue.php?idLigue=<?php echo $idLigue; ?>">
-  <meta name="description"
-    content="Le site non officiel du Comit� Midi Pyr�n�es de rugby : Histoire, clubs, calendrier des matches, comp�titions, r�sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
-  <meta name="keywords"
-    content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+  <meta name="description" content="Palmarès régionaux des différentes ligues du rugby Français.">
+  <meta name="keywords" content="Ligue de rugby Bretagne, Ligue de rugby Normandie, Ligue de rugby du Grand Est, Ligue de rugby Occitanie, Ligue de rugby Nouvelle Aquitaine, Ligue de rugby Ile de France">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">

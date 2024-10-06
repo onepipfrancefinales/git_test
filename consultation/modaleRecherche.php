@@ -3,7 +3,7 @@
    <br><br><br><br>
    <h2 class="styleArial"> Nous avons trouvé <?php echo $nbreDeClub; ?> clubs évoluant ou ayant évolué à 
    <br>
-  <span class="colorRed"> <?php echo $chaine; ?></span>.</h2>
+  <span class="colorRed size6"> <?php echo ucFirst($chaine); ?></span>.</h2>
 
   <br> <br> <br>
   <p class="colorBlack styleArial size4"> Vous pouvez affiner votre recherche en sélectionnant 
@@ -20,9 +20,11 @@
 
 ?>
 <div class="afficheEquipe styleArial bold">
+
 <?php
+
         echo "<a href=\"pageclub00.php?champion=$tabId[$i]\"><img src=\"../images/blasons200_200/$logo[$i].gif\" height=\"25\" width=\"25\">
-        <a href=\"pageclub00.php?champion=$tabId[$i]\" target=\"_top\">$tabClubs[$i]$complement</a>"; ?>
+        <a href=\"pageclub00.php?champion=$tabId[$i]\" target=\"_top\">$tabClubs[$i]  $complement</a>"; ?>
    </div> 
    <?php     }
 

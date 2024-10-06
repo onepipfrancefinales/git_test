@@ -6,6 +6,34 @@ else $nomDivision = '*';
 if (isset($base));
 else $base = '-';
 require '../fonctionsPalmares.php';
+
+
+require("../../connect/connexion1.php");
+
+if ($division < 230) {
+	$base = "bdequipe1";
+	$titre = "Champions de France";
+} elseif ($division < 280) {
+	$base = "bdequipe2";
+	$titre = "Champions de France";
+} elseif ($division < 310) {
+	$base = "bdfem";
+	$titre = "Championnes de France";
+} elseif ($division < 380) {
+	$base = "bdjeunes";
+	$titre = "Champions de France";
+} elseif ($division < 500) {
+	$base = "bdchallenges";
+	$titre = "Challenge de ";
+}
+
+
+$reponse = $bdd->query("SELECT division
+						FROM bddivisions 
+						WHERE id ='$division' and annee != '2023' ");
+while ($donnees =  $reponse->fetch()) {
+	$nomDivision = $donnees['division'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,7 +47,7 @@ require '../fonctionsPalmares.php';
 	<meta name="author" content="Equipe France Finales Rugby">
 	<meta name="viewport" content="width=device-width">
 	<meta name="robots" content="All">
-	<title>Champions de FRANCE de rugby à XV</title>
+	<title>Champions de FRANCE <?php echo $nomDivision; ?></title>
 	<link type="text/css" rel="stylesheet" href="palmares.css">
 	<link type="text/css" rel="stylesheet" href="../../ligne1.css">
 	<link type="text/css" rel="stylesheet" href="../../formulaireDG.css">

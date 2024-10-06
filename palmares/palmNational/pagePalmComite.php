@@ -8,9 +8,9 @@ require '../../palmares/fonctionsPalmares.php';
 <head>
 <link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmComite.php?variable_1=<?php echo $variable_1; ?>">
   <meta name="description"
-    content="Le site non officiel du Comité Midi Pyr�n�es de rugby : Histoire, clubs, calendrier des matches, comp�titions, r�sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
+    content="Palmarès territoriaux des différents comités (avant 2019) du rugby Français.">
   <meta name="keywords"
-    content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+    content="comité Bourgogne,Comite des Pyrénées, comité Auvergne, comité Ile de france, comité béarn, comité Drôme Ardèche">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">

@@ -41,6 +41,7 @@ $reponse = $bdd->query("SELECT division
 	}
 
 palmaresParDivision($division, $table, $bdd);
+//palmaresParDivisionLigne($division, $table, $bdd);
 
 
 if ($division>380)
@@ -64,6 +65,7 @@ if ($division>380)
 }			 			 
 else
 {
+/*
 	$reponse = $bdd->query("
 		SELECT saison, champion, comite1  
 		FROM bdchallenges 
@@ -73,9 +75,10 @@ else
 	while ($donnees =  $reponse->fetch()  )
 	{ 
 	 echo "</h4>";
-  	 echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 
+ 	 echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 
 	 echo "</h4>"; 									
-	}			 							 
+	}	
+	 */		 							 
 }
 
 echo "<br>";

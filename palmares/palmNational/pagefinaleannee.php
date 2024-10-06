@@ -6,8 +6,8 @@ require '../fonctionsPalmares.php';
 <!DOCTYPE html>
 <html lang="fr">
 <link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagefinaleannee.php?variable_1=<?php echo $annee; ?>">
-<meta name="description" content="Le site non officiel du Comité Midi Pyrénées de rugby : Histoire, clubs, calendrier des matches, comp�titions, r�sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
-<meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+<meta name="description" content="Finales et résultats des différents championnats de france de rugby.">
+<meta name="keywords" content="Top 14, pro D2, Nationales, fédérales, régionales, féminines, cadets, juniors, etc...">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -17,7 +17,7 @@ require '../fonctionsPalmares.php';
 <link type="text/css" rel="stylesheet" href="../../ligne1.css">
 <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Tous les Champions de FRANCE</title>
+<title>Finales du chapionnat de FRANCE <?php echo $annee; ?></title>
 
 <body>
 

@@ -2,15 +2,16 @@
 <html lang="fr">
 
 <head>
-  <meta name="description" content="Présentation de la compétititon Juniors Danet(-19ans) et de tous les champions de France Danet; Palmar�s complet Juniors Danet.">
-  <meta name="keywords" content="Juniors Danat,Juniors Danet,Danet,Championnat de France Juniors, Juniors, -de 19 ans,Champions de France de -19 ans">
+  <link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagehcup.php">
+  <meta name="description" content="Palmarès de la coupe d'Europe de rugby.">
+  <meta name="keywords" content="Coupe d'europe de rugby, H Cup, Champions Cup">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <title>Coupe d Europe</title>
+  <title>Palmarès de la Champions Cup</title>
   <link type="text/css" rel="stylesheet" href="palmares.css">
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../../ligne1.css">

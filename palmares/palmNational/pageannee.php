@@ -15,7 +15,7 @@ require '../fonctionsPalmares.php';
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <title>Tous les Champions de FRANCE <?php echo $annee; ?></title>
+  <title>Champions de FRANCE <?php echo $annee; ?> de rugby</title>
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../../ligne1.css">
   <link type="text/css" rel="stylesheet" href="palmares.css">
@@ -46,7 +46,7 @@ require '../fonctionsPalmares.php';
         <table class="marginAuto">
           <tr>
             <td>
-              <div id="lienfinale"> <?php echo "<a href=pagefinaleannee.php?variable_1=" . $annee . ">Consulter les finales (oppositions et scores)</a> "; ?></div>
+              <h2 id="lienfinale"> <?php echo "<a href=pagefinaleannee.php?variable_1=" . $annee . ">Consulter les finales (oppositions et scores)</a> "; ?></h2>
             </td>
           </tr>
         </table>

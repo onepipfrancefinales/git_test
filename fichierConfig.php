@@ -70,11 +70,11 @@ $tableauBFC = array(110171, 110172, 110181,  110191, 110192, 110193);
 //Bretagne
 $tableauBRE = array(120171, 120181, 120191, 120192);
 //Centre Val de Loire
-$tableauCVL = array(130171, 130181, 130191, 130192,);
+$tableauCVL = array(130171, 130181, 130191, 130192);
 //Hauts De France
 $tableauHDF = array(160171, 160181, 160182, 160191, 160192);
 //Pays De la Loire
-$tableauPDL = array(210171, 210181, 210191,);
+$tableauPDL = array(210171, 210181, 210191);
 
 //*************   TABLE IDF   *************************
 

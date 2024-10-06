@@ -1,30 +1,5 @@
 <?php
-require("../../connect/connexion1.php");
 
-if ($division < 230) {
-	$base = "bdequipe1";
-	$titre = "Champions de France";
-} elseif ($division < 280) {
-	$base = "bdequipe2";
-	$titre = "Champions de France";
-} elseif ($division < 310) {
-	$base = "bdfem";
-	$titre = "Championnes de France";
-} elseif ($division < 380) {
-	$base = "bdjeunes";
-	$titre = "Champions de France";
-} elseif ($division < 500) {
-	$base = "bdchallenges";
-	$titre = "Challenge de ";
-}
-
-
-$reponse = $bdd->query("SELECT division
-						FROM bddivisions 
-						WHERE id ='$division' and annee != '2023' ");
-while ($donnees =  $reponse->fetch()) {
-	$nomDivision = $donnees['division'];
-}
 
 if ($division == '170' or $division == '180' or $division == '190' or $division == '270' ) {
 ?>

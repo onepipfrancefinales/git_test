@@ -52,7 +52,7 @@ nomLigue($idLigue, $sigleLigue, $bdd);
           require 'comitesOCC.php';
         elseif ($sigleLigue == "NAQ")
           require 'comitesNAQ.php';
-       elseif ($sigleLigue == "PCA")
+        elseif ($sigleLigue == "PCA")
           require 'comitesPCA.php';
         else
           require 'comitesAutres.php';
@@ -87,20 +87,49 @@ nomLigue($idLigue, $sigleLigue, $bdd);
 
   <table class="borderNone width1000 marginAuto">
     <tr>
-      <td colspan="4" class="colorWhite"> Equipes premières</td>
+      <td colspan="4" class="colorWhite styleArial">
+        <h2> Equipes premières</h2>
+      </td>
       <td></td>
-      <td colspan="2" class="colorWhite"> Equipes réserves</td>
+      <td colspan="2" class="colorWhite styleArial">
+        <h2> Equipes réserves</h2>
+      </td>
     </tr>
     <tr>
       <th class="width34"></th>
-      <th class="width200">Régionale 1</th>
-      <th class="width200">Régionale 2</th>
-      <th class="width200">Régionale 3</th>
+      <th class="width200 backgroundCCCCCC styleArial">Régionale 1</th>
+      <th class="width200 backgroundCCCCCC styleArial">Régionale 2</th>
+      <th class="width200 backgroundCCCCCC styleArial">Régionale 3</th>
       <th class="backgroundBlack width200 borderNone"></th>
-      <th class="width200">Rés Rég 1</th>
-      <th class="width200">Rés Rég 2</th>
+      <th class="width200 backgroundCCCCCC styleArial">Rés Rég 1</th>
+      <th class="width200 backgroundCCCCCC styleArial">Rés Rég 2</th>
     </tr>
+    <tr>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
 
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+    </tr>
     <tr>
       <td class="equipes"><?php $rang = 170;
                           saisonLigues($rang, $comite, $bdd, true); ?></td>
@@ -123,23 +152,46 @@ nomLigue($idLigue, $sigleLigue, $bdd);
   <table class="borderNone width1000 marginAuto">
     <tr>
       <td class="colorWhite alignLeft">
-        <p > Saison 2022-2023 : Réforme des divisions régionales (Passage de 6 à 3 divisions). <br>
-        Saison 2018-2019 : Création des ligues (Passage de 26 comités à 13 ligues).</p>
+        <p> Saison 2022-2023 : Réforme des divisions régionales (Passage de 6 à 3 divisions). <br>
+          Saison 2018-2019 : Création des ligues (Passage de 26 comités à 13 ligues).</p>
       </td>
     </tr>
-   
+
   </table>
   <br>
   <p class="center colorWhite size7"><b>Equipes premières</b></p>
   <table class="borderNone width1000 marginAuto">
     <tr>
       <th class="width34"></th>
-      <th class="width200">Honneur</th>
-      <th class="width200">Promotion<br>honneur</th>
-      <th class="width200">1re série</th>
-      <th class="width200">2me série</th>
-      <th class="width200">3me série</th>
-      <th class="width200">4me série</th>
+      <th class="width200 backgroundCCCCCC styleArial">Honneur</th>
+      <th class="width200 backgroundCCCCCC styleArial">Promotion<br>honneur</th>
+      <th class="width200 backgroundCCCCCC styleArial">1re série</th>
+      <th class="width200 backgroundCCCCCC styleArial">2me série</th>
+      <th class="width200 backgroundCCCCCC styleArial">3me série</th>
+      <th class="width200 backgroundCCCCCC styleArial">4me série</th>
+    </tr>
+    <tr>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
     </tr>
     <tr>
       <td class="equipes"><?php $rang = 170;
@@ -166,16 +218,16 @@ nomLigue($idLigue, $sigleLigue, $bdd);
   <table class="borderNone width1000 marginAuto">
     <tr>
       <th class="width50"> </th>
-      <th class="width250">Honneur</th>
+      <th class="width250 ">Honneur</th>
       <th class="width250">Promotion honneur</th>
       <th class="width250">1re série</th>
       <th class="width250">2me série</th>
     </tr>
     <tr>
-      <td class="equipes"><?php $rang = 270;
-                          saisonLigues2($rang, $comite, $bdd, false); ?></td>
-      <td class="equipes"><?php $rang = 270;
-                          palmaresLigues2($comite, $rang, $bdd, false); ?></td>
+      <td class="equipes colorWhite"><?php $rang = 270;
+                                      saisonLigues2($rang, $comite, $bdd, false); ?></td>
+      <td class="equipes colorWhite"><?php $rang = 270;
+                                      palmaresLigues2($comite, $rang, $bdd, false); ?></td>
       <td class="equipes"><?php $rang = 9180;
                           palmaresLigues2($comite, $rang, $bdd, false); ?></td>
       <td class="equipes"><?php $rang = 9190;

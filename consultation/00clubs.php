@@ -423,7 +423,8 @@ else  $width = "90%";
       echo "<h2> Reichels & Juniors </h2>";
   } ?>
   <div id="palmares" class="center">
-    <?php palmares($nomChampion, $table, $categorie, $bdd); ?>
+  <?php palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd);  ?>
+    <?php // palmares($nomChampion, $table, $categorie, $bdd); ?>
     <?php fusionDeClubsJeunes($nouveauClub, $nouveauClub, $bdd); ?>
   </div>
 
@@ -454,6 +455,14 @@ else  $width = "90%";
   } ?>
   <div id="palmares" class="center">
     <?php palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd);  ?>
+  </div>
+  <br><br>
+
+  <div id="palmares" class="center">
+  
+    <?php 
+    $table = "bdjeunesligne";
+    palmaresParClubLigne($nomChampion, $id_equipe, $table, $categorie, $bdd);  ?>
   </div>
 
   <br>

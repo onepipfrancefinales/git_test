@@ -259,6 +259,23 @@ echo $donnees['saison'] . ' ' . $donnees['titre'] . ' ' . $donnees['championnat'
 
 	}
 
+	function palmaresParClubLigne($nomChampion, $id_equipe, $table, $categorie, $bdd) {
+		$reponse = $bdd->query("SELECT saison, championnat, division, champion, vice_champion
+								FROM bdjeunesligne
+								WHERE categorie='$categorie' 
+								AND (entente='$id_equipe' OR entente='$nomChampion' or vice_champion='$id_equipe' OR vice_champion='$nomChampion')   
+								ORDER BY saison desc");
+
+
+
+while ($donnees = $reponse->fetch()) {
+if ($donnees['champion'] == $nomChampion OR $donnees['champion'] == $id_equipe)
+echo $donnees['saison'] . ' ' . "Champion" . ' ' . $donnees['championnat'] . ' ' . $donnees['division']. "<br />";
+else
+echo $donnees['saison'] . ' ' . "Vice champion" . ' ' . $donnees['championnat'] . ' ' . $donnees['division']. "<br />";
+}
+	}
+
 
 
 

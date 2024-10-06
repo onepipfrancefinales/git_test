@@ -1,13 +1,13 @@
 <?php
 session_start();
-include("../saison.php");
+include ("../saison.php");
 //$message = "Arr&ecirc;t des compétitions &agrave; l'occasion de la 6me journée du 01 Novembre";
 //require '../connect/connexion2.php';
-include("../fichierConfig.php");
+include ("../fichierConfig.php");
 require '../connect/connexion6.php';
 require '../Phpleague/phppl/consult/fonctions_matchs.php';
 require '../Phpleague/phppl/lang/lang_fr.php';
-include("fonctions.php");
+include ("fonctions.php");
 require "constantes.php";
 $champLigue = 13;
 $sigleLigue = "(CVL)";

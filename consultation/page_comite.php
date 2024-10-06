@@ -30,7 +30,7 @@ nomLigueParSigleLigue($sigleLigue, $bdd);
 	<link type="text/css" rel="stylesheet" href="lienNoir.css" />
 	<link type="text/css" rel="stylesheet" href="../formulaireDG.css">
 
-	<title>Comité <?php echo $nomComite; ?> </title>
+	<title>Comité de rugby <?php echo $nomComite; ?> </title>
 </head>
 
 <body>

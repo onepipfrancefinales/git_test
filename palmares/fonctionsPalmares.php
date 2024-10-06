@@ -333,10 +333,6 @@ function palmaresParFinales($annee, $table, $minRang, $maxRang, $bdd)
 	}
 }
 
-
-
-
-
 function palmaresParAnnee($annee, $table, $minRang, $maxRang, $bdd)
 {
 
@@ -347,6 +343,7 @@ function palmaresParAnnee($annee, $table, $minRang, $maxRang, $bdd)
 	$reponse = $bdd->query("SELECT division, champion, comite1 
 						FROM $table
 						WHERE saison='$annee' and titre = 'champion' 
+						AND championnat='de France'
 						AND rang < $maxRang and rang >= $minRang 
 						AND rang2 < $maxRang and rang2 >= $minRang 
 						ORDER BY rang");
@@ -380,6 +377,52 @@ function palmaresParAnnee($annee, $table, $minRang, $maxRang, $bdd)
 		echo "<br>";
 	}
 }
+
+
+function palmaresParAnneeligne($annee, $table, $minRang, $maxRang, $bdd)
+{
+	$tabDivision = array();
+	$tabChampion = array();
+	$tabComite = array();
+
+	$reponse = $bdd->query("SELECT division, champion, comite1 
+						FROM $table
+						WHERE saison = '$annee' 
+						AND (championnat='de France' OR championnat='Challenge')
+						AND rang < $maxRang and rang >= $minRang 
+						AND rang2 < $maxRang and rang2 >= $minRang 
+						ORDER BY rang");
+
+	while ($donnees =  $reponse->fetch()) {
+		$tabDivision[] = $donnees['division'];
+		$tabChampion[] = $donnees['champion'];
+		$tabComite[] = $donnees['comite1'];
+	}
+
+	$pattern = "/[0-9]{7}/i";
+	$tabNom = array();
+
+	for ($i = 0; $i < count($tabDivision); $i++) {
+
+		if (preg_match($pattern, $tabChampion[$i]) == 1) {
+
+			$reponseCode = $bdd->query("SELECT nom_1
+										FROM bdclubs 
+										WHERE id=' $tabChampion[$i]' ");
+
+			while ($donnees =  $reponseCode->fetch()) {
+				$champion = $donnees['nom_1'];
+			}
+
+			array_push($tabNom, $champion);
+		} else {
+			array_push($tabNom, $tabChampion[$i]);
+		}
+		echo  $tabDivision[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
+		echo "<br>";
+	}
+}
+
 
 function palmaresParLigue($sigle, $table, $categorie, $bdd)
 {
@@ -439,6 +482,66 @@ function palmaresParDivision($division, $table, $bdd)
 						AND rang=$division 
 						AND rang2=$division  AND saison < 2019
 						AND titre='champion' 
+						ORDER BY saison DESC");
+
+	while ($donnees =  $reponse->fetch()) {
+		$tabSaison[] = $donnees['saison'];
+		$tabChampion[] = $donnees['champion'];
+		$tabComite[] = $donnees['comite1'];
+
+
+		if ($donnees['saison'] == '2018' and $division == '330') {
+			echo "<h1><font color=\"#000000\">";
+			echo "Jules Balandrade";
+			echo "<br />";
+			echo "</font></h1>";
+		} elseif ($donnees['saison'] == '2018' and $division == '370') {
+			echo "<h1><font color=\"#000000\">";
+			echo "Jean Teulière";
+			echo "<br />";
+			echo "</font></h1>";
+		}
+	}
+
+	$pattern = "/[0-9]{7}/i";
+	$tabNom = array();
+
+	for ($i = 0; $i < count($tabChampion); $i++) {
+
+		if (preg_match($pattern, $tabChampion[$i]) == 1) {
+
+			$reponseCode = $bdd->query("SELECT nom_1
+										FROM bdclubs 
+										WHERE id=' $tabChampion[$i]' ");
+
+			while ($donnees =  $reponseCode->fetch()) {
+				$champion = $donnees['nom_1'];
+			}
+
+			array_push($tabNom, $champion);
+		} else {
+			array_push($tabNom, $tabChampion[$i]);
+		}
+		echo "<h4>";
+		echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
+		echo "</h4>";
+	}
+}
+
+
+
+
+function palmaresParDivisionLigne($division, $table, $bdd)
+{
+	$tabSaison = array();
+	$tabChampion = array();
+	$tabComite = array();
+
+	$reponse = $bdd->query("SELECT saison, champion, comite1 
+						FROM bdjeunesligne
+						WHERE championnat='de France' 
+						AND rang=$division 
+						AND rang2=$division  AND saison < 2019
 						ORDER BY saison DESC");
 
 	while ($donnees =  $reponse->fetch()) {

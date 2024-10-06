@@ -23,7 +23,7 @@ rechercheInfosLigues($idLigue, $bdd);
 	<link type="text/css" rel="stylesheet" href="../ligne1.css" >
 	<link type="text/css" rel="stylesheet" href="lienNoir.css" >
 	<link type="text/css" rel="stylesheet" href="pglogo.css" >
-	<title>Présentation ligue <?php echo $nomLigue; ?> </title>
+	<title>Présentation de la ligue de rugby <?php echo $nomLigue; ?> </title>
 </head>
 
 <body>
