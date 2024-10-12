@@ -430,6 +430,7 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 <p> 
   <?php // require ("../connect1/connection1.php") ;?>
   <?php
+clubEnfant(2029152,$bdd);
 
 //$query = "	SELECT bdsaisons.id, bdclubs.nom_1, bdclubs.url, bdclubs.logo, bdclubs.url, bdclubs.fusion 
 //			FROM bdsaisons, bdclubs 
@@ -478,7 +479,22 @@ echo "<br/>";
 }
 </style>
 
+<button class="accordion ">Ententes, regroupements, fusions : <span class="size3">(Cliquer pour ouvrir)</span></button>
+<div class="panel">
+  <p class="afficheEquipe"><?php clubsParLigueEnEntente($idLigue,"M", 970, $bdd); ?></p>
+ 
+</div>
 
+
+<button class="accordion ">Clubs en sommeil : <span class="size3">(Cliquer pour ouvrir)</span></button>
+<div class="panel">
+  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 980, $bdd);?></p>
+</div>
+
+<button class="accordion">Que sont ils devenus ? : <span class="size3">(Cliquer pour ouvrir)</span></button>
+<div class="panel">
+  <p></p>
+</div>
 
 <script>
 var acc = document.getElementsByClassName("accordion");

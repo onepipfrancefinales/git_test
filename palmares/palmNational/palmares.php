@@ -40,6 +40,9 @@ $reponse = $bdd->query("SELECT division
 	$nomDivision = $donnees['division']; 		
 	}
 
+	
+
+
 palmaresParDivision($division, $table, $bdd);
 //palmaresParDivisionLigne($division, $table, $bdd);
 

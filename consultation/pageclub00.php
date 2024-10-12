@@ -33,7 +33,7 @@ else {
 
   rechercheParNomDeVille($chaine, $bdd);
 
-  echo "nombre de clubs :" . $nbreDeClub;
+  //echo "nombre de clubs :" . $nbreDeClub;
 
   /*
   echo "donnee1 : ".$nbreDeClub;

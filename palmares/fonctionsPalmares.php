@@ -469,6 +469,80 @@ function palmaresParLigue($sigle, $table, $categorie, $bdd)
 	}
 }
 
+function chgmntNomDivision($division,$base, $bdd)
+{
+	GLOBAL $tabNomDivision, $tabAnnee;
+	
+	$tabNomDivision = array();
+	$tabAnnee = array();
+
+	$reponse = $bdd->query("SELECT division, annee
+							FROM bddivisions
+							WHERE  id ='$division'
+							ORDER BY cle DESC "); 
+
+	while ($donnees =  $reponse->fetch()) {
+		$tabNomDivision[] = $donnees['division'];
+		$tabAnnee[] = $donnees['annee'];
+	}
+
+	$anneeMax = date('Y', time());
+
+	//Periode 1
+	echo "<h1>" . $tabNomDivision[0] ."<h1>";
+	palmaresParDivisionParAnnee($division, $base, $tabAnnee[0], $anneeMax, $bdd);	
+
+	
+	//Période 2 à count($tabNomDivision)
+	for ($i=0; $i< count($tabNomDivision)-1; $i++) {
+		echo "<br>";
+		echo "<h1>". $tabNomDivision[$i+1] ."<h1>";
+		palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i+1], $tabAnnee[$i], $bdd);
+	}
+
+}
+function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMax, $bdd)
+{
+
+	GLOBAL $tabSaison, $tabChampion, $tabComite;
+
+	$tabSaison = array();
+	$tabChampion = array();
+	$tabComite = array();
+
+	$reponse = $bdd->query("SELECT saison, champion, comite1 
+						FROM $table
+						WHERE championnat='de France' 
+						AND rang=$division 
+						AND rang2=$division  AND saison between $anneeCreation and $anneeMax
+						AND titre ='champion' 
+						ORDER BY saison DESC");
+
+	while ($donnees =  $reponse->fetch()) {
+		$tabSaison[] = $donnees['saison'];
+		$tabChampion[] = $donnees['champion'];
+		$tabComite[] = $donnees['comite1'];
+	}
+	$periode = $anneeMax-$anneeCreation;
+		
+		for ($i = 0; $i < $periode; $i++) {
+		
+		if ($tabChampion[$i] == "Pas de championnat"){
+			echo "<h4 style = \"background-color : #C5C6C7; width:300px; margin: 0px auto\">";
+			
+		echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
+		echo "</h4>";
+		echo "<br>";
+		}
+		else {
+			echo "<h4>";
+			echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
+			echo "</h4>";
+	}
+		}
+		
+}
+
 
 function palmaresParDivision($division, $table, $bdd)
 {

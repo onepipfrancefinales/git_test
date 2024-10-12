@@ -215,7 +215,7 @@ else  $width = "90%";
   <br>
   <table class="marginAuto borderWidth1" width="<?php echo $width; ?>">
     <tr>
-      <td class="titre"> Dates importantes </td>
+      <td class="titre"> Autres dates importantes </td>
     </tr>
     <tr>
       <td class="info"><?php echo $info1; ?> </td>

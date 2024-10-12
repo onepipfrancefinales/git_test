@@ -2,7 +2,7 @@
 require "../../Phpleague/phpau/config2.php";
 require '../../Phpleague/phpau/admin/fonctions.php';
 include("../../Phpleague/phpau/lang/lang_fr.php");
-include("../../fichierConfig.php");
+include("../../../fichierConfig.php");
 ouverture();
 
 
@@ -16,13 +16,17 @@ echo "<hr />";
 if (isset($champRecup)) $champRecup=$champRecup; else $champRecup=0;
 
 echo "champRecup genererSansIhm : ".$champRecup;echo "<br />";
+//$tableauARA1 = array(100171, 100172, 100173, 100174 );
+//$tableauARA2 = array(100181, 100182, 100183, 100184, 100185, 100186);
+//$tableauARA3 = array(100191, 100192, 100193, 100194, 100195, 100196);
+//$tableauRES_ARA1= array(100271, 100272, 100273, 100274);
+//$tableauRES_ARA2= array(109181, 109182, 109183, 109184, 109185, 109186);
 
-
-	if ($champRecup == 100171) $tableau = $tableauARA1;
-elseif ($champRecup == 100181) $tableau = $tableauARA2;
-elseif ($champRecup == 100191) $tableau = $tableauARA3;
-elseif ($champRecup == 100271) $tableau = $tableauRES_ARA1;
-elseif ($champRecup == 109181) $tableau = $tableauRES_ARA2;
+	if ($champRecup == 100171) $tableau = array(100171, 100172, 100173, 100174);
+elseif ($champRecup == 100181) $tableau = array (100181, 100182, 100183, 100184, 100185, 100186);
+elseif ($champRecup == 100191) $tableau = array(100191, 100192, 100193, 100194, 100195, 100196);
+elseif ($champRecup == 100271) $tableau = array(100271, 100272, 100273, 100274);
+elseif ($champRecup == 109181) $tableau = array(109181, 109182, 109183, 109184, 109185, 109186);
 
 
 //for ($champDiv = $champRecup ; $champDiv < 220 ; $champDiv=$champDiv+10)

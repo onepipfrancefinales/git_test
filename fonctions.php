@@ -57,8 +57,29 @@ $saisonEnCours=$row[0];
 		//echo $saisonEnCoursChiffre;
 	}
 
+	function rechercheClubParId($idRecherche, $bdd)
+	{
+		global  $nomLong, $idFfr, $nomUsuel;
 
+		
+			$requete = $bdd->query("SELECT sigle,  idffr, nom_1
+							FROM bdclubs  
+							WHERE id ='$idRecherche'
+							 and type='M' ");
 
+		while ($row = $requete->fetch()) {
+			$nomLong = $row[0];
+			$idFfr = $row[1];
+			$nomUsuel = $row[2];
+	
+		}
+	
+}
+	
+	
+	
+	
+	
 	function infosclub($chaine, $bdd)
 	{
 		global $nomLong, $comite, $id, $sigleComite, $nomChampion, $numLigue, $code, $idFfr, $statut;

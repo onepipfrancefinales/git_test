@@ -69,10 +69,10 @@ echo $table;
 		$fusion4 =  $_POST['fusion4'];
 
 		echo "<br/>";
-		echo $id . ';' . $idffr . ';' . $nom . ';' . $logo . ';' . $annee . ';' . $fusion1 . ';' . $fusion2 . ';' . $fusion3 . ';' . $fusion4;
+		echo $id . ';' . $idffr . ';' . $nom . ';' . $logo . ';' . $annee . ';' . $fusion1 . ';' . $fusion2 . ';' . $fusion3 . ';' . $fusion4. ';' .$anneefin;
 
 		$bdd->exec("INSERT INTO  bdfusion
-			 VALUES ( '$id', '$idffr', '$nom', '$logo', '$annee', '$fusion1', '$fusion2', '$fusion3', '$fusion4')");
+			 VALUES ( '$id', '$idffr', '$nom', '$logo', '$annee', '$fusion1', '$fusion2', '$fusion3', '$fusion4', '$anneefin')");
 
 		$tabFusions = array ($fusion1, $fusion2, $fusion3, $fusion4);
 
@@ -135,9 +135,10 @@ echo $table;
 			 ");
 	}
 	?>
-
+<br>
 	<a href="/admin/majDebutSaison/pageAjouterJournee.php">Retour</a>
-
+	<br>
+	<a href="/admin/majBaseDeDonnees/chgmntNom.php">Autre saisie</a>
 
 	</p>
 

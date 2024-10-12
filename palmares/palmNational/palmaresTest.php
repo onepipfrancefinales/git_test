@@ -34,28 +34,38 @@ elseif($division==500)
 
 $reponse = $bdd->query("SELECT division
 						FROM bddivisions 
-						WHERE id='$division' "); 
+						WHERE id='$division'
+						ORDER BY cle DESC "); 
  while ($donnees =  $reponse->fetch()  )
 	{ 		
 	$nomDivision = $donnees['division']; 		
 	}
 
+	
+
 ?>
 <br><br><br><br>
-<p>Lorem Elsass ipsum réchime amet non <span class="infobulle" aria-label="texte de l'infobulle">Choucroute</span> Picon bière Coopé knack tchao bissame hopla</p>
 
 
 <?php
+/******************************************************** */
 
+	//chgmntNomDivision (110, "bdequipe1", $bdd);
 
+/**************************************************** */
 
 //palmaresParDivision($division, $table, $bdd);
 //palmaresParDivisionLigne($division, $table, $bdd);
+
+
+
+
 $tabSaison = array();
 	$tabChampion = array();
 	$tabComite = array();
+	$tabCommentaire = array();
 
-	$reponse = $bdd->query("SELECT saison, champion, comite1 
+	$reponse = $bdd->query("SELECT saison, champion, comite1 , commentaire
 						FROM $table
 						WHERE championnat='de France' 
 						AND rang=$division 
@@ -67,7 +77,7 @@ $tabSaison = array();
 		$tabSaison[] = $donnees['saison'];
 		$tabChampion[] = $donnees['champion'];
 		$tabComite[] = $donnees['comite1'];
-
+		$tabCommentaire [] = $donnees ['commentaire'];
 
 		if ($donnees['saison'] == '2018' and $division == '330') {
 			echo "<h1><font color=\"#000000\">";
@@ -101,12 +111,14 @@ $tabSaison = array();
 		} else {
 			array_push($tabNom, $tabChampion[$i]);
 		}
+		
 		echo "<h4>";
-		echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i]; ?>
-		<sup><span class="infobulle" aria-label="icon bière Coopé knack tchaohfghghjghjghkjhjkhjkhjkghjkhkhgkghjk bissame hoplatexte de l'infobulle">+</span></sup>
-
+		echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i]; 
+		if (strlen($tabCommentaire[$i]) >0) { ?>
+		<sup><span class="infobulle" aria-label="<?php echo $tabCommentaire[$i]; ?>"><img src="../../images/info.gif" height="15" width="15"></span></sup>
 		</h4>
 		<?php
+	}
 	}
 
 
@@ -171,12 +183,15 @@ echo "<br>";
 .infobulle:focus::after {
   content: attr(aria-label);  /* on affiche aria-label */
   position: absolute;
-  top: -3.4em;
+  /*top: -3.4em;*/
   left: 70%;
-  transform: translateX(-70%); /* on centre horizontalement  */
-  z-index: 2; /* pour s'afficher au dessus des éléments en position relative */
+  transform: translate(0px, 0px); /* on centre horizontalement  */
+  z-index: 0; /* pour s'afficher au dessus des éléments en position relative */
  /* white-space: nowrap;  /* on interdit le retour à la ligne */
- background : yellow;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px;
+ background : #5ec1ff;
  text-align: left;
 }
 

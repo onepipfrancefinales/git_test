@@ -77,7 +77,7 @@ while ($donnees =  $reponse->fetch()) {
 			</td>
 			<td class="centreDePage">
 				<?php
-
+/*
 				if ($division == 110)
 					require("top14.php");
 				else {
@@ -92,8 +92,11 @@ while ($donnees =  $reponse->fetch()) {
 							identiques aux nouvelles régions administratives françaises." . "</i>";
 					echo "<br>" . "<hr>";
 					// Saison antérieure à la saiaon 2019
+					*/
 					require("palmaresTest.php");
+			/*		
 				}
+			*/
 				?>
 			</td>
 			<td class="colonne">

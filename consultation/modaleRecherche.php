@@ -24,7 +24,7 @@
 <?php
 
         echo "<a href=\"pageclub00.php?champion=$tabId[$i]\"><img src=\"../images/blasons200_200/$logo[$i].gif\" height=\"25\" width=\"25\">
-        <a href=\"pageclub00.php?champion=$tabId[$i]\" target=\"_top\">$tabClubs[$i]  $complement</a>"; ?>
+        <a href=\"pageclub00.php?champion=$tabId[$i]\" target=\"_top\">$tabClubs[$i] $complement</a>"; ?>
    </div> 
    <?php     }
 

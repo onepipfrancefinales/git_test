@@ -57,6 +57,9 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 <p class=" style size4 ">fusion4 : 
     <input type="text" name="fusion4" required="true">
 </p>
+<p class=" style size4 ">année fin : 
+    <input type="text" name="anneefin" required="true">
+</p>
   <p>
     <input type="submit" name="Submit" value="Valider">
   </p>

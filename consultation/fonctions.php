@@ -17,38 +17,46 @@ function rechercheParNomDeVille($chaine, $bdd)
 		$tabClubs = array();
 		$tabId = array();
 		$tabType = array();
+		$tabSaisonEnCours = array();
 		$tabSaisonEnCoursNom = array();
 
-		$reponse = $bdd->query("SELECT sigle, id ,type
+		$reponse = $bdd->query("SELECT bdclubs.sigle, bdclubs.id ,bdclubs.type
 							FROM bdclubs
-							WHERE nom_4 ='$chaine'
-							ORDER BY id  ASC");
+							WHERE bdclubs.nom_4 ='$chaine'
+							ORDER BY bdclubs.id  ASC");
 
 		while ($row = $reponse->fetch()) {
 			$tabClubs[] = $row[0];
 			$tabId[] = $row[1];
-			$tabType[] = $row[2];
+			$tabType[] = $row[2];	
 		}
 
-/*
-		for ($i = 0; $i <= $nbreDeClub; $i++) {
+
+		for ($i = 0; $i < $nbreDeClub; $i++) {
+
+		//	echo	$tabClubs[$i].$tabId[$i]. $tabType[$i]."<br>";
 
 			$tabIdReduit[$i] = substr($tabId[$i], 2, 5);
-			echo $tabIdReduit[$i];
-			echo "<br>";
+			//echo $tabIdReduit[$i];
+			//echo "<br>";
 
-			$reponse2 = $bdd->query("SELECT bdsaisons.en_cours 
-		FROM bdsaisons
-	    WHERE bdsaisons.id = $tabIdReduit[$i]");
+		$reponse2 = $bdd->query("SELECT bdsaisons.en_cours, bddivisions.division
+								FROM bdsaisons
+								INNER JOIN bddivisions ON bdsaisons.en_cours = bddivisions.id
+								WHERE bdsaisons.id ='$tabIdReduit[$i]'
+								");
+								
 
 			while ($row = $reponse2->fetch()) {
-				$tabSaisonEnCoursNom[] = $row[0];
+				$tabSaisonEnCours[] = $row[0];
+				$tabSaisonEnCoursNom[] = $row[1];
 			}
-		}
-
-*/
-
-/*
+		
+		//	echo $tabIdReduit[$i].' - '.$tabSaisonEnCoursNom[$i];
+		//	echo "<br>";
+		//	echo substr($tabId[$i], 2, 5) . "-" . $tabClubs[$i] . "-" . $tabType[$i] . ' ( ' .$tabSaisonEnCours[$i] . $tabSaisonEnCoursNom[$i] . ' )' . "<br>";
+}
+		/***
 		for ($j = 0; $j <= $nbreDeClub; $j++) {
 			echo substr($tabId[$j], 2, 5) . "-" . $tabClubs[$j] . "-" . $tabType[$j] . ' ( ' . $tabSaisonEnCoursNom[$j] . ' )' . "<br>";
 		}
@@ -92,7 +100,7 @@ function changementNom($id_equipe, $width, $bdd)
 
 		<table width="<?php echo $width; ?>" class="marginAuto borderWidth1">
 			<tr>
-				<td class="titre" colspan="2"> Evolution du nom du club : </td>
+				<td class="titre" colspan="2"> Au fil du temps... </td>
 			</tr>
 
 			<?php
@@ -669,9 +677,86 @@ WHERE  champion ='$clubNom'  AND (titre = 'Champion' OR titre ='Vice champion')
 	}
 
 	/**************************************** */
+function clubEnfant($id_equipe, $bdd) {
+/*
+GLOBAL $clubEnfant ;
+
+$reponse = $bdd->query("
+SELECT nom
+FROM bdfusion
+WHERE id = LIKE '%$id_equipe'");
+
+while ($row = $reponse->fetch()) {
+	$clubEnfant = $row[0];
+	
+}
+echo "test :".$clubEnfant;
+*/
+}
+
+function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
+	{
+		global $nbreEquipe;
+		$reponse = $bdd->query("
+			 SELECT COUNT(*)
+			 FROM bdsaisons, bdclubs
+			 WHERE bdsaisons.id = substr(bdclubs.id,-5) 
+			 AND bdsaisons.ligue = '$idLigue' 
+			 AND bdclubs.type = '$type'
+			 AND bdclubs.fusion > 0
+			 AND bdsaisons.en_cours = '$var1'
+			 ");
+
+		$row = $reponse->fetch();
+		$nbreEquipe = $row[0];
+		// echo $nbreEquipe;
+
+		// afficher le logo et le nom du club présent dans la division
+		if ($nbreEquipe > 0) {
+			$tabCodeEquipe = array();
+			$tabNomClub = array();
+			$tabIdFusion = array();
+			$tabNomFusion = array();
 
 
+			$reponse = $bdd->query("	
+			  SELECT bdsaisons.id, bdclubs.nom_1, bdclubs.fusion
+			  FROM bdsaisons, bdclubs
+			  WHERE bdsaisons.id = substr(bdclubs.id,-5) 
+			  AND bdsaisons.ligue = '$idLigue' 
+			  AND bdclubs.type = '$type'
+			  AND bdclubs.fusion > 0
+		      AND bdsaisons.en_cours = '$var1'
+			  ");
 
+			while ($row = $reponse->fetch()) {
+				$tabCodeEquipe[] = $row[0];
+				$tabNomClub[] = $row[1];
+				$tabIdFusion[] = $row [2];
+			}
+
+			for ($i = 0; $i < $nbreEquipe; $i++) {
+
+
+				$reponse = $bdd->query("
+				SELECT nom_1
+				FROM bdclubs
+				WHERE id = $tabIdFusion[$i]");
+				
+				while ($row = $reponse->fetch()) {
+					$tabNomFusion[] = $row[0];
+					
+				}
+				echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
+				echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]<i> ($tabNomFusion[$i])</i> </a>";
+			
+				echo "<br>";
+			}
+		} else {
+
+			echo "-";
+		}
+	}
 
 
 
@@ -714,23 +799,13 @@ WHERE  champion ='$clubNom'  AND (titre = 'Champion' OR titre ='Vice champion')
 
 			for ($i = 0; $i < $nbreEquipe; $i++) {
 				echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
-			?>
-				<font face="Times New Roman, Times, serif">
-					<?php
-					echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";
-					?>
-				</font>
-				<br />
-			<?php
+				echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";
+				//clubEnfant($tabCodeEquipe[$i],$bdd);
+				echo "<br>";
 			}
 		} else {
-			?>
-			<font face="Times New Roman, Times, serif">
-				<?php
-				echo "-";
-				?>
-			</font>
-			<?php
+
+			echo "-";
 		}
 	}
 

@@ -78,8 +78,16 @@ while ($donnees =  $reponse->fetch()) {
 			<td class="centreDePage">
 				<?php
 
-				if ($division == 110)
-					require("top14.php");
+				if ($division == 110){
+			echo "<h1>"."Champion de France"."</h1>";
+			chgmntNomDivision (110, "bdequipe1", $bdd); }
+			else if ($division == 140) {
+			echo "<h1>"."Champion de France"."</h1>";
+			chgmntNomDivision (140, "bdequipe1", $bdd); }
+			else if ($division == 150) {
+			echo "<h1>"."Champion de France"."</h1>";
+			chgmntNomDivision (150, "bdequipe1", $bdd); }
+					//require("top14.php");
 				else {
 					// A partir de la saison 2023
 					require("palmaresLigues2023.php");

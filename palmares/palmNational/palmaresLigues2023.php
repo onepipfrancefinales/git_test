@@ -49,7 +49,11 @@ $reponse = $bdd->query("SELECT division
   <?php echo $titre; ?>
   <br>
   
-  <?php echo $nomDivision; ?>
+  <?php 
+ if ($division == 150) 
+ $nomDivision ="Fédérale 2";
+ 
+ echo $nomDivision; ?>
   <br>
 </h1>
 

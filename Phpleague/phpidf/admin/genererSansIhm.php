@@ -16,7 +16,11 @@ if ($champRecup == 150171)
 	$tableau = array(150171, 150181, 150182, 150201, 150202,  150203);	//GES
 elseif ($champRecup == 170171)
 	$tableau = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 170193, 170194, 170271, 170272);	//IDF
-elseif ($champRecup == 180171)
+	elseif ($champRecup == 170181)
+	$tableau = array( 170182, 170183, 170191, 170192, 170193, 170194);
+	elseif ($champRecup == 170271)
+	$tableau = array( 170271, 170272);
+	elseif ($champRecup == 180171)
 	$tableau = array(180171, 180181, 180201, 180202, 180203);	//NOR
 elseif ($champRecup == 180271)
 	$tableau = array(180271, 189181);	
