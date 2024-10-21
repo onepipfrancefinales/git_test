@@ -469,53 +469,120 @@ function palmaresParLigue($sigle, $table, $categorie, $bdd)
 	}
 }
 
-function chgmntNomDivision($division,$base, $bdd)
+function chgmntNomDivision($division, $base, $bdd)
 {
-	GLOBAL $tabNomDivision, $tabAnnee;
-	
+	global $tabNomDivision, $tabAnnee;
+	$tabCle[] = array();
 	$tabNomDivision = array();
 	$tabAnnee = array();
 
-	$reponse = $bdd->query("SELECT division, annee
+	$reponse = $bdd->query("SELECT cle, division, annee
 							FROM bddivisions
 							WHERE  id ='$division'
-							ORDER BY cle DESC "); 
+							ORDER BY cle DESC ");
 
 	while ($donnees =  $reponse->fetch()) {
+		$tabCle[] = $donnees['cle'];
 		$tabNomDivision[] = $donnees['division'];
 		$tabAnnee[] = $donnees['annee'];
 	}
 
-	$anneeMax = date('Y', time());
+	if (min($tabCle) < 1000)
+		$anneeMax = max($tabAnnee);
+	else
+		$anneeMax = date('Y', time());
+
+
+	if ($division >= 379)
+		$titre = "Vainqueurs du challenge";
+	else
+		$titre = "Champions de France";
 
 	//Periode 1
-	echo "<h1>" . $tabNomDivision[0] ."<h1>";
-	palmaresParDivisionParAnnee($division, $base, $tabAnnee[0], $anneeMax, $bdd);	
+	echo "<h1>" . $titre . "<br>" . $tabNomDivision[0] . "<h1>";
+	palmaresParDivisionParAnnee($division, $base, $tabAnnee[0], $anneeMax, $bdd);
+	//palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd);
 
-	
 	//Période 2 à count($tabNomDivision)
-	for ($i=0; $i< count($tabNomDivision)-1; $i++) {
+	for ($i = 0; $i < count($tabNomDivision) - 1; $i++) {
 		echo "<br>";
-		echo "<h1>". $tabNomDivision[$i+1] ."<h1>";
-		palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i+1], $tabAnnee[$i], $bdd);
+		echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
+		palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
+	//	palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $anneeMax, $bdd);
+	}
+}
+
+function chgmntNomDivisionligne($division, $base, $bdd)
+{
+	global $tabNomDivision, $tabAnnee;
+	$tabCle[] = array();
+	$tabNomDivision = array();
+	$tabAnnee = array();
+
+	$reponse = $bdd->query("SELECT cle, division, annee
+							FROM bddivisions
+							WHERE  id ='$division'
+							ORDER BY cle DESC ");
+
+	while ($donnees =  $reponse->fetch()) {
+		$tabCle[] = $donnees['cle'];
+		$tabNomDivision[] = $donnees['division'];
+		$tabAnnee[] = $donnees['annee'];
 	}
 
+	if (min($tabCle) < 1000)
+		$anneeMax = max($tabAnnee);
+	else
+		$anneeMax = date('Y', time());
+
+
+	if ($division >= 379)
+		$titre = "Vainqueurs du challenge";
+	else
+		$titre = "Champions de France";
+
+	//Periode 1
+	echo "<h1>" . $titre . "<br>" . $tabNomDivision[0] . "<h1>";
+	palmaresParDivisionParAnnee($division, $base, $tabAnnee[0], $anneeMax, $bdd);
+	//palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd);
+
+	//Période 2 à count($tabNomDivision)
+	for ($i = 0; $i < count($tabNomDivision) - 1; $i++) {
+		echo "<br>";
+		echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
+	palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
+	//palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $anneeMax, $bdd);
+	}
 }
+
+
+
+
+
+
+
 function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMax, $bdd)
 {
 
-	GLOBAL $tabSaison, $tabChampion, $tabComite;
+	global $tabSaison, $tabChampion, $tabComite;
 
 	$tabSaison = array();
 	$tabChampion = array();
 	$tabComite = array();
+	$france = "de France";
+	$essor = "du challenge de l\'Essor";
+	$duManoir = "du challenge Yves du Manoir";
+	$esperance = "du challenge de l\'Espérance";
+	$beguere = "du challenge Beguere";
+	$amitie = "du challenge de l\'amitié";
+	$espoir = "du challenge de l\'espoir";
 
 	$reponse = $bdd->query("SELECT saison, champion, comite1 
 						FROM $table
-						WHERE championnat='de France' 
-						AND rang=$division 
-						AND rang2=$division  AND saison between $anneeCreation and $anneeMax
-						AND titre ='champion' 
+						WHERE rang = $division
+						AND rang2 = $division  AND saison between $anneeCreation and $anneeMax
+						AND (championnat = '$france'  OR  championnat = '$essor' OR championnat = '$duManoir'  OR championnat = '$esperance'   OR championnat = '$amitie'  OR championnat = '$espoir'     )
+						AND (titre ='champion' OR titre = 'Vainqueur')
 						ORDER BY saison DESC");
 
 	while ($donnees =  $reponse->fetch()) {
@@ -523,26 +590,116 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 		$tabChampion[] = $donnees['champion'];
 		$tabComite[] = $donnees['comite1'];
 	}
-	$periode = $anneeMax-$anneeCreation;
-		
-		for ($i = 0; $i < $periode; $i++) {
-		
-		if ($tabChampion[$i] == "Pas de championnat"){
+	$periode = $anneeMax - $anneeCreation;
+	$pasDeChampionnat = "Pas de championnat";
+	$covid = "Pas de titre décerné";
+
+	for ($i = 0; $i < $periode; $i++) {
+
+		if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid) {
 			echo "<h4 style = \"background-color : #C5C6C7; width:300px; margin: 0px auto\">";
-			
-		echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
-		echo "</h4>";
-		echo "<br>";
-		}
-		else {
+
+			echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
+			echo "</h4>";
+			echo "<br>";
+		} else {
 			echo "<h4>";
 			echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
 			echo "</h4>";
-	}
 		}
-		
+	}
 }
 
+
+function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, $bdd)
+
+{
+	$tabSaison = array();
+	$tabChampion = array();
+	$tabComite = array();
+	$tabCommentaire = array();
+	$france = "de France";
+	$essor = "du challenge de l\'Essor";
+	$duManoir = "du challenge Yves du Manoir";
+	$esperance = "du challenge de l\'Espérance";
+	$beguere = "du challenge Beguere";
+	$amitie = "du challenge de l\'amitié";
+	$espoir = "du challenge de l\'espoir";
+
+
+
+	$reponse = $bdd->query("SELECT saison, champion, comite1, commentaire
+						FROM $table
+						WHERE rang = $division
+						AND rang2 = $division  AND saison between $anneeCreation and $anneeMax
+						AND (championnat = '$france'  OR  championnat = '$essor' OR championnat = '$duManoir'  OR championnat = '$esperance'   OR championnat = '$amitie'  OR championnat = '$espoir'     )
+						AND (titre ='champion' OR titre = 'Vainqueur')
+						ORDER BY saison DESC");
+
+	while ($donnees =  $reponse->fetch()) {
+		$tabSaison[] = $donnees['saison'];
+		$tabChampion[] = $donnees['champion'];
+		$tabComite[] = $donnees['comite1'];
+		$tabCommentaire[] = $donnees['commentaire'];
+	}
+
+	$pattern = "/[0-9]{7}/i";
+	$tabNom = array();
+	$periode = $anneeMax - $anneeCreation;
+	 $pasDeChampionnat = "Pas de championnat";
+	 $covid = "Pas de titre décerné";
+
+	//for ($i = 0; $i < count($tabChampion); $i++) {
+	for ($i = 0; $i < $periode; $i++) {
+		if (preg_match($pattern, $tabChampion[$i]) == 1) {
+
+			$reponseCode = $bdd->query("SELECT nom_1
+										FROM bdclubs 
+										WHERE id=' $tabChampion[$i]' ");
+
+			while ($donnees =  $reponseCode->fetch()) {
+				$champion = $donnees['nom_1'];
+			}
+
+			array_push($tabNom, $champion);
+		} else {
+			array_push($tabNom, $tabChampion[$i]);
+		}
+		
+		
+	
+
+			if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid) {
+				echo "<h4 style = \"background-color : #C5C6C7; width:300px; margin: 0px auto\">";
+	
+				echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
+				echo "</h4>";
+				echo "<br>";
+			} else {
+				echo "<h4>";
+				echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
+			
+				if (strlen($tabCommentaire[$i]) > 0) { ?>
+					<sup><span class="infobulle" aria-label="<?php echo $tabCommentaire[$i]; ?>"><img src="../../images/info.gif" height="15" width="15"></span></sup>
+					</h4>
+		<?php
+				}
+		
+			//}
+		}
+		
+		
+		/*/
+		echo "<h4>";
+		echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
+		if (strlen($tabCommentaire[$i]) > 0) { ?>
+			<sup><span class="infobulle" aria-label="<?php echo $tabCommentaire[$i]; ?>"><img src="../../images/info.gif" height="15" width="15"></span></sup>
+			</h4>
+<?php
+		}
+*/
+	}
+}
 
 function palmaresParDivision($division, $table, $bdd)
 {
@@ -555,7 +712,7 @@ function palmaresParDivision($division, $table, $bdd)
 						WHERE championnat='de France' 
 						AND rang=$division 
 						AND rang2=$division  AND saison < 2019
-						AND titre='champion' 
+						AND (titre='champion'  OR titre ='Vainqueur')
 						ORDER BY saison DESC");
 
 	while ($donnees =  $reponse->fetch()) {
@@ -603,66 +760,13 @@ function palmaresParDivision($division, $table, $bdd)
 }
 
 
-
-
-function palmaresParDivisionLigne($division, $table, $bdd)
-{
-	$tabSaison = array();
-	$tabChampion = array();
-	$tabComite = array();
-
-	$reponse = $bdd->query("SELECT saison, champion, comite1 
-						FROM bdjeunesligne
-						WHERE championnat='de France' 
-						AND rang=$division 
-						AND rang2=$division  AND saison < 2019
-						ORDER BY saison DESC");
-
-	while ($donnees =  $reponse->fetch()) {
-		$tabSaison[] = $donnees['saison'];
-		$tabChampion[] = $donnees['champion'];
-		$tabComite[] = $donnees['comite1'];
-
-
-		if ($donnees['saison'] == '2018' and $division == '330') {
-			echo "<h1><font color=\"#000000\">";
-			echo "Jules Balandrade";
-			echo "<br />";
-			echo "</font></h1>";
-		} elseif ($donnees['saison'] == '2018' and $division == '370') {
-			echo "<h1><font color=\"#000000\">";
-			echo "Jean Teulière";
-			echo "<br />";
-			echo "</font></h1>";
-		}
-	}
-
-	$pattern = "/[0-9]{7}/i";
-	$tabNom = array();
-
-	for ($i = 0; $i < count($tabChampion); $i++) {
-
-		if (preg_match($pattern, $tabChampion[$i]) == 1) {
-
-			$reponseCode = $bdd->query("SELECT nom_1
-										FROM bdclubs 
-										WHERE id=' $tabChampion[$i]' ");
-
-			while ($donnees =  $reponseCode->fetch()) {
-				$champion = $donnees['nom_1'];
-			}
-
-			array_push($tabNom, $champion);
-		} else {
-			array_push($tabNom, $tabChampion[$i]);
-		}
-		echo "<h4>";
-		echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
-		echo "</h4>";
-	}
-}
 
 ?>
+
+
+
+
+
 <?php
 //***********************************************************************/
 //                  Palmares Comités (Avant la saison 2018-2019)                                    */

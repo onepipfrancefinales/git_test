@@ -34,7 +34,8 @@
 		   FROM bdsaisons 
 		   INNER JOIN bddivisions
 		   WHERE bdsaisons.id = '$equipe'
-		   AND bdsaisons.en_cours = bddivisions.id ");
+		   AND bdsaisons.en_cours = bddivisions.id 
+		   AND bddivisions.cle = bddivisions.id * 1000 ");
 
 		while ($row = $requete->fetch()) {
 			$saisonEnCours = $row[0];

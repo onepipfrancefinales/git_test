@@ -99,7 +99,6 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/palmares/palmNational/pagePalmares.php?division=285">Elite 2</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=290">Fédérale 1</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=295">Fédérale 2</option>
-          <option value="/palmares/palmNational/pagePalmares.php?division=300">Fédérale 3</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=300">------------------</option>
           <option>REICHELS</option>
           <option>JUNIORS</option>
@@ -116,6 +115,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/palmares/palmNational/pagePalmares.php?division=360">Alamercery</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=365">Gaudermen</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=370">U16 (Ex Teulière)</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=375">Challenge de France</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=370">------------------</option>
           <option>CHALLENGES</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=380">----------------</option>

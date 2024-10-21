@@ -17,7 +17,7 @@ require '../fonctionsPalmares.php';
   <meta name="robots" content="All">
   <title>Champions de FRANCE <?php echo $annee; ?> de rugby</title>
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
-  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
+  class="center"
   <link type="text/css" rel="stylesheet" href="palmares.css">
 </head>
 

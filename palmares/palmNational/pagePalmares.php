@@ -6,8 +6,6 @@ else $nomDivision = '*';
 if (isset($base));
 else $base = '-';
 require '../fonctionsPalmares.php';
-
-
 require("../../connect/connexion1.php");
 
 if ($division < 230) {
@@ -34,6 +32,7 @@ $reponse = $bdd->query("SELECT division
 while ($donnees =  $reponse->fetch()) {
 	$nomDivision = $donnees['division'];
 }
+	
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -77,18 +76,79 @@ while ($donnees =  $reponse->fetch()) {
 			</td>
 			<td class="centreDePage">
 				<?php
+				// equipe 1
+				if ($division < 230) {
+				$tabDivisions = array('110', '120', '130', '135', '140', '150', '160', '170','180','190','200','210','220','222');
+				$table ="bdequipe1";
+				}
+				// equipe 2
+				else if ($division > 220 and $division < 280) {
+				$tabDivisions = array('230', '240', '250', '260', '270');
+				$table ="bdequipe2";
+				}
+				// féminines
+				else if ($division > 270 and $division < 300) {
+					$tabDivisions = array( '280', '285', '290', '295');
+					$table ="bdfem";
+					}
+				// equipe jeunes
+				else if ($division >300 and $division < 380) {
+					$tabDivisions = array( '310', '320', '325', '330','340','350','360','365','370','375');
+					$table ="bdjeunes";
+					}
+				//challenges
+				else if ($division > 370) {
+					$tabDivisions = array( '380','390','400','405','410','420','430','440','450','500');
+					$table ="bdchallenges";
+					}
 
-				if ($division == 110){
-			echo "<h1>"."Champion de France"."</h1>";
-			chgmntNomDivision (110, "bdequipe1", $bdd); }
+				foreach ($tabDivisions as $div) {
+					if ($division == $div) {
+						chgmntNomDivision($div, $table, $bdd);
+					}
+				}
+/*
+				// equipe 2
+				$tabDivisions = array('110', '120', '130', '135', '240', '250', '260', '270');
+				foreach ($tabDivisions as $divEquipe2) {
+					if ($division == $divEquipe2) {
+						chgmntNomDivision($divEquipe2, "bdequipe1", $bdd);
+					}
+				}
+
+				if ($division == 110) {
+					chgmntNomDivision(110, "bdequipe1", $bdd);
+				}
+				/*	
+			else if ($division == 120) {
+			chgmntNomDivision (120, "bdequipe1", $bdd); }
+				
+			else if ($division == 130) {
+			chgmntNomDivision (130, "bdequipe1", $bdd); }
+
+			else if ($division == 135) {
+			chgmntNomDivision (135, "bdequipe1", $bdd); }
+
 			else if ($division == 140) {
-			echo "<h1>"."Champion de France"."</h1>";
 			chgmntNomDivision (140, "bdequipe1", $bdd); }
+			
 			else if ($division == 150) {
-			echo "<h1>"."Champion de France"."</h1>";
 			chgmntNomDivision (150, "bdequipe1", $bdd); }
-					//require("top14.php");
-				else {
+			
+			else if ($division == 160) {
+			chgmntNomDivision (160, "bdequipe1", $bdd); }
+			
+			else if ($division == 170) {
+			chgmntNomDivision (170, "bdequipe1", $bdd); }
+			
+			else if ($division == 180) {
+			chgmntNomDivision (180, "bdequipe1", $bdd); }
+			
+			else if ($division == 190) {
+			chgmntNomDivision (190, "bdequipe1", $bdd); }
+*/ 
+/*
+else {
 					// A partir de la saison 2023
 					require("palmaresLigues2023.php");
 					// De la saison 2019 à la saison 2022
@@ -102,6 +162,7 @@ while ($donnees =  $reponse->fetch()) {
 					// Saison antérieure à la saiaon 2019
 					require("palmares.php");
 				}
+					*/
 				?>
 			</td>
 			<td class="colonne">
@@ -111,7 +172,7 @@ while ($donnees =  $reponse->fetch()) {
 	</table>
 
 </body>
-<footer> 
+<footer>
 	<?php include("../../footer.php");  ?>
 </footer>
 

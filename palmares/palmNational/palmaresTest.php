@@ -18,7 +18,7 @@ elseif($division<310)
 	}
 elseif($division<380)
 	{
-	$table="bdjeunes";
+	$table="bdjeunesligne";
 	$titre="Champions de France";
 	}
 elseif($division<500)
@@ -55,21 +55,21 @@ $reponse = $bdd->query("SELECT division
 /**************************************************** */
 
 //palmaresParDivision($division, $table, $bdd);
-//palmaresParDivisionLigne($division, $table, $bdd);
+chgmntNomDivisionligne($division, $base, $bdd);
 
 
+/*
 
-
-$tabSaison = array();
+	$tabSaison = array();
 	$tabChampion = array();
 	$tabComite = array();
 	$tabCommentaire = array();
 
 	$reponse = $bdd->query("SELECT saison, champion, comite1 , commentaire
-						FROM $table
+						FROM bdjeunesligne
 						WHERE championnat='de France' 
 						AND rang=$division 
-						AND rang2=$division  AND saison < 2019
+						AND rang2=$division  
 						AND titre='champion' 
 						ORDER BY saison DESC");
 
@@ -78,18 +78,6 @@ $tabSaison = array();
 		$tabChampion[] = $donnees['champion'];
 		$tabComite[] = $donnees['comite1'];
 		$tabCommentaire [] = $donnees ['commentaire'];
-
-		if ($donnees['saison'] == '2018' and $division == '330') {
-			echo "<h1><font color=\"#000000\">";
-			echo "Jules Balandrade";
-			echo "<br />";
-			echo "</font></h1>";
-		} elseif ($donnees['saison'] == '2018' and $division == '370') {
-			echo "<h1><font color=\"#000000\">";
-			echo "Jean Teulière";
-			echo "<br />";
-			echo "</font></h1>";
-		}
 	}
 
 	$pattern = "/[0-9]{7}/i";
@@ -121,53 +109,19 @@ $tabSaison = array();
 	}
 	}
 
-
+*/
 ?>
 
 
 <?php
 
-if ($division>380)
-{
-/*	
-	$reponse = $bdd->query("SELECT saison, champion, comite1 
-							FROM $table
-							WHERE championnat='de France'
-							AND rang=$division 
-							AND rang2=$division  
-							AND titre='champion' 
-							ORDER BY saison DESC"); 
-					 
-	while ($donnees =  $reponse->fetch()  )
-	{ 						
-	echo "<h4>";
-	echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 
-	echo "</h4>";
-	}								 
-*/		 
-}			 			 
-else
-{
-/*
-	$reponse = $bdd->query("
-		SELECT saison, champion, comite1  
-		FROM bdchallenges 
-		WHERE rang=$division AND titre='vainqueur'
-		ORDER BY saison DESC"); 
-				 
-	while ($donnees =  $reponse->fetch()  )
-	{ 
-	 echo "</h4>";
- 	 echo $donnees['saison'].' - '.$donnees['champion'].' '.$donnees['comite1']; 
-	 echo "</h4>"; 									
-	}	
-	 */		 							 
-}
+
+
 
 echo "<br>";
 echo "<br>";
 
-//}
+
 
 ?>
 <style>
