@@ -48,22 +48,44 @@ $reponse = $bdd->query("SELECT division
 								}								
 }
 
-
-
-
 function palmaresLigue($sigleLigue, $annee, $rang, $bdd)
 {
-
-
-
 Global	$tabSaisons, $tabChampions, $intervalleAnnee;
 
 $tabSaisons = array();	
 $tabChampions = array();
 
-$intervalleAnnee=$annee-2018;
+$intervalleAnnee = $annee-2022;
 
-  for($i=2019; $i<=$annee; $i++)
+  for($i=2022; $i<=$annee; $i++)
+  {
+	$reponse = $bdd->query("
+			   SELECT saison, champion, comite1 
+			   FROM bdequipe1
+			   WHERE titre = 'Champion' 
+			   AND comite1 = '$sigleLigue' 
+			   AND rang='$rang'  
+			   AND rang2= '1'
+			   AND saison > 2022
+			   ORDER BY saison DESC"); 
+	
+	while ($donnees = $reponse->fetch() )
+	{
+	 $tabSaisons[] = $donnees['saison'];
+	 $tabChampions[] = $donnees['champion'];	
+    }
+  }
+}
+
+
+function palmaresLigue2018_2022($sigleLigue, $annee, $rang, $bdd)
+{
+Global	$tabSaisons18_22, $tabChampions18_22;
+
+$tabSaisons18_22 = array();	
+$tabChampions18_22 = array();
+
+  for($i=0; $i<=3; $i++)
   {
 	$reponse = $bdd->query("
 			   SELECT saison, champion, comite1 
@@ -73,12 +95,13 @@ $intervalleAnnee=$annee-2018;
 			   AND rang='$rang'  
 			   AND rang2= '1'
 			   AND saison > 2018
+			   and saison < 2023  
 			   ORDER BY saison DESC"); 
 	
 	while ($donnees = $reponse->fetch() )
 	{
-	 $tabSaisons[] = $donnees['saison'];
-	 $tabChampions[] = $donnees['champion'];	
+	 $tabSaisons18_22[] = $donnees['saison'];
+	 $tabChampions18_22[] = $donnees['champion'];	
     }
   }
 }
@@ -139,9 +162,9 @@ $intervalleAnneeChampion=$annee-$minAnneeChampion;
 function palmaresComite($comitePlus, $rang, $bdd)
 {
 
-echo "--------------------";
-echo $comitePlus ;echo "<br />";
-echo $rang ;echo "<br />";
+//echo "--------------------";
+//echo $comitePlus ;echo "<br />";
+//echo $rang ;echo "<br />";
 
 	
 Global	$tabSaisonsComite, $tabChampionsComite, $intervalleAnneeComite;

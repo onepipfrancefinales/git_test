@@ -1,4 +1,5 @@
 <?php
+$smart = false;
 if (isset($_GET['division'])) $division = $_GET['division'];
 else $division = '+';
 if (isset($nomDivision));

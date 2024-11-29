@@ -32,8 +32,8 @@ mail($to, $subject, $msg);
 <table width="494" border="0">
   <tr> 
     <td colspan="3"> 
-      <div align="center"><a href="http://francefinalesrugby.franceserv.com/page_resultats.php"><font size="6">Retour 
-        aux r�sutats et aux classements </font></a> </div>
+      <div align="center"><a href="http://francefinalesrugby.fr"><font size="6">Retour 
+        aux résutats et aux classements </font></a> </div>
       <div align="center"></div>
     </td>
   </tr>
@@ -43,7 +43,7 @@ mail($to, $subject, $msg);
       <div align="center">
         <?php
     // On inclut le haut de la page
-    include("../../pub_carre.php");
+ //   include("../../pub_carre.php");
     ?>
       </div>
     </td>

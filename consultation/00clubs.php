@@ -123,7 +123,7 @@ else  $width = "90%";
       <td class="saisieGras" colspan="2"> <?php echo $siege; ?></td>
     </tr>
     <tr>
-      <td class="saisie" colspan="2"><?php echo $adresse; ?> </td>
+      <td class="saisie" colspan="2"><?php echo $adresse2; ?> </td>
     </tr>
     <tr>
       <td class="saisie" colspan="2"><?php echo $cp; ?> <?php echo $ville; ?></td>

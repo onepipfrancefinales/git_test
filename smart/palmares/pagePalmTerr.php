@@ -9,9 +9,26 @@ if (isset($_GET['comite'])) $comite = $_GET['comite'];
 $champ = substr($champ,0,5)*10;
 //echo "champ : ".$champ;echo "<br>";
 // prevoir en fonction de la longueur de la division �tudie�
+/*
+if (substr($champ,3,3) == 170)
+$division = "Honneur";
+else if (substr($champ,3,3) == 180)
+$division = "Promotion honneur";
+else if (substr($champ,3,3)==190)
+$division = "1re série";
+else if (substr($champ,3,3)==200)
+$division = "2me série";
+else if (substr($champ,3,3)==210)
+$division = "3me série";
+else if (substr($champ,3,3)==220)
+$division = "4me série";
+*/
+
+
+
 
 $rang = substr($champ,3,2)*10;
-echo "rang".$rang;
+//echo "rang".$rang;
 $comitePlus="(".''.$comite.''.")";
 
 require ("../../saison.php") ;
@@ -25,6 +42,7 @@ infosComite($champ, $bdd);
 nomDivision($rang, $bdd);
 infosLigue($codeLigue, $bdd);
 palmaresLigue($sigleLigue, $annee, $rang, $bdd);
+palmaresLigue2018_2022($sigleLigue, $annee, $rang, $bdd);
 palmaresComite($comitePlus, $rang, $bdd);
 ?>
 
@@ -85,6 +103,8 @@ include("menuTerrReg.php"); ?>
 	
 	
 <div class="container">
+
+
 <!-- affichage palmarès ligue -->
 <?php
 if ($comite=="au" OR $comite=="ly" OR $comite=="da" OR $comite=="ap" 
@@ -104,13 +124,25 @@ else
 <?php
 }
 ?>
+
+
+<!-- affichage titre palmarès (après-2022) -->
+<?php
+if (substr($champ,3,3) < 200) {
+?>
+<br /><br /><br />
 <div class="palm">
   <?php echo "Champions ".'Ligue '.$nomCompletLigue.' '.$division; ?>
 </div>
+
+<?php
+}
+?>
 <br />
 <?php
 for ($i=0; $i<$intervalleAnnee; $i++)
-{?>
+{
+	?>
 <table align="center">
   <tr>	
 	<td class="palmNoir"><?php echo $tabSaisons[$i];?></td>
@@ -118,11 +150,64 @@ for ($i=0; $i<$intervalleAnnee; $i++)
   </tr>
 </table>
 <?php
-}?>
+}
+?>
 
-<!-- affichage palmarès comités -->
+<br />
+
+<!-- affichage titre palmarès ligue (2018-2022) -->
+<div class="palm">
+
+
+
+  <?php 
+  
+  if (substr($champ,3,3) == 170)
+  $division = "Honneur";
+  else if (substr($champ,3,3) == 180)
+  $division = "Promotion honneur";
+  else if (substr($champ,3,3)==190)
+  $division = "1re série";
+  else if (substr($champ,3,3)==200)
+  $division = "2me série";
+  else if (substr($champ,3,3)==210)
+  $division = "3me série";
+  else if (substr($champ,3,3)==220)
+  $division = "4me série";
+  
+ echo "Champions ".'Ligue '.$nomCompletLigue.' '.$division; ?>
+</div>
+<br />
+<?php
+for ($i=0; $i < 4; $i++)
+{
+	?>
+<table align="center">
+  <tr>	
+	<td class="palmNoir"><?php echo $tabSaisons18_22[$i];?></td>
+	<td class="palmNoir"><?php echo $tabChampions18_22[$i];?></td> 
+  </tr>
+</table>
+<?php
+}
+?>
+
+<!-- affichage titre palmarès comités -->
 <p class="palm">
     <?php 
+if (substr($champ,3,3) == 170)
+$division = "Honneur";
+else if (substr($champ,3,3) == 180)
+$division = "Promotion honneur";
+else if (substr($champ,3,3)==190)
+$division = "1re série";
+else if (substr($champ,3,3)==200)
+$division = "2me série";
+else if (substr($champ,3,3)==210)
+$division = "3me série";
+else if (substr($champ,3,3)==220)
+$division = "4me série";
+
 	if ($comite == "ap") $nomCompletComite ="des Alpes";
 	elseif ($comite == "au") $nomCompletComite ="d'Auvergne";
 	elseif ($comite == "da") $nomCompletComite ="Drôme Ardèche";
@@ -154,11 +239,7 @@ for ($i=0; $i<$intervalleAnneeComite; $i++)
 <?php
 }?>
     <br>
-<?php
-  //include("../pub20.php"); 
- require ("../bas2.php");
- // include("../../pub/pub_displayCarre.php"); 
-?>
+<?php require ("../bas2.php"); ?>
    
   </div>
  </body>	

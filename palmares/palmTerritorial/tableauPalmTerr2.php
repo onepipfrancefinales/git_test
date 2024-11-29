@@ -1,5 +1,22 @@
 <?php
+/* ---  Début  --- */
+
+if ($id == 31)
+  $debut = 1997;
+
+  else if ($id == 35)
+  $debut = 2011;
+
+
+else
   $debut = 1999;
+
+/* ---  Fin  --- */
+
+
+ if ($id == 35)
+$fin = 1989;
+else
   $fin = 1979;
   ?>
   <table class="borderNone marginAuto width1250  backgroundBlack">

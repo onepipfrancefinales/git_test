@@ -9,7 +9,7 @@
 	 action="matchsPrevus2.php" method="post">
 		<fieldset > 
 			 <legend> 
-				Date de la compétition
+				Date de la compÃ©tition
 			 </legend> 
 		 
 			 <p>
@@ -20,8 +20,5 @@
 			</p> 
 		</fieldset> 
 </form>
-
- 
-
 </body>
 </html>

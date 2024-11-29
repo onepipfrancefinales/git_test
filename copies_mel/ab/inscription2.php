@@ -10,7 +10,7 @@ $to1 = $_POST['adresse1'];
 $subject1 = ' Resultats et classements de toutes les equipes Armagnac Bigorre';
 $msg1 = ' Bonjour,
 Une de vos connaissance vous invite � consulter les r�sultats, les classements et les stats des clubs du comit� Armagnac Bigorre � partir de l adresse ci dessous
-http://francefinalesrugby.franceserv.com/resultats/page_ab.php 
+http://francefinalesrugby.fr/resultats/page_ab.php 
 Bonne consultation
 Sportivement 
 France Finales Rugby ';
@@ -48,7 +48,7 @@ mail($to4, $subject4, $msg6);
 <table width="494" border="0">
   <tr> 
     <td colspan="3"> 
-      <div align="center"><a href="http://francefinalesrugby.franceserv.com/resultats/page_ab.php "><font size="6">Retour 
+      <div align="center"><a href="http://francefinalesrugby.fr/resultats/page_ab.php "><font size="6">Retour 
         aux r�sutats et aux classements </font></a> </div>
       <div align="center"></div>
     </td>

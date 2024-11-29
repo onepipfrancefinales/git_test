@@ -74,9 +74,6 @@ fusionDeClubs2($equipe, $bdd);
 //changementNom ($equipe, $width, $bdd);
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>

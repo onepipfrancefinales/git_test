@@ -303,7 +303,7 @@ $reponse= $bdd->query(" SELECT $phpmatchs.id, clubsDom.nom, clubsExt.nom,  $phpm
 	while($row = $reponse->fetch())
     { 
 		?>
-	 <table>
+	 <table  style="margin:auto; width:800px">
 	  <tr>
 		<td width="80" height="23"><?php echo substr($row[0],-10,-4);?></td>
 		<td width="80" ><?php echo "journee ".substr($row[0],-4,-2);?></td>
@@ -384,7 +384,7 @@ $reponse= $bdd->query(" SELECT $phpmatchs.id, clubsDom.nom, clubsExt.nom,  $phpm
 	while($row = $reponse->fetch())
     { 
 		?>
-	 <table>
+	 <table style="margin:auto; width:800px">
 	  <tr>
 		<td width="80" height="23"><?php echo substr($row[0],-10,-4);?></td>
 		<td width="80" ><?php echo "journee ".substr($row[0],-4,-2);?></td>
@@ -424,9 +424,13 @@ $phpclubs ="php".$bddComite."_clubs";
 echo $phpmatchs;
 if ($bddComite == "pro" )
 	{
+		
+
+
 	 $valComiteMin = 880*100000 + $valComite*1000;
 	 $valComiteMax = $valComiteMin+1000;
 	 echo $valComiteMin.' - '.$valComiteMax;
+
 	}
 
 
@@ -447,7 +451,7 @@ $reponse= $bdd->query(" SELECT $phpmatchs.id, clubsDom.nom, clubsExt.nom,  $phpm
 	while($row = $reponse->fetch())
     { 
 		?>
-	 <table>
+	 <table  style="margin:auto; width:800px">
 	  <tr>
 		<td width="80" height="23"><?php echo substr($row[0],-10,-4);?></td>
 		<td width="80" ><?php echo "journee ".substr($row[0],-4,-2);?></td>

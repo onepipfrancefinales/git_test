@@ -15,7 +15,7 @@
       <div align="center"><font size="4"><b>Pour s'inscrire saississsez votre 
         mél ci-dessous</b></font></div>
       <div align="center"> 
-        <form action="http://francefinalesrugby.franceserv.com/copies_mel/ab/inscriptionsimple2.php" method="POST">
+        <form action="http://francefinalesrugby.fr/copies_mel/ab/inscriptionsimple2.php" method="POST">
         <p align="center"> 
           <input type="text" name="champion" />
           et cliquez 

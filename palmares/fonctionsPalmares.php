@@ -1,4 +1,89 @@
 <?php
+// Les fonction nomDivision($rang, $bdd) et function palmaresFrance($rang, $annee, $bdd) ont été copiées
+// du dossier smart
+
+function nomDivisionMax($rang, $bdd)
+{
+	global $division, $anneeMax;
+
+$reponse = $bdd->query("SELECT MAX(annee) 
+						FROM bddivisions
+						WHERE id='$rang'");
+
+$row = $reponse->fetch();
+$anneeMax = $row[0];
+
+	$reponse = $bdd->query("SELECT division
+						FROM bddivisions
+						WHERE id= '$rang' and annee ='$anneeMax'");
+	while ($donnees = $reponse->fetch()) {
+		$division = $donnees['division'];
+
+	}	
+}
+
+
+function nomDivision($rang, $bdd)
+{
+	global $division;
+	$reponse = $bdd->query("SELECT division
+						FROM bddivisions
+						WHERE id= '$rang'  ");
+	while ($donnees = $reponse->fetch()) {
+		$division = $donnees['division'];
+	}
+}
+
+
+function palmaresFrance($rang, $annee, $bdd)
+{
+	global $tabSaison, $tabChampion, $tabComite, $intervalleAnneeChampion;
+
+	if ($rang > 100 && $rang < 225)
+		$table = "bdequipe1";
+	elseif ($rang > 225 && $rang < 275)
+		$table = "bdequipe2";
+	elseif ($rang > 275 && $rang < 305)
+		$table = "bdfem";
+	elseif ($rang > 305 && $rang < 375)
+		$table = "bdjeunes";
+	elseif ($rang > 375 && $rang < 455)
+		$table = "bdchallenges";
+
+
+	$reponse = $bdd->query("SELECT Min(saison)
+						FROM $table
+							WHERE championnat='de France' and rang=$rang and titre='champion' 
+							ORDER BY saison DESC");
+
+	$row = $reponse->fetch();
+	$minAnneeChampion = $row[0];
+
+
+	$tabSaison = array();
+	$tabChampion = array();
+	$tabComite = array();
+
+	$intervalleAnneeChampion = $annee - $minAnneeChampion;
+
+	for ($i = $minAnneeChampion; $i <= $annee; $i++) {
+		$reponse = $bdd->query("SELECT saison, champion, comite1, division 
+							FROM $table
+							WHERE championnat='de France' and rang=$rang and titre='champion' 
+							ORDER BY saison DESC");
+
+		while ($donnees = $reponse->fetch()) {
+			$tabSaison[] = $donnees['saison'];
+			$tabChampion[] = $donnees['champion'];
+			$tabComite[] = $donnees['comite1'];
+		}
+		$reponse->closeCursor();
+	}
+}
+
+//**************************************************************************** */
+
+
 function nomComite($sigle, $id, $bdd)
 {
 
@@ -15,9 +100,7 @@ function nomComite($sigle, $id, $bdd)
 		$appartenanceLigue = $row[3];
 	}
 }
-?>
 
-<?php
 function nomLigue($idLigue, $sigleLigue, $bdd)
 {
 	global $idLigue, $nomLigue, $sigleLigue;
@@ -46,7 +129,8 @@ function palmaresLigues($comite, $rang, $bdd, $anneeReforme)
 		// Recherche de la derniere année enregistrée
 		$reponse = $bdd->query("SELECT MAX(saison)
 							FROM bdequipe1
-							WHERE rang='$rang' 
+							WHERE rang = 
+							'$rang' 
 							AND comite1 ='$comite' 
 							AND championnat != 'de France' 
 							AND titre ='Champion'
@@ -508,14 +592,14 @@ function chgmntNomDivision($division, $base, $bdd)
 		echo "<br>";
 		echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
 		palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
-	//	palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $anneeMax, $bdd);
+		//	palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $anneeMax, $bdd);
 	}
 }
 
-function chgmntNomDivisionligne($division, $base, $bdd)
+function chgmntNomDivisionligne($division, $base, $bdd, $smart)
 {
 	global $tabNomDivision, $tabAnnee;
-	$tabCle[] = array();
+	$tabCle = array();
 	$tabNomDivision = array();
 	$tabAnnee = array();
 
@@ -541,18 +625,25 @@ function chgmntNomDivisionligne($division, $base, $bdd)
 	else
 		$titre = "Champions de France";
 
-	//Periode 1
-	echo "<h1>" . $titre . "<br>" . $tabNomDivision[0] . "<h1>";
-	palmaresParDivisionParAnnee($division, $base, $tabAnnee[0], $anneeMax, $bdd);
-	//palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd);
+		//Periode 1
+		if ($smart == true) 
+		echo "<div class=\"bold size4\" style=\" margin : 15px\">" .$titre . "<br>" ."<br>" . $tabNomDivision[0]."</div>"; 
+		else
+		echo "<h1>" . $titre . "<br>" . $tabNomDivision[0] . "<h1>";
 
-	//Période 2 à count($tabNomDivision)
-	for ($i = 0; $i < count($tabNomDivision) - 1; $i++) {
-		echo "<br>";
-		echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
-	palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
-	//palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $anneeMax, $bdd);
-	}
+		palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd, $smart);
+
+		//Période  de 2 à count($tabNomDivision)
+		for ($i = 0; $i < count($tabNomDivision) - 1; $i++) {
+			echo "<br>";
+
+			if ($smart == true) 	
+			echo "<div class=\"bold size4\" >" .$titre . "</div>" ."<br>"."<div class=\"bold size4\">" . $tabNomDivision[$i + 1] ."</div>"; 
+			else
+			echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
+
+			palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd, $smart);
+		}
 }
 
 
@@ -611,7 +702,7 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 }
 
 
-function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, $bdd)
+function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, $bdd, $smart)
 
 {
 	$tabSaison = array();
@@ -627,13 +718,13 @@ function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, 
 	$espoir = "du challenge de l\'espoir";
 
 
+	//AND rang2 = $division  AND saison between $anneeCreation and $anneeMax
 
 	$reponse = $bdd->query("SELECT saison, champion, comite1, commentaire
 						FROM $table
 						WHERE rang = $division
 						AND rang2 = $division  AND saison between $anneeCreation and $anneeMax
 						AND (championnat = '$france'  OR  championnat = '$essor' OR championnat = '$duManoir'  OR championnat = '$esperance'   OR championnat = '$amitie'  OR championnat = '$espoir'     )
-						AND (titre ='champion' OR titre = 'Vainqueur')
 						ORDER BY saison DESC");
 
 	while ($donnees =  $reponse->fetch()) {
@@ -643,14 +734,16 @@ function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, 
 		$tabCommentaire[] = $donnees['commentaire'];
 	}
 
+
 	$pattern = "/[0-9]{7}/i";
 	$tabNom = array();
 	$periode = $anneeMax - $anneeCreation;
-	 $pasDeChampionnat = "Pas de championnat";
-	 $covid = "Pas de titre décerné";
+	$pasDeChampionnat = "Pas de championnat";
+	$covid = "Pas de titre décerné";
 
-	//for ($i = 0; $i < count($tabChampion); $i++) {
-	for ($i = 0; $i < $periode; $i++) {
+
+	for ($i = 0; $i < count($tabChampion); $i++) {
+
 		if (preg_match($pattern, $tabChampion[$i]) == 1) {
 
 			$reponseCode = $bdd->query("SELECT nom_1
@@ -665,39 +758,30 @@ function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, 
 		} else {
 			array_push($tabNom, $tabChampion[$i]);
 		}
-		
-		
-	
+	}
 
-			if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid) {
-				echo "<h4 style = \"background-color : #C5C6C7; width:300px; margin: 0px auto\">";
-	
-				echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
-				echo "</h4>";
-				echo "<br>";
-			} else {
-				echo "<h4>";
-				echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
-			
-				if (strlen($tabCommentaire[$i]) > 0) { ?>
-					<sup><span class="infobulle" aria-label="<?php echo $tabCommentaire[$i]; ?>"><img src="../../images/info.gif" height="15" width="15"></span></sup>
-					</h4>
-		<?php
-				}
-		
-			//}
-		}
-		
-		
-		/*/
-		echo "<h4>";
+	for ($i = 0; $i < $periode; $i++) {
+		if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid) {
+			echo  "<div style = \"background-color : #C5C6C7; width:300px; margin: 0px auto\">";
+			echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
+			echo "</div>";
+			echo "<br>";
+		} else {
+		if ($smart == true)	{
+		echo "<div style=\" margin : 15px; font-size: 18px\">";
 		echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
-		if (strlen($tabCommentaire[$i]) > 0) { ?>
-			<sup><span class="infobulle" aria-label="<?php echo $tabCommentaire[$i]; ?>"><img src="../../images/info.gif" height="15" width="15"></span></sup>
-			</h4>
-<?php
+		echo "</div>";
 		}
-*/
+		else {
+		echo "<h4>";
+			echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
+
+			if (strlen($tabCommentaire[$i]) > 0) { ?>
+				<sup class="infobulle" aria-label="<?php echo $tabCommentaire[$i]; ?>"><img src="../../images/info.gif" height="15" width="15"></sup>
+				</h4>
+<?php
+			}
+		}}
 	}
 }
 

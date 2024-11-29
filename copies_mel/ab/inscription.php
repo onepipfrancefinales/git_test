@@ -14,7 +14,7 @@
     <td colspan="3">
 <div align="center"></div>
       <div align="center">
-<form action="http://francefinalesrugby.franceserv.com/copies_mel/ab/inscription2.php" method="POST">
+<form action="http://francefinalesrugby.fr/copies_mel/ab/inscription2.php" method="POST">
           <p align="center">Saississez la ou les adresses et validez
           <p align="center">adresse 1
 <input type="text" name="adresse1" />

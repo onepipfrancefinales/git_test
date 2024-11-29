@@ -94,7 +94,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
      {
 			echo 'Upload effectu&eacute; avec succès !';
 			echo "<br/>";
-			echo "----------------------------";
+		//	echo "----------------------------";
 			echo "<br/>";
 	 }
      else //Sinon (la fonction renvoie FALSE).
@@ -108,9 +108,9 @@ else
 }
 echo "fichier à exploité : ".$fichier;
 echo "<br/>";
-echo"---------------------------------------------";
+//echo"---------------------------------------------";
 echo "<br/>";
-echo"---------------------------------------------";
+//echo"---------------------------------------------";
 echo "<br/>";
 // ****** Connexion à la base ******
 
@@ -531,7 +531,7 @@ $buts_ext = intval($buts_ext);
 		}
 	// test 1 : scores inscrits en base et non présents dans le fichier
 	if ($buts_domBdd[$i] + $buts_extBdd[$i]  > 0 and $buts_dom + $buts_ext == 0) {
-		echo "<br>";
+//		echo "<br>";
 //		echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
 //		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 //		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
@@ -547,7 +547,7 @@ $buts_ext = intval($buts_ext);
 		
 
 //			echo "comparaisons Ok Ok";
-			echo "<br>";
+	//		echo "<br>";
 
 			$bdd->exec("UPDATE $tableMatch
 			  SET  date_reelle ='$date_reelle', buts_dom = '$buts_dom', buts_ext = '$buts_ext' ,  id_journee = '$id_journee'
@@ -564,7 +564,7 @@ $buts_ext = intval($buts_ext);
 			$presence = $row[0];
 
 //			echo "Présence de la rencontre retour : " . $presence;
-			echo "----------";echo "<br>";
+			//echo "----------";echo "<br>";
 			if ($presence == 1) {
 				
 				$idChampRetour =  substr($id_journee,0,6,);
@@ -584,20 +584,23 @@ $buts_ext = intval($buts_ext);
 					$row = $requete->fetch();
 					$nombreDeJournees = $row[0];
 
-echo "nombreDeJournees : " . $nombreDeJournees;echo "<br>";
+echo "nombreDeJournees : " . $nombreDeJournees;
+//echo "<br>";
 
-				echo "<br>";
+			//	echo "<br>";
 				
 				$idJourneeRetour = $id_journee + ($nombreDeJournees/2);
 				echo "idJourneeRetour : ".$idJourneeRetour;
 
 				$numero = substr($idJourneeRetour,-2);
-echo "numero : ".$numero;echo "<br>";
+echo "numero : ".$numero;
+//echo "<br>";
 				$bdd->exec("UPDATE $tableMatch
 			  SET   id_journee = '$idJourneeRetour'
 			  WHERE id_equipe_dom = '$id_equipe_ext' AND id_equipe_ext = '$id_equipe_dom' ");
 
-				echo "idChampRetour : " . $idChampRetour;echo "<br>";
+				echo "idChampRetour : " . $idChampRetour;
+				//echo "<br>";
 	//TODO	 traiter la journée à sélectionner		
 			//	$numero = 12;
 				
@@ -610,14 +613,16 @@ echo "numero : ".$numero;echo "<br>";
 					$dateRetour = $row[0];
 				}
 
-				echo "dateRetour : " . $dateRetour;echo "<br>";
+				echo "dateRetour : " . $dateRetour;
+				//echo "<br>";
 				
 
 	//TODO Modifier la lheure en fonction du champiuonnat traité (premi)
 
 		
 				$dateReelleRetour = date('Y-m-d 15:i:s', strtotime($dateRetour));
-				echo "dateReelleRetour : " . $dateReelleRetour;echo "<br>";
+				echo "dateReelleRetour : " . $dateReelleRetour;
+				//echo "<br>";
 
 				
 				$bdd->exec("UPDATE $tableMatch
@@ -697,15 +702,19 @@ echo "numero : ".$numero;echo "<br>";
 
  	//Traitement d'un forfait ou MEI (-2 de bonus)
 	if ($buts_dom == 0 and $buts_ext == 25 and $bonusDeLaJournee > -1){
-	echo "forfait dom";echo "<br />";
-	echo $buts_dom.' - '.$buts_ext.' - '.$bonusDeLaJournee;echo "<br />";
+	echo "forfait dom";
+	//echo "<br />";
+	echo $buts_dom.' - '.$buts_ext.' - '.$bonusDeLaJournee;
+	//echo "<br />";
 	$equipeTraitee = $id_equipe_dom;
 	forfait($equipeTraitee, $id_journee, $ligue, $bdd);
 	}
 	
 	if ($buts_dom == 25 and $buts_ext == 0 and $bonusDeLaJournee >= 0){
-	echo "forfait ext3";	echo "<br />";
-	echo $buts_dom.' - '.$buts_ext.' - '.$bonusDeLaJournee;echo "<br />";
+	echo "forfait ext3";
+	//	echo "<br />";
+	echo $buts_dom.' - '.$buts_ext.' - '.$bonusDeLaJournee;
+	//echo "<br />";
 	$equipeTraitee = $id_equipe_ext;
 	forfait($equipeTraitee, $id_journee, $ligue, $bdd);
 	}
@@ -716,13 +725,14 @@ echo "numero : ".$numero;echo "<br>";
     
  }
  
-echo "------------------------ fin de programme ----------------";
-echo "<br/>";
+//echo "------------------------ fin de programme ----------------";
+//echo "<br/>";
 
 echo $journeeDebut;
 global $champRecup;echo "<br/>";
 $champRecup=substr($journeeDebut,0,6);
-echo "champRecup : ".$champRecup;echo "<br />";
+echo "champRecup : ".$champRecup;
+//echo "<br />";
 
 require "../../Phpleague/$ligue/admin/genererSansIhm.php";
 require '../majScores/bas.php';

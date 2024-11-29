@@ -2,9 +2,10 @@
 <head>
 <title>Résultats à saisir</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="../../ligne1.css">
 </head>
 
-<font align="center" bgcolor="#FFFFFF" color="#FF0000" size="7" face="Arial, Helvetica, sans-serif">
+<font align="left" bgcolor="#FFFFFF" color="#FF0000" size="7" face="Arial, Helvetica, sans-serif">
 <b><?php
 $ma_date=date('Y-m-d H:i:s');  // 2012-10-11 15:35:53
 echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
@@ -129,83 +130,82 @@ echo "</table>";
 //echo "</table>";
 ?>
 
-<p align="center"><b><font color="#000000" size="7" >Ligue Auvergne Rh&ocirc;ne Alpes</font>
-<p align="center"><b><?php matchsEnRetards('au', 10, $bdd) ;?> </font></b></p> <hr />
-<p align="center"><?php matchsEnRetards2('au', 10, $bdd) ;?> </b></font>
+<p class="center bold size8" >Ligue Auvergne Rh&ocirc;ne Alpes</p>
+<p class="center bold"><b><?php matchsEnRetards('au', 10, $bdd) ;?></p> <hr />
+<p class="center bold"><?php matchsEnRetards2('au', 10, $bdd) ;?> </p>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Bourgogne Franche Comté</font>
-<p align="center"><b><?php matchsEnRetards('pl', 11, $bdd) ;?> </font></b></p><hr />
-<p align="center"><?php matchsEnRetards2('pl', 11, $bdd) ;?> </b></font>
+<p class="center bold size8">Ligue Bourgogne Franche Comté</p>
+<p class="center bold"><b><?php matchsEnRetards('pl', 11, $bdd) ;?></p><hr />
+<p class="center bold"><?php matchsEnRetards2('pl', 11, $bdd) ;?></p>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Bretagne</font>
-<p align="center"><b><?php matchsEnRetards('pl', 12, $bdd) ;?> </font></b></p> <hr />
-<p align="center"><?php matchsEnRetards2('pl', 12, $bdd) ;?> </b></font>
+ <p class="center bold size8">Ligue Bretagne</p>
+ <p class="center bold"><b><?php matchsEnRetards('pl', 12, $bdd) ;?></p> <hr />
+ <p class="center bold"><?php matchsEnRetards2('pl', 12, $bdd) ;?> </p>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Centre Val de Loire</font>
-<p align="center"><b><?php matchsEnRetards('pl', 13, $bdd) ;?> </font></b></p><hr />
-<p align="center"><?php matchsEnRetards2('pl', 13, $bdd) ;?> </b></font>
+ <p class="center bold size8">Ligue Centre Val de Loire</p>
+ <p class="center bold"><?php matchsEnRetards('pl', 13, $bdd) ;?></p><hr />
+ <p class="center bold"><?php matchsEnRetards2('pl', 13, $bdd) ;?> </b></p>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Grand Est</font>
-<p align="center"><b><?php matchsEnRetards('idf', 15, $bdd) ;?> </font></b></p><hr />
-<p align="center"><?php matchsEnRetards2('idf', 15, $bdd) ;?> </b></font>
+ <p class="center bold size8">Ligue Grand Est</p>
+ <p class="center bold"><?php matchsEnRetards('idf', 15, $bdd) ;?></p><hr />
+<p class="center bold"><?php matchsEnRetards2('idf', 15, $bdd) ;?> </p>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Hauts de France</font>
-<p align="center"><b><?php matchsEnRetards('pl', 16, $bdd) ;?> </font></b></p><hr />
-<p align="center"><b><?php matchsEnRetards2('pl', 16, $bdd) ;?> </b></font>
+ <p class="center bold size8">Ligue Hauts de France</p>
+ <p class="center bold"><?php matchsEnRetards('pl', 16, $bdd) ;?></p><hr />
+<p class="center bold"><?php matchsEnRetards2('pl', 16, $bdd) ;?></p>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Ile de France</font>
-<p align="center"><b><?php matchsEnRetards('idf', 17, $bdd) ;?> </font></b></p><hr />
-<p align="center"><?php matchsEnRetards2('idf', 17, $bdd) ;?> </b></font>
+ <p class="center bold size8">Ligue Ile de France</p>
+ <p class="center bold"><?php matchsEnRetards('idf', 17, $bdd) ;?></p><hr />
+<p class="center bold"><?php matchsEnRetards2('idf', 17, $bdd) ;?></p>
 
-<p align="center"><b><font color="#000000" size="7">Ligue Normandie</font>
-<p align="center"><b><?php matchsEnRetards('idf', 18, $bdd) ;?> </font></b></p><hr />
-<p align="center"><?php matchsEnRetards2('idf', 18, $bdd) ;?> </b></font>
+<p class="center bold size8">Ligue Normandie</p>
+<p class="center bold"><?php matchsEnRetards('idf', 18, $bdd) ;?></p><hr />
+<p class="center bold"><?php matchsEnRetards2('idf', 18, $bdd) ;?></p>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Nouvelle Aquitaine</font>
-<p align="center"><b><?php matchsEnRetards('ca', 19, $bdd) ;?> </font></b></p><hr />
-<p align="center"><?php matchsEnRetards2('ca', 19, $bdd) ;?> </b></font>
+<p class="center bold size8">Ligue Nouvelle Aquitaine</p>
+ <p class="center bold"><b><?php matchsEnRetards('ca', 19, $bdd) ;?> </fpont></b></p><hr />
+<p class="center bold"><?php matchsEnRetards2('ca', 19, $bdd) ;?> </b></p>
 
- <p align="center"><b><font color="#000000" size="7">Ligue Occitanie</font>
-<p align="center"><b><?php matchsEnRetards('ab', 20, $bdd) ;?> </b></p></font><hr />
-<p align="center"><?php matchsEnRetards2('ab', 20, $bdd) ;?> </b></font>
-
-
- <p align="center"><b><font color="#000000" size="7">Ligue Pays de la Loire</font>
-<p align="center"><b><?php matchsEnRetards('pl', 21, $bdd) ;?> </font></b></p><hr />
-<p align="center"><?php matchsEnRetards2('pl', 21, $bdd) ;?> </b></font>
+<p class="center bold size8">Ligue Occitanie</fpont>
+ <p class="center bold"><?php matchsEnRetards('ab', 20, $bdd) ;?></p><hr />
+<p class="center bold"><?php matchsEnRetards2('ab', 20, $bdd) ;?></p>
 
 
- <p align="center"><b><font color="#000000" size="7">Ligue Provence Alpes C&ocirc;te d'Azur</font>
-<p align="center"><b><?php matchsEnRetards('idf', 22, $bdd) ;?> </font></b></p><hr />
-<p align="center"><?php matchsEnRetards2('idf', 22, $bdd) ;?> </b></font>
+<p class="center bold size8">Ligue Pays de la Loire</fopnt>
+ <p class="center bold"><?php matchsEnRetards('pl', 21, $bdd) ;?></p><hr />
+<p class="center bold"><?php matchsEnRetards2('pl', 21, $bdd) ;?></p>
 
-<p align="center"><b><font color="#000000" size="7">Pro</font>
-<?php matchsEnRetards('pro', 11, $bdd) ;?> </font></b>
-<?php matchsEnRetards('pro', 12, $bdd) ;?> </font></b>
-<?php matchsEnRetards('pro', 13, $bdd) ;?> </font></b></p>
+
+<p class="center bold size8">Ligue Provence Alpes C&ocirc;te d'Azur</p>
+<p class="center bold"><?php matchsEnRetards('idf', 22, $bdd) ;?> </p><hr />
+<p class="center bold"><?php matchsEnRetards2('idf', 22, $bdd) ;?></p>
+
+<p class="center bold size8">Pro</p>
+<p class="center bold"><?php matchsEnRetards('pro', 11, $bdd) ;?> </p>
+<p class="center bold"><?php matchsEnRetards('pro', 12, $bdd) ;?> </p>
+<p class="center bold"><?php matchsEnRetards('pro', 13, $bdd) ;?></p>
 
  
-<p align="center"><b><font color="#000000" size="7">Fédérale 1</font>
-<?php matchsEnRetards('pro', 14, $bdd) ;?> </font></b><hr /></p>
-<p align="center"><?php matchsEnRetards2('pro', 24, $bdd) ;?> </font></b></p>
+<p class="center bold size8">Fédérale 1</p>
+<p class="center bold"><?php matchsEnRetards('pro', 14, $bdd) ;?></p><hr />
+<p class="center bold"><?php matchsEnRetards2('pro', 24, $bdd) ;?></p>
 
-<p align="center"><b><font color="#000000" size="7">Fédérale 2</font>
-<?php matchsEnRetards('pro', 15, $bdd) ;?> </font></b><hr />
- <p align="center"><b><font color="#000000" size="7"></font>
-<?php matchsEnRetards2('pro', 25, $bdd) ;?> </font></b></p>
+<p class="center bold size8">Fédérale 2</p>
+<p class="center bold"><?php matchsEnRetards('pro', 15, $bdd) ;?> </p><hr />
+<p class="center bold"><?php matchsEnRetards2('pro', 25, $bdd) ;?> </p>
  
- <p align="center"><b><font color="#000000" size="7">Fédérale 3</font>
-<?php matchsEnRetards('fed3NE', 116, $bdd) ;?> </font></b>
-<?php matchsEnRetards('fed3NE', 216, $bdd) ;?> </font></b></p><hr />
+<p class="center bold size8">Fédérale 3</p>
+<p class="center bold"><?php matchsEnRetards('fed3NE', 116, $bdd) ;?> </p>
+<p class="center bold"><?php matchsEnRetards('fed3NE', 216, $bdd) ;?> </p><hr />
 
-  <p align="center"><b><font color="#000000" size="7"></font>
-<?php matchsEnRetards2('fed3NE', 126, $bdd) ;?> </font></b>
-<?php matchsEnRetards2('fed3NE', 226, $bdd) ;?> </font></b></p>
- <p align="center"><b><font color="#000000" size="7">Féminines</font>
-<?php matchsEnRetardsFem('pro', 28, $bdd) ;?> </font></b>
- 
 
-<?php matchsEnRetardsFem('pro', 29, $bdd) ;?> </font></b></p>
+  <p class="center bold"><?php matchsEnRetards2('fed3NE', 126, $bdd) ;?> </p>
+  <p class="center bold"><?php matchsEnRetards2('fed3NE', 226, $bdd) ;?></p>
+
+
+<p class="center bold size8">Féminines</p>
+ <p class="center bold"><?php matchsEnRetardsFem('pro', 28, $bdd) ;?> </p>
+ <p class="center bold"><?php matchsEnRetardsFem('pro', 29, $bdd) ;?> </p>
 
   
 </body>

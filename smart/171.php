@@ -61,7 +61,7 @@ nomLigue2($bddComite, $champ, $bdd);
 		<div class="container">
 			<table class="width98PC borderColorBlack borderWidth1">
 				<tr class="borderColorBlack borderWidth1">
-					<td class="h22 width5PC"><a href="sommaire.php"><img src="../images/smart/flecheGauche.jpg" width="27" height="20" alt="fléche retour"></a></td>
+					<td class="h22 width5PC"><a href="../../sommaire.php"><img src="../images/smart/flecheGauche.jpg" width="27" height="20" alt="fléche retour"></a></td>
 					<td class="h22 width95PC"> France Finales Rugby </td>
 				</tr>
 				<tr>

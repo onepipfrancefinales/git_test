@@ -1,7 +1,16 @@
 <html>
 <head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta charset="utf-8" />
+  <link type="text/css" rel="stylesheet" href="../Phpleague/phppl/league.css"/>
+  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+  <link type="text/css" rel="stylesheet" href="resultat.css">
+  <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <title>Formulaire de désinscription</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="resource-type" content="document">
+  <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+  <meta name="author" content="Equipe France Finales Rugby">
+  <meta name="robots" content="All">
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
@@ -15,7 +24,7 @@
       <div align="center"><font size="4"><b>Pour se désinscrire saississsez 
         votre mél ci-dessous</b></font></div>
       <div align="center"> 
-        <form action="http://francefinalesrugby.franceserv.com/copies_mel/ab/desinscription2.php" method="POST">
+        <form action="http://francefinalesrugby.fr/copies_mel/ab/desinscription2.php" method="POST">
         <p align="center"> 
           <input type="text" name="champion" />
           et cliquez 
@@ -35,7 +44,7 @@
       <div align="center"> 
         <?php
     // On inclut le haut de la page
-    include("../../pub_carre.php");
+   // include("../../pub_carre.php");
     ?>
       </div>
     </td>

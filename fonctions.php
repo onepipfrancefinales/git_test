@@ -171,7 +171,7 @@ $saisonEnCours=$row[0];
 	function bdInfosClub($code, $bdd)
 	{
 		global $dateCreation, $president, $vicePresident, $tresorier, $secretaire, $contact, $siege, $idFFR,
-			$adresse, $cp, $ville,	$tel, $nomStade,	$adresseStade, $cpStade, $villeStade,
+			$adresse2, $cp, $ville,	$tel, $nomStade,	$adresseStade, $cpStade, $villeStade,
 			$telStade, $capacite, $site, $courriel, $correspondant,	$sigle, $couleurs, $vicePresident,
 			$nomEntente, $niveau, $info1,	$info2, $info3, $info4, $info5;
 
@@ -185,7 +185,7 @@ $saisonEnCours=$row[0];
 			$secretaire = $donnees['A1602'];
 			$contact = $donnees['A1603'];
 			$siege = $donnees['A1604'];
-			$adresse = $donnees['A1605'];
+			$adresse2 = $donnees['A1605'];
 			$cp = $donnees['A1606'];
 			$ville = $donnees['A1607'];
 			$tel = $donnees['A1608'];

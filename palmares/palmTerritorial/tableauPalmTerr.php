@@ -1,4 +1,3 @@
-
 <?php
 require("../../connect/connexion1.php");
 require '../fonctionsPalmares.php';
@@ -100,6 +99,13 @@ nomLigue($idLigue, $sigleLigue, $bdd)
             else
               echo "a intégré la ligue";
             $debut = 2018;
+          
+          
+          if($id == 31 ) // Pays de la loire
+             $fin = 1997;
+          else if ($id == 35) // Pays catalan
+             $fin = 2011;
+          else
             $fin = 1999;
             ?>
       
@@ -107,8 +113,6 @@ nomLigue($idLigue, $sigleLigue, $bdd)
 
               if (isset($nomLigueL));  else $nomLigueL = "-";   echo $nomLigue; ?>
                (
-         
-      
       <a class="decorationNone " href="tableauPalmReg.php?sigleLigue=<?php echo $appartenanceLigue; ?>"><span class="colorRed size4 style"> Voir palmarès de cette ligue </span></a>
             
          )
@@ -136,10 +140,28 @@ nomLigue($idLigue, $sigleLigue, $bdd)
     </tr>
   </table>
   <?php
-  if ( $id != 28  or $id != 11  or $id != 30 or $id != 20 or $id != 33 or $id != 32 or $id != 26 or $id != 35 or $id != 31)
-  { ?> 
+  if ( $id != 28  or $id != 11  or $id != 30 or $id != 20 or $id != 33 or $id != 32 or $id != 26 )
+  { 
 
+
+if ($id == 31 ) // Pays de la loire
+{ ?>
+  <button class="accordion ">Champions de l'Atlantique 1998 - 1980 <span class="size3">(Cliquer pour ouvrir)</span></button>
+  <?php
+  }
+ else if ($id == 35 ) // Roussillon
+{ ?>
+  <button class="accordion ">Champions du Roussillon 2011 - 1980 <span class="size3">(Cliquer pour ouvrir)</span></button>
+  <?php
+  }
+
+else
+{ 
+  ?>
 <button class="accordion ">Palmarès des saisons 1999 - 1980 <span class="size3">(Cliquer pour ouvrir)</span></button>
+<?php
+}
+?>
 <div class="panel">
   <p class="afficheEquipe"><?php  require 'tableauPalmTerr2.php'; ?></p>
 </div>

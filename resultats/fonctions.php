@@ -1806,12 +1806,12 @@ function AffichageLogos($champ, $comite, $smart, $bdd)
 				$lien = "/smart/ficheClubs/pageFicheClubs.php?champion=";
 			} else {
 				$dim = 68;
-				$lien = "../consultation/pageclub00.php?champion=";
+				$lien = "/consultation/pageclub00.php?champion=";
 			}
 			?>
 
 			<a style="text-decoration:none;"  href="<?php echo $lien . $tabNbreEquipe[$j]; ?>">
-				<img src="../images/blasons200_200/<?php echo $tabNbreEquipe[$j]; ?>.gif" height="<?php echo $dim; ?>" width="<?php echo $dim; ?>" alt="texte" title="<?php echo ${"sigleEquipe".($j)}; ?>">
+				<img src="/images/blasons200_200/<?php echo $tabNbreEquipe[$j]; ?>.gif" height="<?php echo $dim; ?>" width="<?php echo $dim; ?>" alt="texte" title="<?php echo ${"sigleEquipe".($j)}; ?>">
 			</a>
 
 <?php
