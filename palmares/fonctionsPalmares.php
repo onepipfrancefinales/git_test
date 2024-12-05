@@ -685,6 +685,25 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 	$pasDeChampionnat = "Pas de championnat";
 	$covid = "Pas de titre décerné";
 
+if ($division == 230)
+{
+
+	for ($i = 0; $i < $periode; $i++) {
+
+
+	
+		echo "<h4>";
+		echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
+		echo "</h4>";
+	}
+
+
+
+}
+else
+{
+
+
 	for ($i = 0; $i < $periode; $i++) {
 
 		if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid) {
@@ -699,6 +718,7 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 			echo "</h4>";
 		}
 	}
+}
 }
 
 

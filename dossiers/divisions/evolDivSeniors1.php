@@ -1,35 +1,4 @@
-  <p>
-    <font 000000">
-      <font size="5"><b>Evolution compétitons (de
-          leurs origines à aujourd'hui)<br>
-        </b></font>
-    </font>
-  </p>
-  <table width="712" border="0">
-    <tr bordercolor="0" class="bg00CCCC">
-      <td>
-        <font size="3" 000000">Séniors</font>
-        </div>
-      </td>
-      <td>
-        <font size="3" 000000">Féminines</font>
-        </div>
-      </td>
-      <td>
-        <font size="3" 000000">Jeunes</font>
-        </div>
-      </td>
-      <td>
-        <font size="3" 000000">Réserves</font>
-        </div>
-      </td>
-    </tr>
-  </table>
-  <p>
-    <font 000000">
-      <font size="5"><b> </b></font>
-    </font>
-  </p>
+  
   <p><b>
       <font size="4" face="Arial, Helvetica, sans-serif">I - Compétitions Séniors</font>
     </b></p>
@@ -48,7 +17,7 @@
 
   <table class="styleArial mb-10 marginAuto" width="750">
     <tr>
-      <td colspan="13" class="bgCCCCCC">
+      <td colspan="2" class="bgCCCCCC">
         <span class="colorRed bold">Création d'un premier niveau </span>
         <br> Arrivée de la 1re Série
       </td>
@@ -58,7 +27,6 @@
       <tr>
         <td class="bgCCCCCC bold" width="35"> <?php echo $i; ?> </td>
         <td class="bgFF0000">1re Série</td>
-        <td colspan="11"></td>
       </tr>
     <?php }
     ?>
@@ -68,7 +36,7 @@
 
   <table class="styleArial mb-10 marginAuto" width="750">
     <tr>
-      <td colspan="13" class="bgCCCCCC">
+      <td colspan="3" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (2me)</span>
         <br> Arrivée de la 2me série
       </td>
@@ -79,7 +47,6 @@
         <td class="bgCCCCCC bold" width="35"> <?php echo $i; ?></td>
         <td class="bgFF0000">1re Série</td>
         <td class="bgFF9966">2me Série</td>
-        <td colspan="10"></td>
       </tr>
     <?php }
     ?>
@@ -90,7 +57,7 @@
 
   <table class="styleArial mb-10 marginAuto" width="750">
     <tr>
-      <td colspan="13" class="bgCCCCCC">
+      <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold "> Création d'un niveau (3me)</span>
         <br> Arrivée de la 3me série
       </td>
@@ -101,7 +68,6 @@
         <td class="bgFF0000">1re Série</td>
         <td class="bgFF9966">2me Série</td>
         <td class="bgFF9900">3me Série</td>
-        <td colspan="9"></td>
       </tr>
     <?php }
     ?>
@@ -111,7 +77,7 @@
 
   <table class="styleArial mb-10 marginAuto" width="750">
     <tr>
-      <td colspan="13" height="24" class="bgCCCCCC">
+      <td colspan="5" height="24" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (4me)</span>
         <br> Arrivée de la 4me série
     </tr>
@@ -124,7 +90,7 @@
         <td class="bgFF9966">2me Série</td>
         <td class="bgFF9900">3me Série</td>
         <td class="bgFFFF00">4me Série</td>
-        <td colspan="8"></td>
+
       </tr>
 
     <?php
@@ -135,7 +101,7 @@
 
   <table class="styleArial mb-10 marginAuto" width="750">
     <tr>
-      <td colspan="13" class="bgCCCCCC">
+      <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (5me)</span>
         <br> La 1er série est scindée en 2 divisions pour devenir<br>
         la 1re série division Excellence et<br>
@@ -149,7 +115,6 @@
       <td class="bgFF9900">2me Série</td>
       <td class="bgFFFF00">3me Série</td>
       <td class="bg3300FF">4me Série</td>
-      <td colspan="7"></td>
     </tr>
   </table>
 
@@ -157,7 +122,7 @@
 
   <table class="styleArial mb-10 marginAuto" width="750">
     <tr>
-      <td colspan="13" class="bgCCCCCC">
+      <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (6me)</span>
         <br>
         1re série est à nouveau étendu pour faire appara&icirc;tre la
@@ -174,9 +139,6 @@
         <td class="bgFFFF00">2me Série</td>
         <td class="bg3300FF">3me Série</td>
         <td class="bg3399CC"> 4me Série</td>
-        <td></td>
-        <td></td>
-        <td></td>
       </tr>
     <?php
     } ?>
@@ -220,7 +182,7 @@
 
   <table class="styleArial mb-10 marginAuto" width="750">
     <tr>
-      <td colspan="13" height="23" class="bgCCCCCC">
+      <td colspan="7" height="23" class="bgCCCCCC">
         <span class="colorRed bold">Renommage de divisions </span>
         <br> En finale, opposition des vaiqueurs de la zone Nord (zone occupée)
         face à la zone sud (zone libre)
@@ -234,12 +196,6 @@
       <td class="bgFFFF00"> 2me Série</td>
       <td class="bg3300FF"> 3me Série</td>
       <td class="bg3399CC">4me Série</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
   </table>
 
@@ -247,7 +203,7 @@
 
   <table class="styleArial mb-10 marginAuto" width="750">
     <tr>
-      <td colspan="13" height="33" class="bgCCCCCC">
+      <td colspan="7" height="33" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de division</span><br>
         La 1re division Excellence devient 1re division Fédérale
       </td>
@@ -260,9 +216,7 @@
       <td class="bgFFFF00"> 2me Série</td>
       <td class="bg3300FF">3me Série</td>
       <td class="bg3399CC">4me Série</td>
-      <td></td>
-      <td></td>
-      <td></td>
+
     </tr>
   </table>
 
@@ -277,9 +231,6 @@
       <td class="bgFFFF00"> 2me Série</td>
       <td class="bg3300FF"> 3me Série</td>
       <td class="bg3399CC"> 4me Série</td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
   </table>
 
@@ -645,16 +596,16 @@
       <td class="bgCCCCCC bold"><?php echo $i; ?></td>
       <td class="bgFF0000"> Top 14</td>
       <td class="bgFF9966"> Pro D2</td>
-      <td class="bgFF9900"> Nationale</td>
-      <td class="bgFFFF00"> Fédérale 1</td>
-      <td class="bg3300FF"> Fédérale 2</td>
-      <td class="bg3399CC"> Fédérale 3</td>
-      <td class="bgCCFF00"> Honneur</td>
-      <td class="bg00FF66"> Promotion honneur</td>
-      <td class="bg33FF99"> 1re Série</td>
-      <td class="bg66CC66"> 2me Série</td>
-      <td class="bg669900"> 3me Série</td>
-      <td class="bg9966FF"> 4me Série</td>
+      <td class="bgFFFFFF"> Nationale</td>
+      <td class="bgFF9900"> Fédérale 1</td>
+      <td class="bgFFFF00"> Fédérale 2</td>
+      <td class="bg3300FF"> Fédérale 3</td>
+      <td class="bg3399CC"> Honneur</td>
+      <td class="bgCCFF00"> Promotion honneur</td>
+      <td class="bg00FF66"> 1re Série</td>
+      <td class="bg33FF99"> 2me Série</td>
+      <td class="bg66CC66"> 3me Série</td>
+      <td class="bg669900"> 4me Série</td>
     </tr>
     <?php }
     ?>
@@ -681,8 +632,8 @@
         <td class="bgCCCCCC bold"><?php echo $i; ?></td>
         <td class="bgFF0000">Top 14</td>
         <td class="bgFF9966"> Pro D2</td>
-        <td class="bgFF9900"> Nationale</td>
-        <td class="bgFF9900"> Nationale2</td>
+        <td class="bgFFFFFF"> Nationale</td>
+        <td class="bgFFFFFF"> Nationale2</td>
         <td class="bgFFFF00"> Fédérale 1</td>
         <td class="bg3300FF"> Fédérale 2</td>
         <td class="bg3399CC"> Fédérale 3</td>
@@ -695,58 +646,4 @@
     ?>
   </table>
 
-  <style>
-    .bgCCCCCC {
-      background-color: #CCCCCC;
-    }
-
-    .bgFF0000 {
-      background-color: #FF0000;
-    }
-
-    .bgFF9966 {
-      background-color: #FF9966;
-    }
-
-    .bgFF9900 {
-      background-color: #FF9900;
-    }
-
-    .bgFFFF00 {
-      background-color: #FFFF66;
-    }
-
-    .bg3300FF {
-      background-color: #3300FF;
-    }
-
-    .bg3399CC {
-      background-color: #3399CC;
-    }
-
-    .bgCCFF00 {
-      background-color: #CCFF00;
-    }
-
-    .bg00FF66 {
-      background-color: #00FF66;
-    }
-
-    .bg33FF99 {
-      background-color: #33FF99;
-    }
-
-    .bg66CC66 {
-      background-color: #66CC66;
-    }
-
-    .bg669900 {
-      background-color: #669900;
-    }
-
-    .mb-10 {
-      margin-bottom: 20px
-    }
-
-    ;
-  </style>
+  

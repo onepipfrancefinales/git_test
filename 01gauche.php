@@ -86,9 +86,12 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/palmares/palmNational/pageentreprise.php">-------------------</option>
           <option> EQUIPES II </option>
           <option value="/palmares/palmNational/pageentreprise.php">-------------------</option>
-          <option value="/palmares/palmNational/pagePalmares.php?division=225">Espoirs Elites</option>
-          <option value="/palmares/palmNational/pagePalmares.php?division=230">Espoirs Nationaux</option>
-          <option value="/palmares/palmNational/pagePalmares.php?division=240">Espoirs Fédéraux</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=235">Espoirs Elites</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=232">Espoirs Nationaux</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=245">Espoirs Fédéraux</option>
+          <option> -------- </option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=230">Réserve 1re div</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=240">Nationale B</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=250">Fédérale B</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=260">Excellence B</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=270">Réserve</option>
@@ -99,7 +102,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/palmares/palmNational/pagePalmares.php?division=285">Elite 2</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=290">Fédérale 1</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=295">Fédérale 2</option>
-          <option value="/palmares/palmNational/pagePalmares.php?division=300">------------------</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=300">Fédérale 3</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=300">-------</option>
           <option>REICHELS</option>
           <option>JUNIORS</option>
           <option value="/palmares/palmNational/pagereichelA.php">----------------------</option>

@@ -263,4 +263,22 @@ color:red;}
         background-color: silver;
         border: 1px solid red;
       }
+
+      td.colonneDroiteGauche {
+        background-color: #006699;
+        width: 225px;
+        height: 1222px;
+        vertical-align: top;
+    
+    }
+
+    td.colonneCentrale {
+        background-color: #ffffff;
+        width: 650px;
+        height: 1222px;
+        vertical-align: top;
+        border-color: #000000;
+        padding-top:50px;
+    
+    }
       

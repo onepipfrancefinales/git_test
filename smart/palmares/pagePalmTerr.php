@@ -78,7 +78,7 @@ else
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body bgcolor="#CCCCCC" text="#000000">
+<body text="#000000">
 <div class="fixed-header">
  <div class="container">
 

@@ -6,7 +6,7 @@
 <link type="text/css" rel="stylesheet" href="../../lienNoir.css"/>
 <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
 <link type="text/css" rel="stylesheet" href="../dossiers.css"> 
-  <meta name="description" content=" R�sulats des comp�titions territoriales du comit� Armagnac Bigorre. Calendriers, r�sultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
+  <meta name="description" content=" R�sulats des comp�titions territoriales du comit� Armagnac Bigorre. Calendriers, r�sultats et statistiques de l'honneur � la 4me Série, équipes II comprises. Egalement disponible les phases finales territoriales des années précédentes et les palmares territoriaux des difféerentes divisions du comité. ">
   <meta name="classification" content="Sport,Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="resource-type" content="document">
@@ -43,7 +43,7 @@
       <td border color="#000000" bgcolor="#ffffff" width="650" valign="top"> 
         <div align="center">
 <p><font color="#000000"><font size="5"><b>
-            <?php require 'evolutionScores.php'; ?>
+            <?php require 'evolutionScores.php?type=seniors1'; ?>
             <br>
             <br>
             </b></font></font></p>

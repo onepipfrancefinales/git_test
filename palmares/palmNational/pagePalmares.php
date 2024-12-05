@@ -84,12 +84,15 @@ while ($donnees =  $reponse->fetch()) {
 				}
 				// equipe 2
 				else if ($division > 220 and $division < 280) {
-				$tabDivisions = array('230', '240', '250', '260', '270');
+					//230 -> Espoirs Elite
+					//232 -> Espoirs Nationaux
+					//235 -> Espoirs Fédéraux
+				$tabDivisions = array('230','235','232', '240','245', '250', '260', '270');
 				$table ="bdequipe2";
 				}
 				// féminines
-				else if ($division > 270 and $division < 300) {
-					$tabDivisions = array( '280', '285', '290', '295');
+				else if ($division > 270 and $division < 310) {
+					$tabDivisions = array( '280', '285', '290', '295', '300');
 					$table ="bdfem";
 					}
 				// equipe jeunes
@@ -108,62 +111,6 @@ while ($donnees =  $reponse->fetch()) {
 						chgmntNomDivision($div, $table, $bdd);
 					}
 				}
-/*
-				// equipe 2
-				$tabDivisions = array('110', '120', '130', '135', '240', '250', '260', '270');
-				foreach ($tabDivisions as $divEquipe2) {
-					if ($division == $divEquipe2) {
-						chgmntNomDivision($divEquipe2, "bdequipe1", $bdd);
-					}
-				}
-
-				if ($division == 110) {
-					chgmntNomDivision(110, "bdequipe1", $bdd);
-				}
-				/*	
-			else if ($division == 120) {
-			chgmntNomDivision (120, "bdequipe1", $bdd); }
-				
-			else if ($division == 130) {
-			chgmntNomDivision (130, "bdequipe1", $bdd); }
-
-			else if ($division == 135) {
-			chgmntNomDivision (135, "bdequipe1", $bdd); }
-
-			else if ($division == 140) {
-			chgmntNomDivision (140, "bdequipe1", $bdd); }
-			
-			else if ($division == 150) {
-			chgmntNomDivision (150, "bdequipe1", $bdd); }
-			
-			else if ($division == 160) {
-			chgmntNomDivision (160, "bdequipe1", $bdd); }
-			
-			else if ($division == 170) {
-			chgmntNomDivision (170, "bdequipe1", $bdd); }
-			
-			else if ($division == 180) {
-			chgmntNomDivision (180, "bdequipe1", $bdd); }
-			
-			else if ($division == 190) {
-			chgmntNomDivision (190, "bdequipe1", $bdd); }
-*/ 
-/*
-else {
-					// A partir de la saison 2023
-					require("palmaresLigues2023.php");
-					// De la saison 2019 à la saison 2022
-					require("palmaresLigues.php");
-					echo "<hr />";
-					echo "<i>" . "Saison 2018-2019 : Réformes Territoriales";
-					echo "<br>";
-					echo "Les 27 comités territoriaux métropolitains sont transformés en 13 ligues régionales,
-							identiques aux nouvelles régions administratives françaises." . "</i>";
-					echo "<br>" . "<hr>";
-					// Saison antérieure à la saiaon 2019
-					require("palmares.php");
-				}
-					*/
 				?>
 			</td>
 			<td class="colonne">

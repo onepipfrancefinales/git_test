@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta charset="utf-8" >
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
@@ -15,7 +15,7 @@ $adresse = $_POST['champion'];
 $to = 'onepip-france@franceserv.com';
 
 // Message
-$msg = ' comite AB'; 
+$msg = ' '; 
 
 // Subject
 $subject = $_POST['champion'].$msg;
@@ -28,8 +28,9 @@ mail($to, $subject, $msg);
 
 
  if (mail($to, $subject, $msg)) {  
-    echo "D&eacute;sincription r&eacute;ussie : ".$objet.  
-    " pour $sto."; 
+    echo "Désincription réussie  ";
+    //.$objet.  
+   // " pour //$sto."; 
 	echo $adresse.$msg;
   } 
   else { 
@@ -42,8 +43,8 @@ mail($to, $subject, $msg);
 <table width="494" border="0">
   <tr> 
     <td colspan="3"> 
-      <div align="center"><a href="http://francefinalesrugby.franceserv.com/page_resultats.php"><font size="4">Retour 
-        aux r&eacute;sutats et aux classements </font></a> </div>
+      <div align="center"><a href="https://francefinalesrugby.fr/resultats/page_resultats.php"><font size="4">Retour 
+        aux résutats et aux classements </font></a> </div>
       <div align="center"></div>
     </td>
   </tr>
