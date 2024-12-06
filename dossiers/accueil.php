@@ -57,15 +57,14 @@
 <tr>
   <td height="37" width="329">
    
-      <a href="scores/accueil.php">
-      A définir
-        </a></p>
      
+      A définir
+       
    
   </td>
   <td height="37" width="340" class="size5 ">
 
-    Evolution des points
+  <a href="scores/accueil.php">  Evolution des points  </a></p>
     <br>
     <img src="../reseaux/facebook/images/tableau%20affichage%20scores/affichage.jpg" width="324" height="160">
     </div>
@@ -91,7 +90,12 @@
 
   </td>
   <td height="37" width="340" class="size5">
-    <a href="../pronos/pagePronos.php?comite=phpProno"> Pronostiquez<br>
+  <!-- 
+  <a href="../pronos/pagePronos.php?comite=phpProno"> Pronostiquez<br>
+      sur vos <br>propres championnats
+    </a>
+-->
+    <a href="pronos/page_pronos.php"> Pronostiquez<br>
       sur vos <br>propres championnats
     </a>
   </td>
@@ -115,7 +119,7 @@
 <tr>
   <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
 
-    Hymnes des plus grandes nations du rugby (paroles et musique)
+  <a class="colorWhite" href="hymnes/page_hymnes.php">   Hymnes des plus grandes nations du rugby (paroles et musique)</a>
 
   </td>
 </tr>
@@ -143,7 +147,7 @@
 <tr>
   <td height="37" colspan="2" class="size5 ">
 
-    Chansons paillardes <br> Et chansons de 3me mi-temps
+  <a href="chansons/page_chansons.php">   Chansons paillardes <br> Et chansons de 3me mi-temps</a> 
     <br>
 
   </td>
