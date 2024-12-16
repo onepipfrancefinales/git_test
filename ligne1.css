@@ -134,6 +134,9 @@ img{border:0;}
 .width90PC {width:90%;}
 .width80PC {width:80%;}
 .width75PC {width:75%;}
+.width33PC {width:33%;}
+.width20PC {width:20%;}
+.width25PC {width:25%;}
 .width15PC {width:15%;}
 .width10PC {width:10%;}
 .width5PC {width:5%;}
@@ -144,16 +147,21 @@ img{border:0;}
 .width1150 {width:1150px}
 .width1100 {width:1100px;}
 .width800 {width:800px;}
+
 .width750 {width:750px;}
 .width550 {width:550px;}
 .width500 {width:500px;}
 .width250 {width:250px;}
 .width225 {width:225px;}
 .width200 {width:200px;}
+.width104 {width:104px;}
+.width150 {width:150px;}
 .width100 {width:100px;}
 .width50 {width:50px;}
 .width75 {width:75px;}
+.width35 {width:35px;}
 .width27 {width:27px;}
+
 
 /* height px */
 .height225 {height:225px;}

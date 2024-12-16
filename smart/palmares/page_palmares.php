@@ -55,15 +55,9 @@ $smart = true;
   <p>.</p>
 </div> 
 
-
-
-
     <?php	  
     if ($rang < 300){
-    
-    
     palmaresFrance($rang, $finSaison, $bdd);	?>
-
 	 <p class="palmNoir">
     <?php
     

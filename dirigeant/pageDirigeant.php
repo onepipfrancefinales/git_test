@@ -41,12 +41,12 @@ require '../connect/connexion1.php';
   <table class="marginAuto">
     <tr>
       <td colspan="3">
-        <?php include("../images/page_image_al.php");  ?>
+        <?php include '../images/page_image_al.php';  ?>
       </td>
     </tr>
     <tr>
       <td colspan="3">
-        <?php include("../01ligne.php"); ?>
+        <?php include '../01ligne.php'; ?>
       </td>
     </tr>
     <tr>

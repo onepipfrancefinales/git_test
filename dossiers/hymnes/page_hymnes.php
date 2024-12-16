@@ -7,6 +7,7 @@ echo $pays;
 <html lang="fr">
 
 <head>
+
   <head>
     <link rel="canonical" href="https://francefinalesrugby.fr/dossiers/hymnes/pages_hymnes.php/" />
     <meta charset="utf-8" />
@@ -44,44 +45,58 @@ echo $pays;
       </td>
 
       <td class="colonneCentrale backgroundWhite">
-        
-         <br>
-         
-        <p class="colorRed bold size7 styleArial">  Lecture et écoute des <br>
-        chants et hymnes du rugby</p>
-         
-          <br>
-          <hr />
 
-          <?php include("somHymnes.php");
-          echo "<hr/>";
 
-          if ($pays == "ita")
-            require 'italie.php';
-          elseif ($pays == "fra")
-            require 'france.php';
-          elseif ($pays == "eco")
-            require 'ecosse.php';
-          elseif ($pays == "irl")
-            require 'irlande.php';
-          elseif ($pays == "ang")
-            require 'angleterre.php';
-          elseif ($pays == "pga")
-            require 'paysDeGalles.php';
 
-          elseif ($pays == "nze")
-            require 'nouvelleZelande.php';
-          elseif ($pays == "asu")
-            require 'afriqueDuSud.php';
-          elseif ($pays == "aus")
-            require 'australie.php';
-          elseif ($pays == "arg")
-            require 'argentine.php';
+        <p class="colorRed bold size7 styleArial"> Lecture et écoute des <br>
+          chants et hymnes du rugby</p>
 
-          ?>
+        <br>
+        <hr />
+
+        <?php include("somHymnes.php");
+        echo "<hr/>";
+
+        if ($pays == "bay")
+          require 'bayonne.php';
+        elseif ($pays == "tou")
+          require 'toulon.php';
+        elseif ($pays == "pau")
+          require 'pau.php';
+        elseif ($pays == "lar")
+          require 'laRochelle.php';
+        elseif ($pays == "van")
+          require 'vannes.php';
+        elseif ($pays == "usa")
+          require 'usap.php';
+
+
+        elseif ($pays == "ita")
+          require 'italie.php';
+        elseif ($pays == "fra")
+          require 'france.php';
+        elseif ($pays == "eco")
+          require 'ecosse.php';
+        elseif ($pays == "irl")
+          require 'irlande.php';
+        elseif ($pays == "ang")
+          require 'angleterre.php';
+        elseif ($pays == "pga")
+          require 'paysDeGalles.php';
+
+        elseif ($pays == "nze")
+          require 'nouvelleZelande.php';
+        elseif ($pays == "asu")
+          require 'afriqueDuSud.php';
+        elseif ($pays == "aus")
+          require 'australie.php';
+        elseif ($pays == "arg")
+          require 'argentine.php';
+
+        ?>
 
       </td>
-     
+
       <td class="colonneDroiteGauche backgroundBlue" valign="top">
         <?php include("../../00droite.php"); ?>
       </td>
@@ -94,4 +109,5 @@ echo $pays;
   include("../../bas.php");
   ?>
 </footer>
+
 </html>

@@ -40,7 +40,7 @@ $comiteNom = "Ile de France";
 </head>
 
 <body>
-  <table class="table">
+  <table class="marginAuto">
     <tr>
       <td colspan="3"> <img src="../images/banniere_haut/(<?php echo $CMT; ?>).jpg" height="150" width="1250"></td>
     </tr>

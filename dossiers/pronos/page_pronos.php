@@ -15,7 +15,8 @@
     <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
     <meta name="author" content="Equipe Onepip">
     <meta name="robots" content="All">
-    <title>Hymnes du rugby </title>
+    <title>Pronostics </title>
+    <link type="text/css" rel="stylesheet" href="../../resultats/resultat.css">
     <link type="text/css" rel="stylesheet" href="../../ligne1.css" />
     <link type="text/css" rel="stylesheet" href="../../lienNoir.css" />
     <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">

@@ -54,7 +54,8 @@ $tabId = array();
   global  $tabId, $tabAnnee, $tabMessage,  $tabLogo;
     $requete = $bdd->query("SELECT id,  logo, annee, nom
             FROM bdchange_nom  
-            WHERE id_equipe ='$equipeRecherche'");
+            WHERE id_equipe ='$equipeRecherche'
+            ORDER BY id ASC");
 
   while ($row = $requete->fetch()) {
     $tabId[] = $row[0];
@@ -121,15 +122,15 @@ else
 
 
 <p class=" style size4 ">idFFR : 
-    <input type="text" name="idffr"> inutile pour le moment
+    <input type="text" name="idffr"> 
 </p>
-<p class=" style size4 ">Mise en forme : 
+<p class=" style size4 ">id du logo : inutile pour le moment
     <input type="text" name="logo" >
 </p>
 <p class=" style size4 ">année  ou période: 
     <input type="text" name="annee" required="true">
 </p>
-<p class=" style size4 ">Evenement : 
+<p class=" style size4 ">Nouveau Nom : 
     <input type="text" name="nom" required="true">
 </p>
 <hr>

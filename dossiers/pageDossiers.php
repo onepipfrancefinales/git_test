@@ -2,6 +2,10 @@
 session_start();
 if (isset($_GET['comite'])) $comite = $_GET['comite'];
 //echo "comite : ".$comite;
+require '../saison.php';
+require '../consultation/fonctions.php';
+require '../connect/connexion1.php';
+require '../resultats/constantes.php';
 ?>
 
 <html>

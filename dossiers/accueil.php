@@ -1,23 +1,42 @@
 <br /> <br /> <br /> <br />
 <div align="center">
   <table width="685" border="1" height="166">
+   
+  <tr>
+      <td height="37"  class="size5 background003366 colorWhite bold">
+        Résultats & <br> Classements
+      </td>
+      <td height="37"  class="size5 background003366 colorWhite bold">
+        Accès à l'application
+      </td>
+    </tr>
     <tr>
+      <td height="37"  >
+   <p class="size5">  Toutes les compétitions du rugby Français.</p>
+   <p  class="size4">
+
+   <a class="colorBlack" href="../resultats/page_resultats.php">Compétitions professionnels</a><br>
+   <a class="colorBlack" href="../resultats/page_resultats.php">Compétitions Fédérales</a><br>
+   <a class="colorBlack" href="../resultats/page_resultats.php">Compétitions Féminines</a><br>
+   <a class="colorBlack" href="../resultats/page_resultats.php">Compétitions régionales</a><br>
+  </p>
+<br>
+      </td>
+      <td height="37"  >
+        Séances vidéo
+      </td>
+    </tr>
+  <tr>
       <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
         Séances vidéo
       </td>
     </tr>
     <tr>
-      <td height="37" colspan="2">
-        <br>
-        <p class="size5">
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ama"; ?>">Série : Péripétie d'un joueur amateur</a><br><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "cau"; ?>">Causeries</a><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "pla"; ?>">Plaquages</a><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ess"; ?>">Essais</a><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "bag"; ?>">Trop plein d'engagement</a><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ins"; ?>">Insolites</a><br>
-          </b>
-        </p>
+      <td  colspan="2">
+       
+      <?php  require "../resultats/tableauEffectifsClubs.php";  ?>
+      <br>
+      
       </td>
     </tr>
     <tr>
@@ -102,7 +121,7 @@
 </tr>
 <tr>
   <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
-    Géographie
+  <a class="colorWhite" href="hymnes/page_hymnes.php">   Hymnes des plus grandes nations du rugby <br> (paroles et musique)</a>
   </td>
 </tr>
 <tr>
@@ -112,33 +131,49 @@
     <img src="../images/dossiers/hymnes/Drapeau-Afrique-du-Sud_120-gif.gif" width="120" height="90">
     <img src="../images/dossiers/hymnes/Drapeau-France_120-gif.gif" width="120" height="90">
     <img src="../images/dossiers/hymnes/Drapeau-Australie_120-gif.gif" width="120" height="90">
-
+    <a class="colorWhite" href="hymnes/page_hymnes.php">   Hymnes des plus grandes nations du rugby (paroles et musique)</a>
     <a href="https://www.drapeaux-shop.com/">https://www.drapeaux-shop.com/</a>
   </td>
 </tr>
-<tr>
-  <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
 
-  <a class="colorWhite" href="hymnes/page_hymnes.php">   Hymnes des plus grandes nations du rugby (paroles et musique)</a>
+<tr>
+      <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
+        Séances vidéo
+      </td>
+    </tr>
+    <tr>
+      <td height="37" colspan="2">
+       
+      
+      
+      <br>
+        <p class="size5">
+          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ama"; ?>">Série : Péripétie d'un joueur amateur</a><br><br>
+          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "cau"; ?>">Causeries</a><br>
+          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "pla"; ?>">Plaquages</a><br>
+          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ess"; ?>">Essais</a><br>
+          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "bag"; ?>">Trop plein d'engagement</a><br>
+          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ins"; ?>">Insolites</a><br>
+          </b>
+        </p>
+      </td>
+    </tr>
 
+<tr>
+  <td height="37"  colspan="2" class="size5 background003366 colorWhite bold">
+  Pyramide
+            des divisions depuis la <br>
+            saison 2022-2023
   </td>
 </tr>
 <tr>
-  <td height="37" colspan="2"></td>
-</tr>
-<tr>
-  <td height="76" rowspan="2" width="329">
-    <img src="../images/dossiers/memory-des-bonbons.jpg" width="225" height="221">
-  </td>
-  <td height="37" width="340" class="size5 background003366 colorWhite bold">
-    Sports cérébral
+ 
+  <td height="37" colspan="2" width="340" >
+  <img src="../images/pyramide-2022-2023.jpg" alt="pyramide des divisions" width="500" height="511">
   </td>
 </tr>
-<tr>
-  <td height="149" width="340" class=" size5">
-    <!--<a href="jeux/accueil.php">-->Mémory<!--</a>-->
-  </td>
-</tr>
+
+
 <tr>
   <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
     3me mi-temps
