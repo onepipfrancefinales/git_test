@@ -1,11 +1,9 @@
-<table width="80%" cellpadding="1" align="center">
+<table width="80%" cellpadding="1" class="marginAuto">
   <tr> 
-    <td class="som"><a href="pageLexique.php?sommaire=1&lettre=0"><font color="#FFFFFF">Lexique</font></a></td>
-    <td class="som"><a href="pageLexique.php?sommaire=2"><font color="#FFFFFF">Phrases 
-      célebres</font> </a></td>
-    <td class="som"><a href="pageLexique.php?sommaire=3"><font color="#FFFFFF">Citations</font></a></td>
-    <td class="som"><a href="pageLexique.php?sommaire=4"><font color="#FFFFFF">Expressions<br>
-      médiatiques</font></a></td>
+    <td class="som"><a class ="colorWhite" href="pageLexique.php?sommaire=1&lettre=0">Lexique</a></td>
+    <td class="som"><a class ="colorWhite" href="pageLexique.php?sommaire=2">Phrases célebres</a></td>
+    <td class="som"><a class ="colorWhite" href="pageLexique.php?sommaire=3">Citations</a></td>
+    <td class="som"><a class ="colorWhite" href="pageLexique.php?sommaire=4">Expressions<br>médiatiques</a></td>
   </tr>
 </table>
 <br><hr />

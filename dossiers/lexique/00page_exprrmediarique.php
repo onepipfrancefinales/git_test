@@ -1,10 +1,13 @@
- 
-<html>
+
+<!DOCTYPE html PUBLIC>
+<html lang="fr">
 <head>
+<head><link rel= "canonical" href= "https://francefinalesrugby.fr/dossiers/lexique/exprmediatique.php/" />
+<meta charset="utf-8" />
 <meta name="description"
-content="Tout sur le comité territorial <?php echo $titre;?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comité); les effectifs; les palmarès nationaux; les palmarés territoriaux et l'ensemble des clubs composant le comité avec un lien pour accéder aux différents clubs.">
+content="Tout sur le comitï¿½ territorial <?php echo $titre;?> : Prï¿½sentation du comitï¿½ (Bureau; adresse; contact mel; contact site officiel du comitï¿½); les effectifs; les palmarï¿½s nationaux; les palmarï¿½s territoriaux et l'ensemble des clubs composant le comitï¿½ avec un lien pour accï¿½der aux diffï¿½rents clubs.">
 <meta name="keywords"
-content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitï¿½ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -53,7 +56,24 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
             Mots et beaux mots</font></i></b></font>.<font color="#000000"> <br>
             <br>
             </font></p>
-         <?php require 'sommaire.php'; ?>
+          <table width="580" border="1" height="46" bordercolor="#000000" cellpadding="1">
+            <tr> 
+              <td width="194" height="21" bgcolor="#FF0000"> 
+                <div align="center"><b><a href="page_lexique.php">Lexique</a></b></div>
+              </td>
+              <td width="194" height="21" bgcolor="#FF0000"> 
+                <div align="center"><b><a href="page_phrasecelebre.php">Phrases<br>
+                  cÃ©lebres </a></b></div>
+              </td>
+              <td width="155" height="21" bgcolor="#FF0000"> 
+                <div align="center"><b><a href="page_citations.php">Citations</a></b></div>
+              </td>
+              <td width="209" height="21" bordercolor="#000000" bgcolor="#FF0000"> 
+                <p align="center"><b><a href="page_exprrmediarique.php">Expressions<br>
+                  mÃ©diatiques</a></b></p>
+              </td>
+            </tr>
+          </table>
           <p><font color="#000000"> </font><br>
             <?php    include("../pub/pub2.php");  ?>
             <br>

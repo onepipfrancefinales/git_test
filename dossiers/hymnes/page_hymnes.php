@@ -52,11 +52,16 @@ echo $pays;
           chants et hymnes du rugby</p>
 
         <br>
+        
         <hr />
-
+       
         <?php include("somHymnes.php");
-        echo "<hr/>";
-
+         ?>
+  <a name="paroles"></a>
+  <?php
+       
+       echo "<hr/>";
+      
         if ($pays == "bay")
           require 'bayonne.php';
         elseif ($pays == "tou")

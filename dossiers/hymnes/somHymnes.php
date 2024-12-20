@@ -25,10 +25,10 @@
   </tr>
   <tr>
     <td width="204" height="22">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=pau">Section Paloise</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=pau#paroles">Section Paloise</a></div>
     </td>
     <td width="223" height="25">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=bay">Aviron Bayonnais</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=bay#paroles">Aviron Bayonnais</a></div>
     </td>
   </tr>
   <tr>
@@ -36,7 +36,7 @@
       <div class="center size4 "><i>La Honhada</i></div>
     </td>
     <td width="223" height="18">
-      <div class="center size4 "><i>La pena baionna</i></div>
+      <div class="center size4 "><i>La Peña Baiona</i></div>
     </td>
   </tr>
   <tr>
@@ -53,10 +53,10 @@
   </tr>
   <tr>
     <td width="204">
-      <div class="size5 styleArial colorWhite bold "><a href="page_hymnes.php?pays=tou">RC Toulonnais</a></div>
+      <div class="size5 styleArial colorWhite bold "><a href="page_hymnes.php?pays=tou#paroles">RC Toulonnais</a></div>
     </td>
     <td width="223">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=usa">USAP</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=usa#paroles">USAP</a></div>
     </td>
   </tr>
   <tr>
@@ -76,7 +76,7 @@
   </tr>
   <tr>
     <td width="204" height="8">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=lar">Stade Rochelais</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=lar#paroles">Stade Rochelais</a></div>
     </td>
   </tr>
   <tr>
@@ -94,7 +94,7 @@
   </tr>
   <tr>
     <td width="204">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=van">RC Vannes</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=van#paroles">RC Vannes</a></div>
     </td>
   </tr>
   <tr>
@@ -129,10 +129,10 @@
   </tr>
   <tr>
     <td width="204" height="22">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=ita">Italie</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=ita#paroles">Italie</a></div>
     </td>
     <td width="223" height="25">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=fra">France</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=fra#paroles">France</a></div>
     </td>
   </tr>
   <tr>
@@ -157,10 +157,10 @@
   </tr>
   <tr>
     <td width="204">
-      <div class="size5 styleArial colorWhite bold "><a href="page_hymnes.php?pays=eco">Ecosse</a></div>
+      <div class="size5 styleArial colorWhite bold "><a href="page_hymnes.php?pays=eco#paroles">Ecosse</a></div>
     </td>
     <td width="223">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=irl">Irlande</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=irl#paroles">Irlande</a></div>
     </td>
   </tr>
   <tr>
@@ -180,7 +180,7 @@
   </tr>
   <tr>
     <td width="204" height="8">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=pga">Pays de Galles</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=pga#paroles">Pays de Galles</a></div>
     </td>
   </tr>
   <tr>
@@ -202,7 +202,7 @@
   </tr>
   <tr>
     <td width="204">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=ang">Angleterre</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=ang#paroles">Angleterre</a></div>
     </td>
   </tr>
   <tr>
@@ -238,10 +238,10 @@
   </tr>
   <tr>
     <td width="204">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=nze">Nouvelle Zélande</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=nze#paroles">Nouvelle Zélande</a></div>
     </td>
     <td width="223">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=aus">Australie</a></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=aus#paroles">Australie</a></div>
     </td>
   </tr>
   <tr>
@@ -265,10 +265,10 @@
   </tr>
   <tr>
     <td width="204">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=asu">Afrique du Sud</a> </div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=asu#paroles">Afrique du Sud</a> </div>
     </td>
     <td width="223">
-      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=arg">Argentine</a></b></div>
+      <div class="size5 styleArial colorWhite bold"><a href="page_hymnes.php?pays=arg#paroles">Argentine</a></b></div>
     </td>
   </tr>
   <tr>

@@ -6,8 +6,8 @@
       <td height="37"  class="size5 background003366 colorWhite bold">
         Résultats & <br> Classements
       </td>
-      <td height="37"  class="size5 background003366 colorWhite bold">
-        Accès à l'application
+      <td  class="size5 background003366 colorWhite bold">
+      Acceder à l'application
       </td>
     </tr>
     <tr>
@@ -22,13 +22,23 @@
   </p>
 <br>
       </td>
-      <td height="37"  >
-        Séances vidéo
+      <td   >
+     
+              <p class="center colorWhite size4 style backgroundRed bold" colspan="3">
+              <a class="colorWhite" href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank">ACCEDER A L'APPLICATION
+           
+            
+        <br> 
+               SMARTPHONE </a> 
+</p>
+<!--
+<a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><img src="../images/apple.png" alt="apple" height="183" width="184"></a>    
+-->     
       </td>
     </tr>
   <tr>
       <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
-        Séances vidéo
+       Effectifs de la saison 2024-2025
       </td>
     </tr>
     <tr>
@@ -84,8 +94,7 @@
   <td height="37" width="340" class="size5 ">
 
   <a href="scores/accueil.php">  Evolution des points  </a></p>
-    <br>
-    <img src="../reseaux/facebook/images/tableau%20affichage%20scores/affichage.jpg" width="324" height="160">
+    <img src="../images/panneauScore.gif" width="324" height="160">
     </div>
   </td>
 </tr>
@@ -138,7 +147,7 @@
 
 <tr>
       <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
-        Séances vidéo
+        Séances vidéos
       </td>
     </tr>
     <tr>
@@ -149,11 +158,7 @@
       <br>
         <p class="size5">
           <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ama"; ?>">Série : Péripétie d'un joueur amateur</a><br><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "cau"; ?>">Causeries</a><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "pla"; ?>">Plaquages</a><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ess"; ?>">Essais</a><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "bag"; ?>">Trop plein d'engagement</a><br>
-          <a class="colorBlack" href="video/pagevideo.php?choix=<?php echo "ins"; ?>">Insolites</a><br>
+       
           </b>
         </p>
       </td>
@@ -181,10 +186,10 @@
 </tr>
 <tr>
   <td height="37" colspan="2" class="size5 ">
-
+<br>
   <a href="chansons/page_chansons.php">   Chansons paillardes <br> Et chansons de 3me mi-temps</a> 
     <br>
-
+    <br>
   </td>
 </tr>
 </table>
