@@ -1,17 +1,17 @@
 <br /> <br /> <br /> <br />
-<div align="center">
-  <table width="685" border="1" height="166">
+
+  <table width="100%" height="1663" class="borderWidth1 marginAuto">
    
   <tr>
-      <td height="37"  class="size5 background003366 colorWhite bold">
+      <td  class="size5 background003366 colorWhite bold borderWidth1">
         Résultats & <br> Classements
       </td>
-      <td  class="size5 background003366 colorWhite bold">
+      <td  class="size5 background003366 colorWhite bold borderWidth1">
       Acceder à l'application
       </td>
     </tr>
     <tr>
-      <td height="37"  >
+      <td class="borderWidth1" >
    <p class="size5">  Toutes les compétitions du rugby Français.</p>
    <p  class="size4">
 
@@ -22,7 +22,7 @@
   </p>
 <br>
       </td>
-      <td   >
+      <td class="borderWidth1"  >
      
               <p class="center colorWhite size4 style backgroundRed bold" colspan="3">
               <a class="colorWhite" href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank">ACCEDER A L'APPLICATION
@@ -37,12 +37,12 @@
       </td>
     </tr>
   <tr>
-      <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
+      <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
        Effectifs de la saison 2024-2025
       </td>
     </tr>
     <tr>
-      <td  colspan="2">
+      <td  colspan="2" class="borderWidth1">
        
       <?php  require "../resultats/tableauEffectifsClubs.php";  ?>
       <br>
@@ -50,12 +50,12 @@
       </td>
     </tr>
     <tr>
-      <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
+      <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
         Un peu d'histoire
       </td>
     </tr>
     <tr>
-      <td height="37" width="329" class="size5">
+      <td width="329" class="size5 borderWidth1">
       <br>
        <a href="brennus/pageAccueil.php">Histoire du Brennus</a>
           <br>
@@ -66,32 +66,32 @@
          
       
       </td>
-      <td height="37" width="340" class="size5 ">
+      <td height="37" width="340" class="size5 borderWidth1">
 
         <a href="divisions/pageEvolutionsDivisions.php?type=seniors1"><br>Evolution des divisions<br>du rugby Français</a><br>
 
         <p>
-          <font face="Arial, Helvetica, sans-serif" size="4"> 1896</font>
-          <font face="Arial, Helvetica, sans-serif" size="5"> Top14 1re série<br> Fédérale <font size="4">Groupe B</font> </font><br>
-          Elite 1 <font size="4" face="Arial, Helvetica, sans-serif">Alamercery<br>
+          <span class ="styleArial size4"> 1896</span>
+          <span face="styleArial size5"> Top14 1re série<br> Fédérale <span class="size4">Groupe B</span> </span><br>
+          Elite 1 <span class="size4 stylaArial">Alamercery<br>
             Jeunes 1989<br>
-            <font size="3">honneur <b>pré-fédérale <br>
-              </b>Nationale <font size="4">Danet</font><br>
-              régionale 2</font>
-          </font>
+            <span class="size3">honneur <b>pré-fédérale <br>
+              </b>Nationale <span class="size4">Danet</span><br>
+              régionale 2</span>
+</span>
         </p>
-</div>
+
 </td>
 </tr>
 <tr>
-  <td height="37" width="329">
+  <td width="329" class="borderWidth1">
    
      
       A définir
        
    
   </td>
-  <td height="37" width="340" class="size5 ">
+  <td width="340" class=" borderWidth1 size5 ">
 
   <a href="scores/accueil.php">  Evolution des points  </a></p>
     <img src="../images/panneauScore.gif" width="324" height="160">
@@ -99,15 +99,15 @@
   </td>
 </tr>
 <tr>
-  <td height="37" width="329" class="size5 background003366 colorWhite bold">
+  <td  width="329" class="size5 background003366 colorWhite bold borderWidth1">
     Français
   </td>
-  <td height="37" width="340" class="size5 background003366 colorWhite bold">
+  <td  width="340" class="size5 background003366 colorWhite bold borderWidth1">
    
   </td>
 </tr>
 <tr>
-  <td height="37" width="329" class="size5 ">
+  <td width="329" class="size5 borderWidth1 ">
     <br>
     Expressions médiatiques<br>
     <a class="colorBlack" href="lexique/pageLexique.php?sommaire=1&lettre=0">Lexique du rugby</a><br>
@@ -117,7 +117,7 @@
 
 
   </td>
-  <td height="37" width="340" class="size5">
+  <td width="340" class="size5 borderWidth1">
   <!-- 
   <a href="../pronos/pagePronos.php?comite=phpProno"> Pronostiquez<br>
       sur vos <br>propres championnats
@@ -129,12 +129,12 @@
   </td>
 </tr>
 <tr>
-  <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
+  <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
   <a class="colorWhite" href="hymnes/page_hymnes.php">   Hymnes des plus grandes nations du rugby <br> (paroles et musique)</a>
   </td>
 </tr>
 <tr>
-  <td height="37" colspan="2">
+  <td colspan="2" class="borderWidth1">
     <img src="../images/dossiers/hymnes/Drapeau-Nouvelle-Zelande_120-gif.gif" width="120" height="90">
     <img src="../images/dossiers/hymnes/Drapeau-Ecosse_120-gif.gif" width="120" height="90">
     <img src="../images/dossiers/hymnes/Drapeau-Afrique-du-Sud_120-gif.gif" width="120" height="90">
@@ -146,12 +146,12 @@
 </tr>
 
 <tr>
-      <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
+      <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
         Séances vidéos
       </td>
     </tr>
     <tr>
-      <td height="37" colspan="2">
+      <td colspan="2" class="borderWidth1">
        
       
       
@@ -165,7 +165,7 @@
     </tr>
 
 <tr>
-  <td height="37"  colspan="2" class="size5 background003366 colorWhite bold">
+  <td  colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
   Pyramide
             des divisions depuis la <br>
             saison 2022-2023
@@ -173,19 +173,19 @@
 </tr>
 <tr>
  
-  <td height="37" colspan="2" width="340" >
+  <td colspan="2" width="340" class="borderWidth1">
   <img src="../images/pyramide-2022-2023.jpg" alt="pyramide des divisions" width="500" height="511">
   </td>
 </tr>
 
 
 <tr>
-  <td height="37" colspan="2" class="size5 background003366 colorWhite bold">
+  <td colspan="2" class="size5 background003366 colorWhite bold">
     3me mi-temps
   </td>
 </tr>
 <tr>
-  <td height="37" colspan="2" class="size5 ">
+  <td colspan="2" class="size5 ">
 <br>
   <a href="chansons/page_chansons.php">   Chansons paillardes <br> Et chansons de 3me mi-temps</a> 
     <br>

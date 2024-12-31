@@ -77,7 +77,7 @@ img{border:0;}
 .backgroundNoir{background-color: #000000;}
 .backgroundBlack{background-color: #000000;}
 .backgroundOrange{background-color: #FFCC00;}
-
+.background666666{background-color: #666666;}
 
 .backgroundCCCCCC{background-color: #CCCCCC;}
 .backgroundEAECEB{background-color: #EAECEB;}
@@ -97,6 +97,7 @@ img{border:0;}
 
 .style {font-family: sans-serif;}
 .styleArial {font-family: Arial, Helvetica, sans-serif;}
+.styleCursive {font-family: 'Lucida Handwriting Std', sans-serif;}
 
 /* border */
 .borderDouble {border: thick double;}
@@ -134,6 +135,7 @@ img{border:0;}
 .width90PC {width:90%;}
 .width80PC {width:80%;}
 .width75PC {width:75%;}
+.width50PC {width:50%;}
 .width33PC {width:33%;}
 .width20PC {width:20%;}
 .width25PC {width:25%;}

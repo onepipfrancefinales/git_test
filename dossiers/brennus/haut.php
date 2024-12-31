@@ -1,5 +1,5 @@
 
-<table width="100%" border="0" align="center">
+<table  class="backgroundWhite" width="80%" border="0" align="center">
   <tr> 
     <td colspan="4"> 
       <div align="center"><img src="images/brennus/brennusGrand.jpg" width="100%" ></div>

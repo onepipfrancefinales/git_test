@@ -114,8 +114,8 @@
       <br>
       <br>
       <br>
-      <p class="marginAuto size4" style="a:link {color: white}">
-        <a class="decorationNoneWhite bold " href="mailto:francefinalesrugby@free.fr">--Signaler  une erreur--</a>
+      <p class="marginAuto size4">
+        <a class="decorationNoneWhite bold colorWhite" href="mailto:francefinalesrugby@free.fr">--Signaler  une erreur--</a>
       </p>
     </td>
   </tr>

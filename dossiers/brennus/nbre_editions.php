@@ -34,7 +34,7 @@
 <h2>&nbsp;</h2>
 <h2>par le suite, pour les 10 editions suivante la finale du championnat de france 
   invitera le meilleurs club de province pour affronter la meilleure équipe 
-  parsienne</h2>
+  parisienne</h2>
 <h2><font size="3" color="#000000">de </font></h2>
 <h2>(1899-1908)</h2>
 <h2>&nbsp;</h2>

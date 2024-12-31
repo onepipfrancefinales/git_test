@@ -1,5 +1,5 @@
-<hr />
-          <hr />
+<hr>
+          <hr>
         <div class="lienSommaireBas">
           <?php
           include("sommaires.php");
