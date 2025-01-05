@@ -1,44 +1,76 @@
+<?php
+require "../../connect/connexion1.php";
+require "fonctionsBrennus.php";
+
+//nbreEdition($bdd);
+villes($bdd);
+stades($bdd);
+stadesParVille('Toulouse', $bdd);
+//listeSaisonsStade($idStade,$countSaisonStade, $bdd);
+//champFrance($bdd);
+?>
+
+
 <html>
 <head>
-<title>Brennus : Les stades</title>
+<title>Bouclier de Brennus : Les stades</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link type="text/css" rel="stylesheet" href="../../ligne1.css">
+
 </head>
 
 <body bgcolor="#000000" text="#000000">
-<div align="center"></div>
+
 <table width="1000" border="1" align="center">
   <tr> 
     <td bgcolor="#FFFFFF"> 
       <div align="center"><font color="#000000"> 
         <?php
-    // On inclut le haut de la page
+      
+      // echo "nombre d'édition : ". $nbreEdition;echo "<br>";
+      //  echo "nombre de villes :".$countVilles;echo "<br>";
+      //    echo "nombre de stades :".$countStades;echo "<br>";
+      //  echo "liste des villes : ";echo "<br>";
+      //  foreach ($tabVilles as $ville) {
+      // echo $ville;echo "<br>";
+      ///  }
+     
+     
+      //echo "liste des stades : ";echo "<br>";
+      //   foreach ($tabStades as $stade) {
+      // echo $stade;echo "<br>";
+      //  }
+     /*
+     echo "**************************";echo "<br>";
+     echo $ville0.$countVille0;echo "<br>";
+     echo $ville1.$countVille1;echo "<br>";
+     echo $ville2.$countVille2;echo "<br>";
+     echo $ville3.$countVille3;echo "<br>";
+     echo $ville4.$countVille4;echo "<br>";
+     echo $ville5.$countVille5;echo "<br>";
+     echo $ville6.$countVille6;echo "<br>";
+     echo $ville7.$countVille7;echo "<br>";
+     echo $ville8.$countVille8;echo "<br>";
+     echo $ville9.$countVille9;echo "<br>";
+     echo $ville10.$countVille10;echo "<br>";
+     echo $ville11.$countVille11;echo "<br>";
+     echo $ville12.$countVille12;echo "<br>";
+     echo $ville13.$countVille13;echo "<br>";
+     echo $ville14.$countVille14;echo "<br>";
+     echo "**************************";
+     */
     include("haut.php");
-    ?>
-        </font></div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" height="81" bgcolor="#FFFFFF"> 
-      <div align="center"><font color="#000000"> </font></div>
-      <div align="center"> 
-        <p><font color="#000000"> 
-          <?php
+    
+        
    
-    include("stades.php");
+   // include("stades.php");
+    include("stades_copy.php");
     ?>
-          </font></p>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" height="81" bgcolor="#FFFFFF"><font color="#000000">
-      <?php
-   
-    include("piedDePage.php");
-    ?>
-      </font></td>
-  </tr>
-</table>
-<div align="center"></div>
+  
+
 </body>
+<footer>
+  <?php include("piedDePage.php");?>
+
+</footer>
 </html>

@@ -1,26 +1,25 @@
 <?php
 
+function transformerDonnee($donnee, $bdd)
+{
+
+    global $nom;
+
+    $requete = $bdd->query("SELECT nom_1
+    FROM bdclubs 
+    WHERE id = '$donnee'");
+    while ($row = $requete->fetch()) {
+        $nom = $row[0];
+    };
+}
+
 
 function champFrance($bdd)
 {
     global
-    $nbreLigne,
-    $id,
-        $edition,
-        $saison,
-        $nomDiv,
-        $dateMatch,
-        $champion,
-        $comite1,
-        $finaliste,
-        $comite2,
-        $score1,
-        $score2,
-        $scoreplus,
-        $stade,
-        $ville,
-        $public,
-        $com;
+        $nbreLigne,
+        $id,  $edition, $saison, $nomDiv, $dateMatch, $champion, $comite1, $finaliste, $comite2,
+        $score1, $score2, $scoreplus, $stade, $ville, $public, $com;
 
     $id = array();
     $edition = array();
@@ -40,23 +39,17 @@ function champFrance($bdd)
     $com = array();
 
 
-    require "../../connect/connexion1.php";
-
     // nombre de lignes
     $reponse = $bdd->query("SELECT count(id) 
-                        FROM brennus");
+                        FROM brennus_champions");
     while ($row = $reponse->fetch()) {
         $nbreLigne = $row[0];
     };
 
-
-  //  echo "<br>";
- //   echo "nombre de ligne : ", $nbreLigne;
-
     $requete = $bdd->query("SELECT *
-		                    FROM brennus 
-		                   WHERE id < '$nbreLigne'
-                       ORDER BY id DESC ");
+		                    FROM brennus_champions
+		                    WHERE id < '$nbreLigne'
+                            ORDER BY id DESC ");
 
     while ($row = $requete->fetch()) {
         $id[]  = $row[0];
@@ -75,9 +68,21 @@ function champFrance($bdd)
         $ville[] = $row[13];
         $public[] = $row[14];
         $com[] = $row[15];
+
     }
 }
-
+function nomStade($id, $bdd){
+    global $nomStade;
+    $requete = $bdd->query("SELECT stade
+    FROM brennus_stades
+    WHERE id = '$id'");
+    
+    while ($row = $requete->fetch()) {
+    $nomStade = $row[0];
+  
+    };
+   echo $nomStade;
+    }
 
 
 //********************** */
@@ -89,7 +94,7 @@ function nbreEdition($bdd)
 {
     global $nbreEdition;
     $reponse = $bdd->query("SELECT max(edition) 
-                        FROM brennus");
+                        FROM brennus_champions");
     while ($row = $reponse->fetch()) {
         $nbreEdition = $row[0];
     };
@@ -103,47 +108,99 @@ function villes($bdd)
 
     //count Villes
     $reponse = $bdd->query("SELECT count(Distinct ville)
-                        FROM brennus");
+                        FROM brennus_stades");
     while ($row = $reponse->fetch()) {
         $countVilles  = $row[0];
     };
 
 
-
-
     //liste des villes
-    $tabVilles = array();
-    $reponse = $bdd->query("SELECT Distinct ville
-                        FROM brennus
-                        WHERE ville !='NULL'
-                        ");
+    global $listeVilles;
+
+    $listeVilles = array();
+    $reponse = $bdd->query("SELECT DISTINCT ville
+                        FROM brennus_stades  ");
     while ($row = $reponse->fetch()) {
-        $tabVilles[] = $row[0];
+        $listeVilles[] = $row[0];
     };
 
-    
+
+
+    function stadesParVille($nomVille2, $bdd)
+    {
+ echo "nomVille2",$nomVille2;
+        global $stadesParVille;
+
+        $reponse = $bdd->query("SELECT count(stade)
+        FROM brennus_stades 
+        WHERE ville = '$nomVille2' ");
+        while ($row = $reponse->fetch()) {
+            $countStadesParVille = $row[0]; 
+          //  $stadesParVille[] = $row[1];
+        };
+        echo "nomVille3",$nomVille2;
+        $reponse2 = $bdd->query("SELECT stade
+        FROM brennus_stades 
+        WHERE ville = '$nomVille2' ");
+        while ($row = $reponse2->fetch()) {
+            $stadesParVille[] = $row[0];
+        };
+        echo "nomVille4",$nomVille2;
+        for ($j = 0; $j < $countStadesParVille; $j++) {
+            echo $stadesParVille[$j] . "<br>";
+        }
+    }
+
+    function matchsParVille($nomVille2, $bdd)
+    {
+ echo "nomVille2",$nomVille2;
+        global $stadesParVille;
+
+        $reponse = $bdd->query("SELECT count(stade)
+        FROM brennus_stades 
+        WHERE ville = '$nomVille2' ");
+        while ($row = $reponse->fetch()) {
+            $countStadesParVille = $row[0]; 
+          //  $stadesParVille[] = $row[1];
+        };
+        echo "nomVille3",$nomVille2;
+        $reponse2 = $bdd->query("SELECT stade
+        FROM brennus_stades 
+        WHERE ville = '$nomVille2' ");
+        while ($row = $reponse2->fetch()) {
+            $stadesParVille[] = $row[0];
+        };
+        echo "nomVille4",$nomVille2;
+        for ($j = 0; $j < $countStadesParVille; $j++) {
+            echo $stadesParVille[$j] . "<br>";
+        }
+    }
+
+
+
+
+
+
     //***************************** */
     //***************************** */
+    /*
  $nomVille = array();
- $countVille = array();
+ $countVilles = array();
 
 foreach ($tabVilles as $ville) {
  
 $reponse = $bdd->query("SELECT ville, count(ville) 
-FROM brennus
+FROM brennus_champions
 WHERE ville = '$ville'");
 
         while ($row = $reponse->fetch()) {
-            $nomVille[] = $row[0];
+            $nomVilles[] = $row[0];
             $countVille[] = $row[1];
            
         }
     }  
     
- 
-  
-  
-  
+
     //  rsort($countVille). $nomVille;
     
    for ($j=0; $j<=$countVilles; $j++)
@@ -162,10 +219,11 @@ WHERE ville = '$ville'");
 // array_push($tableau1, array($ville1, $ville2, $ville3));
 // echo $tableau1[1];
 
-   //   echo ${"countVille".$i}.${"ville".$i};echo "<br>";
+//   echo ${"countVille".$i}.${"ville".$i};echo "<br>";
     }
-
-/******************************* */
+*/
+    /******************************* */
+    /*
 $test =array ($ville0 => $countVille0, $ville1 => $countVille1, $ville2 => $countVille2,
 $ville3 => $countVille3,$ville4 => $countVille4,$ville5 => $countVille5,$ville6 => $countVille6,$ville7 => $countVille7,);
 asort($test);
@@ -174,11 +232,12 @@ foreach ($test as $key => $val) {
     }
 //echo "<br>";
 /*********************************** */
-//echo $ville0;
+    //echo $ville0;
+    /*
 $tabAnnee = array();
 
 $reponse = $bdd->query("SELECT saison 
-FROM brennus
+FROM brennus_champions
 WHERE ville = '$ville0'");
 
         while ($row = $reponse->fetch()) {
@@ -189,31 +248,90 @@ for ($i=0; $i<$countVille0; $i++)
 {
  //   echo $tabAnnee[$i]."<br>";
 }
+ */
 }
 /************************************************* */
 
 //liste des stades
 function stades($bdd)
 {
+    global $countStades, $tabStades, $tabVilles;
 
-
-    global $countStades, $tabStades;
     //count Stades
-    $reponse = $bdd->query("SELECT count(Distinct stade)
-                        FROM brennus");
+    $reponse = $bdd->query("SELECT count(stade)
+                        FROM brennus_stades");
     while ($row = $reponse->fetch()) {
         $countStades  = $row[0];
     };
 
-    //liste des stades
+
+
+
+    // liste des stades- villes
+    $tabId = array();
     $tabStades = array();
-    $reponse = $bdd->query("SELECT Distinct stade
-                        FROM brennus");
+    $tabVilles = array();
+
+    $reponse = $bdd->query("SELECT id,stade, ville
+                        FROM brennus_stades
+                       ");
     while ($row = $reponse->fetch()) {
-        $tabStades[] = $row[0];
+        $tabId[] = $row[0];
+        $tabStades[] = $row[1];
+        $tabVilles[] = $row[2];
     };
 
 
+    for ($i = 0; $i < $countStades; $i++) {
+        //  echo $tabId[$i]. " ".$tabStades[$i]." ".$tabVilles[$i]."<br>";
+    }
+    /***************************************************************** */
+
+    global $nomStade, $nomVille, $com;
+    //   echo $countStades . "<br>";
+    for ($i = 0; $i <= $countStades; $i++) {
+
+        $reponse = $bdd->query("SELECT distinct(stades.stade), stades.ville, stades.com
+        FROM brennus_champions as champions
+        INNER JOIN brennus_stades as stades WHERE stades.id = '$i' ");
+        while ($row = $reponse->fetch()) {
+
+            $nomStade[] = $row[0];
+            $nomVille[] = $row[1];
+            $com[] = $row[2];
+        };
+    };
 
 
+    function countSaisonsStade($idStade, $bdd)
+    {
+        global $countSaisonStade;
+        $reponse = $bdd->query("SELECT count(stade)
+        FROM brennus_champions 
+        WHERE stade = '$idStade'");
+        while ($row = $reponse->fetch()) {
+            $countSaisonStade = $row[0];
+        };
+        echo $countSaisonStade;
+    };
+
+
+    function listeSaisonsStade($idStade, $countSaisonStade, $bdd)
+    {
+
+        global $tabSaisons;
+        $tabSaisons = array();
+        //$idStade = 16;
+
+        $reponse = $bdd->query("SELECT saison
+        FROM brennus_champions 
+        WHERE stade = '$idStade'");
+        while ($row = $reponse->fetch()) {
+            $tabSaisons[] = $row[0];
+        };
+
+        for ($i = 0; $i < $countSaisonStade; $i++) {
+            echo  $tabSaisons[$i] . ' - ';
+        }
+    };
 }
