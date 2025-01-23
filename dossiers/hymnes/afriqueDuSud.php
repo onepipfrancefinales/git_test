@@ -51,9 +51,9 @@
         <b>Let us live and strive for freedom</b><br>
         Vivons et luttons pour que la liberté<br>
         <b>In South Africa our Land</b><br>
-        Triomphe en Afrique du Sud, notre nation.</font><font size="4" face="Arial, Helvetica, sans-serif"><br>
+        Triomphe en Afrique du Sud, notre nation.<br>
         <br>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/N_AdfRYMWSI" frameborder="0" allowfullscreen></iframe></font></p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/N_AdfRYMWSI" frameborder="0" allowfullscreen></iframe></p>
     </td>
   </tr>
 </table>

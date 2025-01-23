@@ -1,5 +1,8 @@
-<?php if (isset($_GET['choix'])) $choix = $_GET['choix']; ?>
-
+<?php 
+include("../../saison.php");
+if (isset($_GET['choix'])) $choix = $_GET['choix']; 
+if (isset($_GET['mode'])) $mode  = $_GET['mode'];
+?>
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
 
@@ -13,50 +16,97 @@
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
-  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
-  <link type="text/css" rel="stylesheet" href="../../lienNoir.css" />
-  <link type="text/css" rel="stylesheet" href="../dossiers.css">
+ 
+
+
+
+  <link type="text/css" rel="stylesheet" href="../../ligne1.css" />
+    <link type="text/css" rel="stylesheet" href="../../lienNoir.css" />
+    <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
+    <link type="text/css" rel="stylesheet" href="../dossiers.css">
+    <link type="text/css" rel="stylesheet" href="../../smart/10.css">
+
   <title>Tous les Champions de FRANCE <?php echo $annee; ?></title>
 </head>
 
 
-<body>
-  <table class="marginAuto table">
-    <tr>
-      <td colspan="3">
-        <?php include("../../images/page_image_al.php"); ?>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3">
-        <?php include("../../01ligne.php");  ?>
-      </td>
-    </tr>
-    <td class="colonneDroiteGauche backgroundBlue" valign="top">
+<?php
+  if ($mode != "smart") {
+    echo "<body>";
+   echo "<table class=\"width1250 marginAuto\">";
 
-      <?php include("../../01gauche.php"); ?>
-    </td>
-    <td class="colonneCentrale backgroundWhite">
+  } else {
+    echo "<body class=\"backgroundWhite\">";
+    echo "<table class=\"width100PC\">";
+  }
+  ?>
+    <tr>
+      <td colspan="3">
+        <?php if ($mode != "smart") {
+          include("../../images/page_image_al.php");
+          echo "</td>";
+          echo "</tr>";
+          echo "<tr>";
+          echo "<td colspan=\"3\">";
+          include("../../01ligne.php");
+          echo "</td>";
+          echo "</tr>";
+          echo "<tr>";
+          echo "<td class=\"colonneDroiteGauche backgroundBlue\" valign=\"top\">";
+          include("../../01gauche.php");
+          echo "</td>";
+          echo "<td class=\"colonneCentrale backgroundWhite\">";
+        } else {
+
+          echo "<table class=\"width98PC\" border=\"1\">";
+          echo "<tr> ";
+          echo "<td class =\"h22 width5PC\"><a href=\"../accueil2.php\"><img src=\"../../images/smart/flecheGauche.jpg\" width=\"27\" height=\"20\" alt=\"fléche retour\"></a></td>";
+          echo "<td class =\"h22 width95PC\">France Finales Rugby</td>";
+          echo "</tr>";
+          echo "<tr>";
+          echo "<td colspan=\"2\" class =\"h12\">Tout sur le rugby</td>";
+          echo "</tr>";
+          echo "</table>";
+        }
+
+        ?>
+
+      
 
 <h1 class="center colorRed styleArial">Quelques vidéos </h1>
-      <br>
-      <br>
+      <h3 class="center styleArial"> - Série : Quand tu joues au rugby amateur - </h3>
       <hr>
-      <?php require 'rugbyAmateur.php';  ?>
+      <?php 
 
-    </td>
-    <td class="colonneDroiteGauche backgroundBlue" valign="top">
-      <?php include("../../00droite.php");  ?>
-    </td>
+
+//  include("rugbyAmateur/V1.php"); 
+include("rugbyAmateur/V2.php");
+include("rugbyAmateur/V3.php");
+include("rugbyAmateur/V4.php");
+include("rugbyAmateur/V5.php");
+include("rugbyAmateur/V6.php");
+include("rugbyAmateur/V7.php");
+include("rugbyAmateur/V8.php"); ?> 
+
+      <?php if ($mode != "smart") {
+        ?>
+      </td>
+
+      <td class="colonneDroiteGauche backgroundBlue" valign="top">
+        <?php
+          if ($mode != "smart") {
+            include("../../00droite.php");
+          } ?>
+      </td>
     </tr>
+  <?php
+        }
+  ?>
 
   </table>
-  </div>
+
 </body>
-<footer>
-  <?php include("../../comitebas.php"); ?>
-  <?php include("../../bas.php"); ?>
-</footer>
+
+<?php require "../footer.php" ;?>
 
 </html>

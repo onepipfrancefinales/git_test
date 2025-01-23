@@ -4,7 +4,7 @@
 
   <!-- Division 1 1894 - 1896-->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="2" class="bgCCCCCC">
         <span class="colorRed bold">Création d'un premier niveau de compétition </span>
@@ -23,7 +23,7 @@
 
 <!-- Division 2  1897-1905   -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="3" class="bgCCCCCC">
         <span class="colorRed bold">Création d'un niveau (2 niveaux de compétitions)</span>
@@ -43,7 +43,7 @@
 
 <!-- Division 2  1906-1931   -->
 
-<table class="styleArial mb-10 marginAuto width750">
+<table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold">Création d'un niveau (3 niveaux de compétitions) </span>
@@ -73,7 +73,7 @@
 
   <!-- Division 2  1932-1975   -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="2" class="bgCCCCCC">
         <span class="colorRed bold"> Changement de nom</span>
@@ -101,7 +101,7 @@ $tabPeriode = ["1932", "1933","...","1971","1972"];
 
   <!-- Division 3  1973-1975  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold "> Création de 2 niveaux (3 niveaux de compétitions)</span>
@@ -121,7 +121,7 @@ $tabPeriode = ["1932", "1933","...","1971","1972"];
 
   <!-- Division 3  1976-1982   -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold "> Création de niveau (4 niveaux de compétitions)</span>
@@ -143,7 +143,7 @@ $tabPeriode = ["1932", "1933","...","1971","1972"];
 
  <!-- Division 3 1983-1994   -->
 
- <table class="styleArial mb-10 marginAuto width750">
+ <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold "> Création de niveau (5 niveaux de compétitions)</span>
@@ -165,7 +165,7 @@ $tabPeriode = ["1932", "1933","...","1971","1972"];
 
 <!-- Division 3  1996-2001   -->
 
-<table class="styleArial mb-10 marginAuto width750">
+<table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold "> Création de compétitions (6 niveaux de compétitions)</span>
@@ -196,7 +196,7 @@ $tabPeriode = ["1932", "1933","...","1971","1972"];
 
  <!-- Division 3  2002- 2017   -->
 
- <table class="styleArial mb-10 marginAuto width750">
+ <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold "> Suppression de compétitions </span>
@@ -221,7 +221,7 @@ $tabPeriode = ["1932", "1933","...","1971","1972"];
  
   <!-- Division 3  2018- encours   -->
 
- <table class="styleArial mb-10 marginAuto width750">
+ <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
     <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold "> Suppression d'une division (3 niveaux de compétitions)</span>

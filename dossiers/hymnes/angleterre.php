@@ -90,7 +90,7 @@
  
   <tr> 
     <td colspan="3"> 
-      <div align="center"><iframe width="764" height="454" src="https://www.youtube.com/embed/rn67eOZpr9o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="center"><iframe width="100%" height="454" src="https://www.youtube.com/embed/rn67eOZpr9o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </td>
   </tr>
 </table>

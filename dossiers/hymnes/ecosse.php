@@ -47,9 +47,9 @@
   </tr>
   <tr> 
     <td colspan="3"> 
-      <div align="center"><b><font size="6" face="Arial, Helvetica, sans-serif" color="#000000">Swing 
+      <div class="center bold size7 sizeArial">Swing 
         low, sweet chariot<br>
-        (Balance toi lentement, doux chariot !) </font></b></div>
+        (Balance toi lentement, doux chariot !) </div>
     </td>
   </tr>
   <tr> 

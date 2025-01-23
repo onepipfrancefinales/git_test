@@ -3,7 +3,7 @@
  
   <!-- division 1972-1997 -->
 
-    <table class="styleArial mb-10 marginAuto width750">
+    <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="2" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau de compétition</span>
@@ -60,7 +60,7 @@
     
      <!-- division -1990-1999-->  
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="3" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (2 niveaux de compétitions)</span>
@@ -81,7 +81,7 @@
 
        <!-- division -2000-2003-->  
 
-       <table class="styleArial mb-10 marginAuto width750">
+       <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="3" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (3 niveaux de compétitions)</span>
@@ -101,7 +101,7 @@
 
        <!-- division -2004-2010-->  
 
-       <table class="styleArial mb-10 marginAuto width750">
+       <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (4 niveaux de compétitions)</span>
@@ -123,7 +123,7 @@
 
    <!-- division -2011-2014-->  
 
-   <table class="styleArial mb-10 marginAuto width750">
+   <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold"> Changement de nom</span>
@@ -149,7 +149,7 @@
 
       <!-- division 2015-2016-->  
 
-   <table class="styleArial mb-10 marginAuto width750">
+   <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold"> Suppression de 2 niveaux (3 niveaux de compétitions)</span>
@@ -172,7 +172,7 @@
 
       <!-- division -2017-2018-->  
 
-   <table class="styleArial mb-10 marginAuto width750">
+   <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (4 niveaux de compétitions)</span>
@@ -194,7 +194,7 @@
 
  <!-- division 2019-2020-->  
 
- <table class="styleArial mb-10 marginAuto width750">
+ <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> CHangement de nom</span>
@@ -216,7 +216,7 @@
 
      <!--  division -2021-annee encours-->  
 
- <table class="styleArial mb-10 marginAuto width750">
+ <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> Changement de nom</span>

@@ -3,7 +3,7 @@
 
   <!-- Division 1  1997- 2001   -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (4me)</span>
@@ -24,7 +24,7 @@
 
    <!-- Division 2  2002- 2014   -->
 
-   <table class="styleArial mb-10 marginAuto width750">
+   <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un premiers niveau</span>
@@ -45,7 +45,7 @@
 
   <!-- Division 3  2015- 2017   -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (2 niveaux de compétitions)</span>
@@ -66,7 +66,7 @@
   
      <!-- Division 3  2018 - 2020  -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (3 niveaux de compétitions)</span>
@@ -87,7 +87,7 @@
   
   <!-- Division 3  2021 - année en cours  -->
 
-   <table class="styleArial mb-10 marginAuto width750">
+   <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (4me)</span>

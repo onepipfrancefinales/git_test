@@ -1,13 +1,29 @@
 <br /> <br /> <br /> <br />
 
   <table width="100%" height="1663" class="borderWidth1 marginAuto">
-   
+  <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1 width50PC">
+               Actualités
+            </td>
+
+
+        </tr>
+        <tr>
+            <td colspan="2" class="borderWidth1 ">
+                <br>
+                <p class="size4">
+                    <a class="colorBlack" href="actualites/pageActualites.php?mode=<?php echo "smart"; ?>">Nouvelles régles Word Rugby<br>
+                à compter du 8 février 2025 <br> pour toutes les compétitions</a>
+              
+                </p>
+                <br>
+            </td>
+        </tr> 
   <tr>
-      <td  class="size5 background003366 colorWhite bold borderWidth1">
+      <td  class="size5 background003366 colorWhite bold borderWidth1 width50PC">
         Résultats & <br> Classements
       </td>
       <td  class="size5 background003366 colorWhite bold borderWidth1">
-      Acceder à l'application
+      Accéder <br> à l'application
       </td>
     </tr>
     <tr>
@@ -24,7 +40,7 @@
       </td>
       <td class="borderWidth1"  >
      
-              <p class="center colorWhite size4 style backgroundRed bold" colspan="3">
+              <p class="center colorWhite size4 style backgroundRed bold" >
               <a class="colorWhite" href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank">ACCEDER A L'APPLICATION
            
             
@@ -87,13 +103,13 @@
   <td width="329" class="borderWidth1">
    
      
-      A définir
-       
+     
+       xxxx
    
   </td>
   <td width="340" class=" borderWidth1 size5 ">
 
-  <a href="scores/accueil.php">  Evolution des points  </a></p>
+  <a href="scores/pageScore.php">  Evolution des points  </a></p>
     <img src="../images/panneauScore.gif" width="324" height="160">
     </div>
   </td>

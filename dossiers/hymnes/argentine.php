@@ -117,7 +117,7 @@
 		  
           Ou jurons de mourir glorieusement !</p>
 		  
-        <iframe width="764" height="454" src="https://www.youtube.com/embed/MM8WZ_nhXAA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="454" src="https://www.youtube.com/embed/MM8WZ_nhXAA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</td>
   </tr>
 </table>

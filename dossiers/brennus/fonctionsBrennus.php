@@ -124,56 +124,72 @@ function villes($bdd)
         $listeVilles[] = $row[0];
     };
 
+   
 
 
-    function stadesParVille($nomVille2, $bdd)
+
+
+
+
+    }
+
+
+
+
+
+
+
+    function countStadesParVille($nomVille2, $bdd)
     {
- echo "nomVille2",$nomVille2;
-        global $stadesParVille;
+
+        global $countStadesParVille;
 
         $reponse = $bdd->query("SELECT count(stade)
         FROM brennus_stades 
         WHERE ville = '$nomVille2' ");
-        while ($row = $reponse->fetch()) {
+       
+       while ($row = $reponse->fetch()) {
             $countStadesParVille = $row[0]; 
-          //  $stadesParVille[] = $row[1];
+        
         };
-        echo "nomVille3",$nomVille2;
+    }
+
+
+    function stadesParVille($nomVille2,$countStadesParVille, $bdd)
+    {
+
+        global $stadesParVille;
+
+        $stadesParVille = array();
+       
         $reponse2 = $bdd->query("SELECT stade
         FROM brennus_stades 
         WHERE ville = '$nomVille2' ");
         while ($row = $reponse2->fetch()) {
             $stadesParVille[] = $row[0];
         };
-        echo "nomVille4",$nomVille2;
+       
         for ($j = 0; $j < $countStadesParVille; $j++) {
             echo $stadesParVille[$j] . "<br>";
         }
     }
 
-    function matchsParVille($nomVille2, $bdd)
-    {
- echo "nomVille2",$nomVille2;
-        global $stadesParVille;
 
-        $reponse = $bdd->query("SELECT count(stade)
-        FROM brennus_stades 
-        WHERE ville = '$nomVille2' ");
+
+
+
+    function finalesParVille($nomVille, $bdd)
+    {
+
+        global $finalesParVille;
+
+        $reponse = $bdd->query("SELECT count(ville)
+        FROM brennus_champions 
+        WHERE ville = '$nomVille' ");
         while ($row = $reponse->fetch()) {
-            $countStadesParVille = $row[0]; 
-          //  $stadesParVille[] = $row[1];
+            $finalesParVille = $row[0]; 
         };
-        echo "nomVille3",$nomVille2;
-        $reponse2 = $bdd->query("SELECT stade
-        FROM brennus_stades 
-        WHERE ville = '$nomVille2' ");
-        while ($row = $reponse2->fetch()) {
-            $stadesParVille[] = $row[0];
-        };
-        echo "nomVille4",$nomVille2;
-        for ($j = 0; $j < $countStadesParVille; $j++) {
-            echo $stadesParVille[$j] . "<br>";
-        }
+        echo $finalesParVille;
     }
 
 
@@ -249,7 +265,7 @@ for ($i=0; $i<$countVille0; $i++)
  //   echo $tabAnnee[$i]."<br>";
 }
  */
-}
+
 /************************************************* */
 
 //liste des stades
@@ -301,9 +317,10 @@ function stades($bdd)
             $com[] = $row[2];
         };
     };
+}
 
 
-    function countSaisonsStade($idStade, $bdd)
+ function countSaisonsStade($idStade, $bdd)
     {
         global $countSaisonStade;
         $reponse = $bdd->query("SELECT count(stade)
@@ -313,15 +330,15 @@ function stades($bdd)
             $countSaisonStade = $row[0];
         };
         echo $countSaisonStade;
-    };
+    }
 
 
-    function listeSaisonsStade($idStade, $countSaisonStade, $bdd)
+
+ function listeSaisonsStade($idStade, $countSaisonStade, $bdd)
     {
 
         global $tabSaisons;
         $tabSaisons = array();
-        //$idStade = 16;
 
         $reponse = $bdd->query("SELECT saison
         FROM brennus_champions 
@@ -333,5 +350,52 @@ function stades($bdd)
         for ($i = 0; $i < $countSaisonStade; $i++) {
             echo  $tabSaisons[$i] . ' - ';
         }
-    };
-}
+    }
+
+
+    function test($bdd) {
+
+
+
+        global $listeVilles2;
+
+        $listeVilles2 = array();
+        $reponse = $bdd->query("SELECT DISTINCT ville
+                            FROM brennus_stades  ");
+        while ($row = $reponse->fetch()) {
+            $listeVilles2[] = $row[0];
+        };
+      //  echo  $listeVilles2[1];
+       
+       
+   
+        $identite = array(
+ 
+            'ville' => ["$listeVilles2[0]","$listeVilles2[1]","$listeVilles2[2]"], 
+            'prenom' => 'Hugo', 
+            'nbreMatchs' => [25,20,21] ,
+            'estEtudiant' => true
+        );
+       
+      //  echo $identite['ville'][0];
+
+      echo $identite['nbreMatchs'][0].$identite['ville'][0]."<br>";
+      echo $identite['nbreMatchs'][1].$identite['ville'][1]."<br>";
+      echo $identite['nbreMatchs'][2].$identite['ville'][2]."<br>";
+      
+    //  echo $identite['ville'][0];
+     // sort($identite['nbreMatchs']);
+       
+      //usort($identite, 'triSelonAge');
+      
+      
+      echo $identite['nbreMatchs'][0].$identite['ville'][0]."<br>";
+        echo $identite['nbreMatchs'][1].$identite['ville'][1]."<br>";
+        echo $identite['nbreMatchs'][2].$identite['ville'][2]."<br>";
+       
+   
+   
+   
+    }
+
+ 

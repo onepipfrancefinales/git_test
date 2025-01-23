@@ -25,7 +25,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 </head>
 
  
-<body bgcolor="#CCCCCC">
+<body>
  <table class="width100PC borderWidth1">
   <tr> 
   <td class="h22 width5PC"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20" alt="fléche retour"></a></td>

@@ -52,9 +52,9 @@
         yet silenced the harps of dear Wales.<br>
 <br>
 </p>
- </font><font color="#333333"><iframe width="420" height="315" src="https://www.youtube.com/embed/DQy4xnKgt28" frameborder="0" allowfullscreen><br>
+ <div class="center"><iframe width="100%" height="315" src="https://www.youtube.com/embed/DQy4xnKgt28" frameborder="0" allowfullscreen><br>
         <br>
-        </iframe> </font></div>
+        </iframe></div>
     </td>
   </tr>
 </table>

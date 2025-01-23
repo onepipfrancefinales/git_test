@@ -35,17 +35,17 @@
 <table width="970" border="1">
 
   <tr bgcolor="#0066CC"> 
-    <td height="41" width="95">Villes</td>
-    <td height="41" width="69"> Nombre de finales accueillies </td>
-    <td height="41" width="469">Editions</td>
-    <td height="41" width="405">Stades</td>
+    <td height="41" width="200">Villes</td>
+    <td height="41" width="169"> Nombre de finales accueillies </td>
+    <td height="41" width="369">Editions</td>
+    <td height="41" width="300">Stades</td>
   </tr>
   <?php for ($i=0; $i< $countVilles ; $i++) { ?>
   <tr> 
     <td><?php echo $listeVilles[$i];?></td>
-    <td></td>
-    <td><?php echo $listeVilles[$i];?></td>
-    <td> <?php stadesParVille($listeVilles[$i], $bdd);?></td>
+    <td><?php finalesParVille($listeVilles[$i], $bdd);?></td>
+    <td><?php //echo $listeVilles[$i];?></td>
+    <td> <?php countStadesParVille($listeVilles[$i], $bdd);stadesParVille($listeVilles[$i], $countStadesParVille, $bdd);?></td>
   </tr>
   <?php
  }

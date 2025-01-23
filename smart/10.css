@@ -66,6 +66,9 @@ div.calendrier {width:90%; font-size:20px;background-color: #FFFF00;color: red;f
 td.coin_fed {background-color: #003366;border: 3px #9FC6FF solid;text-align: center;font-size: 18px;font-family: arial;
 color: #FFFFFF; font-weight: bold;text-decoration: none;border-radius:10px 10px 10px 10px; width:50%;}
 
+td.coin_fed2 {background-color: #003366;border: 3px #9FC6FF solid;text-align: center;font-size: 18px;font-family: arial;
+	color: #FFFFFF; font-weight: bold;text-decoration: none;border-radius:10px 10px 10px 10px}
+
 td.coin_fed a{text-decoration: none; color:#FFFFFF;}
 
 #aa{background-color:#003366;color: white;font-size: 12px;text-align:center;font-family: Arial;Font-weight:bold;}

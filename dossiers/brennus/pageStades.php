@@ -5,7 +5,8 @@ require "fonctionsBrennus.php";
 //nbreEdition($bdd);
 villes($bdd);
 stades($bdd);
-stadesParVille('Toulouse', $bdd);
+test($bdd);
+//stadesParVille('Toulouse',3, $bdd);
 //listeSaisonsStade($idStade,$countSaisonStade, $bdd);
 //champFrance($bdd);
 ?>

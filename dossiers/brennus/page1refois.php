@@ -1,46 +1,30 @@
 <html>
 <head>
-<title>Brennus : Les premières fois</title>
+<title>Brennus : Les premiÃ¨res fois</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link type="text/css" rel="stylesheet" href="../../ligne1.css">
 </head>
 
-<body bgcolor="#000000" text="#000000">
-<div align="center"></div>
+<body>
+
 <table width="1000" border="1" align="center">
   <tr> 
     <td bgcolor="#FFFFFF"> 
-      <div align="center"><font color="#000000"> 
-        <?php
-    // On inclut le haut de la page
-    include("haut.php");
-    ?>
-        </font></div>
+        <?php include("haut.php");    ?>
     </td>
   </tr>
   <tr> 
     <td valign="top" height="81" bgcolor="#FFFFFF"> 
-      <div align="center"><font color="#000000"> </font></div>
-      <div align="center"> 
-        <p><font color="#000000">
-          <?php
-    // On inclut le haut de la page
-    include("1fois.php");
-    ?>
-          </font></p>
-        </div>
+          <?php  include("1fois.php");  ?>
     </td>
   </tr>
 <tr>
-    <td valign="top" height="24" bgcolor="#FFFFFF">
-      <div align="center"><font color="#000000"> 
-        <?php
-   
-    include("piedDePage.php");
-    ?>
-        </font></div>
-    </td>
+ 
   </tr>
 </table>
-<div align="center"><font color="#000000"> </font></div>
+
 </body>
+<footer>
+   <?php  // include("piedDePage.php");    ?>
+</footer>
 </html>

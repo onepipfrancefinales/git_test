@@ -1,14 +1,14 @@
 <table width="100%">
   <tr>
-    <td width="87">
+    <td>
       <img src="../../../images/drapeaux/Grand_format/AUS.png" width="75" height="50">
     </td>
-    <td width="393" class="center bold size7 styleArial">
+    <td  class="center bold size7 styleArial">
       Advance
       Australia Fair<br>
       (Avance belle Australie)
     </td>
-    <td width="98">
+    <td>
       <img src="../../../images/drapeaux/Grand_format/AUS.png" width="75" height="50">
     </td>
   </tr>
@@ -39,7 +39,7 @@
         Avance la belle Australie ! <br>
       </p>
       <br><br>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/p0cQBRC78rg" frameborder="0"></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/p0cQBRC78rg" frameborder="0"></iframe>
       <br>
     </td>
   </tr>

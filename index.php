@@ -400,7 +400,7 @@ require 'resultats/constantes.php';
 
               </td>
               <td>
-                <a href="https://francefinalesrugby.fr/dossiers/lexique/page_chansons.php"> Chansons paillardes </a>
+                <a href="https://francefinalesrugby.fr/dossiers/chansons/page_chansons.php"> Chansons paillardes </a>
               </td>
             </tr>
             <tr>
@@ -408,7 +408,7 @@ require 'resultats/constantes.php';
                 <a href="https://francefinalesrugby.fr/dossiers/lexique/pageLexique.php?sommaire=2"> Expressions du rugby </a>
               </td>
               <td>
-                <a href="https://francefinalesrugby.fr/dossiers/lexique/page_hymnes.php"> Hymnes </a>
+                <a href="https://francefinalesrugby.fr/dossiers/hymnes/page_hymnes.php"> Hymnes </a>
               </td>
             </tr>
             <tr>

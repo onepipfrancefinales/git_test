@@ -13,14 +13,14 @@
 <p class="nom">Tableau  de l'évolution des points</p>
 <br>
 
-<table width="311" border="1" align="center" class="center size3 styleArial bold">
+<table border="1"  class=" width90PC center size3 styleArial bold">
   <tr>
     <td></td>
-    <td><img src="../../images/dossiers/essais.jfif" width="120" height="84"></td>
-    <td><img src="../../images/dossiers/penalite.gif" width="120" height="84"></td>
-    <td><img src="../../images/dossiers/arbitre%20penalite.jfif" width="120" height="84"></td>
-    <td><img src="../../images/dossiers/drop%20goal.jfif" width="120" height="84"></td>
-    <td><img src="../../images/dossiers/mark.png" width="120" height="84"></td>
+    <td><img src="../../images/dossiers/essais.jfif" width="100%" height="84"></td>
+    <td><img src="../../images/dossiers/penalite.gif" width="100%" height="84"></td>
+    <td><img src="../../images/dossiers/arbitre%20penalite.jfif" width="100%" height="84"></td>
+    <td><img src="../../images/dossiers/drop%20goal.jfif" width="100%" height="84"></td>
+    <td><img src="../../images/dossiers/mark.png" width="100%" height="84"></td>
   </tr>
   <tr >
     <td></td>
@@ -31,20 +31,20 @@
     <td> Goalfrom mark </td>
   </tr>
   <tr class="size3 styleArial">
-    <td height="25">1875</td>
+    <td>1875</td>
     <td colspan="5" height="25"></td>
   </tr>
   <tr>
-    <td height="23">1885</td>
+    <td>1885</td>
     <td colspan="5" height="23"></td>
   </tr>
   <tr>
-    <td height="3"> 1891</td>
-    <td height="3"> 1 </td>
-    <td height="3"> 2 </td>
-    <td height="3"> 3 </td>
-    <td height="3">3 </td>
-    <td height="3"> - </td>
+    <td> 1891</td>
+    <td> 1 </td>
+    <td> 2 </td>
+    <td> 3 </td>
+    <td> 3 </td>
+    <td> - </td>
   </tr>
   <tr>
     <td>1894</td>
@@ -79,12 +79,12 @@
     <td> 3 </td>
   </tr>
   <tr>
-    <td height="10">1971 </td>
-    <td bgcolor="#00FF00" height="10"> 4 </td>
-    <td height="10"> 2 </td>
-    <td height="10"> 3 </td>
-    <td height="10"> 3 </td>
-    <td height="10" >3 </td>
+    <td>1971 </td>
+    <td bgcolor="#00FF00"> 4 </td>
+    <td> 2 </td>
+    <td> 3 </td>
+    <td> 3 </td>
+    <td>3 </td>
   </tr>
   <tr>
     <td>1977 </td>

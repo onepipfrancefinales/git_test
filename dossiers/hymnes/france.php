@@ -129,7 +129,7 @@
           Qu&#146;un sang impur<br>
           Abreuve nos sillons !</p>
         <br><br>    
-    <iframe width="764" height="454" src="https://www.youtube.com/embed/EhXMER9AudM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="454" src="https://www.youtube.com/embed/EhXMER9AudM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<br>
 	</td>
   

@@ -50,7 +50,7 @@ God Defend New zealand<br> (Dieu protège la Nouvelle Zélande !)
         <b>God defend New Zealand ! </b><br>
         Dieu protège la Nouvelle-Zélande ! <br>
 <br>
-</font><iframe width="420" height="315" src="https://www.youtube.com/embed/An5Hyoq-lXQ" frameborder="0" allowfullscreen></iframe></font></p>
+<div class="center"><iframe width="420" height="315" src="https://www.youtube.com/embed/An5Hyoq-lXQ" frameborder="0" allowfullscreen></iframe></div>
     </td>
   </tr>
 </table>

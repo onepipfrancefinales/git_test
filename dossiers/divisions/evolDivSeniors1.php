@@ -13,7 +13,7 @@
 
   <!-- Division 1  1896 - 1905  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="2" class="bgCCCCCC">
         <span class="colorRed bold">Création d'un premier niveau </span>
@@ -32,7 +32,7 @@
 
   <!-- Division 2  1906-1911   -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="3" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (2me)</span>
@@ -53,7 +53,7 @@
 
   <!-- Division 3  1912-1919   -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold "> Création d'un niveau (3me)</span>
@@ -73,7 +73,7 @@
 
   <!-- Division 4  1920-1924   -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5"  class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (4me)</span>
@@ -97,7 +97,7 @@
 
   <!-- Division 5  1925 -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (5me)</span>
@@ -118,7 +118,7 @@
 
   <!-- Division 6  1926-1939  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (6me)</span>
@@ -145,7 +145,7 @@
 
   <!-- Division 7  1940- 1942  -->
 
-  <table class="styleArial marginAuto width750">
+  <table class="styleArial marginAuto width90PC">
     <?php for ($i = 1940; $i <= 1942; $i++) { ?>
       <tr>
         <td class="bgCCCCCC bold width35"><?php echo $i; ?> </td>
@@ -163,7 +163,7 @@
 
   <!-- division --  1940-1942  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold">Renommage de divisions </span>
@@ -177,7 +177,7 @@
 
   <!-- division  1975-1979  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold">Renommage de divisions </span>
@@ -198,7 +198,7 @@
 
   <!-- division  1948  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7"  class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de division</span><br>
@@ -219,7 +219,7 @@
 
   <!--  division 1949  -->
 
-  <table class="styleArial marginAuto width750">
+  <table class="styleArial marginAuto width90PC">
     <tr>
       <td class="bgCCCCCC bold width35">1949 </td>
       <td class="bgFF0000"> 1re division Fédérale </td>
@@ -233,7 +233,7 @@
 
    <!-- division 1949  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -277,7 +277,7 @@
     </tr>
   </table>
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage des divisions</span>
@@ -343,7 +343,7 @@
 
    <!-- division 1955-1973  -->
 
-   <table class="styleArial mb-10 marginAuto width750">
+   <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -374,7 +374,7 @@
 
   <!-- division 1974-1979  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
       <span class="colorRed bold"> Création d'un niveau (7me)</span>
@@ -402,7 +402,7 @@
 
   <!-- division 1980-1987  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -432,7 +432,7 @@
 
 <!--  division 1988-1987  -->
 
-<table class="styleArial mb-10 marginAuto width750">
+<table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -461,7 +461,7 @@
 
   <!-- division  1988-2004  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="11" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (11me)</span>
@@ -488,7 +488,7 @@
 
  <!-- division 1999-2000  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Création de divisions</span><br>
@@ -520,7 +520,7 @@
 
    <!--  division 2001-2004 -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13">
         <span class="colorRed bold"> Renommage de division</span><br>
@@ -550,7 +550,7 @@
 
  <!-- division  2005-2021 -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -580,7 +580,7 @@
 
   <!-- division 2021-2022  -->
 
-  <table class="styleArial mb-10 marginAuto width750">
+  <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="13">
         <span class="colorRed bold"> Création d'un niveau (12me)</span><br>
@@ -609,7 +609,7 @@
 
   <!-- division 2023-annee encours  -->
 
-  <table class="styleArial mb-10 marginAuto width750" >
+  <table class="styleArial mb-10 marginAuto width90PC" >
     <tr>
       <td colspan="11"  class="bgCCCCCC">
       <span class="colorRed bold"> Création d'un niveau (13me)</span><br>

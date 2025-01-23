@@ -21,7 +21,7 @@
 
        <h1>Cadets - U16</h1>
 
-       <table class="styleArial mb-10 marginAuto width750">
+       <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un championnat (1er)</span>
@@ -42,7 +42,7 @@
 </table>
     <!-- division 1991-2010  -->  
 
-    <table class="styleArial mb-10 marginAuto width750">
+    <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un championnat (2me)</span>
@@ -63,7 +63,7 @@
 
     <!-- division 2011-2018-->  
 
-    <table class="styleArial mb-10 marginAuto width750">
+    <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un championnat (3me)</span>
@@ -85,7 +85,7 @@
 
       <!-- division 2011-2018  -->  
 
-      <table class="styleArial mb-10 marginAuto width750">
+      <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold"> Changement de nom </span>
@@ -110,7 +110,7 @@
   
   <!-- Division 1931 - 1949  -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (1er)</span>
@@ -133,7 +133,7 @@
 
         <!-- Division 1950-1978 -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (2me)</span>
@@ -156,7 +156,7 @@
 
        <!-- Division 1979-1981 -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (3me)</span>
@@ -179,7 +179,7 @@
 
         <!-- Division 1982  1990-->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (4me)</span>
@@ -201,7 +201,7 @@
        
       <!-- Division 1991  2003 -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (5me)</span>
@@ -225,7 +225,7 @@
 
  <!-- Division 1994  200 -->
 
- <table class="styleArial mb-10 marginAuto width750">
+ <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (6me)</span>
@@ -251,7 +251,7 @@
 
        <!-- Division 2001  2005 -->
 
- <table class="styleArial mb-10 marginAuto width750">
+ <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Changement de format</span>
@@ -275,7 +275,7 @@
 
          <!-- Division 2006 2009  -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="8" class="bgCCCCCC">
         <span class="colorRed bold"> Suppression de compétitions </span>
@@ -300,7 +300,7 @@
 
          <!-- Division 2010 - 2014 -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold"> Restauration d'une compétititon</span>
@@ -323,7 +323,7 @@
 
          <!-- Division 2015 - 2018 -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold"> Suppression d'une catégorie</span>
@@ -349,7 +349,7 @@
 
          <!-- Division 2015 - 2018 -->
 
-     <table class="styleArial mb-10 marginAuto width750">
+     <table class="styleArial mb-10 marginAuto width90PC">
     <tr>
       <td colspan="5" class="bgCCCCCC">
         <span class="colorRed bold"> Suppression de catégories</span>
