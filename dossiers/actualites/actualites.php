@@ -1,6 +1,6 @@
 
-<div class="alignLeft">
-<P>World Rugby a adopté de nouvelles règles expérimentales pour rendre le jeu plus rapide, plus ouvert et plus dynamique. 
+<h2>Nouvelles régles de World rugby</h2>
+<P class="alignLeft">World Rugby a adopté de nouvelles règles expérimentales pour rendre le jeu plus rapide, plus ouvert et plus dynamique. 
     La FFR et la LNR les appliquent depuis janvier 2025 dans les compétitions professionnelles :<p>
 
 <p class="alignLeft">

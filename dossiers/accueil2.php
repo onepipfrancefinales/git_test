@@ -198,10 +198,10 @@
         <tr>
             <td colspan="2" class="borderWidth1 center">
                 <img src="../images/dossiers/hymnes/Drapeau-Nouvelle-Zelande_120-gif.gif" width="120" height="90">
-                <img src="../images/dossiers/hymnes/Drapeau-Ecosse_120-gif.gif" width="120" height="90">
+                <img src="../images/dossiers/hymnes/vannes.webp" width="120" height="90">
                 <img src="../images/dossiers/hymnes/Drapeau-Afrique-du-Sud_120-gif.gif" width="120" height="90">
                 <img src="../images/dossiers/hymnes/Drapeau-France_120-gif.gif" width="120" height="90">
-                <img src="../images/dossiers/hymnes/Drapeau-Australie_120-gif.gif" width="120" height="90">
+                <img src="../images/dossiers/hymnes/pau.webp" width="120" height="90">
             </td>
         </tr>
         <tr>

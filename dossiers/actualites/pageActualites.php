@@ -15,10 +15,12 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
-  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
-  <link type="text/css" rel="stylesheet" href="../../smart/10.css">
-  <link type="text/css" rel="stylesheet" href="../dossiers.css">
+  <link type="text/css" rel="stylesheet" href="../../ligne1.css" />
+    <link type="text/css" rel="stylesheet" href="../../lienNoir.css" />
+    <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
+    <link type="text/css" rel="stylesheet" href="../dossiers.css">
+    <link type="text/css" rel="stylesheet" href="../../smart/10.css">
+
 
   <title>Actualités FFR</title>
 </head>
@@ -27,11 +29,13 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
 <?php
   if ($mode != "smart") {
     echo "<body>";
+   echo "<table class=\"marginAuto width1250\">";
+
   } else {
     echo "<body class=\"backgroundWhite\">";
+    echo "<table class=\"width100PC\">";
   }
   ?>
-<table class="width100PC">
     <tr>
       <td colspan="3">
         <?php if ($mode != "smart") {
@@ -44,12 +48,11 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
           echo "</td>";
           echo "</tr>";
           echo "<tr>";
-          echo "<td class=\"colonneDroiteGauche backgroundBlue\" valign=\"top\">";
+          echo "<td class=\"colonneDroiteGauche backgroundBlue\">";
           include("../../01gauche.php");
           echo "</td>";
           echo "<td class=\"colonneCentrale backgroundWhite\">";
         } else {
-
           echo "<table class=\"width98PC\" border=\"1\">";
           echo "<tr> ";
           echo "<td class =\"h22 width5PC\"><a href=\"../accueil2.php\"><img src=\"../../images/smart/flecheGauche.jpg\" width=\"27\" height=\"20\" alt=\"fléche retour\"></a></td>";
@@ -70,24 +73,18 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
       <?php require("actualites.php"); ?>
 
       <?php if ($mode != "smart") {
-        ?>
-      </td>
-
-      <td class="colonneDroiteGauche backgroundBlue" valign="top">
-        <?php
-          if ($mode != "smart") {
+      echo "</td>";
+      echo "<td class=\"colonneDroiteGauche backgroundBlue\">";
             include("../../00droite.php");
-          } ?>
-      </td>
-    </tr>
-  <?php
+            echo "</td>";
+            echo "</tr>";
+  
         }
   ?>
 
   </table>
-  </div>
+  
 </body>
 
 <?php require "../footer.php" ;?>
-
 </html>

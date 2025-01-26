@@ -11,7 +11,7 @@
             <td colspan="2" class="borderWidth1 ">
                 <br>
                 <p class="size4">
-                    <a class="colorBlack" href="actualites/pageActualites.php?mode=<?php echo "smart"; ?>">Nouvelles régles Word Rugby<br>
+                    <a class="colorBlack" href="actualites/pageActualites.php">Nouvelles régles Word Rugby<br>
                 à compter du 8 février 2025 <br> pour toutes les compétitions</a>
               
                 </p>
@@ -152,12 +152,12 @@
 <tr>
   <td colspan="2" class="borderWidth1">
     <img src="../images/dossiers/hymnes/Drapeau-Nouvelle-Zelande_120-gif.gif" width="120" height="90">
-    <img src="../images/dossiers/hymnes/Drapeau-Ecosse_120-gif.gif" width="120" height="90">
+    <img src="../images/dossiers/hymnes/vannes.webp" width="120" height="90">
     <img src="../images/dossiers/hymnes/Drapeau-Afrique-du-Sud_120-gif.gif" width="120" height="90">
     <img src="../images/dossiers/hymnes/Drapeau-France_120-gif.gif" width="120" height="90">
-    <img src="../images/dossiers/hymnes/Drapeau-Australie_120-gif.gif" width="120" height="90">
+    <img src="../images/dossiers/hymnes/pau.webp" width="120" height="90">
     <a class="colorWhite" href="hymnes/page_hymnes.php">   Hymnes des plus grandes nations du rugby (paroles et musique)</a>
-    <a href="https://www.drapeaux-shop.com/">https://www.drapeaux-shop.com/</a>
+    
   </td>
 </tr>
 

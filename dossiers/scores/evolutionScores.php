@@ -10,11 +10,11 @@
     l'essai.</span>
 </p>
 <br>
-<p class="nom">Tableau  de l'évolution des points</p>
+<p class="nom">Tableau de l'évolution des points</p>
 <br>
 
-<table border="1"  class=" width90PC center size3 styleArial bold">
-  <tr>
+<table  class=" width90PC center size3 styleArial bold marginAuto borderWidth1 ">
+  <tr class="borderWidth1 borderColorBlack">
     <td></td>
     <td><img src="../../images/dossiers/essais.jfif" width="100%" height="84"></td>
     <td><img src="../../images/dossiers/penalite.gif" width="100%" height="84"></td>
@@ -22,100 +22,93 @@
     <td><img src="../../images/dossiers/drop%20goal.jfif" width="100%" height="84"></td>
     <td><img src="../../images/dossiers/mark.png" width="100%" height="84"></td>
   </tr>
-  <tr >
+  <tr class="borderWidth1 borderColorBlack">
     <td></td>
-    <td> Essai </td>
-    <td> Transformation </td>
-    <td> Pénalité</td>
-    <td> DropGoal </td>
-    <td> Goalfrom mark </td>
+    <td class="borderWidth1"> Essai </td>
+    <td class="borderWidth1"> Transformation </td>
+    <td class="borderWidth1"> Pénalité</td>
+    <td class="borderWidth1"> DropGoal </td>
+    <td class="borderWidth1"> Goalfrom mark </td>
   </tr>
   <tr class="size3 styleArial">
-    <td>1875</td>
-    <td colspan="5" height="25"></td>
+    <td class="borderWidth1">1875</td>
+    <td colspan="5" height="25" class="borderWidth1"></td>
   </tr>
   <tr>
-    <td>1885</td>
-    <td colspan="5" height="23"></td>
+    <td class="borderWidth1">1885</td>
+    <td class="borderWidth1" colspan="5" height="23"></td>
   </tr>
   <tr>
-    <td> 1891</td>
-    <td> 1 </td>
-    <td> 2 </td>
-    <td> 3 </td>
-    <td> 3 </td>
-    <td> - </td>
+    <td class="borderWidth1"> 1891</td>
+    <td class="borderWidth1"> 1 </td>
+    <td class="borderWidth1"> 2 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> - </td>
   </tr>
   <tr>
-    <td>1894</td>
-    <td bgcolor="#00FF00"> 2 </td>
-    <td bgcolor="#00FF00">3 </td>
-    <td> 3 </td>
-    <td bgcolor="#00FF00"> 4</td>
-    <td> 4 </td>
+    <td class="borderWidth1">1894</td>
+    <td class="borderWidth1 backgroundGreen"> 2 </td>
+    <td class="borderWidth1 backgroundGreen">3 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1 backgroundGreen"> 4</td>
+    <td class="borderWidth1"> 4 </td>
   </tr>
   <tr>
-    <td> 1904 </td>
-    <td bgcolor="#00FF00"> 3</td>
-    <td class="backgroundRed"> 2 </td>
-    <td> 3 </td>
-    <td> 4 </td>
-    <td> 4 </td>
+    <td class="borderWidth1"> 1904 </td>
+    <td class="borderWidth1 backgroundGreen"> 3</td>
+    <td class=" borderWidth1 backgroundRed"> 2 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 4 </td>
+    <td class="borderWidth1"> 4 </td>
   </tr>
   <tr>
-    <td> 1947 </td>
-    <td> 3 </td>
-    <td> 2 </td>
-    <td> 3 </td>
+    <td class="borderWidth1"> 1947 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 2 </td>
+    <td class="borderWidth1"> 3 </td>
     <td class="backgroundRed">3 </td>
     <td class="backgroundRed"> 3 </td>
   </tr>
   <tr>
-    <td> 1970 </td>
-    <td> 3 </td>
-    <td> 2 </td>
-    <td> 3 </td>
-    <td> 3 </td>
-    <td> 3 </td>
+    <td class="borderWidth1"> 1970 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 2 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 3 </td>
   </tr>
   <tr>
-    <td>1971 </td>
-    <td bgcolor="#00FF00"> 4 </td>
-    <td> 2 </td>
-    <td> 3 </td>
-    <td> 3 </td>
-    <td>3 </td>
+    <td class="borderWidth1">1971 </td>
+    <td class="borderWidth1 backgroundGreen"> 4 </td>
+    <td class="borderWidth1"> 2 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 3 </td>
   </tr>
   <tr>
-    <td>1977 </td>
-    <td> 4 </td>
-    <td> 2 </td>
-    <td> 2 </td>
-    <td> 3 </td>
+    <td class="borderWidth1">1977 </td>
+    <td class="borderWidth1"> 4 </td>
+    <td class="borderWidth1"> 2 </td>
+    <td class="borderWidth1"> 2 </td>
+    <td class="borderWidth1"> 3 </td>
     <td class="backgroundRed"> -</td>
   </tr>
   <tr>
-    <td>1992
-    </td>
-    <td bgcolor="#00FF00">5 </td>
-    <td> 2 </td>
-    <td> 3 </td>
-    <td> 3 </td>
-    <td>
-     
-    </td>
+    <td class="borderWidth1">1992 </td>
+    <td class="borderWidth1 backgroundGreen">5 </td>
+    <td class="borderWidth1"> 2 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> 3 </td>
+    <td class="borderWidth1"> - </td>
   </tr>
   <tr>
-    <td> 2007 </td>
-    <td   colspan="5"bgcolor="#00FF00"> Mise en place du bonus offensif</td>
+    <td class="borderWidth1"> 2007 </td>
+    <td  class="borderWidth1 backgroundGreen" colspan="5"> Mise en place du bonus offensif et défensif</td>
     
    
   </tr>
-  <tr>
-    <td>  2007</td>
-    <td  colspan="5" bgcolor="#00FF00"> Mise en place du bonus défensif</td>
-   
-  </tr>
+  
 </table>
 <p></p>
 <p class="nom">Définitions  des différents types de marque</p>
@@ -126,8 +119,8 @@
 <p class="nom">Essai<span class="def"> : action consistant pour un attaquant &agrave; aplatir le ballon dans l'en-but
     adverse.</span><br></p>
 
-<p class="nom">Transformation<span class="def">
-    : lorsqu'un essai a été marqué, l'équipe a la possibilité
+<p class="nom">Transformation <span class="def">
+     :Lorsqu'un essai a été marqué, l'équipe a la possibilité
     de marquer des points supplémentaires. Son buteur doit, d'un coup de
     pied tombé ou placé, faire passer le ballon entre les poteaux.
     S'il réussit, deux points supplémentaires sont accordés
@@ -146,18 +139,18 @@
 <p class="nom">Drop-goal<span class="def"> (de
     l'anglais dropped goal, but tombé): coup de pied frappant le ballon juste
     après le rebond et qui le fait passer entre les poteaux adverses en cours
-    de jeu (on dit qu'on passe un drop). Souvent abrégé en &quot;
-    drop &quot;.</span><br></p>
+    de jeu (on dit qu'on passe un drop). Souvent abrégé en "drop".</span><br></p>
 
-<p class="nom">Un but de marque <span class="def">
-    est un ancien scoring mouvement dans le football de rugby. Cela s'est produit
-    lorsqu'un joueur a &laquo;marqué&raquo; la balle en faisant une bonne
-    prise et en criant &laquo;marque&raquo;. De cette position, le joueur ne pouvait
-    pas &ecirc;tre plaqué. Le joueur avait alors la possibilité d'un
-    coup franc, qui pouvait &ecirc;tre considéré comme un coup de
-    pied, un coup de pied tombé, un botté de dégagement ou
-    un coup de pied. </span><br></p>
-
+<p class="nom">Un but après marque (goal from mark)<span class="def">
+    est une ancienne possibilité de marquer des points, disparu depuis 1977.
+     Elle se produisait lorsqu'un joueur faisait une « marque »  
+    en effectuant un arrêt de volée et en criant « marque ». De cette position, le joueur ne pouvait
+    plus être plaqué et avait  la possibilité soit de marqué des points (3 ou 4 points selon les époques)
+    en tentant un coup de pied ou un coup de pied tombé (drop) ou de gagner du terrain en donnant un coup de pied ou encore de jouer à  la main.
+    Aujourd'hui impossible de marquer des points suite a un "mark" puisque cette action de jeu ne peut être executé que dans la zone des 22 mètres du défenseur.
+     et uniquement pour un coup franc ne permettant pas
+   </span><br></p>
+<!--
 <p class="nom"> Coup de pied franc ou coup franc <span class="def">: sanction ordonnée par l'arbitre après certaines
     actions de gravité &quot; moyenne &quot; (ex. : trop de joueurs en touche...).
     Contrairement &agrave; la pénalité, il ne permet pas de tenter
@@ -177,3 +170,4 @@
 
 
 </p>
+-->
