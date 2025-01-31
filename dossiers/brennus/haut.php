@@ -1,39 +1,21 @@
-
-<table  class="backgroundWhite" width="80%" border="0" align="center">
+<table  class="backgroundWhite width100PC" border="0">
   <tr> 
-    <td colspan="4"> 
-      <div align="center"><img src="images/brennus/brennusGrand.jpg" width="100%" ></div>
-    </td>
+    <td colspan="4" class="center"><img src="images/brennus/brennusGrand.jpg" width="100%" ></td>
   </tr>
-  <tr> 
-    <td height="27"> 
-      <div align="center"><b><a href="pageAccueil.php">Accueil</a></b></div>
-    </td>
-    <td height="27"> 
-      <div align="center"><b><a href="pagefinales.php">Toutes les finales</a></b></div>
-    </td>
-    <td height="27"> 
-      <div align="center"><b><a href="pagerecords.php?page=nbre_titres">Les records</a></b></div>
-    </td>
-    <td height="27"> 
-      <div align="center"><b><a href="page1refois.php">les premières fois</a></b></div>
-    </td>
+  <tr class="center bold"> 
+    <td height="25"><a href="pageAccueil.php">Accueil</a></td>
+    <td><a href="pagefinales.php">Toutes les finales</a></td>
+    <td><a href="pagerecords.php?page=nbre_titres">Les records</a></td>
+    <td><a href="page1refois.php">les premières fois</a></td>
   </tr>
-  <tr> 
-    <td width="238">&nbsp;</td>
-    <td width="243"> 
-      <div align="center"><a href="pagebrenus.php"><b>Le Brennus</b></a></div>
-    </td>
-    <td width="243"> 
-      <div align="center"><a href="pageStades.php"><b>Les stades</b></a></div>
-    </td>
-    <td width="244">&nbsp;</td>
+  <tr class="center bold"> 
+    <td width="238" height="25"></td>
+    <td width="243"><a href="pagebrenus.php">Le Brennus</a></td>
+    <td width="243"><a href="pageStades.php"><b>Les stades</a></td>
+    <td width="244"></td>
   </tr>
-  <tr bgcolor="#000000"> 
-    <td colspan="4"> 
-      <div align="center"><a href="../pageDossiers.php"><b><font color="#FFFFFF">Retour 
-        sur le site France Finales Rugby</font></b></a></div>
-    </td>
+  <tr class="backgroundBlack"> 
+    <td colspan="4" class="center"><a class="bold colorWhite" href="/index.php">Retour sur le site France Finales Rugby</a></td>
   </tr>
 </table>
 

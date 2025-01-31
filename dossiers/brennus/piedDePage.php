@@ -1,6 +1,6 @@
 
-<table border="1" bordercolor="#000000" width="60%" class="marginAuto">
-  <tr bgcolor="#FFFFFF" class="center"> 
+<table border="1" bordercolor="#000000" class=" width100PC marginAuto">
+  <tr class="backgroundWhite" class="center"> 
     <td><a href="accueil.php">Accueil</a> </td>
     <td><a href="pagefinales.php">Toutes les finales</a></td>
     <td><a href="pagerecords.php">Les records</a></td>

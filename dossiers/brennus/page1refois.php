@@ -5,9 +5,9 @@
 <link type="text/css" rel="stylesheet" href="../../ligne1.css">
 </head>
 
-<body>
+<body class="backgroundBlack">
 
-<table width="1000" border="1" align="center">
+<table width="1000" border="1" align="center" >
   <tr> 
     <td bgcolor="#FFFFFF"> 
         <?php include("haut.php");    ?>

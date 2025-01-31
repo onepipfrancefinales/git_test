@@ -131,6 +131,7 @@ if (isset($tabChampion[$i])) $champion[$i] = $tabChampion[$i];
 }
 ?>
 <hr />
+<!--
 <p align="center"><b><font size="5" face="Verdana, Arial, Helvetica, sans-serif">- 
   Nombre de participations &agrave; <br>
   une finale du champ de france -</font></b></p>
@@ -238,5 +239,5 @@ if (isset($tabChampion[$i])) $champion[$i] = $tabChampion[$i];
   US Colomiers :1 finale/ 0 victoire</font></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-</body>
-</html>
+-->
+

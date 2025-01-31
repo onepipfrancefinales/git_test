@@ -5,7 +5,7 @@ require "fonctionsBrennus.php";
 //nbreEdition($bdd);
 villes($bdd);
 stades($bdd);
-test($bdd);
+//test($bdd);
 //stadesParVille('Toulouse',3, $bdd);
 //listeSaisonsStade($idStade,$countSaisonStade, $bdd);
 //champFrance($bdd);
@@ -20,12 +20,12 @@ test($bdd);
 
 </head>
 
-<body bgcolor="#000000" text="#000000">
+<body class="backgroundBlack" text="#000000">
 
-<table width="1000" border="1" align="center">
+<table width="1000" class="borderWidth1 marginAuto borderColorBlack">
   <tr> 
-    <td bgcolor="#FFFFFF"> 
-      <div align="center"><font color="#000000"> 
+    <td bgcolor="#FFFFFF" valign="top"> 
+      
         <?php
       
       // echo "nombre d'édition : ". $nbreEdition;echo "<br>";
@@ -67,11 +67,11 @@ test($bdd);
    // include("stades.php");
     include("stades_copy.php");
     ?>
-  
-
+    </td>
+  </tr>
+  </table>
 </body>
 <footer>
-  <?php include("piedDePage.php");?>
-
+  <?php include "piedDePage.php";?>
 </footer>
 </html>

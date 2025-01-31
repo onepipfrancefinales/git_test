@@ -11,7 +11,9 @@ nbreEdition($bdd);
 ?>
 
 
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
   <title>Bouclier de Brennus : Les finales</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -21,22 +23,26 @@ nbreEdition($bdd);
                 
 </head>
 
-<body text="#000000" class="backgroundBlack">
-
-  <?php include("haut.php"); ?>
+<body text="#000000" class="backgroundBlack" width="1000">
+<table width="1000" class="borderWidth1 marginAuto borderColorBlack">
+  <tr> 
+    <td bgcolor="#FFFFFF"> 
+  <?php include "haut.php" ; ?>
 
   <br>
   <?php
-
 //  include("lesfinales.php");
-    include("lesfinales_copy.php");
-  ?>
+    include "lesfinales_copy.php"; ?>
+    </td>
 
-  
+</tr>
+</table>
+
+
 
 </body>
 <br>
 <footer>
-  <?php include("piedDePage.php"); ?>
+  <?php include "piedDePage.php" ; ?>
 </footer>
 </html>

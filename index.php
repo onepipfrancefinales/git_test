@@ -1,12 +1,11 @@
-
 <script language="javascript">
-<!--
-
-if (screen.width < 800)
-location="https://francefinalesrugby.fr/smart/sommaire.php"; 
-//else if (screen.width > 800)     
-//location="https://francefinalesrugby.fr";
-//-->
+  <!--
+  if (screen.width < 800)
+    location = "https://francefinalesrugby.fr/smart/sommaire.php";
+  //else if (screen.width > 800)     
+  //location="https://francefinalesrugby.fr";
+  //
+  -->
 </script>
 
 
@@ -64,20 +63,28 @@ require 'resultats/constantes.php';
       <td class="colonne">
         <?php include("01gauche.php"); ?>
       </td>
-      <td class="backgroundBlanc">
+      <td class="backgroundBlanc colonneCentrale" style="padding-top:0px">
+        <?php require 'dossiers/accueil.php'; ?>
+      </td>
 
-        <br> <br>
-       
- <?php  require "resultats/tableauEffectifsClubs.php";  ?>
+      <?php  //require "resultats/tableauEffectifsClubs.php";  
+      ?>
+      <!--
 
         <br>  <br>
         <br>
         <hr>
- <?php include("championsAnnee2024.php");  ?>
+-->
+      <?php //include("championsAnnee2024.php");  
+      ?>
+      <!--
+ 
  <br>
         <hr>
         <br>
         <br>
+-->
+      <!-- 
         <b>
           <div class="colorBlack style size5">Pyramide
             des divisions depuis la <br>
@@ -91,9 +98,12 @@ require 'resultats/constantes.php';
         <hr>
         <br>
         <br>
-        <?php include("informations/majParSMS/infosMajClassement.php"); ?>
-        </p>
-        <!-- <p align="center"><a href="brennus_histoire/pageAccueil.php">test</a></p>-->
+-->
+      <?php //include("informations/majParSMS/infosMajClassement.php"); 
+      ?>
+
+      <!-- <p align="center"><a href="brennus_histoire/pageAccueil.php">test</a></p>-->
+      <!--  
 
         <div align="center">
           <table width="557" border="0" align="center">
@@ -110,7 +120,8 @@ require 'resultats/constantes.php';
             <tr class="backgroundBlanc">
               <td colspan="3">&nbsp;</td>
             </tr>
-            <!-- 
+-->
+      <!-- 
             <tr>
               <td colspan="3" class="backgroundBleu colorWhite size4 style">
                 <b>
@@ -141,6 +152,8 @@ require 'resultats/constantes.php';
               <td class="backgroundBlanc"><a href="https://play.google.com/store/apps/details?id=com.roro.rjere&amp;hl=fr" target="_blank"><img src="images/logo_google.jpg" alt="logo google" height="176" width="215"></a></td>
             </tr>
             -->
+
+      <!-- 
             <tr>
               <td colspan="3" class="backgroundBlanc"></td>
             </tr>
@@ -246,7 +259,7 @@ require 'resultats/constantes.php';
             </tr>
             <tr>
               <td colspan="3">
-                <?php //include("pub/pub4.php");   
+                <?php //include("pub/pub4.php");                   
                 ?>
               </td>
             </tr>
@@ -254,7 +267,8 @@ require 'resultats/constantes.php';
               <td colspan="3"></td>
             </tr>
           </table>
-
+-->
+      <!-- 
           <table width="558">
             <tr>
               <td width="274"></td>
@@ -433,17 +447,22 @@ require 'resultats/constantes.php';
 
 
         </div>
+
       </td>
+-->
+
+
       <td class="colonne">
         <?php include("00droite.php"); ?>
       </td>
     </tr>
-    <tr>
-      <?php include("footer.php");  ?>
-    </tr>
-  </table>
-  <footer> </footer>
 
-</body>
+  </table>
+
+  <footer>
+    <?php include("footer.php");  ?>
+  </footer>
+
+
 
 </html>

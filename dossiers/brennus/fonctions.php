@@ -103,7 +103,7 @@ function participation($bdd)
 	$requete = $bdd->query(" SELECT count(distinct champion)
  FROM bdequipe1
  WHERE champion != '-' AND champion != '0' AND champion != '-0' AND champion != '--- --- --- ---'
- AND champion != '' AND champion != '----' AND championnat='de France' AND RANG<'225'");
+ AND champion !='Pas de championnat' AND champion != '' AND champion != '----' AND championnat='de France' AND RANG<'225'");
 
 	$row = $requete->fetch();
 	$nbreParticipation = $row[0];
@@ -186,6 +186,9 @@ function participation($bdd)
 
 function titresConsecutifs2($equipe, $nbre, $bdd)
 {
+	
+	if ($equipe != "Pas de championnat") {
+	
 	$saison = array();
 	$requete = $bdd->query(" SELECT saison 
  FROM bdequipe1
@@ -210,9 +213,13 @@ function titresConsecutifs2($equipe, $nbre, $bdd)
 		}
 	}
 }
+}
 
 function titresConsecutifs3($equipe, $nbre, $bdd)
 {
+	
+	if ($equipe != "Pas de championnat" ) {
+	
 	$saison = array();
 	$requete = $bdd->query(" SELECT saison 
  FROM bdequipe1
@@ -248,10 +255,13 @@ function titresConsecutifs3($equipe, $nbre, $bdd)
 		}
 	}
 }
+}
 
 
 function titresConsecutifs4($equipe, $nbre, $bdd)
 {
+	if ($equipe != "Pas de championnat") {
+	
 	$saison = array();
 	$requete = $bdd->query(" SELECT saison 
  FROM bdequipe1
@@ -271,4 +281,5 @@ function titresConsecutifs4($equipe, $nbre, $bdd)
 			echo $equipe . ' : ' . $saison[$i] . '-' . $saison[$i + 1] . '-' . $saison[$i + 2] . '-' . $saison[$i + 3] . "<br/>";
 		}
 	}
+}
 }

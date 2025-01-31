@@ -6,15 +6,15 @@
   <table class="width80PC marginAuto" >
     <tr>
       <td class = "size3">
-      <a class="colorBlack" href="pageEvolutionsDivisions.php?type=seniors1&mode=<?php echo "smart"; ?>">Séniors</a></td>
+      <a class="colorBlack" href="pageEvolutionsDivisions.php?type=seniors1&mode=<?php echo$mode; ?>">Séniors</a></td>
       <td class = "size3">
-      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=feminines&mode=<?php echo "smart"; ?>">Féminines</a></td>
+      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=feminines&mode=<?php echo $mode; ?>">Féminines</a></td>
       <td class = "size3">
-      <a class="colorBlack" href="pageEvolutionsDivisions.php?type=jeunes&mode=<?php echo "smart"; ?>">Jeunes</a></td>
+      <a class="colorBlack" href="pageEvolutionsDivisions.php?type=jeunes&mode=<?php echo $mode; ?>">Jeunes</a></td>
       <td class = "size3">
-      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=espoirs&mode=<?php echo "smart"; ?>">Espoirs</a></td>    
+      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=espoirs&mode=<?php echo  $mode; ?>">Espoirs</a></td>    
       <td class = "size3">
-      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=seniors2&mode=<?php echo "smart"; ?>">Réserves</a></td>
+      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=seniors2&mode=<?php echo $mode; ?>">Réserves</a></td>
     </tr>
   </table>
  <br>

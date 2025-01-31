@@ -1,12 +1,11 @@
 <?php
-
 require "../../connect/connexion1.php";
 $pattern = "/[0-9]{7}/i";
 ?>
 
-<div style="margin-left:10%;margin-right:10% " class= "backgroundWhite">
+ 
 
-<table width="70%" class="marginAuto " border="1">
+<table width="1000" class="marginAuto " border="1">
 
   <tr bgcolor="#0099FF" bordercolor="#000000">
     <td colspan="8" height="88" class="center size7 bold colorWhite styleCursive">Les finales</td>
@@ -69,11 +68,10 @@ for ($i = 0; $i < $nbreLigne - 1; $i++) {
       <td> <?php                if (preg_match($pattern, $finaliste[$i]) == 1) { transformerDonnee($finaliste[$i],$bdd);  $finaliste[$i]= $nom;}  echo $finaliste[$i] . ' ' . $comite2[$i]; ?> </td>
       <td class="center"> <?php echo $score1[$i] . ' - ' . $score2[$i] . $scoreplus[$i]; ?> </td>
       <td> <?php nomStade($stade[$i], $bdd); echo "<br>" . $ville[$i]; ?> </td>
-      <td> <?php echo $public[$i]; ?> </td>
+      <td> <?php echo number_format($public[$i],0,'',' '); ?> </td>
       </tr>
   <?php
     }
   }
   ?>
 </table>
-</div>

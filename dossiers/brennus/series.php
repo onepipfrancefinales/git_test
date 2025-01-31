@@ -45,50 +45,51 @@ if ( $tabNbre[$i] == '1' )
 	{echo $tabNomEquipe[$i].$tabNbre[$i]."<br />"; }
 }
 */
-echo "<br />";
-echo "*******************************";
-echo "<br />";
-echo "*******************************";
-echo "<br />";
+
 //**************************************
-//****  victoires consécutives *********
+?>
+<p class="center size5 styleArial bold"> Titres de champion de France consécutifs<br>
+<span class="center size3">(Toutes divisions confondues)</span> </p>
+<br>
+<p class="center size4 styleArial bold">Quadruplé</p>
+<p class="size3 styleArial">
+<?php
 for($y = 0 ; $y < $cpteMonTableau; $y++)
 {
  for ($i=0;$i<$nbreParticipation-1;$i++)
  {
   if ($tabNbre[$i]==$monTableau[$y])
-  {//echo $tabNomEquipe[$i].$tabNbre[$i]." : ";
+  {
   $nbre=$tabNbre[$i];
   $equipe=$tabNomEquipe[$i];
 	titresConsecutifs4($equipe, $nbre, $bdd);
-// 	titresConsecutifs3($equipe, $nbre, $bdd);
-// 	titresConsecutifs2($equipe, $nbre, $bdd);
   }
  }
 }
-
-
-echo "<br />";
-echo "<br />";
+?>
+</p>
+<br>
+<p class="center size4 styleArial bold">Triplé</p>
+<p class="size3 styleArial">
+<?php
 for($y = 0 ; $y < $cpteMonTableau; $y++)
 {
  for ($i=0;$i<$nbreParticipation-1;$i++)
  {
   if ($tabNbre[$i]==$monTableau[$y])
-  {//echo $tabNomEquipe[$i].$tabNbre[$i]." : ";
+  {
   $nbre=$tabNbre[$i];
   $equipe=$tabNomEquipe[$i];
-//	titresConsecutifs4($equipe, $nbre, $bdd);
 	titresConsecutifs3($equipe, $nbre, $bdd);
-// 	titresConsecutifs2($equipe, $nbre, $bdd);
   }
  }
 }
-echo "<br />";
-echo "<br />";
-
-
-echo "<br />";
+?>
+</p>
+<br>
+<p class="center size4 styleArial bold">Doublé</p>
+<p class="size3 styleArial">
+<?php
 for($y = 0 ; $y < $cpteMonTableau; $y++)
 {
 	echo $monTableau[$y];
@@ -96,23 +97,20 @@ for($y = 0 ; $y < $cpteMonTableau; $y++)
 echo "<br />";
 for($y = 0 ; $y < $cpteMonTableau; $y++)
 {
-	
  for ($i=0;$i<$nbreParticipation-1;$i++)
  {
   if ($tabNbre[$i]==$monTableau[$y])
-  {//echo $tabNomEquipe[$i].$tabNbre[$i]." : ";
+  {
   $nbre=$tabNbre[$i];
   $equipe=$tabNomEquipe[$i];
-//  titresConsecutifs4($equipe, $nbre, $bdd);
-// 	titresConsecutifs3($equipe, $nbre, $bdd);
 	titresConsecutifs2($equipe, $nbre, $bdd);
   }
  }
 }
+?>
+</p>
+<?php
 
-echo "*******************************";
-echo "<br />";
-echo "*******************************";
 //*****************************************************
 /*
 tousLesChampions($bdd);
@@ -128,118 +126,89 @@ echo $saison[$i].' '.$champion[$i]."<br />";
 }
 */
 ?>
-<hr />
+<br><br>
+<hr>
 
-<p align="center"><b><font size="5" face="Verdana, Arial, Helvetica, sans-serif">- 
-  Nombre de participations &agrave; une finale du champ de france -</font></b></p>
-<p>&nbsp;</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">stade toulousain : 27 finales 
-  / 20 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">stade francais : 23 finales 
-  / 14 victoires</font></p>
-<p>&nbsp;</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">USA Perpignan : 16 finales 
-  / 7 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">AS Béziers :15 finales 
-  / 11 victoures</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Agen : 14 finales / 8 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">AS Montfrrand : 14 finales 
-  / 2 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Records de finale perdues<br>
-  l'ASM Clermont Auvergne, se distingue par le fait d'avoir perdu 12 finales (1936, 
-  1937, 1970, 1978, 1994, 1999, 2001, 2007, 2008, 2009, 2015, 2019).</font></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3"><br>
+<p class="center size5 styleArial bold"> Nombre de participations à <br>une finale du champ de france </p>
+<p class="size3 styleArial">
+stade toulousain : 27 finales / 23 victoires<br>
+stade francais : 23 finales / 14 victoires<br>
+<br>
+<br>
+USA Perpignan : 16 finales / 7 victoires<br>
+AS Béziers : 15 finales / 11 victoures<br>
+Agen : 14 finales / 8 victoires<br>
+AS Montfrrand : 14 finales / 2 victoires<br>
+Racing 92 (racing club de France jusqu'en 2001) : 13 finales / 6 victoires<br>
+RC Toulon : 13 finales /  4 victoires <br>
+Stade bordelais : 12 finales   / 7 victoires<br>
+FC Lourdes : 11 finales   / 8 victoires<br>
+<br>
+<br>
+Biarritz : 8 finales / 5  victoires<br>
+Narbonne : 5 finales / 2  victoires<br>
+Castres olympique : 7 finales   / 5 victoires<br>
+Aviron bayonnais : 7 finales / 3 victoires<br>
+</p> 
   <br>
   <br>
-  <br>
-  Racing 92 (racing club de France jusqu'en 2001) : 13 finales / 6 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">RC Toulon : 13 finales / 
-  4victoires </font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Stade bordelais :12 finales 
-  / 7victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Stade bordelais 12 finales 
-  7 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">FC Lourdes : 11 finales 
-  / 8 victoires</font></p>
-<p>&nbsp;</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Biarritz : 8 finales / 5 
-  victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Narbonne :5 finales / 2 
-  victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3"><br>
-  </font><font face="Arial, Helvetica, sans-serif" size="3"><br>
-  </font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Castres olympique : 7 finales 
-  / 5 victoires<br>
-  <br>
-  Aviron bayonnais : 7 finales / 3 victoires<br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+<p class="center size4 styleArial bold">5 participations</p>
+<p class="size3 styleArial">
+  Stadoceste tarbais : 5 finales / 2 victoires<br>
+  US Dax : 5 finales / 0 victoire<br>
+</p>
+<br>
+<br>
+<p class="center size4 styleArial bold">4 participations</p>
+<p class="size3 styleArial">
+Stade montois 4 finales / 1 victoire<br>
+CA Brive 4 finales / 0 victoire</p>
+<br>
+<br>
+<p class="center size4 styleArial bold">3 participations</p>
+<p class="size3 styleArial">  
   Lyon OU : 3 finales / 2 victoires<br>
-  <br>
-  </font></p>
-<p>5 participations</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Stadoceste tarbais : 5 finales 
-  / 2 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">US Dax 5 finales / 0 victoire<br>
-  </font></p>
-<p>&nbsp;</p>
-<p>4 participations</p>
-<p>&nbsp;</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Stade montois 4finales / 
-  1 victoire</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">CA Brive 4 finales / 0 victoire</font></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>3 participations</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">CA Bègles 3 finales 
-  /2 victoires</font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">Olympique 3 finales / 1 
-  victoire<br>
+  CA Bègles 3 finales / 2 victoires
+  Olympique 3 finales / 1 victoire<br>
   US Quillan 3 finales /1 victoire<br>
-  <br>
-  Section paloise 3 finales / 0 victoire</font></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>2 Participations</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">FC Grenoble :2 finales / 
-  1 victoire<br>
-  </font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">SCUF 2 finales / 0 victoire<br>
-  Stade bagnérais 2 finales / 0 victoire<br>
-  </font><font face="Arial, Helvetica, sans-serif" size="3">Montpellier HR : 2 
-  finales / 0 victoire</font></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>1 Participation</p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">FC Lyon 1 finale /1 victoire<br>
+  Section paloise 3 finales / 0 victoire
+</p>
+<br>
+<br>
+<p class="center size4 styleArial bold">2 Participations</p>
+<p class="size3 styleArial">
+FC Grenoble : 2 finales /  1 victoire<br>
+SCUF : 2 finales / 0 victoire<br><br>
+Stade bagnérais :  2 finales / 0 victoire<br>
+Montpellier HR : 2 finales / 0 victoire
+</p>
+<br>
+<br>
+<p class="center size4 styleArial bold">1 Participation</p>
+<p class="size3 styleArial">FC Lyon 1 finale /1 victoire<br>
   CS Vienne 1 finale /1 victoire<br>
   US Carmaux 1 finale /1 victoire<br>
   US Montauban 1 final e/1 victoire<br>
   La Voulte sportif 1 finale /1 victoire<br>
-  </font></p>
-<p><font face="Arial, Helvetica, sans-serif" size="3">US Carcassonne : 1 finale 
-  / 0 victoire<br>
+  US Carcassonne : 1 finale  / 0 victoire<br>
   FC Lézignan : 1finale / 0 victoire<br>
   US Cognac : 1 finale/ 0 victoire<br>
   SC Mazamet : 1 finale/ 0 victoire<br>
   Nice UR : 1 finale/ victoire<br>
   CS Bourgoin-Jallieu :1 finale/ / 0 victoire<br>
-  US Colomiers :1 finale/ 0 victoire</font></p>
-<p>&nbsp;</p>
+  US Colomiers : 1 finale/ 0 victoire</p>
+  <br>
+  <br>
+
+<p><font face="Arial, Helvetica, sans-serif" size="3">Records de finale perdues<br>
+  l'ASM Clermont Auvergne, se distingue par le fait d'avoir perdu 12 finales (1936, 
+  1937, 1970, 1978, 1994, 1999, 2001, 2007, 2008, 2009, 2015, 2019).</font></p>
 <p>&nbsp;</p>
 </body>
 </html>
 
 
-
+<!--
 
 <p><b><font size="6" face="Verdana, Arial, Helvetica, sans-serif"><br>
   - Meilleure série pour un club -</font></b><br>
@@ -272,27 +241,26 @@ echo $saison[$i].' '.$champion[$i]."<br />";
 <p><font face="Arial, Helvetica, sans-serif" size="3">Lyon OU(1932-1933)<br>
   </font></p>
 <p><b><font size="6" face="Verdana, Arial, Helvetica, sans-serif"><br>
-  <br>
-  - Meilleure série pour des joueurs </font></b></p>
-<p><b><font face="Arial, Helvetica, sans-serif" size="4">4 titres consécutifs</font></b></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p align="left"><b><font size="3" face="Arial, Helvetica, sans-serif">5 joueurs 
-  du SBUC, de 1904 &agrave; 1907</font></b><font size="3" face="Arial, Helvetica, sans-serif">: 
-  Bruneau - Dufourcq Lacassagne (2 fois ouvreur - 2 fois &frac12;-de-m&ecirc;lée) 
-  - Laporte - Tilh</font></p>
-<p align="left"><font size="3" face="Arial, Helvetica, sans-serif"><b>8 joueurs 
-  du Stade Toulousain, en 1994-1997 a verifier</b> </font></p>
-<p align="left"><font size="3" face="Arial, Helvetica, sans-serif">Belot - Berty 
-  - Califano - Castaignède - Cazalbou - Deylaud - Miorin - Soula </font></p>
-<p align="left"><font size="3" face="Arial, Helvetica, sans-serif"><b>Beno&icirc;t 
-  August</b>, champion quatre fois consécutivement<br>
-  en 2003, 2004 avec le Stade Fran&ccedil;ais et en 2005, 2006 avec le Biarritz 
-  Olympique. </font></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+-->
+<hr>
+
+<p class="center size5 styleArial bold"> Meilleure série pour un joueur </p>
+
+<p class="center size4 styleArial bold">4 titres consécutifs</p>
+<p class="size3 styleArial alignLeft">
+
+<b>5 joueurs du SBUC, de 1904 à 1907 :</b> <br>
+  Bruneau , Dufourcq Lacassagne (2 fois ouvreur - 2 fois demi-de-mélée) , Laporte et Tilh
+  <br>  <br>
+  <b>8 joueurs du Stade Toulousain, en 1994-1997 (à vérifier) : </b><br>
+Belot - Berty - Califano - Castaignède - Cazalbou - Deylaud - Miorin - Soula 
+<br>  <br>
+<b> Benoît August</b>, champion quatre fois consécutivement<br>
+  en 2003, 2004 avec le Stade Français et en 2005 et 2006 avec le Biarritz 
+  Olympique.
+</p>
+<br><br>
+
 </body>
 </html>
