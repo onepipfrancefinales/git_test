@@ -1,13 +1,24 @@
-<p class="size5 styelArial bold center"><?php echo $countStades ;?> Enceintes sportives <br></p>
-<table width="917" class="borderWidth1 marginAuto" >
-  <tr class="backgroundBlue colorWhite bold"> 
+<table width="100%" class="borderWidth1 marginAuto" >
+<tr bgcolor="#0099FF" bordercolor="#000000">
+    <td colspan="8" height="88" class="center size7 bold colorWhite styleCursive">Les stades</td>
+  </tr>
+ <tr class="backgroundWhite" bordercolor="#000000">
+    <td colspan="8" height="40">
+    </td>
+  </tr>
+  <tr class="backgroundWhite" bordercolor="#000000">
+    <td colspan="8" height="40"><p class="size5 styelArial bold center"><?php echo $countStades ;?> Enceintes sportives <br><br></p>
+    </td>
+  </tr>
+
+  <tr class="center bold styleCursive size3 colorWhite backgroundBlack"> 
     <td class="center" width="230"> Stades </td>
     <td class="center" width="98"> Lieux </td>
     <td class="center" width="98"> Nombre de finales accueillies </td>
     <td class="center" width="157"> Editions </td>
     <td class="center" width="300"> Photos</td>
   </tr>
-  
+ 
   <?php for ($i=0; $i< $countStades ; $i++) { ?>
   
   <tr class="borderWidth1"> 

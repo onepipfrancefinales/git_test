@@ -1,8 +1,4 @@
-<html>
-<head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</head>
+
 
 <body bgcolor="#FFFFFF" text="#000000">
 <table width="205" align="center">
@@ -14,7 +10,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=nbreEditions">Nombre d'éditions</a></div>
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=nbreEditions">Nombre d'éditions</a></div>
     </td>
   </tr>
   <tr> 
@@ -24,7 +20,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=champions">Les champions</a></div>
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=champions">Les champions</a></div>
     </td>
   </tr>
   <tr> 
@@ -34,7 +30,7 @@
   </tr>
   <tr>
     <td width="195">
-      <div id="sommaireRecords"><a href="pagerecords.php?page=participations">Nbre de Participations</a></div>
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=participations">Nbre de Participations</a></div>
     </td>
   </tr>
   <tr>
@@ -42,7 +38,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=series">Meilleure série</a></div>
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=series">Meilleure série</a></div>
     </td>
   </tr>
   <tr> 
@@ -52,7 +48,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=joueurs_titres">Joueurs 
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=joueurs_titres">Joueurs 
         les plus titrés</a></div>
     </td>
   </tr>
@@ -63,7 +59,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=nbre_titres"> Clubs les 
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=nbre_titres"> Clubs les 
         plus titrés</a></div>
     </td>
   </tr>
@@ -74,7 +70,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=queFinaliste">Finalistes, 
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=queFinaliste">Finalistes, 
         jamais champion</a></div>
     </td>
   </tr>
@@ -85,7 +81,7 @@
   </tr>
   <tr> 
     <td width="195"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=entraineurs">Entraineurs</a></div>
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=entraineurs">Entraineurs</a></div>
     </td>
   </tr>
   <tr> 
@@ -93,15 +89,14 @@
   </tr>
   <tr> 
     <td width="195" height="2"> 
-      <div id="sommaireRecords"><a href="pagerecords.php?page=capitaines">Capitaines</a></div>
+      <div id="sommaireRecords"><a href="pagesBrennus.php?page=records&pageRecords=capitaines">Capitaines</a></div>
     </td>
   </tr>
   <tr> 
     <td width="195">&nbsp;</td>
   </tr>
   <tr> 
-    <td width="195"><div id="sommaireRecords"><a href="pagedivers.php">Divers</a></div></td>
+    <td width="195"><div id="sommaireRecords"><a href="pageRecords.php">Divers</a></div></td>
   </tr>
 </table>
-</body>
-</html>
+

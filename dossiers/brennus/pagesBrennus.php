@@ -1,6 +1,7 @@
 <?php
-if (isset($_GET['page'])) $page = $_GET['page'];else $page= "accueil";
-echo "page : ".$page;
+if (isset($_GET['page'])) $page = $_GET['page'];
+else $page = "accueil";
+echo "page : " . $page;
 require "../../connect/connexion1.php";
 require "fonctionsBrennus.php";
 champFrance($bdd);
@@ -12,6 +13,22 @@ stades($bdd);
 //echo "ee".$nomStade;
 //villes($bdd);
 //stades($bdd);
+
+if ($page == "accueil") {
+  $title = "Accueil";
+} elseif ($page == "brennus") {
+  $title = "Le bouclier";
+} elseif ($page == "finales") {
+  $title = "Les finales";
+} elseif ($page == "premieres") {
+  $title = "Les premières";
+} elseif ($page == "records") {
+  $title = "Les records";
+} elseif ($page == "stades") {
+  $title = "Les stades";
+} elseif ($page == "villes") {
+  $title = "Les villes";
+}
 ?>
 
 
@@ -19,7 +36,7 @@ stades($bdd);
 <html lang="fr">
 
 <head>
-  <title>Bouclier de Brennus : Les finales</title>
+  <title>Bouclier de Brennus : <?php echo $title; ?></title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="brennus.css">
   <link type="text/css" rel="stylesheet" href="../../ligne1.css">
@@ -31,25 +48,25 @@ stades($bdd);
 <body text="#000000" class="backgroundBlack" width="1000">
   <table width="1000" class="borderWidth1 marginAuto borderColorBlack">
     <tr>
-      <td bgcolor="#FFFFFF">
+      <td class="backgroundWhite">
         <?php include "haut.php"; ?>
-
         <br>
         <?php
-        if ($page == "accueil")
+        if ($page == "accueil") {
           include 'accueil.php';
-          elseif ($page == "brennus")
+        } elseif ($page == "brennus") {
           include 'lebouclier.php';
-        elseif ($page == "finales")
-          include 'lesfinales.php';
-          elseif ($page == "premieres")
+        } elseif ($page == "finales") {
+          include 'lesfinales_copy.php';
+        } elseif ($page == "premieres") {
           include '1fois.php';
-        elseif ($page == "records")
-          include 'pagerecords.php';
-        elseif ($page == "stades")
+        } elseif ($page == "records") {
+          include 'records.php';
+        } elseif ($page == "stades") {
           include 'stades_copy.php';
-        elseif ($page == "villes")
+        } elseif ($page == "villes") {
           include 'villes_copy.php';
+        }
         ?>
       </td>
 
@@ -57,8 +74,5 @@ stades($bdd);
   </table>
 </body>
 <br>
-<footer>
   <?php include "piedDePage.php"; ?>
-</footer>
-
 </html>

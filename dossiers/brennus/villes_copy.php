@@ -1,12 +1,18 @@
-<p class="size5 styelArial bold center"><?php echo $countVilles ;?> villes<br></p>
 
 
-<br><br>
-
-<!--------------------------------------->
-
-<table width="970" class="borderWidth1 marginAuto">
-  <tr class="backgroundBlue   colorWhite bold"> 
+<table width="100%" class="borderWidth1 marginAuto">
+<tr bgcolor="#0099FF" bordercolor="#000000">
+    <td colspan="8" height="88" class="center size7 bold colorWhite styleCursive">Les villes</td>
+  </tr>
+  <tr class="backgroundWhite" bordercolor="#000000">
+    <td colspan="8" height="40">
+    </td>
+  </tr>
+  <tr class="backgroundWhite" bordercolor="#000000">
+    <td colspan="8" height="40"><p class="size5 styelArial bold center"><?php echo $countVilles ;?> villes<br><br></p>
+    </td>
+  </tr>
+  <tr class="center bold styleCursive size3 colorWhite backgroundBlack"> 
     <td height="41" width="200" class="borderWidth1">Villes</td>
     <td height="41" width="169" class="borderWidth1"> Nombre de finales accueillies </td>
     <td height="41" width="369" class="borderWidth1">Editions</td>

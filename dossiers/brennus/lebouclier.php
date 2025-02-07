@@ -1,8 +1,6 @@
-<table width="1000" border="1" height="91">
-  <tr>
-    <td bgcolor="#0099FF" bordercolor="#000000">
-      <div align="center"><font size="4" color="#FFFFFF"><b><font size="+4">Le Brennus</font></b></font></div>
-    </td>
+<table width="100%" border="1" height="91">
+  <tr bgcolor="#0099FF" bordercolor="#000000">
+    <td height="88" class="center size7 bold colorWhite styleCursive"> Le Brennus </td>
   </tr>
 </table>
 <p>&nbsp;</p>

@@ -93,7 +93,7 @@
         <tr>
             <td class="size4 borderWidth1">
                 <br>
-                <a href="/dossiers/brennus/pageAccueil.php?page=brennus&mode=smart">Histoire du Brennus</a>
+                <a href="/dossiers/brennus/pagesBrennus.php?page=accueil&mode=smart">Histoire du Brennus</a>
                 <br>
                 <br>
                 <img src="/dossiers/brennus/images/brennus/BouclierBrennus.jpg" width="188" height="234">

@@ -1,15 +1,13 @@
 
-  <table width="1000" border="1">
-    <tr>
-      <td colspan="2" bgcolor="#0066FF">
-       <b>
-            <font color="#FFFFFF" size="+4" face="Lucida Handwriting">Les
-              premières
-              fois </font>
-          </b>
+  <table  width="100%" class="borderWidth1 marginAuto"  border="1">
+    <tr bgcolor="#0099FF" bordercolor="#000000">
+      <td colspan="2" height="88" class="center size7 bold colorWhite styleCursive"> Les premières fois  <br>
       </td>
     </tr>
-    
+    <tr class="backgroundWhite" bordercolor="#000000">
+    <td colspan="8" height="40">
+    </td>
+  </tr>
    
        
 

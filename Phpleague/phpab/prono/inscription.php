@@ -147,7 +147,7 @@ Sportivement</font></p>
 <br />
 <p><font face=\"Verdana\" size=\"2\">France Finales Rugby</font></p>
 <p><font face=\"Verdana\" size=\"2\">DELPECH Thibault</font></p>
-<p><font face=\"Verdana\" size=\"2\">74 Route de Toulouse</font></p>
+<p><font face=\"Verdana\" size=\"2\">80 Avenue du 11 novembre</font></p>
 <p><font face=\"Verdana\" size=\"2\">31230 L'Isle en Dodon</font></p>
 <br />
 <p><font face=\"Verdana\" size=\"2\">Pour tous contatcts</font></p>

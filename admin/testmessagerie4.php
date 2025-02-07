@@ -345,7 +345,7 @@ $message3 ="
     <td height=\"48\"  bordercolor=\"#000000\"> 
       <div align=\"center\"> 
         <p><b><font size=\"4\" color=\"#0000FF\">France Finales Rugby<br>
-          </font></b><font size=\"4\" color=\"#0000FF\"><b>74 Route de Toulouse 31230 
+          </font></b><font size=\"4\" color=\"#0000FF\"><b>80 Avenue du 11 novembre 31230 
           L'Isle en Dodon</b></font></p>
       </div>
     </td>
