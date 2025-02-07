@@ -1,3 +1,10 @@
+  <?php 
+if ($mode=="smart")
+$adresse="smartPage.php";
+else
+$adresse="pageEvolutionsDivisions.php";
+?> 
+  
   <h1 class= "bold styleArial">Evolution compétitons <br>
   (Des origines à aujourd'hui)<br>
 
@@ -6,15 +13,15 @@
   <table class="width80PC marginAuto" >
     <tr>
       <td class = "size3">
-      <a class="colorBlack" href="pageEvolutionsDivisions.php?type=seniors1&mode=<?php echo$mode; ?>">Séniors</a></td>
+      <a class="colorBlack" href=<?php echo $adresse."?page=divisions&type=seniors1&mode=".$mode; ?>>Séniors</a></td>
       <td class = "size3">
-      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=feminines&mode=<?php echo $mode; ?>">Féminines</a></td>
+      <a  class="colorBlack" href=<?php echo $adresse."?page=divisions&type=feminines&mode=".$mode; ?>>Féminines</a></td>
       <td class = "size3">
-      <a class="colorBlack" href="pageEvolutionsDivisions.php?type=jeunes&mode=<?php echo $mode; ?>">Jeunes</a></td>
+      <a class="colorBlack" href=<?php echo $adresse."?page=divisions&type=jeunes&mode=".$mode; ?>>Jeunes</a></td>
       <td class = "size3">
-      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=espoirs&mode=<?php echo  $mode; ?>">Espoirs</a></td>    
+      <a  class="colorBlack" href=<?php echo $adresse."?page=divisions&type=espoirs&mode=".$mode; ?>>Espoirs</a></td>    
       <td class = "size3">
-      <a  class="colorBlack" href="pageEvolutionsDivisions.php?type=seniors2&mode=<?php echo $mode; ?>">Réserves</a></td>
+      <a  class="colorBlack" href=<?php echo $adresse."?page=divisions&type=seniors2&mode=".$mode; ?>>Réserves</a></td>
     </tr>
   </table>
  <br>

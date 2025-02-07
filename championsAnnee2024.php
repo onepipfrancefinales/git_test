@@ -1,4 +1,4 @@
-<table class="marginAuto border borderSpacing " >
+<table class="marginAuto border borderSpacing" width="100%" >
 	<tr class="size6 style">
 		<td colspan="3" class="style">Champions de France 2024<br></b></td>
 	</tr>
@@ -6,9 +6,9 @@
 		<td colspan="3" class="styleDivision">Séniors I</td>
 	</tr>
 	<tr class="size4" >
-		<td width = "200">Top 14 :</td>
-		<td width = "300" class="style">Stade Toulousain (OCC)</b></td>
-		<td width = "80"><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=110&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a> </td>
+		<td width = "35%">Top 14 :</td>
+		<td width = "51%" class="style">Stade Toulousain (OCC)</b></td>
+		<td width = "13%"><a href="phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=110&annee=2024" title="Consulter les phases finales de la division"><img src="favicon.ico"></a> </td>
 	</tr >
 
 	<tr class="size4 backgroundGray " >

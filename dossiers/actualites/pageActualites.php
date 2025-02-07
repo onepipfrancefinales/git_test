@@ -24,47 +24,36 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
 
   <title>Actualités FFR</title>
 </head>
-
-
-<?php
-  if ($mode != "smart") {
-    echo "<body>";
-   echo "<table class=\"marginAuto width1250\">";
-
-  } else {
-    echo "<body class=\"backgroundWhite\">";
-    echo "<table class=\"width100PC\">";
-  }
-  ?>
+    <body>
+   <table class="marginAuto width1250">
     <tr>
       <td colspan="3">
-        <?php if ($mode != "smart") {
-          include("../../images/page_image_al.php");
-          echo "</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td colspan=\"3\">";
-          include("../../01ligne.php");
-          echo "</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td class=\"colonneDroiteGauche backgroundBlue\">";
-          include("../../01gauche.php");
-          echo "</td>";
-          echo "<td class=\"colonneCentrale backgroundWhite\">";
-        } else {
-          echo "<table class=\"width98PC\" border=\"1\">";
-          echo "<tr> ";
-          echo "<td class =\"h22 width5PC\"><a href=\"../accueil2.php\"><img src=\"../../images/smart/flecheGauche.jpg\" width=\"27\" height=\"20\" alt=\"fléche retour\"></a></td>";
-          echo "<td class =\"h22 width95PC\">France Finales Rugby</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td colspan=\"2\" class =\"h12\">Tout sur le rugby</td>";
-          echo "</tr>";
-          echo "</table>";
-        }
+        <?php include ("../../images/page_image_al.php"); ?>
+          </td>
+          </tr>
+          <tr>
+          <td colspan="3">
+          <?php  include("../../01ligne.php"); ?>
+          </td>
+          </tr>
+          <tr>
+          <td class="colonneDroiteGauche backgroundBlue">";
+          <?php include("../../01gauche.php"); ?>
+          </td>
+          <td class="colonneCentrale backgroundWhite">";
+  
+          <table class="width98PC\" border="1">";
+          <tr> 
+          <td class ="h22 width5PC"><a href="../accueil2.php\"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20" alt="fléche retour"></a></td>";
+          <td class ="h22 width95PC">France Finales Rugby</td>";
+          </tr>
+          <tr>
+          <td colspan="2" class ="h12">Tout sur le rugby</td>";
+          </tr>
+          </table>
+        
 
-        ?>
+      
 
       
 
@@ -72,15 +61,15 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
       <hr>
       <?php require("actualites.php"); ?>
 
-      <?php if ($mode != "smart") {
-      echo "</td>";
-      echo "<td class=\"colonneDroiteGauche backgroundBlue\">";
-            include("../../00droite.php");
-            echo "</td>";
-            echo "</tr>";
+   
+      </td>
+      <td class="colonneDroiteGauche backgroundBlue">";
+      <?php      include("../../00droite.php"); ?>
+            </td>
+            </tr>
   
-        }
-  ?>
+        
+  
 
   </table>
   

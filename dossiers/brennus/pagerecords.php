@@ -1,16 +1,4 @@
-<?php $page = $_GET['page']; ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-  <title>Bouclier de Brennus : Les records</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
-  <link rel="stylesheet" type="text/css" href="brennus.css">
-</head>
-
-<body class="backgroundBlack" text="#000000">
 
   <table width="1000" class="borderWidth1 marginAuto borderColorBlack">
     <tr bgcolor="#FFFFFF">
@@ -56,20 +44,12 @@
           require 'nbre_titres.php';
         elseif ($page == "jamaisGagne")
           require 'jamaisGagne.php';
-
         elseif ($page == "entraineurs")
           require 'entraineurs.php';
         elseif ($page == "capitaines")
           require 'capitaines.php';
-
         ?>
-       
-        
       </td>
     </tr>
   </table>
-</body>
-<footer>
-  <?php include "piedDePage.php"; ?>
-</footer>
-</html>
+

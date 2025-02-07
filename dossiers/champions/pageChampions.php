@@ -32,7 +32,9 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
     echo "<body class=\"backgroundWhite\">";
   }
   ?>
-<table class="width100PC">
+
+
+<table width="100%" border="1">
     <tr>
       <td colspan="3">
         <?php if ($mode != "smart") {
@@ -53,13 +55,14 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
 
           echo "<table class=\"width98PC\" border=\"1\">";
           echo "<tr> ";
-          echo "<td class =\"h22 width5PC\"><a href=\"../accueil2.php\"><img src=\"../../images/smart/flecheGauche.jpg\" width=\"27\" height=\"20\" alt=\"fléche retour\"></a></td>";
+         echo "<td class =\"h22 width5PC\"><a href=\"../accueil2.php\"><img src=\"../../images/smart/flecheGauche.jpg\" width=\"27\" height=\"20\" alt=\"fléche retour\"></a></td>";
           echo "<td class =\"h22 width95PC\">France Finales Rugby</td>";
           echo "</tr>";
           echo "<tr>";
           echo "<td colspan=\"2\" class =\"h12\">Tout sur le rugby</td>";
           echo "</tr>";
           echo "</table>";
+
         }
 
         ?>
@@ -68,7 +71,7 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
 
 
       <hr>
-      <?php include("../../championsAnnee2024.php");  ?>
+      <?php //include("../../championsAnnee2024.php");  ?>
 
       <?php if ($mode != "smart") {
         ?>
@@ -86,9 +89,9 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
   ?>
 
   </table>
-  </div>
+
 </body>
 
-<?php require "../footer.php" ;?>
+<?php include("../../smart/bas.php");?>
 
 </html>

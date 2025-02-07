@@ -1,7 +1,7 @@
-<?php 
+<?php
 include("../../saison.php");
 if (isset($_GET['mode'])) $mode  = $_GET['mode'];
-if (isset($_GET['chanson'])) $chanson = $_GET['chanson'];?>
+if (isset($_GET['chanson'])) $chanson = $_GET['chanson']; ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,134 +21,37 @@ if (isset($_GET['chanson'])) $chanson = $_GET['chanson'];?>
   <meta name="robots" content="All">
   <title>Chansons paillardes </title>
   <link type="text/css" rel="stylesheet" href="../../ligne1.css" />
-    <link type="text/css" rel="stylesheet" href="../../lienNoir.css" />
-    <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
-    <link type="text/css" rel="stylesheet" href="../dossiers.css">
-    <link type="text/css" rel="stylesheet" href="../../smart/10.css">
-
+  <link type="text/css" rel="stylesheet" href="../../lienNoir.css" />
+  <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
+  <link type="text/css" rel="stylesheet" href="../dossiers.css">
+  <link type="text/css" rel="stylesheet" href="../../smart/10.css">
 </head>
 
-<?php
-  if ($mode != "smart") {
-    echo "<body>";
-   echo "<table class=\"marginAuto width1250\">";
-
-  } else {
-    echo "<body class=\"backgroundWhite\">";
-    echo "<table class=\"width100PC\">";
-  }
-  ?>
-
-
+<body class="backgroundWhite">";
+  <table class="width100PC">";
     <tr>
       <td colspan="3">
-        <?php if ($mode != "smart") {
-          include("../../images/page_image_al.php");
-          echo "</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td colspan=\"3\">";
-          include("../../01ligne.php");
-          echo "</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td class=\"colonneDroiteGauche backgroundBlue\" valign=\"top\">";
-          include("../../01gauche.php");
-          echo "</td>";
-          echo "<td class=\"colonneCentrale backgroundWhite\">";
-        } else {
-
-          echo "<table class=\"width98PC\" border=\"1\">";
-          echo "<tr> ";
-          echo "<td class =\"h22 width5PC\"><a href=\"../accueil2.php\"><img src=\"../../images/smart/flecheGauche.jpg\" width=\"27\" height=\"20\" alt=\"fléche retour\"></a></td>";
-          echo "<td class =\"h22 width95PC\">France Finales Rugby</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td colspan=\"2\" class =\"h12\">Tout sur le rugby</td>";
-          echo "</tr>";
-          echo "</table>";
-        }
-
-        ?>
-        
-        
-        
-        
-        
-        
-        
-        <?php
-echo "chanson : ".$chanson;
-
-
-        echo "<br>";
-        include "introChansons.htm";
-        echo "<br>";
-        echo "<hr>";
-        echo "<hr>";
-        echo "<br>";
-
-        switch ($chanson) {
-          case "51j":
-            require 'titres/51JeTaime.htm';
-            break;
-          case "bal":
-            require 'titres/baliBalo.htm';
-            break;
-          case "cdl":
-            require "titres/chevaliersDeLaTableRonde.htm";
-            break;
-          case "fan":
-            require "titres/fanchon.htm";
-            break;
-          case "ieu":
-            require "titres/ilEstUnCoinDeFrance.htm";
-            break;
-          case "ldd":
-             require "titres/laDigueDuCul.htm";
-            break;
-          case "lar":
-            require "titres/larirette.htm";
-            break;
-          case "lsa":
-            require "titres/laSalope.htm";
-            break;
-            //------------------------------------------------------
-          case "fdm":
-            require "titres/fetesDeMauleon.htm";
-            break;
-          case "lco":
-            require "titres/copainsDabord.htm";
-            break;
-          case "lch":
-            require "titres/leChasseur.htm";
-            break;
-          case "iws":
-            require "titres/iWillSurvive.htm";
-            break;
-          case "lld":
-            require "titres/lesLacsDuConnemara.htm";
-            break;
-        }
-        ?>
-      <?php if ($mode != "smart") {
-        ?>
-      </td>
-
-      <td class="colonneDroiteGauche backgroundBlue" valign="top">
-        <?php
-          if ($mode != "smart") {
-            include("../../00droite.php");
-          } ?>
+        <?php include("../../images/page_image_al.php"); ?>
       </td>
     </tr>
-  <?php
-        }
-  ?>
-
+    <tr>";
+      <td colspan="3">
+        <?php include("../../01ligne.php"); ?>
+      </td>
+    </tr>
+    <tr>
+      <td class="colonneDroiteGauche backgroundBlue" valign="top">
+        <?php include("../../01gauche.php"); ?>
+      </td>
+      <td class="colonneCentrale backgroundWhite">
+        <?php require 'chansons.php' ?>
+      </td>
+      <td class="colonneDroiteGauche backgroundBlue" valign="top">
+        <?php include("../../00droite.php"); ?>
+      </td>
+    </tr>
   </table>
-
 </body>
-<?php require "../footer.php" ;?>
+<?php require "../footer.php"; ?>
 
 </html>

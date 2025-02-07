@@ -1,9 +1,9 @@
 <html>
 <head>
 <meta name="description"
-content="France Finales Rugby: Histoire, clubs, Top 14, Pro D2, Clubs de Fédérale, championnats territoriaux, résultats, la Coupe du Monde de rugby, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
+content="France Finales Rugby: Histoire, clubs, Top 14, Pro D2, Clubs de Fï¿½dï¿½rale, championnats territoriaux, rï¿½sultats, la Coupe du Monde de rugby, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world CToulouseulouse, games and links to other official sites.">
 <meta name="keywords"
-content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitï¿½ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -71,8 +71,8 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
       <td bgcolor="#006699" bordercolor="#006699" valign="middle" align="center" height="15"> 
         <b><font color="#FFFFFF" size="+2"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 
 
 $champion = $_POST['champion']; //
@@ -84,7 +84,7 @@ $chaine = strtolower($chaine);
 echo "<br/>";
 ?>
         <?php
-$reponse = mysql_query("SELECT * FROM bdclubs WHERE code='$chaine'or nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); // Requête SQL
+$reponse = mysql_query("SELECT * FROM bdclubs WHERE code='$chaine'or nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); // Requï¿½te SQL
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -214,13 +214,13 @@ echo $siglecomite;
 ?>
         <?php
 
-echo "<a href=$forum> Forum du comité</a> ";
+echo "<a href=$forum> Forum du comitï¿½</a> ";
 ?>
         <?php echo $siglecomite;?>
         <?php
  }
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
         </font></b></td>
     </tr>

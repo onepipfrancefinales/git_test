@@ -31,58 +31,39 @@ if (isset($_GET['pays'])) $pays  = $_GET['pays'];
     <link type="text/css" rel="stylesheet" href="../dossiers.css">
     <link type="text/css" rel="stylesheet" href="../../smart/10.css">
   </head>
-  <?php
-  if ($mode != "smart") {
-    echo "<body>";
-   echo "<table class=\" width1250 marginAuto\">";
+  
+ 
+    <body>
+   <table class=" width1250 marginAuto">
 
-  } else {
-    echo "<body class=\"backgroundWhite\">";
-    echo "<table class=\"width100PC\">";
-  }
-  ?>
     <tr>
       <td colspan="3">
-        <?php if ($mode != "smart") {
-          include("../../images/page_image_al.php");
-          echo "</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td colspan=\"3\">";
-          include("../../01ligne.php");
-          echo "</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td class=\"colonneDroiteGauche backgroundBlue\" valign=\"top\">";
-          include("../../01gauche.php");
-          echo "</td>";
-          echo "<td class=\"colonneCentrale backgroundWhite\">";
-        } else {
-
-          echo "<table class=\"width98PC\" border=\"1\">";
-          echo "<tr> ";
-          echo "<td class =\"h22 width5PC\"><a href=\"../accueil2.php\"><img src=\"../../images/smart/flecheGauche.jpg\" width=\"27\" height=\"20\" alt=\"fléche retour\"></a></td>";
-          echo "<td class =\"h22 width95PC\">France Finales Rugby</td>";
-          echo "</tr>";
-          echo "<tr>";
-          echo "<td colspan=\"2\" class =\"h12\">Tout sur le rugby</td>";
-          echo "</tr>";
-          echo "</table>";
-        }
-
-        ?>
+        <?php 
+          include("../../images/page_image_al.php"); ?>
+          </td>
+          </tr>
+          <tr>
+          <td colspan="3">
+          <?php include("../../01ligne.php"); ?>
+          </td>
+          </tr>
+          <tr>";
+          <td class="colonneDroiteGauche backgroundBlue" valign="top">
+          <?php include("../../01gauche.php"); ?>
+          </td>
+          <td class="colonneCentrale backgroundWhite">
+      
         <p class="colorRed bold size7 styleArial backgroundWhite center">
           Chants et hymnes du rugby <br>
           <hr />
         </p>
 
-        <?php include("somHymnes.php");
-        ?>
+        <?php include("somHymnes.php"); ?>
         <a name="paroles"></a>
-        <?php
-
-        echo "<hr/>";
-
+      
+      
+         <hr/>
+      <?php
         if ($pays == "bay")
           require 'bayonne.php';
         elseif ($pays == "tou")
@@ -120,20 +101,14 @@ if (isset($_GET['pays'])) $pays  = $_GET['pays'];
           require 'argentine.php';
 
         ?>
-        <?php if ($mode != "smart") {
-        ?>
+       
       </td>
 
       <td class="colonneDroiteGauche backgroundBlue" valign="top">
-        <?php
-          if ($mode != "smart") {
-            include("../../00droite.php");
-          } ?>
+        <?php include("../../00droite.php"); ?>
       </td>
     </tr>
-  <?php
-        }
-  ?>
+  
   </table>
   </body>
   <?php require "../footer.php" ;?>

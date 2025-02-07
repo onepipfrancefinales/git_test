@@ -1,34 +1,3 @@
-<?php include("../saison.php"); ?>
-
-
-<html>
-
-<head>
-    <meta name="description" content="Tout sur le comité territorial <?php echo $titre; ?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comit�); les effectifs; les palmar�s nationaux; les palmar�s territoriaux et l'ensemble des clubs composant le comit� avec un lien pour acc�der aux diff�rents clubs.">
-    <meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
-    <meta name="classification" content="Sport,Rugby">
-    <meta name="resource-type" content="document">
-    <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-    <meta name="author" content="Equipe Onepip">
-    <meta name="viewport" content="width=device-width">
-    <meta name="robots" content="All">
-
-    <link type="text/css" rel="stylesheet" href="../../ligne1.css" />
-    <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
-    <link type="text/css" rel="stylesheet" href="../dossiers.css">
-    <link type="text/css" rel="stylesheet" href="../../smart/10.css">
-    <title>Accueil dossiers </title>
-</head>
-
-<body>
-    <table width="100%" border="1">
-        <tr>
-            <td class="h22">France Finales Rugby</td>
-        </tr>
-        <tr>
-            <td class="h12">All for french rugby</td>
-        </tr>
-    </table>
 
     <table width="100% " class="borderWidth1 marginAuto">
     <tr>
@@ -42,7 +11,7 @@
             <td colspan="2" class="borderWidth1 ">
                 <br>
                 <p class="size4">
-                    <a class="colorBlack" href="actualites/pageActualites.php?mode=<?php echo "smart"; ?>">Nouvelles régles Word Rugby<br>
+                    <a class="colorBlack" href="smartPage.php?page=actualites&mode=<?php echo "smart"; ?>">Nouvelles régles Word Rugby<br>
                 à compter du 8 février 2025 <br> pour toutes les compétitions</a>
               
                 </p>
@@ -61,9 +30,9 @@
                 <p class="size4"> Toutes les compétitions du rugby Français.</p>
                 <p class="size3">
                     <a class="colorBlack" href="../smart/sommaire.php">Compétitions professionnels</a><br>
-                    <a class="colorBlack" href="../resultats/page_resultats.php">Compétitions Fédérales</a><br>
-                    <a class="colorBlack" href="../resultats/page_resultats.php">Compétitions Féminines</a><br>
-                    <a class="colorBlack" href="../resultats/page_resultats.php">Compétitions régionales</a><br>
+                    <a class="colorBlack" href="../smart/sommaire.php">Compétitions Fédérales</a><br>
+                    <a class="colorBlack" href="../smart/sommaire.php">Compétitions Féminines</a><br>
+                    <a class="colorBlack" href="../smart/sommaire.php">Compétitions régionales</a><br>
                 </p>
                 <br>
             </td>
@@ -124,15 +93,17 @@
         <tr>
             <td class="size4 borderWidth1">
                 <br>
-                <a href="brennus/pageAccueil.php">Histoire du Brennus</a>
+                <a href="/dossiers/brennus/pageAccueil.php?page=brennus&mode=smart">Histoire du Brennus</a>
                 <br>
                 <br>
-                <img src="brennus/images/brennus/BouclierBrennus.jpg" width="188" height="234">
+                <img src="/dossiers/brennus/images/brennus/BouclierBrennus.jpg" width="188" height="234">
                 <br>
                 <br>
             </td>
             <td width="340" class="size4 borderWidth1">
-                <a href="divisions/pageEvolutionsDivisions.php?type=seniors1&mode=<?php echo "smart"; ?>"><br>Evolution des divisions<br>du rugby Français</a><br>
+            <a href="smartPage.php?page=divisions&mode=smart&type=seniors1"><br>Evolution des divisions<br>du rugby Français</a><br>
+              
+         <!--       <a href="divisions/pageEvolutionsDivisions.php?type=seniors1&mode=<?php echo "smart"; ?>"><br>Evolution des divisions<br>du rugby Français</a><br>-->
                 <p>
                     <span class="styleArial size4"> 1896</span>
                     <span face="styleArial size5"> Top14 1re série<br> Fédérale <span class="size4">Groupe B</span> </span><br>
@@ -150,7 +121,7 @@
             <!--  <td class="borderWidth1"> A définir </td>-->
             <td colspan="2" class=" borderWidth1 size5 ">
                 <br>
-                <a href="scores/pageScore.php?mode=<?php echo "smart"; ?>"> Evolution des points </a></p>
+                <a href="smartPage.php?page=scores&mode=<?php echo "smart"; ?>"> Evolution des points </a></p>
                 <br>
                 <!--    <img src="../images/panneauScore.gif" width="324" height="160">-->
                 </div>
@@ -164,7 +135,7 @@
         <tr>
             <td colspan="2" class="size4 borderWidth1 ">
                 <br>
-                <a class="colorBlack" href="champions/pageChampions.php?mode=<?php echo "smart"; ?>">Tous les champions de France <?php echo $annee - 1; ?></a><br>
+                <a class="colorBlack" href="smartPage.php?page=champions&mode=<?php echo "smart"; ?>">Tous les champions de France <?php echo $annee - 1; ?></a><br>
 
 
 
@@ -181,9 +152,10 @@
         <tr>
             <td colspan="2" class="size4 borderWidth1 ">
                 <br>
-                <a class="colorBlack" href="lexique/pageLexique.php?sommaire=1&lettre=0&mode=<?php echo "smart"; ?>">Lexique du rugby</a><br>
-                <a class="colorBlack" href="lexique/pageLexique.php?sommaire=2&mode=<?php echo "smart"; ?>">Expressions du rugby</a>
-                <a class="colorBlack" href="lexique/pageLexique.php?sommaire=3&mode=<?php echo "smart"; ?>"><br>Phrases célébres</a><br>
+                <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=1&lettre=0&mode=<?php echo "smart"; ?>">Lexique du rugby</a><br>
+                <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=2&mode=<?php echo "smart"; ?>">Expressions du rugby</a><br>
+                <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=3&mode=<?php echo "smart"; ?>">Phrases célébres</a><br>
+                <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=4&mode=<?php echo "smart"; ?>">Expressions médiatiques</a><br>
                 <br>
             </td>
 
@@ -191,7 +163,7 @@
 
         <tr>
             <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
-                <a class="colorWhite" href="hymnes/page_hymnes.php?mode=<?php echo "smart"; ?>"> Hymnes et chansons <br> (paroles et musiques)</a>
+                <a class="colorWhite" href="smartPage.php?page=hymnes&mode=<?php echo "smart"; ?>"> Hymnes et chansons <br> (paroles et musiques)</a>
             </td>
         </tr>
 
@@ -213,7 +185,7 @@
             <td colspan="2" class="borderWidth1">
                 <br>
                 <p class="size4">
-                    <a class="colorBlack" href="video/pagevideo.php?mode=<?php echo "smart"; ?>&choix=<?php echo "ama"; ?>">Série : Péripétie d'un joueur amateur</a><br><br>
+                    <a class="colorBlack" href="smartPage.php?page=videos&mode=<?php echo "smart"; ?>">Série : Péripétie d'un joueur amateur</a><br><br>
 
                     </b>
                 </p>
@@ -239,25 +211,15 @@
         <tr>
             <td colspan="2" class="size4 ">
                 <br>
-                <a href="chansons/page_chansons.php?chanson=51j&mode=<?php echo "smart"; ?>"> Chansons paillardes <br> Et chansons de 3me mi-temps</a>
+                <a href="smartPage.php?chanson=bal&page=chansons&mode=<?php echo "smart"; ?>"> Chansons paillardes <br> Et chansons de 3me mi-temps</a>
                 <br>
                 <br>
             </td>
         </tr>
     </table>
-</body>
-<footer>
-<?php
-include("../smart/bas.php");
-?>
-</footer>
 
 
 
-</html>
 
-<style>
-    .background003366 {
-        background-color: #003366;
-    }
-</style>
+
+

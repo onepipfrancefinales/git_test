@@ -194,7 +194,7 @@ $clubA3210= ' Salon la Tour (LM) ';
 $clubA3211= ' La Couronne (PCH) ';
 $clubA3212= ' La Saudrune (MPY)';
 $clubA3213= ' Trelissac (PA)';
-$clubA3214= ' La Réole (CA) ';
+$clubA3214= ' La Rï¿½ole (CA) ';
 $clubA3215= ' Lit et Mixte (CBL)';
 $clubA3216= ' Ger Seron Bedeille (BE)';
 $clubA3217= ' Oleron (PCH)';
@@ -240,7 +240,7 @@ $clubA3256= ' Saint Paul les Landes (LM)';
 $clubA3257= ' Dijon (BG) ';
 $clubA3258= ' Arcol (LY) ';
 $clubA3259= ' Les Martres de Veyre (AU) ';
-$clubA3260= ' Ozoir la Ferrière (IDF)';
+$clubA3260= ' Ozoir la Ferriï¿½re (IDF)';
 $clubA3261= ' RCSAM (IDF) ';
 $clubA3262= ' Cherbourg Hagueneau (N) ';
 $clubA3263= ' LMR Iris (FL) ';
@@ -587,7 +587,7 @@ $clubA3234= ' Alpes 2 ';
 $clubA3235= ' Auvergne 2';
 $clubA3236= ' Vainqueur DA 2  contre PR 4';
 
-$clubA3237= ' Drôme Ardeche 1 ';
+$clubA3237= ' Drï¿½me Ardeche 1 ';
 $clubA3238= ' Provence 3 ';
 
 $clubA3239= ' Languedoc 1 2';
@@ -597,38 +597,38 @@ $clubA3241= ' Alpes 1 ';
 $clubA3242= ' Provence 2 ';
 
 $clubA3243= ' Armagnac Bigorre 2 ';
-$clubA3244= ' Midi Pyrénées 2';
+$clubA3244= ' Midi Pyrï¿½nï¿½es 2';
 
 $clubA3245= ' Poitou Charente 1 ';
 $clubA3246= ' Languedoc 2 ';
 
 $clubA3247= ' Beran 1 ';
-$clubA3248= ' Midi Pyrénées 6';
+$clubA3248= ' Midi Pyrï¿½nï¿½es 6';
 
 $clubA3249= ' Provence 1 ';
 $clubA3250= ' Languedoc 3 ';
 
-$clubA3251= ' Côte Basque Landes 1';
-$clubA3252= ' Midi Pyrénées 5';
+$clubA3251= ' Cï¿½te Basque Landes 1';
+$clubA3252= ' Midi Pyrï¿½nï¿½es 5';
 
-$clubA3253= ' Périgord Agenais 1 ';
+$clubA3253= ' Pï¿½rigord Agenais 1 ';
 $clubA3254= ' Vainqueur  AB 3 contre BE 2 ';
 
 $clubA3255= ' Limousin 2 ';
-$clubA3256= ' Midi Pyrénées 3'; 
+$clubA3256= ' Midi Pyrï¿½nï¿½es 3'; 
 
-$clubA3257= ' Côte d Argent 1 ';
-$clubA3258= ' Côte Basque Landes 2 ';
+$clubA3257= ' Cï¿½te d Argent 1 ';
+$clubA3258= ' Cï¿½te Basque Landes 2 ';
 
-$clubA3259= ' Midi Pyrénées 1 ';
-$clubA3260= ' Périgord Agenais 3';
+$clubA3259= ' Midi Pyrï¿½nï¿½es 1 ';
+$clubA3260= ' Pï¿½rigord Agenais 3';
 
 $clubA3261= ' Armagnac Bigorre 1 ';
-$clubA3262= ' Périgord Agenais 2 ';
+$clubA3262= ' Pï¿½rigord Agenais 2 ';
 
-$clubA3263= ' Côte d Argent 2 ';
-$clubA3264= ' Midi Pyrénées 4';
-echo "<h3> <strong>Désolé, aucune donnée pour cette saison</h3> </strong>";
+$clubA3263= ' Cï¿½te d Argent 2 ';
+$clubA3264= ' Midi Pyrï¿½nï¿½es 4';
+echo "<h3> <strong>Dï¿½solï¿½, aucune donnï¿½e pour cette saison</h3> </strong>";
 }
 ?>
 

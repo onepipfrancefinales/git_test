@@ -1,4 +1,5 @@
 <?php
+
 require "../../connect/connexion1.php";
 require "fonctionsBrennus.php";
 champFrance($bdd);

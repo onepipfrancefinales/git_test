@@ -77,7 +77,7 @@
         <td height="217" width="352" valign="top"> 
           <table border="1" cellspacing="0" cellpadding="1" style="line-height:2" width="400" height="221">
             <tr bgcolor="#E4E4E4" bordercolor="#000000"> 
-              <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;Équipe</th>
+              <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;ï¿½quipe</th>
               <th style="border-bottom:1px solid #AAAAAA" width="27" align="center">Pts</th>
               <th style="border-bottom:1px solid #AAAAAA" width="27" align="center">J</th>
               <th style="border-bottom:1px solid #AAAAAA" width="27" align="center">V</th>
@@ -161,7 +161,7 @@
                       Espagne</td>
                     <td width="170" height="35"><small>Galashiels</small></td>
                     <td width="94" height="35"><small>-</small></td>
-                    <td width="100" height="35"><small> Écosse</small></td>
+                    <td width="100" height="35"><small> ï¿½cosse</small></td>
                   </tr>
                   <tr align="center" bgcolor="#EEEEEE"> 
                     <td width="76" height="35"> 3 octobre<br />
@@ -174,7 +174,7 @@
                     <td width="106" align="left" height="35"><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13"> 
                       Ecosse</td>
                     <td width="170" height="35">Murrayfield</td>
-                    <td width="94" height="35">Édimbourg</td>
+                    <td width="94" height="35">ï¿½dimbourg</td>
                     <td width="100" height="35">&nbsp;</td>
                   </tr>
                   <tr align="center"> 
@@ -188,7 +188,7 @@
                     <td width="106" align="left" height="35"><img src="Drapeaux/Petit%20format/URU.png" width="20" height="13"> 
                       Uruguay</td>
                     <td width="170" bgcolor="#EEEEEE" height="35">Murrayfield</td>
-                    <td width="94" bgcolor="#EEEEEE" height="35">Édimbourg</td>
+                    <td width="94" bgcolor="#EEEEEE" height="35">ï¿½dimbourg</td>
                     <td width="100" height="35">&nbsp;</td>
                   </tr>
                   <tr align="center" bgcolor="#EEEEEE"> 
@@ -202,7 +202,7 @@
                     <td width="106" align="left" height="35"><img src="Drapeaux/Petit%20format/ESP.png" width="20" height="13"> 
                       Espagne</td>
                     <td width="170" height="35">Murrayfield</td>
-                    <td width="94" height="35">Édimbourg</td>
+                    <td width="94" height="35">ï¿½dimbourg</td>
                     <td width="100" height="35">&nbsp;</td>
                   </tr>
                   <tr align="center"> 
@@ -217,7 +217,7 @@
                       Uruguay</td>
                     <td width="170" bgcolor="#EEEEEE" height="35">Glasgow</td>
                     <td width="94" bgcolor="#EEEEEE" height="35">&nbsp;</td>
-                    <td width="100" height="35"><small>Écosse</small></td>
+                    <td width="100" height="35"><small>ï¿½cosse</small></td>
                   </tr>
                   <tr align="center" bgcolor="#EEEEEE"> 
                     <td width="76" height="35">16 octobre<br />
@@ -230,7 +230,7 @@
                     <td width="106" align="left" height="35"><img src="Drapeaux/Petit%20format/ESP.png" width="20" height="13"> 
                       Espagne</td>
                     <td width="170" height="35">Murrayfield</td>
-                    <td width="94" height="35">Édimbourg</td>
+                    <td width="94" height="35">ï¿½dimbourg</td>
                     <td width="100" height="35">&nbsp;</td>
                   </tr>
                 </table>
@@ -243,9 +243,9 @@
     <table width="1151" border="0">
         <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -283,7 +283,7 @@
             
           <table class="wikitable sortable left" style="text-align: center;" width="400" height="200" border="1" cellspacing="0" bordercolor="#000000">
             <tr> 
-              <th scope="col" colspan="2"><span title="Classement"><abbr class="abbr" title="Numéro"></abbr>&#160;</span>Equipes</th>
+              <th scope="col" colspan="2"><span title="Classement"><abbr class="abbr" title="Numï¿½ro"></abbr>&#160;</span>Equipes</th>
               <th scope="col" width="30"> 
                 <div align="center">Pts</div>
               </th>
@@ -297,20 +297,20 @@
                 <div align="center"><abbr class="abbr" title="Matchs nuls">N</abbr></div>
               </th>
               <th scope="col" width="25"> 
-                <div align="center"><abbr class="abbr" title="Défaites">D</abbr></div>
+                <div align="center"><abbr class="abbr" title="Dï¿½faites">D</abbr></div>
               </th>
               <th scope="col" width="25"> 
-                <div align="center"><abbr class="abbr" title="Points marqués">PM</abbr></div>
+                <div align="center"><abbr class="abbr" title="Points marquï¿½s">PM</abbr></div>
               </th>
               <th scope="col" width="25"> 
-                <div align="center"><abbr class="abbr" title="Points encaissés">PE</abbr></div>
+                <div align="center"><abbr class="abbr" title="Points encaissï¿½s">PE</abbr></div>
               </th>
             </tr>
             <tr style="background:#ccffcc;"> 
               <td width="16"> 
                 <div align="center">1</div>
               </td>
-              <td style="text-align:left" width="161"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zélande</td>
+              <td style="text-align:left" width="161"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zï¿½lande</td>
               <td width="30"> 
                 <div align="center"><b>9</b></div>
               </td>
@@ -438,7 +438,7 @@
                 </td>
                 
               <td width="167" align="right" height="28"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13"> 
-                Nouvelle-Zélande</b></td>
+                Nouvelle-Zï¿½lande</b></td>
                 
               <td width="29" height="28">45</td>
                 
@@ -459,7 +459,7 @@
                 <td width="78">9 octobre<br />
                 </td>
                 <td width="167" align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13"> 
-                  Nouvelle-Zélande</b></td>
+                  Nouvelle-Zï¿½lande</b></td>
                 <td width="29">30</td>
                 <td width="23">-</td>
                 <td width="55">16</td>
@@ -487,7 +487,7 @@
                 <td width="78">14 octobre<br />
                 </td>
                 <td width="167" align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13"> 
-                  Nouvelle-Zélande</b></td>
+                  Nouvelle-Zï¿½lande</b></td>
                 <td width="29">101</td>
                 <td width="23">-</td>
                 <td width="55">3</td>
@@ -518,9 +518,9 @@
       <table width="1151" border="1" cellspacing="0" bordercolor="#000000">
         <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -557,7 +557,7 @@
               
             <table class="wikitable sortable left" style="text-align: center;" width="400" height="200" border="1" cellspacing="0" bordercolor="#000000">
               <tr> 
-                <th scope="col" colspan="2"><span title="Classement"><abbr class="abbr" title="Numéro"></abbr>&#160;</span>Equipes</th>
+                <th scope="col" colspan="2"><span title="Classement"><abbr class="abbr" title="Numï¿½ro"></abbr>&#160;</span>Equipes</th>
                 <th scope="col" width="16"> 
                   <div align="center">Pts</div>
                 </th>
@@ -571,13 +571,13 @@
                   <div align="center"><abbr class="abbr" title="Matchs nuls">N</abbr></div>
                 </th>
                 <th scope="col" width="16"> 
-                  <div align="center"><abbr class="abbr" title="Défaites">D</abbr></div>
+                  <div align="center"><abbr class="abbr" title="Dï¿½faites">D</abbr></div>
                 </th>
                 <th scope="col" width="25"> 
-                  <div align="center"><abbr class="abbr" title="Points marqués">PM</abbr></div>
+                  <div align="center"><abbr class="abbr" title="Points marquï¿½s">PM</abbr></div>
                 </th>
                 <th scope="col" width="24"> 
-                  <div align="center"><abbr class="abbr" title="Points encaissés">PE</abbr></div>
+                  <div align="center"><abbr class="abbr" title="Points encaissï¿½s">PE</abbr></div>
                 </th>
               </tr>
               <tr style="background:#ccffcc;"> 
@@ -703,7 +703,7 @@
                   <td width="69">18</td>
                   <td width="88" align="left"><img src="Drapeaux/Petit%20format/NAM.png" width="20" height="13"> 
                     Namibie</td>
-                  <td width="259">Stade de la Méditerranée</td>
+                  <td width="259">Stade de la Mï¿½diterranï¿½e</td>
                   <td width="108">Beziers</td>
                   <td width="130">France</td>
                 </tr>
@@ -717,7 +717,7 @@
                   <td width="69">20</td>
                   <td width="88" align="left"> <img src="Drapeaux/Petit%20format/CAN.png" width="20" height="13"> 
                     Canada</td>
-                  <td width="259">Stade de la Méditerranée</td>
+                  <td width="259">Stade de la Mï¿½diterranï¿½e</td>
                   <td width="108">Beziers</td>
                   <td width="130" height="21">France</td>
                 </tr>
@@ -793,9 +793,9 @@
         <table width="1151" border="1" cellspacing="0" bordercolor="#000000">
           <tr> 
             <td height="30" colspan="2"> 
-              <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-                N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: 
-                total des points marqués&#160;; PC&#160;: des points concédés&#160;; 
+              <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+                N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: 
+                total des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; 
                 B&#160;: points de bonus&#160;; Pts&#160;: points de classement</div>
             </td>
           </tr>
@@ -831,14 +831,14 @@
               
             <table class="wikitable sortable left" style="text-align: center;" width="400" height="200" border="1" cellspacing="0" bordercolor="#000000">
               <tr> 
-                <th scope="col" colspan="2"><span title="Classement"><abbr class="abbr" title="Numéro"></abbr></span>Equipes</th>
+                <th scope="col" colspan="2"><span title="Classement"><abbr class="abbr" title="Numï¿½ro"></abbr></span>Equipes</th>
                 <th scope="col" width="30">Pts</th>
                 <th scope="col" width="30">J</th>
                 <th scope="col" width="25"><abbr class="abbr" title="Victoires">V</abbr></th>
                 <th scope="col" width="25"><abbr class="abbr" title="Matchs nuls">N</abbr></th>
-                <th scope="col" width="25"><abbr class="abbr" title="Défaites">D</abbr></th>
-                <th scope="col" width="25"><abbr class="abbr" title="Points marqués">PM</abbr></th>
-                <th scope="col" width="25"><abbr class="abbr" title="Points encaissés">PE</abbr></th>
+                <th scope="col" width="25"><abbr class="abbr" title="Dï¿½faites">D</abbr></th>
+                <th scope="col" width="25"><abbr class="abbr" title="Points marquï¿½s">PM</abbr></th>
+                <th scope="col" width="25"><abbr class="abbr" title="Points encaissï¿½s">PE</abbr></th>
               </tr>
               <tr style="background:#ccffcc;"> 
                 <td width="16"> 
@@ -993,9 +993,9 @@
       <table width="1151" border="1" cellspacing="0" bordercolor="#000000">
         <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -1030,14 +1030,14 @@
               
             <table class="wikitable sortable left" style="text-align: center;" width="400" height="200" bordercolor="#000000" border="1" cellspacing="0">
               <tr> 
-                <th scope="col" colspan="2"><span title="Classement"><abbr class="abbr" title="Numéro"></abbr>&#160;</span>Equipes</th>
+                <th scope="col" colspan="2"><span title="Classement"><abbr class="abbr" title="Numï¿½ro"></abbr>&#160;</span>Equipes</th>
                 <th scope="col" width="23"><abbr class="abbr" title="Points">Pts</abbr></th>
                 <th scope="col" width="16">J</th>
                 <th scope="col" width="16"><abbr class="abbr" title="Victoires">V</abbr></th>
                 <th scope="col" width="16"><abbr class="abbr" title="Matchs nuls">N</abbr></th>
-                <th scope="col" width="16"><abbr class="abbr" title="Défaites">D</abbr></th>
-                <th scope="col" width="25"><abbr class="abbr" title="Points marqués">PM</abbr></th>
-                <th scope="col" width="24"><abbr class="abbr" title="Points encaissés">PE</abbr></th>
+                <th scope="col" width="16"><abbr class="abbr" title="Dï¿½faites">D</abbr></th>
+                <th scope="col" width="25"><abbr class="abbr" title="Points marquï¿½s">PM</abbr></th>
+                <th scope="col" width="24"><abbr class="abbr" title="Points encaissï¿½s">PE</abbr></th>
               </tr>
               <tr style="background:#ccffcc;"> 
                 <td width="16"> 
@@ -1082,7 +1082,7 @@
                 <td width="16"> 
                   <div align="center">4</div>
                 </td>
-                <td style="text-align:left" width="138"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13">&#160;États-Unis</td>
+                <td style="text-align:left" width="138"><span class="flagicon"></span><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13">&#160;ï¿½tats-Unis</td>
                 <td width="23"><b>3</b></td>
                 <td width="16">3</td>
                 <td width="16">0</td>
@@ -1104,7 +1104,7 @@
                   <td width="21">-</td>
                   <td width="48">8</td>
                   <td width="123" align="left"><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"> 
-                    États-Unis</td>
+                    ï¿½tats-Unis</td>
                   <td width="134">Lansdowne Road</td>
                   <td width="58">Dublin</td>
                   <td width="111">&nbsp;</td>
@@ -1132,7 +1132,7 @@
                   <td width="21">-</td>
                   <td width="48">25</td>
                   <td width="123" align="left"><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"> 
-                    États-Unis</td>
+                    ï¿½tats-Unis</td>
                   <td width="134" bgcolor="#EEEEEE">Lansdowne Road</td>
                   <td width="58" bgcolor="#EEEEEE">Dublin</td>
                   <td width="111">&nbsp;</td>
@@ -1159,7 +1159,7 @@
                   <td width="21">-</td>
                   <td width="48">19</td>
                   <td width="123" align="left"><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"> 
-                    États-Unis</td>
+                    ï¿½tats-Unis</td>
                   <td width="134" bgcolor="#EEEEEE">Limerick</td>
                   <td width="58" bgcolor="#EEEEEE">&nbsp;</td>
                   <td width="111">&nbsp;</td>
@@ -1185,9 +1185,9 @@
         <table width="1151" border="1" cellspacing="0" bordercolor="#000000">
           <tr> 
             <td height="30" colspan="2"> 
-              <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-                N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: 
-                total des points marqués&#160;; PC&#160;: des points concédés&#160;; 
+              <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+                N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: 
+                total des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; 
                 B&#160;: points de bonus&#160;; Pts&#160;: points de classement</div>
             </td>
           </tr>
@@ -1262,7 +1262,7 @@
         <td width="84"><img src="Drapeaux/Petit%20format/SAM.png" width="20" height="13"> 
           Samoa</td>
         <td width="138">Murrayfield</td>
-        <td width="83">Édimbourg</td>
+        <td width="83">ï¿½dimbourg</td>
         <td width="68">&nbsp;</td>
         <td width="178">&nbsp;</td>
       </tr>
@@ -1286,7 +1286,7 @@
         </td>
         <td width="84" bgcolor="#CCCCCC"><img src="Drapeaux/Petit%20format/IRL.png" width="20" height="13"> 
           Irlande</td>
-        <td width="138" bgcolor="#CCCCCC">Stade Félix-Bollaert</td>
+        <td width="138" bgcolor="#CCCCCC">Stade Fï¿½lix-Bollaert</td>
         <td width="83" bgcolor="#CCCCCC"> Lens</td>
         <td width="68" bgcolor="#CCCCCC">France</td>
         <td width="178">&nbsp;</td>
@@ -1310,9 +1310,9 @@
       <table width="1151" border="0">
         <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -1446,7 +1446,7 @@
         <tr> 
           <td height="8"></td>
           <td colspan="2" rowspan="2" valign="bottom" style="line-height:15px;">&#160;<small><i>24 
-            octobreà Lansdowne Road, Dublin</i></small></td>
+            octobreï¿½ Lansdowne Road, Dublin</i></small></td>
         </tr>
         <tr> 
           <td height="8"></td>
@@ -1485,22 +1485,22 @@
         <tr> 
           <td height="8"></td>
           <td colspan="2" rowspan="2" valign="bottom" style="line-height:15px;">&#160;<small><i>24 
-            octobreau Murrayfield Stadium, Édimbourg</i></small></td>
-          <td colspan="2" rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F2F2F2"><b>Troisième 
+            octobreau Murrayfield Stadium, ï¿½dimbourg</i></small></td>
+          <td colspan="2" rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F2F2F2"><b>Troisiï¿½me 
             place</b></td>
         </tr>
         <tr> 
           <td height="8"></td>
           <td rowspan="5" style="border-width:2px 0 0 0;border-style:solid;border-color:#000">&#160;</td>
           
-        <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4"><img src="Drapeaux/Petit%20format/NZ.png" width="32" height="17">&#160;&#160;Nouvelle-Zélande</font></td>
+        <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4"><img src="Drapeaux/Petit%20format/NZ.png" width="32" height="17">&#160;&#160;Nouvelle-Zï¿½lande</font></td>
           <td rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4">&#160;31</font></td>
           <td rowspan="5" style="border-width:2px 0 0 0;border-style:solid;border-color:#000">&#160;</td>
         </tr>
         <tr> 
           <td height="8"></td>
           
-        <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#EFEFEF"><font size="4"><img src="Drapeaux/Petit%20format/NZ.png" width="32" height="17">&#160;<b>&#160;Nouvelle-Zélande</b></font></td>
+        <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#EFEFEF"><font size="4"><img src="Drapeaux/Petit%20format/NZ.png" width="32" height="17">&#160;<b>&#160;Nouvelle-Zï¿½lande</b></font></td>
           <td rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#EFEFEF"><font size="4">&#160;<b>30</b></font></td>
           <td colspan="2" rowspan="2" valign="bottom" style="line-height:15px;">&#160;<small><i>4 
             novembreau Millennium Stadium, Cardiff</i></small></td>
@@ -1512,7 +1512,7 @@
         <tr> 
           <td height="8"></td>
           
-        <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4"><img src="Drapeaux/Petit%20format/ECO.png" width="32" height="17">&#160;&#160;Écosse</font></td>
+        <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4"><img src="Drapeaux/Petit%20format/ECO.png" width="32" height="17">&#160;&#160;ï¿½cosse</font></td>
           <td rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4">&#160;18</font></td>
           <td rowspan="2" style="border-width:2px 0 0 0;border-style:solid;border-color:#000">&#160;</td>
           
@@ -1527,7 +1527,7 @@
           <td height="8"></td>
           <td rowspan="2" colspan="8"></td>
           
-        <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4"><img src="Drapeaux/Petit%20format/NZ.png" width="32" height="17">&#160;&#160;Nouvelle-Zélande</font></td>
+        <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4"><img src="Drapeaux/Petit%20format/NZ.png" width="32" height="17">&#160;&#160;Nouvelle-Zï¿½lande</font></td>
           <td rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F9F9F9"><font size="4">&#160;18</font></td>
         </tr>
         <tr> 

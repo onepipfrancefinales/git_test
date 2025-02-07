@@ -54,7 +54,7 @@
   </tr>
   <tr>
     <td width="329" class="size5 borderWidth1">  <br>
-      <a href="dossiers/brennus/pageAccueil.php">Histoire du Brennus</a> <br> <br>
+      <a href="dossiers/brennus/pagesBrennus.php?page=accueil">Histoire du Brennus</a> <br> <br>
       <img src="dossiers/brennus/images/brennus/BouclierBrennus.jpg" width="188" height="234">
       <br> <br>
     </td>
@@ -89,6 +89,21 @@
       </div>
     </td>
   </tr>
+  <tr>
+    <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
+     Champions de l'année
+    </td>
+   
+  </tr>
+  <tr>
+    <td colspan="2" class="size5 borderWidth1 ">
+      <br>
+    <?php include "championsAnnee2024.php";  ?>
+    <br>
+    </td>
+   
+  </tr>
+
   <tr>
     <td width="329" class="size5 background003366 colorWhite bold borderWidth1">
       Expressions rugbystique

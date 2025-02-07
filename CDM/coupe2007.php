@@ -72,7 +72,7 @@
                   A</b></td>
               </tr>
               <tr bgcolor="#E4E4E4"> 
-                <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;Équipe</th>
+                <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;ï¿½quipe</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="25" align="center">Pts</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="25" align="center">J</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="25" align="center">V</th>
@@ -133,7 +133,7 @@
               </tr>
               <tr align="center" bgcolor="#EEEEEE"> 
                 <td>5</td>
-                <td align="left"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13">&#160;États-Unis</b></td>
+                <td align="left"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13">&#160;ï¿½tats-Unis</b></td>
                 <td width="25"><b>1</b></td>
                 <td width="25">4</td>
                 <td width="25">0</td>
@@ -161,8 +161,8 @@
                 <td width="38">28</td>
                 <td width="16">-</td>
                 <td width="31"> 10</td>
-                <td width="147" align="left"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"></b>&#160;États-Unis</td>
-                <td width="155"><small>Stade Félix-Bollaert<br />
+                <td width="147" align="left"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"></b>&#160;ï¿½tats-Unis</td>
+                <td width="155"><small>Stade Fï¿½lix-Bollaert<br />
                   </small></td>
                 <td width="90"><small>Lens</small></td>
                 <td width="67">France</td>
@@ -185,7 +185,7 @@
                 <td width="93">12 septembre<br />
                 </td>
                 <td align="right" width="129"><b><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"></b> 
-                  États-Unis&#160;<span class="flagicon"></span></td>
+                  ï¿½tats-Unis&#160;<span class="flagicon"></span></td>
                 <td width="38">15</td>
                 <td width="16">-</td>
                 <td width="31">25</td>
@@ -236,7 +236,7 @@
                 <td width="31">25</td>
                 <td align="left" width="147"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/TON.png" width="20" height="13"></b> 
                   &#160;Tonga</td>
-                <td width="155"><small>Stade Félix-Bollaer<br />
+                <td width="155"><small>Stade Fï¿½lix-Bollaer<br />
                   </small></td>
                 <td width="90"><small>Lens</small></td>
                 <td width="67">France</td>
@@ -265,10 +265,10 @@
                 <td width="16">-</td>
                 <td width="31">21</td>
                 <td align="left" width="147"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"></b> 
-                  &#160;États-Unis</td>
+                  &#160;ï¿½tats-Unis</td>
                 <td width="155"><small>Stade Geoffroy-Guichard<br />
                   </small></td>
-                <td width="90"><small>Saint-Étienne</small></td>
+                <td width="90"><small>Saint-ï¿½tienne</small></td>
                 <td width="67">France</td>
               </tr>
               <tr align="center"> 
@@ -294,7 +294,7 @@
                 <td width="38">64</td>
                 <td width="16">-</td>
                 <td width="31">15</td>
-                <td align="left" width="147"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"></b>&#160;États-Unis</td>
+                <td align="left" width="147"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/USA.png" width="20" height="13"></b>&#160;ï¿½tats-Unis</td>
                 <td width="155"><small>Stade de la Mosson<br />
                   </small></td>
                 <td width="90"><small>Montpellier</small></td>
@@ -312,9 +312,9 @@
         <table width="1151" border="0">
           <tr> 
             <td height="30" colspan="2"> 
-              <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-                N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: 
-                total des points marqués&#160;; PC&#160;: des points concédés&#160;; 
+              <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+                N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: 
+                total des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; 
                 B&#160;: points de bonus&#160;; Pts&#160;: points de classement</div>
             </td>
           </tr>
@@ -356,7 +356,7 @@
                   B</b></td>
               </tr>
               <tr bgcolor="#E4E4E4"> 
-                <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;Équipe</th>
+                <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;ï¿½quipe</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="25" align="center">Pts</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="25" align="center">J</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="25" align="center">V</th>
@@ -651,9 +651,9 @@
 <table width="1151" border="0">
             <tr> 
               <td height="30" colspan="2"> 
-                <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-                  N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: 
-                  total des points marqués&#160;; PC&#160;: des points concédés&#160;; 
+                <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+                  N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: 
+                  total des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; 
                   B&#160;: points de bonus&#160;; Pts&#160;: points de classement</div>
               </td>
             </tr>
@@ -691,7 +691,7 @@
                   C</b></td>
               </tr>
               <tr bgcolor="#E4E4E4"> 
-                <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;Équipe</th>
+                <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;ï¿½quipe</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="21" align="center">Pts</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="12" align="center">J</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="16" align="center">V</th>
@@ -703,7 +703,7 @@
               </tr>
               <tr align="center" bgcolor="#CCFFCC"> 
                 <td width="17">1</td>
-                <td align="left" width="150"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zélande</b></td>
+                <td align="left" width="150"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zï¿½lande</b></td>
                 <td width="21"><b>20</b></td>
                 <td width="12">4</td>
                 <td width="16">4</td>
@@ -715,7 +715,7 @@
               </tr>
               <tr align="center" bgcolor="#CCFFCC"> 
                 <td width="17">2</td>
-                <td align="left" width="150"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13">&#160;Écosse</b></td>
+                <td align="left" width="150"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13">&#160;ï¿½cosse</b></td>
                 <td width="21"><b>14</b></td>
                 <td width="12">4</td>
                 <td width="16">3</td>
@@ -775,12 +775,12 @@
                 <td width="108">8 septembre<br />
                 </td>
                 <td width="154" align="right"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13"> 
-                  Nouvelle-Zélande&#160;<span class="flagicon"></span></b></td>
+                  Nouvelle-Zï¿½lande&#160;<span class="flagicon"></span></b></td>
                 <td width="37">76</td>
                 <td width="14">-</td>
                 <td width="32">14</td>
                 <td width="148" align="left"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/ITA.png" width="20" height="13"></b>&#160;Italie</td>
-                <td width="156"><small>Stade Vélodrome</small></td>
+                <td width="156"><small>Stade Vï¿½lodrome</small></td>
                 <td width="103">Marseille</td>
                 <td width="75">France</td>
               </tr>
@@ -788,7 +788,7 @@
                 <td width="108">9 septembre<br />
                 </td>
                 <td align="right" width="154"><b><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13"> 
-                  Écosse&#160;<span class="flagicon"></span></b></td>
+                  ï¿½cosse&#160;<span class="flagicon"></span></b></td>
                 <td width="37">56</td>
                 <td width="14">-</td>
                 <td width="32">10</td>
@@ -806,7 +806,7 @@
                 <td width="14">-</td>
                 <td width="32">18</td>
                 <td align="left" width="148"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/ROU.png" width="20" height="13"></b>&#160;Roumanie</td>
-                <td width="156"><small>Stade Vélodrome</small></td>
+                <td width="156"><small>Stade Vï¿½lodrome</small></td>
                 <td width="103">Marseille</td>
                 <td width="75">France</td>
               </tr>
@@ -814,7 +814,7 @@
                 <td width="108">15 septembre<br />
                 </td>
                 <td align="right" width="154"><b><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13"> 
-                  Nouvelle-Zélande&#160;<span class="flagicon"></span></b></td>
+                  Nouvelle-Zï¿½lande&#160;<span class="flagicon"></span></b></td>
                 <td width="37">108</td>
                 <td width="14">-</td>
                 <td width="32">13</td>
@@ -827,7 +827,7 @@
                 <td width="108">18 septembre<br />
                 </td>
                 <td align="right" width="154"><b><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13"> 
-                  Écosse&#160;<span class="flagicon"></span></b></td>
+                  ï¿½cosse&#160;<span class="flagicon"></span></b></td>
                 <td width="37">42</td>
                 <td width="14">-</td>
                 <td width="32">0</td>
@@ -853,12 +853,12 @@
                 <td width="108">23 septembre<br />
                 </td>
                 <td align="right" width="154"><b><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13"></b> 
-                  Écosse&#160;<span class="flagicon"></span></td>
+                  ï¿½cosse&#160;<span class="flagicon"></span></td>
                 <td width="37">0</td>
                 <td width="14">-</td>
                 <td width="32">40</td>
                 <td align="left" width="148"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13"> 
-                  &#160;Nouvelle-Zélande</b></td>
+                  &#160;Nouvelle-Zï¿½lande</b></td>
                 <td width="156"><small>Murrayfield</small></td>
                 <td width="103">&nbsp;</td>
                 <td width="75">&nbsp;</td>
@@ -884,7 +884,7 @@
                 <td width="37">8</td>
                 <td width="14">-</td>
                 <td width="32">85</td>
-                <td align="left" width="148"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zélande</b></td>
+                <td align="left" width="148"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/NZ.png" width="20" height="13">&#160;Nouvelle-Zï¿½lande</b></td>
                 <td width="156"><small>Stadium</small></td>
                 <td width="103"><small>Toulouse</small></td>
                 <td width="75">France</td>
@@ -893,7 +893,7 @@
                 <td width="108">29 septembre<br />
                 </td>
                 <td align="right" width="154"><b><img src="Drapeaux/Petit%20format/ECO.png" width="20" height="13"> 
-                  Écosse&#160;<span class="flagicon"></span></b></td>
+                  ï¿½cosse&#160;<span class="flagicon"></span></b></td>
                 <td width="37">18</td>
                 <td width="14">-</td>
                 <td width="32">16</td>
@@ -912,9 +912,9 @@
             <table width="1151" border="0">
               <tr> 
                 <td height="30" colspan="2"> 
-                  <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-                    N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: 
-                    total des points marqués&#160;; PC&#160;: des points concédés&#160;; 
+                  <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+                    N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: 
+                    total des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; 
                     B&#160;: points de bonus&#160;; Pts&#160;: points de classement</div>
                 </td>
               </tr>
@@ -949,7 +949,7 @@
                 <td colspan="10" style="background:#98A1B2;color:#FFFFFF">&nbsp;</td>
               </tr>
               <tr bgcolor="#E4E4E4"> 
-                <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;Équipe</th>
+                <th style="border-bottom:1px solid #AAAAAA" colspan="2" align="center">&#160;ï¿½quipe</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="30" align="center">Pts</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="30" align="center">J</th>
                 <th style="border-bottom:1px solid #AAAAAA" width="30" align="center">V</th>
@@ -997,7 +997,7 @@
               </tr>
               <tr align="center" bgcolor="#EEEEEE"> 
                 <td>4</td>
-                <td align="left" width="150"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/GEO.png" width="20" height="13">&#160;Géorgie</b></td>
+                <td align="left" width="150"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/GEO.png" width="20" height="13">&#160;Gï¿½orgie</b></td>
                 <td width="30"><b>5</b></td>
                 <td width="30">4</td>
                 <td width="30">1</td>
@@ -1066,7 +1066,7 @@
                 <td width="77">33</td>
                 <td width="30">-</td>
                 <td width="55">3</td>
-                <td align="left" width="102"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/GEO.png" width="20" height="13"></b>&#160;Géorgie</td>
+                <td align="left" width="102"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/GEO.png" width="20" height="13"></b>&#160;Gï¿½orgie</td>
                 <td width="196"><small>Stade de Gerland,<br />
                   </small></td>
                 <td width="109"><small>Lyon</small></td>
@@ -1080,7 +1080,7 @@
                 <td width="77">14</td>
                 <td width="30">-</td>
                 <td width="55">10</td>
-                <td align="left" width="102"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/GEO.png" width="20" height="13"></b>&#160;Géorgie</td>
+                <td align="left" width="102"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/GEO.png" width="20" height="13"></b>&#160;Gï¿½orgie</td>
                 <td width="196"><small>Stade Chaban-Delmas,<br />
                   </small></td>
                 <td width="109"><small>Bordeaux</small></td>
@@ -1123,7 +1123,7 @@
                 <td width="30">-</td>
                 <td width="55">3</td>
                 <td align="left" width="102"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/NAM.png" width="20" height="13"></b>&#160;Namibie</td>
-                <td width="196"><small>Stade Vélodrome,<br />
+                <td width="196"><small>Stade Vï¿½lodrome,<br />
                   </small></td>
                 <td width="109"><small>Marseille</small></td>
                 <td width="72">France</td>
@@ -1132,12 +1132,12 @@
                 <td width="103" height="28">26 septembre<br />
                 </td>
                 <td align="right" width="116" height="28"><b><img src="Drapeaux/Petit%20format/GEO.png" width="20" height="13"> 
-                  Géorgie&#160;<span class="flagicon"></span></b></td>
+                  Gï¿½orgie&#160;<span class="flagicon"></span></b></td>
                 <td width="77" height="28">30</td>
                 <td width="30" height="28">-</td>
                 <td width="55" height="28">0</td>
                 <td align="left" width="102" height="28"><span class="flagicon"></span><b><img src="Drapeaux/Petit%20format/NAM.png" width="20" height="13"></b>&#160;Namibie</td>
-                <td width="196" height="28"><small>Stade Félix-Bollaert</small></td>
+                <td width="196" height="28"><small>Stade Fï¿½lix-Bollaert</small></td>
                 <td width="109" height="28"><small>Lens</small></td>
                 <td width="72" height="28">France</td>
               </tr>
@@ -1145,12 +1145,12 @@
                 <td width="103">30 septembre<br />
                 </td>
                 <td align="right" width="116"><b><img src="Drapeaux/Petit%20format/GEO.png" width="20" height="13"></b> 
-                  Géorgie&#160;<span class="flagicon"></span></td>
+                  Gï¿½orgie&#160;<span class="flagicon"></span></td>
                 <td width="77">7</td>
                 <td width="30">-</td>
                 <td width="55">64</td>
                 <td align="left" width="102"><b><span class="flagicon"></span><img src="Drapeaux/Petit%20format/FRA.png" width="20" height="13">&#160;France</b></td>
-                <td width="196"><small>Stade Vélodrome<br />
+                <td width="196"><small>Stade Vï¿½lodrome<br />
                   </small></td>
                 <td width="109"><small>Marseille</small></td>
                 <td width="72">France</td>
@@ -1176,9 +1176,9 @@
       <table width="1151" border="0">
         <tr> 
           <td height="30" colspan="2"> 
-            <div align="left">J&#160;: matchs joués&#160;; V&#160;: victoires&#160;; 
-              N&#160;: matchs nuls&#160;; D&#160;: défaites&#160;;PP&#160;: total 
-              des points marqués&#160;; PC&#160;: des points concédés&#160;; B&#160;: 
+            <div align="left">J&#160;: matchs jouï¿½s&#160;; V&#160;: victoires&#160;; 
+              N&#160;: matchs nuls&#160;; D&#160;: dï¿½faites&#160;;PP&#160;: total 
+              des points marquï¿½s&#160;; PC&#160;: des points concï¿½dï¿½s&#160;; B&#160;: 
               points de bonus&#160;; Pts&#160;: points de classement</div>
           </td>
         </tr>
@@ -1283,7 +1283,7 @@
         <tr> 
           <td height="8" width="58"></td>
           <td rowspan="2" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="222"><font size="4"><b><img src="Drapeaux/Petit%20format/NZ.png" width="32" height="17"></b> 
-            Nouve<b>lle-Zélande</b></font></td>
+            Nouve<b>lle-Zï¿½lande</b></font></td>
           <td rowspan="2" align="center" style="border:1px solid #aaa;" bgcolor="#F2F2F2" width="149"><font size="4">18</font></td>
         </tr>
         <tr> 

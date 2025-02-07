@@ -372,14 +372,13 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	      $finPouleTraite = 13919122;
 	}
 	//HDF
-	elseif (substr($id,0,6) == 160171){
-		  $debutPouleTraite = 16017101;
-	      $finPouleTraite = 16022122;
-	}
-	elseif (substr($id,0,6) == 160271){
-		  $debutPouleTraite = 16027101;
-	      $finPouleTraite = 16919122;
-	}
+	elseif (substr($id,0,6) == 160171){ $debutPouleTraite = 16017101; $finPouleTraite = 16017822;}
+	elseif (substr($id,0,6) == 160181){ $debutPouleTraite = 16018101; $finPouleTraite = 16018822;}
+	elseif (substr($id,0,6) == 160191){ $debutPouleTraite = 16019101; $finPouleTraite = 16019822;}
+
+	elseif (substr($id,0,6) == 160271){ $debutPouleTraite = 16027101; $finPouleTraite = 16027822;}
+	elseif (substr($id,0,6) == 169181){ $debutPouleTraite = 16918101; $finPouleTraite = 16918822;}
+
 	//PDL
 	elseif (substr($id,0,6) == 210171){
 		  $debutPouleTraite = 21017101;
@@ -503,7 +502,8 @@ while (!feof($fp))
 $journee = "J".substr($id_journee,-2);
 $competition = substr($id,3,3);
 
-
+//echo "debut de poule : ".$debutPouleTraite; echo "<br>";
+///echo "fin de poule : ".$finPouleTraite; echo "<br>";
 
 if ($id > 0)
 {	   		
@@ -531,19 +531,19 @@ $buts_ext = intval($buts_ext);
 		}
 	// test 1 : scores inscrits en base et non présents dans le fichier
 	if ($buts_domBdd[$i] + $buts_extBdd[$i]  > 0 and $buts_dom + $buts_ext == 0) {
-//		echo "<br>";
-//		echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
-//		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
-//		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
+		echo "<br>";
+		echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
+	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
+	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 
 	} elseif ($buts_domBdd[$i] + $buts_extBdd[$i] == 0 and  $buts_dom + $buts_ext > 0) {
 		
 
 		// test 2 : Pas de scores en base  et  scores présents dans le fichier 
 		 
-//		echo $i . ' - '. $id . ' ' . "test2 : ". $ligne. "<br>";
-//		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
-//		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
+		echo $i . ' - '. $id . ' ' . "test2 : ". $ligne;
+	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
+	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 		
 
 //			echo "comparaisons Ok Ok";
@@ -552,8 +552,8 @@ $buts_ext = intval($buts_ext);
 			$bdd->exec("UPDATE $tableMatch
 			  SET  date_reelle ='$date_reelle', buts_dom = '$buts_dom', buts_ext = '$buts_ext' ,  id_journee = '$id_journee'
 			  WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");
-
-
+//sleep(1);
+echo "enreg Ok". "<br>";
 
 			//recherche la présence de la rencontre retour	 
 
@@ -633,9 +633,15 @@ echo "numero : ".$numero;
 		}
 	}
 	// test 3 scores présents en base et dans le fichier
-	elseif ( $buts_domBdd[$i] + $buts_extBdd[$i] != 0 and  $buts_dom + $buts_ext !=0){	 
+	elseif ( $buts_domBdd[$i] + $buts_extBdd[$i] != 0 and  $buts_dom + $buts_ext !=0){	
+	//	echo "<br>";echo "<br>";
+	//	echo $i;echo "<br>";
+	//	echo $id_journee;echo "<br>";
+	//	echo $buts_domBdd[$i].'-'.$buts_dom ;echo "<br>";
+	//	echo $buts_extBdd[$i].'-'.$buts_ext;echo "<br>";
+	//	echo "<br>";echo "br";
 	
-	//	echo $i . ' - '. $id . ' ' . "test3 : ". $ligne. "<br>";
+		echo $i . ' - '. $id . ' ' . "test3 : ". $ligne. "<br>";
 	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 
@@ -644,7 +650,7 @@ echo "numero : ".$numero;
 	
 	elseif ( $buts_dom + $buts_ext == 0)		{	
 	
-	//	echo $i . ' - '. $id . ' ' . "test4 : ". $ligne. "<br>";
+		echo $i . ' - '. $id . ' ' . "test4 : ". $ligne. "<br>";
 	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 	

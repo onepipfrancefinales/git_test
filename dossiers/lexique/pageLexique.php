@@ -63,16 +63,20 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
           echo "</table>";
         }
 
-        ?>
+       require 'sommaire.php';
+     require  'lexique.php';
+     
+     ?>
         
         
         
         
         
-        
+      <!--  
         <p class="size7 bold styleArial"> Mots et beaux mots </p> <br>
-        <?php require 'sommaire.php';
-        if ($sommaire == 1) {
+       
+     /*
+     if ($sommaire == 1) {
           echo "<br/>";
           include "tabDesLettres.php";
           include "appelLettre.php";
@@ -82,7 +86,10 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
           include "citation.htm";
         elseif ($sommaire == 4)
           include "expr_mediatiques.htm";
+          */
         ?>
+-->
+
        <?php if ($mode != "smart") {
         ?>
       </td>

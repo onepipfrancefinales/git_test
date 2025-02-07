@@ -1,9 +1,9 @@
 <html>
 <head>
 <meta name="description"
-content="France Finales Rugby: Histoire, clubs, Top 14, Pro D2, Clubs de Fédérale, championnats territoriaux, résultats, la Coupe du Monde de rugby, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
+content="France Finales Rugby: Histoire, clubs, Top 14, Pro D2, Clubs de Fï¿½dï¿½rale, championnats territoriaux, rï¿½sultats, la Coupe du Monde de rugby, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world CToulouseulouse, games and links to other official sites.">
 <meta name="keywords"
-content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitï¿½ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">

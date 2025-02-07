@@ -1,18 +1,10 @@
-<html>
-
-<head>
-  <title>Untitled Document</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</head>
-
 <body bgcolor="#FFFFFF" text="#000000">
   <table width="53%" border="0" align="center" bgcolor="#000000">
-    <tr>
-      <td colspan="5">xxx</td>
-     
-    </tr>
+   
     <tr class="backgroundWhite">
-      <td colspan="5" class="center size5 colorBack bold styleArial"> <a class="colorBlack" href="pagefinales.php">Toutes les finales</td>
+    <td colspan="5" height="30"></td>
+   <!--   <td colspan="5" class="center size5 colorBack bold styleArial"> <a class="colorBlack" href="pagefinales.php">Toutes les finales</td>-->
+   <!--   <td colspan="5" class="center size5 colorBack bold styleArial"> <a class="colorBlack" href="pagesBrennus.php?page=finales">Toutes les finales</td>-->
     </tr>
     <tr bgcolor="#000000">
       <td colspan="5"></td>
@@ -37,12 +29,14 @@
       <td width="33%" height="44"></td>
     </tr>
     <tr>
-      <td height="39" width="33%" rowspan="6" bgcolor="#FFFFFF">
+      <td height="39" width="33%" rowspan="5" bgcolor="#FFFFFF">
         <div align="center"><img src="images/brennus/255px-BouclierBrennusRugby.png" width="255" height="332"></div>
       </td>
       <td height="77" width="1%"></td>
       <td height="77"></td>
-      <td height="77" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagebrenus.php">Le Brennus</a></td>
+  <!--    <td height="77" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagebrenus.php">Le Brennus</a></td> -->
+   
+      <td height="77" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagesBrennus.php?page=brennus">Le Brennus</a></td>
     </tr>
     <tr>
       <td height="76" width="1%"></td>
@@ -53,8 +47,9 @@
     <tr>
       <td height="70" width="1%"></td>
       <td height="70" width="3%"></td>
-      <td height="70" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagerecords.php">Les records</a></td>
-    </tr>
+    <!--  <td height="70" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagerecords.php">Les records</a></td>-->
+      <td height="70" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagesBrennus.php?page=records">Les records</a></td>  
+  </tr>
     <tr>
       <td height="122" width="1%"></td>
       <td height="122" width="3%"></td>
@@ -64,13 +59,16 @@
     <tr>
       <td height="75" width="1%"></td>
       <td height="75" width="3%"></td>
-      <td height="75" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="page1refois.php">Les Premières fois</font></b></font></a></td>
+  <!--    <td height="75" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="page1refois.php">Les Premières fois</font></b></font></a></td>-->
+      <td height="75" colspan="2" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagesBrennus.php?page=premieres">Les Premières fois</font></b></font></a></td>
     </tr>
     <tr>
-      <td height="2" width="1%"></td>
-      <td height="2" width="3%"></td>
-      <td height="2" width="30%"></td>
-      <td height="2" width="33%"></td>
+      <td colspan="5" height="30"></td>
+     
+    </tr>
+    <tr class="backgroundWhite">
+   <!--   <td colspan="5" class="center size5 colorBack bold styleArial"> <a class="colorBlack" href="pagefinales.php">Toutes les finales</td>-->
+      <td colspan="5" class="center size5 colorBack bold styleArial"> <a class="colorBlack" href="pagesBrennus.php?page=finales">Toutes les finales</td>
     </tr>
     <tr>
       <td height="42" width="33%"></td>
@@ -79,7 +77,9 @@
       <td height="42" width="33%"></td>
     </tr>
     <tr bgcolor="#FFFFFF">
-      <td height="42" colspan="5" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pageStades.php">Les stades</a></td>
+ <!--   <td height="42" colspan="5" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pageStades.php">Les stades</a></td> -->
+    
+      <td height="42" colspan="5" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagesBrennus.php?page=stades">Les stades</a></td>
     </tr>
     <tr bgcolor="#000000">
       <td height="21" colspan="5"></td>
@@ -95,11 +95,29 @@
       <td height="53" class="colorWhite center">Parc des princes -Paris</td>
     </tr>
     <tr>
-      <td colspan="5" height="53">
-
-      </td>
+  <!--  <td height="42" colspan="5" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pageVilles.php">Les villes</a></td>-->
+    <td height="42" colspan="5" class="backgroundWhite bold size5 styleArial"><a class="colorBlack" href="pagesBrennus.php?page=villes">Les villes</a></td>
+    </tr>
+    <tr>
+    <td height="100" colspan="5" class="backgroundBlack bold size5 styleArial"></td>
+    </tr>
+    
+    <tr>
+      <td height="61" width="33%"><img src="images/brennus/images%20(1).jfif" width="300" height="168"></td>
+      <td height="61" colspan="3"><img src="images/brennus/images%20(2).jfif" width="300" height="183"></td>
+      <td height="61" width="33%"><img src="images/brennus/images%20(4).jfif" width="301" height="167"></td>
+    </tr>
+    <tr valign="top">
+      <td width="33%" height="44" class="colorWhite center">Stade Français(2015)</td>
+      <td width="1%" height="44"></td>
+      <td height="44" colspan="2" class="colorWhite center">AS Montferrant(2017)</td>
+      <td width="33%" height="44" class="colorWhite center">Stade toulousain(2008)</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+    <td colspan="5" height="30"></td>
+    </tr>
+    <tr >
+    <td colspan="5" height="30"></td>
     </tr>
   </table>
 </body>
-
-</html>
