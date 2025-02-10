@@ -1,4 +1,4 @@
-<table width="100%" class="borderWidth1 marginAuto" >
+<table width="1000" class="borderWidth1 marginAuto" >
 <tr bgcolor="#0099FF" bordercolor="#000000">
     <td colspan="8" height="88" class="center size7 bold colorWhite styleCursive">Les stades</td>
   </tr>
@@ -22,10 +22,10 @@
   <?php for ($i=0; $i< $countStades ; $i++) { ?>
   
   <tr class="borderWidth1"> 
-    <td height="162" width="200" class="borderWidth1 marginAuto"><?php echo $nomStade[$i]."<br>".$com[$i]; ?> </td>
-    <td height="162" width="98" class="borderWidth1 marginAuto"><?php echo $nomVille[$i]; ?></td>
-    <td height="162" width="78" class="borderWidth1 marginAuto"> <?php countSaisonsStade($i+1, $bdd); echo $countSaisonsStade; ?> </td>
-    <td height="162" width="200" class="borderWidth1 marginAuto"><?php listeSaisonsStade($i+1, $countSaisonStade, $bdd); ?></td>
+    <td height="162" width="200" class="borderWidth1 marginAuto size4 styleArial"><?php echo $nomStade[$i]."<br>".$com[$i]; ?> </td>
+    <td height="162" width="98" class="borderWidth1 marginAuto size4 styleArial"><?php echo $nomVille[$i]; ?></td>
+    <td height="162" width="78" class="borderWidth1 marginAuto size4 styleArial"> <?php countSaisonsStade($i+1, $bdd); echo $countSaisonsStade; ?> </td>
+    <td height="162" width="200" class="borderWidth1 marginAuto size3 styleArial"><?php listeSaisonsStade($i+1, $countSaisonStade, $bdd); ?></td>
     <td height="162" width="300" class="borderWidth1 marginAuto"><img src="images/stades/<?php echo $i+1;?>.jpg" width="300" height="150"></td>
   </tr>
  <?php

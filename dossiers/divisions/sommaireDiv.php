@@ -10,7 +10,7 @@ $adresse="pageEvolutionsDivisions.php";
 
 <span class="size3 styleArial">Compétitions qui donnent droit à un titre de champion de France</span>
 </h1>  <br><br>
-  <table class="width80PC marginAuto" >
+  <table class=" marginAuto" >
     <tr>
       <td class = "size3">
       <a class="colorBlack" href=<?php echo $adresse."?page=divisions&type=seniors1&mode=".$mode; ?>>Séniors</a></td>

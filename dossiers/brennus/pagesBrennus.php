@@ -1,7 +1,8 @@
 <?php
-if (isset($_GET['page'])) $page = $_GET['page'];
-else $page = "accueil";
+if (isset($_GET['page'])) $page = $_GET['page'];else $page = "accueil";
+if (isset($_GET['mode'])) $mode = $_GET['mode'];
 echo "page : " . $page;
+echo "mode : " . $mode;
 require "../../connect/connexion1.php";
 require "fonctionsBrennus.php";
 champFrance($bdd);
@@ -46,7 +47,7 @@ if ($page == "accueil") {
 </head>
 
 <body text="#000000" class="backgroundBlack" width="1000">
-  <table width="1000" class="borderWidth1 marginAuto borderColorBlack">
+  <table class="borderWidth1 marginAuto borderColorBlack">
     <tr>
       <td class="backgroundWhite">
         <?php include "haut.php"; ?>
@@ -74,5 +75,6 @@ if ($page == "accueil") {
   </table>
 </body>
 <br>
+      </div>
   <?php include "piedDePage.php"; ?>
 </html>

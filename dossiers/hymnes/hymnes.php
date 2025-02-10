@@ -1,9 +1,13 @@
 <?php
 include("../../saison.php");
-if (isset($_GET['mode'])) $mode  = $_GET['mode'];else $mode = "";;
+if (isset($_GET['mode'])) $mode  = $_GET['mode'];
+else $mode = "";;
 if (isset($_GET['pays'])) $pays  = $_GET['pays'];
-//echo $pays;
-//echo $mode;
+/*
+echo "page Hymnes";
+echo $pays;
+echo $mode;
+*/
 ?>
 
 <!DOCTYPE html PUBLIC>
@@ -30,25 +34,14 @@ if (isset($_GET['pays'])) $pays  = $_GET['pays'];
     <link type="text/css" rel="stylesheet" href="../dossiers.css">
     <link type="text/css" rel="stylesheet" href="../../smart/10.css">
   </head>
-
-
-<body>
-  <table class=" width1250 marginAuto">
-    <tr>
-      <td colspan="3">
-        <?php include("../../images/page_image_al.php");  ?>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3">
-        <?php include "../../01ligne.php";  ?>
-      </td>
-    </tr>
-    <tr>
-      <td class="colonneDroiteGauche backgroundBlue" valign="top">
-        <?php include "../../01gauche.php";  ?>
-      </td>
-      <td class="colonneCentrale backgroundWhite">
+  
+ 
+    <body class="backgroundWhite">
+  
+   
+         
+         
+      
         <p class="colorRed bold size7 styleArial backgroundWhite center">
           Chants et hymnes du rugby <br>
           <hr />
@@ -56,9 +49,10 @@ if (isset($_GET['pays'])) $pays  = $_GET['pays'];
 
         <?php include("somHymnes.php"); ?>
         <a name="paroles"></a>
-        <?php
-
-        echo "<hr/>";
+      
+      
+         <hr/>
+      <?php
         // clubs Français
         if ($pays == "bay")
           require 'paysClubs/bayonne.php';
@@ -94,14 +88,10 @@ if (isset($_GET['pays'])) $pays  = $_GET['pays'];
           require 'paysClubs/australie.php';
         elseif ($pays == "arg")
           require 'paysClubs/argentine.php';
-        ?>
-      </td>
-      <td class="colonneDroiteGauche backgroundBlue" valign="top">
-        <?php include("../../00droite.php"); ?>
-      </td>
-    </tr>
-  </table>
-</body>
-<?php require "../footer.php"; ?>
 
-</html>
+        ?>
+
+
+</body>
+       
+  

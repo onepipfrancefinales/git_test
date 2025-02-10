@@ -3,8 +3,6 @@ require "../../connect/connexion1.php";
 $pattern = "/[0-9]{7}/i";
 ?>
 
- 
-
 <table width="1000" class="marginAuto " border="1">
 
   <tr bgcolor="#0099FF" bordercolor="#000000">
@@ -17,12 +15,14 @@ $pattern = "/[0-9]{7}/i";
   <tr class="center bold styleCursive size3 colorWhite backgroundBlack">
     <td> Saisons </td>
     <td> Editions </td>
-    <td> Date</td>
-    <td> Champion</td>
+    <td> Dates</td>
+    <td> Champions</td>
     <td> Finalistes</td>
     <td> Scores</td>
+    <?php if ($mode != "smart") { ?>
     <td> Stades - Villes </td>
-    <td> Affluence </td>
+    <td> Affluences </td>
+    <?php } ?>
   </tr>
   <?php
 // absence de championnat :  2020,1942,1941,1940,1919,1918,1917,1916,1915
@@ -67,8 +67,10 @@ for ($i = 0; $i < $nbreLigne - 1; $i++) {
       <td class="center"> <?php if (preg_match($pattern, $champion[$i]) == 1) { transformerDonnee($champion[$i],$bdd);  $champion[$i]= $nom;}     echo $champion[$i] . ' ' . $comite1[$i]; ?> </td>
       <td> <?php                if (preg_match($pattern, $finaliste[$i]) == 1) { transformerDonnee($finaliste[$i],$bdd);  $finaliste[$i]= $nom;}  echo $finaliste[$i] . ' ' . $comite2[$i]; ?> </td>
       <td class="center"> <?php echo $score1[$i] . ' - ' . $score2[$i] . $scoreplus[$i]; ?> </td>
+      <?php if ($mode != "smart") { ?>
       <td> <?php nomStade($stade[$i], $bdd); echo "<br>" . $ville[$i]; ?> </td>
       <td> <?php echo number_format($public[$i],0,'',' '); ?> </td>
+      <?php } ?>
       </tr>
   <?php
     }

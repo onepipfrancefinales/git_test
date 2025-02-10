@@ -1,10 +1,10 @@
-<table width="100%" border="1" height="91">
+<table width="1000" border="1" height="91">
   <tr bgcolor="#0099FF" bordercolor="#000000">
     <td height="88" class="center size7 bold colorWhite styleCursive"> Le Brennus </td>
   </tr>
 </table>
 <p>&nbsp;</p>
-<table width="90%" border="0" align="center">
+<table width="1000" border="0" align="center">
   <tr>
     <td width="310"><img src="images/brennus/BouclierBrennus.jpg" ></td>
     <td width="673" >
@@ -21,7 +21,7 @@
   </tr>
 </table>
 <br>
-<table width="90%" border="0" align="center">
+<table width="1000" border="0" align="center">
   <tr>
     <td valign="top"> 
       <p>&nbsp;</p>
@@ -51,7 +51,7 @@
   </tr>
 </table>
 <p>&nbsp;</p>
-<table width="90%" border="0" align="center">
+<table width="1000" border="0" align="center">
   <tr>
     <td bordercolor="0"> 
     <p class="bold size5">Le cérémonial :</p>

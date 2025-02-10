@@ -239,7 +239,7 @@ for ($i=0; $i<$intervalleAnneeComite; $i++)
 <?php
 }?>
     <br>
-<?php require ("../bas2.php"); ?>
+<?php require ("../smartFooter.php"); ?>
    
   </div>
  </body>	

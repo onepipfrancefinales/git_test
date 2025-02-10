@@ -49,6 +49,29 @@
     </tr>
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
+            <a class="colorWhite" href="../smart/pf/accueil.php?annee=2024.php"> Palmarès
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td  class="borderWidth1 width50PC ">
+            <br>
+            <p class="size5">
+                <a class="colorBlack" href="../smart/palmares/page_palmares.php?rang=170">Palmarès nationaux<br><span class="size3">Tous les champions de France </span> </a>
+            </p>
+            <br>
+        </td>
+        <td  class="borderWidth1 width50PC ">
+            <br>
+            <p class="size5">
+                <a class="colorBlack" href="smartPage.php?page=palmaresRegions">Palmarès territoriaux et <br> régionaux</a><br> 
+            </p>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
             <a class="colorWhite" href="https://francefinalesrugby.fr" target="_blank"> Accéder au site Internet </a>
         </td>
     </tr>

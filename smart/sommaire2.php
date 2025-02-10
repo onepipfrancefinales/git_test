@@ -29,25 +29,17 @@ require '../resultats/constantes.php';
     <link type="text/css" rel="stylesheet" href="../../smart/10.css">
     <title>Accueil dossiers </title>
 </head>
-
 <body>
 
       <div class= "backgroundWhite">
-      <?php include 'smartHeader.php'; ?>    
-     
-      <?php  require '../dossiers/accueil2.php'; ?>
-     
-      <?php  //require 'smartBody.php'; ?>
+      <?php 
+      include 'smartHeader.php';   
+      require 'smartAccueil.php';
+      require 'smartBody.php'; ?>
     </div>
-   
-</body>
-
+   </body>
 <?php include 'smartFooter.php'; ?>
-
-
 </html>
-
-
 <style>
     .background003366 {
         background-color: #003366;

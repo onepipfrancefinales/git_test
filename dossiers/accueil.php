@@ -2,39 +2,42 @@
 
 <table width="95%" class="borderWidth1 marginAuto">
   <tr>
-    <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1 width50PC"> Actualités </td>
+    <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1 width50PC">
+    <a class="colorWhite"  style="text-decoration: none" href="dossiers/actualites/pageActualites.php">Actualités </a>
+  </td>
   </tr>
   <tr>
     <td colspan="2" class="borderWidth1 ">
       <br>
       <p class="size4">
-        <a class="colorBlack" href="dossiers/actualites/pageActualites.php">Nouvelles régles Word Rugby<br> à compter du 8 février 2025 <br> pour toutes les compétitions</a>
+        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pageActualites.php">Nouvelles régles Word Rugby<br> à compter du 8 février 2025 <br> pour toutes les compétitions</a>
       </p>
       <br>
     </td>
   </tr>
   <tr>
-    <td class="size5 background003366 colorWhite bold borderWidth1 width50PC"> Résultats & <br> Classements </td>
-    <td class="size5 background003366 colorWhite bold borderWidth1">  Accéder <br> à l'application  </td>
+    <td class="size5 background003366 colorWhite bold borderWidth1 width50PC">
+    <a class="colorWhite"  style="text-decoration: none" href="resultats/page_resultats.php"> Résultats & <br> Classements </a>
+  </td>
+    <td class="size5 background003366 colorWhite bold borderWidth1"> 
+    <a class="colorWhite" href="https://francefinalesrugby.fr/smart/sommaire.php"  
+    style="text-decoration: none" target="_blank">  Accéder <br> à l'application  </a></td>
   </tr>
   <tr>
     <td class="borderWidth1"> <p class="size5"> Toutes les compétitions du rugby Français.</p>
       <p class="size4">
-        <a class="colorBlack" href="resultats/page_resultats.php">Compétitions professionnels</a><br>
-        <a class="colorBlack" href="resultats/page_resultats.php">Compétitions Fédérales</a><br>
-        <a class="colorBlack" href="resultats/page_resultats.php">Compétitions Féminines</a><br>
-        <a class="colorBlack" href="resultats/page_resultats.php">Compétitions régionales</a><br>
+        <a style="text-decoration: none" class="colorBlack" href="resultats/page_resultats.php">Compétitions professionnels</a><br>
+        <a style="text-decoration: none" class="colorBlack" href="resultats/page_resultats.php">Compétitions Fédérales</a><br>
+        <a style="text-decoration: none" class="colorBlack" href="resultats/page_resultats.php">Compétitions Féminines</a><br>
+        <a style="text-decoration: none" class="colorBlack" href="resultats/page_resultats.php">Compétitions régionales</a><br>
       </p>
       <br>
     </td>
     <td class="borderWidth1">
-
       <p class="center colorWhite size4 style backgroundRed bold">
-        <a class="colorWhite" href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank">ACCEDER A L'APPLICATION
-
-
-          <br>
-          SMARTPHONE </a>
+        <a class="colorWhite" href="https://francefinalesrugby.fr/smart/sommaire.php"  
+         style="text-decoration: none" target="_blank">ACCEDER A L'APPLICATION
+          <br> SMARTPHONE </a>
       </p>
       <!--
 <a href="https://francefinalesrugby.fr/smart/sommaire.php" target="_blank"><img src="../images/apple.png" alt="apple" height="183" width="184"></a>    
@@ -93,7 +96,6 @@
     <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
      Champions de l'année
     </td>
-   
   </tr>
   <tr>
     <td colspan="2" class="size5 borderWidth1 ">
@@ -106,18 +108,17 @@
 
   <tr>
     <td width="329" class="size5 background003366 colorWhite bold borderWidth1">
-      Expressions rugbystique
+    <a style="text-decoration: none" class="colorWhite" href="dossiers/lexique/pageLexique.php?sommaire=1&lettre=0"> Expressions rugbystique</a>
     </td>
     <td width="340" class="size5 background003366 colorWhite bold borderWidth1">
-
     </td>
   </tr>
   <tr>
     <td width="329" class="size5 borderWidth1 ">
       <br>
-      <a class="colorBlack" href="dossiers/lexique/pageLexique.php?sommaire=1&lettre=0">Lexique du rugby</a><br>
-      <a class="colorBlack" href="dossiers/lexique/pageLexique.php?sommaire=2">Expressions du rugby</a>
-      <a class="colorBlack" href="dossiers/lexique/pageLexique.php?sommaire=3"><br>Phrases célébres</a><br>
+      <a style="text-decoration: none" class="colorBlack" href="dossiers/lexique/pageLexique.php?sommaire=1&lettre=0">Lexique du rugby</a><br>
+      <a style="text-decoration: none" class="colorBlack" href="dossiers/lexique/pageLexique.php?sommaire=2">Expressions du rugby</a>
+      <a style="text-decoration: none" class="colorBlack" href="dossiers/lexique/pageLexique.php?sommaire=3"><br>Phrases célébres</a><br>
       <br>
     </td>
     <td width="340" class="size5 borderWidth1">
@@ -133,7 +134,7 @@
   </tr>
   <tr>
     <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
-      <a class="colorWhite" href="dossiers/hymnes/page_hymnes.php"> Hymnes des plus grandes nations du rugby <br> (paroles et musique)</a>
+      <a  style="text-decoration: none" class="colorWhite" href="dossiers/hymnes/page_hymnes.php"> Hymnes des plus grandes nations du rugby <br> (paroles et musique)</a>
     </td>
   </tr>
   <tr>
@@ -147,15 +148,15 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
-      Séances vidéos
+    <td colspan="2" class="size5 background003366 bold borderWidth1">
+    <a style="text-decoration: none" class="colorWhite" href="dossiers/video/pagevideo.php?choix=<?php echo "ama"; ?>"> Séances vidéos </a>
     </td>
   </tr>
   <tr>
     <td colspan="2" class="borderWidth1">
       <br>
       <p class="size5">
-        <a class="colorBlack" href="dossiers/video/pagevideo.php?choix=<?php echo "ama"; ?>">Série : Péripétie d'un joueur amateur</a><br><br>
+        <a class="colorBlack" style="text-decoration: none" href="dossiers/video/pagevideo.php?choix=<?php echo "ama"; ?>">Série : Péripétie d'un joueur amateur</a><br><br>
         </b>
       </p>
     </td>
@@ -173,13 +174,13 @@
   </tr>
   <tr>
     <td colspan="2" class="size5 background003366 colorWhite bold">
-      3me mi-temps
+    <a class="colorWhite" style="text-decoration: none" href="dossiers/chansons/page_chansons.php"> 3me mi-temps </a>
     </td>
   </tr>
   <tr>
     <td colspan="2" class="size5 ">
       <br>
-      <a href="dossiers/chansons/page_chansons.php"> Chansons paillardes <br> Et chansons de 3me mi-temps</a>
+      <a  style="text-decoration: none" href="dossiers/chansons/page_chansons.php"> Chansons paillardes <br> Et chansons de 3me mi-temps</a>
       <br>
       <br>
     </td>

@@ -1,11 +1,20 @@
  <!---- Corps de la page ---->
 
  <?php
-  echo $page;
+ /*
+echo "smartBody"; echo "<br>";
+echo "page ".$page; echo "<br>";
+echo "pays ".$pays; echo "<br>";
+echo "mode ".$mode; echo "<br>";
+*/
+  
   if ($page == "actualites")
     require '../dossiers/actualites/actualites.php';
   else if ($page == "champions")
+
     require '../dossiers/champions/champions.php';
+      else if ($page == "palmaresRegions")
+      require 'palmares/regions.php';
   else if ($page == "brennus")
     require '../dossiers/brennus/accueil.php';
   else if ($page == "divisions")
@@ -15,8 +24,9 @@
   else if ($page == "lexique") {
     require '../dossiers/lexique/sommaire.php';
     require '../dossiers/lexique/lexique.php';
-  } else if ($page == "hymnes")
+  } else if ($page == "hymnes") {
     require '../dossiers/hymnes/somHymnes.php';
+  }
   else if ($page == "videos") {
     include("../dossiers/video/rugbyAmateur/V2.php");
     include("../dossiers/video/rugbyAmateur/V3.php");
@@ -29,5 +39,5 @@
     require '../dossiers/chansons/chansons.php';
 
   else
-    require '../dossiers/accueil2.php'
+    require 'smartAccueil.php'
   ?>

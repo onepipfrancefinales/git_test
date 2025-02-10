@@ -4,6 +4,7 @@ if ($mode == "smart")
 else
   $adresse = "pageLexique.php";
 ?>
+<br>
 <table width="80%" cellpadding="1" class="marginAuto">
   <tr>
     <td class="som"><a class="colorWhite" href=<?php echo $adresse . "?page=lexique&sommaire=1&lettre=0&mode=" . $mode; ?>>Lexique</a></td>

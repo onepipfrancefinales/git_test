@@ -1,6 +1,6 @@
 
 
-<table width="100%" class="borderWidth1 marginAuto">
+<table width="1000" class="borderWidth1 marginAuto">
 <tr bgcolor="#0099FF" bordercolor="#000000">
     <td colspan="8" height="88" class="center size7 bold colorWhite styleCursive">Les villes</td>
   </tr>
@@ -20,10 +20,10 @@
   </tr>
   <?php for ($i=0; $i< $countVilles ; $i++) { ?>
   <tr> 
-    <td class="borderWidth1"><?php echo $listeVilles[$i];?></td>
-    <td class="borderWidth1"><?php finalesParVille($listeVilles[$i], $bdd);?></td>
-    <td class="borderWidth1"><?php //echo $listeVilles[$i];?></td>
-    <td class="borderWidth1"> <?php countStadesParVille($listeVilles[$i], $bdd);stadesParVille($listeVilles[$i], $countStadesParVille, $bdd);?></td>
+    <td class="borderWidth1 size4 styleArial"><?php echo $listeVilles[$i];?></td>
+    <td class="borderWidth1 size4 styleArial"><?php finalesParVille($listeVilles[$i], $bdd);?></td>
+    <td class="borderWidth1 size4 styleArial"><?php //echo $listeVilles[$i];?></td>
+    <td class="borderWidth1 size4 styleArial"> <?php countStadesParVille($listeVilles[$i], $bdd);stadesParVille($listeVilles[$i], $countStadesParVille, $bdd);?></td>
   </tr>
   <?php
  }
