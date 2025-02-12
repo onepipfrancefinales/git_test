@@ -1,7 +1,6 @@
 <?php
 if ($page == "actualites")
     $titre = "Actualités";
-
 else if ($page == "champions")
     $titre = "Champions de l'année";
 else if ($page == "palmaresRegions")
@@ -22,7 +21,7 @@ else
     $titre = "Tous le rugby";
 ?>
 
-<table width="100%" border="1">
+<table width="98%" border="1">
     <tr>
         <td class="h22">France Finales Rugby</td>
     </tr>

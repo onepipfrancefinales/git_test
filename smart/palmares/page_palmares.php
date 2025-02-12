@@ -18,7 +18,7 @@ $smart = true;
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
-  <title>Palmarès</title>
+  <title> <?php echo "Champions de France " .$division;?></title>
   <link type="text/css" rel="stylesheet" href="../10.css"> 
   <link rel="stylesheet" type="text/css" href="../menu_smart2.css"> 
   <link type="text/css" rel="stylesheet" href="paramTiroir.css"> 
@@ -26,8 +26,7 @@ $smart = true;
   <link rel="stylesheet" type="text/css" href="../../ligne1.css"> 
   <meta name=viewport content="width=device-width, initial-scale=1">
  </head>
-
-<body" >
+<body >
 
 <div class="fixed-header">
 		<div class="container">
@@ -58,12 +57,14 @@ $smart = true;
     <?php	  
     if ($rang < 300){
     palmaresFrance($rang, $finSaison, $bdd);	?>
-	 <p class="palmNoir">
+	 <p class="palmNoir" >
     <?php
     
 		for($i=0; $i< $intervalleAnneeChampion-1; $i++)
 		{
+		echo "<p class=\"palmNoir\" style=\"padding-bottom : 6px\">";
 		echo $tabSaison[$i].' : '.$tabChampion[$i].' '.$tabComite[$i]."<br />";
+		echo "</p>";
 		}
     
   }

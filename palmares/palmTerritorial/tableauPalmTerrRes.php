@@ -7,8 +7,8 @@
     <tr>
       <th class="equipeII width50"></th>
       <th class="equipeII width200">Réserve <br>  honneur</th>
-      <th class="equipeII width200">Réserve  <br> promotion honneur</th>
-      <th class="equipeII width200">Réserve  <br> 1re série</th>
+      <th class="equipeII width200">Réserve <br> promotion honneur</th>
+      <th class="equipeII width200">Réserve <br> 1re série</th>
       <th class="equipeII width200">Réserve <br>  2me série</th>
     </tr>
     <tr>

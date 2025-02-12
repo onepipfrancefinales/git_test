@@ -1,4 +1,4 @@
-<?php if ($annee == 2024 )
+<?php if ($annee >=  2024 )
 {
   ?>
 <table class = "width98PC marginAuto">

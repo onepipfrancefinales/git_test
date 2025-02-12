@@ -317,7 +317,7 @@ else
 -->
 <?php	
 	require '../bas.php';
-	include("../../pub/pub_displayCarre.php");  
+	
 	?>
 	 </div>
 </body>

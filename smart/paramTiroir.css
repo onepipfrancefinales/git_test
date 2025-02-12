@@ -1,20 +1,21 @@
 /* Add some padding on document's body to prevent the content
     to go underneath the header and footer */
     body{        
-        padding-top: 60px;
+       /* padding-top: 60px;*/
         padding-bottom: 40px;
     }
     .container{
         width: 100%;
         margin: 0 auto; /* Center the DIV horizontally */
     }
+    /*gfgfgfg*/
     .fixed-header, .fixed-footer{
-        width: 100%;
+        width: 99%;
         position: fixed;        
       /*  background: #CCCCCC; */
         padding: 10px 0;
         color: #fff;
-		height:280px;
+		height:100px;
     }
     .fixed-header{
         top: 0;
@@ -29,8 +30,8 @@
         padding: 7px 25px;
         display: inline-block;
     }
-    .container p{
-        line-height: 280px; /* Create scrollbar to test positioning */
+    .container div{
+        line-height: 15px; /* Create scrollbar to test positioning */
     }
 
 

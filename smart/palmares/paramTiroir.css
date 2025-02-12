@@ -8,8 +8,9 @@
         width: 100%;
         margin: 0 auto; /* Center the DIV horizontally */
     }
+    /*aaaaaaa*/
     .fixed-header, .fixed-footer{
-        width: 100%;
+        width: 99%;
         position: fixed;        
       /*  background: #CCCCCC; */
         padding: 10px 0;

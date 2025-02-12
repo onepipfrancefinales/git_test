@@ -111,8 +111,8 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 </table>
 
  <?php
-  require "../bas2.php";
-  include("../../pub/pub_displayCarre.php");
+  require "../smartFooter.php";
+
   ?>
   </p>
 </body>
