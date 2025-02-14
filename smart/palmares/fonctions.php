@@ -1,8 +1,6 @@
 <?php
 function infosComite($champ, $bdd)
 {
-//echo "<br>";echo "<br>";echo "<br>";echo "<br>";echo "<br>";echo "<br>";echo "<br>";echo "<br>";
-//echo "<br>";echo "<br>";echo "<br>";echo "<br>";
 
 $numLigue=	substr($champ,0,2);
 //echo "champ : ".$champ;
@@ -32,8 +30,6 @@ $reponse = $bdd->query("SELECT sigle
 			$sigle = $donnees['sigle'];
 			}
 $sigleLigue = "(".$sigle.")";
-
-//echo "sigleLigue : ".$sigleLigue;
 }
 
 function nomDivision($rang, $bdd)
@@ -48,25 +44,42 @@ $reponse = $bdd->query("SELECT division
 								}								
 }
 
-function palmaresLigue($sigleLigue, $annee, $rang, $bdd)
+function palmaresLigue($bdEquipe, $sigleLigue, $comitePlus, $rang, $bdd)
 {
-Global	$tabSaisons, $tabChampions, $intervalleAnnee;
+Global	$tabSaisons, $tabChampions, $saisonMax, $saisonCount;
+
+
+if ($rang < 230)
+$rang2 = 1;
+else 
+$rang2 = 2;
+
+
+$reponse = $bdd->query("SELECT MAX(saison) , COUNT(saison)
+						FROM  $bdEquipe
+						WHERE titre = 'Champion' 
+						AND ( comite1 = '$sigleLigue' OR comite1 = '$comitePlus')
+						AND rang ='$rang'  
+						AND rang2 = '$rang2'");
+
+while ($row = $reponse->fetch()) {
+	$saisonMax = $row[0];
+	$saisonCount = $row[1];
+}
+
+
+
 
 $tabSaisons = array();	
 $tabChampions = array();
 
-$intervalleAnnee = $annee-2022;
-
-  for($i=2022; $i<=$annee; $i++)
-  {
 	$reponse = $bdd->query("
 			   SELECT saison, champion, comite1 
-			   FROM bdequipe1
+			   FROM $bdEquipe
 			   WHERE titre = 'Champion' 
-			   AND comite1 = '$sigleLigue' 
+			   AND ( comite1 = '$sigleLigue' OR comite1 = '$comitePlus')
 			   AND rang='$rang'  
-			   AND rang2= '1'
-			   AND saison > 2022
+			   AND rang2= '$rang2'
 			   ORDER BY saison DESC"); 
 	
 	while ($donnees = $reponse->fetch() )
@@ -74,10 +87,9 @@ $intervalleAnnee = $annee-2022;
 	 $tabSaisons[] = $donnees['saison'];
 	 $tabChampions[] = $donnees['champion'];	
     }
-  }
 }
 
-
+/*
 function palmaresLigue2018_2022($sigleLigue, $annee, $rang, $bdd)
 {
 Global	$tabSaisons18_22, $tabChampions18_22;
@@ -105,7 +117,7 @@ $tabChampions18_22 = array();
     }
   }
 }
-
+*/
 function palmaresFrance($rang, $annee, $bdd)
 {
 global $tabSaison, $tabChampion, $tabComite, $intervalleAnneeChampion;
@@ -158,10 +170,10 @@ $intervalleAnneeChampion=$annee-$minAnneeChampion;
 
 
 
-
+/*
 function palmaresComite($comitePlus, $rang, $bdd)
 {
-
+/*
 //echo "--------------------";
 //echo $comitePlus ;echo "<br />";
 //echo $rang ;echo "<br />";
@@ -200,5 +212,7 @@ $intervalleAnneeComite=2019-$maxAnneeComite;
 	 $tabChampionsComite[] = $donnees['champion'];				
     }
   }
+  
 }
+*/
 ?>

@@ -2,53 +2,34 @@
 if (isset($_GET['bddComite'])) $bddComite = $_GET['bddComite'];
 if (isset($_GET['champ'])) $champ = $_GET['champ'];
 if (isset($_GET['comite'])) $comite = $_GET['comite'];
+if (isset($_GET['seniors'])) $seniors = $_GET['seniors']; else $seniors = "equipeUne";
 
-
-//echo "bddComite : ".$bddComite;echo "<br>";
-//$comite = $bddComite;
-$champ = substr($champ, 0, 5) * 10;
-//echo "champ : ".$champ;echo "<br>";
-// prevoir en fonction de la longueur de la division �tudie�
-/*
-if (substr($champ,3,3) == 170)
-$division = "Honneur";
-else if (substr($champ,3,3) == 180)
-$division = "Promotion honneur";
-else if (substr($champ,3,3)==190)
-$division = "1re série";
-else if (substr($champ,3,3)==200)
-$division = "2me série";
-else if (substr($champ,3,3)==210)
-$division = "3me série";
-else if (substr($champ,3,3)==220)
-$division = "4me série";
-*/
-
-
-
-
+if (substr($champ, 3, 1) != 9)
 $rang = substr($champ, 3, 2) * 10;
-//echo "rang".$rang;
+else
+$rang = substr($champ, 3, 4);
+
 $comitePlus = "(" . '' . $comite . '' . ")";
 
 require("../../saison.php");
 require 'fonctions.php';
-//require '../../connect/connexion5.php';
-
-
-
 require '../../connect/connexion1.php';
+
+
+if ($seniors == "equipeUne")
+  $bdEquipe = "bdequipe1";
+else {
+  $bdEquipe = "bdequipe2";
+}
+
 infosComite($champ, $bdd);
 nomDivision($rang, $bdd);
 infosLigue($codeLigue, $bdd);
-palmaresLigue($sigleLigue, $annee, $rang, $bdd);
-palmaresLigue2018_2022($sigleLigue, $annee, $rang, $bdd);
-palmaresComite($comitePlus, $rang, $bdd);
+palmaresLigue($bdEquipe, $sigleLigue, $comitePlus, $rang, $bdd);
 ?>
 
-<html>
-
-<head>
+<!DOCTYPE html>
+<html lang="fr">
   <meta name="description"
     content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comit�s territoriaux, Tous les championnats de rugby, f�d�rale 2, f�d�rale 3, f�d�rale 1, top 14.">
   <meta name="keywords"
@@ -77,35 +58,29 @@ palmaresComite($comitePlus, $rang, $bdd);
   <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body text="#000000">
-  <div class="fixed-header">
-    <div class="container">
-
-      <table width="100%" border="1">
+<body>
+  <div class="fixed-header backgroundWhite">
+    <div class="container ">
+    
+    <table width="100%" border="1">
         <tr>
           <td width="5%" class="h22" height="20"><a href="../sommaire.php"><img src="../../images/smart/flecheGauche.jpg" width="27" height="20"></a></td>
           <td width="95%" class="h22" height="20"> France Finales Rugby </td>
         </tr>
         <tr>
-          <td colspan="2" class="h12"><?php echo "Palmarès Régionaux " . "<br />" . "Ligue " . $nomCompletLigue; ?></td>
+          <td colspan="2" class="h12"><?php echo "Palmarès Régionaux " . "<br>" . "Ligue " . $nomCompletLigue; ?></td>
         </tr>
       </table>
 
       <?php
-      //include("../pub20.php"); 
-      
       include 'choixLigueAvecDifferentsComites.php';
       include 'choixSeniors.php';
       include 'menuTerrReg.php'; ?>
     </div>
   </div>
-
   <!-- fin entete figée-------->
 
-
   <div class="container">
-
-
     <!-- affichage palmarès ligue -->
     <?php
     if (
@@ -115,137 +90,159 @@ palmaresComite($comitePlus, $rang, $bdd);
       or $comite == "pch" or $comite == "pa"
     ) {
     ?>
-      <br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br />
+      <div style="margin-top:330px"></div>
     <?php
     } else {
     ?>
-   <br />    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div style="margin-top:300px "></div>
+    <?php
+    }
+
+
+    /* affichage titre palmarès (après-2022) -->*/
+
+   // echo "test2 " .; echo "<br>";
+   $champ2 = $rang;
+   if (substr($champ, 3, 3) < 200 or (substr($champ, 3, 3) > 260 and substr($champ, 3, 3) < 280) or $champ2 > 9000) {
+    ?>
+      <p class="palm"> <?php echo "Champions " . 'Ligue ' . $nomCompletLigue . ' ' . $division; ?> </p>
+    <?php
+    }
+
+    //**************  anneeEnCours - 2023  *******************/
+    $intervalle1 =  $saisonMax - 2022;
+    for ($i = 0; $i < $intervalle1; $i++) {
+    ?>
+      <p class="palmNoir center" style="margin-top:9px; margin-bottom:9px"><?php echo $tabSaisons[$i] . ' ' . $tabChampions[$i]; ?></p>
     <?php
     }
     ?>
 
+    <br>
 
-    <!-- affichage titre palmarès (après-2022) -->
-    <?php
-    if (substr($champ, 3, 3) < 200) {
-    ?>
-      <br /><br /><br />
-      <div class="palm">
-     
-        <?php echo "Champions " . 'Ligue ' . $nomCompletLigue . ' ' . $division; ?>
-      </div>
-
-    <?php
-    }
-    ?>
-    <br />
-    <?php
-    for ($i = 0; $i < $intervalleAnnee; $i++) {
-    ?>
-      <table align="center">
-        <tr>
-          <td class="palmNoir"><?php echo $tabSaisons[$i]; ?></td>
-          <td class="palmNoir"><?php echo $tabChampions[$i]; ?></td>
-        </tr>
-      </table>
-    <?php
-    }
-    ?>
-
-    <br />
-
-    <!-- affichage titre palmarès ligue (2018-2022) -->
+    <!-- affichage titre palmarès ligue (2018-2022) 
+      //**************  2022 - 2019  *******************/
+    -->
     <div class="palm">
-
-
-
       <?php
 
-      if (substr($champ, 3, 3) == 170)
-        $division = "Honneur";
-      else if (substr($champ, 3, 3) == 180)
-        $division = "Promotion honneur";
-      else if (substr($champ, 3, 3) == 190)
-        $division = "1re série";
-      else if (substr($champ, 3, 3) == 200)
-        $division = "2me série";
-      else if (substr($champ, 3, 3) == 210)
-        $division = "3me série";
-      else if (substr($champ, 3, 3) == 220)
-        $division = "4me série";
+      switch (substr($champ, 3, 3)) {
+        case 170:
+          $division = "Honneur";
+          break;
+        case 180:
+          $division = "Promotion honneur";
+          break;
+        case 190:
+          $division = "1re série";
+          break;
+        case 200:
+          $division = "2me série";
+          break;
+        case 210:
+          $division = "3me série";
+          break;
+        case 220:
+          $division = "4me série";
+          break;
+        case 270:
+          $division = "Réserve honneur";
+          break;
+        case 9180:
+          $division = "Réserve Promotion honneur";
+          break;
+        case 9190:
+          $division = "Réserve 1re série";
+          break;
+        case 9200:
+          $division = "Réserve 2me série";
+          break;
+      }
+      
+      if (substr($champ, 3, 3) > 190 and substr($champ, 3, 3) < 250) {
+
+        echo "<br>" . "<br>" . "<br>" . "<br>" ;
+      }
       ?>
-      <span class="colorBlack size3">2023 - Refonte des divisions : Passage de 6 à 3 niveaux de compétitions.</span>
-    <br><br>
+      <span class="colorBlack size3">2023 - Refonte des divisions : Passage de 6 à 3 niveaux de compétitions.<br>
+        suppression des 2me, 3me et 4me séries.
+      </span>
+      <br><br>
       <?php
       echo "Champions " . 'Ligue ' . $nomCompletLigue . ' ' . $division; ?>
     </div>
-    <br />
+    <br>
     <?php
-    for ($i = 0; $i < 4; $i++) {
+    $intervalle2 =  $intervalle1 + 4;
+    for ($i = $intervalle1; $i < $intervalle2; $i++) {
     ?>
-      <table align="center">
-        <tr>
-          <td class="palmNoir"><?php echo $tabSaisons18_22[$i]; ?></td>
-          <td class="palmNoir"><?php echo $tabChampions18_22[$i]; ?></td>
-        </tr>
-      </table>
+      <p class="palmNoir center" style="margin-top:9px; margin-bottom:9px"><?php echo $tabSaisons[$i] . ' ' . $tabChampions[$i]; ?></p>
     <?php
     }
     ?>
 
-    <!-- affichage titre palmarès comités -->
+    <!-- affichage titre palmarès comités
+       //**************  2018 - ......  *******************/   -->
     <p class="palm">
       <?php
-      if (substr($champ, 3, 3) == 170)
-        $division = "Honneur";
-      else if (substr($champ, 3, 3) == 180)
-        $division = "Promotion honneur";
-      else if (substr($champ, 3, 3) == 190)
-        $division = "1re série";
-      else if (substr($champ, 3, 3) == 200)
-        $division = "2me série";
-      else if (substr($champ, 3, 3) == 210)
-        $division = "3me série";
-      else if (substr($champ, 3, 3) == 220)
-        $division = "4me série";
-
-      if ($comite == "ap") $nomCompletComite = "des Alpes";
-      elseif ($comite == "au") $nomCompletComite = "d'Auvergne";
-      elseif ($comite == "da") $nomCompletComite = "Drôme Ardèche";
-      elseif ($comite == "ly") $nomCompletComite = "du Lyonnais";
-
-      elseif ($comite == "be") $nomCompletComite = "du Béarn";
-      elseif ($comite == "cbl") $nomCompletComite = "Côte Basque Landes";
-      elseif ($comite == "ca") $nomCompletComite = "Côte d'Argent";
-      elseif ($comite == "lm") $nomCompletComite = "du Limousin";
-      elseif ($comite == "pch") $nomCompletComite = "Poitou Charente";
-      elseif ($comite == "pa") $nomCompletComite = "Périgord Agenais";
-
-      elseif ($comite == "ab") $nomCompletComite = "Armagnac Bigorre";
-      elseif ($comite == "ld") $nomCompletComite = "Languedoc";
-      elseif ($comite == "mpy") $nomCompletComite = "Midi Pyrénées";
-      elseif ($comite == "pa") $nomCompletComite = "Pays Catalan";
+      switch ($comite) {
+        case "ap":
+          $nomCompletComite = "des Alpes";
+          break;
+        case "au":
+          $nomCompletComite = "d'Auvergne";
+          break;
+        case "da":
+          $nomCompletComite = "Drôme Ardèche";
+          break;
+        case "ly":
+          $nomCompletComite = "du Lyonnais";
+          break;
+       
+        case "be":
+          $nomCompletComite = "du Béarn";
+          break;
+        case "cbl":
+          $nomCompletComite = "Côte Basque Landes";
+          break;
+        case "ca":
+          $nomCompletComite = "Côte d'Argent";
+          break;
+        case $comite == "lm":
+          $nomCompletComite = "du Limousin";
+          break;
+        case $comite == "pch":
+          $nomCompletComite = "Poitou Charente";
+          break;
+        case $comite == "pa":
+          $nomCompletComite = "Périgord Agenais";
+          break;
+        
+        case $comite == "ab":
+          $nomCompletComite = "Armagnac Bigorre";
+          break;
+        case $comite == "ld":
+          $nomCompletComite = "Languedoc";
+          break;
+        case $comite == "mpy":
+          $nomCompletComite = "Midi Pyrénées";
+          break;
+        case $comite == "pc":
+          $nomCompletComite = "Pays Catalan";
+          break;
+      }
       ?>
-<span class="colorBlack size3">2019 - Reformes Administratives : Suppression des 26 comités territoriaux remplacés par 13 ligues calquées sur les 13 regions administratives françaises.</span>
-<br><br>
-     <?php 
-      echo "Champions " . 'comité ' . $nomCompletComite . ' ' . $division; ?>
-         
+      <span class="colorBlack size3">2019 - Reformes Administratives : Suppression des 26 comités territoriaux remplacés par 13 ligues calquées sur les 13 regions administratives françaises.</span>
+      <br><br>
+      <?php echo "Champions " . 'comité ' . $nomCompletComite . ' ' . $division; ?>
     </p>
     <?php
-    for ($i = 0; $i < $intervalleAnneeComite; $i++) { ?>
-      <table align="center">
-        <tr>
-          <td class="palmNoir"><?php echo $tabSaisonsComite[$i]; ?></td>
-          <td class="palmNoir"><?php echo $tabChampionsComite[$i]; ?></td>
-        </tr>
-      </table>
+    for ($i = $intervalle2; $i < $saisonCount; $i++) { ?>
+      <p class="palmNoir center" style="margin-top:9px; margin-bottom:9px"><?php echo $tabSaisons[$i] . ' ' . $tabChampions[$i]; ?></p>
     <?php
     } ?>
     <br>
     <?php require("../smartFooter.php"); ?>
-
   </div>
 </body>
 

@@ -1,4 +1,4 @@
-<table width="100%" align="center">
+<table width="100%" align="center" class="backgroundWhite">
   <tr > 
     <td width="50%" align="center">       
     <ul class="menu-demo2" >

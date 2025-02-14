@@ -180,7 +180,7 @@
   <tr>
     <td colspan="2" class="size5 ">
       <br>
-      <a  style="text-decoration: none" href="dossiers/chansons/page_chansons.php"> Chansons paillardes <br> Et chansons de 3me mi-temps</a>
+      <a  style="text-decoration: none" href="dossiers/chansons/page_chansons.php?chanson=51j"> Chansons paillardes <br> Et chansons de 3me mi-temps</a>
       <br>
       <br>
     </td>

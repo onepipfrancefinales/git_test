@@ -57,11 +57,11 @@ nomLigue2($bddComite, $champ, $bdd);
 
 <body 
 >
-	<div class="fixed-header">
+	<div class="fixed-header backgroundWhite">
 		<div class="container">
 			<table class="width98PC borderColorBlack borderWidth1">
 				<tr class="borderColorBlack borderWidth1">
-					<td class="h22 width5PC"><a href="../../sommaire.php"><img src="../images/smart/flecheGauche.jpg" width="27" height="20" alt="fléche retour"></a></td>
+					<td class="h22 width5PC"><a href="/smart/sommaire.php"><img src="../images/smart/flecheGauche.jpg" width="27" height="20" alt="fléche retour"></a></td>
 					<td class="h22 width95PC"> France Finales Rugby </td>
 				</tr>
 				<tr>
@@ -136,7 +136,7 @@ nomLigue2($bddComite, $champ, $bdd);
 		}
 
 		if ($bddComite == "fed3NE" or $bddComite == "pro") {
-			echo "<br><br><br></br><br></br><br></br></br><br><br><br>";
+			echo "<br><br><br><br><br><br></br><br></br><br></br></br><br><br><br>";
 		} elseif ($bddComite == "ab" or $bddComite == "au" or $bddComite == "ca") {
 			echo "<br><br><br><br><br><br><br><br></br><br><br>";
 		} else {

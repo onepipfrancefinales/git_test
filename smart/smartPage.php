@@ -9,15 +9,7 @@ if (isset($_GET['lettre'])) $lettre = $_GET['lettre'];
 if (isset($_GET['chanson'])) $chanson = $_GET['chanson'];
 if (isset($_GET['pays'])) $pays = $_GET['pays'];
 
-/*
-echo "smartPage"; echo "<br>";
-echo "page ".$page; echo "<br>";
-echo "pays ".$pays; echo "<br>";
-echo "mode ".$mode; echo "<br>";
-*/
-//echo "page ".$page; echo "<br>";
 
-//echo "comite : ".$comite;
 require '../saison.php';
 require '../consultation/fonctions.php';
 require '../connect/connexion1.php';

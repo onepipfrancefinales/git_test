@@ -1,8 +1,6 @@
  
         <?php
 echo $chanson;
-
-
         echo "<br>";
         include "introChansons.php";
         echo "<br>";

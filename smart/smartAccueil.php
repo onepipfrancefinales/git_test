@@ -16,17 +16,17 @@
     </tr>
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="../smart/sommaire.php">Résultats & <br> Classements</a>
+            <a class="colorWhite" href="/smart/sommaireOrigine.php">Résultats & <br> Classements</a>
         </td>
     </tr>
     <tr>
         <td colspan="2" class="borderWidth1 ">
             <p class="size4"> Toutes les compétitions du rugby Français.</p>
             <p class="size3">
-                <a class="colorBlack" href="../smart/sommaire.php">Compétitions professionnels</a><br>
-                <a class="colorBlack" href="../smart/sommaire.php">Compétitions Fédérales</a><br>
-                <a class="colorBlack" href="../smart/sommaire.php">Compétitions Féminines</a><br>
-                <a class="colorBlack" href="../smart/sommaire.php">Compétitions régionales</a><br>
+                <a class="colorBlack" href="/smart/sommaireOrigine.php">Compétitions professionnels</a><br>
+                <a class="colorBlack" href="/smart/sommaireOrigine.php">Compétitions Fédérales</a><br>
+                <a class="colorBlack" href="/smart/sommaireOrigine.php">Compétitions Féminines</a><br>
+                <a class="colorBlack" href="/smart/sommaireOrigine.php">Compétitions régionales</a><br>
             </p>
             <br>
         </td>
@@ -147,7 +147,7 @@
     </tr>
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1">
-            <a class="colorWhite" href="smartPage.php?page=champions&mode=smart; ?>">
+            <a class="colorWhite" href="smartPage.php?page=champions&mode=smart">
                 Champions de l'année
             </a>
         </td>
@@ -155,7 +155,7 @@
     <tr>
         <td colspan="2" class="size4 borderWidth1 ">
             <br>
-            <a class="colorBlack" href="smartPage.php?page=champions&mode=smart; ?>">Tous les champions de France <?php echo $annee - 1; ?></a><br>
+            <a class="colorBlack" href="smartPage.php?page=champions&mode=smart">Tous les champions de France <?php echo $annee - 1; ?></a><br>
             <br>
         </td>
     </tr>
@@ -167,10 +167,10 @@
     <tr>
         <td colspan="2" class="size4 borderWidth1 ">
             <br>
-            <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=1&lettre=0&mode=<?php echo "smart"; ?>">Lexique du rugby</a><br>
-            <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=2&mode=smart; ?>">Expressions du rugby</a><br>
-            <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=3&mode=smart; ?>">Phrases célébres</a><br>
-            <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=4&mode=smart; ?>">Expressions médiatiques</a><br>
+            <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=1&lettre=0">Lexique du rugby</a><br>
+            <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=2">Expressions du rugby</a><br>
+            <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=3">Phrases célébres</a><br>
+            <a class="colorBlack" href="smartPage.php?page=lexique&mode=smart&sommaire=4">Expressions médiatiques</a><br>
             <br>
         </td>
     </tr>
@@ -190,14 +190,14 @@
     </tr>
     <tr>
         <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
-            <a class="colorWhite" href="smartPage.php?page=videos&mode=smart; ?>"> Séances vidéos</a>
+            <a class="colorWhite" href="smartPage.php?page=videos&mode=smart"> Séances vidéos</a>
         </td>
     </tr>
     <tr>
         <td colspan="2" class="borderWidth1">
             <br>
             <p class="size4">
-                <a class="colorBlack" href="smartPage.php?page=videos&mode=smart; ?>">Série : Péripétie d'un joueur amateur</a><br><br>
+                <a class="colorBlack" href="smartPage.php?page=videos&mode=smart">Série : Péripétie d'un joueur amateur</a><br><br>
 
                 </b>
             </p>
@@ -223,7 +223,7 @@
     <tr>
         <td colspan="2" class="size4 ">
             <br>
-            <a href="smartPage.php?chanson=bal&page=chansons&mode=smart; ?>"> Chansons paillardes <br> Et chansons de 3me mi-temps</a>
+            <a href="smartPage.php?chanson=bal&page=chansons&mode=smart"> Chansons paillardes <br> Et chansons de 3me mi-temps</a>
             <br>
             <br>
         </td>

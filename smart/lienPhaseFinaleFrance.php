@@ -16,7 +16,7 @@ $division =substr($champ,3,3);
 }
 </script>
 
-<table align="center" width="90%">
+<table align="center" width="90%" class="backgroundWhite">
 <tr>
 <!-- Affichage des phases finales champ de France -->
 <td class="france"> 
@@ -46,11 +46,6 @@ elseif ($cmt == 816216)
 	</td>
 <?php
 }
-
-
-
-
-
 ?>
 </tr>
 </table>
