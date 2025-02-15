@@ -1,8 +1,7 @@
 <?php
 if (isset($_GET['page'])) $page = $_GET['page'];else $page = "accueil";
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
-echo "page : " . $page;
-echo "mode : " . $mode;
+
 require "../../connect/connexion1.php";
 require "fonctionsBrennus.php";
 champFrance($bdd);
@@ -53,6 +52,37 @@ if ($page == "accueil") {
         <?php include "haut.php"; ?>
         <br>
         <?php
+
+switch($page) {
+
+ case "accueil":
+    include 'accueil.php';
+    break;
+    break;
+  case "brennus":
+    include 'lebouclier.php';
+    break;
+ case  "finales":
+    include 'lesfinales_copy.php';
+    break;
+ case "premieres":
+    include '1fois.php';
+    break;
+ case "records":
+    include 'records.php';
+    break;
+ case "stades":
+    include 'stades_copy.php';
+    break;
+ case "villes":
+    include 'villes_copy.php';
+    break;
+  }
+
+
+
+
+/*
         if ($page == "accueil") {
           include 'accueil.php';
         } elseif ($page == "brennus") {
@@ -68,6 +98,7 @@ if ($page == "accueil") {
         } elseif ($page == "villes") {
           include 'villes_copy.php';
         }
+          */
         ?>
       </td>
 

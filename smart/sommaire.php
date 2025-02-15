@@ -10,7 +10,9 @@ require '../connect/connexion1.php';
 require '../resultats/constantes.php';
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
   <meta name="description"
     content="Tout sur le comité territorial <?php echo $titre; ?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comit�); les effectifs; les palmar�s nationaux; les palmar�s territoriaux et l'ensemble des clubs composant le comit� avec un lien pour acc�der aux diff�rents clubs.">
@@ -23,25 +25,27 @@ require '../resultats/constantes.php';
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="All">
 
-  <link type="text/css" rel="stylesheet" href="../../ligne1.css" />
-    <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
-    <link type="text/css" rel="stylesheet" href="../dossiers.css">
-    <link type="text/css" rel="stylesheet" href="../../smart/10.css">
-    <title>Accueil dossiers </title>
+  <link type="text/css" rel="stylesheet" href="../../ligne1.css">
+  <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
+  <link type="text/css" rel="stylesheet" href="../dossiers.css">
+  <link type="text/css" rel="stylesheet" href="../../smart/10.css">
+  <title>Accueil dossiers </title>
 </head>
+
 <body>
 
-      <div class= "backgroundWhite">
-      <?php 
-      include 'smartHeader.php';   
-      require 'smartAccueil.php';
-      require 'smartBody.php'; ?>
-    </div>
-   </body>
+  <div class="backgroundWhite">
+    <?php
+    include 'smartHeader.php';
+    require 'smartAccueil.php';
+    require 'smartBody.php'; ?>
+  </div>
+</body>
 <?php include 'smartFooter.php'; ?>
+
 </html>
 <style>
-    .background003366 {
-        background-color: #003366;
-    }
+  .background003366 {
+    background-color: #003366;
+  }
 </style>

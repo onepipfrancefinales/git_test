@@ -11,7 +11,7 @@ echo $test; echo "<br>";
 
 
 
-<table width="100%" class="center">
+<table width="100%" class="backgroundWhite">
   <tr> 
     <td width="50%" >         
 	  <ul class="menu-demo2">

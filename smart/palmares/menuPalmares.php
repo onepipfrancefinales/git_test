@@ -1,5 +1,7 @@
-<hr />
-<table width="100%" border="0" align="center">
+<hr class="backgroundWhite" style="margin-top:0px; margin-bottom:0px; border-color:white;border-style:solid; border-width:0px;">
+<hr style="margin-top:0px; margin-bottom:0px">
+<hr class="backgroundWhite border-color:white" style="margin-top:0px; margin-bottom:0px; border-color:white">
+<table width="100%" border="0" class=" backgroundWhite marginAuto">
   <tr> 
     <td width="20%" height="28"> 
       <div align="center"> 
@@ -77,4 +79,5 @@
     </td>
   </tr>
 </table>
-<hr />
+<hr class="backgroundWhite" style="margin-top:0px; margin-bottom:0px; border-color:white;border-style:solid; border-width:0px;">
+<hr style="margin-top:0px; margin-bottom:0px">

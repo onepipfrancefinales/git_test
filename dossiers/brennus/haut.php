@@ -15,7 +15,11 @@
     <td width="244" class="size4"><a href="pagesBrennus.php?page=villes&mode=<?php echo $mode;?>"><b>Les Villes</a></td>
   </tr>
   <tr class="backgroundBlack"> 
+   <?php if ($mode=="smart") { ?>
+  <td colspan="4" class="center size4"><a class="bold colorWhite" href="../../smart/sommaire.php">Retour sur l'appli France Finales Rugby</a></td>
+  <?php } else { ?>
     <td colspan="4" class="center size4"><a class="bold colorWhite" href="/index.php">Retour sur le site France Finales Rugby</a></td>
+    <?php }  ?>
   </tr>
 </table>
 

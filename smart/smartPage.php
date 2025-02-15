@@ -39,7 +39,8 @@ require '../resultats/constantes.php';
 <body>
 
       <div class= "backgroundWhite">
-      <?php include 'smartHeader.php'; ?>    
+      <?php include 'smartHeader.php'; ?>  
+      <br>  
       <?php  require 'smartBody.php'; ?>
     </div>
    

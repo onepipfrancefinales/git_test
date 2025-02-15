@@ -16,7 +16,7 @@ $division =substr($champ,3,3);
 }
 </script>
 
-<table align="center" width="90%" class="backgroundWhite">
+<table width="95%" class="backgroundWhite marginAuto">
 <tr>
 <!-- Affichage des phases finales champ de France -->
 <td class="france"> 

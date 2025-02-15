@@ -6,7 +6,7 @@ if ($bddComite =="fed3NE" and $champ=="991161")
 {
  ?>
 
-<table class="sommaireFed3" align="center" >
+<table class="sommaireFed3  backgroundWhite marginAuto" >
   <tr> 
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS&ancre=#1"> P1 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS&ancre=#2"> P2 </a></td>
@@ -35,8 +35,7 @@ elseif ($bddComite =="fed3NE" and $champ=="991261")
 {
  
  ?>
-
-<table class="sommaireFed3" align="center" >
+<table class="sommaireFed3 backgroundWhite marginAuto" >
   <tr> 
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS&ancre=#1"> P1 </a></td>
     <td class="tab3"><a href="171.php?bddComite=fed3NE&comite=fed3NE&champ=991261&comite2=fed3GS&ancre=#2"> P2 </a></td>

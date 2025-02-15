@@ -1,3 +1,4 @@
+
 <hr class="backgroundWhite" style="margin-top:0px; margin-bottom:0px; border-color:white;border-style:solid; border-width:0px;">
 <hr style="margin-top:0px; margin-bottom:0px">
 <hr class="backgroundWhite border-color:white" style="margin-top:0px; margin-bottom:0px; border-color:white">
@@ -72,11 +73,19 @@
 }
   else
 {
+// 4 divisions
+$tab4div = array('mpy','ca');
+// 2 divisions
+$tab2div= array('au','be','da','idf','lm','ly','n','pa','pch');
 ?>
+
 <table width="100%" border="0" align="center"  class="backgroundWhite">
   <tr>
+  
+
     <td height="28">
-      <div class="center size2 bold">
+      <div class="center size2 bold">  
+
         <ul class="menu-demo2">
           <li><a href="../palmares/pagePalmTerr.php?seniors=equipeDeux&bddComite=<?php echo $bddComite; ?>&comite=<?php echo $comite; ?>&champ=<?php echo substr($champ, 0, 3) . '270'; ?>">
           Réserve <br /> Honneur 
@@ -85,6 +94,9 @@
         </ul>
       </div>
     </td>
+<?php
+  if (in_array($comite, $tab2div ) or in_array($comite, $tab4div )) {
+    ?> 
     <td height="28">
       <div class="center size2 bold">
         <ul class="menu-demo2">
@@ -95,6 +107,10 @@
         </ul>
       </div>
     </td>
+<?php }
+
+  if (in_array($comite, $tab4div )) {
+    ?> 
     <td height="28">
       <div class="center size2 bold">
         <ul class="menu-demo2">
@@ -114,7 +130,9 @@
           </li>
         </ul>
       </div>
-    </td>   
+    </td> 
+    <?php }
+?>
   </tr>
 </table>
 

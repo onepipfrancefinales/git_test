@@ -85,9 +85,9 @@ nomLigue2($bddComite, $champ, $bdd);
 				<tr>
 					<td>
 
-						<?php
-						echo "<br>";
-
+						
+					<hr class="backgroundWhite" style="height:25px;margin-top:0px; margin-bottom:0px; border-color:white;border-style:solid; border-width:0px;">
+					<?php
 						$champLigue = substr($champ, 0, 2) * 10;
 						$champDiv = substr($champ, -3);
 
@@ -102,8 +102,10 @@ nomLigue2($bddComite, $champ, $bdd);
 					</td>
 				</tr>
 			</table>
+			<hr class="backgroundWhite" style="height:25px;margin-top:0px; margin-bottom:0px; border-color:white;border-style:solid; border-width:0px;">
+
 			<?php
-			echo "<br>";
+		
 			//include("texte_defilant.htm");
 
 			if ($bddComite == "ab" or $bddComite == "au" or $bddComite == "ca")
@@ -118,7 +120,8 @@ nomLigue2($bddComite, $champ, $bdd);
 				require("sommaireParticulier.php");
 			}
 			?>
-			<hr>
+			<hr class="backgroundWhite" style="margin-top:0px; margin-bottom:0px; border-color:white;border-style:solid; border-width:0px;">
+			<hr style="margin-top:0px; margin-bottom:0px">
 
 		</div>
 	</div>

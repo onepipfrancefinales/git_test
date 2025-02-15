@@ -52,7 +52,7 @@ function palmaresFrance($rang, $annee, $bdd)
 
 	$reponse = $bdd->query("SELECT Min(saison)
 						FROM $table
-							WHERE championnat='de France' and rang=$rang and titre='champion' 
+							WHERE championnat='de France' and rang=$rang and (titre='champion'  or titre='vainqueur')
 							ORDER BY saison DESC");
 
 	$row = $reponse->fetch();
@@ -68,7 +68,7 @@ function palmaresFrance($rang, $annee, $bdd)
 	for ($i = $minAnneeChampion; $i <= $annee; $i++) {
 		$reponse = $bdd->query("SELECT saison, champion, comite1, division 
 							FROM $table
-							WHERE championnat='de France' and rang=$rang and titre='champion' 
+							WHERE championnat='de France' and rang=$rang and (titre='champion'  or titre='vainqueur')
 							ORDER BY saison DESC");
 
 		while ($donnees = $reponse->fetch()) {
