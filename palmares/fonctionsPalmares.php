@@ -591,7 +591,7 @@ echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[0] . "<h2>";
 	//palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd);
 
 	//Période 2 à count($tabNomDivision): nombre de période pour la division  traitée
-	echo "count :".count($tabNomDivision);
+	//echo "count :".count($tabNomDivision);
 	for ($i = 0; $i < count($tabNomDivision) - 1; $i++) {
 		echo "<br>";
 		if ($smart != true) 
