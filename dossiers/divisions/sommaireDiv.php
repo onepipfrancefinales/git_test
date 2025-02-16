@@ -17,11 +17,20 @@ $adresse="pageEvolutionsDivisions.php";
       <td class = "size3">
       <a  class="colorBlack" href=<?php echo $adresse."?page=divisions&type=feminines&mode=".$mode; ?>>Féminines</a></td>
       <td class = "size3">
+      <a  class="colorBlack" href=<?php echo $adresse."?page=divisions&type=seniors2&mode=".$mode; ?>>Réserves</a></td>
+   
+   <?php if ($mode == "smart") {
+        echo "</tr>";
+        echo "<tr>";
+    }
+    ?>
+
+      <td class = "size3">
       <a class="colorBlack" href=<?php echo $adresse."?page=divisions&type=jeunes&mode=".$mode; ?>>Jeunes</a></td>
       <td class = "size3">
       <a  class="colorBlack" href=<?php echo $adresse."?page=divisions&type=espoirs&mode=".$mode; ?>>Espoirs</a></td>    
       <td class = "size3">
-      <a  class="colorBlack" href=<?php echo $adresse."?page=divisions&type=seniors2&mode=".$mode; ?>>Réserves</a></td>
+     
     </tr>
   </table>
  <br>

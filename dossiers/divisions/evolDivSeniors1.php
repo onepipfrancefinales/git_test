@@ -13,7 +13,7 @@
 
   <!-- Division 1  1896 - 1905  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="2" class="bgCCCCCC">
         <span class="colorRed bold">Création d'un premier niveau </span>
@@ -32,7 +32,7 @@
 
   <!-- Division 2  1906-1911   -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="3" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (2me)</span>
@@ -53,7 +53,7 @@
 
   <!-- Division 3  1912-1919   -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="4" class="bgCCCCCC">
         <span class="colorRed bold "> Création d'un niveau (3me)</span>
@@ -73,7 +73,7 @@
 
   <!-- Division 4  1920-1924   -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="5"  class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (4me)</span>
@@ -97,7 +97,7 @@
 
   <!-- Division 5  1925 -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="6" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (5me)</span>
@@ -118,7 +118,7 @@
 
   <!-- Division 6  1926-1939  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (6me)</span>
@@ -129,15 +129,17 @@
     </tr>
 
     <?php for ($i = 1926; $i <= 1939; $i++) { ?>
+      
       <tr>
         <td class="bgCCCCCC bold width35"> <?php echo $i; ?> </td>
-        <td class="bgFF0000"> 1re série division Excellence</td>
-        <td class="bgFF9966"> 1re série division Honneur</td>
-        <td class="bgFF9900">1re série division Promotion</td>
-        <td class="bgFFFF00">2me Série</td>
-        <td class="bg3300FF">3me Série</td>
-        <td class="bg3399CC"> 4me Série</td>
+        <td class="bgFF0000 size2"> 1re série division Excellence</td>
+        <td class="bgFF9966 size2"> 1re série division Honneur</td>
+        <td class="bgFF9900 size2">1re série division Promotion</td>
+        <td class="bgFFFF00 size2">2me Série</td>
+        <td class="bg3300FF size2">3me Série</td>
+        <td class="bg3399CC size2"> 4me Série</td>
       </tr>
+    
     <?php
     } ?>
 
@@ -145,11 +147,11 @@
 
   <!-- Division 7  1940- 1942  -->
 
-  <table class="styleArial marginAuto width90PC">
+  <table class="styleArial marginAuto width95PC">
     <?php for ($i = 1940; $i <= 1942; $i++) { ?>
       <tr>
         <td class="bgCCCCCC bold width35"><?php echo $i; ?> </td>
-        <td colspan="6"> Pas de titre décerné (2me guerre mondiale) </td>
+        <td colspan="6" class="size3"> Pas de titre décerné (2me guerre mondiale) </td>
         <td></td>
         <td></td>
         <td></td>
@@ -163,7 +165,7 @@
 
   <!-- division --  1940-1942  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold">Renommage de divisions </span>
@@ -177,7 +179,7 @@
 
   <!-- division  1975-1979  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="7" class="bgCCCCCC">
         <span class="colorRed bold">Renommage de divisions </span>
@@ -185,26 +187,29 @@
         face à la zone sud (zone libre)
       </td>
     </tr>
+    
     <tr>
       <td class="bgCCCCCC bold width35"> <?php echo $i; ?></td>
-      <td class="bgFF0000"> 1re division Excellence</td>
-      <td class="bgFF9966"> 2me division Honneur</td>
-      <td class="bgFF9900"> 3me division Promotion</td>
-      <td class="bgFFFF00"> 2me Série</td>
-      <td class="bg3300FF"> 3me Série</td>
-      <td class="bg3399CC">4me Série</td>
+      <td class="bgFF0000 size2"> 1re division Excellence</td>
+      <td class="bgFF9966 size2"> 2me division Honneur</td>
+      <td class="bgFF9900 size2"> 3me division Promotion</td>
+      <td class="bgFFFF00 size2"> 2me Série</td>
+      <td class="bg3300FF size2"> 3me Série</td>
+      <td class="bg3399CC size2">4me Série</td>
     </tr>
+  
   </table>
 
   <!-- division  1948  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="7"  class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de division</span><br>
         La 1re division Excellence devient 1re division Fédérale
       </td>
     </tr>
+    <!--
     <tr>
       <td class="bgCCCCCC bold width35"> 1948 </td>
       <td class="bgFF0000"> 1re division Fédérale </td>
@@ -215,11 +220,13 @@
       <td class="bg3399CC">4me Série</td>
 
     </tr>
+  -->
   </table>
 
   <!--  division 1949  -->
+    <!--
 
-  <table class="styleArial marginAuto width90PC">
+  <table class="styleArial marginAuto width95PC">
     <tr>
       <td class="bgCCCCCC bold width35">1949 </td>
       <td class="bgFF0000"> 1re division Fédérale </td>
@@ -230,10 +237,10 @@
       <td class="bg3399CC"> 4me Série</td>
     </tr>
   </table>
-
+  -->
    <!-- division 1949  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -245,6 +252,7 @@
         intégration de la niveau Honneur
       </td>
     </tr>
+   <!--
     <tr>
       <td class="bgCCCCCC bold width35">1950</td>
       <td class="bgFF0000"> Fédérale </td>
@@ -260,8 +268,9 @@
       <td></td>
       <td></td>
     </tr>
+  
     <tr>
-      <td class="bgCCCCCC bold width35">1951</td>
+      <td class="bgCCCCCC bold">1951</td>
       <td class="bgFF0000">Fédérale </td>
       <td class="bgFF9966">Excellence A</td>
       <td class="bgFF9900">Excellence B</td>
@@ -275,9 +284,10 @@
       <td></td>
       <td></td>
     </tr>
+    -->
   </table>
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage des divisions</span>
@@ -287,7 +297,7 @@
     </tr>
 
  <!-- division 1952  -->
-
+<!--
     <tr>
       <td class="bgCCCCCC bold width35"> 1952</td>
       <td class="bgFF0000"> Fédérale </td>
@@ -303,8 +313,9 @@
       <td></td>
       <td></td>
     </tr>
- 
+  --> 
     <!-- division 1953 -->
+     <!--
 
     <tr>
       <td class="bgCCCCCC bold width35"> 1953</td>
@@ -321,9 +332,9 @@
       <td></td>
       <td></td>
     </tr>
-
+  -->
  <!-- division 1953   -->
-
+<!--
     <tr>
       <td class="bgCCCCCC bold width35">1954</td>
       <td class="bgFF0000">Fédérale </td>
@@ -339,11 +350,12 @@
       <td></td>
       <td></td>
     </tr>
+  -->
   </table>
 
    <!-- division 1955-1973  -->
 
-   <table class="styleArial mb-10 marginAuto width90PC">
+   <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -355,6 +367,7 @@
     </tr>
 
     <?php for ($i = 1955; $i <= 1973; $i++) { ?>
+    <!--
       <tr>
         <td class="bgCCCCCC bold width35" ><?php echo $i; ?></td>
         <td class="bgFF0000">Nationale</td>
@@ -368,13 +381,14 @@
         <td></td>
         <td></td>
       </tr>
+    -->
     <?php
     } ?>
   </table>
 
   <!-- division 1974-1979  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
       <span class="colorRed bold"> Création d'un niveau (7me)</span>
@@ -383,6 +397,7 @@
     </tr>
 
     <?php for ($i = 1974; $i <= 1979; $i++) { ?>
+    <!-- 
       <tr>
         <td class="bgCCCCCC bold  width35"><?php echo $i; ?></td>
         <td class="bgFF0000">Nationale</td>
@@ -396,13 +411,15 @@
         <td></td>
         <td></td>
       </tr>
+
+    -->
     <?php
     } ?>
   </table>
 
   <!-- division 1980-1987  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -413,6 +430,7 @@
     </tr>
 
     <?php for ($i = 1980; $i <= 1987; $i++) { ?>
+  <!--  
       <tr>
         <td class="bgCCCCCC bold width35"><?php echo $i; ?></td>
         <td class="bgFF0000">Nationale Groupe A</td>
@@ -426,13 +444,14 @@
         <td class="bg00FF66">4me Série</td>
         <td></td>
       </tr>
+    -->
     <?php
     } ?>
   </table>
 
 <!--  division 1988-1987  -->
 
-<table class="styleArial mb-10 marginAuto width90PC">
+<table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -441,6 +460,7 @@
     </tr>
    
     <?php for ($i = 1988; $i <= 1987; $i++) { ?>
+      <!--
       <tr>
         <td class="bgCCCCCC bold width35"><?php echo $i; ?></td>
         <td class="bgFF0000">Nationale Groupe A</td>
@@ -454,6 +474,7 @@
         <td class="bg00FF66">4me Série</td>
         <td></td>
       </tr>
+    -->
     <?php
     } ?>
     </tr>
@@ -461,7 +482,7 @@
 
   <!-- division  1988-2004  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="11" class="bgCCCCCC">
         <span class="colorRed bold"> Création d'un niveau (11me)</span>
@@ -469,6 +490,7 @@
     </tr>
 
     <?php for ($i = 1988; $i <= 1998; $i++) { ?>
+     <!-- 
       <tr>
         <td class="bgCCCCCC bold width35"><?php echo $i; ?></td>
         <td class="bgFF0000">Nationale Groupe A</td>
@@ -482,13 +504,14 @@
         <td class="bg00FF66">4me Série</td>
         <td></td>
       </tr>
+    -->
     <?php
     } ?>
   </table>
 
  <!-- division 1999-2000  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13" class="bgCCCCCC">
         <span class="colorRed bold"> Création de divisions</span><br>
@@ -499,6 +522,7 @@
     </tr>
 
     <?php for ($i = 1999; $i <= 2000; $i++) { ?>
+     <!-- 
       <tr>
         <td class="bgCCCCCC bold width35"> <?php echo $i; ?> </td>
         <td class="bgFF0000">Top 16</td>
@@ -514,13 +538,14 @@
         <td class="bg669900">4me Série</td>
         <td></td>
       </tr>
+    -->
     <?php }
     ?>
   </table>
 
    <!--  division 2001-2004 -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13">
         <span class="colorRed bold"> Renommage de division</span><br>
@@ -529,6 +554,7 @@
     </tr>
 
     <?php for ($i = 2001; $i <= 2004; $i++) { ?>
+     <!-- 
       <tr>
         <td class="bgCCCCCC bold width35"> <?php echo $i; ?> </td>
         <td class="bgFF0000">Top 16</td>
@@ -544,13 +570,14 @@
         <td class="bg669900">4me Série</td>
         <td></td>
       </tr>
+    -->
       <?php }
     ?>
   </table>
 
  <!-- division  2005-2021 -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13">
         <span class="colorRed bold"> Renommage de divisions</span><br>
@@ -559,6 +586,7 @@
     </tr>
 
     <?php for ($i = 2005; $i <= 2021; $i++) { ?>
+      <!--
       <tr>
         <td class="bgCCCCCC bold width35"> <?php echo $i; ?> </td>
         <td class="bgFF0000">Top 14</td>
@@ -574,13 +602,14 @@
         <td class="bg669900">4me Série</td>
         <td></td>
       </tr>
+    -->
     <?php }
     ?>
   </table>
 
   <!-- division 2021-2022  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
       <td colspan="13">
         <span class="colorRed bold"> Création d'un niveau (12me)</span><br>
@@ -588,6 +617,7 @@
       </td>
     </tr>
     <?php for ($i = 2021; $i <= 2022; $i++) { ?>
+      <!--
     <tr>
       <td class="bgCCCCCC bold"><?php echo $i; ?></td>
       <td class="bgFF0000"> Top 14</td>
@@ -603,13 +633,14 @@
       <td class="bg66CC66"> 3me Série</td>
       <td class="bg669900"> 4me Série</td>
     </tr>
+    -->
     <?php }
     ?>
   </table>
 
   <!-- division 2023-annee encours  -->
 
-  <table class="styleArial mb-10 marginAuto width90PC" >
+  <table class="styleArial mb-10 marginAuto width95PC" >
     <tr>
       <td colspan="11"  class="bgCCCCCC">
       <span class="colorRed bold"> Création d'un niveau (13me)</span><br>
@@ -624,6 +655,7 @@
     </tr>
 
     <?php for ($i = 2023; $i <= $annee; $i++) { ?>
+     <!-- 
       <tr>
         <td class="bgCCCCCC bold"><?php echo $i; ?></td>
         <td class="bgFF0000">Top 14</td>
@@ -637,6 +669,7 @@
         <td class="bg33FF99"> Régionale 2</td>
         <td class="bg66CC66"> Régionale 3</td>
       </tr>
+    -->
     <?php }
     ?>
   </table>

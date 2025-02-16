@@ -552,7 +552,7 @@ function palmaresParLigue($sigle, $table, $categorie, $bdd)
 	}
 }
 
-function chgmntNomDivision($division, $base, $bdd)
+function chgmntNomDivision($division, $base, $bdd, $smart)
 {
 	global $tabNomDivision, $tabAnnee;
 	$tabCle[] = array();
@@ -582,15 +582,22 @@ function chgmntNomDivision($division, $base, $bdd)
 		$titre = "Champions de France";
 
 	//Periode 1
+	if ($smart != true) 
 	echo "<h1>" . $titre . "<br>" . $tabNomDivision[0] . "<h1>";
+else
+echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[0] . "<h2>";
 
 	palmaresParDivisionParAnnee($division, $base, $tabAnnee[0], $anneeMax, $bdd);
 	//palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd);
 
-	//Période 2 à count($tabNomDivision)
+	//Période 2 à count($tabNomDivision): nombre de période pour la division  traitée
+	echo "count :".count($tabNomDivision);
 	for ($i = 0; $i < count($tabNomDivision) - 1; $i++) {
 		echo "<br>";
+		if ($smart != true) 
 		echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
+	else
+		echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h2>";
 
 		if ($division == 230  AND $tabAnnee[$i] == 1931 ){
 			?>
@@ -736,7 +743,7 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 
 							<?php
 
-echo "<h4 style=\" margin: 7px\">";
+						echo "<h4 style=\" margin: 7px\">";
 							echo  $tabChampion[$i] . ' ' . $tabComite[$i];
 							echo "</h4>";
 							?>

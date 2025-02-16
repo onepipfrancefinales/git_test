@@ -57,7 +57,7 @@
         <td  class="borderWidth1 width50PC ">
             <br>
             <p class="size5">
-                <a class="colorBlack" href="../smart/palmares/page_palmares.php?rang=170">Palmarès nationaux<br><span class="size3">Tous les champions de France </span> </a>
+                <a class="colorBlack" href="../smart/palmares/page_palmares.php?division=170">Palmarès nationaux<br><span class="size3">Tous les champions de France </span> </a>
             </p>
             <br>
         </td>

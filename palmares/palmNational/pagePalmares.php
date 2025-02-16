@@ -1,11 +1,8 @@
 <?php
 $smart = false;
-if (isset($_GET['division'])) $division = $_GET['division'];
-else $division = '+';
-if (isset($nomDivision));
-else $nomDivision = '*';
-if (isset($base));
-else $base = '-';
+if (isset($_GET['division'])) $division = $_GET['division'];else $division = '170';
+//if (isset($nomDivision));else $nomDivision = '*';
+//if (isset($base));else $base = '-';
 require '../fonctionsPalmares.php';
 require("../../connect/connexion1.php");
 
@@ -108,7 +105,7 @@ while ($donnees =  $reponse->fetch()) {
 
 				foreach ($tabDivisions as $div) {
 					if ($division == $div) {
-						chgmntNomDivision($div, $table, $bdd);
+						chgmntNomDivision($div, $table, $bdd, $smart);
 					}
 				}
 				?>
