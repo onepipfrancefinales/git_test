@@ -574,7 +574,7 @@ function chgmntNomDivision($division, $base, $bdd, $smart)
 		$anneeMax = max($tabAnnee);
 	else
 		$anneeMax = date('Y', time());
-
+// $anneeMax=2024;
 
 	if ($division >= 379)
 		$titre = "Vainqueurs du challenge";
@@ -588,6 +588,10 @@ else
 echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[0] . "<h2>";
 
 	palmaresParDivisionParAnnee($division, $base, $tabAnnee[0], $anneeMax, $bdd);
+	//echo $division;echo "<br>";
+	//echo $base;echo "<br>";
+	//echo $tabAnnee[0];echo "<br>";
+	//echo $anneeMax;echo "<br>";
 	//palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd);
 
 	//Période 2 à count($tabNomDivision): nombre de période pour la division  traitée
@@ -616,6 +620,10 @@ echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[0] . "<h2>";
 
 
 		palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
+	//	echo $division;echo "<br>";
+	//echo $base;echo "<br>";
+	//echo$tabAnnee[$i + 1];echo "<br>";
+	//echo $tabAnnee[$i];echo "<br>";
 		//	palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $anneeMax, $bdd);
 	}
 }
@@ -675,9 +683,7 @@ function chgmntNomDivisionligne($division, $base, $bdd, $smart)
 
 
 
-
-
-
+	  // palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
 function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMax, $bdd)
 {
 
@@ -798,6 +804,7 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 			}
 		}
 	} else {
+	
 		for ($i = 0; $i < $periode; $i++) {
 
 			if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid) {
@@ -807,6 +814,7 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 				echo "</h4>";
 				echo "<br>";
 			} else {
+			
 				echo "<h4>";
 				echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
 				echo "</h4>";

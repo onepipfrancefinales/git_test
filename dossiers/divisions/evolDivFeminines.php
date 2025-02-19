@@ -3,9 +3,9 @@
  
   <!-- division 1972-1997 -->
 
-    <table class="styleArial mb-10 marginAuto width90PC">
+    <table class="styleArial  marginAuto width95PC">
     <tr>
-      <td colspan="2" class="bgCCCCCC">
+      <td colspan="2" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau de compétition</span>
         <br> Mise en place du 1er championnat sous l'égide de l'AFRF <br>(Association Française de Rugby Féminin) créé trois ans auparavant.
       </td>
@@ -60,9 +60,9 @@
     
      <!-- division -1990-1999-->  
 
-     <table class="styleArial mb-10 marginAuto width90PC">
+     <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="3" class="bgCCCCCC">
+      <td colspan="3" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau (2 niveaux de compétitions)</span>
         <br> Arrivée de la 2me division
       </td>
@@ -81,9 +81,9 @@
 
        <!-- division -2000-2003-->  
 
-       <table class="styleArial mb-10 marginAuto width90PC">
+       <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="3" class="bgCCCCCC">
+      <td colspan="3" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau (3 niveaux de compétitions)</span>
         <br> Arrivée de la 3me division
       </td>
@@ -101,9 +101,9 @@
 
        <!-- division -2004-2010-->  
 
-       <table class="styleArial mb-10 marginAuto width90PC">
+       <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="5" class="bgCCCCCC">
+      <td colspan="5" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau (4 niveaux de compétitions)</span>
         <br> Scission de la première division
       </td>
@@ -123,9 +123,9 @@
 
    <!-- division -2011-2014-->  
 
-   <table class="styleArial mb-10 marginAuto width90PC">
+   <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="6" class="bgCCCCCC">
+      <td colspan="6" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Changement de nom</span>
         <br> La 3me division à XII devient la fédérale 3 à XII  <br>
         <span class="colorRed bold"> Création d'un niveau (5me)</span>
@@ -149,9 +149,9 @@
 
       <!-- division 2015-2016-->  
 
-   <table class="styleArial mb-10 marginAuto width90PC">
+   <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="4" class="bgCCCCCC">
+      <td colspan="4" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Suppression de 2 niveaux (3 niveaux de compétitions)</span>
         <br> Regoupement de la Fédérale 1, Fédérale 2 et Fédérale 3 sous le nom de Fédérale <br>
         <span class="colorRed bold"> Changement de nom</span>
@@ -172,9 +172,9 @@
 
       <!-- division -2017-2018-->  
 
-   <table class="styleArial mb-10 marginAuto width90PC">
+   <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="5" class="bgCCCCCC">
+      <td colspan="5" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau (4 niveaux de compétitions)</span>
         <br> Scission de la Fédérale en Fédérale 1 et Fédérale 2 <br>
       </td>
@@ -194,9 +194,9 @@
 
  <!-- division 2019-2020-->  
 
- <table class="styleArial mb-10 marginAuto width90PC">
+ <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="5" class="bgCCCCCC">
+      <td colspan="5" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> CHangement de nom</span>
         <br> Le Top 8 devient la division Elite <br>
       </td>
@@ -216,9 +216,9 @@
 
      <!--  division -2021-annee encours-->  
 
- <table class="styleArial mb-10 marginAuto width90PC">
+ <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="5" class="bgCCCCCC">
+      <td colspan="5" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Changement de nom</span>
         <br> La division Elite devient la division Elite 1 <br>
       </td>

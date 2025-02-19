@@ -1,17 +1,16 @@
+ <?php
+  include "sommaireDiv.php";
 
-        <?php
-
-        include "sommaireDiv.php";
-
-        if ($type == "seniors1")
-          include "evolDivSeniors1.php";
-        else if ($type == "feminines")
-          include "evolDivFeminines.php";
-        else if ($type == "jeunes")
-          include "evolDivJeunes.php";
-        else if ($type == "espoirs")
-          include "evolDivEspoirs.php";
-        else if ($type == "seniors2")
-          include "evolDivSeniors2.php";
-
-        ?>
+  switch ($type) {
+    case "seniors1":
+      include "evolDivSeniors1.php";
+    case "feminines":
+      include "evolDivFeminines.php";
+    case  "jeunes":
+      include "evolDivJeunes.php";
+    case "espoirs":
+      include "evolDivEspoirs.php";
+    case "seniors2":
+      include "evolDivSeniors2.php";
+  }
+  ?>

@@ -36,7 +36,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   </tr>
 </table>
 <br>
-<table width="90%" border="0"  align="center">
+<table width="95%" border="0"  align="center">
   <tr> 
     <td colspan="2" class ="titre2">Compétitions  Pro</td>
   </tr>
@@ -53,7 +53,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td class="coin45"><a href="pagePhaseFinale.php?division=135&annee=<?php echo $saison;?> ">Nationale 2</a></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table width="95%" border="0" align="center">
   <tr> 
     <td class ="titre2">Compétitions Fédérales</td>
   </tr>

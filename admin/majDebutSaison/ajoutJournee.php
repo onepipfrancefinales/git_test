@@ -529,19 +529,19 @@ $buts_ext = intval($buts_ext);
 		 $buts_domBdd[] = $row[5];
 		 $buts_extBdd[] = $row[6];
 		}
-	// test 1 : scores inscrits en base et non présents dans le fichier
+	// ------  test 1 : scores inscrits en base et non présents dans le fichier -------------
 	if ($buts_domBdd[$i] + $buts_extBdd[$i]  > 0 and $buts_dom + $buts_ext == 0) {
-		echo "<br>";
-		echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
+	//	echo "<br>";
+	//	echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
 	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 
 	} elseif ($buts_domBdd[$i] + $buts_extBdd[$i] == 0 and  $buts_dom + $buts_ext > 0) {
 		
 
-		// test 2 : Pas de scores en base  et  scores présents dans le fichier 
+		// ------ test 2 : Pas de scores en base  et  scores présents dans le fichier --------
 		 
-		echo $i . ' - '. $id . ' ' . "test2 : ". $ligne;
+	//	echo $i . ' - '. $id . ' ' . "test2 : ". $ligne;
 	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 		
@@ -553,7 +553,7 @@ $buts_ext = intval($buts_ext);
 			  SET  date_reelle ='$date_reelle', buts_dom = '$buts_dom', buts_ext = '$buts_ext' ,  id_journee = '$id_journee'
 			  WHERE id_equipe_dom = '$id_equipe_dom' AND id_equipe_ext = '$id_equipe_ext' ");
 //sleep(1);
-echo "enreg Ok". "<br>";
+// echo "enreg Ok". "<br>";
 
 			//recherche la présence de la rencontre retour	 
 
@@ -632,7 +632,7 @@ echo "numero : ".$numero;
 			//}
 		}
 	}
-	// test 3 scores présents en base et dans le fichier
+	// -------  test 3 scores présents en base et dans le fichier -------
 	elseif ( $buts_domBdd[$i] + $buts_extBdd[$i] != 0 and  $buts_dom + $buts_ext !=0){	
 	//	echo "<br>";echo "<br>";
 	//	echo $i;echo "<br>";
@@ -641,16 +641,34 @@ echo "numero : ".$numero;
 	//	echo $buts_extBdd[$i].'-'.$buts_ext;echo "<br>";
 	//	echo "<br>";echo "br";
 	
-		echo $i . ' - '. $id . ' ' . "test3 : ". $ligne. "<br>";
+	//	echo $i . ' - '. $id . ' ' . "test3 : ". $ligne. "<br>";
 	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 
 	}
-	//transformation des scores 0-0 en NULL-NULL
+	//  ----- test 4  transformation des scores 0-0 en NULL-NULL  et  Verification de la date de la rencontre   ----------------------
 	
 	elseif ( $buts_dom + $buts_ext == 0)		{	
 	
-		echo $i . ' - '. $id . ' ' . "test4 : ". $ligne. "<br>";
+	//	echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." --- bdd --- ". $date_reelleBdd[$i]." --- fichier --- ".$date_reelle;
+
+
+		if ($date_reelleBdd[$i] != $date_reelle)
+		{
+			$bdd->exec("UPDATE $tableMatch
+			SET   date_reelle = '$date_reelle'
+			WHERE id_equipe_dom = '$id_equipe_dom' 
+			AND id_equipe_ext = '$id_equipe_ext'  ");
+
+//echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." --- bdd --- ". $date_reelleBdd[$i]." --- fichier --- ".$date_reelle." rencontre reportée"."<br>";
+echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." rencontre reportée au " .$date_reelle."<br>";
+		}
+else{
+
+
+		
+	//	echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." --- bdd --- ". $date_reelleBdd[$i]." --- fichier --- ".$date_reelle."<br>";
+}
 	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 	

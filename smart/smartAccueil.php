@@ -33,7 +33,7 @@
     </tr>
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="../smart/pf/accueil.php?annee=2024.php"> Phases finales <br> du championnat de France
+            <a class="colorWhite" href="../smart/pf/accueil.php?annee=2024"> Phases finales <br> du championnat de France
             </a>
         </td>
     </tr>
@@ -41,7 +41,7 @@
         <td colspan="2" class="borderWidth1 ">
             <br>
             <p class="size5">
-                <a class="colorBlack" href="../smart/pf/accueil.php?annee=2024.php">Phases finales <?php echo $annee - 1; ?></a><br>
+                <a class="colorBlack" href="../smart/pf/accueil.php?annee=2024">Phases finales <?php echo $annee - 1; ?></a><br>
                 <span class="size3"> (oppositions - résultats) <span>
             </p>
             <br>

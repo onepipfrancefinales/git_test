@@ -1,11 +1,11 @@
-  <H2 class="bold styleArial">IV - Compétitions Espoirs</H2>
+  <H2 class="bold styleArial">V - Compétitions Espoirs</H2>
 
 
   <!-- Division 1  1997- 2001   -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="7" class="bgCCCCCC">
+      <td colspan="7" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau (4me)</span>
         <br> Arrivée de la Réserve (Equipe II de la division honneur)
     </tr>
@@ -24,9 +24,9 @@
 
    <!-- Division 2  2002- 2014   -->
 
-   <table class="styleArial mb-10 marginAuto width90PC">
+   <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="7" class="bgCCCCCC">
+      <td colspan="7" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un premiers niveau</span>
         <br> Arrivée de la Réserve (Equipe II de la division honneur)
     </tr>
@@ -45,9 +45,9 @@
 
   <!-- Division 3  2015- 2017   -->
 
-  <table class="styleArial mb-10 marginAuto width90PC">
+  <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="7" class="bgCCCCCC">
+      <td colspan="7" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau (2 niveaux de compétitions)</span>
         <br> Arrivée de la Réserve (Equipe II de la division honneur)
     </tr>
@@ -66,9 +66,9 @@
   
      <!-- Division 3  2018 - 2020  -->
 
-     <table class="styleArial mb-10 marginAuto width90PC">
+     <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="7" class="bgCCCCCC">
+      <td colspan="7" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau (3 niveaux de compétitions)</span>
         <br> Arrivée de la Réserve (Equipe II de la division honneur)
     </tr>
@@ -87,9 +87,9 @@
   
   <!-- Division 3  2021 - année en cours  -->
 
-   <table class="styleArial mb-10 marginAuto width90PC">
+   <table class="styleArial mb-10 marginAuto width95PC">
     <tr>
-      <td colspan="7" class="bgCCCCCC">
+      <td colspan="7" class="bordure" style ="background-color:#f2f2f2">
         <span class="colorRed bold"> Création d'un niveau (4me)</span>
         <br> Arrivée de la Réserve (Equipe II de la division honneur)
     </tr>
