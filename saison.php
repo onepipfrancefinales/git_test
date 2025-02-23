@@ -32,6 +32,9 @@ else {
     $debutSaison = $annee - 1;
     $finSaison = $annee;
 }
+
+
+$datePhasesFinales=2024;
 /*
 echo "debutSaison :" . $debutSaison;
 echo "<br/>";

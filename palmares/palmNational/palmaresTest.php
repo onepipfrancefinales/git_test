@@ -1,7 +1,7 @@
 <?php
 require("../../connect/connexion1.php");
 
-
+/*
 if ($division < 230) {
 	$table = "bdequipe1";
 	$titre = "Champions de France";
@@ -29,7 +29,7 @@ $reponse = $bdd->query("SELECT division
 while ($donnees =  $reponse->fetch()) {
 	$nomDivision = $donnees['division'];
 }
-
+*/
 
 
 /******************************************************** */

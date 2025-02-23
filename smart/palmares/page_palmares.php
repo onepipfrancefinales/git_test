@@ -11,23 +11,23 @@ require '../../palmares/fonctionsPalmares.php';
 //nomDivision($rang, $bdd);
 //nomDivisionMax($rang, $bdd);
 
-
-
-if ($division < 230) {
-	$base = "bdequipe1";
+if ($division < 100) {
+	$titre = " Coupes Européennes";
+} elseif ($division < 230) {
+	$table = "bdequipe1";
 	$titre = "Champions de France";
 } elseif ($division < 280) {
-	$base = "bdequipe2";
+	$table = "bdequipe2";
 	$titre = "Champions de France";
 } elseif ($division < 310) {
-	$base = "bdfem";
+	$table = "bdfem";
 	$titre = "Championnes de France";
 } elseif ($division < 380) {
-	$base = "bdjeunes";
+	$table = "bdjeunes";
 	$titre = "Champions de France";
-} elseif ($division < 500) {
-	$base = "bdchallenges";
-	$titre = "Challenge de ";
+} elseif ($division < 510) {
+		$table = "bdchallenges";
+		$titre = "Challenge";
 }
 
 
@@ -72,53 +72,61 @@ while ($donnees =  $reponse->fetch()) {
 					<td width="95%" class="h22" height="20"> France Finales Rugby </td>
 				</tr>
 				<tr>
-					<td colspan="2" class="h12"><?php echo "Champions de France " . "<br />" . $nomDivision; ?></td>
+					<td colspan="2" class="h12"><?php echo $titre . "<br />" . $nomDivision; ?></td>
 				</tr>
 			</table>
-			<?php include("menuPalmares.php"); ?>
+
+			<?php if ($division > 100) {
+				include("menuPalmares.php");
+			}
+			?>
 			<br>
 
 		</div>
 	</div>
 
 	<div class="container ">
+		<?php if ($division > 100) {
+		?>
+			<div style="margin-top : 225px">
+				<p>.</p>
+			</div>
+			<?php
+			
+					chgmntNomDivision($division, $table, $bdd, $smart);
+		    	//chgmntNomDivisionligne($division, $table, $bdd, $smart);
+		
+		} else {
 
-		<div style="margin-top : 225px">
-			<p>.</p>
-		</div>
-		<?php
-		// equipe 1
-		if ($division < 230) {
-			$tabDivisions = array('110', '120', '130', '135', '140', '150', '160', '170', '180', '190', '200', '210', '220', '222');
-			$table = "bdequipe1";
-		}
-		// equipe 2
-		else if ($division > 220 and $division < 280) {
-			//230 -> Espoirs Elite
-			//232 -> Espoirs Nationaux
-			//235 -> Espoirs Fédéraux
-			$tabDivisions = array('230', '235', '232', '240', '245', '250', '260', '270');
-			$table = "bdequipe2";
-		}
-		// féminines
-		else if ($division > 270 and $division < 310) {
-			$tabDivisions = array('280', '285', '290', '295', '300');
-			$table = "bdfem";
-		}
-		// equipe jeunes
-		else if ($division > 300 and $division < 380) {
-			$tabDivisions = array('310', '320', '325', '330', '340', '350', '360', '365', '370', '375');
-			$table = "bdjeunes";
-		}
-		//challenges
-		else if ($division > 370) {
-			$tabDivisions = array('380', '390', '400', '405', '410', '420', '430', '440', '450', '500');
-			$table = "bdchallenges";
-		}
+			?>
+			<div style="margin-top : 100px">
+				<p>.</p>
+			</div>
 
-		foreach ($tabDivisions as $div) {
-			if ($division == $div) {
-				chgmntNomDivision($div, $table, $bdd, $smart);
+			<?php
+			if ($division == 10) {
+			?>
+				<h1 class="bold center"> Champions Cup </h1>
+				<div class="center"> <img src="/palmares/images/champion_cup.jpg" alt="champion cup" width="178" height="228"></div>
+				<br>
+
+				<?php championsEurope(11, $bdd);  ?>
+				<h1 class="bold center"> H Cup </h1>
+				<br>
+
+				<div class="center"> <img src="/palmares/images/hcup.jpg" alt="H cup" width="180" height="231"></div>
+				<br>
+			<?php championsEurope(10, $bdd);
+			} else {
+			?>
+				<h1 class="bold center"> Challenge Cup </h1>
+				<div class="center"><img src="/palmares/images/challenge_cup.jpg" width="178" height="228"></div>
+				<br>
+
+				<?php championsEurope(21, $bdd); ?>
+				<h1 class="bold center"> Amlin Cup <BR /></h1>
+				<div class="center"> <img src="/palmares/images/amlincup.jpg" width="179" height="248"></div><br>
+		<?php championsEurope(20, $bdd);
 			}
 		}
 		?>

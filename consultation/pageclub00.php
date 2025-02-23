@@ -89,7 +89,7 @@ fusionDeClubs2($equipe, $bdd);
   <link type="text/css" rel="stylesheet" href="pgclub00.css">
   <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
-  <title> Présentation du club : <?php echo $nomLong; ?> </title>
+  <title> <?php echo $nomLong; ?> </title>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -127,6 +127,10 @@ fusionDeClubs2($equipe, $bdd);
         if ($nbreDeClub < 2) {
 
           if ($code > 0) {
+            echo $code;
+          //  include "clubsInfos.php";
+          //  include "clubPalmares.php";
+          //  include "clubSaisons.php";
             include("00clubs.php");
           } else {
             include("02clubs.php");

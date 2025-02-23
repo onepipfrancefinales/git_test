@@ -1,15 +1,11 @@
 <?php
-if (isset($_GET['division'])) $division = $_GET['division'];
-else $division = '+';
-if (isset($nomDivision));
-else $nomDivision = '*';
-if (isset($base));
-else $base = '-';
+if (isset($_GET['division'])) $division = $_GET['division']; else $division = '+';
+if (isset($nomDivision)); else $nomDivision = '*';
+if (isset($base)); else $base = '-';
+
 require '../fonctionsPalmares.php';
-
-
 require("../../connect/connexion1.php");
-
+/*
 if ($division < 230) {
 	$base = "bdequipe1";
 	$titre = "Champions de France";
@@ -34,6 +30,36 @@ $reponse = $bdd->query("SELECT division
 while ($donnees =  $reponse->fetch()) {
 	$nomDivision = $donnees['division'];
 }
+
+*/
+if ($division < 230) {
+	$table = "bdequipe1";
+	$titre = "Champions de France";
+} elseif ($division < 280) {
+	$table = "bdequipe2ligne";
+	$titre = "Champions de France";
+} elseif ($division < 310) {
+	$table = "bdfem";
+	$titre = "Championnes de France";
+} elseif ($division < 380) {
+	$table = "bdjeunesligne";
+	$titre = "Champions de France";
+} elseif ($division < 500) {
+	$table = "bdchallengesligne";
+	$titre = "Challenge de ";
+} elseif ($division == 500) {
+	$table = "bdequipe1";
+	$titre = "Champion de France ";
+}
+
+$reponse = $bdd->query("SELECT division
+						FROM bddivisions 
+						WHERE id='$division'
+						ORDER BY cle DESC ");
+while ($donnees =  $reponse->fetch()) {
+	$nomDivision = $donnees['division'];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -93,7 +119,9 @@ while ($donnees =  $reponse->fetch()) {
 					echo "<br>" . "<hr>";
 					// Saison antérieure à la saiaon 2019
 					*/
-					require("palmaresTest.php");
+
+					chgmntNomDivisionligne($division, $table, $bdd, false);
+					//require("palmaresTest.php");
 			/*		
 				}
 			*/
@@ -111,3 +139,32 @@ while ($donnees =  $reponse->fetch()) {
 </footer>
 
 </html>
+
+<style>
+	.infobulle {
+		position: relative;
+		/* les .infobulle deviennent référents */
+		cursor: help;
+	}
+
+	/* on génère un élément :after lors du survol et du focus :*/
+
+	.infobulle:hover::after,
+	.infobulle:focus::after {
+		content: attr(aria-label);
+		/* on affiche aria-label */
+		position: absolute;
+		/*top: -3.4em;*/
+		left: 70%;
+		transform: translate(0px, 0px);
+		/* on centre horizontalement  */
+		z-index: 0;
+		/* pour s'afficher au dessus des éléments en position relative */
+		/* white-space: nowrap;  /* on interdit le retour à la ligne */
+		border-color: black;
+		border-style: solid;
+		border-width: 1px;
+		background: #5ec1ff;
+		text-align: left;
+	}
+</style>

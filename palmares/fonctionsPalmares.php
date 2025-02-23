@@ -552,6 +552,25 @@ function palmaresParLigue($sigle, $table, $categorie, $bdd)
 	}
 }
 
+
+function anneeCreationNomDivision($division, $bdd)
+{
+
+	$anneeCreationDivision = 0;
+
+	$reponse = $bdd->query("SELECT MAX(annee)
+	FROM bddivisions
+	WHERE  id ='$division'
+	AND cle < 10000 ");
+
+	while ($row = $reponse->fetch()) {
+		$anneeCreationDivision = $row[0];
+	}
+	return $anneeCreationDivision;
+}
+
+
+
 function chgmntNomDivision($division, $base, $bdd, $smart)
 {
 	global $tabNomDivision, $tabAnnee;
@@ -570,60 +589,88 @@ function chgmntNomDivision($division, $base, $bdd, $smart)
 		$tabAnnee[] = $donnees['annee'];
 	}
 
-	if (min($tabCle) < 1000)
-		$anneeMax = max($tabAnnee);
+	if (anneeCreationNomDivision($division, $bdd) != 0)
+		$anneeMax = anneeCreationNomDivision($division, $bdd);
 	else
-		$anneeMax = date('Y', time());
-// $anneeMax=2024;
+{
+	if (date('m', time()) > 01 and date('m', time()) <= 6) {
 
-	if ($division >= 379)
+
+	$anneeMax = date('Y', time()) -1;
+}
+	else
+	$anneeMax = date('Y', time()) ;
+
+}
+
+
+//echo " annee max :" .$anneeMax;
+
+	/**************************************** */
+
+	if ($division == 390)
+		$titre = "Vainqueurs de la ";
+	else if ($division >= 379)
 		$titre = "Vainqueurs du challenge";
 	else
 		$titre = "Champions de France";
 
-	//Periode 1
-	if ($smart != true) 
-	echo "<h1>" . $titre . "<br>" . $tabNomDivision[0] . "<h1>";
-else
-echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[0] . "<h2>";
+
+		
+	//*************************************************************************** */
+	//    Periode 1 ---intervalle entre le creation et le 1er chahgement de nom   */
+	//*************************************************************************** */	
+
+
+	if ($smart != true)
+		echo "<h1>" . $titre . "<br>" . $tabNomDivision[0] . "<h1>";
+	else
+		echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[0] . "<h2>";
 
 	palmaresParDivisionParAnnee($division, $base, $tabAnnee[0], $anneeMax, $bdd);
-	//echo $division;echo "<br>";
-	//echo $base;echo "<br>";
-	//echo $tabAnnee[0];echo "<br>";
-	//echo $anneeMax;echo "<br>";
-	//palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd);
 
-	//Période 2 à count($tabNomDivision): nombre de période pour la division  traitée
+
+	//*************************************************************************** */
+	//    Période 2 à count($tabNomDivision): nombre de période pour la division  traitée
+	//*************************************************************************** */
+
 	//echo "count :".count($tabNomDivision);
 	for ($i = 0; $i < count($tabNomDivision) - 1; $i++) {
-		echo "<br>";
-		if ($smart != true) 
-		echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
-	else
-		echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h2>";
 
-		if ($division == 230  AND $tabAnnee[$i] == 1931 ){
-			?>
-						<table class="marginAuto center styleArial" width="95%">
-						<tr>
-							<th width="10%"></th>
-							<th class="size4" width="30%">Equipe seconde</th>
-							<th class="size4" width="30%">Equipe troisième</th>
-							<th class="size4" width="30%">Equipe quatrième</th>
-						</tr>
-					</table>
-				<hr>	
+
+		if ($smart != true)
+			echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
+		else
+			echo "<h2 align=\"center\">" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h2>";
+
+		if ($division == 230  and $tabAnnee[$i] == 1931) {
+?>
+			<table class="marginAuto center styleArial" width="95%">
+				<tr>
+					<th width="10%"></th>
+					<th class="size4" width="30%">Equipe seconde</th>
+					<th class="size4" width="30%">Equipe troisième</th>
+					<th class="size4" width="30%">Equipe quatrième</th>
+				</tr>
+			</table>
+			<hr>
 			<?php
-			}
+		}
 
+		$anneeMax = $tabAnnee[$i];
+		/*
+		echo $division;
+		echo "<br>";
+		echo $base;
+		echo "<br>";
+		echo "anneeMax : ".$anneeMax;
+		echo "<br>";
+		echo "tabAnnee[$i] : ".$tabAnnee[$i+1];
+		echo "<br>";
+	*/
 
+		palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $anneeMax - 1, $bdd);
 
-		palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
-	//	echo $division;echo "<br>";
-	//echo $base;echo "<br>";
-	//echo$tabAnnee[$i + 1];echo "<br>";
-	//echo $tabAnnee[$i];echo "<br>";
 		//	palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $anneeMax, $bdd);
 	}
 }
@@ -646,20 +693,34 @@ function chgmntNomDivisionligne($division, $base, $bdd, $smart)
 		$tabAnnee[] = $donnees['annee'];
 	}
 
-	if (min($tabCle) < 1000)
-		$anneeMax = max($tabAnnee);
+		if (anneeCreationNomDivision($division, $bdd) != 0)
+		$anneeMax = anneeCreationNomDivision($division, $bdd);
 	else
-		$anneeMax = date('Y', time());
+{
+	if (date('m', time()) > 01 and date('m', time()) <= 6) {
 
 
-	if ($division >= 379)
-		$titre = "Vainqueurs du challenge";
+	$anneeMax = date('Y', time()) -1;
+}
 	else
-		$titre = "Champions de France";
+	$anneeMax = date('Y', time()) ;
 
-	//Periode 1
+}
+
+
+if ($division == 390)
+$titre = "Vainqueurs de la ";
+else if ($division >= 379)
+$titre = "Vainqueurs du challenge";
+else
+$titre = "Champions de France";
+
+//*************************************************************************** */
+	//    Periode 1 ---intervalle entre le creation et le 1er chahgement de nom   */
+	//*************************************************************************** */	
+
 	if ($smart == true)
-		echo "<div class=\"bold size4\" style=\" margin : 15px\">" . $titre . "<br>" . "<br>" . $tabNomDivision[0] . "</div>";
+		echo "<div class=\"bold size4 styleArial center\" style=\" margin : 15px\">" . $titre . "<br>" . "<br>" . $tabNomDivision[0] . "</div>";
 	else
 		echo "<h1>" . $titre . "<br>" . $tabNomDivision[0] . "<h1>";
 
@@ -667,23 +728,44 @@ function chgmntNomDivisionligne($division, $base, $bdd, $smart)
 
 	palmaresParDivisionLigne($division,  $base, $tabAnnee[0], $anneeMax, $bdd, $smart);
 
-	//Période  de 2 à count($tabNomDivision)
+	//*************************************************************************** */
+	//    Période 2 à count($tabNomDivision): nombre de période pour la division  traitée
+	//*************************************************************************** */
+
 	for ($i = 0; $i < count($tabNomDivision) - 1; $i++) {
 		echo "<br>";
 
 		if ($smart == true)
-			echo "<div class=\"bold size4\" >" . $titre . "</div>" . "<br>" . "<div class=\"bold size4\">" . $tabNomDivision[$i + 1] . "</div>";
+			echo "<div class=\"bold size4 styleArial center\" >" . $titre . "</div>" . "<br>" . "<div class=\"bold size4 styleArial center\">" . $tabNomDivision[$i + 1] . "</div>";
 		else
 			echo "<h1>" . $titre . "<br>" . $tabNomDivision[$i + 1] . "<h1>";
 
-		palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd, $smart);
+			if ($division == 230  and $tabAnnee[$i] == 1931) {
+				?>
+							<table class="marginAuto center styleArial" width="95%">
+								<tr>
+									<th width="10%"></th>
+									<th class="size4" width="30%">Equipe seconde</th>
+									<th class="size4" width="30%">Equipe troisième</th>
+									<th class="size4" width="30%">Equipe quatrième</th>
+								</tr>
+							</table>
+							<hr>
+							<?php
+						}
+
+
+
+			$anneeMax = $tabAnnee[$i];
+
+		palmaresParDivisionLigne($division, $base, $tabAnnee[$i + 1], $anneeMax - 1, $bdd, $smart);
 	}
 }
 
 
 
 
-	  // palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
+// palmaresParDivisionParAnnee($division, $base, $tabAnnee[$i + 1], $tabAnnee[$i], $bdd);
 function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMax, $bdd)
 {
 
@@ -699,12 +781,14 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 	$beguere = "du challenge Beguere";
 	$amitie = "du challenge de l\'amitié";
 	$espoir = "du challenge de l\'espoir";
+	$coupe = "de la coupe de France";
 
 	$reponse = $bdd->query("SELECT saison, champion, comite1 
 						FROM $table
 						WHERE rang = $division
 						AND rang2 = $division  AND saison between $anneeCreation and $anneeMax
-						AND (championnat = '$france'  OR  championnat = '$essor' OR championnat = '$duManoir'  OR championnat = '$esperance'   OR championnat = '$amitie'  OR championnat = '$espoir'     )
+						AND (championnat = '$france'  OR  championnat = '$essor' OR championnat = '$duManoir'  OR championnat = '$esperance'   OR championnat = '$amitie' 
+						 OR championnat = '$espoir'    OR championnat = '$coupe' )
 						AND (titre ='champion' OR titre = 'Vainqueur')
 						ORDER BY saison DESC");
 
@@ -716,10 +800,10 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 	$periode = $anneeMax - $anneeCreation;
 	$pasDeChampionnat = "Pas de championnat";
 	$covid = "Pas de titre décerné";
+	$pasDeChallenge = "Challenge non disputé";
 
-	
 	// ----------  Division Nationale B --------
-	
+
 	if ($division == 230) {
 
 		for ($i = 0; $i < $periode; $i++) {
@@ -732,7 +816,7 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 			?>
 
 
-				<table class="marginAuto styleArial" width="95%" >
+				<table class="marginAuto styleArial" width="95%">
 					<tr>
 
 
@@ -745,16 +829,16 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 
 						</td>
 
-						<td width="30%" >
+						<td width="30%">
 
 							<?php
 
-						echo "<h4 style=\" margin: 7px\">";
+							echo "<h4 style=\" margin: 7px\">";
 							echo  $tabChampion[$i] . ' ' . $tabComite[$i];
 							echo "</h4>";
 							?>
 						</td>
-						<td width="30%" >
+						<td width="30%">
 							<?php
 							$reponse = $bdd->query("SELECT saison, champion, comite1 
 						FROM $table
@@ -804,17 +888,17 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 			}
 		}
 	} else {
-	
-		for ($i = 0; $i < $periode; $i++) {
 
-			if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid) {
+		for ($i = 0; $i <= $periode; $i++) {
+
+			if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid    || $tabChampion[$i] == $pasDeChallenge) {
 				echo "<h4 style = \"background-color : #C5C6C7; width:300px; margin: 0px auto\">";
 
 				echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
 				echo "</h4>";
 				echo "<br>";
 			} else {
-			
+
 				echo "<h4>";
 				echo  $tabSaison[$i] . ' : ' . $tabChampion[$i] . ' ' . $tabComite[$i];
 				echo "</h4>";
@@ -838,6 +922,8 @@ function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, 
 	$beguere = "du challenge Beguere";
 	$amitie = "du challenge de l\'amitié";
 	$espoir = "du challenge de l\'espoir";
+	$coupe = "de la coupe de France";
+	$challenge ="Challenge";
 
 
 	//AND rang2 = $division  AND saison between $anneeCreation and $anneeMax
@@ -846,7 +932,8 @@ function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, 
 						FROM $table
 						WHERE rang = $division
 						AND rang2 = $division  AND saison between $anneeCreation and $anneeMax
-						AND (championnat = '$france'  OR  championnat = '$essor' OR championnat = '$duManoir'  OR championnat = '$esperance'   OR championnat = '$amitie'  OR championnat = '$espoir'     )
+						AND (championnat = '$france'  OR  championnat = '$essor' OR championnat = '$duManoir'  OR championnat = '$esperance'   OR championnat = '$amitie'  OR championnat = '$espoir'
+						OR championnat = '$coupe'   OR championnat = '$challenge'  )
 						ORDER BY saison DESC");
 
 	while ($donnees =  $reponse->fetch()) {
@@ -862,6 +949,7 @@ function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, 
 	$periode = $anneeMax - $anneeCreation;
 	$pasDeChampionnat = "Pas de championnat";
 	$covid = "Pas de titre décerné";
+	$pasDeChallenge = "Challenge non disputé";
 
 
 	for ($i = 0; $i < count($tabChampion); $i++) {
@@ -882,15 +970,15 @@ function palmaresParDivisionLigne($division, $table, $anneeCreation, $anneeMax, 
 		}
 	}
 
-	for ($i = 0; $i < $periode; $i++) {
-		if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid) {
-			echo  "<div style = \"background-color : #C5C6C7; width:300px; margin: 0px auto\">";
+	for ($i = 0; $i <= $periode; $i++) {
+		if ($tabChampion[$i] == $pasDeChampionnat || $tabChampion[$i] == $covid || $tabChampion[$i] == $pasDeChallenge) {
+			echo  "<h4 style = \"background-color : #C5C6C7; width:300px; margin: 0px auto\">";
 			echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
-			echo "</div>";
+			echo "</h4>";
 			echo "<br>";
 		} else {
 			if ($smart == true) {
-				echo "<div style=\" margin : 15px; font-size: 18px\">";
+				echo "<div style=\" margin : 15px; font-size: 18px\" class=\"center styleArial\">";
 				echo  $tabSaison[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
 				echo "</div>";
 			} else {
@@ -1176,7 +1264,7 @@ ORDER BY saison DESC");
 ?>
 
 
-		<div class="size4 styleArial">
+		<div class="size4 styleArial center">
 			<?php echo $saison . ' ' . $champion . ' ' . $comite; ?>
 		</div> <br>
 <?php

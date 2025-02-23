@@ -74,6 +74,9 @@ while ($donnees =  $reponse->fetch()) {
 			</td>
 			<td class="centreDePage">
 				<?php
+
+
+
 				// equipe 1
 				if ($division < 230) {
 				$tabDivisions = array('110', '120', '130', '135', '140', '150', '160', '170','180','190','200','210','220','222');
@@ -103,11 +106,11 @@ while ($donnees =  $reponse->fetch()) {
 					$table ="bdchallenges";
 					}
 
-				foreach ($tabDivisions as $div) {
-					if ($division == $div) {
-						chgmntNomDivision($div, $table, $bdd, $smart);
-					}
-				}
+			//	foreach ($tabDivisions as $div) {
+			//		if ($division == $div) {
+						chgmntNomDivision($division, $table, $bdd, $smart);
+			//		}
+			//	}
 				?>
 			</td>
 			<td class="colonne">
