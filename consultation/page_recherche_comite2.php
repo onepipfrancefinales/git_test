@@ -53,7 +53,7 @@ while ($donnees = $reponse->fetch()) {
 </head>
 
 <body >
-  <table  width="1250" align="center">
+  <table  width="1250" class="marginAuto">
       <tr>
           <td colspan="3" height="74">
              <?php include("../images/page_image_al.php");  ?>
@@ -77,26 +77,10 @@ while ($donnees = $reponse->fetch()) {
             <?php include("../00droite.php"); ?>
         </td>
       </tr>
-      <tr valign="middle" align="center" bgcolor="#FFFFFF">
-        <td colspan="3" height="81" align="center" valign="top">
+      <tr >
+        <td colspan="3" >
 
-          <table width="100%" border="1" bordercolor="#006699">
-            <tr>
-              <td>
-                <?php include("../comitebas.php");  ?>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <?php include("../pub/pub1.php");  ?>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <?php include("../bas.php");  ?>
-              </td>
-            </tr>
-          </table>
+        <?php include("../bas2.php");   ?>
         </td>
       </tr>
     </table>

@@ -133,7 +133,6 @@ fusionDeClubs2($equipe, $bdd);
       s.parentNode.insertBefore(ga, s);
     })();
   </script>
-
 </head>
 
 <body>

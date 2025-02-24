@@ -1,34 +1,7 @@
-<html>
-<head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link type="text/css" rel="stylesheet" href="pglogo.css"/>
-<script language="JavaScript">
-
-/*
-function MM_reloadPage(init) { 
-  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
-    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
-  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
-}
-MM_reloadPage(true);
-
-
-function MM_jumpMenu(targ,selObj,restore){ 
-  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
-  if (restore) selObj.selectedIndex=0;
-}
-*/
-</script>
-</head>
-
-<body bgcolor="#FFFFFF" text="#000000">
-<div align="center"> 
-  <div align="left"><br>
-    <table width="801" align="center">
+    <table width="801" class="marginAuto">
       <tr> 
-        <td width="387" bgcolor="#CCCCCC"> 
-          <div align="center"><font size="6" color="#000000">Autre recherche</font> <br>
+        <td width="387" class="backgroundCCCCCC"> 
+          <div class="center size6">Autre recherche <br>
             <select name="select3" onChange="MM_jumpMenu('parent',this,0)" size="1">
               <option selected>Alphabétique</option>
               <option value="page_recherche_comite2.php?variable_1=A">A</option>
@@ -60,8 +33,8 @@ function MM_jumpMenu(targ,selObj,restore){
             </select>
           </div>
         </td>
-        <td width="402" bgcolor="#CCCCCC"> 
-          <div align="center"><font size="6" color="#000000">Recherche par comité</font><br>
+        <td width="402" class="backgroundCCCCCC"> 
+          <div class="center size6">Recherche par comité<br>
             <select id="inputG" name="select3" onChange="MM_jumpMenu('parent',this,0)" size="1">
               <option selected>Par comité</option>
               <option value="/consultation/page_recherche_comite2.php?variable_1=(AP)">Alpes</option>
