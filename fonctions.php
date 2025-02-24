@@ -62,8 +62,8 @@ $saisonEnCours=$row[0];
 	{
 		global  $nomLong, $idFfr, $nomUsuel;
 
-		
-			$requete = $bdd->query("SELECT sigle,  idffr, nom_1
+
+		$requete = $bdd->query("SELECT sigle,  idffr, nom_1
 							FROM bdclubs  
 							WHERE id ='$idRecherche'
 							 and type='M' ");
@@ -72,15 +72,13 @@ $saisonEnCours=$row[0];
 			$nomLong = $row[0];
 			$idFfr = $row[1];
 			$nomUsuel = $row[2];
-	
 		}
-	
-}
-	
-	
-	
-	
-	
+	}
+
+
+
+
+
 	function infosclub($chaine, $bdd)
 	{
 		global $nomLong, $comite, $id, $sigleComite, $nomChampion, $numLigue, $code, $idFfr, $statut;
@@ -211,7 +209,6 @@ $saisonEnCours=$row[0];
 			$tresorier =	$donnees['A1630'];
 			$nomEntente = $donnees['A1631'];
 			$niveau = $donnees['A1632'];
-			
 		}
 	}
 
@@ -267,21 +264,21 @@ $saisonEnCours=$row[0];
 
 
 
-	function palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd) {
+	function palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd)
+	{
 		$reponse = $bdd->query("SELECT saison, titre, championnat, division
 								FROM $table
 								WHERE categorie='$categorie' AND (entente='$id_equipe' OR entente='$nomChampion')   
 		ORDER BY saison desc");
 
-while ($donnees = $reponse->fetch()) {
-echo $donnees['saison'] . ' ' . $donnees['titre'] . ' ' . $donnees['championnat'] . ' ' . $donnees['division']
-. "<br />";
-}
-
-
+		while ($donnees = $reponse->fetch()) {
+			echo $donnees['saison'] . ' ' . $donnees['titre'] . ' ' . $donnees['championnat'] . ' ' . $donnees['division']
+				. "<br />";
+		}
 	}
 
-	function palmaresParClubLigne($nomChampion, $id_equipe, $table, $categorie, $bdd) {
+	function palmaresParClubLigne($nomChampion, $id_equipe, $table, $categorie, $bdd)
+	{
 		$reponse = $bdd->query("SELECT saison, championnat, division, champion, vice_champion
 								FROM bdjeunesligne
 								WHERE categorie='$categorie' 
@@ -290,12 +287,12 @@ echo $donnees['saison'] . ' ' . $donnees['titre'] . ' ' . $donnees['championnat'
 
 
 
-while ($donnees = $reponse->fetch()) {
-if ($donnees['champion'] == $nomChampion OR $donnees['champion'] == $id_equipe)
-echo $donnees['saison'] . ' ' . "Champion" . ' ' . $donnees['championnat'] . ' ' . $donnees['division']. "<br />";
-else
-echo $donnees['saison'] . ' ' . "Vice champion" . ' ' . $donnees['championnat'] . ' ' . $donnees['division']. "<br />";
-}
+		while ($donnees = $reponse->fetch()) {
+			if ($donnees['champion'] == $nomChampion or $donnees['champion'] == $id_equipe)
+				echo $donnees['saison'] . ' ' . "Champion" . ' ' . $donnees['championnat'] . ' ' . $donnees['division'] . "<br />";
+			else
+				echo $donnees['saison'] . ' ' . "Vice champion" . ' ' . $donnees['championnat'] . ' ' . $donnees['division'] . "<br />";
+		}
 	}
 
 

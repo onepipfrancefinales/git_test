@@ -4,6 +4,40 @@ require "../fonctions.php";
 require "fonctions.php";
 $chaine = $_GET['champion'];
 //$nouveauClub = $_GET['nouveauClub'];
+?> 
+
+<?php   
+
+/*----  A revoir -----*/
+      
+if(stristr($chaine, "'") == true) {
+  echo "vu";
+  $chaine2 = str_replace("'","&apos;",$chaine);
+  $chaine = $chaine2;echo "<br>";
+ }
+ else {
+echo "echec";
+ }
+ 
+ echo "<br>";
+ echo "chaine2 :".$chaine2; echo "<br>";
+
+
+ //$chaine = $chaine2; echo "<br>";
+
+ echo "chaine : ".$chaine;
+//if ( strpos($chaine,"%27") ==   true)
+//echo "ok"; 
+//$chaine ="%27";
+?> 
+
+
+<?php  
+
+
+
+
+
 if (isset($_GET['nouveauClub'])) {
   $nouveauClub = $_GET['nouveauClub'];
 } else {
@@ -29,8 +63,6 @@ else {
   //echo "chaine".$chaine;
 
   require '../connect/connexion1.php';
-
-
   rechercheParNomDeVille($chaine, $bdd);
 
   //echo "nombre de clubs :" . $nbreDeClub;
@@ -42,10 +74,6 @@ else {
   echo "donnee2 : ".$tabClubs[2];
 
 */
-
-
-
-
 
 
   infosclub($chaine, $bdd);
@@ -78,7 +106,7 @@ fusionDeClubs2($equipe, $bdd);
 <html lang="fr">
 <head>
 <link rel="canonical" href="https://francefinalesrugby.fr/consultation/pageclub00.php?champion=<?php echo $chaine;?>" >
-  <meta name="description" content="Présentation du club de <?php echo $nomLong; ?> (Bureau; Siège; Stade; Contacts; palmarès)">
+  <meta name="description" content="<?php echo $nomLong; ?> (Bureau; Siège; Stade; Contacts; palmarès)">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
@@ -123,16 +151,17 @@ fusionDeClubs2($equipe, $bdd);
         <?php include("../01gauche.php"); ?>
       </td>
       <td class="centreDePage">
-        <?php
+      <?php
         if ($nbreDeClub < 2) {
 
           if ($code > 0) {
-            echo $code;
-          //  include "clubsInfos.php";
-          //  include "clubPalmares.php";
-          //  include "clubSaisons.php";
-            include("00clubs.php");
+            //echo $code;
+           include "clubInfos.php";
+           include "clubPalmares.php";
+           include "clubSaisons.php";
+         //   include("00clubs.php");
           } else {
+            $photoClub = false;
             include("02clubs.php");
           }
         } else {
@@ -149,7 +178,7 @@ fusionDeClubs2($equipe, $bdd);
   <table class="marginAuto" width="1100">
     <tr>
       <?php
-    if ($nbreDeClub < 2) {
+    if ($nbreDeClub < 2 and $photoClub == true) {
       ?>   
     <td class="backgroundWhite">
         <br> <br>
