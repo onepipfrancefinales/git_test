@@ -20,6 +20,7 @@ $nouveauClub = $_GET['nouveauClub'];
   // echo " non numerique";echo "<br/>";
    require '../../connect/connexion1.php';
    infosclub($chaine, $bdd);
+   
    $id_equipe=$id;
    $equipe = $numLigue . $code;
    $id = substr($id, 2, 2);
@@ -28,11 +29,12 @@ $nouveauClub = $_GET['nouveauClub'];
 
  
 require '../../connect/connexion1.php'; 
+$code = substr($chaine,-5);
 nomComite (0,$id, $bdd);
 infosclub($chaine, $bdd);
 nomLiguePalm ($numLigue, $bdd);
 affichageSaisonEnCours($equipe, $bdd);
-bdInfosClub($chaine, $bdd);
+bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);
 
 consultationEvolutionClub ($equipe, $bdd);
@@ -42,7 +44,7 @@ fusionDeClubs2 ($equipe, $bdd) ;
 
 <html>
 <head>
- <title>Fiche club <?php echo $nomLong; ?></title>
+ <title><?php echo $nomLong; ?></title>
  <link rel="canonical" href="https://francefinalesrugby.fr/smart/ficheClubs/pageFicheClubs.php?champion=<?php echo $id_equipe;?>" >
  <meta name="description" content="Présentation du club <?php echo $nomLong; ?> (bureau, contact, palmarès, etc...">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -73,9 +75,12 @@ fusionDeClubs2 ($equipe, $bdd) ;
  <div class="container">
    <?php
    $smart = true;
-   require '../../consultation/00clubs.php';
+ //
+  // require '../../consultation/00clubs.php?mode=smart';
+
+   require '../../consultation/02clubs.php?mode=smart';
    require '../bas2.php';
- //  include("../../pub/pub_displayCarre.php");
+
    ?>
  </div>
 </body>

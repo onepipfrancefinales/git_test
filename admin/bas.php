@@ -10,7 +10,7 @@
   <tr> 
     <td colspan="2" bgcolor="#006699"> 
       <div align="center"><font color="#FFFFFF"><b><font face="Verdana, Arial, Helvetica, sans-serif">MAJ 
-        des journ&eacute;es</font></b></font></div>
+        des journées</font></b></font></div>
     </td>
     <td colspan="2" bgcolor="#006699"> 
       <div align="center"><font color="#FFFFFF"><b><font face="Verdana, Arial, Helvetica, sans-serif">Connexion 
@@ -24,7 +24,7 @@
     <td width="195"> 
       <!--
       <div align="center"><a href="/admin/majScores/telechargement2/choixComite.php">Ajouter 
-        une journ&eacute;e</a></div>
+        une journée</a></div>
 		-->
     </td>
     <td width="176"> 
@@ -33,7 +33,7 @@
     </td>
     <td width="201"> 
       <div align="center"><a href="../../resultats/TEST/1.php" target="_blank">Consult 
-        Matchs ss r&eacute;sultat</a></div>
+        Matchs ss résultat</a></div>
     </td>
   </tr>
   <tr> 
@@ -43,7 +43,7 @@
     </td>
     <td width="176" bgcolor="#FFFFFF"> 
       <div align="center"><a href="/admin/MAJFFR/raccourcis_ffr/page_raccourcisChamp.php" target="_blank">Accès 
-        donn&eacute;es FFR</a></div>
+        données FFR</a></div>
     </td>
     <td width="201"> 
       <div align="center"><a href="../../resultats/TEST/calendrier.php" target="_blank">Consult 
@@ -51,7 +51,7 @@
     </td>
   </tr>
   <tr> 
-    <td width="200"><a href="majDebutSaison/ajoutJournee.php">ajouter une journ&eacute;e</a></td>
+    <td width="200"><a href="majDebutSaison/ajoutJournee.php">ajouter une journée</a></td>
     <td width="195"> 
       <div align="center"><a href="/admin/majScores/telechargement/pageSaisieDesBonus.php">Saisie 
         des Bonus</a></div>
@@ -68,7 +68,7 @@
 <table width="800" border="1">
   <tr bgcolor="#006699"> 
     <td colspan="2"> 
-      <div align="center"><b><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">V&eacute;rification 
+      <div align="center"><b><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">Vérification 
         des classements</font></b></div>
     </td>
   </tr>
@@ -76,7 +76,7 @@
     <td width="389">&nbsp;</td>
     <td width="395"> 
       <div align="center"><a href="/admin/MAJFFR/raccourcis_ffr/page_raccourcisClassement.php">Classement 
-        comp&eacute;titions FFR</a></div>
+        compétitions FFR</a></div>
     </td>
   </tr>
   <tr> 
@@ -102,13 +102,13 @@
   <tr bgcolor="#006699"> 
     <td colspan="2"> 
       <div align="center"><font color="#FFFFFF"><b><font face="Verdana, Arial, Helvetica, sans-serif">MAJ 
-        D&eacute;but de saison</font></b></font></div>
+        Début de saison</font></b></font></div>
     </td>
   </tr>
   <tr> 
     <td width="389"> 
       <div align="center"><a href="/admin/majDebutSaison/pageMajMatchsEquipes.php">Maj 
-        D&eacute;but de saison</a></div>
+        Début de saison</a></div>
     </td>
     <td width="395"> 
       <div align="center"></div>
@@ -125,7 +125,7 @@
 <table width="800" border="1">
   <tr> 
     <td colspan="2" bgcolor="#FF0000"> 
-      <div align="center"><font color="#FFFFFF"><b><font face="Verdana, Arial, Helvetica, sans-serif">Cr&eacute;ation 
+      <div align="center"><font color="#FFFFFF"><b><font face="Verdana, Arial, Helvetica, sans-serif">Création 
         nouveau club</font></b></font></div>
     </td>
   </tr>

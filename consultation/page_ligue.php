@@ -3,6 +3,7 @@ require("../saison.php");
 require 'fonctions.php';
 require '../fonctions.php';
 $idLigue = $_GET['idLigue'];
+$mode = $_GET['mode'];
 require("../connect/connexion1.php");
 rechercheInfosLigues($idLigue, $bdd);
 ?>
@@ -43,7 +44,14 @@ rechercheInfosLigues($idLigue, $bdd);
 				<?php include("../01gauche.php");  ?>
 			</td>
 			<td class = "centreDePage">
-				<?php include("ligue.php"); ?>
+				
+			
+			
+			
+			<?php include("ligue.php"); ?>
+		
+		
+		
 			</td>
 			<td class="colonne"  >
 				<?php include("../00droite.php");  ?>

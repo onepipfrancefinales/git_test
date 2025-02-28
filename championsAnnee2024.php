@@ -122,6 +122,11 @@ else {
 		<td class="style size4">AS Bayonne (NAQ)</td>
 		<td><a href="<?php echo $adresse; ?>?division=290&annee=2024" title="Consulter les phases finales de la division"><img src="/favicon.ico"></a></td>
 	</tr>
+	<tr class="size4 backgroundGray">
+		<td class="styleDivision">Fédérale 2 :</td>
+		<td class="style size4">Stade Rochelais (NAQ)</td>
+		<td><a href="<?php echo $adresse; ?>?division=290&annee=2024" title="Consulter les phases finales de la division"><img src="/favicon.ico"></a></td>
+	</tr>
 
 	<tr class="size5 backgroundBlue colorWhite">
 		<td colspan="3" class="styleDivision">Jeunes</td>

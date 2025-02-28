@@ -29,7 +29,7 @@ require '../resultats/constantes.php';
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../dossiers.css">
   <link type="text/css" rel="stylesheet" href="../../smart/10.css">
-  <title>France Finales Rugby </title>
+  <title>Accueil dossiers </title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@ require '../resultats/constantes.php';
   <div class="backgroundWhite">
     <?php
     include 'smartHeader.php';
-    require 'smartAccueil.php';
+    require 'smartAccueil2.php';
     require 'smartBody.php'; ?>
   </div>
 </body>

@@ -106,7 +106,7 @@
       <td width="389"><a href="/phasesfinalesterr2019/majFinalesTerr/accueilMAJ.php">MAJ Phases finales régionales</a> </td>
     </tr>
     <tr>
-      <td width="395"><a href="/phases_finales2019/Maj_champ_france/accueilMAJ.php?annee=2024">MAJ Phases finales championnnat de France</a></td>
+      <td width="395"><a href="/phases_finales2019/Maj_champ_france/accueilMAJ.php?annee=2025">MAJ Phases finales championnnat de France</a></td>
     </tr>
     <tr>
       <td width="395" height="23"></td>

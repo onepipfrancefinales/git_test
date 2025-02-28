@@ -461,13 +461,13 @@ else  $width = "90%";
   <div id="palmares" class="center">
   
     <?php 
-    echo "----------"; echo "<br>";
-    echo "Zone de Test : identique à la liste ci-dessus"; echo "<br>";
+   // echo "----------"; echo "<br>";
+    //echo "Zone de Test : identique à la liste ci-dessus"; echo "<br>";
     echo "<br>";
     $table = "bdjeunesligne";
     palmaresParClubLigne($nomChampion, $id_equipe, $table, $categorie, $bdd); 
     
-    echo "----------"; echo "<br>";
+    //echo "----------"; echo "<br>";
     ?>
   </div>
 
