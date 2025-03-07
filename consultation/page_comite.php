@@ -1,6 +1,6 @@
 <?php
 $sigle = $_GET['variable_1'];
-
+$mode = $_GET['mode'];
 require("../saison.php");
 require 'fonctions.php';
 
@@ -27,41 +27,36 @@ nomLigueParSigleLigue($sigleLigue, $bdd);
 	<meta name="author" content="Equipe Onepip">
 	<meta name="robots" content="All">
 	<link type="text/css" rel="stylesheet" href="../ligne1.css" />
+	<link type="text/css" rel="stylesheet" href="../smart/10.css">
 	<link type="text/css" rel="stylesheet" href="lienNoir.css" />
 	<link type="text/css" rel="stylesheet" href="../formulaireDG.css">
 
 	<title>Comité de rugby <?php echo $nomComite; ?> </title>
 </head>
 
-<body>
-	<table width="1250" align="center" >
+<body class="backgroundBlack">;
+	<table width="1250" align="center">
 		<tr>
 			<td colspan="3" height="74"> <?php include("../images/page_image_al.php");  ?> </td>
 		</tr>
 		<tr>
 			<td colspan="3"><?php include("../01ligne.php"); ?></td>
 		</tr>
-		<tr >
+		<tr>
 			<td class="colonne">
 				<?php include("../01gauche.php");  ?>
 			</td>
 			<td class="centreDePage">
-				<?php include("comite.php");    ?>
+				<?php include("comite.php");?>
 			</td>
 			<td class="colonne">
 				<?php include("../00droite.php");  ?>
 			</td>
 		</tr>
 	</table>
-	<?php include("../resultats/piedDePage.php"); ?>
 </body>
-
 <footer>
-	<!--
-     <div id="9129-5">
-	  <script src="//ads.themoneytizer.com/s/gen.js?type=5">  </script>
-      <script src="//ads.themoneytizer.com/s/requestform.js?siteId=9129&amp;formatId=5"> </script>
-	 </div> 
-	 -->
+	<?php	include("../resultats/piedDePage.php");	?>
 </footer>
+
 </html>

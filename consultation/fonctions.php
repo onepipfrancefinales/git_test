@@ -762,7 +762,7 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 
 	/********************************************* */
 	//Affichage du logo et du nom du club par division, par ligue et par genre 
-	function clubsParLigue($idLigue, $type, $var1, $bdd)
+	function clubsParLigue($idLigue, $type, $var1,$mode, $bdd)
 	{
 		global $nbreEquipe;
 		$reponse = $bdd->query("
@@ -798,8 +798,19 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 			}
 
 			for ($i = 0; $i < $nbreEquipe; $i++) {
+				if ($mode != "smart")
+				{
 				echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
 				echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";
+				}
+				else
+				{
+				echo "<a href=\"ficheClubs/pageFicheClubs.php?page=ligue&champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
+				echo "<a href=\"ficheClubs/pageFicheClubs.php?page=ligue&champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";
+		//echo "<a href=\"ficheClubs/pageFicheClubs.php?champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
+		//echo " " . "<a href=\"ficheClubs/pageFicheClubs.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";			
+	
+	}
 				//clubEnfant($tabCodeEquipe[$i],$bdd);
 				echo "<br>";
 			}
@@ -810,7 +821,7 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 	}
 
 	//Affichage du logo et du nom du club par division, par comité et par genre 
-	function clubsParComite($sigle, $type, $var1, $bdd)
+	function clubsParComite($sigle, $type, $var1, $mode, $bdd)
 	{
 		global $nbreEquipe;
 		// $terr_annee =("terr_".''.$saison);	
@@ -851,11 +862,18 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 			}
 
 			for ($i = 0; $i < $nbreEquipe; $i++) {
-				echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
+				if ($mode != "smart")
+				{echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";}
+				else
+				{echo "<a href=\"ficheClubs/pageFicheClubs.php?page=comite&champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";}
+			
 			?>
 				<font face="Times New Roman, Times, serif">
 					<?php
-					echo " " . "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";
+						if ($mode != "smart")
+					{echo " " . "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";}
+					else
+					{echo " " . "<a href=\"ficheClubs/pageFicheClubs.php?page=comite&champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";}
 					?>
 				</font>
 			<?php

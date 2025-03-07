@@ -1,6 +1,9 @@
 <?php
 $terr_annee =("terr_".''.$saison);?>
+
 <br />
+<div class="center">
+
 <h1>Ligue <?php echo $nomLigue;?></h1>
 
 <?php 
@@ -8,7 +11,7 @@ require ("../connect/connexion1.php") ;
 {print("<img src=\"../images/ligues/$sigleLigue.jpg\" border=\"0\" target=_top>");}
 echo "<br/><br/><br/>";
 ?>
-							  
+</div>							  
 <p>&nbsp;</p>
 <p class="texteGras">Président : </p>
 <p class="texte"> 
@@ -44,20 +47,20 @@ echo "<br/><br/><br/>";
   <b> Site Internet :</b> 
  
 </p>
-<br/>
-  <br/>
+<br>
+  <br>
 
-<hr />
+<hr>
 
 							  
-<hr />
+<hr>
 
 <h1> Présentation :<br></h1>
 							
 <p class="texte"> La ligue <?php echo $nomLigue; ?> se compose <br/>
 	des anciens comités suivants : <br />
   <?php
-	echo "<br />";
+	echo "<br>";
 	$sigle = 0;
 							
 	if($comite1 !=null)
@@ -151,14 +154,14 @@ structureLigue($idLigue, $bdd);
 ?>
 
 <h1  > Structure de la ligue :<br></h1>
-<table width="407" class="marginAuto">
+<table width="95%" class="marginAuto">
  <tr> 
     <td width="150" class="texte18"> Divisions </td>
     <td width="80" class="texte18"> <span class=" size2">(En nombre de clubs actifs) </span></td>
  </tr>
  <tr> 
     <td colspan="2"> 
-      <hr />
+      <hr>
     </td>
   </tr>
  <tr> 
@@ -171,7 +174,7 @@ structureLigue($idLigue, $bdd);
   </tr>
   <tr> 
     <td colspan="2"> 
-      <hr />
+      <hr>
     </td>
   </tr>
   
@@ -189,7 +192,7 @@ structureLigue($idLigue, $bdd);
   </tr>
   <tr> 
     <td colspan="2"> 
-      <hr />
+      <hr>
     </td>
   </tr>
   <tr class="backgroundCCCCCC"> 
@@ -215,7 +218,7 @@ structureLigue($idLigue, $bdd);
     <td colspan="2"></td>
   </tr>
 <tr> 
-    <td colspan="2"> <hr /></td>
+    <td colspan="2"> <hr></td>
   </tr>
   <tr> 
     <td class="texte18">Féminines Elite:</td>
@@ -227,7 +230,7 @@ structureLigue($idLigue, $bdd);
     <td class="texte18"><?php  if($d291 >0) echo ($d291+$d301); ?></td>
   </tr>
   <tr> 
-    <td colspan="2"> <hr /></td>
+    <td colspan="2"> <hr></td>
   </tr>
   <tr> 
     <td class="texte18 bold">Total :</td>
@@ -235,17 +238,17 @@ structureLigue($idLigue, $bdd);
   </tr>
 </table>
 
-<br />
-<hr />
-<br />
-<hr />
+<br>
+<hr>
+<br>
+<hr>
 
 <p align="center"> 
-  <?php    include("../pub/pub_carre.php");
+  <?php   // include("../pub/pub_carre.php");
     echo"<br/>";
 	?>
   <font color="#FF0000"> <br>
-  _______________________________________________________</font> </p>
+  ____________________________________________</font> </p>
 <br>
 
 <br>
@@ -283,8 +286,8 @@ echo "<a href=../palmares/palmNational/pagePalmLigue.php?idLigue=$idLigue > Tous
    
 </p>
 
-<br />
-<hr />
+<br>
+<hr>
 <?php if (isset($_GET['saisonChoisie'])) $saisonChoisie=$_GET['saisonChoisie']; else $saisonChoisie=2020;?>
 <br />
 <!--
@@ -380,13 +383,13 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
   <br>
   <hr> <br>
   <br>
-  <?php   include("../pub/pub4.php");
+  <?php  // include("../pub/pub4.php");
     ?>
   <br>
-<font color="#FF0000">_______________________________________________________</font> 
+<font color="#FF0000">____________________________________________</font> 
 <br>
 <h1>Clubs de la ligue</h1>
-<br />
+<br>
 <h3> Clubs professionnels <span class="size3 ">(<?php echo $d110+$d120;?> clubs)</span> :</h3>
  <p class="afficheEquipe"> 
  <?php  
@@ -399,7 +402,7 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 135, $mode, $bdd); ?></p>
 
 <h3>Fédérale 1 <span class="size3 ">(<?php echo $d140;?> clubs)</span> :</h3> 
-<p class="afficheEquipe"> <?php clubsParLigue($idLigue, "M", 140, $mode,  $bdd);?></p>
+<p class="afficheEquipe"> <?php clubsParLigue($idLigue, "M", 140, $mode, $bdd);?></p>
 <h3>Fédérale 2 <span class="size3 ">(<?php echo $d150;?> clubs)</span> :</h3> 
 <p class="afficheEquipe"> <?php clubsParLigue($idLigue, "M", 150, $mode, $bdd);?></p>
 
@@ -430,7 +433,7 @@ echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLig
 <p> 
   <?php // require ("../connect1/connection1.php") ;?>
   <?php
-clubEnfant(2029152,$bdd);
+
 
 //$query = "	SELECT bdsaisons.id, bdclubs.nom_1, bdclubs.url, bdclubs.logo, bdclubs.url, bdclubs.fusion 
 //			FROM bdsaisons, bdclubs 
@@ -449,11 +452,14 @@ echo "<br/>";
 ?>
 </p>
 
-
-
+<?php if($mode != "smart")
+$marginLeft = "150px";
+else
+$marginLeft = "0px";
+?>
 <style>
 .accordion {
-  margin-left: 150px;
+  margin-left: <?php echo $marginLeft; ?>;
   font-family:arial;
   background-color: white;
   color: red;
@@ -488,7 +494,7 @@ echo "<br/>";
 
 <button class="accordion ">Clubs en sommeil : <span class="size3">(Cliquer pour ouvrir)</span></button>
 <div class="panel">
-  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 980, $mode,  $bdd);?></p>
+  <p class="afficheEquipe"><?php clubsParLigue($idLigue, "M", 980, $mode, $bdd);?></p>
 </div>
 
 <button class="accordion">Que sont ils devenus ? : <span class="size3">(Cliquer pour ouvrir)</span></button>

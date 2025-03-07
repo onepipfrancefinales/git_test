@@ -1,5 +1,6 @@
 <?php
 $idLigue = $_GET['idLigue'];
+$mode=$_GET['mode'];
 require("../../connect/connexion1.php");
 require '../../consultation/fonctions.php';
 require '../../palmares/fonctionsPalmares.php';
@@ -14,6 +15,7 @@ rechercheInfosLigues($idLigue, $bdd);
   <meta name="resource-type" content="document">
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <link type="text/css" rel="stylesheet" href="../../ligne1.css" />
+  <link type="text/css" rel="stylesheet" href="../../smart/10.css">
   <link type="text/css" rel="stylesheet" href="../lienNoir.css" />
   <link type="text/css" rel="stylesheet" href="palmares.css" />
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
@@ -23,7 +25,12 @@ rechercheInfosLigues($idLigue, $bdd);
   <title>Présentation de la ligue</title>
 </head>
 
-<body>
+<?php if ($mode  != "smart")
+echo "<body class=\"backgroundBlack\">";
+else
+echo "<body class=\"backgroundWhite\">";
+
+if ($mode  != "smart") { ?>
   <table class="marginAuto width1250">
     <tr>
       <td colspan="3">
@@ -40,16 +47,33 @@ rechercheInfosLigues($idLigue, $bdd);
         <?php include("../../01gauche.php"); ?>
       </td>
       <td class="centreDePage">
-        <?php include("palmParLigue.php"); ?>
+      <?php
+    } else
+include "../../smart/smartHeader.php";
+
+
+    
+         include("palmParLigue.php"); 
+         
+         if ($mode  != "smart") { ?>
       </td>
       <td class="colonne">
         <?php include("../../00droite.php"); ?>
       </td>
     </tr>
+
   </table>
+  <?php } ?>
 </body>
 
 <footer>
-  <?php include("../../footer.php");  ?>
-</footer>
+
+  <?php 
+ if ($mode  != "smart") 	
+ include ("../../footer.php"); 
+else
+include ("../../smart/smartFooter.php"); 
+?>
+   
+  </footer>
 </html>

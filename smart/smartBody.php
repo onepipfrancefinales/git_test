@@ -11,6 +11,10 @@
     case "palmaresRegions":
       require 'palmares/regions.php';
       break;
+
+      case "palmaresParComite":
+        require '../palmares/palmNational/palmParComite.php';
+        break;
     case "brennus":
       require '../dossiers/brennus/accueil.php';
       break;
@@ -25,22 +29,32 @@
         require '../dossiers/lexique/lexique.php';
       }
       break;
-    case "hymnes": 
-        require '../dossiers/hymnes/somHymnes.php';
-        break;
+    case "hymnes":
+      require '../dossiers/hymnes/somHymnes.php';
+      break;
     case "videos": {
-        include("../dossiers/video/rugbyAmateur/V2.php");
-        include("../dossiers/video/rugbyAmateur/V3.php");
-        include("../dossiers/video/rugbyAmateur/V4.php");
-        include("../dossiers/video/rugbyAmateur/V5.php");
-        include("../dossiers/video/rugbyAmateur/V6.php");
-        include("../dossiers/video/rugbyAmateur/V7.php");
-        include("../dossiers/video/rugbyAmateur/V8.php");
+        include "../dossiers/video/rugbyAmateur/V2.php";
+        include "../dossiers/video/rugbyAmateur/V3.php";
+        include "../dossiers/video/rugbyAmateur/V4.php";
+        include "../dossiers/video/rugbyAmateur/V5.php";
+        include "../dossiers/video/rugbyAmateur/V6.php";
+        include "../dossiers/video/rugbyAmateur/V7.php";
+        include "../dossiers/video/rugbyAmateur/V8.php";
       }
       break;
     case "chansons":
       require '../dossiers/chansons/chansons.php';
       break;
-  
+// recherche
+    case "ligues":
+      require '../consultation/ligueTest.php';
+      break;
+    case "comites":
+      require '../consultation/comite.php';
+      break;
+    case "lettres":
+      require '../consultation/logoclubs2.php';
+
+      break;
   }
   ?>

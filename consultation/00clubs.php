@@ -1,5 +1,8 @@
 <?php
-if ($smart == true) {
+
+$mode = $_GET['mode'];
+
+if ($smart == true  ||  $mode =="smart") {
 ?>
 
   <br>
@@ -49,7 +52,7 @@ else  $width = "90%";
 
     <?php
     if ($fusion == true) {
-      if ($smart == true) {
+      if ($smart == true || $mode=="smart") {
         $URL = "/smart/ficheClubs/pageFicheClubs.php?champion=";
       } else {
         $URL = "/consultation/pageclub00.php?champion=";
@@ -209,7 +212,7 @@ else  $width = "90%";
   </table>
   <br>
 
-  <?php changementNom($id_equipe, $width, $bdd);  ?>
+  <?php  changementNom($id_equipe, $width, $bdd);  ?>
 
 
   <br>
@@ -281,8 +284,9 @@ else  $width = "90%";
 
   //if (isset ($_GET['smart']))$smart = $_GET['smart'];else $smart=0;
   //echo "smart".$smart;
-  if ($smart == 1)
+  if ($smart == 1 or $mode == "smart") 
     require("../../connect/connexion1.php");
+
   else
     require("../connect/connexion1.php");
 
@@ -322,7 +326,7 @@ else  $width = "90%";
 
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
-    if ($smart == true)
+    if ($smart == true || $mode == "smart")
       echo "<h2 class=\"size4\"> Equipe Une </h2>";
     else {
     ?>

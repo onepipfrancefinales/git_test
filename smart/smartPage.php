@@ -1,5 +1,6 @@
 <?php
 session_start();
+if (isset($_GET['idLigue'])) $idLigue = $_GET['idLigue'];
 if (isset($_GET['comite'])) $comite = $_GET['comite'];
 if (isset($_GET['page'])) $page = $_GET['page'];else $page= "accueil";
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
@@ -8,14 +9,31 @@ if (isset($_GET['sommaire'])) $sommaire = $_GET['sommaire'];
 if (isset($_GET['lettre'])) $lettre = $_GET['lettre'];
 if (isset($_GET['chanson'])) $chanson = $_GET['chanson'];
 if (isset($_GET['pays'])) $pays = $_GET['pays'];
+if (isset($_GET['variable_1'])) $sigle = $_GET['variable_1'];
+if (isset($_GET['variableLettre'])) $variableLettre = $_GET['variableLettre'];
 
-
+require '../connect/connexion1.php';
 require '../saison.php';
 require '../consultation/fonctions.php';
-require '../connect/connexion1.php';
-require '../resultats/constantes.php';
-?>
+require '../fonctions.php';
+//require '../fonctionsPalmares.php';
 
+require '../resultats/constantes.php';
+//ligues
+rechercheInfosLigues($idLigue, $bdd);
+//comites
+nomComite($sigle, 0, $bdd);
+rechercheInfosComites($sigle, $bdd);
+nomLigueParSigleLigue($sigleLigue, $bdd);
+?>
+<script >
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//--> //0new2
+</script>
 <html>
 <head>
   <meta name="description"

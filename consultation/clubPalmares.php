@@ -2,15 +2,14 @@
 
   <?php
 
-  if ($smart == 1)
+  if ($smart == 1 or $mode == "smart") 
     echo "<h1 class=\"size5\">Palmarès</h1>";
   else
     echo "<h1>Palmarès</h1>";
+ 
 
 
-  //if (isset ($_GET['smart']))$smart = $_GET['smart'];else $smart=0;
-  //echo "smart".$smart;
-  if ($smart == 1)
+  if ($smart == 1 or $mode == "smart")
     require("../../connect/connexion1.php");
   else
     require("../connect/connexion1.php");
@@ -19,7 +18,7 @@
   $table = "bdeurope";
   nbreTitreEU($id_equipe, $bdd);
   if ($nombreTitreEU > 0) {
-    if ($smart == true)
+    if ($smart == true or $mode == "smart")
       echo "<h2 class=\"size4\"> Titres Européens </h2>";
     else
 
@@ -51,7 +50,7 @@
 
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
-    if ($smart == true)
+    if ($smart == true or $mode == "smart")
       echo "<h2 class=\"size4\"> Equipe Une </h2>";
     else {
     ?>
@@ -89,7 +88,7 @@
   $nbreTitreFusion4 = $nombreTitre;
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
-    if ($smart == true)
+    if ($smart == true or $mode == "smart")
       echo "<h2 class=\"size4\"> Equipe II </h2>";
     else
       echo "<h2> Equipe II </h2>";
@@ -123,7 +122,7 @@
   $nbreTitreFusion4 = $nombreTitre;
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
-    if ($smart == true)
+    if ($smart == true or $mode == "smart")
       echo "<h2 class=\"size4\"> Challenges Nationaux </h2>";
     else
       echo "<h2> Challenges Nationaux </h2>";
@@ -155,7 +154,7 @@ palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd); ?>
   $nbreTitreFusion4 = $nombreTitre;
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
-    if ($smart == true)
+    if ($smart == true or $mode == "smart")
       echo "<h2 class=\"size4\"> Reichels & Juniors </h2>";
     else
       echo "<h2> Reichels & Juniors </h2>";
@@ -192,7 +191,7 @@ palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd); ?>
   $nbreTitreFusion4 = $nombreTitre;
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
-    if ($smart == true)
+    if ($smart == true or $mode == "smart")
       echo "<h2 class=\"size4\"> Cadets </h2>";
     else
       echo "<h2> Cadets </h2>";

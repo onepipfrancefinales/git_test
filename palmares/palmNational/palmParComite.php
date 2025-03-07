@@ -1,6 +1,7 @@
 <br /><br />
 
 <?php
+
 $reponse = $bdd->query("SELECT * 
 						FROM bdcomite 
 						WHERE sigle='$sigle' ");
@@ -25,6 +26,7 @@ echo "<h2><p> <strong> Titres nationaux du comité </strong></p></h2>"; {
 <?php
 $table = "bdequipe1";
 $categorie = "A";
+
 
 palmaresParLigue($sigle, $table, $categorie, $bdd);
 ?>
@@ -95,7 +97,7 @@ palmaresParLigue($sigle, $table, $categorie, $bdd);
 $table = "bdjeunes";
 $categorie = "C";
 
-//palmaresParLigue($sigle, $table, $categorie, $bdd);
+palmaresParLigue($sigle, $table, $categorie, $bdd);
 
 $reponse = $bdd->query("SELECT saison, division, champion  
 						FROM bdchallenges 

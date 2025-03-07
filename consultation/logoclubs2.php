@@ -1,39 +1,52 @@
-    <table width="801" class="marginAuto">
+   
+   <?php if ($mode =="smart")  
+     $adresseLettres="../smart/smartPage.php";
+   else
+   $adresseLettres="page_recherche_comite2.php";
+   ?>
+
+   
+   
+   
+   <table width="90%" class="marginAuto">
       <tr> 
-        <td width="387" class="backgroundCCCCCC"> 
+        <td  class="backgroundCCCCCC"> 
           <div class="center size6">Autre recherche <br>
             <select name="select3" onChange="MM_jumpMenu('parent',this,0)" size="1">
               <option selected>Alphabétique</option>
-              <option value="page_recherche_comite2.php?variable_1=A">A</option>
-              <option value="page_recherche_comite2.php?variable_1=B">B</option>
-              <option value="page_recherche_comite2.php?variable_1=C">C</option>
-              <option value="page_recherche_comite2.php?variable_1=D">D</option>
-              <option value="page_recherche_comite2.php?variable_1=E">E</option>
-              <option value="page_recherche_comite2.php?variable_1=F">F</option>
-              <option value="page_recherche_comite2.php?variable_1=G">G</option>
-              <option value="page_recherche_comite2.php?variable_1=H">H</option>
-              <option value="page_recherche_comite2.php?variable_1=I">I</option>
-              <option value="page_recherche_comite2.php?variable_1=J">J</option>
-              <option value="page_recherche_comite2.php?variable_1=K">K</option>
-              <option value="page_recherche_comite2.php?variable_1=L">L</option>
-              <option value="page_recherche_comite2.php?variable_1=M">M</option>
-              <option value="page_recherche_comite2.php?variable_1=N">N</option>
-              <option value="page_recherche_comite2.php?variable_1=O">O</option>
-              <option value="page_recherche_comite2.php?variable_1=P">P</option>
-              <option value="page_recherche_comite2.php?variable_1=Q">Q</option>
-              <option value="page_recherche_comite2.php?variable_1=R">R</option>
-              <option value="page_recherche_comite2.php?variable_1=S">S</option>
-              <option value="page_recherche_comite2.php?variable_1=T">T</option>
-              <option value="page_recherche_comite2.php?variable_1=U">U</option>
-              <option value="page_recherche_comite2.php?variable_1=V">V</option>
-              <option value="page_recherche_comite2.php?variable_1=W">W</option>
-              <option value="page_recherche_comite2.php?variable_1=X">X</option>
-              <option value="page_recherche_comite2.php?variable_1=Y">Y</option>
-              <option value="page_recherche_comite2.php?variable_1=Z">Z</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=A&mode=smart&page=lettres">A</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=B&mode=smart&page=lettres">B</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=C&mode=smart&page=lettres">C</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=D&mode=smart&page=lettres">D</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=E&mode=smart&page=lettres">E</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=F&mode=smart&page=lettres">F</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=G&mode=smart&page=lettres">G</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=H&mode=smart&page=lettres">H</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=I&mode=smart&page=lettres">I</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=J&mode=smart&page=lettres">J</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=K&mode=smart&page=lettres">K</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=L&mode=smart&page=lettres">L</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=M&mode=smart&page=lettres">M</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=N&mode=smart&page=lettres">N</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=O&mode=smart&page=lettres">O</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=P&mode=smart&page=lettres">P</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=Q&mode=smart&page=lettres">Q</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=R&mode=smart&page=lettres">R</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=S&mode=smart&page=lettres">S</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=T&mode=smart&page=lettres">T</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=U&mode=smart&page=lettres">U</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=V&mode=smart&page=lettres">V</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=W&mode=smart&page=lettres">W</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=X&mode=smart&page=lettres">X</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=Y&mode=smart&page=lettres">Y</option>
+              <option value="<?php echo $adresseLettres; ?>?variableLettre=Z&mode=smart&page=lettres">Z</option>
             </select>
           </div>
         </td>
-        <td width="402" class="backgroundCCCCCC"> 
+
+<?php if ($mode !="smart") { ?>
+
+        <td width="50%" class="backgroundCCCCCC"> 
           <div class="center size6">Recherche par comité<br>
             <select id="inputG" name="select3" onChange="MM_jumpMenu('parent',this,0)" size="1">
               <option selected>Par comité</option>
@@ -62,11 +75,14 @@
               <option value="/consultation/page_recherche_comite2.php?variable_1=(PA)">Périgord Agenais</option>
               <option value="/consultation/page_recherche_comite2.php?variable_1=(PCH)">Poitou Charente</option>
               <option value="/consultation/page_recherche_comite2.php?variable_1=(PR)">Provence</option>
-              <option value="/consultation/page_recherche_comite2.php?variable_1=(PC)">Pays 
-              Catalan</option>
+              <option value="/consultation/page_recherche_comite2.php?variable_1=(PC)">Pays Catalan</option>
             </select>
              </div>
         </td>
+
+        <?php
+        }
+        ?>
       </tr>
     </table>
   </div>
@@ -74,11 +90,11 @@
       <HR/>
    
   
-    <?php $sigle = $_GET['variable_1'];?>
+    <?php $sigle = $_GET['variableLettre'];?>
    
-<div class="titrePage">Tous les Clubs Français<br>
-      en <?php echo $sigle ;?>
-    </div>
+<h1 class="titrePage">Tous les Clubs <br>
+      commençant par <?php echo $sigle ;?>
+  </h1>
 
 <p> 
   <?php
@@ -111,8 +127,8 @@ if ($NbreData != 0) {
 	$j = 1;
 ?>
 </p>
-<table >
-    <tbody> 
+<table class= "marginAuto  width95PC">
+   
     <?php
 	
 	
@@ -144,8 +160,8 @@ else {
     <tr> 
       <?php		}
 ?>
-      <td> 
-        <div id="affichage"> 
+      <td class="width25PC"> 
+        <div id="affichage" class="center"> 
           <?php			// -------------------------
 				// DONNEES A AFFICHER dans la cellule
 		$valReduit[0]=substr($val[0],-5);
@@ -173,7 +189,7 @@ else {
 	if ($fintr!=1) {
 ?>
     <?php	} ?>
-    </tbody> 
+   
   </table>
   
 <?php

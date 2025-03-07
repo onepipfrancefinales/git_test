@@ -1,8 +1,9 @@
 <?php
 require("../connect/connexion1.php");
-
+$mode = $_GET['mode'];
 //if (isset ($chaine)) $chaine=$chaine; else $chaine ="";
-$chaine = $_GET['variable_1'];
+$chaine = $_GET['variableLettre'];
+$variable_1 = $_GET['variable_1'];
 
 $reponse = $bdd->query("SELECT * 
 						FROM bdclubs 
@@ -28,7 +29,7 @@ while ($donnees = $reponse->fetch()) {
 
 $reponse = $bdd->query("SELECT * 
 						FROM bdclubs 
-						WHERE nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); // Requ�te SQL 
+						WHERE nom_1='$chaine'or nom_2='$chaine'or sigle='$chaine' or nom_3='$chaine' or nom_4='$chaine'"); 
 while ($donnees = $reponse->fetch()) {
   $titre = $donnees['sigle'];
 }
@@ -36,6 +37,7 @@ while ($donnees = $reponse->fetch()) {
 
 <!DOCTYPE html PUBLIC>
 <html lang="fr">
+
 <head>
   <title>Tous les clubs du comité <?php echo $sigle; ?></title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -47,42 +49,39 @@ while ($donnees = $reponse->fetch()) {
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <link type="text/css" rel="stylesheet" href="../smart/10.css">
   <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
 </head>
 
-<body >
-  <table  width="1250" class="marginAuto">
-      <tr>
-          <td colspan="3" height="74">
-             <?php include("../images/page_image_al.php");  ?>
-          </td>
-       </tr>
-      <tr>
-      <tr >
-        <td  colspan="3">  
-           <?php include("../01ligne.php");  ?>
-        </td>
-      </tr>
-      <tr>
-        <td class="colonne">
-          <?php include("../01gauche.php"); ?>
-        </td>
-     
-        <td class="centreDePage">
-          <?php include("logoclubs2.php");  ?>
-        </td>
-        <td class="colonne">
-            <?php include("../00droite.php"); ?>
-        </td>
-      </tr>
-      <tr >
-        <td colspan="3" >
-
-        <?php include("../bas2.php");   ?>
-        </td>
-      </tr>
-    </table>
+<body class="backgroundBlack">";
+  <table width="1250" class="marginAuto">
+    <tr>
+      <td colspan="3" height="74">
+        <?php include("../images/page_image_al.php");  ?>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td colspan="3">
+        <?php include("../01ligne.php");  ?>
+      </td>
+    </tr>
+    <tr>
+      <td class="colonne">
+        <?php include("../01gauche.php"); ?>
+      </td>
+      <td class="centreDePage">
+        <?php include("logoclubs2.php"); ?>
+      </td>
+      <td class="colonne">
+        <?php include("../00droite.php"); ?>
+      </td>
+    </tr>
+  </table>
+  <footer>
+    <?php include("../resultats/piedDePage.php");  ?>
+  </footer>
 
 </html>

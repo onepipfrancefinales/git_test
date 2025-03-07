@@ -22,7 +22,7 @@
     <tr>
         <td colspan="2" class="borderWidth1 ">
           
-            <form action="/smart/ficheClubs/pageFicheClubs.php?mode=smart" method="POST">
+            <form action="/smart/ficheClubs/pageFicheClubs.php?mode=smart&page=recherche" method="POST">
       <fieldset class="fieldsetG"> 
           <legend class="legendG"> 
            Saissisez un club
