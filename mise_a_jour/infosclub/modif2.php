@@ -1,3 +1,9 @@
+
+<?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];else $mode ="noSmart";
+?>
+
+
 <!DOCTYPE html PUBLIC>       
 <html lang="fr">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -86,7 +92,7 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
   ?>
 
  
-    <form name="insertion" action="modif3.php" method="POST">
+    <form name="insertion" action="modif3.php?mode=<?php echo $mode;?>" method="POST">
 
       <input type="hidden" name="id" value="<?php echo ($id); ?>">
 
@@ -265,8 +271,30 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
   
   echo "<a href=../../consultation/pageclub00.php?champion=$id></a>";
 } else {
-  echo "erreur de saisie";
-  require "mdp.php";
+  echo
+   "<h1 class=\"center\">"."Erreur de saisie."."</h1>";
+ // require "mdp.php";
+
+
+
+ $idClub = $_GET['idClub']; 
+ //echo $idClub;
+ echo "<br>";
+ echo "<br>";
+ echo "Pour valider vous devez saisir,
+  \"pasUnRobot\" et validez ";
+ ?>
+ </p>
+ <form
+  action="modif2.php?idClub=<?php echo $idClub; ?>" method="post">
+   <p align="center"> 
+     <input name="mot_de_passe" type="text" required="required"> <input value="Valider" type="submit" >
+   </p>
+ </form>
+
+
+
+<?php
 }
   ?>
  </td>

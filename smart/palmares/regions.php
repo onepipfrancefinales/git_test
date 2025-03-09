@@ -1,4 +1,4 @@
-<p></p>
+<br>
 <table class="marginAuto">
     <tr>
         <td width="33%" class="center size3 styleArial"><a href="palmares/pagePalmTerr.php?comite=au&bddComite=au&champ=100171&seniors=equipeUne"> <img src="/images/ligues/ARA.jpg" width="100" height="100"><br>Auvergne Rhône Alpes</a></td>
@@ -21,3 +21,5 @@
         <td class="center size3 styleArial"><a href="palmares/pagePalmTerr.php?comite=pr&bddComite=idf&champ=220171&seniors=equipeUne"><img src="/images/ligues/PCA.jpg" width="100" height="100"><br>Procence Alpes Côte d'Azur</a></td>
     </tr>
 </table>
+<br>
+<br>

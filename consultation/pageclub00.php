@@ -3,40 +3,12 @@ require "../saison.php";
 require "../fonctions.php";
 require "fonctions.php";
 $chaine = $_GET['champion'];
-//$nouveauClub = $_GET['nouveauClub'];
-?> 
 
-<?php   
-
-/*----  A revoir -----*/
-      
+// remplacementde l'apostrophe
 if(stristr($chaine, "'") == true) {
-  echo "vu";
-  $chaine2 = str_replace("'","&apos;",$chaine);
+  $chaine2 = str_replace("'"," ",$chaine);
   $chaine = $chaine2;echo "<br>";
  }
- else {
-echo "echec";
- }
- 
- echo "<br>";
- echo "chaine2 :".$chaine2; echo "<br>";
-
-
- //$chaine = $chaine2; echo "<br>";
-
- echo "chaine : ".$chaine;
-//if ( strpos($chaine,"%27") ==   true)
-//echo "ok"; 
-//$chaine ="%27";
-?> 
-
-
-<?php  
-
-
-
-
 
 if (isset($_GET['nouveauClub'])) {
   $nouveauClub = $_GET['nouveauClub'];
@@ -64,18 +36,6 @@ else {
 
   require '../connect/connexion1.php';
   rechercheParNomDeVille($chaine, $bdd);
-
-  //echo "nombre de clubs :" . $nbreDeClub;
-
-  /*
-  echo "donnee1 : ".$nbreDeClub;
-  echo "donnee2 : ".$tabClubs[0];
-  echo "donnee2 : ".$tabClubs[1];
-  echo "donnee2 : ".$tabClubs[2];
-
-*/
-
-
   infosclub($chaine, $bdd);
   $id_equipe = $id;
   $equipe = $numLigue . $code;

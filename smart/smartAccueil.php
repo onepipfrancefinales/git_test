@@ -14,6 +14,8 @@
             <br>
         </td>
     </tr>
+  
+    
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
             <a class="colorWhite" href="/smart/sommaireOrigine.php">Résultats & <br> Classements</a>
@@ -31,12 +33,36 @@
             <br>
         </td>
     </tr>
+
+    <tr>
+        <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
+            <a class="colorWhite" href="/smart/sommaire.php">Recherche d'un club</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="borderWidth1 ">
+          
+            <form action="/smart/ficheClubs/pageFicheClubs.php?mode=smart&page=recherche" method="POST">
+      <fieldset class="fieldsetG"> 
+          <legend class="legendG"> 
+           Saissisez un club
+           </legend> 
+       <br>
+        <input class="inputG" type="text" name="champion"  title="Recherche par club" required="required">
+       <br>
+        <input class="inputG" type="submit" value="par club" >
+      </fieldset> 
+    </form>
+            <br>
+        </td>
+    </tr>
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
             <a class="colorWhite" href="../smart/pf/accueil.php?annee=2024"> Phases finales <br> du championnat de France
             </a>
         </td>
     </tr>
+    
     <tr>
         <td colspan="2" class="borderWidth1 ">
             <br>
@@ -64,14 +90,14 @@
         <td  class="borderWidth1 width50PC ">
             <br>
             <p class="size3">
-                <a class="colorBlack" href="smartPage.php?page=palmaresRegions">Palmarès territoriaux et <br> régionaux</a><br> 
+                <a class="colorBlack" href="smartPage.php?page=sommairePalmaresRegions">Palmarès territoriaux et <br> régionaux</a><br> 
             </p>
             <br>
         </td>
     </tr>
     <tr>
         <td colspan="2" style ="background-color:green" class="size5 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="../smart/palmares/page_palmares.php?division=10"> Palmarès Européen
+            <a class="colorWhite" href="../smart/palmares/page_palmares.php?division=10"> Palmarès Européens
             </a>
         </td>
     </tr>
@@ -102,7 +128,7 @@
         <td colspan="2" class="borderWidth1">
             <br />
             <p class="center colorWhite size4 style backgroundRed bold" colspan="3">
-                <a class="colorWhite" href="https://francefinalesrugby.fr" target="_blank">
+                <a class="colorWhite" href="https://francefinalesrugby.fr/index.php" target="_blank">
                     ACCEDER AU SITE <br> INTERNET </a>
             </p>
             <br>
@@ -128,7 +154,7 @@
 -->
     <tr>
         <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
-            Un peu d'histoire
+           Petit coup d'oeil dans le retro
         </td>
     </tr>
     <tr>

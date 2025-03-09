@@ -4,6 +4,6 @@
 	<td class="h22" > France Finales Rugby </td>
   </tr>
   <tr> 
-    <td colspan="2" class="h12">Championnat de France<br><?php echo $nomDivision.' - '.$annee ;?></td>
+    <td colspan="2" class="h12">Championnat de France <?php echo " ".$annee ;?><br><?php echo $nomDivision ;?></td>
   </tr>
 </table>

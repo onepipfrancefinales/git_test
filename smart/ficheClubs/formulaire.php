@@ -1,4 +1,7 @@
 <?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];else $mode ="noSmart";
+
+
 require ("../../saison.php");
 require ("../../fonctions.php");
 require '../../consultation/fonctions.php';
@@ -6,12 +9,7 @@ $id = $_GET['idClub'];
 require '../../connect/connexion1.php'; 
 nomComite (0,$id, $bdd);
 infosclub($id, $bdd);
-
-
 ?>
-
-
-
 
 <!DOCTYPE html PUBLIC>       
 <html lang="fr">
@@ -35,15 +33,10 @@ infosclub($id, $bdd);
 	  <td width= "95%"class="h22" height="20"> France Finales Rugby </td>
      </tr>
      <tr> 
-      <td colspan="2" class="h12" width= "100%"><?php echo $nomLong;?> </td>
+      <td colspan="2" class="h12" width= "100%"><?php echo "Modification des  données". "<br>" . $nomLong;?> </td>
      </tr>
     </table>
-
-
-
-    
-   
-   
+  
 	  <!-- Colonne centrale --> 
 	
        
@@ -110,7 +103,7 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
   ?>
 
  
-    <form name="insertion" action="enregFormulaire.php?" method="POST">
+    <form name="insertion" action="enregFormulaire.php?mode=<?php echo $mode;?>" method="POST">
 
       <input type="hidden" name="id" value="<?php echo ($id); ?>">
 
@@ -285,24 +278,20 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
         </tr>
       </table>
     </form>
+<br>
+   <h3 class="center bold">
   <?php
-  echo "<a href=../../consultation/pageclub00.php?champion=$id>retour vers la page précédente</a>";
-} else {
-  echo "erreur de saisie";
-  require "mdp.php";
-}
+  echo "<a href=../../consultation/pageclub00.php?champion=$id&mode=$smart>retour vers la page précédente</a>";
+} 
   ?>
+</h3>
+<br><br>
  </td>
-      
     </tr>
-   
 </table>
  </body>
   <footer> 
-  <?php 
-   require '../bas.php';
-
-   ?>
+  <?php require '../bas.php'; ?>
   </footer>
 
 </html> 

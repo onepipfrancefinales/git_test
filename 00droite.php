@@ -90,7 +90,7 @@
 			  Palmarès par club
 			 </legend> 
          <br>
-          <input class="inputG" type="text" name="champion"  title="Recherche par club">
+          <input class="inputG" type="text" name="champion"  title="Recherche par club" required="required">
          <br>
           <input class="inputG" type="submit" value="par club">
         </fieldset> 

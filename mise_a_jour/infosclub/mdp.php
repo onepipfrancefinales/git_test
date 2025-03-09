@@ -1,3 +1,7 @@
+<?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];else $mode ="noSmart";
+?>
+
 
 <!DOCTYPE html PUBLIC>       
 <html lang="fr">
@@ -31,6 +35,10 @@
 <p align="center"> 
 <?php 
 $idClub = $_GET['idClub']; 
+
+
+echo "Mise à jour de la fiche du club  ";
+echo "<br>";
 //echo $idClub;
 
 
@@ -39,9 +47,9 @@ saississez \"pasUnRobot\" et validez ";
 ?>
 </p>
 <form
- action="modif2.php?idClub=<?php echo $idClub; ?>" method="post">
+ action="modif2.php?idClub=<?php echo $idClub."&mode=".$mode; ?>" method="post">
   <p align="center"> 
-    <input name="mot_de_passe" type="text"> <input value="Valider" type="submit">
+    <input name="mot_de_passe" type="text" required="required"> <input value="Valider" type="submit" >
   </p>
 </form>
 

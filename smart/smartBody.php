@@ -8,10 +8,13 @@
     case "champions":
       require '../dossiers/champions/champions.php';
       break;
-    case "palmaresRegions":
+      case "palmaresRegions":
+        require '../palmares/palmNational/palmParLigue.php';
+        break;
+
+    case "sommairePalmaresRegions":
       require 'palmares/regions.php';
       break;
-
       case "palmaresParComite":
         require '../palmares/palmNational/palmParComite.php';
         break;

@@ -865,7 +865,7 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 				if ($mode != "smart")
 				{echo "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";}
 				else
-				{echo "<a href=\"ficheClubs/pageFicheClubs.php?page=comite&champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";}
+				{echo "<a href=\"ficheClubs/pageFicheClubs.php?mode=$mode&page=comite&champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";}
 			
 			?>
 				<font face="Times New Roman, Times, serif">
@@ -873,7 +873,7 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 						if ($mode != "smart")
 					{echo " " . "<a href=\"pageclub00.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";}
 					else
-					{echo " " . "<a href=\"ficheClubs/pageFicheClubs.php?page=comite&champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";}
+					{echo " " . "<a href=\"ficheClubs/pageFicheClubs.php?mode=$mode&page=comite&champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";}
 					?>
 				</font>
 			<?php

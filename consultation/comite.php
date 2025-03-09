@@ -1,11 +1,13 @@
-<br>
-<h1>Comité <?php echo $nomComite;?> </h1>
+
+<h1 class="center">Comité <?php echo $nomComite;?> </h1>
+<div class="center">
 <?php 
 {print("<img src=\"/images/comites/$sigle.jpg\" border=\"0\" target=_top>");}
 ?>
+</div>
 
-							  <br>
-							  <br>
+							  
+							
 <hr>
 <p class="center"> 
 							 
@@ -62,27 +64,30 @@ else
 <br>
 <hr>
 
+<?php
+if ($mode == "smart")
+$lien = "";
+else
+$lien = "page_comite.php?saisonChoisie=2018&variable_1=";
+?>
 
-<hr>
-<?php if (isset($_GET['saisonChoisie'])) $saisonChoisie=$_GET['saisonChoisie']; else $saisonChoisie=2018;?>
+
+<hr><div id="palmaresTerritorial"></div>
+<?php if (isset($_GET['saisonChoisie'])) $saisonChoisie=$_GET['saisonChoisie']; else $saisonChoisie=2018;
+?>
 <form name="form1" method="post" action="page_comite.php?variable_1=(CA)">
   Choisir une saison : 
   <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
-		 <option value="page_comite.php?saisonChoisie=2018&variable_1=<?php echo $sigle; ?>"><?php echo $saisonChoisie-1;echo "-".$saisonChoisie; ?></option>
-          <option value="page_comite.php?saisonChoisie=2018&variable_1=<?php echo $sigle; ?>">2017-2018</option>
-          <option value="page_comite.php?saisonChoisie=2017&variable_1=<?php echo $sigle; ?>">2016-2017</option>
-          <option value="page_comite.php?saisonChoisie=2016&variable_1=<?php echo $sigle; ?>">2015-2016</option>
+		  <option value="page_comite.php?saisonChoisie=2018&variable_1=<?php echo $sigle; ?>#palmaresTerritorial"><?php echo $saisonChoisie-1;echo "-".$saisonChoisie; ?></option>
+          <option value="page_comite.php?saisonChoisie=2018&variable_1=<?php echo $sigle; ?>#palmaresTerritorial">2017-2018</option>
+          <option value="page_comite.php?saisonChoisie=2017&variable_1=<?php echo $sigle; ?>#palmaresTerritorial">2016-2017</option>
+          <option value="page_comite.php?saisonChoisie=2016&variable_1=<?php echo $sigle; ?>#palmaresTerritorial">2015-2016</option>
   </select>
 </form>
 <br>
 
-<h1 class="colorRed">Palmarès Territorial >
-    <?php //  $saisonChoisie=$_GET['saisonChoisie'];  ?>
-   <?php //echo "$saison1";  ?>
+<h1 class="colorRed">Palmarès Territorial 
     <?php echo $saisonChoisie;  ?></h1>
-
-
- 
 
 <p class="texte18">
 <?php

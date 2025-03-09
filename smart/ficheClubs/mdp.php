@@ -1,4 +1,5 @@
 <?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];else $mode ="noSmart";
 require ("../../saison.php");
 require ("../../fonctions.php");
 require '../../consultation/fonctions.php';
@@ -79,7 +80,7 @@ infosclub($id, $bdd);
   </p>
 
    <form
-    action="formulaire.php?idClub=<?php echo $idClub; ?>" method="post">
+    action="formulaire.php?idClub=<?php echo $idClub."&mode=".$mode; ?>" method="post">
      <p align="center"> 
        <input name="mot_de_passe" type="text"> <input value="Valider" type="submit">
      </p>

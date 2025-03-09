@@ -1,8 +1,9 @@
 <?php
-$sigle = $_GET['variable_1'];
 $mode = $_GET['mode'];
+$sigle = $_GET['variable_1'];
 require '../../connect/connexion1.php';
 require '../../palmares/fonctionsPalmares.php';
+
 ?>
 
 <html>

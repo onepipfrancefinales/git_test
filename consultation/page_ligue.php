@@ -48,8 +48,8 @@ rechercheInfosLigues($idLigue, $bdd);
 			
 			
 			
-			<?php include("ligue.php"); ?>
-		
+			<?php //include("ligue.php"); ?>
+			<?php include("ligueTest.php"); ?>
 		
 		
 			</td>

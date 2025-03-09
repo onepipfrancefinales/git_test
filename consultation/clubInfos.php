@@ -235,7 +235,8 @@ else  $width = "90%";
   </table>
   <br>
   <?php
-  if ($smart != 1) {
+  if ( $mode != "smart") {
+
   ?>
     <table class="marginAuto borderWidth1" width="80%">
       <tr>
@@ -256,7 +257,7 @@ else  $width = "90%";
       <tr>
         <td colspan="6" class="backgroundRed borderColorBlack">
           <div class="center backgroundRed  bold colorWhite">
-            <?php echo "<a class=\"colorWhite\" href=../ficheClubs/mdp.php?idClub=$code target=_top>Modifier la fiche du club</a> "; ?>
+            <?php echo "<a class=\"colorWhite\" href=../ficheClubs/mdp.php?idClub=$code&mode=smart target=_top>Modifier la fiche du club</a> "; ?>
           </div>
         </td>
       </tr>

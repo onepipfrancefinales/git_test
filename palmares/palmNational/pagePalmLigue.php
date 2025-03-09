@@ -1,7 +1,7 @@
 <?php
 $idLigue = $_GET['idLigue'];
 $mode=$_GET['mode'];
-require("../../connect/connexion1.php");
+require '../../connect/connexion1.php';
 require '../../consultation/fonctions.php';
 require '../../palmares/fonctionsPalmares.php';
 rechercheInfosLigues($idLigue, $bdd);
@@ -24,13 +24,7 @@ rechercheInfosLigues($idLigue, $bdd);
   <meta name="robots" content="All">
   <title>Présentation de la ligue</title>
 </head>
-
-<?php if ($mode  != "smart")
-echo "<body class=\"backgroundBlack\">";
-else
-echo "<body class=\"backgroundWhite\">";
-
-if ($mode  != "smart") { ?>
+<body class="backgroundBlack">";
   <table class="marginAuto width1250">
     <tr>
       <td colspan="3">
@@ -48,14 +42,9 @@ if ($mode  != "smart") { ?>
       </td>
       <td class="centreDePage">
       <?php
-    } else
-include "../../smart/smartHeader.php";
-
-
-    
          include("palmParLigue.php"); 
          
-         if ($mode  != "smart") { ?>
+         ?>
       </td>
       <td class="colonne">
         <?php include("../../00droite.php"); ?>
@@ -63,16 +52,15 @@ include "../../smart/smartHeader.php";
     </tr>
 
   </table>
-  <?php } ?>
+
 </body>
 
 <footer>
 
   <?php 
- if ($mode  != "smart") 	
+
  include ("../../footer.php"); 
-else
-include ("../../smart/smartFooter.php"); 
+
 ?>
    
   </footer>

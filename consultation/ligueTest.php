@@ -281,7 +281,14 @@ $reponse =  $bdd->query("
 
  <p class="lien">      
 <?php
-echo "<a href=../palmares/palmNational/pagePalmLigue.php?idLigue=$idLigue > Tous les champions de France de la ligue </a> ";
+//echo "<a href=../palmares/palmNational/pagePalmLigue.php?idLigue=$idLigue&mode=$mode&page=palmaresRegions > Tous les champions de France de la ligue </a> ";
+
+
+if ($mode != "smart") 
+{  echo "<a href=../palmares/palmNational/pagePalmComite.php?idLigue=$idLigue&mode=$mode> Tous les champions de France de la ligue </a> ";}
+else
+{ echo "<a href=../smart/smartPage.php?idLigue=$idLigue&mode=smart&page=palmaresRegions> Tous les champions de France de la ligue </a> ";}
+
 ?>
    
 </p>

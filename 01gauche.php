@@ -50,7 +50,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  	  Palmarès par Année
 	    </legend> 
       <br>
-	  <input class="inputG" type="text" name="saison" maxlength="4" size="8" title="Recherche par année" >
+	  <input class="inputG" type="text" name="saison" maxlength="4" size="8" title="Recherche par année" required="required">
       <br>
 	  <input class="inputG" type="submit" value="par annee" name="submit33" >
       </fieldset > 

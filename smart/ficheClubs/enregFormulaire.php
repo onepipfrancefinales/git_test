@@ -1,4 +1,6 @@
 <?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];else $mode ="noSmart";
+
 require ("../../connect/connexion1.php") ;
 if (isset($_POST['A1601']))$A1601 = $_POST['A1601'];else $A1601=""; //Bureau -> président(s)
 if (isset($_POST['A1602']))$A1602 = $_POST['A1602'];else $A1602=""; //Bureau -> Secrétaire
@@ -73,6 +75,6 @@ for ($i=1601; $i < 1633; $i++)
  ?>
  <html>
  <script>
- window.location = "https://francefinalesrugby.fr/smart/ficheClubs/pageFicheClubs.php?champion=<?php echo $id; ?>";
+ window.location = "https://francefinalesrugby.fr/smart/ficheClubs/pageFicheClubs.php?champion=<?php echo $id."&mode=".$mode; ?>";
  </script>
  </html>

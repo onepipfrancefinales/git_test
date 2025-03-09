@@ -238,7 +238,7 @@ else  $width = "90%";
   </table>
   <br>
   <?php
-  if ($smart != 1) {
+  if ($smart != 1 or $mode != "smart") {
   ?>
     <table class="marginAuto borderWidth1" width="80%">
       <tr>

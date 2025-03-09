@@ -10,10 +10,15 @@ switch ($page) {
     case "palmaresRegions":
         $titre = "Ligues régionales de rugby <br> Palmarès";
         break;
-        case "palmaresParComite":
+     case "palmaresParComite":
             $titre = "Palmarès nationaux <br>
             des comités territoriaux";
             break;
+            case "sommairePalmaresRegions":
+                $titre = "Consultation des <br> palmarès régionaux";
+                break;
+
+
     case "divisions":
         $titre = "Evolutions des divisions";
         break;

@@ -3,11 +3,25 @@ require "../../saison.php";
 require "../../fonctions.php";
 require "../../consultation/fonctions.php";
 if (isset($_POST['champion'])) $chaine = $_POST['champion'];
-if (isset($_GET['champion'])) $chaine = $_GET['champion'];
+if (isset($_GET['champion'])) $chaineChampion = $_GET['champion'];
+
 if (isset($_GET['page'])) $page = $_GET['page'];
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
 
 //$nouveauClub = $_GET['nouveauClub'];
+if (empty($chaine))
+
+  $chaine = $chaineChampion;
+
+
+//echo "chaine".$chaine;
+// remplacementde l'apostrophe
+if (stristr($chaine, "'") == true) {
+  $chaine2 = str_replace("'", " ", $chaine);
+  $chaine = $chaine2;
+  echo "<br>";
+}
+
 
 if (is_int($chaine)) {
   $equipe = substr($chaine, 2, 5);
@@ -22,7 +36,6 @@ else {
   $id_equipe = $id;
   $equipe = $numLigue . $code;
   $id = substr($id, 2, 2);
-
 }
 
 
@@ -40,11 +53,14 @@ consultationEvolutionClub($equipe, $bdd);
 fusionDeClubs2($equipe, $bdd);
 
 rechercheParNomDeVille($chaine, $bdd);
-echo "$page : " . $page;
 
 
-if ($page == "comite")
+
+if ($page == "recherche" & !empty($id))
   $titre = $nomLong;
+  elseif ($page == "comite")
+  $titre = $nomLong;
+
 elseif ($page == "ligue")
   $titre = $nomLong;
 else
@@ -82,16 +98,15 @@ else
   </div>
   <div class="container">
     <?php
-    if (empty($id)) 
- require '../../consultation/02clubs.php';
-  else if ($nbreDeClub > 1)
-  require '../../consultation/modaleRecherche.php';
-    else  {
-    //  include '../../consultation/00clubs.php';
-     include '../../consultation/clubInfos.php';
+    if (empty($id))
+      require '../../consultation/02clubs.php';
+    else if ($nbreDeClub > 1)
+      require '../../consultation/modaleRecherche.php';
+    else {
+      include '../../consultation/clubInfos.php';
       include '../../consultation/clubPalmares.php';
       include '../../consultation/clubSaisons.php';
-}
+    }
     require '../smartFooter.php';
 
     ?>

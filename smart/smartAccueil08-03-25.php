@@ -16,28 +16,6 @@
     </tr>
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="/smart/sommaireOrigine.php">Retrouvez un club</a>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2" class="borderWidth1 ">
-          
-            <form action="/smart/ficheClubs/pageFicheClubs.php?mode=smart&page=recherche" method="POST">
-      <fieldset class="fieldsetG"> 
-          <legend class="legendG"> 
-           Saissisez un club
-           </legend> 
-       <br>
-        <input class="inputG" type="text" name="champion"  title="Recherche par club">
-       <br>
-        <input class="inputG" type="submit" value="par club">
-      </fieldset> 
-    </form>
-            <br>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
             <a class="colorWhite" href="/smart/sommaireOrigine.php">Résultats & <br> Classements</a>
         </td>
     </tr>
@@ -59,7 +37,6 @@
             </a>
         </td>
     </tr>
-    
     <tr>
         <td colspan="2" class="borderWidth1 ">
             <br>

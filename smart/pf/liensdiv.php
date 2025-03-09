@@ -19,12 +19,12 @@
     <td class="coin8"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $annee;?>">Rég 3</a></td>
   </tr>
   <tr> 
-    <td class="coin8"><a href="pagePhaseFinale.php?division=240&annee=<?php echo $annee;?>">Espoir Féd1</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $annee;?>">FédB</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $annee;?>">Exc B</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>">Réserve</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $annee;?>"></a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>"></a></td>
+    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=232&annee=<?php echo $annee;?>">Espoirs Elites</a></td>
+    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=235&annee=<?php echo $annee;?>">Espoirs Nat</a></td>
+    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=245&annee=<?php echo $annee;?>">Espoirs Féd</a></td>
+    <td class="coinEquipe2"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $annee;?>">FédB</a></td>
+    <td class="coinEquipe2"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $annee;?>">Exc B</a></td>
+    <td class="coinEquipe2"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>">Réserve</a></td>
   </tr>
 </table>
  <?php 

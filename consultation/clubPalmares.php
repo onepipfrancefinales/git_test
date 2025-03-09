@@ -1,7 +1,6 @@
 
 
   <?php
-
   if ($smart == 1 or $mode == "smart") 
     echo "<h1 class=\"size5\">Palmarès</h1>";
   else

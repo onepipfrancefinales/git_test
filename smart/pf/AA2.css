@@ -343,6 +343,46 @@ color: #000000;
 }
 
 
+
+td.coinEquipe2 {
+    width:16%;
+    background-color:#b4e240;
+    border:1px solid #003366;
+    border-radius:10px 10px 10px 10px; 
+    font-family: arial; 
+    font-size: 15px;
+    text-align: center;
+    font-weight: Bold;
+    text-decoration: none;
+    }
+    
+    .coinEquipe2 a{
+    text-decoration: none;
+    color:#000000;
+    
+    }
+
+    td.coinEspoirs {
+        width:16%;
+        background-color:#9e6c07;
+        border:1px solid #003366;
+        border-radius:10px 10px 10px 10px; 
+        font-family: arial; 
+        font-size: 15px;
+        text-align: center;
+        font-weight: Bold;
+        text-decoration: none;
+        }
+        
+        .coinEspoirs a{
+        text-decoration: none;
+        color:#000000;
+        
+        }
+
+
+
+
 td.coin8 {
 width:16%;
 background-color:#FFCC66;

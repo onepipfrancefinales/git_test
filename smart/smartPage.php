@@ -12,6 +12,7 @@ if (isset($_GET['pays'])) $pays = $_GET['pays'];
 if (isset($_GET['variable_1'])) $sigle = $_GET['variable_1'];
 if (isset($_GET['variableLettre'])) $variableLettre = $_GET['variableLettre'];
 
+
 require '../connect/connexion1.php';
 require '../saison.php';
 require '../consultation/fonctions.php';
@@ -48,10 +49,10 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   <meta name="robots" content="All">
 
   <link type="text/css" rel="stylesheet" href="../ligne1.css" />
-    <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
-    <link type="text/css" rel="stylesheet" href="../dossiers/dossiers.css">
-    <link type="text/css" rel="stylesheet" href="../smart/10.css">
-    <title>Accueil dossiers </title>
+  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+  <link type="text/css" rel="stylesheet" href="../dossiers/dossiers.css">
+  <link type="text/css" rel="stylesheet" href="../smart/10.css">
+  <title>Accueil dossiers </title>
 </head>
 
 <body>

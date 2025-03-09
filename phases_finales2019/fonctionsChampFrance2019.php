@@ -163,7 +163,7 @@ require '../../connect/connexion1.php';
 				
 	$reponse = $bdd->query("SELECT division
 							FROM bddivisions
-							WHERE id = $division "); 
+							WHERE id = $division and actif = 1"); 
 								while ($row = $reponse->fetch() )
 									{ 
 									$nomDivision = $row[0];
