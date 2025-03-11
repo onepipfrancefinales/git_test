@@ -1,7 +1,11 @@
-<br /><br />
 
+<br>
+<br>
 <?php
 
+
+
+/*
 $reponse = $bdd->query("SELECT * 
 						FROM bdcomite 
 						WHERE sigle='$sigle' ");
@@ -10,14 +14,15 @@ while ($donnees = $reponse->fetch()) {
 
 <?php
 }
+*/
 ?>
 <div class="center bold">
-<?php
+	<?php
 
-echo "<h2> Titres nationaux du comité </h2>"; {
-	print("<img src=\"/images/comites/$sigle.jpg\" border=\"0\">");
-}
-?>
+	echo "<h2> Titres nationaux du comité </h2>"; {
+		print("<img src=\"/images/comites/$sigle.jpg\" border=\"0\">");
+	}
+	?>
 </div>
 
 <br /><br /><br />
@@ -27,57 +32,51 @@ echo "<h2> Titres nationaux du comité </h2>"; {
 
 if ($mode == "smart") {
 
-function palmaresParLigue($sigle, $table, $categorie, $bdd)
-{
-	$tabSaison = array();
-	$tabDivision = array();
-	$tabChampion = array();
+	function palmaresParLigue($sigle, $table, $categorie, $bdd)
+	{
+		$tabSaison = array();
+		$tabDivision = array();
+		$tabChampion = array();
 
-	$reponse = $bdd->query("SELECT saison, division, champion  
+		$reponse = $bdd->query("SELECT saison, division, champion  
 						FROM $table 
 						WHERE comite1='$sigle' 
 						AND titre='champion' 
 						AND rang2 > 100 
 						AND categorie='$categorie' 
 						ORDER by saison DESC, rang ASC");
-	while ($donnees = $reponse->fetch()) {
-		$tabSaison[] = $donnees['saison'];
-		$tabDivision[] = $donnees['division'];
-		$tabChampion[] = $donnees['champion'];
-	}
+		while ($donnees = $reponse->fetch()) {
+			$tabSaison[] = $donnees['saison'];
+			$tabDivision[] = $donnees['division'];
+			$tabChampion[] = $donnees['champion'];
+		}
 
 
-	$pattern = "/[0-9]{7}/i";
-	$tabNom = array();
+		$pattern = "/[0-9]{7}/i";
+		$tabNom = array();
 
-	for ($i = 0; $i < count($tabChampion); $i++) {
+		for ($i = 0; $i < count($tabChampion); $i++) {
 
-		if (preg_match($pattern, $tabChampion[$i]) == 1) {
+			if (preg_match($pattern, $tabChampion[$i]) == 1) {
 
-			$reponseCode = $bdd->query("SELECT nom_1
+				$reponseCode = $bdd->query("SELECT nom_1
 										FROM bdclubs 
 										WHERE id=' $tabChampion[$i]' ");
 
-			while ($donnees =  $reponseCode->fetch()) {
-				$champion = $donnees['nom_1'];
-			}
+				while ($donnees =  $reponseCode->fetch()) {
+					$champion = $donnees['nom_1'];
+				}
 
-			array_push($tabNom, $champion);
-		} else {
-			array_push($tabNom, $tabChampion[$i]);
+				array_push($tabNom, $champion);
+			} else {
+				array_push($tabNom, $tabChampion[$i]);
+			}
+			echo "<h4>";
+			echo  $tabSaison[$i] . " Champion de France " .  $tabDivision[$i] . ' : ' . "<strong>" . $tabNom[$i] . "</strong>";
+			echo "</h4>";
 		}
-		echo "<h4>";
-		echo  $tabSaison[$i] . " Champion de France " .  $tabDivision[$i] . ' : ' . "<strong>" . $tabNom[$i] . "</strong>";
-		echo "</h4>";
 	}
 }
-
-	
-//	require '../../connect/connexion1.php';
-//	require '../../palmares/fonctionsPalmares.php';
-}	
-
-
 
 palmaresParLigue($sigle, "bdequipe1", "A", $bdd);
 ?>
@@ -86,22 +85,22 @@ palmaresParLigue($sigle, "bdequipe1", "A", $bdd);
 
 <!-- palmares Equipes II -- categorie B -->
 <h1 class="bold"> Equipes II</h1>
-<?php palmaresParLigue($sigle,"bdequipe2",  "B", $bdd);?>
+<?php palmaresParLigue($sigle, "bdequipe2",  "B", $bdd); ?>
 <br /><br />
 
 <!-- palmares Feminines -- categorie F -->
 <h1 class="bold"> Equipes Féminines </h1>
-<?php palmaresParLigue($sigle,"bdfem", "F", $bdd); ?>
+<?php palmaresParLigue($sigle, "bdfem", "F", $bdd); ?>
 <br /><br />
 
 <!-- palmares Juniors -- categorie D -->
-<h1 class="bold">	Reichels & Juniors </h1>
-<?php palmaresParLigue($sigle, "bdjeunes","D", $bdd);?>
+<h1 class="bold"> Reichels & Juniors </h1>
+<?php palmaresParLigue($sigle, "bdjeunes", "D", $bdd); ?>
 <br /><br />
 
 <!-- palmares Cadets -- categorie E -->
 <h1 class="bold">Cadets </h1>
-<?php palmaresParLigue($sigle,  "bdjeunes",  "E", $bdd);?>
+<?php palmaresParLigue($sigle,  "bdjeunes",  "E", $bdd); ?>
 
 <br /><br />
 <!-- palmares Challenges -- categorie C -->

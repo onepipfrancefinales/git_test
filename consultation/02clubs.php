@@ -47,23 +47,12 @@
       <td class="size5 borderWidth1"><a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=A">A</a></td>
       <td class="size5 borderWidth1"><a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=B">B</a></td>
       <td class="size5 borderWidth1"><a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=C">C </a></td>
-      <td class="size5 borderWidth1"><a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=D">
-          D</a>
-      </td>
-      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=E">
-          E</a>
-      </td>
-      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=F">
-          F</a>
-      </td>
-      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=G">
-          G</a>
-      </td>
-      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=H">
-          H</a>
-      </td>
-      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=I">
-          I</a>
+      <td class="size5 borderWidth1"><a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=D">D</a></td>
+      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=E">E</a></td>
+      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=F">F</a></td>
+      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=G">G</a></td>
+      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=H">H</a></td>
+      <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=I">I</a>
       </td>
       <td class="size5 borderWidth1"> <a class="decorationNone" href="<?php echo $adresseLettre;?>?page=lettres&mode=<?php echo $mode;?>&variableLettre=J">
           J</a>
@@ -182,18 +171,11 @@
         <div class="center"><a href="page_comite.php?mode=<?php echo $mode;?>&variable_1=(LY)" target="_top"><img src="/images/comites/(LY).jpg" width="<?php echo $widthComite; ?>" height="<?php echo $height; ?>"></a></div>
       </td>
     </tr>
-
-
     <tr>
       <td colspan="4">
         <hr><br>
       </td>
     </tr>
-
-
-
-
-
     <tr>
       <td colspan="4" class="background666666"></td>
       <td colspan="3"></td>
@@ -252,9 +234,8 @@
       </td>
     </tr>
     <tr>
-
       <td colspan="4">
-        <div class="center"><a href="page_comite.php?page=comites&mode=<?php echo $mode;?>&variable_1=(BR)" target="_top">Ex comité<br>Bretagne</a></div>
+        <div class="center"><a href="<?php echo $adresseComite;?>?page=comites&mode=<?php echo $mode;?>&variable_1=(BR)" target="_top">Ex comité<br>Bretagne</a></div>
       </td>
     </tr>
     <tr>

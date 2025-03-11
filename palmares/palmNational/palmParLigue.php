@@ -1,10 +1,7 @@
-<br ><br>
 <?php
 echo "<h1><p> <strong> Titres nationaux de la ligue <br />".$nomLigue."</strong></p></h1>";
 {print("<img src=\"../../images/ligues/$sigleLigue.jpg\" border=\"0\">");}
 $sigle = "(".$sigleLigue.")"; 
-
-
 
 if ($mode == "smart") {
 	

@@ -12,12 +12,12 @@ require ("../connect/connexion1.php") ;
 echo "<br/><br/><br/>";
 ?>
 </div>							  
-<p>&nbsp;</p>
+
 <p class="texteGras">Président : </p>
 <p class="texte"> 
    <?php  echo $president;?></p>
 <?php
- {print("<img src=\"../images/presidents/$idLigue.gif\" border=\"0\" target=_top>");}
+ //{print("<img src=\"../images/presidents/$idLigue.gif\" border=\"0\" target=_top>");}
 
   
    echo "<br />";?>
@@ -50,12 +50,11 @@ echo "<br/><br/><br/>";
 <br>
   <br>
 
+<hr>				  
 <hr>
-
-							  
-<hr>
-
-<h1> Présentation :<br></h1>
+<?php
+echo $mode; ?>
+<h1> Présentation :</h1>
 							
 <p class="texte"> La ligue <?php echo $nomLigue; ?> se compose <br/>
 	des anciens comités suivants : <br />
@@ -306,14 +305,11 @@ else
   </select>
 </form>
 -->
-<h1 ><font color="#000000">Palmarès Régional 
-  <?php
-  //  $saisonChoisie=$_GET['saisonChoisie'];  
-  //echo "$saison1";  
-  $saisonChoisie = 2024;
+<h1 class="colorBlack">Palmarès Régional 
+  <?php  $saisonChoisie = 2024;
   echo $saisonChoisie; 
 ?>
-<font></h1>
+</h1>
 
 <p class="texte18"> 
 <?php
@@ -382,10 +378,71 @@ echo "<br/>";
  
  <p class="lien">     
  <?php
+if ($idLigue == 10) {
+  $comite ="au";
+$bddComite="au";
+}
+else if ($idLigue == 11) {
+  $comite ="bg";
+$bddComite="pl";
+}
+else if ($idLigue == 12) {
+  $comite ="br";
+$bddComite="pl";
+}
+else if ($idLigue == 13) {
+  $comite ="ce";
+$bddComite="pl";
+}
+else if ($idLigue == 14) {
+  $comite ="";
+$bddComite="";
+}
+else if ($idLigue == 15) {
+  $comite ="al";
+$bddComite="idf";
+}
+else if ($idLigue == 16) {
+  $comite ="fl";
+$bddComite="pl";
+}
+else if ($idLigue == 17) {
+  $comite ="idf";
+$bddComite="idf";
+}
+else if ($idLigue == 18) {
+  $comite ="n";
+$bddComite="idf";
+}
+else if ($idLigue == 19) {
+  $comite ="ca";
+$bddComite="ca";
+}
+else if ($idLigue == 20) {
+  $comite ="ab";
+$bddComite="ab";
+}
+else if ($idLigue == 21) {
+  $comite ="pl";
+$bddComite="pl";
+}
+else if ($idLigue == 22) {
+  $comite ="pr";
+$bddComite="idf";
+}
+
+$champ =   $idLigue * 10000 +171;
+$seniors="equipeUne";
+
+
+ if ($mode != "smart")
 echo "<a href=\"../../palmares/palmTerritorial/tableauPalmReg.php?idLigue=$idLigue\" target=\"_top\"> Tous les champions régionaux de la ligue</a> ";
+else
+echo "<a href=/smart/palmares/pagePalmTerr.php?comite=$comite&bddComite=$bddComite&champ=$champ&seniors=equipeUne target=\"_top\"> Tous les champions régionaux de la ligue</a> ";
+
 ?>
       </p> 
-<p align="center">
+<p class="center">
 <br>
   <br>
   <hr> <br>
@@ -525,3 +582,20 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+
+<?php if($mode =="smart") {
+?>
+<style>
+
+h1 {
+
+ font-size :18px; 
+}
+
+
+
+</style>
+<?php
+}
+
+?>

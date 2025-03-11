@@ -135,7 +135,7 @@ if ($NbreData != 0) {
 if (strlen($sigle) == 1) {
 
 
-	$query =$bdd->query("SELECT *
+	$query =$bdd->query("SELECT id, nom_1
 						 FROM bdclubs 
 						 WHERE nom_1 LIKE '$sigle%'  
 						 AND siglecomite !=''
@@ -143,7 +143,7 @@ if (strlen($sigle) == 1) {
 }
 else {
 
-  $query =$bdd->query("SELECT *
+  $query =$bdd->query("SELECT id, nom_1
   FROM bdclubs 
   WHERE siglecomite = '$sigle'  
   ORDER BY  nom_1 ASC");
@@ -165,12 +165,26 @@ else {
           <?php			// -------------------------
 				// DONNEES A AFFICHER dans la cellule
 		$valReduit[0]=substr($val[0],-5);
-		echo "<a href=\"../consultation/pageclub00.php?champion=$val[1]\"><img src=\"../images/blasons200_200/$valReduit[0].gif\" height=\"100\" width=\"100\"></a>";
-	//	echo $val[13];
-		
+	
+  
+  if ($mode != "smart") {
+    echo "<a href=\"../consultation/pageclub00.php?champion=$val[0]\"><img src=\"../images/blasons200_200/$valReduit[0].gif\" height=\"100\" width=\"100\"></a>";
 		echo '<br/>';
 		echo "  </b> <a href=\"../consultation/pageclub00.php?champion=$val[0]\">$val[1]</a>";
 		echo '<hr />';
+  }
+  else {
+    echo "<a href=\"ficheClubs/pageFicheClubs.php?mode=smart&page=comite&champion=$valReduit[0]\"><img src=\"../images/blasons200_200/$valReduit[0].gif\" height=\"100\" width=\"100\"></a>";
+		
+    
+    //https://francefinalesrugby.fr/smart/ficheClubs/pageFicheClubs.php?mode=smart&page=comite&champion=29076
+    
+    echo '<br/>';
+		echo "  </b> <a href=\"ficheClubs/pageFicheClubs.php?mode=smart&page=comite&champion=$valReduit[0]\">$val[1]</a>";
+		echo '<hr />';
+
+
+  }
 			// -------------------------
 ?>
         </div>

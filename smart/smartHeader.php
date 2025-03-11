@@ -72,4 +72,3 @@ switch ($page) {
         <td colspan="2" class="h12"><?php echo $titre; ?></td>
     </tr>
 </table>
-<br>

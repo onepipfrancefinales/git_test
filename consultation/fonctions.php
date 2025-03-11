@@ -805,8 +805,8 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 				}
 				else
 				{
-				echo "<a href=\"ficheClubs/pageFicheClubs.php?page=ligue&champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
-				echo "<a href=\"ficheClubs/pageFicheClubs.php?page=ligue&champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";
+				echo "<a href=\"ficheClubs/pageFicheClubs.php?mode=$mode&page=ligue&champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
+				echo "<a href=\"ficheClubs/pageFicheClubs.php?mode=$mode&page=ligue&champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";
 		//echo "<a href=\"ficheClubs/pageFicheClubs.php?champion=$tabCodeEquipe[$i]\"><img src=\"../images/blasons200_200/$tabCodeEquipe[$i].gif\" height=\"25\" width=\"25\">";
 		//echo " " . "<a href=\"ficheClubs/pageFicheClubs.php?champion=$tabCodeEquipe[$i]\">$tabNomClub[$i]</a>";			
 	

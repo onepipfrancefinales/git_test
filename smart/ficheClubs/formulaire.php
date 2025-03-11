@@ -281,7 +281,9 @@ if ($mot_de_passe == "pasUnRobot") // Si le mot de passe est bon
 <br>
    <h3 class="center bold">
   <?php
-  echo "<a href=../../consultation/pageclub00.php?champion=$id&mode=$smart>retour vers la page précédente</a>";
+ // echo "<a href=../../consultation/pageclub00.php?champion=$id&mode=$smart>retour vers la page précédente</a>";
+  echo "<a href=pageFicheClubs.php?mode=smart&page=recherche&champion=$id>retour vers la page précédente</a>";
+  //smart/ficheClubs/pageFicheClubs.php?mode=smart&page=recherche
 } 
   ?>
 </h3>
