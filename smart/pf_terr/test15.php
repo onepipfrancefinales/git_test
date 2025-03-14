@@ -5,7 +5,7 @@
   </table>
 <table width="90%" border="0" align="center">
   <tr> 
-    <td width="80%"><?php//	echo $quart1;?></td>
+    <td width="80%"><?php //	echo $quart1;?></td>
     <td width="10%" class="ptsGa">Pts</td>
     <td width="10%" class="ptsGa">GA</td>
   </tr>

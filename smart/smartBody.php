@@ -8,16 +8,19 @@
     case "champions":
       require '../dossiers/champions/champions.php';
       break;
-      case "palmaresRegions":
-        require '../palmares/palmNational/palmParLigue.php';
-        break;
-
+    case "palmaresRegions":
+      require '../palmares/palmNational/palmParLigue.php';
+      break;
+/* Ligue*/
     case "sommairePalmaresRegions":
       require 'palmares/regions.php';
       break;
-      case "palmaresParComite":
-        require '../palmares/palmNational/palmParComite.php';
-        break;
+    case "pfRegionales":
+      require 'pf_terr/regions.php';
+      break;
+    case "palmaresParComite":
+      require '../palmares/palmNational/palmParComite.php';
+      break;
     case "brennus":
       require '../dossiers/brennus/accueil.php';
       break;
@@ -48,7 +51,7 @@
     case "chansons":
       require '../dossiers/chansons/chansons.php';
       break;
-// recherche
+    // recherche
     case "ligues":
       require '../consultation/ligueTest.php';
       break;

@@ -1,35 +1,16 @@
-
 <br>
-<br>
-<?php
 
-
-
-/*
-$reponse = $bdd->query("SELECT * 
-						FROM bdcomite 
-						WHERE sigle='$sigle' ");
-while ($donnees = $reponse->fetch()) {
-?>
-
-<?php
-}
-*/
-?>
-<div class="center bold">
 	<?php
 
-	echo "<h2> Titres nationaux du comité </h2>"; {
+	echo "<h1 class=\"bold center\"> Titres nationaux du comité </h1>"; 
+	echo "<div class=\"center\">";
 		print("<img src=\"/images/comites/$sigle.jpg\" border=\"0\">");
-	}
+	echo "</div>";
 	?>
-</div>
 
-<br /><br /><br />
-<!-- palmares Equipes I -- categorie A -->
-<h1 class="bold"> Equipes Séniors </h1>
+
+
 <?php
-
 if ($mode == "smart") {
 
 	function palmaresParLigue($sigle, $table, $categorie, $bdd)
@@ -71,40 +52,44 @@ if ($mode == "smart") {
 			} else {
 				array_push($tabNom, $tabChampion[$i]);
 			}
-			echo "<h4>";
-			echo  $tabSaison[$i] . " Champion de France " .  $tabDivision[$i] . ' : ' . "<strong>" . $tabNom[$i] . "</strong>";
-			echo "</h4>";
+			
+			echo "<div class= \"size3  syleArial\">";
+			echo  $tabSaison[$i] . " Champion de France " .  $tabDivision[$i] . ' : ' . "</div>";
+			echo  "<div class =\"bold center\">" . $tabNom[$i] . "</div>";
+			echo "<br>";
 		}
 	}
 }
-
-palmaresParLigue($sigle, "bdequipe1", "A", $bdd);
+?>
+<!-- palmares Equipes I -- categorie A -->
+<h1 class="bold alignLeft"> Equipes Séniors </h1>
+<?php palmaresParLigue($sigle, "bdequipe1", "A", $bdd);?>
 ?>
 
 <br /><br />
 
 <!-- palmares Equipes II -- categorie B -->
-<h1 class="bold"> Equipes II</h1>
+<h1 class="bold alignLeft"> Equipes II</h1>
 <?php palmaresParLigue($sigle, "bdequipe2",  "B", $bdd); ?>
 <br /><br />
 
 <!-- palmares Feminines -- categorie F -->
-<h1 class="bold"> Equipes Féminines </h1>
+<h1 class="bold alignLeft"> Equipes Féminines </h1>
 <?php palmaresParLigue($sigle, "bdfem", "F", $bdd); ?>
 <br /><br />
 
 <!-- palmares Juniors -- categorie D -->
-<h1 class="bold"> Reichels & Juniors </h1>
+<h1 class="bold alignLeft"> Reichels & Juniors </h1>
 <?php palmaresParLigue($sigle, "bdjeunes", "D", $bdd); ?>
 <br /><br />
 
 <!-- palmares Cadets -- categorie E -->
-<h1 class="bold">Cadets </h1>
+<h1 class="bold alignLeft">Cadets </h1>
 <?php palmaresParLigue($sigle,  "bdjeunes",  "E", $bdd); ?>
 
 <br /><br />
 <!-- palmares Challenges -- categorie C -->
-<h1 class="bold">Challenges </h1>
+<h1 class="bold alignLeft">Challenges </h1>
 <?php palmaresParLigue($sigle, "bdjeunes",  "C", $bdd);
 $reponse = $bdd->query("SELECT saison, division, champion  
 						FROM bdchallenges 
@@ -118,6 +103,16 @@ while ($donnees = $reponse->fetch()) {
 		:
 		<strong><?php echo $donnees['champion']; ?></strong>
 	</h4>
+<?php
+}
+
+if ($mode =="smart") {
+?>
+<style>
+
+h1 {font-size: 23px;}
+
+</style>
 <?php
 }
 ?>

@@ -1,9 +1,10 @@
-<table width="90%" border="1" align="center">
+
+<table class ="center borderWidth1 width95PC">
     <tr> 
       <td class="titre">Barrages</td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table  class ="center width95PC borderNone">
     <tr> 
       <td width="79%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -44,12 +45,12 @@
   <p>
     <?php	include("../../pub/pub20.php");?>
   </p>
-  <table width="90%" border="1" align="center">
+  <table class ="center borderWidth1 width95PC">
     <tr> 
       <td  class="titre">Quarts de finale</td>
     </tr>
   </table>
-<table width="90%" border="0" align="center">
+  <table  class ="center width95PC borderNone">
   <tr> 
     <td width="79%">&nbsp;</td>
     <td width="21%">&nbsp;</td>
@@ -71,14 +72,14 @@
     <td class="coin5"><?php	echo $A4004;?></td>
   </tr>
 </table>
-<table width="90%"  border="0" align="center">
+<table  class ="center width95PC borderNone">
   <tr> 
     <td width="48%" class="gauche"><a href="../pf/8me.php?champ=<?php echo $champ;?>"> </a></td>
     <td width="52%" class="droite"></td>
   </tr>
 </table>
 
-<table width="90%" border="0" align="center">
+<table  class ="center width95PC borderNone">
   <tr> 
     <td class="coin4"><?php echo $clubA4005;?></td>
     <td class="coin4"><?php echo $A4005;?></td>
@@ -88,7 +89,7 @@
     <td class="coin4"><?php echo $A4006;?></td>
   </tr>
 </table>
-<table width="90%" height="55" border="0" align="center">
+<table  class ="center width95PC borderNone">
   <tr> 
     <td class="coin5"><?php echo $clubA4007;?></td>
     <td class="coin5"><?php	echo $A4007;?></td>
@@ -100,12 +101,12 @@
 </table>
 <br>
 
-<table width="90%" border="1" align="center">
+<table class ="center borderWidth1 width95PC">
   <tr> 
     <td class="titre">Demi finale</td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table  class ="center width95PC borderNone">
   <tr> 
     <td width="79%"></td>
     <td width="21%">&nbsp;</td>
@@ -134,12 +135,12 @@
 
 <br />
 
-<table width="90%" border="1" align="center">
+<table class ="center borderWidth1 width95PC">
   <tr> 
     <td class="titre">Finale</td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table  class ="center width95PC borderNone">
   <tr> 
     <td width="79%">&nbsp;</td>
     <td width="21%">&nbsp;</td>
@@ -154,18 +155,16 @@
   </tr>
 </table>
 
-<br />
-  <?php	require ("../../pub/pub25.php");?>
-<br />
 
-<table width="90%" border="1" align="center">
+
+<table class ="center borderWidth1 width95PC">
   <tr> 
     <td class="titre">Champion <?php echo $annee ;?></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table  class ="center width95PC borderNone">
   <tr> 
-    <td  align="center"><img src="<?php echo $champLogo;?>" width="100" height="100"></td>
+    <td  class="center"><img src="<?php echo $champLogo;?>" width="100" height="100"></td>
   </tr>
   <tr> 
     <td height="26" class="coin5" class="titre"><?php echo $champion;?></td>

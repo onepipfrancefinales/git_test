@@ -1,9 +1,9 @@
-  <table width="90%" border="1" align="center">
+<table class ="center borderWidth1 width95PC">
     <tr> 
       <td class="titre">8me de finale A/R</td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td></td>
       <td class="pts">Pts</td>
@@ -30,7 +30,7 @@
       <td class="coin5"><?php echo $GA1604;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td ></td>
       <td ></td>
@@ -57,7 +57,7 @@
       <td class="coin5pts"><?php echo $GA1608;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td ></td>
       <td ></td>
@@ -84,7 +84,7 @@
       <td class="coin5pts"><?php echo $GA1612;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td></td>
       <td></td>
@@ -111,15 +111,15 @@
       <td class="coin5pts"><?php echo $GA1616;?></td>
     </tr>
   </table>
-  <p></p>
-  <table width="90%" border="1" align="center">
+<br>
+  <table class ="center borderWidth1 width95PC">
     <tr> 
       <td class="titre">Quarts de finale <br>
         <?php echo $D4000;?></td>
     </tr>
   </table>
 
-<table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
   <tr> 
     <td colspan="2" class="lieux"><?php echo $L4001;?></td>
   </tr>
@@ -133,7 +133,7 @@
   </tr>
 </table>
  
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td class="lieux"><?php echo $L4003;?></td>
   </tr>
@@ -148,7 +148,7 @@
 </table>
 <br>
 
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td colspan="2" class="lieux"><?php echo $L4005;?></td>  
   </tr>
@@ -161,7 +161,7 @@
     <td class="coin4"><?php echo $A4006;?></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td colspan="2" class="lieux"><?php echo $L4007;?></td>  
   </tr>
@@ -177,15 +177,15 @@
 </table>
 <br>
 
-  <?php	include("../../pub/pub20.php"); ?>
+
   
-<table width="90%" border="1" align="center">
+  <table class ="center borderWidth1 width95PC">
   <tr> 
     <td class="titre">Demi finale <?php echo $D2000;?></td>
   </tr>
 </table>
 <br> 
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td class="lieux"><?php echo $L2001;?></td>
   </tr>
@@ -199,7 +199,7 @@
   </tr>
 </table>
 
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td class="lieux"><?php echo $L2003;?></td>
   </tr>
@@ -213,16 +213,16 @@
   </tr>
 </table>
 <br>
-<p></p><table width="90%" border="1" align="center">
+<table class ="center borderWidth1 width95PC">
   <tr> 
-    <td bgcolor="#FFFFFF" height="32" class="titre">Finale <?php echo $D1000;?></td>
+    <td height="32" class="titre ">Finale <?php echo $D1000;?></td>
   </tr>
 </table>
 <br>
 <div class="lieux"> 
 <?php echo $L1001;?>
  
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td class="coin5"><?php echo $clubA1001;?></td>
     <td class="coin5"><?php echo $A1001; ?></td>
@@ -232,17 +232,15 @@
     <td class="coin5"><?php	echo $A1002; ?></td>
   </tr>
 </table>
-<p align="center">
-  <?php	require ("../../pub/pub25.php"); ?>
-</p>
-<table width="90%" border="1" align="center">
+<br>
+<table class ="center borderWidth1 width95PC">
   <tr> 
-    <td bgcolor="#FF0000" height="32" class="titre">Champion <?php echo $annee ; ?></td>
+    <td class="titre bachgroundRed">Champion <?php echo $annee ; ?></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
-    <td height="14" align="center"><img src="<?php echo $champLogo;?>" width="100" height="100"></td>
+    <td class="center"><img src="<?php echo $champLogo;?>" width="100" height="100"></td>
   </tr>
   <tr> 
     <td height="26" class="coin5"  class="titre"><?php echo $champion;?></td>

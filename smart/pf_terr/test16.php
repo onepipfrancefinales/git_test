@@ -1,9 +1,9 @@
-<table width="90%" border="1" align="center">
+<table class ="center borderWidth1 width95PC">
      <tr> 
-      <td class="titre">16me de finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D1600; ?></strong></i></b></font></div></td>
+      <td class="titre">16me de finale<br /><span class="center size2 bold italic styleArial"><?php echo $D1600; ?></span></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -25,7 +25,7 @@
       <td class="coin5"><?php echo $A1604;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -47,8 +47,8 @@
       <td class="coin5"><?php echo $A1608;?></td>
     </tr>
   </table>
-  <p>&nbsp;</p>
-  <table width="90%" border="0" align="center">
+<br>
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -70,7 +70,7 @@
       <td class="coin5"><?php echo $A1612;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -92,8 +92,8 @@
       <td class="coin5"><?php echo $A1616;?></td>
     </tr>
   </table>
-  <p>&nbsp;</p>
-  <table width="90%"  border="0" align="center">
+<br>
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -115,7 +115,7 @@
       <td class="coin5"><?php echo $A1620;?></td>
     </tr>
   </table>
-  <table width="90%" border="0"  align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -139,8 +139,8 @@
       <td class="coin5"><?php echo $A1624;?></td>
     </tr>
   </table>
-  <p>&nbsp;</p>
-  <table width="90%" border="0" align="center">
+
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -162,7 +162,7 @@
       <td class="coin5"><?php echo $A1628;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -184,13 +184,13 @@
       <td class="coin5"><?php echo $A1632;?></td>
     </tr>
   </table>
-  <br />
-  <table width="90%" border="1" align="center">
+  <br /> 
+  <table class ="center borderWidth1 width95PC">
     <tr> 
-      <td class="titre">8me de finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D8000; ?></strong></i></b></font></div></td>
+      <td class="titre">8me de finale<br /><span class="center size2 bold italic styleArial"><?php echo $D8000; ?></span></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -212,7 +212,7 @@
       <td class="coin5"><?php echo $A8004;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -236,7 +236,7 @@
       <td class="coin5"><?php echo $A8008;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -258,7 +258,7 @@
       <td class="coin5"><?php echo $A8012;?></td>
     </tr>
   </table>
-  <table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
     <tr> 
       <td width="76%">&nbsp;</td>
       <td width="21%">&nbsp;</td>
@@ -280,14 +280,14 @@
       <td class="coin5"><?php echo $A8016;?></td>
     </tr>
   </table>
-  <p>&nbsp;</p>
-  <table width="90%" border="1" align="center">
+ <br>
+  <table class ="center borderWidth1 width95PC">
     <tr> 
-      <td class="titre">Quarts de finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D4000; ?></strong></i></b></font></div></td>
+      <td class="titre">Quarts de finale<br /><span class="center size2 bold italic styleArial"><?php echo $D4000; ?></span></td>
     </tr>
   </table>
  
-<table width="90%" border="0" align="center">
+  <table class ="center width95PC borderNone">
   <tr> 
     <td width="76%">&nbsp;</td>
     <td width="21%">&nbsp;</td>
@@ -309,7 +309,7 @@
     <td class="coin5"><?php echo $A4004;?></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td width="76%">&nbsp;</td>
     <td width="21%">&nbsp;</td>
@@ -332,16 +332,14 @@
   </tr>
 </table>
 
-<br />
-  <?php	include("../../pub/pub20.php");?>
-<br />
+<br>
   
-<table width="90%" border="1" align="center">
+<table class ="center borderWidth1 width95PC">
   <tr> 
-    <td class="titre">Demi finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D2000; ?></strong></i></b></font></div></td>
+    <td class="titre">Demi finale<br /><span class="center size2 bold italic styleArial"><?php echo $D2000; ?></span></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td height="2">&nbsp;</td>
     <td width="25%" height="2">&nbsp;</td>
@@ -367,12 +365,13 @@
     <td class="coin4"><?php	echo $A2004;?></td>
   </tr>
 </table>
-<p>&nbsp;</p><table width="90%" border="1" align="center">
+<br>
+<table class ="center borderWidth1 width95PC">
   <tr> 
-    <td  class="titre">Finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D1000; ?></strong></i></b></font></div></td>
+    <td  class="titre">Finale<br /><span class="center size2 bold italic styleArial"><?php echo $D1000; ?></span></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td width="76%">&nbsp;</td>
     <td width="21%">&nbsp;</td>
@@ -387,18 +386,16 @@
   </tr>
 </table>
 
-<br />
-  <?php	require ("../../pub/pub25.php");?>
-<br />
+<br>
 
-<table width="90%" border="1" align="center">
+<table class ="center borderWidth1 width95PC">
   <tr> 
     <td class="titre">Champion <?php echo $nomDivision2.' '.$annee ;?></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
-    <td align="center"><img src="<?php echo $champLogo;?>" width="100" height="100"></td>
+    <td class="center"><img src="<?php echo $champLogo;?>" width="100" height="100"></td>
   </tr>
   <tr> 
     <td class="coin5" class="titre"><?php echo $champion;?></td>

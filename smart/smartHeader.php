@@ -7,16 +7,32 @@ switch ($page) {
     case "champions":
         $titre = "Champions de l'année";
         break;
+    /* Palmares */
+    case "palmaresParComite":
+        $titre = "Palmarès nationaux <br>
+            des comités territoriaux";
+        break;
+
+    /* Comites */
+
+    case  "comites":
+        $titre = "Anciens comités territoriaux";
+        break;
+    /* ligues */
+
+    case  "ligues":
+        $titre = "Ligues Françaises";
+        break;
+
     case "palmaresRegions":
         $titre = "Ligues régionales de rugby <br> Palmarès";
         break;
-     case "palmaresParComite":
-            $titre = "Palmarès nationaux <br>
-            des comités territoriaux";
-            break;
-            case "sommairePalmaresRegions":
-                $titre = "Consultation des <br> palmarès régionaux";
-                break;
+    case "sommairePalmaresRegions":
+        $titre = " Ligues régionales <br> Palmarès régionaux";
+        break;
+    case "pfRegionales":
+        $titre = " Ligues régionales <br>  Phases finales régionales";
+        break;
 
 
     case "divisions":
@@ -42,12 +58,8 @@ switch ($page) {
     //case  "recherche":
     //    $titre = "Recherche avancée";
     //    break;
-    case  "ligues":
-        $titre = "Ligues Françaises";
-        break;
-    case  "comites":
-        $titre = "Anciens comités territoriaux";
-        break;
+
+
     case  "lettres":
         $titre = "Recherche par lettre";
         break;

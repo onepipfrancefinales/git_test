@@ -5,6 +5,7 @@
   <title>Phases finales régionales</title>
  <link rel="stylesheet" type="text/css" href="../pf/AA2.css"> 
  <link rel="stylesheet" type="text/css" href="../10.css">
+ <link rel="stylesheet" type="text/css" href="../../ligne1.css">
  <link type="text/css" rel="stylesheet" href="../pf/paramTiroir.css"> 
 <meta name="description" content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, Champions des differents comit�s territoriaux, Tous les championnats de rugby, f�d�rale 2, f�d�rale 3, f�d�rale 1, top 14.">
 <meta name="keywords" content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,Rugby,championnat de france de rugby,Fran�aise,honneur,promotion honneur,Sport,Ballon,Ovale,">
@@ -13,14 +14,13 @@
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
-<title>Phase finale de la ligue</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
 
 </head>
   
-<body bgcolor="#CCCCCC" text="#000000">
+<body text="#000000">
 <?php
 //include("/../../saison.php");
 
@@ -74,7 +74,7 @@ require ("../../connect/connexion6.php") ;
 </div>
 </div>
 <div class="container">
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
 <?php
 
@@ -88,6 +88,7 @@ require ("../../connect/connexion6.php") ;
 	{			
 		finale2019 ($comite, $division, $annee, $bdd);
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
 		require ("test1.php");
 	}
 	
@@ -97,12 +98,15 @@ require ("../../connect/connexion6.php") ;
 	{			
 		demi2019 ($comite, $division, $annee, $bdd);
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		traitementScores ("2001", "2004", $bdd);
 		require ("test2.php");
 	}	
 //********** Demi finale Aller Retour - Finale   *************
     elseif($type==3)
 	{	
 		demiAR2019 ($comite, $division, $annee, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 		require ("test3.php");		
 	}	
@@ -182,10 +186,8 @@ elseif($type==0)
 	{
 		require ("test0.php");
 	}
-
-require ("../bas2.php");
-include("../../pub/pub_displayCarre.php"); 
 ?>	
 	</div>
 </body>
+<?php require ("../smartFooter.php");?>
 </html>

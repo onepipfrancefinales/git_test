@@ -1,12 +1,22 @@
-<?php if ($annee >=  2024 )
+ 
+<?php if ($annee == 2024) 
+  $anneeLien = 2025;
+  else 
+  $anneeLien = 2024;
+ 
+if ($annee >=  2024 )
 {
   ?>
-<table class = "width98PC marginAuto">
+<table class = "width98PC marginAuto borderNone ">
+  <tr>
+  <td colspan="6" class = " btnAutreSaison center "> <a class ="colorWhite" href="pagePhaseFinale.php?division=<?php echo $division;?>&annee=<?php echo $anneeLien;?>">Phases finales <?php echo $anneeLien; ?> 
+ </td>
+  </tr>
   <tr> 
     <td class="coin8"><a href="pagePhaseFinale.php?division=110&annee=<?php echo $annee;?>">Top 14</a></td>
     <td class="coin8"><a href="pagePhaseFinale.php?division=120&annee=<?php echo $annee;?>">ProD2</a></td>
-    <td class="coin8"><a href="pagePhaseFinale.php?division=130&annee=<?php echo $annee;?>">Nationale 1</a></td>
-	  <td class="coin8"><a href="pagePhaseFinale.php?division=135&annee=<?php echo $annee;?>">Nationale 2</a></td>
+    <td class="coin8"><a href="pagePhaseFinale.php?division=130&annee=<?php echo $annee;?>">Nat 1</a></td>
+	  <td class="coin8"><a href="pagePhaseFinale.php?division=135&annee=<?php echo $annee;?>">Nat 2</a></td>
     <td class="coin9"><a href="pagePhaseFinale.php?division=280&annee=<?php echo $annee;?>">Elite 1/2</a></td>
     <td class="coin9"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>">Féd 1</a></td>
   </tr>
@@ -19,9 +29,9 @@
     <td class="coin8"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $annee;?>">Rég 3</a></td>
   </tr>
   <tr> 
-    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=232&annee=<?php echo $annee;?>">Espoirs Elites</a></td>
-    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=235&annee=<?php echo $annee;?>">Espoirs Nat</a></td>
-    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=245&annee=<?php echo $annee;?>">Espoirs Féd</a></td>
+    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=232&annee=<?php echo $annee;?>">Esp Elites</a></td>
+    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=235&annee=<?php echo $annee;?>">Esp Nat</a></td>
+    <td class="coinEspoirs"><a href="pagePhaseFinale.php?division=245&annee=<?php echo $annee;?>">Esp Féd</a></td>
     <td class="coinEquipe2"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $annee;?>">FédB</a></td>
     <td class="coinEquipe2"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $annee;?>">Exc B</a></td>
     <td class="coinEquipe2"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>">Réserve</a></td>

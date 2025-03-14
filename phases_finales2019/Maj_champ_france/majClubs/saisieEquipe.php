@@ -83,7 +83,7 @@ for ($i=01; $i<10; $i++)
 	 $reponse = $bdd->query("
 			SELECT  $clubs
 			FROM   bdpffrance
-			WHERE  id = $division AND saison=$annee ");
+			WHERE  id = $division AND saison = $annee ");
 									
 	 while ($row = $reponse->fetch())
 		{

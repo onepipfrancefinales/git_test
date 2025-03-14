@@ -102,6 +102,9 @@ img{border:0;}
 /* border */
 .borderDouble {border: thick double;}
 .borderNone {border: none;}
+/*italique*/
+.italic {border-style: italic;}
+
 
 .borderColorBlue {border-color: #006699;}
 .borderColorBlack {border-color: #000000;}

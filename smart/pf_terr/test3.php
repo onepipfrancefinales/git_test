@@ -1,9 +1,10 @@
-<table width="90%" border="1" align="center">
+
+<table class="width95PC center borderWidth1">
   <tr> 
     <td class="titre">Demi finale A/R</td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td width="78%"></td>
     <td width="11%" class="ptsGa">Pts</td>
@@ -35,19 +36,19 @@
     <td class="coin4"><?php echo $GA4004;?></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
 </table>
 <br>
-<table width="90%" border="1" align="center">
+<table class="width95PC center borderWidth1">
   <tr>
     <td class="titre">Finale</td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+<table class ="center width95PC borderNone">
   <tr> 
     <td width="76%">&nbsp; </td>
     <td width="21%">&nbsp;</td>
@@ -61,17 +62,16 @@
     <td class="coin5"><?php echo $A1002;?></td>
   </tr>
 </table>
-<p align="center"> 
-  <?php	require ("../../pub/pub25.php");?>
-</p>
-<table width="90%" border="1" align="center">
+<br>
+<table class="width95PC center borderWidth1">
   <tr> 
-    <td bgcolor="#FF0000" class="titre">Champion <?php  echo $nomDivision2.' '.$annee ;?></td>
+    <td class="backgroundRed titre">Champion <?php  echo $nomDivision2.'<br> '.$annee ;?></td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+
+<table class ="center width95PC borderNone">
   <tr>
-    <td align="center"><img src="<?php echo $champLogo;?>" width="100" height="100"></td>
+    <td class="center"><img src="<?php echo $champLogo;?>" width="100" height="100"></td>
   </tr>
   <tr> 
     <td class="coin5" class="titre"><?php echo $champion;?></td>
