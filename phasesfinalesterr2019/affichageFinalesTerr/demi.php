@@ -47,7 +47,14 @@ elseif ($page=="RRPHR1")
 			$nom2="Rés régionale 2";
 			$nom3="-";
 		}	
-		$division= $codeLigue + 270;
+		$division= $codeLigue + 270;	
+		}
+		elseif ($page == "FEM")
+		{
+			$nom1="Fédérale 2";
+			$nom2="Régionale à X";
+			$nom3="-";
+		$division = $codeLigue + 295;
 		}
 ?>
 
@@ -98,7 +105,10 @@ elseif ($page=="RRPHR1")
 
 <?php 		
 	$A2001 ="-";$A2002 ="-";$A2003 ="-";$A2004 ="-";
-	if ($page=="RRPHR1") $division=$division+8910; else $division=$division+10;
+	if ($page == "RRPHR1") $division=$division+8910; 
+	elseif ($page == "FEM") $division = $division + 5;
+	else $division=$division+10;
+
 	demi2019 ($comite, $division, $annee, $bdd);				
 	champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 	traitementScores (2001,2004, $bdd);
@@ -148,6 +158,11 @@ elseif ($page=="RRPHR1")
 
 <hr />
 
+<?php 
+
+if ($page == "HPHS1"  ) { 
+	?>
+
 <p class="divisionDemi"><?php echo $nom3; ?></p>
 	
 <!-- Demi 1 -->
@@ -180,5 +195,7 @@ elseif ($page=="RRPHR1")
 
 <hr />
 
-<?php require("../../pub/pub1.php"); ?>
+<?php
+}
+?>
 

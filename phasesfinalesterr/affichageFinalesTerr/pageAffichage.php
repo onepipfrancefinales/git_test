@@ -40,7 +40,7 @@ Rugby,championnat de france de rugby,Francaise,honneur,promotion honneur,Sport,B
 
 <?php 
 //*****************************************************
-//**** R�cup�ration des noms des comites et des ligues*
+//**** Récupération des noms des comites et des ligues*
 //*****************************************************
 require ("../../connect/connexion5.php") ; 
 if ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "pl")
@@ -73,7 +73,7 @@ while ($donnees = $reponse->fetch())
 		 $ligueNom=$donnees['nomLigue'];
 		}
 		
-// nom du comit�							
+// nom du comité							
 $reponse = $bdd->query("
 		   SELECT nom as nomComite
 		   FROM comite
@@ -125,11 +125,11 @@ $saisonMin=$reponse->fetch();
 
 if ($annee < $saisonMin[0])
     {
-	// bandeau avec les liens des diff�rentes divisions
+	// bandeau avec les liens des différentes divisions
 	 include("hautindex.php");
-	 // affichage double fl�ches
+	 // affichage double flèches
 	 include("bandeauNavigation.php");
-	 // affichage du nom de la comp�tition et de l'ann�e
+	 // affichage du nom de la compétition et de l'année
 	 include("bandeauNavigation2.php");
 	 //include("/phasesFinalesTerr2019/affichageFinalesTerr/infos.php");
 	 include("infos.php");
@@ -165,7 +165,7 @@ elseif ($annee < 2019 )
 			}
 		}   
 	 //************************************************************		
-	 //**   traitement des phases finales de 2me 3me 4me s�rie   **
+	 //**   traitement des phases finales de 2me 3me 4me série   **
 	 //************************************************************
 
 	 elseif ($page=="S2S3S4")
@@ -189,7 +189,7 @@ elseif ($annee < 2019 )
 		}	
 		
 	 //************************************************************		
-	 //**   traitement des phases finales de R�serve             **
+	 //**   traitement des phases finales de Réserve             **
 	 //************************************************************
 		
 	 elseif ($page=="RRPHR1")
@@ -241,7 +241,7 @@ else
 	 //*************  Traitement des phases finales  ********
 	 //******************************************************
 
-	 //*************  R�cup�ration du type de phase finale pour l'Honneur Promotion 1�re s�rie  ********
+	 //*************  Récupération du type de phase finale pour l'Honneur Promotion 1�re s�rie  ********
 	 
 	 if ($page == "HPHS1")
 	 {
@@ -257,7 +257,7 @@ else
 			{ $somme=$donnees['sommeHPHS1'];}
 		}
 	
-	 //*************   R�cup�ration du type de phase finale pour les 2me 3me 4me s�rie           *******
+	 //*************   Récupération du type de phase finale pour les 2me 3me 4me série           *******
 	 elseif ($page=="S2S3S4")
 		{
 		
@@ -274,20 +274,56 @@ else
 		//echo "somme : ".$somme;
 		}
 
-	 //*************    R�cup�ration du type de phase finale pour les R�serves              *******
+	 //*************    Récupération du type de phase finale pour les Réserves              *******
 	 elseif ($page=="RRPHR1")
 		{
 
-		$debut = $codeLigue + 270 ;
-		$fin = $codeLigue + 9190;	
+		$debut1 = $codeLigue + 260 ; $fin1 = $codeLigue + 280;
+	
 		 $reponse  = $bdd->query("
-				SELECT SUM(type) AS sommeRRPHR1
+				SELECT SUM(type) AS sommeRRPHR1A
 					FROM $table_pfterr
-					WHERE division between $debut and $fin
-					AND annee='$annee' ");
+					WHERE division between $debut1 and $fin1  
+					AND annee='$annee' "); 
 				
 		 while ($donnees = $reponse->fetch())
-			{ $somme=$donnees['sommeRRPHR1'];}		
+			{ $somme1=$donnees['sommeRRPHR1A'];}		
+		
+
+		
+		 $debut2 = $codeLigue + 9170;	$fin2 = $codeLigue + 9190;
+		 $reponse  = $bdd->query("
+				SELECT SUM(type) AS sommeRRPHR1B
+					FROM $table_pfterr
+					WHERE division between $debut2 and $fin2 
+					AND annee='$annee' "); 
+				
+		 while ($donnees = $reponse->fetch())
+			{ $somme2=$donnees['sommeRRPHR1B'];}	
+			
+			
+$somme = $somme1+$somme2;
+
+		}
+
+
+
+
+		 //*************    Récupération du type de phase finale pour les féminines              *******
+		elseif ($page=="FEM") {
+
+			$debut = $codeLigue + 295 ;
+			$fin = $codeLigue + 310;	
+			 $reponse  = $bdd->query("
+					SELECT SUM(type) AS sommeFEM
+						FROM $table_pfterr
+						WHERE division between $debut and $fin
+						AND annee='$annee' ");
+					
+			 while ($donnees = $reponse->fetch())
+				{ $somme=$donnees['sommeFEM'];}	
+
+
 		}
 	//echo "somme : ".$somme;	echo "<br />";		
 		 //**********************************************	
@@ -324,13 +360,14 @@ else
 		
 		// Affichage d'un tableau de phase finale
 		if ($somme < 10)
+		
 		{
-			if ($somme == 3)
-				{ include("../../phasesfinalesterr2019/affichageFinalesTerr/finale.php");}
-			elseif ($somme == 6)
-				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/demi.php");}
-			elseif ($somme==9)
-				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/demiAR.php");}
+			if ($somme == 2 or $somme == 3){ 
+				include("../../phasesfinalesterr2019/affichageFinalesTerr/finale.php");}
+			elseif ( $somme == 4 or $somme == 6){ 
+				include ("../../phasesfinalesterr2019/affichageFinalesTerr/demi.php");}
+			elseif ($somme == 9){
+				 include ("../../phasesfinalesterr2019/affichageFinalesTerr/demiAR.php");}
 			else
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/demiMixte.php");}	
 		}

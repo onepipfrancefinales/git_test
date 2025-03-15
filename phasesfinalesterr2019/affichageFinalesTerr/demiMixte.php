@@ -294,6 +294,8 @@ else // type == 1
 echo "<hr />";
 
 //<!--  ***************************S1 / S4  /Res S1*************************************  -->
+echo "page mixte :".$page;
+if ($page == "HPHS1") {
 
 	$division=$division+10;
 		
@@ -404,5 +406,9 @@ else
 	 <?php }
 
 echo "<hr />";
-require("../../pub/pub1.php"); ?>
+
+	}
+
+	?>
+
 

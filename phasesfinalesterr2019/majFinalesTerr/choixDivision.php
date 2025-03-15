@@ -33,6 +33,9 @@ elseif ($page=="saisieLieux")
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $codeLigue.'0180';?>&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 2</b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $codeLigue.'0190';?>&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 3</b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $codeLigue.'0190';?>&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>         </b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $codeLigue.'0295';?>&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fém Fédérale 2 </b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $codeLigue.'0300';?>&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fém Régionales X </b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $codeLigue.'0190';?>&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>         </b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $codeLigue.'0270';?>&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Rés Rég 1</b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $codeLigue.'9180';?>&comite=<?php echo $comite ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Rés Rég 2</b></option>
  <!--   

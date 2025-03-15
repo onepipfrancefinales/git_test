@@ -360,10 +360,10 @@ else
 			$bddComite = $comite;
  
 	 $bddcomite_clubs =  "php".$bddComite."_clubs";
-	 
 	 $reponse = $bdd->query("SELECT  id
 							FROM $bddcomite_clubs
-							WHERE  nom = '$champion' "); 
+							WHERE  nom = '$champion'
+							 ORDER BY id DESC"); 
 									while ($row = $reponse->fetch() )
 											{ 
 											$idEquipe = $row[0];

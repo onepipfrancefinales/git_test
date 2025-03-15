@@ -35,6 +35,7 @@
 		$valeurLigue=($champLigue * 10000);
 		$div170 = $valeurLigue + 170;	$div180 = $valeurLigue + 180; $div190 = $valeurLigue + 190; 
 		$div270 = $valeurLigue + 270;   $div9180 = $valeurLigue + 9180; 
+    $div295 = $valeurLigue + 295;  $div300 = $valeurLigue + 300;
 		}	
 		?>
 		<?php echo $organisation;?>
@@ -85,7 +86,7 @@
     <td class="equipeIItitre"   > Réserve </td>
     <td class="equipeII"><a href="pageAffichage.php?page=RRPHR1&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=<?php echo $div270;?>" target="_top">Rés régionale 1</a></td>
     <td class="equipeII"><a href="pageAffichage.php?page=RRPHR1&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=<?php echo $div9180;?>" target="_top">Rés régionale 2</a></td>
-    <td class="equipeII"><div id="equipeII" ></div></td>
+    <td class="fem"><a href="pageAffichage.php?page=FEM&comite=<?php echo $comite;?>&annee=<?php echo $annee;?>&division=<?php echo $div295;?>" target="_top">Féminines</a></td>
 
     <td class="france" colspan="2" ><a href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?division=110&annee=<?php echo $annee; ?>" target="_blank">Championnat de France</a> </td>
   </tr>

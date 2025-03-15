@@ -135,14 +135,15 @@ function logo ($bdcomiteClub, $champion, $bdd)
 	
 	if (isset ($champion)) $champion = $champion; else $champion='-';
 	if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite='-';
-	if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee='Pas de variable declar�e';
+	if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee='Pas de variable declarée';
 	
 	$bdcomiteClub="php".''.$comite.''."_clubs";
 	
 	
 	$reponse = $bdd->query( " SELECT id
 							 FROM $bdcomiteClub
-							 WHERE nom='$champion'");
+							 WHERE nom='$champion'
+							 ORDER BY id ASC");
 								while($row = $reponse->fetch())
 										{                 	
 										$idChampion=$row[0];
@@ -683,7 +684,7 @@ if ($A1001+$A1002 > 0)	{ if ($A1001>$A1002)	{$champion=$clubA1001;	} else	{$cham
 //																		*/
 //***********************************************************************/
 
-function quartsPlusBarrages ($bdcomiteClub, $division, $annee)
+function quartsPlusBarrages ($bdcomiteClub, $division, $annee, $bdd)
 {
 	
 
@@ -1323,7 +1324,7 @@ function huitiemeEtBarrages ($bdcomiteClub, $division, $annee, $bdd)
 	$reponse = $bdd->query("SELECT $scores
 				FROM $bdcomite_pfterr
 				WHERE  division=$division and annee=$annee"); 
-				$result = mysql_query($requete) ;
+				
 					while ($row = $reponse->fetch()) 
 						{ 
 						$tabScores[] = $row[0];

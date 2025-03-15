@@ -265,6 +265,19 @@ font-weight: Bold;
 
 }
 
+.fem{
+	background-color:#FF6666;
+	border:2px solid #405864;
+	border-radius:8px 8px 8px 8px; 
+	font-family: arial; 
+	color: #FFFFFF;
+	font-size: 13px;
+	text-align: center;
+	font-weight: Bold;
+	}
+
+
+
 .equipeII{
 background-color:#04ADFF;
 border:2px solid #405864;

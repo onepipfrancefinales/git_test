@@ -150,6 +150,8 @@ demiAR2019 ($comite, $division, $annee, $bdd);
 <hr />
 
 <?php 
+
+echo "page AR :".$page;
 //********************************************
 	$division=$division+10;
 	$clubA1001 = "-";$clubA1002 = "-";

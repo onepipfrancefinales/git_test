@@ -50,6 +50,14 @@ elseif ($page=="RRPHR1")
 		}	
 		$division = $codeLigue + 270;	
 		}
+		elseif ($page=="FEM")
+		{
+		$nom1="Fédérale 2";
+		$nom2="Régionale à X";
+		$nom3="-";
+	
+		$division = $codeLigue + 295;	
+		}
 ?>
 
 <br>
@@ -74,7 +82,9 @@ traitementScores (1001,1002, $bdd);
 
  <?php 
  // Affiche 2
-if ($page=="RRPHR1") $division=$division + 8910; else $division=$division + 10;
+if ($page=="RRPHR1") $division=$division + 8910; 
+elseif ($page=="FEM") $division= $division + 5;
+else $division=$division + 10;
 finale2019 ($comite, $division, $annee, $bdd); 
 champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 traitementScores (1001,1002, $bdd);
@@ -91,7 +101,10 @@ traitementScores (1001,1002, $bdd);
 
 <?php 
 // Affiche 3
-$division=$division+10;
+
+if ($page == "HPHS1" ){
+
+$division=$division + 10;
 //echo $division;echo "<br/>";
 //echo substr($division,-4);
 finale2019 ($comite, $division, $annee, $bdd); 
@@ -115,5 +128,8 @@ traitementScores (1001,1002, $bdd);
 <br><br><br>
 <hr />
 
-<p><?php require("../../pub/pub1.php"); ?></p>
+<?php
+
+}
+?>
 
