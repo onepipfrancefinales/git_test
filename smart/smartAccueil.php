@@ -58,7 +58,7 @@
     </tr>
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="smartPage.php?page=pfRegionales&annee=2024"> Phases finales régionales</a>
+            <a class="colorWhite" href="smartPage.php?page=pfRegionales&annee=<?php echo $datePhasesFinales;?>"> Phases finales régionales</a>
         </td>
     </tr>
     
@@ -66,7 +66,8 @@
         <td colspan="2" class="borderWidth1 ">
             <br>
             <p class="size5">
-                <a class="colorBlack" href="smartPage.php?page=pfRegionales&annee=2024">Tableaux complets des différentes ligues <?php echo $annee - 1; ?></a><br>
+                <a class="colorBlack" href="smartPage.php?page=pfRegionales&annee=<?php echo $datePhasesFinales;?>">Tableaux complets des phases finales <br> 
+                des différentes ligues  (2025 et 2024)</a><br>
                 <span class="size3"> (Equipes I - Equipes II -Féminines) <span>
             </p>
             <br>
@@ -76,7 +77,7 @@
 
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="../smart/pf/accueil.php?annee=2024"> Phases finales <br> du championnat de France
+            <a class="colorWhite" href="../smart/pf/accueil.php?annee=<?php echo $datePhasesFinales;?>"> Phases finales <br> du championnat de France
             </a>
         </td>
     </tr>
@@ -85,7 +86,7 @@
         <td colspan="2" class="borderWidth1 ">
             <br>
             <p class="size5">
-                <a class="colorBlack" href="../smart/pf/accueil.php?annee=2024">Phases finales <?php echo $annee - 1; ?></a><br>
+                <a class="colorBlack" href="../smart/pf/accueil.php?annee=<?php echo $datePhasesFinales;?>">Phases finales 2025 et 2024</a><br>
                 <span class="size3"> (oppositions - résultats) <span>
             </p>
             <br>

@@ -17,8 +17,8 @@ if ($annee >=  2024 )
     <td class="coin8"><a href="pagePhaseFinale.php?division=120&annee=<?php echo $annee;?>">ProD2</a></td>
     <td class="coin8"><a href="pagePhaseFinale.php?division=130&annee=<?php echo $annee;?>">Nat 1</a></td>
 	  <td class="coin8"><a href="pagePhaseFinale.php?division=135&annee=<?php echo $annee;?>">Nat 2</a></td>
-    <td class="coin9"><a href="pagePhaseFinale.php?division=280&annee=<?php echo $annee;?>">Elite 1/2</a></td>
-    <td class="coin9"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>">Féd 1</a></td>
+    <td class="coin9"><a href="pagePhaseFinale.php?division=280&annee=<?php echo $annee;?>">Elites Fem</a></td>
+    <td class="coin9"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>">Féd fem</a></td>
   </tr>
   <tr> 
     <td class="coin8"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $annee;?>">Féd1</a></td>

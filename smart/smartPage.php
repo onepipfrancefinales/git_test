@@ -2,6 +2,7 @@
 session_start();
 if (isset($_GET['idLigue'])) $idLigue = $_GET['idLigue'];
 if (isset($_GET['comite'])) $comite = $_GET['comite'];
+if (isset($_GET['annee'])) $annee = $_GET['annee'];
 if (isset($_GET['page'])) $page = $_GET['page'];else $page= "accueil";
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
 if (isset($_GET['type'])) $type  = $_GET['type'];

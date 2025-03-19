@@ -143,7 +143,7 @@ $ad="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
     <option value="<?php echo $ad ;?>?division=280&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 1</b></option>
     <option value="<?php echo $ad ;?>?division=285&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 2</b></option>
     <option value="<?php echo $ad ;?>?division=290&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 1</b></option>
-
+    <option value="<?php echo $ad ;?>?division=295&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 2</b></option>
 <option value=""><b>----------------</b></option>
 <option value=""><b>Jeunes</b></option>
 <option value=""><b>----------------</b></option>	

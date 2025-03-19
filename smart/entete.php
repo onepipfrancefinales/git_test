@@ -13,6 +13,7 @@
 //$division3 = substr($division,3,6);
 require ("../../connect/connexion1.php");
 
+
 $reponse = $bdd->query("	SELECT division
 								FROM bddivisions
 								WHERE id= substr('$division' ,3,6) AND actif = 1");

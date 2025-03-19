@@ -22,7 +22,7 @@ $anneeLien = 2024;
 <tr> 	
 	<td class="coin8"><a href="../pf_terr/phase_finale.php?division=<?php echo substr($division,0,2).'0270';?>&annee=<?php echo $annee; ?>&bddComite=<?php echo $bddComite;?>&comite=<?php echo $comite;?>">Réserve Rég 1 </a></td>
     <td class="coin8"><a href="../pf_terr/phase_finale.php?division=<?php echo substr($division,0,2).'9180';?>&annee=<?php echo $annee; ?>&bddComite=<?php echo $bddComite;?>&comite=<?php echo $comite;?>">Réserve Rég 2</a></td>
-    <td class="coin9"><a href="../pf_terr/phase_finale.php?division=<?php echo substr($division,0,2).'0300';?>&annee=<?php echo $annee; ?>&bddComite=<?php echo $bddComite;?>&comite=<?php echo $comite;?>"> Féminines </a></td>
+    <td class="coin9"><a href="../pf_terr/phase_finale.php?division=<?php echo substr($division,0,2).'0295';?>&annee=<?php echo $annee; ?>&bddComite=<?php echo $bddComite;?>&comite=<?php echo $comite;?>"> Féminines </a></td>
   </tr>
   
 </table>

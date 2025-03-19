@@ -22,7 +22,13 @@
 <br>
 <table   class="borderWidth1 width90PC marginAuto">
   <tr> 
-    <td class="champion">Champion de France <?php echo $annee ;?></td>
+    <td class="champion">Champion de France <?php echo $annee ;?>
+  <br> <?php
+  if ($champ == "280")  echo "Elite 1";
+  else if ($champ == "285") echo "Elite 2";
+  else if ($champ == "290") echo "Féminines Fédérale 1";
+  else if ($champ == "295") echo "Féminines Fédérale 2";
+  else echo $nomDivision ;?></td>
   </tr>
 </table>
 <p>

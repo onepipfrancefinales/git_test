@@ -347,7 +347,7 @@ else
 	 if (isset($idEquipe)) $idEquipe = $idEquipe; else $idEquipe=''; 
 	 if (isset($champion)) $champion = $champion; else $champion="-";
 
-	 //Affichage du nom de l'�quipe championne
+	 //Affichage du nom de l'équipe championne
 	 if ($A1001>$A1002) {$champion=$clubA1001;} else {$champion=$clubA1002;}
 		
 	 //Affichage du logo de l'équipe championne

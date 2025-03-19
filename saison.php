@@ -34,7 +34,7 @@ else {
 }
 
 
-$datePhasesFinales=2024;
+$datePhasesFinales=2025;
 /*
 echo "debutSaison :" . $debutSaison;
 echo "<br/>";

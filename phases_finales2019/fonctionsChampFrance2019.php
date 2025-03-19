@@ -270,6 +270,7 @@ function accessMatch ($division, $annee, $bdd) {
 
 function trenteDeuxieme2019 ($division, $annee, $bdd)
 {		
+
 if (isset ($type)) ; else $type = "non type defini";
 if (isset ($type2)) ; else $type2 = "non type2 defini";
 if (isset ($prefixe)) ; else $prefixe = "variable prefixe non defini";
@@ -293,6 +294,9 @@ $reponse = $bdd->query("SELECT type
 							{ 
 							$type = $row[0];
 							}
+
+
+					
 //echo $type;
 $prefTexte = "clubA";
 // prise en compte de tous les types de compétitions sauf celles commençant par 6
@@ -367,7 +371,7 @@ elseif (substr($type,5,2)== '08' or substr($type,5,2)== '16')
 	$debutScores ="";
 	$finScores= "";
 	}
-//*****       quarts	      *******
+//*****   quarts  *******
 
 elseif (substr($type,7,2)== '04' or substr($type,7,2)== '08')
 	{
@@ -474,22 +478,21 @@ $tabNomComite1 = array();
 $tabNomLigue = array();
 $tabNomLigue1 = array();
 $tabId = array();	
-global $equipes, $tabNomEquipes1,$tabNomComite1, $tabNomLigue1, $tabId, $clubA1001;	
+//global $equipes, $tabNomEquipes1,$tabNomComite1, $tabNomLigue1, $tabId;	
+
 
 for ($i=$debutEquipes1 ; $i< $finEquipes1; $i++)
 	{		
+	
 	 global ${$prefixeEquipes1.($i)};
-	// global ${$prefixeEquipes1B.($i)};
 	 global ${"codeId".$i};
-	// global ${"nomLigue320".$i};//3201 
-	// global  $tabNomEquipes1[$i-1];	 
 	 $equipes = "E0".$i;
-										
+
 	 $reponse = $bdd->query("	
 				SELECT bdclubs.id, bdclubs.nom_1, bdclubs.sigleComite, bdclubs.ligue 
 				FROM bdclubs, bdpffrance
-				WHERE bdclubs.id=bdpffrance.$equipes 
-				AND bdpffrance.id= '$division' AND bdpffrance.saison = '$annee'"); 
+				WHERE bdclubs.id = bdpffrance.$equipes 
+				AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'"); 
 										
 	 while ($row = $reponse->fetch() )
 		{ 
@@ -497,10 +500,11 @@ for ($i=$debutEquipes1 ; $i< $finEquipes1; $i++)
 		 $tabNomEquipes1[] = $row[1];
 		 $tabNomComite1[] = $row[2];
 		 $tabNomLigue[] = $row[3];
-		}
-			
-		
+		}	
 	}
+
+
+
 
 for ($i=$debutEquipes1; $i < $finEquipes1; $i++)
 	{	   
@@ -515,13 +519,7 @@ for ($i=$debutEquipes1; $i < $finEquipes1; $i++)
 		 while ($row = $reponse->fetch())
 			{  $tabNomLigue1[] = $row[0];}	
 		}
-	 //echo $i;
-	 //echo $tabNomEquipes1[4];
-	 //echo $tabNomLigue[$i-1];
-	 //echo $tabNomLigue1[$i-1];
-	 
-	//echo "prefixeEquipes1 : ".$prefixeEquipes1.($i);echo "<br />";
-	// echo $tabId[$i-1];echo "<br />";
+
 	if ($annee > 2018)
 		
 	 if ($tabId[$i-1]<900000)
@@ -530,6 +528,10 @@ for ($i=$debutEquipes1; $i < $finEquipes1; $i++)
 		{ ${$prefixeEquipes1.($i)} = $tabNomEquipes1[$i-1].' '."(".$tabNomLigue1[$i-1].")";}	
 	else
 		{ ${$prefixeEquipes1.($i)} = $tabNomEquipes1[$i-1].' '.$tabNomComite1[$i-1];}	
+
+
+
+
 	}
  //var_dump($clubA1001); var_dump($clubA1002);
 //************************************************************************************
@@ -1749,8 +1751,17 @@ for ($i=$debut ; $i<= $fin; $i++){
 						 	//$clubA1001=$clubA1001;	$clubA1002=$clubA1002;
 						//}
 
-	
+						championDeFrance ( $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 					}
+
+
+
+
+
+
+
+
+					
 	
 
  ?>

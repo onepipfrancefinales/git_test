@@ -188,7 +188,7 @@ $bdpfAnnee_2 = "bdpf".$annee."_2";
 //echo "base : ".$bdpfAnnee;
 $reponse = $bdd->query("SELECT type
 						FROM $bdpfAnnee
-						WHERE 	id=$division 		");
+						WHERE 	id = $division 		");
 					
 						while ($row = $reponse->fetch() )
 							{ 
@@ -352,7 +352,7 @@ $prefixeEquipes1B = $prefTexte2.$prefChiffre1;
 $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 
 //*****************************************************************************
-//************************         Equipes de E01 � E09  **********************
+//************************         Equipes de E01 à E09  **********************
 //*****************************************************************************	
 	//$debut =1;
 	//$fin=9;
@@ -374,7 +374,7 @@ $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 		global ${"nomLigue320".$i};
 		
 		$equipes = "E0".$i;
-		//echo  $equipes; 
+		echo  $equipes; 
 								
 		$reponse = $bdd->query("	SELECT bdclubs.id, bdclubs.nom_1, bdclubs.sigleComite, $bdpfAnnee.$equipes 
 									FROM bdclubs, $bdpfAnnee 
@@ -404,15 +404,11 @@ $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 			
 			
 			${$prefixeEquipes1B.($i)} = $tabNomEquipes1[$i-1];
-			
-			
-			
-			
 			}	
 			
 
 //************************************************************************************
-//*******************    Equipes de E10 � E65   **************************************
+//*******************    Equipes de E10 à E65   **************************************
 //************************************************************************************	
 	
 	//$prefixeEquipes2 = substr($prefixeEquipes,0,7);
@@ -569,7 +565,7 @@ $prefixeEquipes2B = $prefTexte2.$prefChiffre2;
 	
 
 //****************************************************************************	
-//***********************         seizi�me de finale    **********************
+//***********************         seizième de finale    **********************
 //****************************************************************************
 
 
@@ -680,24 +676,14 @@ for ($i=$debut ; $i<= $fin; $i++)
 
 	}
 
-
-
-	 
-	 
 	 for ($i=$debut ; $i<= $fin; $i++)
 	{
 	${"A".($i)} = (int)${"A".($i)} + (int)${"R".($i)};
 	${"A".($i)."Pts"} = (int)${"A".($i)."Pts"} + (int)${"R".($i)."Pts"};
 	}
-	 
-	 
-	 
-	 
-	 
-	
 
 //*************************************************************************
-//******************         huiti�me de finale  **************************
+//******************         huitième de finale  **************************
 //*************************************************************************
 	
 	$divisionAPts = $division + '1';

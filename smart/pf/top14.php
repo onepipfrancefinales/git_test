@@ -73,7 +73,7 @@
   </tr>
 </table>
 <p align="center"> 
-  <?php	include("../../pub/pub20.php");?>
+
 </p>
 <table width="90%"  border="1" align="center">
   <tr>
@@ -102,7 +102,7 @@
 </table>
 <table width="90%" border="1" align="center">
   <tr> 
-    <td bgcolor="#FF0000" height="32" class="champion">Champion de France <?php echo $annee ;?></td>
+    <td bgcolor="#FF0000" height="32" class="champion">Champion de France <?php echo $annee ;?><br> <?php echo $nomDivision ;?></td>
   </tr>
 </table>
 <center>	
