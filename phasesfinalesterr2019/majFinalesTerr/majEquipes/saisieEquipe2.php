@@ -18,7 +18,7 @@ echo $division;  echo "<br />";
 echo $comite; echo "<br />";
 echo $type;echo "<br />";
 echo $bdcomite_pfterr_e;echo "<br />";
-
+echo "<br>";
 require ("../../../connect/connexion6.php");
 				
 //finale
@@ -197,7 +197,7 @@ elseif ($type==13)
 
 elseif ($type==18 or $type==19)
  {
-	//	verifClubsPresents($comite,'8001' ,'8016', $bdd);
+		verifClubsPresents($comite,'8001' ,'8016', $bdd);
 		
 		$requete = $bdd->prepare("	UPDATE $bdcomite_pfterr_e
 								SET	type =:type,	clubA8001 =:clubA8001,	clubA8002 =:clubA8002,
@@ -319,20 +319,19 @@ function verifClubsPresents($comite ,$debut ,$fin, $bdd)
  {	
 	global ${'clubA'.$i};
 	$test= ${'clubA'.$i};
-	$bddComite_clubs ="php".$comite."_clubs";
+
+	 $bddComite_clubs ="php".$comite."_clubs";
 	
-	$reponse = $bdd->query("SELECT count(id)
+	$reponse = $bdd->query("SELECT COUNT(id)
 				FROM $bddComite_clubs
-				WHERE  id = '${'clubA'.$i}' ");
-							
-				$row = $reponse->fetch();
+				WHERE  id = '$test' ");		
+				$donnees = $reponse->fetch();
 				
-    $idPresent = $row[0];						
-	if ( $idPresent [0] != 1)
+    $idPresent = $donnees[0];				
+	if ( $idPresent == 0)
 	{
-	echo "<br />";
-	echo "L équipe ".${"clubA".$i}." n'est pas présente dans la table php_clubs"."<br />" ;
-	${"clubA".$i} ='99999';
+	echo "L équipe ".$test." n'est pas présente dans la table php_clubs"."<br />" ;
+	${'clubA'.$i} ='99999';
 	
 	}
   }

@@ -383,7 +383,7 @@ afficheLieux ($division, $annee, $comite, $bdd);
     <td width="17"></td>
     <td width="1"></td>
     <td width="69"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php// echo $finale; ?>
+      <?php // echo $finale; ?>
       </strong></i></b></font> </td>
     <td width="17"> </td>
     <td width="1">&nbsp;</td>
@@ -513,7 +513,7 @@ afficheLieux ($division, $annee, $comite, $bdd);
     <td width="1"></td>
     <td colspan="2"><font face="Arial, Helvetica, sans-serif" size="3"><b>Champion 
       <i><strong> 
-      <?php// echo $nomDivision; ?>
+      <?php // echo $nomDivision; ?>
       </strong></i></b></font></td>
     <td width="1"></td>
   </tr>
@@ -568,7 +568,7 @@ afficheLieux ($division, $annee, $comite, $bdd);
     <td width="17"></td>
     <td width="1"></td>
     <td colspan="2" rowspan="4"> 
-      <div align="center"><img src="<?php// echo $champLogo;  ?>"></div>
+      <div align="center"><img src="<?php // echo $champLogo;  ?>"></div>
     </td>
     <td width="1"></td>
   </tr>
