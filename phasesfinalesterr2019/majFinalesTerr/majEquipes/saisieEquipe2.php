@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>modification de donn�es en PHP :: partie2</title>
+<title>modification de données en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -247,8 +247,6 @@ elseif ($type==17)
 	*/		
 			
 	$requete = $bdd->prepare("	UPDATE $bdcomite_pfterr_e
-			
-
 								SET	type =:type,	clubA1601 =:clubA1601,	clubA1602 =:clubA1602,
 													clubA1603 =:clubA1603,	clubA1604 =:clubA1604,
 													clubA1605 =:clubA1605,	clubA1606 =:clubA1606,

@@ -381,7 +381,7 @@ nomLigue2($bddComite, $champ, $bdd);
 		echo "<br>" . "<br>";
 		require("bas.php");
 		echo "<hr>";
-		include("../pub/pub_displayCarre.php");
+		//include("../pub/pub_displayCarre.php");
 		?>
 	</div>
 </body>

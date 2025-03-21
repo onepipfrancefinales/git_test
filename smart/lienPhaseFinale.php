@@ -5,8 +5,8 @@ $division =$champ2*10;
 ?>
 <table class="marginAuto width95PC">
 <tr>
- <td class="france"><a href="pf_terr/phase_finale.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&annee=<?php echo $finSaison -1;?>&division=<?php echo substr($champ,0,5).'0';?>"> 
-		Phases finales régionales <?php echo $finSaison-1;?>
+ <td class="france"><a href="pf_terr/phase_finale.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&annee=<?php echo $datePhasesFinales;?>&division=<?php echo substr($champ,0,5).'0';?>"> 
+		Phases finales régionales <?php echo $datePhasesFinales;?>
 	</a></td>
 </tr>
 <tr>
