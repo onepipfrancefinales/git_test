@@ -37,6 +37,7 @@ $champ=$division;
 require '../fonctions.php';
 require ("../../connect/connexion1.php");
 nomLigue2($bddComite, $champ, $bdd);
+
 //------------------------------------
 
 //$bdcomite=("php".''.$comite);
@@ -49,13 +50,28 @@ require ("../../connect/connexion6.php") ;
 
 		$reponse = $bdd->query("SELECT type 
 								FROM $bdcomite_pfterr
-								WHERE division=$division AND annee=$annee");
+								WHERE division = $division AND annee = $annee");
 		
 		while ($row = $reponse->fetch() )
 			{                 	
 			$type=$row[0];
 			}
-	
+
+// recherche de barrage
+$divisionAvecBarrage =$division + 7000000;
+
+$reponse = $bdd->query("SELECT type 
+								FROM $bdcomite_pfterr
+								WHERE division = $divisionAvecBarrage AND annee = $annee");
+		
+		while ($row = $reponse->fetch() )
+			{                 	
+			$typeBarrage=$row[0];
+			}
+
+
+//echo  $typeBarrage; echo "<br>";
+if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false; 
 //---------------------------------------------------------
 //-----------------         Affichage       --------------- 
 //---------------------------------------------------------
@@ -81,12 +97,22 @@ require ("../../connect/connexion6.php") ;
 //****************    Finale - Finale ********************
 	require ("../../connect/connexion6.php") ; 	
 	require ("../../phasesfinalesterr2019/fonctionspfterrESDL2019.php");
+	require 'infos.php';
+//***********************Barrages**************************************
+		
+		if ($typeBarrage == 18)
+		{
+			afficheLieux ($divisionAvecBarrage, $annee, $comite, $bdd);
+			huitieme2019($comite, $divisionAvecBarrage, $annee, $bdd);
+	require ("barrage8M.php");
+		}
 
+
+//************************** */ féminines	***************************************	
 	if (substr($division,3,6) == "295") {
 
-$champ ="295";
+		$champ ="295";
 		echo  "<h1 class=\"center styleArial\">"."Fédérale 2". "</h1>";
-
 
 		if ($type==1)
 		{			
@@ -168,8 +194,9 @@ $champ ="295";
 	
 	elseif($type==18)
 			{
-			huitieme2019($comite, $division, $annee, $bdd);
 			afficheLieux($division, $annee, $comite, $bdd);
+			huitieme2019($comite, $division, $annee, $bdd);
+			
 			champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 			traitementScores (8001,8016, $bdd);
 			traitementScores (4001,4008, $bdd);
@@ -194,25 +221,14 @@ echo "<hr>";echo "<hr>";
 
 
 		$division = $division + 5;
-
 		$champ ="300";
-
 		$nomDivision2 = "Régionale à X";
-
-		
-
 
 		echo  "<h1 class=\"center styleArial\">". $nomDivision2 . "</h1>";
 
-
-
-
-
-
-
 		$reponse = $bdd->query("SELECT type 
 								FROM $bdcomite_pfterr
-								WHERE division=$division AND annee=$annee");
+								WHERE division = $division AND annee = $annee");
 		
 		while ($row = $reponse->fetch() )
 			{                 	
@@ -305,6 +321,7 @@ echo "<hr>";echo "<hr>";
 			traitementScores (8001,8016, $bdd);
 			traitementScores (4001,4008, $bdd);
 			traitementScores (2001,2004, $bdd);
+
 			require ("test18.php");		
 			}
 	
@@ -316,16 +333,20 @@ echo "<hr>";echo "<hr>";
 			huitiemeAR2019 ($comite, $division, $annee, $bdd);	
 			champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 			require ("test19.php");		
-			//require ("test0.php");
+		
 			}	
-		//************************************************************** */	
+		
+		}	
+		
+			//************************************************************** */	
 
 
-/***************************************************** */
+/**********************  Séniors ******************************* */
 
-	}
-	else {
-	
+
+
+accesFed3($comite, $division, $annee) ;
+accesReg1($comite, $division, $annee) ;
 	
 	if ($type==1)
 	{			
@@ -405,12 +426,16 @@ elseif($type==16)
 
 elseif($type==18)
 		{
+
+	
 		huitieme2019($comite, $division, $annee, $bdd);
 		afficheLieux($division, $annee, $comite, $bdd);
 		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
-		traitementScores (8001,8016, $bdd);
+	if ($A8001 !="-") {
+	traitementScores (8001,8016, $bdd);
 		traitementScores (4001,4008, $bdd);
 		traitementScores (2001,2004, $bdd);
+	}
 		require ("test18.php");		
 		}
 
@@ -427,9 +452,10 @@ elseif($type==18)
 				
 elseif($type==0)
 	{
+		echo $test;
 		require ("test0.php");
 	}
-}
+
 ?>	
 	</div>
 </body>

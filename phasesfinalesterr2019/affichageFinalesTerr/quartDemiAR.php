@@ -2,10 +2,10 @@
 $bdcomiteClub = $comite.''."_clubs";
 require ("../../connect/connexion6.php") ;
 require ("../../phasesfinalesterr2019/fonctionspfterrESDL2019.php");
-quartsDemiAR2019($comite, $division, $annee, $bdd);
-//traitementScores (4001, 4008, $bdd);
-//traitementScores (2001, 2004, $bdd);
-//traitementScores (1001, 1002, $bdd);
+//quartsDemiAR2019($comite, $division, $annee, $bdd);
+traitementScores (4001, 4008, $bdd);
+traitementScores (2001, 2004, $bdd);
+traitementScores (1001, 1002, $bdd);
 afficheLieux ($division, $annee, $comite, $bdd);
 champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 afficheDivisionChampion($division);

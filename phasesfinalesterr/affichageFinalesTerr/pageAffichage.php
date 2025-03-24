@@ -360,8 +360,9 @@ $somme = $somme1+$somme2;
 		
 		// Affichage d'un tableau de phase finale
 		if ($somme < 10)
-		
+	
 		{
+			echo "somme :".$somme;
 			if ($somme == 2 or $somme == 3){ 
 				include("../../phasesfinalesterr2019/affichageFinalesTerr/finale.php");}
 			elseif ( $somme == 4 or $somme == 6){ 
@@ -373,6 +374,7 @@ $somme = $somme1+$somme2;
 		}
 		else
 		{	
+			echo "somme :".$somme;
 	     require ('../../connect/connexion6.php');		
 		// echo "test3 ";echo "<br/>";
 		 if ($comite == "ab" or $comite == "ld" OR $comite == "mpy" OR $comite == "pc")
@@ -398,6 +400,7 @@ $somme = $somme1+$somme2;
 			{ $somme=$donnees['type'];	}
 	//echo "<br />";echo "somme 2 : ".$somme;echo "<br />";
 	//echo $division;
+	echo "sommeFin :".$somme;
 			if ($somme==14 )
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/quart.php");}
 			elseif ($somme==15)

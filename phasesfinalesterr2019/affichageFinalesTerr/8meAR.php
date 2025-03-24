@@ -11,7 +11,7 @@ traitementScores (2001, 2004, $bdd);
 traitementScores (1001, 1002, $bdd);
 afficheLieux ($division, $annee, $comite, $bdd);
 champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
-afficheDivisionChampion($division);
+afficheDivisionChampionLigue($division,$annee);
 ?><head>
 
 <link rel="stylesheet" type="text/css" href="../../phasesfinalesterr2019/qualification/qualification.css">
@@ -38,25 +38,11 @@ afficheDivisionChampion($division);
     <td width="26"></td>
     <td rowspan="26" bgcolor="#000000"></td>
     <td height="166" valign="top" rowspan="28"> 
-      <?php  
-	/*
-	if ($comite == "ab")
-	   		{
-	   		if ($division==210)
-				include("../../phasesfinalesterr2019/qualification/Q3me.php"); 
-			else
-		     include("../../phasesfinalesterr2019/qualification/Qph.php");  
-		   	}
-		 else
-		   {
-		    require("../../pub/pub6.php"); 
-		   	}
-		*/	
-		    ?>
+
     </td>
   </tr>
   <tr> 
-    <td width="200"><div class="affichageTitre" >8me de finale AR</div></td>
+    <td width="200"><div class="affichageTitre" >8me de finale AR </div></td>
     <td width="38"></td>
     <td width="40"></td>
     <td width="40"></td>

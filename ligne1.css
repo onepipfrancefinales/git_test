@@ -57,6 +57,10 @@ img{border:0;}
     color:#000000;
     font-size: 20px;
 }
+
+
+.justifier {text-justify: auto;}
+
 .alignementCentre{text-align: center;}
 .center{text-align: center;}
 

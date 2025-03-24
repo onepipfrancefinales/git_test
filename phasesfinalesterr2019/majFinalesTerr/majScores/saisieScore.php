@@ -3,6 +3,7 @@
 <title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
+
 </head>
 
 <?php
@@ -11,7 +12,7 @@ if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite='-';
 if (isset ($_GET['codeLigue'])) $codeLigue = $_GET['codeLigue']; else $codeLigue='-';
 if (isset ($_GET['division'])) $division = $_GET['division']; else $division='-';
 if (isset ($_GET['type'])) $type = $_GET['type']; else $type='-';
-
+if (isset ($_GET['barrage'])) $barrage = $_GET['barrage']; else $barrage='-';
  $page="saisieScores"; ?>
 
 <?php if (isset($_GET['annee'])) $annee=$_GET['annee']; ?>
@@ -32,6 +33,10 @@ if (isset ($_GET['type'])) $type = $_GET['type']; else $type='-';
   <tr bgcolor="#006699"> 
     <td valign="top" height="11" width="17%" bgcolor="#000000"><div align="center"><font color="#FFFFFF" size="6" face="Arial, Helvetica, sans-serif"><b>5</b></font></div></td>
     <td valign="middle" height="11" width="83%"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><?php include ("../choixType.php");?></font></b></td>
+  </tr>
+  <tr bgcolor="#006699"> 
+    <td valign="top" height="11" width="17%" bgcolor="#000000"><div align="center"><font color="#FFFFFF" size="6" face="Arial, Helvetica, sans-serif"><b>5</b></font></div></td>
+    <td valign="middle" height="11" width="83%"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><?php include ("../choixBarrage.php");?></font></b></td>
   </tr>
   <tr> 
     <td colspan="2" valign="top" height="20" bgcolor="#006699"> </td>
@@ -55,6 +60,10 @@ if (isset ($_GET['type'])) $type = $_GET['type']; else $type='-';
   <tr> 
     <td valign="top" height="13" width="17%"><div align="center">Type</div></td>
     <td width="83%" valign="top" height="13" bgcolor="#0099FF"><div align="center"><?php echo $type;?></div></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="13" width="17%"><div align="center">Barrage</div></td>
+    <td width="83%" valign="top" height="13" bgcolor="#0099FF"><div align="center"><?php echo $barrage;?></div></td>
   </tr>
   <tr> 
     <td valign="top" height="13" colspan="2" bgcolor="#000000"></td>

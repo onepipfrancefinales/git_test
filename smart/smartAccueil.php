@@ -66,8 +66,8 @@
         <td colspan="2" class="borderWidth1 ">
             <br>
             <p class="size5">
-                <a class="colorBlack" href="smartPage.php?page=pfRegionales&annee=<?php echo $datePhasesFinales;?>">Tableaux complets des phases finales <br> 
-                des différentes ligues  (2025 et 2024)</a><br>
+                <a class="colorBlack" href="smartPage.php?page=pfRegionales&annee=<?php echo $datePhasesFinales;?>">Tableaux complets <br> des phases finales <br> 
+                de toute les ligues <br>  (2025 et 2024)</a><br>
                 <span class="size3"> (Equipes I - Equipes II -Féminines) <span>
             </p>
             <br>

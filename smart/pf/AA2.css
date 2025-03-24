@@ -233,6 +233,61 @@ text-align: center;
 font-weight: Bold;
  }
 
+
+ td.coin6 {
+    width:85%;	
+    background-color:#41e59e;
+    border:1px #E4EFFF solid;
+    border-radius:10px 10px 10px 10px; 
+    font-family: arial; 
+    font-size: 16px;
+    text-align: center;
+    font-weight: Bold;
+     }
+
+     td.coin6pts {
+        width:15%;
+        color: #000000;
+        background-color:#41e59e;
+        border:1px solid #9FC6FF;
+        border-radius:10px 10px 10px 10px; 
+        font-family: arial; 
+        font-size: 18px;
+        text-align: center;
+        font-weight: Bold;
+        text-decoration: none;
+        }
+
+
+
+
+        
+ td.coin7 {
+    width:85%;	
+    background-color:#c1efdb;
+    border:1px #E4EFFF solid;
+    border-radius:10px 10px 10px 10px; 
+    font-family: arial; 
+    font-size: 16px;
+    text-align: center;
+    font-weight: Bold;
+     }
+
+     td.coin7pts {
+        width:15%;
+        color: #000000;
+    background-color:#c1efdb;
+
+        border:1px solid #9FC6FF;
+        border-radius:10px 10px 10px 10px; 
+        font-family: arial; 
+        font-size: 18px;
+        text-align: center;
+        font-weight: Bold;
+        text-decoration: none;
+        }
+
+
 /*****points terrain*****/
 /*bleu*/
 td.quartsPts { 

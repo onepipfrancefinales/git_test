@@ -1,6 +1,6 @@
 <table class ="center borderWidth1 width95PC">
     <tr> 
-      <td class="titre">8me de finale A/R</td>
+      <td class="titre">8me de finale A/R  <br> <span class="center size2 bold italic styleArial"><?php echo $D8000; ?></span></td>
     </tr>
   </table>
   <table class ="center width95PC borderNone">
@@ -114,8 +114,8 @@
 <br>
   <table class ="center borderWidth1 width95PC">
     <tr> 
-      <td class="titre">Quarts de finale <br>
-        <?php echo $D4000;?></td>
+      <td class="titre">Quarts de finale  <br> <span class="center size2 bold italic styleArial"><?php echo $D4000; ?></span>
+        </td>
     </tr>
   </table>
 
@@ -181,7 +181,7 @@
   
   <table class ="center borderWidth1 width95PC">
   <tr> 
-    <td class="titre">Demi finale <?php echo $D2000;?></td>
+    <td class="titre">Demi finale  <br> <span class="center size2 bold italic styleArial"><?php echo $D2000; ?></span></td>
   </tr>
 </table>
 <br> 
@@ -215,7 +215,7 @@
 <br>
 <table class ="center borderWidth1 width95PC">
   <tr> 
-    <td height="32" class="titre ">Finale <?php echo $D1000;?></td>
+    <td height="32" class="titre ">Finale  <br> <span class="center size2 bold italic styleArial"><?php echo $D1000; ?></span></td>
   </tr>
 </table>
 <br>

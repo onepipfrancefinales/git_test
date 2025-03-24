@@ -1,5 +1,5 @@
   <table class ="center borderWidth1 width95PC">
-    <tr>   
+  <tr>   
     <td class="titre">8me de finale <br> <span class="center size2 bold italic styleArial"><?php echo $D8000; ?></span></td>
     </tr>
   </table>
@@ -123,6 +123,8 @@
     <td class="coin5"><?php echo $clubA8016;?></td>
     <td class="coin5pts"><?php echo $A8016;?></td>
   </tr>
+
+  
 </table>
 <br>
 <table class ="center borderWidth1 width95PC">

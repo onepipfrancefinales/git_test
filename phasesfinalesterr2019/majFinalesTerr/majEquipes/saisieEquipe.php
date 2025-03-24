@@ -3,6 +3,7 @@
 <title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../maj.css">
+<link rel="stylesheet" type="text/css" href="../../../ligne1.css">
 </head>
 <?php
 
@@ -12,63 +13,70 @@ if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite='-';
 if (isset ($_GET['codeLigue'])) $codeLigue = $_GET['codeLigue']; else $codeLigue='-';
 if (isset ($_GET['division'])) $division = $_GET['division']; else $division='-'; 
 if (isset ($_GET['type'])) $type = $_GET['type']; else $type='-';
-if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee='-'; 
+if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee='-';
+ if (isset ($_GET['barrage'])) $barrage = $_GET['barrage']; else $barrage='-'; 
 
 $bdcomiteClub = "php".''.$comite.''."_clubs";
 $bdcomite_pfterr_e = "php".''.$comite.''."_pfterr_e";
 
 require ("../../fonctionspfterrESDL2019.php");
 
-
 echo "Saison : ".$annee; echo "<br />";
 echo "Division : ".$division; echo "<br />";
 echo "Comite : ".$comite.' '.$codeLigue; echo "<br />";
-
+echo "Type : ".$type;echo "<br />";
+echo "Barrage : ".$barrage;echo "<br />";
 ?>
 <body bgcolor="#FFFFFF" text="#000000">
 <table width="352">
   <tr bgcolor="#FFFFFF"> 
-    <td colspan="2"><div align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b><font size="4">Saisie des équipes</font></b></font></div></td>
+    <td colspan="2" class="center styleArial size4 colorRed bold">Saisie des équipes</td>
   </tr>
   <tr> 
-    <td bgcolor="#000000" width="37"><div align="center"><font size="6"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">3</font></b></font></div></td>
-    <td width="303" bgcolor="#006699"><?php include ("../choixComite.php");?></td>
+    <td class="backgroundBlack center size6 styleArial bold colorWhite">3</td>
+    <td width="303" class="backgroundBlue"><?php include ("../choixComite.php");?></td>
   </tr>
   <tr> 
-    <td bgcolor="#000000" width="37"><div align="center"><font size="6"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">4</font></b></font></div></td>
-    <td width="303" bgcolor="#006699"><?php include ("../choixDivision.php");?></td>
+    <td class="backgroundBlack center size6 styleArial bold colorWhite">4</td>
+    <td width="303" class="backgroundBlue"><?php include ("../choixDivision.php");?></td>
   </tr>
   <tr> 
-    <td bgcolor="#000000" width="37"><div align="center"><font size="6"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">5</font></b></font></div></td>
-    <td width="303" bgcolor="#006699"><?php include ("../choixType.php");?></td>
+    <td class="backgroundBlack center size6 styleArial bold colorWhite">5</td>
+    <td width="303" class="backgroundBlue"><?php include ("../choixType.php");?></td>
+  </tr>
+  <tr> 
+    <td class="backgroundBlack center size6 styleArial bold colorWhite">6</td>
+    <td width="303" class="backgroundBlue"><?php include ("../choixBarrage.php");?></td>
   </tr>
 </table>
 <table width="354" border="0" height="66">
   <tr> 
-    <td colspan="2" valign="top" height="11" bgcolor="#006699">&nbsp;</td>
+    <td colspan="2" valign="top" height="11" class="backgroundBlue">&nbsp;</td>
   </tr>
   <tr> 
-    <td valign="top" height="22" width="26%"><div align="center"> </div></td>
+    <td valign="top"  width="26%"><div align="center"> </div></td>
     <td width="74%" valign="top" height="-4" bgcolor="#FF9933"><div align="left"> </div>
     </td>
   </tr>
   <tr> 
-    <td valign="top" height="7" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Année</font></div></td>
-    <td width="74%" valign="top" height="7" bgcolor="#000000"><div align="center"><b><font size="5" color="#FFFFFF"><?php echo $annee; ?></font></b></div></td>
+    <td valign="top" width="26%" class="center styleArial">Année</td>
+    <td width="74%" valign="top" class="backgroundBlack center bold size5 colorWhite"><?php echo $annee; ?></td>
   </tr>
   <tr> 
-    <td valign="top" height="10" width="26%"><div align="center"><font face="Arial, Helvetica, sans-serif">Comité</font></div></td>
-    <td width="74%" valign="top" height="10" bgcolor="#FF9933"><div align="center"><?php echo $comite.' '.$codeLigue;?></div></td>
+    <td valign="top" height="10" width="26%" class="center styleArial">Comité</td>
+    <td width="74%" valign="top" height="10" bgcolor="#FF9933" class="center"><?php echo $comite.' '.$codeLigue;?></td>
   </tr>
   <tr> 
-    <td valign="top" height="13" width="26%"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif">Division</font></div></td>
-    <td width="74%" valign="top" height="13" bgcolor="#FF9933"><div align="center"><?php echo $division;?></div></td>
+    <td valign="top" width="26%" class="center stylaArial">Division</td>
+    <td width="74%" valign="top"  bgcolor="#FF9933" class="center"><?php echo $division;?></div></td>
   </tr>
   <tr> 
-    <td valign="top" height="13" width="26%"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif">Type</font></div></td>
-    <td width="74%" valign="top" height="13" bgcolor="#FF9933"><div align="center"><?php echo $type; ?></div></td>
+    <td valign="top"  width="26%" class="center stylaArial">Type</td>
+    <td width="74%" valign="top" height="13" bgcolor="#FF9933" class="center"><?php echo $type; ?></div></td>
+  </tr>
+  <tr> 
+    <td valign="top"  width="26%" class="center stylaArial">Barrage</td>
+    <td width="74%" valign="top" height="13" bgcolor="#FF9933" class="center"><?php echo $barrage; ?></div></td>
   </tr>
   <tr> 
     <td valign="top" height="13" colspan="2" bgcolor="#000000">&nbsp;</td>
@@ -89,6 +97,8 @@ echo "Comite : ".$comite.' '.$codeLigue; echo "<br />";
 <!-- ************  Finale   ************ 
 -->
 <?php 
+
+
 require '../../../connect/connexion6.php';
 if ($type==1)
 {

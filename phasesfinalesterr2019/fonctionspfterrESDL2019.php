@@ -1167,7 +1167,7 @@ $GA2004 = $A4004 + $R4004;
 //echo $pts2003;echo  $GA2003;
 //echo $pts2004;echo  $GA2004;
 //**********************************************************************
-//*****  Traitement des Equipes et des r�sultats des demi finale ********
+//*****  Traitement des Equipes et des résultats des demi finale ********
 //*********************************************************************
 
 global $A1001, $A1002;
@@ -1758,7 +1758,7 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
      if (isset($A1002)) $A1002 = $A1002; else $A1002='-'; 				
 
 //************************************************************************************
-//*******************    R�cup�rations des Scores	**********************************
+//*******************    Récupérations des Scores	**********************************
 //************************************************************************************
 if (is_numeric($A8001) && is_numeric($A8001))
 {if ($A8001 + $A8002 > 0) { if ($A8001>$A8002)	{$clubA4001=$clubA8001;	} else	{$clubA4001=$clubA8002; }}	else{ $A8001="-"; $A8002="-"; $clubA4001="-";}}
@@ -1806,6 +1806,7 @@ if (is_numeric($A1001) && is_numeric($A1002))
  
 function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 {
+
 	if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 		$bddComite = "idf";
 	
@@ -1819,7 +1820,7 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
 		
 //************************************************************************
-//*****  Traitement des Equipes et des r�sultats des 8me de finale********
+//*****  Traitement des Equipes et des résultats des 8me de finale********
 //************************************************************************
 
 	$tabEquipes = array();
@@ -1880,12 +1881,12 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 				while ($row = $reponse->fetch() )
 						{ $tabScores2[] = $row[0];}
 					
- 	 if (isset ($tabScores2[$i-$debut])) ${"R".($i)} = $tabScores2[$i-$debut]; else ${"R".($i)}='-'; 
-	 //echo ${"R".($i)};
+ 	 if (isset ($tabScores2[$i-$debut])) ${"R".($i)} = $tabScores2[$i-$debut]; else ${"R".($i)}='0'; 
+	// echo ${"R".($i)};
 	
 	}	
 
-// Scores ALLER (Goalverage)	
+// // Scores ALLER (Goalverage)	
 
 	$tabEquipes = array();
 	$tabScores = array() ;
@@ -1904,8 +1905,10 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 				while ($row = $reponse->fetch() )
 						{ $tabScores3[] = $row[0];}
 			
-	 if (isset ($tabScores3[$i-$debut])) ${"A".($i)} = $tabScores3[$i-$debut]; else ${"A".($i)}='-'; 						
-	
+	 if (isset ($tabScores3[$i-$debut])) ${"A".($i)} = $tabScores3[$i-$debut]; else ${"A".($i)}='0'; 						
+		//  echo ${"A".($i)};
+	 
+	 
 	 // Scores RETOUR (Goalverage)
 	 
 	 global ${"R".($i)};
@@ -1917,12 +1920,12 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 				while ($row = $reponse->fetch() )
 						{ $tabScores4[] = $row[0];}
 					
- 	 if (isset ($tabScores4[$i-$debut])) ${"R".($i)} = $tabScores4[$i-$debut]; else ${"R".($i)}='-'; 
-	 // echo ${"R".($i)};
+ 	 if (isset ($tabScores4[$i-$debut])) ${"R".($i)} = $tabScores4[$i-$debut]; else ${"R".($i)}='0'; 
+	  //echo ${"R".($i)};
 	}	
 
 //***************************************************										
-//*****  Traitement des r�sultats des quarts ********											
+//*****  Traitement des résultats des quarts ********											
 //***************************************************	
 
 	$tabScores = array() ;
@@ -1947,9 +1950,9 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 	 if (isset ($tabScores[$i-4001])) ${"A".($i)} = $tabScores[$i-4001]; else ${"A".($i)}='-'; 										
 	}											
 											
-//**********************************************************************										
-//*****  Traitement des �quipes et des r�sultats des Demi finale********											
-//**********************************************************************
+// //**********************************************************************										
+// //*****  Traitement des équipes et des résultats des Demi finale********											
+// //**********************************************************************
 
 	$tabScores = array() ;
 	
@@ -1970,14 +1973,14 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 				while ($row = $reponse->fetch() )
 						{ $tabScores[] = $row[0];}
 
-	 if (isset ($tabScores[$i-2001])) ${"A".($i)} = $tabScores[$i-2001]; else ${"A".($i)}='222'; 
+	 if (isset ($tabScores[$i-2001])) ${"A".($i)} = $tabScores[$i-2001]; else ${"A".($i)}='-'; 
 											
 	} 
 	 
 	 
-//**********************************************************************										
-//*****  Traitement des �quipes et des r�sultats dea la finale********											
-//**********************************************************************	 
+// //**********************************************************************										
+// //*****  Traitement des équipes et des résultats de la finale********											
+// //**********************************************************************	 
 	 
 	 global $clubA1001;global $clubA1002;										
 	 if (isset ($clubA1001)) $clubA1001 = $clubA1001; else $clubA1001='-'; 
@@ -1999,45 +2002,63 @@ function huitiemeAR2019 ($comite, $division, $annee, $bdd)
 						}		
 	
 		
-//************************************************************************************
-//*******************    R�cup�rations des Scores	**********************************
-//************************************************************************************
+// //************************************************************************************
+// //*******************    Récupérations des Scores	**********************************
+// //************************************************************************************
 
 
-// Traitement des r�sultats des 8me
-$Pts8001 = $A8001 + $R8001;
-$Pts8002 = $A8002 + $R8002;
-$Pts8003 = $A8003 + $R8003;
-$Pts8004 = $A8004 + $R8004;
-$Pts8005 = $A8005 + $R8005;
-$Pts8006 = $A8006 + $R8006;
-$Pts8007 = $A8007 + $R8007;
-$Pts8008 = $A8008 + $R8008;
-$Pts8009 = $A8009 + $R8009;
-$Pts8010 = $A8010 + $R8010;
-$Pts8011 = $A8011 + $R8011;
-$Pts8012 = $A8012 + $R8012;
-$Pts8013 = $A8013 + $R8013;
-$Pts8014 = $A8014 + $R8014;
-$Pts8015 = $A8015 + $R8015;
-$Pts8016 = $A8016 + $R8016;
+// // Traitement des résultats des 8me
+for ($i=8001; $i<8017; $i++) {
 
-$GA1601 = $A1601 + $R1601;
-$GA1602 = $A1602 + $R1602;
-$GA1603 = $A1603 + $R1603;
-$GA1604 = $A1604 + $R1604;
-$GA1605 = $A1605 + $R1605;
-$GA1606 = $A1606 + $R1606;
-$GA1607 = $A1607 + $R1607;
-$GA1608 = $A1608 + $R1608;
-$GA1609 = $A1609 + $R1609;
-$GA1610 = $A1610 + $R1610;
-$GA1611 = $A1611 + $R1611;
-$GA1612 = $A1612 + $R1612;
-$GA1613 = $A1613 + $R1613;
-$GA1614 = $A1614 + $R1614;
-$GA1615 = $A1615 + $R1615;
-$GA1616 = $A1616 + $R1616;
+	
+	${"Pts".$i} = ${"A".$i} + ${"R".$i};
+	//${"Pts".$i} = ${"A".$i};
+
+}
+
+for ($i=1601; $i<1617; $i++) {
+//	${"GA".$i} = ${"A".$i};
+
+	${"GA".$i} = ${"A".$i} + ${"R".$i};
+
+}
+
+if ($Pts8001+$Pts8002 > 0)	{if ($Pts8001>$Pts8002)	{$clubA4002=$clubA8001;	} else	{$club4002=$clubA8002;	}}	else {	$Pts8001="-";	$Pts8002="-";	$quart1="-";}
+if ($Pts8003+$Pts8004 > 0)	{if ($Pts8001>$Pts8002)	{$clubA4002=$clubA8001;	} else	{$club4002=$clubA8002;	}}	else {	$Pts8003="-";	$Pts8004="-";	$quart1="-";}
+if ($Pts8005+$Pts8006 > 0)	{if ($Pts8001>$Pts8002)	{$clubA4002=$clubA8001;	} else	{$club4002=$clubA8002;	}}	else {	$Pts8005="-";	$Pts8006="-";	$quart1="-";}
+if ($Pts8007+$Pts8008 > 0)	{if ($Pts8001>$Pts8002)	{$clubA4002=$clubA8001;	} else	{$club4002=$clubA8002;	}}	else {	$Pts8007="-";	$Pts8008="-";	$quart1="-";}
+
+if ($Pts8009+$Pts8010 > 0)	{if ($Pts8001>$Pts8002)	{$clubA4002=$clubA8001;	} else	{$club4002=$clubA8002;	}}	else {	$Pts8009="-";	$Pts8010="-";	$quart1="-";}
+if ($Pts8011+$Pts8012 > 0)	{if ($Pts8001>$Pts8002)	{$clubA4002=$clubA8001;	} else	{$club4002=$clubA8002;	}}	else {	$Pts8011="-";	$Pts8012="-";	$quart1="-";}
+if ($Pts8013+$Pts8014 > 0)	{if ($Pts8001>$Pts8002)	{$clubA4002=$clubA8001;	} else	{$club4002=$clubA8002;	}}	else {	$Pts8013="-";	$Pts8014="-";	$quart1="-";}
+if ($Pts8015+$Pts8016 > 0)	{if ($Pts8001>$Pts8002)	{$clubA4002=$clubA8001;	} else	{$club4002=$clubA8002;	}}	else {	$Pts8015="-";	$Pts8016="-";	$quart1="-";}
+
+
+if ($GA1601+$GA1602 > 0)	{if ($Pts1601>$Pts1602)	{$clubA4002=$clubA1601;	} else	{$club4002=$clubA1602;	}}	else {	$GA1601="-";	$GA1602="-";	$quart1="-";}
+if ($GA1603+$GA1604 > 0)	{if ($Pts1601>$Pts1602)	{$clubA4002=$clubA1601;	} else	{$club4002=$clubA1602;	}}	else {	$GA1603="-";	$GA1604="-";	$quart1="-";}
+if ($GA1605+$GA1606 > 0)	{if ($Pts1601>$Pts1602)	{$clubA4002=$clubA1601;	} else	{$club4002=$clubA1602;	}}	else {	$GA1605="-";	$GA1606="-";	$quart1="-";}
+if ($GA1607+$GA1608 > 0)	{if ($Pts1601>$Pts1602)	{$clubA4002=$clubA1601;	} else	{$club4002=$clubA1602;	}}	else {	$GA1607="-";	$GA1608="-";	$quart1="-";}
+
+if ($GA1609+$GA1610 > 0)	{if ($Pts1601>$Pts1602)	{$clubA4002=$clubA1601;	} else	{$club4002=$clubA1602;	}}	else {	$GA1609="-";	$GA1610="-";	$quart1="-";}
+if ($GA1611+$GA1612 > 0)	{if ($Pts1601>$Pts1602)	{$clubA4002=$clubA1601;	} else	{$club4002=$clubA1602;	}}	else {	$GA1611="-";	$GA1612="-";	$quart1="-";}
+if ($GA1613+$GA1614 > 0)	{if ($Pts1601>$Pts1602)	{$clubA4002=$clubA1601;	} else	{$club4002=$clubA1602;	}}	else {	$GA1613="-";	$GA1614="-";	$quart1="-";}
+if ($GA1615+$GA1616 > 0)	{if ($Pts1601>$Pts1602)	{$clubA4002=$clubA1601;	} else	{$club4002=$clubA1602;	}}	else {	$GA1615="-";	$GA1616="-";	$quart1="-";}
+
+
+
+
+
+
+
+
+
+/*
+
+if (is_numeric($A1603)+is_numeric($A1604) > 0)	{if ($A1603>$A1604)	{$clubA1606=$clubA1603;	} else  {$clubA8006=$clubA1604; }}  else {  $A1603="-";	$A1604="-";	$quart1="-";}
+if (is_numeric($A1605)+is_numeric($A1606) > 0)	{if ($A1605>$A1606)	{$clubA8010=$clubA1605;	} else  {$clubA8010=$clubA1606; }}  else {  $A1605="-";	$A1606="-";	$quart1="-";}
+if (is_numeric($A1607)+is_numeric($A1608) > 0)	{if ($A1607>$A1608)	{$clubA8014=$clubA1607;	} else  {$clubA8014=$clubA1608; }}  else {  $A1607="-";	$A1608="-";	$quart1="-";}
+*/
+
 /*
 if (is_numeric($A8001) and is_numeric($R8001)){$AR8001 = $A8001 + $R8001;}else{$AR8001 = $A8001;}
 if (is_numeric($A8002) and is_numeric($R8002)){$A8R002 = $A8002 + $R8002;}else{$AR8002 = $A8002;}
@@ -2085,7 +2106,7 @@ if (is_numeric($Pts8011)+ is_numeric($Pts8012) == 0)	{$Pts8011 = "-"; $Pts8012 =
 if (is_numeric($Pts8013)+ is_numeric($Pts8014) == 0)	{$Pts8013 = "-"; $Pts8014 = "-"; $A1613 = "-" ;$A1614 = "-";	}	
 if (is_numeric($Pts8015)+ is_numeric($Pts8016) == 0)	{$Pts8015 = "-"; $Pts8016 = "-"; $A1615 = "-" ;$A1616 = "-";	}	
 */
-
+/*
 if ($Pts8001+$Pts8002 == 0){$Pts8001="-"; $Pts8002="-"; $GA1601="-"; $GA1602="-";}else{if ($Pts8001+$Pts8002 > 6) {if($Pts8001>$Pts8002 or ($Pts8001 == $Pts8002 and $GA1601 > $GA1602))	{$clubA4001=$clubA8001;	}else{$clubA4001=$clubA8002;	}}	else {$clubA4001="-";}}
 if ($Pts8003+$Pts8004 == 0){$Pts8003="-"; $Pts8004="-"; $GA1603="-"; $GA1604="-";}else{if ($Pts8003+$Pts8004 > 6) {if($Pts8003>$Pts8004 or ($Pts8003 == $Pts8004 and $GA1603 > $GA1604))	{$clubA4002=$clubA8003;	}else{$clubA4002=$clubA8004;	}}	else {$clubA4002="-";}}
 if ($Pts8005+$Pts8006 == 0){$Pts8005="-"; $Pts8006="-"; $GA1605="-"; $GA1606="-";}else{if ($Pts8005+$Pts8006 > 6) {if($Pts8005>$Pts8006 or ($Pts8005 == $Pts8006 and $GA1605 > $GA1606))	{$clubA4003=$clubA8005;	}else{$clubA4003=$clubA8006;	}}	else {$clubA4003="-";}}
@@ -2098,9 +2119,6 @@ if ($Pts8015+$Pts8016 == 0){$Pts8015="-"; $Pts8016="-"; $GA1615="-"; $GA1616="-"
 
 
 
-
-
-/*	
 if ($Pts8003+$Pts8004 == 0){
 if ($Pts8003+$Pts8004 > 6)	{	if ($Pts8003>$Pts8004 or ($Pts8003 == $Pts8004 and $GA1603 > $GA1604))	{$clubA4002=$clubA8003;	} else	{$clubA4002=$clubA8004;	}}}	
 if ($Pts8005+$Pts8006 == 0){
@@ -2116,16 +2134,32 @@ if ($Pts8013+$Pts8014 > 6)	{	if ($Pts8013>$Pts8014 or ($Pts8013 == $Pts8014 and 
 if ($Pts8015+$Pts8016 == 0){
 if ($Pts8015+$Pts8016 > 6)	{	if ($Pts8015>$Pts8016 or ($Pts8015 == $Pts8016 and $GA1615 > $GA1616))	{$clubA4008=$clubA8015;	} else	{$clubA4008=$clubA8016;	}}}	
 */
-if ($A4001+ $A4002 > 0)	{if ( $A4001>$A4002){$clubA2001=$clubA4001;	}	else	{$clubA2001=$clubA4002;	}}else{	$A4001="-"; $A4002="-";}
-if ($A4003+$A4004 > 0)	{if ($A4003>$A4004)	{$clubA2002=$clubA4003;	} else	{$clubA2002=$clubA4004;	}}	else{	$A4003="-"; $A4004="-";}
-if ($A4005+$A4006 > 0)	{if ($A4005>$A4006)	{$clubA2003=$clubA4005;	} else	{$clubA2003=$clubA4006;	}}	else{	$A4005="-"; $A4006="-";}
-if ($A4007+$A4008 > 0)	{if ($A4007>$A4008)	{$clubA2004=$clubA4007;	} else	{$clubA2004=$clubA4008;	}}	else{	$A4007="-"; $A4008="-";}
+/*
+if ($A4001 + $A4002 > 0)	{if ( $A4001>$A4002){$clubA2001=$clubA4001;	}	else	{$clubA2001=$clubA4002;	}}else{	$A4001="-"; $A4002="-";}
+if ($A4003 + $A4004 > 0)	{if ($A4003>$A4004)	{$clubA2002=$clubA4003;	} else	{$clubA2002=$clubA4004;	}}	else{	$A4003="-"; $A4004="-";}
+if ($A4005 + $A4006 > 0)	{if ($A4005>$A4006)	{$clubA2003=$clubA4005;	} else	{$clubA2003=$clubA4006;	}}	else{	$A4005="-"; $A4006="-";}
+if ($A4007 + $A4008 > 0)	{if ($A4007>$A4008)	{$clubA2004=$clubA4007;	} else	{$clubA2004=$clubA4008;	}}	else{	$A4007="-"; $A4008="-";}
+*/
+//if ($A2001+$A2002 > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A2001="-"; $A2002="-";}
+//if ($A2003+$A2004 > 0)	{if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-"; $A2004="-";}
 
-if ($A2001+$A2002 > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A2001="-"; $A2002="-";}
-if ($A2003+$A2004 > 0)	{if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-"; $A2004="-";}
+//if ($A1001+$A1002 > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A1001="-";	$A1002="-";	}			
 
-if ($A1001+$A1002 > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A1001="-";	$A1002="-";	}			
+//****** traitement résultats 8me de finale  *********	
+//for ($i= 8001, $j = 8002, $k= 4001; $i<8016, $j <8017, $k< 4009; $i=$i+2, $j=$j+2, $k++)	
+//{if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
+
+//****** traitement résultats 4me de finale  *********	
+for ($i= 4001, $j = 4002, $k= 2001; $i<4008, $j <4009, $k< 2005; $i=$i+2, $j=$j+2, $k++)	
+{if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
+
+//****** traitement résultats demi finale  *********	
+if (is_numeric($A2001)+is_numeric($A2002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A2001="-";	$A2002="-";	$clubA1001="-";}
+if (is_numeric($A2003)+is_numeric($A2004) > 0)	{if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-";	$A2004="-";	$clubA1002="-";}
+
+//****** traitement résultats finale  *********
+if (is_numeric($A1001)+is_numeric($A1002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A1001="-";	$A1002="-"; 	$quart1="-";}																		
 }
  
 //***********************************************************************
@@ -2145,36 +2179,7 @@ function huitiemeEtBarrages2019($comite, $division, $annee, $bdd)
 		$bddComite = "pl";	
 	else 
 		$bddComite = $comite;
-	
-/*	
-	if ($comite == "au" or $comite == "ap" or $comite == "ly" or $comite == "da")
-	{$bddComite = "au"; $codeLigue = 100000;}
-	elseif ($comite == "be" or $comite == "cbl" or $comite == "ca" or $comite == "lm" or $comite == "lm" or $comite == "pa" or $comite == "pch")
-	{$bddComite = "ca"; $codeLigue = 190000;}
-	elseif ($comite == "ab" or $comite == "mpy" or $comite == "ld" or $comite == "pc")
-	{$bddComite = "ab"; $codeLigue = 200000;}
-	
-	elseif ($comite == "al") 
-		{$bddComite = "idf";$codeLigue = 150000;}
-	elseif ($comite == "n")
-		{$bddComite = "idf";$codeLigue = 180000;}
-	elseif ($comite == "pr")
-		{$bddComite = "idf";$codeLigue = 220000;}
-	elseif ($comite == "idf")
-		{$bddComite = "idf";$codeLigue = 170000;}
-	
-    elseif ($comite == "bg")
-		{$bddComite = "pl";$codeLigue = 110000;}
-	elseif ($comite == "br")
-		{$bddComite = "pl";$codeLigue = 120000;}
-	elseif ($comite == "ce")
-		{$bddComite = "pl";$codeLigue = 130000;}
-	elseif ($comite == "fl")
-		{$bddComite = "pl";$codeLigue = 160000;}
-	elseif ($comite == "pl")
-		{$bddComite = "pl";$codeLigue = 220000;}
-*/
-	
+		
 //echo $bddComite; echo "<br />";
 
 	$bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
@@ -2354,30 +2359,30 @@ function huitiemeEtBarrages2019($comite, $division, $annee, $bdd)
 						}							
 		
 //************************************************************************************
-//*******************    R�cup�rations des Scores	**********************************
+//*******************    Récupérations des Scores	**********************************
 //************************************************************************************
 
 
-// Traitement des r�sultats des barrages et des 8me
+// Traitement des résultats des barrages et des 8me
 
 if (is_numeric($A1601)+is_numeric($A1602) > 0)	{if ($A1601>$A1602)	{$clubA8002=$clubA1601;	} else	{$clubA8002=$clubA1602;	}}	else {	$A1601="-";	$A1602="-";	$quart1="-";}
 if (is_numeric($A1603)+is_numeric($A1604) > 0)	{if ($A1603>$A1604)	{$clubA8006=$clubA1603;	} else  {$clubA8006=$clubA1604; }}  else {  $A1603="-";	$A1604="-";	$quart1="-";}
 if (is_numeric($A1605)+is_numeric($A1606) > 0)	{if ($A1605>$A1606)	{$clubA8010=$clubA1605;	} else  {$clubA8010=$clubA1606; }}  else {  $A1605="-";	$A1606="-";	$quart1="-";}
 if (is_numeric($A1607)+is_numeric($A1608) > 0)	{if ($A1607>$A1608)	{$clubA8014=$clubA1607;	} else  {$clubA8014=$clubA1608; }}  else {  $A1607="-";	$A1608="-";	$quart1="-";}
 
-//****** traitement r�sultats 8me de finale  *********	
+//****** traitement résultats 8me de finale  *********	
 for ($i= 8001, $j = 8002, $k= 4001; $i<8016, $j <8017, $k< 4009; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement r�sultats 4me de finale  *********	
+//****** traitement résultats 4me de finale  *********	
 for ($i= 4001, $j = 4002, $k= 2001; $i<4008, $j <4009, $k< 2005; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement r�sultats demi finale  *********	
+//****** traitement résultats demi finale  *********	
 if (is_numeric($A2001)+is_numeric($A2002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A2001="-";	$A2002="-";	$clubA1001="-";}
 if (is_numeric($A2003)+is_numeric($A2004) > 0)	{if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-";	$A2004="-";	$clubA1002="-";}
 
-//****** traitement r�sultats finale  *********
+//****** traitement résultats finale  *********
 if (is_numeric($A1001)+is_numeric($A1002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A1001="-";	$A1002="-"; 	$quart1="-";}																		
 }
 
@@ -2651,19 +2656,19 @@ if ((int)$A2001+(int)$A2002 > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} e
 for ($i= 1601, $j = 1602, $k= 8001; $i<1632, $j <1633, $k< 8017; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement r�sultats 8me de finale  *********	
+//****** traitement résultats 8me de finale  *********	
 for ($i= 8001, $j = 8002, $k= 4001; $i<8016, $j <8017, $k< 4009; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement r�sultats 4me de finale  *********	
+//****** traitement résultats 4me de finale  *********	
 for ($i= 4001, $j = 4002, $k= 2001; $i<4008, $j <4009, $k< 2005; $i=$i+2, $j=$j+2, $k++)	
 {if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
-//****** traitement r�sultats demi finale  *********	
+//****** traitement résultats demi finale  *********	
 if (is_numeric($A2001)+is_numeric($A2002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A2001="-";	$A2002="-";	$clubA1001="-";}
 if (is_numeric($A2003)+is_numeric($A2004) > 0)	{if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004;	}}	else{	$A2003="-";	$A2004="-";	$clubA1002="-";}
 
-//****** traitement r�sultats finale  *********
+//****** traitement résultats finale  *********
 if (is_numeric($A1001)+is_numeric($A1002) > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A1001="-";	$A1002="-"; 	$quart1="-";}																		
 */
 }
