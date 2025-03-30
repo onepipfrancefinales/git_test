@@ -103,7 +103,7 @@ $result = mysql_query($requete) ;
  
  
 <?php
-//----------------Finale : les résultats------------------ 
+//----------------Finale : les rï¿½sultats------------------ 
 
 function score ( $division, $annee, $bdcomiteAnnee)
  {
@@ -271,13 +271,13 @@ $clubD="-";
 ?>
 
 <?php
-//----------------Demi finale : les résultats------------------ 
+//----------------Demi finale : les rï¿½sultats------------------ 
 
 function scoreDemi ( $division, $annee, $bdcomiteAnnee)
  {
 
 
- // Selection de l'équipe clubA 
+ // Selection de l'ï¿½quipe clubA 
 
 	global $clubA;
 	global $logoA;
@@ -285,21 +285,21 @@ function scoreDemi ( $division, $annee, $bdcomiteAnnee)
 		
  
  
-// Selection de l'équipe clubB 
+// Selection de l'ï¿½quipe clubB 
 
  global $clubB;
 global $logoB;
 		
 	
  
- // Selection de l'équipe clubC
+ // Selection de l'ï¿½quipe clubC
  
  global $clubC;
 		global $logoC;
 		
 
  
- // Selection de l'équipe clubD
+ // Selection de l'ï¿½quipe clubD
  
  global $clubD;
 		global $logoD;
@@ -359,13 +359,13 @@ if (($scoreA==NULL) OR ($scoreA + $scoreB == 0))
 	$scoreB=$tiret; 
 	$A1001=$tiret;
 	} 
-//Affichage de la qualification d'office de l'équipe A
+//Affichage de la qualification d'office de l'ï¿½quipe A
 elseif($scoreA==99 AND $scoreB==0)
 	{
 	$scoreA="Q";
 	$scoreB="-";
 	}
-//Affichage de la qualification d'office de l'équipe B	
+//Affichage de la qualification d'office de l'ï¿½quipe B	
 elseif($scoreA==0 AND $scoreB==99)
 	{
 	$scoreA="-";
@@ -386,13 +386,13 @@ if (($scoreC==NULL) OR ($scoreC + $scoreD == 0))
 	$scoreD=$tiret; 
 	$A1002=$tiret;
 	} 
-//Affichage de la qualification d'office de l'équipe C
+//Affichage de la qualification d'office de l'ï¿½quipe C
 elseif($scoreC==99 AND $scoreD==0)
 	{
 	$scoreC="Q";
 	$scoreD="-";
 	}
-//Affichage de la qualification d'office de l'équipe D
+//Affichage de la qualification d'office de l'ï¿½quipe D
 elseif($scoreC==0 AND $scoreD==99)
 	{
 	$scoreC="-";
@@ -447,7 +447,7 @@ else
 	$finaliste2=$tiret;
 	}
 	
-// Détermination du champion
+// Dï¿½termination du champion
 
 if (($A1001+$A1002)>0)
 
@@ -599,7 +599,7 @@ $clubD="-";
 ?>
 
 <?php
-//----------------Demi finale AR: les résultats------------------ 
+//----------------Demi finale AR: les rï¿½sultats------------------ 
 
 function scoreDemiAR ( $division, $annee, $bdcomiteAnnee)
 {
@@ -648,7 +648,7 @@ function scoreDemiAR ( $division, $annee, $bdcomiteAnnee)
 		while ($row = mysql_fetch_array($result) )
 			{ 
 			
-// Résultats matchs ALLER			
+// Rï¿½sultats matchs ALLER			
 			$score1 = $row[0];
 			$score2 = $row[1];
 			$score3 = $row[2];
@@ -659,7 +659,7 @@ function scoreDemiAR ( $division, $annee, $bdcomiteAnnee)
 			$score7 = $row[6];
 			$score8 = $row[7];
 			
-// Résultats matchs RETOUR			
+// Rï¿½sultats matchs RETOUR			
 			
 			$score9 = $row[8];
 			$score10 = $row[9];
@@ -672,7 +672,7 @@ function scoreDemiAR ( $division, $annee, $bdcomiteAnnee)
 			$score16 = $row[15];
 			
 			
-// Résultats matchs FINALE
+// Rï¿½sultats matchs FINALE
 			
 			
 			$score17 = $row[16];
@@ -701,7 +701,7 @@ function scoreDemiAR ( $division, $annee, $bdcomiteAnnee)
 		$ptsB="-";
 		$scoreB="-";
 		}
-// Cas d'un qualifié d'office	
+// Cas d'un qualifiï¿½ d'office	
 	elseif ($score5==99 AND $score1==99)
 			{
 			$ptsA="Q";
@@ -734,7 +734,7 @@ function scoreDemiAR ( $division, $annee, $bdcomiteAnnee)
 	
 	
 // Finaliste 1	
-// Cas d'un qualifié d'office
+// Cas d'un qualifiï¿½ d'office
 	if ($score5==99 AND $score1==99)
 		{
 		$finaliste1=$clubA;
@@ -1020,7 +1020,7 @@ $clubH="-";
 
 <?php
 
-//----------------Quarts Demi finale : les résultats------------------ 
+//----------------Quarts Demi finale : les rï¿½sultats------------------ 
 
 function scoreQuarts ( $division, $annee, $bdcomiteAnnee)
  {		
@@ -1229,7 +1229,7 @@ else
 	$finaliste2="-";
 	}
 	
-//********* Détermination du champion  ********
+//********* Dï¿½termination du champion  ********
 
 if (($A1001+$A1002)>0)
 
@@ -1254,7 +1254,7 @@ else
  <?php
 //***********************************************************************/
 //																		*/
-//---------------huitièmes de Finale : scores      ------------------	*/
+//---------------huitiÃ¨mes de Finale : scores      ------------------	*/
 //																		*/
 //***********************************************************************/
 function huitieme_scores ($bdcomiteClub, $division, $annee, $bdcomiteAnnee_e)
@@ -1297,15 +1297,9 @@ global $clubA2004;
 
 global $clubA1001;
 global $clubA1002;
-
-
-
-
-
-
-		
+	
 				
-	//*******************    Récupérations des Equipes	**********************************
+	//*******************    Rï¿½cupï¿½rations des Equipes	**********************************
 
 	$tabEquipes = array();
 	for ($i=8001 ; $i<8017; $i++)
@@ -1345,19 +1339,6 @@ global $clubA1002;
 	$clubA8016 = $tabEquipes[15]; 
 
 	}
-	
-	
-
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
 	
 
 
@@ -1514,25 +1495,6 @@ if ($A8001+$A8002 > 0)
 		$quart1="-";
 		}
 
-
-
-
-
-
-
-
-
-
- 
-		
-		
-
-
-
-
-
-
-
 }
 
 
@@ -1612,11 +1574,6 @@ if ($A8001+$A8002 > 0)
 		$A4008="-";
 		$quart1="-";
 		}
-
-
-
-
-
 		
  if ($A2001+$A2002 > 0)
 		{	

@@ -47,19 +47,13 @@ afficheDivisionChampionLigue($division,$annee);
   <tr> 
     <td width="29" > </td>
     <td width="139" ></td>
-    <td width="144" > <font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php echo $D4000; ?>
-      </strong></i></b></font> </td>
+    <td width="144" class="size2 styleArial italic  alignLeft bold"> <?php echo $D4000; ?></td>
     <td width="73" ></td>
     <td width="70" ></td>
-    <td width="137" ><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php echo $D2000; ?>
-      </strong></i></b></font></td>
+    <td width="137" class="size2 styleArial italic  alignLeft bold"><?php echo $D2000; ?></td>
     <td width="62" ></td>
     <td width="72" ></td>
-    <td width="148" ><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php echo $D1000; ?>
-      </strong></i></b></font></td>
+    <td width="148" class="size2 styleArial italic  alignLeft bold"> <?php echo $D1000; ?></td>
     <td width="50" ></td>
     <td width="50" ></td>
     <td height="0" bgcolor="#000000" width="12"></td>
@@ -83,16 +77,8 @@ afficheDivisionChampionLigue($division,$annee);
   <tr> 
     <td width="29"> </td>
     <td width="139"></td>
-    <td width="144"> 
-      <div class="affichageEquipe" > 
-        <?php echo $clubA4001; ?>
-      </div>
-    </td>
-    <td width="73"> 
-      <div class="affichageGA" > 
-        <?php echo $A4001; ?>
-      </div>
-    </td>
+    <td width="144"><div class="affichageEquipe" ><?php echo $clubA4001; ?></div></td>
+    <td width="73"><div class="affichageGA" > <?php echo $A4001; ?> </div> </td>
     <td rowspan="8"><img src="../../images/accolade.png" width="8" height="121"></td>
     <td width="137"></td>
     <td width="62"></td>
@@ -187,9 +173,7 @@ afficheDivisionChampionLigue($division,$annee);
   <tr> 
     <td width="29" > </td>
     <td width="139" ></td>
-    <td width="144" ><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php echo $L4003; ?>
-      </strong></i></b></font></td>
+    <td width="144" class="size2 styleArial italic alignLeft bold"><?php echo $L4003; ?></td>
     <td width="73" ></td>
     <td width="137" ></td>
     <td width="62" ></td>
@@ -235,9 +219,7 @@ afficheDivisionChampionLigue($division,$annee);
     </td>
     <td width="137"></td>
     <td width="62"></td>
-    <td width="148"><font size="2" face="Arial, Helvetica, sans-serif"><b><i> 
-      <?php echo $L1001; ?>
-      </i></b></font></td>
+    <td width="148" class="size2 styleArial italic alignLeft bold"><?php echo $L1001; ?></td>
     <td width="50"> </td>
     <td width="50"></td>
     <td height="0"></td>
@@ -318,9 +300,7 @@ afficheDivisionChampionLigue($division,$annee);
   <tr valign="top"> 
     <td width="29" > </td>
     <td width="139" ></td>
-    <td width="144" ><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php echo $L4005; ?>
-      </strong></i></b><strong> </strong> </font></td>
+    <td width="144" class="size2 styleArial italic  alignLeft bold"><?php echo $L4005; ?></td>
     <td width="73" ></td>
     <td width="70" ></td>
     <td width="137" ></td>
@@ -415,37 +395,37 @@ afficheDivisionChampionLigue($division,$annee);
     <td width="257" ></td>
   </tr>
   <tr> 
-    <td width="29" height="12"> </td>
-    <td width="139" height="12"></td>
-    <td width="144" height="12"></td>
-    <td width="73" height="12"></td>
-    <td width="137" height="12"> 
+    <td width="29" > </td>
+    <td width="139" ></td>
+    <td width="144" ></td>
+    <td width="73" ></td>
+    <td width="137" > 
       <div class="affichageEquipe" > 
         <?php echo $clubA2004; ?>
       </div>
     </td>
-    <td width="62" height="12"> 
+    <td width="62" > 
       <div class="affichageGA" > 
         <?php echo $A2004; ?>
       </div>
     </td>
-    <td width="50" height="12"></td>
-    <td height="12" ></td>
-    <td width="257" height="12"></td>
+    <td width="50" ></td>
+    <td></td>
+    <td width="257" ></td>
   </tr>
   <tr> 
-    <td width="29" height="2"> </td>
-    <td width="139" height="2"></td>
-    <td width="144" height="2"> <strong><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
+    <td width="29"> </td>
+    <td width="139"></td>
+    <td width="144"> <strong><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
       <?php echo $L4007; ?>
       </strong></i></b></font> </strong></td>
-    <td width="73" height="2"></td>
-    <td width="137" height="2"> </td>
-    <td width="62" height="2"> </td>
-    <td width="72" height="2"></td>
-    <td width="50" height="2"></td>
-    <td height="2" ></td>
-    <td width="257" height="2"></td>
+    <td width="73"></td>
+    <td width="137"> </td>
+    <td width="62"> </td>
+    <td width="72"></td>
+    <td width="50"></td>
+    <td  ></td>
+    <td width="257" ></td>
   </tr>
   <tr> 
     <td width="29"> </td>
@@ -473,24 +453,24 @@ afficheDivisionChampionLigue($division,$annee);
     <td width="257"></td>
   </tr>
   <tr> 
-    <td width="29" height="2" > </td>
-    <td width="139" height="2" ></td>
-    <td width="144" height="2" > 
+    <td width="29"  > </td>
+    <td width="139"  ></td>
+    <td width="144"  > 
       <div class="affichageEquipe" > 
         <?php echo $clubA4008; ?>
       </div>
     </td>
-    <td width="73" height="2" > 
+    <td width="73"  > 
       <div class="affichageGA" > 
         <?php echo $A4008; ?>
       </div>
     </td>
-    <td width="137" height="2" ></td>
-    <td width="62" height="2" ></td>
-    <td width="72" height="2" ></td>
-    <td  width="50" height="2"></td>
-    <td height="2" ></td>
-    <td width="257" height="2" ></td>
+    <td width="137"  ></td>
+    <td width="62"  ></td>
+    <td width="72"  ></td>
+    <td  width="50" ></td>
+    <td  ></td>
+    <td width="257"  ></td>
   </tr>
   <tr> 
     <td width="29" height="3" > </td>
@@ -544,7 +524,7 @@ afficheDivisionChampionLigue($division,$annee);
   </tr>
   <tr> 
     <td colspan="14" > 
-      <?php require("../../pub/pub1.php"); ?>
+    
     </td>
   </tr>
 </table>

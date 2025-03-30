@@ -1,18 +1,18 @@
 <html>
 <head>
-<title>modification de donn�es en PHP :: partie2</title>
+<title>modification de données en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
 
-<?php // ******************   R�cup�ration des variables   ***************** 
+<?php // ******************   Récupération des variables   ***************** 
  
 $type=$_GET['type']; 
 $annee=$_GET['annee']; 
 $comite=$_GET['comite'];
 $division=$_GET['division'];
   
-// ***************** Test des variables r�cup�r�es ****************
+// ***************** Test des variables récupérées ****************
    echo "Comite : ".$comite; echo "<br />";
    echo "Type : ".$type;echo "<br />";
    echo "Annee : ".$annee;echo "<br />";

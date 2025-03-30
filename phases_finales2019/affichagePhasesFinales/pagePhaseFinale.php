@@ -49,7 +49,10 @@
 		//echo $division;
 		//echo "<br/>";
 		//echo $type; echo "<br/>";
-		if ($annee > 2022)
+
+		if ($annee > 2024)
+		require 'hautindex2025.php';
+		elseif ($annee > 2022 )
 			require 'hautindex2023.php';
 		elseif ($annee == 2022)
 			require 'hautindex2022.php';

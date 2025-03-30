@@ -825,7 +825,7 @@ champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 //**************** *******************************************************
 //***********************************************************************
 //**                                                                   **
-//**         ---------------Quarts de Finale AR : ------------------	   **
+//**         ---------------Quarts et demi  Finale AR : ------------------	   **
 //**																   **
 //***********************************************************************
 //***********************************************************************
@@ -920,10 +920,10 @@ for ($i=8001; $i<8017; $i++) {global ${"A".($i)}, ${"R".($i)};}
 	{	
 		echo $i.'--'.$tabScores[$i];
 		echo "<br />";}
-*/	
+*/
 	
 	// Scores GA Aller
-	
+
 	$tabScores = array() ;
 	
 	$debut =1601;
@@ -947,7 +947,7 @@ for ($i=8001; $i<8017; $i++) {global ${"A".($i)}, ${"R".($i)};}
 	for ($i=0; $i<8; $i++)
 	{echo $i.'**'.$tabScores[$i];
 		echo "<br />";}
-*/	
+	*/
 	
 	// Scores Pts retour
 
@@ -971,16 +971,19 @@ for ($i=8001; $i<8017; $i++) {global ${"A".($i)}, ${"R".($i)};}
 						{ 
 						$tabScores[] = $row[0];
 						}
- 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}=0; 
+ 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}="-"; 
 	}
 /*
 	echo "Pts RETOUR"."<br />";
 	for ($i=0; $i<8; $i++)
 	{echo $i.'**'.$tabScores[$i];
+		
 echo "<br />";}
-*/	
-	// Scores GA retour
+*/
 	
+
+// Scores GA retour
+Global $scores;
 	$tabScores = array() ;
 	
 	$debut =1609;
@@ -996,46 +999,21 @@ echo "<br />";}
 						{ 
 						$tabScores[] = $row[0];
 						}
- 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}=0; 
+ 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}="-"; 
+	
+	
 	}
-/*
-	echo  "GA RETOUR"."<br />";
+	/*
+	echo "GA RETOUR"."<br />";
 	for ($i=0; $i<8; $i++)
 	{echo $i.'**'.$tabScores[$i];
 		echo "<br />";}
 */
 
-//pts (8000) GA(1600)
-
-
- 
-if (is_numeric($A1601) and is_numeric($R1609)) $GA4001 = $A1601 + $R1609;
-if (is_numeric($A1602) and is_numeric($R1610)) $GA4002 = $A1602 + $R1610;
-if (is_numeric($A1603) and is_numeric($R1611)) $GA4003 = $A1603 + $R1611;
-if (is_numeric($A1604) and is_numeric($R1612)) $GA4004 = $A1604 + $R1612;
-if (is_numeric($A1605) and is_numeric($R1613)) $GA4005 = $A1605 + $R1613;
-if (is_numeric($A1606) and is_numeric($R1614)) $GA4006 = $A1606 + $R1614;
-if (is_numeric($A1607) and is_numeric($R1615)) $GA4007 = $A1607 + $R1615;
-if (is_numeric($A1608) and is_numeric($R1616)) $GA4008 = $A1608 + $R1616;
-
-if (is_numeric($A8001) and is_numeric($R8009)) $pts4001 = $A8001 + $R8009;
-if (is_numeric($A8002) and is_numeric($R8010)) $pts4002 = $A8002 + $R8010;
-if (is_numeric($A8003) and is_numeric($R8011)) $pts4003 = $A8003 + $R8011;
-if (is_numeric($A8004) and is_numeric($R8012)) $pts4004 = $A8004 + $R8012;
-if (is_numeric($A8005) and is_numeric($R8013)) $pts4005 = $A8005 + $R8013;
-if (is_numeric($A8006) and is_numeric($R8014)) $pts4006 = $A8006 + $R8014;
-if (is_numeric($A8007) and is_numeric($R8015)) $pts4007 = $A8007 + $R8015;
-if (is_numeric($A8008) and is_numeric($R8016)) $pts4008 = $A8008 + $R8016;
-
-
-//	for ($i = 1; $i < 9; $i++){
-//	echo ${"A400".$i}."<br />";
-//	}
-//echo "<br />";
 //*********************************************************************
 //*****  Traitement des Equipes et des résultats des demi finale ********
 //*******************************************************************
-	
+
 	$tabEquipes = array();
 	$tabScores = array() ;
 	
@@ -1070,7 +1048,7 @@ if (is_numeric($A8008) and is_numeric($R8016)) $pts4008 = $A8008 + $R8016;
 						{ 
 						$tabScores[] = $row[0];
 						}
- 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='0'; 
+ 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
 	}
 
 
@@ -1093,10 +1071,14 @@ $tabScores = array() ;
 						{ 
 						$tabScores[] = $row[0];
 						}
- 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='0'; 
+ 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
 
 	}
+
+	
 //*********  DEMI RETOUR   ********
+
+
 $tabScores = array() ;
 	
 	$debut =2001;
@@ -1116,7 +1098,7 @@ $tabScores = array() ;
 						{ 
 						$tabScores[] = $row[0];
 						}
- 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}='0'; 
+ 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}='-'; 
 
 	//echo ${"R".($i)}; echo "<br>";
 	}
@@ -1141,7 +1123,7 @@ $tabScores = array() ;
 						{ 
 						$tabScores[] = $row[0];
 						}
- 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}='0'; 
+ 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}='-'; 
 
 	}
 //echo "<br>";global $GA2003,$pts2003,$pts2004,$GA2004;
@@ -1151,21 +1133,235 @@ for ($i=2001; $i<2005; $i++) {global ${"GA".($i)};}
 
 for ($i=2001; $i<2005; $i++) {global ${"A".($i)};}
 for ($i=2001; $i<2005; $i++) {global ${"R".($i)};}
-$pts2001 = $A2001 + $R2001;
-$pts2002 = $A2002 + $R2002;
-$pts2003 = $A2003 + $R2003;
-$pts2004 = $A2004 + $R2004;
+
+
+
+/************************ DEMI FINALE ***************************** */
+/*
+
+echo "<br>";
+echo $A2001; echo "<br>";
+echo $R2001; echo "<br>";
+echo "<br>";
+
+echo "*******************************";echo "<br>";
+echo "A1 : ".$A2001; echo "<br>";
+echo "A2 : ".$A2002; echo "<br>";
+echo "A3 : ".$A2003; echo "<br>";
+echo "A4 : ".$A2004; echo "<br>";
+echo "*******************************";
+echo "*******************************";echo "<br>";
+echo "R1 : ".$R2001; echo "<br>";
+echo "R2 : ".$R2002; echo "<br>";
+echo "R3 : ".$R2003; echo "<br>";
+echo "R4 : ".$R2004; echo "<br>";
+echo "*******************************";
+
+
+if ($A2001 != "-") {$pts2001 = $R2001; } else {$pts2001=0;}
+if ($A2002 != "-") {$pts2002 = $R2002; } else {$pts2002=0;}
+if ($A2003 != "-") {$pts2003 = $R2003; } else {$pts2003=0;}
+if ($A2004 != "-") {$pts2004 = $R2004; } else {$pts2004=0;}
+
+if ($R2001 != "-") {$pts2001 = $R2001; } else {$pts2001=0;}
+if ($R2002 != "-") {$pts2002 = $R2002; } else {$pts2002=0;}
+if ($R2003 != "-") {$pts2003 = $R2003; } else {$pts2003=0;}
+if ($R2004 != "-") {$pts2004 = $R2004; } else {$pts2004=0;}
+
+
+echo "*******************************";echo "<br>";
+echo  "PTS1 : ".$pts2001; echo "<br>";
+echo  "PTS2 : ".$pts2002; echo "<br>";
+echo  "PTS3 : ".$pts2003; echo "<br>";
+echo  "PTS4 : ".$pts2004; echo "<br>";
+echo "*******************************";
+
+
+
+echo "<br>";
+
+
+
+echo "retour";
+echo "<br>";
+
+echo "*******************************";echo "<br>";
+echo "A1 : ".$A4001; echo "<br>";
+echo "A2 : ".$A4002; echo "<br>";
+echo "A3 : ".$A4003; echo "<br>";
+echo "A4 : ".$A4004; echo "<br>";
+echo "*******************************";
+echo "*******************************";echo "<br>";
+echo "R1 : ".$R4001; echo "<br>";
+echo "R2 : ".$R4002; echo "<br>";
+echo "R3 : ".$R4003; echo "<br>";
+echo "R4 : ".$R4004; echo "<br>";
+echo "*******************************";
+
+
+if ($A4001 != "-") {$GA2001 = $R4001 + $A4001; } else {$GA2001= 0 ;}
+if ($A4002 != "-") {$GA2002 = $R4002 + $A4002; } else {$GA2002= 0 ;}
+if ($A4003 != "-") {$GA2003 = $R4003 + $A4003; } else {$GA2003= 0; }
+if ($A4004 != "-") {$GA2004 = $R4004 + $A4004; } else {$GA2004= 0 ;}
+
+echo "*******************************";echo "<br>";
+echo  "GA1 : ".$GA2001; echo "<br>";
+echo  "GA2 : ".$GA2002; echo "<br>";
+echo  "GA3 : ".$GA2003; echo "<br>";
+echo  "GA4 : ".$GA2004; echo "<br>";
+echo "*******************************";
+
+
+
+
+
+echo "<br>";
+*/
+
+/*
+if (is_numeric($A2001) and  is_numeric($R2001))	{$pts2001 = $A2001 + $R2001;}
+			elseif (is_numeric($A2001))	{$pts2001 = $A2001; }
+			else {$pts2001 = "-";}
+
+*/
+
+
 
 for ($i=4001; $i<4005; $i++) {global ${"A".($i)};}
 for ($i=4001; $i<4005; $i++) {global ${"R".($i)};}
-$GA2001 = $A4001 + $R4001;
-$GA2002 = $A4002 + $R4002;
-$GA2003 = $A4003 + $R4003;
-$GA2004 = $A4004 + $R4004;
 
 
-//echo $pts2003;echo  $GA2003;
-//echo $pts2004;echo  $GA2004;
+
+/******************QUARTS DE FINALE ******************************/
+
+/*
+
+echo "<br>";
+
+
+
+
+
+echo "PTS"."<br>";
+
+echo "*******************************";
+echo "<br>";
+echo "A1 : ".$A8001; echo "<br>";
+echo "A2 : ".$A8002; echo "<br>";
+echo "A3 : ".$A8003; echo "<br>";
+echo "A4 : ".$A8004; echo "<br>";
+echo "A5 : ".$A8005; echo "<br>";
+echo "A6 : ".$A8006; echo "<br>";
+echo "A7 : ".$A8007; echo "<br>";
+echo "A8 : ".$A8008; echo "<br>";
+echo "*******************************";
+echo "*******************************";
+echo "<br>";
+echo "R1 : ".$R8009; echo "<br>";
+echo "R2 : ".$R8010; echo "<br>";
+echo "R3 : ".$R8011; echo "<br>";
+echo "R4 : ".$R8012; echo "<br>";
+echo "R5 : ".$R8013; echo "<br>";
+echo "R6 : ".$R8014; echo "<br>";
+echo "R7 : ".$R8015; echo "<br>";
+echo "R8 : ".$R8016; echo "<br>";
+echo "*******************************";
+*/
+
+if ($A8001 != "-") {$pts4001 = $A8001; } else {$pts4001=0;}
+if ($A8002 != "-") {$pts4002 = $A8002; } else {$pts4002=0;}
+if ($A8003 != "-") {$pts4003 = $A8003; } else {$pts4003=0;}
+if ($A8004 != "-") {$pts4004 = $A8004; } else {$pts4004=0;}
+if ($A8005 != "-") {$pts4005 = $A8005; } else {$pts4005=0;}
+if ($A8005 != "-") {$pts4006 = $A8006; } else {$pts4006=0;}
+if ($A8007 != "-") {$pts4007 = $A8007; } else {$pts4007=0;}
+if ($A8008 != "-") {$pts4008 = $A8008; } else {$pts4008=0;}
+
+
+if ($R8009 != "-") {$pts4001 = $R8009 + $A8001; } else {$pts4001=$pts4001;}
+if ($R8010 != "-") {$pts4002 = $R8010 + $A8002; } else {$pts4002=$pts4002;}
+if ($R8011 != "-") {$pts4003 = $R8011 + $A8003; } else {$pts4003=$pts4003;}
+if ($R8012 != "-") {$pts4004 = $R8012 + $A8004; } else {$pts4004=$pts4004;}
+if ($R8013 != "-") {$pts4005 = $R8013 + $A8005; } else {$pts4005=$pts4005;}
+if ($R8014 != "-") {$pts4006 = $R8014 + $A8006; } else {$pts4006=$pts4006;}
+if ($R8015 != "-") {$pts4007 = $R8015 + $A8007; } else {$pts4007=$pts4007;}
+if ($R8016 != "-") {$pts4008 = $R8016 + $A8008; } else {$pts4008=$pts4008;}
+
+/*
+echo "*******************************";echo "<br>";
+echo  "PTS1 : ".$pts4001; echo "<br>";
+echo  "PTS2 : ".$pts4002; echo "<br>";
+echo  "PTS3 : ".$pts4003; echo "<br>";
+echo  "PTS4 : ".$pts4004; echo "<br>";
+echo  "PTS5 : ".$pts4005; echo "<br>";
+echo  "PTS6 : ".$pts4006; echo "<br>";
+echo  "PTS7 : ".$pts4007; echo "<br>";
+echo  "PTS8 : ".$pts4008; echo "<br>";
+
+echo "*******************************";
+
+echo "<br>";
+echo "GA";
+echo "<br>";
+
+echo "*******************************";
+echo "<br>";
+echo "A1 : ".$A1601; echo "<br>";
+echo "A2 : ".$A1602; echo "<br>";
+echo "A3 : ".$A1603; echo "<br>";
+echo "A4 : ".$A1604; echo "<br>";
+echo "A5 : ".$A1605; echo "<br>";
+echo "A6 : ".$A1606; echo "<br>";
+echo "A7 : ".$A1607; echo "<br>";
+echo "A8 : ".$A1608; echo "<br>";
+echo "*******************************";
+echo "*******************************";
+echo "<br>";
+echo "R1 : ".$R1609; echo "<br>";
+echo "R2 : ".$R1610; echo "<br>";
+echo "R3 : ".$R1611; echo "<br>";
+echo "R4 : ".$R1612; echo "<br>";
+echo "R5 : ".$R1613; echo "<br>";
+echo "R6 : ".$R1614; echo "<br>";
+echo "R7 : ".$R1615; echo "<br>";
+echo "R8 : ".$R1616; echo "<br>";
+echo "*******************************";
+*/
+if ($A1601 != "-") {$GA4001 = $A1601; } else {$GA4001= 0;}
+if ($A1602 != "-") {$GA4002 = $A1602; } else {$GA4002= 0;}
+if ($A1603 != "-") {$GA4003 = $A1603; } else {$GA4003= 0;}
+if ($A1604 != "-") {$GA4004 = $A1604; } else {$GA4004= 0;}
+if ($A1605 != "-") {$GA4005 = $A1605; } else {$GA4005= 0;}
+if ($A1606 != "-") {$GA4006 = $A1606; } else {$GA4006= 0;}
+if ($A1607 != "-") {$GA4007 = $A1607; } else {$GA4007= 0;}
+if ($A1608 != "-") {$GA4008 = $A1608; } else {$GA4008= 0;}
+
+
+if ($R1609 != "-") {$GA4001 = $R1609 + $A1601; } else {$GA4001= $GA4001;}
+if ($R1610 != "-") {$GA4002 = $R1610 + $A1602; } else {$GA4002= $GA4002;}
+if ($R1611 != "-") {$GA4003 = $R1611 + $A1603; } else {$GA4003= $GA4003;}
+if ($R1612 != "-") {$GA4004 = $R1612 + $A1604; } else {$GA4004= $GA4004;}
+if ($R1613 != "-") {$GA4005 = $R1613 + $A1605; } else {$GA4005= $GA4005;}
+if ($R1614 != "-") {$GA4006 = $R1614 + $A1606; } else {$GA4006= $GA4006;}
+if ($R1615 != "-") {$GA4007 = $R1615 + $A1607; } else {$GA4007= $GA4007;}
+if ($R1616 != "-") {$GA4008 = $R1616 + $A1608; } else {$GA4008= $GA4008;}
+
+/*
+echo "*******************************";
+echo "<br>";
+echo  "GA1 : ".$GA4001; echo "<br>";
+echo  "GA2 : ".$GA4002; echo "<br>";
+echo  "GA3 : ".$GA4003; echo "<br>";
+echo  "GA4 : ".$GA4004; echo "<br>";
+echo  "GA5 : ".$GA4005; echo "<br>";
+echo  "GA6 : ".$GA4006; echo "<br>";
+echo  "GA7 : ".$GA4007; echo "<br>";
+echo  "GA8 : ".$GA4008; echo "<br>";
+echo "*******************************";
+echo "<br>";
+
+*/
+
 //**********************************************************************
 //*****  Traitement des Equipes et des résultats des demi finale ********
 //*********************************************************************
@@ -1186,33 +1382,642 @@ global $clubA1001, $clubA1002;
 						$A1002 = $row[1];
 						}
 
-//if ($A4001 + $A4002 > 0){	if ($A4001>$A4002)	{$clubA2001=$clubA4001;	} else	{$clubA2001=$clubA4002;	}}else{ $A4001="-";	$A4002="-"; $clubA2001="-";}
-//if ($A4003 + $A4004 > 0){	if ($A4003>$A4004)	{$clubA2002=$clubA4003;	} else	{$clubA2002=$clubA4004;	}}else{ $A4003="-";	$A4004="-"; $clubA2002="-";}
+
+// Quarts
+if ($pts4001 + $pts4002 > 6){ 	  if ($pts4001 > $pts4002 or ($pts4001 == $pts4002 and $GA4001 > $GA4002)){	$clubA2001=$clubA4001;}	else {$clubA2001=$clubA4002;};	} else if ($pts4001 + $pts4002 > 0 and $pts4001 + $pts4002 < 6) {  $pts4001=$pts4001; $pts4002=$pts4002; $GA4001=$GA4001; $GA4002=$GA4002;} else {	$pts4001="-";$pts4002="-";$GA4001="-";$GA4002="-"; }
+if ($pts4003 + $pts4004 > 6){ 	  if ($pts4003 > $pts4004 or ($pts4003 == $pts4004 and $GA4003 > $GA4004)){	$clubA2002=$clubA4003;}	else {$clubA2002=$clubA4004;};	} else if ($pts4003 + $pts4004 > 0 and $pts4003 + $pts4004 < 6) {  $pts4003=$pts4003; $pts4004=$pts4004; $GA4003=$GA4003; $GA4004=$GA4004;} else {	$pts4003="-";$pts4004="-";$GA4003="-";$GA4004="-"; }
+if ($pts4005 + $pts4006 > 6){ 	  if ($pts4005 > $pts4006 or ($pts4005 == $pts4006 and $GA4005 > $GA4006)){	$clubA2003=$clubA4005;}	else {$clubA2003=$clubA4006;};	} else if ($pts4005 + $pts4006 > 0 and $pts4005 + $pts4006 < 6) {  $pts4005=$pts4005; $pts4006=$pts4006; $GA4005=$GA4005; $GA4006=$GA4006;} else {	$pts4005="-";$pts4006="-";$GA4005="-";$GA4006="-"; }
+if ($pts4007 + $pts4008 > 6){ 	  if ($pts4007 > $pts4008 or ($pts4007 == $pts4008 and $GA4007 > $GA4008)){	$clubA2004=$clubA4007;}	else {$clubA2004=$clubA4008;};	} else if ($pts4007 + $pts4008 > 0 and $pts4007 + $pts4008 < 6) {  $pts4007=$pts4007; $pts4008=$pts4008; $GA4007=$GA4007; $GA4008=$GA4008;} else {	$pts4007="-";$pts4008="-";$GA4007="-";$GA4008="-"; }
 
 
-if ($pts4001 + $pts4002 > 6){	if ($pts4001 > $pts4002 or ($pts4001 == $pts4002 and $GA4001 > $GA4002)){$clubA2001=$clubA4001;}else {$clubA2001=$clubA4002;};	}	else { $GA2001="-"; $pts2001 ="-";}
-if ($pts4003 + $pts4004 > 6){	if ($pts4003 > $pts4004 or ($pts4003 == $pts4004 and $GA4003 > $GA4004)){$clubA2002=$clubA4003;}else {$clubA2002=$clubA4004;};	}	else { $GA2002="-"; $pts2002 ="-";}
-if ($pts4005 + $pts4006 > 6){	if ($pts4005 > $pts4006 or ($pts4005 == $pts4006 and $GA4005 > $GA4006)){$clubA2003=$clubA4005;}else {$clubA2003=$clubA4006;};	}	else { $GA2003="-"; $pts2003 ="-";}
-if ($pts4007 + $pts4008 > 6){	if ($pts4007 > $pts4008 or ($pts4007 == $pts4008 and $GA4007 > $GA4008)){$clubA2004=$clubA4007;}else {$clubA2004=$clubA4008;};	}	else { $GA2004="-"; $pts2004 ="-";}
 
 
-if ($pts2001 + $pts2002 > 6){	if ($pts2001 > $pts2002 or ($pts2001 == $pts2002 and $GA2001 > $GA2002)){$clubA1001=$clubA2001;}else {$clubA1001=$clubA2002;};	}	else { $GA1001="-"; $pts1001 ="-";}
-if ($pts2003 + $pts2004 > 6){	if ($pts2003 > $pts2004 or ($pts2003 == $pts2004 and $GA2003 > $GA2004)){$clubA1002=$clubA2003;}else {$clubA1002=$clubA2004;};	}	else { $GA1002="-"; $pts1002 ="-";}
 
 /*
-if ($A4007 + $A4008 > 0){	if ($A4007>$A4008)	{$clubA2004=$clubA4007;	} else	{$clubA2004=$clubA4008;	}}else{ $A4007="-";	$A4008="-"; $clubA2004="-";}
+if ($pts4003 + $pts4004 > 6){	if ($pts4003 > $pts4004 or ($pts4003 == $pts4004 and $GA4003 > $GA4004)){$clubA2002=$clubA4003;}else {$clubA2002=$clubA4004;};	}	else { $GA4003="-"; $pts4003 ="-";$GA4004="-"; $pts4004 ="-";}
+if ($pts4005 + $pts4006 > 6){	if ($pts4005 > $pts4006 or ($pts4005 == $pts4006 and $GA4005 > $GA4006)){$clubA2003=$clubA4005;}else {$clubA2003=$clubA4006;};	}	else { $GA4005="-"; $pts4005 ="-";$GA4006="-"; $pts4006 ="-";}
+if ($pts4007 + $pts4008 > 6){	if ($pts4007 > $pts4008 or ($pts4007 == $pts4008 and $GA4007 > $GA4008)){$clubA2004=$clubA4007;}else {$clubA2004=$clubA4008;};	}	else { $GA4007="-"; $pts4007 ="-";$GA4008="-"; $pts4008 ="-";}
+*/
 
-if ($A2001 + $A2002 > 0){	if ($A2001 > $A2002)	{$clubA1001 = $clubA2001;	} else	{$clubA1001 = $clubA2002;	}} else{ $A2001="-";	$A2002="-"; $clubA1001="-";}
-if ($A2003 + $A2004 > 0){	if ($A2003 > $A2004)	{$clubA1002 = $clubA2003;	} else	{$clubA1002 = $clubA2004;	}} else{ $A2003="-";	$A2004="-"; $clubA1002="-";}
+
+
+
+
+
+
+// demi
+	if ($pts2001 + $pts2002 > 6){if ($pts2001 > $pts2002 or ($pts2001 == $pts2002 and $GA2001 > $GA2002)) 
+			{$clubA1001=$clubA2001;} else {$clubA1001=$clubA2002;};}		
+else { $GA2001="-"; $pts2001 ="-"; $GA2002="-"; $pts2002 ="-";$clubA1001="-";$A1001="-";}
+
+
+	if ($pts2003 + $pts2004 > 6){	
+		if ($pts2003 > $pts2004 or ($pts2003 == $pts2004 and $GA2003 > $GA2004))
+		{$clubA1002=$clubA2003;} else {$clubA1002=$clubA2004;};	}
+		else { $GA2003="-"; $pts2003 ="-"; $GA2004="-"; $pts2004 ="-";$clubA1002="-";$A1002="-";}
+
+//Finale
+
+//if ($A1001 + $A1002 > 0){	if ($A1001 > $A1002)	{$champion =  $clubA1001;	} else	{$champion  =$clubA1002;	}} else{ $A1001="-";	$A1002="-";}
+
+
+
+}
+
+
+
+//**************** *******************************************************
+//***********************************************************************
+//**                                                                   **
+//**         ---------------Quarts AR et demi  Finale  : ------------------	   **
+//**																   **
+//***********************************************************************
+//***********************************************************************
+
+function quartsAR2019 ($comite, $division, $annee, $bdd)
+{
+	if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
+	
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
+	
+	$bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
+	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
+	
+	
+	
+//*********************************************************************
+//*****  Traitement des Equipes et des résultats des quarts de finale ********
+//*******************************************************************
+	
+	$tabEquipes = array();
+	$tabScores = array() ;
+	
+	$debut =4001;
+	$fin=4009;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	 //	******  Equipes  *******
+	 global ${"clubA".($i)};
+	 global ${"id".($i)};
+	$equipes = "clubA".''.$i;
+	;
+	$reponse = $bdd->query("SELECT  $bdcomiteClub.nom, $bdcomite_pfterr_e.$equipes, $bdcomiteClub.id
+				FROM $bdcomiteClub
+				INNER JOIN $bdcomite_pfterr_e ON $bdcomite_pfterr_e.$equipes=$bdcomiteClub.id
+				WHERE  $bdcomite_pfterr_e.division=$division and $bdcomite_pfterr_e.annee=$annee"); 
+							while ($row = $reponse->fetch() )
+								{ 
+								 $tabEquipes[] = $row[0];
+								 $tabId[] = $row[2];
+								}
+		
+	if (isset ($tabEquipes[$i-$debut])) ${"clubA".($i)} = $tabEquipes[$i-$debut]; else ${"clubA".($i)}='-'; 							
+	if (isset ($tabId[$i-$debut])) ${"id".($i)} = $tabId[$i-$debut]; else ${"id".($i)}='-';
+	}
+
+	for ($i=0; $i<8; $i++)
+	{
+		
+	//echo $tabEquipes[$i];
+	//echo $tabId[$i];	
+	}
+	// *******************************
+	// ********   SCORES    **********
+	
+
+
+for ($i=4001; $i<4009; $i++) { global ${"pts".($i)};}
+for ($i=4001; $i<4009; $i++) { global ${"GA".($i)};}
+
+for ($i=1601; $i<1617; $i++) {global ${"A".($i)}, ${"R".($i)};}
+for ($i=8001; $i<8017; $i++) {global ${"A".($i)}, ${"R".($i)};}
+	
+	
+	// Scores Pts Aller
+	 $tabScores = array() ;
+	
+	$debut = 8001;
+	$fin= 8009;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{ 
+	
+	 $scores = "A".''.$i;
+	 $reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$tabScores[] = $row[0];
+						}
+ 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
+	}
+
+
+
+
+
+/*	
+	echo "Pts ALLER"."<br />";
+	for ($i=0; $i < 8; $i++)
+	{	
+		echo $i.'--'.$tabScores[$i];
+		echo "<br />";}
+*/
+	
+	// Scores GA Aller
+
+	$tabScores = array() ;
+	
+	$debut =1601;
+	$fin=1609;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	// global ${"A".($i)};
+	 $scores = "A".''.$i;
+	 $reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$tabScores[] = $row[0];
+						}
+ 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
+	}
+/*	
+	echo "GA ALLER"."<br />";
+	for ($i=0; $i<8; $i++)
+	{echo $i.'**'.$tabScores[$i];
+		echo "<br />";}
+	*/
+	
+	// Scores Pts retour
+
+
+	$tabScores = array() ;
+	
+	
+	$debut =8009;
+	$fin=8017;
+	
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	
+	 
+	 $scores = "A".''.$i;
+	 $reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$tabScores[] = $row[0];
+						}
+ 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}="-"; 
+	}
+/*
+	echo "Pts RETOUR"."<br />";
+	for ($i=0; $i<8; $i++)
+	{echo $i.'**'.$tabScores[$i];
+		
+echo "<br />";}
+*/
+	
+
+// Scores GA retour
+Global $scores;
+	$tabScores = array() ;
+	
+	$debut =1609;
+	$fin=1617;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	 $scores = "A".''.$i;
+	 $reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$tabScores[] = $row[0];
+						}
+ 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}="-"; 
+	
+	
+	}
+	/*
+	echo "GA RETOUR"."<br />";
+	for ($i=0; $i<8; $i++)
+	{echo $i.'**'.$tabScores[$i];
+		echo "<br />";}
+*/
+
+//*********************************************************************
+//*****  Traitement des Equipes et des résultats des demi finale ********
+//*******************************************************************
+
+	$tabEquipes = array();
+	$tabScores = array() ;
+	
+	$debut =2001;
+	$fin=2005;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	 //	Equipes
+	 global ${"clubA".($i)};
+   	 $equipes = "clubA".''.$i;
+
+	if (isset ($tabEquipes[$i-$debut])) ${"clubA".($i)} = $tabEquipes[$i-$debut]; else ${"clubA".($i)}='-'; 							
+	}
+											
+	$tabScores = array() ;
+	
+	$debut =2001;
+	$fin=2005;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	
+	// Scores pts aller
+	 global ${"A".($i)};
+	 $scores = "A".''.$i;
+	
+	$reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$tabScores[] = $row[0];
+						}
+ 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
+	}
+
+/*
+$tabScores = array() ;
+	
+	$debut =4001;
+	$fin=4005;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	
+	// Scores GA aller
+	 global ${"A".($i)};
+	 $scores = "A".''.$i;
+	
+	$reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$tabScores[] = $row[0];
+						}
+ 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
+
+	}
+*/
+	
+//*********  DEMI RETOUR   ********
+/*
+
+$tabScores = array() ;
+	
+	$debut =2001;
+	$fin=2005;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	
+	// Scores pts Retour
+	 global ${"R".($i)};
+	 $scores = "R".''.$i;
+	
+	$reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$tabScores[] = $row[0];
+						}
+ 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}='-'; 
+
+	//echo ${"R".($i)}; echo "<br>";
+	}
+echo "<br>";
+
+$tabScores = array() ;
+	
+	$debut =4001;
+	$fin=4005;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+	
+	// Scores GA Retour
+	 global ${"R".($i)};
+	 $scores = "R".''.$i;
+	
+	$reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$tabScores[] = $row[0];
+						}
+ 	 if (isset ($tabScores[$i-$debut])) ${"R".($i)} = $tabScores[$i-$debut]; else ${"R".($i)}='-'; 
+
+	}
+
+	*/
+//echo "<br>";global $GA2003,$pts2003,$pts2004,$GA2004;
+for ($i=2001; $i<2005; $i++) {global ${"pts".($i)};}
+for ($i=2001; $i<2005; $i++) {global ${"GA".($i)};}
+
+
+for ($i=2001; $i<2005; $i++) {global ${"A".($i)};}
+for ($i=2001; $i<2005; $i++) {global ${"R".($i)};}
+
+
+
+/************************ DEMI FINALE ***************************** */
+/*
+
+echo "<br>";
+echo $A2001; echo "<br>";
+echo $R2001; echo "<br>";
+echo "<br>";
+
+echo "*******************************";echo "<br>";
+echo "A1 : ".$A2001; echo "<br>";
+echo "A2 : ".$A2002; echo "<br>";
+echo "A3 : ".$A2003; echo "<br>";
+echo "A4 : ".$A2004; echo "<br>";
+echo "*******************************";
+echo "*******************************";echo "<br>";
+echo "R1 : ".$R2001; echo "<br>";
+echo "R2 : ".$R2002; echo "<br>";
+echo "R3 : ".$R2003; echo "<br>";
+echo "R4 : ".$R2004; echo "<br>";
+echo "*******************************";
+*/
+
+if ($A2001 != "-") {$A2001 = $A2001; } else {$A2001=0;}
+if ($A2002 != "-") {$A2002 = $A2002; } else {$A2002=0;}
+if ($A2003 != "-") {$A2003 = $A2003; } else {$A2003=0;}
+if ($A2004 != "-") {$A2004 = $A2004; } else {$A2004=0;}
+/*
+if ($R2001 != "-") {$pts2001 = $R2001; } else {$pts2001=0;}
+if ($R2002 != "-") {$pts2002 = $R2002; } else {$pts2002=0;}
+if ($R2003 != "-") {$pts2003 = $R2003; } else {$pts2003=0;}
+if ($R2004 != "-") {$pts2004 = $R2004; } else {$pts2004=0;}
+/*
+
+echo "*******************************";echo "<br>";
+echo  "PTS1 : ".$pts2001; echo "<br>";
+echo  "PTS2 : ".$pts2002; echo "<br>";
+echo  "PTS3 : ".$pts2003; echo "<br>";
+echo  "PTS4 : ".$pts2004; echo "<br>";
+echo "*******************************";
+
+
+
+echo "<br>";
+
+
+
+echo "retour";
+echo "<br>";
+
+echo "*******************************";echo "<br>";
+echo "A1 : ".$A4001; echo "<br>";
+echo "A2 : ".$A4002; echo "<br>";
+echo "A3 : ".$A4003; echo "<br>";
+echo "A4 : ".$A4004; echo "<br>";
+echo "*******************************";
+echo "*******************************";echo "<br>";
+echo "R1 : ".$R4001; echo "<br>";
+echo "R2 : ".$R4002; echo "<br>";
+echo "R3 : ".$R4003; echo "<br>";
+echo "R4 : ".$R4004; echo "<br>";
+echo "*******************************";
+*/
+
+if ($A4001 != "-") {$GA2001 = $R4001 + $A4001; } else {$GA2001= 0 ;}
+if ($A4002 != "-") {$GA2002 = $R4002 + $A4002; } else {$GA2002= 0 ;}
+if ($A4003 != "-") {$GA2003 = $R4003 + $A4003; } else {$GA2003= 0; }
+if ($A4004 != "-") {$GA2004 = $R4004 + $A4004; } else {$GA2004= 0 ;}
+/*
+echo "*******************************";echo "<br>";
+echo  "GA1 : ".$GA2001; echo "<br>";
+echo  "GA2 : ".$GA2002; echo "<br>";
+echo  "GA3 : ".$GA2003; echo "<br>";
+echo  "GA4 : ".$GA2004; echo "<br>";
+echo "*******************************";
+
+
+
+
+
+echo "<br>";
+*/
+
+/*
+if (is_numeric($A2001) and  is_numeric($R2001))	{$pts2001 = $A2001 + $R2001;}
+			elseif (is_numeric($A2001))	{$pts2001 = $A2001; }
+			else {$pts2001 = "-";}
+
+*/
+
+
+
+for ($i=4001; $i<4005; $i++) {global ${"A".($i)};}
+for ($i=4001; $i<4005; $i++) {global ${"R".($i)};}
+
+
+
+/******************QUARTS DE FINALE ******************************/
+
+/*
+
+echo "<br>";
+
+
+
+
+
+echo "PTS"."<br>";
+
+echo "*******************************";
+echo "<br>";
+echo "A1 : ".$A8001; echo "<br>";
+echo "A2 : ".$A8002; echo "<br>";
+echo "A3 : ".$A8003; echo "<br>";
+echo "A4 : ".$A8004; echo "<br>";
+echo "A5 : ".$A8005; echo "<br>";
+echo "A6 : ".$A8006; echo "<br>";
+echo "A7 : ".$A8007; echo "<br>";
+echo "A8 : ".$A8008; echo "<br>";
+echo "*******************************";
+echo "*******************************";
+echo "<br>";
+echo "R1 : ".$R8009; echo "<br>";
+echo "R2 : ".$R8010; echo "<br>";
+echo "R3 : ".$R8011; echo "<br>";
+echo "R4 : ".$R8012; echo "<br>";
+echo "R5 : ".$R8013; echo "<br>";
+echo "R6 : ".$R8014; echo "<br>";
+echo "R7 : ".$R8015; echo "<br>";
+echo "R8 : ".$R8016; echo "<br>";
+echo "*******************************";
+*/
+
+if ($A8001 != "-") {$pts4001 = $A8001; } else {$pts4001=0;}
+if ($A8002 != "-") {$pts4002 = $A8002; } else {$pts4002=0;}
+if ($A8003 != "-") {$pts4003 = $A8003; } else {$pts4003=0;}
+if ($A8004 != "-") {$pts4004 = $A8004; } else {$pts4004=0;}
+if ($A8005 != "-") {$pts4005 = $A8005; } else {$pts4005=0;}
+if ($A8005 != "-") {$pts4006 = $A8006; } else {$pts4006=0;}
+if ($A8007 != "-") {$pts4007 = $A8007; } else {$pts4007=0;}
+if ($A8008 != "-") {$pts4008 = $A8008; } else {$pts4008=0;}
+
+
+if ($R8009 != "-") {$pts4001 = $R8009 + $A8001; } else {$pts4001=$pts4001;}
+if ($R8010 != "-") {$pts4002 = $R8010 + $A8002; } else {$pts4002=$pts4002;}
+if ($R8011 != "-") {$pts4003 = $R8011 + $A8003; } else {$pts4003=$pts4003;}
+if ($R8012 != "-") {$pts4004 = $R8012 + $A8004; } else {$pts4004=$pts4004;}
+if ($R8013 != "-") {$pts4005 = $R8013 + $A8005; } else {$pts4005=$pts4005;}
+if ($R8014 != "-") {$pts4006 = $R8014 + $A8006; } else {$pts4006=$pts4006;}
+if ($R8015 != "-") {$pts4007 = $R8015 + $A8007; } else {$pts4007=$pts4007;}
+if ($R8016 != "-") {$pts4008 = $R8016 + $A8008; } else {$pts4008=$pts4008;}
+
+/*
+echo "*******************************";echo "<br>";
+echo  "PTS1 : ".$pts4001; echo "<br>";
+echo  "PTS2 : ".$pts4002; echo "<br>";
+echo  "PTS3 : ".$pts4003; echo "<br>";
+echo  "PTS4 : ".$pts4004; echo "<br>";
+echo  "PTS5 : ".$pts4005; echo "<br>";
+echo  "PTS6 : ".$pts4006; echo "<br>";
+echo  "PTS7 : ".$pts4007; echo "<br>";
+echo  "PTS8 : ".$pts4008; echo "<br>";
+
+echo "*******************************";
+
+echo "<br>";
+echo "GA";
+echo "<br>";
+
+echo "*******************************";
+echo "<br>";
+echo "A1 : ".$A1601; echo "<br>";
+echo "A2 : ".$A1602; echo "<br>";
+echo "A3 : ".$A1603; echo "<br>";
+echo "A4 : ".$A1604; echo "<br>";
+echo "A5 : ".$A1605; echo "<br>";
+echo "A6 : ".$A1606; echo "<br>";
+echo "A7 : ".$A1607; echo "<br>";
+echo "A8 : ".$A1608; echo "<br>";
+echo "*******************************";
+echo "*******************************";
+echo "<br>";
+echo "R1 : ".$R1609; echo "<br>";
+echo "R2 : ".$R1610; echo "<br>";
+echo "R3 : ".$R1611; echo "<br>";
+echo "R4 : ".$R1612; echo "<br>";
+echo "R5 : ".$R1613; echo "<br>";
+echo "R6 : ".$R1614; echo "<br>";
+echo "R7 : ".$R1615; echo "<br>";
+echo "R8 : ".$R1616; echo "<br>";
+echo "*******************************";
+*/
+
+if ($A1601 != "-") {$GA4001 = $A1601; } else {$GA4001= 0;}
+if ($A1602 != "-") {$GA4002 = $A1602; } else {$GA4002= 0;}
+if ($A1603 != "-") {$GA4003 = $A1603; } else {$GA4003= 0;}
+if ($A1604 != "-") {$GA4004 = $A1604; } else {$GA4004= 0;}
+if ($A1605 != "-") {$GA4005 = $A1605; } else {$GA4005= 0;}
+if ($A1606 != "-") {$GA4006 = $A1606; } else {$GA4006= 0;}
+if ($A1607 != "-") {$GA4007 = $A1607; } else {$GA4007= 0;}
+if ($A1608 != "-") {$GA4008 = $A1608; } else {$GA4008= 0;}
+
+
+if ($R1609 != "-") {$GA4001 = $R1609 + $A1601; } else {$GA4001= $GA4001;}
+if ($R1610 != "-") {$GA4002 = $R1610 + $A1602; } else {$GA4002= $GA4002;}
+if ($R1611 != "-") {$GA4003 = $R1611 + $A1603; } else {$GA4003= $GA4003;}
+if ($R1612 != "-") {$GA4004 = $R1612 + $A1604; } else {$GA4004= $GA4004;}
+if ($R1613 != "-") {$GA4005 = $R1613 + $A1605; } else {$GA4005= $GA4005;}
+if ($R1614 != "-") {$GA4006 = $R1614 + $A1606; } else {$GA4006= $GA4006;}
+if ($R1615 != "-") {$GA4007 = $R1615 + $A1607; } else {$GA4007= $GA4007;}
+if ($R1616 != "-") {$GA4008 = $R1616 + $A1608; } else {$GA4008= $GA4008;}
+
+/*
+echo "*******************************";
+echo "<br>";
+echo  "GA1 : ".$GA4001; echo "<br>";
+echo  "GA2 : ".$GA4002; echo "<br>";
+echo  "GA3 : ".$GA4003; echo "<br>";
+echo  "GA4 : ".$GA4004; echo "<br>";
+echo  "GA5 : ".$GA4005; echo "<br>";
+echo  "GA6 : ".$GA4006; echo "<br>";
+echo  "GA7 : ".$GA4007; echo "<br>";
+echo  "GA8 : ".$GA4008; echo "<br>";
+echo "*******************************";
+echo "<br>";
+
+*/
+
+//**********************************************************************
+//*****  Traitement des Equipes et des résultats des demi finale ********
+//*********************************************************************
+/*
+global $A1001, $A1002;
+global $clubA1001, $clubA1002;
+	$tabScores = array() ;
+	
+	if (isset($A1001)) $A1001=$A1001; else $A1001="-";
+	if (isset($A1002)) $A1002=$A1002; else $A1002="-";
+	
+	$reponse = $bdd->query("SELECT A1001, A1002
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$A1001 = $row[0];
+						$A1002 = $row[1];
+						}
+*/
+
+// Quarts
+if ($pts4001 + $pts4002 > 6){ 	  if ($pts4001 > $pts4002 or ($pts4001 == $pts4002 and $GA4001 > $GA4002)){	$clubA2001=$clubA4001;}	else {$clubA2001=$clubA4002;};	} else if ($pts4001 + $pts4002 > 0 and $pts4001 + $pts4002 < 6) {  $pts4001=$pts4001; $pts4002=$pts4002; $GA4001=$GA4001; $GA4002=$GA4002;} else {	$pts4001="-";$pts4002="-";$GA4001="-";$GA4002="-"; }
+if ($pts4003 + $pts4004 > 6){ 	  if ($pts4003 > $pts4004 or ($pts4003 == $pts4004 and $GA4003 > $GA4004)){	$clubA2002=$clubA4003;}	else {$clubA2002=$clubA4004;};	} else if ($pts4003 + $pts4004 > 0 and $pts4003 + $pts4004 < 6) {  $pts4003=$pts4003; $pts4004=$pts4004; $GA4003=$GA4003; $GA4004=$GA4004;} else {	$pts4003="-";$pts4004="-";$GA4003="-";$GA4004="-"; }
+if ($pts4005 + $pts4006 > 6){ 	  if ($pts4005 > $pts4006 or ($pts4005 == $pts4006 and $GA4005 > $GA4006)){	$clubA2003=$clubA4005;}	else {$clubA2003=$clubA4006;};	} else if ($pts4005 + $pts4006 > 0 and $pts4005 + $pts4006 < 6) {  $pts4005=$pts4005; $pts4006=$pts4006; $GA4005=$GA4005; $GA4006=$GA4006;} else {	$pts4005="-";$pts4006="-";$GA4005="-";$GA4006="-"; }
+if ($pts4007 + $pts4008 > 6){ 	  if ($pts4007 > $pts4008 or ($pts4007 == $pts4008 and $GA4007 > $GA4008)){	$clubA2004=$clubA4007;}	else {$clubA2004=$clubA4008;};	} else if ($pts4007 + $pts4008 > 0 and $pts4007 + $pts4008 < 6) {  $pts4007=$pts4007; $pts4008=$pts4008; $GA4007=$GA4007; $GA4008=$GA4008;} else {	$pts4007="-";$pts4008="-";$GA4007="-";$GA4008="-"; }
+
+
+
+// demi
+if (is_numeric($A2003) and is_numeric($A2004)){
+	if ($A2003 + $A2004 > 0){	if ($A2003 > $A2004)	{$clubA1002 = $clubA2003;	} else	{$clubA1002 = $clubA2004;	}} else{ $A2003="-";	$A2004="-"; $clubA1002="-";}
+	}
+	
+	
+	
+//Finale	
+	if (is_numeric($A1001) and is_numeric($A1002)){
 if ($A1001 + $A1002 > 0){	if ($A1001 > $A1002)	{$champion =  $clubA1001;	} else	{$champion  =$clubA1002;	}} else{ $A1001="-";	$A1002="-";}
-
-if (is_numeric($A2001) + is_numeric($A2002) > 0){if ($A2001 > $A2002)	{$clubA1001 = $clubA2001;} 	else	{$clubA1001 = $clubA2002;}	}	else	{ $clubA1001="-"; 	}
-if (is_numeric($A2003) + is_numeric($A2004) > 0){if ($A2003 > $A2004)	{$clubA1002 = $clubA2003;} 	else	{$clubA1002 = $clubA2004;}	}	else	{ $clubA1002="-"; 	}
-*/					
+	}
 
 
-//echo $pts2003;echo  $GA2003;echo "<br />";
-//echo $pts2004;echo  $GA2004;echo "<br />";
+
+
 
 }
 
@@ -1290,7 +2095,7 @@ function quarts2019 ($comite, $division, $annee, $bdd)
 	
 //echo "<br />";
 //*********************************************************************
-//*****  Traitement des Equipes et des r�sultats des demi finale ********
+//*****  Traitement des Equipes et des résultats des demi finale ********
 //*******************************************************************
 	
 	$tabEquipes = array();
@@ -1565,6 +2370,234 @@ if (is_numeric($A1001)+is_numeric($A1002) > 0)	{	if ($A2001>$A2002)	{$clubA1001=
 }
 
 
+
+/*************************  BARRAGES ************************ */
+
+
+function barrages2019($comite, $division, $annee, $bdd)
+{
+/*	
+if ($comite == "au" or $comite == "ap" or $comite == "ly" or $comite == "da")
+	{$bddComite = "au"; $codeLigue = 100000;}
+	elseif ($comite == "be" or $comite == "cbl" or $comite == "ca" or $comite == "lm" or $comite == "lm" or $comite == "pa" or $comite == "pch")
+	{$bddComite = "ca"; $codeLigue = 190000;}
+	elseif ($comite == "ab" or $comite == "mpy" or $comite == "ld" or $comite == "pc")
+	{$bddComite = "ab"; $codeLigue = 200000;}
+	
+	elseif ($comite == "al") 
+		{$bddComite = "idf";$codeLigue = 150000;}
+	elseif ($comite == "n")
+		{$bddComite = "idf";$codeLigue = 180000;}
+	elseif ($comite == "pr")
+		{$bddComite = "idf";$codeLigue = 220000;}
+	elseif ($comite == "idf")
+		{$bddComite = "idf";$codeLigue = 170000;}
+	
+    elseif ($comite == "bg")
+		{$bddComite = "pl";$codeLigue = 110000;}
+	elseif ($comite == "br")
+		{$bddComite = "pl";$codeLigue = 120000;}
+	elseif ($comite == "ce")
+		{$bddComite = "pl";$codeLigue = 130000;}
+	elseif ($comite == "fl")
+		{$bddComite = "pl";$codeLigue = 160000;}
+	elseif ($comite == "pl")
+		{$bddComite = "pl";$codeLigue = 220000;}
+
+echo "division1 : ".$division;echo "<br/>";
+$division = $codeLigue + substr($division,-4);
+echo "codeLigue : ".$codeLigue;echo "<br/>";
+echo "bddComite : ".$bddComite;echo "<br/>";
+echo "division2 : ".$division;echo "<br/>";
+*/
+
+if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
+	
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
+
+	$bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
+	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
+	
+
+//*********************************************************************
+//*****  Traitement des Equipes et des résultats des huitièmes ********
+//*********************************************************************
+	$tabEquipes = array();
+	$tabScores = array() ;
+	$tabId = array() ;
+	$debut =8001;
+	$fin=8017;
+
+	for ($i=$debut; $i<$fin; $i++)
+	{
+
+	 //	Equipes
+	 global $champion;
+	 global ${"clubA".($i)};
+	 global ${"id".($i)};
+   	 $equipes = "clubA".''.$i;
+	 
+	 $reponse = $bdd->query("SELECT  $bdcomiteClub.nom, $bdcomite_pfterr_e.$equipes, $bdcomiteClub.id
+				FROM $bdcomiteClub
+				INNER JOIN $bdcomite_pfterr_e 
+				ON $bdcomite_pfterr_e.$equipes=$bdcomiteClub.id
+				WHERE  $bdcomite_pfterr_e.division=$division 
+				AND $bdcomite_pfterr_e.annee=$annee"); 
+							while ($row = $reponse->fetch() )
+								{ 
+								 $tabEquipes[] = $row[0];
+								 $tabId[] = $row[2];
+								}
+		
+	 if (isset ($tabEquipes[$i-$debut])) ${"clubA".($i)} = $tabEquipes[$i-$debut]; else ${"clubA".($i)}='-'; 	
+	 if (isset ($tabId[$i-$debut])) ${"id".($i)} = $tabId[$i-$debut]; else ${"id".($i)}='-';
+
+	 // Scores
+	 global ${"A".($i)};
+	 $scores = "A".''.$i;
+
+	 $reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ $tabScores[] = $row[0];}
+					
+ 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
+	}	
+	//traitementScores ($debut,$fin, $bdd);
+	
+//***************************************************										
+//*****  Traitement des résultats des quarts ********											
+//***************************************************	
+
+	$tabScores = array() ;
+	
+	$debut =4001;
+	$fin=4009;
+	
+	for ($i=$debut; $i<$fin; $i++)
+	{	
+	 //Equipes
+	 global ${"clubA".($i)};
+	 global ${"id".($i)};
+	 if (isset (${"clubA".($i)})) ${"clubA".($i)} = ${"clubA".($i)}; else ${"clubA".($i)}='-'; 	
+	
+	 //Scores 
+     global ${"A".($i)};
+	 
+	 $scores = "A".''.$i;									
+											
+	 $reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ $tabScores[] = $row[0];	}										
+											
+	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
+											
+	}											
+											
+//**********************************************************************										
+//*****  Traitement des équipes et des résultats des Demi finale********											
+//**********************************************************************
+
+	$tabScores = array() ;
+	
+	for ($i=2001; $i<2005; $i++)
+	{
+	
+	 //Equipes
+	 global ${"clubA".($i)};
+	 global ${"id".($i)};
+	 if (isset (${"clubA".($i)})) ${"clubA".($i)} = ${"clubA".($i)}; else ${"clubA".($i)}='-'; 	
+	
+	 //Scores 
+     global ${"A".($i)};
+	 $scores = "A".''.$i;											
+
+
+	 $reponse = $bdd->query("SELECT $scores
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ $tabScores[] = $row[0];}
+
+	 if (isset ($tabScores[$i-2001])) ${"A".($i)} = $tabScores[$i-2001]; else ${"A".($i)}='-'; 
+											
+	} 
+	 	 
+//**********************************************************************										
+//*****  Traitement des équipes et des résultats dea la finale********											
+//**********************************************************************	 
+	 
+	 global $clubA1001; global $clubA1002;										
+	
+
+	if (isset($clubA1001)) $clubA1001 = $clubA1001; else $clubA1001='-'; 
+	if (isset($clubA1002)) $clubA1002 = $clubA1002; else $clubA1002='-';
+	
+	 global $A1001;global $A1002;	
+	 
+	 $tabScores = array() ;
+	
+	  $reponse = $bdd->query("SELECT A1001, A1002
+				FROM $bdcomite_pfterr_r
+				WHERE  division=$division and annee=$annee"); 
+				while ($row = $reponse->fetch() )
+						{ 
+						$A1001 = $row[0];
+						$A1002 = $row[1];
+						}	
+
+	if (isset($A1001)) $A1001 = $A1001; else $A1001='-'; 
+    if (isset($A1002)) $A1002 = $A1002; else $A1002='-'; 				
+
+//************************************************************************************
+//*******************    Récupérations des Scores	**********************************
+//************************************************************************************
+if (is_numeric($A8001) && is_numeric($A8001))
+{if ($A8001 + $A8002 > 0) { if ($A8001>$A8002)	{$clubA4001=$clubA8001;	} else	{$clubA4001=$clubA8002; }}	else{ $A8001="-"; $A8002="-"; $clubA4001="-";}}
+if (is_numeric($A8003) && is_numeric($A8004))
+{if ($A8003 + $A8004 > 0) { if ($A8003>$A8004)	{$clubA4002=$clubA8003;	} else	{$clubA4002=$clubA8004;	}}	else{ $A8003="-"; $A8004="-"; $clubA4002="-";}}
+if (is_numeric($A8005) && is_numeric($A8006))
+{if ($A8005 + $A8006 > 0) { if ($A8005>$A8006)	{$clubA4003=$clubA8005;	} else	{$clubA4003=$clubA8006;	}}	else{ $A8005="-"; $A8006="-"; $clubA4003="-";}}
+if (is_numeric($A8007) && is_numeric($A8008))
+{if ($A8007 + $A8008 > 0) { if ($A8007>$A8008)	{$clubA4004=$clubA8007;	} else	{$clubA4004=$clubA8008;	}}	else{ $A8007="-"; $A8008="-"; $clubA4004="-";}}
+if (is_numeric($A8009) && is_numeric($A8010))
+{if ($A8009 + $A8010 > 0) { if ($A8009>$A8010)	{$clubA4005=$clubA8009; } else	{$clubA4005=$clubA8010;	}}	else{ $A8009="-"; $A8010="-"; $clubA4005="-";}}
+if (is_numeric($A8011) && is_numeric($A8012))
+{if ($A8011 + $A8012 > 0) { if ($A8011>$A8012)	{$clubA4006=$clubA8011;	} else	{$clubA4006=$clubA8012;	}}	else{ $A8011="-"; $A8012="-"; $clubA4006="-";}}
+if (is_numeric($A8013) && is_numeric($A8014))
+{if ($A8013 + $A8014 > 0) { if ($A8013>$A8014)	{$clubA4007=$clubA8013;	} else	{$clubA4007=$clubA8014;	}}	else{ $A8013="-"; $A8014="-"; $clubA4007="-";}}
+if (is_numeric($A8015) && is_numeric($A8016))
+{if ($A8015 + $A8016 > 0) { if ($A8015>$A8016)	{$clubA4008=$clubA8015;	} else	{$clubA4008=$clubA8016;	}}	else{ $A8015="-"; $A8016="-"; $clubA4008="-";}}
+
+
+if (is_numeric($A4001) && is_numeric($A4001))
+{if ($A4001 + $A4002 > 0) {	if ($A4001>$A4002)	{$clubA2001=$clubA4001;	} else	{$clubA2001=$clubA4002;	}}	else{ $A4001="-"; $A4002="-"; $clubA2001="-";}}
+if (is_numeric($A4003) && is_numeric($A4004))
+{if ($A4003 + $A4004 > 0) {	if ($A4003>$A4004)	{$clubA2002=$clubA4003;	} else	{$clubA2002=$clubA4004;	}}	else{ $A4003="-"; $A4004="-"; $clubA2002="-";}}
+if (is_numeric($A4005) && is_numeric($A4006))
+{if ($A4005 + $A4006 > 0) {	if ($A4005>$A4006)	{$clubA2003=$clubA4005;	} else	{$clubA2003=$clubA4006; }}	else{ $A4005="-"; $A4006="-"; $clubA2003="-";}}
+if (is_numeric($A4007) && is_numeric($A4008))
+{if ($A4007 + $A4008 > 0) {	if ($A4007>$A4008)	{$clubA2004=$clubA4007;	} else	{$clubA2004=$clubA4008;	}}	else{ $A4007="-"; $A4008="-"; $clubA2004="-";}}
+
+if (is_numeric($A2001) && is_numeric($A2002))
+{if ($A2001 + $A2002 > 0) {	if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{ $A2001="-"; $A2002="-"; $clubA1001="-";}}
+if (is_numeric($A2003) && is_numeric($A2004))
+{if ($A2003 + $A2004 > 0) {	if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004; }}	else{ $A2003="-"; $A2004="-"; $clubA1002="-";}}
+
+if (is_numeric($A1001) && is_numeric($A1002))
+{if ($A1001 + $A1002 == 0) {$A1001 ="-";  $A1002 ="-";}}	
+
+
+}
+
 //***********************************************************************
 //***********************************************************************
 //**                                                                   **
@@ -1754,8 +2787,8 @@ if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
 						$A1002 = $row[1];
 						}	
 
-		if (isset($A1001)) $A1001 = $A1001; else $A1001='-'; 
-     if (isset($A1002)) $A1002 = $A1002; else $A1002='-'; 				
+	if (isset($A1001)) $A1001 = $A1001; else $A1001='-'; 
+    if (isset($A1002)) $A1002 = $A1002; else $A1002='-'; 				
 
 //************************************************************************************
 //*******************    Récupérations des Scores	**********************************
@@ -1777,6 +2810,9 @@ if (is_numeric($A8013) && is_numeric($A8014))
 if (is_numeric($A8015) && is_numeric($A8016))
 {if ($A8015 + $A8016 > 0) { if ($A8015>$A8016)	{$clubA4008=$clubA8015;	} else	{$clubA4008=$clubA8016;	}}	else{ $A8015="-"; $A8016="-"; $clubA4008="-";}}
 
+
+
+
 if (is_numeric($A4001) && is_numeric($A4001))
 {if ($A4001 + $A4002 > 0) {	if ($A4001>$A4002)	{$clubA2001=$clubA4001;	} else	{$clubA2001=$clubA4002;	}}	else{ $A4001="-"; $A4002="-"; $clubA2001="-";}}
 if (is_numeric($A4003) && is_numeric($A4004))
@@ -1793,6 +2829,7 @@ if (is_numeric($A2003) && is_numeric($A2004))
 
 if (is_numeric($A1001) && is_numeric($A1002))
 {if ($A1001 + $A1002 == 0) {$A1001 ="-";  $A1002 ="-";}}	
+
 
 }
 

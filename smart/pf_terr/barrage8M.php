@@ -125,3 +125,13 @@
   </tr>
 </table>
 <br>
+<?php 
+$clubA4001 ="-"; 
+$clubA4002 ="-"; 
+$clubA4003 ="-"; 
+$clubA4004 ="-"; 
+$clubA4005 ="-";
+$clubA4006 ="-"; 
+$clubA4007 ="-"; 
+$clubA4008 ="-"; 
+?>

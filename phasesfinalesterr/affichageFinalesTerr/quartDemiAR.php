@@ -323,7 +323,7 @@ $anneeplus = $annee+1;
     </td>
     <td rowspan="4" colspan="2"> 
       <div align="center"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="3"><b><font size="6"> 
-        <?php// logo ($bdcomiteClub, $champion); ?>
+        <?php // logo ($bdcomiteClub, $champion); ?>
         </font></b></font></div>
     </td>
     <td rowspan="4" width="357">&nbsp;</td>

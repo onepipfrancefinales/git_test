@@ -107,7 +107,7 @@ img{border:0;}
 .borderDouble {border: thick double;}
 .borderNone {border: none;}
 /*italique*/
-.italic {border-style: italic;}
+.italic {font-style: italic;}
 
 
 .borderColorBlue {border-color: #006699;}
@@ -134,6 +134,7 @@ img{border:0;}
 .size4 {font-size: 20px;}
 .size3 {font-size: 15px;}
 .size2 {font-size: 12px;}
+.size1 {font-size: 19px;}
 /* width px en pourcentage */
 
 .width100PC {width:100%;}
