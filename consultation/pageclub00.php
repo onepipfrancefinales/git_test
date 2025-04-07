@@ -2,7 +2,7 @@
 require "../saison.php";
 require "../fonctions.php";
 require "fonctions.php";
-$chaine = $_GET['champion'];
+if (isset($_GET['champion'])) $chaine = $_GET['champion']; else $chaine="2029076";
 
 // remplacementde l'apostrophe
 if(stristr($chaine, "'") == true) {

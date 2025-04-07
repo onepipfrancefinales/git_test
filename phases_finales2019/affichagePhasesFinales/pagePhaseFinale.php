@@ -1,12 +1,13 @@
  <?php
-	$annee = $_GET['annee'];
-	$division = $_GET['division'];
+	if (isset($_GET['annee'])) $annee = $_GET['annee']; else $annee =2024;
+	if (isset($_GET['division'])) $division = $_GET['division']; else $division = 110;
 	//echo $division;
 	?>
  <!DOCTYPE html>
  <html lang="fr">
 
  <head>
+ <link rel="canonical" href="https://francefinalesrugby.fr/phases_finales2019/affichagePhaseFinales/pagePhaseFinale.php?annee=<?php echo $annee; ?>&division=<?php echo $division; ?>" >
  	<title>Championnat de France <?php echo $annee; ?></title>
  	<meta name="description" content="">
  	<meta name="keywords" content="Presentation de la competititon et de tous les champions de France 1re Serie. Palmares complet de la 1re Serie.">
@@ -66,7 +67,7 @@
 
 
 		if ($annee > 2025) {
-			require 'saison+1.php';
+			require 'finRegionales.php';
 		} else {
 			//echo $type;	
 

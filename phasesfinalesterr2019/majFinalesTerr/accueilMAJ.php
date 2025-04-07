@@ -85,7 +85,7 @@ echo $annee; ?></font></b></td>
     <td colspan="4">&nbsp;</td>
   </tr>
   <tr> 
-    <td colspan="4" align="center"><a href="../../admin/mdp.php">Retour</a></td>
+    <td colspan="4" align="center"><a href="../../admin/majDebutSaison/pageAjouterJournee.php">Retour interface administration</a></td>
   </tr>
     </table>
   </body>

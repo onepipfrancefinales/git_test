@@ -1,6 +1,6 @@
  <?php
-	$annee = $_GET['annee'];
-	$division = $_GET['division'];
+	if (isset($_GET['annee'])) $annee = $_GET['annee']; else $annee=2025;
+	if (isset($_GET['division'])) $division = $_GET['division']; else $division = 170;
 	require("../../phases_finales2019/fonctionsChampFrance2019.php");
 	require '../../connect/connexion5.php';
 	nomDivision($division);

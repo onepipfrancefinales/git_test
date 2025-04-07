@@ -47,7 +47,7 @@ else
 if ($division== 170 or substr($division,3,3) == 170 )
 //	echo "Honneur Honneur Honneur Honneur Honneur Honneur HonneurHonneur Honneur Honneur Honneur Honneur Honneur Honneur ";
 	echo "- Régionale 1 -";
-elseif ($division == 180 or substr($division,3,3) == 180)
+elseif ($division == 180 or substr($division,2,4) == '0180')
 //	echo "Promotion honneur Promotion honneur Promotion honneur Promotion honneur Promotion honneur  Promotion honneur  ";
 	echo "- Régionale 2 -";
 elseif ($division == 190 or substr($division,3,3) == 190)

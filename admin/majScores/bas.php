@@ -103,6 +103,12 @@
       </td>
     </tr>
     <tr>
+      <td width="389"><a href="/phasesfinalesterr2019/majFinalesTerr/listeDates.php?annee=2025&division=<?php echo $division; ?>">Dates Phases finales régionales</a> </td>
+    </tr>
+    <tr>
+      <td width="389" height="25"> </td>
+    </tr>
+    <tr>
       <td width="389"><a href="/phasesfinalesterr2019/majFinalesTerr/accueilMAJ.php">MAJ Phases finales régionales</a> </td>
     </tr>
     <tr>

@@ -102,9 +102,10 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 		
 		if ($typeBarrage == 18)
 		{
+
 			afficheLieux ($divisionAvecBarrage, $annee, $comite, $bdd);
 			huitieme2019($comite, $divisionAvecBarrage, $annee, $bdd);
-		require ("barrage8M.php");
+		    require ("barrage8M.php");
 		
 
 		}
@@ -203,8 +204,7 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 			traitementScores (8001,8016, $bdd);
 			traitementScores (4001,4008, $bdd);
 			traitementScores (2001,2004, $bdd);
-			require ("test18.php");	
-				
+			require ("test18.php");		
 			}
 	
 			
@@ -221,7 +221,7 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 			
 echo "<br>";echo "<br>";
 echo "<hr>";echo "<hr>";
-
+$A2001="";$A2002="";$A2003="";$A2004="";
 
 		$division = $division + 5;
 		$champ ="300";
@@ -338,6 +338,7 @@ echo "<hr>";echo "<hr>";
 			require ("test19.php");		
 		
 			}	
+		
 		}	
 		
 			//************************************************************** */	

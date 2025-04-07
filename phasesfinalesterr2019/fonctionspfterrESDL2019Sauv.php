@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 //***********************************************************************/
 //SOMMAIRE																*/
 //				Champion (premier de poule )            			    */
@@ -393,10 +390,16 @@ $reponse = $bdd->query("SELECT  $bdcomiteClub.nom, $bdcomiteClub.url_logo, $bdco
 function finale2019 ($comite, $division, $annee, $bdd)
  {
 
-	global $bdcomite_pfterr_e, $bdcomite_pfterr_r, $bdcomiteClub;
-
-
-	choixBdd($comite);
+	if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
+	
+	$bdcomiteClub="php".''.$bddComite.''."_clubs";
+	$bdcomite_pfterr_e ="php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r ="php".''.$bddComite.''."_pfterr_r";
 
 	
 	global $clubA1001, $clubA1002, $clubA1001Id, $clubA1002Id;
@@ -466,10 +469,18 @@ function finale2019 ($comite, $division, $annee, $bdd)
 function demi2019($comite, $division, $annee, $bdd)
  {
 	
-	global $bdcomite_pfterr_e, $bdcomite_pfterr_r, $bdcomiteClub;
-
-
-choixBdd($comite);
+	if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
+	
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
+	
+	$bdcomiteClub="php".''.$bddComite.''."_clubs";
+	$bdcomite_pfterr_e ="php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
+	
 		
 	global $clubA2001, $clubA2002, $clubA2003, $clubA2004,
 	$clubA1001, $clubA1002, $champion,
@@ -572,12 +583,19 @@ if ($A1001 + $A1002 == 0)	{$A1001="-";	$A1002="-";	}
 function demiAR2019 ($comite, $division, $annee, $bdd)
  	{
 
-		global $bdcomite_pfterr_e, $bdcomite_pfterr_r, $bdcomiteClub;
-
-
-		choixBdd($comite);	
-
-
+	if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
+	
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
+	
+	$bdcomiteClub=("php".''.$bddComite.''."_clubs");
+	$bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
+	
+	
 	
 	global 	$clubA2001, $clubA2002, $clubA2003, $clubA2004,
 			$clubA1001, $clubA1002, $champion;	
@@ -775,11 +793,18 @@ champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 
 function quartsDemiAR2019 ($comite, $division, $annee, $bdd)
 {
+	if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
 	
-	global $bdcomite_pfterr_e, $bdcomite_pfterr_r, $bdcomiteClub;
-
-
-choixBdd($comite);
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
+	
+	$bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
+	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
+	
 	
 	
 //*********************************************************************
@@ -1372,11 +1397,18 @@ else { $GA2001="-"; $pts2001 ="-"; $GA2002="-"; $pts2002 ="-";$clubA1001="-";$A1
 
 function quartsAR2019 ($comite, $division, $annee, $bdd)
 {
+	if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
 	
-	global $bdcomite_pfterr_e, $bdcomite_pfterr_r, $bdcomiteClub;
-
-
-choixBdd($comite);
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
+	
+	$bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
+	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
+	
 	
 	
 //*********************************************************************
@@ -1961,11 +1993,17 @@ if ($A1001 + $A1002 > 0){	if ($A1001 > $A1002)	{$champion =  $clubA1001;	} else	
 
 function quarts2019 ($comite, $division, $annee, $bdd)
 {
+	if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
 	
-	global $bdcomite_pfterr_e, $bdcomite_pfterr_r, $bdcomiteClub;
-
-
-choixBdd($comite);
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
+	
+	$bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
+	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
 	
 //*********************************************************************
 //*****  Traitement des Equipes et des résultats des quarts de finale ********
@@ -2118,12 +2156,31 @@ if ($A1001 + $A1002 > 0){	if ($A1001 > $A1002)	{$champion =  $clubA1001;	} else	
  
 function quartsPlusBarrages2019 ($comite, $division, $annee, $bdd)
 {
+	
+if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$comite = "idf";
+	
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$comite = "pl";	
+	else 
+		$comite = $comite;
 
+/*
+if (isset ($_GET['comite'])) $comite = $_GET['comite']; else $comite='-';
 
-	global $bdcomite_pfterr_e, $bdcomite_pfterr_r, $bdcomiteClub;
+if ($comite == "mpy" OR $comite == "ld" OR $comite == "pc")
+		$comite = "ab";
+	elseif ($comite== "ap" OR $comite == "da" OR $comite == "ly")
+		$comite = "au";
+	elseif ($comite== "be" OR $comite == "cbl" OR $comite == "lm" OR $comite == "pch" OR $comite == "pa")
+		$comite = "ca";
+	else
+		$comite=$comite;
+*/
 
-
-	choixBdd($comite);	
+	$bdcomite_pfterr_e = "php".''.$comite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$comite.''."_pfterr_r";
+	$bdcomiteClub = "php".''.$comite.''."_clubs";
 
 //*********************************************************************
 //*****  Traitement des Equipes et des r�sultats des barrages ********
@@ -2293,18 +2350,23 @@ global $bdcomite_pfterr_e, $bdcomite_pfterr_r, $bdcomiteClub;
 
 
 choixBdd($comite);
+/*
+if ($comite == "al" or $comite == "n" or $comite == "pr" or $comite == "idf")
+		$bddComite = "idf";
+	
+	elseif ($comite == "bg" or $comite == "br" or $comite == "ce" or $comite == "fl" or $comite == "ce" or $comite == "pl")
+		$bddComite = "pl";	
+	else 
+		$bddComite = $comite;
 
+	$bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
+	$bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
+	$bdcomiteClub = "php".''.$bddComite.''."_clubs";
+	
+*/
 //*********************************************************************
 //*****  Traitement des Equipes et des résultats des huitièmes ********
 //*********************************************************************
-	
-// huitièmes de finale
-$debut = 8001;$fin = 8017;
-for ($i=$debut; $i<$fin; $i++) 	{global ${"clubA".$i}, ${"A".$i};}
-traitementHuitieme(8001, 8017);
-
-
-/*
 	$tabEquipes = array();
 	$tabScores = array() ;
 	$tabId = array() ;
@@ -2313,7 +2375,9 @@ traitementHuitieme(8001, 8017);
 
 	for ($i=$debut; $i<$fin; $i++)
 	{
+
 	 //	Equipes
+	 global $champion;
 	 global ${"clubA".($i)};
 	 global ${"id".($i)};
    	 $equipes = "clubA".''.$i;
@@ -2334,39 +2398,28 @@ traitementHuitieme(8001, 8017);
 	 if (isset ($tabId[$i-$debut])) ${"id".($i)} = $tabId[$i-$debut]; else ${"id".($i)}='-';
 
 	 // Scores
-
-*/
-	
-/*
-	$debut =8001;
-	$fin=8017;
-	for ($i=$debut; $i<$fin; $i++)
-	{
 	 global ${"A".($i)};
 	 $scores = "A".''.$i;
 
 	 $reponse = $bdd->query("SELECT $scores
 				FROM $bdcomite_pfterr_r
-				WHERE  division = $division and annee = $annee"); 
+				WHERE  division=$division and annee=$annee"); 
 				while ($row = $reponse->fetch() )
 						{ $tabScores[] = $row[0];}
 					
  	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
 	}	
-*/
-	traitementScores ($debut,$fin, $bdd);
+	//traitementScores ($debut,$fin, $bdd);
 	
 //***************************************************										
 //*****  Traitement des résultats des quarts ********											
 //***************************************************	
 
-	//$tabScores = array() ;
+	$tabScores = array() ;
 	
-	$debut = 4001;$fin= 4009;
-	for ($i=$debut; $i<$fin; $i++) {global ${"clubA".$i}, ${"A".$i};}
-	traitementHuitieme (4001, 4009);
-
-	/*
+	$debut =4001;
+	$fin=4009;
+	
 	for ($i=$debut; $i<$fin; $i++)
 	{	
 	 //Equipes
@@ -2374,11 +2427,7 @@ traitementHuitieme(8001, 8017);
 	 global ${"id".($i)};
 	 if (isset (${"clubA".($i)})) ${"clubA".($i)} = ${"clubA".($i)}; else ${"clubA".($i)}='-'; 	
 	
-	 //Scores
-	 $debut =4001;
-	$fin=4009;
-	 
-
+	 //Scores 
      global ${"A".($i)};
 	 
 	 $scores = "A".''.$i;									
@@ -2392,32 +2441,21 @@ traitementHuitieme(8001, 8017);
 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
 											
 	}											
-	*/							
+											
 //**********************************************************************										
 //*****  Traitement des équipes et des résultats des Demi finale********											
 //**********************************************************************
 
-
-	$debut = 2001;$fin = 2005;
-	for ($i=$debut; $i<$fin; $i++) {global ${"clubA".$i}, ${"A".$i};}
-	traitementHuitieme ($debut, $fin);
-
-	global $clubA4001, $clubA4002;
-
-
-/*
 	$tabScores = array() ;
 	
-	
+	for ($i=2001; $i<2005; $i++)
+	{
 	
 	 //Equipes
 	 global ${"clubA".($i)};
 	 global ${"id".($i)};
 	 if (isset (${"clubA".($i)})) ${"clubA".($i)} = ${"clubA".($i)}; else ${"clubA".($i)}='-'; 	
-	*/
 	
-for ($i=2001; $i<2005; $i++)
-	{
 	 //Scores 
      global ${"A".($i)};
 	 $scores = "A".''.$i;											
@@ -2425,12 +2463,12 @@ for ($i=2001; $i<2005; $i++)
 
 	 $reponse = $bdd->query("SELECT $scores
 				FROM $bdcomite_pfterr_r
-				WHERE  division = $division and annee = $annee"); 
+				WHERE  division=$division and annee=$annee"); 
 				while ($row = $reponse->fetch() )
 						{ $tabScores[] = $row[0];}
-  
-   if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
-	// if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 									
+
+	 if (isset ($tabScores[$i-2001])) ${"A".($i)} = $tabScores[$i-2001]; else ${"A".($i)}='-'; 
+											
 	} 
 	 	 
 //**********************************************************************										
@@ -2462,8 +2500,7 @@ for ($i=2001; $i<2005; $i++)
 //************************************************************************************
 //*******************    Récupérations des Scores	**********************************
 //************************************************************************************
-
-
+if ($comite !="ca" && $annee != 2025) {
 if (is_numeric($A8001) && is_numeric($A8001))
 {if ($A8001 + $A8002 > 0) { if ($A8001>$A8002)	{$clubA4001=$clubA8001;	} else	{$clubA4001=$clubA8002; }}	else{ $A8001="-"; $A8002="-"; $clubA4001="-";}}
 if (is_numeric($A8003) && is_numeric($A8004))
@@ -2480,6 +2517,8 @@ if (is_numeric($A8013) && is_numeric($A8014))
 {if ($A8013 + $A8014 > 0) { if ($A8013>$A8014)	{$clubA4007=$clubA8013;	} else	{$clubA4007=$clubA8014;	}}	else{ $A8013="-"; $A8014="-"; $clubA4007="-";}}
 if (is_numeric($A8015) && is_numeric($A8016))
 {if ($A8015 + $A8016 > 0) { if ($A8015>$A8016)	{$clubA4008=$clubA8015;	} else	{$clubA4008=$clubA8016;	}}	else{ $A8015="-"; $A8016="-"; $clubA4008="-";}}
+
+
 
 
 if (is_numeric($A4001) && is_numeric($A4001))
@@ -2499,7 +2538,7 @@ if (is_numeric($A2003) && is_numeric($A2004))
 if (is_numeric($A1001) && is_numeric($A1002))
 {if ($A1001 + $A1002 == 0) {$A1001 ="-";  $A1002 ="-";}}	
 
-
+}
 }
 
 //***********************************************************************
@@ -3396,115 +3435,7 @@ $bdcomite_pfterr_e = "php".''.$bddComite.''."_pfterr_e";
 $bdcomite_pfterr_r = "php".''.$bddComite.''."_pfterr_r";
 $bdcomiteClub = "php".''.$bddComite.''."_clubs";
 }
-
-
-
-
-function traitementHuitieme ($debut, $fin )
-{
-global $bdcomite_pfterr_r, $bdcomite_pfterr_e, $bdcomiteClub, $division, $comite,  $annee, $bdd;
-
-for ($i=$debut; $i<$fin; $i++)	{global ${"clubA".$i}, ${"A".$i};}
-
-	$tabEquipes = array();
-	$tabScores = array() ;
-	$tabId = array() ;
-
-	for ($i=$debut; $i<$fin; $i++)
-	{
-	 //	Equipes
-	 global ${"clubA".($i)};
-	 global ${"id".($i)};
-   	 $equipes = "clubA".''.$i;
-	 
-	 $reponse = $bdd->query("SELECT  $bdcomiteClub.nom, $bdcomite_pfterr_e.$equipes, $bdcomiteClub.id
-				FROM $bdcomiteClub
-				INNER JOIN $bdcomite_pfterr_e 
-				ON $bdcomite_pfterr_e.$equipes=$bdcomiteClub.id
-				WHERE  $bdcomite_pfterr_e.division=$division 
-				AND $bdcomite_pfterr_e.annee=$annee"); 
-							while ($row = $reponse->fetch() )
-								{ 
-								 $tabEquipes[] = $row[0];
-								 $tabId[] = $row[2];
-								}
-	 if (isset ($tabEquipes[$i-$debut])) ${"clubA".($i)} = $tabEquipes[$i-$debut]; else ${"clubA".($i)}='-'; 	
-	 if (isset ($tabId[$i-$debut])) ${"id".($i)} = $tabId[$i-$debut]; else ${"id".($i)}='-';
-								
-	 // Scores
-	 global ${"A".($i)};
-	 $scores = "A".''.$i;
-
-	 $reponse = $bdd->query("SELECT $scores
-				FROM $bdcomite_pfterr_r
-				WHERE  division = $division and annee=$annee"); 
-				while ($row = $reponse->fetch() )
-						{ $tabScores[] = $row[0];}		
- 	 if (isset ($tabScores[$i-$debut])) ${"A".($i)} = $tabScores[$i-$debut]; else ${"A".($i)}='-'; 
-	
-	//echo  ${"A".($i)};echo "<br>";
-	}
-/*
-global $clubA4001, $clubA4002;
-	if ($annee != 2025) {
-		echo "<br>";
-		echo "oppo1 :" .$clubA8001.$clubA8002;echo "<br>";
-		echo "oppo1 :" .$A8001.$A8002;echo "<br>";
-		echo "<br>";
-		var_dump($A8001);var_dump($A8002);echo "<br>";
-		//if (is_numeric($A8001) && is_numeric($A8001))echo "<br>";
-	//	{
-			if ($A8001 + $A8002 > 0) {
-				
-				echo "test1";
-				if ($A8001 > $A8002)	{
-					echo "test11";echo "<br>";
-					echo $clubA8001;echo "<br>";
-
-					$clubA4001 = $clubA8001;
-					echo $clubA4001;echo "<br>";
-	
-				} else	{
-					echo "test2";
-					$clubA4001=$clubA8002; }}	else{ 
-						echo "test3";
-						$A8001="-"; $A8002="-"; $clubA4001="-";}
-		//}
-		echo "<br>";
-		if (is_numeric($A8003) && is_numeric($A8004))
-		{if ($A8003 + $A8004 > 0) { if ($A8003>$A8004)	{$clubA4002=$clubA8003;	} else	{$clubA4002=$clubA8004;	}}	else{ $A8003="-"; $A8004="-"; $clubA4002="-";}}
-		if (is_numeric($A8005) && is_numeric($A8006))
-		{if ($A8005 + $A8006 > 0) { if ($A8005>$A8006)	{$clubA4003=$clubA8005;	} else	{$clubA4003=$clubA8006;	}}	else{ $A8005="-"; $A8006="-"; $clubA4003="-";}}
-		if (is_numeric($A8007) && is_numeric($A8008))
-		{if ($A8007 + $A8008 > 0) { if ($A8007>$A8008)	{$clubA4004=$clubA8007;	} else	{$clubA4004=$clubA8008;	}}	else{ $A8007="-"; $A8008="-"; $clubA4004="-";}}
-		if (is_numeric($A8009) && is_numeric($A8010))
-		{if ($A8009 + $A8010 > 0) { if ($A8009>$A8010)	{$clubA4005=$clubA8009; } else	{$clubA4005=$clubA8010;	}}	else{ $A8009="-"; $A8010="-"; $clubA4005="-";}}
-		if (is_numeric($A8011) && is_numeric($A8012))
-		{if ($A8011 + $A8012 > 0) { if ($A8011>$A8012)	{$clubA4006=$clubA8011;	} else	{$clubA4006=$clubA8012;	}}	else{ $A8011="-"; $A8012="-"; $clubA4006="-";}}
-		if (is_numeric($A8013) && is_numeric($A8014))
-		{if ($A8013 + $A8014 > 0) { if ($A8013>$A8014)	{$clubA4007=$clubA8013;	} else	{$clubA4007=$clubA8014;	}}	else{ $A8013="-"; $A8014="-"; $clubA4007="-";}}
-		if (is_numeric($A8015) && is_numeric($A8016))
-		{if ($A8015 + $A8016 > 0) { if ($A8015>$A8016)	{$clubA4008=$clubA8015;	} else	{$clubA4008=$clubA8016;	}}	else{ $A8015="-"; $A8016="-"; $clubA4008="-";}}
-		
-		
-		if (is_numeric($A4001) && is_numeric($A4001))
-		{if ($A4001 + $A4002 > 0) {	if ($A4001>$A4002)	{$clubA2001=$clubA4001;	} else	{$clubA2001=$clubA4002;	}}	else{ $A4001="-"; $A4002="-"; $clubA2001="-";}}
-		if (is_numeric($A4003) && is_numeric($A4004))
-		{if ($A4003 + $A4004 > 0) {	if ($A4003>$A4004)	{$clubA2002=$clubA4003;	} else	{$clubA2002=$clubA4004;	}}	else{ $A4003="-"; $A4004="-"; $clubA2002="-";}}
-		if (is_numeric($A4005) && is_numeric($A4006))
-		{if ($A4005 + $A4006 > 0) {	if ($A4005>$A4006)	{$clubA2003=$clubA4005;	} else	{$clubA2003=$clubA4006; }}	else{ $A4005="-"; $A4006="-"; $clubA2003="-";}}
-		if (is_numeric($A4007) && is_numeric($A4008))
-		{if ($A4007 + $A4008 > 0) {	if ($A4007>$A4008)	{$clubA2004=$clubA4007;	} else	{$clubA2004=$clubA4008;	}}	else{ $A4007="-"; $A4008="-"; $clubA2004="-";}}
-		
-		if (is_numeric($A2001) && is_numeric($A2002))
-		{if ($A2001 + $A2002 > 0) {	if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{ $A2001="-"; $A2002="-"; $clubA1001="-";}}
-		if (is_numeric($A2003) && is_numeric($A2004))
-		{if ($A2003 + $A2004 > 0) {	if ($A2003>$A2004)	{$clubA1002=$clubA2003;	} else	{$clubA1002=$clubA2004; }}	else{ $A2003="-"; $A2004="-"; $clubA1002="-";}}
-		
-		if (is_numeric($A1001) && is_numeric($A1002))
-		{if ($A1001 + $A1002 == 0) {$A1001 ="-";  $A1002 ="-";}}	
-		
-		}
-	*/ 	
-}
 ?>
+ 
+ 
+
