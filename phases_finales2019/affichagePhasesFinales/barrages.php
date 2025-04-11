@@ -37,12 +37,24 @@ nomDivision($division);
 			}
 
 
-
-//echo "type : ".$type;
+/*
+echo "type : ".$type;
 //echo "<br />";
 //$nombreEquipe = 32;
 //echo substr($type,1,2);echo "<br />";
+echo "<br />";
+echo "typeTableau -> i_min :".$i_min;echo "<br />";
+echo "typeTableau -> i_max :" . $j_max;echo "<br />";
+echo "typeTableau -> j_min :". $j_min;echo "<br />";
+echo "typeTableau -> j_max :". $j_max;echo "<br />";
+echo "typeTableau -> num_max :". $num_max;echo "<br />";
 
+echo $clubA1601;echo "<br />";
+echo $clubA1602;echo "<br />";
+echo "------------------------";echo "<br />";
+echo $clubA3201;echo "<br />";
+echo $clubA3202;echo "<br />";
+*/
 if (substr($type,1,2) != 0)
 	$nombreMaxEquipe = 64;
 elseif (substr($type,3,2) != 0)
@@ -56,7 +68,7 @@ elseif (substr($type,9,2) != 0)
 
 
  $nombreEquipe= substr($type,9,2);
-
+// echo "<br />";
 //echo $nombreMaxEquipe;echo "<br />";
 //echo $nombreEquipe;echo "<br />";
 

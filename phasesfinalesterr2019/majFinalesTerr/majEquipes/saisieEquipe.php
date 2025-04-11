@@ -163,7 +163,7 @@ elseif ($type==2 OR $type==3)
   <!-- ************  Quarts de finale   ************ -->
   <?php
  }
-elseif ($type==14 OR $type==15)
+elseif ($type==14 OR $type==15 OR $type==20)
  {
   quarts2019 ($comite, $division, $annee, $bdd);
   ?>

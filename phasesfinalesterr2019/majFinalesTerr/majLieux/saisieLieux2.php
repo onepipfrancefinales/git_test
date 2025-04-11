@@ -94,7 +94,7 @@ echo $D1000; echo "<br />";
   Modification meme comite</a>
 <p>&nbsp;
 <p>&nbsp; 
-<p><a href="/phasesfinalesterr2019/accueilMAJ.php?annee=<?php echo $annee; ?>">Retour accueil</a> 
+<p><a href="/phasesfinalesterr2019/majFinalesTerr/accueilMAJ.php?annee=<?php echo $annee; ?>">Retour accueil</a> 
 <p>&nbsp;
 
 </html>

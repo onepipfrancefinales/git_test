@@ -2852,8 +2852,8 @@ if ($A4007 + $A4008 > 0)	{if ($A4007>$A4008)	{$clubA2004=$clubA4007;	} else	{$cl
 //if ($A1001+$A1002 > 0)	{if ($A2001>$A2002)	{$clubA1001=$clubA2001;	} else	{$clubA1001=$clubA2002;	}}	else{	$A1001="-";	$A1002="-";	}			
 
 //****** traitement résultats 8me de finale  *********	
-//for ($i= 8001, $j = 8002, $k= 4001; $i<8016, $j <8017, $k< 4009; $i=$i+2, $j=$j+2, $k++)	
-//{if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
+for ($i= 8001, $j = 8002, $k= 4001; $i<8016, $j <8017, $k< 4009; $i=$i+2, $j=$j+2, $k++)	
+{if (is_numeric(${"A".$i})+is_numeric(${"A".$j}) > 0) {if (${"A".$i}>${"A".$j})	{${"clubA".$k}=${"clubA".$i};	} else {${"clubA".$k}=${"clubA".$j};	}}	else {	${"A".$i}="-";	${"A".$j}="-";	${"clubA".$k}="-";}}	
 
 
 //****** traitement résultats 4me de finale  *********	

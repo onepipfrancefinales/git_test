@@ -118,24 +118,31 @@ $page = "saisieScores"; ?>
 
   if ($type == 1)
     require("finale.php");
+  // demi
   elseif ($type == 2)
     require("demi.php");
   elseif ($type == 3)
     require("demiAR.php");
+  // Quarts
   elseif ($type == 14)
     require("quarts.php");
   elseif ($type == 15)
     require("quartsAR.php");
+    elseif ($type == 20)
+    require("quartsARDemi.php");
+  // huitième
   elseif ($type == 13)
     require("quarts8barrages.php");
+   elseif ($type == 19)
+    require("8meAR.php");
+  
   elseif ($type == 18)
     require("8me.php");
   elseif ($type == 17)
     require("8meBarrages.php");
+  //seizieme
   elseif ($type == 16)
     require("16me.php");
-  elseif ($type == 19)
-    require("8meAR.php");
   else
     echo "il faut selectionner un type  de finale";
   ?>

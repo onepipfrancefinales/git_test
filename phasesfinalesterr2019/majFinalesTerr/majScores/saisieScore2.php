@@ -1042,7 +1042,7 @@ $requete=$bdd->exec("UPDATE $phpbd_pfterr
   Modification meme comite</a>
 <p>
 <p> 
-<p><a href="/phasesfinalesterr2019/accueilMAJ.php?annee=<?php echo $annee; ?>">Retour accueil</a> 
+<p><a href="/phasesfinalesterr2019/majFinalesTerr/accueilMAJ.php?annee=<?php echo $annee; ?>">Retour accueil</a> 
 <p>
 
 </html>

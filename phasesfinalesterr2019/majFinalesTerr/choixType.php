@@ -42,8 +42,9 @@ elseif ($page=="saisieLieux")
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=2&annee=<?php echo $annee ;?>"><b>Demi Finale (2)</b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=3&annee=<?php echo $annee ;?>"><b>Demi finale AR (3) </b></option>
     <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=14&annee=<?php echo $annee ;?>"><b>Quarts de finale (14)</b></option>
-    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=15&annee=<?php echo $annee ;?>"><b>Quarts AR (15)</b></option>
-	<option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=13&annee=<?php echo $annee ;?>"><b>Barr + Quarts</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=15&annee=<?php echo $annee ;?>"><b>Quarts et demi AR (15)</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=20&annee=<?php echo $annee ;?>"><b>Quarts AR et demi (20)</b></option>
+    <option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=13&annee=<?php echo $annee ;?>"><b>Barr + Quarts</b></option>
 	<option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=18&annee=<?php echo $annee ;?>"><b>Huitieme de finale (18) </b></option>
 	<option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=17&annee=<?php echo $annee ;?>"><b>Barr + Huitieme de finale(17) </b></option>
 	<option value="/phasesfinalesterr2019/<?php echo $ad ;?>.php?division=<?php echo $division ;?>&comite=<?php echo $comite ;?>&type=19&annee=<?php echo $annee ;?>"><b>Huitieme de finale AR(19)</b></option>	

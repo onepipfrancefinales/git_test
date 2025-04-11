@@ -1,3 +1,5 @@
+  
+  <?php //echo "division : ".$division; echo "xxxx".$clubA8001;?>
   <table class ="center borderWidth1 width95PC">
   <tr>   
     <td class="titre">8me de finale <br> <span class="center size2 bold italic styleArial"><?php echo $D8000; ?></span></td>
@@ -9,7 +11,7 @@
     <td colspan="2" class="lieux"><?php echo $L8001;?></td>
   </tr>
   <tr> 
-    <td class="coin4"><?php echo  $clubA8001;?></td>
+    <td class="coin4"><?php echo $clubA8001;?></td>
     <td class="coin4pts"><?php echo $A8001;?></td>
   </tr>
   <tr> 
@@ -208,9 +210,9 @@
   <tr> 
     <td colspan="2" class="lieux"><?php echo $L2001;?></td>
   </tr>
- <?php if ($comite == "au"){ ?> 
+ <?php if ($comite == "au" and $division < 220){ ?> 
  <tr> 
-    <td class="coin4" colspan="2" ><?php echo "Champion d'Auvergne"?></td>
+    <td class="coin4" colspan="2" ><?php  echo "Champion d'Auvergne"?></td>
   </tr>
  <?php } ?>
   <tr> 
@@ -222,7 +224,7 @@
     <td class="coin4"><?php echo $clubA2002;?></td>
     <td class="coin4pts"><?php	echo $A2002;?></td>
   </tr>
-   <?php if ($comite == "au"){ ?> 
+   <?php if ($comite == "au" and $division < 220){ ?> 
  <tr> 
     <td class="coin4" colspan="2" size="2"><?php echo "Champion Champion Lyonnais"?></td>
   </tr>
@@ -234,9 +236,9 @@
   <tr> 
     <td colspan="2" class="lieux"><?php echo $L2003;?></td>
   </tr>
-  <?php if ($comite == "au"){ ?> 
+  <?php if ($comite == "au" and $division < 220){ ?> 
  <tr> 
-    <td class="coin4" colspan="2" size="2"><?php echo "Champion Dr&ocirc;me Ardèche"?></td>
+    <td class="coin4" colspan="2" size="2"><?php  echo "Champion Dr&ocirc;me Ardèche"?></td>
   </tr>
  <?php } ?>
   <tr> 
@@ -247,9 +249,9 @@
     <td class="coin4"><?php echo $clubA2004;?></td>
     <td class="coin4pts"><?php	echo $A2004;?></td>
   </tr>
- <?php if ($comite == "au"){ ?> 
+ <?php if ($comite == "au" and $division < 220){ ?> 
  <tr> 
-    <td class="coin4" colspan="2" size="2"><?php echo "Champion des Alpes"?></td>
+    <td class="coin4" colspan="2" size="2"><?php  echo "Champion des Alpes"?></td>
   </tr>
  <?php } ?>
 </table>

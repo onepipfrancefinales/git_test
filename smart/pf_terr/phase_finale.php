@@ -82,8 +82,6 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 <div class="container">
 
  <?php
-
-
 	require '../entete.php';
 	require 'pf_terr_liens.php';
 	?>
@@ -102,20 +100,21 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 		
 		if ($typeBarrage == 18)
 		{
-
 			afficheLieux ($divisionAvecBarrage, $annee, $comite, $bdd);
 			huitieme2019($comite, $divisionAvecBarrage, $annee, $bdd);
 		    require ("barrage8M.php");
 		
-
 		}
 
 
 //************************** */ féminines	***************************************	
 	else if (substr($division,3,6) == "295") {
 
+		if ($comite == "bg" || $comite =="al")  {$comite = "au"; $division = 100295;}
+
+
 		$champ ="295";
-		echo  "<h1 class=\"center styleArial\">"."Fédérale 2". "</h1>";
+		echo  "<h1 class=\"center styleArial\">"."Fédérale 2 - Féminines". "</h1>";
 
 		if ($type==1)
 		{			
@@ -197,6 +196,7 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 	
 	elseif($type==18)
 			{
+
 			afficheLieux($division, $annee, $comite, $bdd);
 			huitieme2019($comite, $division, $annee, $bdd);
 			
@@ -205,7 +205,7 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 			traitementScores (4001,4008, $bdd);
 			traitementScores (2001,2004, $bdd);
 			require ("test18.php");		
-			}
+		}
 	
 			
 	//  ***************** Huitième AR-Quarts - Demi - Finale  **********
@@ -225,7 +225,7 @@ $A2001="";$A2002="";$A2003="";$A2004="";
 
 		$division = $division + 5;
 		$champ ="300";
-		$nomDivision2 = "Régionale à X";
+		$nomDivision2 = "Régionale à X - Féminines";
 
 		echo  "<h1 class=\"center styleArial\">". $nomDivision2 . "</h1>";
 
@@ -237,9 +237,10 @@ $A2001="";$A2002="";$A2003="";$A2004="";
 			{                 	
 			$type=$row[0];
 			}
+			
 
 
-
+/*
 		if ($type==1)
 		{			
 			finale2019 ($comite, $division, $annee, $bdd);
@@ -338,7 +339,7 @@ $A2001="";$A2002="";$A2003="";$A2004="";
 			require ("test19.php");		
 		
 			}	
-		
+	*/
 		}	
 		
 			//************************************************************** */	
@@ -346,10 +347,13 @@ $A2001="";$A2002="";$A2003="";$A2004="";
 
 /**********************  Séniors ******************************* */
 
-
-
+if  (substr($division,3,6) != "295" || substr($division,3,6) != "300")
+{
 accesFed3($comite, $division, $annee) ;
 accesReg1($comite, $division, $annee) ;
+
+//typeTableau($type, $comite, $division, $annee, $bdd);
+
 	
 	if ($type==1)
 	{			
@@ -469,12 +473,133 @@ elseif($type==0)
 		echo $test;
 		require ("test0.php");
 	}
-
+	
+}
 ?>	
 	</div>
 </body>
 <?php require ("../smartFooter.php");?>
 </html>
+
+
+<?php 
+
+function typeTableau($type, $comite, $division, $annee, $bdd)  {
+
+	global $clubA1001, $clubA1002, $A1001, $A1002;
+
+	if ($type==1)
+	{			
+		finale2019 ($comite, $division, $annee, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		require ("test1.php");
+	}
+//***************     Demi finale - Finale ******************
+    elseif ($type==2)
+	{			
+		demi2019 ($comite, $division, $annee, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		traitementScores ("2001", "2004", $bdd);
+		require ("test2.php");
+	}	
+//********** Demi finale Aller Retour - Finale   *************
+    elseif($type==3)
+	{	
+		demiAR2019 ($comite, $division, $annee, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		require ("test3.php");		
+	}	
+//*********** Barrages(8 équipes)- Quarts - Demi - Finale   ***
+    elseif($type==13)
+	{	
+		quartsPlusBarrages2019 ($comite, $division, $annee, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		require ("test13.php");
+	}	
+//*************    Quarts - Demi - Finale   ********************
+    elseif($type==14)
+	{	
+		quarts2019 ($comite, $division, $annee, $bdd);
+		traitementScores (4001, 4008, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		require ("test14.php");		
+	}	
+	elseif($type==20)
+	{	
+		quartsAR2019 ($comite, $division, $annee, $bdd);
+		traitementScores (4001, 4008, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		require ("test20.php");		
+	}	
+//**************  QuartsAR - DemiAR - Finale   ******************
+    elseif($type==15)
+	{
+		quartsDemiAR2019 ($comite, $division, $annee, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		require ("test15.php");
+	}	
+//*************Seizieme -  Huitième -Quarts - Demi - Finale   *****
+elseif($type==16)
+	{		  
+		seizieme2019 ($comite, $division, $annee, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		traitementScores (1601, 1632, $bdd);
+		require ("test16.php");
+	}
+// **************Barrages - Huitième -Quarts - Demi - Finale ****
+    elseif($type==17)
+		{
+		huitiemeEtBarrages2019 ($comite, $division, $annee, $bdd);
+		afficheLieux ($division, $annee, $comite, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		require ("test17.php");
+		}
+//  ***************** Huitième -Quarts - Demi - Finale  **********
+elseif($type==18)
+		{
+		huitieme2019($comite, $division, $annee, $bdd);
+		afficheLieux($division, $annee, $comite, $bdd);
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+	if ($A8001 !="-") {
+	traitementScores (8001,8016, $bdd);
+		traitementScores (4001,4008, $bdd);
+		traitementScores (2001,2004, $bdd);
+	}
+		require ("test18.php");		
+		}
+//  ***************** Huitième AR-Quarts - Demi - Finale  **********
+	elseif($type==19)
+		{
+		afficheLieux ($division, $annee, $comite, $bdd);
+		huitiemeAR2019 ($comite, $division, $annee, $bdd);	
+		champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+		require ("test19.php");		
+		//require ("test0.php");
+		}					
+elseif($type==0)
+	{
+		echo $test;
+		require ("test0.php");
+	}
+
+
+
+
+
+}
+
+
+
+
+
+?>
 
 
 

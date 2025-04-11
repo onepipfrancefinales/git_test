@@ -11,7 +11,7 @@
 require('../../connect/connexion1.php');
 
 //$division = "160";
-$annee = 2024;
+$annee = 3024;
 
 $pff32me = "32me de finale du champ de France";
 $pff16me = "16me de finale du champ de France";
@@ -27,9 +27,9 @@ require("../../phases_finales2019/fonctionsChampFrance2019.php");
 ?>
 
 
-<table width="500" border="1" class="marginAuto">
+<table  width="500" border="1" cellspacing="0" bordercolor="#000000" align="center">
   <tr>
-    <td colspan="2" class="size5 bold">
+    <td colspan="2"  bgcolor="#FFCC33" class="size5 bold">
       Compétitions séniors
     </td>
   </tr>
@@ -37,7 +37,10 @@ require("../../phases_finales2019/fonctionsChampFrance2019.php");
 
 
 <?php
-$tabDivisions = array('110','120','130','135','140','150','160','170','180','190');
+$tabDivisions = array('110','120','130','135','140','150','160','170','180','190'); //seniors Une
+// $tabDivisions = array('230','235','240','250','260','270','9180'); // seniors deux
+// $tabDivisions = array('280','285','290','295'); // feminines
+// $tabDivisions = array('110','120','130','135','140','150','160','170','180','190'); // jeunes
 foreach ($tabDivisions as $division)
 {
 
@@ -82,15 +85,17 @@ for ($i = 1; $i <= 64; $i++) {
 }
 
 
-
+// Occitanie
 
 for ($i = 0; $i <= count($tabEquipe); $i++) {
-  if ($tabEquipe[$i] > 1800000 and $tabEquipe[$i] < 1900000) {
+  if ($tabEquipe[$i] > 2000000 and $tabEquipe[$i] < 2100000) {
     array_push($tabEquipeLigue, $tabEquipe[$i]);
   }
 }
 
 sort($tabEquipeLigue);
+foreach ($tabEquipeLigue as $value)
+//echo $value;
 
 if (substr($type, 1, 2) == 64 or substr($type, 1, 2) == 32) {
   for ($i = 0; $i <= 63; $i++)
@@ -109,32 +114,14 @@ if (substr($type, 1, 2) == 64 or substr($type, 1, 2) == 32) {
     array_push($tab2me, $tabEquipe[$i]);
 }
 
-for ($club32me = 3201; $club32me < 3265; $club32me++) {
-  if (isset(${"clubA" . $club32me}));
-  else
-    ${"clubA" . $club32me} = 0;
-}
+
 // traitement des 32me de finale
-
 for (
-  $club32me = 3201, $club16me = 1601, $club1 = 0, $club2 = 1;
-  $club32me < 3265, $club16me < 1633, $club1 < 65, $club2 < 65;
-  $club32me = $club32me + 2, $club16me++, $club1 = $club1 + 2, $club2 = $club2 + 2
-) {
-
-  if (isset($tab32me[$club1]));
-  else
-    $tab32me[$club1] = 0;
-  if (isset($tab32me[$club2]));
-  else
-    $tab32me[$club2] = 0;
-
+  $club32me = 3201, $club16me = 1601, $club1 = 0, $club2 = 1;  $club32me < 3265, $club16me < 1633, $club1 < 65, $club2 < 65;  $club32me = $club32me + 2, $club16me++, $club1 = $club1 + 2, $club2 = $club2 + 2) {
   if (${"clubA" . $club32me} == ${"clubA" . $club16me}) {
-    //echo $tabEquipe[$club2];
     array_push($tab32meElim, $tab32me[$club2]);
     array_push($tab16me, $tab32me[$club1]);
   } else {
-    //echo $tabEquipe[$club1];
     array_push($tab32meElim, $tab32me[$club1]);
     array_push($tab16me, $tab32me[$club2]);
   }
@@ -143,14 +130,6 @@ for (
 
 // traitement des 16me de finale
 for ($club16me = 1601, $club8me = 8001, $club1 = 0, $club2 = 1; $club16me < 1633, $club8me < 8017, $club1 < 33, $club2 < 33; $club16me = $club16me + 2, $club8me++, $club1 = $club1 + 2, $club2 = $club2 + 2) {
-
-  if (isset($tab16me[$club1]));
-  else
-    $tab16me[$club1] = 0;
-  if (isset($tab16me[$club2]));
-  else
-    $tab16me[$club2] = 0;
-
   if (${"clubA" . $club16me} == ${"clubA" . $club8me}) {
     //echo $tabEquipe[$club2];
     array_push($tab16meElim, $tab16me[$club2]);
@@ -164,14 +143,6 @@ for ($club16me = 1601, $club8me = 8001, $club1 = 0, $club2 = 1; $club16me < 1633
 
 // traitement des 8me de finale
 for ($club8me = 8001, $club4me = 4001, $club1 = 0, $club2 = 1; $club8me < 8017, $club4me < 4008, $club1 < 17, $club2 < 17; $club8me = $club8me + 2, $club4me++, $club1 = $club1 + 2, $club2 = $club2 + 2) {
-
-  if (isset($tab8me[$club1]));
-  else
-    $tab8me[$club1] = 0;
-  if (isset($tab8me[$club2]));
-  else
-    $tab8me[$club2] = 0;
-
   if (${"clubA" . $club8me} == ${"clubA" . $club4me}) {
     //echo $tabEquipe[$club2];
     array_push($tab8meElim, $tab8me[$club2]);
@@ -225,16 +196,10 @@ if ($A1001 > $A1002) {
 }
 
 
-if (substr($type, 1, 2) == 32 or substr($type, 1, 2) == 64)
-  $max = 64;
-elseif (substr($type, 3, 2) == 16 or substr($type, 3, 2) == 32)
-  $max = 32;
-elseif (substr($type, 5, 2) == 8 or substr($type, 5, 2) == 16)
-  $max = 16;
-elseif (substr($type, 7, 2) == 4 or substr($type, 7, 2) == 8)
-  $max = 8;
-elseif (substr($type, 9, 2) == 2 or substr($type, 9, 2) == 4)
-  $max = 4;
+
+
+
+
 ?>
 
 
@@ -242,12 +207,14 @@ elseif (substr($type, 9, 2) == 2 or substr($type, 9, 2) == 4)
 
 
 
-  <table width="500" border="1" class="marginAuto">
+  <table width="500" border="1" cellspacing="0" bordercolor="#000000" align="center">
   <tr>
     <td colspan="2" class="size5 bold">
       <?php intituleDivision($division,$bdd) ; ?>
+   <br>
     </td>
   </tr>
+ 
   <?php
   foreach ($tabEquipeLigue as $equipeLigue) {
   ?>
@@ -258,13 +225,31 @@ elseif (substr($type, 9, 2) == 2 or substr($type, 9, 2) == 4)
         elimination($equipeLigue);
         ?>
       </td>
-      <td width="250">
-        <?php nomEquipe($equipeLigue,$bdd); ?>
-      </td>
+      <td width="250" <?php if (in_array($equipeLigue, $tabFinaleChamp))  echo 'bgcolor=\"#009900\"' ;?>>
+      <?php 
+      if (in_array($equipeLigue, $tabFinaleChamp)) { echo "<b>"."<font color=\"#FFFFFF\">"; nomEquipe($equipeLigue,$bdd);  echo "</b>"."</font>";}
+   
+   else if (in_array($equipeLigue, $tab32meElim) or in_array($equipeLigue, $tab16meElim) or in_array($equipeLigue, $tab8meElim) or in_array($equipeLigue, $tab4meElim)
+   or in_array($equipeLigue, $tab2meElim) )
+   { echo  "<b>"."<font color=\"#000000\">";   nomEquipe($equipeLigue,$bdd);   echo "</b>"."</font>";}
+
+   
+   else 
+   { echo "<font color=\"#FF0000\">";   nomEquipe($equipeLigue,$bdd);  echo "</font>";}
+   }
+
+
+    
+    
+    
+    
+    ?>
+     
+    </td>
     </tr>
   <?php
   }
-}
+
 
 function nomEquipe($equipeLigue,$bdd) {
   $reponse = $bdd->query("SELECT nom_1
@@ -296,23 +281,14 @@ else if (in_array($equipeLigue, $tab4meElim))
   echo "Eliminée en quart de finale";
 else if (in_array($equipeLigue, $tab2meElim))
   echo "Eliminée en demi finale";
-else "echo ";
-
+else echo " ";
+/*
 if (in_array($equipeLigue, $tabFinaleElim))
   echo "Vice champion de France";
 if (in_array($equipeLigue, $tabFinaleChamp))
   echo "Champion de France";
+  */
 }
-
-
-
 
   ?>
 </table>
-
-
-
-
-</body>
-
-</html>
