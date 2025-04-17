@@ -1558,6 +1558,9 @@ Global $scores;
 	$debut =2001;
 	$fin=2005;
 
+	global $A1001, $A1002;
+global $clubA1001, $clubA1002;
+
 	for ($i=$debut; $i<$fin; $i++)
 	{
 	 //	Equipes
@@ -1933,19 +1936,34 @@ if ($pts4007 + $pts4008 > 6){ 	  if ($pts4007 > $pts4008 or ($pts4007 == $pts400
 
 
 // demi
-if (is_numeric($A2003) and is_numeric($A2004)){
+
+
+if (is_numeric($A2001) and is_numeric($A2002)){	
+	if ($A2001 + $A2002 > 0){	if ($A2001 > $A2002)	{$clubA1001 = $clubA2001;	} else	{$clubA1001 = $clubA2002;	}} else{ $A2001="-";	$A2002="-"; $clubA1001="-";}
+}
+	if (is_numeric($A2003) and is_numeric($A2004)){	
 	if ($A2003 + $A2004 > 0){	if ($A2003 > $A2004)	{$clubA1002 = $clubA2003;	} else	{$clubA1002 = $clubA2004;	}} else{ $A2003="-";	$A2004="-"; $clubA1002="-";}
-	}
-	
-	
+
+}
+	/*
+echo $A2001; echo "<br>";
+echo $A2002; echo "<br>";
+echo $A2003; echo "<br>";
+echo $A2004; echo "<br>";
+echo $clubA1001; echo "<br>";
+echo $clubA1002; echo "<br>";	
+*/
+
 	
 //Finale	
 	if (is_numeric($A1001) and is_numeric($A1002)){
-if ($A1001 + $A1002 > 0){	if ($A1001 > $A1002)	{$champion =  $clubA1001;	} else	{$champion  =$clubA1002;	}} else{ $A1001="-";	$A1002="-";}
+if ($A1001 + $A1002 > 0){	if ($A1001 > $A1002)	{$champion =  $clubA1001;	} else	{$champion  = $clubA1002;	}} else{ $A1001="-";	$A1002="-";}
 	}
+	else
+	{ $A1001="-";	$A1002="-";}
 
 
-
+	
 
 
 }

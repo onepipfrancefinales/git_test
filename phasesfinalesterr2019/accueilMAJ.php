@@ -113,7 +113,7 @@ echo $annee; ?>
   </tr>
   <tr> 
     <td colspan="4"> 
-      <div align="center"><a href="../admin/mdp.php">Retour</a></div>
+      <div align="center"><a href="majFinalesTerr/accueilMAJ.php">Retour</a></div>
     </td>
   </tr>
 </table>

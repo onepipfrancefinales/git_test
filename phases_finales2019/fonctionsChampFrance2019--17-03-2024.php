@@ -220,7 +220,9 @@ $nomChampion= substr($champion,0, -6);
 
 
 function trenteDeuxieme2019 ($division, $annee, $bdd)
-{		
+{
+	
+	
 if (isset ($type)) ; else $type = "non type defini";
 if (isset ($type2)) ; else $type2 = "non type2 defini";
 if (isset ($prefixe)) ; else $prefixe = "variable prefixe non defini";

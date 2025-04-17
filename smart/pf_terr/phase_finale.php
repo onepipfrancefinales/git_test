@@ -153,7 +153,8 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 			champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 			require ("test13.php");
 		}	
-	//*************    Quarts - Demi - Finale   ********************
+	
+		//*************    Quarts - Demi - Finale   ********************
 		elseif($type==14)
 		{	
 			quarts2019 ($comite, $division, $annee, $bdd);
@@ -383,6 +384,17 @@ accesReg1($comite, $division, $annee) ;
 	}	
 	
 	
+	elseif($type==12)
+		{	
+			demi2019 ($comite, $division, $annee, $bdd);
+			traitementScores (2001, 2004, $bdd);
+			afficheLieux ($division, $annee, $comite, $bdd);
+			champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
+			require ("test12.php");		
+		}	
+
+
+
 //*********** Barrages(8 équipes)- Quarts - Demi - Finale   ***
     elseif($type==13)
 	{	

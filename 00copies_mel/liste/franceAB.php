@@ -1,3 +1,10 @@
+<script >
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
 <html>
 
 <head>
@@ -8,8 +15,74 @@
 </head>
 
 <?php
+
+
+
+$adresse ="../../00copies_mel/liste/franceAB.php?suiviLigue=";
+
+?>
+
+<fieldset class="fieldsetG"> <legend class="legendG" > 
+       Suivi des équipes engagées en championnats de france 2025 par ligue </legend><br>
+        <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="1"  title="Recherche par ligue">
+          <option selected>Par ligue</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceARA">Auvergne Rhône Alpes</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceBFC">Bourgogne Franche Comté</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceBRE">Bretagne</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceCVL">Centre Val de Loire</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceGES">Grand Est</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceHDF">Hauts de France</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceIDF">Ile de France</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceNOR">Normandie</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceNAQ">Nouvelle Aquitaine</option>
+          <option value="<?php echo $adresse;?>suiviChampFranceOCC">Occitanie</option>
+          <option value="<?php echo $adresse;?>suiviChampFrancePDL">Pays de la Loire</option>
+          <option value="<?php echo $adresse;?>suiviChampFrancePCA">Provence Alpes Côte d'Azur</option>
+        </select>
+        </fieldset > 
+      <br>
+       <br>
+
+<?php
+
+if (isset($_GET['suiviLigue'])) $suiviLigue = $_GET['suiviLigue'];else  $suiviLigue = "suiviChampFranceOCC";
+
+
+echo $suiviLigue;
+
+if ($suiviLigue == "suiviChampFranceARA" )
+{$debut = 1000000; $fin = 1100000;}
+elseif ($suiviLigue == "suiviChampFranceBFC" )
+{$debut = 1100000; $fin = 1200000;}
+elseif ($suiviLigue == "suiviChampFranceBRE" )
+{$debut = 1200000; $fin = 1300000;}
+elseif ($suiviLigue == "suiviChampFranceCVL" )
+{$debut = 1300000; $fin = 1400000;}
+elseif ($suiviLigue == "suiviChampFranceGES" )
+{$debut = 1500000; $fin = 1600000;}
+elseif ($suiviLigue == "suiviChampFranceHDF" )
+{$debut = 1600000; $fin = 1700000;}
+elseif ($suiviLigue == "suiviChampFranceIDF" )
+{$debut = 1700000; $fin = 1800000;}
+elseif ($suiviLigue == "suiviChampFranceNOR" )
+{$debut = 1800000; $fin = 1900000;}
+elseif ($suiviLigue == "suiviChampFranceNAQ" )
+{$debut = 1900000; $fin = 2000000;}
+elseif ($suiviLigue == "suiviChampFranceOCC" )
+{$debut = 2000000; $fin = 2100000;}
+elseif ($suiviLigue == "suiviChampFrancePDL" )
+{$debut = 2100000; $fin = 2200000;}
+elseif ($suiviLigue == "suiviChampFrancePCA" )
+{$debut = 2200000; $fin = 2300000;}
+
+
+
+
 require('../../connect/connexion1.php');
 
+// vidage de la table
+echo "suiviLigue : ".$suiviLigue;
+$bdd->exec("TRUNCATE $suiviLigue");
 //$division = "160";
 $annee = 3024;
 
@@ -37,10 +110,11 @@ require("../../phases_finales2019/fonctionsChampFrance2019.php");
 
 
 <?php
-$tabDivisions = array('110','120','130','135','140','150','160','170','180','190'); //seniors Une
+//$tabDivisions = array('140','150','160'); //seniors Une
+$tabDivisions = array('110','120','130','135','140','150','160','170','180','190','225','235','245','250','260','270','9180','280','285','290','295','365','360','370','325','330'); //seniors Une
 // $tabDivisions = array('230','235','240','250','260','270','9180'); // seniors deux
 // $tabDivisions = array('280','285','290','295'); // feminines
-// $tabDivisions = array('110','120','130','135','140','150','160','170','180','190'); // jeunes
+// $tabDivisions = array('365','360','370','325','330'); // jeunes
 foreach ($tabDivisions as $division)
 {
 
@@ -84,11 +158,8 @@ for ($i = 1; $i <= 64; $i++) {
   }
 }
 
-
-// Occitanie
-
 for ($i = 0; $i <= count($tabEquipe); $i++) {
-  if ($tabEquipe[$i] > 2000000 and $tabEquipe[$i] < 2100000) {
+  if ($tabEquipe[$i] > $debut and $tabEquipe[$i] < $fin) {
     array_push($tabEquipeLigue, $tabEquipe[$i]);
   }
 }
@@ -116,6 +187,17 @@ if (substr($type, 1, 2) == 64 or substr($type, 1, 2) == 32) {
 
 
 // traitement des 32me de finale
+if ($A3201 !='-' and $A3202 !='-' and $A3203 !='-' and $A3204 !='-' and $A3205 !='-' and $A3206 !='-' and $A3207 !='-' and $A3208 !='-' and 
+    $A3209 !='-' and $A3210 !='-' and $A3211 !='-' and $A3212 !='-' and $A3213 !='-' and $A3214 !='-' and $A3215 !='-' and $A3232 !='-' and
+    $A3217 !='-' and $A3218 !='-' and $A3219 !='-' and $A3220 !='-' and $A3221 !='-' and $A3222 !='-' and $A3223 !='-' and $A3224 !='-' and 
+    $A3225 !='-' and $A3226 !='-' and $A3227 !='-' and $A3228 !='-' and $A3229 !='-' and $A3230 !='-' and $A3231 !='-' and $A3232 !='-' and
+    $A3233 !='-' and $A3234 !='-' and $A3235 !='-' and $A3236 !='-' and $A3237 !='-' and $A3238 !='-' and $A3239 !='-' and $A3240 !='-' and 
+    $A3241 !='-' and $A3242 !='-' and $A3243 !='-' and $A3244 !='-' and $A3245 !='-' and $A3246 !='-' and $A3247 !='-' and $A3248 !='-' and
+    $A3249 !='-' and $A3250 !='-' and $A3251 !='-' and $A3252 !='-' and $A3253 !='-' and $A3254 !='-' and $A3255 !='-' and $A3256 !='-' and 
+    $A3257 !='-' and $A3258 !='-' and $A3259 !='-' and $A3260 !='-' and $A3261 !='-' and $A3262 !='-' and $A3263 !='-' and $A3264 !='-'
+) {
+
+
 for (
   $club32me = 3201, $club16me = 1601, $club1 = 0, $club2 = 1;  $club32me < 3265, $club16me < 1633, $club1 < 65, $club2 < 65;  $club32me = $club32me + 2, $club16me++, $club1 = $club1 + 2, $club2 = $club2 + 2) {
   if (${"clubA" . $club32me} == ${"clubA" . $club16me}) {
@@ -126,9 +208,14 @@ for (
     array_push($tab16me, $tab32me[$club2]);
   }
 }
-
+}
 
 // traitement des 16me de finale
+if ($A1601 !='-' and $A1602 !='-' and $A1603 !='-' and $A1604 !='-' and $A1605 !='-' and $A1606 !='-' and $A1607 !='-' and $A1608 !='-' and 
+    $A1609 !='-' and $A1610 !='-' and $A1611 !='-' and $A1612 !='-' and $A1613 !='-' and $A1614 !='-' and $A1615 !='-' and $A1616 !='-' and
+    $A1617 !='-' and $A1618 !='-' and $A1619 !='-' and $A1620 !='-' and $A1621 !='-' and $A1622 !='-' and $A1623 !='-' and $A1624 !='-' and 
+    $A1625 !='-' and $A1626 !='-' and $A1627 !='-' and $A1628 !='-' and $A1629 !='-' and $A1630 !='-' and $A1631 !='-' and $A1632 !='-'
+) {
 for ($club16me = 1601, $club8me = 8001, $club1 = 0, $club2 = 1; $club16me < 1633, $club8me < 8017, $club1 < 33, $club2 < 33; $club16me = $club16me + 2, $club8me++, $club1 = $club1 + 2, $club2 = $club2 + 2) {
   if (${"clubA" . $club16me} == ${"clubA" . $club8me}) {
     //echo $tabEquipe[$club2];
@@ -140,8 +227,11 @@ for ($club16me = 1601, $club8me = 8001, $club1 = 0, $club2 = 1; $club16me < 1633
     array_push($tab8me, $tab16me[$club2]);
   }
 }
-
+}
 // traitement des 8me de finale
+if ($A8001 !='-' and $A8002 !='-' and $A8003 !='-' and $A8004 !='-' and $A8005 !='-' and $A8006 !='-' and $A8007 !='-' and $A8008 !='-' and 
+$A8009 !='-' and $A8010 !='-' and $A8011 !='-' and $A8012 !='-' and $A8013 !='-' and $A8014 !='-' and $A8015 !='-' and $A8016 !='-'
+) {
 for ($club8me = 8001, $club4me = 4001, $club1 = 0, $club2 = 1; $club8me < 8017, $club4me < 4008, $club1 < 17, $club2 < 17; $club8me = $club8me + 2, $club4me++, $club1 = $club1 + 2, $club2 = $club2 + 2) {
   if (${"clubA" . $club8me} == ${"clubA" . $club4me}) {
     //echo $tabEquipe[$club2];
@@ -153,8 +243,9 @@ for ($club8me = 8001, $club4me = 4001, $club1 = 0, $club2 = 1; $club8me < 8017, 
     array_push($tab4me, $tab8me[$club2]);
   }
 }
-
+}
 // traitement des quarts de finale
+if ($A4001 !='-' and $A4002 !='-' and $A4003 !='-' and $A4004 !='-' and $A4005 !='-' and $A4006 !='-' and $A4007 !='-' and $A4008 !='-') {
 for ($club4me = 4001, $club2me = 2001, $club1 = 0, $club2 = 1; $club4me < 4009, $club2me < 2005, $club1 < 9, $club2 < 9; $club4me = $club4me + 2, $club2me++, $club1 = $club1 + 2, $club2 = $club2 + 2) {
   if (${"clubA" . $club4me} == ${"clubA" . $club2me}) {
     //echo $tabEquipe[$club2];
@@ -166,8 +257,9 @@ for ($club4me = 4001, $club2me = 2001, $club1 = 0, $club2 = 1; $club4me < 4009, 
     array_push($tab2me, $tab4me[$club2]);
   }
 }
-
+}
 // traitement des demies
+if ($A2001 !='-' and $A2002 !='-' and $A2003 !='-' and $A2004 !='-') {
 for ($club2me = 2001, $club1me = 1001, $club1 = 0, $club2 = 1; $club2me < 2005, $club1me < 1003, $club1 < 4, $club2 < 4; $club2me = $club2me + 2, $club1me++, $club1 = $club1 + 2, $club2 = $club2 + 2) {
   if (${"clubA" . $club2me} == ${"clubA" . $club1me}) {
     array_push($tab2meElim, $tab2me[$club2]);
@@ -177,8 +269,10 @@ for ($club2me = 2001, $club1me = 1001, $club1 = 0, $club2 = 1; $club2me < 2005, 
     array_push($tabFinale, $tab2me[$club2]);
   }
 }
+}
 
 // traitement du champion
+
 if ($A1001 > $A1002) {
   $champion = $tabFinale[0];
   $viceChampion = $tabFinale[1];
@@ -186,7 +280,7 @@ if ($A1001 > $A1002) {
   $score2 = $A1002;
   array_push($tabFinaleElim, $tabFinale[1]);
   array_push($tabFinaleChamp, $tabFinale[0]);
-} else {
+} else if ($A1001 < $A1002){
   $champion = $tabFinale[1];
   $viceChampion = $tabFinale[0];
   $score1 = $A1002;
@@ -195,17 +289,30 @@ if ($A1001 > $A1002) {
   array_push($tabFinaleChamp, $tabFinale[1]);
 }
 
+foreach ($tabEquipeLigue as $equipeLigue) {
 
+if (in_array($equipeLigue, $tab32meElim))
+$parcours= "Eliminée en 32me de finale";
+else if (in_array($equipeLigue, $tab16meElim))
+$parcours= "Eliminée en 16me de finale";
+else if (in_array($equipeLigue, $tab8meElim))
+$parcours= "Eliminée en 8me de finale";
+else if (in_array($equipeLigue, $tab4meElim))
+$parcours= "Eliminée en quart de finale";
+else if (in_array($equipeLigue, $tab2meElim))
+$parcours= "Eliminée en demi finale";
+elseif (in_array($equipeLigue, $tabFinaleElim))
+$parcours= "Vice champion de France";
+elseif (in_array($equipeLigue, $tabFinaleChamp))
+$parcours= "Champion de France";
+else $parcours= " ";
 
+  //echo $division; elimination($equipeLigue);  echo elimination($equipeLigue); echo "<br>";
 
-
-
+	$bdd->exec("INSERT INTO $suiviLigue
+				  VALUES ('$division', '$parcours', '$equipeLigue','1')");                
+}
 ?>
-
-
-
-
-
 
   <table width="500" border="1" cellspacing="0" bordercolor="#000000" align="center">
   <tr>
@@ -217,6 +324,8 @@ if ($A1001 > $A1002) {
  
   <?php
   foreach ($tabEquipeLigue as $equipeLigue) {
+
+ 
   ?>
     <tr class="styleArial">
       <td width="250">
@@ -237,19 +346,12 @@ if ($A1001 > $A1002) {
    else 
    { echo "<font color=\"#FF0000\">";   nomEquipe($equipeLigue,$bdd);  echo "</font>";}
    }
-
-
-    
-    
-    
-    
     ?>
      
     </td>
     </tr>
   <?php
   }
-
 
 function nomEquipe($equipeLigue,$bdd) {
   $reponse = $bdd->query("SELECT nom_1
@@ -281,14 +383,11 @@ else if (in_array($equipeLigue, $tab4meElim))
   echo "Eliminée en quart de finale";
 else if (in_array($equipeLigue, $tab2meElim))
   echo "Eliminée en demi finale";
-else echo " ";
-/*
-if (in_array($equipeLigue, $tabFinaleElim))
+else if (in_array($equipeLigue, $tabFinaleElim))
   echo "Vice champion de France";
-if (in_array($equipeLigue, $tabFinaleChamp))
+else if (in_array($equipeLigue, $tabFinaleChamp))
   echo "Champion de France";
-  */
+ else echo " "; 
 }
-
   ?>
 </table>

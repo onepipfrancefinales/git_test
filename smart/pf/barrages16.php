@@ -186,8 +186,6 @@ for ($num = 1, $i=1601, $j= 1603; $num <= 16, $i <= 1632 , $j <1633 ; $num=$num+
     <td class="coin5GA"><?php echo $A1608;?></td>
   </tr>
   </table>
- 
- <p align="center"><?php	include ("../../pub/pub20.php");?></p>
   
   <table width="90%" border="0" align="center">
   <tr> 
@@ -223,8 +221,7 @@ for ($num = 1, $i=1601, $j= 1603; $num <= 16, $i <= 1632 , $j <1633 ; $num=$num+
     <td class="coin5GA"><?php echo $A1616;?></td>
   </tr>
   </table >
-  
-  <p align="center"><?php	include ("../../pub/pub20.php");?></p>
+
   
     <table width="90%" border="0" align="center">
    <tr> 
@@ -252,9 +249,7 @@ for ($num = 1, $i=1601, $j= 1603; $num <= 16, $i <= 1632 , $j <1633 ; $num=$num+
     <td class="coin5GA"><?php echo $A1622;?></td>
   </tr>
   </table >
-  
-  <p align="center"><?php	include ("../../pub/pub20.php");?></p>
-  
+    
     <table width="90%" border="0" align="center">
    <tr> 
     <td class="equipe5"><?php echo $clubA1623;?></td>

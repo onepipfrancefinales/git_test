@@ -223,45 +223,17 @@
 				}
 				// *************    insertion de barrages   ********************************
 
-/*
+
 if ($division == 160 and $annee == 2024) {
-	echo "test";
-	$test = 8;
-	/*
-require 'barrages10.php';
-if ($division == 260 and $annee == 2024)
-require 'barrages10.php';
+
+
+
 
 				
-				if (substr($type, 0, 1) == '7') {
-				//	echo  "division : ".$division; echo "<br>";
-				$divisionBarrage = $division + 7000  ;
-			//	echo  "divisionBarrage : ".$divisionBarrage; echo "<br>";
+						require 'barrages10.php';
+						
 
-
-			$res = $bdd->query("SELECT type
-			FROM bdpffrance 
-			WHERE id='$divisionBarrage' 
-			AND saison='$annee' 
-			 ");
-*/
-//while ($row = $res->fetch()) {
-// $typebarrage = $row[0];
-//}
- //echo $typebarrage;echo "<br>";	
-//trenteDeuxieme2019(7160, 2024, $bdd);
-				//	if (substr($typebarrage, 9, 2) == 32)
-				//		require 'barrages16.php';
-				//	else if (substr($typebarrage, 9, 2)== 20) {
-				//		echo "barrages10";
-				//		require 'barrages10.php';
-				//		echo "<br>";	
-				//	}
-				//	else if (substr($typebarrage, 9, 2 ) == 16)
-				//		require 'barrages8.php';	
-				//}
-
-	//		}
+			}
 
 			
 				// ***************   phases réguliéres   ********************************

@@ -1,4 +1,3 @@
-  <?php echo "test"; ?>
   <table class="width90PC marginAuto" bordercolor="#000000">
     <tr> 
       <td  class="titre">Quarts de finale A/R<br><div class="center styleArial size2 bold italic"><?php echo $D4000; ?></div></td>
@@ -78,11 +77,11 @@
   </tr>
   <tr> 
     <td class="coin4"><?php echo $clubA2001;?></td>
-   <td class="coin4"><?php echo $GA2001;?></td> 
+   <td class="coin4"><?php echo $A2001;?></td> 
   </tr>
   <tr> 
     <td class="coin4"><?php echo $clubA2002;?></td>
-    <td class="coin4"><?php	echo $GA2002;?></td>
+    <td class="coin4"><?php	echo $A2002;?></td>
   </tr>
   <tr> 
     <td></td>
@@ -90,11 +89,11 @@
   </tr>
   <tr> 
     <td class="coin5"><?php echo $clubA2003;?></td>
- <td class="coin5"><?php echo $GA2003;?></td>
+ <td class="coin5"><?php echo $A2003;?></td>
   </tr>
   <tr> 
     <td class="coin5"><?php echo $clubA2004;?></td>
-   <td class="coin5"><?php echo $GA2004;?></td>
+   <td class="coin5"><?php echo $A2004;?></td>
   </tr>
 </table>
 <p></p>

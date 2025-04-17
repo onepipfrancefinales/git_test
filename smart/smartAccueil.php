@@ -1,14 +1,28 @@
 <table width="100% " class="borderWidth1 marginAuto">
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="smartPage.php?page=actualites&mode=smart; ?>"> Actualités</a>
+            <a class="colorWhite" href="smartPage.php?page=actualites&mode=smart"> Actualités</a>
         </td>
     </tr>
+   <!-- 
     <tr>
         <td colspan="2" class="borderWidth1 ">
             <br>
             <p class="size4">
-                <a class="colorBlack" href="smartPage.php?page=actualites&mode=smart; ?>">Nouvelles régles Word Rugby<br>
+                <a class="colorBlack" href="smartPage.php?page=actualites2&mode=smart">Championnats de France 2025<br>
+                   Suivi des clubs engagés en championnat de France par ligues ou par comités </a>
+            </p>
+            <br>
+        </td>
+    </tr>
+    
+--> 
+    
+    <tr>
+        <td colspan="2" class="borderWidth1 ">
+            <br>
+            <p class="size4">
+                <a class="colorBlack" href="smartPage.php?page=actualites&mode=smart">Nouvelles régles Word Rugby<br>
                     à compter du 8 février 2025 <br> pour toutes les compétitions</a>
             </p>
             <br>
@@ -140,14 +154,14 @@
 
     <tr>
         <td colspan="2" class="size background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="https://francefinalesrugby.fr" target="_blank"> Accéder au site Internet <br>France Finales Rugby </a>
+            <a class="colorWhite" href="https://francefinalesrugby.fr/resultats/page_pro.php" target="_blank"> Accéder au site Internet <br>France Finales Rugby </a>
         </td>
     </tr>
     <tr>
         <td colspan="2" class="borderWidth1">
             <br />
             <p class="center colorWhite size4 style backgroundRed bold" colspan="3">
-                <a class="colorWhite" href="https://francefinalesrugby.fr/index.php" target="_blank">
+                <a class="colorWhite" href="https://francefinalesrugby.fr/resultats/page_pro.php" target="_blank">
                     ACCEDER AU SITE <br> INTERNET </a>
             </p>
             <br>

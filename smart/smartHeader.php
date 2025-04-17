@@ -4,6 +4,9 @@ switch ($page) {
     case "actualites":
         $titre = "Actualités";
         break;
+        case "actualites2":
+            $titre = "Suivi du champ de France";
+            break;
     case "champions":
         $titre = "Champions de l'année";
         break;

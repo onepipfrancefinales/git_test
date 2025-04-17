@@ -2,6 +2,9 @@
 
  <?php
   switch ($page) {
+    case "actualites2":
+      require '../admin/analyseSaison/suiviSaison.php';
+      break;
     case "actualites":
       require '../dossiers/actualites/actualites.php';
       break;

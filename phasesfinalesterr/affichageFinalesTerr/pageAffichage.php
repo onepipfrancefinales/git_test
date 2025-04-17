@@ -405,7 +405,10 @@ $somme = $somme1+$somme2;
 			{ $somme=$donnees['type'];	}
 	//echo "<br />";echo "somme 2 : ".$somme;echo "<br />";
 	//echo $division;
-				if ($somme==14 )
+
+				if ($somme==12)
+				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/fauxQuarts.php");}
+			elseif ($somme==14)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/quart.php");}
 			elseif ($somme==20)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/quartAR.php");}

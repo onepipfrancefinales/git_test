@@ -90,7 +90,7 @@ quarts($bdcomiteClub, $division, $annee, $bdd);
     <td width="30">&nbsp;</td>
     <td width="21">&nbsp;</td>
     <td width="160" align="left"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php//	 echo $demi1; ?>
+      <?php //	 echo $demi1; ?>
       </strong></i></b></font> </td>
     <td width="30"> </td>
     <td width="22">&nbsp;</td>
@@ -188,7 +188,7 @@ quarts($bdcomiteClub, $division, $annee, $bdd);
     <td width="30">&nbsp;</td>
     <td width="22">&nbsp;</td>
     <td width="160"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php// echo $finale; ?>
+      <?php // echo $finale; ?>
       </strong></i></b></font> </td>
     <td width="30"> </td>
     <td width="21">&nbsp;</td>
@@ -267,7 +267,7 @@ quarts($bdcomiteClub, $division, $annee, $bdd);
     <td width="160" height="6" align="left"></td>
     <td width="30" height="6">&nbsp;</td>
     <td colspan="4"> 
-      <?php logo ($bdcomiteClub, $champion); ?>
+      <?php logo ($bdcomiteClub, $champion, $bdd); ?>
     </td>
   </tr>
   <tr> 
@@ -313,7 +313,7 @@ quarts($bdcomiteClub, $division, $annee, $bdd);
     <td width="30" height="18">&nbsp;</td>
     <td width="21" height="18">&nbsp;</td>
     <td width="160" align="left" height="18"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong> 
-      <?php// echo $demi2; ?>
+      <?php // echo $demi2; ?>
       </strong></i></b></font></td>
     <td width="30" height="18">&nbsp;</td>
     <td height="18" colspan="4"> 

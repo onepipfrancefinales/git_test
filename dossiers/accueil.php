@@ -6,6 +6,17 @@
     <a class="colorWhite"  style="text-decoration: none" href="dossiers/actualites/pageActualites.php">Actualités </a>
   </td>
   </tr>
+  <!--
+  <tr>
+    <td colspan="2" class="borderWidth1 ">
+      <br>
+      <p class="size4">
+        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php">Suivi des équipes engagées en championnat de france<br >(par ligue ou par anciens comités territoriaux)</a>
+      </p>
+      <br>
+    </td>
+  </tr>
+-->
   <tr>
     <td colspan="2" class="borderWidth1 ">
       <br>
