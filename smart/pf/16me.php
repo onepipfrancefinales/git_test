@@ -78,7 +78,6 @@
   </tr>
 </table>
 
-<p class="marginAuto"><?php	include ("../../pub/pub20.php");?></p>
 
 <table   class="borderNone width90PC marginAuto">
   <tr> 

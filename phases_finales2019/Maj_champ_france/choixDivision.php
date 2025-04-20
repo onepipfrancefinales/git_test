@@ -1,26 +1,20 @@
 <script language="JavaScript">
-<!--
-<!--
+
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-// -->
+
 
 function MM_jumpMenu(targ,selObj,restore){ //v3.0
   eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
   if (restore) selObj.selectedIndex=0;
 }
-//-->
+
 </script>
 <?php
-
-//if (isset($_GET['page'])) $page = $_GET['page']; else $page ="-";
-//echo $page;
-
-
 if ($page == "equipes")
 	$ad = "../../Maj_champ_france/majClubs/saisieEquipe.php" ;
 elseif ($page == "scores")

@@ -139,7 +139,6 @@ if (isset ($typeBarrage)) $typeBarrage = $typeBarrage; else $typeBarrage =false;
 		{	
 			demiAR2019 ($comite, $division, $annee, $bdd);
 			afficheLieux ($division, $annee, $comite, $bdd);
-			echo $D2000; 
 
 			champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 			require ("test3.php");		

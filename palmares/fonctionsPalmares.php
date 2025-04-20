@@ -618,7 +618,7 @@ function chgmntNomDivision($division, $base, $bdd, $smart)
 
 		
 	//*************************************************************************** */
-	//    Periode 1 ---intervalle entre le creation et le 1er chahgement de nom   */
+	//    Periode 1 ---intervalle entre le creation et le 1er changement de nom   */
 	//*************************************************************************** */	
 
 

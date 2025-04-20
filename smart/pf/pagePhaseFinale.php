@@ -60,7 +60,9 @@
  	<div class="container">
  		<br><br><br><br><br><br><br><br>
  		<?php
-			//**************  Exceptions affichage Double championnat sur une même page (Ex : feminines) *************************	
+		    //*******************************************************************************************************************//
+			//**************  Exceptions : affichage Double championnat sur une même page (Ex : feminines) ************************//
+			//*******************************************************************************************************************//
 
 			if ($division == 280) {
 				$champ = "280";
@@ -124,6 +126,9 @@
 			
 			//***************** Feminines Fédérale 1   ***********************
 			elseif ($division == 290) {
+
+
+
 				$champ = "290";
 				echo "<h1 class=\"center  styleArial\">Féminines Fédérale 1 </h1>";
 
@@ -166,8 +171,16 @@
 				//************ Feminines Fédérale 2  ************************/
 
 				echo "<h1 class=\"center styleArial\">Féminines Fédérale 2 </h1>";
+
+				$clubA8012="99999";
 				trenteDeuxieme2019(295, $annee, $bdd);
 				$champ = "295";
+
+				/*	16me / 16meAR / Pas de 16me*/
+				if (substr($type, 3, 2) == '32')
+				require '16meAR.php';
+				elseif (substr($type, 3, 2) == '16')
+				require '16me.php';
 
 				/*	8me / 8meAR / Pas de 8me */
 
@@ -223,47 +236,10 @@
 				}
 				// *************    insertion de barrages   ********************************
 
-/*
-if ($division == 160 and $annee == 2024) {
-	echo "test";
-	$test = 8;
-	/*
-require 'barrages10.php';
-if ($division == 260 and $annee == 2024)
-require 'barrages10.php';
+	global $division2;
+	if (rechercheBarrages($division, $annee, $bdd))
+	require "barrages11.php";	
 
-				
-				if (substr($type, 0, 1) == '7') {
-				//	echo  "division : ".$division; echo "<br>";
-				$divisionBarrage = $division + 7000  ;
-			//	echo  "divisionBarrage : ".$divisionBarrage; echo "<br>";
-
-
-			$res = $bdd->query("SELECT type
-			FROM bdpffrance 
-			WHERE id='$divisionBarrage' 
-			AND saison='$annee' 
-			 ");
-*/
-//while ($row = $res->fetch()) {
-// $typebarrage = $row[0];
-//}
- //echo $typebarrage;echo "<br>";	
-//trenteDeuxieme2019(7160, 2024, $bdd);
-				//	if (substr($typebarrage, 9, 2) == 32)
-				//		require 'barrages16.php';
-				//	else if (substr($typebarrage, 9, 2)== 20) {
-				//		echo "barrages10";
-				//		require 'barrages10.php';
-				//		echo "<br>";	
-				//	}
-				//	else if (substr($typebarrage, 9, 2 ) == 16)
-				//		require 'barrages8.php';	
-				//}
-
-	//		}
-
-			
 				// ***************   phases réguliéres   ********************************
 
 					trenteDeuxieme2019($division, $annee, $bdd);

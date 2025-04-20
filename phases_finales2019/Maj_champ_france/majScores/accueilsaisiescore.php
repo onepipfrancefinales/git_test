@@ -40,7 +40,7 @@ $reponse = $bdd->query("SELECT type
 
 $adresse="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
 $ad="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
-//$page == "scores";
+
 ?>
 
 <br>
@@ -167,6 +167,7 @@ $ad="/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
       <div align="center"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><br>
         <select name="select" onChange="MM_jumpMenu('parent',this,0)" size="1">
           <option selected>Choix de la phase</option>
+          <option value="<?php echo $adresse;?>?division=<?php echo $division; ?>&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>&phase=64"><b>Barrages </b></option>
           <option value="<?php echo $adresse;?>?division=<?php echo $division; ?>&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>&phase=32"><b>32me de finale </b></option>
           <option value="<?php echo $adresse;?>?division=<?php echo $division; ?>&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>&phase=16"><b>16me de finale </b></option>
           <option value="<?php echo $adresse;?>?division=<?php echo $division; ?>&annee=<?php echo $annee; ?>&type=<?php echo $type; ?>&phase=8"><b>8me de finale </b></option>
@@ -272,9 +273,7 @@ elseif ($phase == '8')
 elseif ($phase == '16')
 {$debut =1601; $fin = 1633; $position = 3; $resultat="16";$table = 'bdpffrance_2';}
 elseif ($phase == '32')
-{$debut =3201;$fin = 3265;	$position = 1; $resultat="32"; $table = 'bdpffrance';;
-//$bdpfAnnee ="bdpf".$annee;
-}
+{$debut =3201;$fin = 3265;	$position = 1; $resultat="32"; $table = 'bdpffrance';}
 require "../../../connect/connexion1.php";	
 /*
 
@@ -285,12 +284,30 @@ echo "type : ".$type;echo "<br/>";
 echo "position : ".$position;echo "<br/>";
 
 
-echo "*********";echo "<br/>";
+echo "****  BARRAGES *****";echo "<br/>";
 */
+$tabScoresBarrages=array();
+if (substr($division,0,1)==7) {
+  
+  barragesEquipes($type, $division, $annee, $bdd);
 
-if ((substr($type,$position,2) == $resultat ) or substr($division,0,1)==7)
+$fin = 3200 + substr($type,-2);
+
+  echo "début : ". "3201"; echo "<br/>";
+  echo "fin : ".$fin. "<br/>";
+  echo "annee : ".$annee; echo "<br/>";
+  echo "division : ".$division;echo "<br/>";
+  echo "type : ".$type;echo "<br/>";
+
+}
+
+
+
+
+
+else if ((substr($type,$position,2) == $resultat ) )
 {
-//***************  R�cup�ration des r�sultats - Qualification sur une rencontre ****************************
+//***************  Récupération des résultats - Qualification sur une rencontre ****************************
 									
 $tabScores[]=array();
 echo "***************   ALLER SIMPLE   *****************";	echo "<br/>";	
@@ -319,7 +336,7 @@ else
  
  //***************  Qualification sur un  match Aller-Retour ****************************
 							
- //***************  R�cup�ration des r�sultats ALLER - Scores ALLER  (Goalverage) *******
+ //***************  Récupération des résultats ALLER - Scores ALLER  (Goalverage) *******
 	echo "***************   ALLER RETOUR   *****************";	echo "<br />";	
 	
 	echo "debut : ".$debut;echo "<br />";
@@ -342,7 +359,7 @@ echo "division : ".$division;echo "<br/>";
 		}
 	}
 	 
- //***************  R�cup�ration des r�sultats ALLER - Points terrain ALLER  (Pts terrain) *******
+ //***************  Récupération des résultats ALLER - Points terrain ALLER  (Pts terrain) *******
 
 	$division = $division +1;							
 	$tabPtsAller[]=array();
@@ -358,7 +375,7 @@ echo "division : ".$division;echo "<br/>";
 		}	
 	}
 	
-//***************  R�cup�ration des r�sultats RETOUR - Points terrain RETOUR  (Pts terrain)   ****************************
+//***************  Récupération des résultats RETOUR - Points terrain RETOUR  (Pts terrain)   ****************************
 
 	$division = $division +1;								
 	$tabScoresRetour[]=array();
@@ -376,7 +393,7 @@ echo "division : ".$division;echo "<br/>";
 		}		
 	}						 
 	 	 
- //***************  R�cup�ration des r�sultats RETOUR - Scores RETOUR  (Goalverage) ****************************
+ //***************  Récupération des résultats RETOUR - Scores RETOUR  (Goalverage) ****************************
 
 	$division = $division +1;
 	$tabPtsRetour[]=array();

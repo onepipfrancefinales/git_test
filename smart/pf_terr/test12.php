@@ -1,6 +1,6 @@
 <table class ="center borderWidth1 width95PC">
   <tr> 
-    <td class="titre">Demi finale</td>
+    <td class="titre">Demi finale<br><span class="center size2 bold italic styleArial"><?php echo $D2000; ?></span></td>
   </tr>
 </table>
 <table  class ="center width95PC borderNone">
@@ -34,7 +34,7 @@
 
 <table class ="center borderWidth1 width95PC">
   <tr> 
-    <td class="titre">Finale</td>
+    <td class="titre">Finale<br><span class="center size2 bold italic styleArial"><?php echo $D1000; ?></span></td>
   </tr>
 </table>
 <table  class ="center width95PC borderNone">

@@ -18,12 +18,63 @@ require ("../../../connect/connexion1.php");
 //$bdpfAnnee = "bdpf".$annee;
 
 
+//********** Barrages ********************		 
+if (substr($division,0,1)==7)	{	
+echo" azerty";
+	echo  "test".$clubA3201;echo  "test".$clubA3202;echo  "test".$clubA3203;echo  "test".$clubA3204;
+	echo  "test".$clubA6401;echo  "test".$club64202;echo  "test".$clubA6403;echo  "test".$clubA6404;
+	echo "<br>";echo "<br>";
+	echo  $tabClubs[0]; echo  $tabClubs[1];
+	
+	for ($i=1; $i<10; $i++)
+		{ 
+		$clubA="clubA320".$i;
+		if (isset($_POST[$clubA]))  ${"clubA320".($i)}= $_POST[$clubA];else   ${"clubA320".($i)} ="-";
+		}
+	for ($i=10; $i<65; $i++)
+		{ 
+		$clubA="clubA32".$i;
+		if (isset($_POST[$clubA]))   ${"clubA32".($i)} = $_POST[$clubA];else   ${"clubA32".($i)} ="-";
+		}
+
+	$requete=$bdd->exec("	UPDATE bdpffrance
+            		SET  E01='$clubA3201', E02='$clubA3202', E03='$clubA3203', E04='$clubA3204',
+						 E05='$clubA3205', E06='$clubA3206', E07='$clubA3207', E08='$clubA3208',
+						 E09='$clubA3209', E10='$clubA3210', E11='$clubA3211', E12='$clubA3212',
+						 E13='$clubA3213', E14='$clubA3214', E15='$clubA3215', E16='$clubA3216'
+						 
+						 
+					/*	 
+						 ,
+						 
+						 E17='$clubA6417', E18='$clubA6418', E19='$clubA6419', E20='$clubA6420',
+						 E21='$clubA6421', E22='$clubA6422', E23='$clubA6423', E24='$clubA6424',
+						 E25='$clubA6425', E26='$clubA6426', E27='$clubA6427', E28='$clubA6428',
+						 E29='$clubA6429', E30='$clubA6430', E31='$clubA6431', E32='$clubA6432',
+						 
+						 E33='$clubA6433', E34='$clubA6434', E35='$clubA6435', E36='$clubA6436',
+						 E37='$clubA6437', E38='$clubA6438', E39='$clubA6439', E40='$clubA6440',
+						 E41='$clubA6441', E42='$clubA6442', E43='$clubA6443', E44='$clubA6444',
+						 E45='$clubA6445', E46='$clubA6446', E47='$clubA6447', E48='$clubA6448',
+						 
+						 E49='$clubA6449', E50='$clubA6450', E51='$clubA6451', E52='$clubA6452',
+						 E53='$clubA6453', E54='$clubA6454', E55='$clubA6455', E56='$clubA6456',
+						 E57='$clubA6457', E58='$clubA6458', E59='$clubA6459', E60='$clubA6460',
+						 E61='$clubA6461', E62='$clubA6462', E63='$clubA6463', E64='$clubA6464'
+	*/
+					WHERE id = '$division' and saison = '$annee'");			
+	
+echo "tesst2";
+
+}
+
+
 //********** 32me de finale (32) ********************		 
 if (substr ($type,1,2) == '32' or substr ($type,1,2) == '64')
 	{	
 	for ($i=1; $i<10; $i++)
 		{ 
-		$clubA="clubA320".$i;
+		$clubA ="clubA320".$i;
 		if (isset($_POST[$clubA]))   ${"clubA320".($i)} = $_POST[$clubA];else   ${"clubA320".($i)} ="-";
 		}
 	for ($i=10; $i<65; $i++)

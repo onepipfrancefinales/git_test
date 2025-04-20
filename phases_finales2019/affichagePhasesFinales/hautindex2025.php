@@ -15,7 +15,7 @@
     <td><div class="equipeIfed"><a href="pagePhaseFinale.php?division=160&annee=<?php echo $annee;?>" target="_top">Fédérale 3</a></div></td>
     <td><div class="equipeII"><a href="pagePhaseFinale.php?&division=225&annee=<?php echo $annee;?>" target="_top">Espoirs Elites</a></div></td>
     <td><div class="equipeII"><a href="pagePhaseFinale.php?division=230&annee=<?php echo $annee;?>" target="_top">Espoirs Nationaux</a></div></td>
-    <td><div class="equipeII"><a href="pagePhaseFinale.php?division=240&annee=<?php echo $annee;?>" target="_top">Espoirs Féd</a></div></td>
+    <td><div class="equipeII"><a href="pagePhaseFinale.php?division=245&annee=<?php echo $annee;?>" target="_top">Espoirs Féd</a></div></td>
     <td><div class="equipeII"><a href="pagePhaseFinale.php?division=250&annee=<?php echo $annee;?>" target="_top">Fédérale B </a></div></td>
     <td><div class="equipeII"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $annee;?>" target="_top">Excellence B</a></div></td>
     <td><div class="equipeII"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $annee;?>" target="_top">Réserve R1</a></div></td>

@@ -31,17 +31,60 @@ if ( isset ($_GET['annee'])) $annee=$_GET['annee']; else $annee="non d�clar�
 	echo "<br />";
 	
 require '../../../connect/connexion1.php';
- 
+//*******************************************************************
+//**************   Barrages  ********************
+//*******************************************************************
+if (substr ($division,0,1)== 7 ) {
+	echo "test4";
+
+
+
+echo "01".$A3201. "<br />";
+echo "01".$A3202. "<br />";
+echo "01".$A3203. "<br />";
+
+echo "01".$A3221. "<br />";
+echo "01".$A3222. "<br />";
+echo "01".$A3223. "<br />";
+
+
+$max = 3200 + substr ($type,-2);
+echo "max : ".$max;
+
+	for($i=3201; $i<= $max; $i++){
+	 $score="A".$i; 
+	 
+	 if (isset($_POST[$score])) ${"A".($i)} = $_POST[$score];
+	// echo  $score.' = '.${"A".($i)};echo "<br />";
+	 
+	 $requete=$bdd->exec("UPDATE bdpffrance
+						  SET  $score = '${"A".($i)}'
+						  WHERE id = '$division' and saison='$annee'") ;
+	}
+	
+	if($requete)	
+	{
+	echo("La modification (".$division.") a été correctement effectuée");
+	echo "<br />";
+	}
+	else{
+	echo("La modification (".$division.") a échoué") ;
+	echo "<br />";
+	}		
+}
+
+
+
   
 //*******************************************************************
-//**************    trente deuxi�me de Finale    ********************
+//**************    trente deuxiéme de Finale    ********************
 //*******************************************************************
 
-// les scores des 32me sont ins�r�s dans la table bdpffrance (avec les nom des equipes)
-// les scores  des  16me, 8me quarts demi et finale sont ins�r�s dans la table bdpffrance_2
+// les scores des 32me et des barrages sont insérés dans la table bdpffrance (avec les nom des equipes)
+// les scores  des  16me, 8me quarts demi et finale sont insérés dans la table bdpffrance_2
 
 if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32')	{	
-	if (substr ($type,1,2 ) == "32" or substr($division,0,1)==7){
+	if (substr ($type,1,2 ) == "32" ){
 		for($i=3201; $i<3265; $i++){
 		 $score="A".$i; 
 		 
@@ -65,7 +108,7 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 	}
 	else{
 		 //*******************************************************************
-		 //**************    trente deuxi�me de Finale  (A/R)  ********************
+		 //**************    trente deuxième de Finale  (A/R)  ********************
 		 //*******************************************************************
 		
 		 //********   GA aller   *********
@@ -75,7 +118,7 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 			 if (isset($_POST[$score])) ${"A".($i)} = $_POST[$score]; else $_POST[$score] =0;
 		
 			 $requete=$bdd->exec("UPDATE bdpffrance
-								 SET  $scoreA= '${"A".($i)}'
+								 SET  $scoreA= '${"A".$i}'
 								 WHERE id = '$division' AND saison='$annee' ") ;
 			}
 		 suiviDuTraitement($division, $requete);
@@ -101,7 +144,7 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 		 if (isset($_POST[$score])) ${"R".($i)} = $_POST[$score];else $_POST[$score] =0;
 		 
 		 $requete=$bdd->exec("UPDATE bdpffrance
-							  SET  $scoreR= '${"R".($i)}'
+							  SET  $scoreR = '${"R".($i)}'
 							  WHERE id = '$division' AND saison='$annee' " );
 		}
 	 suiviDuTraitement($division, $requete);			
@@ -128,7 +171,7 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 //*********************************************************
 		
 elseif ((substr ($type,3,2) == "16" or	substr ($type,3,2) == "32")	 and $phase == '16'){
-	if (substr ($type,3,2) == "16" or substr($division,0,1)==7){ 
+	if (substr ($type,3,2) == "16" ){ 
 		for($i=1601; $i<1633; $i++){
 		 $score="A".$i; 
 		 
@@ -217,7 +260,7 @@ elseif ((substr ($type,3,2) == "16" or	substr ($type,3,2) == "32")	 and $phase =
 
 elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase == '8')			
 {	
-	if (substr ($type,5,2) == "08" or substr($division,0,1)==7)	
+	if (substr ($type,5,2) == "08" )	
 	{
 		for($i=8001; $i<8017; $i++)	
 		{

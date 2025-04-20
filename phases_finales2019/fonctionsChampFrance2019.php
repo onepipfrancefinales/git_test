@@ -262,11 +262,155 @@ function accessMatch ($division, $annee, $bdd) {
 //***********************************************************************
 //***********************************************************************
 //**                                                                   **
+//**    ----------    Barrages         ------------   **
+//**																   **
+//***********************************************************************
+//*********************************************************************** 
+function barragesEquipes($typeBarrage, $divisionBarrage, $annee, $bdd)
+ {
+	
+  GLOBAL $nbreEquipes;
+  $nbreEquipes = substr($typeBarrage,-2);
+  $max = 6400 + $nbreEquipes;
+  $tabIdB = array();
+  $tabNomEquipesB = array();
+  $tabCodeLigueB = array();
+  $listeEquipes = array();
+
+
+  for ($i = 6401; $i <= $max; $i++) {
+    GLOBAL ${"clubA".$i};
+      }
+  
+  
+  if ($nbreEquipes <=  10) {
+    for ($j = 1; $j <= $nbreEquipes; $j++) {
+      array_push($listeEquipes, "E0" . $j);
+    }
+  } else {
+    for ($j = 1; $j <= 9; $j++) {
+      array_push($listeEquipes, "E0" . $j);
+    }
+  
+    for ($j = 10; $j <= $nbreEquipes; $j++) {
+      array_push($listeEquipes, "E" . $j);
+    }
+  }
+  
+  
+  foreach ($listeEquipes as $equipe) {
+    $reponse = $bdd->query("	
+          SELECT bdclubs.id, bdclubs.nom_1, bdclubs.ligue 
+          FROM bdclubs, bdpffrance
+          WHERE bdclubs.id=bdpffrance.$equipe
+          AND bdpffrance.id= '$divisionBarrage' AND bdpffrance.saison = '$annee'");
+  
+    while ($row = $reponse->fetch()) {
+      $tabIdB[] = $row[0];
+      $tabNomEquipesB[] = $row[1];
+      $tabCodeLigueB[] = $row[2];
+    }
+  }
+  
+  
+  for ($i = 0; $i <= 11; $i++) {
+    $reponse = $bdd->query("	SELECT sigle 
+                            FROM bdligue 
+                            WHERE id='$tabCodeLigueB[$i]'");
+    while ($row = $reponse->fetch()) {
+      $tabNomLigue2[] = $row[0];
+    }
+    ${"clubA640" . $i + 1} = $tabNomEquipesB[$i] . " " . "(" . $tabNomLigue2[$i] . ")";
+  }
+  
+  for ($i = 9; $i < 65; $i++) {
+    ${"clubA64" . $i + 1} = $tabNomEquipesB[$i] . " " . $tabNomLigue2[$i];
+  }
+
+
+
+ }
+
+ function barragesScores($typeBarrage, $divisionBarrage, $annee, $bdd)
+ {
+
+
+  $nbreEquipes = substr($typeBarrage,-2);
+  $max =  $nbreEquipes + 6400;
+  $listeScores = array();
+  $tabScoreB = array();
+
+
+
+  for ($i = 6401; $i <= $max; $i++) {
+GLOBAL ${"A".$i};
+  }
+  
+  if ($nbreEquipes <=  10) {
+  for ($j = 1; $j <= $nbreEquipes; $j++) {
+    array_push($listeScores, "A320" . $j);
+  }
+  }
+  else
+  {
+    for ($j = 1; $j <= 9; $j++) {
+      array_push($listeScores, "A320" . $j);
+    }
+  for ($j = 10; $j <= $nbreEquipes; $j++) {
+    array_push($listeScores, "A32" . $j);
+  }
+  }
+  
+  
+  foreach ($listeScores as $score) {
+    $reponse = $bdd->query("	
+                            SELECT $score
+                            FROM  bdpffrance
+                            WHERE id = '$divisionBarrage' AND saison = '$annee'");
+  
+    while ($row = $reponse->fetch()) {
+      $tabScoreB[] = $row[0];
+    }
+  }
+  
+  for ($i = 0; $i < 10; $i++) {
+    ${"A640" . $i + 1} = $tabScoreB[$i];
+  }
+  for ($i = 9; $i < 65; $i++) {
+    ${"A64" . $i + 1} = $tabScoreB[$i];
+  }
+ }
+
+ function rechercheBarrages($division, $annee, $bdd)
+{  
+	
+	GLOBAL $typeBarrage, $divisionBarrage;
+  $division2 = 7000 + $division;
+ 
+  $reponse = $bdd->query("	SELECT type ,id
+                          FROM  bdpffrance
+                          WHERE id = '$division2' AND saison = '$annee'");
+
+  while ($row = $reponse->fetch()) {
+    $typeBarrage = $row[0];
+	$divisionBarrage = $row[1];
+  }
+
+  if ($typeBarrage > 0)
+  return true;
+else false;
+
+}
+
+
+
+//***********************************************************************
+//***********************************************************************
+//**                                                                   **
 //**    ----------    TRENTE DEUXIEME DE FINALE         ------------   **
 //**																   **
 //***********************************************************************
 //*********************************************************************** 
-
 
 function trenteDeuxieme2019 ($division, $annee, $bdd)
 {		

@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <link rel="stylesheet" type="text/css" href="../maj.css">
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
@@ -13,16 +13,46 @@ $annee=$_GET['annee'];
 $type=$_GET['type'];
 $phase=$_GET['phase']; 
  
-if ( isset ($_GET['type'])) $type=$_GET['type']; else $type="non déclarée";
-if ( isset ($id)) $ide=$id; else $id="non déclarée";?>
+if ( isset ($_GET['type'])) $type=$_GET['type']; else $type="non dÃ©clarÃ©e";
+if ( isset ($id)) $ide=$id; else $id="non dÃ©clarÃ©e";?>
 
 <form name="insertion" action="enregScores.php?phase=<?php echo $phase; ?>&division=<?php echo $division ;?>&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>" method="POST">
 
 <?php
-if ($phase == 32){
-	if (substr ($type,1,2) == "32" or substr($division,0,1)==7){
+
+if($phase == 64) {
+	?>
+	<input type="hidden" name="division" value="<?php echo($division) ;?>">
+	<header><h1>BARRAGES<?php echo '('.$division.') '.$annee; ?></h1></header>
+	  
+	<?php 
+	echo "type2". $type; echo "<br>";
+barragesScores($type, $division, $annee, $bdd);
+barragesEquipes($type, $division, $annee, $bdd);
+
+	$maxEquipes = 3200 +  substr($type,-2);
+	$maxEquipesClub = 6400 +  substr($type,-2);
+	$debut= 3201; $fin = $maxEquipes; $iMin= substr($debut, -1 , 1); $iMax= substr($fin, -2, 2); $numeroMatchMax=33;
+	$debutClub= 6401; $finClub = $maxEquipesClub;
+	for ($numeroMatch = 1               ,  $i = $iMin  ,   $clubs = $debutClub ,         $clubsScores = $debut; 
+		 $numeroMatch < $numeroMatchMax ,  $i < $iMax  ,   $clubs < $finClub ,  		  $clubsScores < $fin; 
+		 $numeroMatch++                 ,  $i=$i+2     ,   $clubs=$clubs+2 ,  $clubsScores=$clubsScores+2)
+	   {
+		?>
+		<h3><?php  echo $numeroMatch;?></h3>
+		<h2><?php  echo ${"clubA".$clubs}; ?></h2>
+		<h2><?php  echo ${"clubA".($clubs+1)}; ?></h2>
+		<h4></h4>
+		<input type="text" name="<?php echo "A".$clubsScores;?>"     value="<?php echo ${"A".$clubsScores};?>">
+		<input type="text" name="<?php echo "A".($clubsScores+1);?>" value="<?php echo ${"A".($clubsScores+1)};?>">
+		<?php
+	   } 
+
+}
+elseif ($phase == 32){
+	if (substr ($type,1,2) == "32" ){
 	 ?>
-	 <!----------------- trente deuxième de finale ----------------->	  
+	 <!----------------- trente deuxiÃ¨me de finale ----------------->	  
    
 	 <input type="hidden" name="division" value="<?php echo($division) ;?>">
 	 <header><h1>TRENTE-DEUXIEME DE FINALE<?php echo '('.$division.') '.$annee; ?></h1></header>
@@ -45,7 +75,7 @@ if ($phase == 32){
 	}
 else{
 	 ?>	
-	 <!----------------- trente deuxième de finale  (AR)----------------->
+	 <!----------------- trente deuxiÃ¨me de finale  (AR)----------------->
 
 	 <header> <h1> TRENTE-DEUXIEME DE FINALE  (AR)<?php echo "(".$division.") ".$annee; ?></h1></header>
 	 <input type="hidden" name="division" value="<?php echo($division) ;?>">    
@@ -70,7 +100,7 @@ else{
 		 <?php
 		}
 	
-	// --- Phase Retour 32me --->
+	 // --- Phase Retour 32me --->
 	 echo "<hr />";
 	 $phase = "Retour";
 	 $debut= 3201; $fin = 3265; $iMin= substr($debut, -1 , 1); $iMax= substr($fin, -2, 2); $numeroMatchMax=32;
@@ -94,9 +124,9 @@ else{
 }
 
 elseif ($phase == 16){
-	if (substr ($type,3,2) == "16" or substr($division,0,1)==7){
+	if (substr ($type,3,2) == "16"){
 	 ?>
-	 <!----------------- Seizième de finale ----------------->	
+	 <!----------------- SeiziÃ¨me de finale ----------------->	
 
 	 <input type="hidden" name="division" value="<?php echo($division) ;?>">
 	 <header><h1>SEIZIEME DE FINALE <?php echo '('.$division.') '.$annee; ?></h1></header>
@@ -120,7 +150,7 @@ elseif ($phase == 16){
 	else{
 		?>
 		
-	  <!----------------- Seizième de finale (AR)----------------->
+	  <!----------------- SeiziÃ¨me de finale (AR)----------------->
 
 	 <header> <h1> SEIZIEME DE FINALE  (AR)<?php echo "(".$division.") ".$annee; ?></h1></header>
 	 <input type="hidden" name="division" value="<?php echo($division) ;?>">    
@@ -168,9 +198,9 @@ elseif ($phase == 16){
 	}	
 }
 elseif ($phase == 8){
-	if (substr ($type,5,2) == "08" or substr($division,0,1)==7){
+	if (substr ($type,5,2) == "08" ){
 	 ?>
-	 <!----------------- Huitième de finale ----------------->
+	 <!----------------- HuitiÃ¨me de finale ----------------->
 	  
 	 <input type="hidden" name="division" value="<?php echo($division) ;?>">
 	 <header><h1>HUITIEME DE FINALE <?php echo "(".$division.") ".$annee; ?></h1></header>
@@ -193,7 +223,7 @@ elseif ($phase == 8){
 	}
 	else{
 	?>
-	  <!----------------- Huitième de finale (AR)----------------->
+	  <!----------------- HuitiÃ¨me de finale (AR)----------------->
 
 	 <header> <h1> HUITIEME DE FINALE  (AR)<?php echo "(".$division.") ".$annee; ?></h1></header>
 	 <input type="hidden" name="division" value="<?php echo($division) ;?>">    

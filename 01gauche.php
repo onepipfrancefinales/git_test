@@ -86,7 +86,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           <option value="/palmares/palmNational/pageentreprise.php">-------------------</option>
           <option> EQUIPES II </option>
           <option value="/palmares/palmNational/pageentreprise.php">-------------------</option>
-          <option value="/palmares/palmNational/pagePalmares.php?division=235">Espoirs Elites</option>
+          <option value="/palmares/palmNational/pagePalmares.php?division=225">Espoirs Elites</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=232">Espoirs Nationaux</option>
           <option value="/palmares/palmNational/pagePalmares.php?division=245">Espoirs Fédéraux</option>
           <option> -------- </option>

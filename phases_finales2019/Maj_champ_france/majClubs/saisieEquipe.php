@@ -73,7 +73,7 @@ trenteDeuxieme2019 ($division, $annee, $bdd);
 
 <?php
 
-$tabClubs[]=array();
+$tabClubs=array();
 // Récupération des Equipes de 1 à 9 
 // inscrites en base de données	
 for ($i=01; $i<10; $i++)
@@ -104,7 +104,7 @@ for ($i=01; $i<10; $i++)
 	 $reponse = $bdd->query("
 			SELECT  $clubs
 			FROM   bdpffrance
-			WHERE  id = $division AND saison=$annee");
+			WHERE  id = $division AND saison = $annee");
 									
 	 while ($row = $reponse->fetch())
 		{
