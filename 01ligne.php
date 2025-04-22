@@ -10,7 +10,7 @@
    </tr>
    <tr class="ligneNoireLight"> 
     <td class = "none" colspan="4"  ><a href="/resultats/page_resultats.php">Résultats & classements</a></td>
-    <td class = "none" colspan="4"  ><a href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?annee=2024&division=110">Championnats de France</a></td>
+    <td class = "none" colspan="4"  ><a href="/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php?annee=2025&division=110">Championnats de France</a></td>
     <td class = "none" colspan="4" ><a href="/palmares/palmTerritorial/pagePalmares.php" target="_top">Palmarès Régionaux & Territoriaux</a></td>
    </tr>
    <tr class="ligneGrise"> 

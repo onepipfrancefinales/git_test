@@ -25,6 +25,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 
  require '../../connect/connexion1.php';
 date2019($division, $annee, $bdd);
+
 trenteDeuxieme2019 ($division, $annee, $bdd);
 nomDivision($division);
 
@@ -35,7 +36,8 @@ nomDivision($division);
 			{ 
 			$type = $row[0];
 			}
-
+//barragesEquipes($typeBarrage, $divisionBarrage, $annee, $bdd);
+//barragesScores($type, $division, $annee, $bdd);
 
 /*
 echo "type : ".$type;

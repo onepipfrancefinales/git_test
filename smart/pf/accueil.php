@@ -88,10 +88,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td class="coin45"><a href="pagePhaseFinale.php?division=280&annee=<?php echo $saison;?>">Elite 2</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $saison;?>">Fédérale 1</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $saison;?>&divFem=femFed1">Fédérale 1</a></td>
  </tr>
  <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $saison;?>">Fédérale 2</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $saison;?>&divFem=femFed2">Fédérale 2</a></td>
  </tr>
  
  <tr> 

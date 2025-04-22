@@ -9,7 +9,7 @@ if ($annee >=  2024 )
   ?>
 <table class = "width98PC marginAuto borderNone ">
   <tr>
-  <td colspan="6" class = " btnAutreSaison center "> <a class ="colorWhite" href="pagePhaseFinale.php?division=<?php echo $division;?>&annee=<?php echo $anneeLien;?>">Phases finales <?php echo $anneeLien; ?> 
+  <td colspan="6" class = " btnAutreSaison center "> <a class ="colorWhite" href="pagePhaseFinale.php?division=<?php echo $division;?>&annee=<?php echo $anneeLien;?>&divFem=<?php echo $divFem;?>">Phases finales <?php echo $anneeLien; ?> 
  </td>
   </tr>
   <tr> 
@@ -18,7 +18,7 @@ if ($annee >=  2024 )
     <td class="coin8"><a href="pagePhaseFinale.php?division=130&annee=<?php echo $annee;?>">Nat 1</a></td>
 	  <td class="coin8"><a href="pagePhaseFinale.php?division=135&annee=<?php echo $annee;?>">Nat 2</a></td>
     <td class="coin9"><a href="pagePhaseFinale.php?division=280&annee=<?php echo $annee;?>">Elites Fem</a></td>
-    <td class="coin9"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>">Féd fem</a></td>
+    <td class="coin9"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $annee;?>&divFem=femFed1">Féd fem</a></td>
   </tr>
   <tr> 
     <td class="coin8"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $annee;?>">Féd1</a></td>

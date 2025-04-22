@@ -797,6 +797,11 @@ function palmaresParDivisionParAnnee($division, $table, $anneeCreation, $anneeMa
 		$tabChampion[] = $donnees['champion'];
 		$tabComite[] = $donnees['comite1'];
 	}
+
+//echo $tabSaison[0];
+//echo $tabChampion[0];
+//echo $tabComite[0];
+
 	$periode = $anneeMax - $anneeCreation;
 	$pasDeChampionnat = "Pas de championnat";
 	$covid = "Pas de titre décerné";

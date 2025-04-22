@@ -9,16 +9,6 @@
 </head>
 
 <body bgcolor="#EAECEB" text="#000000">
-
-
-
-
- 
- 
- 
- 
- 
- 
  
  <?php
   require ("fonctionsChampFrance2019.php");  

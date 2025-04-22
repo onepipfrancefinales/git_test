@@ -123,7 +123,6 @@ while ($donnees =  $reponse->fetch()) {
 			</td>
 		</tr>
 	</table>
-
 </body>
 <footer>
 	<?php include("../../footer.php");  ?>

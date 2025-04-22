@@ -1,6 +1,6 @@
 <?php
 if ($mode != "smart")
-	$adresse = "<?php echo $adresse; ?>";
+	$adresse = "/phases_finales2019/affichagePhasesFinales/pagePhaseFinale.php";
 else {
 	$adresse = "/smart/pf/pagePhaseFinale.php";
 }
@@ -161,14 +161,6 @@ else {
 		<td class="style size4">Châteaurenard (PCA)</td>
 		<td><a href="<?php echo $adresse; ?>?division=370&annee=2024" title="Consulter les phases finales de la division"><img src="/favicon.ico"></a></td>
 	</tr>
-
-
-
-
-
-
-
-
 </table>
 
 <style>

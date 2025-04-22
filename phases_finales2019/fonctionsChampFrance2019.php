@@ -262,7 +262,7 @@ function accessMatch ($division, $annee, $bdd) {
 //***********************************************************************
 //***********************************************************************
 //**                                                                   **
-//**    ----------    Barrages         ------------   **
+//**    ----------    Barrages         ------------  				   **
 //**																   **
 //***********************************************************************
 //*********************************************************************** 
@@ -281,7 +281,6 @@ function barragesEquipes($typeBarrage, $divisionBarrage, $annee, $bdd)
   for ($i = 6401; $i <= $max; $i++) {
     GLOBAL ${"clubA".$i};
       }
-  
   
   if ($nbreEquipes <=  10) {
     for ($j = 1; $j <= $nbreEquipes; $j++) {
@@ -312,8 +311,7 @@ function barragesEquipes($typeBarrage, $divisionBarrage, $annee, $bdd)
     }
   }
   
-  
-  for ($i = 0; $i <= 11; $i++) {
+  for ($i = 0; $i <= $nbreEquipes; $i++) {
     $reponse = $bdd->query("	SELECT sigle 
                             FROM bdligue 
                             WHERE id='$tabCodeLigueB[$i]'");
@@ -324,11 +322,8 @@ function barragesEquipes($typeBarrage, $divisionBarrage, $annee, $bdd)
   }
   
   for ($i = 9; $i < 65; $i++) {
-    ${"clubA64" . $i + 1} = $tabNomEquipesB[$i] . " " . $tabNomLigue2[$i];
+    ${"clubA64" . $i + 1} = $tabNomEquipesB[$i] . " " . "(" . $tabNomLigue2[$i]. ")";
   }
-
-
-
  }
 
  function barragesScores($typeBarrage, $divisionBarrage, $annee, $bdd)
@@ -379,6 +374,13 @@ GLOBAL ${"A".$i};
   for ($i = 9; $i < 65; $i++) {
     ${"A64" . $i + 1} = $tabScoreB[$i];
   }
+
+
+for($i=6401, $j=6402; $i<6464, $j<6465; $i=$i+2, $j=$j+2) {
+	if (${"A".$i} + ${"A".$j} == 0){ ${"A".$i}="-" ; ${"A".$j}="-";}
+}
+
+//  if ($A6401 + $A6402 == 0) { $A6401 = "-"; $A6402 = "-";}
  }
 
  function rechercheBarrages($division, $annee, $bdd)
@@ -401,8 +403,6 @@ GLOBAL ${"A".$i};
 else false;
 
 }
-
-
 
 //***********************************************************************
 //***********************************************************************
@@ -604,7 +604,6 @@ else
 
 echo "<br>";
 	
-
 $prefixeEquipes1 = $prefTexte.$prefChiffre1;
 $prefixeEquipes2 = $prefTexte.$prefChiffre2;
 
