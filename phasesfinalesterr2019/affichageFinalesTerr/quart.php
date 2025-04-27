@@ -7,6 +7,7 @@ $anneeplus = $annee+1;
 require ("../../phasesfinalesterr2019/fonctionspfterrESDL2019.php");
 quarts2019($comite, $division, $annee, $bdd);
 traitementScores (4001, 4008, $bdd);
+traitementScores (1001, 1002, $bdd);
 afficheLieux ($division, $annee, $comite, $bdd);
 champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 //afficheDivisionChampion($division);
@@ -331,11 +332,7 @@ afficheDivisionChampionLigue($division,$annee);
     <td rowspan="8"><img src="../../images/accolade.png" width="8" height="121"></td>
     <td width="137"></td>
     <td width="62"></td>
-    <td colspan="2"> 
-      <div align="center"><font face="Arial, Helvetica, sans-serif" size="3"><b><i> 
-        <?php echo $division; ?>
-        </i></b></font></div>
-    </td>
+   
     <td width="50"></td>
     <td height="0" ></td>
     <td width="257"></td>

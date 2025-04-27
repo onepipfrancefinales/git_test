@@ -66,7 +66,16 @@
 		require 'bandeauNavigation.php';
 
 
-		if ($annee > 2025) {
+
+//*******    affichage des équipes engagées en championnat de France    ******/		
+$tabDivisions = array(170,180,190,270);
+if (in_array($division, $tabDivisions) and $annee== 2025) {
+	require 'equipesEngagees.php';
+}
+		
+
+
+elseif ($annee > 2025) {
 			require 'finRegionales.php';
 		} else {
 			//echo $type;	

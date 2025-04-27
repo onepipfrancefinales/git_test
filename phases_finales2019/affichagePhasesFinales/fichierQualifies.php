@@ -135,10 +135,10 @@ PCA
         $qualif3239 = false;
         $qualif3241 = false;
         $qualif3243 = false;
-        $qualif3245 = false;
-        $qualif3247 = false;
-        $qualif3249 = false;
-        $qualif3251 = false;
+        $qualif3245 = true;// Moissac
+        $qualif3247 = true;// Saint Juery
+        $qualif3249 = true;// Millas
+        $qualif3251 = true;// Pouyastruc
         $qualif3253 = false;
         $qualif3255 = false;
         $qualif3257 = false;

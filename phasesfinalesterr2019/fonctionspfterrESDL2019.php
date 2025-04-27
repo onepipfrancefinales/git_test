@@ -73,13 +73,14 @@ global $nomDivision;
 //Traiter les scores particuliers
 function traitementScores ($debut, $fin, $bdd)
 {
+
 	for ($i= $debut; $i <= $fin ; $i++)
 	{
 	global ${"A".($i)};
 	global ${"clubA".($i)};
 	global ${"A".($i)};
 
-//Qualifi� d'office
+//Qualifié d'office
 	
 	if (${"A".($i)} == '999')	{${"A".($i)}="Q"; }
 	if (${"A".($i)} == '222')   {${"A".($i)}="-"; }	
@@ -95,7 +96,7 @@ function traitementScores ($debut, $fin, $bdd)
 	//if (${"A".($i)} == '111')   {${"clubA".($i)}="-"; }	
 	//if (${"A".($i)} == '-')     {${"clubA".($i+1)}="-"; }
 	
-// Non affichage d'une �quipe
+// Non affichage d'une équipe
 	if (isset ($id8001)) $id8001=$id8001;else $id8001='';
 	if (isset ($id8002)) $id8002=$id8002;else $id8002='';
 	
@@ -1909,7 +1910,7 @@ echo "<br>";
 //**********************************************************************
 //*****  Traitement des Equipes et des résultats des demi finale ********
 //*********************************************************************
-/*
+
 global $A1001, $A1002;
 global $clubA1001, $clubA1002;
 	$tabScores = array() ;
@@ -1925,7 +1926,7 @@ global $clubA1001, $clubA1002;
 						$A1001 = $row[0];
 						$A1002 = $row[1];
 						}
-*/
+
 
 // Quarts
 if ($pts4001 + $pts4002 > 6){ 	  if ($pts4001 > $pts4002 or ($pts4001 == $pts4002 and $GA4001 > $GA4002)){	$clubA2001=$clubA4001;}	else {$clubA2001=$clubA4002;};	} else if ($pts4001 + $pts4002 > 0 and $pts4001 + $pts4002 < 6) {  $pts4001=$pts4001; $pts4002=$pts4002; $GA4001=$GA4001; $GA4002=$GA4002;} else {	$pts4001="-";$pts4002="-";$GA4001="-";$GA4002="-"; }
@@ -1961,11 +1962,6 @@ if ($A1001 + $A1002 > 0){	if ($A1001 > $A1002)	{$champion =  $clubA1001;	} else	
 	}
 	else
 	{ $A1001="-";	$A1002="-";}
-
-
-	
-
-
 }
 
 

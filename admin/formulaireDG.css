@@ -12,6 +12,9 @@
  margin-bottom:10px;
  border:1px solid #FFFFFF;
  }
+
+
+
 #legendG {
  color:#FFFFFF;
  font-weight:bold
@@ -46,3 +49,11 @@ padding:3px;
  box-shadow:1px 1px 1px #3909D8;
  cursor:pointer;
  }
+
+ .fieldsetA {
+    width:50%;
+    background-color:#a3a0a0;
+ }
+
+
+ 

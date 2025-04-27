@@ -4,6 +4,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
   if (restore) selObj.selectedIndex=0;
 }
+
 </script>
 <html>
 
@@ -21,6 +22,11 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 $adresse ="../../00copies_mel/liste/franceAB.php?suiviLigue=";
 
 ?>
+
+
+<fieldset class="fieldsetG"> <legend class="legendG" > 
+<a href="franceABGenererBdd.php" > Inserer en bdd (toutes les tables)</a>
+        </fieldset > 
 
 <fieldset class="fieldsetG"> <legend class="legendG" > 
        Suivi des équipes engagées en championnats de france 2025 par ligue </legend><br>
@@ -45,7 +51,7 @@ $adresse ="../../00copies_mel/liste/franceAB.php?suiviLigue=";
 
 <?php
 
-if (isset($_GET['suiviLigue'])) $suiviLigue = $_GET['suiviLigue'];else  $suiviLigue = "suiviChampFranceOCC";
+if (isset($_GET['suiviLigue'])) $suiviLigue = $_GET['suiviLigue'];else  $suiviLigue = "suiviChampFranceNOR";
 
 
 echo $suiviLigue;
@@ -84,7 +90,8 @@ require('../../connect/connexion1.php');
 echo "suiviLigue : ".$suiviLigue;
 $bdd->exec("TRUNCATE $suiviLigue");
 //$division = "160";
-$annee = 3024;
+//$annee = 3024;
+$annee = 2025;
 
 $pff32me = "32me de finale du champ de France";
 $pff16me = "16me de finale du champ de France";

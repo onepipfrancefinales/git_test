@@ -31,6 +31,6 @@
 </table>
 <br />
 
-<?php require 'demiAR.php'; ?>
+<?php require 'demi.php'; ?>
 <br />
 <?php require 'finale.php'; ?>

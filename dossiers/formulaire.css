@@ -16,6 +16,12 @@ fieldset {
     background-color: #003399;
 }
 
+fieldset2 {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: #6c6d70;
+}
+
 legend {
     color: #FFFFFF;
     font-weight: bold;

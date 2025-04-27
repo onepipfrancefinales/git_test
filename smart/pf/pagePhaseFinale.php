@@ -78,8 +78,13 @@
 			//*******************************************************************************************************************//
 			//**************  Exceptions : affichage Double championnat sur une même page (Ex : feminines) ************************//
 			//*******************************************************************************************************************//
-
-			if ($division == 280) {
+			$tabDivisions = array(170,180,190,270);
+			if (in_array($division, $tabDivisions) and $annee== 2025) {
+				trenteDeuxieme2019($division, $annee, $bdd);
+				require 'equipesEngagees.php';
+			
+}
+		elseif ($division == 280) {
 
 				$champ = "280";
 				echo "<h1 class=\"center  styleArial\"> Elite 1 </h1>";

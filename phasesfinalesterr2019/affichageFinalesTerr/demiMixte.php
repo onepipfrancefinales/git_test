@@ -294,7 +294,7 @@ else // type == 1
 echo "<hr />";
 
 //<!--  ***************************S1 / S4  /Res S1*************************************  -->
-echo "page mixte :".$page;
+//echo "page mixte :".$page;
 if ($page == "HPHS1") {
 
 	$division=$division+10;

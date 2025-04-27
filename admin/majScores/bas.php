@@ -118,6 +118,12 @@
       <td width="395" height="23"></td>
     </tr>
     <tr>
+      <td width="395" height="23"><a href="/00copies_mel/liste/franceAB.php">Génération des équipes engagées en champ de France</a></td>
+    </tr>
+    <tr>
+      <td width="395" height="23"></td>
+    </tr>
+    <tr>
       <td colspan="2" class="backgroundBlue colorWhite bold styleArial">
         Mise à jour des des tables
       </td>
