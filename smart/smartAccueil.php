@@ -1,23 +1,23 @@
 <table width="100% " class="borderWidth1 marginAuto">
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="smartPage.php?page=actualites&mode=smart"> Actualités</a>
+            <a class="colorWhite" href="smartPage.php?page=actualites2&mode=smart"> Actualités</a>
         </td>
     </tr>
-   <!-- 
+  
     <tr>
         <td colspan="2" class="borderWidth1 ">
             <br>
             <p class="size4">
-                <a class="colorBlack" href="smartPage.php?page=actualites2&mode=smart">Championnats de France 2025<br>
+                <a class="colorBlack" href="smartPage.php?page=actualites2&mode=smart"><span class="bold">Championnats de France 2025</span><br>
                    Suivi des clubs engagés en championnat de France par ligues ou par comités </a>
             </p>
             <br>
         </td>
     </tr>
     
---> 
-    
+
+  <!--    
     <tr>
         <td colspan="2" class="borderWidth1 ">
             <br>
@@ -29,7 +29,7 @@
         </td>
     </tr>
   
-    
+   -->  
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
             <a class="colorWhite" href="/smart/sommaireOrigine.php">Résultats & <br> Classements</a>

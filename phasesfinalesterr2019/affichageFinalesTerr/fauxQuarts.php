@@ -11,6 +11,11 @@ afficheLieux ($division, $annee, $comite, $bdd);
 champion ($comite, $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 //afficheDivisionChampion($division);
 afficheDivisionChampionLigue($division,$annee);
+
+if ($somme = 11) {
+$clubA1001 = $clubA2001;
+$clubA1002 = $clubA2003;
+}
 ?>
 
 
@@ -62,8 +67,8 @@ afficheDivisionChampionLigue($division,$annee);
   <tr> 
     <td width="29"></td>
     <td width="139"></td>
-    <td width="144">&nbsp;</td>
-    <td width="73">&nbsp;</td>
+    <td width="144"></td>
+    <td width="73"></td>
     <td width="70"></td>
     <td width="137"></td>
     <td width="62"></td>
@@ -124,12 +129,12 @@ afficheDivisionChampionLigue($division,$annee);
     <td width="73"></td>
     <td width="137"> 
       <div class="affichageEquipe" > 
-        <?php echo $clubA2001; ?>
+        <?php if ($somme==12 ) echo $clubA2001; else echo "-" ?>
       </div>
     </td>
     <td width="62"> 
       <div class="affichageGA" > 
-        <?php echo $A2001; ?>
+        <?php if ($somme==12 ) echo $A2001;  else echo "-"?>
       </div>
     </td>
     <td rowspan="15"><img src="../../images/accolade.png" width="8" height="228"> 
@@ -147,12 +152,12 @@ afficheDivisionChampionLigue($division,$annee);
     <td width="73" ></td>
     <td width="137" > 
       <div class="affichageEquipe" > 
-        <?php echo $clubA2002; ?>
+        <?php if ($somme==12 ) echo $clubA2002; else echo "-"; ?>
       </div>
     </td>
     <td width="62" > 
       <div class="affichageGA" > 
-        <?php echo $A2002; ?>
+        <?php if ($somme==12 ) echo $A2002; else echo "-" ?>
       </div>
     </td>
     <td width="148" ></td>
@@ -341,12 +346,12 @@ afficheDivisionChampionLigue($division,$annee);
     <td width="73" ></td>
     <td width="137" > 
       <div class="affichageEquipe" > 
-        <?php echo $clubA2003; ?>
+        <?php if ($somme==12 ) echo $clubA2003; else echo "-"?>
       </div>
     </td>
     <td width="62" > 
       <div class="affichageGA" > 
-        <?php echo $A2003; ?>
+        <?php if ($somme==12 ) echo $A2003;  else echo "-"?>
       </div>
     </td>
     <td  width="50"></td>
@@ -360,12 +365,12 @@ afficheDivisionChampionLigue($division,$annee);
     <td width="73" ></td>
     <td width="137" > 
       <div class="affichageEquipe" > 
-        <?php echo $clubA2004; ?>
+        <?php if ($somme==12 ) echo $clubA2004; else echo "-" ?>
       </div>
     </td>
     <td width="62" > 
       <div class="affichageGA" > 
-        <?php echo $A2004; ?>
+        <?php if ($somme==12 ) echo $A2004; else echo "-" ?>
       </div>
     </td>
     <td width="50" ></td>

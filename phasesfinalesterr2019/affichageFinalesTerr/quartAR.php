@@ -29,16 +29,17 @@ afficheDivisionChampionLigue($division, $annee);
       <td></td>
       <td></td>
       <td> <div class="affichageTitre">Quarts de finale AR</div> </td>
-     <td></td> 
+     <td width="25"></td> 
+      <td></td>
       <td></td>
       <td colspan="2"> <div class="affichageTitre">Demi finale</div> </td>
       <td></td>
+      <td></td>
       <td colspan="2"> <div class="affichageTitre">Finale</div></td>
       <td></td>
-      <td height="1" bgcolor="#000000" width="12"></td>
-      <td >
-
-      </td>
+   
+      <td height="1"  width="12"></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -47,25 +48,26 @@ afficheDivisionChampionLigue($division, $annee);
       <td class="size2 styleArial italic  alignLeft bold"> <?php echo $D4000; ?></td>
       <td></td>
       <td></td>
+      <td></td>
       <td colspan="2"  class="size2 styleArial italic  alignLeft bold"><?php echo $D2000; ?></td>
-      
+      <td></td>
       <td></td>
       <td colspan="2" class="size2 styleArial italic  alignLeft bold"> <?php echo $D1000; ?></td>
      
       <td></td>
-      <td bgcolor="#000000"></td>
+      <td ></td>
       <td></td>
     </tr>
     <tr>
       <td width="29" height ="25"></td>
       <td width="139"></td>
-      <td width="72"></td>
-      <td width="144"></td>
+      <td width="25"></td>
+      <td></td>
       <td width="73"></td>
       <td width="70"></td>
       <td></td>
       <td></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="148"></td>
       <td width="50"></td>
       <td width="50"></td>
@@ -80,7 +82,7 @@ afficheDivisionChampionLigue($division, $annee);
         <td rowspan="8"><img src="../../images/accolade.png" width="8" height="121"></td> 
       <td></td>
       <td width="62"></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td></td>
       <td width="148"></td>
       <td width="50"></td>
@@ -106,8 +108,8 @@ afficheDivisionChampionLigue($division, $annee);
       </td>
       <td></td>
       <td></td>
-      <td width="72"></td>
-      <td width="72"></td>
+      <td width="25"></td>
+      <td width="25"></td>
       <td width="148"></td>
       <td width="50"></td>
       <td width="50"></td>
@@ -117,12 +119,12 @@ afficheDivisionChampionLigue($division, $annee);
     <tr>
       <td width="29"> </td>
       <td width="139"></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td ></td>
       <td width="73"></td>
       <td></td>
       <td></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="148"></td>
       <td width="50"></td>
       <td width="50"></td>
@@ -132,7 +134,7 @@ afficheDivisionChampionLigue($division, $annee);
     <tr>
       <td width="29"> </td>
       <td width="139"></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td ></td>
       <td width="73"></td>
       <td>
@@ -156,7 +158,7 @@ afficheDivisionChampionLigue($division, $annee);
     <tr>
       <td width="29"></td>
       <td width="139"></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td ></td>
       <td width="73"></td>
       <td>
@@ -178,7 +180,7 @@ afficheDivisionChampionLigue($division, $annee);
     <tr>
       <td width="29"> </td>
       <td width="139"></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td  class="size2 styleArial italic alignLeft bold"><?php echo $L4003; ?></td>
       <td width="73"></td>
       <td></td>
@@ -197,7 +199,7 @@ afficheDivisionChampionLigue($division, $annee);
           <?php echo $clubA4003; ?>
         </div>
       </td>
-      <td width="72">
+      <td width="25">
         <div class="affichagePts"><?php echo $pts4003; ?>
       </td>
       <td width="73">
@@ -207,7 +209,7 @@ afficheDivisionChampionLigue($division, $annee);
       </td>
       <td></td>
       <td></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="148"></td>
       <td width="50"></td>
       <td width="50"></td>
@@ -222,7 +224,7 @@ afficheDivisionChampionLigue($division, $annee);
           <?php echo $clubA4004; ?>
         </div>
       </td>
-      <td width="72">
+      <td width="25">
         <div class="affichagePts"><?php echo $pts4004; ?>
       </td>
       <td width="73">
@@ -234,7 +236,7 @@ afficheDivisionChampionLigue($division, $annee);
       <td></td>
       <td width="148" class="size2 styleArial italic alignLeft bold"><?php echo $L1001; ?></td>
       <td width="50"> </td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="50"></td>
       <td></td>
       <td width="257"></td>
@@ -243,7 +245,7 @@ afficheDivisionChampionLigue($division, $annee);
       <td width="29"> </td>
       <td width="139"></td>
       <td ></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="73"></td>
       <td width="70"></td>
       <td></td>
@@ -266,7 +268,7 @@ afficheDivisionChampionLigue($division, $annee);
       <td width="29"> </td>
       <td width="139"></td>
       <td ></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="73"></td>
       <td width="70"></td>
       <td></td>
@@ -289,7 +291,7 @@ afficheDivisionChampionLigue($division, $annee);
       <td width="29"> </td>
       <td width="139"></td>
       <td ></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="73"></td>
       <td width="70"></td>
       <td></td>
@@ -306,7 +308,7 @@ afficheDivisionChampionLigue($division, $annee);
       <td ></td>
       <td width="73"></td>
       <td width="70"></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td></td>
       <td></td>
       <td width="148"></td>
@@ -318,7 +320,7 @@ afficheDivisionChampionLigue($division, $annee);
     <tr valign="top">
       <td width="29"> </td>
       <td width="139"></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td  class="size2 styleArial italic  alignLeft bold"><?php echo $L4005; ?></td>
       <td width="73"></td>
       <td width="70"></td>
@@ -344,7 +346,7 @@ afficheDivisionChampionLigue($division, $annee);
           <?php echo $clubA4005; ?>
         </div>
       </td>
-      <td width="72">
+      <td width="25">
         <div class="affichagePts"><?php echo $pts4005; ?>
       </td>
       <td width="73">
@@ -352,44 +354,44 @@ afficheDivisionChampionLigue($division, $annee);
           <?php echo $GA4005;  ?>
         </div>
       </td>
-      <   <td rowspan="8"><img src="../../images/accolade.png" width="8" height="121"></td> 
-      <td></td>
-      <td></td>
+      <td rowspan="8"><img src="../../images/accolade.png" width="8" height="121"></td> 
+      <td colspan="2"></td>
+      
 
-      <td width="50"></td>
-      <td></td>
+      <td colspan="2"> <div align="center"><b><font color="#000000" size="3" face="Arial, Helvetica, sans-serif"> <?php	 echo $division; ?>
+      </font></b></div></td>
       <td width="257"></td>
     </tr>
     <tr>
-      <td width="29" height="9"> </td>
-      <td width="139" height="9"></td>
-      <td  height="9">
+      <td width="29" > </td>
+      <td width="139" ></td>
+      <td  >
         <div class="affichageEquipe">
           <?php echo $clubA4006; ?>
         </div>
       </td>
-      <td width="72">
+      <td width="25">
         <div class="affichagePts"><?php echo $pts4006; ?>
       </td>
-      <td width="73" height="9">
+      <td width="73" >
         <div class="affichageGA">
           <?php echo $GA4006; ?>
         </div>
       </td>
-      <td height="9"></td>
-      <td height="9"></td>
+      <td ></td>
+      <td ></td>
       <td colspan="2" height="37" rowspan="5">
         <div align="center"><img src="<?php echo $champLogo;  ?>" width="100" height="100"></div>
       </td>
-      <td width="50" height="9"></td>
-      <td height="9"></td>
-      <td width="257" height="9"></td>
+      <td width="50" ></td>
+      <td ></td>
+      <td width="257" ></td>
     </tr>
     <tr>
       <td width="29"> </td>
       <td width="139"></td>
       <td ></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="73"></td>
       <td>
         <font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong>
@@ -406,7 +408,7 @@ afficheDivisionChampionLigue($division, $annee);
       <td width="29"></td>
       <td width="139"></td>
       <td ></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="73"></td>
       <td>
         <div class="affichageEquipe">
@@ -426,7 +428,7 @@ afficheDivisionChampionLigue($division, $annee);
       <td width="29"> </td>
       <td width="139"></td>
       <td ></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="73"></td>
       <td>
         <div class="affichageEquipe">
@@ -445,7 +447,7 @@ afficheDivisionChampionLigue($division, $annee);
     <tr>
       <td width="29"> </td>
       <td width="139"></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td > <strong>
           <font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong>
                   <?php echo $L4007; ?>
@@ -454,7 +456,7 @@ afficheDivisionChampionLigue($division, $annee);
       <td width="73"></td>
       <td> </td>
       <td> </td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="50"></td>
       <td></td>
       <td width="257"></td>
@@ -467,17 +469,12 @@ afficheDivisionChampionLigue($division, $annee);
           <?php echo $clubA4007; ?>
         </div>
       </td>
-      <td width="72">
+      <td width="25">
         <div class="affichagePts"><?php echo $pts4007; ?>
       </td>
-      <td width="73">
-        <div class="affichageGA">
-          <?php echo $GA4007;  ?>
-        </div>
-      </td>
-      <td></td>
-      <td></td>
-      <td width="72"></td>
+      <td width="73"> <div class="affichageGA"> <?php echo $GA4007;  ?>  </div> </td>
+      <td colspan="2"></td>
+      <td width="25"></td>
       <td rowspan="2" colspan="2">
         <div align="center"><b>
             <font color="#000000" size="5" face="Arial, Helvetica, sans-serif">
@@ -486,7 +483,7 @@ afficheDivisionChampionLigue($division, $annee);
           </b></div>
       </td>
       <td width="50"></td>
-      <td height="9"></td>
+      <td ></td>
       <td width="257"></td>
     </tr>
     <tr>
@@ -497,7 +494,7 @@ afficheDivisionChampionLigue($division, $annee);
           <?php echo $clubA4008; ?>
         </div>
       </td>
-      <td width="72">
+      <td width="25">
         <div class="affichagePts"><?php echo $pts4008; ?>
       </td>
       <td width="73">
@@ -507,37 +504,37 @@ afficheDivisionChampionLigue($division, $annee);
       </td>
       <td></td>
       <td></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="50"></td>
       <td></td>
       <td width="257"></td>
     </tr>
     <tr>
-      <td height="3"> </td>
-      <td width="139" height="3"></td>
-      <td  height="3"></td>
-      <td width="72"></td>
-      <td width="73" height="3"></td>
-      <td width="70" height="3"></td>
-      <td height="3"></td>
-      <td height="3"></td>
-      <td width="72" height="3"></td>
-      <td width="148" height="3"></td>
-      <td width="50" height="3"></td>
-      <td width="50" height="3"></td>
-      <td height="3"></td>
-      <td width="257" height="3"></td>
+      <td > </td>
+      <td width="139" ></td>
+      <td  ></td>
+      <td width="25"></td>
+      <td width="73" ></td>
+      <td width="70" ></td>
+      <td ></td>
+      <td ></td>
+      <td width="25" ></td>
+      <td width="148" ></td>
+      <td width="50" ></td>
+      <td width="50" ></td>
+      <td ></td>
+      <td width="257" ></td>
     </tr>
     <tr>
       <td width="29"></td>
       <td width="139"></td>
       <td ></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="73"></td>
       <td width="70"></td>
       <td></td>
       <td></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="148"></td>
       <td width="50"></td>
       <td width="50"></td>
@@ -548,12 +545,12 @@ afficheDivisionChampionLigue($division, $annee);
       <td width="29"></td>
       <td width="139"></td>
       <td ></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="73"></td>
       <td width="70"></td>
       <td></td>
       <td></td>
-      <td width="72"></td>
+      <td width="25"></td>
       <td width="148"></td>
       <td width="50"></td>
       <td width="50"></td>

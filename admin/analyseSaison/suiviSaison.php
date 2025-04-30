@@ -100,7 +100,7 @@ if ($idComite  == 0) {
     elseif (substr($suiviLigue, -3) == "PDL")
         $nomLigue  = "PAYS DE LA LOIRE";
     elseif (substr($suiviLigue, -3) == "PCA")
-        $nomLigue  = "PROVENCE AMPES COTE D'AZUR";
+        $nomLigue  = "PROVENCE ALPES COTE D'AZUR";
 } else {
 
 /*
@@ -155,7 +155,7 @@ elseif ($idComite == "1919")
     $nomLigue  = "COTE BASQUE LANDES";
 elseif ($idComite == "1920")
     $nomLigue  = "COTE D'ARGENT";
-elseif ($idComite == "2027")
+elseif ($idComite == "1927")
     $nomLigue  = "LIMOUSIN";
 elseif ($idComite == "1932")
     $nomLigue  = "PERIGORD AGENAIS";
@@ -193,6 +193,7 @@ elseif ($idComite == "2035")
         echo "<br>";
    ?>
 
+
     <fieldset class="fieldsetG">
         <legend class="legendG">
             Suivi des équipes engagées en championnats  <br>de france 2025 par ligue </legend><br>
@@ -214,8 +215,6 @@ elseif ($idComite == "2035")
     </fieldset>
     <br>
     <br>
-
-
     <fieldset class="fieldsetA">
         <legend class="legendG">
             Suivi des équipes des anciens comités territoriaux <br> engagées en championnats de france 2025 </legend> <br>
@@ -239,6 +238,11 @@ elseif ($idComite == "2035")
             <option value="<?php echo $adresse; ?>suiviChampFranceOCC&idComite=2035">Pays Catalan</option>
         </select>
     </fieldset>
+
+
+
+
+
     <?php
     echo "<br>";
     echo "<br>";
@@ -298,7 +302,7 @@ elseif ($idComite == "2035")
         echo "<table width=\"90%\" border=\"1\" cellspacing=\"0\" bordercolor=\"#000000\" align=\"center\">";
         echo "<tr>";
         echo "<td colspan=\"2\" bgcolor=\"#FFCC33\" align=\"center\">";
-        echo " <font size=\"5\">" . "<b>" . $competition  . "<b>" .  "<?/font>";
+        echo " <font size=\"5\">" . "<b>" . $competition  . "<b>" .  "</font>";
         echo "</td>";
         echo "</tr>";
         echo "</table>";
@@ -320,8 +324,8 @@ elseif ($idComite == "2035")
     ?>
             <table width="90%" border="1" align="center">
                 <tr>
-                    <td colspan="2" class="size5 bold" align="center">
-                        <?php echo "<font size=\"5\">" . "<b>" . nomdivision($idDivision, $bdd) . "</b>" . "</font>"; ?>
+                    <td colspan="2" style="font-weight: bold; font-size: 25px"  align="center">
+                        <?php echo  nomdivision($idDivision, $bdd); ?>
                     </td>
                 </tr>
             </table>
@@ -386,17 +390,17 @@ elseif ($idComite == "2035")
         echo    "<table width=\"90%\" border=\"1\" align=\"center\">";
         for ($i = 0; $i < $nb_equipe[0]; $i++) {
         ?>
-            <tr class="styleArial">
-                <td width="50%">
+            <tr style ="font-family: Arial, Helvetica, sans-serif">
+                <td width="50%" align="center">
                     <?php
                     if ($tabParcours[$i] == "Champion de France" or  $tabParcours[$i] == "Vice champion de France") {
-                        echo " <font color=\"#000000\">";
+                        echo " <font color=\"#000000\" face=\"Arial, Helvetica, sans-serif\">";
                         echo "<b>";
                         echo $tabParcours[$i];
                         echo "</b>";
                         echo  "</font>";
                     } else {
-                        echo " <font color=\"#FF0000\">";
+                        echo " <font color=\"#FF0000\" face=\"Arial, Helvetica, sans-serif\">";
                         echo $tabParcours[$i];
                         echo  "</font>";
                     } ?> </td>
@@ -404,13 +408,13 @@ elseif ($idComite == "2035")
                 <td width="50%" align="center" <?php if ($tabParcours[$i] == "Champion de France") echo "bgcolor=\"#009900\"";   ?>>
                     <?php
                     if ($tabParcours[$i] == "Champion de France") {
-                        echo " <font color=\"#FFFFFF\">";
+                        echo " <font color=\"#FFFFFF\" face=\"Arial, Helvetica, sans-serif\"> ";
                         echo "<b>";
                         nomEquipe($tabIdClub[$i], $bdd);
                         echo "</b>";
                         echo  "</font>";
                     } else if ($tabParcours[$i] == "Vice champion de France") {
-                        echo " <font color=\"#009900\">";
+                        echo " <font color=\"#009900\" face=\"Arial, Helvetica, sans-serif\">";
                         echo "<b>";
                         nomEquipe($tabIdClub[$i], $bdd);
                         echo "</b>";

@@ -333,8 +333,10 @@ afficheDivisionChampionLigue($division,$annee);
     <td width="137"></td>
     <td width="62"></td>
    
-    <td width="50"></td>
-    <td height="0" ></td>
+    <td colspan="2" width="50"> <div align="center"><b><font color="#000000" size="3" face="Arial, Helvetica, sans-serif"> <?php	 echo $division; ?>
+    </font></b></div>
+  </td>
+    
     <td width="257"></td>
   </tr>
   <tr> 

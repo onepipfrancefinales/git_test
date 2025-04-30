@@ -406,21 +406,21 @@ $somme = $somme1+$somme2;
 	//echo "<br />";echo "somme 2 : ".$somme;echo "<br />";
 	//echo $division;
 
-				if ($somme==12)
+				if ($somme == 12 or $somme == 11)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/fauxQuarts.php");}
-			elseif ($somme==14)
+			elseif ($somme == 14)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/quart.php");}
-			elseif ($somme==20)
+			elseif ($somme == 20)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/quartAR.php");}
 			elseif ($somme==15)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/quartDemiAR.php");}
-			elseif ($somme==16)
+			elseif ($somme == 16)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/16me.php");}
-			elseif ($somme==17)
+			elseif ($somme == 17)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/barrage8me.php");}
 			elseif ($somme == 18)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/8me.php");}
-			elseif ($somme==19)
+			elseif ($somme == 19)
 				{ include ("../../phasesfinalesterr2019/affichageFinalesTerr/8meAR.php");}		
 		}
 	}
