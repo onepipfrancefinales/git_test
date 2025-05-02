@@ -1,11 +1,20 @@
+<script language="javascript">
+  console.log("test")
+  if (screen.width < 800)
+    location = "https://francefinalesrugby.fr/smart/smartPage.php?page=actualites2&mode=smart";  
+  
+</script>
+
+
 <?php
 include("../../saison.php");
 if (isset($_GET['mode'])) $mode  = $_GET['mode'];
 ?>
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
+<meta charset="UTF-8">
   <meta name="description"
     content="Le site non officiel du Comit� Midi Pyr�n�es de rugby : Histoire, clubs, calendrier des matches, comp�titions, r�sultats, la Coupe du Monde � Toulouse, jeux, les liens vers les sites officiels, news, interviews, French teams, competitions, history, organisations and institutions, Rugby world Cup in Toulouse, games and links to other official sites.">
   <meta name="keywords"

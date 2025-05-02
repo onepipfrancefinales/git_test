@@ -171,7 +171,7 @@ $color = "black";
   </tr>
   <tr> 
   <td class="coin5GA">2</td>
-    <td class="equipe5"><?php echo $clubA3222;?></td>
+    <td class="equipe5"> <span style = color:<?php echo $color ;?>><?php echo $clubA3222;?></span></td>
 
   </tr>
   <tr> 
@@ -188,7 +188,7 @@ $color = "black";
   </tr>
   <tr> 
   <td class="coin4GA">2</td>
-    <td class="equipe4"><?php echo $clubA3224;?></td>
+    <td class="equipe4"><span style = color:<?php echo $color ;?>><?php echo $clubA3224; ?></span></td>
 
   </tr>
 
@@ -415,7 +415,7 @@ $color = "black";
 
   <tr> 
   <td class="coin5GA">1</td>
-    <td class="equipe5"><?php echo $clubA3261;?></td>
+    <td class="equipe5"> <span style = color:<?php echo $color ;?>><?php echo $clubA3261;?></span></td>
    
   </tr>
  
@@ -427,7 +427,7 @@ $color = "black";
   </tr>
   <tr> 
   <td class="coin5GA">3</td>
-    <td class="equipe5"><?php echo $clubA3263; ?></td>
+    <td class="equipe5"> <span style = color:<?php echo $color ;?>><?php echo $clubA3263; ?></span></td>
    
   </tr>
   <tr> 

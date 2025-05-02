@@ -1,11 +1,11 @@
 <script language="javascript">
-  <!--
+  
   if (screen.width < 800)
     location = "https://francefinalesrugby.fr/smart/sommaire.php";
   //else if (screen.width > 800)     
   //location="https://francefinalesrugby.fr";
   //
-  -->
+  
 </script>
 
 

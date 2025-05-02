@@ -302,6 +302,7 @@ if ($A1001 > $A1002) {
 
 foreach ($tabEquipeLigue as $equipeLigue) {
 
+
 if (in_array($equipeLigue, $tab32meElim))
 $parcours= "Eliminée en 32me de finale";
 else if (in_array($equipeLigue, $tab16meElim))

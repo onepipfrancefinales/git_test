@@ -247,9 +247,21 @@ elseif ($idComite == "2035")
     echo "<br>";
     echo "<br>";
     if ($idComite == 0) {
-        echo "<h2>" . "Suivi des équipes de la ligue" . "<br>" . $nomLigue . "<br>" . " engagées en championnat de France" . "</h2>";
+if ($mode =="smart") 
+        {echo "<p class=\"size4 bold center\">";}
+else
+{echo "<p class=\"size5 bold center\">";}
+
+        echo "Suivi des équipes de la ligue" . "<br>" . $nomLigue . "<br>" . " engagées en champ de France"."</p>";
+        echo "<br>";
     } else {
-        echo "<h2>" . "Suivi des équipes de l'ancien comité territorial " . "<br>" . $nomLigue . "<br>" . " engagées en championnat de France" . "</h2>";
+
+        if ($mode =="smart") 
+        {echo "<p class=\"size4 bold center\">";}
+else
+        {echo "<p class=\"size5 bold center\">" ;}
+        echo "Suivi des équipes de l'ancien comité territorial " . "<br>" . $nomLigue . "<br>" . " engagées en champ de France"."</p>";
+    echo "<br>";
     }
 
     if ($mode == "smart")
@@ -263,7 +275,7 @@ elseif ($idComite == "2035")
     foreach ($listeDivisions as $idDivision) {
         constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd);
         affichageNomDivision($nb_equipe, $idDivision, $bdd);
-        affichage($nb_equipe, $tabParcours, $tabIdClub, $bdd);
+        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd);
     }
     echo "<br>"."<br>";
 
@@ -273,7 +285,7 @@ elseif ($idComite == "2035")
     foreach ($listeDivisions as $idDivision) {
         constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd);
         affichageNomDivision($nb_equipe, $idDivision, $bdd);
-        affichage($nb_equipe, $tabParcours, $tabIdClub, $bdd);
+        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd);
     }
     echo "<br>"."<br>";
 
@@ -283,7 +295,7 @@ elseif ($idComite == "2035")
     foreach ($listeDivisions as $idDivision) {
         constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd);
         affichageNomDivision($nb_equipe, $idDivision, $bdd);
-        affichage($nb_equipe, $tabParcours, $tabIdClub, $bdd);
+        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd);
     }
     echo "<br>"."<br>";
 
@@ -292,7 +304,7 @@ elseif ($idComite == "2035")
     foreach ($listeDivisions as $idDivision) {
         constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd);
         affichageNomDivision($nb_equipe, $idDivision, $bdd);
-        affichage($nb_equipe, $tabParcours, $tabIdClub, $bdd);
+        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd);
     }
     echo "<br>"."<br>";
 
@@ -385,7 +397,7 @@ elseif ($idComite == "2035")
         }
     }
 
-    function affichage($nb_equipe, $tabParcours, $tabIdClub, $bdd)
+    function affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd)
     {
         echo    "<table width=\"90%\" border=\"1\" align=\"center\">";
         for ($i = 0; $i < $nb_equipe[0]; $i++) {
@@ -401,7 +413,9 @@ elseif ($idComite == "2035")
                         echo  "</font>";
                     } else {
                         echo " <font color=\"#FF0000\" face=\"Arial, Helvetica, sans-serif\">";
-                        echo $tabParcours[$i];
+                         if ($mode == "smart") { 
+                         echo substr($tabParcours[$i],0,strlen($tabParcours[$i])-10);
+                        } else echo $tabParcours[$i];
                         echo  "</font>";
                     } ?> </td>
 

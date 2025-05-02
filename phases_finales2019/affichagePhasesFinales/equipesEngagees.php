@@ -379,7 +379,7 @@ $color = "white";
    
     <td ></td>
     <td class="coin4pts">2</td>
-    <td class="coin4"><?php echo $clubA3222; ?></td>
+    <td class="coin4" > <span style = color:<?php echo $color ;?>><?php echo $clubA3222; ?></span></td>
     <td></td>
 	  <td></td>
   </tr>
@@ -387,7 +387,7 @@ $color = "white";
   <td></td>
   <td></td>
   <td class="coin4pts">2</td>
-  <td class="coin4"><?php echo $clubA3224; ?></td>
+  <td class="coin4"><span style = color:<?php echo $color ;?>><?php echo $clubA3224; ?></span></td>
   <td ></td>
     <td Colspan="2"  class="bold styleArial size4">Ligue Bourgogne</td>
     
@@ -405,13 +405,13 @@ $color = "white";
   <td></td>
   <td></td>
   <td class="coin4pts">3</td>
-  <td class="coin4"> <span style = color:<?php echo $color ;?>><?php echo $clubA3225; ?></span></td>
+  <td class="coin4"><span style = color:<?php echo $color ;?>> <?php echo $clubA3225; ?></span></td>
   <td ></td>
     <td class="coin4pts">1</td>
     <td class="coin4"> <span style = color:<?php echo $color ;?>><?php echo $clubA3211; ?></span></td>
     <td ></td>
     <td class="coin4pts">1</td>
-    <td class="coin4"><?php echo $clubA3261; ?></td>
+    <td class="coin4"><span style = color:<?php echo $color ;?>><?php echo $clubA3261; ?></span></td>
    
     <td ></td>
     <td ></td>
@@ -446,7 +446,7 @@ $color = "white";
     <td class="coin4"> <span style = color:<?php echo $color ;?>><?php echo $clubA3213; ?></span></td>
     <td ></td>
     <td class="coin4pts">3</td>
-    <td class="coin4"><?php echo $clubA3263; ?></td>
+    <td class="coin4"><span style = color:<?php echo $color ;?>><?php echo $clubA3263; ?></span></td>
     <td ></td>
     <td class="coin4pts">1</td>
     <td class="coin4"><?php echo $clubA3229; ?></td>
