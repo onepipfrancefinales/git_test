@@ -250,7 +250,7 @@ elseif ($idComite == "2035")
     <?php
    
   
- //require '../../admin/analyseSaison/tableauxChampionsRegionaux.php'; 
+ require '../../admin/analyseSaison/tableauxChampionsRegionaux.php'; 
   
     echo "<br>";
     echo "<br>";

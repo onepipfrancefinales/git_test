@@ -113,39 +113,39 @@ PCA
 
     }
        else if ($annee == 2025 and $division == 170) {
-        $qualif3201 = false;
+        $qualif3201 = false;// (GES)
         $qualif3203 = false;
-        $qualif3205 = false;
-        $qualif3207 = false;
-        $qualif3209 = false;
-        $qualif3211 = false;
-        $qualif3213 = false;
-        $qualif3215 = false;
-        $qualif3217 = false;
+        $qualif3205 = false;// Flour (ARA)
+        $qualif3207 = false;// Rhodia (ARA)
+        $qualif3209 = false;// Thiers (ARA)
+        $qualif3211 = false;// Vizille (ARA)
+        $qualif3213 = false;// Orsay (IDF)
+        $qualif3215 = false;// Paris XO (IDF)
+        $qualif3217 = false;// Paris 15me (IDF)
         $qualif3219 = false;
-        $qualif3221 = false;
-        $qualif3223 = false;
+        $qualif3221 = false;// Beaune (BFC)
+        $qualif3223 = false;// Chablis (BFC)
         $qualif3225 = false;
-        $qualif3227 = false;
+        $qualif3227 = false;// Quimper (BRE)
         $qualif3229 = false;
-        $qualif3231 = false;
+        $qualif3231 = false;// Orleans La Source (cvl)
         $qualif3233 = false;
-        $qualif3235 = false;
+        $qualif3235 = false;// LMRCV (HDF)
         $qualif3237 = false;
-        $qualif3239 = false;
+        $qualif3239 = false;// Lisieux (NOR)
         $qualif3241 = false;
         $qualif3243 = false;
-        $qualif3245 = true;// Moissac
-        $qualif3247 = true;// Saint Juery
-        $qualif3249 = true;// Millas
-        $qualif3251 = true;// Pouyastruc
-        $qualif3253 = false;
-        $qualif3255 = false;
+        $qualif3245 = false;// Moissac (OCC)
+        $qualif3247 = false;// Saint Juery (OCC)
+        $qualif3249 = false;// Millas (OCC)
+        $qualif3251 = false;// Pouyastruc (OCC)
+        $qualif3253 = false;// Sigean (OCC)
+        $qualif3255 = false;// Vallee de Girou (OCC)
         $qualif3257 = false;
-        $qualif3259 = false;
+        $qualif3259 = false;// Saint Herblain (PDL)
         $qualif3261 = false;
-        $qualif3263 = false;
-        $qualif3264 = false;
+        $qualif3263 = false;// Valreas(PCA)
+        $qualif3264 = false;// Digne les Bains(PCA)
 
        }
        else{

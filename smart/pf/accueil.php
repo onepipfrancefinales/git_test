@@ -58,7 +58,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td class ="titre2">Compétitions Fédérales</td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $saison;?>">Fédérale 1 J Prat</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=140&annee=<?php echo $saison;?>">Fédérale 1</a></td>
   </tr>
   <tr> 
     <td class="coin45"><a href="pagePhaseFinale.php?division=150&annee=<?php echo $saison;?>">Fédérale 2</a></td>
@@ -91,7 +91,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td class="coin45"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $saison;?>&divFem=femFed1">Fédérale 1</a></td>
  </tr>
  <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=290&annee=<?php echo $saison;?>&divFem=femFed2">Fédérale 2</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=295&annee=<?php echo $saison;?>&divFem=femFed2">Fédérale 2</a></td>
  </tr>
  
  <tr> 
@@ -118,7 +118,10 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td class="coin45"><a href="pagePhaseFinale.php?division=260&annee=<?php echo $saison;?>">Excellence B</a></td>
   </tr>
   <tr> 
-    <td class="coin45"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $saison;?>">Réserve</a></td>
+    <td class="coin45"><a href="pagePhaseFinale.php?division=270&annee=<?php echo $saison;?>">Réserve R1</a></td>
+  </tr>
+  <tr> 
+    <td class="coin45"><a href="pagePhaseFinale.php?division=9180&annee=<?php echo $saison;?>">Réserve R2</a></td>
   </tr>
   <tr> 
     <td height="2">&nbsp;</td>

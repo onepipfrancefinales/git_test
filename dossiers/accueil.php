@@ -12,9 +12,9 @@
       <br>
       <p class="size4">
         <img style="display: block;margin: auto;background-color: hsl(0, 0%, 90%);" src="https://www.icone-gif.com/gif/webmaster/new/new-gif-007.gif">
-        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php"><span class="ColorRed bold size5"> Championnats de France 2025</span></a><br>
+        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php?affichage=0"><span class="ColorRed bold size5"> Championnats de France 2025</span></a><br>
     
-        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php">Suivi des équipes engagées en championnat de france<br >(par ligue ou par anciens comités territoriaux)</a>
+        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php?affichage=0">Suivi des équipes engagées en championnat de france<br >(par ligue ou par anciens comités territoriaux)</a>
       </p>
       <br>
     </td>

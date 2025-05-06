@@ -55,7 +55,7 @@ elseif (substr ($type,1,2) == '32' or substr ($type,1,2) == '64')
  <header><h1>32me DE FINALE <?php echo ' ('.$division.') '.$annee; ?></h1></header>
  <?php 
  $debut= 3201; $fin = 3264; $iMin= substr($debut, -1 , 1); $iMax= substr($fin, -2, 2); $numeroMatchMax=33;
-	for ($numeroMatch = 1               ,  $i = $iMin   ,  $clubs = $debut;
+	for ($numeroMatch = 1               ,  $i = 0   ,  $clubs = $debut;
 		 $numeroMatch < $numeroMatchMax ,  $i < $iMax   ,  $clubs < $fin; 
 		 $numeroMatch++                 ,  $i=$i+2      ,  $clubs=$clubs+2)
 	{

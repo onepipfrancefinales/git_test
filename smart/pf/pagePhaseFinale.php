@@ -1,11 +1,8 @@
  <?php
-	if (isset($_GET['annee'])) $annee = $_GET['annee'];
-	else $annee = 2025;
-	if (isset($_GET['division'])) $division = $_GET['division'];
-	else $division = 170;
+	if (isset($_GET['annee'])) $annee = $_GET['annee'];	else $annee = 2025;
+	if (isset($_GET['division'])) $division = $_GET['division'];	else $division = 170;
 	if (isset($_GET['divFem'])) $divFem = $_GET['divFem'];
-	else $divFem = "fed1";
-	require("../../phases_finales2019/fonctionsChampFrance2019.php");
+	else $divFem = "fed1";	require("../../phases_finales2019/fonctionsChampFrance2019.php");
 	require '../../connect/connexion5.php';
 	nomDivision($division);
 
@@ -50,11 +47,11 @@
 		//	trenteDeuxieme2019($division, $annee, $bdd);
 		date2019($division, $annee, $bdd);
 
-		traitementScores(3201, 3264);
-		traitementScores(1601, 1632);
-		traitementScores(8001, 8016);
-		traitementScores(4001, 4008);
-		traitementScores(2001, 2004);
+	//	traitementScores(3201, 3264);
+	//	traitementScores(1601, 1632);
+	//	traitementScores(8001, 8016);
+	//	traitementScores(4001, 4008);
+	//	traitementScores(2001, 2004);
 		//championDeFrance($clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 
 
@@ -62,9 +59,9 @@
  	<div class="fixed-header">
  		<div class="container">
  			<?php
-				include("entete.php");
+				include"entete.php";
 				require 'liensdiv.php';
-				//require 'liensdiv2022.php';
+				//requ re 'liensdiv2022.php';
 				echo "<br>";
 				?>
  		</div>
@@ -78,8 +75,8 @@
 			//*******************************************************************************************************************//
 			//**************  Exceptions : affichage Double championnat sur une même page (Ex : feminines) ************************//
 			//*******************************************************************************************************************//
-			$tabDivisions = array(170,180,190,270);
-			if (in_array($division, $tabDivisions) and $annee== 2025) {
+			$tabDivisions = array(170,180);
+			if (in_array($division, $tabDivisions) and $annee == 2025) {
 				trenteDeuxieme2019($division, $annee, $bdd);
 				require 'equipesEngagees.php';
 			
@@ -205,8 +202,19 @@
 				// ***************   phases réguliéres   ********************************
 
 				trenteDeuxieme2019($division, $annee, $bdd);
-				if ((substr($type, 0, 1) == '9' or substr($type, 0, 1) == '7') and strlen($division) == '3') {
+				
 
+				traitementScores(3201, 3264);
+				traitementScores(1601, 1632);
+				traitementScores(8001, 8016);
+				traitementScores(4001, 4008);
+				traitementScores(2001, 2004);
+
+				if ((substr($type, 0, 1) == '9' or substr($type, 0, 1) == '7') and strlen($division) == '3' or $division =="9180") {
+
+					
+
+					
 					/* 32me / 32meAR  Pas de 32me */
 					if (substr($type, 0, 3) == '964' or substr($type, 0, 3) == '764')
 						require '32meAR.php';

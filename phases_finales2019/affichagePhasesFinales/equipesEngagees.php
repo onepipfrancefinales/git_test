@@ -1,5 +1,5 @@
 
-<?php if ($division == 190)
+<?php if ($division == 190 or $division == 270)
  $date = " 05 mai";
 else 
 $date = " 11 mai";

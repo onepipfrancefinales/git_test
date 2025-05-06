@@ -1,9 +1,4 @@
-<script language="javascript">
-  console.log("test")
-  if (screen.width < 800)
-    location = "https://francefinalesrugby.fr/smart/smartPage.php?page=actualites2&mode=smart";  
-  
-</script>
+
 
 
 <?php
@@ -51,7 +46,13 @@ if (isset($_GET['mode'])) $mode  = $_GET['mode'];
       </td>
       <td class="colonneCentrale backgroundWhite">
              <hr>
-        <?php require '../../admin/analyseSaison/suiviSaison.php'; ?>
+     
+     
+          
+     
+     
+     
+             <?php require '../../admin/analyseSaison/suiviSaison2.php'; ?>
       </td>
       <td class="colonneDroiteGauche backgroundBlue">
         <?php include("../../00droite.php"); ?>
