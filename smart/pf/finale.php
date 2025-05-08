@@ -11,12 +11,12 @@
     
   </tr>
   <tr> 
-    <td class="equipe5"><?php echo $clubA1001;?></td>
-    <td class="coin5GA"><?php echo $A1001;?></td>
+    <td class=<?php echo $cssEquipe; ?>><?php echo $clubA1001;?></td>
+    <td class=<?php echo $cssScore; ?>><?php echo $A1001;?></td>
   </tr>
   <tr> 
-    <td class="equipe5"><?php echo $clubA1002;?></td>
-    <td class="coin5GA"><?php echo $A1002;?></td>
+    <td class=<?php echo $cssEquipe; ?>><?php echo $clubA1002;?></td>
+    <td class=<?php echo $cssScore; ?>><?php echo $A1002;?></td>
   </tr>
 </table>
 <br>

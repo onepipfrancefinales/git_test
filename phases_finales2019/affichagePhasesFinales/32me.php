@@ -1,5 +1,47 @@
 
+<?php
+
+
+if ($annee == 2025) {
+
+  echo "<table class=\"borderNone\">";
+    echo "<tr>";
+  if ($division == 170 || $division == 175) {
+?>
+        <td class="titreReg"> <a href="pagePhaseFinale.php?division=170&annee=<?php echo $annee; ?>">Régionale 1</td>
+        <td class="titreReg"> <a href="pagePhaseFinale.php?division=175&annee=<?php echo $annee; ?>">Promotion Régionale 1</td>
+  <?php
+  } else if ($division == 180 || $division == 185) {
+  ?>
+        <td class="titreReg"> <a href="pagePhaseFinale.php?division=180&annee=<?php echo $annee; ?>">Régionale 2</td>
+        <td class="titreReg"> <a href="pagePhaseFinale.php?division=185&annee=<?php echo $annee; ?>">Promotion Régionale 2</td>
+  <?php
+  } else if ($division == 190 || $division == 195) {
+  ?>
+        <td class="titreReg "> <a href="pagePhaseFinale.php?division=190&annee=<?php echo $annee; ?>">Régionale 3</td>
+        <td class="titreReg "> <a href="pagePhaseFinale.php?division=195&annee=<?php echo $annee; ?>">Promotion Régionale 3</td>
+<?php
+  }
+  echo "</tr>";
+  echo "</table>";
+}
+?>
+
+
+
 <table  class="width2000" >
+  <?php if ($annee == 2025)  {
+    ?>
+
+<tr> 
+    <td  colspan="18" class = "size5 center bold styleArial" >Championnnat de France <?php echo $annee; ?><br><?php echo $nomDivision; ?></td>
+  </tr>
+<?php
+
+}
+?>
+
+
   <tr> 
     <td  colspan="18" class = "backgroundOrange" ></td>
   </tr>

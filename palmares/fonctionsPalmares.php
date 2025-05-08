@@ -456,7 +456,7 @@ function palmaresParAnnee($annee, $table, $minRang, $maxRang, $bdd)
 		} else {
 			array_push($tabNom, $tabChampion[$i]);
 		}
-		echo  $tabDivision[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
+		echo  "<span class = \"bold\" >".$tabDivision[$i] . ' : '."</span>" . $tabNom[$i] . ' ' . $tabComite[$i];
 		echo "<br>";
 	}
 }
@@ -501,7 +501,7 @@ function palmaresParAnneeligne($annee, $table, $minRang, $maxRang, $bdd)
 		} else {
 			array_push($tabNom, $tabChampion[$i]);
 		}
-		echo  $tabDivision[$i] . ' : ' . $tabNom[$i] . ' ' . $tabComite[$i];
+		echo "<span class=\"bold\">". $tabDivision[$i] . ' : '."</span>" . $tabNom[$i] . ' ' . $tabComite[$i];
 		echo "<br>";
 	}
 }

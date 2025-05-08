@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de donn�es en PHP :: partie2</title>
+<title>modification de données en PHP :: partie2</title>
 <link rel="stylesheet" type="text/css" href="../maj.css">
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
@@ -26,7 +26,8 @@ if($phase == 64) {
 	<header><h1>BARRAGES<?php echo '('.$division.') '.$annee; ?></h1></header>
 	  
 	<?php 
-	echo "type2". $type; echo "<br>";
+	echo "type : ". $type; echo "<br>";
+	echo "phase : ". $phase; echo "<br>";
 barragesScores($type, $division, $annee, $bdd);
 barragesEquipes($type, $division, $annee, $bdd);
 

@@ -52,6 +52,9 @@ elseif ($page == "dates" )
     <option value="<?php echo $ad ;?>?division=170&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 1</b></option>
     <option value="<?php echo $ad ;?>?division=180&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 2 </b></option>
     <option value="<?php echo $ad ;?>?division=190&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Régionale 3 </b></option>
+    <option value="<?php echo $ad ;?>?division=175&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Promotion Régionale 1</b></option>
+    <option value="<?php echo $ad ;?>?division=185&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Promotion Régionale 2 </b></option>
+    <option value="<?php echo $ad ;?>?division=195&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Promotion Régionale 3 </b></option>
     	
 	<option value=""><b>------Réserves--------</b></option>
 	<option value="<?php echo $ad ;?>?division=225&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs Elite</b></option>

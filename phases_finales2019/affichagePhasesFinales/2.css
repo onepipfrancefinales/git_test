@@ -3,6 +3,21 @@ text-align:center;
 color:#000000;
 }
 
+
+td.titreReg {
+    width:250px;
+    color: #000000;
+    background-color:#050606;
+    border:1px solid #9FC6FF;
+    border-radius:10px 10px 10px 10px; 
+    font-family: arial; 
+    font-size: 18px;
+    text-align: center;
+    font-weight: Bold;
+    text-decoration: none;
+    }
+
+
 .champ{
 color: #FF0000;
 font-family: arial;

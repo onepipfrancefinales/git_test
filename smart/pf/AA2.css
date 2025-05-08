@@ -157,6 +157,16 @@ font-size: 16px;
 text-align: center;
 font-weight: Bold;
  }
+ td.equipe5_50PC {
+    width:50%;	
+    background-color:#9FC6FF;
+    border:2px #000000 solid;
+    border-radius:10px 10px 10px 10px; 
+    font-family: arial; 
+    font-size: 16px;
+    text-align: center;
+    font-weight: Bold;
+     }
 
 /******Goal average*******/
 /*bleu*/
@@ -238,6 +248,17 @@ font-weight: Bold;
     width:85%;	
     background-color:#41e59e;
     border:1px #E4EFFF solid;
+    border-radius:10px 10px 10px 10px; 
+    font-family: arial; 
+    font-size: 16px;
+    text-align: center;
+    font-weight: Bold;
+     }
+     
+ td.coin6_50PC {
+    width:50%;	
+    background-color:#41e59e;
+    border:2px #000000 solid;
     border-radius:10px 10px 10px 10px; 
     font-family: arial; 
     font-size: 16px;

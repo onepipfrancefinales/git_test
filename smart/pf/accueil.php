@@ -79,6 +79,17 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
     <td class="coin45"><a href="pagePhaseFinale.php?division=190&annee=<?php echo $saison;?>">Régionale 3</a></td>
   </tr>
   <tr> 
+    <td class="coin45"><a href="pagePhaseFinale.php?division=175&annee=<?php echo $saison;?>">Promotion Rég 1</a></td>
+  </tr>
+  <tr> 
+    <td class="coin45"><a href="pagePhaseFinale.php?division=185&annee=<?php echo $saison;?>">Promotion Rég 2</a></td>
+  </tr>
+  <tr> 
+    <td class="coin45"><a href="pagePhaseFinale.php?division=195&annee=<?php echo $saison;?>">Promotion Rég 3</a></td>
+  </tr>
+  
+  
+  <tr> 
     <td class="titre2">Compétitions féminines</td>
   </tr>
   <tr> 

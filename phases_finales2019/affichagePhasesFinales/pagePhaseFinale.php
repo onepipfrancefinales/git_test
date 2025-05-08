@@ -18,6 +18,7 @@
  	<meta name="robots" content="All">
  	<link rel="stylesheet" type="text/css" href="../../ligne1.css">
  	<link rel="stylesheet" type="text/css" href="2.css">
+
  	<meta name="viewport" content="width=device-width">
 
 

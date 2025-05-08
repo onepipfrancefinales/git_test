@@ -75,6 +75,12 @@ if ($division == 190 and $annee < 2023) $nomDivision  = "1re Série";
 
 
       // Traitement de la borne mini
+      if ($division == 175 ) $division = 170;
+      if ($division == 185 ) $division = 180;
+      if ($division == 195 ) $division = 190;
+      if ($division == 9180) $division = 270;
+
+
 
       if ($anneemoins >= '2019') {
       ?>

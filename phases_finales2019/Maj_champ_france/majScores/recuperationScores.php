@@ -1,10 +1,10 @@
 <?php 
 $page="score"; 
 
-if (isset ($_GET['type'])) $type = $_GET['type']; else $type = "non déclarée";
-if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee = " non déclarée";
-if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "non déclarée";
-if (isset ($_GET['phase'])) $phase = $_GET['phase']; else $phase = "non déclarée";
+if (isset ($_GET['type'])) $type = $_GET['type']; else $type = "non dï¿½clarï¿½e";
+if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee = " non dï¿½clarï¿½e";
+if (isset ($_GET['division'])) $division = $_GET['division']; else $division = "non dï¿½clarï¿½e";
+if (isset ($_GET['phase'])) $phase = $_GET['phase']; else $phase = "non dï¿½clarï¿½e";
 
 $bdpfAnnee = "bdpf".$annee."_2";
 
@@ -19,7 +19,7 @@ elseif ($phase == '8')
 {$debut =8001; $fin = 8017;}
 elseif ($phase == '16')
 {$debut =1601; $fin = 1633;}
-elseif ($phase == '32')
+elseif ($phase == '32' or $phase =='64')
 {
 $debut =3201;$fin = 3265;	
 $bdpfAnnee ="bdpf".$annee;}
@@ -31,7 +31,7 @@ OR substr ($type,9,2) == '22' //  finale AR
 OR substr ($type,9,2) == '04' // demi AR - finale 
 OR substr ($type,9,2) == '24')// demi AR - finale AR
 {
-//***************  Récupération des résultats - Qualification sur une rencontre ****************************
+//***************  RÃ©cupÃ©ration des rÃ©sultats - Qualification sur une rencontre ****************************
 									
 $tabScores[]=array();
 	
@@ -55,7 +55,7 @@ else
  
  //***************  Qualification sur un  match Aller-Retour ****************************
 							
- //***************  Récupération des résultats ALLER - Scores ALLER  (Goalverage) *******
+ //***************  RÃ©cupÃ©ration des rÃ©sultats ALLER - Scores ALLER  (Goalverage) *******
 	echo "ici aller retour";								
  $tabScoresAller[]=array();
 	echo $debut;
@@ -77,7 +77,7 @@ for ($i=$debut; $i<$fin; $i++)
 	
 
 
-	 //***************  Récupération des résultats ALLER - Points terrain ALLER  (Pts terrain) *******
+	 //***************  RÃ©cupÃ©ration des rÃ©sultats ALLER - Points terrain ALLER  (Pts terrain) *******
 
 	 $division = $division +1;							
 	 $tabPtsAller[]=array();
@@ -95,7 +95,7 @@ for ($i=$debut; $i<$fin; $i++)
 		}	
 	 echo $tabPtsAller[1];echo $tabPtsAller[2];echo $tabPtsAller[3];echo $tabPtsAller[4];
 
-	 //***************  Récupération des résultats RETOUR - Points terrain RETOUR  (Pts terrain)   ****************************
+	 //***************  RÃ©cupÃ©ration des rÃ©sultats RETOUR - Points terrain RETOUR  (Pts terrain)   ****************************
 							 
 	 $division = $division +1;
 	 $tabPtsRetour[]=array();
@@ -112,7 +112,7 @@ for ($i=$debut; $i<$fin; $i++)
 		 $tabPtsRetour[] = $row[0];
 		}
 	
-	 //***************  Récupération des résultats RETOUR - Scores RETOUR  (Goalverage) ****************************
+	 //***************  RÃ©cupÃ©ration des rÃ©sultats RETOUR - Scores RETOUR  (Goalverage) ****************************
 
 	 $division = $division +1;								
 	 $tabScoresRetour[]=array();
