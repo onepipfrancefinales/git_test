@@ -5,6 +5,12 @@ require "../../consultation/fonctions.php";
 if (isset($_POST['champion'])) $chaine = $_POST['champion'];
 if (isset($_GET['champion'])) $chaineChampion = $_GET['champion'];
 
+if (isset($_GET['nouveauClub'])) {
+  $nouveauClub = $_GET['nouveauClub'];
+} else {
+  $nouveauClub = 0;
+}
+
 if (isset($_GET['page'])) $page = $_GET['page'];
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
 
@@ -50,6 +56,8 @@ bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);
 
 consultationEvolutionClub($equipe, $bdd);
+rechercheFusion ($equipe, $bdd);
+
 fusionDeClubs2($equipe, $bdd);
 
 rechercheParNomDeVille($chaine, $bdd);

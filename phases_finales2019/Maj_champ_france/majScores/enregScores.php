@@ -8,7 +8,7 @@
 <?php 
 
 
-// ******************   R�cup�ration des variables   ***************** 
+// ******************   Récupération des variables   ***************** 
  require ("../../fonctionsChampFrance2019.php"); 
  $type=$_GET['type']; 
  //$annee=$_GET['annee']; 
@@ -17,7 +17,7 @@ if ( isset ($_GET['division'])) $division=$_GET['division']; else $division="non
 if ( isset ($_GET['annee'])) $saison=$_GET['annee']; else $saison="non d�clar�e";
 if ( isset ($_GET['annee'])) $annee=$_GET['annee']; else $annee="non d�clar�e";
   
- // ***************** Test des variables r�cup�r�es ****************
+ // ***************** Test des variables récupér�es ****************
   
    echo "type : ".$type;echo "<br />";
    echo "annee : ".$annee;echo "<br />";
@@ -25,8 +25,6 @@ if ( isset ($_GET['annee'])) $annee=$_GET['annee']; else $annee="non d�clar�
    echo "phase : ".$phase; echo "<br />";
    $bdpfAnnee = "bdpf".$annee;   
    $bdpfAnnee_2 = "bdpf".$annee."_2";
- //  echo $bdpfAnnee; echo "<br />";   
- //  echo $bdpfAnnee_2; echo "<br />";
 	
 	echo "<br />";
 	
@@ -35,42 +33,18 @@ require '../../../connect/connexion1.php';
 //**************   Barrages  ********************
 //*******************************************************************
 if (substr ($division,0,1)== 7 ) {
-	echo "test4";
-
-
-
-echo "01".$A3201. "<br />";
-echo "01".$A3202. "<br />";
-echo "01".$A3203. "<br />";
-
-echo "01".$A3221. "<br />";
-echo "01".$A3222. "<br />";
-echo "01".$A3223. "<br />";
-
 
 $max = 3200 + substr ($type,-2);
-echo "max : ".$max;
 
 	for($i=3201; $i<= $max; $i++){
 	 $score="A".$i; 
 	 
 	 if (isset($_POST[$score])) ${"A".($i)} = $_POST[$score];
-	// echo  $score.' = '.${"A".($i)};echo "<br />";
 	 
 	 $requete=$bdd->exec("UPDATE bdpffrance
 						  SET  $score = '${"A".($i)}'
 						  WHERE id = '$division' and saison='$annee'") ;
-	}
-	
-	if($requete)	
-	{
-	echo("La modification (".$division.") a été correctement effectuée");
-	echo "<br />";
-	}
-	else{
-	echo("La modification (".$division.") a échoué") ;
-	echo "<br />";
-	}		
+	}	
 }
 
 
@@ -89,22 +63,11 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 		 $score="A".$i; 
 		 
 		 if (isset($_POST[$score])) ${"A".($i)} = $_POST[$score];
-		// echo  $score.' = '.${"A".($i)};echo "<br />";
-		 
+
 		 $requete=$bdd->exec("UPDATE bdpffrance
 							  SET  $score= '${"A".($i)}'
 							  WHERE id = '$division' and saison='$annee'") ;
-		}
-		
-		if($requete)	
-		{
-		echo("La modification (".$division.") a été correctement effectuée");
-		echo "<br />";
-		}
-		else{
-		echo("La modification (".$division.") a échoué") ;
-		echo "<br />";
-		}		
+		}	
 	}
 	else{
 		 //*******************************************************************
@@ -121,7 +84,6 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 								 SET  $scoreA= '${"A".$i}'
 								 WHERE id = '$division' AND saison='$annee' ") ;
 			}
-		 suiviDuTraitement($division, $requete);
 
 		 //************     Pts aller  ****************
 		 $division = $division + 1;
@@ -134,7 +96,6 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 							  SET  $scoreApts= '${"A".($i)."Pts"}'
 							  WHERE id = '$division' AND saison='$annee' " );
 		}
-		 suiviDuTraitement($division, $requete);
 
 		 //************       GA RETOUR   *********
 		 $division = $division + 1;
@@ -147,7 +108,7 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 							  SET  $scoreR = '${"R".($i)}'
 							  WHERE id = '$division' AND saison='$annee' " );
 		}
-	 suiviDuTraitement($division, $requete);			
+			
 
 
 	 // ***********************    PTS RETOUR      ***********************
@@ -162,7 +123,6 @@ if ((substr ($type,1,2) == "32" or	substr ($type,1,2) == "64")	and $phase == '32
 						  SET  $scoreRpts= '${"R".($i)."Pts"}'
 						  WHERE id = '$division' AND saison='$annee' ") ;	
 		}
-	 suiviDuTraitement($division, $requete); 
 	}
 }	
 
@@ -180,8 +140,7 @@ elseif ((substr ($type,3,2) == "16" or	substr ($type,3,2) == "32")	 and $phase =
 		 $requete=$bdd->exec("UPDATE bdpffrance_2
 							  SET  $score= '${"A".($i)}'
 							  WHERE id = '$division' AND saison ='$annee' ") ;
-		}
-	 suiviDuTraitement($division, $requete); 			
+		}			
 	}
 	else{
 		echo "Rencontres A/R";echo "<br />";
@@ -199,9 +158,8 @@ elseif ((substr ($type,3,2) == "16" or	substr ($type,3,2) == "32")	 and $phase =
 							 SET  $scoreA= '${"A".($i)}'
 							 WHERE id = '$division' AND saison ='$annee' ") ;
 			
-		 //echo $division.'  '.$score.'  '.${"A".($i)}; echo "<br />";
+		
 	}
-	 suiviDuTraitement($division, $requete1); 
 	
 	 //**********   Pts aller 16me  *************
 	
@@ -215,9 +173,9 @@ elseif ((substr ($type,3,2) == "16" or	substr ($type,3,2) == "32")	 and $phase =
 							 SET  $scoreApts = '${"A".($i)."Pts"}'
 							 WHERE id = '$division' AND saison ='$annee' ") ;
 			
-		// echo $division.'  '.$score.'  '.${"A".($i)."Pts"}; echo "<br />";
+		
 	}
-	 suiviDuTraitement($division, $requete2); 				
+ 				
 
 	 // *************     GA retour 16me  *************
 
@@ -231,9 +189,9 @@ elseif ((substr ($type,3,2) == "16" or	substr ($type,3,2) == "32")	 and $phase =
 						 SET  $scoreRGA = '${"R".($i)}'
 						 WHERE id = '$division' AND saison ='$annee' ") ;
 		
-		//echo $division.'  '.$score.'  '.${"R".($i)}; echo "<br />";
+		
 	} 
-	 suiviDuTraitement($division, $requete3); 			
+			
 		
 	 // *************   Pts retour 16me  *************
 	$division = $division +1;
@@ -243,15 +201,15 @@ elseif ((substr ($type,3,2) == "16" or	substr ($type,3,2) == "32")	 and $phase =
 		 
 	if (isset($_POST[$score])) ${"R".($i)."Pts"} = $_POST[$score]; else $_POST[$score]=0;	
 		 
-	$requete4=$bdd->exec("UPDATE bdpffrance_2
+	$requete=$bdd->exec("UPDATE bdpffrance_2
 						 SET  $scoreRpts= '${"R".($i)."Pts"}'
 						 WHERE id = '$division' AND saison ='$annee' ") ;
 		
-		// echo $division.'  '.$score.'  '.${"R".($i)."Pts"}; echo "<br />";
+		
 		}
 		
-	 suiviDuTraitement($division, $requete4); 	
 	}	
+	
 }
 
 //*************************************************************	
@@ -272,16 +230,14 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 		 $requete=$bdd->exec("UPDATE bdpffrance_2
 								SET  $score = '${"A".($i)}'
 						 WHERE id = '$division' AND saison ='$annee' ") ;
-		}
-		 //suiviDuTraitement($division, $requete); 
-				
+		}		
 	}
 	else {	
 		 //*************************************************************	
 		 //********************    huitieme   (A/R)   ******************
 		 //************************************************************* 
 		 
-	 //R�cup des r�sultats des rencontres 8me ALLER (Goal average)
+	 //Récup des résultats des rencontres 8me ALLER (Goal average)
 	 for($i = 8001; $i < 8017 ; $i++) {
 		 $scoreA="A".$i; 
 		 $score="A".$i;
@@ -290,14 +246,12 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 		 $requete=$bdd->exec("UPDATE bdpffrance_2
 							 SET  $scoreA = '${"A".($i)}'
 							 WHERE id = '$division' AND saison ='$annee' ") ;
-		
-		  //echo $score.'  '.${"A".($i)}; echo "<br />";
+
 		}
-	 suiviDuTraitement($division, $requete); 
+
+ 
 		 
-		 
-		 
-	 //R�cup des r�sultats des rencontres 8me ALLER (Points terrain)
+	 //Récup des résultats des rencontres 8me ALLER (Points terrain)
 	 $division = $division +1;
 	 for($i = 8001; $i < 8017; $i++) {
 		 $scoreApts="A".$i;
@@ -308,11 +262,10 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 						 SET  $scoreApts= '${"A".($i)."Pts"}'
 						 WHERE id = '$division' AND saison ='$annee' ");		
 		
-		 //echo $score.'  '.${"A".($i)."Pts"}; echo "<br />";
 		}
-	 suiviDuTraitement($division, $requete);
+	 
 
-	 //R�cup des r�sultats des rencontres 8me RETOUR (Goal average)
+	 //Récup des résultats des rencontres 8me RETOUR (Goal average)
 	 $division = $division +1;
 	 for($i = 8001; $i < 8017; $i++) {
 		 $scoreR="A".$i;
@@ -323,11 +276,10 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 							 SET  $scoreR= '${"R".($i)}'
 							 WHERE id = '$division' AND saison ='$annee'") ;
 		
-		 //echo $score.'  '.${"R".($i)}; echo "<br />";
 		}
-	 suiviDuTraitement($division, $requete); 
+	
 
-	 //R�cup des r�sultats des rencontres 8me RETOUR (Points terrain)	
+	 //Récup des résultats des rencontres 8me RETOUR (Points terrain)	
 	 $division = $division +1;
 	 for($i=8001; $i<8017; $i++) {
 		 $scoreRpts="A".$i; 
@@ -338,9 +290,7 @@ elseif ((substr ($type,5,2) == "08" or	substr ($type,5,2) == "16")	and $phase ==
 							 SET  $scoreRpts= '${"R".($i)."Pts"}'
 							 WHERE id = '$division' AND saison ='$annee' ") ;	
 		
-		  //echo $score.'  '.${"R".($i)."Pts"}; echo "<br />";
-		}
-	 suiviDuTraitement($division, $requete);	  
+		}	  
 	}
 }	
 
@@ -365,7 +315,7 @@ elseif ( $phase == '4'){
 		 WHERE id = '$division'AND saison ='$annee' " );		
 		}
 
-	 suiviDuTraitement($division, $requete);
+
 			
 	}
 else {
@@ -386,7 +336,7 @@ else {
 							 WHERE id = '$division' AND saison ='$annee'  " );	
 		}
 		
-	 suiviDuTraitement($division, $requete);
+
 			
 	 //***********   Pts Aller Quarts  ***************
 	 $division = $division +1;
@@ -401,7 +351,7 @@ else {
 							 SET  $scoreApts= '${"A".($i)."Pts"}'
 							 WHERE id = '$division' AND saison ='$annee' ") ;	
 		}
-		 suiviDuTraitement($division, $requete);
+
 
 	 //**********  GA Retour Quarts	************
 	 $division = $division + 1;
@@ -416,7 +366,7 @@ else {
 						  SET  $scoreR= '${"R".($i)}'
 						  WHERE id = '$division' AND saison ='$annee'") ;	 
 		}
-	 suiviDuTraitement($division, $requete);
+
 
 	 //**********   Pts Retour Quarts  ***************************	
 	 $division = $division +1;
@@ -432,7 +382,6 @@ else {
 						  WHERE id = '$division' AND saison='$annee' ") ;	
 		
 		}			
-	 suiviDuTraitement($division, $requete);
 	}
 }
 	
@@ -440,7 +389,7 @@ else {
  //**************    Demi Finale        ************** 		
  //***************************************************
 
-elseif ( $phase == '2'){
+ elseif ( $phase == '2'){ 	
 
 
 //elseif ((substr ($type,9,2) == "21" or	substr ($type,9,2) == "22")	and $phase == '2')		
@@ -453,7 +402,7 @@ elseif ( $phase == '2'){
     	     SET  A2001='$A2001', A2002='$A2002', A2003='$A2003', A2004='$A2004'	 
 		  	 WHERE id = '$division'  AND saison='$annee'");
 	
-	 suiviDuTraitement($division, $requete);
+	
 	}
 	else
 	{
@@ -466,7 +415,6 @@ elseif ( $phase == '2'){
     	    SET  A2001='$A2001', A2002='$A2002', A2003='$A2003', A2004='$A2004'	 
 		  	WHERE id = $division  AND saison='$annee'") ;	
 
-	 suiviDuTraitement($division, $requete);
 	 
 	//************   Pts ALLER    **************
 
@@ -477,7 +425,6 @@ elseif ( $phase == '2'){
     	    SET  A2001='$A2001Pts', A2002='$A2002Pts', A2003='$A2003Pts', A2004='$A2004Pts'	
 			WHERE id = '$division' AND saison ='$annee' ");	
 	 
-	  suiviDuTraitement($division, $requete);
 	  
 	 //************      Phase RETOUR (GA)  ********
 
@@ -488,7 +435,7 @@ elseif ( $phase == '2'){
     	    SET  A2001='$R2001',A2002='$R2002',A2003='$R2003',A2004='$R2004'	
 		  	WHERE id = '$division' AND saison ='$annee' ") ;
 	
-	 suiviDuTraitement($division, $requete);
+
 	 
 	//**************          Pts retour
 
@@ -499,8 +446,7 @@ elseif ( $phase == '2'){
     	    SET  A2001='$R2001Pts', A2002='$R2002Pts', A2003='$R2003Pts', A2004='$R2004Pts'	
 			WHERE id = '$division' AND saison ='$annee' " );
 	}
- 
-	suiviDuTraitement($division, $requete);	
+ 	
 }
 
 // -------Finale -------------------- 
@@ -509,8 +455,7 @@ elseif ( $phase == '2'){
 elseif ( $phase == '1'){
 
 echo "finale simple";echo "<br/>";
-//echo $A1001;echo "<br/>"; 
-//echo $A1002;echo "<br/>";
+
 
 if (isset($_POST['A1001'])) $A1001 = $_POST['A1001'];	
 if (isset($_POST['A1002'])) $A1002 = $_POST['A1002'];	
@@ -528,8 +473,6 @@ if (isset($_POST['A1002'])) $A1002 = $_POST['A1002'];
 	$requete=$bdd->exec("UPDATE bdpffrance_2
     	  SET  A1001='$A1001', A1002='$A1002'	
 		  WHERE id = '$division' AND saison ='$annee'");
-	
-	 suiviDuTraitement($division, $requete);
 }
 else{
 
@@ -543,7 +486,7 @@ else{
     	  SET  A1001='$A1001', A1002='$A1002'	
 		  WHERE id = '$division' AND saison ='$annee'");
 	
-	suiviDuTraitement($division, $requete);
+
 	
 	//**************          Pts retour
 	$division = $division + 1;
@@ -554,7 +497,7 @@ else{
     	  SET  A1001='$A1001Pts', A1002='$A1002Pts'	
 		  WHERE id = '$division' AND saison ='$annee'");
 	
-	suiviDuTraitement($division, $requete);
+
 		
 	//**************          GA retour
 	$division = $division + 1;
@@ -565,7 +508,7 @@ else{
     	  SET  A1001='$R1001', A1002='$R1002'	
 		  WHERE id = '$division' AND saison ='$annee'");
 	
-	suiviDuTraitement($division, $requete);
+
 	
 	//**************          Pts retour
 	$division = $division + 1;
@@ -576,10 +519,10 @@ else{
     	  SET  A1001='$A1001Pts', A1002='$A1002Pts'	
 		  WHERE id = '$division' AND saison ='$annee'");
 	
-	suiviDuTraitement($division, $requete);
+	
 	}
 }
-		
+suiviDuTraitement($division, $requete);		
 ?>
 
 <p></p>

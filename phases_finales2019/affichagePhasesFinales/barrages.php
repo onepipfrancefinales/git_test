@@ -71,8 +71,8 @@ elseif (substr($type,9,2) != 0)
 
  $nombreEquipe= substr($type,9,2);
 // echo "<br />";
-//echo $nombreMaxEquipe;echo "<br />";
-//echo $nombreEquipe;echo "<br />";
+// echo $nombreMaxEquipe;echo "<br />";
+// echo $nombreEquipe;echo "<br />";
 
 if ($division == 7140 )
 	$texteDivision = "Barrages Fédérale 1 ";
@@ -123,14 +123,7 @@ if ($division == 7140 or $division == 7150 or $division == 7160) {
 <?php 
 
 constructionTableau( $nombreEquipe, $division, $annee) ;
-/*
-echo "nombreEquipe : ".$nombreEquipe; echo "<br />";
-echo "i_min : ".$i_min; echo "<br />";
-echo "i_max : ".$i_max; echo "<br />";
-echo "j_min : ".$j_min; echo "<br />";
-echo "j_max : ".$j_max; echo "<br />";
-echo "num_max : ".$num_max; echo "<br />";
-*/
+
 for ($num = 1, $i=$i_min, $j= $i+1; $num <= $num_max, $i <= $i_max , $j < $j_max ; $num = $num + 2, $i = $i+4, $j=$j+4)
 {
 ?>

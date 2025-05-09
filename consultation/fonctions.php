@@ -1,4 +1,29 @@
 <?php
+function testPresence () 
+{
+
+	echo "ok j'arrive";
+}
+
+function rechercheFusion ($equipe, $bdd) {
+	global $codeFusion;
+$reponse = $bdd->query("SELECT fusion
+							FROM bdclubs
+							WHERE id ='$equipe'");
+
+	$row = $reponse->fetch();
+	$codeFusion = $row[0];
+
+
+	if ($codeFusion != 0)
+	{
+		echo "codeFusion : ".$codeFusion;
+	}
+
+}
+
+
+
 
 function rechercheParNomDeVille($chaine, $bdd)
 {
@@ -121,6 +146,7 @@ function changementNom($id_equipe, $width, $bdd)
 
 	function fusionDeClubs2($equipe, $bdd)
 	{
+		
 		global $clubNom1, $clubNom2, $clubNom3, $clubNom4, $clubFusion1, $clubFusion2, $clubFusion3, $clubFusion4, $fusion1, $fusion2, $fusion3, $fusion4, $anneeFusion, $nouveauNomClub;
 
 		$res = $bdd->query("SELECT fusion1, fusion2, fusion3, fusion4, annee, nom

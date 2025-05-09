@@ -21,6 +21,8 @@ if ( isset ($id)) $ide=$id; else $id="non déclarée";?>
 <?php
 
 if($phase == 64) {
+
+	echo "testAffichageScore";
 	?>
 	<input type="hidden" name="division" value="<?php echo($division) ;?>">
 	<header><h1>BARRAGES<?php echo '('.$division.') '.$annee; ?></h1></header>
@@ -28,8 +30,8 @@ if($phase == 64) {
 	<?php 
 	echo "type : ". $type; echo "<br>";
 	echo "phase : ". $phase; echo "<br>";
-barragesScores($type, $division, $annee, $bdd);
-barragesEquipes($type, $division, $annee, $bdd);
+//barragesScores($type, $division, $annee, $bdd);
+//barragesEquipes($type, $division, $annee, $bdd);
 
 	$maxEquipes = 3200 +  substr($type,-2);
 	$maxEquipesClub = 6400 +  substr($type,-2);

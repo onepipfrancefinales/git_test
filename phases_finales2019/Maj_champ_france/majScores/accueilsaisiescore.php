@@ -193,7 +193,6 @@ $ad = "/phases_finales2019/Maj_champ_france/majScores/accueilsaisiescore.php";
           affichage 'F', saisir '777'<br>
           affichage '25', saisir '888'
         </p>
-     
     </td>
   </tr>
   <tr >

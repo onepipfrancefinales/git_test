@@ -1,5 +1,5 @@
 <?php
-if ($smart == true) {
+if ($mode == "smart") {
 ?>
 
   <br>
@@ -49,8 +49,9 @@ else  $width = "90%";
 
     <?php
     if ($fusion == true) {
-      if ($smart == true) {
-        $URL = "/smart/ficheClubs/pageFicheClubs.php?champion=";
+    
+      if ($mode == "smart") {
+        $URL = "/smart/ficheClubs/pageFicheClubs.php?mode=smart&champion=";
       } else {
         $URL = "/consultation/pageclub00.php?champion=";
       }

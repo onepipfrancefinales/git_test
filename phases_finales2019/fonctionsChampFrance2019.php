@@ -92,47 +92,6 @@ $num_max = $nombreEquipe/2;
 
 
 
-function creationTableauBarrage($division, $annee, $bdd)
-{
-if (isset ($clubA1601)) ; else $clubA1601 = "non type defini";
-
-echo "<br/>";
-echo "division : ".$division;echo "<br/>";
-echo "annee : ".$annee;echo "<br/>";
-
-
-	 //require '../connect/connexion1.php';
-	//trenteDeuxieme2019 ($division, $annee, $bdd);
-
-echo "test2 : ".$clubA1601;
-	/*
-for ($num = 1, $i=1601, $j= 1603; $num < 17, $i<1632 , $j <1633; $num=$num+2, $i = $i+4, $j=$j+4)
-{
-?>
-<tr>
-	<td rowspan="2" width="6" class="numero"><?php echo $num;?></td>
-    <td class="barrage"><?php echo ${"clubA".$i};?></td>
-      <td class="barrageGA"><?php	echo ${"A".$i};?></td>
-  </tr>
- <tr>
-    <td class="barrage"> <?php echo ${"clubA".($i+1)};?></td>
-   	<td class="barrageGA"><?php echo ${"A".($i+1)};?> </td>
-  </tr>
-  <tr>
-  <td rowspan="2" width="6" class="numero"><?php echo $num+1;?></td>
-     <td class="barrage2"><?php echo ${"clubA".$j};?></td>
-      <td class="barrage2GA"><?php	echo ${"A".$j};?></td>
-  </tr>
- <tr>
-    <td class="barrage2"> <?php echo ${"clubA".($j+1)};?></td>
-   	<td class="barrage2GA"><?php echo ${"A".($j+1)};?> </td>
-  </tr>
-  <?php
-	}
-	*/
-}
-
-
 //Affichage des dates des phases finales
 function date2019($division, $annee, $bdd)
 {

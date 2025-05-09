@@ -8,22 +8,24 @@ https://francefinalesrugby.fr
 
 php 8
 
-<!-- Fournisseur d'accès -->
+<!-- Fournisseur d'accès
 
+franceserv
+Identifiant : onepip-france
+Mdp : lavelan09
 
-
-
-<!-- Base de données -->
-
+<!-------------------------------------> 
+<!------     Base de données ---------->
 
 Liste des bases de données
 
 
 
 
+<!------------------------------------>
+<!------            Git      ---------
 
-<!--  Git -->
-
-Adresse :
-identifiant : 
-Mdp
+Adresse : https://github.com/onepipfrancefinales/git_test/tree/domaine.fr
+identifiant :  git_test
+Mdp : Laurent1969&
+>

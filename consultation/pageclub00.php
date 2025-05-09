@@ -56,8 +56,13 @@ affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);
 
+echo "equipe aaaaa".$equipe;
+rechercheFusion ($equipe, $bdd);
+
 consultationEvolutionClub($equipe, $bdd);
 fusionDeClubs2($equipe, $bdd);
+
+
 
 //changementNom ($equipe, $width, $bdd);
 

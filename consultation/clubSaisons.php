@@ -1,54 +1,7 @@
-
-
-
-  <!--Saison N -->
   <?php
 
 
-
-if ($statut > 0)
-{  fusionDeClubs2($statut, $bdd);
-
-?>
-  <div class="size3 styleArial center">
-  <?php
-  echo "<br>";
-  echo "Fusion en " . $anneeFusion . " avec le(s) club(s) de " . "<br>";
-
-  if ($equipe == $fusion1) {
-    echo $clubFusion2 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
-  } elseif ($equipe == $fusion2) {
-    echo $clubFusion1 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
-  } elseif ($equipe == $fusion3) {
-    echo $clubFusion2 . "<br>" . $clubFusion3 . "<br>" . $clubFusion4;
-  }  elseif ($equipe == $fusion4) {
-    echo $clubFusion1 . "<br>" . $clubFusion2 . "<br>" . $clubFusion3;
-  }
-
-  echo "<br>";
-  echo "pour donner naissance au club" . "<br>";
-  echo "<br>";
-
-  if ($smart == 1) {
-    $URL = "/smart/ficheClubs/pageFicheClubs.php?champion=";
-  } else {
-    $URL = "/consultation/pageclub00.php?champion=";
-  }
-
-
-  ?>
-</div>
-<div id="saisonEnCours" class="colorBlack"> <a class="colorBlack" href=<?php echo $URL . substr($statut, -5); ?>><?php echo $nouveauNomClub; ?></a> </div><br>
-
-
-<?php
-
-
-
-
-}
-
- else if ($nouveauClub != 0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3 || $nouveauClub != $fusion4 )) {
+ if ($nouveauClub != 0 && ($nouveauClub != $fusion1 || $nouveauClub != $fusion2 || $nouveauClub != $fusion3 || $nouveauClub != $fusion4 )) {
   ?>
     <div class="size3 styleArial center">
       <?php
@@ -69,8 +22,8 @@ if ($statut > 0)
       echo "pour donner naissance au club" . "<br>";
       echo "<br>";
 
-      if ($smart == 1) {
-        $URL = "/smart/ficheClubs/pageFicheClubs.php?champion=";
+      if ($mode == "smart") {
+        $URL = "/smart/ficheClubs/pageFicheClubs.php?mode=smart&champion=";
       } else {
         $URL = "/consultation/pageclub00.php?champion=";
       }
@@ -84,7 +37,7 @@ if ($statut > 0)
 
   <?php
   } else {
-    if ($smart == 1)
+    if ($mode == "smart")
       echo "<h1 class=\"size4\">" . "Saison " . $debutSaison . '  - ' . $finSaison . "</h1>";
     else
       echo "<h1>" . "Saison " . $debutSaison . ' - ' . $finSaison . "</h1>";
@@ -106,7 +59,7 @@ if ($statut > 0)
 
   <?php
 
-  if ($smart == 1)
+  if ($mode == "smart")
     echo "<h1 class=\"size4\">Saisons précédentes</h1>";
   else
     echo "<h1>Saisons précédentes</h1>";
@@ -146,7 +99,7 @@ if ($statut > 0)
 
         $debut = ($debutSaison - $i);
         $fin = $finSaison - $i;
-        if ($smart == true)
+        if ($mode == "smart")
           echo   " <td class=\"saisonImpaire\"> $debut  $fin</td>";
         else
           echo  " <td class=\"saisonImpaire\">$debut - $fin</td>";
@@ -170,7 +123,7 @@ if ($statut > 0)
 
         $debut = $debutSaison - ($i + 1);
         $fin = $finSaison - ($i + 1);
-        if ($smart == true)
+        if ($mode == "smart")
           echo  "<td class=\"saisonPaire center\"> $debut $fin </td>";
         else
           echo "<td class=\"saisonPaire\"> $debut - $fin </td>";
