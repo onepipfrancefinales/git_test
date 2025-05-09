@@ -19,11 +19,13 @@ Mdp : lavelan09
 
 Liste des bases de données
 
-
-
+<!------------------------------------>
+         FTP     
+identifiant : 
+Mdp : 
 
 <!------------------------------------>
-<!------            Git      ---------
+           Git      
 
 Adresse : https://github.com/onepipfrancefinales/git_test/tree/domaine.fr
 identifiant :  git_test
