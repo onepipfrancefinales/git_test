@@ -69,7 +69,7 @@
 
 
 //*******    affichage des équipes engagées en championnat de France    ******/		
-$tabDivisions = array(170,180);
+$tabDivisions = array(1700,1800);
 if (in_array($division, $tabDivisions) and $annee== 2025) {
 	require 'equipesEngagees.php';
 }

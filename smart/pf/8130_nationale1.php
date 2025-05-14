@@ -1,17 +1,18 @@
-<table>
+<table class="borderDouble width90PC marginAuto">
   <tr> 
     <td class="titre"> Barrages <br />
 	<div class="pf_lieux"><?php echo $D4ME; ?></div>
   </td>
   </tr>
 </table>
-<table width="90%" border="0" align="center">
+
+<table width="90%" class="borderNone" >
   <tr> 
     <td width="78%"></td>
-    <td width="11%">&nbsp;</td>
-    <td width="11%">&nbsp;</td>
+    <td width="11%"></td>
+    <td width="11%"></td>
   </tr>
- 
+ <br>
   <tr> 
     <td class="coin4"><?php echo $clubA4003;?></td>
     <td class="coin4"><?php echo $A4003;?></td>
@@ -31,6 +32,8 @@
 </table>
 <br />
 
-<?php require 'demi.php'; ?>
+<?php require '02me_demi.php'; ?>
 <br />
-<?php require 'finale.php'; ?>
+<?php require '01me_finale.php'; ?>
+</hr></hr>
+<?php require 'barrageAccession.php';?>

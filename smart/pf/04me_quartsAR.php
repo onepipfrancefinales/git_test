@@ -8,7 +8,7 @@
   </tr>
 </table>
 <br />
-<table class="width90PC marginAuto" border="0" >
+<table class="width90PC marginAuto borderNone" >
   <tr> 
     <td width="78%"><?php //echo $D4ME;?></td>
     <td width="11%"></td>

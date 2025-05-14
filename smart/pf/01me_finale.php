@@ -1,7 +1,8 @@
+
 <table  class="borderDouble width90PC marginAuto">
   <tr>
     <td class="titre">Finale<br>
-   <span class= "pf_lieux"><?php echo $D1ME; ?></span> </td>
+   <div class= "pf_lieux"><?php echo $D1ME; ?></div> </td>
   </tr>
 </table>
 <br>

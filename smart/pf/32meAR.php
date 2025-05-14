@@ -12,10 +12,10 @@ date2019($division, $annee, $bdd);
 ?>
 
 
-<table class="width90PC marginAuto borderWidth1">
+<table class="borderDouble width90PC marginAuto">
   <tr> 
     <td class="titre">32me de finale A/R <br>
-    <span class="pf_lieux"><?php echo $D32ME; ?></span></td>
+    <div class="pf_lieux"><?php echo $D32ME; ?></div></td>
   </tr>
 </table>
 <table class="borderNone width90PC marginAuto">

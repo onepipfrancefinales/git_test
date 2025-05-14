@@ -9,12 +9,12 @@
   <tr> 
     <td colspan="2"><?php //echo $D4ME;?></td>  
   <tr> 
-    <td class="coin4"><?php echo $clubA4003;?></td>
-    <td class="coin4"><?php echo $A4003;?></td>
+    <td class="coin5"><?php echo $clubA4003;?></td>
+    <td class="coin5"><?php echo $A4003;?></td>
   </tr>
   <tr> 
-    <td class="coin4"><?php echo $clubA4004;?></td>
-    <td class="coin4"><?php echo $A4004;?></td>
+    <td class="coin5"><?php echo $clubA4004;?></td>
+    <td class="coin5"><?php echo $A4004;?></td>
   </tr>
   <tr> 
     <td colspan="2" height="25"></td>
@@ -40,12 +40,12 @@
     <td colspan="2"></td>
   </tr>
   <tr> 
-    <td class="coin4"><?php echo $clubA2001;?></td>
-    <td class="coin4pts"><?php echo $A2001;?></td>
+    <td class="coin5"><?php echo $clubA2001;?></td>
+    <td class="coin5pts"><?php echo $A2001;?></td>
   </tr>
   <tr> 
-    <td class="coin4"><?php echo $clubA2002;?></td>
-    <td class="coin4pts"><?php echo $A2002;?></td>
+    <td class="coin5"><?php echo $clubA2002;?></td>
+    <td class="coin5pts"><?php echo $A2002;?></td>
   </tr>
   <tr> 
    <td colspan="2" height="25"></td>
@@ -101,5 +101,6 @@
 	<p class="equipeChamp"><?php echo $champion;?></p>
 </center>
 <br>
+
 </hr></hr>
 <?php require 'barrageAccession.php';?>

@@ -1,7 +1,7 @@
-<table class="borderWidth1 width90PC  marginAuto">
+<table class="borderDouble width90PC  marginAuto">
   <tr> 
     <td class="titre"> 16me de finale AR<br>
-    <span class="pf_lieux"><?php echo $D16ME; ?></span></td>
+    <div class="pf_lieux"><?php echo $D16ME; ?></div></td>
   </tr>
 </table>
 <table class="borderNone width90PC  marginAuto">
@@ -98,8 +98,6 @@
     <td class="coin5pts"><?php echo $A1616;?></td>
   </tr>
 </table>
-
-<p class="marginAuto"><?php include("../../pub/pub20.php");?></p>
 
 <table class="borderNone width90PC  marginAuto">
   <tr> 

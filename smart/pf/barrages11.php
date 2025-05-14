@@ -9,7 +9,7 @@ barragesScores($typeBarrage, $divisionBarrage, $annee, $bdd);
 <table class="borderDouble width90PC marginAuto">
   <tr>
     <td class="titre"> Barrages<br>
-      <span class="pf_lieux"><?php echo $D64ME; ?></span>
+      <div class="pf_lieux"><?php echo $D64ME; ?></div>
     </td>
 
   </tr>

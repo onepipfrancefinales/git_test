@@ -22,7 +22,7 @@
     <td colspan="4" class="coin_fed"></td>
   </tr>
   <tr> 
-    <td colspan="4" class="coin_fed"><a href="/smart/pf/accueil.php?annee=<?php echo $finSaison-1;?>">Phases finales champ de France <?php echo $finSaison-1;?></a></td>
+    <td colspan="4" class="coin_fed"><a href="/smart/pf/accueil.php?annee=2025">Phases finales champ de France 2025</a></td>
   </tr>
   <tr> 
     <td colspan="4" class="coin_fed"><a href="/smart/palmares/page_palmares.php?division=170">Champions de France</a></td>

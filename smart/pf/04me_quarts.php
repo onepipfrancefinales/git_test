@@ -1,8 +1,22 @@
-<?php traitementScores (4001, 4008);?>
+<?php
+ traitementScores (4001, 4008);
+$cssEquipe = "equipe4";
+$cssScore = "coin4GA";
+$cssEquipe2 = "equipe5";
+$cssScore2 = "coin5GA";
+
+
+if ($division == 175 || $division == 185 || $division == 195) {
+  $cssEquipe = "coin6";
+  $cssScore = "coin6pts";
+  $cssEquipe2 = "coin7";
+  $cssScore2 = "coin7pts";
+}
+?>
 <table class="borderDouble width90PC marginAuto" >
   <tr> 
     <td class="titre">Quarts de finale <br>
-    <span class="pf_lieux"><?php echo $D4ME; ?></span>
+    <div class="pf_lieux"><?php echo $D4ME; ?></div>
     </td>
   </tr>
 </table>

@@ -113,40 +113,40 @@ PCA
 
     }
        else if ($annee == 2025 and $division == 170) {
-        $qualif3201 = false;// (GES)
-        $qualif3203 = false;
-        $qualif3205 = false;// Flour (ARA)
-        $qualif3207 = false;// Rhodia (ARA)
-        $qualif3209 = false;// Thiers (ARA)
-        $qualif3211 = false;// Vizille (ARA)
-        $qualif3213 = false;// Orsay (IDF)
-        $qualif3215 = false;// Paris XO (IDF)
-        $qualif3217 = false;// Paris 15me (IDF)
-        $qualif3219 = false;
-        $qualif3221 = false;// Beaune (BFC)
-        $qualif3223 = false;// Chablis (BFC)
+        $qualif3201 = true;// Tiers(ARA)
+        $qualif3203 = true;// Juillac (NAQ)
+        $qualif3205 = true;// Flour (ARA)
+        $qualif3207 = true;// Saint Juery (OCC)
+        $qualif3209 = true;// Moissac (OCC) 
+        $qualif3210 = true;// --> Saintes (NAQ)
+        $qualif3211 = false;
+        $qualif3213 = true;// Vallee de Girou (OCC)
+        $qualif3215 = false;
+        $qualif3217 = true;//Sainte Foy la G (NAQ)
+        $qualif3219 = true;//Saint Herblain (PDL)// Quimper (BRE)
+        $qualif3220 = true;// --> Quimper (BRE)
+        $qualif3221 = true;// Beaune (BFC)
+        $qualif3223 = true;// Orleans La Source (cvl)// Chablis (BFC)
         $qualif3225 = false;
-        $qualif3227 = false;// Quimper (BRE)
-        $qualif3229 = false;
-        $qualif3231 = false;// Orleans La Source (cvl)
-        $qualif3233 = false;
-        $qualif3235 = false;// LMRCV (HDF)
-        $qualif3237 = false;
-        $qualif3239 = false;// Lisieux (NOR)
-        $qualif3241 = false;
-        $qualif3243 = false;
-        $qualif3245 = false;// Moissac (OCC)
-        $qualif3247 = false;// Saint Juery (OCC)
-        $qualif3249 = false;// Millas (OCC)
-        $qualif3251 = false;// Pouyastruc (OCC)
-        $qualif3253 = false;// Sigean (OCC)
-        $qualif3255 = false;// Vallee de Girou (OCC)
-        $qualif3257 = false;
-        $qualif3259 = false;// Saint Herblain (PDL)
-        $qualif3261 = false;
-        $qualif3263 = false;// Valreas(PCA)
-        $qualif3264 = false;// Digne les Bains(PCA)
-
+        $qualif3227 = true;// Lisieux (NOR)
+        $qualif3229 = true;// Orsay (IDF)
+        $qualif3231 = true;// LMRCV (HDF)
+        $qualif3233 = true;// Paris 15me (IDF)
+        $qualif3235 = true;// Nancy (GES)
+        $qualif3237 = true;// Paris XO (IDF)
+        $qualif3239 = true;// Beaune (BFC)
+        $qualif3241 = true;// Champagnole (BFC)
+        $qualif3243 = true;// Rodhia (ARA)
+        $qualif3245 = true;// Rhone Sportif (ARA)
+        $qualif3247 = true;// Valreas(PCA)
+        $qualif3249 = true;// Sigean (OCC)
+        $qualif3251 = true;// Vizille (ARA)
+        $qualif3253 = true;// Millas (OCC)
+        $qualif3255 = true;// Digne les Bains(PCA)
+        $qualif3257 = true;// Arudy (NAQ)
+        $qualif3259 = false;// 
+        $qualif3261 = true;// Pouyastruc (OCC)
+        $qualif3263 = true;// Saint Sever (NAQ)
        }
        else{
         for ($i = 201; $i < 264; $i =$i+2)

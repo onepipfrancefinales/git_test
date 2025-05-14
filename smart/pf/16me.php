@@ -1,7 +1,21 @@
+ <?php
+$cssEquipe = "equipe4";
+$cssScore = "coin4GA";
+$cssEquipe2 = "equipe5";
+$cssScore2 = "coin5GA";
+
+
+if ($division == 175 || $division == 185 || $division == 195) {
+  $cssEquipe = "coin6";
+  $cssScore = "coin6pts";
+  $cssEquipe2 = "coin7";
+  $cssScore2 = "coin7pts";
+}
+?>
  <table class="borderDouble width90PC marginAuto">
     <tr> 
       <td class="titre"> 16me de finale<br> 
-      <span class="pf_lieux"><?php echo $D16ME; ?></span></td>
+      <div class="pf_lieux"><?php echo $D16ME; ?></div></td>
     </tr>
   </table>
   <br> 

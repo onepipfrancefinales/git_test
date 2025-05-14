@@ -1,39 +1,64 @@
+<?php
+if ($division == 120) {
+trenteDeuxieme2019(115, $annee, $bdd);
+$typeDivision = "Top 14";
+}
+else {
+trenteDeuxieme2019(125, $annee, $bdd);
+$typeDivision = "Nationale";
+}
 
- <?php 
+if ($A1001 + $A1002 == 0)
+$clubA1001 ="Finaliste  " .$typeDivision;
+else
+$clubA1002 ="Dernier de " .$typeDivision;
 
- require '../../phases_finales2019/fonctionsChampFrance2019.php';  
- require '../../connect/connexion5.php';
- nomDivision($division);
-  
- require '../../connect/connexion1.php';
- //date2019($division, $annee, $bdd);
- trenteDeuxieme2019 (115, $annee, $bdd);
- //traitementScores (1001, 1002);
-echo $annee;  echo "<br>";
-echo $type;  echo "<br>";
-echo $division; echo "<br>";
+if ($A1001 + $A1002 > 0 & $A1001 > $A1002)
+$messageInfo = $clubA1001 ." accéde ". $typeDivision . "<br>" .
+               $clubA1002  ." retrogradé en  ". $typeDivision;  
+
+else 
+$messageInfo = $clubA1002 ." maintenu en ". $typeDivision . "<br>" .
+               $clubA1002  ." retrogradé en  ". $typeDivision;  
+
+
 ?>
-<table width="90%"  border="1" align="center" height="59">
-  <tr> 
-    <td class="titre">Barrage d'Accession au Top 14<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D0ME; ?></strong></i></b></font></div>
-	</td>
+<table width="90%" class="borderDouble" >
+  <tr>
+    <td class="titre"><?php echo "Barrage d'accession ". $typeDivision; ?><br />
+    <span class="center size2 styleArial italic"><?php echo $D0ME; ?></span>
+    </td>
   </tr>
 </table>
 <br />
-<table width="90%" border="0" align="center">
-  <tr> 
-    <td colspan="2"><?php //echo $D0ME;?></td>
-  </tr>
-  <tr> 
-    <td class="coin5"><?php echo $clubA1001;?></td>
-    <td class="coin5pts"><?php echo $A1001;?></td>
-  </tr>
-  <tr> 
-    <td class="coin5"><?php echo $clubA1002;?></td>
-    <td class="coin5pts"><?php echo $A1002;?></td>
+<table width="90%" class="borderNone">
+  <tr>
+    <td colspan="2"><?php //echo $D0ME;
+                    ?></td>
   </tr>
   <tr>
-   <td colspan="2" height="25"></td>
+    <td class="coin5"><?php echo $clubA1001; ?></td>
+    <td class="coin5pts"><?php echo $A1001; ?></td>
+  </tr>
+  <tr>
+    <td class="coin5"><?php echo $clubA1002; ?></td>
+    <td class="coin5pts"><?php echo $A1002; ?></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="25"></td>
   </tr>
 </table>
+<?php
 
+
+
+if ($A1001 + $A1002 > 0 & $A1001 > $A1002)
+$messageInfo = $clubA1001 ." accéde ". $typeDivision;
+else 
+$messageInfo =  $clubA1002 ." est maintenu en ". $typeDivision;
+
+
+
+echo "<div class=\"center\">". $messageInfo . "</div>";
+
+?>

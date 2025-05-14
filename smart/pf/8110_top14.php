@@ -10,12 +10,12 @@
     <td colspan="2"><?php //echo $D4ME;?></td> 
   </tr>
   <tr> 
-    <td class="coin4"><?php echo $clubA4003;?></td>
-    <td class="coin4"><?php echo $A4003;?></td>
+    <td class="coin5"><?php echo $clubA4003;?></td>
+    <td class="coin5"><?php echo $A4003;?></td>
   </tr>
   <tr> 
-    <td class="coin4"><?php echo $clubA4004;?></td>
-    <td class="coin4"><?php echo $A4004;?></td>
+    <td class="coin5"><?php echo $clubA4004;?></td>
+    <td class="coin5"><?php echo $A4004;?></td>
   </tr>
   <tr> 
     <td colspan="2" height="25"></td>
@@ -29,10 +29,11 @@
     <td class="coin4"><?php echo $A4008;?></td>
   </tr>
 </table>
-<p align="center"> <?php	include("../../pub/pub20.php");?></p>
+<br>
 <table width="90%" border="1" align="center">
   <tr> 
-    <td class="titre">Demi finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D2ME; ?></strong></i></b></font></div></td>
+    <td class="titre">Demi finale<br />
+    <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D2ME; ?></strong></i></b></font></div></td>
   </tr>
 </table>
 <br />
@@ -42,12 +43,12 @@
     <td width="21%"></td>
   </tr>
   <tr> 
-    <td class="coin4"><?php echo $clubA2001;?></td>
-    <td class="coin4"><?php echo $A2001;?></td>
+    <td class="coin5"><?php echo $clubA2001;?></td>
+    <td class="coin5"><?php echo $A2001;?></td>
   </tr>
   <tr> 
-    <td class="coin4"><?php echo $clubA2002;?></td>
-    <td class="coin4"><?php echo $A2002;?></td>
+    <td class="coin5"><?php echo $clubA2002;?></td>
+    <td class="coin5"><?php echo $A2002;?></td>
   </tr>
   <tr> 
     <td>&nbsp;</td>
@@ -117,4 +118,3 @@
 	<p class="equipeChamp"><?php echo $champion;?></p>
 </center><hr />
 
-<?php require 'barrageAccession.php';?>

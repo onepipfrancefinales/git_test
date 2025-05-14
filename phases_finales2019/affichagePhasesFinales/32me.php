@@ -53,14 +53,29 @@ if ($annee == 2025) {
     // mise en évidence des clubs qualifiés
       require 'fichierQualifies.php';
        ?>
-  
+
     <td class="coin5-32BarrageFed3 colorWhite width100PC" > 
         <?php if (substr($type,0,1)== 7 and $annee > 2021){?>
         <a href="javascript:ouvrirPopup('barrages.php?annee=<?php echo $annee; ?>&division=7260','','top=10, right=10,resizable=no, directories=no, statut=no, location=no, width=330, height=600, menubar=no')">Barrages accès aux 32me<br />
         </a> 
       <?php } ?>
     </td>
-    <td colspan ="17"></td>
+    <td colspan ="17">
+      
+    </td>
+  </tr>
+  <tr>
+<td colspan ="18">
+    <p class="size4">
+<?php
+if ($division == 170 and $annee == 2025) 
+  echo "Les équipes en jaunes évolueront la saison prochaine en fédérale 3. Les 2 meilleurs parcours
+ parmi les équipes de couleur blanche gagneront le droit d'évoluer en Fédérale 3 la saison prochaine. ";
+?>
+</p>
+</td>
+
+
   </tr>
   <tr> 
     <td class="coin5"> 32me de finale </td>
@@ -186,7 +201,10 @@ if ($annee == 2025) {
     <td class="coin5-32"><?php if ($qualif3209 == true){;?>
       <span style = color:yellow><?php echo $clubA3209 ;?></span><?php } else {
       echo $clubA3209;
-    }?> - <?php echo $clubA3210;?>
+    }?> - <?php if ($qualif3210 == true){;?>
+      <span style = color:yellow><?php echo $clubA3210 ;?></span><?php } else {
+      echo $clubA3210;
+    }?>
       
 	   </td>
     <td class="coin5pts-32"><?php echo $A3209;?> - <?php echo $A3210;?></td>
@@ -334,7 +352,10 @@ if ($annee == 2025) {
        <?php if ($qualif3219 == true){;?>
       <span style = color:yellow><?php echo $clubA3219 ;?></span><?php } else {
       echo $clubA3219;
-    }?> - <?php echo $clubA3220;?>
+    }?> - <?php if ($qualif3220 == true){;?>
+      <span style = color:yellow><?php echo $clubA3220 ;?></span><?php } else {
+      echo $clubA3220;
+    }?>
     </td>
     <td class="coin4pts-32">
       <?php echo $A3219." - ".$A3220;?>

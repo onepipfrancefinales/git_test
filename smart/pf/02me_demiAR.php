@@ -43,7 +43,7 @@
     <td class="coin4"><?php echo $A2004;?></td>
   </tr>
 </table>
-<table width="90%" border="0" class="marginAuto">
+<table class="width90PC borderNone marginAuto">
   <tr> 
     <td></td>
     <td></td>
