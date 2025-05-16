@@ -34,8 +34,7 @@ else if ($division == 130) {
 
 
 <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
+    <td colspan="5"></td>
     <td width="269"><?php echo $D1ME?></td>
     <td width="41"></td>
     <td width="85"></td>
@@ -46,8 +45,8 @@ else if ($division == 130) {
   </tr>
  
 
-	<td colspan="4"></td>
-    <td width="83"></td>
+	<td colspan="5"></td>
+
     <td width="269" class="coin4"><?php echo $typeBarrage; ?></td>
     <td width="41"></td>
     <td width="85"></td>
@@ -57,37 +56,16 @@ else if ($division == 130) {
     <td width="118"></td>
   </tr>
   <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269"></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td width="21"></td>
-    <td width="245" class="coin4" ><?php echo $equipeExt; ?></td>
-    <td width="37" class="coin4pts" ><?php echo $scoreExt; ?></td>
-    <td width="118"></td>
+    <td colspan="9"></td>
+    <td class="coin4" ><?php echo $equipeExt; ?></td>
+    <td class="coin4pts" ><?php echo $scoreExt; ?></td>
+    <td></td>
   </tr>
   <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269"></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td width="21"></td>
-    <td width="245"></td>
-    <td width="37"></td>
-    <td width="118"></td>
+   <td colspan="12"></td>
   </tr>
   <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269"></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td width="21"></td>
-    <td width="245"></td>
-    <td width="37"></td>
-    <td width="118"></td>
+   <td colspan="12"></td>
   </tr>
   <tr> 
     <td colspan="12"  bgcolor="#FFCC66"></td>

@@ -5,10 +5,10 @@ if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee='-';
 
 require '../../../connect/connexion1.php';
 ?>
-<body bgcolor="#FFFFFF" text="#000000">
+<body>
 <form name="insertion" action="enregEquipes.php?type=<?php echo $type ; ?>&division=<?php echo $division ; ?>&annee=<?php echo $annee ; ?>" method="POST">
 						  			
- </font></b> 
+</b> 
  <!----------------- Barrages----------------->
 
 <?php

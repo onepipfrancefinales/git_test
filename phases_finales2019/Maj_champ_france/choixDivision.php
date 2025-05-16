@@ -40,10 +40,10 @@ elseif ($page == "dates" )
     <option value="<?php echo $ad ;?>?division=7260&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>barrages Excellence B</b></option>
 
 <option value=""><b>--------Séniors I------</b></option>
-    <option value="<?php echo $ad ;?>?division=110&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Top14</b></option>
-    <option value="<?php echo $ad ;?>?division=120&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Pro D2 </b></option>
+  <option value="<?php echo $ad ;?>?division=110&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Top14</b></option>
+  <option value="<?php echo $ad ;?>?division=120&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Pro D2 </b></option>
 	<option value="<?php echo $ad ;?>?division=115&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Accession Pro D2 Top14 </b></option>
-    <option value="<?php echo $ad ;?>?division=130&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Nationale 1 </b></option>
+  <option value="<?php echo $ad ;?>?division=130&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Nationale 1 </b></option>
 	<option value="<?php echo $ad ;?>?division=135&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Nationale 2 </b></option>
 	
 	<option value="<?php echo $ad ;?>?division=140&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 1 J Prat </b></option>
@@ -60,19 +60,19 @@ elseif ($page == "dates" )
 	<option value="<?php echo $ad ;?>?division=225&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs Elite</b></option>
 	<option value="<?php echo $ad ;?>?division=230&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs Nationaux</b></option>
 	<option value="<?php echo $ad ;?>?division=240&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Espoirs  Federaux</b></option>
-    <option value="<?php echo $ad ;?>?division=250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale B</b></option>
-    <option value="<?php echo $ad ;?>?division=260&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Excellence B</b></option>
+  <option value="<?php echo $ad ;?>?division=250&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale B</b></option>
+  <option value="<?php echo $ad ;?>?division=260&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Excellence B</b></option>
 	<option value="<?php echo $ad ;?>?division=270&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Res Régionale</b></option>
    
-  	<option value=""><b>------Féminines--------</b></option> 
-    <option value="<?php echo $ad ;?>?division=280&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 1</b></option>
-    <option value="<?php echo $ad ;?>?division=285&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 2</b></option>
-    <option value="<?php echo $ad ;?>?division=290&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 1</b></option>
-    <option value="<?php echo $ad ;?>?division=295&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 2</b></option>
+  <option value=""><b>------Féminines--------</b></option> 
+  <option value="<?php echo $ad ;?>?division=280&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 1</b></option>
+  <option value="<?php echo $ad ;?>?division=285&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Elite 2</b></option>
+  <option value="<?php echo $ad ;?>?division=290&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 1</b></option>
+  <option value="<?php echo $ad ;?>?division=295&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Fédérale 2</b></option>
 
-    <option value=""><b>-----Jeunes---------</b></option>
-    <option value="<?php echo $ad ;?>?division=325&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Crabos</b></option>
-    <option value="<?php echo $ad ;?>?division=330&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Balandrade U18</b></option>
+  <option value=""><b>-----Jeunes---------</b></option>
+  <option value="<?php echo $ad ;?>?division=325&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Crabos</b></option>
+  <option value="<?php echo $ad ;?>?division=330&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Balandrade U18</b></option>
 	<option value="<?php echo $ad ;?>?division=360&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Alamercery</b></option>
 	<option value="<?php echo $ad ;?>?division=365&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Gaudermen</b></option>
 	<option value="<?php echo $ad ;?>?division=370&type=<?php echo $type ;?>&annee=<?php echo $annee ;?>"><b>Teuliere U16</b></option>

@@ -24,8 +24,8 @@ echo "<br />";
 if (isset($_GET['choix'])) $choix = $_GET['choix'];else $choix=990141;
 echo "choix : ".$choix;
 echo "<br/>";echo "<br/>";
-require '../connect/connexion6.php';
-require 'autresFonctions.php';
+//require '../connect/connexion6.php';
+//require 'autresFonctions.php';
 
 
 
@@ -90,4 +90,30 @@ for ($division=$debut; $division <= $fin; $division = $division + 1)
 
 echo "<br>";
 echo "<br />";
-?>
+
+
+
+//bdd - division - place
+function traitement($comite, $division, $place)
+{
+require '../connect/connexion6.php';	
+
+$phpComite_clmnt_cache="php".$comite."_clmnt_cache";
+
+
+$reponse = $bdd->query("SELECT NOM, ID_EQUIPE, POINTS, DIFF
+							FROM $phpComite_clmnt_cache
+							WHERE id_champ ='$division'
+							ORDER BY POINTS DESC"); 
+								
+	
+	while ($row = $reponse->fetch() )
+		{ 
+		$nomEquipe[]= $row[0];
+		$idEquipe[]= $row[1];
+		$points[]= $row[2];
+		$GA[]= $row[3];
+		}
+	$i = $place- 1;
+	echo $place.' ;'.$idEquipe[$i].'; '.$nomEquipe[$i].'; '.$points[$i].'; '.$GA[$i].'; '.$division;echo "<br>";	
+}

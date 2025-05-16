@@ -22,6 +22,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 <link rel="stylesheet" type="text/css" href="AA2.css">
 <link type="text/css" rel="stylesheet" href="../../ligne1.css">
 <link type="text/css" rel="stylesheet" href="../10.css">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
 </head>
 
  
