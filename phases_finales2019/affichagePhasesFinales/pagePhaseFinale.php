@@ -1,7 +1,7 @@
  <?php
 	if (isset($_GET['annee'])) $annee = $_GET['annee']; else $annee =2024;
 	if (isset($_GET['division'])) $division = $_GET['division']; else $division = 110;
-	//echo $division;
+
 	?>
  <!DOCTYPE html>
  <html lang="fr">
@@ -117,42 +117,21 @@ elseif ($annee > 2025) {
 					require "0164AR.php";
 			} elseif (substr($type, 0, 1) == '9' or substr($type, 0, 1) == '7') {
 
-				// echo "type : " . $type;
-				// $test= substr($type, 0, 3);echo "<br/>";
-				// echo "test : ".$test;
-				// $test2 =substr($type,1,2);echo "<br/>";
-				// echo "<br/>";
-				// echo "test2 : ".$test2;
-				//echo "<br/>";
 				//********    trente deuxième    *********	
 				championDeFrance($clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 				// traitementScores (3201, 3264);
 
 				if (substr($type, 0, 3) == 932 or substr($type, 0, 3) == 964 or substr($type, 0, 3) == 732 or substr($type, 0, 3) == 764) {
-					//echo "aaa : ".$type;
-					//echo "accès 32me";echo "<br/>";
-					// $test= substr($type, 0, 3);echo "<br/>";
-					//echo "test : ".$test;
-					// $test2 =substr($type,1,2);echo "<br/>";
-					//echo "<br/>";
-					//echo "test2 : ".$test2;
-					//echo "<br/>";
 					if (substr($type, 1, 2) == 64) {
 						require("3216meAR.php");
 					} else {
-
 						require "32me.php";
 					}
 				}
 
 				//********    seizième    *********
 				elseif (substr($type, 3, 2) == 16 or substr($type, 3, 2) == 32) {
-					//traitementScores (1601, 1632);
-					//traitementScores (8001, 8016);
-					//Barrages
-					// if(	substr($type,0,1)==7)
-					// {  require "barrages.php"; }
-					// phase régulière
+
 					if (substr($type, 3, 2) == 32) {
 						require "1608meAR.php";
 					} else {

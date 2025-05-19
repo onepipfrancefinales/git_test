@@ -10,7 +10,12 @@ $typeBarrage ="Barrage d'accession au Top 14";
 else if ($division == 130) {
   $division ="125";
   $typeBarrage ="Barrage d'accession en Pro D2";
-  }
+}
+else if ($division == 135) {
+  $division ="137";
+  $typeBarrage ="Barrage d'accession en Nationale";
+}
+
 
  require '../../connect/connexion1.php';
 

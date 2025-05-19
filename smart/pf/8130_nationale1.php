@@ -18,20 +18,19 @@
     <td class="coin4"><?php echo $A4003;?></td>
   </tr>
   <tr> 
-    <td class="coin4"><?php echo $clubA4007;?> </td>
-    <td class="coin4"><?php echo $A4007;?></td>
+    <td class="coin4"><?php echo $clubA4004;?> </td>
+    <td class="coin4"><?php echo $A4004;?></td>
   </tr>
   <tr> 
-    <td class="coin5"><?php echo $clubA4004;?></td>
-    <td class="coin5"><?php echo $A4004;?></td>
+    <td class="coin5"><?php echo $clubA4007;?></td>
+    <td class="coin5"><?php echo $A4007;?></td>
   </tr>
   <tr> 
     <td class="coin5"><?php echo $clubA4008;?></td>
     <td class="coin5"><?php echo $A4008;?></td>
   </tr>
 </table>
-<br />
-
+<br>
 <?php require '02me_demi.php'; ?>
 <br />
 <?php require '01me_finale.php'; ?>

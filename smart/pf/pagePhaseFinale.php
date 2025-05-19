@@ -119,8 +119,10 @@
 				elseif ($division == '130') 
 					require '8130_nationale1.php';
 
-				 elseif ($division == '135')
+				 elseif ($division == '135') {
+				
 					require '8135_nationale2.php';
+				 }
 
 			}
 			// *************    insertion de barrages   ********************************
@@ -143,6 +145,8 @@
 
 					require "tableauxPhasesFinales.php";
 				}
+				if ($division == '135')
+				require require '8135_nationale2.php';
 			}
 			require '../bas.php';
 

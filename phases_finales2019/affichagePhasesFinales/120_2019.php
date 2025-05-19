@@ -120,7 +120,7 @@
     <td width="83"></td>
     <td width="269" class="coin4"><?php echo $clubA2003;?></td>
     <td width="41" class="coin4pts"><?php echo $A2003;?></td>
-    <td colspan="4" rowspan="2" align="center"><b><font size="5">Champion de France <?php echo $annee; ?></font></b></td>
+    <td colspan="4" rowspan="2" align="center"><b><font size="5">Champion de Franceee <?php echo $annee; ?></font></b></td>
   </tr>
   <tr> 
     <td width="83" ></td>
@@ -176,8 +176,8 @@
   </tr>
 </table>
 <?php 
-if ($annee > 2017)
-require 'matchAccession.php';
+//if ($annee > 2017)
+//require 'matchAccession.php';
 
-$division ="120";
+
 ?>

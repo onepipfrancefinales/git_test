@@ -1,11 +1,12 @@
-<table width="90%" border="1" align="center">
+<table class="borderDouble width90PC marginAuto">
   <tr> 
-    <td class ="titre">Barrages<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D4ME; ?></strong></i></b></font></div>
+    <td class="titre"> Barrages <br />
+	<div class="pf_lieux"><?php echo $D4ME; ?></div>
   </td>
   </tr>
 </table>
 <br />
-<table width="90%" border="0" align="center">
+<table width="90%"  class="borderNone" >
   <tr> 
     <td colspan="2"><?php //echo $D4ME;?></td>  
   <tr> 
@@ -28,79 +29,12 @@
     <td class="coin4"><?php echo $A4008;?></td>
   </tr>
 </table>
-<p align="center"><?php	include("../../pub/pub20.php");?></p>
-<table width="90%" border="1" align="center">
-  <tr> 
-    <td class="titre">Demi finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D2ME; ?></strong></i></b></font></div></td>
-  </tr>
-</table>
+
+<br>
+<?php require '02me_demi.php'; ?>
 <br />
-<table width="90%" border="0" align="center">
-  <tr> 
-    <td colspan="2"></td>
-  </tr>
-  <tr> 
-    <td class="coin5"><?php echo $clubA2001;?></td>
-    <td class="coin5pts"><?php echo $A2001;?></td>
-  </tr>
-  <tr> 
-    <td class="coin5"><?php echo $clubA2002;?></td>
-    <td class="coin5pts"><?php echo $A2002;?></td>
-  </tr>
-  <tr> 
-   <td colspan="2" height="25"></td>
-  </tr>
-  <tr> 
-    <td class="coin4"><?php echo $clubA2003;?></td>
-    <td class="coin4pts"><?php echo $A2003;?></td>
-  </tr>
-  <tr> 
-    <td class="coin4"><?php echo $clubA2004;?></td>
-    <td class="coin4pts"><?php echo $A2004;?></td>
-  </tr>
-  <tr>
-   <td colspan="2" height="25"></td>
-  </tr>
-</table>
-
-<?php	include("../../pub/pub20.php");?>
-<table width="90%" border="1" align="center">
-  <tr>
-    <td class="titre">Finale<br /><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b><i><strong><?php echo $D1ME; ?></strong></i></b></font></div></td>
- 
-  </tr>
-</table>
-<table width="90%" border="0" align="center">
-  <tr> 
-    <td colspan="2"></td>
-  </tr>
-  <tr> 
-    <td class="coin5"><?php echo $clubA1001 ;?></td>
-    <td class="coin5pts"><?php echo $A1001 ;?></td>
-  </tr>
-  <tr> 
-    <td class="coin5"><?php echo $clubA1002 ;?></td>
-    <td class="coin5pts"><?php echo $A1002 ;?></td>
-  </tr>
-</table>
-<br>
-<table width="90%" border="1" align="center">
-  <tr> 
-    <td bgcolor="#FF0000" class="champion">Champion de France <?php echo $annee ;?>
-    <br> <?php echo $nomDivision ;?></td>
-  </tr>
-</table>
-<center>	
-<?php
-	if (is_numeric($A1001)and is_numeric($A1002))
-	{
-	$idEquipeCourt = substr($idEquipe,2,7);echo "<br />";
-	echo "<img src=\"../../images/blasons200_200/$idEquipeCourt.gif\" height=\"100\" width=\"100\">";
-	}
-	?>
-	<p class="equipeChamp"><?php echo $champion;?></p>
-</center>
-<br>
-
+<?php require '01me_finale.php'; ?>
 </hr></hr>
-<?php require 'barrageAccession.php';?>
+<?php 
+echo "test8120_prod2";
+require 'barrageAccession.php';?>

@@ -1,9 +1,8 @@
 
 <?php
-
+	if (isset($_GET['division'])) $division = $_GET['division']; else $division = 110;
 
 if ($annee == 2025) {
-
   echo "<table class=\"borderNone\">";
     echo "<tr>";
   if ($division == 170 || $division == 175) {
@@ -68,7 +67,7 @@ if ($annee == 2025) {
 <td colspan ="18">
     <p class="size4">
 <?php
-if ($division == 170 and $annee == 2025) 
+if ($division == 170 & $annee == 2025) 
   echo "Les équipes en jaunes évolueront la saison prochaine en fédérale 3. Les 2 meilleurs parcours
  parmi les équipes de couleur blanche gagneront le droit d'évoluer en Fédérale 3 la saison prochaine. ";
 ?>

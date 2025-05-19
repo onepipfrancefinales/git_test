@@ -344,7 +344,7 @@ for($i=6401, $j=6402; $i<6464, $j<6465; $i=$i+2, $j=$j+2) {
 
  function rechercheBarrages($division, $annee, $bdd)
 {  
-	
+	echo "methode rechercheBarrages";
 	GLOBAL $typeBarrage, $divisionBarrage;
   $division2 = 7000 + $division;
  
