@@ -1,5 +1,13 @@
 
+
+
+
 <?php
+
+
+
+
+
 function suiviDuTraitement($division, $requete){
 
 if($requete)	
@@ -173,48 +181,39 @@ SELECT bdclubs.id, bdclubs.nom_1, bdclubs.sigleComite, bdclubs.ligue
 				AND bdpffrance.id= '$division' AND bdpffrance.saison = '$annee'"
 
 	*/			
-function accessMatch ($division, $annee, $bdd) {
+function accessMatch($division, $annee, $bdd)
+{
 
-	GLOBAL $equipeDom, $equipeExt, $scoreDom, $scoreExt;
-	
-	$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance_2.A1001, bdligue.sigle
-	FROM bdclubs, bdpffrance,  bdpffrance_2, bdligue
-	WHERE 	bdclubs.id= bdpffrance.E01
-	AND bdligue.id = bdclubs.ligue
-	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'
-	AND bdpffrance_2.id = '$division' AND bdpffrance_2.saison = '$annee'
-	");
+  global $equipeDom, $equipeExt, $scoreDom, $scoreExt;
 
-	while ($row = $reponse->fetch() )
-		{ 
-		
-		$equipe = $row[0];
-		$scoreDom = $row[1];
-		$ligue = $row[2];
+  $reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3201, bdligue.sigle
+	FROM  bdclubs, bdpffrance, bdligue
+	WHERE bdclubs.id = bdpffrance.E01
+	AND bdpffrance.saison = '$annee'
+  AND bdpffrance.id = '$division'
+  AND bdligue.id = bdclubs.ligue	");
 
-		}
+  while ($row = $reponse->fetch()) {
+    $equipeA = $row[0];
+    $scoreDom = $row[1];
+    $sigleLigueDom = $row[2];
+  }
 
-		$equipeDom = $equipe.' ('.$ligue.')';		
+  $equipeDom = $equipeA . ' ' . "(" . $sigleLigueDom . ")";
 
-		$reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance_2.A1002, bdligue.sigle
-	FROM bdclubs,bdpffrance, bdpffrance_2, bdligue
-	WHERE 	bdclubs.id= bdpffrance.E02
-	AND bdligue.id = bdclubs.ligue
-	AND bdpffrance.id = '$division' AND bdpffrance.saison = '$annee'
-	AND bdpffrance_2.id = '$division' AND bdpffrance_2.saison = '$annee'
-	");
+  $reponse = $bdd->query("SELECT bdclubs.nom_1, bdpffrance.A3202, bdligue.sigle
+	FROM  bdclubs, bdpffrance, bdligue
+	WHERE bdclubs.id = bdpffrance.E02
+	AND bdpffrance.saison = '$annee'
+  AND bdpffrance.id = '$division'
+  AND bdligue.id = bdclubs.ligue	");
 
-	while ($row = $reponse->fetch() )
-		{ 
-		
-		
-		$equipe = $row[0];
-		$scoreExt = $row[1];
-		$ligue = $row[2];
-		}
-
-		$equipeExt = $equipe.' ('.$ligue.')';
-
+  while ($row = $reponse->fetch()) {
+    $equipeB = $row[0];
+    $scoreExt = $row[1];
+    $sigleLigueExt = $row[2];
+  }
+  $equipeExt = $equipeB . ' ' . "(" . $sigleLigueExt . ")";
 }
 
 
@@ -341,6 +340,8 @@ for($i=6401, $j=6402; $i<6464, $j<6465; $i=$i+2, $j=$j+2) {
 
 //  if ($A6401 + $A6402 == 0) { $A6401 = "-"; $A6402 = "-";}
  }
+
+
 
  function rechercheBarrages($division, $annee, $bdd)
 {  
@@ -1855,15 +1856,5 @@ for ($i=$debut ; $i<= $fin; $i++){
 
 						championDeFrance ( $clubA1001, $clubA1002, $A1001, $A1002, $bdd);
 					}
-
-
-
-
-
-
-
-
-					
-	
 
  ?>

@@ -5,9 +5,6 @@ else {
 	$adresse = "/smart/pf/pagePhaseFinale.php";
 }
 
-
-
-
 ?>
 
 <table class="marginAuto border borderSpacing" width="100%">

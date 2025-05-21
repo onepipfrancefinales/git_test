@@ -127,7 +127,7 @@
   </tr>
   <tr> 
     <td></td>
-	<td class="coin4"><?php echo $clubA2001; ?></td>
+	 <td class="coin4"><?php echo $clubA2001; ?></td>
     <td class="ptsTerrain"><?php echo $A2001Pts; ?></td>
     <td class="coin4GA"><?php echo $A2001; ?></td>
     <td></td>

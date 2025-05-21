@@ -34,53 +34,53 @@
     <td width="118"></td>
   </tr>
   <tr> 
-    <td width="83"> </td>
-    <td width="269" class="coin4"><?php echo $clubA4003;?></td>
-    <td width="41" class="coin4pts"><?php echo $A4003;	 ?></td>
-    <td width="85"></td>
-    <td width="21"></td>
-    <td width="245" class="coin4"><?php echo $clubA4007; ?></td>
-    <td width="37" class="coin4pts"><?php echo $A4007; ?></td>
-    <td width="118"></td>
+    <td></td>
+    <td class="coin4"><?php echo $clubA4003;?></td>
+    <td class="coin4pts"><?php echo $A4003;	 ?></td>
+    <td></td>
+    <td></td>
+    <td class="coin4"><?php echo $clubA4007; ?></td>
+    <td class="coin4pts"><?php echo $A4007; ?></td>
+    <td></td>
   </tr>
   <tr> 
-    <td width="83"></td>
+    <td></td>
     <td width="269" class="coin4"><?php echo $clubA4004; ?></td>
     <td width="41" class="coin4pts"><?php echo $A4004; ?></td>
     <td width="85"></td>
     <td width="21"></td>
-    <td width="245" class="coin4"><?php echo $clubA4008; ?></td>
-    <td width="37" class="coin4pts"><?php echo $A4008;?></td>
-    <td width="118"></td>
+    <td class="coin4"><?php echo $clubA4008; ?></td>
+    <td class="coin4pts"><?php echo $A4008;?></td>
+    <td"></td>
   </tr>
   <tr> 
-    <td colspan="8"></td>
+    <td colspan="12"></td>
   </tr>
   <tr> 
-    <td colspan="8"></td>
+    <td colspan="12"></td>
   </tr>
   <tr> 
-    <td width="83"></td>
-    <td width="269" class="coin5">Demi finale</td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td width="21"></td>
-    <td width="245" class="coin5">Finale</td>
-    <td width="37"></td>
-    <td width="118"></td>
+    <td></td>
+    <td class="coin5">Demi finale</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="coin5">Finale</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr> 
-    <td width="83"></td>
-    <td width="269"><?php echo $D2ME; ?></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td width="21"></td>
+    <td></td>
+    <td><?php echo $D2ME; ?></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td width="245"><?php echo $D1ME;?></td>
     <td width="37"></td>
     <td width="118"></td>
   </tr>
   <tr> 
-    <td width="83"></td>
+    <td></td>
     <td width="269" class="coin4"><?php echo $clubA2001;?></td>
     <td width="41"class="coin4pts"><?php echo $A2001; ?></td>
     <td rowspan="6" width="85"><img src="../../images/accolade.png" width="8" height="120"></td>
@@ -108,19 +108,13 @@
     <td width="118" ></td>
   </tr>
   <tr> 
-    <td width="83" ></td>
-    <td width="269" ></td>
-    <td width="41" ></td>
-    <td width="21" ></td>
-    <td width="245" ></td>
-    <td width="37" ></td>
-    <td width="118" ></td>
+    <td colspan="12" ></td>
   </tr>
   <tr> 
     <td width="83"></td>
     <td width="269" class="coin4"><?php echo $clubA2003;?></td>
     <td width="41" class="coin4pts"><?php echo $A2003;?></td>
-    <td colspan="4" rowspan="2" align="center"><b><font size="5">Champion de Franceee <?php echo $annee; ?></font></b></td>
+    <td colspan="4" rowspan="2" class="center size5 bold">Champion de France <?php echo $annee; ?></td>
   </tr>
   <tr> 
     <td width="83" ></td>
@@ -136,12 +130,8 @@
     <td colspan="4" align="center"><img src="../../images/blasons200_200/<?php echo $idEquipeCourt;?>.gif" width="150" height="150"></td>
   </tr>
   <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269"></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td colspan="4"></td>
+    <td colspan="124"></td>
+  
   </tr>
   <tr> 
     <td colspan="4"></td>
@@ -152,12 +142,8 @@
     <td colspan="4" class="champ"><?php echo $champion; ?></td>
   </tr>
   <tr> 
-    <td colspan="4"></td>
-    <td width="83"></td>
-    <td width="269"></td>
-    <td width="41"></td>
-    <td width="85"></td>
-    <td colspan="4" ></td>
+    <td colspan="12"></td>
+
   </tr>
   <tr> 
     <td colspan="4"></td>
@@ -176,8 +162,8 @@
   </tr>
 </table>
 <?php 
-//if ($annee > 2017)
-//require 'matchAccession.php';
+if ($annee > 2017)
+require 'matchAccession.php';
 
 
 ?>

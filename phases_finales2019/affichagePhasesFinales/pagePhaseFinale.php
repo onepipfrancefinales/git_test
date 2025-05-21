@@ -73,9 +73,6 @@ $tabDivisions = array(1700,1800);
 if (in_array($division, $tabDivisions) and $annee== 2025) {
 	require 'equipesEngagees.php';
 }
-		
-
-
 elseif ($annee > 2025) {
 			require 'finRegionales.php';
 		} else {
@@ -94,12 +91,10 @@ elseif ($annee > 2025) {
 					require "110_2019.php";
 
 				//********   Pro D2    *********	
-
 				elseif ($division == '120')
 					require "120_2019.php";
 
 				//********   Nationale    *********	
-
 				elseif ($division == '130') {
 					if ($annee < 2024) {
 						require "130_2019.php";
@@ -112,7 +107,6 @@ elseif ($annee > 2025) {
 					require "0804AR.php";
 
 				//********   Fed1    *********	
-
 				elseif ($division == '140')
 					require "0164AR.php";
 			} elseif (substr($type, 0, 1) == '9' or substr($type, 0, 1) == '7') {
@@ -176,12 +170,16 @@ elseif ($annee > 2025) {
 					require "plusDeChamp.php";
 				}
 			}
+			if ($division == 135 and $annee== 2025)
+			require 'matchAccession.php';
 		}
 
 		?>
  </body>
  <footer>
- 	<?php require 'bas.php'; ?>
+ 	<?php 
+	echo "test";
+	require 'bas.php'; ?>
  </footer>
 
  </html>

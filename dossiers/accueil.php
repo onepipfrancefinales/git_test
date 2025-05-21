@@ -99,7 +99,6 @@
 
     </td>
     <td width="340" class=" borderWidth1 size5 ">
-
       <a href="dossiers/scores/pageScore.php"> Evolution des points </a></p>
       <img src="images/panneauScore.gif" width="324" height="160">
       </div>
