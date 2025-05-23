@@ -7,14 +7,15 @@ if (isset($_GET['comite'])) $comite = $_GET['comite'];
 <html>
 <head>
 <meta name="description"
-content="Tout sur le comité territorial <?php echo $titre;?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comité); les effectifs; les palmarès nationaux; les palmarés territoriaux et l'ensemble des clubs composant le comité avec un lien pour accéder aux différents clubs.">
+content="Tout sur le comitï¿½ territorial <?php echo $titre;?> : Prï¿½sentation du comitï¿½ (Bureau; adresse; contact mel; contact site officiel du comitï¿½); les effectifs; les palmarï¿½s nationaux; les palmarï¿½s territoriaux et l'ensemble des clubs composant le comitï¿½ avec un lien pour accï¿½der aux diffï¿½rents clubs.">
 <meta name="keywords"
-content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+content="comitï¿½ Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">
+<meta charset="utf-8">
 
 <link type="text/css" rel="stylesheet" href="../ligneNoir.css"/>
  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
@@ -76,10 +77,7 @@ content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rug
  </table>
 <?php include("../resultats/piedDePage.php"); ?>
    <footer> 
-    <div id="9129-5">
-     <script src="//ads.themoneytizer.com/s/gen.js?type=5"></script>
-     <script src="//ads.themoneytizer.com/s/requestform.js?siteId=9129&amp;formatId=5"></script>
-    </div>
+   
    </footer>
  </body>
 </html>

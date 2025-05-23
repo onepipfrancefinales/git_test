@@ -21,7 +21,7 @@
 <table width="100%" border="0" align="center"  height="100%"><tr>
 <td colspan="2" align="center">
 <?php include("haut.inc.php"); ?>
-<?php// include("haut.inc.php3"); ?>
+<?php // include("haut.inc.php3"); ?>
 </td></tr>
 <tr><td width="22%" align="center" valign="top" height="70">
 <font face="Verdana" size="2" color="#3b487f"><b>phpabeague</b></font>
@@ -36,7 +36,7 @@
 <td width="78%" align="center" valign="top" height="100%">
 <?php include("pronos1.php"); ?></td></tr>
 <tr><td width="100%" colspan="2">
-<?php// include("bas.inc.php"); ?>
-<?php// include("bas.inc.php3"); ?>
+<?php // include("bas.inc.php"); ?>
+<?php // include("bas.inc.php3"); ?>
 </td></tr></table>
 </body></html>

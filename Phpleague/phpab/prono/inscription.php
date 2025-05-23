@@ -186,7 +186,7 @@ echo "-----------------------"; echo "<br/>";
 else
 {
  echo "<table align=\"center\">";
-  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\">".R�essayer."</a></td></tr>";
+  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\">".Réessayer."</a></td></tr>";
   echo "</table>";
 }
 

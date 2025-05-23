@@ -316,6 +316,9 @@ else
     }
     echo "<br>"."<br>";
 
+
+   // dates(170, 2025, $bdd);
+
     /**************************  FONCTIONS  *********************************** */
     function affichageCompetitions($competition)
     {
@@ -340,6 +343,10 @@ else
 
     function affichageNomDivision($nb_equipe, $idDivision, $bdd)
     {
+       
+       if ($idDivision == 160)
+            $montee = "Emininée en 32me";
+       
         if ($nb_equipe[0] > 0) {
     ?>
             <table width="90%" border="1" align="center">
@@ -362,6 +369,45 @@ else
             echo $row[0];
         }
     }
+
+/********************************* */
+/*
+ function dates($idDivision, $saison, $bdd)
+    {
+       
+     
+       
+       
+       $reponse = $bdd->query("SELECT type, D32ME, D16ME, D8ME, D4ME, D2ME, D1ME
+                                  FROM bdpffrance_date
+                                  WHERE id = '$idDivision' and saison='$saison'");
+        while ($row = $reponse->fetch()) {
+            $type = $row[0];
+            $D32 = $row[1];
+            $D16 = $row[2];
+            $D08 = $row[3];
+            $D04 = $row[4];
+            $D02 = $row[5];
+            $D01 = $row[6];
+
+            echo $type; echo "<br>";
+            echo substr($D32,2,8); echo "<br>";
+            echo $D16; echo "<br>";
+            echo $D08; echo "<br>";
+            echo $D04; echo "<br>";
+            echo $D02; echo "<br>";
+            echo $D01; echo "<br>";
+        }
+
+    
+setlocale(LC_ALL, 'fr_FR.UTF8', 'fr_FR','fr','fr','fra','fr_FR@euro');
+$dateDuJour = strftime(" %d %B");
+echo $dateDuJour;
+    }
+
+
+*/
+/******************************************* */
 
     function constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd)
     {

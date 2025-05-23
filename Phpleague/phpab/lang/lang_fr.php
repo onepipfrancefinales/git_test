@@ -449,7 +449,7 @@ define("PRONO_OUBLIE_TEXTE_3","Le mot de passe ne peux vous �tre envoy� !<br
 
 
 //accueil
-define("PRONO_ACCUEIL_PRESENTATION","vous pr�sente ses pronostics pour la prochaine grille");
+define("PRONO_ACCUEIL_PRESENTATION","vous présente ses pronostics pour la prochaine grille");
 
 // GRILLE
 define("PRONO_GRILLE_PRONO","Prono");
@@ -465,17 +465,17 @@ define("PRONO_GRILLE_PROCHAINE","Prochaine grille");
 
 
 // Classements
-define("PRONO_CLASSEMENT_GENERAL","Classement g�n�ral");
+define("PRONO_CLASSEMENT_GENERAL","Classement général");
 define("PRONO_CLASSEMENT_PSEUDO","Pseudo");
 define("PRONO_CLASSEMENT_POINTS","Points");
 define("PRONO_CLASSEMENT_PARTICIPATIONS","Participations");
-define("PRONO_CLASSEMENT_GENERAL_MAJ","CLASSEMENT G�N�RAL");
+define("PRONO_CLASSEMENT_GENERAL_MAJ","CLASSEMENT GENERAL");
 define("PRONO_CLASSEMENT_MOIS","CLASSEMENT DU MOIS");
 define("PRONO_CLASSEMENT_30","CLASSEMENT DES 30 DERNIERS JOURS");
 define("PRONO_CLASSEMENT_HEBDO","CLASSEMENT HEBDO");
 define("PRONO_CLASSEMENT_COMPLET","Classement complet");
 define("PRONO_CLASSEMENT_SUITE","La suite...");
-define("PRONO_CLASSEMENT_NON_CLASSE","Non class�");
+define("PRONO_CLASSEMENT_NON_CLASSE","Non classé");
 define("PRONO_CLASSEMENT_PREMIER","er");   // Pour 1er    1st
 define("PRONO_CLASSEMENT_SECOND","nd");   // Pour 2nd     2nd
 define("PRONO_CLASSEMENT_TROIS","e");   // Pour 3e       3rd
@@ -483,19 +483,19 @@ define("PRONO_CLASSEMENT_AUTRES","e");   // Pour xe       xth
 
 // Inscription
 define("PRONO_INSCRIPTION_TITRE","Inscription");
-define("PRONO_INSCRIPTION_MDP","Saisissez � nouveau votre mot de passe");
+define("PRONO_INSCRIPTION_MDP","Saisissez à nouveau votre mot de passe");
 define("PRONO_INSCRIPTION_MDP2","Saisissez le club suivi");
-define("PRONO_INSCRIPTION_PSEUDO_UTILISE","Ce pseudo est d�j� utilis� !");
-define("PRONO_INSCRIPTION_PSEUDO_TAILLE","Votre pseudo doit contenir entre 4 et 20 caract�res !");
-define("PRONO_INSCRIPTION_MAIL_UTILISE","Cette adresse email est d�ja utilis�e !");
-define("PRONO_INSCRIPTION_MAIL_VIDE","Le champ adresse email ne peut �tre vide !");
+define("PRONO_INSCRIPTION_PSEUDO_UTILISE","Ce pseudo est déjà utilisé !");
+define("PRONO_INSCRIPTION_PSEUDO_TAILLE","Votre pseudo doit contenir entre 4 et 20 caractères !");
+define("PRONO_INSCRIPTION_MAIL_UTILISE","Cette adresse email est déjà utilisée !");
+define("PRONO_INSCRIPTION_MAIL_VIDE","Le champ adresse email ne peut être vide !");
 define("PRONO_INSCRIPTION_MAIL_INVALIDE_1","L'adresse email");
 define("PRONO_INSCRIPTION_MAIL_INVALIDE_2","n'est pas valide");
 define("PRONO_INSCRIPTION_JS_PSEUDO","Veuillez indiquer votre pseudo !");
 define("PRONO_INSCRIPTION_JS_MAIL","Veuillez indiquer votre adresse email !");
 define("PRONO_INSCRIPTION_JS_MAILVALID","Entrez une adresse e-mail valide !");
 define("PRONO_INSCRIPTION_JS_MDP","Veuillez indiquer deux fois votre mot de passe !");
-define("PRONO_INSCRIPTION_JS_DIFF","ATTENTION, vos mots de passe sont diff�rents !");
+define("PRONO_INSCRIPTION_JS_DIFF","ATTENTION, vos mots de passe sont différents !");
 define("PRONO_INSCRIPTION_JS_NOM","Veuillez indiquer votre nom !");
 define("PRONO_INSCRIPTION_JS_PRENOM","Veuillez indiquer votre prenom !");
 define("PRONO_INSCRIPTION_JS_ADRESSE","Veuillez indiquer votre adresse !");
@@ -504,12 +504,12 @@ define("PRONO_INSCRIPTION_JS_VILLE","Veuillez indiquer votre ville !");
 define("PRONO_INSCRIPTION_JS_PAYS","Veuillez indiquer votre pays !");
 define("PRONO_INSCRIPTION_JS_NAISS_JOUR","Veuillez indiquer votre jour de naissance !");
 define("PRONO_INSCRIPTION_JS_NAISS_MOIS","Veuillez indiquer votre mois de naissance !");
-define("PRONO_INSCRIPTION_JS_NAISS_ANNEE","Veuillez indiquer votre ann�e de naissance !");
+define("PRONO_INSCRIPTION_JS_NAISS_ANNEE","Veuillez indiquer votre année de naissance !");
 define("PRONO_INSCRIPTION_JS_PROF","Veuillez indiquer votre profession !");
 define("PRONO_INSCRIPTION_JS_TEL","Veuillez indiquer votre numeros de mobile !");
-define("PRONO_INSCRIPTION_SUCCES","Inscription r�alis�e avec succ�s ! Un email vous a �t� adress� pour vous communiquez votre mot de passe !");
+define("PRONO_INSCRIPTION_SUCCES","Inscription réalisée avec succès ! Un email vous a été adress� pour vous communiquez votre mot de passe !");
 define("PRONO_INSCRIPTION_CONNEXION","Connexion");
-define("PRONO_INSCRIPTION_ECHOUE","L'envoie de l'e-mail a �chou� !");
+define("PRONO_INSCRIPTION_ECHOUE","L'envoie de l'e-mail a échoué !");
 
 // Profil
 define("PRONO_PROFIL_SUR","Etes vous s�r de vouloir suprimer le compte de");
