@@ -13,7 +13,8 @@
 </p>
 <p><b>Traitement du fichier générer</b></p>
 <p>Copier coller les données dans l'éditeur de texte Notepad (48 lignes)
-	<br> Encoder les données en UTF8 et enregistrer au format nomDuFichier.csv.
+<br> Encoder les données en UTF8 et enregistrer au format nomDuFichier.csv.
+<br> Modifier le caractère de séparation : remplacer , par ; .
 </p>
 <hr>
 <br>
@@ -115,9 +116,9 @@ foreach ($comite2 as $comite) {
 		$id2 = $id1 + 1;
 		$constante = 2;
 
-		echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $clubChampion . ';' . $clubChampion . ';' . ';' . '(' . $ligue . ')' . ';' . $clubViceChampion . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B";
+		echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $clubChampion . ';' . $clubChampion . ';' . ';' . '(' . $ligue . ')' . ';' . $clubViceChampion . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B" . ';' . "";
 		echo "<br />";
-		echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . ';' . ';' . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B";
+		echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . ';' . ';' . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B" . ';' . "";
 		echo "<br />";
 	}
 }
@@ -225,9 +226,9 @@ foreach ($comite2 as $comite) {
 		$id2 = $id1 + 1;
 		$constante = 2;
 
-		echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $clubChampion . ';' . $clubChampion . ';' . $clubChampion . ';' . '(' . $ligue . ')' . ';' . $clubViceChampion . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B";
+		echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $clubChampion . ';' . $clubChampion . ';' . $clubChampion . ';' . '(' . $ligue . ')' . ';' . $clubViceChampion . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B" . ';' . "";
 		echo "<br />";
-		echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . ';' . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B";
+		echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . ';' . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B" . ';' . "";
 		echo "<br />";
 		
 	}
@@ -341,9 +342,9 @@ foreach ($comite2 as $comite) {
 		$id1 = ($annee * 1000000) + ($idLigue * 10000) + $division;
 		$id2 = $id1 + 2;
 
-		echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $clubChampion . ';' . $clubChampion . ';' . $clubChampion . ';' . '(' . $ligue . ')' . ';' . $clubViceChampion . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B";
+		echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $clubChampion . ';' . $clubChampion . ';' . $clubChampion . ';' . '(' . $ligue . ')' . ';' . $clubViceChampion . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B" . ';' . "";
 		echo "<br />";
-		echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . ';' . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B";
+		echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . $clubViceChampion . ';' . ';' . ';' . '(' . $ligue . ")" . ';' . $scoreFinale1 . ';' . $scoreFinale2 . ';' . $titreRegional . ';' . $idDivision . ';' . $constante . ';' . "B" . ';' . "";
 		echo "<br />";
 	}
 }

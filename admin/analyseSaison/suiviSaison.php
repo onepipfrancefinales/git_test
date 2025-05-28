@@ -191,10 +191,6 @@ elseif ($idComite == "2035")
    
         echo "<br>";
         echo "<br>";
-   
-   
-   
-  
    ?>
 
 
@@ -272,6 +268,9 @@ else
     echo "<br>";
     }
 
+echo " <font size=\"4\">"."Les équipes sur fond vert évolueront la saison prochaine dans la division supérieure"."</font>";
+echo "<br>". "<br>";
+    
     if ($mode == "smart")
         require('../connect/connexion1.php');
     else
@@ -283,7 +282,7 @@ else
     foreach ($listeDivisions as $idDivision) {
         constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd);
         affichageNomDivision($nb_equipe, $idDivision, $bdd);
-        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd);
+        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $tabMontee, $bdd);
     }
     echo "<br>"."<br>";
 
@@ -293,7 +292,7 @@ else
     foreach ($listeDivisions as $idDivision) {
         constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd);
         affichageNomDivision($nb_equipe, $idDivision, $bdd);
-        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd);
+        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $tabMontee, $bdd);
     }
     echo "<br>"."<br>";
 
@@ -303,7 +302,7 @@ else
     foreach ($listeDivisions as $idDivision) {
         constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd);
         affichageNomDivision($nb_equipe, $idDivision, $bdd);
-        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd);
+        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $tabMontee, $bdd);
     }
     echo "<br>"."<br>";
 
@@ -312,7 +311,7 @@ else
     foreach ($listeDivisions as $idDivision) {
         constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd);
         affichageNomDivision($nb_equipe, $idDivision, $bdd);
-        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd);
+        affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $tabMontee, $bdd);
     }
     echo "<br>"."<br>";
 
@@ -370,44 +369,6 @@ else
         }
     }
 
-/********************************* */
-/*
- function dates($idDivision, $saison, $bdd)
-    {
-       
-     
-       
-       
-       $reponse = $bdd->query("SELECT type, D32ME, D16ME, D8ME, D4ME, D2ME, D1ME
-                                  FROM bdpffrance_date
-                                  WHERE id = '$idDivision' and saison='$saison'");
-        while ($row = $reponse->fetch()) {
-            $type = $row[0];
-            $D32 = $row[1];
-            $D16 = $row[2];
-            $D08 = $row[3];
-            $D04 = $row[4];
-            $D02 = $row[5];
-            $D01 = $row[6];
-
-            echo $type; echo "<br>";
-            echo substr($D32,2,8); echo "<br>";
-            echo $D16; echo "<br>";
-            echo $D08; echo "<br>";
-            echo $D04; echo "<br>";
-            echo $D02; echo "<br>";
-            echo $D01; echo "<br>";
-        }
-
-    
-setlocale(LC_ALL, 'fr_FR.UTF8', 'fr_FR','fr','fr','fra','fr_FR@euro');
-$dateDuJour = strftime(" %d %B");
-echo $dateDuJour;
-    }
-
-
-*/
-/******************************************* */
 
     function constructionDuTableau($idDivision, $idComite, $suiviLigue, $bdd)
     {
@@ -427,9 +388,10 @@ echo $dateDuJour;
 
             $nb_equipe = $reponse->fetch();
 
-            $reponse = $bdd->query(" SELECT division, parcours, idclub, montee
-                            FROM $suiviLigue
-                            WHERE division = '$idDivision' ");
+            $reponse = $bdd->query(" SELECT $suiviLigue.division, suiviChampFranceEtape.intitule, $suiviLigue.idclub, $suiviLigue.montee
+                            FROM $suiviLigue, suiviChampFranceEtape
+                            WHERE $suiviLigue.division = '$idDivision'
+                            AND suiviChampFranceEtape.id = $suiviLigue.parcours ");
         } else {
             $reponse = $bdd->query(" SELECT COUNT(*)
                 FROM $suiviLigue
@@ -438,9 +400,11 @@ echo $dateDuJour;
 
             $nb_equipe = $reponse->fetch();
 
-            $reponse = $bdd->query(" SELECT division, parcours, idclub, montee
-                            FROM $suiviLigue
-                            WHERE division = '$idDivision' and idClub LIKE '%$idComite%'");
+            $reponse = $bdd->query(" SELECT $suiviLigue.division, suiviChampFranceEtape.intitule, $suiviLigue.idclub, $suiviLigue.montee
+                            FROM $suiviLigue, suiviChampFranceEtape
+                            WHERE $suiviLigue.division = '$idDivision' 
+                            AND suiviChampFranceEtape.id = $suiviLigue.parcours
+                            AND $suiviLigue.idClub LIKE '%$idComite%'");
         }
 
         while ($row = $reponse->fetch()) {
@@ -448,11 +412,19 @@ echo $dateDuJour;
             $tabParcours[] = $row[1];
             $tabIdClub[] = $row[2];
             $tabMontee[] = $row[3];
+
+         
         }
     }
 
-    function affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $bdd)
+
+
+
+    function affichage($nb_equipe, $tabParcours, $tabIdClub, $mode, $tabMontee, $bdd)
     {
+
+
+        
         echo    "<table width=\"90%\" border=\"1\" align=\"center\">";
         for ($i = 0; $i < $nb_equipe[0]; $i++) {
         ?>
@@ -473,7 +445,9 @@ echo $dateDuJour;
                         echo  "</font>";
                     } ?> </td>
 
-                <td width="50%" align="center" <?php if ($tabParcours[$i] == "Champion de France") echo "bgcolor=\"#009900\"";   ?>>
+                <td width="50%" align="center" 
+                <?php if ($tabParcours[$i] == "Champion de France") echo "bgcolor=\"#009900\"";   ?>
+                <?php if ($tabMontee[$i] == "1" ) echo "bgcolor=\"#71d189\"";   ?>>
                     <?php
                     if ($tabParcours[$i] == "Champion de France") {
                         echo " <font color=\"#FFFFFF\" face=\"Arial, Helvetica, sans-serif\"> ";
@@ -487,7 +461,7 @@ echo $dateDuJour;
                         nomEquipe($tabIdClub[$i], $bdd);
                         echo "</b>";
                         echo  "</font>";
-                    } else if ($tabParcours[$i] == " ") {
+                    } else if ($tabParcours[$i] == "") {
                         echo "<b>";
                         nomEquipe($tabIdClub[$i], $bdd);
                         echo "</b>";

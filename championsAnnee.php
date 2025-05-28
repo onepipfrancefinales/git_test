@@ -184,6 +184,17 @@ if ($saison > 2024 ){
 		<td class="style size4"><?php championAnnee($saison, 330, $bdd);?></td>
 		<td><a href="<?php echo $adresse; ?>?division=330&annee=<?php echo $saison; ?>" title="Consulter les phases finales de la division"><img src="/favicon.ico"></a></td>
 	</tr class="size5">
+	<?php
+	if ($saison > 2024 ){
+?>
+<tr class="size4">
+		<td class="styleDivision">Régionale 1 U18 :</td>
+		<td class="style size4"><?php championAnnee($saison, 335, $bdd);?></td>
+		<td><a href="<?php echo $adresse; ?>?division=9180&annee=<?php echo $saison; ?>" title="Consulter les phases finales de la division"><img src="/favicon.ico"></a></td>
+	</tr>
+<?php
+}
+?>
 	<td colspan="3" class="style styleDivision colorRed styleItalic">Cadets (-16ans)</b></td>
 	</tr>
 	<tr class="size4 backgroundGray">
@@ -201,6 +212,17 @@ if ($saison > 2024 ){
 		<td class="style size4"><?php championAnnee($saison, 370, $bdd);?></td>
 		<td><a href="<?php echo $adresse; ?>?division=370&annee=<?php echo $saison; ?>" title="Consulter les phases finales de la division"><img src="/favicon.ico"></a></td>
 	</tr>
+	<?php
+	if ($saison > 2024 ){
+?>
+<tr class="size4">
+		<td class="styleDivision">Régionale 1 U16 :</td>
+		<td class="style size4"><?php championAnnee($saison, 375, $bdd);?></td>
+		<td><a href="<?php echo $adresse; ?>?division=9180&annee=<?php echo $saison; ?>" title="Consulter les phases finales de la division"><img src="/favicon.ico"></a></td>
+	</tr>
+<?php
+}
+?>
 </table>
 
 <style>

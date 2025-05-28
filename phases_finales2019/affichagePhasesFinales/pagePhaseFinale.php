@@ -178,7 +178,7 @@ elseif ($annee > 2025) {
  </body>
  <footer>
  	<?php 
-	echo "test";
+
 	require 'bas.php'; ?>
  </footer>
 

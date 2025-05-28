@@ -68,7 +68,7 @@
       <td colspan="2">Vérification des classements</td>
     </tr>
     <tr>
-      <td width="389" colspan="2"><a href="/phases_finales2019/test.php?choix=990141">Récupèration des classements (tous les 1er, 2me etc...)</a></td>
+      <td width="389" colspan="2"><a href="/admin/analyseSaison/classementsFinDePoule.php?choix=990141">Récupèration des classements (tous les 1er, 2me etc...)</a></td>
     </tr>
     <tr>
       <td width="389"><!--<a href="/admin/majScores/telechargement/pageTraitementBonusOffensifs2.php">xxxTraitement Bonusxxx</a>-->

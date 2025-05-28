@@ -7,13 +7,13 @@ echo "***********************************************";
 echo "<br />";
 echo "fédérale 1 : 990141"."<br />";
 echo "féderale 2 : 990151"."<br />";
-echo "féderale 3 : 991160 - poule de 1 à 10"."<br />";
-echo "féderale 3 : 992160 - poule de 11 à 20"."<br />";
+echo "féderale 3 : 991161 - poule de 1 à 10"."<br />";
+echo "féderale 3 : 992161 - poule de 11 à 20"."<br />";
 echo "<br />";
 echo "Nationale 1 : 990241"."<br />";
 echo "féderale B : 990251"."<br />";
-echo "Excellence B : 991260 - poule de 1 à 10"."<br />";
-echo "Excellence B : 992260 - poule de 11 à 20"."<br />";
+echo "Excellence B : 991261 - poule de 1 à 10"."<br />";
+echo "Excellence B : 992261 - poule de 11 à 20"."<br />";
 echo "<br />";
 echo "***********************************************";
 echo "<br />";
@@ -29,15 +29,15 @@ echo "<br/>";echo "<br/>";
 
 
 
-if ($choix == 990141){ $debut = 990141; $fin=990145; $comite = "pro";}// fédérale 1 : 990141
-elseif ($choix == 990151){ $debut = 990151; $fin=990159; $comite = "pro";}// féderale 2 : 990251
-elseif ($choix == 991160){ $debut = 991160; $fin=991169; $comite = "fed3NE";}// féderale 3 : 991160 - poule de 1 à 10
-elseif ($choix == 992160){ $debut = 992160; $fin=992169; $comite = "fed3NE";}// féderale 3 : 991260 - poule de 11 à 20
+if     ($choix == 990141){ $debut = 990141; $fin=990144; $comite = "pro";}// fédérale 1 : 990141
+elseif ($choix == 990151){ $debut = 990151; $fin=990158; $comite = "pro";}// féderale 2 : 990251
+elseif ($choix == 991161){ $debut = 991161; $fin=991168; $comite = "fed3NE";}// féderale 3 : 991160 - poule de 1 à 10
+elseif ($choix == 992161){ $debut = 992161; $fin=992168; $comite = "fed3NE";}// féderale 3 : 991260 - poule de 11 à 20
 
-elseif ($choix == 990241){ $debut = 990241; $fin=990245; $comite = "pro";}// Nationale 1 : 990241
-elseif ($choix == 990251){ $debut = 990251; $fin=990259; $comite = "pro";}// féderale B : 990251
-elseif ($choix == 991260){ $debut = 991260; $fin=991269; $comite = "fed3NE"; }// Excellence B : 991260 - poule de 1 à 10
-elseif ($choix == 992260){ $debut = 992260; $fin=992269; $comite = "fed3NE";}// Excellence B : 992260 - poule de 11 à 20
+elseif ($choix == 990241){ $debut = 990241; $fin=990244; $comite = "pro";}// Nationale 1 : 990241
+elseif ($choix == 990251){ $debut = 990251; $fin=990258; $comite = "pro";}// féderale B : 990251
+elseif ($choix == 991261){ $debut = 991261; $fin=991268; $comite = "fed3NE"; }// Excellence B : 991260 - poule de 1 à 10
+elseif ($choix == 992261){ $debut = 992261; $fin=992268; $comite = "fed3NE";}// Excellence B : 992260 - poule de 11 à 20
 
 
 // Equipes classées 1re
@@ -92,11 +92,50 @@ echo "<br>";
 echo "<br />";
 
 
+//Equipes classées 9me
+echo "<b>"."9me de chaque poule"."</b>";
+echo "<br>";
+for ($division=$debut; $division <= $fin; $division = $division + 1)
+{traitement($comite, $division,9);}
+
+echo "<br>";
+echo "<br />";
+
+
+//Equipes classées 10me
+echo "<b>"."10me de chaque poule"."</b>";
+echo "<br>";
+for ($division=$debut; $division <= $fin; $division = $division + 1)
+{traitement($comite, $division,10);}
+
+echo "<br>";
+echo "<br />";
+
+//Equipes classées 11me
+echo "<b>"."11me de chaque poule"."</b>";
+echo "<br>";
+for ($division=$debut; $division <= $fin; $division = $division + 1)
+{traitement($comite, $division,11);}
+
+echo "<br>";
+echo "<br />";
+
+
+//Equipes classées 12me
+echo "<b>"."12me de chaque poule"."</b>";
+echo "<br>";
+for ($division=$debut; $division <= $fin; $division = $division + 1)
+{traitement($comite, $division,12);}
+
+echo "<br>";
+echo "<br />";
+
+
 
 //bdd - division - place
 function traitement($comite, $division, $place)
 {
-require '../connect/connexion6.php';	
+require '../../connect/connexion6.php';	
 
 $phpComite_clmnt_cache="php".$comite."_clmnt_cache";
 
@@ -115,5 +154,5 @@ $reponse = $bdd->query("SELECT NOM, ID_EQUIPE, POINTS, DIFF
 		$GA[]= $row[3];
 		}
 	$i = $place- 1;
-	echo $place.' ;'.$idEquipe[$i].'; '.$nomEquipe[$i].'; '.$points[$i].'; '.$GA[$i].'; '.$division;echo "<br>";	
+	echo $place.';'.$idEquipe[$i].';'.$nomEquipe[$i].';'.$points[$i].';'.$GA[$i].';'.$division;echo "<br>";	
 }
