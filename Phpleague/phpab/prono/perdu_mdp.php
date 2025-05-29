@@ -16,7 +16,7 @@
 //                                                                      */
 //***********************************************************************/
 
-if(empty($mail)){include ("perdu_mdp.htm");;}
+if(empty($mail)){include ("perdu_mdp.htm");}
 elseif (!empty($mail))
 {
 $taille = 8;
@@ -54,12 +54,12 @@ $message="<html>
 </head>
 <body>
 <p><font face=\"Verdana\" size=\"2\">Bonjour,</font></p>
-<p><font face=\"Verdana\" size=\"2\">Vous avez demandé à recevoir un nouveau mot
-de passe pour accéder aux pronostics du site <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
+<p><font face=\"Verdana\" size=\"2\">Vous avez demandï¿½ ï¿½ recevoir un nouveau mot
+de passe pour acceder aux pronostics du site <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
 <p><font face=\"Verdana\" size=\"2\">Votre pseudo : $pseudo</font></p>
 <p><font face=\"Verdana\" size=\"2\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
 <p><font face=\"Verdana\" size=\"2\">--------------------------------------------------------------------</font></p>
-<p><font face=\"Verdana\" size=\"2\">Ce script a été créé par <a href=\"http://phpabeague.univert.org\">phpabeague</a> : Gestionnaire de championnats sportifs et de pronostics !</font></p>
+<p><font face=\"Verdana\" size=\"2\">Ce script a Ã©tÃ© crÃ©Ã© par <a href=\"http://phpabeague.univert.org\">phpabeague</a> : Gestionnaire de championnats sportifs et de pronostics !</font></p>
 </body>
 </html>";
   $from="Content-Type: text/html; charset=\"iso-8859-15\"\nFrom: $mail_admin\n";

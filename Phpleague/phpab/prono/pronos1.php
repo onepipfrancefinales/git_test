@@ -1,21 +1,4 @@
-<?php
-//***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
-// ============================================                         */
-//                                                                      */
-// Version : 0.82                                                       */
-// Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
-//                                                                      */
-// This program is free software. You can redistribute it and/or modify */
-// it under the terms of the GNU General Public License as published by */
-// the Free Software Foundation; either version 2 of the License.       */
-//                                                                      */
-//***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
-//                                                                      */
-//***********************************************************************/
-?>
+
 <SCRIPT type="text/JavaScript">
 <!--
 var PL = new InitTab(64);
@@ -74,7 +57,7 @@ function ValideGrille(tot) {
 if (isset ($debut)) $debut=$debut; else $debut =0;
 //echo "debut : ".$debut;
 
-$nb_matchs=22;
+$nb_matchs=18;
 //echo "debut : ".$_REQUEST['debut'];
 if (isset($_REQUEST['debut'])) 
 	{$debut=$_REQUEST['debut'];} 
@@ -156,7 +139,9 @@ $resultat=$idconnect->query("SELECT phpab_matchs.id
      if ($_REQUEST[$nom_f_prono]) {$f_prono[$i]=$_REQUEST[$nom_f_prono];}
      if ($_REQUEST[$nom_id_match]) {$id_match[$i]=$_REQUEST[$nom_id_match];}
 
-     $resultat=$idconnect->query("SELECT phpab_matchs.date_reelle FROM phpab_matchs WHERE phpab_matchs.id='$id_match[$i]'");
+     $resultat=$idconnect->query("SELECT phpab_matchs.date_reelle 
+                                  FROM phpab_matchs 
+                                  WHERE phpab_matchs.id='$id_match[$i]'");
     // $resultat=mysql_query($requete);
 
        while ($row= mysqli_fetch_array($resultat))

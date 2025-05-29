@@ -166,20 +166,20 @@ if ($action=="supp" and $champ){ include ("supp_champ.php"); }
 
 if ($action=="creer") {include("creer_champ.php");}
 
-if ($action=="resultats") {include("resultats.php");}
+if ($action=="resultats") {include("resultats.php");} //Scores
 
-if ($action=="equipes" and $champ){include("equipes.php");}
+if ($action=="equipes" and $champ){include("equipes.php");} // Equipes
 
-if ($action=="dates" and $champ){include("dates.php");}
+if ($action=="dates" and $champ){include("dates.php");} //Dates
 
 if ($action=="matchs" and $champ){include("matchs.php");}
                                                 
-if ($action=="parametres" and $champ){include("parametres.php");}
+if ($action=="parametres" and $champ){include("parametres.php");} // Pts Bonus
 
 if ($action=="joueurs" and $champ){include("joueurs.php");}
 
 if ($action=="buteurs" and $champ){include("buteurs.php");}
 
-if ($action=="generer" and $champ){include("generer.php");}
+if ($action=="generer" and $champ){include("generer.php");} //valider
 
 ?>

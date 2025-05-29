@@ -1,4 +1,5 @@
 <?php
+echo "debut haut.inc.php";echo "<br>";
 require ("fonctions.php");
 require("../config.php");
 
@@ -14,4 +15,6 @@ if (!isset($gr_champ) or empty($gr_champ))
      
     $gr_champ=$row[0];     
    }
+   echo  "groupechampionnat : ".$gr_champ;echo "<br>";
+   echo "fin  haut.inc.php";echo "<br>";
 ?>

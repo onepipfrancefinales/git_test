@@ -29,14 +29,16 @@ echo $mail; echo "<br/>";
 echo $mdp; echo "<br/>";
 echo $mdp2; echo "<br/>";
 
-
-if (!$go=="1"){include ("inscription.htm");}
+echo "avant page html";
+if (!$go=="1"){include ("inscription.htm");
+echo "après page html";
+}
 
 elseif ($go=="1")
 {
       $pseudo=addslashes($pseudo);
 
-       // On v�rifie que le pseudo n'est pas utilis�
+       // On vérifie que le pseudo n'est pas utilisé
        $resultat = $idconnect->query("SELECT * FROM phpab_membres where pseudo='$pseudo'");
        //$resultat=mysql_query($requete);
        $nb_pseudo=mysqli_num_rows($resultat);
@@ -44,7 +46,7 @@ elseif ($go=="1")
        elseif (strlen($pseudo)<4 or strlen($pseudo)>20) {$message.=PRONO_INSCRIPTION_PSEUDO_TAILLE."<br />";}
        else {$pseudo_verif="ok";}
        
-       // On v�rifie que le mail
+       // On vérifie que le mail
        $resultat = $idconnect->query( "
 					SELECT * 
 					FROM phpab_membres 
@@ -186,7 +188,7 @@ echo "-----------------------"; echo "<br/>";
 else
 {
  echo "<table align=\"center\">";
-  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\">".Réessayer."</a></td></tr>";
+  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\">"."Réessayer"."</a></td></tr>";
   echo "</table>";
 }
 

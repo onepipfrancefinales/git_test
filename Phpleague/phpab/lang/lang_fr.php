@@ -28,7 +28,7 @@ define("SETUP_CONFIRMATION","Vous avez bien configurez le script !");
 define("SETUP_FIN","Pour plus de s�curit�, vous devez � pr�sent supprimer le fichiers install.php !
                     Ensuite rendez-vous dans l'<a href=\"admin\">administration</a> pour commencer � utiliser PhpLeague !");
 define("SETUP_REMPLIR_CHAMP","Veuillez remplir tous les champs !");
-define("SETUP_REPERTOIRE_SCRIPT","R�pertoire du script");    // 0.82
+define("SETUP_REPERTOIRE_SCRIPT","Répertoire du script");    // 0.82
 define("SETUP_MAJ_ACHEVEE","Mise � jour achev�e");    // 0.82
 define("SETUP_MAJ_INCOH","Incoh�rence");    // 0.82
 define("SETUP_MAJ_INCOH_2","a marqu� sous le maillot de");    // 0.82
@@ -38,7 +38,7 @@ define("SETUP_MAJ_INCOH_2","a marqu� sous le maillot de");    // 0.82
 define("MENU_FICHES_CLUBS","Fiches Clubs");
 define("MENU_ID","Id");
 define("MENU_NOM","Nom");
-define("MENU_CREDITS","Cr�dits");
+define("MENU_CREDITS","Crédits");
 define("MENU_MEMBRES","Membres");
 
 // Championnats
@@ -52,18 +52,18 @@ define("JOUEURS","Joueurs"); // 0.82
 define("BUTEUR","Buteurs");
 define("RESULT","Scores");
 define("EQUIPE","Equipes");
-define("ADMIN_CHAMP_CREER","Cr�er un championnat");
+define("ADMIN_CHAMP_CREER","Créer un championnat");
 
 // Groupes championnats
 define("EDITER","Editer");
 define("GR_LEAGUE","Groupes de championnats");
-define("ADMIN_GR_CHAMP_CREER","Cr�er un groupe de championnats");
-define("ADMIN_GR_CHAMP_GENERER","G�n�rer");
+define("ADMIN_GR_CHAMP_CREER","Créer un groupe de championnats");
+define("ADMIN_GR_CHAMP_GENERER","Générer");
 
 
 
 // Cr�ation d'un groupe de championnat
-define("ADMIN_GR_CHAMPIONNATS_CREA","Cr�ation d'un goupe de championnats");
+define("ADMIN_GR_CHAMPIONNATS_CREA","Création d'un goupe de championnats");
 define("ADMIN_GR_CHAMP_CREER_1","Nom du groupement");
 
 //Suppression d'un groupe de championnats
@@ -73,10 +73,10 @@ define("ADMIN_GR_CHAMPIONNATS_SUPP2"," ?");
 
 //Edition d'un groupe de championnats
 define("ADMIN_GR_CHAMP_EDIT","Edition du groupe de championnats");
-define("ADMIN_GR_CHAMP_EDIT_1","S�lectionner les championnats � regrouper dans");
-define("ADMIN_GR_CHAMP_EDIT_2","S�lection");
-define("ADMIN_GR_CHAMP_EDIT_3","Championnats � retirer du groupe");
-define("ADMIN_GR_CHAMP_EDIT_4","Mettre � jour");
+define("ADMIN_GR_CHAMP_EDIT_1","Sélectionner les championnats � regrouper dans");
+define("ADMIN_GR_CHAMP_EDIT_2","Sélection");
+define("ADMIN_GR_CHAMP_EDIT_3","Championnats à retirer du groupe");
+define("ADMIN_GR_CHAMP_EDIT_4","Mettre à jour");
 define("ADMIN_GR_CHAMP_EDIT_5","Liste actuelle");
 
 
@@ -84,37 +84,37 @@ define("ADMIN_GR_CHAMP_EDIT_5","Liste actuelle");
 //Suppression de championnat
 define("ADMIN_CHAMPIONNATS_SUPP","Suppression de championnat");
 define("ADMIN_CHAMPIONNATS_SUPP1","Etes vous sure de vouloir supprimer le championnat");
-define("ADMIN_CHAMPIONNATS_SUPP2","ainsi que toutes les rencontres attach�es ?");
+define("ADMIN_CHAMPIONNATS_SUPP2","ainsi que toutes les rencontres attachées ?");
 
 // Cr�ation de championnat
-define("ADMIN_CHAMPIONNATS_CREA","Cr�ation d'un championnat");
+define("ADMIN_CHAMPIONNATS_CREA","Création d'un championnat");
 define("ADMIN_CHAMPIONNATS_CREA2","Choisir");
 define("ADMIN_JOURNEES_MSG3","Saison");
 define("ADMIN_CHAMP_CREER_2","Division");
-define("ADMIN_CHAMP_CREER_3","Cr�er");
+define("ADMIN_CHAMP_CREER_3","Créer");
 define("ADMIN_CHAMP_CREER_4","Saison (1�re ann�e)");
 
 // Equipes
 define("ADMIN_CLUB_NOM","Nom du club :");
-define("ADMIN_CLUBS_CREE","Cr�ation des clubs");
-define("ADMIN_EQUIPE_TITRE","Edition des �quipes de");
-define("ADMIN_EQUIPE_1","Clubs � supprimer :");
-define("ADMIN_EQUIPE_2","Clubs � ajouter dans");
+define("ADMIN_CLUBS_CREE","Création des clubs");
+define("ADMIN_EQUIPE_TITRE","Edition des équipes de");
+define("ADMIN_EQUIPE_1","Clubs à supprimer :");
+define("ADMIN_EQUIPE_2","Clubs à ajouter dans");
 define("ADMIN_EQUIPE_3","(Choix multiple possible avec la touche SHIFT et CTRL)");
-define("ADMIN_EQUIPE_4","Clubs � retirer de");
+define("ADMIN_EQUIPE_4","Clubs à retirer de");
 
 // Dates
-define("ADMIN_DATES_TITRE","Dates des journ�es de");
+define("ADMIN_DATES_TITRE","Dates des journées de");
 define("ADMIN_JOURNEES_MSG9","Journée N&deg;");
 define("ADMIN_JOURNEES_MSG10","sous la forme <b>JJMMAAAA<b>");
-define("ADMIN_DATES_1","Heure des matchs par d�faut");
-define("ADMIN_DATES_2","Attention, en faisant cette op�ration vous imposez la m�me heure � tous les matchs de la saison. Si vous ne voulez changer que la date ou l'heure d'un match ou d'une journ�e passez plut�t par les");
+define("ADMIN_DATES_1","Heure des matchs par défaut");
+define("ADMIN_DATES_2","Attention, en faisant cette opération vous imposez la même heure à tous les matchs de la saison. Si vous ne voulez changer que la date ou l'heure d'un match ou d'une journ�e passez plut�t par les");
 define("ADMIN_DATES_HEURES","h");
 define("ADMIN_DATES_MINUTES","min");
 define("ENVOI","Envoi");
-define("ADMIN_DATES_3","Votre championnat comporte un nombre d'�quipes impaire. Rajoutez une �quipe 'exempte'.");
+define("ADMIN_DATES_3","Votre championnat comporte un nombre d'équipes impaire. Rajoutez une équipe 'exempte'.");
 define("ADMIN_DATES_4","Aucune");
-define("ADMIN_DATES_5","Vous devez d'abord cr�er les �quipes jouant dans ce championnat. Allez dans");
+define("ADMIN_DATES_5","Vous devez d'abord créer les équipes jouant dans ce championnat. Allez dans");
 
 
 // Matchs
@@ -142,8 +142,8 @@ define("ADMIN_PARAM_MSG8","Votre équipe préférée ?");
 define("ADMIN_PARAM_TITRE","Paramètres de");
 define("ADMIN_TAPVERT_TITRE","Points Bonus");
 define("ADMIN_PARAM_MSG9","Points prono exact");  
-define("ADMIN_PARAM_MSG10","Points participation � un prono");
-define("ADMIN_PARAM_MSG11","Pseudo du pronostiqueur r�f�rence");
+define("ADMIN_PARAM_MSG10","Points participation à un prono");
+define("ADMIN_PARAM_MSG11","Pseudo du pronostiqueur référence");
 define("ADMIN_PARAM_MSG12","Indiquer le nombre d'heure entre la fin de validation de la grille et le match");
 define("ADMIN_PARAM_MSG13","Pronostics de");
 define("ADMIN_TAPVERT_MSG1","Ici, vous pouvez gérer les points de pénalité (sanctions administratives, forfaits, etc ...)");
@@ -419,7 +419,7 @@ define("ADMIN_JOUEURS_EDITER_2","Edition du joueur :"); // 0.82
 
 // Pronostics   // 0.82
 
-// Menu identifi�
+// Menu identifié
 define("PRONO_MENU_MON_COMPTE","MON COMPTE");
 define("PRONO_MENU_MES_CLASSEMENTS","MES CLASSEMENTS");
 define("PRONO_MENU_MES_PRONOS","MES PRONOSTICS");
@@ -436,16 +436,16 @@ define("PRONO_MENU_MES_RESULTATS","MES RESULTATS");
 define("PRONO_MENU_BAREME","BAREME");
 define("PRONO_MENU_AIDE","AIDE");  // 0.82
 
-// Menu non identifi�
+// Menu non identifié
 define("PRONO_MENU_LOGIN","LOGIN");
 define("PRONO_MENU_MDP","MOT DE PASSE");
 define("PRONO_MENU_OUBLIE","MOT DE PASSE OUBLI� ?");
 
-// Mot de passe oubli�
+// Mot de passe oublié
 define("PRONO_OUBLIE_PERDU","Mot de passe perdu");
-define("PRONO_OUBLIE_TEXTE_1","Entrez votre adresse e-mail, un nouveau mot de passe vous sera alors envoy�.");
-define("PRONO_OUBLIE_TEXTE_2","Votre nouveau mot de passe vous a �t� envoy� � l'adresse");
-define("PRONO_OUBLIE_TEXTE_3","Le mot de passe ne peux vous �tre envoy� !<br />Renouvelez votre demande dans un instant, merci.");
+define("PRONO_OUBLIE_TEXTE_1","Entrez votre adresse e-mail, un nouveau mot de passe vous sera alors envoyé.");
+define("PRONO_OUBLIE_TEXTE_2","Votre nouveau mot de passe vous a été envoyé à l'adresse");
+define("PRONO_OUBLIE_TEXTE_3","Le mot de passe ne peux vous être envoyé !<br />Renouvelez votre demande dans un instant, merci.");
 
 
 //accueil
@@ -454,13 +454,13 @@ define("PRONO_ACCUEIL_PRESENTATION","vous présente ses pronostics pour la proch
 // GRILLE
 define("PRONO_GRILLE_PRONO","Prono");
 define("PRONO_GRILLE_TEMPS","Temps restant");
-define("PRONO_GRILLE_PRECEDENT","MATCHS PR�C�DENTS");
+define("PRONO_GRILLE_PRECEDENT","MATCHS PRECEDENTS");
 define("PRONO_GRILLE_SUIVANT","MATCHS SUIVANTS");
-define("PRONO_GRILLE_SCORE","Score r�el");
-define("PRONO_GRILLE_EXPIRE","Expir�");
+define("PRONO_GRILLE_SCORE","Score réel");
+define("PRONO_GRILLE_EXPIRE","Expiré");
 
 // Valider grille
-define("PRONO_GRILLE_CONFIRME","Vos pronostics ont bien �t� enregistr�s !");
+define("PRONO_GRILLE_CONFIRME","Vos pronostics ont bien été enregistrés !");
 define("PRONO_GRILLE_PROCHAINE","Prochaine grille");
 
 
@@ -512,13 +512,13 @@ define("PRONO_INSCRIPTION_CONNEXION","Connexion");
 define("PRONO_INSCRIPTION_ECHOUE","L'envoie de l'e-mail a échoué !");
 
 // Profil
-define("PRONO_PROFIL_SUR","Etes vous s�r de vouloir suprimer le compte de");
-define("PRONO_PROFIL_SUPP","Compte supprim� !");
+define("PRONO_PROFIL_SUR","Etes vous sûr de vouloir suprimer le compte de");
+define("PRONO_PROFIL_SUPP","Compte supprimé !");
 define("PRONO_PROFIL_ANCIEN_MDP","Ancien mot de passe non renseign�");
 define("PRONO_PROFIL_MDP_2_FOIS","Vous devez entrer le nouveau mot de passe 2 fois");
 define("PRONO_PROFIL_MDP_2_FOIS_2","Vous devez entrer l'ancien mot de passe 2 fois");
-define("PRONO_PROFIL_MDP_DIFF","Nouveaux mots de passe diff�rents");
-define("PRONO_PROFIL_MDP_ERREUR","Ancien mot de passe erron�");
+define("PRONO_PROFIL_MDP_DIFF","Nouveaux mots de passe différents");
+define("PRONO_PROFIL_MDP_ERREUR","Ancien mot de passe erroné");
 define("PRONO_PROFIL_SUPP_2","Supprimer mon compte");
 define("PRONO_PROFIL_TITRE","Compte de");
 define("PRONO_PROFIL_ANCIEN_MDP_2","Ancien mot de passe (� compl�ter si vous changer de mot de passe)");
@@ -537,14 +537,14 @@ define("DECONNEXION","D�connexion en cours...");
 
 //R�sultats
 define("PRONO_RESULTATS_MOY","Moyenne");
-define("PRONO_RESULTATS_REUSSITE","R�ussite");
+define("PRONO_RESULTATS_REUSSITE","Réussite");
 define("PRONO_RESULTATS_PROGR","Progression");
 define("PRONO_RESULTATS_POINTS","Points");
 
 // Bareme
 define("PRONO_BAREME_TITRE","Bar�mes");
-define("PRONO_BAREME_TPS","Vous pouvez valid� la grille jusqu'�");
-define("PRONO_BAREME_TPS2","heure(s) avant le d�but du match");
+define("PRONO_BAREME_TPS","Vous pouvez validé la grille jusqu'à");
+define("PRONO_BAREME_TPS2","heure(s) avant le début du match");
 
 // Fiches joueurs   //0.82
 define("FICHE_AGE","Age");

@@ -16,7 +16,9 @@
 //                                                                      */
 //***********************************************************************/
 ?>
-<?php include ("avant.php"); ?>
+<?php 
+
+include ("avant.php"); ?>
 <div align="center"><br>
   <font size="7"><b><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="6"><br>
   Pronostiques<br>

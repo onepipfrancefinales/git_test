@@ -22,7 +22,8 @@
       <td width="100%">
       <?php
 
-      $resultats=$idconnect->query("SELECT pts_prono_exact, pts_prono_participation, tps_avant_prono FROM phpab_gr_championnats
+      $resultats=$idconnect->query("SELECT pts_prono_exact, pts_prono_participation, tps_avant_prono 
+      FROM phpab_gr_championnats
                 WHERE id='$gr_champ'");
      // $resultats=mysql_query($requete) or die ("probleme " .mysql_error());
       $row=mysqli_fetch_array($resultats);

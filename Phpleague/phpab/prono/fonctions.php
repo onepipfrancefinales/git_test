@@ -146,11 +146,11 @@ function login_form()
   <td class='univert' align='center'>
    <input type='password' name='password'>
    </td>
-   <tr><td align='center' class='univert'>Se connecter automatiquement à chaque visite: <input type='checkbox' class='checkbox' name='autoidentification' value='1'></td></tr>
+   <tr><td align='center' class='univert'>Se connecter automatiquement ï¿½ chaque visite: <input type='checkbox' class='checkbox' name='autoidentification' value='1'></td></tr>
    </tr>
    <tr><td colspan='2' class='univert' align='center'><input type='submit' name='submit' value='Connexion' >
    <br />
-   <a href='perdu_mdp.php'>J'ai oublié mon mot de passe</a><br />
+   <a href='perdu_mdp.php'>J'ai oubliï¿½ mon mot de passe</a><br />
    <a href='inscription.php'>Inscription</a><br />
    </td>
    </tr></form></table>";  }
@@ -162,7 +162,7 @@ function perdu_mot_de_passe()
   <td colspan='2' class='univert' align='center'>
   <div class=\"blanc\"><strong>Mot de passe perdu</strong></div><br /><br />
 <div class=\"blanc\">Entrez votre pseudo,
-<br />un nouveau mot de passe vous sera alors envoyé par mail.
+<br />un nouveau mot de passe vous sera alors envoyï¿½ par mail.
 </div>
 <form action='perdu_mdp.php' method='get'>
 <input class=textfield type=text name=pseudo size='35'>
@@ -328,7 +328,7 @@ if ($nb_pronos == "0") {$prono="0";}
   if ($ecart_heures>48) echo "<div class=\"blanc\">$ecart_jours jours</div>";
   elseif ($ecart_heures>0) echo "<div class=\"blanc\">$ecart_heures h</div>";
   elseif ($ecart_heures == 0) echo "<div class=\"blanc\">$ecart_minutes min</div>";
-  else {echo"<div class=\"blanc\">expiré</div>";}
+  else {echo"<div class=\"blanc\">expirï¿½</div>";}
   echo "</td>";
   echo "</tr>";
   $i++;
@@ -353,6 +353,7 @@ function classement ($gr_champ, $type, $user_pseudo, $idconnect)
 echo "type : ".$type;
 if (!($type=="general" or $type=="mensuel_en_cours" or $type=="mensuel_30_jours" or $type=="hebdo")){$type="general";}
 
+// classement gÃ©nÃ©ral
 if ($type=="mensuel_en_cours")
 {
    mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos WHERE id_champ='$gr_champ' AND type='mensuel_en_cours'"));
@@ -376,6 +377,7 @@ if ($type=="mensuel_en_cours")
          }
 }          
 
+// classement mensuel
 if ($type=="mensuel_30_jours")
 {
    mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos WHERE id_champ='$gr_champ' AND type='mensuel_30_jours'"));
@@ -397,7 +399,7 @@ if ($type=="mensuel_30_jours")
        mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) values ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_30_jours')"));
        }
 }
-
+// classement hebdomadaire
 if ($type=="hebdo")
 {
    mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos WHERE id_champ='$gr_champ' AND type='hebdo'"));
@@ -478,8 +480,11 @@ function pseudo_admin ($gr_champ, $idconnect)
 function champ_prono ($gr_champ, $idconnect)
 {
  // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
- $resultat=$idconnect->query("SELECT DISTINCT id, nom FROM phpab_gr_championnats WHERE  phpab_gr_championnats.activ_prono='1' ORDER by id");
+ 
+ $resultat=$idconnect->query("SELECT DISTINCT id, nom
+  FROM phpab_gr_championnats 
+  WHERE  phpab_gr_championnats.activ_prono='1' 
+  ORDER by id");
  // $resultat=mysql_query ($requete) or die ("probleme " .mysql_error());;
 
   while ($row= mysqli_fetch_array($resultat))

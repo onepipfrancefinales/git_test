@@ -1,8 +1,8 @@
 <?php
 if (isset($_GET['champ'])) $champ = $_GET['champ']; else $champ = 0;
-echo $champ;
+echo "test".$champ;
 
-
+echo "test2";
 ?>
 
 <script type="text/javascript">
@@ -26,7 +26,7 @@ function VerifForm(){
         var mobile3 = document.inscription.mobile3.value;
         var mobile4 = document.inscription.mobile4.value;
         var mobile5 = document.inscription.mobile5.value;
-
+/*
 	if (!pseudo){
 		alert("<?php echo PRONO_INSCRIPTION_JS_PSEUDO; ?>");
 		return false
@@ -141,14 +141,7 @@ function VerifForm(){
 		alert('<?php echo PRONO_INSCRIPTION_JS_MAILVALID; ?>');
 		return false
 		}
-
-
-
-
-
-
-
-
+		*/
 }
 </script>
 <table width="90%" align = "center">
@@ -164,7 +157,6 @@ function VerifForm(){
 <tr><td colspan="2" align="center"></td></tr>
 <tr><td width="50%" align="right"><div class="blanc"><?php echo PRONO_CLASSEMENT_PSEUDO; ?> :</div></td>
 <td><input type="text" name="pseudo" maxlength="20"></td></tr>
-
 
 
 <tr><td width="50%" align="right"><div class="blanc"><?php echo PRONO_PROFIL_MAIL; ?> :</div></td>
