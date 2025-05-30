@@ -102,7 +102,7 @@ echo "action -> impacte uniquement la table phpab_clmnt_pronos";echo "<br />";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')") or die (mysqli_error()));
+							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')") );
 		}
 
 		echo ADMIN_GRAPH_PRONO; include ("tps2.php3");
