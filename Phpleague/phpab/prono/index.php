@@ -19,46 +19,27 @@
 <?php 
 
 include ("avant.php"); ?>
-<div align="center"><br>
-  <font size="7"><b><font color="#FF0000" face="Arial, Helvetica, sans-serif" size="6"><br>
-  Pronostiques<br>
-  </font></b></font><br>
-  <br>
-</div>
-<table width="100%" border="0" align="center">
+
+
+<table width="90%" class="marginAuto borderNone">
   <tr> 
-    <td colspan="2" align="center"> 
-      <?php
-//if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
-//include("haut.inc.php");
-?>
-    </td>
-  </tr>
-</table>
-<table width="100%" border="0" align="center">
-  <tr> 
-    <td colspan="2" align="center"> 
+    <td colspan="2" class="center"> 
       <?php
 if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
 include("haut.inc.php");
-?>
-    </td>
-  </tr>
-  <tr> 
-    <td width="22%" align="center" valign="top"  height="70"> </td>
-    <td width="78%" align="center" valign="top"> 
-      <?php        
-include("pronos.inc.htm");
-?>
-    </td>
-  </tr>
-  <tr> 
-    <td width="22%" align="center" valign="top"> 
-      <?php
 include("menu.inc.php");
 ?>
     </td>
-    <td width="78%" align="center" valign="top" height="100%" bgcolor="#003366"> 
+  </tr>
+  <tr> 
+   
+    <td width="100%" class="center" > 
+      <?php include("pronos.inc.htm");?>
+    </td>
+  </tr>
+  <tr> 
+  
+    <td width="100%" class="center background003366"  height="100%" > 
       <?php
 if (isset($_REQUEST['action'])) {$action=$_REQUEST['action'];} else {$action='';}
 

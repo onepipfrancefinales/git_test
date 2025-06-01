@@ -70,6 +70,28 @@
             <br>
         </td>
     </tr>
+     <tr>
+        <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
+            <a class="colorWhite" href="../pronos/pagePronos.php?mode=smart"> Championnats des pronostiquuers</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2" class="borderWidth1 ">
+            <br>
+            <!--
+            <p class="size5">
+                <a class="colorBlack" href="smartPage.php?page=pronostics">Venez pronostiquer <br>sur vos championnats régionauxs  <br> 
+                </a><br>
+            </p>
+-->
+            <p class="size5">
+                <a class="colorBlack" href="../pronos/pagePronos.php?mode=smart">Venez pronostiquer <br>sur vos championnats régionauxs  <br> 
+                </a><br>
+            </p>
+            <br>
+        </td>
+    </tr>
     <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
             <a class="colorWhite" href="smartPage.php?page=pfRegionales&annee=<?php echo $datePhasesFinales;?>"> Phases finales régionales</a>

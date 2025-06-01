@@ -34,7 +34,7 @@
 </table>
 <p>
 <?php
-
+echo "idEquipe : ".$idEquipe;
 	if (is_numeric($A1001)and is_numeric($A1002))
 	{
 	$idEquipeCourt = substr($idEquipe,2,7);echo "<br>";

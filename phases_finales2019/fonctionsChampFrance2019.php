@@ -1,13 +1,4 @@
-
-
-
-
 <?php
-
-
-
-
-
 function suiviDuTraitement($division, $requete){
 
 if($requete)	
@@ -52,8 +43,6 @@ function traitementScores ($debut, $fin)
 	
 	*/
 	
-	
-		
 	//forfait , disqualification, qualif au Tab
 	if (${"A".($i)} == '444' )  {${"A".($i)}="NE"; }// Nombre d'essais
 	if (${"A".($i)} == '555' )  {${"A".($i)}="Tab"; }// Tirs aux buts

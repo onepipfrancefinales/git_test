@@ -45,7 +45,8 @@ if ($action2=="1")
            $requete="UPDATE phpl_matchs SET phpl_matchs.buts_dom='$val_butd', phpl_matchs.buts_ext='$val_butv', phpl_matchs.date_reelle='$date_us'
                      WHERE phpl_matchs.id='$val_matchs_id'";
 
-           $requete4="SELECT pts_prono_exact, pts_prono_participation FROM phpl_gr_championnats WHERE id_champ='$champ'";
+           $requete4="SELECT pts_prono_exact, pts_prono_participation 
+           FROM phpl_gr_championnats WHERE id_champ='$champ'";
            $resultats4=mysql_query($requete4) or die (mysql_error());
 
            while ($row4=mysql_fetch_array($resultats4))
@@ -57,6 +58,7 @@ if ($action2=="1")
 
            $requete2="SELECT pronostic, id_membre FROM phpl_pronostics WHERE id_match='$val_matchs_id'";
            $resultats2=mysql_query($requete2) or die (mysql_error());
+           
            while ($row2=mysql_fetch_array($resultats2))
            {
               if ($val_butd>$val_butv and $row2[0]=="1"){$query3="UPDATE phpl_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}

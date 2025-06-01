@@ -19,17 +19,19 @@ function affiche_points ($user_id, $gr_champ, $idconnect)
 }
 
 function affiche_clmnt_general ($user_id, $gr_champ, $idconnect)
+
 {
-  // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
-  $result=$idconnect->query(" SELECT id_prono 
+ echo "affichage clmnt general";echo "<br>";
+ echo "user_id".$user_id;;echo "<br>";
+ echo "gr_champ".$gr_champ;;echo "<br>";
+ 
+ $result=$idconnect->query(" SELECT id_prono 
 							  FROM phpab_clmnt_pronos, phpab_membres 
-							  WHERE phpab_membres.id=phpab_clmnt_pronos.id_membre 
+							  WHERE phpab_membres.id = phpab_clmnt_pronos.id_membre 
 							  AND id_champ='$gr_champ' 
-							  AND type='general' 
-							  AND id_champ='$gr_champ' 
+							  AND type='general'  
 							  ORDER by points desc, participation desc, phpab_membres.pseudo");
-  //$result=mysql_query($query) or die (mysql_error());
+ 
   $i = "1";
   while ($row=mysqli_fetch_array($result))
   {
@@ -39,12 +41,12 @@ function affiche_clmnt_general ($user_id, $gr_champ, $idconnect)
    $clmnt=PRONO_CLASSEMENT_NON_CLASSE;
  if (isset($class))
   {
-  if ($class=="1"){print $class; echo PRONO_CLASSEMENT_PREMIER;}
-  elseif ($class=="2"){print $class; echo PRONO_CLASSEMENT_SECOND;}
+  if ($class=="1"){echo $class; echo PRONO_CLASSEMENT_PREMIER;}
+  elseif ($class=="2"){echo $class; echo PRONO_CLASSEMENT_SECOND;}
   elseif ($class=="3"){print $class; echo PRONO_CLASSEMENT_TROIS;}
   else {print $class; echo PRONO_CLASSEMENT_AUTRES;}
   }
-  if (!isset($class)) print $clmnt;
+  if (!isset($class)) echo $clmnt;
 }
 
 function affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect)
@@ -242,7 +244,7 @@ LIMIT 0, 10");
 $i=0;
 //$result=mysql_query($query) or die ("probleme " .mysql_error());
 
-while ($row=mysqli_fetch_array($result) and $i<10)
+while ($row=mysqli_fetch_array($result) and $i < 10)
   {
 $clubs_nom = stripslashes($row[0]);
 $clubs_nom1 = stripslashes($row[1]);
@@ -347,10 +349,6 @@ if ($type=="hebdo") {echo PRONO_CLASSEMENT_HEBDO;}
 
 function classement ($gr_champ, $type, $user_pseudo, $idconnect)
 {
-
- //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
-echo "type : ".$type;
 if (!($type=="general" or $type=="mensuel_en_cours" or $type=="mensuel_30_jours" or $type=="hebdo")){$type="general";}
 
 // classement général
@@ -479,8 +477,6 @@ function pseudo_admin ($gr_champ, $idconnect)
 
 function champ_prono ($gr_champ, $idconnect)
 {
- // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
- 
  $resultat=$idconnect->query("SELECT DISTINCT id, nom
   FROM phpab_gr_championnats 
   WHERE  phpab_gr_championnats.activ_prono='1' 
@@ -501,10 +497,7 @@ function champ_prono ($gr_champ, $idconnect)
 // Nombres d equipes dans un championnat
 function nb_equipes($id_champ, $idconnect)
          {
-     // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
-
-	 $result=$idconnect->query("SELECT id FROM phpab_equipes WHERE id_champ='$id_champ'");
+	      $result=$idconnect->query("SELECT id FROM phpab_equipes WHERE id_champ='$id_champ'");
         // $result=mysql_query($query);
          $nb_equipes=mysqli_num_rows( $result );
          return("$nb_equipes");
@@ -515,8 +508,6 @@ function VerifSession ($user_pseudo,$user_mdp, $idconnect)
 
 if ($user_pseudo and $user_mdp)
 	{
-      //  $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
 	   $result=$idconnect->query( "SELECT mot_de_passe, id_prono 
 									FROM phpab_membres 
 									WHERE pseudo='$user_pseudo'");

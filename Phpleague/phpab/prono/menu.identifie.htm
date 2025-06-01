@@ -20,95 +20,62 @@
         </b></div>
     </td>
   </tr>
-
   <tr>
-
     <td height="15">
       <div class="menu2">&nbsp;
         <?php echo PRONO_MENU_POINTS; ?>
-
         :&nbsp;
         <?php affiche_points ($user_id, $gr_champ, $idconnect);?>
       </div>
     </td>
-
   </tr>
-
   <tr>
-
     <td height="15">
       <div class="menu2">&nbsp;<a href="index.php?page=profil&amp;gr_champ=<?php print $gr_champ; ?>">
           <?php echo PRONO_MENU_MON_PROFIL; ?>
         </a></div>
     </td>
-
   </tr>
-
   <tr>
-
     <td height="15">
       <div class="menu2">&nbsp;<a href="logout.php">
           <?php echo PRONO_MENU_DECONNEXION; ?>
         </a></div>
     </td>
-
   </tr>
-
   <tr>
-
     <td height="15">
       <font face="Verdana" size="1">&nbsp;</font>
     </td>
-
   </tr>
-
   <tr>
-
     <td height="23" class="prono1">
-
       <table class="prono" width="100%">
-
         <tbody>
-
           <tr>
-
             <td width="15" align="right">
               <div align="right"><img border="0" src="trait-jaune.gif" alt="" width="22" height="9"></div>
             </td>
-
             <td height="15">
               <div class="menu1"><b>
                   <?php echo PRONO_MENU_MES_CLASSEMENTS; ?>
                 </b></div>
             </td>
-
-
-
           </tr>
-
         </tbody>
-
       </table>
-
     </td>
-
   </tr>
-
   <tr>
-
     <td height="15">
       <div class="menu2">&nbsp;
         <?php echo PRONO_MENU_GENERAL; ?>
-
         :&nbsp;
         <?php affiche_clmnt_general ($user_id, $gr_champ, $idconnect);?>
       </div>
     </td>
-
   </tr>
-
   <tr>
-
     <td height="13">
       <div class="menu2">&nbsp;
         <?php echo PRONO_MENU_MOIS; ?>
@@ -117,66 +84,45 @@
         <?php affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect);?>
       </div>
     </td>
-
   </tr>
-
   <tr>
-
     <td height="13">
       <font face="Verdana" size="1">&nbsp;</font>
     </td>
-
   </tr>
-
   <tr>
-
     <td height="23" class="prono1">
-
       <table class="prono" width="100%">
-
         <tbody>
-
           <tr>
-
             <td width="15" align="right"><img border="0" src="trait-jaune.gif" alt="" width="22" height="9"></td>
-
             <td>
               <div class="menu1"><b>
                   <?php echo PRONO_MENU_MES_PRONOS; ?>
                 </b></div>
             </td>
-
           </tr>
-
         </tbody>
-
       </table>
-
     </td>
-
   </tr>
   <tr>
-
     <td height="15">
       <div class="menu2 blanc">&nbsp;<a href="index.php?page=pronos&amp;gr_champ=<?php print $gr_champ;?>">
           <?php echo PRONO_MENU_PROCHAINE_GRILLE; ?>
         </a>
       </div>
     </td>
-
   </tr>
   <tr>
-
     <td height="15">
       <div class="menu2">&nbsp;<a href="index.php?page=derniers_pronos&amp;gr_champ=<?php print $gr_champ;?>">
           <?php echo PRONO_MENU_DERNIERE_GRILLE; ?>
         </a>
       </div>
     </td>
-
   </tr>
   <tr>
-
     <td height="15">
       <div class="menu2">&nbsp;<a href="index.php?page=mes_resultats&amp;gr_champ=<?php print $gr_champ; ?>">
           <?php echo PRONO_MENU_MES_RESULTATS; ?>
@@ -219,9 +165,9 @@
   <tr>
     <td height="15">
       <div class="menu2">
-     <?php   echo "gr_champ : ".$gr_champ; echo "<br>";?>
+        <?php echo "gr_champ : ".$gr_champ; echo "<br>";?>
         <?php champ_prono ($gr_champ, $idconnect); ?>
       </div>
     </td>
   </tr>
-</TABLE>
+</table>

@@ -555,8 +555,7 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
 	// Nuls domicile
 	 
 	$dom=$idconnect->query("
-		 SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) 
-		 FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+		 SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
 		 WHERE dom.id_champ='$champ'
          AND dom.id_club=phpab_clubs.id
          AND dom.id=phpab_matchs.id_equipe_dom
@@ -597,7 +596,8 @@ function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
 // RESULTATS EXTERIEURS :
 // victoires exterieur	
   
-  $dom=$idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+  $dom=$idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom)
+   FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
 WHERE ext.id_champ='$champ'
       AND ext.id_club=phpab_clubs.id
       AND ext.id=phpab_matchs.id_equipe_ext

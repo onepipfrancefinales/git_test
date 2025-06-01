@@ -27,17 +27,17 @@
   <table class="marginAuto table">
     <tr>
       <td colspan="3">
-        <?php include("../../images/page_image_al.php");  ?>
+        <?php include("../images/page_image_al.php");  ?>
       </td>
     </tr>
     <tr>
       <td colspan="3">
-        <?php include("../../01ligne.php"); ?>
+        <?php include("../01ligne.php"); ?>
       </td>
     </tr>
     <tr>
       <td class="colonneDroiteGauche backgroundBlue" valign="top">
-        <?php include("../../01gauche.php"); ?>
+        <?php include("../01gauche.php"); ?>
       </td>
       <td class="colonneCentrale backgroundWhite">
 
@@ -45,18 +45,23 @@
 
         <p class="colorRed bold size7 styleArial"> <br>
           Prochainement</p>
-      </td>
+
+        <br> 
+<span class="size5 stylearial">
+Dés la reprise de la saison(Sept 2025), nous vous<br> proposerons un concours de pronostics ayant <br>pour support vos propres championnats régionaux
+</span >
+</td>
 
       <td class="colonneDroiteGauche backgroundBlue" valign="top">
-        <?php include("../../00droite.php"); ?>
+        <?php include("../00droite.php"); ?>
       </td>
     </tr>
   </table>
 </body>
 <footer>
   <?php
-  include("../../comitebas.php");
-  include("../../bas.php");
+  include("../comitebas.php");
+  include("../bas.php");
   ?>
 </footer>
 </html>

@@ -101,7 +101,7 @@ if ($action2=="1")
 
 <table class=phpab width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="3"><?php echo ADMIN_RESULTS_TITRE." "; affich_champ ($champ, $idconnect); ?></td>
+              <td class=phpab2 align="center" colspan="3"><?php echo ADMIN_RESULTS_TITRE." "; affich_champ ($champ, $idconnect); ?>aaaaa</td>
             </tr>
             <tr>
               <td align="center"><?php journees ($champ, $numero, $action, $idconnect);?><br /><br />

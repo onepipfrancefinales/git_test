@@ -139,7 +139,7 @@
       sur vos <br>propres championnats
     </a>
 -->
-      <a href="dossiers/pronos/page_pronos.php"> Pronostiquez<br>
+      <a href="/pronos/page_pronos.php"> Pronostiquez<br>
         sur vos <br>propres championnats
       </a>
     </td>

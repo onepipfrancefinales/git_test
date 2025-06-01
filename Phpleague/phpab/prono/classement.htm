@@ -1,16 +1,15 @@
-  <table border="1" cellspacing="0" width="90%" class="prono" align="center">
+  <table class="marginAuto borderNone prono" cellspacing="0" width="90%" >
     <tr>
-      <td align="center">
+      <td class="center">
         <div class="blanc"><b>
 
-<?php
-classement_type ($type);?>
+<?php classement_type ($type);?>
 
 </b></div></td>
     </tr>
     <tr>
       <td>
-          <table border="0" cellpadding="0" cellspacing="0" width="90%" align="center">
+          <table class="marginAuto borderNone" cellpadding="0" cellspacing="0" width="90%" >
             <tr>
               <td><div class="blanc"><b><?php echo CONSULT_CLASSEMENT; ?></b></div></td>
               <td><div class="blanc"><b><?php echo PRONO_CLASSEMENT_PSEUDO; ?></b></div></td>
@@ -18,9 +17,7 @@ classement_type ($type);?>
               <td><div class="blanc"><b><?php echo PRONO_CLASSEMENT_PARTICIPATIONS; ?></b></div></td>
             </tr>
             
-              <?php
-classement ($gr_champ, $type, $user_pseudo, $idconnect);
-?>            
+              <?php classement ($gr_champ, $type, $user_pseudo, $idconnect);?>            
           </table>
       </td>
     </tr>
