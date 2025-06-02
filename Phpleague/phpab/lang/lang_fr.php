@@ -476,10 +476,10 @@ define("PRONO_CLASSEMENT_HEBDO","CLASSEMENT HEBDO");
 define("PRONO_CLASSEMENT_COMPLET","Classement complet");
 define("PRONO_CLASSEMENT_SUITE","La suite...");
 define("PRONO_CLASSEMENT_NON_CLASSE","Non classé");
-define("PRONO_CLASSEMENT_PREMIER","er");   // Pour 1er    1st
-define("PRONO_CLASSEMENT_SECOND","nd");   // Pour 2nd     2nd
-define("PRONO_CLASSEMENT_TROIS","e");   // Pour 3e       3rd
-define("PRONO_CLASSEMENT_AUTRES","e");   // Pour xe       xth
+define("PRONO_CLASSEMENT_PREMIER","er");  // Pour 1er   1st
+define("PRONO_CLASSEMENT_SECOND","nd");   // Pour 2nd   2nd
+define("PRONO_CLASSEMENT_TROIS","e");     // Pour 3e    3rd
+define("PRONO_CLASSEMENT_AUTRES","e");    // Pour xe    xth
 
 // Inscription
 define("PRONO_INSCRIPTION_TITRE","Inscription");
@@ -507,7 +507,7 @@ define("PRONO_INSCRIPTION_JS_NAISS_MOIS","Veuillez indiquer votre mois de naissa
 define("PRONO_INSCRIPTION_JS_NAISS_ANNEE","Veuillez indiquer votre année de naissance !");
 define("PRONO_INSCRIPTION_JS_PROF","Veuillez indiquer votre profession !");
 define("PRONO_INSCRIPTION_JS_TEL","Veuillez indiquer votre numeros de mobile !");
-define("PRONO_INSCRIPTION_SUCCES","Inscription réalisée avec succès ! Un email vous a été adress� pour vous communiquez votre mot de passe !");
+define("PRONO_INSCRIPTION_SUCCES","Inscription réalisée avec succès ! Un email vous a été adressé pour vous communiquez votre mot de passe !");
 define("PRONO_INSCRIPTION_CONNEXION","Connexion");
 define("PRONO_INSCRIPTION_ECHOUE","L'envoie de l'e-mail a échoué !");
 
@@ -521,7 +521,7 @@ define("PRONO_PROFIL_MDP_DIFF","Nouveaux mots de passe différents");
 define("PRONO_PROFIL_MDP_ERREUR","Ancien mot de passe erroné");
 define("PRONO_PROFIL_SUPP_2","Supprimer mon compte");
 define("PRONO_PROFIL_TITRE","Compte de");
-define("PRONO_PROFIL_ANCIEN_MDP_2","Ancien mot de passe (� compl�ter si vous changer de mot de passe)");
+define("PRONO_PROFIL_ANCIEN_MDP_2","Ancien mot de passe (à compléter si vous changer de mot de passe)");
 define("PRONO_PROFIL_NOUVEAU_MDP","Nouveau mot de passe");
 define("PRONO_PROFIL_NOUVEAU_MDP_2","Resaisissez votre nouveau mot de passe");
 define("PRONO_PROFIL_MAIL","E-mail"); // 0.82
@@ -533,7 +533,7 @@ define("PRONO_INC_MOIS","CLASSEMENT DU MOIS");
 define("PRONO_INC_GENERAL","CLASSEMENT GENERAL");
 
 // DECONNEXION
-define("DECONNEXION","D�connexion en cours...");
+define("DECONNEXION","Déconnexion en cours...");
 
 //R�sultats
 define("PRONO_RESULTATS_MOY","Moyenne");
@@ -542,7 +542,7 @@ define("PRONO_RESULTATS_PROGR","Progression");
 define("PRONO_RESULTATS_POINTS","Points");
 
 // Bareme
-define("PRONO_BAREME_TITRE","Bar�mes");
+define("PRONO_BAREME_TITRE","Barèmes");
 define("PRONO_BAREME_TPS","Vous pouvez validé la grille jusqu'à");
 define("PRONO_BAREME_TPS2","heure(s) avant le début du match");
 

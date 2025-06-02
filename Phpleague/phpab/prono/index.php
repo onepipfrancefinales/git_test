@@ -21,7 +21,7 @@
 include ("avant.php"); ?>
 
 
-<table width="90%" class="marginAuto borderNone">
+<table width="95%" class="marginAuto borderNone">
   <tr> 
     <td colspan="2" class="center"> 
       <?php

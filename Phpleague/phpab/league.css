@@ -87,7 +87,7 @@ table.prono {background-color: #3b487f} /* fond du tableau */
 td.prono1 {background-color: #3b487f} /* fond du tableau */
 
 .jaune {font-size:10pt; color: #FFFF00; font-family: arial;} /* titre page d'accueil */
-.blanc {font-size:9pt; color: #FFFFFF; font-family: arial;} /* texte */
+.blanc {font-size:11pt; color: #FFFFFF; font-family: arial;} /* texte */
 .noir {font-size:10pt; color: #000000; font-family: arial;} /* autre texte */
 .blanctitre {font-size:12pt; color: #FFFFFF; font-family: arial;} /* titre en haut de pages */
 
@@ -96,6 +96,6 @@ td.prono1 {background-color: #3b487f} /* fond du tableau */
 
 /* ------------- menu connexion ------------- */
 
-.menu1 {font-size:8pt; color: #FFFFFF; font-family: verdana;} /* rubriques (compte, classement, pronostics...) */
-.menu2 {font-size:8pt; color: #000000; font-family: verdana;} /* sous rubriques */
-.pseudo {font-size:10pt; color: #000000; font-family: verdana;} /* texte : bienvenue pseudo */
+.menu1 {font-size:12pt; color: #FFFFFF; font-family: verdana;} /* rubriques (compte, classement, pronostics...) */
+.menu2 {font-size:10pt; color: #000000; font-family: verdana;} /* sous rubriques */
+.pseudo {font-size:16pt; color: #000000; font-family: arial;} /* texte : bienvenue pseudo */

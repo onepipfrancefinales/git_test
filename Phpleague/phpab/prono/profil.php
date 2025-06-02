@@ -42,10 +42,10 @@ else
  {
 
 ?>
-<table width="90%" align = "center">
+<table width="90%" class="marginAuto">
 <tr>
 <td colspan="2">
-<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="1"  class="prono">
+<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="1"  class="prono marginAuto">
 <tr><td>
 
 <?php
@@ -84,7 +84,7 @@ else
 			 SET nom_site='$site', mail='$mail', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile' 
 			 WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
              
-			 $message.="profil mis à jour";
+			 $message.="profil mis Ã  jour";
            }
           elseif (empty ($ancien_mdp)) {$message.= PRONO_PROFIL_ANCIEN_MDP;}
           elseif (empty ($nouveau_mdp)) {$message.=PRONO_PROFIL_MDP_2_FOIS;}
@@ -100,9 +100,9 @@ else
               $nouveau_mdp_crypt=md5($nouveau_mdp2);
 
               mysqli_query ($idconnect, ("update phpab_membres SET nom_site='$site', mail='$mail', mot_de_passe='$nouveau_mdp_crypt', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile'  WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
-              $message.="profil mis à jour";
+              $message.="profil mis Ã  jour";
              }
-             //elseif ($nouveau_mdp!=$nouveau_mdp2) {$message.="Nouveaux mots de passe différents";}
+             //elseif ($nouveau_mdp!=$nouveau_mdp2) {$message.="Nouveaux mots de passe diffï¿½rents";}
              
            }
          }
@@ -126,14 +126,14 @@ else
          echo "<tr><td width=\"50%\" align=\"center\"><br /></td>\n";
          echo "<td></td></tr>";
 
-//echo "<tr><td colspan=\"2\"  align=\"center\"><font face=\"Verdana, Arial, Helvetica, sans-serif\" color=\"#ffffff\"><strong>Coordonnées</strong></font></td></tr>";
+//echo "<tr><td colspan=\"2\"  align=\"center\"><font face=\"Verdana, Arial, Helvetica, sans-serif\" color=\"#ffffff\"><strong>Coordonnï¿½es</strong></font></td></tr>";
 
 // Nom
 //echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Nom :</font></td>";
 //echo "<td><input type=\"text\" name=\"nom\" value=\"$row[nom]\" maxlength=\"50\"></td></tr>";
 
-// Prénom
-//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Prénom :</font></td>";
+// Prï¿½nom
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Prï¿½nom :</font></td>";
 //echo "<td><input type=\"text\" name=\"prenom\" value=\"$row[prenom]\" maxlength=\"50\"></td></tr>";
 
 // Adresse
@@ -189,7 +189,7 @@ $annee=$elementsdate[0];
 //echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Profession :</font></td>";
 //echo "<td><input type=\"text\" name=\"profession\" value=\"$row[profession]\" maxlength=\"200\"></td></tr>";
 
-// N° Mobile
+// Nï¿½ Mobile
 //$elementsmobile=explode("-",$row[mobile]);
 //$mobile1=$elementsmobile[0];
 //$mobile2=$elementsmobile[1];
@@ -197,7 +197,7 @@ $annee=$elementsdate[0];
 //$mobile4=$elementsmobile[3];
 //$mobile5=$elementsmobile[4];
 
-//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">N° de mobile :</font></td>";
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Nï¿½ de mobile :</font></td>";
 //echo "<td><input type=\"text\" name=\"mobile1\" value=\"$mobile1\" maxlength=\"2\" size=\"2\">
 //<input type=\"text\" name=\"mobile2\" value=\"$mobile2\" maxlength=\"2\" size=\"2\">
 //<input type=\"text\" name=\"mobile3\" value=\"$mobile3\" maxlength=\"2\" size=\"2\">

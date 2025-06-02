@@ -24,14 +24,14 @@ echo $champ;
 //***********************************************************************/
 
 //if (!$go=="1"){include ("inscription obligatoire.htm");}
-echo $pseudo; echo "<br/>";
-echo $mail; echo "<br/>";
-echo $mdp; echo "<br/>";
-echo $mdp2; echo "<br/>";
+//echo $pseudo; echo "<br/>";
+//echo $mail; echo "<br/>";
+//echo $mdp; echo "<br/>";
+//echo $mdp2; echo "<br/>";
 
-echo "avant page html";
+
 if (!$go=="1"){include ("inscription.htm");
-echo "après page html";
+
 }
 
 elseif ($go=="1")
@@ -116,55 +116,58 @@ if ($email_verif=="ok" and $pseudo_verif=="ok" and $mdp_verif=="ok" and $mail_ve
   mysqli_query($idconnect,("INSERT INTO phpab_pronostics (id_membre, id_champ) 
 							VALUES ('$id_membre', '$gr_champ')"));
 
-  $result =$idconnect->query( "SELECT pseudo, mail, nom_site, url_site FROM phpab_membres WHERE pseudo='$pseudo' and admin='1'");
-//$result=mysql_query($requete) or die ("probleme " .mysql_error());
+  $result =$idconnect->query( "SELECT pseudo, mail, nom_site, url_site 
+                               FROM phpab_membres 
+                               WHERE pseudo='$pseudo' 
+                               AND admin='1'");
+
   $row=mysqli_fetch_array($result);
   $pseudo_admin=$row[0];
   $mail_admin=$row[1];
 //  $nom_site_admin=$row[2];
 // $url_site_admin=$row[3];  
 
-echo "pseudo : ".$pseudo_admin; echo "<br/>";
-echo "mail : ".$mail_admin; echo "<br/>";
-echo "champ :".$champ; echo "<br/>";
+//echo "pseudo : ".$pseudo_admin; echo "<br/>";
+//echo "mail : ".$mail_admin; echo "<br/>";
+//echo "champ :".$champ; echo "<br/>";
 
 $to="$pseudo <$mail>";
 
 $sujet="France Finales Rugby App";
 
 $message="<html><head><title>phpabeague</title></head><body>
-<p><font size=\"2\" face=\"Verdana\">Bonjour et bienvenue sur France Finales Rugby, </font></p>
-<p><font size=\"2\" face=\"Verdana\">Vous venez de vous inscrire sur France Finales Rugby App. Vous pouvez désormais procéder &agrave; la mise &agrave; jours des résultats des rencontres de votre comité.</font></p>
-<p><font size=\"2\" face=\"Verdana\">Voici les informations qui vous
+<p><font size=\"2\" face=\"Verdana\" color=\"#ffffff\">Bonjour et bienvenue sur France Finales Rugby, </font></p>
+<p><font size=\"2\" face=\"Verdana\" color=\"#ffffff\">Vous venez de vous inscrire sur France Finales Rugby App. Vous pouvez désormais procéder &agrave; la mise &agrave; jours des résultats des rencontres de votre comité.</font></p>
+<p><font size=\"2\" face=\"Verdana\" color=\"#ffffff\">Voici les informations qui vous
 permettront d'accéder &agrave; la mise &agrave; jours des résultats :</font></p>
-<p><font face=\"Verdana\" size=\"2\">Login :&nbsp;  $pseudo 
+<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">Login :&nbsp;  $pseudo 
 <br />
 Mot de passe :  $mdp </font></p>
 
-<p><font face=\"Verdana\" size=\"2\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmarès, etc...en consultant
-<a href=\"http://francefinalesrugby.franceserv.com\">France Finales Rugby</a> 
+<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmarès, etc...en consultant
+<a href=\"http://francefinalesrugby.fr\">France Finales Rugby</a> 
 </font></p>
 <br />
 Sportivement</font></p>
 <br />
-<p><font face=\"Verdana\" size=\"2\">France Finales Rugby</font></p>
-<p><font face=\"Verdana\" size=\"2\">DELPECH Thibault</font></p>
-<p><font face=\"Verdana\" size=\"2\">80 Avenue du 11 novembre</font></p>
-<p><font face=\"Verdana\" size=\"2\">31230 L'Isle en Dodon</font></p>
+<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">France Finales Rugby</font></p>
+<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">DELPECH Thibault</font></p>
+<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">80 Avenue du 11 novembre</font></p>
+<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">31230 L'Isle en Dodon</font></p>
 <br />
-<p><font face=\"Verdana\" size=\"2\">Pour tous contatcts</font></p>
-<p><font face=\"Verdana\" size=\"2\"><a href=\"mailto:mailto:francefinalesrugby@free.fr\">Administrateur France Finales Rugby App</a></font></p>
+<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">Pour tous contatcts</font></p>
+<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\"><a href=\"mailto:mailto:francefinalesrugby@free.fr\">Administrateur France Finales Rugby App</a></font></p>
 </body></html>";
 
 
   $from="Content-Type: text/html; charset=\"iso-8859-15\"\nFrom: $mail_admin\n";
   
   
-echo "-----------------------"; echo "<br/>"; 
-echo "to : ".$to; echo "<br/>";
-echo "message : ".$message; echo "<br/>";
-echo "from :".$from; echo "<br/>";
-echo "-----------------------"; echo "<br/>";   
+//echo "-----------------------"; echo "<br/>"; 
+//echo "to : ".$to; echo "<br/>";
+//echo "message : ".$message; echo "<br/>";
+//echo "from :".$from; echo "<br/>";
+//echo "-----------------------"; echo "<br/>";   
   
   
   
@@ -172,25 +175,21 @@ echo "-----------------------"; echo "<br/>";
   if ($email)
   {
     echo "<table align=\"center\">";
-    echo "<tr><td colspan=\"2\" align=\"center\">".PRONO_INSCRIPTION_SUCCES."<br /><a href=\"/Phpleague/phpab/prono/index.php\">".PRONO_INSCRIPTION_CONNEXION."</a></td></tr>";
+    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">".PRONO_INSCRIPTION_SUCCES."</font><br /><a href=\"/Phpleague/phpab/prono/index.php\">".PRONO_INSCRIPTION_CONNEXION."</font></a></td></tr>";
     echo "</table>";
   }
   else 
   {
     echo "<table align=\"center\">";
-    echo "<tr><td colspan=\"2\" align=\"center\">".PRONO_INSCRIPTION_ECHOUE."<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
+    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">".PRONO_INSCRIPTION_ECHOUE."</font><br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
     echo "</table>";
   }
-
 }
-
-
 else
 {
  echo "<table align=\"center\">";
-  echo "<tr><td colspan=\"2\" align=\"center\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\">"."Réessayer"."</a></td></tr>";
+  echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\"></font></font>"."Réessayer"."</a></td></tr>";
   echo "</table>";
 }
-
 }
 ?>

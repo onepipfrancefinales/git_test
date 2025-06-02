@@ -107,16 +107,14 @@ echo "<br />";
     SET buts_dom ='$butd[$i]',     buts_ext='$butv[$i]', date_reelle='$dateUSA[$i]'
     WHERE id='$matchs_id[$i]'"));
  
-  mysqli_query($idconnect, ("UPDATE phpab_pronostics  
+   mysqli_query($idconnect, ("UPDATE phpab_pronostics  
     SET buts_dom='$butd[$i]',     buts_ext='$butv[$i]'
    WHERE id_match='$matchs_id[$i]'"));
-/////***************************************************/******************** */ */
-echo "passage1"; echo "<br>";
- echo "matchs_id[$i]".$matchs_id[$i]; echo "<br>";
-$points_prono_exact = 5;
-
-
-  $requete3=$idconnect->query("SELECT pronostic
+   /////***************************************************/******************** */ */
+   echo "passage1"; echo "<br>";
+   echo "matchs_id[$i]".$matchs_id[$i]; echo "<br>";
+  
+   $requete3=$idconnect->query("SELECT pronostic
                                  FROM phpab_pronostics 
                                 WHERE id_match='$matchs_id[$i]'");
             while ($row=mysqli_fetch_array($requete3))
@@ -124,43 +122,44 @@ $points_prono_exact = 5;
            {
               $pronosticfait = $row[0];
            }  
- echo "pronosticfait". $pronosticfait;echo "<br>";
+   echo "pronosticfait". $pronosticfait;echo "<br>";
 
-   
-   
+   $points_prono_exact=4;
+   echo "points_prono_exact : ", $points_prono_exact;echo "<br>";
+      echo "prono : ", $prono;echo "<br>";
    
    $requete2=$idconnect->query("SELECT pronostic, id_membre 
-                                 FROM phpab_pronostics 
+                                FROM phpab_pronostics 
                                 WHERE id_match='$matchs_id[$i]'");
             while ($row=mysqli_fetch_array($requete2))
-           {  $prono = $row[0];  }  
+                                 {  $prono = $row[0];  }  
 
  
- if ($butd[$i] > $butv[$i] & $prono == "1") {
-  mysqli_query($idconnect,"UPDATE phpab_pronostics 
-                           SET points = '$points_prono_exact', participation='1' 
-                           WHERE id_match = '$matchs_id[$i]'");
- }
- elseif ($butd[$i] == $butv[$i] & $prono == "N")  {
-  mysqli_query($idconnect,"UPDATE phpab_pronostics 
-                           SET points = '$points_prono_exact', participation='1' 
-                           WHERE id_match = '$matchs_id[$i]'");
- }
- elseif ($butd[$i] < $butv[$i] & $prono == "2")  {
-  mysqli_query($idconnect,"UPDATE phpab_pronostics 
-                            SET points = '$points_prono_exact', participation='1' 
-                             WHERE id_match = '$matchs_id[$i]'");}
+   if ($butd[$i] > $butv[$i] & $prono == "1") {
+          mysqli_query($idconnect,"UPDATE phpab_pronostics 
+                                   SET points = '$points_prono_exact', participation='1' 
+                                   WHERE id_match = '$matchs_id[$i]'");
+   }
+   elseif ($butd[$i] == $butv[$i] & $prono == "N")  {
+           mysqli_query($idconnect,"UPDATE phpab_pronostics 
+                                    SET points = '$points_prono_exact', participation='1' 
+                                    WHERE id_match = '$matchs_id[$i]'");
+   }
+   elseif ($butd[$i] < $butv[$i] & $prono == "2")  {
+          mysqli_query($idconnect,"UPDATE phpab_pronostics 
+                                   SET points = '$points_prono_exact', participation='1' 
+                                   WHERE id_match = '$matchs_id[$i]'");}
  
-
-  elseif ($prono != NULL) { mysqli_query($idconnect,"UPDATE phpab_pronostics 
-                                                     SET points = '0', participation = '1'
-                                                     AND id_match='$matchs_id[$i]'");}
+   elseif ($prono != NULL) { 
+          mysqli_query($idconnect,"UPDATE phpab_pronostics 
+                                   SET points = '0', participation = '1'
+                                   AND id_match='$matchs_id[$i]'");}
          
   
 
-/********************************************************************* */
+   /********************************************************************* */
 
-} elseif (($butv[$i] == '') or ($butd[$i] == '')) {
+  } elseif (($butv[$i] == '') or ($butd[$i] == '')) {
     echo "Etape 2 : absences des scores" . "<br />"; echo "<br />";
 
     mysqli_query($idconnect, ("UPDATE phpab_matchs 

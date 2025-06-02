@@ -47,7 +47,7 @@
         </tr>
 
         <?php
-        echo "user_id" . $user_id;
+     
         //Général
         //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
 

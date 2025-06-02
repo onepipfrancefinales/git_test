@@ -111,9 +111,11 @@ if ($action == "reset") {
           AND phpab_matchs.buts_ext is null
           ORDER by phpab_matchs.date_reelle, phpab_clubs.nom
           LIMIT $debut, $fin ");
-  //$resultat=mysql_query($requete) or die ("probleme " .mysql_error());
+
   while ($row = mysqli_fetch_array($resultat)) {
-    $resultat1 = $idconnect->query("SELECT phpab_matchs.date_reelle FROM phpab_matchs WHERE phpab_matchs.id='$row[0]'");
+    $resultat1 = $idconnect->query("SELECT phpab_matchs.date_reelle 
+                                    FROM phpab_matchs 
+                                    WHERE phpab_matchs.id='$row[0]'");
     // $resultat1=mysql_query($requete1);
     while ($row1 = mysqli_fetch_array($resultat1)) {
       $date_relle = $row1[0];
@@ -121,7 +123,10 @@ if ($action == "reset") {
     $date_match_timestamp = format_date_timestamp($date_relle);
 
     if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
-      mysqli_query($idconnect, ("UPDATE  phpab_pronostics SET pronostic='0' WHERE id_match='$row[0]' AND id_membre='$id'"));
+      mysqli_query($idconnect, ("UPDATE  phpab_pronostics 
+                                 SET pronostic='0' 
+                                 WHERE id_match='$row[0]' 
+                                 AND id_membre='$id'"));
     }
     mysqli_query($idconnect, ("DELETE FROM phpab_pronostics WHERE pronostic='0'"));
   }
@@ -144,14 +149,12 @@ if ($action == "valid_pronos") {
     $resultat = $idconnect->query("SELECT phpab_matchs.date_reelle 
                                   FROM phpab_matchs 
                                   WHERE phpab_matchs.id='$id_match[$i]'");
-    // $resultat=mysql_query($requete);
 
     while ($row = mysqli_fetch_array($resultat)) {
       $date_relle = $row[0];
     }
 
     $resultat = $idconnect->query("SELECT tps_avant_prono FROM phpab_gr_championnats WHERE id='$gr_champ'");
-    //$resultat=mysql_query($requete);
 
     while ($row = mysqli_fetch_array($resultat)) {
       $temps_avant_prono = $row[0];
@@ -162,11 +165,15 @@ if ($action == "valid_pronos") {
 
     if ($f_prono[$i] !== "undefined") {
 
-      mysqli_query($idconnect, ("DELETE FROM phpab_pronostics WHERE pronostic=' '"));
-      $resultat = $idconnect->query("SELECT * FROM phpab_matchs, phpab_pronostics, phpab_membres WHERE phpab_membres.id_prono='$user_id'
-                   AND phpab_membres.id=phpab_pronostics.id_membre
-                   AND phpab_pronostics.id_match=phpab_matchs.id
-                   AND phpab_pronostics.id_match='$id_match[$i]'");
+      mysqli_query($idconnect, ("DELETE FROM phpab_pronostics 
+                                 WHERE pronostic=' '"));
+
+      $resultat = $idconnect->query("SELECT * 
+                                   FROM phpab_matchs, phpab_pronostics, phpab_membres 
+                                   WHERE phpab_membres.id_prono='$user_id'
+                                   AND phpab_membres.id=phpab_pronostics.id_membre
+                                   AND phpab_pronostics.id_match=phpab_matchs.id
+                                   AND phpab_pronostics.id_match='$id_match[$i]'");
       // $resultat=mysql_query($requete);
       $nb_prono = mysqli_num_rows($resultat);
 
@@ -179,14 +186,16 @@ if ($action == "valid_pronos") {
 
       if ($nb_prono == "1") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
-          mysqli_query($idconnect, ("UPDATE phpab_pronostics SET pronostic='$f_prono[$i]'
-                        WHERE phpab_pronostics.id_membre='$id'
-                        AND phpab_pronostics.id_match='$id_match[$i]'"));
+          mysqli_query($idconnect, ("UPDATE phpab_pronostics 
+                                     SET pronostic='$f_prono[$i]'
+                                     WHERE phpab_pronostics.id_membre='$id'
+                                     AND phpab_pronostics.id_match='$id_match[$i]'"));
         }
       }
       if ($nb_prono == "0") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
-          mysqli_query($idconnect, ("INSERT INTO phpab_pronostics (id_membre, pronostic, id_match, id_champ) VALUES ('$id','$f_prono[$i]','$id_match[$i]', '$gr_champ')"));
+          mysqli_query($idconnect, ("INSERT INTO phpab_pronostics (id_membre, pronostic, id_match, id_champ) 
+                                     VALUES ('$id','$f_prono[$i]','$id_match[$i]', '$gr_champ')"));
         }
       } elseif ($nb_prono != "1" and $nb_prono != "0") {
         echo "erreur !<br />";
@@ -245,7 +254,7 @@ if ($action == "valid_pronos") {
 									   WHERE phpab_pronostics.id_match='$row[2]' 
 									   AND phpab_membres.id=phpab_pronostics.id_membre 
 									   AND phpab_membres.id_prono='$user_id'");
-    //$resultat2=mysql_query($requete2) or die ("probleme " .mysql_error());
+ 
     $nb_pronos = mysqli_num_rows($resultat2);
 
 
@@ -263,7 +272,9 @@ if ($action == "valid_pronos") {
     }
 
 
-    $resultat2 = $idconnect->query("SELECT tps_avant_prono FROM phpab_gr_championnats WHERE id='$gr_champ'");
+    $resultat2 = $idconnect->query("SELECT tps_avant_prono 
+                                    FROM phpab_gr_championnats 
+                                    WHERE id='$gr_champ'");
     //$resultat2=mysql_query($requete2) or die ("probleme " .mysql_error());
 
     while ($row2 = mysqli_fetch_array($resultat2)) {
@@ -278,9 +289,9 @@ if ($action == "valid_pronos") {
     $ecart_jours = floor($ecart_secondes / (60 * 60 * 24) - $temps_avantmatch / 60);
     $date = format_date_fr_red($row[3]);
 
-    echo "<tr><td><div class=\"blanc\">$row[4]</div></td>";
-    echo "<td><div class=\"blanc\">$date</div></td>";
-    echo "<td align=\"right\"><div class=\"blanc\">$clubs_nom</div></td>";
+    echo "<tr><td class=\"blanc\">$row[4]</td>";
+    echo "<td class=\"blanc\">$date</td>";
+    echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
 
     if ($ecart_heures >= "0") {
       $x++;
@@ -288,11 +299,11 @@ if ($action == "valid_pronos") {
       echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
 ?><INPUT type="hidden" value="1" name="r_<?php echo $x; ?>">
 
-      <table border="0" cellpadding="0" cellspacing="0" align="center" width="50">
+      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100">
         <tr>
-          <td>
+          <td class= "center">
             <?php
-            //echo "prono : ".$prono;
+          
             //$prono=1;
             if ($prono == "0") {
               //  echo "0";
@@ -304,7 +315,6 @@ if ($action == "valid_pronos") {
             }
 
             if ($prono == "1") {
-              //   echo "1";
             ?>
               <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="barre.gif" border="no" name="m<?php echo $x; ?>_1" alt=""></a>
               <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="N.gif" border="no" name="m<?php echo $x; ?>_0" alt=""></a>
@@ -313,7 +323,6 @@ if ($action == "valid_pronos") {
             }
 
             if ($prono == "N") {
-              //   echo "N";
             ?>
               <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="1.gif" border="no" name="m<?php echo $x; ?>_1" alt=""></a>
               <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="barre.gif" border="no" name="m<?php echo $x; ?>_0" alt=""></a>
@@ -322,7 +331,6 @@ if ($action == "valid_pronos") {
             }
 
             if ($prono == "2") {
-              //   echo "2";
             ?>
               <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="1.gif" border="no" name="m<?php echo $x; ?>_1" alt=""></a>
               <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="N.gif" border="no" name="m<?php echo $x; ?>_0" alt=""></a>
@@ -330,7 +338,7 @@ if ($action == "valid_pronos") {
             <?php
             }
             echo "</td></tr></table></td>";
-          } else {
+           } else {
             echo "<td><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\">\n";
             echo "<tr>\n";
             echo "<td width=\"45\" height=\"10\" valign=\"middle\" align=\"center\">\n";
@@ -344,26 +352,26 @@ if ($action == "valid_pronos") {
 
             if ($prono == "N") {
             ?>
-              <img src="1.gif" border="no" alt=""> <img src="barre.gif" border="no" alt=""> <img src="2.gif" border="no" alt="">
+              <img src="1.gif"> <img src="barre.gif"> <img src="2.gif">
             <?php
             }
 
             if ($prono == "2") {
             ?>
-              <img src="1.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="barre.gif" border="no" alt="">
+              <img src="1.gif"> <img src="N.gif"> <img src="barre.gif">
             <?php
             }
 
             if ($prono == "0") {
             ?>
-              <img src="1.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="2.gif" border="no" alt="">
-        <?php
+              <img src="1.gif"> <img src="N.gif"> <img src="2.gif">
+               <?php
             }
             echo "</td></tr></table>";
             echo "</td></tr></table></td>";
           }
 
-          echo "<td><div class=\"blanc\">$clubs_nom1</div></td><td align=center>";
+          echo "<td class=\"blanc\">$clubs_nom1</td><td align=center>";
 
           if ($ecart_heures > 48) echo "<div class=\"blanc\">$ecart_jours jours</div>";
           elseif ($ecart_heures > 0) echo "<div class=\"blanc\">$ecart_heures h</div>";
@@ -381,14 +389,9 @@ if ($action == "valid_pronos") {
           <td colspan="6" align="center">
             <input type="hidden" name="action" value="valid_pronos">
             <input type="hidden" name="nb_fiche" value="<?php echo $x; ?>">
-
-
             <input type="hidden" name="debut" value="<?php echo $debut; ?>"><br />
             <a href="index.php?page=pronos&amp;action=reset&amp;debut=<?php echo $debut; ?>&amp;gr_champ=<?php echo "$gr_champ"; ?>"><img border="0" src="reset.gif" alt=""></a>
-            <a href="javascript:ValideGrille(<?php echo $x; ?>);"><img border="0" src="s_1.gif" alt="">dfdfdfdfdf</a>
-
-
-
+            <a href="javascript:ValideGrille(<?php echo $x; ?>);"><img border="0" src="s_1.gif" alt=""></a>
           </td>
         </tr>
       </table>
