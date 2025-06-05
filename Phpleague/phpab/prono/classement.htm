@@ -3,7 +3,9 @@
       <td class="center">
         <div class="blanc"><b>
 
-<?php classement_type ($type);?>
+
+<?php 
+classement_type ($type);?>
 
 </b></div></td>
     </tr>
@@ -17,7 +19,8 @@
               <td><div class="blanc"><b><?php echo PRONO_CLASSEMENT_PARTICIPATIONS; ?></b></div></td>
             </tr>
             
-              <?php classement ($gr_champ, $type, $user_pseudo, $idconnect);?>            
+              <?php classement ($gr_champ, $type, $user_pseudo, $idconnect);  ?>     
+                     
           </table>
       </td>
     </tr>

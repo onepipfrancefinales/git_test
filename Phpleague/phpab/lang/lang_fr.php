@@ -317,7 +317,7 @@ define("CONSULT_MATCHS_MSG1","Quel championnat voulez vous consulter ?");
 define("CONSULT_MATCHS_MSG2"," le ");
 
 // FICHIER consult/equipes.php
-define("CONSULT_INDEX_1","Consultation des �quipes");//0.82
+define("CONSULT_INDEX_1","Consultation des équipes");//0.82
 define("CONSULT_INDEX_2","Fondation");//0.82
 
 // Detail equipe
@@ -325,16 +325,16 @@ define("VICTOIRE","VICTOIRE ");
 define("NUL"," NUL ");
 define("DEFAITE"," DEFAITE");
 define("JOURNEE","N&deg;");
-define("DETAILEQ_TITRE","Choix �quipe");
+define("DETAILEQ_TITRE","Choix équipe");
 define("DETAILEQ_1","Equipe :");
 
 
 // calendrier_1.php
-define("CONSULT_CALENDAR_1","Cette journ�e n'existe pas");
-define("CONSULT_CALENDAR_2","Journ�e pr�c�dente");
-define("CONSULT_CALENDAR_3","Journ�e suivante");
-define("CONSULT_CALENDAR_4","Matchs pr�c�dentséute;e n&deg;");
-define("CONSULT_CALENDAR_5","Derniers r�sultats : jouée;e n&deg;");
+define("CONSULT_CALENDAR_1","Cette journée n'existe pas");
+define("CONSULT_CALENDAR_2","Journée précédente");
+define("CONSULT_CALENDAR_3","Journée suivante");
+define("CONSULT_CALENDAR_4","Matchs précédentséute;e n&deg;");
+define("CONSULT_CALENDAR_5","Derniers résultats : jouée;e n&deg;");
 
 
 // divers
@@ -345,10 +345,10 @@ define("ADMIN_CLUB_TITRE","Edition des clubs");
 define("ADMIN_CLUB_SUPP1","<b>Suppression</b> d'un club ");
 define("ADMIN_CLUB_BUTTON_SUPP","Suppression club");
 define("ADMIN_CLUB_CREA","<b>Ajout</b> d'un club");
-define("ADMIN_CLUB_BUTTON_CREA","Cr�ation club");
+define("ADMIN_CLUB_BUTTON_CREA","Création club");
 define("ADMIN_CLUB_BUTTON_MSG3","Pour <b>modifier</b> le nom d'un club, utilisez PHPMyAdmin");
-define("ADMIN_CLUB_CREA2","<b>Cr�ation effectu�e</b>");
-define("ADMIN_CLUB_SUPP2","<b>Suppression effectu�e</b>");
+define("ADMIN_CLUB_CREA2","<b>Création effectuée</b>");
+define("ADMIN_CLUB_SUPP2","<b>Suppression effectuée</b>");
 
 
 
@@ -364,24 +364,24 @@ define("CONSULT_BUTEUR_MSG2","Classement Buteurs");
 define("CONSULT_BUTEUR_TITRE_1","Classement des buteurs");    // 0.82
 define("CONSULT_BUTEUR_MSG3","Groupe de Championnats : ");
 define("CONSULT_BUTEUR_MSG4","comprenant : ");
-define("CONSULT_BUTEUR_MSG5","Quelle �quipe ?");
+define("CONSULT_BUTEUR_MSG5","Quelle équipe ?");
 define("DUEL_MSG1","Choisissez les adversaires : ");
 define("DUEL_MSG2"," Duels");
-define("DUEL_MSG3","Voici les probabilit�s de l'ordinateur ");
+define("DUEL_MSG3","Voici les probabilités de l'ordinateur ");
 define("DUEL_MSG4","PROBABILITES : ");
-define("DUEL_MSG5","Les probabilit�s affich�es sont le reflet d'un calcul math�matique simple");
+define("DUEL_MSG5","Les probabilités affichées sont le reflet d'un calcul mathématique simple");
 
 // consult/club
 define("CONSULT_CLUB_1","Classement");
-define("CONSULT_CLUB_2","Calendrier et r�sultats");
+define("CONSULT_CLUB_2","Calendrier et résultats");
 define("CONSULT_CLUB_3","Historique");
 define("CONSULT_CLUB_4","Statistiques");
 
-// S�curit�
+// Sécurité
 define("ADMIN_SECURITE_CLUB","Etes vous sur de vouloir supprimer le club suivant :");
 define("ADMIN_SECURITE_RENS","Etes vous sur de vouloir supprimer le renseignement suivant :");
 define("ADMIN_SECURITE_SAISONS","Etes vous sur de vouloir supprimer la saison ");
-define("ADMIN_SECURITE_SAISONS_2","ainsi que les championnats et les rencontres attach�es");
+define("ADMIN_SECURITE_SAISONS_2","ainsi que les championnats et les rencontres attachées");
 define("ADMIN_SECURITE_CLASSE","Etes vous sur de vouloir supprimer la classe suivante :");
 define("ADMIN_SECURITE_CHAMP","Etes vous sur de vouloir supprimer le championnat suivant :");
 
@@ -439,7 +439,7 @@ define("PRONO_MENU_AIDE","AIDE");  // 0.82
 // Menu non identifié
 define("PRONO_MENU_LOGIN","LOGIN");
 define("PRONO_MENU_MDP","MOT DE PASSE");
-define("PRONO_MENU_OUBLIE","MOT DE PASSE OUBLI� ?");
+define("PRONO_MENU_OUBLIE","MOT DE PASSE OUBLIE ?");
 
 // Mot de passe oublié
 define("PRONO_OUBLIE_PERDU","Mot de passe perdu");
@@ -548,8 +548,8 @@ define("PRONO_BAREME_TPS2","heure(s) avant le début du match");
 
 // Fiches joueurs   //0.82
 define("FICHE_AGE","Age");
-define("FICHE_DATE","N� le");
-define("FICHE_DETAIL","D�tail des buts");
+define("FICHE_DATE","N° le");
+define("FICHE_DETAIL","Détail des buts");
 define("FICHE_BUTS","but(s)");
 
 // Cr�dits

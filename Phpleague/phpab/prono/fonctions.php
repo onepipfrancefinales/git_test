@@ -308,7 +308,7 @@ if ($nb_pronos == "0") {$prono="0";}
   echo "<td><div class=\"blanc\">$clubs_nom1</div></td>";
 
   $resultats2=$idconnect->query("SELECT tps_avant_prono FROM phpab_gr_championnats WHERE id='$gr_champ'");
-  //$resultats2=mysql_query($requete2) or die ("probleme " .mysql_error());
+
    while ($row2=mysqli_fetch_array($resultats2))
    {
     $temps_avantmatch=$row2[0];
@@ -336,18 +336,19 @@ if ($nb_pronos == "0") {$prono="0";}
 
 function classement_type ($type)
 {
-if ($type=="") {echo PRONO_CLASSEMENT_GENERAL_MAJ;}
-if ($type=="general") {echo PRONO_CLASSEMENT_GENERAL_MAJ;}
-if ($type=="mensuel_en_cours") {echo PRONO_CLASSEMENT_MOIS;}
-if ($type=="mensuel_30_jours") {echo PRONO_CLASSEMENT_30;}
-if ($type=="hebdo") {echo PRONO_CLASSEMENT_HEBDO;}
+if ($type=="") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+if ($type=="general") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+if ($type=="mensuel_en_cours") {echo "<br>".PRONO_CLASSEMENT_MOIS."<br>"."<br>";}
+if ($type=="mensuel_30_jours") {echo "<br>".PRONO_CLASSEMENT_30."<br>"."<br>";}
+if ($type=="hebdo") {echo "<br>".PRONO_CLASSEMENT_HEBDO."<br>"."<br>";}
 }
 
 function classement ($gr_champ, $type, $user_pseudo, $idconnect)
 {
+
 if (!($type=="general" or $type=="mensuel_en_cours" or $type=="mensuel_30_jours" or $type=="hebdo")){$type="general";}
 
-// classement général
+// classement mensuel_en_cours
 if ($type=="mensuel_en_cours")
 {
    mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos 
@@ -365,7 +366,6 @@ if ($type=="mensuel_en_cours")
                               GROUP by pseudo
                               ORDER by total, participations");
 
- //  $result=mysql_query ($query) or die ("probleme " .mysql_error());
    while ($row=mysqli_fetch_array($result))
          {
          $row[1]=addslashes($row[1]);
@@ -391,7 +391,7 @@ if ($type=="mensuel_30_jours")
                               GROUP by pseudo
                               ORDER by total, participations");
 
-   //$result=mysql_query ($query) or die ("probleme " .mysql_error());
+
        while ($row=mysqli_fetch_array($result))
        {
        $row[1]=addslashes($row[1]);
@@ -423,6 +423,7 @@ if ($type=="hebdo")
 								                  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
        }
 }
+
 if (isset($_REQUEST['complet'])) {$complet=$_REQUEST['complet'];} else {$complet='';}
 
 $result=$idconnect->query("SELECT pseudo, points, participation 

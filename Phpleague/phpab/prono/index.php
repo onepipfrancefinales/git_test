@@ -23,18 +23,39 @@ include ("avant.php"); ?>
 
 <table width="95%" class="marginAuto borderNone">
   <tr> 
-    <td colspan="2" class="center"> 
+    <td colspan="2" class="center">
       <?php
 if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
+
 include("haut.inc.php");
+
 include("menu.inc.php");
+
+
 ?>
+
+
     </td>
   </tr>
   <tr> 
    
     <td width="100%" class="center" > 
-      <?php include("pronos.inc.htm");?>
+       
+     <?php  
+       $resultat=$idconnect->query("SELECT nom
+								 FROM phpab_gr_championnats 
+								 WHERE id = '$gr_champ' ");
+
+   while ($row = mysqli_fetch_array($resultat)) {
+    $gr_champ_nom = $row[0]; 
+   
+   }
+   echo "<br>";
+ echo "<h2>"."championnats ".$gr_champ_nom."</h2>"; 
+      include("pronos.inc.htm");?>
+
+
+   
     </td>
   </tr>
   <tr> 
@@ -130,7 +151,6 @@ else {include ("accueil.htm");}
     </td>
   </tr>
 </table>
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

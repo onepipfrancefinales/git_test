@@ -54,9 +54,29 @@ if (isset($_GET['comite'])) $comite = $_GET['comite'];
       </td>
     </tr>
   </table>
-  <footer>
+  <table class="marginAuto">
+<tr>
+<td class="colonneForum"></td>
+<td class="center"> <iframe width="1000" height="1000" src="https://rugbypdf.forumactif.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+<td class="colonneForum"></td>
+</tr>
+
+
+  </table>
+    
+    <footer>
     <?php include("../resultats/piedDePage.php"); ?>
   </footer>
 </body>
 
 </html>
+
+<style>
+.colonneForum {
+	background-color: #006699;
+	width: 123px;
+	vertical-align: top;
+
+}
+
+</style>

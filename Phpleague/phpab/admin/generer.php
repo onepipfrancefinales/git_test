@@ -60,7 +60,8 @@ $legende=CONSULT_CLMNT_MSG4.$debut.CONSULT_CLMNT_MSG5.$fin;
   
   $result=$idconnect->query("SELECT max(phpab_journees.numero) 
 							 FROM phpab_journees, phpab_matchs 
-							 WHERE phpab_journees.id=phpab_matchs.id_journee AND buts_dom is not NULL and phpab_journees.id_champ='$champ'");
+							 WHERE phpab_journees.id=phpab_matchs.id_journee 
+							 AND buts_dom is not NULL and phpab_journees.id_champ='$champ'");
 //$result=mysql_query ($query);
 $row=mysqli_fetch_array($result);
 $max=$row[0];

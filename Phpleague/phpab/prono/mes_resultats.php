@@ -68,7 +68,6 @@
 
         while ($row = mysqli_fetch_array($result)) {
           if ($user_id == $row[2] & $row[1] != 0) {
-            echo "test";
             $points = $row[0];
             $participation = $row[1];
 
@@ -88,8 +87,6 @@
             echo "%</div></td>";
             echo "<td><div class=\"blanc\"></div></td></tr>";
           }
-          echo "pts" . $points;
-          echo "particip" . $participation;
         }
 
         // Mensuel en cours
