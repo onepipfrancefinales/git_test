@@ -1,12 +1,13 @@
 <?php
 
 switch ($page) {
+    
     case "actualites":
         $titre = "Actualités";
         break;
-        case "actualites2":
-            $titre = "Suivi du champ de France";
-            break;
+    case "actualites2":
+        $titre = "Suivi du champ de France";
+        break;
     case "champions":
         $titre = "Champions de l'année";
         break;
@@ -23,6 +24,9 @@ switch ($page) {
         break;
     /* ligues */
 
+    case "pronos":
+        $titre = "Ligues régionales <br> Concours de pronostiques";
+        break;
     case  "ligues":
         $titre = "Ligues Françaises";
         break;

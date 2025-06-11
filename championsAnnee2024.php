@@ -9,7 +9,7 @@ else {
 
 <table class="marginAuto border borderSpacing" width="100%">
 	<tr class="size6 style">
-		<td colspan="3" class="style">Champions de France 2024<br></b></td>
+		<td colspan="3" class="style">Champions de France 2025<br></b></td>
 	</tr>
 	<tr class="size5 backgroundBlue colorWhite">
 		<td colspan="3" class="styleDivision">Séniors I</td>

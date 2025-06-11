@@ -21,7 +21,7 @@
 include ("avant.php"); ?>
 
 
-<table width="95%" class="marginAuto borderNone">
+<table width="100%" class="marginAuto borderNone">
   <tr> 
     <td colspan="2" class="center">
       <?php
@@ -50,12 +50,8 @@ include("menu.inc.php");
     $gr_champ_nom = $row[0]; 
    
    }
-   echo "<br>";
- echo "<h2>"."championnats ".$gr_champ_nom."</h2>"; 
+   echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>"; 
       include("pronos.inc.htm");?>
-
-
-   
     </td>
   </tr>
   <tr> 
@@ -155,7 +151,4 @@ else {include ("accueil.htm");}
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+

@@ -14,9 +14,9 @@ else
 	}
 */
 ?>
-<?php// $phpcomite_divisions= "php".''.$comite.''."_divisions";?> 
-<?php// $id=$champion - 1;?>
-<?php// include("../saison.php");?>
+<?php // $phpcomite_divisions= "php".''.$comite.''."_divisions";?> 
+<?php // $id=$champion - 1;?>
+<?php // include("../saison.php");?>
 
 <?php 
 	

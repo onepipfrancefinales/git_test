@@ -243,7 +243,7 @@ if ($action == "valid_pronos") {
 
 
   if (mysqli_num_rows($resultat) == "0") {
-    echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journée Inexistante</div></td></tr>";
+    echo "<tr><td colspan=6 class=\"blanc center\">Journée Inexistante</td></tr>";
   }
 
   while ($row = mysqli_fetch_array($resultat) and $i < $nb_matchs) {
@@ -256,7 +256,6 @@ if ($action == "valid_pronos") {
 									   AND phpab_membres.id_prono='$user_id'");
  
     $nb_pronos = mysqli_num_rows($resultat2);
-
 
 
     if ($nb_pronos == "0") {
@@ -287,7 +286,7 @@ if ($action == "valid_pronos") {
     $ecart_jours = floor($ecart_secondes / (60 * 60 * 24) - $temps_avantmatch / 60);
     $date = format_date_fr_red($row[3]);
 
-    echo "<tr><td class=\"blanc\">$row[4]</td>";
+    echo "<tr><td class=\"blanc center\">$row[4]</td>";
     echo "<td class=\"blanc\">$date</td>";
     echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
 
@@ -297,9 +296,10 @@ if ($action == "valid_pronos") {
       echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
 ?><INPUT type="hidden" value="1" name="r_<?php echo $x; ?>">
 
-      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100">
+      <table  width="100">
         <tr>
           <td class= "center">
+         
             <?php
           
             //$prono=1;

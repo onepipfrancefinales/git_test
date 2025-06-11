@@ -24,8 +24,8 @@ $clubA1002 ="-";
 $A1001 ="-";
 $A1002 ="-";
 
-echo "typeBarrage : ".$typeBarrage;echo "<br>";
-echo "divisionBarrage : ".$divisionBarrage;echo "<br>";
+//echo "typeBarrage : ".$typeBarrage;echo "<br>";
+//echo "divisionBarrage : ".$divisionBarrage;echo "<br>";
 
 
 

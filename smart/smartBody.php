@@ -15,7 +15,11 @@
       require '../palmares/palmNational/palmParLigue.php';
       break;
 /* Ligue*/
-    case "sommairePalmaresRegions":
+    case "pronos":
+      require '../pronos/pronos.php';
+      break;
+
+case "sommairePalmaresRegions":
       require 'palmares/regions.php';
       break;
     case "pfRegionales":

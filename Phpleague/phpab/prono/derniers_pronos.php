@@ -65,9 +65,9 @@ if ($nb_pronos == "0") {$prono="0";}
   }
 }
   $date=format_date_fr_red($row[5]);
-  echo"<tr><td><div class=\"blanc\">$row[6]</div></td>";
-  echo "<td><div class=\"blanc\">$date</div></td>";
-  echo "<td align=\"right\"><div class=\"blanc\">$clubs_nom</div></td>";
+  echo"<tr><td class=\"blanc center\">$row[6]</td>";
+  echo "<td class=\"blanc center\">$date</td>";
+  echo "<td class=\"blanc alignRight\">$clubs_nom</td>";
     
   echo "<td>";
   echo "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" width=\"50\"><tr><td>";
@@ -108,9 +108,9 @@ if ($nb_pronos == "0") {$prono="0";}
   echo "</td>\n</tr>\n</table>\n</td>\n";
   $pronos_exact=$row['pts_prono_exact']+$row['pts_prono_participation'];
 
-  echo "<td><div class=\"blanc\">$clubs_nom1</div></td>";
-  echo "<td align=\"center\"><div class=\"blanc\">$row[2]-$row[3]</div></td>";
-  echo "<td align=\"center\">";
+  echo "<td class=\"blanc\">$clubs_nom1</td>";
+  echo "<td class=\"blanc center\">$row[2]-$row[3]</td>";
+  echo "<td class=\"center\">";
   if ($row[2]>$row[3] and $prono==1){echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
   elseif ($row[2]==$row[3] and $prono=="N"){echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
   elseif ($row[2]<$row[3] and $prono=="2"){echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
