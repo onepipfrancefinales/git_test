@@ -15,8 +15,9 @@
       require '../palmares/palmNational/palmParLigue.php';
       break;
 /* Ligue*/
-    case "pronos":
-      require '../pronos/pronos.php';
+    case "pronostics":
+  //require 'palmares/regions.php';
+      require '../Phpleague/phpab/prono/index.php';
       break;
 
 case "sommairePalmaresRegions":

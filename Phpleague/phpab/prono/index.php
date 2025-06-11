@@ -16,6 +16,29 @@
 //                                                                      */
 //***********************************************************************/
 ?>
+<?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];
+
+if ($mode == true)
+{
+  ?>
+<table class="width98PC" border="1">
+    <tr>
+      <td class="h22 width5PC"><a href="/smart/sommaire.php"><img src="../../../images/smart/flecheGauche.jpg" width="27" height="20" alt="fléche retour"></a></td>
+      <td class="h22 width95PC"> France Finales Rugby </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="h12">Ligues régionales <br> Concours de pronostiques</td>
+    </tr>
+</table>
+
+<?php
+}
+  ?>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 <?php 
 
 include ("avant.php"); ?>
@@ -26,11 +49,13 @@ include ("avant.php"); ?>
     <td colspan="2" class="center">
       <?php
 if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
+   
+
+
 
 include("haut.inc.php");
 
 include("menu.inc.php");
-
 
 ?>
 
@@ -142,6 +167,8 @@ else {include ("accueil.htm");}
   <tr> 
     <td width="100%" colspan="2"> 
       <?php
+
+
 //include("../bas.inc.php");
 ?>
     </td>
@@ -151,4 +178,10 @@ else {include ("accueil.htm");}
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+ 
 
+<?php if ($mode == true)
+{
+require '../../../smart/smartFooter.php';
+}
+  ?>
