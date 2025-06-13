@@ -7,7 +7,9 @@ Championnats des pronostiqueurs</p>
 <object data="/Phpleague/phpab/prono/index.php" 
   height ="1500" width="100%" >
                   </object>
+                 
+<?php
+//require "/Phpleague/phpab/prono/index.php";
 
 
-
-
+?>

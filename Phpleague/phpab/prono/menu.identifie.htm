@@ -12,7 +12,7 @@
     </td>
   </tr>
   <tr>
-    <td height="20" class="pseudo bold alignLeft">
+    <td height="20" class="pseudo center bold alignLeft">
           <?php echo PRONO_MENU_BIENVENUE." $user_pseudo";?>
     </td>
   </tr>
@@ -24,14 +24,14 @@
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?page=profil&gr_champ=<?php echo $gr_champ; ?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=profil&gr_champ=<?php echo $gr_champ; ?>">
           <?php echo PRONO_MENU_MON_PROFIL; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="logout.php">
+      &nbsp;<a href="logout.php?mode=<?php echo $mode;?>">
           <?php echo PRONO_MENU_DECONNEXION; ?>
         </a>
     </td>
@@ -45,7 +45,7 @@
       <table class="prono" width="100%">
         <tbody>
           <tr>
-            <td width="15" class="alignRight">
+            <td width="15" class="alignLeft">
               <img src="trait-jaune.gif" alt="" width="22" height="9">
             </td>
             <td height="15" class="menu1 bold alignLeft">
@@ -81,7 +81,7 @@
       <table class="prono" width="100%">
         <tbody>
           <tr>
-            <td width="15" class="alignRight">
+            <td width="15" class="alignLeft">
               <img src="trait-jaune.gif" alt="" width="22" height="9"></td>
             <td class="menu1 bold alignLeft">
                   <?php echo PRONO_MENU_MES_PRONOS; ?>
@@ -93,35 +93,35 @@
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?page=pronos&gr_champ=<?php echo $gr_champ;?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=<?php echo $gr_champ;?>">
           <?php echo PRONO_MENU_PROCHAINE_GRILLE; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?page=derniers_pronos&gr_champ=<?php echo $gr_champ;?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=derniers_pronos&gr_champ=<?php echo $gr_champ;?>">
           <?php echo PRONO_MENU_DERNIERE_GRILLE; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?page=mes_resultats&gr_champ=<?php echo $gr_champ; ?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=mes_resultats&gr_champ=<?php echo $gr_champ; ?>">
           <?php echo PRONO_MENU_MES_RESULTATS; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?page=baremes&gr_champ=<?php echo $gr_champ; ?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>">
           <?php echo PRONO_MENU_BAREME; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?page=baremes&gr_champ=<?php echo $gr_champ; ?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>">
           <?php echo PRONO_MENU_AIDE; ?>
         </a>
     </td>
@@ -137,7 +137,7 @@
       <table class="prono" width="100%">
         <tbody>
           <tr>
-            <td width="15" class="alignRight">
+            <td width="15" class="alignLeft">
               <img src="trait-jaune.gif" width="22" alt="" height="9"></td>
               <td height="15" class="menu1 bold alignLeft">
                   <?php echo PRONO_MENU_LES_CHAMPIONNATS; ?>
@@ -149,8 +149,7 @@
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-              <?php champ_prono ($gr_champ, $idconnect); ?>
+              <?php champ_prono ($gr_champ, $idconnect, $mode); ?>
     </td>
   </tr>
 </table>
-

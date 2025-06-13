@@ -28,7 +28,9 @@ $taille = 8;
 	}
 $new_mot_de_passe_crypt=md5($new_mot_de_passe);
 
-mysqli_query($idconnect, ("UPDATE phpab_membres SET mot_de_passe='$new_mot_de_passe_crypt' WHERE mail='$mail'"));
+mysqli_query($idconnect, ("UPDATE phpab_membres 
+SET mot_de_passe='$new_mot_de_passe_crypt' 
+WHERE mail='$mail'"));
 
 $query =$idconnect->query("	SELECT pseudo, mail 
 							FROM phpab_membres 
@@ -36,7 +38,7 @@ $query =$idconnect->query("	SELECT pseudo, mail
 
 $result =$idconnect->query("SELECT pseudo, mail, nom_site, url_site 
 							FROM phpab_membres 
-							WHERE admin='1'");
+							WHERE admin = '1'");
 							
  // $result=mysql_query($requete) or die ("probleme " .mysql_error());
   $row=mysqli_fetch_array($result);
@@ -54,7 +56,7 @@ $message="<html>
 </head>
 <body>
 <p><font face=\"Verdana\" size=\"2\">Bonjour,</font></p>
-<p><font face=\"Verdana\" size=\"2\">Vous avez demand� � recevoir un nouveau mot
+<p><font face=\"Verdana\" size=\"2\">Vous avez demandé à recevoir un nouveau mot
 de passe pour acceder aux pronostics du site <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
 <p><font face=\"Verdana\" size=\"2\">Votre pseudo : $pseudo</font></p>
 <p><font face=\"Verdana\" size=\"2\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
@@ -62,7 +64,7 @@ de passe pour acceder aux pronostics du site <a href=\"$url_site_admin\">$nom_si
 <p><font face=\"Verdana\" size=\"2\">Ce script a été créé par <a href=\"http://phpabeague.univert.org\">phpabeague</a> : Gestionnaire de championnats sportifs et de pronostics !</font></p>
 </body>
 </html>";
-  $from="Content-Type: text/html; charset=\"iso-8859-15\"\nFrom: $mail_admin\n";
+$from="Content-Type: text/html; charset=\"iso-8859-15\"\nFrom: $mail_admin\n";
 $email=mail($to,$sujet,$message,$from);
 if($email)echo"<div align=\"center\"><font face=\"Verdana\" color=\"#FFFFFF\" size=\"1\">".PRONO_OUBLIE_TEXTE_2." :<br /><br /><b>$mail</b><br /><br />Vous allez le recevoir dans un instant.</font></div>";
 else echo"<div align=\"center\"><font face=\"Verdana\"  color=\"#FFFFFF\" size=\"1\">".PRONO_OUBLIE_TEXTE_3."</font></div><br />";

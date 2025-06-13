@@ -20,7 +20,7 @@ require '../resultats/constantes.php';
   <meta name="author" content="Equipe Onepip">
   <meta name="robots" content="All">
 
-  <link type="text/css" rel="stylesheet" href="../ligneNoir.css" />
+  <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../resultats/resultat.css">
   <link type="text/css" rel="stylesheet" href="/Phpleague/phpab/league.css">

@@ -16,11 +16,9 @@
       break;
 /* Ligue*/
     case "pronostics":
-  //require 'palmares/regions.php';
-      require '../Phpleague/phpab/prono/index.php';
+      require 'pageVide.php';
       break;
-
-case "sommairePalmaresRegions":
+    case "sommairePalmaresRegions":
       require 'palmares/regions.php';
       break;
     case "pfRegionales":

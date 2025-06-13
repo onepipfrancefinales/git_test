@@ -15,17 +15,13 @@
 // Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-
 if (isset($_REQUEST['t']) and $_REQUEST['t'] == "1")
 {
-  echo "<table><tr><td><div class=\"bleu\"><b>Identifiants erronés</b></div></td></tr></table>";
+  echo "<table><tr><td class=\"bleu bold colorWhite center size3\">Identifiants erronÃ©s</td></tr></table>";
 }
-
 else
 {
-  echo "<table><tr><td><div class=\"bleu\"><b>Veuillez renseigner tous les champs</b></div></td></tr></table>";
+  echo "<table><tr><td class=\"bleu bold colorWhite center size3\">Veuillez renseigner tous les champs</td></tr></table>";
 }
-
-
 echo "<br />";
 ?>

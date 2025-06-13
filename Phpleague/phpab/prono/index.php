@@ -19,7 +19,8 @@
 <?php
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
 
-if ($mode == true)
+
+if ($mode == "smart")
 {
   ?>
 <table class="width98PC" border="1">
@@ -34,6 +35,7 @@ if ($mode == true)
 
 <?php
 }
+
   ?>
 
 <p>&nbsp;</p>
@@ -41,20 +43,16 @@ if ($mode == true)
 
 <?php 
 
-include ("avant.php"); ?>
+include ("avant.php");
 
-
+ ?>
 <table width="100%" class="marginAuto borderNone">
   <tr> 
     <td colspan="2" class="center">
       <?php
 if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
    
-
-
-
 include("haut.inc.php");
-
 include("menu.inc.php");
 
 ?>
@@ -180,8 +178,11 @@ else {include ("accueil.htm");}
 <p>&nbsp;</p>
  
 
-<?php if ($mode == true)
+<?php
+
+if ($mode == "smart")
 {
 require '../../../smart/smartFooter.php';
 }
+
   ?>

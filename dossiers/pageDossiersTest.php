@@ -21,7 +21,7 @@ require '../resultats/constantes.php';
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="All">
 
-  <link type="text/css" rel="stylesheet" href="../ligneNoir.css" />
+  <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../resultats/resultat.css">
   <link type="text/css" rel="stylesheet" href="/Phpleague/phpab/league.css">

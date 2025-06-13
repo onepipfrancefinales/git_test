@@ -294,7 +294,7 @@ if ($action == "valid_pronos") {
       $x++;
       echo "<td>";
       echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
-?><INPUT type="hidden" value="1" name="r_<?php echo $x; ?>">
+?><input type="hidden" value="1" name="r_<?php echo $x; ?>">
 
       <table  width="100">
         <tr>

@@ -18,7 +18,7 @@ if (isset($_GET['comite'])) $comite = $_GET['comite'];
   <meta name="robots" content="All">
   <meta charset="utf-8">
 
-  <link type="text/css" rel="stylesheet" href="../ligneNoir.css" />
+  <link type="text/css" rel="stylesheet" href="../lienNoir.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../resultats/resultat.css">
   <link type="text/css" rel="stylesheet" href="/Phpleague/phpab/league.css">
@@ -57,7 +57,9 @@ if (isset($_GET['comite'])) $comite = $_GET['comite'];
   <table class="marginAuto">
 <tr>
 <td class="colonneForum"></td>
-<td class="center"> <iframe width="1000" height="1000" src="https://rugbypdf.forumactif.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+<td class="center"> 
+  <!--<iframe width="1000" height="1000" //src="https://rugbypdf.forumactif.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  --></td>
 <td class="colonneForum"></td>
 </tr>
 

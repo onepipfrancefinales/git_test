@@ -2,10 +2,8 @@
 
 require ("fonctions.php");
 require("../config.php");
-//require ("../Phpleague/phpab/prono/fonctions.php");
-//require("../Phpleague/phpab/config.php");
-ouverture ();
 
+ouverture ();
 
 if (!isset($gr_champ) or empty($gr_champ))
    {
@@ -19,4 +17,4 @@ if (!isset($gr_champ) or empty($gr_champ))
     $gr_champ = $row[0]; 
   
    }
-?>
+  ?>

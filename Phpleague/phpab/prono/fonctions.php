@@ -480,7 +480,7 @@ function pseudo_admin ($gr_champ, $idconnect)
  //echo $pseudo;
 }
 
-function champ_prono ($gr_champ, $idconnect)
+function champ_prono ($gr_champ, $idconnect, $mode)
 {
  $resultat=$idconnect->query("SELECT DISTINCT id, nom
                               FROM phpab_gr_championnats 
@@ -489,7 +489,7 @@ function champ_prono ($gr_champ, $idconnect)
 
   while ($row= mysqli_fetch_array($resultat))
   {
-    echo "<a href=\"index.php?gr_champ=$row[0]\">";
+    echo "<a href=\"index.php?mode=$mode&gr_champ=$row[0]\">";
     if ($gr_champ==$row[0]){echo "<b>";}
     echo "$row[1]";
     if ($gr_champ==$row[0]){echo "</b>";}

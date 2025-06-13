@@ -48,8 +48,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   <meta name="author" content="Equipe Onepip">
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="All">
-  <link type="text/css" rel="stylesheet" href="../consultation/lienNoir.css" />
-  <link type="text/css" rel="stylesheet" href="../ligne1.css" />
+  <link type="text/css" rel="stylesheet" href="../consultation/lienNoir.css">
+  <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="../dossiers/dossiers.css">
   <link type="text/css" rel="stylesheet" href="../smart/10.css">

@@ -14,8 +14,8 @@
   </tr>
   <tr> 
     <td class="coin_fed2"  width ="25%"><a href="/smart/171.php?bddComite=pro&comite=pro&champ=990140"><img class="width75 height75" src="/images/logos_divisions/140.png" alt="logo Fédérale 1" ></a></td>
-    <td  class="coin_fed2" width ="25%"><a href="/smart/171.php?bddComite=pro&comite=pro&champ=990150"><img class="width75 height75" src="/images/logos_divisions/150.png" alt="logo Fédérale 2" ></a></td>
-    <td  class="coin_fed2" width ="25%"><a href="/smart/171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS&ancre=#1"><img class="width75 height75" src="/images/logos_divisions/160.png" alt="logo Fédérale 3" ></a></td>
+    <td class="coin_fed2" width ="25%"><a href="/smart/171.php?bddComite=pro&comite=pro&champ=990150"><img class="width75 height75" src="/images/logos_divisions/150.png" alt="logo Fédérale 2" ></a></td>
+    <td class="coin_fed2" width ="25%"><a href="/smart/171.php?bddComite=fed3NE&comite=fed3NE&champ=991161&comite2=fed3GS&ancre=#1"><img class="width75 height75" src="/images/logos_divisions/160.png" alt="logo Fédérale 3" ></a></td>
     <td class="coin_fed2" width ="25%"><a href="/smart/171.php?bddComite=pro&comite=pro&champ=880281"><img class="width75 height75" src="/images/elite1.jpg" alt="logo Elite 1" ></a></td>
   </tr>
   <tr> 
