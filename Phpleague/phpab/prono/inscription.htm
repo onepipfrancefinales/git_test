@@ -9,7 +9,9 @@ function VerifForm(){
         var mail = document.inscription.mail.value;
         var mdp = document.inscription.mdp.value;
         var mdp2 = document.inscription.mdp2.value;
-        var nom = document.inscription.nom.value;
+        
+		
+		var nom = document.inscription.nom.value;
         var prenom = document.inscription.prenom.value;
         var adresse1 = document.inscription.adresse1.value;
         var code_postal = document.inscription.code_postal.value;
@@ -142,42 +144,42 @@ function VerifForm(){
 		*/
 }
 </script>
-<table width="90%" align = "center">
+<table width="90%" class="marginAuto">
 <tr>
 <td colspan="2">
-<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="1"  class="prono">
+<table width="100%"   class="prono marginAuto borderWidth1">
 <tr><td>
 
 
 <form action="?page=inscription&champ= <?php echo $champ;?> " method="POST" target="_self" name="inscription" onsubmit="javascript:return VerifForm()">
-<table align="center">
+<table class="marginAuto" >
 
-<tr><td colspan="2" align="center"></td></tr>
-<tr><td width="50%" align="right"><div class="blanc"><?php echo PRONO_CLASSEMENT_PSEUDO; ?> :</div></td>
+<tr><td colspan="2" class="center"></td></tr>
+<tr><td width="50%" class="blanc alignRight"><?php echo PRONO_CLASSEMENT_PSEUDO; ?> :</td>
 <td><input type="text" name="pseudo" maxlength="20"></td></tr>
 
 
-<tr><td width="50%" align="right"><div class="blanc"><?php echo PRONO_PROFIL_MAIL; ?> :</div></td>
+<tr><td width="50%"  class="blanc alignRight"><?php echo PRONO_PROFIL_MAIL; ?> :</td>
 <td><input type="text" name="mail" maxlength="40"></td></tr>
 
 
-<tr><td width="50%" align="right"><div class="blanc"><?php echo SETUP_PASSWORD; ?> :</div></td>
+<tr><td width="50%" class="blanc alignRight"><?php echo SETUP_PASSWORD; ?> :</td>
 <td><input type="password" name="mdp" maxlength="20" size="20"></td></tr>
 
 
-<tr><td width="50%" align="right"><div class="blanc"><?php echo PRONO_INSCRIPTION_MDP; ?> :</div></td>
+<tr><td width="50%" class="blanc alignRight"><?php echo PRONO_INSCRIPTION_MDP; ?> :</td>
 <td><input type="password" name="mdp2" maxlength="20"></td></tr>
 
-<tr><td width="50%" align="right"><br /></td>
+<tr><td width="50%" class="alignRight"><br /></td>
 <td></td></tr>
 
-<tr><td width="50%" align="right"><div class="blanc"><?php echo PRONO_INSCRIPTION_MDP2; ?> :</div></td>
+<tr><td width="50%" class="blanc alignRight"><?php echo PRONO_INSCRIPTION_MDP2; ?> :</td>
 <td><input type="text" name="nom" maxlength="20"></td></tr>
 
 
-<tr><td width="50%" align="right"><br /></td>
+<tr><td width="50%" class="alignRight"><br /></td>
 <td></td></tr>
 
 
-<tr><td colspan="2"><input type="hidden" name="go" value="1"><div align="center"><br /><INPUT TYPE="submit" VALUE="<?php echo ENVOI; ?>"></div></td></tr></table></form></table>
+<tr><td colspan="2" class="center"><input type="hidden" name="go" value="1"><br /><INPUT TYPE="submit" VALUE="<?php echo ENVOI; ?>"></td></tr></table></form></table>
 </tr></table>
