@@ -45,7 +45,7 @@
 		traitementScores(8001, 8016);
 		traitementScores(4001, 4008);
 		traitementScores(2001, 2004);
-
+		traitementScores(1001, 1002);
 
 		//echo $champion;
 		//echo $division;

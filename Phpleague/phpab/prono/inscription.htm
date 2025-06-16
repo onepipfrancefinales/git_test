@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['champ'])) $champ = $_GET['champ']; else $champ = 0;
-
+echo "inscription.htm";
 ?>
 
 <script type="text/javascript">
@@ -15,15 +15,15 @@ function VerifForm(){
         var code_postal = document.inscription.code_postal.value;
         var ville = document.inscription.ville.value;
         var pays = document.inscription.pays.value;
-        var jour = document.inscription.jour.value;
-        var mois = document.inscription.mois.value;
-        var annee = document.inscription.annee.value;
-        var profession = document.inscription.profession.value;
-        var mobile1 = document.inscription.mobile1.value;
-        var mobile2 = document.inscription.mobile2.value;
-        var mobile3 = document.inscription.mobile3.value;
-        var mobile4 = document.inscription.mobile4.value;
-        var mobile5 = document.inscription.mobile5.value;
+       // var jour = document.inscription.jour.value;
+       // var mois = document.inscription.mois.value;
+       // var annee = document.inscription.annee.value;
+       // var profession = document.inscription.profession.value;
+      //  var mobile1 = document.inscription.mobile1.value;
+      //  var mobile2 = document.inscription.mobile2.value;
+      //  var mobile3 = document.inscription.mobile3.value;
+      //  var mobile4 = document.inscription.mobile4.value;
+      //  var mobile5 = document.inscription.mobile5.value;
 /*
 	if (!pseudo){
 		alert("<?php echo PRONO_INSCRIPTION_JS_PSEUDO; ?>");
@@ -149,7 +149,7 @@ function VerifForm(){
 <tr><td>
 
 
-<form action="?page=inscription&champ= <?php echo $champ;?> " method="post" target="_self" name="inscription" onsubmit="javascript:return VerifForm()">
+<form action="?page=inscription&champ= <?php echo $champ;?> " method="POST" target="_self" name="inscription" onsubmit="javascript:return VerifForm()">
 <table align="center">
 
 <tr><td colspan="2" align="center"></td></tr>

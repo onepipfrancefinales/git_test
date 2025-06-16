@@ -147,14 +147,16 @@ if ($action == "valid_pronos") {
     }
 
     $resultat = $idconnect->query("SELECT phpab_matchs.date_reelle 
-                                  FROM phpab_matchs 
-                                  WHERE phpab_matchs.id='$id_match[$i]'");
+                                   FROM phpab_matchs 
+                                   WHERE phpab_matchs.id='$id_match[$i]'");
 
     while ($row = mysqli_fetch_array($resultat)) {
       $date_relle = $row[0];
     }
 
-    $resultat = $idconnect->query("SELECT tps_avant_prono FROM phpab_gr_championnats WHERE id='$gr_champ'");
+    $resultat = $idconnect->query("SELECT tps_avant_prono 
+                                   FROM phpab_gr_championnats 
+                                   WHERE id='$gr_champ'");
 
     while ($row = mysqli_fetch_array($resultat)) {
       $temps_avant_prono = $row[0];
@@ -177,7 +179,9 @@ if ($action == "valid_pronos") {
     
       $nb_prono = mysqli_num_rows($resultat);
 
-      $resultat = $idconnect->query("SELECT id FROM phpab_membres WHERE id_prono='$user_id'");
+      $resultat = $idconnect->query("SELECT id 
+                                     FROM phpab_membres 
+                                     WHERE id_prono='$user_id'");
   
 
       while ($row = mysqli_fetch_array($resultat)) {
@@ -202,7 +206,7 @@ if ($action == "valid_pronos") {
       }
     }
   }
-  echo "<table><tr><td align=\"center\"><div class=\"bleu\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_CONFIRME . "</font><br /><a href=\"index.php?page=pronos&amp;gr_champ=$gr_champ&amp;debut=$debut\"><font color=\"#FFFFFF\">" . RETOUR . "</font></a> - <a href=\"index.php?page=pronos&amp;debut=$fin&amp;gr_champ=$gr_champ\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_PROCHAINE . "</font></a></div></td></tr></table>";
+  echo "<table><tr><td align=\"left\"><div class=\"bleu\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_CONFIRME .PRONO_GRILLE_CONFIRME. "</font><br /><a href=\"index.php?page=pronos&amp;gr_champ=$gr_champ&amp;debut=$debut\"><font color=\"#FFFFFF\">" . RETOUR . "</font></a> - <a href=\"index.php?page=pronos&amp;debut=$fin&amp;gr_champ=$gr_champ\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_PROCHAINE . "</font></a></div></td></tr></table>";
 } elseif ($action !== "valid_pronos") {
   if ($debut == "0") {
     $prec = "index.php?page=derniers_pronos&amp;gr_champ=$gr_champ";

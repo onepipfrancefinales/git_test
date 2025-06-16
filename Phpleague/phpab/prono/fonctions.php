@@ -334,6 +334,20 @@ if ($nb_pronos == "0") {$prono="0";}
 
 }
 
+function nom_championnat($gr_champ, $idconnect) {
+
+    $resultat=$idconnect->query("SELECT nom
+								 FROM phpab_gr_championnats 
+								 WHERE id = '$gr_champ' ");
+
+   while ($row = mysqli_fetch_array($resultat)) {
+    $gr_champ_nom = $row[0]; 
+   
+   }
+echo $gr_champ_nom;
+  
+} 
+
 function classement_type ($type)
 {
 if ($type=="") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
@@ -489,7 +503,7 @@ function champ_prono ($gr_champ, $idconnect, $mode)
 
   while ($row= mysqli_fetch_array($resultat))
   {
-    echo "<a href=\"index.php?mode=$mode&gr_champ=$row[0]\">";
+    echo "<a href=\"index.php?page=pronos&mode=$mode&gr_champ=$row[0]\">";
     if ($gr_champ==$row[0]){echo "<b>";}
     echo "$row[1]";
     if ($gr_champ==$row[0]){echo "</b>";}

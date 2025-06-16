@@ -89,6 +89,8 @@ require('../../connect/connexion1.php');
 // vidage de la table
 echo "suiviLigue : ".$suiviLigue;
 $bdd->exec("TRUNCATE $suiviLigue");
+$bdd->exec("delete FROM suiviChampFrance WHERE idclub between $debut and $fin");
+
 //$division = "160";
 //$annee = 3024;
 $annee = 2025;
@@ -361,7 +363,10 @@ or ($division == 295 and $parcours < 990008) //Fédétale 2
 $montee = 1;
 
 	$bdd->exec("INSERT INTO $suiviLigue
-				  VALUES ('$division', '$parcours', '$equipeLigue','$montee')");                
+				  VALUES ('$division', '$parcours', '$equipeLigue','$montee')");   
+  $bdd->exec("INSERT INTO suiviChampFrance
+				  VALUES ('','$annee','$division', '$parcours', '$equipeLigue','$montee')");   
+
 }
 ?>
 

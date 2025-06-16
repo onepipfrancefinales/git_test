@@ -1,24 +1,6 @@
 <?php
-//***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
-// ============================================                         */
-//                                                                      */
-// Version : 0.82                                                       */
-// Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
-//                                                                      */
-// This program is free software. You can redistribute it and/or modify */
-// it under the terms of the GNU General Public License as published by */
-// the Free Software Foundation; either version 2 of the License.       */
-//                                                                      */
-//***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
-//                                                                      */
-//***********************************************************************/
-?>
-<?php
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
-
+if (isset($_GET['page'])) $page = $_GET['page'];
 
 if ($mode == "smart")
 {
@@ -48,37 +30,44 @@ include ("avant.php");
  ?>
 <table width="100%" class="marginAuto borderNone">
   <tr> 
-    <td colspan="2" class="center">
+    <td colspan="2" class="center bold">
       <?php
 if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
    
 include("haut.inc.php");
-include("menu.inc.php");
+include("menu.inc.php");  // Affichage du menu identifié / non identifié
+ //  echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>";
 
+if ($page == "profil") {
+  echo "<br>";
+  echo "<div class=\"size3 bold\">"."MON PROFIL"."</div>" ;
+ echo "<br>";
+}
 ?>
 
 
     </td>
   </tr>
-  <tr> 
-   
-    <td width="100%" class="center" > 
-       
-     <?php  
-       $resultat=$idconnect->query("SELECT nom
-								 FROM phpab_gr_championnats 
-								 WHERE id = '$gr_champ' ");
 
-   while ($row = mysqli_fetch_array($resultat)) {
-    $gr_champ_nom = $row[0]; 
-   
-   }
-   echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>"; 
-      include("pronos.inc.htm");?>
-    </td>
-  </tr>
+<?php
+
+if ($page != "profil") {
+  ?>
   <tr> 
-  
+    <td width="100%" class="center" > 
+ 
+      <?php
+        echo "<h2>"."championnats "; 
+        nom_championnat ($gr_champ, $idconnect); 
+     //   echo "<br>"."Pays de la Loire"."</h2>"; 
+        include("pronos.inc.htm");?>
+     </td>
+    </tr>
+      <?php } 
+      
+      ?>
+ 
+      <tr> 
     <td width="100%" class="center background003366"  height="100%" > 
       <?php
 if (isset($_REQUEST['action'])) {$action=$_REQUEST['action'];} else {$action='';}
@@ -87,11 +76,14 @@ if (isset($_POST['message'])) {$message=$_POST['message'];} else {$message='';}
 if (isset($_POST['ancien_mdp'])) {$ancien_mdp=$_POST['ancien_mdp'];} else {$ancien_mdp='';}
 if (isset($_POST['nouveau_mdp'])) {$nouveau_mdp=$_POST['nouveau_mdp'];} else {$nouveau_mdp='';}
 if (isset($_POST['nouveau_mdp2'])) {$nouveau_mdp2=$_POST['nouveau_mdp2'];} else {$nouveau_mdp2='';}
-if (isset($_POST['annee'])) {$annee=$_POST['annee'];} else {$annee='';}
-if (isset($_POST['mois'])) {$mois=$_POST['mois'];} else {$mois='';}
-if (isset($_POST['jour'])) {$jour=$_POST['jour'];} else {$jour='';}
-if (isset($_POST['site'])) {$site=$_POST['site'];} else {$site='';}
 if (isset($_POST['mail'])) {$mail=$_POST['mail'];} else {$mail='';}
+
+
+//if (isset($_POST['annee'])) {$annee=$_POST['annee'];} else {$annee='';}
+//if (isset($_POST['mois'])) {$mois=$_POST['mois'];} else {$mois='';}
+//if (isset($_POST['jour'])) {$jour=$_POST['jour'];} else {$jour='';}
+//if (isset($_POST['site'])) {$site=$_POST['site'];} else {$site='';}
+
 if (isset($_POST['nom'])) {$nom=$_POST['nom'];} else {$nom='';}
 if (isset($_POST['prenom'])) {$prenom=$_POST['prenom'];} else {$prenom='';}
 if (isset($_POST['adresse'])) {$adresse=$_POST['adresse'];} else {$adresse='';}
@@ -99,10 +91,11 @@ if (isset($_POST['code_postal'])) {$code_postal=$_POST['code_postal'];} else {$c
 if (isset($_POST['ville'])) {$ville=$_POST['ville'];} else {$ville='';}
 if (isset($_POST['pays'])) {$pays=$_POST['pays'];} else {$pays='';}
 if (isset($_POST['profession'])) {$profession=$_POST['profession'];} else {$profession='';}
-if (isset($_POST['mobile'])) {$mobile=$_POST['mobile'];} else {$mobile='';}
+//if (isset($_POST['mobile'])) {$mobile=$_POST['mobile'];} else {$mobile='';}
 if (isset($_REQUEST['confirm'])) {$confirm=$_REQUEST['confirm'];} else {$confirm='';}
 
 // inscription
+
 if (isset($_POST['go'])) {$go=$_POST['go'];} else {$go='';}
 if (isset($_POST['mdp_verif'])) {$mdp_verif=$_POST['mdp_verif'];} else {$mdp_verif='';}
 if (isset($_POST['pseudo'])) {$pseudo=$_POST['pseudo'];} else {$pseudo='';}
@@ -116,6 +109,7 @@ if (isset($_POST['adresse1'])) {$adresse1=$_POST['adresse1'];} else {$adresse1='
 if (isset($_POST['adresse2'])) {$adresse2=$_POST['adresse2'];} else {$adresse2='';}
 
 //Pronos
+
 if (isset($_POST['f_prono_0'])) {$f_prono_0=$_POST['f_prono_0'];} else {$f_prono_0='';}
 if (isset($_POST['f_prono_1'])) {$f_prono_1=$_POST['f_prono_1'];} else {$f_prono_1='';}
 if (isset($_POST['f_prono_2'])) {$f_prono_2=$_POST['f_prono_2'];} else {$f_prono_2='';}
@@ -143,9 +137,13 @@ if (isset($_GET['type'])) {$type=$_GET['type'];} else {$type='';}
 //Perdu mdp
 if (isset($_POST['new_mot_de_passe'])) {$new_mot_de_passe=$_POST['new_mot_de_passe'];} else {$new_mot_de_passe='';}
 
-
-if (!isset($_GET['page'])) {include ("accueil.htm");}
+/*
+if (!isset($_GET['page'])) {
+  include ("accueil.htm");}
 else{$page= $_GET['page'];
+*/
+if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
+
 
 if ($page=="pronos" and $connecte=="oui") {include ("pronos1.php");}
 elseif ($page=="derniers_pronos" and $connecte=="oui") {include ("derniers_pronos.php");}
@@ -157,7 +155,7 @@ elseif ($page=="inscription") {include ("inscription.php");}
 elseif ($page=="erreur_login") {include ("erreur_login.php");}
 elseif ($page=="perdu_mdp") {include ("perdu_mdp.php");}
 else {include ("accueil.htm");}
-}
+
       
 ?>
     </td>
