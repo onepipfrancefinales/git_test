@@ -16,7 +16,7 @@
 //                                                                      */
 //***********************************************************************/
 
-if(empty($mail)){include ("perdu_mdp.htm");;}
+if(empty($mail)){include ("perdu_mdp.htm");}
 elseif (!empty($mail))
 {
 $taille = 8;
@@ -28,7 +28,9 @@ $taille = 8;
 	}
 $new_mot_de_passe_crypt=md5($new_mot_de_passe);
 
-mysqli_query($idconnect, ("UPDATE phppro_membres SET mot_de_passe='$new_mot_de_passe_crypt' WHERE mail='$mail'"));
+mysqli_query($idconnect, ("UPDATE phppro_membres 
+SET mot_de_passe='$new_mot_de_passe_crypt' 
+WHERE mail='$mail'"));
 
 $query =$idconnect->query("	SELECT pseudo, mail 
 							FROM phppro_membres 
@@ -36,7 +38,7 @@ $query =$idconnect->query("	SELECT pseudo, mail
 
 $result =$idconnect->query("SELECT pseudo, mail, nom_site, url_site 
 							FROM phppro_membres 
-							WHERE admin='1'");
+							WHERE admin = '1'");
 							
  // $result=mysql_query($requete) or die ("probleme " .mysql_error());
   $row=mysqli_fetch_array($result);
@@ -44,28 +46,32 @@ $result =$idconnect->query("SELECT pseudo, mail, nom_site, url_site
   $mail_admin=$row[1];
   $nom_site_admin=$row[2];
   $url_site_admin=$row[3];
-if (list($pseudo, $mail) = mysqli_fetch_array($query))
-{                                                                                            
+
+echo "-----------------------"; echo "<br/>"; 
+//echo "to : ".$to; echo "<br/>";
+//echo "message : ".$message; echo "<br/>";
+//echo "from :".$from; echo "<br/>";
+echo "-----------------------"; echo "<br/>";   
+
+
+//if (list($pseudo, $mail) = mysqli_fetch_array($query))
+//{                                                                                            
 $to="$pseudo <$mail>";
 $sujet="Votre mot de passe pour les pronostics de $nom_site_admin";
-$message="<html>
-<head>
-<title>phpproeague</title>
-</head>
-<body>
-<p><font face=\"Verdana\" size=\"2\">Bonjour,</font></p>
-<p><font face=\"Verdana\" size=\"2\">Vous avez demandÈ ‡ recevoir un nouveau mot
-de passe pour accÈder aux pronostics du site <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
-<p><font face=\"Verdana\" size=\"2\">Votre pseudo : $pseudo</font></p>
-<p><font face=\"Verdana\" size=\"2\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
-<p><font face=\"Verdana\" size=\"2\">--------------------------------------------------------------------</font></p>
-<p><font face=\"Verdana\" size=\"2\">Ce script a ÈtÈ crÈÈ par <a href=\"http://phpproeague.univert.org\">phpproeague</a> : Gestionnaire de championnats sportifs et de pronostics !</font></p>
+$message="<html><head><title>phpproeague</title></head><body>
+<p><font face=\"Verdana\" size=\"3\">Bonjour,</font></p>
+<p><font face=\"Verdana\" size=\"3\">Vous avez demand√© √† recevoir un nouveau mot
+de passe pour acceder aux pronostics du site <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
+<p><font face=\"Verdana\" size=\"3\">Votre pseudo : $pseudo</font></p>
+<p><font face=\"Verdana\" size=\"3\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
+<p><font face=\"Verdana\" size=\"3\">--------------------------------------------------------------------</font></p>
+<p><font face=\"Verdana\" size=\"3\">Ce script a √©t√© cr√©√© par <a href=\"http://francefinalerugby.fr\">phpproeague</a> : Site d√©di√© aux comp√©titons du rugbyFrancais</font></p>
 </body>
 </html>";
-  $from="Content-Type: text/html; charset=\"iso-8859-15\"\nFrom: $mail_admin\n";
+$from="Content-Type: text/html; charset=\"utf-8\"\nFrom: $mail_admin\n";
 $email=mail($to,$sujet,$message,$from);
-if($email)echo"<div align=\"center\"><font face=\"Verdana\" size=\"1\">".PRONO_OUBLIE_TEXTE_2." :<br /><br /><b>$mail</b><br /><br />Vous allez le recevoir dans un instant.</font></div>";
-else echo"<div align=\"center\"><font face=\"Verdana\" size=\"1\">".PRONO_OUBLIE_TEXTE_3."</font></div><br />";
-}
+if($email)echo"<div align=\"center\"><font face=\"Verdana\" color=\"#FFFFFF\" size=\"3\">".PRONO_OUBLIE_TEXTE_2." :<br /><br /><b>$mail</b><br /><br />Vous allez le recevoir dans un instant.</font></div>";
+else echo"<div align=\"center\"><font face=\"Verdana\"  color=\"#FFFFFF\" size=\"3\">".PRONO_OUBLIE_TEXTE_3."</font></div><br />";
+////}
 }
 ?>

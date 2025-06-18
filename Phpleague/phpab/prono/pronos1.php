@@ -52,7 +52,7 @@ function ValideGrille(tot) {
 
 </SCRIPT>
 <?php
-echo "action : .".$action;
+
 if (isset($debut)) $debut = $debut;
 else $debut = 0;
 

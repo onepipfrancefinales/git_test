@@ -109,38 +109,38 @@ else
          echo "<tr><td width=\"50%\" center=\"center\"><br /></td>\n";
          echo "<td></td></tr>";
 
-echo "<tr><td colspan=\"2\"  align=\"center\"><font face=\"Verdana, Arial, Helvetica, sans-serif\" color=\"#ffffff\"><strong>Coordonn�es</strong></font></td></tr>";
+//echo "<tr><td colspan=\"2\"  align=\"center\"><font face=\"Verdana, Arial, Helvetica, sans-serif\" color=\"#ffffff\"><strong>Coordonn�es</strong></font></td></tr>";
 
 // Nom
-echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Nom :</font></td>";
-echo "<td><input type=\"text\" name=\"nom\" value=\"$row[nom]\" maxlength=\"50\"></td></tr>";
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Nom :</font></td>";
+//echo "<td><input type=\"text\" name=\"nom\" value=\"$row[nom]\" maxlength=\"50\"></td></tr>";
 
 // Pr�nom
-echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Pr�nom :</font></td>";
-echo "<td><input type=\"text\" name=\"prenom\" value=\"$row[prenom]\" maxlength=\"50\"></td></tr>";
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Pr�nom :</font></td>";
+//echo "<td><input type=\"text\" name=\"prenom\" value=\"$row[prenom]\" maxlength=\"50\"></td></tr>";
 
 // Adresse
-echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Adresse :</font></td>";
-echo "<td><input type=\"text\" name=\"adresse\" value=\"$row[adresse]\" maxlength=\"100\" size=\"45\"></td></tr>";
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Adresse :</font></td>";
+//echo "<td><input type=\"text\" name=\"adresse\" value=\"$row[adresse]\" maxlength=\"100\" size=\"45\"></td></tr>";
 
 // Code postal
-echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Code postal :</font></td>";
-echo "<td><input type=\"text\" name=\"code_postal\" value=\"$row[code_postal]\" maxlength=\"5\" size=\"5\"></td></tr>";
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Code postal :</font></td>";
+//echo "<td><input type=\"text\" name=\"code_postal\" value=\"$row[code_postal]\" maxlength=\"5\" size=\"5\"></td></tr>";
 
 // Ville
-echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Ville :</font></td>";
-echo "<td><input type=\"text\" name=\"ville\" value=\"$row[ville]\" maxlength=\"200\"></td></tr>";
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Ville :</font></td>";
+//echo "<td><input type=\"text\" name=\"ville\" value=\"$row[ville]\" maxlength=\"200\"></td></tr>";
 
 // Pays
-echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Pays :</font></td>";
-echo "<td><input type=\"text\" name=\"pays\" value=\"$row[pays]\" maxlength=\"200\"></td></tr>";
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Pays :</font></td>";
+//echo "<td><input type=\"text\" name=\"pays\" value=\"$row[pays]\" maxlength=\"200\"></td></tr>";
 
 // Date de naissance
-$elementsdate=explode("-",$row['date_naissance']);
-$jour=$elementsdate[2];
-$mois= $elementsdate[1];
-$annee=$elementsdate[0];
-
+//$elementsdate=explode("-",$row['date_naissance']);
+//$jour=$elementsdate[2];
+//$mois= $elementsdate[1];
+//$annee=$elementsdate[0];
+/*
 echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Date de naissance :</font></td>";
 echo "<td>";
 echo "<select size=\"1\" name=\"jour\"><option value=\"\"></option>";
@@ -167,19 +167,19 @@ else echo "<option value=\"$i\">$i</option>";
 echo "</select>";
 
 echo "</td></tr>";
-
+*/
 // Profession
-echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Profession :</font></td>";
-echo "<td><input type=\"text\" name=\"profession\" value=\"$row[profession]\" maxlength=\"200\"></td></tr>";
+//echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Profession :</font></td>";
+//echo "<td><input type=\"text\" name=\"profession\" value=\"$row[profession]\" maxlength=\"200\"></td></tr>";
 
 // N� Mobile
 //$elementsmobile=explode("-",$row[mobile]);
-$mobile1=$elementsmobile[0];
-$mobile2=$elementsmobile[1];
-$mobile3=$elementsmobile[2];
-$mobile4=$elementsmobile[3];
-$mobile5=$elementsmobile[4];
-
+//$mobile1=$elementsmobile[0];
+//$mobile2=$elementsmobile[1];
+//$mobile3=$elementsmobile[2];
+//$mobile4=$elementsmobile[3];
+//$mobile5=$elementsmobile[4];
+/*
 echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">N� de mobile :</font></td>";
 echo "<td><input type=\"text\" name=\"mobile1\" value=\"$mobile1\" maxlength=\"2\" size=\"2\">
 <input type=\"text\" name=\"mobile2\" value=\"$mobile2\" maxlength=\"2\" size=\"2\">
@@ -187,7 +187,7 @@ echo "<td><input type=\"text\" name=\"mobile1\" value=\"$mobile1\" maxlength=\"2
 <input type=\"text\" name=\"mobile4\" value=\"$mobile4\" maxlength=\"2\" size=\"2\">
 <input type=\"text\" name=\"mobile5\" value=\"$mobile5\" maxlength=\"2\" size=\"2\">
 </td></tr>";
-         
+   */      
          echo "<tr bgcolor=\"#FFFFFF\"><td colspan=\"2\" align=\"center\">\n";
          echo "<input type=\"hidden\" name=\"page\" value=\"profil\">\n";
          echo "<input type=\"hidden\" name=\"action\" value=\"1\">\n";

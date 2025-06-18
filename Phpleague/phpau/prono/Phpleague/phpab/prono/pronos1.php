@@ -248,19 +248,23 @@ $resultat=$idconnect->query("SELECT phpab_matchs.id
 
     $i=0;
     $x=0;
-   // $resultat=mysql_query($requete);
+  
     
     if (mysqli_num_rows($resultat)=="0") 
 		{
-		echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journée Inexistante</div></td></tr>";
+		echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journï¿½e Inexistante</div></td></tr>";
 		}
 
       while ($row=mysqli_fetch_array($resultat) and $i<$nb_matchs)
       {
        $clubs_nom = stripslashes($row[0]);
        $clubs_nom1 = stripslashes($row[1]);
-       $resultat2=$idconnect->query("SELECT pronostic FROM phpab_pronostics, phpab_membres WHERE phpab_pronostics.id_match='$row[2]' AND phpab_membres.id=phpab_pronostics.id_membre AND phpab_membres.id_prono='$user_id'");
-      // $resultat2=mysqli_query($requete2) or die ("probleme " .mysql_error());
+       $resultat2=$idconnect->query("SELECT pronostic 
+                                     FROM phpab_pronostics, phpab_membres 
+                                     WHERE phpab_pronostics.id_match='$row[2]' 
+                                     AND phpab_membres.id=phpab_pronostics.id_membre 
+                                     AND phpab_membres.id_prono='$user_id'");
+   
        $nb_pronos= mysqli_num_rows($resultat2 );
 
 
@@ -277,8 +281,10 @@ $resultat=$idconnect->query("SELECT phpab_matchs.id
         }
 
 
-       $resultat2=$idconnect->query("SELECT tps_avant_prono FROM phpab_gr_championnats WHERE id='$gr_champ'");
-    //   $resultat2=mysql_query($requete2) or die ("probleme " .mysql_error());
+       $resultat2=$idconnect->query("SELECT tps_avant_prono 
+                                     FROM phpab_gr_championnats 
+                                     WHERE id='$gr_champ'");
+ 
 
          while ($row2=mysqli_fetch_array($resultat2))
          {
@@ -293,9 +299,9 @@ $resultat=$idconnect->query("SELECT phpab_matchs.id
        $ecart_jours = floor($ecart_secondes / (60*60*24)-$temps_avantmatch/60);
        $date=format_date_fr_red($row[3]);
 
-       echo"<tr><td><div class=\"blanc\">$row[4]</div></td>";
-       echo "<td><div class=\"blanc\">$date</div></td>";
-       echo "<td align=\"right\"><div class=\"blanc\">$clubs_nom</div></td>";
+       echo"<tr><td class=\"blanc\">$row[4]$row[4]</td>";
+       echo "<td class=\"blanc\">$date</td>";
+       echo "<td class=\"blanc alignRight\">$clubs_nom</td>";
 
        if ($ecart_heures>="0")
        {    $x++;
@@ -313,7 +319,7 @@ $resultat=$idconnect->query("SELECT phpab_matchs.id
              ?>
              <a href="javascript:Change(<?php print $x; ?>,1);"><img src="1.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
              <a href="javascript:Change(<?php print $x; ?>,0);"><img src="N.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="2.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="2.gif" border="no" name="m<?php print $x; ?>_2" alt=""></a>
              <?php
            }
 

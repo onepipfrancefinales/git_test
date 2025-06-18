@@ -1,29 +1,43 @@
 <?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];
 require ("../config.php");
 ouverture ();
 $autoidentification = isset($_POST['autoidentification']) ? $_POST['autoidentification'] : NULL;
-echo $autoidentification;
+$mode = isset($_POST['testMode']) ? $_POST['testMode'] : NULL;
+$user = isset($_POST['user']) ? $_POST['user'] : NULL;
+$pass = isset($_POST['pass']) ? $_POST['pass'] : NULL;
+
+echo $user;echo "<br>";
+echo $autoidentification;echo "<br>";
+echo $mode;echo "<br>";
+echo $pass;echo "<br>";
+
 	if(!isset($_REQUEST['user']) or !isset($_REQUEST['pass']))
 	{
-   	 header("Location: index.php?page=erreur_login&t=0");
+		
+   	 header("Location: index.php?mode=$mode&page=erreur_login&t=0");
 	}
 	elseif ($_REQUEST['user']=='' || $_REQUEST['pass']=='')
 	{
-         header("Location: index.php?page=erreur_login&t=0");
+ 
+		      header("Location: index.php?mode=$mode&page=erreur_login&t=0");
         }
 
 	else
 	{
         $user = addslashes($_REQUEST['user']);
         $pass = $_REQUEST['pass'];
-        $result =$idconnect->query( "SELECT mot_de_passe FROM phppro_membres WHERE pseudo='$user'");
+        $result =$idconnect->query( "SELECT mot_de_passe 
+									 FROM phppro_membres 
+									 WHERE pseudo='$user'");
 	//$result = mysql_query($query);
 	$row = mysqli_fetch_array($result);
         $password_crypt = md5($pass);
 
 	if($row['mot_de_passe'] != $password_crypt or mysqli_num_rows($result)=="0")
 	{
-        header("Location: index.php?page=erreur_login&t=1");
+	
+        header("Location: index.php?mode=$mode&page=erreur_login&t=1");
 	}
 	else
 	{
@@ -45,6 +59,7 @@ echo $autoidentification;
 //	session_register('mot_de_passe');
 	$_SESSION['user'] = $user;
 	$_SESSION['mot_de_passe'] = $mot_de_passe;
-	header("Location: index.php");
+	
+	header("Location: index.php?mode=$mode");
 }}
 

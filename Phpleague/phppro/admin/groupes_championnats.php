@@ -31,13 +31,13 @@ if (isset($_POST['activ_prono'])) {$activ_prono=$_POST['activ_prono'];} else {$a
 
 if ($action2=="creer" and isset($nom_group) and $action=="creer")
 {   
-  mysqli_query ($idconnect,("INSERT INTO phppro_gr_championnats (nom) VALUES ('$nom_group')")) or die ("probleme " .mysql_error($idconnect));
+  mysqli_query ($idconnect,("INSERT INTO phppro_gr_championnats (nom) VALUES ('$nom_group')"));
 }
 
 // Suppression d'un groupe de championnat
 if ($confirm=="ok" and $gr_champ and $action=="supp")
 {
-  mysqli_query($idconnect,("DELETE FROM phppro_gr_championnats WHERE id ='$gr_champ' "))or die ("probleme " .mysql_error($idconnect));
+  mysqli_query($idconnect,("DELETE FROM phppro_gr_championnats WHERE id ='$gr_champ' "));
 }
 ?>
 

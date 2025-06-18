@@ -84,13 +84,13 @@ if (isset($_POST['mail'])) {$mail=$_POST['mail'];} else {$mail='';}
 //if (isset($_POST['jour'])) {$jour=$_POST['jour'];} else {$jour='';}
 //if (isset($_POST['site'])) {$site=$_POST['site'];} else {$site='';}
 
-if (isset($_POST['nom'])) {$nom=$_POST['nom'];} else {$nom='';}
-if (isset($_POST['prenom'])) {$prenom=$_POST['prenom'];} else {$prenom='';}
-if (isset($_POST['adresse'])) {$adresse=$_POST['adresse'];} else {$adresse='';}
-if (isset($_POST['code_postal'])) {$code_postal=$_POST['code_postal'];} else {$code_postal='';}
-if (isset($_POST['ville'])) {$ville=$_POST['ville'];} else {$ville='';}
-if (isset($_POST['pays'])) {$pays=$_POST['pays'];} else {$pays='';}
-if (isset($_POST['profession'])) {$profession=$_POST['profession'];} else {$profession='';}
+//if (isset($_POST['nom'])) {$nom=$_POST['nom'];} else {$nom='';}
+//if (isset($_POST['prenom'])) {$prenom=$_POST['prenom'];} else {$prenom='';}
+//if (isset($_POST['adresse'])) {$adresse=$_POST['adresse'];} else {$adresse='';}
+//if (isset($_POST['code_postal'])) {$code_postal=$_POST['code_postal'];} else {$code_postal='';}
+//if (isset($_POST['ville'])) {$ville=$_POST['ville'];} else {$ville='';}
+//if (isset($_POST['pays'])) {$pays=$_POST['pays'];} else {$pays='';}
+//if (isset($_POST['profession'])) {$profession=$_POST['profession'];} else {$profession='';}
 //if (isset($_POST['mobile'])) {$mobile=$_POST['mobile'];} else {$mobile='';}
 if (isset($_REQUEST['confirm'])) {$confirm=$_REQUEST['confirm'];} else {$confirm='';}
 
@@ -105,8 +105,10 @@ if (isset($_POST['mail_verif'])) {$mail_verif=$_POST['mail_verif'];} else {$mail
 if (isset($_POST['mdp'])) {$mdp=$_POST['mdp'];} else {$mdp='';}
 if (isset($_POST['mdp2'])) {$mdp2=$_POST['mdp2'];} else {$mdp2='';}
 if (isset($_POST['id_prono'])) {$id_prono=$_POST['id_prono'];} else {$id_prono='';}
-if (isset($_POST['adresse1'])) {$adresse1=$_POST['adresse1'];} else {$adresse1='';}
-if (isset($_POST['adresse2'])) {$adresse2=$_POST['adresse2'];} else {$adresse2='';}
+
+
+//if (isset($_POST['adresse1'])) {$adresse1=$_POST['adresse1'];} else {$adresse1='';}
+//if (isset($_POST['adresse2'])) {$adresse2=$_POST['adresse2'];} else {$adresse2='';}
 
 //Pronos
 

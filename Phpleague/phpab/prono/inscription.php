@@ -127,47 +127,46 @@ if ($email_verif=="ok" and $pseudo_verif=="ok" and $mdp_verif=="ok" and $mail_ve
 //  $nom_site_admin=$row[2];
 // $url_site_admin=$row[3];  
 
-//echo "pseudo : ".$pseudo_admin; echo "<br/>";
-//echo "mail : ".$mail_admin; echo "<br/>";
-//echo "champ :".$champ; echo "<br/>";
+echo "pseudo : ".$pseudo_admin; echo "<br/>";
+echo "mail : ".$mail_admin; echo "<br/>";
+echo "champ :".$champ; echo "<br/>";
 
 $to="$pseudo <$mail>";
 
 $sujet="France Finales Rugby App";
 
 $message="<html><head><title>phpabeague</title></head><body>
-<p><font size=\"2\" face=\"Verdana\" color=\"#ffffff\">Bonjour et bienvenue sur France Finales Rugby, </font></p>
-<p><font size=\"2\" face=\"Verdana\" color=\"#ffffff\">Vous venez de vous inscrire sur France Finales Rugby App. Vous pouvez désormais procéder &agrave; la mise &agrave; jours des résultats des rencontres de votre comité.</font></p>
-<p><font size=\"2\" face=\"Verdana\" color=\"#ffffff\">Voici les informations qui vous
+<p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Bonjour et bienvenue sur France Finales Rugby, </font></p>
+<p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Vous venez de vous inscrire sur France Finales Pronos. Vous pouvez désormais procéder &agrave; la mise &agrave; jours des résultats des rencontres de votre comité.</font></p>
+<p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Voici les informations qui vous
 permettront d'accéder &agrave; la mise &agrave; jours des résultats :</font></p>
-<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">Login :&nbsp;  $pseudo 
+<p><font face=\"Verdana\" size=\"3\" color=\"#000000\">Login :&nbsp;  $pseudo 
 <br />
 Mot de passe :  $mdp </font></p>
 
-<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmarès, etc...en consultant
+<p><font face=\"Verdana\" size=\"2\" color=\"#000000\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmarès, etc...en consultant
 <a href=\"http://francefinalesrugby.fr\">France Finales Rugby</a> 
 </font></p>
 <br />
 Sportivement</font></p>
 <br />
-<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">France Finales Rugby</font></p>
-<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">DELPECH Thibault</font></p>
-<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">80 Avenue du 11 novembre</font></p>
-<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">31230 L'Isle en Dodon</font></p>
+<p><font face=\"Verdana\" size=\"2\" color=\"#000000\">France Finales Rugby</font><br>
+<font face=\"Verdana\" size=\"2\" color=\"#000000\">80 Avenue du 11 novembre</font><br>
+<font face=\"Verdana\" size=\"2\" color=\"#000000\">31230 L'Isle en Dodon</font><br>
 <br />
-<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\">Pour tous contatcts</font></p>
-<p><font face=\"Verdana\" size=\"2\" color=\"#ffffff\"><a href=\"mailto:mailto:francefinalesrugby@free.fr\">Administrateur France Finales Rugby App</a></font></p>
+<p><font face=\"Verdana\" size=\"2\" color=\"#000000\">Pour tous contatcts</font><br>
+<font face=\"Verdana\" size=\"2\" color=\"#000000\"><a href=\"mailto:mailto:francefinalesrugby@free.fr\">Administrateur France Finales Rugby App</a></font>
 </body></html>";
 
 
-  $from="Content-Type: text/html; charset=\"iso-8859-15\"\nFrom: $mail_admin\n";
+  $from="Content-Type: text/html; charset=\"utf-8\"\nFrom: $mail_admin\n";
   
   
-//echo "-----------------------"; echo "<br/>"; 
+echo "-----------------------"; echo "<br/>"; 
 //echo "to : ".$to; echo "<br/>";
 //echo "message : ".$message; echo "<br/>";
 //echo "from :".$from; echo "<br/>";
-//echo "-----------------------"; echo "<br/>";   
+echo "-----------------------"; echo "<br/>";   
   
   
   

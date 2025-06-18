@@ -503,12 +503,14 @@ function champ_prono ($gr_champ, $idconnect, $mode)
 
   while ($row= mysqli_fetch_array($resultat))
   {
-    echo "<a href=\"index.php?page=pronos&mode=$mode&gr_champ=$row[0]\">";
+    echo "&nbsp;";
+    echo  "<a href=\"index.php?page=pronos&mode=$mode&gr_champ=$row[0]\">";
     if ($gr_champ==$row[0]){echo "<b>";}
     echo "$row[1]";
     if ($gr_champ==$row[0]){echo "</b>";}
     echo "</a><br />";
   }
+  
 
 }
 

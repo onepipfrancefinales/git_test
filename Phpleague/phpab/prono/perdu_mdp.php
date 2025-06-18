@@ -46,28 +46,32 @@ $result =$idconnect->query("SELECT pseudo, mail, nom_site, url_site
   $mail_admin=$row[1];
   $nom_site_admin=$row[2];
   $url_site_admin=$row[3];
-if (list($pseudo, $mail) = mysqli_fetch_array($query))
-{                                                                                            
+
+echo "-----------------------"; echo "<br/>"; 
+//echo "to : ".$to; echo "<br/>";
+//echo "message : ".$message; echo "<br/>";
+//echo "from :".$from; echo "<br/>";
+echo "-----------------------"; echo "<br/>";   
+
+
+//if (list($pseudo, $mail) = mysqli_fetch_array($query))
+//{                                                                                            
 $to="$pseudo <$mail>";
 $sujet="Votre mot de passe pour les pronostics de $nom_site_admin";
-$message="<html>
-<head>
-<title>phpabeague</title>
-</head>
-<body>
-<p><font face=\"Verdana\" size=\"2\">Bonjour,</font></p>
-<p><font face=\"Verdana\" size=\"2\">Vous avez demandé à recevoir un nouveau mot
+$message="<html><head><title>phpabeague</title></head><body>
+<p><font face=\"Verdana\" size=\"3\">Bonjour,</font></p>
+<p><font face=\"Verdana\" size=\"3\">Vous avez demandé à recevoir un nouveau mot
 de passe pour acceder aux pronostics du site <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
-<p><font face=\"Verdana\" size=\"2\">Votre pseudo : $pseudo</font></p>
-<p><font face=\"Verdana\" size=\"2\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
-<p><font face=\"Verdana\" size=\"2\">--------------------------------------------------------------------</font></p>
-<p><font face=\"Verdana\" size=\"2\">Ce script a été créé par <a href=\"http://phpabeague.univert.org\">phpabeague</a> : Gestionnaire de championnats sportifs et de pronostics !</font></p>
+<p><font face=\"Verdana\" size=\"3\">Votre pseudo : $pseudo</font></p>
+<p><font face=\"Verdana\" size=\"3\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
+<p><font face=\"Verdana\" size=\"3\">--------------------------------------------------------------------</font></p>
+<p><font face=\"Verdana\" size=\"3\">Ce script a été créé par <a href=\"http://francefinalerugby.fr\">phpabeague</a> : Site dédié aux compétitons du rugbyFrancais</font></p>
 </body>
 </html>";
-$from="Content-Type: text/html; charset=\"iso-8859-15\"\nFrom: $mail_admin\n";
+$from="Content-Type: text/html; charset=\"utf-8\"\nFrom: $mail_admin\n";
 $email=mail($to,$sujet,$message,$from);
-if($email)echo"<div align=\"center\"><font face=\"Verdana\" color=\"#FFFFFF\" size=\"1\">".PRONO_OUBLIE_TEXTE_2." :<br /><br /><b>$mail</b><br /><br />Vous allez le recevoir dans un instant.</font></div>";
-else echo"<div align=\"center\"><font face=\"Verdana\"  color=\"#FFFFFF\" size=\"1\">".PRONO_OUBLIE_TEXTE_3."</font></div><br />";
-}
+if($email)echo"<div align=\"center\"><font face=\"Verdana\" color=\"#FFFFFF\" size=\"3\">".PRONO_OUBLIE_TEXTE_2." :<br /><br /><b>$mail</b><br /><br />Vous allez le recevoir dans un instant.</font></div>";
+else echo"<div align=\"center\"><font face=\"Verdana\"  color=\"#FFFFFF\" size=\"3\">".PRONO_OUBLIE_TEXTE_3."</font></div><br />";
+////}
 }
 ?>

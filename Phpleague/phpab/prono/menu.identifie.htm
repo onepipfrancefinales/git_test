@@ -38,14 +38,7 @@
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="logout.php?selection=inscription&mode=<?php echo $mode;?>">
-          <?php echo PRONO_MENU_INSCRIPTION; ?>
-        </a>
-    </td>
-  </tr>
-   <tr>
-    <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="inscription.php?mode=<?php echo $mode;?>">
+      &nbsp;<a href="index.php?page=inscription&gr_champ=<?php echo $gr_champ;?>&mode=<?php echo $mode;?> ">
           <?php echo PRONO_MENU_INSCRIPTION; ?>
         </a>
     </td>
@@ -140,16 +133,13 @@
         </a>
     </td>
   </tr>
-
  <tr>
     <td height="13">
     </td>
   </tr>
-
   <tr>
     <td height="23" class="prono1">
       <table class="prono" width="100%">
-        <tbody>
           <tr>
             <td width="15" class="alignLeft">
               <img src="trait-jaune.gif" width="22" alt="" height="9"></td>
@@ -157,13 +147,20 @@
                   <?php echo PRONO_MENU_LES_CHAMPIONNATS; ?>
             </td>
           </tr>
-        </tbody>
       </table>
     </td>
   </tr>
   <tr>
-    <td height="15" class="menu2 alignLeft">
-              <?php champ_prono ($gr_champ, $idconnect, $mode); ?>
+    <td height="15" class="menu2 alignLeft size3">
+              <br>
+             <!-- Phpleague/phppro/prono/index.php-->
+              
+        
+             &nbsp;<a href="../../phppro/prono/index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=11">Top 14 - Pro D2
+              </a>
+             <br>
+            <?php   champ_prono ($gr_champ, $idconnect, $mode); ?>
+            <br>
     </td>
   </tr>
 </table>

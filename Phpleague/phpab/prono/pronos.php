@@ -1,8 +1,6 @@
 <html>
-
 <body>
-   
-    <table width="100%" border="0" align="center" height="100%">
+   <table width="100%" border="0" align="center" height="100%">
         <tr>
             <td colspan="2" align="center">
                 <?php include("haut.inc.php"); ?>
@@ -25,9 +23,9 @@
             </td>
             <td width="78%" align="center" valign="top" height="100%">
                 <?php
-               // echo "test1";
-              //  include("pronos1.php");
-              //    echo "test2";?>
+                echo "test1";
+                include("pronos1.php");
+                  echo "test2";?>
                 
             </td>
         </tr>

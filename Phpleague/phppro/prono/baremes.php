@@ -17,18 +17,20 @@
 //***********************************************************************/
 ?>
 
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
-    <tr>
-      <td width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+  <tr>
+    <td width="100%">
       <?php
 
-      $resultats=$idconnect->query("SELECT pts_prono_exact, pts_prono_participation, tps_avant_prono FROM phppro_gr_championnats
-                WHERE id='$gr_champ'");
-     // $resultats=mysql_query($requete) or die ("probleme " .mysql_error());
-      $row=mysqli_fetch_array($resultats);
-      
-       include ("baremes.htm");
+      $resultats = $idconnect->query("SELECT pts_prono_exact, pts_prono_participation, tps_avant_prono 
+                                    FROM phppro_gr_championnats
+                                    WHERE id='$gr_champ'");
+      $row = mysqli_fetch_array($resultats);
+
+      include("baremes.htm");
       ?>
-</td></tr></table>
+    </td>
+  </tr>
+</table>
 
 <?php
