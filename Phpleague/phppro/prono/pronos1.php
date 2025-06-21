@@ -392,7 +392,7 @@ if ($action == "valid_pronos") {
             <input type="hidden" name="nb_fiche" value="<?php echo $x; ?>">
             <input type="hidden" name="debut" value="<?php echo $debut; ?>"><br />
             <a href="index.php?page=pronos&amp;action=reset&amp;debut=<?php echo $debut; ?>&amp;gr_champ=<?php echo "$gr_champ"; ?>"><img border="0" src="reset.gif" alt=""></a>
-            <a href="javascript:ValideGrille(<?php echo $x; ?>);"><img border="0" src="s_1.gif" alt=""></a>
+            <a href="javascript:ValideGrille(<?php echo $x; ?>);"><img border="0" src="btn_VALIDER.gif" alt=""></a>
           </td>
         </tr>
       </table>
