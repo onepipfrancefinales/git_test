@@ -221,7 +221,7 @@ $requete="SELECT phpl_matchs.id
     $x=0;
     $resultat=mysql_query($requete);
     
-    if (mysql_num_rows($resultat)=="0") {echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journée Inexistante</div></td></tr>";}
+    if (mysql_num_rows($resultat)=="0") {echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journï¿½e Inexistante</div></td></tr>";}
 
       while ($row=mysql_fetch_array($resultat) and $i<$nb_matchs)
       {

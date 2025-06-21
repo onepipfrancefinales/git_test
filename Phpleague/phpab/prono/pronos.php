@@ -4,7 +4,6 @@
         <tr>
             <td colspan="2" align="center">
                 <?php include("haut.inc.php"); ?>
-
             </td>
         </tr>
         <tr>

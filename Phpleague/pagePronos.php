@@ -48,7 +48,9 @@ if (isset($_GET['comite'])) $comite = $_GET['comite'];
       </td>
       <td class="colonneCentrale ">
         <?php 
-    
+        if (isset($_GET['page'])) {$page=$_GET['page'];} else {$page='';}
+       
+        echo "page : ".$page;
         include("pronos.php"); ?>
       </td>
       <td class="colonneDroiteGauche">

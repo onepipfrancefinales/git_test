@@ -1,7 +1,13 @@
 <?php
-if (isset($_GET['mode'])) $mode = $_GET['mode'];
-if (isset($_GET['page'])) $page = $_GET['page'];
+session_start();
+echo "index.php : user -".$_SESSION['user']; echo "<br>";
+echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
 
+if (isset($_REQUEST['page'])) {$page=$_REQUEST['page'];} else {$page='';}
+if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
+if (isset($_REQUEST['user_pseudo'])) {$user_pseudo=$_REQUEST['user_pseudo'];} else {$user_pseudo='';}
+if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id='';}
+if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
 if ($mode == "smart")
 {
   ?>
@@ -25,6 +31,11 @@ if ($mode == "smart")
 
 <?php 
 
+echo "user_pseudo : ".$user_pseudo; echo "<br>";
+echo "user_id : ".$user_id; echo "<br>";
+echo "gr_champ : ".$gr_champ; echo "<br>";
+echo "pageA : ".$page; echo "<br>";
+echo "<br>";
 include ("avant.php");
 
  ?>
@@ -32,35 +43,35 @@ include ("avant.php");
   <tr> 
     <td colspan="2" class="center bold">
       <?php
-if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
+
    
 include("haut.inc.php");
 include("menu.inc.php");  // Affichage du menu identifié / non identifié
  //  echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>";
 
-if ($page == "profil") {
-  echo "<br>";
-  echo "<div class=\"size3 bold\">"."MON PROFIL"."</div>" ;
- echo "<br>";
-}
+///if ($page == "profil") {
+ // echo "<br>";
+ // echo "<div class=\"size3 bold\">"."MON PROFIL"."</div>" ;
+ //echo "<br>";
+//}
 ?>
 
 
     </td>
-  </tr>
+  </tr> 
 
 <?php
-
+//if ($page == "baremes") { echo "<br>";echo "<br>";echo "<br>";echo "<br>";}
 if ($page != "profil") {
   ?>
   <tr> 
     <td width="100%" class="center" > 
  
       <?php
-        echo "<h2>"."championnats "; 
-        nom_championnat ($gr_champ, $idconnect); 
+     //   echo "<h2>"."championnats "; 
+     //   nom_championnat ($gr_champ, $idconnect); 
      //   echo "<br>"."Pays de la Loire"."</h2>"; 
-        include("pronos.inc.htm");?>
+      //  include("pronos.inc.htm");?>
      </td>
     </tr>
       <?php } 

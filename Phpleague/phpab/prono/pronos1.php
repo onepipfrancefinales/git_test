@@ -206,7 +206,7 @@ if ($action == "valid_pronos") {
       }
     }
   }
-  echo "<table><tr><td align=\"left\"><div class=\"bleu\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_CONFIRME .PRONO_GRILLE_CONFIRME. "</font><br /><a href=\"index.php?page=pronos&amp;gr_champ=$gr_champ&amp;debut=$debut\"><font color=\"#FFFFFF\">" . RETOUR . "</font></a> - <a href=\"index.php?page=pronos&amp;debut=$fin&amp;gr_champ=$gr_champ\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_PROCHAINE . "</font></a></div></td></tr></table>";
+  echo "<table><tr><td class=\"bleu center colorWhite size3\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_CONFIRME . "</font><br /><a href=\"index.php?page=pronos&amp;gr_champ=$gr_champ&amp;debut=$debut\"><font color=\"#FFFFFF\">" . RETOUR . "</font></a> - <a href=\"index.php?page=pronos&amp;debut=$fin&amp;gr_champ=$gr_champ\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_PROCHAINE . "</font></a></td></tr></table>";
 } elseif ($action !== "valid_pronos") {
   if ($debut == "0") {
     $prec = "index.php?page=derniers_pronos&amp;gr_champ=$gr_champ";
@@ -242,9 +242,6 @@ if ($action == "valid_pronos") {
   $i = 0;
   $x = 0;
   //$resultat=mysql_query($requete);
-
-
-
 
   if (mysqli_num_rows($resultat) == "0") {
     echo "<tr><td colspan=6 class=\"blanc center\">Journée Inexistante</td></tr>";
@@ -391,6 +388,7 @@ if ($action == "valid_pronos") {
             <input type="hidden" name="action" value="valid_pronos">
             <input type="hidden" name="nb_fiche" value="<?php echo $x; ?>">
             <input type="hidden" name="debut" value="<?php echo $debut; ?>"><br />
+            <!-- Boutons ANNULER -- VALIDER -->
             <a href="index.php?page=pronos&amp;action=reset&amp;debut=<?php echo $debut; ?>&amp;gr_champ=<?php echo "$gr_champ"; ?>"><img border="0" src="reset.gif" alt=""></a>
             <a href="javascript:ValideGrille(<?php echo $x; ?>);"><img border="0" src="s_1.gif" alt=""></a>
           </td>

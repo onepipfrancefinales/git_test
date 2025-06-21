@@ -1,7 +1,7 @@
 <?php
 if ($action == "supp" and !$confirm=="oui")
  {
-   echo "<table><tr><td align=\"center\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
+   echo "<table><tr><td class=\"center\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
    echo "<a href=\"index.php?page=profil&amp;action=supp&amp;confirm=oui\">".ADMIN_RENS_17."</a> - <a href=\"index.php\">".ADMIN_RENS_18."</a></td></tr></table>";
  }
 
@@ -34,7 +34,7 @@ else
 <?php
         
  	echo "<table align=\"center\" width=\"100%\">";
- 	echo"<tr><td colspan=\"2\" align=\"center\"><div class=\"blanc\"><strong>".PRONO_PROFIL_TITRE." $user_pseudo</strong></div></td></tr>";
+ 	echo"<tr><td colspan=\"2\" class=\"blanc center bold\">".PRONO_PROFIL_TITRE." $user_pseudo</td></tr>";
  	ouverture ();
  
  $user_pseudo = addslashes($user_pseudo);
@@ -101,10 +101,10 @@ else
        { 
          echo "<tr><td align=\"center\" width=\"50%\">\n";
          echo "<div class=\"blanc\">".PRONO_CLASSEMENT_PSEUDO." : </div></td><td><div class=\"blanc\">$row[pseudo]</div></td></tr>\n";
-         echo "<tr><td align=\"center\"><div class=\"blanc\">".PRONO_PROFIL_ANCIEN_MDP_2." :</div></td><td><input type=\"password\" name=\"ancien_mdp\"></td></tr>\n";
-         echo "<tr><td align=\"center\"><div class=\"blanc\">".PRONO_PROFIL_NOUVEAU_MDP." :</div></td><td><input type=\"password\" name=\"nouveau_mdp\"></td></tr>\n";
-         echo "<tr><td align=\"center\"><div class=\"blanc\">".PRONO_PROFIL_NOUVEAU_MDP_2." :</div></td><td><input type=\"password\" name=\"nouveau_mdp2\"></td></tr>\n";
-         echo "<tr><td align=\"center\"><div class=\"blanc\">".PRONO_PROFIL_MAIL." :</div></td><td ><input type=\"text\" name=\"mail\" value=\"$row[mail]\"></td></tr>\n";
+         echo "<tr><td class=\"blanc center\">".PRONO_PROFIL_ANCIEN_MDP_2." :</td><td><input type=\"password\" name=\"ancien_mdp\"></td></tr>\n";
+         echo "<tr><td class=\"blanc center\">".PRONO_PROFIL_NOUVEAU_MDP." :</td><td><input type=\"password\" name=\"nouveau_mdp\"></td></tr>\n";
+         echo "<tr><td class=\"blanc center\">".PRONO_PROFIL_NOUVEAU_MDP_2." :</td><td><input type=\"password\" name=\"nouveau_mdp2\"></td></tr>\n";
+         echo "<tr><td class=\"blanc center\">".PRONO_PROFIL_MAIL." :</td><td ><input type=\"text\" name=\"mail\" value=\"$row[mail]\"></td></tr>\n";
 
          echo "<tr><td width=\"50%\" center=\"center\"><br /></td>\n";
          echo "<td></td></tr>";

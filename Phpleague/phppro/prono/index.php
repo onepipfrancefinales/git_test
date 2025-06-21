@@ -1,4 +1,7 @@
 <?php
+session_start();
+echo "index.php : user -".$_SESSION['user']; echo "<br>";
+	echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
 if (isset($_GET['page'])) $page = $_GET['page'];
 
