@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_REQUEST['t']) and $_REQUEST['t'] == "1") {
   
   echo "<table><tr><td class=\"bleu bold colorWhite center size3\">Identifiants erronés</td></tr></table>";

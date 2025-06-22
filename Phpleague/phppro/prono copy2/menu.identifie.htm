@@ -13,7 +13,7 @@
   </tr>
   <tr>
     <td height="20" class="pseudo center bold alignLeft">
-          <?php echo PRONO_MENU_BIENVENUE." ".$user_pseudo.$user_pseudo;?>
+          <?php echo PRONO_MENU_BIENVENUE." $user_pseudo";?>
     </td>
   </tr>
   <tr>
@@ -152,54 +152,15 @@
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft size3">
-       <br>      
-      <span class="colorRed bold alignLeft">  &nbsp; Sélectionner un championnat</span>
-
-      
-      <br>  <br>
+              <br>
              <!-- Phpleague/phppro/prono/index.php-->
               
         
-             &nbsp;<a href="../../phppro/prono/index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=11">Top 14 - Pro D2
+             &nbsp;<a href="../../phppro/prono/index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>">Top 14 - Pro D2
               </a>
              <br>
-            <?php  champ_prono ($gr_champ, $idconnect, $mode); ?>
+            <?php   champ_prono ($gr_champ, $idconnect, $mode); ?>
             <br>
     </td>
   </tr>
 </table>
-<br>
-<?php
-//echo "page : ".$page;
-//echo "<p class=\"size5 bold styleArial\">";
-//if ($page != "baremes" or $page != "inscription") {
-//nom_championnat($gr_champ, $idconnect);}
-//echo "</p>";
-//echo "<br>";
-//if ($page != "baremes" || $page != "profil" || $page != "inscription") include("pronos.inc.htm");
-
-
-echo "<p class=\"size5 bold styleArial\">";
-if ($page == "baremes") $titre = "Barèmes" ;
-elseif  ($page =="profil") $titre = "Gestion du compte";
-elseif  ($page =="aide") $titre = "Aide";
-elseif  ($page =="inscription") $titre = "Création d'un nouveau compte";
-else  $titre = nom_championnat($gr_champ, $idconnect);
-
-echo $titre;echo "<br>";
-if ($page == "pronos" or $page == "derniers_pronos" or $page == "mes_resultats" ) {
-
-include("pronos.inc.htm");
-if ($page == "pronos") $sousTitre = "Grille en cours" ;
-elseif  ($page == "derniers_pronos") $sousTitre = "Dernières grilles" ;
-elseif ($page == "mes_resultats") $sousTitre = "Mes résultats" ;
-}
-echo "</p>";
-echo "<span class=\"size4\">"; echo $sousTitre; echo "</span>";
-
-
-
-?>
-
-<br>
-<br>

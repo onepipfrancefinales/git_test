@@ -7,10 +7,10 @@ $mode = isset($_POST['testMode']) ? $_POST['testMode'] : NULL;
 $user = isset($_POST['user']) ? $_POST['user'] : NULL;
 $pass = isset($_POST['pass']) ? $_POST['pass'] : NULL;
 
-echo "user".$user;echo "<br>";
-echo "autoidentification".$autoidentification;echo "<br>";
-echo "mode".$mode;echo "<br>";
-echo "pass".$pass;echo "<br>";
+echo $user;echo "<br>";
+echo $autoidentification;echo "<br>";
+echo $mode;echo "<br>";
+echo $pass;echo "<br>";
 
 	if(!isset($_REQUEST['user']) or !isset($_REQUEST['pass']))
 	{
@@ -54,15 +54,11 @@ echo "pass".$pass;echo "<br>";
         else {$expire=3600;}
 	setcookie("user","$user",time()+$expire,"/","");
 	setcookie("mot_de_passe","$mot_de_passe",time()+$expire,"/","");
-	session_start();
-	// $_SESSION('user');
-	// $_SESSION('mot_de_passe');
+//	session_start();
+//	session_register('user');
+//	session_register('mot_de_passe');
 	$_SESSION['user'] = $user;
 	$_SESSION['mot_de_passe'] = $mot_de_passe;
-
-
-	echo "login.php : user -".$_SESSION['user'];
-	echo "login.php : mot_de_passe -".$_SESSION['mot_de_passe'];
 	
 	header("Location: index.php?mode=$mode");
 }}

@@ -28,15 +28,7 @@ echo $champ;
 //echo $mail; echo "<br/>";
 //echo $mdp; echo "<br/>";
 //echo $mdp2; echo "<br/>";
-$tabTables = array('phpau', 'phppro', 'phpca','phppl' ,'phpidf', 'phpfed3NE', 'phppro');
 
-foreach($tabTables as $table)
-{
-//phppro_pronostics
-
-$tableMembres = $table."_membres";
-$tablePronostics = $table."_pronostics";
-}
 
 if (!$go=="1"){include ("inscription.htm");
 
@@ -47,9 +39,7 @@ elseif ($go=="1")
       $pseudo=addslashes($pseudo);
 
        // On vérifie que le pseudo n'est pas utilisé
-       $resultat = $idconnect->query("SELECT * 
-                                      FROM phppro_membres 
-                                      WHERE pseudo='$pseudo'");
+       $resultat = $idconnect->query("SELECT * FROM phppro_membres where pseudo='$pseudo'");
        //$resultat=mysql_query($requete);
        $nb_pseudo=mysqli_num_rows($resultat);
        if ($nb_pseudo>=1){$message.=PRONO_INSCRIPTION_PSEUDO_UTILISE."<br />";}
@@ -108,22 +98,23 @@ if ($email_verif=="ok" and $pseudo_verif=="ok" and $mdp_verif=="ok" and $mail_ve
      $mobile=$mobile1."-".$mobile2."-".$mobile3."-".$mobile4."-".$mobile5;
     }
 
+
   //mysqli_query($idconnect, ("INSERT INTO phppro_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
   //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
-
-  mysqli_query($idconnect, ("INSERT INTO phppro_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, ville, pays, admin )
-                             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$pseudo', '$pseudo', '$pseudo', '$pseudo',  '$pseudo', '$mdp','1' )"));
+   mysqli_query($idconnect, ("INSERT INTO phppro_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, ville, pays, admin )
+               VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$pseudo', '$pseudo', '$pseudo', '$pseudo',  '$pseudo', '$mdp','1' )"));
 
   
-  $result=$idconnect->query("SELECT id 
-                             FROM phppro_membres 
-                             WHERE id_prono='$id_prono'");
-                                $row=mysqli_fetch_array($result);
-                                $id_membre=$row[0];
+  
+  
+  $result=$idconnect->query("SELECT id FROM phppro_membres WHERE id_prono='$id_prono'");
+ // $result=mysql_query($requete) or die ("probleme " .mysql_error());
+  $row=mysqli_fetch_array($result);
+  $id_membre=$row[0];
 
   mysqli_query($idconnect,("INSERT INTO phppro_pronostics (id_membre, id_champ) 
-							              VALUES ('$id_membre', '$gr_champ')"));
+							VALUES ('$id_membre', '$gr_champ')"));
 
   $result =$idconnect->query( "SELECT pseudo, mail, nom_site, url_site 
                                FROM phppro_membres 
