@@ -151,11 +151,11 @@ function login_form()
   <td class='univert' align='center'>
    <input type='password' name='password'>
    </td>
-   <tr><td align='center' class='univert'>Se connecter automatiquement à chaque visite: <input type='checkbox' class='checkbox' name='autoidentification' value='1'></td></tr>
+   <tr><td align='center' class='univert'>Se connecter automatiquement ï¿½ chaque visite: <input type='checkbox' class='checkbox' name='autoidentification' value='1'></td></tr>
    </tr>
    <tr><td colspan='2' class='univert' align='center'><input type='submit' name='submit' value='Connexion' >
    <br />
-   <a href='perdu_mdp.php'>J'ai oublié mon mot de passe</a><br />
+   <a href='perdu_mdp.php'>J'ai oubliï¿½ mon mot de passe</a><br />
    <a href='inscription.php'>Inscription</a><br />
    </td>
    </tr></form></table>";  }
@@ -167,7 +167,7 @@ function perdu_mot_de_passe()
   <td colspan='2' class='univert' align='center'>
   <div class=\"blanc\"><strong>Mot de passe perdu</strong></div><br /><br />
 <div class=\"blanc\">Entrez votre pseudo,
-<br />un nouveau mot de passe vous sera alors envoyé par mail.
+<br />un nouveau mot de passe vous sera alors envoyï¿½ par mail.
 </div>
 <form action='perdu_mdp.php' method='get'>
 <input class=textfield type=text name=pseudo size='35'>
@@ -283,28 +283,28 @@ if ($nb_pronos == "0") {$prono="0";}
          if ($prono=="1")
            {
            ?>
-             <img src="barre.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche_selection.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
            <?php
            }
 
          if ($prono=="N")
            {
            ?>
-             <img src="1.gif" border="no" alt=""> <img src="barre.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="affiche_selection.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
            <?php
            }
 
          if ($prono=="2")
          {
          ?>
-             <img src="1.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="barre.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche_selection.gif"  border="no" alt="">
          <?php
          }
   
          if ($prono=="0")
          {
           ?> 
-             <img src="1.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
           <?php
          }
   echo "</td></tr></table>";
@@ -333,7 +333,7 @@ if ($nb_pronos == "0") {$prono="0";}
   if ($ecart_heures>48) echo "<div class=\"blanc\">$ecart_jours jours</div>";
   elseif ($ecart_heures>0) echo "<div class=\"blanc\">$ecart_heures h</div>";
   elseif ($ecart_heures == 0) echo "<div class=\"blanc\">$ecart_minutes min</div>";
-  else {echo"<div class=\"blanc\">expiré</div>";}
+  else {echo"<div class=\"blanc\">expirï¿½</div>";}
   echo "</td>";
   echo "</tr>";
   $i++;
@@ -432,7 +432,7 @@ if (isset($_REQUEST['complet'])) {$complet=$_REQUEST['complet'];} else {$complet
 $result=$idconnect->query(" SELECT pseudo, points, participation FROM phpab_clmnt_pronos
 							WHERE id_champ='$gr_champ' AND type='$type'
 							ORDER by points desc, participation desc, pseudo");
-/*A ré-introduire
+/*A rï¿½-introduire
 if (!($complet== '1')){$query = $query. " LIMIT 0, 10";}
 */
 //$result=mysql_query($query) or die ("probleme " .mysql_error());

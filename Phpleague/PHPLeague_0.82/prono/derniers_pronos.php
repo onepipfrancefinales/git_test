@@ -43,7 +43,7 @@ ORDER by phpl_matchs.date_reelle desc, phpl_clubs.nom desc
 LIMIT $debut, $fin ";
 $i=0;
 $result=mysql_query($query);
-if (mysql_num_rows( $result )=="0") {echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journée Inexistante</div></td></tr>";}
+if (mysql_num_rows( $result )=="0") {echo "<tr><td colspan=6 align=center><div class=\"blanc\">Journï¿½e Inexistante</div></td></tr>";}
 while ($row=mysql_fetch_array($result) and $i<10)
   {
 $clubs_nom = stripslashes($row[0]);
@@ -69,30 +69,30 @@ if ($nb_pronos == "0") {$prono="0";}
   echo "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" width=\"50\"><tr><td>";
   if ($prono=="1")
 { ?>
-             <img src="barre.gif" border="no" alt="">
-             <img src="N.gif" border="no" alt="">
-             <img src="2.gif"  border="no" alt="">
+             <img src="affiche_selection.gif" border="no" alt="">
+             <img src="afficheN.gif" border="no" alt="">
+             <img src="affiche2.gif"  border="no" alt="">
  <?php
 }
   if ($prono=="N")
 {  ?>
-             <img src="1.gif" border="no" alt="">
-             <img src="barre.gif" border="no" alt="">
-             <img src="2.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt="">
+             <img src="affiche_selection.gif" border="no" alt="">
+             <img src="affiche2.gif"  border="no" alt="">
  <?php
 }
   if ($prono=="2")
 {  ?>
-             <img src="1.gif" border="no" alt="">
-             <img src="N.gif" border="no" alt="">
-             <img src="barre.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt="">
+             <img src="afficheN.gif" border="no" alt="">
+             <img src="affiche_selection.gif"  border="no" alt="">
  <?php
 }
   if ($prono=="0")
 {  ?>
-             <img src="1.gif" border="no" alt="">
-             <img src="N.gif" border="no" alt="">
-             <img src="2.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt="">
+             <img src="afficheN.gif" border="no" alt="">
+             <img src="affiche2.gif"  border="no" alt="">
  <?php
 }
   echo "</td>\n</tr>\n</table>\n</td>\n";
@@ -101,11 +101,11 @@ if ($nb_pronos == "0") {$prono="0";}
   echo "<td><div class=\"blanc\">$clubs_nom1</div></td>";
   echo "<td align=\"center\"><div class=\"blanc\">$row[2]-$row[3]</div></td>";
   echo "<td align=\"center\">";
-  if ($row[2]>$row[3] and $prono=="1"){echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
-  elseif ($row[2]==$row[3] and $prono=="N"){echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
-  elseif ($row[2]<$row[3] and $prono=="2"){echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
+  if ($row[2]>$row[3] and $prono=="1"){echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
+  elseif ($row[2]==$row[3] and $prono=="N"){echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
+  elseif ($row[2]<$row[3] and $prono=="2"){echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";}
   elseif ($prono=='0'){echo "</td><td align=\"center\"><div class=\"blanc\">0</div>";}
-  else {echo "<img src=\"c_0.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$row[pts_prono_participation]</div>";}
+  else {echo "<img src=\"affiche_prono_erreur.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$row[pts_prono_participation]</div>";}
   echo "</td>";
   echo "</tr>";
   $i++;

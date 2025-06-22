@@ -11,12 +11,12 @@ if (VerifSession($user_pseudo, $user_mdp) == 1)
 	var Ch1 = '1';
 	var Ch2 = '2';
 
-	ImgN  = new Image(10, 14); ImgN.src  = '<?php echo '../'.REP_IMG_PRONO; ?>N.gif';
-	Img1  = new Image(10, 14); Img1.src  = '<?php echo '../'.REP_IMG_PRONO; ?>1.gif';
-	Img2  = new Image(10, 14); Img2.src  = '<?php echo '../'.REP_IMG_PRONO; ?>2.gif';
-	ImgNR = new Image(10, 14); ImgNR.src = '<?php echo '../'.REP_IMG_PRONO; ?>barre.gif';
-	Img1R = new Image(10, 14); Img1R.src = '<?php echo '../'.REP_IMG_PRONO; ?>barre.gif';
-	Img2R = new Image(10, 14); Img2R.src = '<?php echo '../'.REP_IMG_PRONO; ?>barre.gif';
+	ImgN  = new Image(10, 14); ImgN.src  = '<?php echo '../'.REP_IMG_PRONO; ?>afficheN.gif';
+	Img1  = new Image(10, 14); Img1.src  = '<?php echo '../'.REP_IMG_PRONO; ?>affiche1.gif';
+	Img2  = new Image(10, 14); Img2.src  = '<?php echo '../'.REP_IMG_PRONO; ?>affiche2.gif';
+	ImgNR = new Image(10, 14); ImgNR.src = '<?php echo '../'.REP_IMG_PRONO; ?>affiche_selection.gif';
+	Img1R = new Image(10, 14); Img1R.src = '<?php echo '../'.REP_IMG_PRONO; ?>affiche_selection.gif';
+	Img2R = new Image(10, 14); Img2R.src = '<?php echo '../'.REP_IMG_PRONO; ?>affiche_selection.gif';
 
 	function Change(match, res) {
 		if (res == 1) {
@@ -277,7 +277,7 @@ if (VerifSession($user_pseudo, $user_mdp) == 1)
 
 		if ($NBR == 0)
 		{
-			echo '<tr><td colspan="6" class="TxtCenter">'.FormatText('Journée inexistante').'</td></tr>';
+			echo '<tr><td colspan="6" class="TxtCenter">'.FormatText('Journï¿½e inexistante').'</td></tr>';
 		}
 		else
 		{

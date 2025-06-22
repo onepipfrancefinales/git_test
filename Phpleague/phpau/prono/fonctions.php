@@ -278,28 +278,28 @@ if ($nb_pronos == "0") {$prono="0";}
          if ($prono==1)
            {
            ?>
-             <img src="barre.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche_selection.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
            <?php
            }
 
          if ($prono=="N")
            {
            ?>
-             <img src="1.gif" border="no" alt=""> <img src="barre.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="affiche_selection.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
            <?php
            }
 
          if ($prono=="2")
          {
          ?>
-             <img src="1.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="barre.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche_selection.gif"  border="no" alt="">
          <?php
          }
   
          if ($prono=="0")
          {
           ?> 
-             <img src="1.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
           <?php
          }
   echo "</td></tr></table>";

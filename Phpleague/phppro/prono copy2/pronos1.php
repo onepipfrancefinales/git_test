@@ -5,13 +5,13 @@ var ChN="N";
 var Ch1="1";
 var Ch2="2";
 
-ImgN=new Image(10,14); ImgN.src="N.gif";
-Img1=new Image(10,14); Img1.src="1.gif";
-Img2=new Image(10,14); Img2.src="2.gif";
+ImgN=new Image(10,14); ImgN.src="afficheN.gif";
+Img1=new Image(10,14); Img1.src="affiche1.gif";
+Img2=new Image(10,14); Img2.src="affiche2.gif";
 
-ImgNR=new Image(10,14); ImgNR.src="barre.gif";
-Img1R=new Image(10,14); Img1R.src="barre.gif";
-Img2R=new Image(10,14); Img2R.src="barre.gif";
+ImgNR=new Image(10,14); ImgNR.src="affiche_selection.gif";
+Img1R=new Image(10,14); Img1R.src="affiche_selection.gif";
+Img2R=new Image(10,14); Img2R.src="affiche_selection.gif";
 
 function Change(match, res) {
 	if (res==1) {
@@ -310,33 +310,33 @@ if ($action == "valid_pronos") {
             if ($prono == "0") {
               //  echo "0";
             ?>
-              <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="1.gif" name="m<?php echo $x; ?>_1" alt=""></a>
-              <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="N.gif" name="m<?php echo $x; ?>_0" alt=""></a>
-              <a href="javascript:Change(<?php echo $x; ?>,2);"><img src="2.gif" name="m<?php echo $x; ?>_2" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="affiche1.gif" name="m<?php echo $x; ?>_1" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="afficheN.gif" name="m<?php echo $x; ?>_0" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,2);"><img src="affiche2.gif" name="m<?php echo $x; ?>_2" alt=""></a>
             <?php
             }
 
             if ($prono == "1") {
             ?>
-              <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="barre.gif" name="m<?php echo $x; ?>_1" alt=""></a>
-              <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="N.gif" name="m<?php echo $x; ?>_0" alt=""></a>
-              <a href="javascript:Change(<?php echo $x; ?>,2);"><img src="2.gif" name="m<?php echo $x; ?>_2" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="affiche_selection.gif" name="m<?php echo $x; ?>_1" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="afficheN.gif" name="m<?php echo $x; ?>_0" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,2);"><img src="affiche2.gif" name="m<?php echo $x; ?>_2" alt=""></a>
             <?php
             }
 
             if ($prono == "N") {
             ?>
-              <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="1.gif" name="m<?php echo $x; ?>_1" alt=""></a>
-              <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="barre.gif" name="m<?php echo $x; ?>_0" alt=""></a>
-              <a href="javascript:Change(<?php echo $x; ?>,2);"><img src="2.gif" name="m<?php echo $x; ?>_2" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="affiche1.gif" name="m<?php echo $x; ?>_1" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="affiche_selection.gif" name="m<?php echo $x; ?>_0" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,2);"><img src="affiche2.gif" name="m<?php echo $x; ?>_2" alt=""></a>
             <?php
             }
 
             if ($prono == "2") {
             ?>
-              <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="1.gif" name="m<?php echo $x; ?>_1" alt=""></a>
-              <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="N.gif" name="m<?php echo $x; ?>_0" alt=""></a>
-              <a href="javascript:Change(<?php echo $x; ?>,2);"><img src="barre.gif" name="m<?php echo $x; ?>_2" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="affiche1.gif" name="m<?php echo $x; ?>_1" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="afficheN.gif" name="m<?php echo $x; ?>_0" alt=""></a>
+              <a href="javascript:Change(<?php echo $x; ?>,2);"><img src="affiche_selection.gif" name="m<?php echo $x; ?>_2" alt=""></a>
             <?php
             }
             echo "</td></tr></table></td>";
@@ -348,25 +348,25 @@ if ($action == "valid_pronos") {
 
             if ($prono == "1") {
             ?>
-              <img src="barre.gif"><img src="N.gif"><img src="2.gif">
+              <img src="affiche_selection.gif"><img src="afficheN.gif"><img src="affiche2.gif">
             <?php
             }
 
             if ($prono == "N") {
             ?>
-              <img src="1.gif"><img src="barre.gif"><img src="2.gif">
+              <img src="affiche1.gif"><img src="affiche_selection.gif"><img src="affiche2.gif">
             <?php
             }
 
             if ($prono == "2") {
             ?>
-              <img src="1.gif"><img src="N.gif"><img src="barre.gif">
+              <img src="affiche1.gif"><img src="afficheN.gif"><img src="affiche_selection.gif">
             <?php
             }
 
             if ($prono == "0") {
             ?>
-              <img src="1.gif"><img src="N.gif"><img src="2.gif">
+              <img src="affiche1.gif"><img src="afficheN.gif"><img src="affiche2.gif">
                <?php
             }
             echo "</td></tr></table>";

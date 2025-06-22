@@ -85,31 +85,31 @@ while ($row = mysqli_fetch_array($result) and $i < 10) {
   echo "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" width=\"50\"><tr><td>";
   if ($prono == 1) {
 ?>
-    <img src="barre.gif" border="no" alt="">
-    <img src="N.gif" border="no" alt="">
-    <img src="2.gif" border="no" alt="">
+    <img src="affiche_selection.gif" border="no" alt="">
+    <img src="afficheN.gif" border="no" alt="">
+    <img src="affiche2.gif" border="no" alt="">
   <?php
   }
   if ($prono == "N") {
   ?>
-    <img src="1.gif" border="no" alt="">
-    <img src="barre.gif" border="no" alt="">
-    <img src="2.gif" border="no" alt="">
+    <img src="affiche1.gif" border="no" alt="">
+    <img src="affiche_selection.gif" border="no" alt="">
+    <img src="affiche2.gif" border="no" alt="">
   <?php
   }
 
   if ($prono == "2") {
   ?>
-    <img src="1.gif" border="no" alt="">
-    <img src="N.gif" border="no" alt="">
-    <img src="barre.gif" border="no" alt="">
+    <img src="affiche1.gif" border="no" alt="">
+    <img src="afficheN.gif" border="no" alt="">
+    <img src="affiche_selection.gif" border="no" alt="">
   <?php
   }
   if ($prono == "0") {
   ?>
-    <img src="1.gif" border="no" alt="">
-    <img src="N.gif" border="no" alt="">
-    <img src="2.gif" border="no" alt="">
+    <img src="affiche1.gif" border="no" alt="">
+    <img src="afficheN.gif" border="no" alt="">
+    <img src="affiche2.gif" border="no" alt="">
 <?php
   }
 
@@ -120,15 +120,15 @@ while ($row = mysqli_fetch_array($result) and $i < 10) {
   echo "<td class=\"blanc center\">$row[2]-$row[3]</td>";
   echo "<td class=\"center\">";
   if ($row[2] > $row[3] and $prono == 1) {
-    echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
+    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
   } elseif ($row[2] == $row[3] and $prono == "N") {
-    echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
+    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
   } elseif ($row[2] < $row[3] and $prono == "2") {
-    echo "<img src=\"c_1.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
+    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
   } elseif ($prono == '0') {
     echo "</td><td align=\"center\"><div class=\"blanc\">0</div>";
   } else {
-    echo "<img src=\"c_0.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$row[pts_prono_participation]</div>";
+    echo "<img src=\"affiche_prono_erreur.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$row[pts_prono_participation]</div>";
   }
   echo "</td>";
   echo "</tr>";

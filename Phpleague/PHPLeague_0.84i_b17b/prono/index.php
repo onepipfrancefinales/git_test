@@ -82,10 +82,10 @@ if ($ACT_PRONOSTIC == 1)
 {
 	ouverture();
 
-	define('CHX_IMG_1', '1.gif');
-	define('CHX_IMG_2', '2.gif');
-	define('CHX_IMG_N', 'N.gif');
-	define('CHX_IMG_B', 'barre.gif');
+	define('CHX_IMG_1', 'affiche1.gif');
+	define('CHX_IMG_2', 'affiche2.gif');
+	define('CHX_IMG_N', 'afficheN.gif');
+	define('CHX_IMG_B', 'affiche_selection.gif');
 	define('CHX_IMG_TRUE', 'tick.png');
 	define('CHX_IMG_FALSE', 'cross.png');
 

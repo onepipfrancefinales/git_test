@@ -23,13 +23,13 @@ var ChN="N";
 var Ch1="1";
 var Ch2="2";
 
-ImgN=new Image(10,14); ImgN.src="N.gif";
-Img1=new Image(10,14); Img1.src="1.gif";
-Img2=new Image(10,14); Img2.src="2.gif";
+ImgN=new Image(10,14); ImgN.src="afficheN.gif";
+Img1=new Image(10,14); Img1.src="affiche1.gif";
+Img2=new Image(10,14); Img2.src="affiche2.gif";
 
-ImgNR=new Image(10,14); ImgNR.src="barre.gif";
-Img1R=new Image(10,14); Img1R.src="barre.gif";
-Img2R=new Image(10,14); Img2R.src="barre.gif";
+ImgNR=new Image(10,14); ImgNR.src="affiche_selection.gif";
+Img1R=new Image(10,14); Img1R.src="affiche_selection.gif";
+Img2R=new Image(10,14); Img2R.src="affiche_selection.gif";
 
 function Change(match, res) {
 	if (res==1) {
@@ -320,36 +320,36 @@ $resultat=$idconnect->query("SELECT phpab_matchs.id
              if ($prono=="0")
            {
              ?>
-             <a href="javascript:Change(<?php print $x; ?>,1);"><img src="1.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,0);"><img src="N.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="2.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,1);"><img src="affiche1.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,0);"><img src="afficheN.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="affiche2.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
              <?php
            }
 
          if ($prono=="1")
            {
              ?>
-             <a href="javascript:Change(<?php print $x; ?>,1);"><img src="barre.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,0);"><img src="N.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="2.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,1);"><img src="affiche_selection.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,0);"><img src="afficheN.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="affiche2.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
              <?php
            }
 
          if ($prono=="N")
            {
              ?>    
-             <a href="javascript:Change(<?php print $x; ?>,1);"><img src="1.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,0);"><img src="barre.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="2.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,1);"><img src="affiche1.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,0);"><img src="affiche_selection.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="affiche2.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
              <?php
            }
 
          if ($prono=="2")
            {
              ?>
-             <a href="javascript:Change(<?php print $x; ?>,1);"><img src="1.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,0);"><img src="N.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
-             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="barre.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,1);"><img src="affiche1.gif" border="no" name="m<?php print $x; ?>_1" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,0);"><img src="afficheN.gif" border="no" name="m<?php print $x; ?>_0" alt=""></a>
+             <a href="javascript:Change(<?php print $x; ?>,2);"><img src="affiche_selection.gif"  border="no" name="m<?php print $x;?>_2" alt=""></a>
              <?php
            }
          echo "</td></tr></table></td>";
@@ -366,28 +366,28 @@ $resultat=$idconnect->query("SELECT phpab_matchs.id
          if ($prono=="1")
            {
            ?>
-             <img src="barre.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche_selection.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
            <?php
            }
 
          if ($prono=="N")
            {
            ?>
-             <img src="1.gif" border="no" alt=""> <img src="barre.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="affiche_selection.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
            <?php
            }
 
          if ($prono=="2")
          {
          ?>
-             <img src="1.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="barre.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche_selection.gif"  border="no" alt="">
          <?php
          }
   
          if ($prono=="0")
          {
           ?> 
-             <img src="1.gif" border="no" alt=""> <img src="N.gif" border="no" alt=""> <img src="2.gif"  border="no" alt="">
+             <img src="affiche1.gif" border="no" alt=""> <img src="afficheN.gif" border="no" alt=""> <img src="affiche2.gif"  border="no" alt="">
           <?php
          }
          echo "</td></tr></table>";
