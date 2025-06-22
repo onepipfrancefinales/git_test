@@ -134,10 +134,5 @@ while ($row = mysqli_fetch_array($result) and $i < 10) {
   echo "</tr>";
   $i++;
 }
-
-
-
 echo "</table></td></tr></table>";
-
-
 ?>
