@@ -13,6 +13,5 @@ $password="lavelan09";
 
 $lang="fr";
 $PHPLEAGUE_RACINE="Phpleague/phpab/";
-
 $PHPLEAGUE_RACINE2="Phpleaguesmart/phpab/";
 ?>

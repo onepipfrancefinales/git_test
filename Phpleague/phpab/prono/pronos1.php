@@ -116,7 +116,7 @@ if ($action == "reset") {
     $resultat1 = $idconnect->query("SELECT phpab_matchs.date_reelle 
                                     FROM phpab_matchs 
                                     WHERE phpab_matchs.id='$row[0]'");
- 
+
     while ($row1 = mysqli_fetch_array($resultat1)) {
       $date_relle = $row1[0];
     }
@@ -176,13 +176,13 @@ if ($action == "valid_pronos") {
                                      AND phpab_membres.id=phpab_pronostics.id_membre
                                      AND phpab_pronostics.id_match=phpab_matchs.id
                                      AND phpab_pronostics.id_match='$id_match[$i]'");
-    
+
       $nb_prono = mysqli_num_rows($resultat);
 
       $resultat = $idconnect->query("SELECT id 
                                      FROM phpab_membres 
                                      WHERE id_prono='$user_id'");
-  
+
 
       while ($row = mysqli_fetch_array($resultat)) {
         $id = $row["id"];
@@ -206,7 +206,15 @@ if ($action == "valid_pronos") {
       }
     }
   }
-  echo "<table><tr><td class=\"bleu center colorWhite size3\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_CONFIRME . "</font><br /><a href=\"index.php?page=pronos&amp;gr_champ=$gr_champ&amp;debut=$debut\"><font color=\"#FFFFFF\">" . RETOUR . "</font></a> - <a href=\"index.php?page=pronos&amp;debut=$fin&amp;gr_champ=$gr_champ\"><font color=\"#FFFFFF\">" . PRONO_GRILLE_PROCHAINE . "</font></a></td></tr></table>";
+  echo "<table>
+          <tr class>
+          <td class=\"bleu center colorWhite size3\">" . PRONO_GRILLE_CONFIRME . "
+  <br /><a class=\"colorWhite\" href=\"index.php?page=pronos&amp;gr_champ=$gr_champ&amp;debut=$debut\">
+  " . RETOUR . "</a> - <a class=\"colorWhite\" href=\"index.php?page=pronos&amp;debut=$fin&amp;gr_champ=$gr_champ\">
+  " . PRONO_GRILLE_PROCHAINE . "</a>
+     </td>
+   </tr>
+  </table>";
 } elseif ($action !== "valid_pronos") {
   if ($debut == "0") {
     $prec = "index.php?page=derniers_pronos&amp;gr_champ=$gr_champ";
@@ -255,7 +263,7 @@ if ($action == "valid_pronos") {
 									   WHERE phpab_pronostics.id_match='$row[2]' 
 									   AND phpab_membres.id=phpab_pronostics.id_membre 
 									   AND phpab_membres.id_prono='$user_id'");
- 
+
     $nb_pronos = mysqli_num_rows($resultat2);
 
 
@@ -297,15 +305,11 @@ if ($action == "valid_pronos") {
       echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
 ?><input type="hidden" value="1" name="r_<?php echo $x; ?>">
 
-      <table  width="100">
+      <table width="100">
         <tr>
-          <td class= "center">
-         
+          <td class="center">
             <?php
-          
-            //$prono=1;
             if ($prono == "0") {
-              //  echo "0";
             ?>
               <a href="javascript:Change(<?php echo $x; ?>,1);"><img src="affiche1.gif" name="m<?php echo $x; ?>_1" alt=""></a>
               <a href="javascript:Change(<?php echo $x; ?>,0);"><img src="afficheN.gif" name="m<?php echo $x; ?>_0" alt=""></a>
@@ -337,7 +341,7 @@ if ($action == "valid_pronos") {
             <?php
             }
             echo "</td></tr></table></td>";
-           } else {
+          } else {
             echo "<td><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\">\n";
             echo "<tr>\n";
             echo "<td width=\"45\" height=\"10\" valign=\"middle\" align=\"center\">\n";
@@ -345,26 +349,30 @@ if ($action == "valid_pronos") {
 
             if ($prono == "1") {
             ?>
-              <img src="affiche_selection.gif"><img src="afficheN.gif"><img src="affiche2.gif">
+              <img src="affiche_selection.gif">&nbsp;
+              <img src="afficheN.gif">&nbsp;
+              <img src="affiche2.gif">
             <?php
             }
 
             if ($prono == "N") {
             ?>
-              <img src="affiche1.gif"><img src="affiche_selection.gif"><img src="affiche2.gif">
+              <img src="affiche1.gif">&nbsp;
+              <img src="affiche_selection.gif">&nbsp;
+              <img src="affiche2.gif">
             <?php
             }
 
             if ($prono == "2") {
             ?>
-              <img src="affiche1.gif"><img src="afficheN.gif"><img src="affiche_selection.gif">
+              <img src="affiche1.gif">&nbsp;<img src="afficheN.gif">&nbsp;<img src="affiche_selection.gif">
             <?php
             }
 
             if ($prono == "0") {
             ?>
-              <img src="affiche1.gif"><img src="afficheN.gif"><img src="affiche2.gif">
-               <?php
+              <img src="affiche1.gif">&nbsp;<img src="afficheN.gif">&nbsp;<img src="affiche2.gif">
+        <?php
             }
             echo "</td></tr></table>";
             echo "</td></tr></table></td>";

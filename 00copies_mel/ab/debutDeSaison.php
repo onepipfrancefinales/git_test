@@ -9,13 +9,13 @@ else {
 
 <table  border="1" width="90%">
 	<tr class="size6 style">
-		<td colspan="2"  align="center"><font size="6" face="Arial, Helvetica, sans-serif"><b>Champions de France <br >2025</b></font></td>
+		<td colspan="2"  align="center"><font size="6" face="Arial, Helvetica, sans-serif"><b>Saison 2025-2026 <br >2025</b></font></td>
 	</tr>
 	<tr bgcolor="#FF0000">
-		<td colspan="2"  align="center" > <font size="5"><b>Séniors I<b></font></td>
+		<td colspan="2"  align="center" > <font size="5"><b>Compétitions professionnelles<b></font></td>
 	</tr>
 	<tr align="center">
-		<td width="35%" ><font size="3" face="Arial, Helvetica, sans-serif">Top 14 :</td>
+		<td width="35%" ><font size="3" face="Arial, Helvetica, sans-serif"></td>
 		<td width="51%" align="center"><b>-----</b></font></td>	
 	</tr>
 	<tr align="center" bgcolor="#DCDCDC">
@@ -68,7 +68,7 @@ else {
 	</tr>
 
 	<tr bgcolor="#FF0000">
-		<td colspan="2" align="center" > <font size="5"><b>Séniors II<b></font></td>
+		<td colspan="2" align="center" > <font size="5"><b>Compétitions fédérales<b></font></td>
 	</tr>
 	<tr align="center">
 		<td><font size="3" face="Arial, Helvetica, sans-serif">Espoirs Elite :</td>
@@ -100,7 +100,7 @@ else {
 		<td><font size="3" face="Arial, Helvetica, sans-serif"><b>Clermont la Plaine (ARA)</b></font></td>
 	</tr>
 	<tr bgcolor="#FF0000">
-		<td colspan="2"  align="center" > <font size="5"><b>Feminines<b></font></td>
+		<td colspan="2"  align="center" > <font size="5"><b>Compétitons Feminines<b></font></td>
 	</tr>
 	<tr align="center">
 		<td><font size="3" face="Arial, Helvetica, sans-serif">Elite 1 :</td>
@@ -128,7 +128,7 @@ else {
 	</tr>
 
 	<tr bgcolor="#FF0000">
-		<td colspan="2"  align="center" > <font size="5"><b>Jeunes<b></font></td>
+		<td colspan="2"  align="center" > <font size="5"><b>Competitions régionales<b></font></td>
 	</tr>
 	<tr bgcolor="#808080">
 		<td colspan="2" ><font size="3" face="Arial, Helvetica, sans-serif"><b>Juniors (-18ans)</b></font></td>
