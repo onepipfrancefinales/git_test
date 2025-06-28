@@ -1,33 +1,7 @@
 <?php
+session_start();
 if (isset($_GET['champ'])) $champ = $_GET['champ']; else $champ = 0;
-echo $champ;
 
-
-?>
-
-<?php
-//***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
-// ============================================                         */
-//                                                                      */
-// Version : 0.82                                                       */
-// Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
-//                                                                      */
-// This program is free software. You can redistribute it and/or modify */
-// it under the terms of the GNU General Public License as published by */
-// the Free Software Foundation; either version 2 of the License.       */
-//                                                                      */
-//***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
-//                                                                      */
-//***********************************************************************/
-
-//if (!$go=="1"){include ("inscription obligatoire.htm");}
-//echo $pseudo; echo "<br/>";
-//echo $mail; echo "<br/>";
-//echo $mdp; echo "<br/>";
-//echo $mdp2; echo "<br/>";
 $tabTables = array('phpau', 'phpab', 'phpca','phppl' ,'phpidf', 'phpfed3NE', 'phppro');
 
 foreach($tabTables as $table)
@@ -136,15 +110,13 @@ if ($email_verif=="ok" and $pseudo_verif=="ok" and $mdp_verif=="ok" and $mail_ve
 //  $nom_site_admin=$row[2];
 // $url_site_admin=$row[3];  
 
-echo "pseudo : ".$pseudo_admin; echo "<br/>";
-echo "mail : ".$mail_admin; echo "<br/>";
-echo "champ :".$champ; echo "<br/>";
+
 
 $to="$pseudo <$mail>";
 
 $sujet="France Finales Rugby App";
 
-$message="<html><head><title>phpabeague</title></head><body>
+$message="<html><head><title>Inscription à France Finales Prono</title></head><body>
 <p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Bonjour et bienvenue sur France Finales Rugby, </font></p>
 <p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Vous venez de vous inscrire sur France Finales Pronos. Vous pouvez désormais procéder &agrave; la mise &agrave; jours des résultats des rencontres de votre comité.</font></p>
 <p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Voici les informations qui vous
@@ -171,11 +143,7 @@ Sportivement</font></p>
   $from="Content-Type: text/html; charset=\"utf-8\"\nFrom: $mail_admin\n";
   
   
-echo "-----------------------"; echo "<br/>"; 
-//echo "to : ".$to; echo "<br/>";
-//echo "message : ".$message; echo "<br/>";
-//echo "from :".$from; echo "<br/>";
-echo "-----------------------"; echo "<br/>";   
+ 
   
   
   
@@ -183,7 +151,7 @@ echo "-----------------------"; echo "<br/>";
   if ($email)
   {
     echo "<table align=\"center\">";
-    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">".PRONO_INSCRIPTION_SUCCES."</font><br /><a href=\"/Phpleague/phpab/prono/index.php\">".PRONO_INSCRIPTION_CONNEXION."</font></a></td></tr>";
+    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">".PRONO_INSCRIPTION_SUCCES."</font><br /><a class=\"colorWhite\" href=\"index.php?user=$pseudo&mot_de_passe=$mdpcrypt\">".PRONO_INSCRIPTION_CONNEXION."</font></a></td></tr>";
     echo "</table>";
   }
   else 

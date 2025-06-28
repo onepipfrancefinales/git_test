@@ -24,7 +24,7 @@ function affiche_points ($user_id, $gr_champ, $idconnect)
     $points=$row[0];
     $participation=$row[1];
   }
-  echo $points + $participation;
+  echo "pts +participation ;".$points + $participation;
 
 }
 
@@ -181,7 +181,7 @@ function classement_general ($gr_champ, $user_pseudo, $idconnect)
 $result=$idconnect->query("  SELECT pseudo, points, participation 
 							               FROM phpab_clmnt_pronos
 							               WHERE id_champ='$gr_champ' 
-							               AND type='general'
+							               AND type = 'general'
 							               ORDER by points desc, participation desc, pseudo LIMIT 0, 10");
 
 $i=1;
@@ -351,10 +351,15 @@ echo $gr_champ_nom;
 function classement_type ($type)
 {
 if ($type=="") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
-if ($type=="general") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
-if ($type=="mensuel_en_cours") {echo "<br>".PRONO_CLASSEMENT_MOIS."<br>"."<br>";}
+if ($type=="general") {echo "<br>"."<br>";}
+if ($type=="mensuel_en_cours") {echo "<br>"."<br>";}
 if ($type=="mensuel_30_jours") {echo "<br>".PRONO_CLASSEMENT_30."<br>"."<br>";}
-if ($type=="hebdo") {echo "<br>".PRONO_CLASSEMENT_HEBDO."<br>"."<br>";}
+if ($type=="hebdo") { echo "<br>"."<br>";}
+//if ($type=="") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+//if ($type=="general") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+//if ($type=="mensuel_en_cours") {echo "<br>".PRONO_CLASSEMENT_MOIS."<br>"."<br>";}
+//if ($type=="mensuel_30_jours") {echo "<br>".PRONO_CLASSEMENT_30."<br>"."<br>";}
+//if ($type=="hebdo") { echo "<br>".PRONO_CLASSEMENT_HEBDO."<br>"."<br>";}
 }
 
 function classement ($gr_champ, $type, $user_pseudo, $idconnect)
@@ -453,16 +458,16 @@ $result=$idconnect->query("SELECT pseudo, points, participation
 $i=1;
 while ($row=mysqli_fetch_array($result))
 {
- echo "<tr><td><div class=\"blanc\">$i</div></td>";
+ echo "<tr><td class=\"blanc\">$i</td>";
 
- if ($user_pseudo==$row[0]) echo "<td><div class=\"blanc\"><b>$row[0]</b></div></td>";
- else  echo "<td><div class=\"blanc\">$row[0]</div></td>";
- echo "<td><div class=\"blanc\">$row[1]</div></td>";
- echo "<td><div class=\"blanc\">$row[2]</div></td></tr>";
+ if ($user_pseudo==$row[0]) echo "<td class=\"blanc bold\">$row[0]</td>";
+ else  echo "<td class=\"blanc\">$row[0]</td>";
+ echo "<td class=\"blanc\">$row[1]</td>";
+ echo "<td class=\"blanc\">$row[2]</td></tr>";
 
  $i++;
 }
-if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><a href=\"index.php?page=classement&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
+if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><br><a href=\"index.php?page=classement&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
 }
 
 function date_form_inscription ()

@@ -4,10 +4,13 @@ echo "index.php : user -".$_SESSION['user']; echo "<br>";
 echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
 
 if (isset($_REQUEST['page'])) {$page=$_REQUEST['page'];} else {$page='';}
+if (isset($_REQUEST['type'])) {$type=$_REQUEST['type'];} else {$page='';}
 if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
 if (isset($_REQUEST['user_pseudo'])) {$user_pseudo=$_REQUEST['user_pseudo'];} else {$user_pseudo='';}
 if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id='';}
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
+if (isset($_GET['page'])) $page = $_GET['page'];else {$mode='';}
+if (isset($_GET['style'])) $style = $_GET['style'];else {$mode='';}
 if ($mode == "smart")
 {
   ?>
@@ -30,12 +33,6 @@ if ($mode == "smart")
 <p>&nbsp;</p>
 
 <?php 
-
-echo "user_pseudo : ".$user_pseudo; echo "<br>";
-echo "user_id : ".$user_id; echo "<br>";
-echo "gr_champ : ".$gr_champ; echo "<br>";
-echo "pageA : ".$page; echo "<br>";
-echo "<br>";
 include ("avant.php");
 
  ?>
