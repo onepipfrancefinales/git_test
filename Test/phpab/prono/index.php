@@ -130,6 +130,12 @@ if (isset($_POST['f_prono_6'])) {$f_prono_6=$_POST['f_prono_6'];} else {$f_prono
 if (isset($_POST['f_prono_7'])) {$f_prono_7=$_POST['f_prono_7'];} else {$f_prono_7='';}
 if (isset($_POST['f_prono_8'])) {$f_prono_8=$_POST['f_prono_8'];} else {$f_prono_8='';}
 if (isset($_POST['f_prono_9'])) {$f_prono_9=$_POST['f_prono_9'];} else {$f_prono_9='';}
+
+
+
+
+
+
 if (isset($_POST['id_match_0'])) {$id_match_0=$_POST['id_match_0'];} else {$id_match_0='';}
 if (isset($_POST['id_match_1'])) {$id_match_1=$_POST['id_match_1'];} else {$id_match_1='';}
 if (isset($_POST['id_match_2'])) {$id_match_2=$_POST['id_match_2'];} else {$id_match_2='';}

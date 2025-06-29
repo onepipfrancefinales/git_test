@@ -53,7 +53,7 @@ function ValideGrille(tot) {
 </SCRIPT>
 <?php
 //nombre de matchs à afficher
-$nb_matchs = 10;
+$nb_matchs = 15;
 if (isset($debut)) $debut = $debut;else $debut = 0;
 if (isset($_REQUEST['debut'])) {  $debut = $_REQUEST['debut'];} else { $debut = '';}
 

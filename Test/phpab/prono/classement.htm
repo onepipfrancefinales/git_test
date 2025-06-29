@@ -20,8 +20,12 @@
           <td class="blanc bold">
             <?php echo PRONO_CLASSEMENT_PARTICIPATIONS; ?>
           </td>
+          <td class="blanc bold">
+            <?php echo "Totaux"; ?>
+          </td>
         </tr>
         <?php classement ($gr_champ, $type, $user_pseudo, $idconnect);  ?>
+        <?php //affiche_points ($user_id, $gr_champ, $idconnect);?>
       </table>
     </td>
   </tr>

@@ -24,7 +24,7 @@ function affiche_points ($user_id, $gr_champ, $idconnect)
     $points=$row[0];
     $participation=$row[1];
   }
-  echo "pts +participation ;".$points + $participation;
+  echo $points + $participation;
 
 }
 
@@ -59,9 +59,9 @@ function affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect)
   $result=$idconnect->query("SELECT id_prono
           FROM phpab_clmnt_pronos, phpab_membres
           WHERE phpab_membres.id=phpab_clmnt_pronos.id_membre 
-		  AND id_champ='$gr_champ' AND type='mensuel_en_cours' 
-		  AND id_champ='$gr_champ' 
-		  ORDER by points desc, participation desc, phpab_membres.pseudo");
+		      AND id_champ='$gr_champ' AND type='mensuel_en_cours' 
+		      AND id_champ='$gr_champ' 
+		      ORDER by points desc, participation desc, phpab_membres.pseudo");
   //$result=mysql_query($query) or die (mysql_error());
   $i = "1";
   while ($row=mysqli_fetch_array($result))
@@ -456,15 +456,17 @@ $result=$idconnect->query("SELECT pseudo, points, participation
 //}
 //$result=mysql_query($query) or die ("probleme " .mysql_error());
 $i=1;
+
 while ($row=mysqli_fetch_array($result))
 {
+$totaux = $row[1] + $row[2] ;
  echo "<tr><td class=\"blanc\">$i</td>";
 
  if ($user_pseudo==$row[0]) echo "<td class=\"blanc bold\">$row[0]</td>";
  else  echo "<td class=\"blanc\">$row[0]</td>";
  echo "<td class=\"blanc\">$row[1]</td>";
- echo "<td class=\"blanc\">$row[2]</td></tr>";
-
+ echo "<td class=\"blanc\">$row[2]</td>";
+ echo "<td class=\"blanc\">$totaux</td>  </tr>";
  $i++;
 }
 if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><br><a href=\"index.php?page=classement&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
