@@ -1,5 +1,6 @@
 <h1 align="center">Mise à jour de la table bdSaison</h1>
-<br/><br/>
+<div align="center">Insertion de données dans la colonne 'En_cours' <br>
+les fichiers sont a récupèrer dans ligues 20xx-20xx/maj des rencontres A RECUPERER</div><br/>
  <?php
  // if (isset ($_GET['annee'])) $annee = $_GET['annee']; else $annee = "Saisir la saison dans l'url (Exemple : &annee=2022)";
  if (isset ($_GET['info'])) $info = $_GET['info']; else $info = "aucune division s&eacute;lectionn&eacute;e";

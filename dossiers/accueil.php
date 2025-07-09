@@ -59,7 +59,7 @@
   </tr>
   <tr>
     <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
-      Effectifs de la saison 2024-2025
+      Effectifs de la saison 2026-2026
     </td>
   </tr>
   <tr>
@@ -112,7 +112,7 @@
   <tr>
     <td colspan="2" class="size5 borderWidth1 ">
       <br>
-    <?php include "championsAnnee2024.php";  ?>
+    <?php include "championsAnnee2025.php";  ?>
     <br>
     </td>
    

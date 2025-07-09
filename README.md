@@ -28,14 +28,11 @@ Mdp :
            Git      
 
 Adresse : https://github.com/onepipfrancefinales/git_test/tree/domaine.fr
-
 identifiant :  git_test 
-
 Mdp : Laurent1969&
 
 
 stockage 
-
 google drive
 onepipthib
 

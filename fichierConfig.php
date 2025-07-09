@@ -66,7 +66,7 @@ $tableauRES_OCC2= array(209181, 209182, 209183, 209184, 209185, 209186, 209187, 
 //***************      TABLE PL   ***********************************
 
 //Bourgogne Franche Comté
-$tableauBFC = array(110171, 110172, 110181,  110191, 110192, 110193);
+$tableauBFC = array(110171, 110172, 110181, 110182,  110191, 110192, 110193);
 //Bretagne
 $tableauBRE = array(120171, 120181, 120191, 120192);
 //Centre Val de Loire

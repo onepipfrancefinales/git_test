@@ -15,112 +15,112 @@
 <body>
   <?php
   // ***** Fédérales *****	
-  $TOP14 = 21979;
-  $PROD2 = 21980;
-  $NAT1 = 21949;
-  $NAT2 = 21950;
+  $TOP14 = 20000;
+  $PROD2 = 20000;
+  $NAT1 = 20000;
+  $NAT2 = 20000;
 
-  $FED1 = 21948;
-  $FED2 = 21947;
-  $FED3 = 21946;
-  $FED1B = 21968;
-  $FED2B = 21983;
-  $FED3B = 21967;
+  $FED1 = 20000;
+  $FED2 = 20000;
+  $FED3 = 20000;
+  $FED1B = 20000;
+  $FED2B = 20000;
+  $FED3B = 20000;
 
   // ***** Féminines *****					
 
-  $FEMH = 21963;
-  $FEMPH = 21964;
-  $FEMS1 = 21965;
+  $FEMH = 20000;
+  $FEMPH = 20000;
+  $FEMS1 = 20000;
   //	$FEMS2 = $row[3];
   //	$FEMS3 = $row[4];
   //	$FEMS4 = $row[5];
 
   // ***** Auvergne Rhône Alpes *****	
-  $ARAH = 21991;
-  $ARAPH = 21971;
-  $ARAS1 = 21986;
-  $ARAResH = 21992;
-  $ARAResPH = 21985;
+  $ARAH = 20000;
+  $ARAPH = 20000;
+  $ARAS1 = 20000;
+  $ARAResH = 20000;
+  $ARAResPH = 20000;
 
   // ***** Bretagne *****									
-  $BREH = 22023;
-  $BREPH = 22024;
-  $BRES1 = 22025;
-  $BREResH = 22030;
+  $BREH = 20000;
+  $BREPH = 20000;
+  $BRES1 = 20000;
+  $BREResH = 20000;
   $BREResPH = 0;
 
   // ***** Bourgogne *****															
-  $BFCH = 21955;
-  $BFCPH = 21957;
-  $BFCS1 = 21959;
-  $BFCResH = 21956;
-  $BFCResPH = 21958;
+  $BFCH = 22406;
+  $BFCPH = 22415;
+  $BFCS1 = 20000;
+  $BFCResH = 22418;
+  $BFCResPH = 22416;
 
   // ***** centre val de loire *****					
-  $CVLH = 22010;
-  $CVLPH = 22011;
-  $CVLS1 = 22012;
-  $CVLResH = 22009;
+  $CVLH = 20000;
+  $CVLPH = 20000;
+  $CVLS1 = 20000;
+  $CVLResH = 20000;
   $CVLResPH = 0;
 
   // ***** Grand Est *****	
-  $GESH = 21940;
-  $GESPH = 21941;
-  $GESS1 = 21942;
-  $GESResH = 22036;
-  $GESResPH = 22038;
+  $GESH = 20000;
+  $GESPH = 20000;
+  $GESS1 = 20000;
+  $GESResH = 20000;
+  $GESResPH = 20000;
 
   // ***** Hauts de France *****					
-  $HDFH = 22016;
-  $HDFPH = 22027;
-  $HDFS1 = 22029;
-  $HDFResH = 22026;
-  $HDFResPH = 22028;
+  $HDFH = 20000;
+  $HDFPH = 20000;
+  $HDFS1 = 20000;
+  $HDFResH = 20000;
+  $HDFResPH = 20000;
 
   // ***** ile de france *****							
-  $IDFH = 21987;
-  $IDFPH = 21988;
-  $IDFS1 = 22032;
-  $IDFResH = 21989;
+  $IDFH = 20000;
+  $IDFPH = 20000;
+  $IDFS1 = 20000;
+  $IDFResH = 20000;
   $IDFResPH = 0;
 
   // ***** Normandie *****	
-  $NORH = 21951;
-  $NORPH = 21953;
-  $NORS1 = 22003;
-  $NORS2 = 22004;
-  $NORResH = 21952;
-  $NORResPH = 21954;
+  $NORH = 20000;
+  $NORPH = 20000;
+  $NORS1 = 20000;
+  $NORS2 = 20000;
+  $NORResH = 20000;
+  $NORResPH = 20000;
 
   // ***** Nouvelle Aquitaine *****				
-  $NAQH = 21974;
-  $NAQPH = 21975;
-  $NAQS1 = 21981;
-  $NAQS2 = 21990;
-  $NAQResH = 21982;
-  $NAQResPH = 21984;
+  $NAQH = 20000;
+  $NAQPH = 20000;
+  $NAQS1 = 20000;
+  $NAQS2 = 20000;
+  $NAQResH = 20000;
+  $NAQResPH = 20000;
 
   // ***** Occitanie *****		
-  $OCCH = 22018;
-  $OCCPH = 22020;
-  $OCCS1 = 22022;
-  $OCCResH = 22019;
-  $OCCResPH = 22021;
+  $OCCH = 20000;
+  $OCCPH = 20000;
+  $OCCS1 = 20000;
+  $OCCResH = 20000;
+  $OCCResPH = 20000;
 
   // ***** Pays de la Loire *****		
-  $PDLH = 21961;
-  $PDLPH = 22005;
-  $PDLS1 = 21960;
-  $PDLResH = 21962;
+  $PDLH = 20000;
+  $PDLPH = 20000;
+  $PDLS1 = 20000;
+  $PDLResH = 20000;
   $PDLResPH = 0;
 
   // ***** Provence *****	
-  $PCAH = 21998;
-  $PCAPH = 21999;
-  $PCAS1 = 22000;
-  $PCAResH = 22001;
-  $PCAResPH = 22002;
+  $PCAH = 20000;
+  $PCAPH = 20000;
+  $PCAS1 = 20000;
+  $PCAResH = 20000;
+  $PCAResPH = 20000;
 
   $adresseFFR ="https://ovale2.ffr.fr/Competitions/Resultats/View/"
   ?>
