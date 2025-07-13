@@ -10,6 +10,7 @@
 </p>
 <p class="equipe"><br>
 	<?php palmaresParAnnee($annee, "bdequipe2", 220, 280, $bdd);?>
+	<?php palmaresParAnnee($annee, "bdequipe2", 9180, 9180, $bdd);?>
 </p>
 <br>
 <br>
@@ -30,12 +31,16 @@
 <p class="equipe">
 	<?php
 	// Base de données modifiées
-	//palmaresParAnnee($annee, "bdjeunes" , 360, 380, $bdd);
-	palmaresParAnneeligne($annee, "bdjeunesligne", 360, 380, $bdd);
+	palmaresParAnnee($annee, "bdjeunes" , 360, 380, $bdd);
+	//palmaresParAnneeligne($annee, "bdjeunesligne", 360, 380, $bdd);
 
 	?>
 </p>
 <br><br>
+
+<?php if ($annee<2017)
+{
+	?>
 <p class="annee"> Challenges</p>
 <br>
 <p class="equipe">
@@ -43,4 +48,12 @@
 	<?php 
 	palmaresParAnneeligne($annee, "bdchallengesligne", 370, 480, $bdd);
 	?>
+
+
+
 </p>
+
+<?php
+}
+?>
+<br>

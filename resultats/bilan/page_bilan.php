@@ -40,7 +40,7 @@ traitementDesScores($equipe, $phpComite, $bdd);
   <meta charset="utf-8">
 
   <link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/league.css">
-  <link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/leaguePerso.css">
+  <!--<link type="text/css" rel="stylesheet" href="../../Phpleague/<?php echo $comite; ?>/leaguePerso.css">-->
   <link type="text/css" rel="stylesheet" href="bilan.css">
   <!-- <link type="text/css" rel="stylesheet" href="../resultats.css">-->
   <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
@@ -87,9 +87,7 @@ traitementDesScores($equipe, $phpComite, $bdd);
           <tr>
             <td><?php include("../../comitebas.php"); ?> </td>
           </tr>
-          <tr>
-            <td><?php include("../../pub/pub1.php"); ?> </td>
-          </tr>
+         
           <tr>
             <td> <?php include("../../bas.php"); ?> </td>
           </tr>

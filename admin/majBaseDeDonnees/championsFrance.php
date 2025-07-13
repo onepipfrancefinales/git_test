@@ -42,14 +42,12 @@
 	$pffVice = "Vice champion de France";
 	$pffCham = "Champion de France";
 
-	if (isset($nomDivision))
-		;
-	else
-		$nomDivision = "";
+//	if (isset($nomDivision));	else	$nomDivision = "";
 
 	$reponse = $bdd->query("SELECT division, annee
 								FROM bddivisions
-								WHERE id = $division  ");
+								WHERE id = $division  
+								ORDER BY `annee` ASC");
 
 	while ($row = $reponse->fetch()) {
 		$nomDivision = $row[0];
@@ -563,10 +561,12 @@ dans la table bdsaison";
 		}
 		echo "<br/>";
 		echo "<br/>";
+		
 		//  traitement du champion
-		$message = "Champion de France";
-		echo "--------------";
-		echo "<br/>";
+		
+		//echo "--------------";
+		//echo "<br/>";
+		/*
 		echo "message : " . $message;
 		echo "<br/>";
 		echo "champion : " . $tabFinaleChamp[0];
@@ -575,13 +575,17 @@ dans la table bdsaison";
 		echo "<br/>";
 		echo "colonne à completer :" . $colonneACompleter;
 		echo "<br/>";
+		*/
 		$equipeIdReduit = substr($tabFinaleChamp[0], 2, 5);
+		
+		/*
 		echo "Equipe réduit : " . $equipeIdReduit;
 		echo "<br/>";
 		echo "--------------";
 		echo "<br/>";
-
+*/
 		//	echo $equipeIdReduit.' '.$message.' '.$nomDivision;	echo "<br/>";
+		$message = "Champion de France";
 		$messageChampion = $message . ' ' . $nomDivision;
 
 		$bdd->exec("UPDATE bdsaisons
@@ -635,19 +639,21 @@ dans la table bdsaison";
 			echo "<br/>";
 
 			echo "<br/>";
-			echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . '(' . $ligue1 . ')' . ';' . $nomEquipeVice . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "A";
+			echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';'
+			 . '(' . $ligue1 . ')' . ';' . $nomEquipeVice . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "A", 'commentaire';
 			echo "<br />";
-			echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "A";
-/*
+			echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';'
+			 . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "A", 'commentaire';
+
 			$bdd->exec("INSERT INTO  bdequipe1
 			VALUES ( '$id1', '$annee', '$nomDivision', 'Champion', '$nomEquipeChamp', '$nomEquipeChamp', '$nomEquipeChamp',
-			'$ligue1', '$nomEquipeVice', '$ligue2', '$score1', '$score2', '$titreNational', '$division', '$division', 'A'),
+			'$ligue1', '$nomEquipeVice', '$ligue2', '$score1', '$score2', '$titreNational', '$division', '$division', 'A', ''),
 			
 			 ( '$id2', '$annee', '$nomDivision', 'Vice champion', '$nomEquipeVice', '$nomEquipeVice', '$nomEquipeVice',
-			'$ligue2', '-', '-', '$score1', '$score2', '$titreNational', '$division', '$division', 'A')
+			'$ligue2', '-', '-', '$score1', '$score2', '$titreNational', '$division', '$division', 'A', '')
 			 ");
-*/
-		} elseif ($division > 220 and $division < 280) {
+
+		} elseif ($division > 220 and $division < 280 ) {
 
 
 			echo "<br/>";
@@ -655,18 +661,18 @@ dans la table bdsaison";
 			echo "<br/>";
 			//equipe 2 bdequipe2 (225,230,240,250,260,270)
 	
-			echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . '(' . $ligue1 . ')' . ';' . $nomEquipeVice . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "B";
+			echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . '(' . $ligue1 . ')' . ';' . $nomEquipeVice . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "B", 'commentaire';
 			echo "<br />";
-			echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "B";
-/*
+			echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "B", 'commentaire';
+
 			$bdd->exec("INSERT INTO  bdequipe2
 			VALUES ( '$id1', '$annee', '$nomDivision', 'Champion', '$nomEquipeChamp', '$nomEquipeChamp', '$nomEquipeChamp',
-			'$ligue1', '$nomEquipeVice', '$ligue2', '$score1', '$score2', '$titreNational', '$division', '$division', 'B'),
+			'$ligue1', '$nomEquipeVice', '$ligue2', '$score1', '$score2', '$titreNational', '$division', '$division', 'B', ''),
 			
 			 ( '$id2', '$annee', '$nomDivision', 'Vice champion', '$nomEquipeVice', '$nomEquipeVice', '$nomEquipeVice',
-			'$ligue2', '-', '-', '$score1', '$score2', '$titreNational', '$division', '$division', 'B')
+			'$ligue2', '-', '-', '$score1', '$score2', '$titreNational', '$division', '$division', 'B', '')
 			 ");
-*/
+
 
 
 		} elseif ($division > 270 and $division < 320) {
@@ -675,18 +681,18 @@ dans la table bdsaison";
 			echo "<br/>";
 			//fem bdfem (280,285,290,295)
 	
-			echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . '(' . $ligue1 . ')' . ';' . $nomEquipeVice . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "F";
+			echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . '(' . $ligue1 . ')' . ';' . $nomEquipeVice . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "F". ';' . 'commentaire';
 			echo "<br />";
-			echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "F";
-/*
+			echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . "F". ';' . 'commentaire';
+
 			$bdd->exec("INSERT INTO  bdfem
 			VALUES ( '$id1', '$annee', '$nomDivision', 'Champion', '$nomEquipeChamp', '$nomEquipeChamp', '$nomEquipeChamp',
-			'$ligue1', '$nomEquipeVice', '$ligue2', '$score1', '$score2', '$titreNational', '$division', '$division', 'F'),
+			'$ligue1', '$nomEquipeVice', '$ligue2', '$score1', '$score2', '$titreNational', '$division', '$division', 'F', ''),
 			
 			 ( '$id2', '$annee', '$nomDivision', 'Vice champion', '$nomEquipeVice', '$nomEquipeVice', '$nomEquipeVice',
-			'$ligue2', '-', '-', '$score1', '$score2', '$titreNational', '$division', '$division', 'F')
+			'$ligue2', '-', '-', '$score1', '$score2', '$titreNational', '$division', '$division', 'F', '')
 			 ");
-*/
+
 		} elseif ($division > 320 and $division < 380) {
 		
 			echo " Enregistrement de la finale dans la table bdjeunes ";
@@ -694,18 +700,18 @@ dans la table bdsaison";
 			//jeunes bdjeunes (juniors --> 325, 330 ----- cadets --> 360, 365, 370)
 			if ($division < 360)	$constante = "D";	else	$constante = "E";
 		
-			echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . '(' . $ligue1 . ')' . ';' . $nomEquipeVice . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . $constante;
+			echo $id1 . ';' . $annee . ';' . $nomDivision . ';' . "Champion" . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . $nomEquipeChamp . ';' . '(' . $ligue1 . ')' . ';' . $nomEquipeVice . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . $constante.';'. 'commentaire';
 			echo "<br />";
-			echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . $constante;
-/*
+			echo $id2 . ';' . $annee . ';' . $nomDivision . ';' . "Vice champion" . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . $nomEquipeVice . ';' . ';' . ';' . '(' . $ligue2 . ")" . ';' . $score1 . ';' . $score2 . ';' . $titreNational . ';' . substr($division, -3) . ';' . substr($division, -3) . ';' . $constante .';'. 'commentaire';
+
 			$bdd->exec("INSERT INTO  bdjeunes
 			VALUES ( '$id1', '$annee', '$nomDivision', 'Champion', '$nomEquipeChamp', '$nomEquipeChamp', '$nomEquipeChamp',
-			'$ligue1', '$nomEquipeVice', '$ligue2', '$score1', '$score2', '$titreNational', '$division', '$division', '$constante'),
+			'$ligue1', '$nomEquipeVice', '$ligue2', '$score1', '$score2', '$titreNational', '$division', '$division', '$constante', ''),
 			
 			 ( '$id2', '$annee', '$nomDivision', 'Vice champion', '$nomEquipeVice', '$nomEquipeVice', '$nomEquipeVice',
-			'$ligue2', '-', '-', '$score1', '$score2', '$titreNational', '$division', '$division','$constante')
+			'$ligue2', '-', '-', '$score1', '$score2', '$titreNational', '$division', '$division','$constante', '')
 			 ");
-*/
+
 		}
 	}
 	?>

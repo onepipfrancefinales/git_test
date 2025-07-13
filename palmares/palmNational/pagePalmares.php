@@ -88,7 +88,7 @@ while ($donnees =  $reponse->fetch()) {
 					//230-> Espoirs Elite
 					//232 -> Espoirs Nationaux
 					//235 -> Espoirs Fédéraux
-				$tabDivisions = array('225','230','235', '240','245', '250', '260', '270');
+				$tabDivisions = array('225','230','235', '240','245', '250', '260', '270', '9180');
 				$table ="bdequipe2";
 				$titre = "Champions de France";
 				}
@@ -100,6 +100,7 @@ while ($donnees =  $reponse->fetch()) {
 					}
 				// equipe jeunes
 				else if ($division >300 and $division < 380) {
+					
 					$tabDivisions = array( '310', '320', '325', '330','340','350','360','365','370','375');
 					$table ="bdjeunes";
 					$titre = "Champions de France";

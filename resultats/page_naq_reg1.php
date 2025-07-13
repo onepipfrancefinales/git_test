@@ -148,7 +148,7 @@ $comiteNom = "Cote d'Argent"; ?>
             $nomSerie = "(Ex 3me/ 4me série)";
 
             echo "  <br>" . "<br>";
-            echo "<h5>" .  $competition . " - " . "Poule " . (substr($champ, -1)) - 4;
+            echo "<h5>" .  $competition . " - " . "Poule " . (substr($champ, -1)) ;
             echo "<br>"; ?>
 
             <span class="size2"><?php echo $nomSerie; ?> </span>

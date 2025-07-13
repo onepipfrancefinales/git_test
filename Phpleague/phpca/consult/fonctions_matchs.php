@@ -509,6 +509,10 @@ function oppositionsDetaillees($champ, $id_equipe, $smart, $bdd)
 
 function calendrier($champ, $smart, $bdd)
 {
+  
+   echo "Calendrier de la saison indisponible pour le moment.";
+                   echo "<br>";  echo "<br>";
+  /*
   //nbre d'equipes
   $result = $bdd->query("SELECT COUNT(*) 
 					  FROM phpca_equipes 
@@ -522,6 +526,7 @@ function calendrier($champ, $smart, $bdd)
 					  WHERE id_champ='$champ'");
   //nbre de journees      
   $tabNbre_journees = $result->fetch();
+    if ($tabNbre_journees[0] > 0) {
   $journee_milieu = $tabNbre_journees[0] / 2;
 
   $color = 0;
@@ -634,13 +639,20 @@ function calendrier($champ, $smart, $bdd)
                   $x++;
                 }
                 echo "</table></td></tr></table>";
+
+               } else {
+
+                   echo "Calendrier de la saison indisponible pour le moment.";
+                   echo "<br>";  echo "<br>";
+                }
+                   */
               }
 
 
 
               //************************
               // *** REMPLI LA TABLE CLMNT
-            
+            /*
               function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
               {
 
@@ -948,6 +960,8 @@ WHERE ext.id_champ='$champ'
                 //$resultat=mysqli_query($requete) or die (mysqli_error());
                 //mysql_query("UNLOCK TABLES") or die (mysql_error());
               }
+
+              */
               // fonction classement
               function clmnt($champ, $smart, $bdd)
               {
@@ -1060,7 +1074,7 @@ WHERE ext.id_champ='$champ'
               }
 
 
-
+/*
               function Buteur($legende, $requete, $type, $EquipeFetiche, $champ, $debut, $fin, $equipe, $complet)
               {
                 echo "<table class=\"tablephpca2\" align=\"center\" cellspacing=\"0\" width=\"80%\" bgcolor=\"#FFFFFF\"><tr class=\"trphpca3\"><th colspan=\"11\">" . $legende . "<br></th></tr>\n";
@@ -1113,7 +1127,7 @@ WHERE ext.id_champ='$champ'
                 }
                 echo "</table>";
               }
-
+*/
 
               /////////////////////////////////////////////////////////////////////////////////////////////////
               // Titre       : Add-on Gestion des clubs (fiches clubs), mini-classement,                     //
@@ -1134,6 +1148,8 @@ WHERE ext.id_champ='$champ'
 
 
               // Affichage renseignements utilis�e dans consult/club.php
+/*
+
               //function aff_rens ($id_classe, $id_clubs)
               //{
               //$query="SELECT phpca_donnee.id, phpca_donnee.nom, id_rens, id_clubs, phpca_rens.id, phpca_rens.nom, phpca_rens.id_classe, phpca_clubs.id, etat, phpca_donnee.url, phpca_rens.url
@@ -1157,7 +1173,8 @@ WHERE ext.id_champ='$champ'
               //                    else {echo "<b><a href=\"$row[10]\">$row[5]</a> :</b> <a href=\"$row[9]\">$row[1]</a><br>";}          
               //        }
               //        }
-
+*/
+/*
 
               function clmntmini($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $phpcaEAGUE_RACINE, $id_equipe_fetiche)
               {
@@ -1236,7 +1253,9 @@ WHERE ext.id_champ='$champ'
                 }
                 echo "</table>";
               }
+*/
 
+/*
               function clmnt_barre($legende, $type, $accession, $barrage, $relegation,  $champ, $requete, $lien, $id_equipe_fetiche)
               {
                 echo "<table class=\"tablephpca2\" align=\"center\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphpca3\"><th colspan=\"11\">" . $legende;
@@ -1323,7 +1342,8 @@ WHERE ext.id_champ='$champ'
                 }
                 echo "</table>\n";
               }
-
+*/
+/*
               function clmntmini_barre($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
               {
                 echo "<table class=tablephpca2 align=\"center\" cellspacing=\"0\" width=\"200\"><tr class=trphpca3><th colspan=10>" . $legendemini;
@@ -1417,7 +1437,8 @@ WHERE ext.id_champ='$champ'
 
                 echo "</table>";
               }
-
+*/
+/*
               function clmntred($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini, $champmini, $requetemini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
               {
                 echo "<table class=tablephpca2 align=\"center\" cellspacing=\"0\"  width=\"200\"><tr class=trphpca3><th colspan=10>" . $legendemini;
@@ -1476,7 +1497,8 @@ WHERE ext.id_champ='$champ'
 
                 echo "</table>";
               }
-
+*/
+/*
               function clmnt_barrered($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
               {
                 //mise en forme du mini classement
@@ -1543,7 +1565,8 @@ WHERE ext.id_champ='$champ'
                 }
                 echo "</table>";
               }
-
+*/
+/*
               function demande_champ()
               {
                 // pour quel championnat ?
@@ -1587,7 +1610,8 @@ WHERE ext.id_champ='$champ'
                 </form>
               <?php
               }
-
+*/
+/*
               function demande_equipe($champ)
               {
 
@@ -1616,4 +1640,6 @@ WHERE ext.id_champ='$champ'
                 echo "<input type=\"submit\" value=\"$button\">";
                 echo "</form>";
               }
+
+              */
               ?>

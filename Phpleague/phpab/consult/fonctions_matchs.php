@@ -202,28 +202,28 @@ function aff_journee($champ, $bdd)
 function aff_journeeSupp($champ, $bdd)
 {
 
- // cellule d'affichage des derniers r�sultats
- $color=0;
- $legende="Prochaine journée N°";
-  if (isset ($journee)) $journee = $journee; else $journee =($champ*1000)+01;
- $res3=$bdd->query("SELECT phpab_matchs.id_journee
+  // cellule d'affichage des derniers r�sultats
+  $color = 0;
+  $legende = "Prochaine journée N°";
+  if (isset($journee)) $journee = $journee;
+  else $journee = ($champ * 1000) + 01;
+  $res3 = $bdd->query("SELECT phpab_matchs.id_journee
 					FROM phpab_journees, phpab_matchs 
 					WHERE phpab_journees.id = phpab_matchs.id_journee 
 					AND phpab_matchs.buts_dom is not NULL 
 					AND phpab_matchs.buts_ext is not NULL
 					AND phpab_journees.id_champ='$champ'
 					ORDER BY phpab_matchs.id_journee asc");
-    
-        while ($row=$res3->fetch())
-        {
-        $journee=$row[0];
-        }
+
+  while ($row = $res3->fetch()) {
+    $journee = $row[0];
+  }
   //echo $journee; echo "</br>";
-  $numero=substr($journee,-2);
-  $journeeSupp = $numero+1;
+  $numero = substr($journee, -2);
+  $journeeSupp = $numero + 1;
   //echo $journeeSupp;
 
- $result=$bdd->query("SELECT cldom.nom as cldom, clext.nom as clext, phpab_matchs.buts_dom, phpab_matchs.buts_ext,
+  $result = $bdd->query("SELECT cldom.nom as cldom, clext.nom as clext, phpab_matchs.buts_dom, phpab_matchs.buts_ext,
                         phpab_journees.date_prevue, cldom.id as cliddom, clext.id as clidext, date_reelle,
                         dom.id as eqdom, ext.id as eqext, phpab_matchs.id as id_match
                 FROM phpab_equipes as dom, phpab_equipes as ext, phpab_matchs, phpab_journees,
@@ -239,55 +239,62 @@ function aff_journeeSupp($champ, $bdd)
                         AND clext.nom!='exempte'
                         ORDER BY date_reelle asc");
 
-//mise en forme tableau oppositions
-echo "<br>";
-echo "<table class=\"marginAuto tablephpab2 width90PC \" ><tr>
+  //mise en forme tableau oppositions
+  echo "<br>";
+  echo "<table class=\"marginAuto tablephpab2 width90PC \" ><tr>
 <td><table class=\"marginAuto width100PC borderSpacing\"  >\n";
-$x=1;
-$minute = 0;$heure = 0;  $jour = 0; $mois = 0;$annee = 0;
+  $x = 1;
+  $minute = 0;
+  $heure = 0;
+  $jour = 0;
+  $mois = 0;
+  $annee = 0;
 
-    while ($row=$result->fetch())
-    {
-     $clubs_nom = $row[0];
-     $clubs_nom1 = $row[1];
-	 
-       if ($x==1)
-       {echo "<tr class=\"trphpab3\">\n<th colspan=\"3\"><b>".$legende." ". $journeeSupp."</b></th>\n</tr>";}
+  while ($row = $result->fetch()) {
+    $clubs_nom = $row[0];
+    $clubs_nom1 = $row[1];
 
-       //$bgcolor="#FF0000";
-
-       if (($color%2)==0) {$classe="ligne1";} else {$classe="ligne2";}
-          
-	   if (!($annee==substr($row[7],0,4)) or !($mois==substr($row[7],5,2)) or !($jour==substr($row[7],8,2)) or !($minute==substr($row[7],14,2)) or !($heure==substr($row[7],11,2)))
-       {
-        $minute = substr($row[7],14,2); // on r�cup�re la minute
-        $heure = substr($row[7],11,2); // on r�cup�re l'heure
-        $jour = substr($row[7],8,2); // on r�cup�re le jour
-        $mois = substr($row[7],5,2); // puis le mois
-        $annee = substr($row[7],0,4); // et l'annee
-
-        setlocale(LC_TIME, 'fr_FR.utf8','fra');
-        $t= mktime($heure,$minute,0,$mois,$jour,$annee);
-
-        echo "<tr class=\"backgroundRed colorWhite\"><td colspan=\"3\" class=\"colorWhite\">";
-
-        echo ucfirst(strftime("%A ",$t));
-        echo strftime("%d %B ",$t);
-        echo strftime("- %Hh%M",$t);
-        echo "</td></tr>";
-
-       // $color_cell=$bgcolor;
-       }
-	
-     echo "<tr class=\"$classe\">";       
-
-	 echo "<td class=\"domicile\">".$clubs_nom."</td>";	
-     echo "<td class=\"tiret\">"."-"."</td>";	 
-	 echo "<td class=\"exterieur\">".$clubs_nom1."</td>";   
-     echo "</tr>\n";
-     $x++;
-     $color+=1;
+    if ($x == 1) {
+      echo "<tr class=\"trphpab3\">\n<th colspan=\"3\"><b>" . $legende . " " . $journeeSupp . "</b></th>\n</tr>";
     }
+
+    //$bgcolor="#FF0000";
+
+    if (($color % 2) == 0) {
+      $classe = "ligne1";
+    } else {
+      $classe = "ligne2";
+    }
+
+    if (!($annee == substr($row[7], 0, 4)) or !($mois == substr($row[7], 5, 2)) or !($jour == substr($row[7], 8, 2)) or !($minute == substr($row[7], 14, 2)) or !($heure == substr($row[7], 11, 2))) {
+      $minute = substr($row[7], 14, 2); // on r�cup�re la minute
+      $heure = substr($row[7], 11, 2); // on r�cup�re l'heure
+      $jour = substr($row[7], 8, 2); // on r�cup�re le jour
+      $mois = substr($row[7], 5, 2); // puis le mois
+      $annee = substr($row[7], 0, 4); // et l'annee
+
+      setlocale(LC_TIME, 'fr_FR.utf8', 'fra');
+      $t = mktime($heure, $minute, 0, $mois, $jour, $annee);
+
+      echo "<tr class=\"backgroundRed colorWhite\"><td colspan=\"3\" class=\"colorWhite\">";
+
+      echo ucfirst(strftime("%A ", $t));
+      echo strftime("%d %B ", $t);
+      echo strftime("- %Hh%M", $t);
+      echo "</td></tr>";
+
+      // $color_cell=$bgcolor;
+    }
+
+    echo "<tr class=\"$classe\">";
+
+    echo "<td class=\"domicile\">" . $clubs_nom . "</td>";
+    echo "<td class=\"tiret\">" . "-" . "</td>";
+    echo "<td class=\"exterieur\">" . $clubs_nom1 . "</td>";
+    echo "</tr>\n";
+    $x++;
+    $color += 1;
+  }
   echo "</table></td></tr></table>\n<br>\n";
   echo "<br>";
 }
@@ -520,15 +527,17 @@ function calendrier($champ, $smart, $bdd)
   $result = $bdd->query("SELECT COUNT(*) 
 					  FROM phpab_journees 
 					  WHERE id_champ='$champ'");
-  //nbre de journees      
+  //nbre de journees 
+
   $tabNbre_journees = $result->fetch();
+  //echo "test tabNbre_journees : " . $tabNbre_journees[0];
 
+  if ($tabNbre_journees[0] > 0) {
+    $journee_milieu = $tabNbre_journees[0] / 2;
 
-  $journee_milieu = $tabNbre_journees[0] / 2;
+    $color = 0;
 
-  $color = 0;
-
-  $resultats2 = $bdd->query("SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.id, phpab_matchs.date_reelle
+    $resultats2 = $bdd->query("SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.id, phpab_matchs.date_reelle
              FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT 
              WHERE phpab_clubs.id=phpab_equipes.id_club 
              AND CLEXT.id=EXT.id_club
@@ -539,16 +548,16 @@ function calendrier($champ, $smart, $bdd)
              AND (CLEXT.nom='exempte' or phpab_clubs.nom='exempte')
              ORDER by phpab_journees.numero");
 
-  $i = 0;
-  while ($row2 = $resultats2->fetch()) {
-    $row2[0] = stripslashes($row2[0]);
-    $row2[1] = stripslashes($row2[1]);
-    $resultats_0[$i] = $row2[0];
-    $resultats_1[$i] = $row2[1];
-    $i++;
-  }
+    $i = 0;
+    while ($row2 = $resultats2->fetch()) {
+      $row2[0] = stripslashes($row2[0]);
+      $row2[1] = stripslashes($row2[1]);
+      $resultats_0[$i] = $row2[0];
+      $resultats_1[$i] = $row2[1];
+      $i++;
+    }
 
-  $result = $bdd->query("SELECT phpab_journees.numero, phpab_journees.date_prevue, cldom.nom, clext.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, dom.id, ext.id
+    $result = $bdd->query("SELECT phpab_journees.numero, phpab_journees.date_prevue, cldom.nom, clext.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, dom.id, ext.id
         FROM phpab_journees, phpab_equipes as dom, phpab_equipes as ext, phpab_matchs, phpab_clubs as cldom, phpab_clubs as clext
         WHERE phpab_journees.id_champ='$champ'
         AND phpab_matchs.id_equipe_dom=dom.id
@@ -561,88 +570,92 @@ function calendrier($champ, $smart, $bdd)
         ORDER BY phpab_journees.numero");
 
 
-  if ($smart == false)
-    echo "<table width=\"50%\" align=\"center\"><tr><td>";
+    if ($smart == false)
+      echo "<table width=\"50%\" align=\"center\"><tr><td>";
 
-  $journee = 0;
-  $x = 2;
-  $i = 0;
+    $journee = 0;
+    $x = 2;
+    $i = 0;
 
-  while ($row = $result->fetch()) {
-    $row[2] = stripslashes($row[2]);
-    $row[3] = stripslashes($row[3]);
+    while ($row = $result->fetch()) {
+      $row[2] = stripslashes($row[2]);
+      $row[3] = stripslashes($row[3]);
 
-    if (($journee == "0")) {
-      $date = str_replace('^([0-9]{2,4})-([0-9]{1,2})-([0-9]{1,2})$', '\\3/\\2/\\1', $row[1]);
-      //changement de la date US en FR
-      $DateTime = DateTime::createFromFormat('Y-m-d', $date);
-      //$dateFR = $DateTime->format('d M Y');
+      if (($journee == "0")) {
+        $date = str_replace('^([0-9]{2,4})-([0-9]{1,2})-([0-9]{1,2})$', '\\3/\\2/\\1', $row[1]);
+        //changement de la date US en FR
+        $DateTime = DateTime::createFromFormat('Y-m-d', $date);
+        //$dateFR = $DateTime->format('d M Y');
     ?>
-      <br>
-      <table class="tablephpab2" cellspacing="0" width="290" align="center">
-        <tr class="trphpab3">
-          <td colspan="3" align="center"><b>
-              <font color="#FFFF00">
-              <?php echo ADMIN_COHERENCE_MSG2 . " " . $row[0] . CONSULT_MATCHS_MSG2 . $date . "</b></font>
+        <br>
+        <table class="tablephpab2" cellspacing="0" width="290" align="center">
+          <tr class="trphpab3">
+            <td colspan="3" align="center"><b>
+                <font color="#FFFF00">
+                <?php echo ADMIN_COHERENCE_MSG2 . " " . $row[0] . CONSULT_MATCHS_MSG2 . $date . "</b></font>
 				 </td>
 			   </tr>";
-            } elseif (!($journee == $row[0])) {
-              echo "</table><br>";
-              if ($journee == $journee_milieu) {
-                echo "</td><td align=\"center\">";
-              }
-              $date = str_replace('^([0-9]{2,4})-([0-9]{1,2})-([0-9]{1,2})$', '\\3/\\2/\\1', $row[1]);
-
-              //changement de la date US en FR
-              $DateTime = DateTime::createFromFormat('Y-m-d', $date);
-              //$dateFR = $DateTime->format('d M Y');
-
-              ?>
-                <table class="tablephpab2" cellspacing="0" width="290" align="center">
-                  <tr class="trphpab3">
-                    <td colspan="3" align="center"><b>
-                        <font color="#FFFF00">
-                        <?php echo ADMIN_COHERENCE_MSG2 . " " . $row[0] . CONSULT_MATCHS_MSG2 . $date . "</b></font></td></TR>";
-                        $x = 2;
-                      }
-
-                      $classe = "ligne2";
-                      if (($color % 2) == 0) $classe = "ligne1";
-
-                      echo "<tr class=\"$classe\">";  ?>
-                    <td class="cld1 nonGras"> <?php if ($row[4] > $row[5]) echo "<b>" . $row[2] . "</b>";
-                                              else echo $row[2];  ?> </td>
-                    <td align="center"><?php echo $row[4] . " - " . $row[5] . "</td>"; ?> </td>
-                    <td class="cld2 nonGras"> <?php if ($row[5] > $row[4]) echo "<b>" . $row[3] . "</b>";
-                                              else echo $row[3]; ?> </td>
-                  </tr>
-                  <?php
-                  if ($x == ($nb_equipe / 2)) {
-                    if (($color % 2) == 0) {
-                      $classe = "ligne2";
-                    } else {
-                      $classe = "ligne1";
-                    }
-                    if (isset($resultats_0[$i]) and $resultats_0[$i] == 'exempte') {
-                      echo "<tr class=$classe><td colspan=3>" . ADMIN_RESULTS_1 . " : $resultats_1[$i]</td></tr>";
-                    }
-                    if (isset($resultats_1[$i]) and $resultats_1[$i] == 'exempte') {
-                      echo "<tr class=$classe><td colspan=3>" . ADMIN_RESULTS_1 . " : $resultats_0[$i]</td></tr>";
-                    }
-                    $i++;
-                  }
-                  $color++;
-                  $journee = $row[0];
-                  $x++;
+              } elseif (!($journee == $row[0])) {
+                echo "</table><br>";
+                if ($journee == $journee_milieu) {
+                  echo "</td><td align=\"center\">";
                 }
-                echo "</table></td></tr></table>";
-              }
+                $date = str_replace('^([0-9]{2,4})-([0-9]{1,2})-([0-9]{1,2})$', '\\3/\\2/\\1', $row[1]);
 
+                //changement de la date US en FR
+                $DateTime = DateTime::createFromFormat('Y-m-d', $date);
+                //$dateFR = $DateTime->format('d M Y');
+
+                ?>
+                  <table class="tablephpab2" cellspacing="0" width="290" align="center">
+                    <tr class="trphpab3">
+                      <td colspan="3" align="center"><b>
+                          <font color="#FFFF00">
+                          <?php echo ADMIN_COHERENCE_MSG2 . " " . $row[0] . CONSULT_MATCHS_MSG2 . $date . "</b></font></td></TR>";
+                          $x = 2;
+                        }
+
+                        $classe = "ligne2";
+                        if (($color % 2) == 0) $classe = "ligne1";
+
+                        echo "<tr class=\"$classe\">";  ?>
+                      <td class="cld1 nonGras"> <?php if ($row[4] > $row[5]) echo "<b>" . $row[2] . "</b>";
+                                                else echo $row[2];  ?> </td>
+                      <td align="center"><?php echo $row[4] . " - " . $row[5] . "</td>"; ?> </td>
+                      <td class="cld2 nonGras"> <?php if ($row[5] > $row[4]) echo "<b>" . $row[3] . "</b>";
+                                                else echo $row[3]; ?> </td>
+                    </tr>
+                    <?php
+                    if ($x == ($nb_equipe / 2)) {
+                      if (($color % 2) == 0) {
+                        $classe = "ligne2";
+                      } else {
+                        $classe = "ligne1";
+                      }
+                      if (isset($resultats_0[$i]) and $resultats_0[$i] == 'exempte') {
+                        echo "<tr class=$classe><td colspan=3>" . ADMIN_RESULTS_1 . " : $resultats_1[$i]</td></tr>";
+                      }
+                      if (isset($resultats_1[$i]) and $resultats_1[$i] == 'exempte') {
+                        echo "<tr class=$classe><td colspan=3>" . ADMIN_RESULTS_1 . " : $resultats_0[$i]</td></tr>";
+                      }
+                      $i++;
+                    }
+                    $color++;
+                    $journee = $row[0];
+                    $x++;
+                  }
+                  echo "</table></td></tr></table>";
+                } else {
+
+                   echo "Calendrier de la saison indisponible pour le moment.";
+                   echo "<br>";  echo "<br>";
+                }
+              }
 
 
               //************************
               // *** REMPLI LA TABLE CLMNT
-            
+              /*    
               function db_clmnt($champ, $debut, $fin, $cache, $idconnect)
               {
 
@@ -674,7 +687,7 @@ function calendrier($champ, $smart, $bdd)
 
                 // victoires domicile
                 $resultats = $idconnect->query("SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
-WHERE dom.id_champ='$champ'
+      WHERE dom.id_champ='$champ'
       AND dom.id_club=phpab_clubs.id
       AND dom.id=phpab_matchs.id_equipe_dom
       AND buts_dom > buts_ext
@@ -701,7 +714,7 @@ WHERE dom.id_champ='$champ'
 
                 // Defaites domicile
                 $dom = $idconnect->query("SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
-WHERE dom.id_champ='$champ'
+    WHERE dom.id_champ='$champ'
       AND dom.id_club=phpab_clubs.id
       AND dom.id=phpab_matchs.id_equipe_dom
       AND buts_dom < buts_ext
@@ -728,7 +741,7 @@ WHERE dom.id_champ='$champ'
                 }
                 // Nuls domicile
                 $dom = $idconnect->query("SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
-WHERE dom.id_champ='$champ'
+  WHERE dom.id_champ='$champ'
       AND dom.id_club=phpab_clubs.id
       AND dom.id=phpab_matchs.id_equipe_dom
       AND buts_dom = buts_ext
@@ -757,7 +770,7 @@ WHERE dom.id_champ='$champ'
                 }
                 // Resultats à domicile
                 $result = $idconnect->query("SELECT phpab_clubs.nom FROM phpab_clubs, phpab_equipes, phpab_championnats
-WHERE phpab_equipes.id_champ=phpab_championnats.id
+  WHERE phpab_equipes.id_champ=phpab_championnats.id
       AND phpab_championnats.id='$champ'
       AND phpab_equipes.id_club=phpab_clubs.id");
 
@@ -767,7 +780,7 @@ WHERE phpab_equipes.id_champ=phpab_championnats.id
                 // RESULTATS EXTERIEURS :
                 // victoires exterieur
                 $dom = $idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
-WHERE ext.id_champ='$champ'
+  WHERE ext.id_champ='$champ'
       AND ext.id_club=phpab_clubs.id
       AND ext.id=phpab_matchs.id_equipe_ext
       AND buts_ext > buts_dom
@@ -795,7 +808,7 @@ WHERE ext.id_champ='$champ'
                 }
                 // Defaites exterieur
                 $dom = $idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
-WHERE ext.id_champ='$champ'
+  WHERE ext.id_champ='$champ'
       AND ext.id_club=phpab_clubs.id
       AND ext.id=phpab_matchs.id_equipe_ext
       AND buts_ext < buts_dom
@@ -823,7 +836,7 @@ WHERE ext.id_champ='$champ'
 
                 // Nuls exterieur
                 $dom = $idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
-WHERE ext.id_champ='$champ'
+  WHERE ext.id_champ='$champ'
       AND ext.id_club=phpab_clubs.id
       AND ext.id=phpab_matchs.id_equipe_ext
       AND buts_ext = buts_dom
@@ -950,6 +963,7 @@ WHERE ext.id_champ='$champ'
                 //$resultat=mysqli_query($requete) or die (mysqli_error());
                 //mysql_query("UNLOCK TABLES") or die (mysql_error());
               }
+                */
               // fonction classement
               function clmnt($champ, $smart, $bdd)
               {
@@ -1037,7 +1051,7 @@ WHERE ext.id_champ='$champ'
                     if ($x == 0) {
                       if ($smart == true) {
                         //	 echo "<a href=/smart/bilan/pagebilan.php?comite=".$comite."&amp;champ=".$champ."&amp;id_equipe=".$row['ID_EQUIPE']." target=\"_top\">$row[$x]</a>";
-                  ?>
+                    ?>
 
                         <a href="/smart/bilan/pagebilan.php?comite=<?php echo $comite; ?>&champ=<?php echo $champ; ?>&id_equipe=<?php echo $row['ID_EQUIPE']; ?>" target="_top"><?php echo $row[$x]; ?></a>
                       <?php
@@ -1047,7 +1061,7 @@ WHERE ext.id_champ='$champ'
 
                       ?>
                         <a href="/resultats/bilan/page_bilan.php?comite=<?php echo $comite; ?>&champ=<?php echo $champ; ?>&id_equipe=<?php echo $row['ID_EQUIPE']; ?>" target="_top"><?php echo $row[$x]; ?></a>
-                <?php
+              <?php
                       }
                     } else {
                       echo floatval($row[$x]);
@@ -1062,7 +1076,7 @@ WHERE ext.id_champ='$champ'
               }
 
 
-
+              /*
               function Buteur($legende, $requete, $type, $EquipeFetiche, $champ, $debut, $fin, $equipe, $complet)
               {
                 echo "<table class=\"tablephpab2\" align=\"center\" cellspacing=\"0\" width=\"80%\" bgcolor=\"#FFFFFF\"><tr class=\"trphpab3\"><th colspan=\"11\">" . $legende . "<br></th></tr>\n";
@@ -1115,7 +1129,7 @@ WHERE ext.id_champ='$champ'
                 }
                 echo "</table>";
               }
-
+*/
 
               /////////////////////////////////////////////////////////////////////////////////////////////////
               // Titre       : Add-on Gestion des clubs (fiches clubs), mini-classement,                     //
@@ -1160,7 +1174,7 @@ WHERE ext.id_champ='$champ'
               //        }
               //        }
 
-
+              /*
               function clmntmini($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $phpabEAGUE_RACINE, $id_equipe_fetiche)
               {
 
@@ -1238,23 +1252,24 @@ WHERE ext.id_champ='$champ'
                 }
                 echo "</table>";
               }
-
+*/
+              /*
               function clmnt_barre($legende, $type, $accession, $barrage, $relegation,  $champ, $requete, $lien, $id_equipe_fetiche)
               {
                 echo "<table class=\"tablephpab2\" align=\"center\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphpab3\"><th colspan=\"11\">" . $legende;
                 echo "</th></tr>\n<tr class=\"trphpab3\">
-<th align=\"center\">" . CLMNT_POSITION . "</th>
-<th align=\"left\">" . CLMNT_EQUIPE . "</th>
-<th align=\"left\">" . CLMNT_POINTS . "</th>\n";
+  <th align=\"center\">" . CLMNT_POSITION . "</th>
+  <th align=\"left\">" . CLMNT_EQUIPE . "</th>
+  <th align=\"left\">" . CLMNT_POINTS . "</th>\n";
                 echo "<th align=\"left\">" . CLMNT_JOUES . "</th>
-<th align=\"left\">" . CLMNT_VICTOIRES . "</th>
-<th align=\"left\">" . CLMNT_NULS . "</th>
-<th align=\"left\">" . CLMNT_DEFAITES . "</th>
-<th align=\"left\">" . CLMNT_BUTSPOUR . "</th>
-<th align=\"left\">" . CLMNT_BUTSCONTRE . "</th>
-<th align=\"left\">" . CLMNT_DIFF . "</th>
-<th align=\"left\">" . CLMNT_PEN . "</th>
-<th align=\"left\"></th></tr>\n";
+  <th align=\"left\">" . CLMNT_VICTOIRES . "</th>
+  <th align=\"left\">" . CLMNT_NULS . "</th>
+  <th align=\"left\">" . CLMNT_DEFAITES . "</th>
+  <th align=\"left\">" . CLMNT_BUTSPOUR . "</th>
+  <th align=\"left\">" . CLMNT_BUTSCONTRE . "</th>
+  <th align=\"left\">" . CLMNT_DIFF . "</th>
+  <th align=\"left\">" . CLMNT_PEN . "</th>
+  <th align=\"left\"></th></tr>\n";
 
                 $result = mysqli_query($requete) or die(mysqli_error());
                 $pl = 1;
@@ -1325,7 +1340,8 @@ WHERE ext.id_champ='$champ'
                 }
                 echo "</table>\n";
               }
-
+*/
+              /*
               function clmntmini_barre($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
               {
                 echo "<table class=tablephpab2 align=\"center\" cellspacing=\"0\" width=\"200\"><tr class=trphpab3><th colspan=10>" . $legendemini;
@@ -1419,15 +1435,16 @@ WHERE ext.id_champ='$champ'
 
                 echo "</table>";
               }
-
+*/
+              /*
               function clmntred($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini, $champmini, $requetemini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
               {
                 echo "<table class=tablephpab2 align=\"center\" cellspacing=\"0\"  width=\"200\"><tr class=trphpab3><th colspan=10>" . $legendemini;
                 echo "<tr class=trphpab3>
-<th align=\"center\">" . CLMNT_POSITION . "
-<th align=\"center\">" . CLMNT_EQUIPE . "
-<th align=\"left\">" . CLMNT_POINTS . "
-<th align=\"center\">" . CLMNT_JOUES . "";
+  <th align=\"center\">" . CLMNT_POSITION . "
+  <th align=\"center\">" . CLMNT_EQUIPE . "
+  <th align=\"left\">" . CLMNT_POINTS . "
+  <th align=\"center\">" . CLMNT_JOUES . "";
                 $result = mysqli_query($requetemini);
                 $pl = 1;
 
@@ -1478,16 +1495,17 @@ WHERE ext.id_champ='$champ'
 
                 echo "</table>";
               }
-
+*/
+              /*
               function clmnt_barrered($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $lienmini, $PHPLEAGUE_RACINE, $id_equipe_fetiche)
               {
                 //mise en forme du mini classement
                 echo "<table class=tablephpab2 align=\"center\"  cellspacing=\"0\" width=\"95%\"><tr class=trphpab3><th colspan=10>" . $legendemini;
                 echo "<tr class=trphpab3>
-<th align=\"center\">" . CLMNT_POSITION . "
-<th align=\"center\">" . CLMNT_EQUIPE . "
-<th align=\"left\">" . CLMNT_POINTS . "
-<th align=\"center\">" . CLMNT_JOUES . "";
+  <th align=\"center\">" . CLMNT_POSITION . "
+  <th align=\"center\">" . CLMNT_EQUIPE . "
+  <th align=\"left\">" . CLMNT_POINTS . "
+  <th align=\"center\">" . CLMNT_JOUES . "";
 
                 $result = mysqli_query($requetemini) or die(mysqli_error());
                 $pl = 1;
@@ -1545,7 +1563,8 @@ WHERE ext.id_champ='$champ'
                 }
                 echo "</table>";
               }
-
+*/
+              /*
               function demande_champ()
               {
                 // pour quel championnat ?
@@ -1589,7 +1608,8 @@ WHERE ext.id_champ='$champ'
                 </form>
               <?php
               }
-
+*/
+              /*
               function demande_equipe($champ)
               {
 
@@ -1617,5 +1637,8 @@ WHERE ext.id_champ='$champ'
                 echo "<input type=\"hidden\" name=\"champ\" value=\"$champ\">";
                 echo "<input type=\"submit\" value=\"$button\">";
                 echo "</form>";
-              }
+             
+            }
+
+            */
               ?>

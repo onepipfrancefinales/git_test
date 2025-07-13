@@ -120,6 +120,10 @@ if (isset($_POST['selection'])) {
 						$nomDivision = "4me série";
 				}
 
+				echo "<br>";echo "<br>";
+				echo "nom division : ".$nomDivision; echo "<br>";
+				echo "nom ligue : ".$nomLigue; echo "<br>";
+				echo "nom comite : ".$comite; echo "<br>";
 
 				$champ = "Champion " . $nomDivision . ' ligue ' . $nomLigue;
 				$vice = "Vice champion " . $nomDivision . ' ligue ' . $nomLigue;
@@ -144,7 +148,9 @@ if (isset($_POST['selection'])) {
 					$type = $row[0];
 				}
 
-?>
+				echo "type : ".$type; echo "<br>";
+
+         ?>
 
 				<font color="#FF0000" size="5"><b>
 						<?php
@@ -155,7 +161,7 @@ if (isset($_POST['selection'])) {
 						?>
 					</b></font>
 
-<?php
+      <?php
 
 				if ($type == 16 or $type == 17) {
 					seizieme2019($comite, $division, $annee, $bdd);
@@ -168,13 +174,13 @@ if (isset($_POST['selection'])) {
 					
 					
 					$tabEquipesIdSeiziemes = array();
-	$tabEquipesSeiziemes	 = array($clubA1601, $clubA1602, $clubA1603, $clubA1604, $clubA1605, $clubA1606, $clubA1607, $clubA1608,
-	$clubA1609, $clubA1610, $clubA1611, $clubA1612, $clubA1613, $clubA1614, $clubA1615, $clubA1616,$clubA1617, $clubA1618, $clubA1619, $clubA1620, $clubA1621, $clubA1622, $clubA1623, $clubA1624,
-	$clubA1625, $clubA1626, $clubA1627, $clubA1628, $clubA1629, $clubA1630, $clubA1631, $clubA1632);
+	 $tabEquipesSeiziemes	 = array($clubA1601, $clubA1602, $clubA1603, $clubA1604, $clubA1605, $clubA1606, $clubA1607, $clubA1608,
+	 $clubA1609, $clubA1610, $clubA1611, $clubA1612, $clubA1613, $clubA1614, $clubA1615, $clubA1616,$clubA1617, $clubA1618, $clubA1619, $clubA1620, $clubA1621, $clubA1622, $clubA1623, $clubA1624,
+	 $clubA1625, $clubA1626, $clubA1627, $clubA1628, $clubA1629, $clubA1630, $clubA1631, $clubA1632);
 
 	
 
-	foreach ($tabEquipesSeiziemes as $nomEquipe) {
+	 foreach ($tabEquipesSeiziemes as $nomEquipe) {
 		
 		require '../../connect/connexion1.php';
 		$reponse = $bdd->query(" SELECT id
@@ -183,7 +189,7 @@ if (isset($_POST['selection'])) {
 		while ($row = $reponse->fetch()) {
 			$tabEquipesIdSeiziemes[] = $row[0];
 		}
-	};
+	 };
 					
 					
 					echo "<h2>" . $f16me . "</h2>";
@@ -357,17 +363,24 @@ if (isset($_POST['selection'])) {
 					$clubA8009, $clubA8010, $clubA8011, $clubA8012, $clubA8013, $clubA8014, $clubA8015, $clubA8016, $terr_annee, $f8me, $bdd);
 				} elseif ($type == 14) {
 					quarts2019($comite, $division, $annee, $bdd);
-					traitementFinale($clubA1001, $clubA1002, $A1001, $A1002, $terr_annee, $champ, $vice, $bdd);
-					traitementDemies($clubA1001, $clubA1002, $clubA2001, $clubA2002, $clubA2003, $clubA2004, $terr_annee, $f2me, $bdd);
 					traitementQuarts($clubA2001, $clubA2002, $clubA2003, $clubA2004,$clubA4001, $clubA4002, $clubA4003, $clubA4004, $clubA4005, $clubA4006, $clubA4007, $clubA4008, $terr_annee, $f4me, $bdd);
-				
-				} elseif ($type == 15) {
+					traitementDemies($clubA1001, $clubA1002, $clubA2001, $clubA2002, $clubA2003, $clubA2004, $terr_annee, $f2me, $bdd);
+			    	traitementFinale($clubA1001, $clubA1002, $A1001, $A1002, $terr_annee, $champ, $vice, $bdd);
+				} 
+				elseif ($type == 20) {
+					quartsAR2019($comite, $division, $annee, $bdd);
+					traitementQuarts($clubA2001, $clubA2002, $clubA2003, $clubA2004,$clubA4001, $clubA4002, $clubA4003, $clubA4004, $clubA4005, $clubA4006, $clubA4007, $clubA4008, $terr_annee, $f4me, $bdd);
+			    	traitementDemies($clubA1001, $clubA1002, $clubA2001, $clubA2002, $clubA2003, $clubA2004, $terr_annee, $f2me, $bdd);
+					traitementFinale($clubA1001, $clubA1002, $A1001, $A1002, $terr_annee, $champ, $vice, $bdd);
+					
+				} 
+				elseif ($type == 15 ) {
 					quartsDemiAR2019($comite, $division, $annee, $bdd);
 					traitementFinale($clubA1001, $clubA1002, $A1001, $A1002, $terr_annee, $champ, $vice, $bdd);
 					traitementDemies($clubA1001, $clubA1002, $clubA2001, $clubA2002, $clubA2003, $clubA2004, $terr_annee, $f2me, $bdd);
 					traitementQuarts($clubA2001, $clubA2002, $clubA2003, $clubA2004,$clubA4001, $clubA4002, $clubA4003, $clubA4004, $clubA4005, $clubA4006, $clubA4007, $clubA4008, $terr_annee, $f4me, $bdd);
 				
-				} elseif ($type == 2 or $type == 3) {
+				} elseif ($type == 2 or $type == 3 or $type== 12) {
 					demi2019($comite, $division, $annee, $bdd);
 					traitementFinale($clubA1001, $clubA1002, $A1001, $A1002, $terr_annee, $champ, $vice, $bdd);
 					traitementDemies($clubA1001, $clubA1002, $clubA2001, $clubA2002, $clubA2003, $clubA2004, $terr_annee, $f2me, $bdd);
@@ -495,12 +508,19 @@ $clubA8009, $clubA8010, $clubA8011, $clubA8012, $clubA8013, $clubA8014, $clubA80
 function traitementQuarts($clubA2001, $clubA2002, $clubA2003, $clubA2004, $clubA4001, $clubA4002, $clubA4003, $clubA4004, $clubA4005, $clubA4006, $clubA4007, $clubA4008, $terr_annee, $f4me, $bdd)
 {
 
+/*
+	echo $clubA2001;echo "<br>";
+	echo $clubA2002;echo "<br>";
+	echo $clubA2003;echo "<br>";
+	echo $clubA2004;echo "<br>";
+*/	
 	$tabEquipesIdQuart = array();
 	$tabEquipesQuarts	 = array($clubA4001, $clubA4002, $clubA4003, $clubA4004, $clubA4005, $clubA4006, $clubA4007, $clubA4008);
 
 	echo "<h2>" . $f4me . "</h2>";
 
 	foreach ($tabEquipesQuarts as $nomEquipe) {
+		//echo $nomEquipe; echo "<br>";
 		
 		require '../../connect/connexion1.php';
 		$reponse = $bdd->query(" SELECT id
@@ -510,8 +530,18 @@ function traitementQuarts($clubA2001, $clubA2002, $clubA2003, $clubA2004, $clubA
 			$tabEquipesIdQuart[] = $row[0];
 		}
 	};
-	
+	/*
+	echo $tabEquipesIdQuart[0].'-'.$clubA4001;echo "<br>";
+	echo $tabEquipesIdQuart[1].'-'.$clubA4002;echo "<br>";
+	echo $tabEquipesIdQuart[2].'-'.$clubA4003;echo "<br>";
+	echo $tabEquipesIdQuart[3].'-'.$clubA4004;echo "<br>";
+	echo $tabEquipesIdQuart[4].'-'.$clubA4005;echo "<br>";
+	echo $tabEquipesIdQuart[5].'-'.$clubA4006;echo "<br>";
+	echo $tabEquipesIdQuart[6].'-'.$clubA4007;echo "<br>";
+	echo $tabEquipesIdQuart[7].'-'.$clubA4008;echo "<br>";
+*/
 // 1er quart
+// echo "(1)".$clubA2001 ."==". $clubA4001.' ' .$clubA4002. "<br/>";
 	if ($clubA2001 == $clubA4001) {
 		echo $tabEquipesIdQuart[1] . ' - ' . $clubA4002 . '  ' . $f4me . "<br/>";
 		$idReduit = substr($tabEquipesIdQuart[1], -5);
@@ -522,6 +552,7 @@ function traitementQuarts($clubA2001, $clubA2002, $clubA2003, $clubA2004, $clubA
 		$bdd->exec("UPDATE bdsaisons	SET  $terr_annee = '$f4me'	WHERE id = '$idReduit'");
 	}
 // 2me quart
+//echo "(2)".$clubA2002 ."==". $clubA4002.' ' .$clubA4004. "<br/>";
 	if ($clubA2002 == $clubA4003) {
 		echo $tabEquipesIdQuart[3] . ' - ' . $clubA4004 . '  ' . $f4me . "<br/>";
 		$idReduit = substr($tabEquipesIdQuart[3], -5);
@@ -561,7 +592,6 @@ function traitementDemies($clubA1001, $clubA1002, $clubA2001, $clubA2002, $clubA
 
 	echo "<h2>" . $f2me . "</h2>";
 
-
 	foreach ($tabEquipesDemi as $nomEquipe) {
 		require '../../connect/connexion1.php';
 		$reponse = $bdd->query(" SELECT id
@@ -596,8 +626,8 @@ function traitementDemies($clubA1001, $clubA1002, $clubA2001, $clubA2002, $clubA
 function traitementFinale($clubA1001, $clubA1002, $A1001, $A1002, $terr_annee, $champ, $vice, $bdd)
 {
 
-	echo $clubA1001 . ' : ' . $A1001 . "<br/>";;
-	echo $clubA1002 . ' : ' . $A1002 . "<br/>";;
+	//echo $clubA1001 . ' : ' . $A1001 . "<br/>";
+	//echo $clubA1002 . ' : ' . $A1002 . "<br/>";
 	$tabEquipesId = array();
 	$tabEquipes = array($clubA1001, $clubA1002);
 
@@ -611,26 +641,34 @@ function traitementFinale($clubA1001, $clubA1002, $A1001, $A1002, $terr_annee, $
 		}
 	};
 
-	if ($A1001 > $A1002) {
+	//echo $clubA1001 . ' : ' . $A1001 . "<br/>";
+	//echo $clubA1002 . ' : ' . $A1002 . "<br/>";
+
+	if ($A1001 < $A1002) {
+		echo "test1";
+		echo "<h2>" . $vice . "</h2>";
+		echo $tabEquipesId[1] . ' - ' . $clubA1001 . ' ' . $vice . "<br/>";
+		$idReduit = substr($tabEquipesId[1], -5);
+		$bdd->exec("UPDATE bdsaisons SET  $terr_annee = '$vice'	WHERE id = '$idReduit'");
+		
 		echo "<h2>" . $champ . "</h2>";
-		echo $tabEquipesId[0] . ' - ' . $clubA1001 . ' ' . $champ  . "<br/>";
+		echo $tabEquipesId[0] . ' - ' . $clubA1002 . ' ' . $champ  . "<br/>";
 		$idReduit = substr($tabEquipesId[0], -5);
 		$bdd->exec("UPDATE bdsaisons SET $terr_annee = '$champ'	WHERE id = '$idReduit'");
 
+		
+	} else {
 		echo "<h2>" . $vice . "</h2>";
 		echo $tabEquipesId[1] . ' - ' . $clubA1002 . ' ' . $vice . "<br/>";
 		$idReduit = substr($tabEquipesId[1], -5);
-		$bdd->exec("UPDATE bdsaisons SET  $terr_annee = '$vice'	WHERE id = '$idReduit'");
-	} else {
+		$bdd->exec("UPDATE bdsaisons	SET  $terr_annee = '$vice'	WHERE id = '$idReduit'");
+		
 		echo "<h2>" . $champ . "</h2>";
-		echo $tabEquipesId[1] . ' - ' . $clubA1002 . ' ' . $champ . "<br/>";
-		$idReduit = substr($tabEquipesId[1], -5);
+		echo $tabEquipesId[0] . ' - ' . $clubA1001 . ' ' . $champ . "<br/>";
+		$idReduit = substr($tabEquipesId[0], -5);
 		$bdd->exec("UPDATE bdsaisons	SET  $terr_annee = '$champ'	WHERE id = '$idReduit'");
 
-		echo "<h2>" . $vice . "</h2>";
-		echo $tabEquipesId[0] . ' - ' . $clubA1001 . ' ' . $vice . "<br/>";
-		$idReduit = substr($tabEquipesId[0], -5);
-		$bdd->exec("UPDATE bdsaisons	SET  $terr_annee = '$vice'	WHERE id = '$idReduit'");
+		
 	}
 }
 ?>

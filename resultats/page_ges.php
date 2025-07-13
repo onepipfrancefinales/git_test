@@ -82,13 +82,13 @@ $comiteNom="Alsace Lorraine";?>
     // echo $idCompetition;
     if ($idCompetition == 17) {
       $competition =  $REG1;
-     // $champ2 = $champ + 100;
-      $champ2 = 0;
+      $champ2 = $champ + 100;
+     // $champ2 = 0;
       $nomSerie = "(Ex honneur/ promotion honneur)";
     } else if ($idCompetition == 18) {
       $competition =  $REG2;
-      //$champ2 = $champ + 9000;
-      $champ2 = 0;
+      $champ2 = $champ + 9000;
+    //  $champ2 = 0;
       $nomSerie = "(Ex 1re/ 2me série)";
     } else if ($idCompetition == 19) {
       $competition =  $REG3;

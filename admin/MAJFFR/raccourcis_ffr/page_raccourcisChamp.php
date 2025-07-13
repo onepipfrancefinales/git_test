@@ -65,11 +65,11 @@
   $CVLResPH = 0;
 
   // ***** Grand Est *****	
-  $GESH = 20000;
-  $GESPH = 20000;
-  $GESS1 = 20000;
-  $GESResH = 20000;
-  $GESResPH = 20000;
+  $GESH = 22405;
+  $GESPH = 22409;
+  $GESS1 = 22411;
+  $GESResH = 22407;
+  $GESResPH = 22410;
 
   // ***** Hauts de France *****					
   $HDFH = 20000;

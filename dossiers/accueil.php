@@ -59,7 +59,7 @@
   </tr>
   <tr>
     <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1">
-      Effectifs de la saison 2026-2026
+      Effectifs de la saison 2025-2026
     </td>
   </tr>
   <tr>

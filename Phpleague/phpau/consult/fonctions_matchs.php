@@ -522,6 +522,7 @@ function calendrier($champ, $smart, $bdd)
 					  WHERE id_champ='$champ'");
   //nbre de journees      
   $tabNbre_journees = $result->fetch();
+   if ($tabNbre_journees[0] > 0) {
   $journee_milieu = $tabNbre_journees[0] / 2;
 
   $color = 0;
@@ -634,7 +635,17 @@ function calendrier($champ, $smart, $bdd)
                   $x++;
                 }
                 echo "</table></td></tr></table>";
+           
+           
+            } else {
+
+                   echo "Calendrier de la saison indisponible pour le moment.";
+                   echo "<br>";  echo "<br>";
+                }
+           
               }
+
+              
 
 
 
