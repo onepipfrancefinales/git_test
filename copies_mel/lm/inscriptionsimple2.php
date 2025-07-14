@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Untitled Document</title>
-<meta charset="utf-8" >
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
@@ -13,38 +13,27 @@ $adresse = $_POST['champion'];
 <?php
 // To
 $to = 'onepip-france@franceserv.com';
-
-// Message
-$msg = ' '; 
-
-// Subject
-$subject = $_POST['champion'].$msg;
  
-
+// Subject
+$subject = $_POST['champion'];
+ 
+// Message
+$msg = ' Demande d inscription � la newsletter du comite AB';
 
 
 // Function mail()
 mail($to, $subject, $msg);
 
 
- if (mail($to, $subject, $msg)) {  
-    echo "Désincription réussie  ";
-    //.$objet.  
-   // " pour //$sto."; 
-	echo $adresse.$msg;
-  } 
-  else { 
-    echo "Echec de l'envoi du mail".$objet."."; 
-  } 
-
 
 ?>
 
+<p><b><font size="5">Demande enregistrée</font></b></p>
 <table width="494" border="0">
   <tr> 
     <td colspan="3"> 
-      <div align="center"><a href="https://francefinalesrugby.fr/resultats/page_resultats.php"><font size="4">Retour 
-        aux résutats et aux classements </font></a> </div>
+      <div align="center"><a href="http://francefinalesrugby.fr/page_resultats.php"><font size="6">Retour 
+        aux r�sutats et aux classements </font></a> </div>
       <div align="center"></div>
     </td>
   </tr>

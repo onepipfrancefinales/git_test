@@ -1,51 +1,26 @@
 <html>
 <head>
 <title>Untitled Document</title>
-<meta charset="utf-8" >
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
-<?php
-
-$adresse = $_POST['champion'];
-
-?>
-<?php
-// To
-$to = 'onepip-france@franceserv.com';
-
-// Message
-$msg = ' '; 
-
-// Subject
-$subject = $_POST['champion'].$msg;
- 
-
-
-
-// Function mail()
-mail($to, $subject, $msg);
-
-
- if (mail($to, $subject, $msg)) {  
-    echo "Désincription réussie  ";
-    //.$objet.  
-   // " pour //$sto."; 
-	echo $adresse.$msg;
-  } 
-  else { 
-    echo "Echec de l'envoi du mail".$objet."."; 
-  } 
-
-
-?>
-
 <table width="494" border="0">
+  <tr>
+    <td colspan="3"> 
+    </td>
+  </tr>
   <tr> 
     <td colspan="3"> 
-      <div align="center"><a href="https://francefinalesrugby.fr/resultats/page_resultats.php"><font size="4">Retour 
-        aux résutats et aux classements </font></a> </div>
-      <div align="center"></div>
+      <div align="center"><font size="4"><b>Pour s'inscrire saississsez votre 
+        mél ci-dessous</b></font></div>
+      <div align="center"> 
+        <form action="http://francefinalesrugby.fr/copies_mel/ab/inscriptionsimple2.php" method="POST">
+        <p align="center"> 
+          <input type="text" name="champion" />
+          et cliquez 
+          <input type="submit" value="ICI" name="submit322" />
+      </form></div>
     </td>
   </tr>
   <tr> 
