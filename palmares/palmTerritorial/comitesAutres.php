@@ -68,7 +68,7 @@
       <div align="right"><a href="tableauPalmTerr.php?paramIdComite=<?php echo $idComite; ?>"><font color="FFFFFF">Comité 
         <?php echo $nomComite; ?></Font></a></td>
     <td width="125"> 
-      <div align="center"><a href="tableauPalmTerr.php?paramIdComite=<?php echo $idComite; ?>"><img src="../../images/comites/<?php echo $sigleComite; ?>.jpg" width="50" height="50"></a></div>
+      <div align="center"><a href="tableauPalmTerr.php?paramIdComite=<?php echo $idComite; ?>"><img src="../../images/comites/<?php echo $sigleComite; ?>.jpg" alt="logo du comité" width="50" height="50"></a></div>
       </td>
     <td width="81"> 
       <div align="center"></div>

@@ -1,3 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/page_idf.php/" />
+  <meta charset="utf-8" />
+  <link type="text/css" rel="stylesheet" href="../Phpleague/phpidf/league.css" />
+  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+  <link type="text/css" rel="stylesheet" href="resultat.css">
+  <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <title>Ligue de rugby Ile de France : Résultats et classements</title>
+  <meta name="google-adsense-account" content="ca-pub-9177538664500260">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ligue de rugby Ile de France, résultats, classements, phases finales et palmarès des compétitions régionales.">
+  <meta name="classification" content="Sport,Rugby">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="resource-type" content="document">
+  <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+  <meta name="author" content="Equipe France Finales Rugby">
+  <meta name="robots" content="All">
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
+
+</head>
+
+
+
 <?php
 session_start();
 include("../saison.php");
@@ -14,35 +43,12 @@ $CMT = "IDF";
 $cmt = "idf";
 $comiteNom = "Ile de France";
 ?>
-<!DOCTYPE html PUBLIC>
-<html lang="fr">
 
-<head>
-  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/page_idf.php/" />
-  <meta charset="utf-8" />
-  <link type="text/css" rel="stylesheet" href="../Phpleague/phpidf/league.css" />
-  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
-  <link type="text/css" rel="stylesheet" href="resultat.css">
-  <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title>Ligue de rugby Ile de France : Résultats et classements</title>
-  <meta name="google-adsense-account" content="ca-pub-9177538664500260">
-  <meta name="description" content="Ligue de rugby Ile de France, résultats, classements, phases finales et palmarès des compétitions régionales.">
-  <meta name="classification" content="Sport,Rugby">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="resource-type" content="document">
-  <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe France Finales Rugby">
-  <meta name="robots" content="All">
-
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
-
-</head>
 
 <body>
   <table class="marginAuto">
     <tr>
-      <td colspan="3"> <img src="../images/banniere_haut/(<?php echo $CMT; ?>).jpg" height="150" width="1250"></td>
+      <td colspan="3"> <img src="../images/banniere_haut/(<?php echo $CMT; ?>).jpg" alt="bandeau" ></td>
     </tr>
     <tr>
       <td colspan="3">

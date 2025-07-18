@@ -1,3 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/page_cvl.php" />
+  <meta charset="utf-8" />
+  <link type="text/css" rel="stylesheet" href="../Phpleague/phppl/league.css">
+  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+  <link type="text/css" rel="stylesheet" href="resultat.css">
+  <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <title>Ligue de rugby Centre Val de loire : Résultats et classements  </title>
+  <meta name="description" content=" Ligue de rugby Centre Val de Loire, résultats, classements, phases finales et palmarès des compétitions régionales. ">
+  <meta name="classification" content="Sport,Rugby">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="resource-type" content="document">
+  <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+  <meta name="author" content="Equipe France Finales Rugby">
+  <meta name="robots" content="All">
+  <script>
+    function ouvrirPopup(page, nom, options) {
+      window.open(page, nom, options);
+    }
+  </script>
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
+     crossorigin="anonymous"></script>
+  -->
+</head>
+
+
+
+
 <?php
 session_start();
 include ("../saison.php");
@@ -16,39 +50,11 @@ $CMT = "CE";
 $cmt = "ce";
 $comiteNom = "du Centre"; ?>
 
-<!DOCTYPE html PUBLIC>
-<html lang="fr">
-
-<head>
-  <link rel="canonical" href="https://francefinalesrugby.fr/resultats/page_cvl.php" />
-  <meta charset="utf-8" />
-  <link type="text/css" rel="stylesheet" href="../Phpleague/phppl/league.css">
-  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
-  <link type="text/css" rel="stylesheet" href="resultat.css">
-  <link type="text/css" rel="stylesheet" href="../ligne1.css">
-  <title>Ligue de rugby Centre Val de loire : Résultats et classements  </title>
-  <meta name="description" content=" Ligue de rugby Centre Val de Loire, résultats, classements, phases finales et palmarès des compétitions régionales. ">
-  <meta name="classification" content="Sport,Rugby">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="resource-type" content="document">
-  <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
-  <meta name="author" content="Equipe France Finales Rugby">
-  <meta name="robots" content="All">
-  <script>
-    function ouvrirPopup(page, nom, options) {
-      window.open(page, nom, options);
-    }
-  </script>
-  <!--
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
-     crossorigin="anonymous"></script>
-  -->
-</head>
 
 <body>
   <table class="table">
     <tr>
-      <td colspan="3"><img src="../images/banniere_haut/(<?php echo $CMT; ?>).jpg" height="150" width="1250"></td>
+      <td colspan="3"><img src="../images/banniere_haut/(<?php echo $CMT; ?>).jpg" alt="bandeau" height="150" width="1250"></td>
     </tr>
     <tr>
       <td colspan="3">

@@ -5,14 +5,11 @@ font-family: arial;
 text-align: center;
 font-weight: bold;
 
-
-
 }
 table {
 width: 1250px;
   margin : auto;
 }
-
 
 
 .equipeI{
@@ -25,7 +22,6 @@ border: thin solid #6495ed;
 background-color: #0066CC;
 }
 
-
 .equipeII{
   color: #FFFFFF;
   font-size: 18px;
@@ -35,8 +31,6 @@ background-color: #0066CC;
   border: thin solid #6495ed;
   background-color: #07993a;
   }
-
-
 
 .bgBlue{background-color: #006699; }
 

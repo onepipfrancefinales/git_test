@@ -6,23 +6,18 @@
 
 <body bgcolor="#FFFFFF" text="#000000">
 <?php
+if (isset ($_GET['annee'])) $adresse = $_GET['annee'];
 
-$adresse = $_POST['champion'];
-
+//echo "adresse : ".$annee;
+//echo "test : ".$_POST['champion'];
 ?>
 <?php
 // To
 $to = 'onepip-france@franceserv.com';
-
 // Message
 $msg = ' '; 
-
 // Subject
-$subject = $_POST['champion'].$msg;
- 
-
-
-
+$subject = $adresse;
 // Function mail()
 mail($to, $subject, $msg);
 
@@ -31,15 +26,12 @@ mail($to, $subject, $msg);
     echo "Désincription réussie  ";
     //.$objet.  
    // " pour //$sto."; 
-	echo $adresse.$msg;
+	//echo $adresse.$msg;
   } 
   else { 
     echo "Echec de l'envoi du mail".$objet."."; 
   } 
-
-
 ?>
-
 <table width="494" border="0">
   <tr> 
     <td colspan="3"> 
@@ -48,49 +40,6 @@ mail($to, $subject, $msg);
       <div align="center"></div>
     </td>
   </tr>
-  <tr> 
-    <td rowspan="3"> 
-      <?php
-    // On inclut le haut de la page
-    include("../../pub6.php");
-    ?>
-    </td>
-    <td width="240"> 
-      <?php
-    // On inclut le haut de la page
-    include("../../pub4.php");
-    ?>
-      <div align="center"></div>
-    </td>
-    <td rowspan="3"> 
-      <?php
-    // On inclut le haut de la page
-    include("../../pub6.php");
-    ?>
-    </td>
-  </tr>
-  <tr> 
-    <td width="240"> 
-      <div align="center"> 
-        <?php
-    // On inclut le haut de la page
-    include("../../pub_carre.php");
-    ?>
-      </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="240"> 
-      <?php
-    // On inclut le haut de la page
-    include("../../pub4.php");
-    ?>
-      <div align="center"></div>
-    </td>
-  </tr>
 </table>
-<p>&nbsp; </p>
-
-
 </body>
 </html>

@@ -3,7 +3,7 @@
   <tr> 
     <td> 
     
-        <img src="/images/123.jpg" width="190" height="190" alt=""> 
+        <img src="/images/123.jpg" alt=""> 
       
      <br>
 	  <form action="/pagerecherchegoogle.php" id="cse-search-box">

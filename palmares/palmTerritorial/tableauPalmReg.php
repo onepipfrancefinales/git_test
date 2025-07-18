@@ -16,11 +16,12 @@ nomLigue($idLigue, $sigleLigue, $bdd);
 <head>
   <link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmTerritorial/tableauPalmReg.php?sigleLigue=<?php echo $$sigleLigue; ?>">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="preconnect" href="tableauPalmReg.php" />
   <link type="text/css" rel="stylesheet" href="../../ligne1.css">
   <link type="text/css" rel="stylesheet" href="palmaresTerr.css">
   <title> Champions Régionaux <?php echo $nomLigue; ?></title>
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="">
+  <meta name="description" content="Palmarès des ligues régionales">
   <meta name="keywords" content="Presentation de la competititon et de tous les champions de France 1re Serie. Palmares complet de la 1re Serie.">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">

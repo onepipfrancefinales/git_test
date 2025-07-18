@@ -109,10 +109,10 @@
   $OCCResPH = 20000;
 
   // ***** Pays de la Loire *****		
-  $PDLH = 20000;
+  $PDLH = 22435;
   $PDLPH = 20000;
   $PDLS1 = 20000;
-  $PDLResH = 20000;
+  $PDLResH = 22436;
   $PDLResPH = 0;
 
   // ***** Provence *****	

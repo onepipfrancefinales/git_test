@@ -12,16 +12,12 @@
 <?php
 session_start();
 
-
 require 'saison.php';
 require 'consultation/fonctions.php';
 require 'connect/connexion1.php';
 require 'resultats/constantes.php';
 
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 

@@ -11,7 +11,7 @@
     <td colspan="2" class="borderWidth1 ">
       <br>
       <p class="size4">
-        <img style="display: block;margin: auto;background-color: hsl(0, 0%, 90%);" src="https://www.icone-gif.com/gif/webmaster/new/new-gif-007.gif">
+        <img style="display: block;margin: auto;background-color: hsl(0, 0%, 90%); " alt="lien carte" src="https://www.icone-gif.com/gif/webmaster/new/new-gif-007.gif">
         <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php?affichage=0"><span class="ColorRed bold size5"> Championnats de France 2025</span></a><br>
     
         <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php?affichage=0">Suivi des équipes engagées en championnat de france<br >(par ligue ou par anciens comités territoriaux)</a>
@@ -71,7 +71,7 @@
   <tr>
     <td width="329" class="size5 borderWidth1">  <br>
       <a href="dossiers/brennus/pagesBrennus.php?page=accueil">Histoire du Brennus</a> <br> <br>
-      <img src="dossiers/brennus/images/brennus/BouclierBrennus.jpg" width="188" height="234">
+      <img src="dossiers/brennus/images/brennus/BouclierBrennus.jpg" alt="bouclier de Brennus"  width="188" height="234">
       <br> <br>
     </td>
     <td height="37" width="340" class="size5 borderWidth1">
@@ -100,7 +100,7 @@
     </td>
     <td width="340" class=" borderWidth1 size5 ">
       <a href="dossiers/scores/pageScore.php"> Evolution des points </a></p>
-      <img src="images/panneauScore.gif" width="324" height="160">
+      <img src="images/panneauScore.gif" alt="panneau d'affichage" width="324" height="160">
       </div>
     </td>
   </tr>
@@ -151,11 +151,11 @@
   </tr>
   <tr>
     <td colspan="2" class="borderWidth1">
-      <img src="images/dossiers/hymnes/Drapeau-Nouvelle-Zelande_120-gif.gif" width="120" height="90">
-      <img src="images/dossiers/hymnes/vannes.webp" width="120" height="90">
-      <img src="images/dossiers/hymnes/Drapeau-Afrique-du-Sud_120-gif.gif" width="120" height="90">
-      <img src="images/dossiers/hymnes/Drapeau-France_120-gif.gif" width="120" height="90">
-      <img src="images/dossiers/hymnes/pau.webp" width="120" height="90">
+      <img src="images/dossiers/hymnes/Drapeau-Nouvelle-Zelande_120-gif.gif" alt="drapeau de la Nouvelle zélande" width="120" height="90">
+      <img src="images/dossiers/hymnes/vannes.webp" alt="drapeau de Vannes" width="120" height="90">
+      <img src="images/dossiers/hymnes/Drapeau-Afrique-du-Sud_120-gif.gif" alt="drapeau d'Afrique du Sud" width="120" height="90">
+      <img src="images/dossiers/hymnes/Drapeau-France_120-gif.gif" alt="drapeau de Fraance" width="120" height="90">
+      <img src="images/dossiers/hymnes/pau.webp" alt="drapeau de Pau" width="120" height="90">
       <a class="colorWhite" href="dossiers/hymnes/page_hymnes.php"> Hymnes des plus grandes nations du rugby (paroles et musique)</a>
     </td>
   </tr>

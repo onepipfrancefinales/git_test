@@ -15,48 +15,16 @@
 
 <body bgcolor="#FFFFFF" text="#000000">
 <table width="494" border="0">
-  <tr>
-    <td colspan="3"> 
-    </td>
-  </tr>
-  <tr> 
-    <td colspan="3"> 
-      <div align="center"><font size="4"><b>Pour se désinscrire saississsez 
-        votre mél ci-dessous</b></font></div>
-      <div align="center"> 
-        <form action="http://francefinalesrugby.fr/copies_mel/ab/desinscription2.php" method="POST">
-        <p align="center"> 
-          <input type="text" name="champion" />
+    <tr> 
+    <td align="center"><font size="4"> 
+      <b>Pour se désinscrire saississsez votre mél ci-dessous</b>
+    
+      <form action="http://francefinalesrugby.fr/copies_mel/ab/desinscription2.php?champion=annee" method="GET">
+          <input type="text" name="annee" required="required"/>
           et cliquez 
-          <input type="submit" value="ICI" name="submit322" />
-      </form></div>
-    </td>
-  </tr>
-  <tr> 
-    <td rowspan="3">&nbsp; </td>
-    <td width="240"> 
-      <div align="center"></div>
-    </td>
-    <td rowspan="3">&nbsp; </td>
-  </tr>
-  <tr> 
-    <td width="240"> 
-      <div align="center"> 
-        <?php
-    // On inclut le haut de la page
-   // include("../../pub_carre.php");
-    ?>
-      </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="240"> 
-      <div align="center"></div>
+          <input type="submit" value="ICI" />
     </td>
   </tr>
 </table>
-<p>&nbsp; </p>
-
-
 </body>
 </html>
