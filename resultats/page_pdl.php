@@ -24,6 +24,7 @@ $comiteNom="Pays de Loire";?>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ligue de rugby Pays de la Loire : Résultats et classsements</title>
   <meta name="description"
  content=" Ligue de rugby Pays de  la Loire , résultats, classements, phases finales et palmarès des compétitions régionales. ">

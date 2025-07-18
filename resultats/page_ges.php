@@ -28,6 +28,7 @@ $comiteNom="Alsace Lorraine";?>
 <meta name="classification" content="Sport,Rugby">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 <meta name="resource-type" content="document">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe France Finales Rugby">
 <meta name="robots" content="All">

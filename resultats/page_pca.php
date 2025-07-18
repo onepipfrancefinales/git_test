@@ -24,6 +24,7 @@ $comiteNom="Provence";
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ligue de rugby Provence Alpes Côte d'Azur : Résultats et classements</title>
   <meta name="description" content="Ligue de rugby Provence Alpes Côte d'Azur, résultats, classements, phases finales et palmarès des compétitions régionales.">
   <meta name="classification" content="Sport,Rugby">

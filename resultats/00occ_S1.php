@@ -16,7 +16,7 @@
 	?>
      
     <hr><hr>
-	 <?php// require("comPerso.php"); ?> <br>
+	 <?php // require("comPerso.php"); ?> <br>
      <h5>1re Série - Poule 1<br><br></h5>
 	 <?php $champ = 191; AffichageLogos($champ, $comite, false, $bdd);?>
       <table width="700" >

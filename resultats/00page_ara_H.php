@@ -19,6 +19,7 @@ $forum = 7;
 <head>
 <meta charset="utf-8" />
   <link rel= "canonical" href= "https://www.francefinalesrugby.resultats/page_ara_reg1.php " />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="../Phpleague/phpau/league.css"/>
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">

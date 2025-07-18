@@ -24,6 +24,7 @@ $comiteNom = "Bretagne";
   <link type="text/css" rel="stylesheet" href="../Phpleague/phppl/league.css">
   <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
   <link type="text/css" rel="stylesheet" href="resultat.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="../ligne1.css">
   <title> Ligue de Bretagne - Résultats et classements</title>
   <meta name="description" content="Ligue de rugby Bretagne, résultats, classements, phases finales et palmarès des compétitions régionales. ">
