@@ -56,7 +56,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   <title>Accueil dossiers </title>
 </head>
 
-<body>
+<body class= "backgroundWhite">
 
       <div class= "backgroundWhite">
       <?php include 'smartHeader.php'; ?>  

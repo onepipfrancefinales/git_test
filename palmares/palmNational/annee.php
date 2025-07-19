@@ -1,4 +1,4 @@
-<?php $annee = $_POST['saison']; ?>
+
 <?php require("../../connect/connexion1.php"); ?>
 <p class="annee">Equipes séniors</p>
 <p class="equipe"><br>

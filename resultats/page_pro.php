@@ -41,7 +41,7 @@ $comiteNom="";
   <table class="table">
     <tr>
      <td colspan="3" height="157"> 
-		<img src="../images/boucliers/brennusGrand.jpg" width="1250" height="150">
+		<img src="../images/boucliers/brennusGrand.jpg" alt="" width="1250" height="150">
 	</td>
     </tr>
 	<tr>

@@ -61,7 +61,7 @@ $comiteNom = "Fédérale 2 - Fédérale B";
 <body>
   <table class="table">
     <tr>
-      <td colspan="3"> <img src="../images/stade3.jpg" width="1250" height="150"></td>
+      <td colspan="3"> <img src="../images/stade3.jpg" alt="" width="1250" height="150"></td>
     </tr>
     <tr>
       <td colspan="3"><?php include("../01ligne.php"); ?></td>

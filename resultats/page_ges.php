@@ -1,18 +1,3 @@
-<?php
-session_start ();
-include("../saison.php");
-include("../fichierConfig.php");
-require '../connect/connexion6.php';
-require '../Phpleague/phpidf/consult/fonctions_matchs.php';
-require '../Phpleague/phpidf/lang/lang_fr.php';
-include("fonctions.php");
-require 'constantes.php';
-$champLigue=15;
-$sigleLigue="(GES)";
-$comite="phpidf";
-$CMT="AL";
-$cmt="al"; 
-$comiteNom="Alsace Lorraine";?> 
 
 <!DOCTYPE html PUBLIC>       
 <html lang="fr">
@@ -42,11 +27,29 @@ $comiteNom="Alsace Lorraine";?>
      crossorigin="anonymous"></script>
 -->
 </head>
+
+<?php
+session_start ();
+include("../saison.php");
+include("../fichierConfig.php");
+require '../connect/connexion6.php';
+require '../Phpleague/phpidf/consult/fonctions_matchs.php';
+require '../Phpleague/phpidf/lang/lang_fr.php';
+include("fonctions.php");
+require 'constantes.php';
+$champLigue=15;
+$sigleLigue="(GES)";
+$comite="phpidf";
+$CMT="AL";
+$cmt="al"; 
+$comiteNom="Alsace Lorraine";?> 
+
+
 <body >
   <table class="table">
     <tr  > 
       <td colspan="3" >
-        <img src="../images/banniere_haut/(<?php echo $CMT;?>).jpg" width="1250" height="150"></td>
+        <img src="../images/banniere_haut/(<?php echo $CMT;?>).jpg" alt="" width="1250" height="150"></td>
     </tr>
     <tr >
       <td colspan="3" >

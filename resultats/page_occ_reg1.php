@@ -57,7 +57,7 @@ $comiteNom = "Occitanie"; ?>
   <table class="table">
     <tr>
       <td colspan="3">
-        <?php include "../images/page_image_al.php"; ?>
+        <?php include "../images/page_image_al.php" ; ?>
       </td>
     </tr>
     <tr>

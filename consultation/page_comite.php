@@ -1,6 +1,6 @@
 <?php
-$sigle = $_GET['variable_1'];
-$mode = $_GET['mode'];
+$sigle = $_REQUEST['variable_1'];
+$mode = $_REQUEST['mode'];
 require("../saison.php");
 require 'fonctions.php';
 
@@ -16,7 +16,7 @@ nomLigueParSigleLigue($sigleLigue, $bdd);
 <html lang="fr">
 
 <head>
-	<link rel="canonical" href="https://francefinalesrugby.fr/consultation/page_comite.php/" />
+	<link rel="canonical" href="https://francefinalesrugby.fr/consultation/page_comite.php" />
 	<meta charset="utf-8" />
 	<meta name="description" content="Tout sur le comité territorial <?php echo $nomComite; ?> : Présentation du comité (Bureau; adresse; contact mel; contact site officiel du comit�); les effectifs; les palmar�s nationaux; les palmar�s territoriaux et l'ensemble des clubs composant le comit� avec un lien pour acc�der aux diff�rents clubs.">
 	<meta name="keywords" content="comité Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees Rugby,Stade toulousain,Colomiers,FFR,Rugby,Federation,Fran�aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">

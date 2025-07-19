@@ -1,5 +1,6 @@
 <?php 
-$annee = $_POST['saison'];
+if (isset($_POST['saison'])) $annee = $_POST['saison']; else $annee = "2024";
+
 require '../fonctionsPalmares.php';
 ?>
 <!DOCTYPE html>
@@ -14,11 +15,12 @@ require '../fonctionsPalmares.php';
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="author" content="Equipe Onepip">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="All">
   <title>Champions de FRANCE <?php echo $annee; ?> de rugby</title>
-  <link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
-  class="center"
-  <link type="text/css" rel="stylesheet" href="palmares.css">
+ 	<link type="text/css" rel="stylesheet" href="palmares.css">
+	<link type="text/css" rel="stylesheet" href="../../ligne1.css">
+	<link type="text/css" rel="stylesheet" href="../../formulaireDG.css">
 </head>
 
 <body>
@@ -40,7 +42,7 @@ require '../fonctionsPalmares.php';
       <td class="centreDePage"> <br>
         <br>
         <br>
-        <div id="titre"> Champions de France <?php echo  $annee; ?></div>
+        <div id="titre"> Champions de France <?php echo $annee; ?></div>
         <br>
         <br>
         <table class="marginAuto">

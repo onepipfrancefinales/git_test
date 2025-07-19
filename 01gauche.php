@@ -133,13 +133,13 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         </select>
         </fieldset > <br>
      
-      <form action="palmares/palmNational/annee.php" method="POST">
+     
       
      <br>
       
       
 	  <fieldset class="fieldsetG"> <legend class="legendG"> Palmarès 
-        Europ&eacute;ens</legend> <br>
+        Européens</legend> <br>
         <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="4" title="Coupes d'Europe">
             <option selected>--------------------------------</option>
             <option value="/palmares/palmNational/pagehcup.php">Champions Cup 

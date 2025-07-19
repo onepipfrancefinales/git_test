@@ -2,13 +2,15 @@
 require "../saison.php";
 require "../fonctions.php";
 require "fonctions.php";
-if (isset($_GET['champion'])) $chaine = $_GET['champion']; else $chaine="2029076";
+if (isset($_REQUEST['champion'])) $chaine = $_REQUEST['champion'];else $chaine = "2029157";
+//if (isset($_GET['champion'])) $chaine = $_GET['champion']; else $chaine="2029076";
 
 // remplacementde l'apostrophe
-if(stristr($chaine, "'") == true) {
-  $chaine2 = str_replace("'"," ",$chaine);
-  $chaine = $chaine2;echo "<br>";
- }
+if (stristr($chaine, "'") == true) {
+  $chaine2 = str_replace("'", " ", $chaine);
+  $chaine = $chaine2;
+  echo "<br>";
+}
 
 if (isset($_GET['nouveauClub'])) {
   $nouveauClub = $_GET['nouveauClub'];
@@ -56,8 +58,8 @@ affichageSaisonEnCours($equipe, $bdd);
 bdInfosClub($code, $bdd);
 saisons($code, $annee, $bdd);
 
-echo "equipe aaaaa".$equipe;
-rechercheFusion ($equipe, $bdd);
+
+rechercheFusion($equipe, $bdd);
 
 consultationEvolutionClub($equipe, $bdd);
 fusionDeClubs2($equipe, $bdd);
@@ -69,8 +71,9 @@ fusionDeClubs2($equipe, $bdd);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<link rel="canonical" href="https://francefinalesrugby.fr/consultation/pageclub00.php?champion=<?php echo $chaine;?>" >
+  <link rel="canonical" href="https://francefinalesrugby.fr/consultation/pageclub00.php">
   <meta name="description" content="<?php echo $nomLong; ?> (Bureau; Siège; Stade; Contacts; palmarès)">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
@@ -115,21 +118,20 @@ fusionDeClubs2($equipe, $bdd);
         <?php include("../01gauche.php"); ?>
       </td>
       <td class="centreDePage">
-      <?php
+        <?php
         if ($nbreDeClub < 2) {
 
           if ($code > 0) {
             //echo $code;
-           include "clubInfos.php";
-           include "clubPalmares.php";
-           include "clubSaisons.php";
-         //   include("00clubs.php");
+            include "clubInfos.php";
+            include "clubPalmares.php";
+            include "clubSaisons.php";
+            //   include("00clubs.php");
           } else {
             $photoClub = false;
             include("02clubs.php");
           }
         } else {
-
           include('modaleRecherche.php');
         }
         ?>
@@ -142,21 +144,20 @@ fusionDeClubs2($equipe, $bdd);
   <table class="marginAuto" width="1100">
     <tr>
       <?php
-    if ($nbreDeClub < 2 and $photoClub == true) {
-      ?>   
-    <td class="backgroundWhite">
-        <br> <br>
-        <hr color="#FF0000" width="600">
-        </hr>
-        <h2 class="colorRed bold">
-          Photos du club
-        </h2>
-        <iframe src="/00messagerie/<?php echo $sigleComite; ?>/?id=1&album=<?php echo $code; ?>" width="1000" height="400" scrolling="yes" frameborder="0"></iframe>
-
-      </td>
+      if ($nbreDeClub < 2 and $photoClub == true) {
+      ?>
+        <td class="backgroundWhite">
+          <br> <br>
+          <hr color="#FF0000" width="600">
+          </hr>
+          <h2 class="colorRed bold">
+            Photos du club
+          </h2>
+          <iframe src="/00messagerie/<?php echo $sigleComite; ?>/?id=1&album=<?php echo $code; ?>" width="1000" height="400" scrolling="yes" frameborder="0"></iframe>
+        </td>
       <?php
-    }
-    ?>
+      }
+      ?>
     </tr>
     <tr>
       <td>
@@ -167,5 +168,4 @@ fusionDeClubs2($equipe, $bdd);
 </body>
 <footer>
 </footer>
-
 </html>

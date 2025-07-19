@@ -1,6 +1,6 @@
 <?php 
 
-$sigle = $_GET['variable_1'];
+$sigle = $_REQUEST['variable_1'];
 //$champion = $_POST['champion'];
 echo  $sigle;
 
@@ -51,10 +51,8 @@ echo $listeClubs[2];
 <head>
 <title>Tous les clubs du comité  <?php //echo $nomComite;?></title>
 <link type="text/css" rel="stylesheet" href="../ligne1.css"/>
-
 <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
-  <link type="text/css" rel="stylesheet" href="resultat.css">
-  
+<link type="text/css" rel="stylesheet" href="resultat.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script language="JavaScript">
 <!--

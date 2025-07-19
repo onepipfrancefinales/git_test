@@ -67,7 +67,7 @@ traitementDesScores($equipe, $phpComite, $bdd);
       </td>
     </tr>
     <tr>
-      <td colspan="3" height="74">
+      <td colspan="3">
       </td>
     </tr>
     <tr>

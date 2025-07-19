@@ -2,9 +2,9 @@
 require ("../../saison.php");
 require ("../../fonctions.php");
 require "../../consultation/fonctions.php";
-$mode = $_GET['mode'];
-$chaine = $_GET['champion'];
-$nouveauClub = $_GET['nouveauClub'];
+$mode = $_REQUEST['mode'];
+$chaine = $_REQUEST['champion'];
+$nouveauClub = $_REQUEST['nouveauClub'];
 
  if (is_int($chaine)) {
 
@@ -47,7 +47,7 @@ fusionDeClubs2 ($equipe, $bdd) ;
 <html>
 <head>
  <title><?php echo $nomLong; ?></title>
- <link rel="canonical" href="https://francefinalesrugby.fr/smart/ficheClubs/pageFicheClubs.php?champion=<?php echo $id_equipe;?>" >
+ <link rel="canonical" href="https://francefinalesrugby.fr/smart/ficheClubs/pageFicheClubs.php" >
  <meta name="description" content="Présentation du club <?php echo $nomLong; ?> (bureau, contact, palmarès, etc...">
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <link type="text/css" rel="stylesheet" href="../../ligne1.css">

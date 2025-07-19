@@ -42,7 +42,7 @@ $comiteNom="Normandie";?>
 <body>
 <table class="table">
      <tr>
-      <td colspan="3"> <img src="../images/banniere_haut/(<?php echo $CMT;?>).jpg" height="150" width="1250"></td>
+      <td colspan="3"> <img src="../images/banniere_haut/(<?php echo $CMT;?>).jpg" alt="" height="150" width="1250"></td>
     </tr>
     <tr>
       <td colspan="3"><?php include("../01ligne.php"); ?> </td>

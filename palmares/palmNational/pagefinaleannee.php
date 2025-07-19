@@ -1,15 +1,18 @@
-<?php $annee = $_GET['variable_1'];
+<?php 
+if (isset($_REQUEST['variable_1'])) $annee = $_REQUEST['variable_1'];
+$annee = $_GET['variable_1'];
 require '../fonctionsPalmares.php';
 
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagefinaleannee.php?variable_1=<?php echo $annee; ?>">
+<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagefinaleannee.php">
 <meta name="description" content="Finales et résultats des différents championnats de france de rugby.">
 <meta name="keywords" content="Top 14, pro D2, Nationales, fédérales, régionales, féminines, cadets, juniors, etc...">
 <meta name="classification" content="Sport,Rugby">
 <meta name="resource-type" content="document">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
 <meta name="author" content="Equipe Onepip">
 <meta name="robots" content="All">

@@ -1,29 +1,30 @@
 <br> <br>
 <table>
-  <tr> 
-    <td> 
-    
-        <img src="/images/123.jpg" alt=""> 
-      
-     <br>
-	  <form action="/pagerecherchegoogle.php" id="cse-search-box">
-    
-          <input type="hidden" name="cx" value="partner-pub-9177538664500260:6143685311" >
-          <input type="hidden" name="cof" value="FORID:10" >
-          <input type="hidden" name="ie" value="UTF-8" >
-          <input type="text" name="q" size="20" title="Recherche " >
-          <input class="inputG" type="submit" name="sa" value="Rechercher">
-      
+  <tr>
+    <td>
+
+      <img src="/images/123.jpg" alt="">
+
+      <br> <br> <br> <br>
+      <form action="/pagerecherchegoogle.php" id="cse-search-box">
+
+        <input type="hidden" name="cx" value="partner-pub-9177538664500260:6143685311">
+        <input type="hidden" name="cof" value="FORID:10">
+        <input type="hidden" name="ie" value="UTF-8">
+        <input type="text" name="q" size="20" title="Recherche ">
+        <input class="inputG" type="submit" name="sa" value="Rechercher">
+
       </form>
-	 
-     
+
+
       <!--  <script type="text/javascript" src="http://www.google.fr/coop/cse/brand?form=cse-search-box&amp;lang=fr"></script>-->
-      
-  <br>
-    
-	  <fieldset class="fieldsetG"> <legend class="legendG" > 
-        Présentation des ligues </legend><br>
-        <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="1"  title="Recherche par ligue">
+
+      <br>
+
+      <fieldset class="fieldsetG">
+        <legend class="legendG">
+          Présentation des ligues </legend><br>
+        <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="1" title="Recherche par ligue">
           <option selected>Par ligue</option>
           <option value="/consultation/page_ligue.php?idLigue=10">Auvergne Rhône Alpes</option>
           <option value="/consultation/page_ligue.php?idLigue=11">Bourgogne Franche Comté</option>
@@ -39,15 +40,15 @@
           <option value="/consultation/page_ligue.php?idLigue=21">Pays de la Loire</option>
           <option value="/consultation/page_ligue.php?idLigue=22">Provence Alpes Côte d'Azur</option>
         </select>
-        </fieldset > 
+      </fieldset>
       <br>
-       <br>
-    
-	 
-	   <fieldset class="fieldsetG"> <legend class="legendG"> 
-        Présentation des comités<br>
-        (avant 2019)</legend> <br>
-        <select class="inputG" name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1"  title="Recherche par comité">
+      <br>
+
+<fieldset class="fieldsetG">
+        <legend class="legendG">
+          Présentation des comités<br>
+          (avant 2019)</legend> <br>
+        <select class="inputG" name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1" title="Recherche par comité">
           <option selected>Par comité</option>
           <option value="/consultation/page_comite.php?variable_1=(AP)">Alpes</option>
           <option value="/consultation/page_comite.php?variable_1=(AL)">Alsace Lorraine</option>
@@ -76,27 +77,63 @@
           <option value="/consultation/page_comite.php?variable_1=(PR)">Provence</option>
           <option value="/consultation/page_comite.php?variable_1=(PC)">Pays Catalan</option>
         </select>
-        </fieldset >
-		
+      </fieldset>
+
+
+<!--
+<form action="/consultation/page_comite.php" method="POST">
+      <fieldset class="fieldsetG">
+        <legend class="legendG">
+          Présentation des comités<br>
+          (avant 2019)</legend> <br>
+        <select class="inputG" name="select2" onChange="MM_jumpMenu('parent',this,0)" size="1" title="Recherche par comité">
+          <option selected>Par comité</option>
+          <option value="(AP)">Alpes</option>
+          <option value="/consultation/page_comite.php?variable_1=(AL)">Alsace Lorraine</option>
+          <option value="/consultation/page_comite.php?variable_1=(AB)">Armagnac Bigorre</option>
+          <option value="/consultation/page_comite.php?variable_1=(AU)">Auvergne</option>
+          <option value="/consultation/page_comite.php?variable_1=(BE)">Béarn</option>
+          <option value="/consultation/page_comite.php?variable_1=(BG)">Bourgogne</option>
+          <option value="/consultation/page_comite.php?variable_1=(BR)">Bretagne</option>
+          <option value="/consultation/page_comite.php?variable_1=(CE)">Centre</option>
+          <option value="/consultation/page_comite.php?variable_1=(C)">Corse</option>
+          <option value="/consultation/page_comite.php?variable_1=(CBL)">Côte Basque Landes</option>
+          <option value="/consultation/page_comite.php?variable_1=(CA)">Côte d'Argent</option>
+          <option value="/consultation/page_comite.php?variable_1=(CAZ)">Côte d'Azur</option>
+          <option value="/consultation/page_comite.php?variable_1=(DA)">Drôme Ardèche</option>
+          <option value="/consultation/page_comite.php?variable_1=(FL)">Flandres</option>
+          <option value="/consultation/page_comite.php?variable_1=(FC)">Franche Comté</option>
+          <option value="/consultation/page_comite.php?variable_1=(IDF)">Ile de France</option>
+          <option value="/consultation/page_comite.php?variable_1=(LD)">Languedoc</option>
+          <option value="/consultation/page_comite.php?variable_1=(LM)">Limousin</option>
+          <option value="/consultation/page_comite.php?variable_1=(LY)">Lyonnais</option>
+          <option value="/consultation/page_comite.php?variable_1=(MPY)">Midi Pyrénées</option>
+          <option value="/consultation/page_comite.php?variable_1=(N)">Normandie</option>
+          <option value="/consultation/page_comite.php?variable_1=(PL)">Pays de Loire</option>
+          <option value="/consultation/page_comite.php?variable_1=(PA)">Périgord Agenais</option>
+          <option value="/consultation/page_comite.php?variable_1=(PCH)">Poitou Charente</option>
+          <option value="/consultation/page_comite.php?variable_1=(PR)">Provence</option>
+          <option value="/consultation/page_comite.php?variable_1=(PC)">Pays Catalan</option>
+        </select>
+      </fieldset>
+ </form>
+-->
       <br>
       <br>
       <br>
-      <form action="/consultation/pageclub00.php" method="GET">
-      
-		
-		
-		<fieldset class="fieldsetG"> 
-			<legend class="legendG"> 
-			  Palmarès par club
-			 </legend> 
-         <br>
-          <input class="inputG" type="text" name="champion"  title="Recherche par club" required="required">
-         <br>
+      <form action="/consultation/pageclub00.php" method="POST">
+        <fieldset class="fieldsetG">
+          <legend class="legendG">
+            Palmarès par club
+          </legend>
+          <br>
+          <input class="inputG" type="text" name="champion" title="Recherche par club" required="required">
+          <br>
           <input class="inputG" type="submit" value="par club">
-        </fieldset> 
+        </fieldset>
       </form>
       <br>
-        <br>
+      <br>
       <!-- AddThis Button BEGIN -->
       <!--
 		<div class="addthis_toolbox addthis_floating_style addthis_counter_style" style="left:5px;top:50px;position: relative;"> 
@@ -115,7 +152,7 @@
       <br>
       <br>
       <p class="marginAuto size4">
-        <a class="decorationNoneWhite bold colorWhite" href="mailto:francefinalesrugby@free.fr">--Signaler  une erreur--</a>
+        <a class="decorationNoneWhite bold colorWhite" href="mailto:francefinalesrugby@free.fr">--Signaler une erreur--</a>
       </p>
     </td>
   </tr>

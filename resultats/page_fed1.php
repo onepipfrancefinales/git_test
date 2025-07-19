@@ -59,7 +59,7 @@ $comiteNom = "Fédérale 1 - Espoirs Fédérale 1";
   <table class="table">
     <tr>
       <td colspan="3">
-        <img src="../images/stade3.jpg" height="150" width="1250">
+        <img src="../images/stade3.jpg" alt="" height="150" width="1250">
       </td>
     </tr>
     <tr>

@@ -1,6 +1,6 @@
 <?php
 $smart = false;
-if (isset($_GET['division'])) $division = $_GET['division'];else $division = '170';
+if (isset($_REQUEST['division'])) $division = $_REQUEST['division'];else $division = '170';
 //if (isset($nomDivision));else $nomDivision = '*';
 //if (isset($base));else $base = '-';
 require '../fonctionsPalmares.php';
@@ -36,7 +36,7 @@ while ($donnees =  $reponse->fetch()) {
 <html lang="fr">
 
 <head>
-	<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmares.php?division=<?php echo $division; ?>">
+	<link rel="canonical" href="https://francefinalesrugby.fr/palmares/palmNational/pagePalmares.php">
 	<meta name="description" content="Palmarès des champions de france de rugby par divisions et par années">
 	<meta name="classification" content="Sport,Rugby">
 	<meta name="resource-type" content="document">

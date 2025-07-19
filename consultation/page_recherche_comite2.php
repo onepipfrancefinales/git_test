@@ -1,9 +1,9 @@
 <?php
 require("../connect/connexion1.php");
-$mode = $_GET['mode'];
+$mode = $_REQUEST['mode'];
 //if (isset ($chaine)) $chaine=$chaine; else $chaine ="";
-$chaine = $_GET['variableLettre'];
-$variable_1 = $_GET['variable_1'];
+if (isset($_REQUEST['variableLettre'])) $chaine = $_REQUEST['variableLettre']; else $chaine ="";
+if (isset($_REQUEST['variable_1'])) $variable_1 = $_REQUEST['variable_1'];else $variable_1="";
 
 $reponse = $bdd->query("SELECT * 
 						FROM bdclubs 
