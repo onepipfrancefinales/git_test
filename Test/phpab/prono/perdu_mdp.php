@@ -29,8 +29,8 @@ $taille = 8;
 $new_mot_de_passe_crypt=md5($new_mot_de_passe);
 
 mysqli_query($idconnect, ("UPDATE phpab_membres 
-SET mot_de_passe='$new_mot_de_passe_crypt' 
-WHERE mail='$mail'"));
+						  SET mot_de_passe='$new_mot_de_passe_crypt' 
+						  WHERE mail='$mail'"));
 
 $query =$idconnect->query("	SELECT pseudo, mail 
 							FROM phpab_membres 
@@ -40,7 +40,6 @@ $result =$idconnect->query("SELECT pseudo, mail, nom_site, url_site
 							FROM phpab_membres 
 							WHERE admin = '1'");
 							
- // $result=mysql_query($requete) or die ("probleme " .mysql_error());
   $row=mysqli_fetch_array($result);
   $pseudo_admin=$row[0];
   $mail_admin=$row[1];
@@ -61,11 +60,11 @@ $sujet="Votre mot de passe pour les pronostics de $nom_site_admin";
 $message="<html><head><title>phpabeague</title></head><body>
 <p><font face=\"Verdana\" size=\"3\">Bonjour,</font></p>
 <p><font face=\"Verdana\" size=\"3\">Vous avez demandé à recevoir un nouveau mot
-de passe pour acceder aux pronostics du site <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
-<p><font face=\"Verdana\" size=\"3\">Votre pseudo : $pseudo</font></p>
+de passe pour acceder aux pronostics du site France Finales Rugby</p>
+<p><font face=\"Verdana\" size=\"3\">Votre pseudo : $pseudo_admin</font></p>
 <p><font face=\"Verdana\" size=\"3\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
 <p><font face=\"Verdana\" size=\"3\">--------------------------------------------------------------------</font></p>
-<p><font face=\"Verdana\" size=\"3\">Ce script a été créé par <a href=\"http://francefinalerugby.fr\">phpabeague</a> : Site dédié aux compétitons du rugbyFrancais</font></p>
+<p><font face=\"Verdana\" size=\"3\">Ce script a été créé par <a href=\"https://francefinalesrugby.fr\">France Finales Rugby</a> : Site dédié aux compétitons du rugby Francais</font></p>
 </body>
 </html>";
 $from="Content-Type: text/html; charset=\"utf-8\"\nFrom: $mail_admin\n";

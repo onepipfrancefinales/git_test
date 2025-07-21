@@ -17,10 +17,10 @@
 <table width="494" border="0">
     <tr> 
     <td align="center"><font size="4"> 
-      <b>Pour se désinscrire saississsez votre mél ci-dessous</b>
+      <b>---Pour se désinscrire saississsez votre mél ci-dessous</b>
     
-      <form action="http://francefinalesrugby.fr/copies_mel/ab/desinscription2.php?champion=annee" method="GET">
-          <input type="text" name="annee" required="required"/>
+      <form action="https://francefinalesrugby.fr/copies_mel/ab/desinscription2.php" method="POST">
+          <input type="text" name="adresse" required="required"/>
           et cliquez 
           <input type="submit" value="ICI" />
     </td>

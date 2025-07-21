@@ -174,6 +174,7 @@ palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd); ?>
   //****************     Palmares cadets      *******************************
   $table = "bdjeunes";
   $categorie = "E";
+  
  nbreTitre($nomChampion, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreChampion = $nombreTitre;
 

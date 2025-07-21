@@ -112,7 +112,7 @@ else
       require '../../consultation/modaleRecherche.php';
     else {
       include '../../consultation/clubInfos.php';
-      include '../../consultation/clubPalmares.php';
+    //  include '../../consultation/clubPalmares.php';
       include '../../consultation/clubSaisons.php';
     }
     require '../smartFooter.php';

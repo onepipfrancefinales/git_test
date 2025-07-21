@@ -1,4 +1,6 @@
 <?php
+
+
 if (isset($_GET['page'])) $page = $_GET['page'];
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
 
@@ -22,14 +24,14 @@ if (isset($_GET['mode'])) $mode = $_GET['mode'];
         <table cellSpacing=0 width="100%" border=0>
             <tr>
               <td class="menu2 bold">&nbsp;
-                    <?php echo PRONO_MENU_LOGIN; ?>
+                    <?php echo PRONO_MENU_LOGIN.PRONO_MENU_LOGIN; ?>
               </td>
               <td class="menu2"><input class="log" size="10" name="user">
               </td>
             </tr>
             <tr>
               <td class="menu2 bold">&nbsp;
-                    <?php echo PRONO_MENU_MDP; ?>
+                    <?php echo PRONO_MENU_MDP.PRONO_MENU_MDP; ?>
               </td>
               <td class="menu2"><INPUT class="log" size="10" type="password" name="pass">
               </td>
@@ -52,7 +54,7 @@ if (isset($_GET['mode'])) $mode = $_GET['mode'];
 
 <?php if ($page == "erreur_login" or $page =="perdu_mdp") {
   
-echo  "vide";
+
 }
 else
 {
