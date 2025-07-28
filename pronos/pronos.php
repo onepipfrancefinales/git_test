@@ -55,7 +55,7 @@ if ($champLigue == 15)
   Championnats des pronostiqueurs <br>
 ligue <?php echo $titre; ?></p>
 
-<object data="/Test/phpab/prono/index.php"
+<object data="/Test/<?php echo $champLigue; ?>/prono/index.php"
   height="1500" width="100%">
 </object>
 
