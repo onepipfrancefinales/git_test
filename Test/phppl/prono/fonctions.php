@@ -1,34 +1,42 @@
 <?php
 function affiche_points ($user_id, $gr_champ, $idconnect)
 {
- // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
+
+    /*
   $result=$idconnect->query("SELECT points 
-						    FROM phppl_clmnt_pronos, phppl_membres 
-						    WHERE phppl_membres.id=phppl_clmnt_pronos.id_membre 
-						    and phppl_membres.id_prono='$user_id' and type='general' 
-						    AND id_champ='$gr_champ'");
-  //$result=mysql_query($query) or die (mysql_error());
+						                 FROM phppl_clmnt_pronos, phppl_membres 
+						                 WHERE phppl_membres.id=phppl_clmnt_pronos.id_membre 
+						                 AND phppl_membres.id_prono='$user_id' 
+                             AND type='general' 
+						                 AND id_champ='$gr_champ'");
+
+*/
+ $result=$idconnect->query("SELECT points, participation 
+						                 FROM phppl_clmnt_pronos, phppl_membres 
+						                 WHERE phppl_membres.id = phppl_clmnt_pronos.id_membre 
+						                 AND phppl_membres.id_prono='$user_id' 
+                          
+						                 AND id_champ='$gr_champ'");
+
   if (mysqli_num_rows($result)=="0") {$points=0;}
   while ($row=mysqli_fetch_array($result))
   {
     $points=$row[0];
+    $participation=$row[1];
   }
-  print $points;
+  echo $points + $participation;
+
 }
 
 function affiche_clmnt_general ($user_id, $gr_champ, $idconnect)
 {
-  // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
-  $result=$idconnect->query(" SELECT id_prono 
-							  FROM phppl_clmnt_pronos, phppl_membres 
-							  WHERE phppl_membres.id=phppl_clmnt_pronos.id_membre 
-							  AND id_champ='$gr_champ' 
-							  AND type='general' 
-							  AND id_champ='$gr_champ' 
-							  ORDER by points desc, participation desc, phppl_membres.pseudo");
-  //$result=mysql_query($query) or die (mysql_error());
+ $result=$idconnect->query(" SELECT id_prono 
+					            		   FROM phppl_clmnt_pronos, phppl_membres 
+							               WHERE phppl_membres.id = phppl_clmnt_pronos.id_membre 
+							               AND id_champ='$gr_champ' 
+							               AND type='general'  
+							               ORDER by points desc, participation desc, phppl_membres.pseudo");
+ 
   $i = "1";
   while ($row=mysqli_fetch_array($result))
   {
@@ -38,24 +46,22 @@ function affiche_clmnt_general ($user_id, $gr_champ, $idconnect)
    $clmnt=PRONO_CLASSEMENT_NON_CLASSE;
  if (isset($class))
   {
-  if ($class=="1"){print $class; echo PRONO_CLASSEMENT_PREMIER;}
-  elseif ($class=="2"){print $class; echo PRONO_CLASSEMENT_SECOND;}
+  if ($class=="1"){echo $class; echo PRONO_CLASSEMENT_PREMIER;}
+  elseif ($class=="2"){echo $class; echo PRONO_CLASSEMENT_SECOND;}
   elseif ($class=="3"){print $class; echo PRONO_CLASSEMENT_TROIS;}
   else {print $class; echo PRONO_CLASSEMENT_AUTRES;}
   }
-  if (!isset($class)) print $clmnt;
+  if (!isset($class)) echo $clmnt;
 }
 
 function affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect)
 {
-   //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
   $result=$idconnect->query("SELECT id_prono
           FROM phppl_clmnt_pronos, phppl_membres
           WHERE phppl_membres.id=phppl_clmnt_pronos.id_membre 
-		  AND id_champ='$gr_champ' AND type='mensuel_en_cours' 
-		  AND id_champ='$gr_champ' 
-		  ORDER by points desc, participation desc, phppl_membres.pseudo");
+		      AND id_champ='$gr_champ' AND type='mensuel_en_cours' 
+		      AND id_champ='$gr_champ' 
+		      ORDER by points desc, participation desc, phppl_membres.pseudo");
   //$result=mysql_query($query) or die (mysql_error());
   $i = "1";
   while ($row=mysqli_fetch_array($result))
@@ -77,14 +83,13 @@ function affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect)
 
 function affiche_clmnt_mensuel_30_jours ($user_id, $gr_champ, $idconnect)
 {
-  // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
   $result=$idconnect->query("SELECT id_prono 
-  FROM phppl_clmnt_pronos, phppl_membres 
-  WHERE phppl_membres.id=phppl_clmnt_pronos.id_membre 
-  AND id_champ='$gr_champ' AND id_champ='$gr_champ' 
-  AND type='mensuel_30_jours' 
-  ORDER by points desc, participation desc, phppl_membres.pseudo");
+                             FROM phppl_clmnt_pronos, phppl_membres 
+                             WHERE phppl_membres.id=phppl_clmnt_pronos.id_membre 
+                             AND id_champ='$gr_champ' 
+                             AND id_champ='$gr_champ' 
+                             AND type='mensuel_30_jours' 
+                             ORDER by points desc, participation desc, phppl_membres.pseudo");
  // $result=mysql_query($query) or die (mysql_error());
   $i = "1";
   while ($row=mysqli_fetch_array($result))
@@ -104,15 +109,14 @@ function affiche_clmnt_mensuel_30_jours ($user_id, $gr_champ, $idconnect)
 
 function affiche_clmnt_mensuel_hebdo ($user_id, $gr_champ, $idconnect)
 {
- // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
   $result=$idconnect->query("SELECT id_prono 
-  FROM phppl_clmnt_pronos, phppl_membres 
-  WHERE phppl_membres.id=phppl_clmnt_pronos.id_membre 
-  AND id_champ='$gr_champ' AND type='hebdo' 
-  AND id_champ='$gr_champ' 
-  ORDER by points desc, participation desc, phppl_membres.pseudo");
-  //$result=mysql_query($query) or die (mysql_error());
+							               FROM phppl_clmnt_pronos, phppl_membres 
+                             WHERE phppl_membres.id=phppl_clmnt_pronos.id_membre 
+                             AND id_champ='$gr_champ' 
+                             AND type='hebdo' 
+                             AND id_champ='$gr_champ' 
+                             ORDER by points desc, participation desc, phppl_membres.pseudo");
+ 
   $i = "1";
   while ($row=mysqli_fetch_array($result))
   { if ($row[0]==$user_id){$class=$i;}
@@ -173,15 +177,13 @@ function perdu_mot_de_passe()
 }
 
 function classement_general ($gr_champ, $user_pseudo, $idconnect)
-{
-// $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
+{  
 $result=$idconnect->query("  SELECT pseudo, points, participation 
-							FROM phppl_clmnt_pronos
-							WHERE id_champ='$gr_champ' 
-							AND type='general'
-							ORDER by points desc, participation desc, pseudo LIMIT 0, 10");
-//$result=mysql_query($query) or die ("probleme " .mysql_error());
+							               FROM phppl_clmnt_pronos
+							               WHERE id_champ='$gr_champ' 
+							               AND type = 'general'
+							               ORDER by points desc, participation desc, pseudo LIMIT 0, 10");
+
 $i=1;
 
        while ($row=mysqli_fetch_array($result))
@@ -219,39 +221,36 @@ function format_date_timestamp($date){
 
 
 function grille_admin ($gr_champ, $idconnect)
-{
- //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
+{ 
 $result=$idconnect->query("SELECT phppl_clubs.nom, CLEXT.nom, phppl_matchs.buts_dom, phppl_matchs.buts_ext, phppl_matchs.id, phppl_matchs.date_reelle, phppl_journees.numero
-FROM phppl_clubs, phppl_clubs as CLEXT, phppl_matchs, phppl_journees, phppl_equipes, phppl_equipes as EXT, phppl_gr_championnats
-WHERE phppl_clubs.id=phppl_equipes.id_club
-AND CLEXT.id=EXT.id_club
-AND phppl_equipes.id=phppl_matchs.id_equipe_dom
-AND EXT.id=phppl_matchs.id_equipe_ext
-AND phppl_matchs.id_journee=phppl_journees.id
-AND phppl_journees.id_champ=phppl_gr_championnats.id_champ
-AND phppl_gr_championnats.id='$gr_champ'
-AND phppl_matchs.buts_dom is null
-AND phppl_matchs.buts_ext is null
-AND phppl_clubs.nom!='exempte'
-AND CLEXT.nom!='exempte'
-ORDER by phppl_matchs.date_reelle, phppl_clubs.nom
-LIMIT 0, 10");
+                           FROM phppl_clubs, phppl_clubs as CLEXT, phppl_matchs, phppl_journees, phppl_equipes, phppl_equipes as EXT, phppl_gr_championnats
+                           WHERE phppl_clubs.id=phppl_equipes.id_club
+                           AND CLEXT.id=EXT.id_club
+                           AND phppl_equipes.id=phppl_matchs.id_equipe_dom
+                           AND EXT.id=phppl_matchs.id_equipe_ext
+                           AND phppl_matchs.id_journee=phppl_journees.id
+                           AND phppl_journees.id_champ=phppl_gr_championnats.id_champ
+                           AND phppl_gr_championnats.id='$gr_champ'
+                           AND phppl_matchs.buts_dom is null
+                           AND phppl_matchs.buts_ext is null
+                           AND phppl_clubs.nom!='exempte'
+                           AND CLEXT.nom!='exempte'
+                           ORDER by phppl_matchs.date_reelle, phppl_clubs.nom
+                           LIMIT 0, 10");
 
 $i=0;
-//$result=mysql_query($query) or die ("probleme " .mysql_error());
 
-while ($row=mysqli_fetch_array($result) and $i<10)
+while ($row=mysqli_fetch_array($result) and $i < 10)
   {
 $clubs_nom = stripslashes($row[0]);
 $clubs_nom1 = stripslashes($row[1]);
 
 $result2=$idconnect->query( "SELECT pronostic 
-							FROM phppl_pronostics, phppl_gr_championnats 
-							WHERE phppl_pronostics.id_match='$row[4]' 
-							AND phppl_gr_championnats.id='$gr_champ' 
-							AND id_membre=id_master");
-//$result2=mysql_query($query2) or die ("probleme " .mysql_error());
+					                   FROM phppl_pronostics, phppl_gr_championnats 
+							               WHERE phppl_pronostics.id_match='$row[4]' 
+							               AND phppl_gr_championnats.id='$gr_champ' 
+							               AND id_membre=id_master");
+
 $nb_pronos= mysqli_num_rows($result2);
 
 if ($nb_pronos == "0") {$prono="0";}
@@ -309,7 +308,7 @@ if ($nb_pronos == "0") {$prono="0";}
   echo "<td><div class=\"blanc\">$clubs_nom1</div></td>";
 
   $resultats2=$idconnect->query("SELECT tps_avant_prono FROM phppl_gr_championnats WHERE id='$gr_champ'");
-  //$resultats2=mysql_query($requete2) or die ("probleme " .mysql_error());
+
    while ($row2=mysqli_fetch_array($resultats2))
    {
     $temps_avantmatch=$row2[0];
@@ -335,117 +334,145 @@ if ($nb_pronos == "0") {$prono="0";}
 
 }
 
+function nom_championnat($gr_champ, $idconnect) {
+
+    $resultat=$idconnect->query("SELECT nom
+								 FROM phppl_gr_championnats 
+								 WHERE id = '$gr_champ' ");
+
+   while ($row = mysqli_fetch_array($resultat)) {
+    $gr_champ_nom = $row[0]; 
+   
+   }
+echo $gr_champ_nom;
+  
+} 
+
 function classement_type ($type)
 {
-if ($type=="") {echo PRONO_CLASSEMENT_GENERAL_MAJ;}
-if ($type=="general") {echo PRONO_CLASSEMENT_GENERAL_MAJ;}
-if ($type=="mensuel_en_cours") {echo PRONO_CLASSEMENT_MOIS;}
-if ($type=="mensuel_30_jours") {echo PRONO_CLASSEMENT_30;}
-if ($type=="hebdo") {echo PRONO_CLASSEMENT_HEBDO;}
+if ($type=="") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+if ($type=="general") {echo "<br>"."<br>";}
+if ($type=="mensuel_en_cours") {echo "<br>"."<br>";}
+if ($type=="mensuel_30_jours") {echo "<br>".PRONO_CLASSEMENT_30."<br>"."<br>";}
+if ($type=="hebdo") { echo "<br>"."<br>";}
+//if ($type=="") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+//if ($type=="general") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+//if ($type=="mensuel_en_cours") {echo "<br>".PRONO_CLASSEMENT_MOIS."<br>"."<br>";}
+//if ($type=="mensuel_30_jours") {echo "<br>".PRONO_CLASSEMENT_30."<br>"."<br>";}
+//if ($type=="hebdo") { echo "<br>".PRONO_CLASSEMENT_HEBDO."<br>"."<br>";}
 }
 
 function classement ($gr_champ, $type, $user_pseudo, $idconnect)
 {
 
- //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
-
 if (!($type=="general" or $type=="mensuel_en_cours" or $type=="mensuel_30_jours" or $type=="hebdo")){$type="general";}
 
+// classement mensuel_en_cours
 if ($type=="mensuel_en_cours")
 {
-   mysqli_query($idconnect, ("DELETE FROM phppl_clmnt_pronos WHERE id_champ='$gr_champ' AND type='mensuel_en_cours'"));
+   mysqli_query($idconnect, ("DELETE FROM phppl_clmnt_pronos 
+                              WHERE id_champ='$gr_champ' 
+                              AND type='mensuel_en_cours'"));
 
    $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
-   FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
-   WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
-   AND phppl_gr_championnats.id='$gr_champ'
-   AND id_membre=phppl_membres.id
-   AND phppl_matchs.id=id_match
-   AND MONTH (date_reelle) = MONTH (NOW())
-   AND YEAR (date_reelle) = YEAR (NOW())
-   GROUP by pseudo
-   ORDER by total, participations");
+                              FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
+                              WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
+                              AND phppl_gr_championnats.id='$gr_champ'
+                              AND id_membre=phppl_membres.id
+                              AND phppl_matchs.id=id_match
+                              AND MONTH (date_reelle) = MONTH (NOW())
+                              AND YEAR (date_reelle) = YEAR (NOW())
+                              GROUP by pseudo
+                              ORDER by total, participations");
 
- //  $result=mysql_query ($query) or die ("probleme " .mysql_error());
    while ($row=mysqli_fetch_array($result))
          {
          $row[1]=addslashes($row[1]);
-         mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) values ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_en_cours')"));
+         mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
+                                    values ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_en_cours')"));
          }
 }          
 
+// classement mensuel
 if ($type=="mensuel_30_jours")
 {
-   mysqli_query($idconnect, ("DELETE FROM phppl_clmnt_pronos WHERE id_champ='$gr_champ' AND type='mensuel_30_jours'"));
+   mysqli_query($idconnect, ("DELETE FROM phppl_clmnt_pronos 
+                              WHERE id_champ='$gr_champ' 
+                              AND type='mensuel_30_jours'"));
 
    $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
-   FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
-   WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
-   AND phppl_gr_championnats.id='$gr_champ'
-   AND id_membre=phppl_membres.id
-   AND phppl_matchs.id=id_match
-   AND DATE_ADD(date_reelle, INTERVAL 30 DAY) >= NOW()
-   GROUP by pseudo
-   ORDER by total, participations");
+                              FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
+                              WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
+                              AND phppl_gr_championnats.id='$gr_champ'
+                              AND id_membre=phppl_membres.id
+                              AND phppl_matchs.id=id_match
+                              AND DATE_ADD(date_reelle, INTERVAL 30 DAY) >= NOW()
+                              GROUP by pseudo
+                              ORDER by total, participations");
 
-   //$result=mysql_query ($query) or die ("probleme " .mysql_error());
-       while ($row=mysqli_fetch_array($result))
-       {
-       $row[1]=addslashes($row[1]);
-       mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) values ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_30_jours')"));
-       }
-}
 
-if ($type=="hebdo")
-{
-   mysqli_query($idconnect, ("DELETE FROM phppl_clmnt_pronos WHERE id_champ='$gr_champ' AND type='hebdo'"));
-
-   $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
-   FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
-   WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
-   AND phppl_gr_championnats.id='$gr_champ'
-   AND id_membre=phppl_membres.id
-   AND phppl_matchs.id=id_match
-   AND DATE_ADD(date_reelle, INTERVAL 7 DAY) >= NOW()
-   GROUP by pseudo
-   ORDER by total, participations");
-
-  // $result=mysql_query ($query) or die ("probleme " .mysql_error());
        while ($row=mysqli_fetch_array($result))
        {
        $row[1]=addslashes($row[1]);
        mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-								  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
+                                  values ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_30_jours')"));
        }
 }
+// classement hebdomadaire
+if ($type=="hebdo")
+{
+   mysqli_query($idconnect, ("DELETE FROM phppl_clmnt_pronos 
+                              WHERE id_champ='$gr_champ' 
+                              AND type='hebdo'"));
+
+   $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+                              FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
+                              WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
+                              AND phppl_gr_championnats.id='$gr_champ'
+                              AND id_membre=phppl_membres.id
+                              AND phppl_matchs.id=id_match
+                              AND DATE_ADD(date_reelle, INTERVAL 7 DAY) >= NOW()
+                              GROUP by pseudo
+                              ORDER by total, participations");
+
+       while ($row=mysqli_fetch_array($result))
+       {
+       $row[1]=addslashes($row[1]);
+       mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
+								                  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
+       }
+}
+
 if (isset($_REQUEST['complet'])) {$complet=$_REQUEST['complet'];} else {$complet='';}
 
-$result=$idconnect->query("SELECT pseudo, points, participation FROM phppl_clmnt_pronos
-WHERE id_champ='$gr_champ' AND type='$type'
-ORDER by points desc, participation desc, pseudo");
+$result=$idconnect->query("SELECT pseudo, points, participation 
+                           FROM phppl_clmnt_pronos
+                           WHERE id_champ='$gr_champ' 
+                           AND type='$type'
+                           ORDER by points desc, participation desc, pseudo");
 //if (!($complet== '1'))
 //{
 //	$query = $query." LIMIT 0, 10";
 //}
 //$result=mysql_query($query) or die ("probleme " .mysql_error());
 $i=1;
+
 while ($row=mysqli_fetch_array($result))
 {
- echo "<tr><td><div class=\"blanc\">$i</div></td>";
+$totaux = $row[1] + $row[2] ;
+ echo "<tr><td class=\"blanc\">$i</td>";
 
- if ($user_pseudo==$row[0]) echo "<td><div class=\"blanc\"><b>$row[0]</b></div></td>";
- else  echo "<td><div class=\"blanc\">$row[0]</div></td>";
- echo "<td><div class=\"blanc\">$row[1]</div></td>";
- echo "<td><div class=\"blanc\">$row[2]</div></td></tr>";
-
+ if ($user_pseudo==$row[0]) echo "<td class=\"blanc bold\">$row[0]</td>";
+ else  echo "<td class=\"blanc\">$row[0]</td>";
+ echo "<td class=\"blanc\">$row[1]</td>";
+ echo "<td class=\"blanc\">$row[2]</td>";
+ echo "<td class=\"blanc\">$totaux</td>  </tr>";
  $i++;
 }
-if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><a href=\"index.php?page=classement&amp;type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
+if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><br><a href=\"index.php?page=classement&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
 }
 
 function date_form_inscription ()
-
 {
   for($i=1;$i<=31;$i++){echo "<option value=\"$i\">$i</option>";}
 echo "</select> ";
@@ -462,44 +489,45 @@ echo "</select>";
 function pseudo_admin ($gr_champ, $idconnect)
 {
  $resultat=$idconnect->query("SELECT pseudo 
-							  FROM phppl_membres, phppl_gr_championnats 
-							  WHERE phppl_gr_championnats.id_master=phppl_membres.id 
-							  AND phppl_gr_championnats.id='$gr_champ'");
+							                FROM phppl_membres, phppl_gr_championnats 
+							                WHERE phppl_gr_championnats.id_master=phppl_membres.id 
+							                AND phppl_gr_championnats.id='$gr_champ'");
  
   while ($row= mysqli_fetch_array($resultat))
   {  
     $pseudo = $row[0];
   }
   
- echo $pseudo;
+ //echo $pseudo;
 }
 
-function champ_prono ($gr_champ, $idconnect)
+function champ_prono ($gr_champ, $idconnect, $mode)
 {
- // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
- $resultat=$idconnect->query("SELECT DISTINCT id, nom FROM phppl_gr_championnats WHERE  phppl_gr_championnats.activ_prono='1' ORDER by id");
- // $resultat=mysql_query ($requete) or die ("probleme " .mysql_error());;
+ $resultat=$idconnect->query("SELECT DISTINCT id, nom
+                              FROM phppl_gr_championnats 
+                              WHERE  phppl_gr_championnats.activ_prono='1' 
+                              ORDER by id");
 
   while ($row= mysqli_fetch_array($resultat))
   {
-    echo "<a href=\"index.php?gr_champ=$row[0]\">";
+    echo "&nbsp;";
+    echo  "<a href=\"index.php?page=pronos&mode=$mode&gr_champ=$row[0]\">";
     if ($gr_champ==$row[0]){echo "<b>";}
     echo "$row[1]";
     if ($gr_champ==$row[0]){echo "</b>";}
     echo "</a><br />";
   }
+  
 
 }
 
 // Nombres d equipes dans un championnat
 function nb_equipes($id_champ, $idconnect)
          {
-     // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
-
-	 $result=$idconnect->query("SELECT id FROM phppl_equipes WHERE id_champ='$id_champ'");
-        // $result=mysql_query($query);
+	      $result=$idconnect->query("SELECT id 
+                                   FROM phppl_equipes 
+                                   WHERE id_champ='$id_champ'");
+       
          $nb_equipes=mysqli_num_rows( $result );
          return("$nb_equipes");
          }
@@ -509,12 +537,9 @@ function VerifSession ($user_pseudo,$user_mdp, $idconnect)
 
 if ($user_pseudo and $user_mdp)
 	{
-      //  $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-  
 	   $result=$idconnect->query( "SELECT mot_de_passe, id_prono 
-									FROM phppl_membres 
-									WHERE pseudo='$user_pseudo'");
-        //$result = mysql_query($requete);
+									               FROM phppl_membres 
+									               WHERE pseudo='$user_pseudo'");
         $row = mysqli_fetch_array($result);
         
         if ($row["mot_de_passe"] == $user_mdp){;$a=1;}

@@ -17,19 +17,19 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
 </head>
 <?php
 //***********************************************************************/
-// phpproeague : gestionnaire de championnat                              */
+// phpabeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpproeague.univert.org                                         */
+// http://phpabeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpproeague.univert.org/forum               */
+// Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>

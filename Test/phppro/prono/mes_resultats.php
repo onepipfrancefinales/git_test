@@ -34,16 +34,16 @@
 
         $result = $idconnect->query("
 		SELECT points, participation, id_prono, pts_prono_participation, pts_prono_exact, AVG(points)
-		FROM phppro_clmnt_pronos, phppro_membres, phppro_gr_championnats
+		FROM phpab_clmnt_pronos, phpab_membres, phpab_gr_championnats
 		WHERE type='general' 
-		AND phppro_membres.id=phppro_clmnt_pronos.id_membre 
-		AND phppro_gr_championnats.id='$gr_champ' 
-		AND phppro_clmnt_pronos.id_champ='$gr_champ' 
-		AND phppro_membres.id_prono='$user_id'
+		AND phpab_membres.id=phpab_clmnt_pronos.id_membre 
+		AND phpab_gr_championnats.id='$gr_champ' 
+		AND phpab_clmnt_pronos.id_champ='$gr_champ' 
+		AND phpab_membres.id_prono='$user_id'
 		GROUP BY participation
 		ORDER by points 
 		DESC, participation 
-		DESC, phppro_membres.pseudo");
+		DESC, phpab_membres.pseudo");
         //$result=mysql_query($query) or die ("probleme " .mysql_error());
         // $moyenne_generale=0;  
 
@@ -72,9 +72,9 @@
 
         // Mensuel en cours
         $result = $idconnect->query("SELECT points, participation, id_prono, pts_prono_participation, pts_prono_exact
-FROM phppro_clmnt_pronos, phppro_membres, phppro_gr_championnats
-WHERE type='mensuel_en_cours' AND phppro_membres.id=phppro_clmnt_pronos.id_membre and phppro_gr_championnats.id='$gr_champ' and phppro_clmnt_pronos.id_champ='$gr_champ' and phppro_membres.id_prono='$user_id'
-ORDER by points desc, participation desc, phppro_membres.pseudo");
+FROM phpab_clmnt_pronos, phpab_membres, phpab_gr_championnats
+WHERE type='mensuel_en_cours' AND phpab_membres.id=phpab_clmnt_pronos.id_membre and phpab_gr_championnats.id='$gr_champ' and phpab_clmnt_pronos.id_champ='$gr_champ' and phpab_membres.id_prono='$user_id'
+ORDER by points desc, participation desc, phpab_membres.pseudo");
         //$result=mysql_query($query) or die ("probleme " .mysql_error());
         $non_classe = 0;
         while ($row = mysqli_fetch_array($result)) {
@@ -117,12 +117,12 @@ ORDER by points desc, participation desc, phppro_membres.pseudo");
 
         // Mensuel 30 derniers jours
         $result = $idconnect->query("SELECT points, participation, id_prono, pts_prono_participation,pts_prono_exact
-FROM phppro_clmnt_pronos, phppro_membres, phppro_gr_championnats
+FROM phpab_clmnt_pronos, phpab_membres, phpab_gr_championnats
 WHERE type='mensuel_30_jours' 
-AND phppro_membres.id=phppro_clmnt_pronos.id_membre 
-and phppro_gr_championnats.id='$gr_champ' 
-and phppro_membres.id_prono='$user_id'
-ORDER by points desc, participation desc, phppro_membres.pseudo");
+AND phpab_membres.id=phpab_clmnt_pronos.id_membre 
+and phpab_gr_championnats.id='$gr_champ' 
+and phpab_membres.id_prono='$user_id'
+ORDER by points desc, participation desc, phpab_membres.pseudo");
         //$result=mysql_query($query) or die ("probleme " .mysql_error());
 
         while ($row = mysqli_fetch_array($result)) {
@@ -157,14 +157,14 @@ ORDER by points desc, participation desc, phppro_membres.pseudo");
 
         // Hebdo
         $result = $idconnect->query("SELECT points, participation, id_prono, pts_prono_participation,pts_prono_exact
-                                     FROM phppro_clmnt_pronos, phppro_membres, phppro_gr_championnats
+                                     FROM phpab_clmnt_pronos, phpab_membres, phpab_gr_championnats
                                      WHERE type='hebdo' 
-                                     AND phppro_membres.id=phppro_clmnt_pronos.id_membre 
-                                     AND phppro_gr_championnats.id='$gr_champ' 
-                                     AND phppro_membres.id_prono='$user_id'   
+                                     AND phpab_membres.id=phpab_clmnt_pronos.id_membre 
+                                     AND phpab_gr_championnats.id='$gr_champ' 
+                                     AND phpab_membres.id_prono='$user_id'   
                                      ORDER BY points 
                                      DESC, participation 
-                                     DESC, phppro_membres.pseudo");
+                                     DESC, phpab_membres.pseudo");
 
         while ($row = mysqli_fetch_array($result)) {
           if ($user_id == $row[2] and $row[1] !== 0 and $moyenne_generale !== 0 and !empty($moyenne_generale)) {

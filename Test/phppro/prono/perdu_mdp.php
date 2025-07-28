@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpproeague : gestionnaire de championnat                              */
+// phpabeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpproeague.univert.org                                         */
+// http://phpabeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpproeague.univert.org/forum               */
+// Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -28,44 +28,45 @@ $taille = 8;
 	}
 $new_mot_de_passe_crypt=md5($new_mot_de_passe);
 
-mysqli_query($idconnect, ("UPDATE phppro_membres 
-SET mot_de_passe='$new_mot_de_passe_crypt' 
-WHERE mail='$mail'"));
+mysqli_query($idconnect, ("UPDATE phpab_membres 
+						  SET mot_de_passe='$new_mot_de_passe_crypt' 
+						  WHERE mail='$mail'"));
 
-$query =$idconnect->query("	SELECT pseudo, mail 
-							FROM phppro_membres 
+$result1 =$idconnect->query("	SELECT pseudo, mail 
+							FROM phpab_membres 
 							WHERE mail='$mail'");
+ $row=mysqli_fetch_array($result1);
+$pseudo= $row[0];
+
+
 
 $result =$idconnect->query("SELECT pseudo, mail, nom_site, url_site 
-							FROM phppro_membres 
+							FROM phpab_membres 
 							WHERE admin = '1'");
 							
- // $result=mysql_query($requete) or die ("probleme " .mysql_error());
   $row=mysqli_fetch_array($result);
   $pseudo_admin=$row[0];
   $mail_admin=$row[1];
   $nom_site_admin=$row[2];
   $url_site_admin=$row[3];
 
-echo "-----------------------"; echo "<br/>"; 
-//echo "to : ".$to; echo "<br/>";
-//echo "message : ".$message; echo "<br/>";
-//echo "from :".$from; echo "<br/>";
-echo "-----------------------"; echo "<br/>";   
-
 
 //if (list($pseudo, $mail) = mysqli_fetch_array($query))
 //{                                                                                            
 $to="$pseudo <$mail>";
-$sujet="Votre mot de passe pour les pronostics de $nom_site_admin";
-$message="<html><head><title>phpproeague</title></head><body>
+$sujet="Votre mot de passe pour les pronostics de $pseudo";
+$message="<html><head><title>phpabeague</title></head><body>
 <p><font face=\"Verdana\" size=\"3\">Bonjour,</font></p>
 <p><font face=\"Verdana\" size=\"3\">Vous avez demandé à recevoir un nouveau mot
-de passe pour acceder aux pronostics du site <a href=\"$url_site_admin\">$nom_site_admin</a>.</font></p>
+de passe pour acceder aux pronostics du site France Finales Rugby</p>
 <p><font face=\"Verdana\" size=\"3\">Votre pseudo : $pseudo</font></p>
 <p><font face=\"Verdana\" size=\"3\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
+<p><font face=\"Verdana\" size=\"3\">Retour à la page de connexion : <a href=\"https://francefinalesrugby.fr/Test/phpab/prono/index.php\">En cliquant ici</a></font></p>
+<P>Sportivement.</p>
+<P>L'équipe France finales Rugby</p>
 <p><font face=\"Verdana\" size=\"3\">--------------------------------------------------------------------</font></p>
-<p><font face=\"Verdana\" size=\"3\">Ce script a été créé par <a href=\"http://francefinalerugby.fr\">phpproeague</a> : Site dédié aux compétitons du rugbyFrancais</font></p>
+
+<p><font face=\"Verdana\" size=\"3\">Ce script a été créé par <a href=\"https://francefinalesrugby.fr\">France Finales Rugby.</a> <br> Site dédié aux compétitons du rugby Francais</font></p>
 </body>
 </html>";
 $from="Content-Type: text/html; charset=\"utf-8\"\nFrom: $mail_admin\n";

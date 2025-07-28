@@ -1,29 +1,43 @@
 <?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];
 require ("../config.php");
 ouverture ();
 $autoidentification = isset($_POST['autoidentification']) ? $_POST['autoidentification'] : NULL;
-echo $autoidentification;
+$mode = isset($_POST['testMode']) ? $_POST['testMode'] : NULL;
+$user = isset($_POST['user']) ? $_POST['user'] : NULL;
+$pass = isset($_POST['pass']) ? $_POST['pass'] : NULL;
+
+echo "user".$user;echo "<br>";
+echo "autoidentification".$autoidentification;echo "<br>";
+echo "mode".$mode;echo "<br>";
+echo "pass".$pass;echo "<br>";
+
 	if(!isset($_REQUEST['user']) or !isset($_REQUEST['pass']))
 	{
-   	 header("Location: index.php?page=erreur_login&t=0");
+		
+   	 header("Location: index.php?mode=$mode&page=erreur_login&t=0");
 	}
 	elseif ($_REQUEST['user']=='' || $_REQUEST['pass']=='')
 	{
-         header("Location: index.php?page=erreur_login&t=0");
+ 
+		      header("Location: index.php?mode=$mode&page=erreur_login&t=0");
         }
 
 	else
 	{
         $user = addslashes($_REQUEST['user']);
         $pass = $_REQUEST['pass'];
-        $result =$idconnect->query( "SELECT mot_de_passe FROM phppl_membres WHERE pseudo='$user'");
+        $result =$idconnect->query( "SELECT mot_de_passe 
+									 FROM phppl_membres 
+									 WHERE pseudo='$user'");
 	//$result = mysql_query($query);
 	$row = mysqli_fetch_array($result);
         $password_crypt = md5($pass);
 
 	if($row['mot_de_passe'] != $password_crypt or mysqli_num_rows($result)=="0")
 	{
-        header("Location: index.php?page=erreur_login&t=1");
+	
+        header("Location: index.php?mode=$mode&page=erreur_login&t=1");
 	}
 	else
 	{
@@ -40,11 +54,16 @@ echo $autoidentification;
         else {$expire=3600;}
 	setcookie("user","$user",time()+$expire,"/","");
 	setcookie("mot_de_passe","$mot_de_passe",time()+$expire,"/","");
-//	session_start();
-//	session_register('user');
-//	session_register('mot_de_passe');
+	session_start();
+	// $_SESSION('user');
+	// $_SESSION('mot_de_passe');
 	$_SESSION['user'] = $user;
 	$_SESSION['mot_de_passe'] = $mot_de_passe;
-	header("Location: index.php");
+
+
+	echo "login.php : user -".$_SESSION['user'];
+	echo "login.php : mot_de_passe -".$_SESSION['mot_de_passe'];
+	
+	header("Location: index.php?mode=$mode");
 }}
 
