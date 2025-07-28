@@ -185,4 +185,7 @@ else
   </table>
   <?php
 }
+if ($champLigue == 11) {
+require '../pronos/lienPronos.php';
+}
 ?>

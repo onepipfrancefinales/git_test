@@ -184,16 +184,20 @@ else {include ("accueil.htm");}
   </tr>
 </table>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
  
 
 <?php
 
 if ($mode == "smart")
 {
+?>
+   <div class="marginAuto  ">
+  <iframe class="width100PC" height="800" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+ <?php 
 require '../../../smart/smartFooter.php';
 }
-
   ?>
+
+

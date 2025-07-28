@@ -1,8 +1,8 @@
 <?php
 if ($action == "supp" and !$confirm=="oui")
  {
-   echo "<table><tr><td class=\"center\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
-   echo "<a href=\"index.php?page=profil&amp;action=supp&amp;confirm=oui\">".ADMIN_RENS_17."</a> - <a href=\"index.php\">".ADMIN_RENS_18."</a></td></tr></table>";
+   echo "<table ><tr><td class=\"center colorWhite size3\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
+   echo "<a class=\"center colorWhite size3\" href=\"index.php?page=profil&amp;action=supp&amp;confirm=oui\">".ADMIN_RENS_17."</a> - <a class=\"center colorWhite size3\" href=\"index.php\">".ADMIN_RENS_18."</a></td></tr></table>";
  }
 
 elseif ($action == "supp" and $confirm=="oui")

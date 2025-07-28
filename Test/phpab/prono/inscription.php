@@ -92,11 +92,16 @@ if (!$go == "1") {
     //mysqli_query($idconnect, ("INSERT INTO phpab_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
     //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
+//$tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
+$tabTables = array('phpau', 'phpab');
+foreach ($tabTables as $table) {
+  //phpab_pronostics
+  $tableMembres = $table . "_membres";
+ 
+    mysqli_query($idconnect, ("INSERT INTO $tableMembres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, ville, pays, admin )
+                             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$pseudo', '$nom', '$pseudo', '$pseudo',  '$pseudo', '$mdp','1' )"));
 
-    mysqli_query($idconnect, ("INSERT INTO phpab_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, ville, pays, admin )
-                             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$pseudo', '$pseudo', '$pseudo', '$pseudo',  '$pseudo', '$mdp','1' )"));
-
-
+}
     $result = $idconnect->query("SELECT id 
                              FROM phpab_membres 
                              WHERE id_prono='$id_prono'");
@@ -121,198 +126,34 @@ if (!$go == "1") {
 
     $to = "$pseudo <$mail>";
 
-    $sujet = "France Finales Rugby App";
+    $sujet = "France Finales Rugby (Pronostics)";
 
     $message = "
     <html><head><title>Inscription à France Finales Prono</title></head><body>
 <p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Bonjour et bienvenue sur France Finales Rugby, </font></p>
-<p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Vous venez de vous inscrire sur France Finales Pronos. Vous pouvez désormais procéder &agrave; la mise &agrave; jours des résultats des rencontres de votre comité.</font></p>
+<p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Vous venez de vous inscrire aux jeux de pronostics dédiés aux compétitions de votre ligue.</font></p>
 <p><font size=\"3\" face=\"Verdana\" color=\"#000000\">Voici les informations qui vous
-permettront d'accéder &agrave; la mise &agrave; jours des résultats :</font></p>
+permettront de vous connecter :</font></p>
 <p><font face=\"Verdana\" size=\"3\" color=\"#000000\">Login :&nbsp;  $pseudo 
 <br />
 Mot de passe :  $mdp </font></p>
 
-<p><font face=\"Verdana\" size=\"2\" color=\"#000000\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmarès, etc...en consultant
-<a href=\"http://francefinalesrugby.fr\">France Finales Rugby</a> 
-</font></p>
+<p><font face=\"Verdana\" size=\"3\" color=\"#000000\">Vous pouvez également consulter stats, classements complets, calendriers, les différents palmarès,<br>
+ historiques des saisons, etc...en consultant <a href=\"https://francefinalesrugby.fr\">France Finales Rugby</a> 
 <br />
 Sportivement</font></p>
 <br />
-<p><font face=\"Verdana\" size=\"2\" color=\"#000000\">France Finales Rugby</font><br>
-<font face=\"Verdana\" size=\"2\" color=\"#000000\">80 Avenue du 11 novembre</font><br>
-<font face=\"Verdana\" size=\"2\" color=\"#000000\">31230 L'Isle en Dodon</font><br>
+<p><font face=\"Verdana\" size=\"3\" color=\"#000000\">France Finales Rugby<br>
+80 Avenue du 11 novembre<br>
+31230 L'Isle en Dodon<br>
+</font></p>
 <br />
-<table  border=\"1\" width=\"500\"align=\"center\">
-	<tr class=\"size6 style\">
-		<td colspan=\"2\"  align=\"center\"><font size=\"6\" face=\"Arial, Helvetica, sans-serif\"><b>Champions de France <br >2025</b></font></td>
-	</tr>
-	<tr bgcolor=\"#FF0000\">
-		<td colspan=\"2\"  align=\"center\" > <font size=\"5\"><b>Séniors I<b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td width=\"35%\" ><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Top 14 :</td>
-		<td width=\"51%\" ><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Stade Toulousain (OCC)</b></font></td>	
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Pro D2 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>US Montauban (OCC)</b></font></font></td>
-	</tr>
-	<tr align=\"center\"\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Nationale :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Carcassonne (OCC)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Nationale 2 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Rennes (BRE)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Fédérale 1 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Tyrosse (NAQ)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td ><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Fédérale 2 :</td>
-		<td  align=\"center\"><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Cahors (OCC)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Fédérale 3 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Saint Claude (BFC)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Régionale 1 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Valréas (PCA)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Régionale 2 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Fleury Salles Coursan (OCC)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Régionale 3 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Hyeres Carqueiranne 83 (PCA)</b></font></td>
-	</tr>
-    <tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Promotion Régionale 1 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Villeneuve de Marsan (NAQ)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"> Promotion Régionale 2 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Caraman (OCC)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Promotion Régionale 3 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Parentis en Born (NAQ)</b></font></td>
-	</tr>
-
-	<tr bgcolor=\"#FF0000\">
-		<td colspan=\"2\" align=\"center\" > <font size=\"5\"><b>Séniors II<b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Espoirs Elite :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Bégles Bordeaux (NAQ)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Espoirs Nationaux : </td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Nimes (OCC)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Espoirs Fédéraux : </td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Tyrosse (NAQ)</b></font></td>
-	</tr>
-    
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Fédérale B :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Gennevilliers (IDF)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Excellence B :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>A.C.L.R (NAQ)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Réserve Régionale 1 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Vallée de Girou (OCC)</td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Réserve Régionale 2 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Clermont la Plaine (ARA)</b></font></td>
-	</tr>
-	<tr bgcolor=\"#FF0000\">
-		<td colspan=\"2\"  align=\"center\" > <font size=\"5\"><b>Féminines<b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Elite 1 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Stade Bordelais (NAQ)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Elite 2 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>RC Toulon (PCA)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Fédérale 1 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>RC de France (IDF)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Fédérale 2 :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Toulouse UC (OCC)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Cadettes Elite :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Stade Toulousain (OCC)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Cadettes :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Ent Dijon Saint Apollinaire (BFC)</b></font></td>
-	</tr>
-
-	<tr bgcolor=\"#FF0000\">
-		<td colspan=\"2\"  align=\"center\" > <font size=\"5\"><b>Jeunes<b></font></td>
-	</tr>
-	<tr bgcolor=\"#808080\">
-		<td colspan=\"2\" ><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Juniors (-18ans)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Crabos :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>AS Montferrand (ARA)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">National U18 : </td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Issoire (ARA)</b></font></td>
-	</tR >
-<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Régional 1 - U18 : </td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>XV de la Dombes (ARA)</b></font></td>
-	</tr>
-<tr bgcolor=\"#808080\">
-	<td colspan=\"2\" ><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Cadets (-16ans)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Alamercery :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Montpellier RC (OCC)</b></font></td>
-	</tr>
-	<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Gaudermen :</td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Lyon OU (ARA)</b></font></td>
-	</tr>
-	<tr align=\"center\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">National U16 : </td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Villefranche sur Saone (ARA)</b></font></td>
-	</tr>
-		<tr align=\"center\" bgcolor=\"#DCDCDC\">
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\">Régional 1 - U16 : </td>
-		<td><font size=\"3\" face=\"Arial, Helvetica, sans-serif\"><b>Bizanos (NAQ)</b></font></td>
-	</tr>
-</table>
-
 <p><font face=\"Verdana\" size=\"2\" color=\"#000000\">Pour tous contatcts</font><br>
-<font face=\"Verdana\" size=\"2\" color=\"#000000\"><a href=\"mailto:mailto:francefinalesrugby@free.fr\">Administrateur France Finales Rugby App</a></font>
+<font face=\"Verdana\" size=\"3\" color=\"#000000\"><a href=\"mailto:mailto:francefinalesrugby@free.fr\">francefinalesrugby@free.fr</a></font>
 </body></html>";
 
 
     $from = "Content-Type: text/html; charset=\"utf-8\"\nFrom: $mail_admin\n";
-
-
-
-
-
 
     $email = @mail($to, $sujet, $message, $from);
     if ($email) {

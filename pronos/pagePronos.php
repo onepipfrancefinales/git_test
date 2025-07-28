@@ -1,6 +1,9 @@
 <?php
 if (isset($_GET['comite'])) $comite = $_GET['comite'];
+if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else $champLigue=0;
+if (isset($_GET['division'])) $division = $_GET['division'];else $division=0;
 //echo "comite : ".$comite;
+
 ?>
 
 
@@ -60,8 +63,8 @@ if (isset($_GET['comite'])) $comite = $_GET['comite'];
 <tr>
 <td class="colonneForum"></td>
 <td class="center"> 
-  <!--<iframe width="1000" height="1000" //src="https://rugbypdf.forumactif.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  --></td>
+  <iframe width="1000" height="1000" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </td>
 <td class="colonneForum"></td>
 </tr>
 

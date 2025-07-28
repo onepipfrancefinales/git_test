@@ -32,9 +32,13 @@ mysqli_query($idconnect, ("UPDATE phpab_membres
 						  SET mot_de_passe='$new_mot_de_passe_crypt' 
 						  WHERE mail='$mail'"));
 
-$query =$idconnect->query("	SELECT pseudo, mail 
+$result1 =$idconnect->query("	SELECT pseudo, mail 
 							FROM phpab_membres 
 							WHERE mail='$mail'");
+ $row=mysqli_fetch_array($result1);
+$pseudo= $row[0];
+
+
 
 $result =$idconnect->query("SELECT pseudo, mail, nom_site, url_site 
 							FROM phpab_membres 
@@ -46,25 +50,23 @@ $result =$idconnect->query("SELECT pseudo, mail, nom_site, url_site
   $nom_site_admin=$row[2];
   $url_site_admin=$row[3];
 
-echo "-----------------------"; echo "<br/>"; 
-//echo "to : ".$to; echo "<br/>";
-//echo "message : ".$message; echo "<br/>";
-//echo "from :".$from; echo "<br/>";
-echo "-----------------------"; echo "<br/>";   
-
 
 //if (list($pseudo, $mail) = mysqli_fetch_array($query))
 //{                                                                                            
 $to="$pseudo <$mail>";
-$sujet="Votre mot de passe pour les pronostics de $nom_site_admin";
+$sujet="Votre mot de passe pour les pronostics de $pseudo";
 $message="<html><head><title>phpabeague</title></head><body>
 <p><font face=\"Verdana\" size=\"3\">Bonjour,</font></p>
 <p><font face=\"Verdana\" size=\"3\">Vous avez demandé à recevoir un nouveau mot
 de passe pour acceder aux pronostics du site France Finales Rugby</p>
-<p><font face=\"Verdana\" size=\"3\">Votre pseudo : $pseudo_admin</font></p>
+<p><font face=\"Verdana\" size=\"3\">Votre pseudo : $pseudo</font></p>
 <p><font face=\"Verdana\" size=\"3\">Voici votre nouveau mot de passe : $new_mot_de_passe</font></p>
+<p><font face=\"Verdana\" size=\"3\">Retour à la page de connexion : <a href=\"https://francefinalesrugby.fr/Test/phpab/prono/index.php\">En cliquant ici</a></font></p>
+<P>Sportivement.</p>
+<P>L'équipe France finales Rugby</p>
 <p><font face=\"Verdana\" size=\"3\">--------------------------------------------------------------------</font></p>
-<p><font face=\"Verdana\" size=\"3\">Ce script a été créé par <a href=\"https://francefinalesrugby.fr\">France Finales Rugby</a> : Site dédié aux compétitons du rugby Francais</font></p>
+
+<p><font face=\"Verdana\" size=\"3\">Ce script a été créé par <a href=\"https://francefinalesrugby.fr\">France Finales Rugby.</a> <br> Site dédié aux compétitons du rugby Francais</font></p>
 </body>
 </html>";
 $from="Content-Type: text/html; charset=\"utf-8\"\nFrom: $mail_admin\n";

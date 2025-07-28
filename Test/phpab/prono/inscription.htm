@@ -8,6 +8,8 @@ if (isset($_GET['champ'])) $champ = $_GET['champ']; else $champ = 0;
         var mail = document.inscription.mail.value;
         var mdp = document.inscription.mdp.value;
         var mdp2 = document.inscription.mdp2.value;
+        var nom = document.inscription.nom.value;
+        var test = document.inscription.test.value;
 
     }
 </script>
@@ -51,12 +53,14 @@ if (isset($_GET['champ'])) $champ = $_GET['champ']; else $champ = 0;
                                     <td width="50%" class="alignRight"><br></td>
                                     <td></td>
                                 </tr>
+                                <!--
                                 <tr>
                                     <td width="50%" class="blanc alignRight">
                                         <?php echo PRONO_INSCRIPTION_MDP2; ?> :
                                     </td>
                                     <td><input type="text" name="nom" maxlength="20"></td>
                                 </tr>
+                            -->
                                 <tr>
                                     <td width="50%" class="alignRight"><br></td>
                                     <td></td>

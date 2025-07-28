@@ -20,11 +20,11 @@
   $NAT2 = 22442;
 
   $FED1 = 22440;
-  $FED2 = 0;
+  $FED2 = 22443;
   $FED3 = 22444;
   $FED1B = 22449;
-  $FED2B = 0;
-  $FED3B = 0;
+  $FED2B = 22459;
+  $FED3B = 22455;
 
   // ***** Féminines *****					
 
@@ -36,10 +36,10 @@
   //	$FEMS4 = $row[5];
 
   // ***** Auvergne Rhône Alpes *****	
-  $ARAH = 0;
+  $ARAH = 22481;
   $ARAPH = 0;
   $ARAS1 = 0;
-  $ARAResH = 0;
+  $ARAResH = 22480;
   $ARAResPH = 0;
 
   // ***** Bretagne *****									
@@ -78,7 +78,7 @@
   $HDFResPH = 0;
 
   // ***** ile de france *****							
-  $IDFH = 0;
+  $IDFH = 22438;
   $IDFPH = 0;
   $IDFS1 = 0;
   $IDFResH = 0;
@@ -93,11 +93,11 @@
   $NORResPH = 0;
 
   // ***** Nouvelle Aquitaine *****				
-  $NAQH = 0;
+  $NAQH = 22483;
   $NAQPH = 0;
   $NAQS1 = 0;
   $NAQS2 = 0;
-  $NAQResH = 0;
+  $NAQResH = 22484;
   $NAQResPH = 0;
 
   // ***** Occitanie *****		
