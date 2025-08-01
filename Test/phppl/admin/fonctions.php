@@ -129,10 +129,13 @@ function affich_championnatsMAJ ($champ, $action, $idconnect)
 }
 
 
-function affich_gr_championnats ($gr_champ, $action, $idconnect)
+function affich_gr_championnats ($ligue, $gr_champ, $action, $idconnect)
 {
+
+  $ligueFin = $ligue + 10000;
    $resultats=$idconnect->query("  SELECT DISTINCT id, nom 
 								   FROM phppl_gr_championnats 
+                   WHERE id BETWEEN '$ligue' AND '$ligueFin'
 								   ORDER by id desc");
 
   $i=0;
@@ -157,9 +160,9 @@ function affich_gr_championnats ($gr_champ, $action, $idconnect)
         echo "<td class='$class'>$row[1]</td>";
         echo "<td class='$class' align=\"right\" width=\"75%\">";
 
-        echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
-        echo " $gras_2<a href=\"?page=groupes_championnats&action=generer&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
-        echo " $gras_8<a href=\"?page=groupes_championnats&action=supp&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
+        echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&ligue=$ligue&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
+        echo " $gras_2<a href=\"?page=groupes_championnats&action=generer&ligue=$ligue&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
+        echo " $gras_8<a href=\"?page=groupes_championnats&action=supp&ligue=$ligue&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
 
         echo "</tr>";
         $i++;
@@ -191,10 +194,11 @@ function affich_gr_champ ($gr_champ, $idconnect)
    
     while($row = mysqli_fetch_array($resultats))
                 {
-				echo "tttt";
+				//echo " le groupe de championnats suivant : ";
 				echo $row[0];
-				echo "tttt";
+				//echo "tttt";
 				}
+       // echo "tttt";
 }
 
 function divisions_menu ($idconnect)
@@ -253,6 +257,27 @@ function champ_menu($idconnect)
 		 FROM phppl_championnats, phppl_divisions, phppl_saisons 
 		 WHERE phppl_divisions.id=phppl_championnats.id_division 
 		 AND phppl_saisons.id=phppl_championnats.id_saison 
+		 ORDER by annee desc, phppl_divisions.nom");
+   
+ echo "<select name=\"champ[]\" multiple size=\"8\">";
+ while($row = mysqli_fetch_array($result))
+    {
+     echo ("<option value=\"$row[0]\">$row[1] $row[2]/$row[3]\n");
+     echo ("</option>\n");
+    }
+ echo "</select>";
+}
+function champ_menu_par_ligue($ligue, $idconnect)
+{
+ // echo "ligue : ".$ligue; echo "<br>";
+  $ligueMax = $ligue +10000;
+//  echo "ligueMax : ". $ligueMax;echo "<br>";
+ $result=$idconnect->query(" 
+		 SELECT phppl_championnats.id, phppl_divisions.nom, phppl_saisons.annee, (phppl_saisons.annee)+1 
+		 FROM phppl_championnats, phppl_divisions, phppl_saisons 
+		 WHERE phppl_divisions.id = phppl_championnats.id_division 
+		 AND phppl_saisons.id= phppl_championnats.id_saison 
+     AND  phppl_divisions.id between '$ligue' AND $ligueMax 
 		 ORDER by annee desc, phppl_divisions.nom");
    
  echo "<select name=\"champ[]\" multiple size=\"8\">";

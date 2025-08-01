@@ -16,6 +16,7 @@
 //                                                                      */
 //***********************************************************************/
 echo "------------------------------";echo "<br>";
+echo "ligue : ".$ligue;
 $result=$idconnect->query("
 		  SELECT * 
 		  FROM phppl_gr_championnats 
@@ -85,7 +86,7 @@ echo "------------------------------";echo "<br>";
 	 //$nom_gr_champ="essai";
 	 echo "azaaz : ".$nom_gr_champ;
 	 echo "testA";
-	//Màj des paramètres
+	//Mï¿½j des paramï¿½tres
 	  
        mysqli_query($idconnect,("
 	   UPDATE phppl_gr_championnats 
@@ -101,7 +102,7 @@ echo "------------------------------";echo "<br>";
 	}
    else
      {
-       // Insertion des paramètres dans la bdd
+       // Insertion des paramÃ¨tres dans la bdd
      echo "testB";
 	  mysqli_query($idconnect,("
 	  INSERT INTO phppl_gr_championnats (id_champ,nom, pts_prono_exact, pts_prono_participation, id_master, tps_avant_prono) 
@@ -178,9 +179,50 @@ mysqli_query($idconnect,("DELETE FROM phppl_gr_championnats
 ?>
 
 <!-- tableau 2 : choix des poules -->
+ <!--
 <table class=phppl width="80%">
             <tr>
-              <td class=phppl2 align="center" colspan="4"><?php echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); //echo $gr_champ;?></td><td class=phppl2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
+              <td class=phppl2 align="center" colspan="4"><?php //echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); //echo $gr_champ;?></td><td class=phppl2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
+            </tr>
+
+            <tr>
+              <td align="center" class=phppl6 colspan="4"><b><?php //echo ADMIN_GR_CHAMP_EDIT_2; ?></b></td>
+            </tr>
+            
+            <tr>
+              <td class=phppl3 colspan="3">
+                <form method="POST" action=""><?php //echo ADMIN_GR_CHAMP_EDIT_1; ?><?php //echo ADMIN_GR_CHAMP_EDIT_1; ?>
+                <b><?php //affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php //champ_menu ($idconnect); ?><br /><?php //echo ADMIN_EQUIPE_3; ?>
+              </td>
+              
+              
+              <td class=phppl3 align=right colspan="2">
+                <?php //$value= ADMIN_GR_CHAMP_EDIT_4; echo "<input type=\"submit\" value=\"$value\">";?>
+                <input type="hidden" name="action3" value="creer">
+                <input type="hidden" name="action" value="editer">
+                <input type="hidden" name="page" value="groupes_championnats">
+                <?php //echo "<input type=\"hidden\" name=\"gr_champ\" value=\"$gr_champ\">";?>
+              </td>
+              
+              </form>
+            </tr>
+
+            <tr>
+              <td align="center" class=phppl6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_5; ?><?php echo ADMIN_GR_CHAMP_EDIT_5; ?></b></td>
+            </tr>
+              <td class=phppl3 colspan="5" align="center"><?php  champ_gr_menu ($gr_champ, $idconnect); ?></td>
+
+
+              </td>
+             </tr>
+
+</table>
+-->
+<br><br>
+<!-----  tableau modifier ------>
+<table class=phppl width="80%">
+            <tr>
+              <td class=phppl2 align="center" colspan="4"><?php echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); echo $gr_champ;?></td><td class=phppl2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
             </tr>
 
             <tr>
@@ -189,11 +231,13 @@ mysqli_query($idconnect,("DELETE FROM phppl_gr_championnats
             
             <tr>
               <td class=phppl3 colspan="3">
-                <form method="POST" action=""><?php echo ADMIN_GR_CHAMP_EDIT_1; ?><b><?php affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php champ_menu ($idconnect); ?><br /><?php echo ADMIN_EQUIPE_3; ?>
+                <form method="POST" action=""><?php echo ADMIN_GR_CHAMP_EDIT_1; ?>
+                <b><?php affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php champ_menu_par_ligue ($ligue, $idconnect); ?><br /><?php echo ADMIN_EQUIPE_3; ?>
               </td>
               
+              
               <td class=phppl3 align=right colspan="2">
-                <?php $value=ADMIN_GR_CHAMP_EDIT_4; echo "<input type=\"submit\" value=\"$value\">";?>
+                <?php $value= ADMIN_GR_CHAMP_EDIT_4; echo "<input type=\"submit\" value=\"$value\">";?>
                 <input type="hidden" name="action3" value="creer">
                 <input type="hidden" name="action" value="editer">
                 <input type="hidden" name="page" value="groupes_championnats">
@@ -223,7 +267,7 @@ mysqli_query($idconnect,("DELETE FROM phppl_gr_championnats
             <tr>
 
 <?php
-//Affichage des données dans le tableau	
+//Affichage des donnÃ©es dans le tableau	
   
 $result=$idconnect->query(" SELECT * 
 							FROM phppl_gr_championnats 

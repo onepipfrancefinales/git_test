@@ -81,7 +81,7 @@
   $IDFH = 22438;
   $IDFPH = 0;
   $IDFS1 = 0;
-  $IDFResH = 0;
+  $IDFResH = 22461;
   $IDFResPH = 0;
 
   // ***** Normandie *****	
@@ -94,18 +94,18 @@
 
   // ***** Nouvelle Aquitaine *****				
   $NAQH = 22483;
-  $NAQPH = 0;
-  $NAQS1 = 0;
-  $NAQS2 = 0;
+  $NAQPH = 22485;
+  $NAQS1 = 22486;
+  $NAQS2 = 22487;
   $NAQResH = 22484;
   $NAQResPH = 0;
 
   // ***** Occitanie *****		
-  $OCCH = 0;
-  $OCCPH = 0;
-  $OCCS1 = 0;
-  $OCCResH = 0;
-  $OCCResPH = 0;
+  $OCCH = 22451;
+  $OCCPH = 22453;
+  $OCCS1 = 22456;
+  $OCCResH = 22457;
+  $OCCResPH = 22458;
 
   // ***** Pays de la Loire *****		
   $PDLH = 22435;
@@ -115,11 +115,11 @@
   $PDLResPH = 0;
 
   // ***** Provence *****	
-  $PCAH = 0;
-  $PCAPH = 0;
-  $PCAS1 = 0;
-  $PCAResH = 0;
-  $PCAResPH = 0;
+  $PCAH = 22430;
+  $PCAPH = 22431;
+  $PCAS1 = 22432;
+  $PCAResH = 22433;
+  $PCAResPH = 22434;
 
   $adresseFFR = "https://ovale2.ffr.fr/Competitions/Resultats/View/"
   ?>

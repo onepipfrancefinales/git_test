@@ -85,7 +85,7 @@ $tableauIDF = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 1701
 // Normandi
 $tableauNOR = array(180171, 180181, 180191);
 // Provence alpes Cotes d'Azur
-$tableauPCA = array(220171, 220181, 220182, 220191, 220192  );
+$tableauPCA = array(220171, 220181, 220182, 220191, 220192, 220193  );
    
 /*****  Mise à jour des bases de données ********/
 

@@ -22,7 +22,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>phppleague - Administration</title>
+<title>Ligue Bourgogne France Comté - Administration</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -47,28 +47,34 @@ $codeLigue = $_GET['champ'];
         <?php 
 		 switch ($codeLigue){
 					
-			case ($codeLigue < 120000):
-			echo  "Bourgogne Franche Comt&eacute - Administration";
-			break;
-			
-			case ($codeLigue < 130000):
-			echo  "Bretagne - Administration";
-			break;
-			
-			case ($codeLigue < 140000):
-			echo  "Centre Val de Loire - Administration";
-			break;
-			
-			case ($codeLigue < 170000):
-			echo "Haut de France - Administration";
+			case ($codeLigue >= 110000 and $codeLigue < 120000):
+			echo  "Bourgogne Franche Comté - Administration";
+      $ligue = 110000;
 			break;
 
-      case ($codeLigue < 220000):
+			
+			case ($codeLigue == 120000):
+			echo  "Bretagne - Administration";
+      $ligue = 120000;
+			break;
+			
+			case ($codeLigue == 130000):
+			echo  "Centre Val de Loire - Administration";
+      $ligue = 130000;
+			break;
+			
+			case ($codeLigue == 170000):
+			echo "Haut de France - Administration";
+      $ligue = 170000;
+			break;
+
+      case ($codeLigue == 220000):
         echo "Pays de la Loire - Administration";
+        $ligue = 220000;
         break;
 	
 		 }
-		
+		//$ligue = substr($codeLigue,0,2);
 		?>
 
         </font></td>
@@ -76,12 +82,12 @@ $codeLigue = $_GET['champ'];
     </tr>
     <tr>
       <td class="phppl3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
-      <a href="?page=championnat"><?php echo LEAGUE; ?></a><br /><br />
-      <a href="?page=groupes_championnats"><?php echo "Groupes championnats"; ?></a><br /><br />
+      <a href="?page=championnat&action=resultats&champ=<?php echo $ligue; ?>"><?php echo LEAGUE; ?></a><br /><br />
+      <a href="?page=groupes_championnats&ligue=<?php echo $ligue; ?>&champ=<?php echo $codeLigue; ?>"><?php echo "Groupes championnats"; ?></a><br /><br />
       <a href="?page=fiches_clubs"><?php echo MENU_FICHES_CLUBS; ?></a><br /><br />
       <a href="?page=mini_classement"><?php echo ADMIN_MINI_1; ?></a><br /><br />
       <a href="?page=membres"><?php echo MENU_MEMBRES; ?></a><br /><br />
-      <a href="?page=credits"><?php echo MENU_CREDITS; ?></a><br /><br />
+     <!--  <a href="?page=credits"><?php echo MENU_CREDITS; ?></a><br /><br /> -->
       <a href="logout.php"><?php echo "Logout"; ?></a><br />
       </td>
       <td valign="top" colspan="2"><div align="center">
