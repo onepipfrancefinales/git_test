@@ -15,8 +15,8 @@
 // Support technique : http://phppleague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-echo "AAAgenerer_gr.php :";echo "<br />";
 echo "action -> impacte uniquement la table phppl_clmnt_pronos";echo "<br />";
+echo "<br />";
 ?>
 <table class=phppl width="80%">
   <tr>
@@ -102,7 +102,7 @@ echo "action -> impacte uniquement la table phppl_clmnt_pronos";echo "<br />";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')") or die (mysqli_error()));
+							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
 		}
 
 		echo ADMIN_GRAPH_PRONO; include ("tps2.php3");

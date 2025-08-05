@@ -19,7 +19,6 @@
 
 function affich_championnats ($champ, $action, $idconnect)
 {
-
  global  $nomLigue;
 if ($champ >= 110000 and $champ < 120000)
 	{$valLigueMin = 110000;  $valLigueMax = 120000; }	
@@ -160,6 +159,9 @@ function affich_gr_championnats ($ligue, $gr_champ, $action, $idconnect)
         echo "<td class='$class'>$row[1]</td>";
         echo "<td class='$class' align=\"right\" width=\"75%\">";
 
+          // echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
+      //  echo " $gras_1<a href=\"?page=groupes_championnats&action=generer&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
+      //  echo " $gras_1<a href=\"?page=groupes_championnats&action=supp&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
         echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&ligue=$ligue&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
         echo " $gras_2<a href=\"?page=groupes_championnats&action=generer&ligue=$ligue&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
         echo " $gras_8<a href=\"?page=groupes_championnats&action=supp&ligue=$ligue&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
@@ -784,18 +786,16 @@ WHERE ext.id_champ='$champ'
    }
    
 	// echo "cache fin : ".$cache;  
-  /*
 	if($cache=="1")
-	{$requete="DELETE FROM phppl_clmnt_cache WHERE nom='exempte'" or die (mysql_error($idconnect));}
+	{$requete="DELETE FROM phppl_clmnt_cache WHERE nom='exempte'" ;}
 	else
-	{$requete="DELETE FROM phppl_clmnt WHERE nom='exempte'" or die (mysql_error($idconnect));}
+	{$requete="DELETE FROM phppl_clmnt WHERE nom='exempte'";}
 
-	$resultat=mysqli_query($idconnect,$requete) or die (mysqli_error($idconnect));
+	//$resultat=mysqli_query($idconnect,$requete) or die (mysqli_error($idconnect));
 	//mysql_query("UNLOCK TABLES") or die (mysql_error());
 
 
 	//echo "fin";//echo "<br />"; 
-  */
 }
 
 // Nombres de renseignement dans cette classe � partir de l'id_classe  (utilis� dans phppl_classe.php)

@@ -15,8 +15,7 @@
 // Support technique : http://phppleague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-echo "------------------------------";echo "<br>";
-echo "ligue : ".$ligue;
+
 $result=$idconnect->query("
 		  SELECT * 
 		  FROM phppl_gr_championnats 
@@ -32,27 +31,19 @@ $nom_gr_champ=$row[1];
 //$id_master=$row[0];
 //$tps_avant_prono=$row[0];
 }
-echo "gr_champ : ".$gr_champ;echo "<br>";
-echo "nom du regroupement : ".$nom_gr_champ;echo "<br>";
-echo "------------------------------";echo "<br>";
 
 
-
-
-echo "action3 : ".$action3  ;echo "<br>";echo "<br>";
-
-
-
-//echo "id : ".$gr_champ;echo "<br>";
-//echo "nom : ".$nom_gr_champ;echo "<br>";
-//echo "id_champ : ".$val;echo "<br>";
+/*
+echo "id : ".$gr_champ;echo "<br>";
+echo "nom : ".$nom_gr_champ;echo "<br>";
+echo "id_champ : ".$val;echo "<br>";
 echo "activ_prono : ".$activ_prono;echo "<br>";
 echo "pts_prono_exact : ".$pts_prono_exact;echo "<br>";
 echo "pts_prono_participation : ".$pts_prono_participation;echo "<br>";
 echo "id_master : ".$id_master;echo "<br>";
 echo "tps_avant_prono : ".$tps_avant_prono;echo "<br>";
 echo "<br>";
-
+*/
 if ($action3=="2")
  {
 echo "action3 : ".$action3;
@@ -274,8 +265,8 @@ $result=$idconnect->query(" SELECT *
 							WHERE id='$gr_champ'");
 //$resultats = mysql_query ($requete) or die ("probleme " .mysql_error());
 $existant=mysqli_fetch_array($result);
-echo "test2 : ".$value;echo "<br> ";
-echo "test : ".$existant['id'];echo "nom : ".$existant['nom'];
+//echo "test2 : ".$value;echo "<br> ";
+//echo "test : ".$existant['id'];echo "nom : ".$existant['nom'];
 echo "<form method=\"post\"  action=\"\">";
 
 // Activer les pronostics ?

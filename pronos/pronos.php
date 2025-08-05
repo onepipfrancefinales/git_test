@@ -2,10 +2,7 @@
 <body bgcolor="#FFFFFF" text="#000000">
 -->
 <?php
-echo "champLigue : .$champLigue";
-echo "<br>";
-echo "division : .$division";
-echo "<br>";
+
 
 
 // Traitement des données reçues
@@ -30,6 +27,7 @@ elseif ($champLigue == 11 || $champLigue == 12 || $champLigue == 13 || $champLig
      $titre = "Haut de France";
      elseif ($champLigue == 21)
      $titre = "Pays de la Loire";
+   
     }
 elseif ($champLigue == 15 || $champLigue == 17 ||  $champLigue == 18 || $champLigue == 22) {
   $cptePhp = "phpidf";
@@ -55,7 +53,11 @@ if ($champLigue == 15)
   Championnats des pronostiqueurs <br>
 ligue <?php echo $titre; ?></p>
 
-<object data="/Test/<?php echo $champLigue; ?>/prono/index.php"
+<?php
+echo "champLigue : ".$champLigue; echo "<br>";
+echo "cptePhp : ".$cptePhp;  echo "<br>";
+?>
+<object data="/Test/<?php echo $cptePhp; ?>/prono/index.php?champLigue=<?php echo $champLigue; ?>"
   height="1500" width="100%">
 </object>
 

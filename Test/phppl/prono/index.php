@@ -11,6 +11,7 @@ if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
 if (isset($_GET['page'])) $page = $_GET['page'];else {$mode='';}
 if (isset($_GET['style'])) $style = $_GET['style'];else {$mode='';}
+
 if ($mode == "smart")
 {
   ?>

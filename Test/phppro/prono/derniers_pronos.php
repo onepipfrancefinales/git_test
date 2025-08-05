@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -35,20 +35,20 @@ if ($debut == "0") {
 include("derniers_pronos.htm");
 
 
-$result = $idconnect->query("SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, pts_prono_exact, pts_prono_participation
-FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
-WHERE phpab_clubs.id=phpab_equipes.id_club
+$result = $idconnect->query("SELECT phppro_clubs.nom, CLEXT.nom, phppro_matchs.buts_dom, phppro_matchs.buts_ext, phppro_matchs.id, phppro_matchs.date_reelle, phppro_journees.numero, pts_prono_exact, pts_prono_participation
+FROM phppro_clubs, phppro_clubs as CLEXT, phppro_matchs, phppro_journees, phppro_equipes, phppro_equipes as EXT, phppro_gr_championnats
+WHERE phppro_clubs.id=phppro_equipes.id_club
 AND CLEXT.id=EXT.id_club 
-AND phpab_equipes.id=phpab_matchs.id_equipe_dom
-AND EXT.id=phpab_matchs.id_equipe_ext
-AND phpab_matchs.id_journee=phpab_journees.id
-AND phpab_journees.id_champ=phpab_gr_championnats.id_champ
-AND phpab_gr_championnats.id='$gr_champ'
-AND phpab_matchs.buts_dom is not null
-AND phpab_matchs.buts_ext is not null
-AND phpab_clubs.nom!='exempte'
+AND phppro_equipes.id=phppro_matchs.id_equipe_dom
+AND EXT.id=phppro_matchs.id_equipe_ext
+AND phppro_matchs.id_journee=phppro_journees.id
+AND phppro_journees.id_champ=phppro_gr_championnats.id_champ
+AND phppro_gr_championnats.id='$gr_champ'
+AND phppro_matchs.buts_dom is not null
+AND phppro_matchs.buts_ext is not null
+AND phppro_clubs.nom!='exempte'
 AND CLEXT.nom!='exempte'
-ORDER by phpab_matchs.date_reelle desc, phpab_clubs.nom desc
+ORDER by phppro_matchs.date_reelle desc, phppro_clubs.nom desc
 LIMIT $debut, $fin ");
 $i = 0;
 //$result=mysql_query($query);
@@ -59,10 +59,10 @@ while ($row = mysqli_fetch_array($result) and $i < 10) {
   $clubs_nom = stripslashes($row[0]);
   $clubs_nom1 = stripslashes($row[1]);
   $result2 = $idconnect->query("SELECT pronostic 
-							FROM phpab_pronostics, phpab_membres 
-							WHERE phpab_pronostics.id_match='$row[4]' 
-							AND phpab_membres.id=phpab_pronostics.id_membre 
-							AND phpab_membres.id_prono='$user_id'");
+							FROM phppro_pronostics, phppro_membres 
+							WHERE phppro_pronostics.id_match='$row[4]' 
+							AND phppro_membres.id=phppro_pronostics.id_membre 
+							AND phppro_membres.id_prono='$user_id'");
   //$result2=mysql_query($query2) or die ("probleme " .mysql_error());
   $nb_pronos = mysqli_num_rows($result2);
 

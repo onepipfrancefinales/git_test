@@ -2,7 +2,6 @@
 if (isset($_GET['comite'])) $comite = $_GET['comite'];
 if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else $champLigue=0;
 if (isset($_GET['division'])) $division = $_GET['division'];else $division=0;
-//echo "comite : ".$comite;
 
 ?>
 
@@ -51,7 +50,7 @@ if (isset($_GET['division'])) $division = $_GET['division'];else $division=0;
       </td>
       <td class="colonneCentrale ">
         <?php 
-    
+  
         include("pronos.php"); ?>
       </td>
       <td class="colonneDroiteGauche">

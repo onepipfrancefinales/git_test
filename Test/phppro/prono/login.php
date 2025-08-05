@@ -28,7 +28,7 @@ echo "pass".$pass;echo "<br>";
         $user = addslashes($_REQUEST['user']);
         $pass = $_REQUEST['pass'];
         $result =$idconnect->query( "SELECT mot_de_passe 
-									 FROM phpab_membres 
+									 FROM phppro_membres 
 									 WHERE pseudo='$user'");
 	//$result = mysql_query($query);
 	$row = mysqli_fetch_array($result);
@@ -43,13 +43,13 @@ echo "pass".$pass;echo "<br>";
 	{
     $ip = $_SERVER["REMOTE_ADDR"];
 	$time = time();
-	$result =$idconnect->query( "SELECT * FROM phpab_membres WHERE pseudo='$user'");
+	$result =$idconnect->query( "SELECT * FROM phppro_membres WHERE pseudo='$user'");
 	//$result = mysql_query($query) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
 	$row = mysqli_fetch_array($result);
 	$mot_de_passe = $row['mot_de_passe'];
 
 	//$bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db3;charset=utf8', 'root', '');
-	mysqli_query( $idconnect,("UPDATE phpab_membres SET ip='$ip', last_connect='$time' WHERE pseudo='$user'"));
+	mysqli_query( $idconnect,("UPDATE phppro_membres SET ip='$ip', last_connect='$time' WHERE pseudo='$user'"));
         if ($autoidentification) {$expire=365*24*3600;}
         else {$expire=3600;}
 	setcookie("user","$user",time()+$expire,"/","");

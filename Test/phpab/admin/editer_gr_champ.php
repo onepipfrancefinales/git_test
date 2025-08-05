@@ -15,7 +15,7 @@
 // Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-echo "------------------------------";echo "<br>";
+
 $result=$idconnect->query("
 		  SELECT * 
 		  FROM phpab_gr_championnats 
@@ -31,27 +31,19 @@ $nom_gr_champ=$row[1];
 //$id_master=$row[0];
 //$tps_avant_prono=$row[0];
 }
-echo "gr_champ : ".$gr_champ;echo "<br>";
-echo "nom du regroupement : ".$nom_gr_champ;echo "<br>";
-echo "------------------------------";echo "<br>";
 
 
-
-
-echo "action3 : ".$action3  ;echo "<br>";echo "<br>";
-
-
-
-//echo "id : ".$gr_champ;echo "<br>";
-//echo "nom : ".$nom_gr_champ;echo "<br>";
-//echo "id_champ : ".$val;echo "<br>";
+/*
+echo "id : ".$gr_champ;echo "<br>";
+echo "nom : ".$nom_gr_champ;echo "<br>";
+echo "id_champ : ".$val;echo "<br>";
 echo "activ_prono : ".$activ_prono;echo "<br>";
 echo "pts_prono_exact : ".$pts_prono_exact;echo "<br>";
 echo "pts_prono_participation : ".$pts_prono_participation;echo "<br>";
 echo "id_master : ".$id_master;echo "<br>";
 echo "tps_avant_prono : ".$tps_avant_prono;echo "<br>";
 echo "<br>";
-
+*/
 if ($action3=="2")
  {
 echo "action3 : ".$action3;
@@ -85,7 +77,7 @@ echo "------------------------------";echo "<br>";
 	 //$nom_gr_champ="essai";
 	 echo "azaaz : ".$nom_gr_champ;
 	 echo "testA";
-	//Màj des paramètres
+	//Mï¿½j des paramï¿½tres
 	  
        mysqli_query($idconnect,("
 	   UPDATE phpab_gr_championnats 
@@ -101,7 +93,7 @@ echo "------------------------------";echo "<br>";
 	}
    else
      {
-       // Insertion des paramètres dans la bdd
+       // Insertion des paramï¿½tres dans la bdd
      echo "testB";
 	  mysqli_query($idconnect,("
 	  INSERT INTO phpab_gr_championnats (id_champ,nom, pts_prono_exact, pts_prono_participation, id_master, tps_avant_prono) 
@@ -178,6 +170,7 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
 ?>
 
 <!-- tableau 2 : choix des poules -->
+ <!--
 <table class=phpab width="80%">
             <tr>
               <td class=phpab2 align="center" colspan="4"><?php echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); //echo $gr_champ;?></td><td class=phpab2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
@@ -189,11 +182,58 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
             
             <tr>
               <td class=phpab3 colspan="3">
-                <form method="POST" action=""><?php echo ADMIN_GR_CHAMP_EDIT_1; ?><b><?php affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php champ_menu ($idconnect); ?><br /><?php echo ADMIN_EQUIPE_3; ?>
+               <form method="POST" action=""><?php // echo ADMIN_GR_CHAMP_EDIT_1; ?><b><?php //affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php champ_menu ($idconnect); ?><br /><?php //echo ADMIN_EQUIPE_3; ?> 
+             
+              <form method="POST" action=""><?php //echo ADMIN_GR_CHAMP_EDIT_1; ?>
+                <b><?php //affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php //champ_menu_par_ligue ($ligue, $idconnect); ?><br /><?php echo ADMIN_EQUIPE_3; ?>
+             
+             
               </td>
               
               <td class=phpab3 align=right colspan="2">
                 <?php $value=ADMIN_GR_CHAMP_EDIT_4; echo "<input type=\"submit\" value=\"$value\">";?>
+                
+                <input type="hidden" name="action3" value="creer">
+                <input type="hidden" name="action" value="editer">
+                <input type="hidden" name="page" value="groupes_championnats">
+                <?php //echo "<input type=\"hidden\" name=\"gr_champ\" value=\"$gr_champ\">";?>
+              </td>
+              
+              </form>
+            </tr>
+
+            <tr>
+              <td align="center" class=phpab6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_5; ?></b></td>
+            </tr>
+              <td class=phpab3 colspan="5" align="center"><?php  champ_gr_menu ($gr_champ, $idconnect); ?></td>
+
+
+              </td>
+             </tr>
+
+</table>
+-->
+
+<br><br>
+<!-----  tableau modifier ------>
+<table class=phpab width="80%">
+            <tr>
+              <td class=phpab2 align="center" colspan="4"><?php echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); echo $gr_champ;?></td><td class=phpab2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
+            </tr>
+
+            <tr>
+              <td align="center" class=phpab6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_2; ?></b></td>
+            </tr>
+            
+            <tr>
+              <td class=phpab3 colspan="3">
+                <form method="POST" action=""><?php echo ADMIN_GR_CHAMP_EDIT_1; ?>
+                <b><?php affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php champ_menu_par_ligue ($ligue, $idconnect); ?><br /><?php echo ADMIN_EQUIPE_3; ?>
+              </td>
+              
+              
+              <td class=phpab3 align=right colspan="2">
+                <?php $value= ADMIN_GR_CHAMP_EDIT_4; echo "<input type=\"submit\" value=\"$value\">";?>
                 <input type="hidden" name="action3" value="creer">
                 <input type="hidden" name="action" value="editer">
                 <input type="hidden" name="page" value="groupes_championnats">
@@ -223,7 +263,7 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
             <tr>
 
 <?php
-//Affichage des données dans le tableau	
+//Affichage des donnï¿½es dans le tableau	
   
 $result=$idconnect->query(" SELECT * 
 							FROM phpab_gr_championnats 

@@ -8,13 +8,13 @@ if ($action == "supp" and !$confirm=="oui")
 elseif ($action == "supp" and $confirm=="oui")
  {
    $user_pseudo=addslashes($user_pseudo);
-   $result=$idconnect->query("SELECT id FROM phpab_membres WHERE pseudo='$user_pseudo'");
+   $result=$idconnect->query("SELECT id FROM phppro_membres WHERE pseudo='$user_pseudo'");
   // $result=mysql_query($requete) or die ("probleme " .mysql_error());
    $row=mysqli_fetch_array($result);
    
-   mysqli_query($idconnect, ("DELETE FROM phpab_pronostics WHERE id_membre='$row[0]'"));
-   mysqli_query($idconnect, ("DELETE FROM phpab_membres WHERE id='$row[0]'"));
-   mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos WHERE id_membre='$row[0]'"));
+   mysqli_query($idconnect, ("DELETE FROM phppro_pronostics WHERE id_membre='$row[0]'"));
+   mysqli_query($idconnect, ("DELETE FROM phppro_membres WHERE id='$row[0]'"));
+   mysqli_query($idconnect, ("DELETE FROM phppro_clmnt_pronos WHERE id_membre='$row[0]'"));
   ?>
    <META HTTP-EQUIV="refresh"; CONTENT="0; URL=logout.php">
    <?php
@@ -43,7 +43,7 @@ else
  	 {
       $result = $idconnect->query("
 				 SELECT mot_de_passe 
-				 FROM phpab_membres 
+				 FROM phppro_membres 
 				 WHERE id_prono='$user_id' 
 				 AND pseudo='$user_pseudo'");
 				 
@@ -63,7 +63,7 @@ else
 
           if (empty ($ancien_mdp) and empty ($nouveau_mdp) and empty ($nouveau_mdp2))
            {
-             mysqli_query ($idconnect, ("UPDATE phpab_membres 
+             mysqli_query ($idconnect, ("UPDATE phppro_membres 
 			 SET nom_site='$site', mail='$mail', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile' 
 			 WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
              
@@ -82,7 +82,7 @@ else
              {
               $nouveau_mdp_crypt=md5($nouveau_mdp2);
 
-              mysqli_query ($idconnect, ("update phpab_membres SET nom_site='$site', mail='$mail', mot_de_passe='$nouveau_mdp_crypt', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile'  WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
+              mysqli_query ($idconnect, ("update phppro_membres SET nom_site='$site', mail='$mail', mot_de_passe='$nouveau_mdp_crypt', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile'  WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
               $message.="profil mis à jour";
              }
              //elseif ($nouveau_mdp!=$nouveau_mdp2) {$message.="Nouveaux mots de passe diff�rents";}
@@ -93,7 +93,7 @@ else
  	
 	 $result= $idconnect->query("
 				SELECT pseudo, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile  
-				FROM phpab_membres 
+				FROM phppro_membres 
 				WHERE pseudo='$user_pseudo' 
 				AND id_prono = '$user_id' ");
 

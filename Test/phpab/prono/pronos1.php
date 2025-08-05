@@ -223,7 +223,7 @@ if ($action == "valid_pronos") {
   include("pronos.htm");
 
   $resultat = $idconnect->query("
-			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero
+			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, phpab_matchs.id_equipe_dom,phpab_matchs.id_equipe_ext
 			 FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
 			 WHERE phpab_clubs.id=phpab_equipes.id_club
 			 AND CLEXT.id=EXT.id_club
@@ -250,6 +250,8 @@ if ($action == "valid_pronos") {
   while ($row = mysqli_fetch_array($resultat) and $i < $nb_matchs) {
     $clubs_nom = stripslashes($row[0]);
     $clubs_nom1 = stripslashes($row[1]);
+    $id_dom = $row[5];
+    $id_ext = $row[6];
     $resultat2 = $idconnect->query(" SELECT pronostic 
 									   FROM phpab_pronostics, phpab_membres 
 									   WHERE phpab_pronostics.id_match='$row[2]' 
@@ -289,12 +291,18 @@ if ($action == "valid_pronos") {
 
     echo "<tr><td class=\"blanc center\">$row[4]</td>";
     echo "<td class=\"blanc\">$date</td>";
-    echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
+   if ($id_dom > 90000000) {
+    echo "<td align=\"right\" class=\"colorYellow\">$clubs_nom II</td>";
+   }
+   else
+     {
+    echo "<td align=\"right\" class=\"blanc\">$clubs_nom </td>";
+   }
 
     if ($ecart_heures >= "0") {
       $x++;
       echo "<td>";
-      echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
+     echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
 ?><input type="hidden" value="1" name="r_<?php echo $x; ?>">
 
       <table width="100">
@@ -369,8 +377,13 @@ if ($action == "valid_pronos") {
             echo "</td></tr></table>";
             echo "</td></tr></table></td>";
           }
-
+ if ($id_ext > 90000000) {
+          echo "<td class=\"colorYellow\">$clubs_nom1 II</td><td align=center>";
+ }
+ else
+ {
           echo "<td class=\"blanc\">$clubs_nom1</td><td align=center>";
+ }
 
           if ($ecart_heures > 48) echo "<div class=\"blanc\">$ecart_jours jours</div>";
           elseif ($ecart_heures > 0) echo "<div class=\"blanc\">$ecart_heures h</div>";

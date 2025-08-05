@@ -16,14 +16,12 @@
 //                                                                      */
 //***********************************************************************/
 if (isset($_GET['ligue'])) {$ligue=$_GET['ligue'];} else {$ligue='';}
-
 if (isset($_GET['gr_champ'])) {$gr_champ=$_GET['gr_champ'];} else {$gr_champ='';}
 if (isset($_POST['action2'])) {$action2=$_POST['action2'];} else {$action2='';}
 if (isset($_POST['nom_group'])) {$nom_group=$_POST['nom_group'];} else {$nom_group='';}
 if (isset($_GET['confirm'])) {$confirm=$_GET['confirm'];} else {$confirm='';}
 if (isset($_POST['action3'])) {$action3=$_POST['action3'];} else {$action3='';}
 if (isset($_POST['champ'])) {$champ=$_POST['champ'];} else {$champ='';}
-
 
 if (isset($_POST['pts_prono_exact'])) {$pts_prono_exact=$_POST['pts_prono_exact'];} else {$pts_prono_exact='';}
 if (isset($_POST['pts_prono_participation'])) {$pts_prono_participation=$_POST['pts_prono_participation'];} else {$pts_prono_participation='';}
@@ -67,11 +65,14 @@ if ($confirm=="ok" and $gr_champ and $action=="supp")
               <td class=phppl2><?php echo MENU_NOM; ?></td>
               <td class=phppl2></td>
             </tr>
+              <?php // affich_gr_championnats ($gr_champ, $action, $idconnect); ?>
             <?php affich_gr_championnats ($ligue, $gr_champ, $action, $idconnect); ?>
+          
             <tr>
               <td class=phppl5 align="right" colspan="4">
 			    <a href="?page=groupes_championnats&action=creer&ligue=<?php echo $ligue;?>"> 
-			    <?php echo ADMIN_GR_CHAMP_CREER;?></a>
+			   
+          <?php echo ADMIN_GR_CHAMP_CREER;?></a>
 			  </td>
             </tr>
 
@@ -79,11 +80,6 @@ if ($confirm=="ok" and $gr_champ and $action=="supp")
 <br /><br />
 <?php
 // affichage le l'action engagée
-
-echo "**---------**";
-echo "action : ".$action;
-echo "**---------**";
-echo "<br />";echo "<br />";
 if ($action=="supp" and $gr_champ){ include ("supp_gr_champ.php"); }
 
 if ($action=="creer") {include("creer_gr_champ.php");}

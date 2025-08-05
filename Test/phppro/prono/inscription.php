@@ -3,10 +3,10 @@ session_start();
 if (isset($_GET['champ'])) $champ = $_GET['champ'];
 else $champ = 0;
 
-$tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
+$tabTables = array('phpau', 'phppro', 'phpca', 'phppro', 'phpidf', 'phpfed3NE', 'phppro');
 
 foreach ($tabTables as $table) {
-  //phpab_pronostics
+  //phppro_pronostics
 
   $tableMembres = $table . "_membres";
   $tablePronostics = $table . "_pronostics";
@@ -19,7 +19,7 @@ if (!$go == "1") {
 
   // On vérifie que le pseudo n'est pas utilisé
   $resultat = $idconnect->query("SELECT * 
-                                      FROM phpab_membres 
+                                      FROM phppro_membres 
                                       WHERE pseudo='$pseudo'");
   //$resultat=mysql_query($requete);
   $nb_pseudo = mysqli_num_rows($resultat);
@@ -34,7 +34,7 @@ if (!$go == "1") {
   // On vérifie que le mail
   $resultat = $idconnect->query("
 					SELECT * 
-					FROM phpab_membres 
+					FROM phppro_membres 
 					WHERE mail='$mail'");
 
 
@@ -89,13 +89,13 @@ if (!$go == "1") {
       $mobile = $mobile1 . "-" . $mobile2 . "-" . $mobile3 . "-" . $mobile4 . "-" . $mobile5;
     }
 
-    //mysqli_query($idconnect, ("INSERT INTO phpab_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
+    //mysqli_query($idconnect, ("INSERT INTO phppro_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
     //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
-//$tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
-$tabTables = array('phpau', 'phpab');
+//$tabTables = array('phpau', 'phppro', 'phpca', 'phppro', 'phpidf', 'phpfed3NE', 'phppro');
+$tabTables = array('phpau', 'phppro');
 foreach ($tabTables as $table) {
-  //phpab_pronostics
+  //phppro_pronostics
   $tableMembres = $table . "_membres";
  
     mysqli_query($idconnect, ("INSERT INTO $tableMembres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, ville, pays, admin )
@@ -103,16 +103,16 @@ foreach ($tabTables as $table) {
 
 }
     $result = $idconnect->query("SELECT id 
-                             FROM phpab_membres 
+                             FROM phppro_membres 
                              WHERE id_prono='$id_prono'");
     $row = mysqli_fetch_array($result);
     $id_membre = $row[0];
 
-    mysqli_query($idconnect, ("INSERT INTO phpab_pronostics (id_membre, id_champ) 
+    mysqli_query($idconnect, ("INSERT INTO phppro_pronostics (id_membre, id_champ) 
 							              VALUES ('$id_membre', '$gr_champ')"));
 
     $result = $idconnect->query("SELECT pseudo, mail, nom_site, url_site 
-                               FROM phpab_membres 
+                               FROM phppro_membres 
                                WHERE pseudo='$pseudo' 
                                AND admin='1'");
 
@@ -162,12 +162,12 @@ Sportivement</font></p>
       echo "</table>";
     } else {
       echo "<table align=\"center\">";
-      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_ECHOUE . "</font><br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
+      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_ECHOUE . "</font><br /><a href=\"/Phpleague/phppro/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
       echo "</table>";
     }
   } else {
     echo "<table align=\"center\">";
-    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\"></font></font>" . "Réessayer" . "</a></td></tr>";
+    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Phpleague/phppro/prono/index.php?page=inscription&champ=$champ\"></font></font>" . "Réessayer" . "</a></td></tr>";
     echo "</table>";
   }
 }
