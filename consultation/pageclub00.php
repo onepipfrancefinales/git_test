@@ -150,10 +150,7 @@ fusionDeClubs2($equipe, $bdd);
           <br> <br>
           <hr color="#FF0000" width="600">
           </hr>
-          <h2 class="colorRed bold">
-            Photos du club
-          </h2>
-          <iframe src="/00messagerie/<?php echo $sigleComite; ?>/?id=1&album=<?php echo $code; ?>" width="1000" height="400" scrolling="yes" frameborder="0"></iframe>
+          
         </td>
       <?php
       }

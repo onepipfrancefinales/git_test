@@ -132,7 +132,7 @@ else
           <p><font color="#FF0000"><b><font size="+2">Photos du club</font></b></font></p>
           <br>
 		  <?php //$sigleComite ="(MPY)";//$id =29076;?>
-          <iframe src="/00messagerie/<?php echo $sigleComite;?>/?id=1&album=<?php echo $code;?>" width="1000" height="400" scrolling="no" frameborder="0"></iframe></div>
+         
       </td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#FFFFFF"> 
