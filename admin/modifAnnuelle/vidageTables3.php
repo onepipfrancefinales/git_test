@@ -76,7 +76,7 @@
 <br />
 <?php if ($BE == 1)
 	{
-	echo " Vider les tables du comite du Béarn : ";
+	echo " Vider les tables du comite du Bï¿½arn : ";
 	$BE="phpbe";
 	}
 
@@ -174,7 +174,7 @@
 <br />
 <?php if ($MPY == 1)
 	{
-	echo " Vider les tables du comite Midi Pyrénées";
+	echo " Vider les tables du comite Midi Pyrï¿½nï¿½es";
 	$MPY="phpmpy";
 	}
 ?>
@@ -230,7 +230,7 @@
 <br />
 <?php if ($PRO == 1)
 	{
-	echo " Vider les tables du compétitions Pro";
+	echo " Vider les tables du compï¿½titions Pro";
 	$PRO="phppro";
 	}
 ?>
@@ -238,7 +238,7 @@
 <br />
 <?php if ($FED1== 1)
 	{
-	echo " Vider les tables de Fédérale 1";
+	echo " Vider les tables de Fï¿½dï¿½rale 1";
 	$FED1="phpf1";
 	}
 ?>
@@ -246,7 +246,7 @@
 <br />
 <?php if ($FED2 == 1)
 	{
-	echo " Vider les tables de Fédérale 2";
+	echo " Vider les tables de Fï¿½dï¿½rale 2";
 	$FED2="phpfed2";
 	}
 ?>
@@ -254,7 +254,7 @@
 <br />
 <?php if ($FED3GS == 1)
 	{
-	echo " Vider les tables de Fédérale 3 GS";
+	echo " Vider les tables de Fï¿½dï¿½rale 3 GS";
 	$FED3GS="phpfed3GS";
 	}
 ?>
@@ -262,7 +262,7 @@
 <br />
 <?php if ($FED3NE ==1)
 	{
-	echo " Vider les tables de fédérale 3 NE";
+	echo " Vider les tables de fï¿½dï¿½rale 3 NE";
 	$FED3NE="phpfed3NE";
 	}
 ?>
@@ -270,7 +270,7 @@
 <br />
 <?php if ($FEM == 1)
 	{
-	echo " Vider les tables Féminines";
+	echo " Vider les tables Fï¿½minines";
 	$FEM="phpfem";
 	}
 ?>
@@ -286,13 +286,13 @@
 <p><a href="vidageTables4.php?PA=<?php echo $PA;?>">Valider</a></p>
 
 <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db3"); 
 ?>
 
 
 
-<?php //création de la requête SQL:
+<?php //crï¿½ation de la requï¿½te SQL:
  // $sql = "TRUNCATE phpbr_matchs2  ";
   
   

@@ -11,14 +11,14 @@ $password="";
 $hostname="sql.franceserv.fr";
 $database="onepip-france-db2";
 $login="onepip-france";
-$password="lavelan09";
+$password="Lavelan1969&";
 */
 
 
 $hostname="sql.franceserv.fr";
 $database="onepip-france_db6";
 $login="onepip-france";
-$password="lavelan09";
+$password="Lavelan1969&";
 
 
 

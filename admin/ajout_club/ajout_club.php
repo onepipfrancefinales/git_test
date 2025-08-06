@@ -19,12 +19,12 @@ echo "<br/>";
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
-<b><font size="3" face="Arial, Helvetica, sans-serif">Insertion des nouveaus éléments 
+<b><font size="3" face="Arial, Helvetica, sans-serif">Insertion des nouveaus ï¿½lï¿½ments 
 dans la base <font size="4">bdclubs</font></font></b> 
 <?php
 echo "<br/>";
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 <?php
 $club = $_POST['club'];
@@ -162,12 +162,12 @@ $club=("INSERT INTO bdclubs
 		mysql_query($club);
 	?>
 <b> <font face="Arial, Helvetica, sans-serif"> 
-<?php mysql_close(); // Déconnexion de MySQL ?>
-<font size="3">Insertion des nouveaus éléments dans la base bdsaison</font></font></b> 
+<?php mysql_close(); // Dï¿½connexion de MySQL ?>
+<font size="3">Insertion des nouveaus ï¿½lï¿½ments dans la base bdsaison</font></font></b> 
 <?php
 echo "<br/>";
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 <?php
 $club = $_POST['club'];
@@ -189,12 +189,12 @@ $saison=("INSERT INTO bdsaisons
 
 ?>
 <b> <font face="Arial, Helvetica, sans-serif"> 
-<?php mysql_close(); // Déconnexion de MySQL ?>
-<font size="3">Insertion des nouveaus éléments dans la base <font size="4">infosclub</font></font></font></b> 
+<?php mysql_close(); // Dï¿½connexion de MySQL ?>
+<font size="3">Insertion des nouveaus ï¿½lï¿½ments dans la base <font size="4">infosclub</font></font></font></b> 
 <?php
 echo "<br/>";
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 <?php
 $club = $_POST['club'];
@@ -215,6 +215,6 @@ $infos=("INSERT INTO infosclub
 		mysql_query($infos);
 
 ?>
-<?php mysql_close(); // Déconnexion de MySQL ?>
+<?php mysql_close(); // Dï¿½connexion de MySQL ?>
 <a href="saisie_nouveau_club.php" target="_top">Retour vers le formulaire de saisie 
 </a> </html>

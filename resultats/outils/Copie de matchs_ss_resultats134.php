@@ -15167,7 +15167,7 @@ echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
       <td width="106" height="23"><font size="3"><font size="3" face="Arial, Helvetica, sans-serif"><b> 
         </b></font><font size="3"><font face="Arial, Helvetica, sans-serif"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
 
 ?>
@@ -17623,7 +17623,7 @@ echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
       <td width="106" height="23"><font size="3"><font size="3" face="Arial, Helvetica, sans-serif"><b> 
         </b></font><font size="3"><font size="3"><font face="Arial, Helvetica, sans-serif"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 
 ?>
@@ -18194,7 +18194,7 @@ echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
       <td width="106" height="23"><font size="3" face="Arial, Helvetica, sans-serif"><b> 
         </b></font><font size="3"><font size="3"><font face="Arial, Helvetica, sans-serif"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france_db4"); // S�lection de la base onepip
 
 ?>

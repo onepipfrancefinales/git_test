@@ -57,7 +57,7 @@ function nomDivision($division, $bdd)
 {
 global $nomDivision;	
 
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france_db5"); // S�lection de la base onepip
 			
 	$reponse = $bdd->query( "SELECT division

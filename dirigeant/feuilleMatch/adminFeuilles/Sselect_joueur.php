@@ -60,7 +60,7 @@ if($equipe==$equipeA)
 	 // echo $terrain;
 ?>
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 ?>
         <?php
@@ -76,7 +76,7 @@ $reponse = mysql_query("	SELECT sigle,comite, code
         <?php //echo $bdcomite;?>
         <?php
 require ("../../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 
 

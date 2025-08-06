@@ -8,7 +8,7 @@ $type=$_GET['type'];
 global $bdd;
 try
 {
-	$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france_db6;charset=utf8', 'onepip-france', 'lavelan09');
+	$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france_db6;charset=utf8', 'onepip-france', 'Lavelan1969&');
 }
 catch (Exception $e)
 {
@@ -30,7 +30,7 @@ echo $type;echo "<br />";
 
 <html>
   <head>
-	<title>modification de données en PHP :: partie2</title>
+	<title>modification de donnï¿½es en PHP :: partie2</title>
 	<link rel="stylesheet" type="text/css" href="../../maj.css">
 	<meta name=viewport content="width=device-width, initial-scale=1">
   </head>

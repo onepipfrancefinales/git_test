@@ -2,14 +2,14 @@
 <p><b><font size="4"> </font></b> </p>
 <form name="insertion" action="select_joueurrmodif2.php?" method="POST">
   <b><font size="4"> 
-  <?php //indispensable pour recuperer les données de la table
+  <?php //indispensable pour recuperer les donnï¿½es de la table
 require ("../../connection.php") ;?>
   <?php
  $requete = mysql_query( "SELECT N1, N2,  N3, N4 FROM Phpmpy_feuilleA WHERE id = '560'" ) ;
  if($result = mysql_fetch_object( $requete )  or die(mysql_error()))
  {
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
  ?>
   </font></b> 
   <input type="hidden" name="id" value="<?php echo($id) ;?>">
@@ -105,8 +105,8 @@ mysql_close(); // Déconnexion de MySQL
 <?php //echo $equipe ;?>
 <?php //$equipe_dom = $equipeA;?>
 <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 
  <?
@@ -264,7 +264,7 @@ else
 
 
 <?php 
-//$nb=mysql_query("SELECT SUM(photo) from $bdcomite where club=$equipe "); // Requête SQL
+//$nb=mysql_query("SELECT SUM(photo) from $bdcomite where club=$equipe "); // Requï¿½te SQL
 //$nb=mysql_fetch_array($nb);
 //echo "$nb[0]"; 
 ?>
@@ -388,8 +388,8 @@ else
 require ("../../$connect.php")?>
 <?php //echo $connect; ?>
 <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 
 <?php// $bdcomite=Phpmpy_joueurs; ?>
@@ -397,7 +397,7 @@ require ("../../$connect.php")?>
 
 
 <?php
-$reponse = mysql_query("SELECT nom, prenom, position_terrain, type_licence FROM $bdcomite WHERE id_perso='1' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, position_terrain, type_licence FROM $bdcomite WHERE id_perso='1' and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -417,7 +417,7 @@ $type_licence1= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom, position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='2'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom, position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='2'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -430,7 +430,7 @@ $type_licence2= $donnees['type_licence'];
   
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='3'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='3'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -442,7 +442,7 @@ $type_licence3= $donnees['type_licence'];
 
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='4'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='4'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -454,7 +454,7 @@ $type_licence4= $donnees['type_licence'];
   
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='5'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='5'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -466,7 +466,7 @@ $type_licence5= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='6'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='6'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -479,7 +479,7 @@ $type_licence6= $donnees['type_licence'];
 
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='7'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='7'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -491,7 +491,7 @@ $type_licence7= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='8'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='8'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -503,7 +503,7 @@ $type_licence8= $donnees['type_licence'];
 
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='9'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='9'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -515,7 +515,7 @@ $type_licence9= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='10'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence  FROM $bdcomite  WHERE id_perso='10'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -527,7 +527,7 @@ $type_licence10= $donnees['type_licence'];
   
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso=11 and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso=11 and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -539,7 +539,7 @@ $type_licence11= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain , type_licence FROM $bdcomite  WHERE id_perso='12'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain , type_licence FROM $bdcomite  WHERE id_perso='12'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -551,7 +551,7 @@ $type_licence12= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='13'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='13'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -563,7 +563,7 @@ $type_licence13= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='14'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='14'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -575,7 +575,7 @@ $type_licence14= $donnees['type_licence'];
 
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='15'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='15'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -586,7 +586,7 @@ $type_licence15= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='16'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='16'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -599,7 +599,7 @@ $type_licence16= $donnees['type_licence'];
 
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='17'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='17'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -612,7 +612,7 @@ $type_licence17= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='18'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='18'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -624,7 +624,7 @@ $type_licence18= $donnees['type_licence'];
  
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='19'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='19'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -635,7 +635,7 @@ $type_licence19= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='20'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='20'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -646,7 +646,7 @@ $type_licence20= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='21'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='21'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -657,7 +657,7 @@ $type_licence21= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence,club FROM $bdcomite  WHERE id_perso='22'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence,club FROM $bdcomite  WHERE id_perso='22'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -668,7 +668,7 @@ $type_licence22= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='23'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='23'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -680,7 +680,7 @@ $type_licence23= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='24'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='24'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -691,7 +691,7 @@ $type_licence24= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='25'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='25'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -702,7 +702,7 @@ $type_licence25= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='26'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='26'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -713,7 +713,7 @@ $type_licence26= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='27'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='27'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -724,7 +724,7 @@ $type_licence27= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='28'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite  WHERE id_perso='28'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -735,7 +735,7 @@ $type_licence28= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='29'and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='29'and club='$equipe'"); // Requï¿½te SQL
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
@@ -746,7 +746,7 @@ $type_licence29= $donnees['type_licence'];
  }
  ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='30' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='30' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom30= $donnees['nom'];
@@ -756,7 +756,7 @@ $type_licence30= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='31' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='31' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom31= $donnees['nom'];
@@ -766,7 +766,7 @@ $type_licence31= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='32' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='32' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom32= $donnees['nom'];
@@ -776,7 +776,7 @@ $type_licence32= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='33' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='33' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom33= $donnees['nom'];
@@ -786,7 +786,7 @@ $type_licence33= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='34' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='34' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom34= $donnees['nom'];
@@ -796,7 +796,7 @@ $type_licence34= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='35' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='35' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom35= $donnees['nom'];
@@ -806,7 +806,7 @@ $type_licence35= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='36' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='36' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom36= $donnees['nom'];
@@ -816,7 +816,7 @@ $type_licence36= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='37' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='37' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom37= $donnees['nom'];
@@ -826,7 +826,7 @@ $type_licence37= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='38' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='38' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom38= $donnees['nom'];
@@ -836,7 +836,7 @@ $type_licence38= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='39' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='39' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom39= $donnees['nom'];
@@ -846,7 +846,7 @@ $type_licence39= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='40' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='40' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom40= $donnees['nom'];
@@ -856,7 +856,7 @@ $type_licence40= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='41' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='41' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom41= $donnees['nom'];
@@ -866,7 +866,7 @@ $type_licence41= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='42' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='42' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom42= $donnees['nom'];
@@ -876,7 +876,7 @@ $type_licence42= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='43' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='43' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom43= $donnees['nom'];
@@ -887,7 +887,7 @@ $type_licence43= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='44' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='44' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom44= $donnees['nom'];
@@ -897,7 +897,7 @@ $type_licence44= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='45' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='45' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom45= $donnees['nom'];
@@ -907,7 +907,7 @@ $type_licence45= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='46' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='46' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom46= $donnees['nom'];
@@ -917,7 +917,7 @@ $type_licence46= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='47' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='47' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom47= $donnees['nom'];
@@ -927,7 +927,7 @@ $type_licence47= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='48' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='48' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom48= $donnees['nom'];
@@ -937,7 +937,7 @@ $type_licence48= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='49' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='49' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom49= $donnees['nom'];
@@ -947,7 +947,7 @@ $type_licence49= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='50' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='50' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom50= $donnees['nom'];
@@ -957,7 +957,7 @@ $type_licence50= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='51' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='51' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom51= $donnees['nom'];
@@ -967,7 +967,7 @@ $type_licence51= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='52' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='52' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom52= $donnees['nom'];
@@ -977,7 +977,7 @@ $type_licence52= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='53' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='53' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom53= $donnees['nom'];
@@ -987,7 +987,7 @@ $type_licence53= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='54' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='54' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom54= $donnees['nom'];
@@ -997,7 +997,7 @@ $type_licence54= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso=55 and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso=55 and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom55= $donnees['nom'];
@@ -1007,7 +1007,7 @@ $type_licence55= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='56' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='56' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom56= $donnees['nom'];
@@ -1017,7 +1017,7 @@ $type_licence56= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='57' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='57' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom57= $donnees['nom'];
@@ -1027,7 +1027,7 @@ $type_licence57= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='58' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='58' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom58= $donnees['nom'];
@@ -1037,7 +1037,7 @@ $type_licence58= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='59' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='59' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom59= $donnees['nom'];
@@ -1047,7 +1047,7 @@ $type_licence59= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='60' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='60' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom60= $donnees['nom'];
@@ -1057,7 +1057,7 @@ $type_licence60= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='61' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='61' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom61= $donnees['nom'];
@@ -1067,7 +1067,7 @@ $type_licence61= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='62' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='62' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom62= $donnees['nom'];
@@ -1077,7 +1077,7 @@ $type_licence62= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='63' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='63' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom63= $donnees['nom'];
@@ -1087,7 +1087,7 @@ $type_licence63= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='64' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='64' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom64= $donnees['nom'];
@@ -1098,7 +1098,7 @@ $type_licence64= $donnees['type_licence'];
 ?>
 
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='65' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='65' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom65= $donnees['nom'];
@@ -1108,7 +1108,7 @@ $type_licence65= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='66' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='66' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom66= $donnees['nom'];
@@ -1118,7 +1118,7 @@ $type_licence66= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='67' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='67' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom67= $donnees['nom'];
@@ -1128,7 +1128,7 @@ $type_licence67= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='68' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='68' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom68= $donnees['nom'];
@@ -1138,7 +1138,7 @@ $type_licence68= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='69' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='69' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom69= $donnees['nom'];
@@ -1148,7 +1148,7 @@ $type_licence69= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='70' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='70' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom70= $donnees['nom'];
@@ -1158,7 +1158,7 @@ $type_licence70= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='71' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='71' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom71= $donnees['nom'];
@@ -1168,7 +1168,7 @@ $type_licence71= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='72' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='72' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom72= $donnees['nom'];
@@ -1178,7 +1178,7 @@ $type_licence72= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='73' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='73' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom73= $donnees['nom'];
@@ -1188,7 +1188,7 @@ $type_licence73= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='74' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='74' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom74= $donnees['nom'];
@@ -1198,7 +1198,7 @@ $type_licence74= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='75' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='75' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom75= $donnees['nom'];
@@ -1208,7 +1208,7 @@ $type_licence75= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='76' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='76' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom76= $donnees['nom'];
@@ -1218,7 +1218,7 @@ $type_licence76= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='77' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='77' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom77= $donnees['nom'];
@@ -1228,7 +1228,7 @@ $type_licence60= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='78' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='78' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom78= $donnees['nom'];
@@ -1238,7 +1238,7 @@ $type_licence78= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='79' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='79' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom79= $donnees['nom'];
@@ -1248,7 +1248,7 @@ $type_licence79= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='80' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='80' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom80= $donnees['nom'];
@@ -1258,7 +1258,7 @@ $type_licence80= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='81' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='81' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom81= $donnees['nom'];
@@ -1268,7 +1268,7 @@ $type_licence81= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='82' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='82' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom82= $donnees['nom'];
@@ -1278,7 +1278,7 @@ $type_licence82= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='83' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='83' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom83= $donnees['nom'];
@@ -1288,7 +1288,7 @@ $type_licence83= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='84' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='84' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom84= $donnees['nom'];
@@ -1298,7 +1298,7 @@ $type_licence84= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='85' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='85' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom85= $donnees['nom'];
@@ -1308,7 +1308,7 @@ $type_licence85= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='86' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='86' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom86= $donnees['nom'];
@@ -1317,7 +1317,7 @@ $nom86 = strtoupper($nom86);
 $type_licence86= $donnees['type_licence'];
 }
 ?><?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='87' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='87' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom87= $donnees['nom'];
@@ -1327,7 +1327,7 @@ $type_licence87= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='88' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='88' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom88= $donnees['nom'];
@@ -1337,7 +1337,7 @@ $type_licence88= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='89' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='89' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom89= $donnees['nom'];
@@ -1347,7 +1347,7 @@ $type_licence89= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='90' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='90' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom90= $donnees['nom'];
@@ -1356,7 +1356,7 @@ $nom90 = strtoupper($nom90);
 $type_licence90= $donnees['type_licence'];
 }
 ?><?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='91' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='91' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom91= $donnees['nom'];
@@ -1366,7 +1366,7 @@ $type_licence91= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='92' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='92' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom92= $donnees['nom'];
@@ -1376,7 +1376,7 @@ $type_licence92= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='93' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='93' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom93= $donnees['nom'];
@@ -1385,7 +1385,7 @@ $nom93 = strtoupper($nom93);
 $type_licence93= $donnees['type_licence'];
 }
 ?><?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='94' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='94' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom94= $donnees['nom'];
@@ -1394,7 +1394,7 @@ $nom94 = strtoupper($nom94);
 $type_licence60= $donnees['type_licence'];
 }
 ?><?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='95' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='95' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom95= $donnees['nom'];
@@ -1404,7 +1404,7 @@ $type_licence60= $donnees['type_licence'];
 }
 ?>
 <?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='96' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='96' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom96= $donnees['nom'];
@@ -1413,7 +1413,7 @@ $nom96 = strtoupper($nom96);
 $type_licence96= $donnees['type_licence'];
 }
 ?><?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='97' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='97' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom97= $donnees['nom'];
@@ -1422,7 +1422,7 @@ $nom97 = strtoupper($nom97);
 $type_licence97= $donnees['type_licence'];
 }
 ?><?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='98' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='98' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom98= $donnees['nom'];
@@ -1431,7 +1431,7 @@ $nom98 = strtoupper($nom98);
 $type_licence98= $donnees['type_licence'];
 }
 ?><?php
-$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='99' and club='$equipe'"); // Requête SQL
+$reponse = mysql_query("SELECT nom, prenom,  position_terrain, type_licence FROM $bdcomite WHERE id_perso='99' and club='$equipe'"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 $nom99= $donnees['nom'];
@@ -1449,16 +1449,16 @@ $type_licence99= $donnees['type_licence'];
       </td>
       <td colspan="3" height="14" bordercolor="#000000">Equipe <b>:<font face="Arial, Helvetica, sans-serif"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
-$reponse = mysql_query("SELECT sigle,comite, code FROM bdclubs WHERE code='$equipeA'"); // Requête SQL 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
+$reponse = mysql_query("SELECT sigle,comite, code FROM bdclubs WHERE code='$equipeA'"); // Requï¿½te SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
         <?php echo $donnees['sigle'];?>
         <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
         </font></b></td>
       <td colspan="4" height="14" bgcolor="#CCCCCC" bordercolor="#000000"> 
@@ -1472,16 +1472,16 @@ mysql_close(); // Déconnexion de MySQL
       <td height="14" colspan="3" bgcolor="#FFFFFF" bordercolor="#000000">Equipe 
         <b>:<font face="Arial, Helvetica, sans-serif"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
-$reponse = mysql_query("SELECT sigle,comite, code FROM bdclubs WHERE code='$equipeB'"); // Requête SQL 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
+$reponse = mysql_query("SELECT sigle,comite, code FROM bdclubs WHERE code='$equipeB'"); // Requï¿½te SQL 
 While ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
         <?php echo $donnees['sigle'];?>
         <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
         </font></b></td>
       <td colspan="3" height="14" bgcolor="#CCCCCC" bordercolor="#000000"> 
@@ -1495,8 +1495,8 @@ mysql_close(); // Déconnexion de MySQL
         <?php
 //	require ("../../$connect.php")	  
 		  
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
         </font></td>
       <td width="14" height="23" bordercolor="#000000"> 
@@ -7697,8 +7697,8 @@ $joueur=$joueur23;
 	//require ("../../$connect.php")	
 	  
 		  
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
           <?php
 $requete = "SELECT $nomcapitaine FROM Phpmpy_feuilleA WHERE id=$code_match";

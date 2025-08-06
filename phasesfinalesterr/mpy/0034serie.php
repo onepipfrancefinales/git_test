@@ -614,7 +614,7 @@ mysql_close(); // Dèconnexion de MySQL
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         
 		<?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db3");
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf2011 WHERE id='200'");
 
@@ -994,7 +994,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db3");
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf2011 WHERE id='200'");
 
@@ -1039,7 +1039,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db3");
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf2011 WHERE id='200'");
 
@@ -1081,7 +1081,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db3");
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf2011 WHERE id='200'");
 

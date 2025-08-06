@@ -1,6 +1,6 @@
 <html>
  <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -28,7 +28,7 @@ require ("../../phases_finales/fonctions_phases_finalesAR.php");
 <form name="insertion" action="16me3ARf3.php" method="POST">
   <b><font size="4"> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
   </font></b> <b><font size="4"> 
@@ -57,7 +57,7 @@ mysql_select_db("onepip-france-db1");
   	{
  
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 <?php if ($pts3A3201+$pts3A3202>6) if ($pts3A3201>$pts3A3202 or $A3201>$A3202)    $clubA1601= $clubA3201; else	$clubA1601= $clubA3202; else $clubA1601=$clubA;?>
       <?php if ($pts3A3203+$pts3A3204>6) if ($pts3A3203>$pts3A3204 or $A3203>$A3204)	$clubA1602= $clubA3203;	else	$clubA1602= $clubA3204; else $clubA1602=$clubA;?>

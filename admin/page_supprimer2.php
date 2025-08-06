@@ -5,7 +5,7 @@
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
-<p><b><font size="4" face="Arial, Helvetica, sans-serif">Membre supprimé</font></b></p>
+<p><b><font size="4" face="Arial, Helvetica, sans-serif">Membre supprimï¿½</font></b></p>
 <?php $bd2 = $_POST['bd'];?>
 <?php $bd1 = "onepip-france-db";?>
 <?php $bd=$bd1.$bd2;?>
@@ -24,14 +24,14 @@
 <?php echo $ID;?>
 
  <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("$bd"); 
 ?>
   <?php
-mysql_query("DELETE FROM $comite WHERE id ='$ID' "); // Requête SQL
+mysql_query("DELETE FROM $comite WHERE id ='$ID' "); // Requï¿½te SQL
 ?>
 
    <?php
  
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>

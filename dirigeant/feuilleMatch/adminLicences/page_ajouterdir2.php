@@ -78,7 +78,7 @@ $licenceDirAffichage = $annee." ".$deux." ".$un." ".$fin;
 
 <?php
 //require("../../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france-db2"); // S�lection de la base onepip
 
 //$nb=mysql_query("SELECT MAX(id_perso) 

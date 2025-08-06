@@ -44,8 +44,8 @@ MM_reloadPage(true);
 <?php
 require ("../../../$connect.php")	
 	  
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 
 <?php
@@ -63,8 +63,8 @@ $reponse = mysql_query("SELECT sigle,comite, code
 <?php //echo $bdcomite;?>
 <?php
 require ("../../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 
 
 ?>
@@ -91,7 +91,7 @@ if($equipe==$equipeA)
 	  }
 	  else
 	  {
-	  $terrain="l'extérieur";
+	  $terrain="l'extï¿½rieur";
 	  $bdfeuille=("php".''.$comite.''."_feuilleB");
 	  }
 	  echo $terrain;
@@ -108,7 +108,7 @@ if($equipe==$equipeA)
         <?php
 $reponse = mysql_query("SELECT sigle,comite, code 
 						FROM bdclubs 
-						WHERE code='$equipeC'"); // Requête SQL 
+						WHERE code='$equipeC'"); // Requï¿½te SQL 
 								While ($donnees = mysql_fetch_array($reponse) )
 										{ 
 										 echo $donnees['sigle'];

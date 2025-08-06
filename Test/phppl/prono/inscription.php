@@ -92,8 +92,8 @@ if (!$go == "1") {
     //mysqli_query($idconnect, ("INSERT INTO phppl_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
     //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
-//$tabTables = array('phpau', 'phppl', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
-$tabTables = array('phpau', 'phppl');
+$tabTables = array('phpau', 'phppl', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
+//$tabTables = array('phpau', 'phppl');
 foreach ($tabTables as $table) {
   //phppl_pronostics
   $tableMembres = $table . "_membres";

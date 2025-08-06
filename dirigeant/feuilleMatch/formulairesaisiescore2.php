@@ -33,7 +33,7 @@
     <td><b> 
       <?php
   
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
       <?php
@@ -88,21 +88,21 @@ echo $totalB;
 <p> 
  <?php
   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db2"); 
 ?>
 <?php $sql = "UPDATE $bdfeuilleA
             SET essai='$essaiA', transf='$transfA',penalite='$penaliteA', drop1='$drop1A'
            WHERE id = $code_match " ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
   ?>
   <?php $sql2 = "UPDATE $bdfeuilleB
             SET essai='$essaiB', transf='$transfB',penalite='$penaliteB', drop1='$drop1B'
            WHERE id = $code_match " ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql2 )   ;
   ?>
  </p>

@@ -27,12 +27,12 @@
 
 <?php
 require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 <?php 
 
- $requete=mysql_query("SELECT Max(id) from $bdfeuilleA where id>900  "); // Requête SQL
+ $requete=mysql_query("SELECT Max(id) from $bdfeuilleA where id>900  "); // Requï¿½te SQL
  $nb=mysql_fetch_array($requete);
 $id= "$nb[0]"; 
 $numeroid=$id+1;
@@ -41,8 +41,8 @@ echo $numeroid;
 
 <?php
 // require ("../../$connect.php")
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 <?php
    mysql_query (" INSERT INTO $bdfeuilleA Values ('$numeroid','$equipeA','$equipeB','$date','$terrain','$ville','$division','$championnat','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','')");

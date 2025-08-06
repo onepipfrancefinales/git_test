@@ -8,7 +8,7 @@
 <body>
 <form name="insertion" action="http://francefinalesrugby.franceserv.com/admin/modifAnnuelle/chgDateSaison3.php" method="POST">
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db2"); 
 ?>
   <input type="hidden" name="id" value="<?php echo($id) ;?>">
@@ -743,7 +743,7 @@ mysql_select_db("onepip-france-db2");
   <tr align="center"> 
     <td width="177"><font face="Arial, Helvetica, sans-serif"> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db3"); 
 ?>
       <?php

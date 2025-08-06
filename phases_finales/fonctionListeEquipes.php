@@ -1,9 +1,9 @@
 <?php
-//*******************  Nom de la compétition  ********************************
+//*******************  Nom de la compï¿½tition  ********************************
 
 				
 			require ("../../connect1/connection5.php");
-//			mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//			mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //			mysql_select_db("onepip-france_db5"); 
 			
 				$reponse = $bdd->query("	SELECT division
@@ -23,7 +23,7 @@ echo "xxxxx : ".$nomDivision;
 <?php
 //************************* type de phase finale  ***************************
 
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 
 require ("../../connect1/connection1.php");
@@ -41,7 +41,7 @@ $reponse = $bdd->query("SELECT type, annee
 
 
 
-//******************  Définition des équipes  ************************************
+//******************  Dï¿½finition des ï¿½quipes  ************************************
 
 $tabEquipe = array();
 for ($i=101; $i<165; $i++)
@@ -85,7 +85,7 @@ elseif ($type==4)
 	$clubA4008 = $tabEquipe[7];
 	}
 
-// *****   Huitième de finale  ****************		
+// *****   Huitiï¿½me de finale  ****************		
 
 elseif ($type==8)
 	{	
@@ -109,7 +109,7 @@ elseif ($type==8)
 	}
 
 
-// *****   Seizième de finale  ****************		
+// *****   Seiziï¿½me de finale  ****************		
 
 elseif ($type==16)
 	{	
@@ -151,7 +151,7 @@ elseif ($type==16)
 	}
 
 
-// *****   Trente deuxième de finale  ****************		
+// *****   Trente deuxiï¿½me de finale  ****************		
 
 elseif ($type==32)
 	{	

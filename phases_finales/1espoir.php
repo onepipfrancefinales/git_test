@@ -11,7 +11,7 @@ $clubA2004 = 'RC Toulon (CAZ)';
 
 else
 {
-echo "Désolé, aucune donnée pour cette saison";
+echo "Dï¿½solï¿½, aucune donnï¿½e pour cette saison";
 }
 ?>  
 <?php
@@ -26,7 +26,7 @@ $clubB2004 = 'AS Montferrand (AU)';
 
 else
 {
-echo "Désolé, aucune donnée pour cette saison";
+echo "Dï¿½solï¿½, aucune donnï¿½e pour cette saison";
 }
 ?>  
 
@@ -55,7 +55,7 @@ echo "Désolé, aucune donnée pour cette saison";
       <div id="Layer3" style="position:absolute; width:30px; height:20px; z-index:1; left: 200px; top: 0px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
         <font color="#FFCC00" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='235'");
 
@@ -74,7 +74,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer3" style="position:absolute; width:30px; height:20px; z-index:1; left: 200px; top: 0px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <font color="#FFCC00" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='235'");
 
@@ -102,7 +102,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <div id="Layer3" style="position:absolute; width:30px; height:20px; z-index:1; left: 200px; top: 0px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
         <font color="#FFCC00" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='235'");
 
@@ -120,7 +120,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer5" style="position:absolute; width:30px; height:20px; z-index:1; left: 200px; top: 0px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <font color="#FFCC00" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='235'");
 
@@ -167,7 +167,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFCC00" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='235'");
 
@@ -184,7 +184,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFCC00" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='235'");
 

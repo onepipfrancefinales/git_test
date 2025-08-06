@@ -27,18 +27,18 @@ require   "../../../connect1/connection3.php";
 
 //if ($comite=="f1" OR $comite=="fed2" OR $comite=="fed3NE" OR $comite=="fed3GS" OR $comite=="pro")
 // {
-// mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+// mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db3"); 
 // }
 //elseif ($comite=="fem") 
  //{
-// mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+// mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france_db4"); 
 // } 
  
 // else
 // {  
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db2"); 
 //}
 

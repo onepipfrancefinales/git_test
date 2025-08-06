@@ -71,7 +71,7 @@ content="comit� Bourgogne,Comite Midi Pyrenees de Rugby,Comite Midi Pyrenees R
       <td bgcolor="#006699" bordercolor="#006699" valign="middle" align="center" height="15"> 
         <b><font color="#FFFFFF" size="+2"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 
 

@@ -9,7 +9,7 @@
   <tr> 
     <td height="15"> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db2"); // Sèlection de la base onepip
 
 ?>

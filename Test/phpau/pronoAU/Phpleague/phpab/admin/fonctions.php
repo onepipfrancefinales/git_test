@@ -744,7 +744,7 @@ WHERE ext.id_champ='$champ'
 try
 {
 	$bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db2;charset=utf8', 'root', '');
-//  $bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db2;charset=utf8', 'onepip-france', 'lavelan09');
+//  $bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db2;charset=utf8', 'onepip-france', 'Lavelan1969&');
 }
 catch(Exception $e)
 {
@@ -888,7 +888,7 @@ $resultat=mysqli_query($idconnect,$requete) or die (mysqli_error($idconnect));
 //echo "fin";//echo "<br />"; 
 }
 
-// Nombres de renseignement dans cette classe à partir de l'id_classe  (utilisé dans phpab_classe.php)
+// Nombres de renseignement dans cette classe ï¿½ partir de l'id_classe  (utilisï¿½ dans phpab_classe.php)
 function nb_classe($data, $idconnect)
 {
   $result=$idconnect->query("SELECT id FROM phpab_rens WHERE id_classe='$data'");
@@ -897,7 +897,7 @@ function nb_classe($data, $idconnect)
   return("$nb_classe");
 }
 
-// Nombres de classes enregistrées (ulilisé dans phpab_classe.php)
+// Nombres de classes enregistrï¿½es (ulilisï¿½ dans phpab_classe.php)
 function nb_classe2($idconnect)
 {	
   $result=$idconnect->query("SELECT * FROM phpab_classe");
@@ -906,7 +906,7 @@ function nb_classe2($idconnect)
   return("$nb_classe2");
 }
 
-// Nombres de renseignements classés (utilisé dans admin/rens.php)
+// Nombres de renseignements classï¿½s (utilisï¿½ dans admin/rens.php)
 function nb_rens($idconnect)
 {
   $result=$idconnect->query("SELECT id FROM phpab_rens where id_classe>'0'");
@@ -914,7 +914,7 @@ function nb_rens($idconnect)
   return("$nb_rens");
 }
 
-// Nombres de renseignements enregistrés (utilisé dans rens.php)
+// Nombres de renseignements enregistrï¿½s (utilisï¿½ dans rens.php)
 function nb_rens2($idconnect)
 {	
   $result=$idconnect->query("SELECT * FROM phpab_rens");
@@ -922,7 +922,7 @@ function nb_rens2($idconnect)
   return("$nb_rens2");
 }
 
-// id du renseignement à partir du nom du rens (utilisé dans rens.php)
+// id du renseignement ï¿½ partir du nom du rens (utilisï¿½ dans rens.php)
 function rens2($rens, $idconnect)
 {
   $result=$idconnect->query("select id, nom from phpab_rens where nom='$rens'");
@@ -932,7 +932,7 @@ function rens2($rens, $idconnect)
   return("$rens2");
 }
 
-// Affichage des renseignements (utilisé dans gestequipes.php
+// Affichage des renseignements (utilisï¿½ dans gestequipes.php
 function aff_rens ($id_classe, $id_clubs, $idconnect)
   {
   $result=$idconnect->query("SELECT phpab_donnee.id, phpab_donnee.nom, id_rens, id_clubs, phpab_rens.id, phpab_rens.nom, phpab_rens.id_classe, phpab_clubs.id, etat, phpab_donnee.url, phpab_rens.url

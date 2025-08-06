@@ -2,13 +2,13 @@
 <div id="centre"> </div>
  
 <?php
-//Connexion à MySQL 
-$bd=mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL 
+//Connexion ï¿½ MySQL 
+$bd=mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL 
 mysql_select_db("onepip-france-db1"); 
  // ------- 
- // ETAPE 1 : on vérifie si l'IP se trouve déjà dans la table 
-// Pour faire ça, on n'a qu'à compter le nombre d'entrées dont le champ "ip" est l'adresse ip du visiteur 
+ // ETAPE 1 : on vï¿½rifie si l'IP se trouve dï¿½jï¿½ dans la table 
+// Pour faire ï¿½a, on n'a qu'ï¿½ compter le nombre d'entrï¿½es dont le champ "ip" est l'adresse ip du visiteur 
 $retour = mysql_query('SELECT COUNT(*) AS nbre_entrees FROM connectes WHERE ip=\'' . $_SERVER['REMOTE_ADDR'] . '\''); 
 $donnees = mysql_fetch_array($retour); 
 
@@ -16,28 +16,28 @@ if ($donnees['nbre_entrees'] == 0) // L'ip ne se trouve pas dans la table, on va
 { 
  mysql_query('INSERT INTO connectes VALUES(\'' . $_SERVER['REMOTE_ADDR'] . '\', ' . time() . ')'); 
 } 
-else // L'ip se trouve déjà dans la table, on met juste à jour le timestamp 
+else // L'ip se trouve dï¿½jï¿½ dans la table, on met juste ï¿½ jour le timestamp 
 { 
  mysql_query('UPDATE connectes SET timestamp=' . time() . ' WHERE ip=\'' 
 . $_SERVER['REMOTE_ADDR'] . '\''); 
 } 
 // ------- 
-// ETAPE 2 : on supprime toutes les entrées dont le timestamp est plus vieux que 5 minutes 
+// ETAPE 2 : on supprime toutes les entrï¿½es dont le timestamp est plus vieux que 5 minutes 
 // 
-// On stocke dans une variable le timestamp qu'il était il y a 5 minutes : 
-$timestamp_5min = time() - (60 * 5); // 60 * 5 = nombre de secondes écoulées en 5 minutes //mysql_query('DELETE FROM connectes WHERE timestamp < ' . $timestamp_5min); 
+// On stocke dans une variable le timestamp qu'il ï¿½tait il y a 5 minutes : 
+$timestamp_5min = time() - (60 * 5); // 60 * 5 = nombre de secondes ï¿½coulï¿½es en 5 minutes //mysql_query('DELETE FROM connectes WHERE timestamp < ' . $timestamp_5min); 
 
 // ------- 
 // ETAPE 3 : 
-//on compte le nombre d'ip stockées dans la table. C'est le nombre de visiteurs connectés 
+//on compte le nombre d'ip stockï¿½es dans la table. C'est le nombre de visiteurs connectï¿½s 
 $retour = mysql_query('SELECT COUNT(*) AS nbre_entrees FROM connectes'); 
 $donnees = mysql_fetch_array($retour); 
 
-// Ouf ! On n'a plus qu'à afficher le nombre de connectés ! 
-echo ' <p>Il y a ' . $donnees['nbre_entrees'] . ' connectés</p>';
+// Ouf ! On n'a plus qu'ï¿½ afficher le nombre de connectï¿½s ! 
+echo ' <p>Il y a ' . $donnees['nbre_entrees'] . ' connectï¿½s</p>';
 
 mysql_close ($bd);
-mysql_close (mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"));
+mysql_close (mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"));
 ?>
 <br>
 <?php

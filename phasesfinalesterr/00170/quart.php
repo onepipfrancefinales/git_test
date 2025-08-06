@@ -39,7 +39,7 @@ MM_reloadPage(true);
 
 <body bgcolor="#EAECEB">
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db3"); 
 ?>
 <?//-------------R�cup�ration des variables--------------------

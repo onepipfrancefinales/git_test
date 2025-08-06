@@ -100,7 +100,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 	mysql_select_db("onepip-france-db3"); // Sélection de la base onepip
     
 	$query = "SELECT  Phpmpy_matchs.id_equipe_dom, Phpmpy_matchs.id_equipe_ext, Phpmpy_matchs.id_journee, Phpmpy_matchs.date_reelle, phptest_matchs.buts_dom, phptest_matchs.buts_ext, phptest_journees.date_prevue, phptest_journees.id_champ, phptest_clubs.nom, phptest_clubs.id FROM  phptest_matchs, phptest_journees, phptest_clubs 
@@ -134,7 +134,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <h6><a href="TEST/calendrier/241.php" target="_top">Calendrier complet</a> </h6>
                 <h6 ><a href="TEST/page_retards_TEST.php" target="_top"><h8> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 	mysql_select_db("onepip-france-db3"); 
     
 	$query = "SELECT  phptest_matchs.id_equipe_dom, phptest_matchs.id_equipe_ext, phptest_matchs.id_journee, phptest_matchs.date_reelle, phptest_matchs.buts_dom, phptest_matchs.buts_ext, phptest_journees.date_prevue, phptest_journees.id_champ, phptest_clubs.nom, phptest_clubs.id 

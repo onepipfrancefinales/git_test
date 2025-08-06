@@ -1,5 +1,5 @@
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -12,11 +12,11 @@
 
  
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
   <?php
-  //récupération des valeurs des champs:
+  //rï¿½cupï¿½ration des valeurs des champs:
   
 $E01 = $_POST['E01'];
 
@@ -58,10 +58,10 @@ $E61 = $_POST['E61'];
   <br/>
   </font> <font size="4"><b>
   <?php
-  //récupération de l'identifiant de la personne:
+  //rï¿½cupï¿½ration de l'identifiant de la personne:
   $id = $_POST["id"] ;
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpf$annee
             SET  E01='$E01',E05='$E05',E09='$E09',E13='$E13', E17='$E17', E21='$E21',E25='$E25',E29='$E29',
 		         E33='$E33',E37='$E37',E41='$E41',E45='$E45', E49='$E49', E53='$E53',E57='$E57',E61='$E61', 
@@ -77,18 +77,18 @@ $E61 = $_POST['E61'];
 			WHERE id = '$id' " ;
 
   
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-//affichage des résultats, pour savoir si la modification a marchée:
+//affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
   {
-    echo("La modification a été correctement effectuée");
+    echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
    }
   else
   {
-    echo("La modification à échouée") ;
+    echo("La modification ï¿½ ï¿½chouï¿½e") ;
   }
 ?>
   <?php
@@ -98,20 +98,20 @@ $E61 = $_POST['E61'];
 			WHERE id = '$id' " ;
  
 				 
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql2 )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
   {
  
-    echo("La modification a été correctement effectuée");
+    echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
  
   }
   else
   {
-    echo("La modification à échouée") ;
+    echo("La modification ï¿½ ï¿½chouï¿½e") ;
   }
 ?>
   
@@ -124,7 +124,7 @@ $E61 = $_POST['E61'];
   </b></font> 
   <?php
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 </p>
 <p> 

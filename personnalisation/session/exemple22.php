@@ -5,8 +5,8 @@ $pwd=$_POST['pwd'];
 echo "login : ".''.$login; echo"   mot de passe : ".''. $pwd;
 ?>
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france_db5"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france_db5"); // Sï¿½lection de la base onepip
 ?>
 <?php
 $reponse = mysql_query("SELECT nom ,mdp

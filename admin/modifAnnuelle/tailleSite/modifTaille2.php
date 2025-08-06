@@ -14,7 +14,7 @@ echo $comite;?>
 <?php
 
 //require ("../../connection5");
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france_db5"); 
 ?>
 
@@ -37,7 +37,7 @@ echo $nomComite;
 <?php
 
 //require ("../../connection1");
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
 
@@ -50,7 +50,7 @@ mysql_select_db("onepip-france-db1");
   if( $result = mysql_fetch_object( $requete ) )
 		 {
 		 }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 
  <input type="hidden" name="H1" value="<?php echo($H1) ;?>">

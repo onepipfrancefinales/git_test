@@ -19,13 +19,13 @@
       <td width="291" height="211"> 
         <div align="center"> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
           <?php
 $reponse = mysql_query("SELECT sigle,comite, code 
 						FROM bdclubs 
-						WHERE code='$equipe'"); // Requête SQL 
+						WHERE code='$equipe'"); // Requï¿½te SQL 
 								While ($donnees = mysql_fetch_array($reponse) )
 								{ 
 								?>
@@ -45,7 +45,7 @@ $reponse = mysql_query("SELECT sigle,comite, code
           <?php
  }
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
         </div>
         <div align="center"></div>
@@ -60,8 +60,8 @@ mysql_close(); // Déconnexion de MySQL
         <font size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"> 
         <?php
 //require ("../../../$connect.php")
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
         </font> 
         <div align="center"><font size="5"><b><font size="5"><b><font size="5"><b><font size="5"><b><font size="5" face="Arial, Helvetica, sans-serif" color="#FF0000"><b>Feuille 
@@ -76,7 +76,7 @@ mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
           <?php
 		  
 //  require ("../../$connect.php")
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
           <?php
@@ -188,7 +188,7 @@ while($row = mysql_fetch_array($result))
           <font size="5" face="Arial, Helvetica, sans-serif"><b> 
           <?php
 		  
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
           </b></font></b></font></b></div>
         </td>

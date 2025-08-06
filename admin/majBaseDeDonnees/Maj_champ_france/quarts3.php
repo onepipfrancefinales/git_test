@@ -1,5 +1,5 @@
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -24,11 +24,11 @@
   <br/>
   <br/>
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
   <?php
-  //récupération des valeurs des champs:
+  //rï¿½cupï¿½ration des valeurs des champs:
   
 $A4001 = $_POST['A4001'];
 $A4002 = $_POST['A4002'];
@@ -46,33 +46,33 @@ $A4008 = $_POST['A4008'];
 
 ?>
   <?php
-  //récupération de l'identifiant de la personne:
+  //rï¿½cupï¿½ration de l'identifiant de la personne:
   $id         = $_POST["id"] ;
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpf$annee2
             SET  A4001='$A4001',A4002='$A4002',A4003='$A4003',A4004='$A4004',A4005='$A4005',A4006='$A4006',A4007='$A4007',A4008='$A4008'
 		  WHERE id = '$id' " ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
   {
  
-    echo("La modification a été correctement effectuée");
+    echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
  
   }
   else
   {
-    echo("La modification à échouée") ;
+    echo("La modification ï¿½ ï¿½chouï¿½e") ;
   }
 ?>
   <?php
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 </p>
 <p> <a href=http://francefinalesrugby.franceserv.com/admin/Maj_champ_france/accueil2.php?annee=<?php echo $annee; ?>>Retour 

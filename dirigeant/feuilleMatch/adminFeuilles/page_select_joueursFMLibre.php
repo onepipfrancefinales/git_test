@@ -28,9 +28,9 @@
 
 
 <?php 
-//****** Elements ajoutés pour le FM libre ********
+//****** Elements ajoutï¿½s pour le FM libre ********
 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 
 
@@ -213,7 +213,7 @@ if ($champEquipeInvitee > 0)
 	
 	
 	
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 	mysql_select_db("onepip-france_db5"); 
 	
 	$query = mysql_query (" SELECT comite
@@ -227,13 +227,13 @@ if ($champEquipeInvitee > 0)
 	
 	echo "code lettre equipe invitee: ".''.$lettreLigueInvitee; echo "<br />";
 	
-// test de la présence de l'équipe invitee dans sa ligue
+// test de la prï¿½sence de l'ï¿½quipe invitee dans sa ligue
 
 	$connectInvitee="connection2";
 	
 	
 	
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 	mysql_select_db("onepip-france-db2");
 	
 	$bdcomite = "php".''.$lettreLigueInvitee.''."_equipes";
@@ -590,9 +590,9 @@ if ($champEquipeInvitee > 0)
 			echo $code_match;echo "<br />";
 		
 					
-		// Création des tuples dans les deux bases de données
+		// Crï¿½ation des tuples dans les deux bases de donnï¿½es
 
-		//Base de données EquipeA
+		//Base de donnï¿½es EquipeA
 		
 		require ("../../../$connectA.php") ;
 		
@@ -604,7 +604,7 @@ if ($champEquipeInvitee > 0)
 						VALUES ($code_match, $equipeA, $equipeB, '1', '$comiteB', '$connectB')";
 		mysql_query ($sqlBEquipeA);
 		
-		//Base de données Equipe B
+		//Base de donnï¿½es Equipe B
 		
 		require ("../../../$connectB.php") ;
 					

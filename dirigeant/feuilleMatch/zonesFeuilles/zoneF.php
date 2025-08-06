@@ -7,7 +7,7 @@
  <body>
   <?php
    require ("../../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
 <?php mysql_query ("SET NAMES UTF8"); ?>
@@ -75,8 +75,8 @@ $evenement=$row[4];
 	require ("../../../$connect.php")	
 	  
 		  
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 ?>
 <?php
 
@@ -84,7 +84,7 @@ $evenement=$row[4];
             SET  date='$date',organisateur='$organisateur',tel='$tel',division='$code_div',poule='$poule'
 		    WHERE id = $id " ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  
 ?>

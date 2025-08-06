@@ -1,11 +1,11 @@
 <?php
-// On démarre la session (ceci est indispensable dans toutes les pages de notre section membre)
+// On dï¿½marre la session (ceci est indispensable dans toutes les pages de notre section membre)
 session_start ();
 
-// On récupère nos variables de session
+// On rï¿½cupï¿½re nos variables de session
 if (isset($_SESSION['login']) && isset($_SESSION['pwd']) && isset($_SESSION['id'])) {
 
-	// On teste pour voir si nos variables ont bien été enregistrées
+	// On teste pour voir si nos variables ont bien ï¿½tï¿½ enregistrï¿½es
 	echo '<html>';
 	echo '<head>';
 	echo '<title>Page de notre section membre</title>';
@@ -33,7 +33,7 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd']) && isset($_SESSION['id'
 				echo '<a href="./logout.php">D&eacute;connection</a>';
 				}
 				else {
-					echo 'Les variables ne sont pas déclarées.';
+					echo 'Les variables ne sont pas dï¿½clarï¿½es.';
 				}
 			?>
     </td>
@@ -76,12 +76,12 @@ if ($reponse==1)
 		<?php	echo "taille : ".''. $taille1; ?>
 		<br />
 		
-		<?php //**********  Détermination de la valeur de la variable $type   **********
+		<?php //**********  Dï¿½termination de la valeur de la variable $type   **********
 		
 		$phpComiteDivisions = $comite.''."_divisions";
 		echo $phpComiteDivisions;
 		
-//************** Choix de la base de donnée**********		
+//************** Choix de la base de donnï¿½e**********		
 		
 		if ( $comite == "phpf1" OR $comite == "phpfed2" OR  $comite == "phpfed3NE" OR $comite == "phpfed3GS"  OR
 			 $comite == "phpbr" OR $comite == "phpmpy"  OR  $comite == "phppl"     OR $comite == "phppro"     OR  $comite == "phppr")
@@ -168,7 +168,7 @@ echo "<br />";
 <?php //************   Ecriture dans la table   ********
 
 //include ("../../connection5.php");
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france_db5"); 
 ?>
 <?php

@@ -110,7 +110,7 @@ MM_reloadPage(true);
     <tr> 
       <td width="46" height="27"> 
         <?php 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db3");   
    ?>
       </td>
@@ -644,7 +644,7 @@ echo "";
       <td width="204" align="left" height="20"><font size="2" face="Arial, Helvetica, sans-serif"> 
         <strong> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db3"); // Sèlection de la base onepip	  
 $reponse = mysql_query("SELECT * FROM phpmpy_pf$annee WHERE id='220' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )

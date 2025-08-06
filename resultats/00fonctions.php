@@ -20,20 +20,20 @@ function connectionBdd1()
 {
  //global $bdd;
  //  $bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db1;charset=utf8', 'root', ''); 
- //$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db1;charset=utf8', 'onepip-france', 'lavelan09');	
+ //$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db1;charset=utf8', 'onepip-france', 'Lavelan1969&');	
 }
 
 function connectionBdd2()
 {
  //global $bdd;
    $bdd23 = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db2;charset=utf8', 'root', ''); 
- //$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db2;charset=utf8', 'onepip-france', 'lavelan09');	
+ //$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db2;charset=utf8', 'onepip-france', 'Lavelan1969&');	
 }
 function connectionBdd3()
 {
  //global $bdd;
  //  $bdd23 = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db3;charset=utf8', 'root', ''); 
- //$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db3;charset=utf8', 'onepip-france', 'lavelan09');	
+ //$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db3;charset=utf8', 'onepip-france', 'Lavelan1969&');	
 }
 
 function connection($comite)
@@ -45,13 +45,13 @@ echo $comite;
 	{ 
 	//connectionBdd3();
 	 $bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db3;charset=utf8', 'root', '');
-	//$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db3;charset=utf8', 'onepip-france', 'lavelan09');
+	//$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db3;charset=utf8', 'onepip-france', 'Lavelan1969&');
 	}
  else
 	{
 	//connectionBdd2();	
 	   $bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db2;charset=utf8', 'root', '');
-	// $bdd =new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db2;charset=utf8', 'onepip-france', 'lavelan09');
+	// $bdd =new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db2;charset=utf8', 'onepip-france', 'Lavelan1969&');
 	}	
 }
 */
@@ -941,7 +941,7 @@ function AffichageLogos($champ, $comite, $smart, $bdd)
 	//require ("../connect/connexion1.php"); 
 	//AModidier
 	//$bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db1;charset=utf8', 'root', ''); 
-	$bdd =  new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db1;charset=utf8', 'onepip-france', 'lavelan09');
+	$bdd =  new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db1;charset=utf8', 'onepip-france', 'Lavelan1969&');
 	
 	 $requete = $bdd->query("
 				SELECT sigle

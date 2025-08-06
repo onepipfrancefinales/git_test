@@ -8,10 +8,10 @@
 	{
 	$equipe=$valeur;
 	
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-	mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+	mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 
-	$reponse = mysql_query("SELECT idffr, comite, code FROM bdclubs WHERE code='$equipe'"); // Requête SQL 
+	$reponse = mysql_query("SELECT idffr, comite, code FROM bdclubs WHERE code='$equipe'"); // Requï¿½te SQL 
 	While ($donnees = mysql_fetch_array($reponse) )
 		{ 
   		$id_equipe = $donnees['code'];
@@ -21,10 +21,10 @@
 else
 	{
 	$id_equipe=$valeur;
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-	mysql_select_db("onepip-france-db1"); // Sélection de la base onepip
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+	mysql_select_db("onepip-france-db1"); // Sï¿½lection de la base onepip
 
-	$reponse = mysql_query("SELECT sigle,comite, code FROM bdclubs WHERE idffr='$id_equipe'"); // Requête SQL 
+	$reponse = mysql_query("SELECT sigle,comite, code FROM bdclubs WHERE idffr='$id_equipe'"); // Requï¿½te SQL 
 	While ($donnees = mysql_fetch_array($reponse) )
 		{ 
   		$equipe = $donnees['code'];
@@ -50,13 +50,13 @@ else
 
 
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db3"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db3"); // Sï¿½lection de la base onepip
 ?>
 
 <?php //recherche d'un club de federale 1
 
-	$reponse = mysql_query("SELECT id_club FROM phpf1_equipes WHERE id_club='$equipe'"); // Requête SQL 
+	$reponse = mysql_query("SELECT id_club FROM phpf1_equipes WHERE id_club='$equipe'"); // Requï¿½te SQL 
 	While ($donnees = mysql_fetch_array($reponse) )
 		{ 
 	  	$equipefederale1 = $donnees['id_club'];
@@ -65,7 +65,7 @@ mysql_select_db("onepip-france-db3"); // Sélection de la base onepip
 ?>
 <?php //recherche d'un club de federale 2
 
-	$reponse = mysql_query("SELECT id_club FROM phpfed2_equipes WHERE id_club='$equipe'"); // Requête SQL 
+	$reponse = mysql_query("SELECT id_club FROM phpfed2_equipes WHERE id_club='$equipe'"); // Requï¿½te SQL 
 	While ($donnees = mysql_fetch_array($reponse) )
 		{ 
 	  	$equipefederale2 = $donnees['id_club'];
@@ -74,7 +74,7 @@ mysql_select_db("onepip-france-db3"); // Sélection de la base onepip
 ?>
 <?php //recherche d'un club de federale 3GS
 
-	$reponse = mysql_query("SELECT id_club FROM phpfed3GS_equipes WHERE id_club='$equipe'"); // Requête SQL 
+	$reponse = mysql_query("SELECT id_club FROM phpfed3GS_equipes WHERE id_club='$equipe'"); // Requï¿½te SQL 
 	While ($donnees = mysql_fetch_array($reponse) )
 		{ 
 	  	$equipefederale3GS = $donnees['id_club'];
@@ -84,7 +84,7 @@ mysql_select_db("onepip-france-db3"); // Sélection de la base onepip
 
 <?php //recherche d'un club de federale 3NE
 
-	$reponse = mysql_query("SELECT id_club FROM phpfed3NE_equipes WHERE id_club='$equipe'"); // Requête SQL 
+	$reponse = mysql_query("SELECT id_club FROM phpfed3NE_equipes WHERE id_club='$equipe'"); // Requï¿½te SQL 
 	While ($donnees = mysql_fetch_array($reponse) )
 		{ 
 	  	$equipefederale3NE = $donnees['id_club'];
@@ -284,7 +284,7 @@ else
 
 
  require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
 <?php

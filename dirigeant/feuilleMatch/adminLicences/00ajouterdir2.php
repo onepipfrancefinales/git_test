@@ -23,12 +23,12 @@
 $nomdir=str_replace(' ','-',$nomdir);
 $nomDir = strtoupper ($nomdir);
 
-// **** traitement du Prénom ****** 
+// **** traitement du Prï¿½nom ****** 
 $prenomdir=str_replace(' ','-',$prenomdir);
 $prenomDir = strtoupper(substr($prenomdir, 0, 1)).strtolower(substr($prenomdir, 1));
 
 
-// **** traitement du numéro de la licence ******
+// **** traitement du numï¿½ro de la licence ******
 $annee = substr($licencedir,0,4);
 $deux = substr($licencedir,4,2);
 $un = substr($licencedir,6,1);
@@ -55,8 +55,8 @@ echo "Fonction :".' '.$fonction;
 
 <?php
 require("../../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db2"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db2"); // Sï¿½lection de la base onepip
 ?>
 
 <?php 

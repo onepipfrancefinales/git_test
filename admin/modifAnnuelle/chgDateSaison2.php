@@ -1,15 +1,15 @@
 <html>
   <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 <form name="insertion" action="http://francefinalesrugby.franceserv.com/admin/modifAnnuelle/chgDateSaison3.php" method="POST">
-  <?php //****** Connection à la base de données n°2    *********
+  <?php //****** Connection ï¿½ la base de donnï¿½es nï¿½2    *********
   
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db2"); 
 ?>
   <input type="hidden" name="id" value="<?php echo($id) ;?>">
@@ -340,8 +340,8 @@ mysql_close();?>
       <td width="260"><font face="Arial, Helvetica, sans-serif"> 
         
 		
-		<?php //****** Connection à la base de données n°3    *********
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+		<?php //****** Connection ï¿½ la base de donnï¿½es nï¿½3    *********
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db3"); 
 ?>
         <?php
@@ -366,7 +366,7 @@ mysql_close();?>
     <tr align="center"> 
       <td width="260"><font face="Arial, Helvetica, sans-serif"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db2"); 
 ?>
         <?php
@@ -454,7 +454,7 @@ mysql_select_db("onepip-france-db2");
     <tr align="center"> 
       <td width="260"><font face="Arial, Helvetica, sans-serif"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db3"); 
 ?>
         <?php
@@ -628,7 +628,7 @@ mysql_close();?>
     <tr align="center"> 
       <td width="260"><font face="Arial, Helvetica, sans-serif"> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france_db4"); 
 ?>
         <?php

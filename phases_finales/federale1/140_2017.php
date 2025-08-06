@@ -303,7 +303,7 @@ require ("../fonctions_phases_finalesAR.php");
     <td valign="top" colspan="3" height="22" bgcolor="#FFFF00"> 
       <div align="center"><b><font size="5" face="Arial, Helvetica, sans-serif" color="#FF0000">
         <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 
 require '../../connect1/connection1.php';
@@ -631,7 +631,7 @@ echo $clubB2001;
     <td valign="top" width="217"> 
       <div id="coin4" >
         <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php //E01
@@ -736,7 +736,7 @@ echo $clubB2002;
     <td valign="top" width="217"> 
       <div id="coin4" > 
         <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php //E01
@@ -806,7 +806,7 @@ echo $clubB2003;
     <td valign="top" width="217" height="20"> 
       <div id="coin4" > 
         <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php //E01

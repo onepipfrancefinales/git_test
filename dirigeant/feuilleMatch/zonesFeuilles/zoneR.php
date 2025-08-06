@@ -21,7 +21,7 @@
 
 <?php
  require ("../../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 ?>
 
@@ -47,7 +47,7 @@
             <td colspan="4"> 
               <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="4"><b><font face="Arial, Helvetica, sans-serif"> 
                 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 
 $reponse = mysql_query("SELECT sigle,comite, code FROM bdclubs WHERE code='$equipeA'"); // Requ�te SQL 
@@ -62,7 +62,7 @@ mysql_close(); // D�connexion de MySQL
                 </font><font face="Arial, Helvetica, sans-serif" size="4"><b><font face="Arial, Helvetica, sans-serif"> 
                 <?php
 	 require ("../../../$connect.php")			
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 ?>
                 <?php
@@ -84,7 +84,7 @@ mysql_close(); // D�connexion de MySQL
                 </font><font face="Arial, Helvetica, sans-serif" size="4"><b><font face="Arial, Helvetica, sans-serif"> 
                 <?php
 	 require ("../../$connect.php")			
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 ?>
                 <?php
@@ -209,7 +209,7 @@ mysql_close(); // D�connexion de MySQL
               <div align="center"><font size="3" face="Arial, Helvetica, sans-serif"><br>
                 L'&eacute;quipe</font><font size="3"> <b><font face="Arial, Helvetica, sans-serif"> 
                 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 ?>
                 <?php
@@ -271,7 +271,7 @@ mysql_close(); // D�connexion de MySQL
             <td colspan="4" valign="top"> 
               <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="4"><b><font face="Arial, Helvetica, sans-serif" size="4"><b><font face="Arial, Helvetica, sans-serif"> 
                 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 $reponse = mysql_query("SELECT sigle,comite, code FROM bdclubs WHERE code='$equipeB'"); // Requ�te SQL 
 While ($donnees = mysql_fetch_array($reponse) )

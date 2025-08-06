@@ -7,7 +7,7 @@
 <body >
 <?php
 require '../../connect1/connection1.php';
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
 
@@ -19,11 +19,11 @@ $bdannee="bdpf".''.$annee;
 $bdannee_2="bdpf".''.$annee.''."_2";
 
 if ($id==140)
-$division="Fédérale 1";
+$division="Fï¿½dï¿½rale 1";
 elseif ($id==150)
-$division="Fédérale 2";
+$division="Fï¿½dï¿½rale 2";
 elseif ($id==160)
-$division="Fédérale 3";
+$division="Fï¿½dï¿½rale 3";
 
 
 else
@@ -66,7 +66,7 @@ $nom20 = substr($nom,0,20);
 $clubA3201 = ($nom20.' '.$sigle);
 ?>
 <?php //E02
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E02 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E02 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E02 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E02 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -78,7 +78,7 @@ $clubA3202 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E03
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E03 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E03 and bdpf$annee.id=$id"); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E03 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E03 and bdpf$annee.id=$id"); // Requï¿½te SQL
 // $result = mysql_query($requete) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -90,7 +90,7 @@ $clubA3203 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E04
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E04 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E04 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E04 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E04 and bdpf$annee.id=$id "); // Requï¿½te SQL
  ////////$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -102,7 +102,7 @@ $clubA3204 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E05
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E05 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E05 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E05 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E05 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -114,7 +114,7 @@ $clubA3205 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E06
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E06 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E06 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E06 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E06 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -126,7 +126,7 @@ $clubA3206 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E07
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E07 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E07 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E07 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E07 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -138,7 +138,7 @@ $clubA3207 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E08
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E08 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E08 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E08 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E08 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -151,7 +151,7 @@ $clubA3208 = ($nom20.' '.$sigle);
 
 
 <?php //E09
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E09 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E09 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E09 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E09 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -163,7 +163,7 @@ $clubA3209 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E10
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E10 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E10 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E10 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E10 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -175,7 +175,7 @@ $clubA3210 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E11
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E11 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E11 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E11 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E11 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -187,7 +187,7 @@ $clubA3211 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E12
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E12 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E12 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E12 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E12 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -200,7 +200,7 @@ $clubA3212 = ($nom20.' '.$sigle);
 
 
 <?php //E13
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E13 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E13 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E13 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E13 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -212,7 +212,7 @@ $clubA3213 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E14
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E14 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E14 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E14 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E14 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -224,7 +224,7 @@ $clubA3214 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E15
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E15 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E15 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E15 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E15 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -236,7 +236,7 @@ $clubA3215 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E16
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E16 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E16 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E16 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E16 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -249,7 +249,7 @@ $clubA3216 = ($nom20.' '.$sigle);
 
 
 <?php //E17
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E17 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E17 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E17 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E17 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -261,7 +261,7 @@ $clubA3217 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E18
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E18 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E18 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E18 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E18 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -273,7 +273,7 @@ $clubA3218 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E19
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E19 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E19 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E19 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E19 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -285,7 +285,7 @@ $clubA3219 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E20
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E20 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E20 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E20 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E20 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -297,7 +297,7 @@ $clubA3220 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E21
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E21 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E21 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E21 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E21 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -309,7 +309,7 @@ $clubA3221 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E22
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E22 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E22 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E22 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E22 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -321,7 +321,7 @@ $clubA3222 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E23
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E23 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E23 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E23 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E23 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -333,7 +333,7 @@ $clubA3223 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E24
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E24 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E24 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E24 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E24 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -346,7 +346,7 @@ $clubA3224 = ($nom20.' '.$sigle);
 
 
 <?php //E25
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E25 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E25 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E25 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E25 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -358,7 +358,7 @@ $clubA3225 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E26
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E26 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E26 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E26 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E26 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -370,7 +370,7 @@ $clubA3226 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E27
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E27 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E27 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E27 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E27 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -382,7 +382,7 @@ $clubA3227 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E28
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E28 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E28 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E28 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E28 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -394,7 +394,7 @@ $clubA3228= ($nom20.' '.$sigle);
 ?>
 
 <?php //E29
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E29 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E29 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E29 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E29 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -406,7 +406,7 @@ $clubA3229 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E30
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E30 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E30 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E30 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E30 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -418,7 +418,7 @@ $clubA3230 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E31
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E31 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E31 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E31 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E31 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -430,7 +430,7 @@ $clubA3231 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E32
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E32 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E32 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E32 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E32 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -442,7 +442,7 @@ $clubA3232 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E33
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E33 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E33 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E33 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E33 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -454,7 +454,7 @@ $clubA3233 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E34
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E34 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E34 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E34 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E34 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -466,7 +466,7 @@ $clubA3234 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E35
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E35 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E35 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E35 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E35 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -478,7 +478,7 @@ $clubA3235 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E36
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E36 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E36 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E36 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E36 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -490,7 +490,7 @@ $clubA3236 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E37
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E37 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E37 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E37 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E37 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -502,7 +502,7 @@ $clubA3237 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E38
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E38 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E38 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E38 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E38 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -514,7 +514,7 @@ $clubA3238 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E39
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E39 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E39 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E39 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E39 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -526,7 +526,7 @@ $clubA3239 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E40
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E40 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E40 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E40 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E40 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -538,7 +538,7 @@ $clubA3240 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E41
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E41 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E41 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E41 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E41 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -550,7 +550,7 @@ $clubA3241 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E42
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E42 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E42 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E42 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E42 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -562,7 +562,7 @@ $clubA3242 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E43
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E43 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E43 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E43 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E43 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -574,7 +574,7 @@ $clubA3243 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E44
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E44 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E44 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E44 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E44 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -587,7 +587,7 @@ $clubA3244 = ($nom20.' '.$sigle);
 
 
 <?php //E45
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E45 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E45 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E45 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E45 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -599,7 +599,7 @@ $clubA3245 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E46
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E46 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E46 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E46 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E46 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -611,7 +611,7 @@ $clubA3246 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E47
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E47 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E47 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E47 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E47 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -623,7 +623,7 @@ $clubA3247 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E48
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E48 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E48 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E48 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E48 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -635,7 +635,7 @@ $clubA3248 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E49
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E49 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E49 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E49 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E49 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -647,7 +647,7 @@ $clubA3249 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E50
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E50 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E50 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E50 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E50 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -659,7 +659,7 @@ $clubA3250 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E51
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E51 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E51 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E51 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E51 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -671,7 +671,7 @@ $clubA3251 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E52
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E52 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E52 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E52 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E52 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -683,7 +683,7 @@ $clubA3252 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E53
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E53 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E53 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E53 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E53 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -695,7 +695,7 @@ $clubA3253 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E54
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E54 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E54 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E54 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E54 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -707,7 +707,7 @@ $clubA3254 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E55
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E55 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E55 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E55 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E55 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -719,7 +719,7 @@ $clubA3255 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E56
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E56 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E56 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E56 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E56 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -731,7 +731,7 @@ $clubA3256 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E57
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E57 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E57 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E57 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E57 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -743,7 +743,7 @@ $clubA3257 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E58
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E58 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E58 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E58 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E58 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -755,7 +755,7 @@ $clubA3258 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E59
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E59 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E59 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E59 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E59 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -767,7 +767,7 @@ $clubA3259 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E60
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E60 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E60 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E60 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E60 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -779,7 +779,7 @@ $clubA3260 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E61
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E61 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E61 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E61 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E61 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -791,7 +791,7 @@ $clubA3261 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E62
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E62 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E62 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E62 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E62 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -803,7 +803,7 @@ $clubA3262 = ($nom20.' '.$sigle);
 ?>
 
 <?php //E63
-$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E63 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E63 and bdpf$annee.id=$id "); // Requête SQL
+$reponse = $bdd->query("SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E63 FROM bdclubs, bdpf$annee WHERE substr(bdclubs.id,-5)=bdpf$annee.E63 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -817,7 +817,7 @@ $clubA3263 = ($nom20.' '.$sigle);
 <?php //E64
 $reponse = $bdd->query("	SELECT bdclubs.id, bdclubs.nom_1, bdclubs.siglecomite, bdpf$annee.E64 
 			FROM bdclubs, bdpf$annee 
-			WHERE substr(bdclubs.id,-5)=bdpf$annee.E64 and bdpf$annee.id=$id "); // Requête SQL
+			WHERE substr(bdclubs.id,-5)=bdpf$annee.E64 and bdpf$annee.id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -829,7 +829,7 @@ $clubA3264 = ($nom20.' '.$sigle);
 ?>
 
 <?php
-// **************Fédérale 1 **************
+// **************Fï¿½dï¿½rale 1 **************
 if ($id==140)
 {
 
@@ -856,7 +856,7 @@ $clubA8016=$clubA3216;
 $reponse = $bdd->query("SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A1607, A1608, A1609, A1610, A1611, A1612, A1613, A1614, A1615, A1616, 
 					 A1617, A1618, A1619, A1620, A1621, A1622, A1623, A1624, A1625, A1626, A1627, A1628, A1629, A1630, A1631, A1632 
 					 FROM $bdannee_2 
-					 WHERE id=$id "); // Requête SQL
+					 WHERE id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -901,7 +901,7 @@ $reponse = $bdd->query("SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A16
 					 			A4001, A4002, A4003, A4004, A4005, A4006, A4007, A4008,
 								A2001, A2002, A2003, A2004, A1001, A1002 
 					 FROM $bdannee_2 
-					 WHERE id=$id "); // Requête SQL
+					 WHERE id=$id "); // Requï¿½te SQL
  	//$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -1157,7 +1157,7 @@ $reponse = $bdd->query("SELECT id, A3201, A3202, A3203, A3204, A3205, A3206, A32
  	                 A3217, A3218, A3219, A3220, A3221, A3222, A3223, A3224, A3225, A3226, A3227, A3228, A3229, A3230, A3231, A3232,
                      A3233, A3234, A3235, A3236, A3237, A3238, A3239, A3240, A3241, A3242, A3243, A3244, A3245, A3246, A3247, A3248, 
 					 A3249, A3250, A3251, A3252, A3253, A3254, A3255, A3256, A3257, A3258, A3259, A3260, A3261, A3262, A3263, A3264 
-					 FROM  $bdannee WHERE id=($id) "); // Requête SQL
+					 FROM  $bdannee WHERE id=($id) "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -1232,7 +1232,7 @@ $reponse = $bdd->query("SELECT id, A3201, A3202, A3203, A3204, A3205, A3206, A32
 <?php // ----16me----------------------
 $reponse = $bdd->query("SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A1607, A1608, A1609, A1610, A1611, A1612, A1613, A1614, A1615, A1616, 
 					 A1617, A1618, A1619, A1620, A1621, A1622, A1623, A1624, A1625, A1626, A1627, A1628, A1629, A1630, A1631, A1632 
-					 FROM $bdannee_2 WHERE id=$id "); // Requête SQL
+					 FROM $bdannee_2 WHERE id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -1278,7 +1278,7 @@ $reponse = $bdd->query("SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A16
 <?php // ----16me----------------------
 $reponse = $bdd->query("SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A1607, A1608, A1609, A1610, A1611, A1612, A1613, A1614, A1615, A1616, 
 					 A1617, A1618, A1619, A1620, A1621, A1622, A1623, A1624, A1625, A1626, A1627, A1628, A1629, A1630, A1631, A1632 
-					 FROM $bdannee_2 WHERE id= 130 "); // Requête SQL
+					 FROM $bdannee_2 WHERE id= 130 "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -1325,7 +1325,7 @@ $reponse = $bdd->query("SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A16
 <?php // ----16me----------------------
 $reponse = $bdd->query("SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A1607, A1608, A1609, A1610, A1611, A1612, A1613, A1614, A1615, A1616, 
 					 A1617, A1618, A1619, A1620, A1621, A1622, A1623, A1624, A1625, A1626, A1627, A1628, A1629, A1630, A1631, A1632 
-					 FROM $bdannee_2 WHERE id=$id "); // Requête SQL
+					 FROM $bdannee_2 WHERE id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 
@@ -1373,7 +1373,7 @@ $reponse = $bdd->query("SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A16
 $reponse = $bdd->query("	SELECT id, A8001, A8002, A8003, A8004, A8005, A8006, A8007, A8008, A8009, A8010, A8011, A8012, A8013, A8014, A8015, A8016,
 					 A4001, A4002, A4003, A4004, A4005, A4006, A4007, A4008,A2001, A2002, A2003, A2004, A1001, A1002 
 			FROM $bdannee_2 
-			WHERE id=$id "); // Requête SQL
+			WHERE id=$id "); // Requï¿½te SQL
  //$result = mysql_query($query) ;
  	while ($row = $reponse->fetch() )
 	{ 

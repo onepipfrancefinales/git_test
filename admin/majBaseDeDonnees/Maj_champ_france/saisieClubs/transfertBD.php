@@ -1,5 +1,5 @@
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -16,7 +16,7 @@ echo $type.' '.$id.' '.$annee;
 require ("../../../phasesFinales/fonctionListeEquipes.php");
 ?>
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
   <?php
@@ -104,7 +104,7 @@ if ($type == 32 OR $type == 3216)
 
 			//*********************  Nouvelle base  ***************** 
 			  
-			//************  création de la requête SQL: ***************************
+			//************  crï¿½ation de la requï¿½te SQL: ***************************
 
 		$sql32me = "	UPDATE bdpfClubs
 						SET E101='$clubA3201',E102='$clubA3202',E103='$clubA3203',E104='$clubA3204',E105='$clubA3205',E106='$clubA3206',E107='$clubA3207',E108='$clubA3208',
@@ -117,11 +117,11 @@ if ($type == 32 OR $type == 3216)
 							E157='$clubA3257',E158='$clubA3258',E159='$clubA3259',E160='$clubA3260',E161='$clubA3261',E162='$clubA3262',E163='$clubA3263',E164='$clubA3264'
 						WHERE division = '$champ' AND annee = $annee" ;
 
-		//**********  exécution de la requête SQL: ****************
+		//**********  exï¿½cution de la requï¿½te SQL: ****************
 
 		$requete32me = mysql_query( $sql32me)   ;
  
-		//*********   affichage des résultats, pour savoir si la modification a march&eacute;: ******
+		//*********   affichage des rï¿½sultats, pour savoir si la modification a march&eacute;: ******
   
 		if($requete32me)
 		  {
@@ -130,7 +130,7 @@ if ($type == 32 OR $type == 3216)
 		  }
 		else
 		  {
-			echo("La modification 32me à échoué") ;
+			echo("La modification 32me ï¿½ ï¿½chouï¿½") ;
 		  }  
 	mysql_close(); 
 	}
@@ -180,7 +180,7 @@ elseif ($type==16 or $type==1608)
 		
 		echo $club1629;
  
-//création de la requête SQL:
+//crï¿½ation de la requï¿½te SQL:
   		$sql16me = "UPDATE bdpfClubs
 					SET E101='$clubA1601', E102='$clubA1602', E103='$clubA1603', E104='$clubA1604', E105='$clubA1605', E106='$clubA1606', E107='$clubA1607', E108='$clubA1608',
 						E109='$clubA1609', E110='$clubA1610', E111='$clubA1611', E112='$clubA1612', E113='$clubA1613', E114='$clubA1614', E115='$clubA1615', E116='$clubA1616',
@@ -188,17 +188,17 @@ elseif ($type==16 or $type==1608)
 						E125='$clubA1625', E126='$clubA1626', E127='$clubA1627', E128='$clubA1628', E129='$clubA1629', E130='$clubA1630', E131='$clubA1631', E132='$clubA1632'
 					WHERE division = '$champ' and annee = $annee" ;
  
-  	//exécution de la requête SQL:
+  	//exï¿½cution de la requï¿½te SQL:
   			$requete16me = mysql_query( $sql16me )   ;
  
-  	//affichage des résultats, pour savoir si la modification a marchée:
+  	//affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 		  if($requete16me)
 			  {
-				echo("La modification 16me a été correctement effectuée");
+				echo("La modification 16me a ï¿½tï¿½ correctement effectuï¿½e");
 			  }
 			  else
 			  {
-				echo("La modification 16me à échoué") ;
+				echo("La modification 16me ï¿½ ï¿½chouï¿½") ;
 			  }
 		mysql_close(); 
 	}
@@ -224,7 +224,7 @@ elseif ($type==8)
 		$clubA8015 = $_POST['clubA8015'];
 		$clubA8016 = $_POST['clubA8016'];
 	
-//création de la requête SQL:
+//crï¿½ation de la requï¿½te SQL:
   		$sql8me = "	UPDATE bdpfClubs
 					SET E101='$clubA8001', E102='$clubA8002', E103='$clubA8003', E104='$clubA8004',
 						E105='$clubA8005', E106='$clubA8006', E107='$clubA8007', E108='$clubA8008',
@@ -232,17 +232,17 @@ elseif ($type==8)
 						E113='$clubA8013', E114='$clubA8014', E115='$clubA8015', E116='$clubA8016'
 					WHERE division = '$champ'  and annee = $annee " ;
  
-  	//exécution de la requête SQL:
+  	//exï¿½cution de la requï¿½te SQL:
   			$requete8me = mysql_query( $sql8me )   ;
  
-  	//affichage des résultats, pour savoir si la modification a marchée:
+  	//affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 		  if($requete8me)
 			  {
-				echo("La modification 8me a été correctement effectuée");
+				echo("La modification 8me a ï¿½tï¿½ correctement effectuï¿½e");
 			  }
 			  else
 			  {
-				echo("La modification 8me à échoué") ;
+				echo("La modification 8me ï¿½ ï¿½chouï¿½") ;
 			  }
 		mysql_close(); 	
 	}
@@ -261,23 +261,23 @@ elseif ($type==4)
 		
 		
 	
-//création de la requête SQL:
+//crï¿½ation de la requï¿½te SQL:
   		$sql4me = "	UPDATE bdpfClubs
 					SET E101='$clubA4001', E102='$clubA4002', E103='$clubA4003', E104='$clubA4004',
 						E105='$clubA4005', E106='$clubA4006', E107='$clubA4007', E108='$clubA4008'
 					WHERE division = '$champ' and annee = $annee" ;
  
-  	//exécution de la requête SQL:
+  	//exï¿½cution de la requï¿½te SQL:
   			$requete4me = mysql_query( $sql4me )   ;
  
-  	//affichage des résultats, pour savoir si la modification a marchée:
+  	//affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 		  if($requete4me)
 			  {
-				echo("La modification 4me a été correctement effectuée");
+				echo("La modification 4me a ï¿½tï¿½ correctement effectuï¿½e");
 			  }
 			  else
 			  {
-				echo("La modification 4me à échoué") ;
+				echo("La modification 4me ï¿½ ï¿½chouï¿½") ;
 			  }
 		mysql_close(); 	
 	
@@ -293,22 +293,22 @@ elseif ($type==2)
 		
 		
 	
-//création de la requête SQL:
+//crï¿½ation de la requï¿½te SQL:
   		$sql2me = "	UPDATE bdpfClubs
 					SET E101='$clubA2001', E102='$clubA2002', E103='$clubA2003', E104='$clubA2004'
 					WHERE division = '$champ' and annee = $annee" ;
  
-  	//exécution de la requête SQL:
+  	//exï¿½cution de la requï¿½te SQL:
   			$requete2me = mysql_query( $sql2me )   ;
  
-  	//affichage des résultats, pour savoir si la modification a marchée:
+  	//affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 		  if($requete2me)
 			  {
-				echo("La modification 2me a été correctement effectuée");
+				echo("La modification 2me a ï¿½tï¿½ correctement effectuï¿½e");
 			  }
 			  else
 			  {
-				echo("La modification 2me à échoué") ;
+				echo("La modification 2me ï¿½ ï¿½chouï¿½") ;
 			  }
 		mysql_close(); 	
 	
@@ -321,22 +321,22 @@ elseif ($type==2)
 		$clubA1002 = $_POST['clubA1002'];
 			
 	
-//création de la requête SQL:
+//crï¿½ation de la requï¿½te SQL:
   		$sql1me = "	UPDATE bdpfClubs
 					SET E101='$clubA1001', E102='$clubA1002'
 					WHERE division = '$champ' and annee = $annee" ;
  
-  	//exécution de la requête SQL:
+  	//exï¿½cution de la requï¿½te SQL:
   			$requete1me = mysql_query( $sql1me )   ;
  
-  	//affichage des résultats, pour savoir si la modification a marchée:
+  	//affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
 		  if($requete1me)
 			  {
-				echo("La modification 2me a été correctement effectuée");
+				echo("La modification 2me a ï¿½tï¿½ correctement effectuï¿½e");
 			  }
 			  else
 			  {
-				echo("La modification 2me à échoué") ;
+				echo("La modification 2me ï¿½ ï¿½chouï¿½") ;
 			  }
 		mysql_close(); 	
 	

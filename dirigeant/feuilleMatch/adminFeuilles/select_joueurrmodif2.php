@@ -43,11 +43,11 @@ if($equipe==$equipeA)
 
 <?php
 require ("../../../$connect.php")	
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db2"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db2"); // Sï¿½lection de la base onepip
 ?>
 <?php
-  //récupération des valeurs des champs:
+  //rï¿½cupï¿½ration des valeurs des champs:
 $N1 = $_POST['N1'];
 $N2 = $_POST['N2'];
 $N3 = $_POST['N3'];
@@ -80,10 +80,10 @@ $juge = $_POST['juge'];
 
 
  
-  //récupération de l'identifiant de la personne:
+  //rï¿½cupï¿½ration de l'identifiant de la personne:
   $id  = $code_match;
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE $bdfeuille
             SET N1='$N1', N2='$N2', N3='$N3', N4='$N4', N5='$N5', N6='$N6', N7='$N7', N8='$N8', N9='$N9',
 		 	 	N10='$N10', N11='$N11', N12='$N12', N13='$N13', N14='$N14', N15='$N15', N16='$N16', N17='$N17', N18='$N18', N19='$N19',
@@ -92,7 +92,7 @@ $juge = $_POST['juge'];
 		  
 		   WHERE id = '$id' " ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
  ?>
  
@@ -106,7 +106,7 @@ $juge = $_POST['juge'];
       <div align="center"> 
         <?php
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
   {
     echo("La modification a &eacute;t&eacute; effectu&eacute;e") ;
@@ -145,5 +145,5 @@ $juge = $_POST['juge'];
 <p>&nbsp; 
   <?php
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>

@@ -38,7 +38,7 @@ $lien="oui";
 if (isset($type))
 {
 
-  // $idconnect=@mysqli_connect('sql.franceserv.fr','onepip-france','lavelan09','onepip-france-db3');	
+  // $idconnect=@mysqli_connect('sql.franceserv.fr','onepip-france','Lavelan1969&','onepip-france-db3');	
    $res=$idconnect->query("SELECT accession, barrage, estimation, relegation, id_equipe_fetiche, fiches_clubs
                          FROM phppl_parametres
                          WHERE id_champ='$champ'");
@@ -77,7 +77,7 @@ if ($debut=="1" and $fin==$nb_journees)
     ?>
 
 <?php
-    //affiche la journée
+    //affiche la journï¿½e
 	//if (!empty($numero)) {aff_journee($champ, $numero, CONSULT_CLMNT_MSG6, 0, $fiches_clubs, $id_equipe_fetiche);}
 	//else
 	// 							{aff_journee($champ, $numero+1, CONSULT_CLMNT_MSG62, 0, $fiches_clubs, $id_equipe_fetiche);}

@@ -440,7 +440,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:    url(../../phases_finales/result2.jpg); layer-background-image:    url(../../phases_finales/result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf2011 WHERE id='270'");
 
@@ -990,7 +990,7 @@ echo "";
 <div id="Layer6" style="position:absolute; width:98px; height:60px; z-index:11; left: 801px; top: 469px"><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="4"><b> 
   </b></font><font color="#000000" face="Geneva, Arial, Helvetica, san-serif"size="4"><b> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $query = "SELECT Phpmpy_clubs.id, nom, url_logo FROM Phpmpy_clubs WHERE Phpmpy_clubs.id='29014'";
 $result = mysql_query($query);

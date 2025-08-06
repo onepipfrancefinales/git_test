@@ -106,7 +106,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   <tr> 
     <td width="64" height="26"> 
       <?php 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip	   
    ?>
     </td>
@@ -452,7 +452,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <td width="182" align="left" height="15"><font size="2" face="Arial, Helvetica, sans-serif"> 
       <strong> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='170' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
@@ -597,7 +597,7 @@ echo "";
     <td height="24" colspan="2">&nbsp;</td>
     <td width="230" height="24"><font size="2" face="Arial, Helvetica, sans-serif"><b><i> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='170' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
@@ -830,7 +830,7 @@ echo "";
     <td width="182" align="left" height="20"><font size="2" face="Arial, Helvetica, sans-serif"> 
       <strong> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip	  
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='170' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )

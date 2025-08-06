@@ -1782,7 +1782,7 @@ function AffichageLogos($champ, $comite, $smart, $bdd)
 
 		//		$bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db1;charset=utf8', 'root', '');
 		//	else
-		$bdd =  new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db1;charset=utf8', 'onepip-france', 'lavelan09');
+		$bdd =  new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france-db1;charset=utf8', 'onepip-france', 'Lavelan1969&');
 
 		$requete = $bdd->query("
 				SELECT sigle

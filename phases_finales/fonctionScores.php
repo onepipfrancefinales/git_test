@@ -6,7 +6,7 @@
 
 
 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
 
@@ -14,7 +14,7 @@ mysql_select_db("onepip-france-db1");
 <?php 
 // ---- 32me ----------------------
 
-// ******************* Résultats rencontres ALLER *****************************
+// ******************* Rï¿½sultats rencontres ALLER *****************************
 
 $queryA = "	SELECT id, 	A3201, A3202, A3203, A3204, A3205, A3206, A3207, A3208, A3209, A3210, A3211, A3212, A3213, A3214, A3215, A3216,
  	                 	A3217, A3218, A3219, A3220, A3221, A3222, A3223, A3224, A3225, A3226, A3227, A3228, A3229, A3230, A3231, A3232,
@@ -93,7 +93,7 @@ $queryA = "	SELECT id, 	A3201, A3202, A3203, A3204, A3205, A3206, A3207, A3208, 
 	$A3264 = $row[64];
 	
 	}
-//**************************** Résultats rencontres RETOUR *******************************
+//**************************** Rï¿½sultats rencontres RETOUR *******************************
 	
  $queryR = "	SELECT id, 	R3201, R3202, R3203, R3204, R3205, R3206, R3207, R3208, R3209, R3210, R3211, R3212, R3213, R3214, R3215, R3216,
  	                 	R3217, R3218, R3219, R3220, R3221, R3222, R3223, R3224, R3225, R3226, R3227, R3228, R3229, R3230, R3231, R3232,
@@ -496,7 +496,7 @@ $queryPTSA = "	SELECT id, 	A3201, A3202, A3203, A3204, A3205, A3206, A3207, A320
 $query = "SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A1607, A1608, A1609, A1610, A1611, A1612, A1613, A1614, A1615, A1616, 
 					 A1617, A1618, A1619, A1620, A1621, A1622, A1623, A1624, A1625, A1626, A1627, A1628, A1629, A1630, A1631, A1632 
 					 FROM bdpfScoresA 
-					 WHERE id=$id and annee=$annee"; // Requête SQL
+					 WHERE id=$id and annee=$annee"; // Requï¿½te SQL
  $result = mysql_query($query);
  	while ($row = mysql_fetch_array($result) )
 	{ 
@@ -591,7 +591,7 @@ $query = "	SELECT id, A8001, A8002, A8003, A8004, A8005, A8006, A8007, A8008, A8
 mysql_close(); 
 
 
-//*************mise à zero des scores**************************
+//*************mise ï¿½ zero des scores**************************
 //
 //        ****** 32me de finale*********
 
@@ -692,7 +692,7 @@ if ($A1001+$A1002==0) {$A1001="-";	$A1002="-"; $champion="-"; }
 		$clubA="-";
 if ($type==32)
 	{
-	//------Trente deuxième--------	
+	//------Trente deuxiï¿½me--------	
 	
 	
 		if (($PTSA3201 + $PTSA3202 > 6 ) OR ($PTSA3201 == $PTSA3202 AND $A3201 !== $A3202 ))  if (($PTSA3201 + $PTSA3202 > 6 AND $PTSA3201 > $PTSA3202) OR ($PTSA3201 == $PTSA3202 AND $A3201 > $A3202)) $clubA1601= $clubA3201; 	else 	$clubA1601= $clubA3202; else $clubA1601=$clubA;
@@ -735,7 +735,7 @@ if ($type==32)
    		if (($PTSA3261 + $PTSA3262 > 6 ) OR ($PTSA3261 == $PTSA3262 AND $A3261 !== $A3262 ))  if (($PTSA3261 + $PTSA3262 > 6 AND $PTSA3261 > $PTSA3262) OR ($PTSA3261 == $PTSA3262 AND $A3261 > $A3262)) $clubA1631= $clubA3261;	else	$clubA1631= $clubA3261;	else $clubA1631=$clubA;
    		if (($PTSA3263 + $PTSA3264 > 6 ) OR ($PTSA3263 == $PTSA3264 AND $A3263 !== $A3264 ))  if (($PTSA3263 + $PTSA3264 > 6 AND $PTSA3263 > $PTSA3264) OR ($PTSA3263 == $PTSA3264 AND $A3263 > $A3264)) $clubA1632= $clubA3263;	else	$clubA1632= $clubA3262;	else $clubA1632=$clubA;
 	
-	//------Seizième--------	
+	//------Seiziï¿½me--------	
 		
 		if (($PTSA1601 + $PTSA1602 > 6 ) OR ($PTSA1601 == $PTSA1602 AND $A1601 !== $A1602 ))  if (($PTSA1601 + $PTSA1602 > 6 AND $PTSA1601 > $PTSA1602) OR ($PTSA1601 == $PTSA1602 AND $A1601 > $A1602)) $clubA8001= $clubA1601; 	else 	$clubA8001= $clubA1602; else $clubA8001=$clubA;
 		if (($PTSA1603 + $PTSA1604 > 6 ) OR ($PTSA1603 == $PTSA1604 AND $A1603 !== $A1604 ))  if (($PTSA1603 + $PTSA1604 > 6 AND $PTSA1603 > $PTSA1604) OR ($PTSA1603 == $PTSA1604 AND $A1603 > $A1604)) $clubA8002= $clubA1603; 	else 	$clubA8002= $clubA1604; else $clubA8002=$clubA;
@@ -780,7 +780,7 @@ if ($type==32)
 //   		if ($A1629+$A1630>0)  if ($A1629>$A1630) $clubA8015= $clubA1629;	else	$clubA8015= $clubA1630;	else $clubA8015=$clubA;
 //   		if ($A1631+$A1632>0)  if ($A1631>$A1632) $clubA8016= $clubA1631;	else	$clubA8016= $clubA1632;	else $clubA8016=$clubA;
 
-//------Huitième--------
+//------Huitiï¿½me--------
 		if ($A8001+$A8002>0)  if ($A8001>$A8002)	$clubA4001= $clubA8001;	else	$clubA4001= $clubA8002;	 else $clubA4001=$clubA;
 		if ($A8003+$A8004>0)  if ($A8003>$A8004)	$clubA4002= $clubA8003;	else	$clubA4002= $clubA8004;	 else $clubA4002=$clubA;
    		if ($A8005+$A8006>0)  if ($A8005>$A8006)	$clubA4003= $clubA8005;	else	$clubA4003= $clubA8006;	 else $clubA4003=$clubA;
@@ -814,7 +814,7 @@ if ($type==32)
 //************************************************************************		
 if ($type==16)	
 		{
-	//------Seizième--------
+	//------Seiziï¿½me--------
 	
    		if ($A1601+$A1602>0)  if ($A1601>$A1602) $clubA8001= $clubA1601;	else	$clubA8001= $clubA1602; else $clubA8001=$clubA;
    		if ($A1603+$A1604>0)  if ($A1603>$A1604) $clubA8002= $clubA1603;	else	$clubA8002= $clubA1604; else $clubA8002=$clubA;
@@ -836,7 +836,7 @@ if ($type==16)
    		if ($A1629+$A1630>0)  if ($A1629>$A1630) $clubA8015= $clubA1629;	else	$clubA8015= $clubA1630;	else $clubA8015=$clubA;
    		if ($A1631+$A1632>0)  if ($A1631>$A1632) $clubA8016= $clubA1631;	else	$clubA8016= $clubA1632;	else $clubA8016=$clubA;
 
-	//------Huitième--------
+	//------Huitiï¿½me--------
 		if ($A8001+$A8002>0)  if ($A8001>$A8002)	$clubA4001= $clubA8001;	else	$clubA4001= $clubA8002;	 else $clubA4001=$clubA;
 		if ($A8003+$A8004>0)  if ($A8003>$A8004)	$clubA4002= $clubA8003;	else	$clubA4002= $clubA8004;	 else $clubA4002=$clubA;
    		if ($A8005+$A8006>0)  if ($A8005>$A8006)	$clubA4003= $clubA8005;	else	$clubA4003= $clubA8006;	 else $clubA4003=$clubA;
@@ -864,7 +864,7 @@ if ($type==16)
 		
 elseif ($type==8)	
 		{
-	//------Huitième--------
+	//------Huitiï¿½me--------
 		if ($A8001+$A8002>0)  if ($A8001>$A8002)	$clubA4001= $clubA8001;	else	$clubA4001= $clubA8002;	 else $clubA4001=$clubA;
 		if ($A8003+$A8004>0)  if ($A8003>$A8004)	$clubA4002= $clubA8003;	else	$clubA4002= $clubA8004;	 else $clubA4002=$clubA;
    		if ($A8005+$A8006>0)  if ($A8005>$A8006)	$clubA4003= $clubA8005;	else	$clubA4003= $clubA8006;	 else $clubA4003=$clubA;

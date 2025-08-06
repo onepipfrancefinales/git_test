@@ -1,5 +1,5 @@
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -16,11 +16,11 @@
 <?php $id=$_POST['id']; ?>
  
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
   <?php
-  //récupération des valeurs des champs:
+  //rï¿½cupï¿½ration des valeurs des champs:
   
 $A3201 = $_POST['A3201'];
 $A3202 = $_POST['A3202'];
@@ -105,7 +105,7 @@ $A3264 = $_POST['A3264'];
 ?>
 
   <?php
-  //récupération des valeurs des champs:
+  //rï¿½cupï¿½ration des valeurs des champs:
   
 $Apts3201 = $_POST['Apts3201'];
 $Apts3202 = $_POST['Apts3202'];
@@ -203,10 +203,10 @@ $Apts3264 = $_POST['Apts3264'];
  
   </font> <font size="4"><b>
   <?php
-  //récupération de l'identifiant de la personne:
+  //rï¿½cupï¿½ration de l'identifiant de la personne:
   $id         = $_POST["id"] ;
  
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpf$annee
             SET  A3201='$A3201',A3202='$A3202',A3203='$A3203',A3204='$A3204',A3205='$A3205',A3206='$A3206',A3207='$A3207',A3208='$A3208',
 				 A3209='$A3209',A3210='$A3210',A3211='$A3211',A3212='$A3212',A3213='$A3213',A3214='$A3214',A3215='$A3215',A3216='$A3216',
@@ -218,11 +218,11 @@ $Apts3264 = $_POST['Apts3264'];
 				 A3257='$A3257',A3258='$A3258',A3259='$A3259',A3260='$A3260',A3261='$A3261',A3262='$A3262',A3263='$A3263',A3264='$A3264'
            WHERE id = 160 " ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql )   ;
   
   
-   //création de la requête SQL:
+   //crï¿½ation de la requï¿½te SQL:
   $sql2 = "UPDATE bdpf$annee
             SET  A3201='$Apts3201',A3202='$Apts3202',A3203='$Apts3203',A3204='$Apts3204',A3205='$Apts3205',A3206='$Apts3206',A3207='$Apts3207',A3208='$Apts3208',
 			     A3209='$Apts3209',A3210='$Apts3210',A3211='$Apts3211',A3212='$Apts3212',A3213='$Apts3213',A3214='$Apts3214',A3215='$Apts3215',A3216='$Apts3216',
@@ -234,26 +234,26 @@ $Apts3264 = $_POST['Apts3264'];
 				 A3257='$Apts3257',A3258='$Apts3258',A3259='$Apts3259',A3260='$Apts3260',A3261='$Apts3261',A3262='$Apts3262',A3263='$Apts3263',A3264='$Apts3264'
            WHERE id = 130 " ;
  
-  //exécution de la requête SQL:
+  //exï¿½cution de la requï¿½te SQL:
   $requete = mysql_query( $sql2 )   ;
  
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
   {
  
-    echo("La modification a été correctement effectuée");
+    echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
  
   }
   else
   {
-    echo("La modification à échouée") ;
+    echo("La modification ï¿½ ï¿½chouï¿½e") ;
   }
 ?>
   </b></font> 
   <?php
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 </p>
 <p> 

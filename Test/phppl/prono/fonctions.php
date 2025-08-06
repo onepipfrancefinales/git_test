@@ -501,13 +501,31 @@ function pseudo_admin ($gr_champ, $idconnect)
  //echo $pseudo;
 }
 
-function champ_prono ($gr_champ, $idconnect, $mode)
+function champ_prono ( $gr_champ, $idconnect, $mode)
 {
+if (is_numeric($gr_champ))
+  {
+$champLigue = $gr_champ;
+   }
+   else{
+$resultat=$idconnect->query("SELECT id
+                              FROM phppl_gr_championnats 
+                              WHERE phppl_gr_championnats.nom = '$gr_champ'
+                            ");
+
+ while ($row= mysqli_fetch_array($resultat))
+  {
+   $champLigue= $row[0];
+  }
+}
+ $minChampLigue = substr($champLigue,0,2)*10000 ;
+ $maxChampLigue = $minChampLigue + 10000;
  $resultat=$idconnect->query("SELECT DISTINCT id, nom
                               FROM phppl_gr_championnats 
                               WHERE  phppl_gr_championnats.activ_prono='1' 
+                             AND id BETWEEN $minChampLigue AND $maxChampLigue
                               ORDER by id");
-
+                
   while ($row= mysqli_fetch_array($resultat))
   {
     echo "&nbsp;";
@@ -517,8 +535,6 @@ function champ_prono ($gr_champ, $idconnect, $mode)
     if ($gr_champ==$row[0]){echo "</b>";}
     echo "</a><br />";
   }
-  
-
 }
 
 // Nombres d equipes dans un championnat

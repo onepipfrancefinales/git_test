@@ -53,7 +53,7 @@
 
 <p>Valider</p>
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db2"); 
 
 
@@ -69,7 +69,7 @@ $matchs=$comite.''."_matchs";
 
 
 ?>
-<?php //création de la requête SQL:
+<?php //crï¿½ation de la requï¿½te SQL:
  
 $sql1 = "	TRUNCATE $clmnt  ";
 		$requete = mysql_query( $sql1 )   ;

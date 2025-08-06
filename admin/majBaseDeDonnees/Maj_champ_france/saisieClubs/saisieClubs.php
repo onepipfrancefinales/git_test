@@ -14,7 +14,7 @@ $annee=$_GET['annee'];
 //if ($annee N'EXISTE PAS )
  
 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 
 $reponse = mysql_query ("	SELECT type

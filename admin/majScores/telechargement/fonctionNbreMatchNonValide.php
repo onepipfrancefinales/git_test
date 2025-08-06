@@ -4,7 +4,7 @@
 //require ('../../connect.connection2.php');
 mysql_connect("127.0.0.1", "root", ""); // Connexion à MySQL
 mysql_select_db("onepip-france-db3"); // S&eacute;lection de la base onepip 
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion à MySQL
 //mysql_select_db("onepip-france-db2"); // S&eacute;lection de la base onepip
 
 		  

@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -26,7 +26,7 @@
 <form name="insertion" action="clubs16me2.php?annee=<?php echo $annee; ?>" method="POST">
   <b><font size="4"> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
   </font></b> <b><font size="4"> 

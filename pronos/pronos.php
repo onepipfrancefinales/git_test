@@ -54,7 +54,7 @@ if ($champLigue == 15)
 ligue <?php echo $titre; ?></p>
 
 <?php
-echo "champLigue : ".$champLigue; echo "<br>";
+echo "champLigue(pronos) : ".$champLigue; echo "<br>";
 echo "cptePhp : ".$cptePhp;  echo "<br>";
 ?>
 <object data="/Test/<?php echo $cptePhp; ?>/prono/index.php?champLigue=<?php echo $champLigue; ?>"

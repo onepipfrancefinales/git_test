@@ -9,7 +9,7 @@ $hostname="sql.franceserv.fr";
 //$database="onepip-france-db2";
 $database="onepip-france_db7";
 $login="onepip-france";
-$password="lavelan09";
+$password="Lavelan1969&";
 
 $lang="fr";
 $PHPLEAGUE_RACINE="Phpleague/phpab/";

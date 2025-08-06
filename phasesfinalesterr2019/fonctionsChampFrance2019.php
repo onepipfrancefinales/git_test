@@ -70,7 +70,7 @@ function nomDivision($division)
 {
 global $nomDivision;	
 
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france_db5"); // S�lection de la base onepip
 	
 require '../../connect1/connection5.php';
@@ -178,7 +178,7 @@ $bdpfAnnee = "bdpf".$annee;
 $bdpfAnnee_2 = "bdpf".$annee."_2";
 //echo $bdpfAnnee;
 
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 
 //mysql_connect("127.0.0.1", "root", ""); 

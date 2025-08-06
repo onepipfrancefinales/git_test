@@ -159,11 +159,15 @@
       <br>  <br>
              <!-- Phpleague/phppro/prono/index.php-->
               
-        
+        <!--
              &nbsp;<a href="../../phppro/prono/index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=11">Top 14 - Pro D2
               </a>
+            -->
              <br>
-            <?php  champ_prono ($gr_champ, $idconnect, $mode); ?>
+            <?php 
+           // if(isset($_GET['champLigue'])) $champLigue=$_GET['champLigue'];else $champLigue ="AAAA";
+          //  echo "champLigue : ".$champLigue;echo "<br>";
+            champ_prono ( $gr_champ, $idconnect, $mode); ?>
             <br>
     </td>
   </tr>

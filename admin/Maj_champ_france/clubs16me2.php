@@ -1,5 +1,5 @@
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -12,11 +12,11 @@ echo $annee;
 echo $annee2;
 ?>
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
   <?php
-  //récupération des valeurs des champs:
+  //rï¿½cupï¿½ration des valeurs des champs:
   
 $E01 = $_POST['E01'];
 $E03 = $_POST['E03'];
@@ -68,12 +68,12 @@ $E63 = $_POST['E63'];
 ?>
   <font size="6"> </font> <font size="4"><b> 
 <?php
-  //récupération de l'identifiant de la personne:
+  //rï¿½cupï¿½ration de l'identifiant de la personne:
   $id = $_POST["id"] ;
 ?>
 
 <?php
-  //création de la requête SQL:
+  //crï¿½ation de la requï¿½te SQL:
   $sql = "UPDATE bdpf$annee
             SET  E01='$E01', E03='$E03', E05='$E05', E07='$E07', E09='$E09', E11='$E11', E13='$E13', E15='$E15', E17='$E17', E19='$E19', E21='$E21', E23='$E23', E25='$E25', E27='$E27', E29='$E29', E31='$E31',
 		         E33='$E33', E35='$E35', E37='$E37', E39='$E39', E41='$E41', E43='$E43', E45='$E45', E47='$E47', E49='$E49', E51='$E51', E53='$E53', E55='$E55', E57='$E57', E59='$E59', E61='$E61', E63='$E63',
@@ -83,14 +83,14 @@ $E63 = $_POST['E63'];
 
   $requete = mysql_query( $sql )   ;
  
-  //affichage des résultats, pour savoir si la modification a marchée:
+  //affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
   if($requete)
   	{
-    echo("La modification a été correctement effectuée");
+    echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
 	}
   else
   	{
-    echo("La modification à échouée") ;
+    echo("La modification ï¿½ ï¿½chouï¿½e") ;
   	}
 ?>
 
@@ -99,7 +99,7 @@ $E63 = $_POST['E63'];
   </b></font> 
   <?php
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
   </p>
 <p> 

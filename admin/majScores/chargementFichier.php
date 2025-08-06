@@ -1,8 +1,8 @@
 
 
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france-db2"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france-db2"); // Sï¿½lection de la base onepip
 
 
 mysql_query("	LOAD DATA LOCAL INFILE '001.csv'

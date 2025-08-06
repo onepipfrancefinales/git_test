@@ -11,8 +11,8 @@ echo $id;
 <?php
 
 //include ("../../connection5.php");
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france_db5"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france_db5"); // Sï¿½lection de la base onepip
 ?>
 <?php
 $query = "	SELECT id, nom, mdp, prenom, 	comite1, division1, type1, taille1,

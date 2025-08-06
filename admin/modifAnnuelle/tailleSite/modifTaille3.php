@@ -40,7 +40,7 @@ $T273=$_POST['T273'];
 <?php
 
 //require ("../../connection1");
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
 

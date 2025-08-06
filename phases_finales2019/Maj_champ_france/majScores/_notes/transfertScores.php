@@ -17,7 +17,7 @@ echo $AR;
 ?>
   
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
 
@@ -1298,7 +1298,7 @@ elseif ($type==4 and $AR==1)
 		echo $A4004 ;
 		
 		
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 
 		   

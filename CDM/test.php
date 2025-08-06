@@ -9,14 +9,14 @@
 
 
 <?php
-mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "lavelan09"); // Connexion à MySQL
-mysql_select_db("bilancdm"); // Sélection de la base onepip
+mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("bilancdm"); // Sï¿½lection de la base onepip
 ?>
 
 <?php 
 
 
- $reponse = mysql_query("SELECT * FROM bilancdm WHERE miniequipe='NZ' "); // Requête SQL
+ $reponse = mysql_query("SELECT * FROM bilancdm WHERE miniequipe='NZ' "); // Requï¿½te SQL
  
 
 while ($donnees = mysql_fetch_array($reponse) )
@@ -76,7 +76,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <p><br/>
   <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 
  
@@ -88,13 +88,13 @@ mysql_close(); // Déconnexion de MySQL
   <font size="5"><b>Victoires :<br>
   </b></font> 
   <?php
-mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "lavelan09"); // Connexion à MySQL
-mysql_select_db("rencpntresbdcm2"); // Sélection de la base onepip
+mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("rencpntresbdcm2"); // Sï¿½lection de la base onepip
 ?>
   <?php 
 
 
- $reponse = mysql_query("SELECT * FROM rencontresbdcdm2 WHERE VND='V' and mini_equipe1 ='NZ'"); // Requête SQL
+ $reponse = mysql_query("SELECT * FROM rencontresbdcdm2 WHERE VND='V' and mini_equipe1 ='NZ'"); // Requï¿½te SQL
  
 
 while ($donnees = mysql_fetch_array($reponse) )
@@ -105,14 +105,14 @@ while ($donnees = mysql_fetch_array($reponse) )
   <b> <?php echo $donnees['equipe2'] ; ?> </b> 
   sur le score de 
   <?php echo $donnees['score1'] ; ?>
-  à 
+  ï¿½ 
   <?php echo $donnees['score2'] ; ?>
   en 
   <?php echo $donnees['position'] ; ?>
   <?php echo $donnees['cpte']+$donnees['cpte']; ?><br/>
   <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 
 
@@ -120,8 +120,8 @@ mysql_close(); // Déconnexion de MySQL
 <p align="left"><br/>
   <b><font size="5">Nul : </font></b><br/>
    <?php
-mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "lavelan09"); // Connexion à MySQL
-mysql_select_db("rencontresbdcdm2"); // Sélection de la base onepip
+mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("rencontresbdcdm2"); // Sï¿½lection de la base onepip
 ?>
 
 
@@ -133,8 +133,8 @@ mysql_select_db("rencontresbdcdm2"); // Sélection de la base onepip
   
   
   <?php
-mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "lavelan09"); // Connexion à MySQL
-mysql_select_db("rencontresbdcm2"); // Sélection de la base onepip
+mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("rencontresbdcm2"); // Sï¿½lection de la base onepip
 ?>
  
  
@@ -142,14 +142,14 @@ mysql_select_db("rencontresbdcm2"); // Sélection de la base onepip
   <br/>
   <?php
 
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
   <br/>
 </p>
 <p align="left"><font size="5"><b>D&eacute;faites :</b></font><br/>
   <?php
-mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "lavelan09"); // Connexion à MySQL
-mysql_select_db("rencontresbdcdm2"); // Sélection de la base onepip
+mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("rencontresbdcdm2"); // Sï¿½lection de la base onepip
 ?>
   <?php 
 
@@ -162,32 +162,32 @@ echo $donnees['prix_total'];
   <?php 
 
 
- $reponse = mysql_query("SELECT * FROM rencontresbdcdm2 WHERE VND='D' and mini_equipe1 ='NZ'"); // Requête SQL
+ $reponse = mysql_query("SELECT * FROM rencontresbdcdm2 WHERE VND='D' and mini_equipe1 ='NZ'"); // Requï¿½te SQL
  
 
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
   <?php echo $donnees['annee']; ?>
-  Défaite contre 
+  Dï¿½faite contre 
   <b> <?php echo $donnees['equipe2'] ; ?> </b> 
   sur le score de 
   <?php echo $donnees['score1'] ; ?>
-  à 
+  ï¿½ 
   <?php echo $donnees['score2'] ; ?>
   en 
   <?php echo $donnees['position'] ; ?>
   <br/>
   <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 </p>
 <p align="left">Rencontres</p>
   
   <?php
-mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "lavelan09"); // Connexion à MySQL
-mysql_select_db("rencontresbdcdm2"); // Sélection de la base onepip
+mysql_connect("coupedumondexv.free.fr", "coupedumondexv", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("rencontresbdcdm2"); // Sï¿½lection de la base onepip
 ?> 
   <?php
 $sql = 'SELECT count(*) FROM rencontresbdcdm2';
@@ -196,7 +196,7 @@ $sql = 'SELECT count(*) FROM rencontresbdcdm2';
 ?>
  <?php
  
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 	
 </body>

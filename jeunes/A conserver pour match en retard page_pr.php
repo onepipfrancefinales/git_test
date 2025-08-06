@@ -166,7 +166,7 @@ height="510" width="290"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
   
 	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='171' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // Requ�te SQL
@@ -200,7 +200,7 @@ height="510" width="290"" type="text/html"   />
                   complet</a> </h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
    
 $query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE phppr_journees.id_champ='271' and (phppr_clubs.id + 900000)=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and
@@ -265,7 +265,7 @@ height="450" width="290"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
   
 	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='185' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // Requ�te SQL
@@ -299,7 +299,7 @@ height="450" width="290"" type="text/html"   />
                   complet</a> </h6>
                 <h6 > 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
    
 $query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE phppr_journees.id_champ='9185' and (phppr_clubs.id + 900000)=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and
@@ -363,7 +363,7 @@ height="400" width="440"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
   
 	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='191' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // Requ�te SQL
@@ -407,7 +407,7 @@ height="370" width="440"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
   
 	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='201' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // Requ�te SQL
@@ -451,7 +451,7 @@ height="370" width="440"" type="text/html"   />
                   complet</a></h6>
                 <h6> 
                   <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 	mysql_select_db("onepip-france-db3"); // S�lection de la base onepip
   
 	$query = "SELECT  phppr_matchs.id_equipe_dom, phppr_matchs.id_equipe_ext, phppr_matchs.id_journee, phppr_matchs.date_reelle, phppr_matchs.buts_dom, phppr_matchs.buts_ext, phppr_journees.date_prevue, phppr_journees.id_champ, phppr_clubs.nom, phppr_clubs.id FROM  phppr_matchs, phppr_journees, phppr_clubs WHERE  phppr_journees.id_champ='221' and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.id_journee= phppr_journees.id and phppr_matchs.date_reelle != phppr_journees.date_prevue and phppr_clubs.id=phppr_matchs.id_equipe_dom and phppr_matchs.buts_dom is NULL and phppr_matchs.buts_ext is NULL"; // Requ�te SQL

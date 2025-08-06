@@ -7,10 +7,10 @@
 <body bgcolor="#FFFFFF" text="#000000">
 <p><b><font size="5">Consultation des MEMBRES</font></b><br>
   <br>
-  <font size="4" color="#0000FF"><b>Féd&eacute;rale 1</b></font> 
+  <font size="4" color="#0000FF"><b>Fï¿½d&eacute;rale 1</b></font> 
   <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-//mysql_select_db("onepip-france-db3"); // Sélection de la base onepip
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+//mysql_select_db("onepip-france-db3"); // Sï¿½lection de la base onepip
 require '../../connect1/connection3.php';
 
 
@@ -28,6 +28,6 @@ $reponse = $bdd->query("SELECT id, pseudo, mot_de_passe,mail,nom,pays,admin
 				  </font></font> <br/>
 				<p>   <?php
 			 }
-				//mysql_close(); // Déconnexion de MySQL
+				//mysql_close(); // Dï¿½connexion de MySQL
 				?>
 

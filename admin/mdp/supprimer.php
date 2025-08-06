@@ -29,7 +29,7 @@
 </body>
 </html>
  <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france-db$bd"); // S�lection de la base onepip
 ?>
   <?php

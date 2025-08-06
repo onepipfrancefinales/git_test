@@ -1,5 +1,5 @@
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
 
@@ -197,7 +197,7 @@ $query = "SELECT id, A3201, A3202, A3203, A3204, A3205, A3206, A3207, A3208, A32
 <?php // ----16me----------------------
 $query = "SELECT id, A1601, A1602, A1603, A1604, A1605, A1606, A1607, A1608, A1609, A1610, A1611, A1612, A1613, A1614, A1615, A1616, 
 					 A1617, A1618, A1619, A1620, A1621, A1622, A1623, A1624, A1625, A1626, A1627, A1628, A1629, A1630, A1631, A1632 
-					 FROM bdpf$annee2 WHERE id=$id "; // Requête SQL
+					 FROM bdpf$annee2 WHERE id=$id "; // Requï¿½te SQL
  $result = mysql_query($query);
  	while ($row = mysql_fetch_array($result) )
 	{ 
@@ -291,7 +291,7 @@ $query = "	SELECT id, A8001, A8002, A8003, A8004, A8005, A8006, A8007, A8008, A8
 ?>
 
 <?php	
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 
 <?php $clubA ="-";?>
@@ -394,7 +394,7 @@ mysql_close(); // Déconnexion de MySQL
 
 								  
 <?php
-//*************mise à zero des scores**************************
+//*************mise ï¿½ zero des scores**************************
 //
 //               ****** 32me de finale*********
 if ($A3201+$A3202==0) {$A3201="-";	$A3202="-";   }

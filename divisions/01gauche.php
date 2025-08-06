@@ -147,8 +147,8 @@ MM_reloadPage(true);
         <p>
           <?php
  //Connexion � MySQL
-//$bd=mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//$bd=mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france-db1");
 
 // -------
@@ -182,7 +182,7 @@ MM_reloadPage(true);
 //echo '<p>Il y a ' . $donnees['nbre_entrees'] . ' connect�s</p>';
 
 //mysql_close ($bd);
-//mysql_close (mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"));
+//mysql_close (mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"));
 //?>
         </p>
         <p>

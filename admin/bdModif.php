@@ -53,7 +53,7 @@ echo $taille1; echo "<br />";
 <?php
  
 //include ("../../connection5.php");
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france_db5"); 
   
 $sql = "(	UPDATE personnel

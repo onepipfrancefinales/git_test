@@ -113,7 +113,7 @@ content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de ru
   <tr> 
     <td width="160" height="26"> 
       <?php 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db3"); 	   
 $query = "SELECT  phpmpy_clubs.nom, phpmpy_clubs.url_logo FROM phpmpy_pf$annee, phpmpy_clubs WHERE phpmpy_pf$annee.clubA8005=phpmpy_clubs.id and phpmpy_pf$annee.id='9200'";
 $result = mysql_query($query);

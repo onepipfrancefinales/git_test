@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
@@ -29,13 +29,13 @@ if ($AR==2)
 	<form name="insertion" action="transfertScores.php?annee=<?php echo $annee;?>&champ=<?php echo $champ; ?>&type=8&AR=<?php echo $AR; ?>" method="POST">
 			  <b><font size="4"> 
 			  <?php
-			mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+			mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 			mysql_select_db("onepip-france-db1"); 
 			?>
 			  </font></b> <b><font size="4"> 
 	 <?php
 			  
-		// ***********  Récupération des scores des matchs ALLER  ***************************	 
+		// ***********  Rï¿½cupï¿½ration des scores des matchs ALLER  ***************************	 
 		
 		$requeteAGA = mysql_query( "	SELECT id ,	A8001, A8002, A8003, A8004 ,A8005, A8006, A8007, A8008,
 													A8009, A8010, A8011, A8012, A8013, A8014, A8015, A8016
@@ -50,7 +50,7 @@ if ($AR==2)
 				}
 			  
 	// *************************************************************************************  
-	// ***********   Récupération des scores des matchs RETOUR   ***************************	 
+	// ***********   Rï¿½cupï¿½ration des scores des matchs RETOUR   ***************************	 
 		
 		$requeteRGA = mysql_query( "	SELECT id ,	R8001, R8002, R8003, R8004 ,R8005, R8006, R8007, R8008,
 													R8009, R8010, R8011, R8012, R8013, R8014, R8015, R8016
@@ -66,7 +66,7 @@ if ($AR==2)
 				}
 			  
 			  
-		// Récupération des points terrain des matchs ALLER
+		// Rï¿½cupï¿½ration des points terrain des matchs ALLER
 			  $PtsA = $champ + 500;
 			  $requetePTSA = mysql_query( "SELECT id ,	A8001, A8002, A8003, A8004 ,A8005, A8006, A8007, A8008,
 														A8009, A8010, A8011, A8012, A8013, A8014, A8015, A8016
@@ -81,7 +81,7 @@ if ($AR==2)
 					
 				 
 			  
-		// Récupération des points terrain des matchs RETOUR
+		// Rï¿½cupï¿½ration des points terrain des matchs RETOUR
 			  $PtsR = $champ + 500;
 			  $requetePTSR = mysql_query( "SELECT id ,	R8001, R8002, R8003, R8004 ,R8005, R8006, R8007, R8008,
 														R8009, R8010, R8011, R8012, R8013, R8014, R8015, R8016
@@ -96,7 +96,7 @@ if ($AR==2)
 					}	
 					
 					
-			mysql_close(); // Déconnexion de MySQL
+			mysql_close(); // Dï¿½connexion de MySQL
 			?>
 			  </font></b> 
 			   
@@ -627,7 +627,7 @@ else
 	<form name="insertion" action="transfertScores.php?annee=<?php echo $annee; ?>&champ=<?php echo $champ; ?>&type=8&AR=<?php echo $AR; ?>" method="POST">
 	  <b><font size="4"> 
 	  <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 	mysql_select_db("onepip-france-db1"); 
 	?>
 	  </font></b> <b><font size="4"> 
@@ -643,7 +643,7 @@ else
 	  if( $result = mysql_fetch_object( $requete ) )
 		{
 		}
-	mysql_close(); // Déconnexion de MySQL
+	mysql_close(); // Dï¿½connexion de MySQL
 	?>
 	  </font></b> 
 	  <input type="hidden" name="id" value="<?php echo($id) ;?>">

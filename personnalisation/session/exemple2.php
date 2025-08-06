@@ -5,8 +5,8 @@ $pwd=$_POST['pwd'];
 
 ?>
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france_db5"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france_db5"); // Sï¿½lection de la base onepip
 ?>
 <?php
 $reponse = mysql_query("SELECT nom ,mdp
@@ -22,8 +22,8 @@ $reponse = mysql_query("SELECT nom ,mdp
 								
 mysql_close(); ?>
 <?php
-// On définit un login et un mot de passe de base pour tester notre exemple. 
-//Cependant, vous pouvez très bien interroger votre base de données afin de savoir si le visiteur 
+// On dï¿½finit un login et un mot de passe de base pour tester notre exemple. 
+//Cependant, vous pouvez trï¿½s bien interroger votre base de donnï¿½es afin de savoir si le visiteur 
 //qui se connecte est bien membre de votre site
 //$login_valide = $loginA;
 //$pwd_valide = $pwdA;
@@ -32,20 +32,20 @@ mysql_close(); ?>
 //$login_valide = "moi";
 //$pwd_valide = "lemien";
 
-// on teste si nos variables sont définies
+// on teste si nos variables sont dï¿½finies
 
 	if (isset($_POST['login']) && isset($_POST['pwd'])) 
 	{
-	// on vérifie les informations du formulaire, 
-	//à savoir si le pseudo saisi est bien un pseudo autorisé, de même pour le mot de passe
+	// on vï¿½rifie les informations du formulaire, 
+	//ï¿½ savoir si le pseudo saisi est bien un pseudo autorisï¿½, de mï¿½me pour le mot de passe
 	
 		if ($login_valide == $_POST['login'] && $pwd_valide == $_POST['pwd'])
 			{
-			// dans ce cas, tout est ok, on peut démarrer notre session
-			// on la démarre :)
+			// dans ce cas, tout est ok, on peut dï¿½marrer notre session
+			// on la dï¿½marre :)
 			
 				session_start ();
-			// on enregistre les paramètres de notre visiteur comme variables de session ($login et $pwd) 
+			// on enregistre les paramï¿½tres de notre visiteur comme variables de session ($login et $pwd) 
 			//(notez bien que l'on utilise pas le $ pour enregistrer ces variables)
 				
 				$_SESSION['login'] = $_POST['login'];
@@ -56,7 +56,7 @@ mysql_close(); ?>
 			}
 			else 
 			{
-			// Le visiteur n'a pas été reconnu comme étant membre de notre site. 
+			// Le visiteur n'a pas ï¿½tï¿½ reconnu comme ï¿½tant membre de notre site. 
 			//	On utilise alors un petit javascript lui signalant ce fait
 				
 				echo '<body onLoad="alert(\'Membre non reconnu...\')">';
@@ -68,7 +68,7 @@ mysql_close(); ?>
 	}
 else 
 	{
-	echo 'Les variables du formulaire ne sont pas déclarées.';
+	echo 'Les variables du formulaire ne sont pas dï¿½clarï¿½es.';
 	}
 ?>
 

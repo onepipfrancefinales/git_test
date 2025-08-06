@@ -1,5 +1,5 @@
 <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <p> 
@@ -19,9 +19,9 @@
   <br/>
  
   <?php
-  //récupération des valeurs des champs:
+  //rï¿½cupï¿½ration des valeurs des champs:
   
-//****** Connection à la base de données n°2   *********
+//****** Connection ï¿½ la base de donnï¿½es nï¿½2   *********
 $anneeAP 		= $_POST['anneeAP'];  
 $anneeAL 		= $_POST['anneeAL'];  
 $anneeAB 		= $_POST['anneeAB']; 
@@ -40,7 +40,7 @@ $anneeLY 		= $_POST['anneeLY'];
 $anneeN 		= $_POST['anneeN']; 
 $anneePA 		= $_POST['anneePA']; 
 $anneePCH 		= $_POST['anneePCH']; 
-//****** Connection à la base de données n°3   *********
+//****** Connection ï¿½ la base de donnï¿½es nï¿½3   *********
 $anneePC 		= $_POST['anneePC']; 
 $anneeMPY 		= $_POST['anneeMPY']; 
 $anneeBR 		= $_POST['anneeBR'];
@@ -51,12 +51,12 @@ $anneeFED1 		= $_POST['anneeFED1'];
 $anneeFED2 		= $_POST['anneeFED2'];
 $anneeFED3NE 	= $_POST['anneeFED3NE'];
 $anneeFED3GS 	= $_POST['anneeFED3GS'];
-//****** Connection à la base de données n°4   *********
+//****** Connection ï¿½ la base de donnï¿½es nï¿½4   *********
 $anneeFEM 		= $_POST['anneeFEM'];
 ?>
 
-<?php //****** Connection à la base de données n°2   *********
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+<?php //****** Connection ï¿½ la base de donnï¿½es nï¿½2   *********
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db2"); 
 ?>
 <?php 
@@ -164,8 +164,8 @@ mysql_close();
 
 
 
-<?php //****** Connection à la base de données n°3    *********
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+<?php //****** Connection ï¿½ la base de donnï¿½es nï¿½3    *********
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db3"); 
 ?>
 
@@ -229,8 +229,8 @@ mysql_close();
 ?>
 
 
-<?php //****** Connection à la base de données n°4    *********
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+<?php //****** Connection ï¿½ la base de donnï¿½es nï¿½4    *********
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france_db4"); 
 ?>
 
@@ -248,19 +248,19 @@ mysql_close();
 
 
 <?php
-//affichage des résultats, pour savoir si la modification a marchée:
+//affichage des rï¿½sultats, pour savoir si la modification a marchï¿½e:
  	 if($requete)
 		  {
-			echo("La modification a été correctement effectuée");
+			echo("La modification a ï¿½tï¿½ correctement effectuï¿½e");
 		 
 		  }
   		else
 		  {
-			echo("La modification à échouée") ;
+			echo("La modification ï¿½ ï¿½chouï¿½e") ;
 		  }
 
 mysql_close(); 
 ?>
 </p>
 
-<a href="chgDateSaison2.php">Retour, pour vérifification </a>
+<a href="chgDateSaison2.php">Retour, pour vï¿½rifification </a>

@@ -4,8 +4,8 @@ $comiteMaj=strtoupper($comite);
 
 $annee ='2018';
 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france_db5"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france_db5"); // Sï¿½lection de la base onepip
 
 $query = " 	SELECT nom
 			FROM comite
@@ -22,9 +22,9 @@ $query = " 	SELECT nom
 <html>
 	<head>
 		<meta name="description"
-		content="Tous les Champions de France <?php echo $annee; ?> de rugby à XV. Compétitions pro; compétitions fédérales; compétitions territoriales; Compétitions féminines; compétitions juniors et cadets">
+		content="Tous les Champions de France <?php echo $annee; ?> de rugby ï¿½ XV. Compï¿½titions pro; compï¿½titions fï¿½dï¿½rales; compï¿½titions territoriales; Compï¿½titions fï¿½minines; compï¿½titions juniors et cadets">
 		<meta name="keywords"
-		content="Federation,Française,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
+		content="Federation,Franï¿½aise,Rugbyman,Rugbymen,Sport,Ballon,Ovale,">
 		<meta name="classification" content="Sport,Rugby">
 		<meta name="resource-type" content="document">
 		<meta name="copyright" content="Comite Midi Pyrenees de Rugby">

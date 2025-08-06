@@ -84,7 +84,7 @@
      
         <?php
  require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php
@@ -114,7 +114,7 @@ mysql_close(); // D�connexion de MySQL
       <div align="center"><b> 
         <?php
  require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php
@@ -141,7 +141,7 @@ mysql_close(); // D�connexion de MySQL
       <div align="center"><b> 
         <?php
   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php
@@ -167,7 +167,7 @@ mysql_close(); // D�connexion de MySQL
     <td width="114" height="23"> 
       <?php
   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
       <?php
@@ -195,7 +195,7 @@ mysql_close(); // D�connexion de MySQL
     <td width="81" height="23"> 
       <?php
  require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
       <?php
@@ -224,7 +224,7 @@ mysql_close(); // D�connexion de MySQL
     <td width="189" height="23"> 
       <?php
   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
       <?php
@@ -282,7 +282,7 @@ echo $bdfeuilleB;
     <td width="262"> 
       <?php
 	   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
       <?php
@@ -331,7 +331,7 @@ echo "";
       <div align="center"><b> 
         <?php
  require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php
@@ -368,7 +368,7 @@ echo"";
       <div align="center"><b> 
         <?php
   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php
@@ -384,7 +384,7 @@ $equipeB= $row[0];
 echo $equipe_ext;
 ?>
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
       ?>
         <?php
@@ -451,7 +451,7 @@ echo "";
       <div align="center"> 
         <?php
 	   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
         <?php
@@ -486,7 +486,7 @@ echo $equipe_dom;echo "--"; echo $equipe_ext; echo "--"; echo $idF; echo "--";ec
       
     <?php
 	 //  require ("../../$connect.php")
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>   
 <?php
@@ -515,7 +515,7 @@ echo $equipe_dom1;
       <div align="center"><b> 
          <?php
 	   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
 	   
@@ -542,7 +542,7 @@ echo $equipe_dom1;
     <td width="234"><b> 
       <?php
 	   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
       <?php
@@ -561,7 +561,7 @@ echo $equipe_ext1;?>
     <td width="114"> 
       <?php
   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
       <?php
@@ -589,7 +589,7 @@ mysql_close(); // D�connexion de MySQL
     <td width="81">
       <?php
 // require ("../../$connect.php")
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
       <?php
@@ -618,7 +618,7 @@ mysql_close(); // D�connexion de MySQL
     <td width="189">
       <?php
   require ("../../$connect.php")
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
       <?php

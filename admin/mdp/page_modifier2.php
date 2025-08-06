@@ -28,26 +28,26 @@
 
 
  <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("$bd"); 
 ?>
   <?php
-mysql_query("UPDATE $comite SET admin ='$admin' WHERE  id ='$ID' "); // Requête SQL
+mysql_query("UPDATE $comite SET admin ='$admin' WHERE  id ='$ID' "); // Requï¿½te SQL
 ?>
 
    <?php
  
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 
 ?>
 
 
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("$bd"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("$bd"); // Sï¿½lection de la base onepip
 ?>
   <?php
-$reponse = mysql_query("SELECT id, pseudo, mot_de_passe,nom,pays,admin FROM $comite WHERE id ='$ID' ORDER BY id DESC"); // Requête SQL
+$reponse = mysql_query("SELECT id, pseudo, mot_de_passe,nom,pays,admin FROM $comite WHERE id ='$ID' ORDER BY id DESC"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -57,5 +57,5 @@ while ($donnees = mysql_fetch_array($reponse) )
   </font></font> <br/>
 <p>   <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>

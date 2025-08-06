@@ -1,6 +1,6 @@
 <html>
   <head>
-<title>modification de données en PHP :: partie2</title>
+<title>modification de donnï¿½es en PHP :: partie2</title>
 
 <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
@@ -31,7 +31,7 @@ if ($AR==1)
 	  
 	  </font></b> <b><font size="4"> 
 	  <?php
-	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 	mysql_select_db("onepip-france-db1"); 
 	?>
 	 
@@ -152,13 +152,13 @@ else
 	<form name="insertion" action="transfertScores.php?annee=<?php echo $annee;?>&champ=<?php echo $champ; ?>&type=1&AR=<?php echo $AR; ?>" method="POST">
 		  <b><font size="4"> 
 		  <?php
-		mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+		mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 		mysql_select_db("onepip-france-db1"); 
 		?>
 		  </font></b> <b><font size="4"> 
  <?php
 		  
-	// ***********  Récupération des scores des matchs ALLER  ***************************	 
+	// ***********  Rï¿½cupï¿½ration des scores des matchs ALLER  ***************************	 
 	
 	$requeteAGA = mysql_query( "	SELECT id ,	A4001, A4002, A4003, A4004 ,A4005, A4006, A4007, A4008 
 										FROM bdpfScoresA 
@@ -171,7 +171,7 @@ else
 		  	}
 		  
 // *************************************************************************************  
-// ***********   Récupération des scores des matchs RETOUR   ***************************	 
+// ***********   Rï¿½cupï¿½ration des scores des matchs RETOUR   ***************************	 
 	
 	$requeteRGA = mysql_query( "	SELECT id ,	R4001, R4002, R4003, R4004 ,R4005, R4006, R4007, R4008	 
 									FROM bdpfScoresR 
@@ -184,7 +184,7 @@ else
 		  	}
 		  
 		  
-	// Récupération des points terrain des matchs ALLER
+	// Rï¿½cupï¿½ration des points terrain des matchs ALLER
 		  $PtsA = $id + 500;
 		  $requetePTSA = mysql_query( "	SELECT id ,	A4001, A4002, A4003, A4004 ,A4005, A4006, A4007, A4008
 										FROM bdpfScoresA 
@@ -197,7 +197,7 @@ else
 				
 			 
 		  
-	// Récupération des points terrain des matchs RETOUR
+	// Rï¿½cupï¿½ration des points terrain des matchs RETOUR
 		  $PtsR = $champ + 500;
 		  $requetePTSR = mysql_query( "	SELECT id ,	R4001, R4002, R4003, R4004 ,R4005, R4006, R4007, R4008
 										FROM bdpfScoresR 
@@ -207,7 +207,7 @@ else
 		  if( $resultPTSR = mysql_fetch_object( $requetePTSR ) )
 		 	 	{
 		 		}	
-		mysql_close(); // Déconnexion de MySQL
+		mysql_close(); // Dï¿½connexion de MySQL
 		?>
 		  </font></b> 
 		   

@@ -47,7 +47,7 @@ MM_reloadPage(true);
             <td height="370" width="272" valign="top"> 
               <p><b><font size="5"> 
                 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // S�lection de la base onepip
 ?>
                 <?php
@@ -78,7 +78,7 @@ mysql_close(); // D�connexion de MySQL
                 </table>
                 
                   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
                   <br>
@@ -97,7 +97,7 @@ mysql_select_db("onepip-france-db1");
                 <p align="center"><b><font face="Arial, Helvetica, sans-serif" size="2">Equipe 
                   Fanion</font></b><br>
                   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
                   <?php

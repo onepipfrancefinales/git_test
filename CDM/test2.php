@@ -5,8 +5,8 @@
   
 
  <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("onepip-france_db3"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("onepip-france_db3"); // Sï¿½lection de la base onepip
 ?> 
 
 	
@@ -39,5 +39,5 @@ $dom = mysql_query($query) or die (mysql_error());;
 ?>
 <?php
  
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>

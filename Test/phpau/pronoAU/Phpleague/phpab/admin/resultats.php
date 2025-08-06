@@ -17,7 +17,7 @@
 //***********************************************************************/
 
 $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db2');	
-//$idconnect=@mysqli_connect('sql.franceserv.fr','onepip-france','lavelan09','onepip-france-db2');	  
+//$idconnect=@mysqli_connect('sql.franceserv.fr','onepip-france','Lavelan1969&','onepip-france-db2');	  
   
 
 if (empty ($numero))

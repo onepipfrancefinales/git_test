@@ -116,7 +116,7 @@ MM_reloadPage(true);
   <tr> 
     <td width="52" height="26"> 
       <?php 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip	   
    ?>
     </td>
@@ -365,7 +365,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <td width="205" align="left" height="15"><font size="2" face="Arial, Helvetica, sans-serif"> 
       <strong> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='170' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
@@ -509,7 +509,7 @@ echo "";
     <td width="67" height="16">&nbsp;</td>
     <td width="209" height="16"><font size="2" face="Arial, Helvetica, sans-serif"><b><i> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='170' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )
@@ -700,7 +700,7 @@ echo "";
     <td width="205" align="left" height="20"><font size="2" face="Arial, Helvetica, sans-serif"> 
       <strong> 
       <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 mysql_select_db("onepip-france-db1"); // Sèlection de la base onepip	  
 $reponse = mysql_query("SELECT * FROM Phpmpy_pf$annee WHERE id='170' "); // Requ�te SQL
 while ($donnees = mysql_fetch_array($reponse) )

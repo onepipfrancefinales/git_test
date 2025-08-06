@@ -7,7 +7,7 @@ define('CONFIG_TIMEOUT',  5);      // D�lai de connexion, en secondes
 
 //define('CONFIG_SERVER',   'ftp.franceserv.fr');  // Adresse du serveur FTP
 //define('CONFIG_USERNAME', 'onepip-france');  // Nom d'utilisateur
-//define('CONFIG_PASSWORD', 'lavelan09');  // Mot de passe
+//define('CONFIG_PASSWORD', 'Lavelan1969&');  // Mot de passe
 //define('CONFIG_TIMEOUT',  5);      // D�lai de connexion, en secondes
 
 	

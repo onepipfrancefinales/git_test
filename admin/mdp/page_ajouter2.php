@@ -37,8 +37,8 @@
 
 <?php
 
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("$bd"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("$bd"); // Sï¿½lection de la base onepip
 ?>
 
 <?php
@@ -46,17 +46,17 @@ mysql_query (" INSERT INTO $comite Values ('','','$pseudo','$mdp','','','','',''
 ?>
 <?php
  
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 
 
 ?>
 
 <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion à MySQL
-mysql_select_db("$bd"); // Sélection de la base onepip
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion ï¿½ MySQL
+mysql_select_db("$bd"); // Sï¿½lection de la base onepip
 ?>
   <?php
-$reponse = mysql_query("SELECT id, pseudo, mot_de_passe,nom,pays,admin FROM $comite WHERE id >'0' ORDER BY id DESC limit 0,1"); // Requête SQL
+$reponse = mysql_query("SELECT id, pseudo, mot_de_passe,nom,pays,admin FROM $comite WHERE id >'0' ORDER BY id DESC limit 0,1"); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -66,5 +66,5 @@ while ($donnees = mysql_fetch_array($reponse) )
   </font></font> <br/>
 <p>   <?php
  }
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>

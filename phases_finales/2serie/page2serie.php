@@ -8,7 +8,7 @@ $annee2=$annee.''."_2";
 $id = 200; 
 ?>
 <?php
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); // Connexion � MySQL
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); // Connexion � MySQL
 //mysql_select_db("onepip-france_db5"); // S�lection de la base onepip
 require '../../connect/connexion5.php';
 $reponse = $bdd->query(" 	SELECT division

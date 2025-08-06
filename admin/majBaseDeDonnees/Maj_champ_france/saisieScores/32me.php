@@ -30,7 +30,7 @@ if ($AR==1)
 ?>
 		<form name="insertion" action="transfertScores.php?annee=<?php echo $annee;?>&champ=<?php echo $champ; ?>&type=32&AR=<?php echo $AR; ?>" method="POST">
 		  <b><font size="4"> 
-		<?php	mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+		<?php	mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 				mysql_select_db("onepip-france-db1"); 
 		?>
 		  </font></b> <b><font size="4"> 
@@ -863,13 +863,13 @@ else
 <form name="insertion" action="transfertScores.php?annee=<?php echo $annee;?>&champ=<?php echo $champ; ?>&type=32&AR=<?php echo $AR; ?>" method="POST">
 		  <b><font size="4"> 
 		  <?php
-		mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+		mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 		mysql_select_db("onepip-france-db1"); 
 		?>
 		  </font></b> <b><font size="4"> 
  <?php
 		  
-	// ***********  Récupération des scores des matchs ALLER  ***************************	 
+	// ***********  Rï¿½cupï¿½ration des scores des matchs ALLER  ***************************	 
 	
 	$requeteAGA = mysql_query( "	SELECT id ,A3201, A3202, A3203, A3204 ,A3205, A3206, A3207, A3208, A3209, A3210, A3211, A3212, A3213, A3214, A3215, A3216,
 											A3217, A3218, A3219, A3220 ,A3221, A3222, A3223, A3224, A3225, A3226, A3227, A3228, A3229, A3230, A3231, A3232, 
@@ -885,7 +885,7 @@ else
 		  	}
 		  
 // *************************************************************************************  
-// ***********   Récupération des scores des matchs RETOUR   ***************************	 
+// ***********   Rï¿½cupï¿½ration des scores des matchs RETOUR   ***************************	 
 	
 	$requeteRGA = mysql_query( "	SELECT id ,R3201, R3202, R3203, R3204 ,R3205, R3206, R3207, R3208, R3209, R3210, R3211, R3212, R3213, R3214, R3215, R3216,
 											R3217, R3218, R3219, R3220 ,R3221, R3222, R3223, R3224, R3225, R3226, R3227, R3228, R3229, R3230, R3231, R3232, 
@@ -901,7 +901,7 @@ else
 		  	}
 		  
 		  
-	// Récupération des points terrain des matchs ALLER
+	// Rï¿½cupï¿½ration des points terrain des matchs ALLER
 		  $PtsA = $champ + 500;
 		  $requetePTSA = mysql_query( "SELECT id ,A3201, A3202, A3203, A3204 ,A3205, A3206, A3207, A3208, A3209, A3210, A3211, A3212, A3213, A3214, A3215, A3216,
 											   A3217, A3218, A3219, A3220 ,A3221, A3222, A3223, A3224, A3225, A3226, A3227, A3228, A3229, A3230, A3231, A3232, 
@@ -917,7 +917,7 @@ else
 				
 			 
 		  
-	// Récupération des points terrain des matchs RETOUR
+	// Rï¿½cupï¿½ration des points terrain des matchs RETOUR
 		  $PtsR = $champ + 500;
 		  $requetePTSR = mysql_query( "SELECT id ,R3201, R3202, R3203, R3204 ,R3205, R3206, R3207, R3208, R3209, R3210, R3211, R3212, R3213, R3214, R3215, R3216,
 											   R3217, R3218, R3219, R3220 ,R3221, R3222, R3223, R3224, R3225, R3226, R3227, R3228, R3229, R3230, R3231, R3232, 
@@ -932,7 +932,7 @@ else
 		 		}	
 				
 				
-		mysql_close(); // Déconnexion de MySQL
+		mysql_close(); // Dï¿½connexion de MySQL
 		?>
 		  </font></b> 
 		   

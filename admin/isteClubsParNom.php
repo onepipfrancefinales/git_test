@@ -7,7 +7,7 @@
   <br>
   </font></b> 
   <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 mysql_select_db("onepip-france-db1"); 
 ?>
   
@@ -33,7 +33,7 @@ $reponse = mysql_query("SELECT id, nom_1, idffr
 $reponse = mysql_query("SELECT id, nom_1, idffr , type
 FROM bdclubs 
 WHERE siglecomite='(AL)' 
-ORDER BY nom_1 "); // Requête SQL
+ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -107,7 +107,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <p><font face="Arial, Helvetica, sans-serif"><b><font size="5">AUVERGNE</font></b></font></p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(AU)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(AU)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -144,7 +144,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(BE)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(BE)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -181,7 +181,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(BG)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(BG)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -218,7 +218,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(BR)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(BR)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -255,7 +255,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(CE)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(CE)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -292,7 +292,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(C)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(C)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -330,7 +330,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(CBL)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(CBL)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -367,7 +367,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(CA)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(CA)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -403,7 +403,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <p><font face="Arial, Helvetica, sans-serif"><b><font size="5">COTE D AZUR</font></b></font></p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(CAZ)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(CAZ)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -441,7 +441,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(DA)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(DA)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -478,7 +478,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(FL)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(FL)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -515,7 +515,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(FC)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(FC)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -553,7 +553,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(IDF)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(IDF)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -592,7 +592,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(LD)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(LD)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -629,7 +629,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(LM)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(LM)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -666,7 +666,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(LY)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(LY)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -702,7 +702,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <p><font face="Arial, Helvetica, sans-serif"><b><font size="5">MIDI PYRENEES</font></b></font></p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(MPY)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(MPY)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -739,7 +739,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(N)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(N)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -776,7 +776,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PL)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PL)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -812,7 +812,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <p><font face="Arial, Helvetica, sans-serif"><b><font size="5">PERIGORD AGENAIS</font></b></font></p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PA)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PA)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -848,7 +848,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <p><font face="Arial, Helvetica, sans-serif"><b><font size="5">POITOU CHARENTE</font></b></font></p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PCH)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PCH)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -884,7 +884,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 <p><font face="Arial, Helvetica, sans-serif"><b><font size="5">PROVENCE</font></b></font></p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PR)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PR)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -921,7 +921,7 @@ while ($donnees = mysql_fetch_array($reponse) )
 </p>
 <b> <font face="Arial, Helvetica, sans-serif"> 
 <?php
-$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PC)' ORDER BY nom_1 "); // Requête SQL
+$reponse = mysql_query("SELECT id, nom_1, idffr, type FROM bdclubs WHERE siglecomite='(PC)' ORDER BY nom_1 "); // Requï¿½te SQL
 while ($donnees = mysql_fetch_array($reponse) )
 { 
 ?>
@@ -961,7 +961,7 @@ while ($donnees = mysql_fetch_array($reponse) )
  
  
  <?php
-mysql_close(); // Déconnexion de MySQL
+mysql_close(); // Dï¿½connexion de MySQL
 ?>
 </p>
 <p>&nbsp; </p>

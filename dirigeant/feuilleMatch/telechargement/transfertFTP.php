@@ -22,7 +22,7 @@ if (!isset($_POST["submitFile"]) || !is_uploaded_file($_FILES["fichier_transfér
 
 $ftp_server='sql.franceserv.fr'; 
 $ftp_user_name='onepip-france'; 
-$ftp_user_pass='lavelan09'; 
+$ftp_user_pass='Lavelan1969&'; 
 
 
 //ftproot : point d'entrée prévu pour l'utlisateur (dossier par défaut)

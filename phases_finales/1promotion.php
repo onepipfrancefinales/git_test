@@ -88,7 +88,7 @@ $clubA3210= ' Salon la Tour (LM) ';
 $clubA3211= ' La Couronne (PCH) ';
 $clubA3212= ' La Saudrune (MPY)';
 $clubA3213= ' Trelissac (PA)';
-$clubA3214= ' La Réole (CA) ';
+$clubA3214= ' La Rï¿½ole (CA) ';
 $clubA3215= ' Lit et Mixte (CBL)';
 $clubA3216= ' Ger Seron Bedeille (BE)';
 $clubA3217= ' Oleron (PCH)';
@@ -134,7 +134,7 @@ $clubA3256= ' Saint Paul les Landes (LM)';
 $clubA3257= ' Dijon (BG) ';
 $clubA3258= ' Arcol (LY) ';
 $clubA3259= ' Les Martres de Veyre (AU) ';
-$clubA3260= ' Ozoir la Ferrière (IDF)';
+$clubA3260= ' Ozoir la Ferriï¿½re (IDF)';
 $clubA3261= ' RCSAM (IDF) ';
 $clubA3262= ' Cherbourg Hagueneau (N) ';
 $clubA3263= ' LMR Iris (FL) ';
@@ -357,43 +357,43 @@ $clubA3208= ' Centre 2';
 $clubA3209= ' Centre 1 ';
 $clubA3210= ' Limousin 4 ';
 $clubA3211= ' Poitou-Charentes 2 ';
-$clubA3212 = ' Midi-Pyrénées 1';
-$clubA3213= ' Périgord Agenais 3';
-$clubA3214= ' Côte d Argent 1 ';
-$clubA3215= ' Côte Basque Landes 2';
-$clubA3216= ' Béarn 1';
+$clubA3212 = ' Midi-Pyrï¿½nï¿½es 1';
+$clubA3213= ' Pï¿½rigord Agenais 3';
+$clubA3214= ' Cï¿½te d Argent 1 ';
+$clubA3215= ' Cï¿½te Basque Landes 2';
+$clubA3216= ' Bï¿½arn 1';
 $clubA3217= ' Poitou-Charentes 1';
-$clubA3218= ' Côte d Argent 2 ';
+$clubA3218= ' Cï¿½te d Argent 2 ';
 $clubA3219 = ' Armagnac Bigorre 2';
-$clubA3220= ' Midi-Pyrénées 3';
-$clubA3221= ' Côte Basque Landes 1 ';
-$clubA3222= ' Côte d Argent 3 ';
+$clubA3220= ' Midi-Pyrï¿½nï¿½es 3';
+$clubA3221= ' Cï¿½te Basque Landes 1 ';
+$clubA3222= ' Cï¿½te d Argent 3 ';
 $clubA3223= ' Armagnac Bigorre 1 ';
-$clubA3224= ' Béarn 2';
-$clubA3225= ' Midi-Pyrénées 4 ';
-$clubA3226= ' Périgord Agenais 1 ';
-$clubA3227= ' Midi-Pyrénées 6 ';
+$clubA3224= ' Bï¿½arn 2';
+$clubA3225= ' Midi-Pyrï¿½nï¿½es 4 ';
+$clubA3226= ' Pï¿½rigord Agenais 1 ';
+$clubA3227= ' Midi-Pyrï¿½nï¿½es 6 ';
 $clubA3228= ' Limousin 2';
 $clubA3229= ' Languedoc 2 ';
-$clubA3230= ' Périgord Agenais 4';
- $clubA3231= ' Midi-Pyrénées 5 ';
+$clubA3230= ' Pï¿½rigord Agenais 4';
+ $clubA3231= ' Midi-Pyrï¿½nï¿½es 5 ';
 $clubA3232= ' Limousin 1';
 $clubA3233= ' Languedoc 1';
 $clubA3234= ' Provence 3 ';
 $clubA3235= ' Provence 2';
-$clubA3236= ' Côte d Azur ';
-$clubA3237= ' Midi-Pyrénées 2 ';
-$clubA3238= ' Périgord Agenais 2 ';
+$clubA3236= ' Cï¿½te d Azur ';
+$clubA3237= ' Midi-Pyrï¿½nï¿½es 2 ';
+$clubA3238= ' Pï¿½rigord Agenais 2 ';
 $clubA3239= '  Languedoc 3';
 $clubA3240= ' Roussillon ';
-$clubA3241= ' Drôme Ardèche 1 ';
+$clubA3241= ' Drï¿½me Ardï¿½che 1 ';
 $clubA3242= ' Alsace-Lorraine 2 ';
 $clubA3243= ' Auvergne 2 ';
  $clubA3244= ' Lyonnais 2';
 $clubA3245= ' Alpes 1 ';
 $clubA3246= ' Auvergne 4 ';
 $clubA3247= ' Provence 1 ';
-$clubA3248= ' Drôme Ardèche 2';
+$clubA3248= ' Drï¿½me Ardï¿½che 2';
 $clubA3249= ' Alpes 2 ';
 $clubA3250= ' Bourgogne 2 ';
 $clubA3251= ' Auvergne 1';
@@ -410,7 +410,7 @@ $clubA3261= ' Ile-de-France 4 ';
 $clubA3262= ' Normandie 2 ';
 $clubA3263= '  Flandres 1 ';
 $clubA3264= '  Ile-de-France 7';
-echo "<h3> <strong>Désolé, aucune donnée pour cette saison</h3> </strong>";
+echo "<h3> <strong>Dï¿½solï¿½, aucune donnï¿½e pour cette saison</h3> </strong>";
 }
 ?>
 
@@ -430,7 +430,7 @@ echo "<h3> <strong>Désolé, aucune donnée pour cette saison</h3> </strong>";
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -462,7 +462,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -497,7 +497,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -528,7 +528,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -563,7 +563,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -594,7 +594,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -629,7 +629,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -660,7 +660,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -695,7 +695,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -726,7 +726,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -761,7 +761,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -792,7 +792,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -827,7 +827,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -858,7 +858,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -893,7 +893,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -924,7 +924,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -959,7 +959,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -990,7 +990,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1025,7 +1025,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1056,7 +1056,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1091,7 +1091,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1122,7 +1122,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1157,7 +1157,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1188,7 +1188,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1223,7 +1223,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1254,7 +1254,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1289,7 +1289,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1320,7 +1320,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdouble.jpg); layer-background-image: url(../resultdouble.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1355,7 +1355,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1386,7 +1386,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1421,7 +1421,7 @@ while ($donnees = mysql_fetch_array($reponse) )
       <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
         <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
           <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1452,7 +1452,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer7" style="position:absolute; width:55px; height:20px; z-index:8; background-image: url(../resultdoubleB.jpg); layer-background-image: url(../resultdoubleB.jpg); border: 1px none #000000; left: 350px; top: 0px"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1479,7 +1479,7 @@ while ($donnees = mysql_fetch_array($reponse) )
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1521,7 +1521,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1563,7 +1563,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1605,7 +1605,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1646,7 +1646,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1686,7 +1686,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1727,7 +1727,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1767,7 +1767,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1810,7 +1810,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1850,7 +1850,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1891,7 +1891,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1932,7 +1932,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -1973,7 +1973,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2014,7 +2014,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2056,7 +2056,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2097,7 +2097,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2137,7 +2137,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2178,7 +2178,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2219,7 +2219,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2259,7 +2259,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2300,7 +2300,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2341,7 +2341,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2382,7 +2382,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2423,7 +2423,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2463,7 +2463,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2505,7 +2505,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2547,7 +2547,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2588,7 +2588,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2630,7 +2630,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2673,7 +2673,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2715,7 +2715,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2757,7 +2757,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result22.jpg); layer-background-image:  url(../result22.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2798,7 +2798,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2840,7 +2840,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2880,7 +2880,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2920,7 +2920,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2960,7 +2960,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -2999,7 +2999,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3041,7 +3041,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3081,7 +3081,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3122,7 +3122,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3163,7 +3163,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3205,7 +3205,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3246,7 +3246,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3288,7 +3288,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3329,7 +3329,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3371,7 +3371,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3412,7 +3412,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3454,7 +3454,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3497,7 +3497,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3542,7 +3542,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3584,7 +3584,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3628,7 +3628,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3671,7 +3671,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3715,7 +3715,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3758,7 +3758,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3802,7 +3802,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3843,7 +3843,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3888,7 +3888,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3931,7 +3931,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -3976,7 +3976,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 21px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 
@@ -4019,7 +4019,7 @@ echo "";
     <div id="Layer10" style="position:absolute; width:30px; height:20px; z-index:3; left: 200px; top: 1px; background-image:  url(../result2.jpg); layer-background-image:  url(../result2.jpg); border: 1px none #000000"> 
       <div align="center"><font color="#FFFFFF" face="Geneva, Arial, Helvetica, san-serif"size="3"><b> 
         <?php
-mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09");
+mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&");
 mysql_select_db("onepip-france-db1");
 $reponse = mysql_query("SELECT * FROM bdpf$annee WHERE id='180'");
 

@@ -9,7 +9,7 @@
 
 require '../../connect1/connection1.php';
 
-//mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+//mysql_connect("sql.franceserv.fr", "onepip-france", "Lavelan1969&"); 
 //mysql_select_db("onepip-france-db1"); 
 ?>
 
@@ -143,7 +143,7 @@ if($id==110)
 		<?php // Quarts----Demi------Finale-------
 		$reponse = $bdd->query("	SELECT id, A4001, A4002, A4003, A4004, A2001, A2002, A2003, A2004, A1001, A1002 
 					FROM bdpf$annee2 
-					WHERE id=$id "); // Requête SQL
+					WHERE id=$id "); // Requï¿½te SQL
 							//$result = mysql_query($query) ;
  							while ($row = $reponse->fetch() )
 			{ 
@@ -165,7 +165,7 @@ if($id==110)
 		?>
 
 		<?php	
-	//	mysql_close(); // Déconnexion de MySQL
+	//	mysql_close(); // Dï¿½connexion de MySQL
 		?>
 
 		<?php $clubA =" ";?>	 
@@ -199,7 +199,7 @@ else
 		<?php // Quarts----Demi------Finale-------
 		$reponse = $bdd->query("	SELECT id, A2001, A2002, A2003, A2004, A1001, A1002 
 					FROM bdpf$annee2 
-					WHERE id=$id "); // Requête SQL
+					WHERE id=$id "); // Requï¿½te SQL
 						//$result = mysql_query($query) ;
  						while ($row = $reponse->fetch() )
 							{ 
@@ -214,7 +214,7 @@ else
 		?>
 
 		<?php	
-		//mysql_close(); // Déconnexion de MySQL
+		//mysql_close(); // Dï¿½connexion de MySQL
 		?>
 
 		<?php $clubA =" ";?>	 

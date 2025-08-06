@@ -10,7 +10,7 @@ $mdp=isset ($_POST['mdp']) ? $_POST['mdp'] : NULL;
 
 try
 	{
-	$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france_db5;charset=utf8', 'onepip-france', 'lavelan09');
+	$bdd = new PDO('mysql:host=sql.franceserv.fr;dbname=onepip-france_db5;charset=utf8', 'onepip-france', 'Lavelan1969&');
 	}
 catch(Exception $e)
 	{
@@ -22,7 +22,7 @@ catch(Exception $e)
 // Hachage du mot de passe
 //$pass_hache = sha1($_POST['pass']);
 
-// Vérification des identifiants
+// Vï¿½rification des identifiants
 $req = $bdd->prepare('	SELECT id
  						FROM personnel 
 						WHERE nom = :nom
@@ -45,6 +45,6 @@ else
     session_start();
     $_SESSION['id'] = $resultat['id'];
     $_SESSION['nom'] = $nom;
-   echo 'Vous êtes connecté !';
+   echo 'Vous ï¿½tes connectï¿½ !';
 }
 ?>
