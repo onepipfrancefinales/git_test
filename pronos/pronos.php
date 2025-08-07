@@ -17,7 +17,7 @@ elseif ($champLigue == 20){
   $cptePhp = "phpab";}
 elseif ($champLigue == 11 || $champLigue == 12 || $champLigue == 13 || $champLigue == 16|| $champLigue == 21) {
   $cptePhp = "phppl";
-  if ($champLigue == 11)
+   if ($champLigue == 11)
      $titre = "Bourgogne France Comté";
      elseif ($champLigue == 12)
      $titre = "Bretagne";
@@ -52,10 +52,10 @@ if ($champLigue == 15)
 <p class="colorRed size7 bold">
   Championnats des pronostiqueurs <br>
 ligue <?php echo $titre; ?></p>
-
+<h2 class="size6"> (EN PHASE DE TEST)</h2>
 <?php
-echo "champLigue(pronos) : ".$champLigue; echo "<br>";
-echo "cptePhp : ".$cptePhp;  echo "<br>";
+//echo "champLigue(pronos) : ".$champLigue; echo "<br>";
+//echo "cptePhp : ".$cptePhp;  echo "<br>";
 ?>
 <object data="/Test/<?php echo $cptePhp; ?>/prono/index.php?champLigue=<?php echo $champLigue; ?>"
   height="1500" width="100%">

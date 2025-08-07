@@ -9,9 +9,10 @@ if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_c
 if (isset($_REQUEST['user_pseudo'])) {$user_pseudo=$_REQUEST['user_pseudo'];} else {$user_pseudo='';}
 if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id='';}
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
-if (isset($_GET['page'])) $page = $_GET['page'];else {$mode='';}
-if (isset($_GET['style'])) $style = $_GET['style'];else {$mode='';}
-if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}
+if (isset($_GET['page'])) $page = $_GET['page'];else {$page='';}
+if (isset($_GET['style'])) $style = $_GET['style'];else {$style='';}
+if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='0';}
+echo "champLigue : ".$champLigue;
 if ($mode == "smart")
 {
   ?>
@@ -23,11 +24,14 @@ if ($mode == "smart")
     <tr>
         <td colspan="2" class="h12">Ligues régionales <br> Concours de pronostiques</td>
     </tr>
-</table>
 
+    
+</table>
+ <br>
+        <h2 class="center colorRed">En phase de tests</h2>
+    
 <?php
 }
-
   ?>
 
 <p>&nbsp;</p>

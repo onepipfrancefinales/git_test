@@ -1,8 +1,16 @@
 <?php
 session_start();
-if (isset($_GET['champ'])) $champ = $_GET['champ'];
-else $champ = 0;
+if (isset($_GET['champ'])) $champ = $_GET['champ'];else $champ = 0;
 
+if (isset($_POST['pseudo'])) $testpseudo = $_POST['pseudo'];
+if (isset($_POST['mail'])) $testmail = $_POST['mail'];
+if (isset($_POST['mdp'])) $testmdp = $_POST['mdp'];
+if (isset($_POST['nom'])) $testnom = $_POST['nom'];
+
+echo "testpseudo : ".$testpseudo; echo "<br>";
+echo "testmail : ".$testmail; echo "<br>";
+echo "testmdp : ".$testmdp; echo "<br>";
+echo "testnom : ".$testnom; echo "<br>";
 $tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
 
 foreach ($tabTables as $table) {
@@ -93,13 +101,13 @@ if (!$go == "1") {
     //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
 //$tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
-$tabTables = array('phpau', 'phpab');
+$tabTables = array('phpab');
 foreach ($tabTables as $table) {
   //phpab_pronostics
   $tableMembres = $table . "_membres";
  
     mysqli_query($idconnect, ("INSERT INTO $tableMembres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, ville, pays, admin )
-                             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$pseudo', '$nom', '$pseudo', '$pseudo',  '$pseudo', '$mdp','1' )"));
+                             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$pseudo', '$nom', '$pseudo', '$pseudo',  '$testnom', '$mdp','1' )"));
 
 }
     $result = $idconnect->query("SELECT id 

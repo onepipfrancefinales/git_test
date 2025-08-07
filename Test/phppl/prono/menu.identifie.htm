@@ -1,3 +1,12 @@
+
+<?php
+echo "champLigue : ".$champLigue;echo "<br>";
+echo "gr_champ : ".$gr_champ;echo "<br>";
+if (is_numeric($gr_champ))
+$gr_champ = $gr_champ;
+
+
+?>
 <table border="1" cellpadding="0" cellspacing="0" width="100%" >
   <tr>
     <td height="23" class="prono1">
@@ -16,12 +25,7 @@
           <?php echo PRONO_MENU_BIENVENUE." ".$user_pseudo;?>
     </td>
   </tr>
-  <tr>
-    <td height="15" class="menu2 bold alignLeft">
-      &nbsp;<?php echo PRONO_MENU_POINTS; ?>
-        :&nbsp;<?php affiche_points ($user_id, $gr_champ, $idconnect);?>
-    </td>
-  </tr>
+  
   <tr>
     <td height="15" class="menu2 alignLeft">
       &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=profil&gr_champ=<?php echo $gr_champ; ?>">
@@ -47,7 +51,46 @@
     <td height="15">
     </td>
   </tr>
+ 
+    <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+          <tr>
+            <td width="15" class="alignLeft">
+              <img src="affiche_trait_jaune.gif" width="22" alt="" height="9"></td>
+              <td height="15" class="menu1 bold alignLeft">
+                  <?php echo PRONO_MENU_LES_CHAMPIONNATS; ?>
+            </td>
+          </tr>
+      </table>
+    </td>
+  </tr>
   <tr>
+    <td height="15" class="menu2 alignLeft size3">
+       <br>      
+      <span class="colorRed bold alignLeft size4">  &nbsp; Sélectionner un championnat</span>
+
+      
+      <br>  
+             <!-- Phpleague/phppro/prono/index.php-->
+              
+        <!--
+             &nbsp;<a href="../../phppro/prono/index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=11">Top 14 - Pro D2
+              </a>
+            -->
+             <br>
+            <?php 
+            
+            //echo "champLigue : ".$champLigue;echo "<br>";
+            champ_prono ( $champLigue, $gr_champ, $idconnect, $mode); ?>
+            <br>
+    </td>
+  </tr>
+  <tr>
+    <td height="13">
+    </td>
+  </tr>
+   <tr>
     <td height="23" class="prono1">
       <table class="prono" width="100%">
         <tbody>
@@ -77,6 +120,12 @@
         <?php echo PRONO_MENU_MOIS; ?>
 
         :&nbsp;<?php affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect);?>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 bold alignLeft">
+      &nbsp;<?php echo PRONO_MENU_POINTS; ?>
+        :&nbsp;<?php affiche_points ($user_id, $gr_champ, $idconnect);?>
     </td>
   </tr>
   <tr>
@@ -133,44 +182,8 @@
         </a>
     </td>
   </tr>
- <tr>
-    <td height="13">
-    </td>
-  </tr>
-  <tr>
-    <td height="23" class="prono1">
-      <table class="prono" width="100%">
-          <tr>
-            <td width="15" class="alignLeft">
-              <img src="affiche_trait_jaune.gif" width="22" alt="" height="9"></td>
-              <td height="15" class="menu1 bold alignLeft">
-                  <?php echo PRONO_MENU_LES_CHAMPIONNATS; ?>
-            </td>
-          </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td height="15" class="menu2 alignLeft size3">
-       <br>      
-      <span class="colorRed bold alignLeft">  &nbsp; Sélectionner un championnat</span>
+ 
 
-      
-      <br>  <br>
-             <!-- Phpleague/phppro/prono/index.php-->
-              
-        <!--
-             &nbsp;<a href="../../phppro/prono/index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=11">Top 14 - Pro D2
-              </a>
-            -->
-             <br>
-            <?php 
-           // if(isset($_GET['champLigue'])) $champLigue=$_GET['champLigue'];else $champLigue ="AAAA";
-          //  echo "champLigue : ".$champLigue;echo "<br>";
-            champ_prono ( $gr_champ, $idconnect, $mode); ?>
-            <br>
-    </td>
-  </tr>
 </table>
 <br>
 <?php
@@ -180,9 +193,9 @@ if ($page == "baremes") $titre = "Barèmes" ;
 elseif  ($page =="profil") $titre = "Gestion du compte";
 elseif  ($page =="aide") $titre = "Aide";
 elseif  ($page =="inscription") $titre = "Création d'un nouveau compte";
-else  $titre = nom_championnat($gr_champ, $idconnect);
+else  $titre = nom_championnat( $gr_champ, $idconnect);
 
-echo $titre;echo "<br>";
+echo $titre; echo "<br>";
 
 /********************************************/
 
