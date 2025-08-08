@@ -469,7 +469,8 @@ $totaux = $row[1] + $row[2] ;
  echo "<td class=\"blanc\">$totaux</td>  </tr>";
  $i++;
 }
-if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><br><a href=\"index.php?page=classement&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
+$champLigue= substr($gr_champ,0,2);
+if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><br><a href=\"index.php?page=classement&champLigue=$champLigue&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
 }
 
 function date_form_inscription ()

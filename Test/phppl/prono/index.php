@@ -169,7 +169,7 @@ else{$page= $_GET['page'];
 */
 //if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
 
-echo "connecte : ".$connecte;
+
 if ($page=="pronos" and $connecte=="oui") {include ("pronos1.php");}
 elseif ($page=="derniers_pronos" and $connecte=="oui") {include ("derniers_pronos.php");}
 elseif ($page=="profil" and $connecte=="oui") {include ("profil.php");}

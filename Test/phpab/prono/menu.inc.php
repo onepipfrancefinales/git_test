@@ -21,7 +21,7 @@ if (VerifSession ($user_pseudo,$user_mdp, $idconnect)=="1")
                 $user_id=$row[1];
                 */
                 $connecte="oui";
-                echo "connecte : ".$connecte;echo "<br>";
+              
                 
                 include ("menu.identifie.htm");
                  echo ("test_OK2"); echo "<br>";

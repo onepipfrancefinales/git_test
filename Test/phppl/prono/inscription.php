@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_GET['champ'])) $champ = $_GET['champ'];else $champ = 0;
-if (isset($_REQUEST['champLigue'])) $champ = $_REQUEST['champLigue'];else $champLigue = 0;
+if (isset($_REQUEST['champLigue'])) $champLigue = $_REQUEST['champLigue'];else $champLigue = 0;
 
 $tabTables = array('phpau', 'phppl', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
 if (isset($_POST['pseudo'])) $testpseudo = $_POST['pseudo'];

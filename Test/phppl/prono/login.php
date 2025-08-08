@@ -27,13 +27,13 @@ echo "pass : ".$pass;echo "<br>";
 	{
 
 		echo "test5";echo "<br>";
-   	 header("Location: /Test/phppl/prono/index.php?mode=$mode&page=erreur_login&t=0");
+   	 header("Location: /Test/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
 	}
 	elseif ($_REQUEST['user']=='' || $_REQUEST['pass']=='')
 	{
 
 		echo "test6";echo "<br>";
-	 header("Location: /Test/phppl/prono/index.php?mode=$mode&page=erreur_login&t=0");
+	 header("Location: /Test/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
 	 echo "test66";echo "<br>";
     }
 	
@@ -58,7 +58,7 @@ echo "pass : ".$pass;echo "<br>";
 
 		if($row['mot_de_passe'] != $password_crypt or mysqli_num_rows($result)=="0")
 		{
-        	header("Location: /Test/phppl/prono/index.php?mode=$mode&page=erreur_login&t=1");
+        	header("Location: /Test/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=1");
 		}
 			
 		else

@@ -1,8 +1,8 @@
 <?php
 if ($action == "supp" and !$confirm=="oui")
  {
-   echo "<table ><tr><td class=\"center colorWhite size3\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
-   echo "<a class=\"center colorWhite size3\" href=\"index.php?page=profil&amp;action=supp&amp;confirm=oui\">".ADMIN_RENS_17."</a> - <a class=\"center colorWhite size3\" href=\"index.php\">".ADMIN_RENS_18."</a></td></tr></table>";
+   echo "<table class=\"marginAuto\"><tr><td class=\"center colorWhite size3\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
+   echo "<a class=\"center colorWhite size3\" href=\"index.php?champLigue=$champLigue&page=profil&action=supp&confirm=oui\">".ADMIN_RENS_17."</a> - <a class=\"center colorWhite size3\" href=\"index.php?champLigue=$champLigue\">".ADMIN_RENS_18."</a></td></tr></table>";
  }
 
 elseif ($action == "supp" and $confirm=="oui")
@@ -190,7 +190,7 @@ echo "<td><input type=\"text\" name=\"mobile1\" value=\"$mobile1\" maxlength=\"2
          echo "<tr bgcolor=\"#FFFFFF\"><td colspan=\"2\" align=\"center\">\n";
          echo "<input type=\"hidden\" name=\"page\" value=\"profil\">\n";
          echo "<input type=\"hidden\" name=\"action\" value=\"1\">\n";
-         echo "<a href=\"index.php?page=profil&amp;action=supp\"><font face=\"Verdana\" color=\"#000000\" size=\"1\">>> ".PRONO_PROFIL_SUPP_2." <<</font></a></td></tr>\n";
+         echo "<a href=\"index.php?page=profil&action=supp&champLigue=$champLigue\"><font face=\"Verdana\" color=\"#000000\" size=\"1\">>> ".PRONO_PROFIL_SUPP_2." <<</font></a></td></tr>\n";
          echo "<tr><td colspan=\"2\" align=\"center\"><br /><input type=\"submit\" value=".ENVOI."></td></tr></table></form></td></tr></table>\n";
       echo "</table>";
  	 echo "</td></tr></table>"; 
