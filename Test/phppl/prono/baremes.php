@@ -5,7 +5,7 @@
     <td width="100%">
       <?php
 echo "baremes.php : ";
-      $resultats = $idconnect->query("SELECT pts_prono_exact, pts_prono_participation, tps_avant_prono 
+      $resultats = $idconnect->query("SELECT pts_prono_exact, pts_prono_participation, tps_avant_prono, nom
                                     FROM phppl_gr_championnats
                                     WHERE id='$gr_champ'");
       $row = mysqli_fetch_array($resultats);

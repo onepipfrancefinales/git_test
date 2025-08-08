@@ -1,7 +1,11 @@
 <?php
+
+echo "index"; echo "<br>";
+if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}
+echo "champLigue (index) : ". $champLigue; echo "<br>";
 session_start();
-//echo "index.php : user -".$_SESSION['user']; echo "<br>";
-//echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
+echo "index.php : user -".$_SESSION['user']; echo "<br>";
+echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
 
 if (isset($_REQUEST['page'])) {$page=$_REQUEST['page'];} else {$page='';}
 if (isset($_REQUEST['type'])) {$type=$_REQUEST['type'];} else {$page='';}
@@ -10,7 +14,7 @@ if (isset($_REQUEST['user_pseudo'])) {$user_pseudo=$_REQUEST['user_pseudo'];} el
 if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id='';}
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
 if (isset($_GET['page'])) $page = $_GET['page'];else {$mode='';}
-if (isset($_GET['page'])) $page = $_GET['page'];else {$mode='';}
+
 if (isset($_GET['style'])) $style = $_GET['style'];else {$mode='';}
 if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}
 
@@ -47,6 +51,9 @@ include ("avant.php");
    
 include("haut.inc.php");
 include("menu.inc.php");  // Affichage du menu identifié / non identifié
+
+ 
+
  //  echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>";
 
 ///if ($page == "profil") {
@@ -175,7 +182,7 @@ elseif ($page=="erreur_login") {include ("erreur_login.php");}
 elseif ($page=="perdu_mdp") {include ("perdu_mdp.php");}
 else {include ("accueil.htm");}
 
-      
+   
 ?>
     </td>
   </tr>

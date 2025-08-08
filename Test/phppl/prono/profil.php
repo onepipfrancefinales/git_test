@@ -44,8 +44,7 @@ else
       $result = $idconnect->query("
 				 SELECT mot_de_passe 
 				 FROM phppl_membres 
-				 WHERE id_prono='$user_id' 
-				 AND pseudo='$user_pseudo'");
+				 WHERE  pseudo='$user_pseudo'");
 				 
           while ($row=mysqli_fetch_array($result))
 			{
@@ -65,7 +64,7 @@ else
            {
              mysqli_query ($idconnect, ("UPDATE phppl_membres 
 			 SET nom_site='$site', mail='$mail', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile' 
-			 WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
+			 WHERE  pseudo='$user_pseudo'"));
              
 			 $message.="profil mis à jour";
            }
@@ -95,7 +94,7 @@ else
 				SELECT pseudo, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile  
 				FROM phppl_membres 
 				WHERE pseudo='$user_pseudo' 
-				AND id_prono = '$user_id' ");
+				 ");
 
         while ($row=mysqli_fetch_array($result))
        { 

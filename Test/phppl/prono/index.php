@@ -1,4 +1,6 @@
 <?php
+if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}
+echo "champLigue (index) : ". $champLigue; echo "<br>";							   
 session_start();
 //echo "index.php : user -".$_SESSION['user']; echo "<br>";
 //echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
@@ -11,8 +13,8 @@ if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
 if (isset($_GET['page'])) $page = $_GET['page'];else {$page='';}
 if (isset($_GET['style'])) $style = $_GET['style'];else {$style='';}
-if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='0';}
-echo "champLigue : ".$champLigue;
+
+
 if ($mode == "smart")
 {
   ?>
@@ -27,8 +29,7 @@ if ($mode == "smart")
 
     
 </table>
- <br>
-        <h2 class="center colorRed">En phase de tests</h2>
+
     
 <?php
 }
@@ -38,6 +39,8 @@ if ($mode == "smart")
 <p>&nbsp;</p>
 
 <?php 
+
+																					
 include ("avant.php");
 
  ?>
@@ -49,6 +52,7 @@ include ("avant.php");
    
 include("haut.inc.php");
 include("menu.inc.php");  // Affichage du menu identifié / non identifié
+
  //  echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>";
 
 ///if ($page == "profil") {
@@ -163,9 +167,9 @@ if (!isset($_GET['page'])) {
   include ("accueil.htm");}
 else{$page= $_GET['page'];
 */
-if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
+//if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
 
-
+echo "connecte : ".$connecte;
 if ($page=="pronos" and $connecte=="oui") {include ("pronos1.php");}
 elseif ($page=="derniers_pronos" and $connecte=="oui") {include ("derniers_pronos.php");}
 elseif ($page=="profil" and $connecte=="oui") {include ("profil.php");}
@@ -175,7 +179,7 @@ elseif ($page=="classement") {include ("classement.htm");}
 elseif ($page=="inscription") {include ("inscription.php");}
 elseif ($page=="erreur_login") {include ("erreur_login.php");}
 elseif ($page=="perdu_mdp") {include ("perdu_mdp.php");}
-else {include ("accueil.htm");}
+//else {include ("accueil.htm");}
 
       
 ?>

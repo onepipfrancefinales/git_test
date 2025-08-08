@@ -54,15 +54,12 @@ if ($champLigue == 15)
 ligue <?php echo $titre; ?></p>
 <h2 class="size6"> (EN PHASE DE TEST)</h2>
 <?php
-//echo "champLigue(pronos) : ".$champLigue; echo "<br>";
-//echo "cptePhp : ".$cptePhp;  echo "<br>";
+echo "champLigue(pronos) : ".$champLigue; echo "<br>";
+echo "cptePhp : ".$cptePhp;  echo "<br>";
+echo "affichage1";  echo "<br>";
 ?>
+
 <object data="/Test/<?php echo $cptePhp; ?>/prono/index.php?champLigue=<?php echo $champLigue; ?>"
   height="1500" width="100%">
 </object>
-
-<?php
-//require "/Phpleague/phpab/prono/index.php";
-
-
-?>
+<h2>affichage2</h2>

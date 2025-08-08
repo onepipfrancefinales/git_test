@@ -19,5 +19,6 @@ $comite=$_GET['C'];
 
 <meta http-equiv="refresh" content="0;URL=http://francefinalesrugby.franceserv.com/smart/majScores/saisie.php?comite=<?php echo $comite; ?>&journee=<?php echo $journee; ?>&codeEquipe=<?php echo $codeEquipe; ?>">
 
+
 </body>
 </html>

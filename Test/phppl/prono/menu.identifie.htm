@@ -1,7 +1,12 @@
 
 <?php
-echo "champLigue : ".$champLigue;echo "<br>";
-echo "gr_champ : ".$gr_champ;echo "<br>";
+
+echo "champLigue (menu.identifie) : ".$champLigue;echo "<br>";
+echo strlen($champLigue);echo "<br>";
+
+
+if (strlen($champLigue) > 2 ) $champLigue = substr($champLigue,0,2);
+echo "champLigue traité : ".$champLigue;echo "<br>";
 if (is_numeric($gr_champ))
 $gr_champ = $gr_champ;
 
@@ -28,21 +33,21 @@ $gr_champ = $gr_champ;
   
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=profil&gr_champ=<?php echo $gr_champ; ?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=profil&gr_champ=<?php echo $gr_champ; ?>&champLigue=<?php echo $champLigue; ?>">
           <?php echo PRONO_MENU_MON_PROFIL; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="logout.php?selection=deconnexion&mode=<?php echo $mode;?>">
-          <?php echo PRONO_MENU_DECONNEXION; ?>
+      &nbsp;<a href="logout.php?selection=deconnexion&mode=<?php echo $mode;?>&champLigue=<?php echo $champLigue;?>">
+          <?php echo PRONO_MENU_DECONNEXION; ?>  <?php echo PRONO_MENU_DECONNEXION; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?page=inscription&gr_champ=<?php echo $gr_champ;?>&mode=<?php echo $mode;?> ">
+      &nbsp;<a href="index.php?page=inscription&gr_champ=<?php echo $gr_champ;?>&mode=<?php echo $mode;?>&champLigue=<?php echo $champLigue; ?> ">
           <?php echo PRONO_MENU_INSCRIPTION; ?>
         </a>
     </td>
@@ -80,9 +85,9 @@ $gr_champ = $gr_champ;
             -->
              <br>
             <?php 
-            
-            //echo "champLigue : ".$champLigue;echo "<br>";
-            champ_prono ( $champLigue, $gr_champ, $idconnect, $mode); ?>
+            echo "-------------------";echo "<br>";
+            echo "champLigue (menu.identifie) : ".$champLigue;echo "<br>";
+           champ_prono ( $champLigue, $gr_champ, $idconnect, $mode); ?>
             <br>
     </td>
   </tr>
@@ -149,35 +154,35 @@ $gr_champ = $gr_champ;
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=<?php echo $gr_champ;?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=<?php echo $gr_champ;?>&champLigue=<?php echo $champLigue; ?>">
           <?php echo PRONO_MENU_PROCHAINE_GRILLE; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=derniers_pronos&gr_champ=<?php echo $gr_champ;?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=derniers_pronos&gr_champ=<?php echo $gr_champ;?>&champLigue=<?php echo $champLigue; ?>">
           <?php echo PRONO_MENU_DERNIERE_GRILLE; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=mes_resultats&gr_champ=<?php echo $gr_champ; ?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=mes_resultats&gr_champ=<?php echo $gr_champ; ?>&champLigue=<?php echo $champLigue; ?>">
           <?php echo PRONO_MENU_MES_RESULTATS; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>&champLigue=<?php echo $champLigue; ?>">
           <?php echo PRONO_MENU_BAREME; ?>
         </a>
     </td>
   </tr>
   <tr>
     <td height="15" class="menu2 alignLeft">
-      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>&champLigue=<?php echo $champLigue; ?>">
           <?php echo PRONO_MENU_AIDE; ?>
         </a>
     </td>

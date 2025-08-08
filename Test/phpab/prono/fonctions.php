@@ -501,13 +501,36 @@ function pseudo_admin ($gr_champ, $idconnect)
  //echo $pseudo;
 }
 
-function champ_prono ($gr_champ, $idconnect, $mode)
+function champ_prono ($champLigue, $gr_champ, $idconnect, $mode)
+
+
 {
+  echo "gr_champ (fonctions) : ".$gr_champ; echo "<br>";
+  echo "gr_champ : ".$gr_champ; echo "<br>";
+ if (is_numeric($gr_champ))
+  {
+$champLigue = $gr_champ;
+   }
+   else{
+$resultat=$idconnect->query("SELECT id
+                              FROM phpab_gr_championnats 
+                              WHERE phpab_gr_championnats.nom = '$gr_champ'
+                            ");
+
+ while ($row= mysqli_fetch_array($resultat))
+  {
+   $champLigue= $row[0];
+  }
+}
+ $minChampLigue = substr($champLigue,0,2)*10000 ;
+ $maxChampLigue = $minChampLigue + 10000;
+ echo $minChampLigue; echo "<br>";
+ echo $maxChampLigue; echo "<br>";
  $resultat=$idconnect->query("SELECT DISTINCT id, nom
                               FROM phpab_gr_championnats 
                               WHERE  phpab_gr_championnats.activ_prono='1' 
+                             AND id BETWEEN $minChampLigue AND $maxChampLigue
                               ORDER by id");
-
   while ($row= mysqli_fetch_array($resultat))
   {
     echo "&nbsp;";
@@ -517,8 +540,6 @@ function champ_prono ($gr_champ, $idconnect, $mode)
     if ($gr_champ==$row[0]){echo "</b>";}
     echo "</a><br />";
   }
-  
-
 }
 
 // Nombres d equipes dans un championnat
@@ -534,20 +555,30 @@ function nb_equipes($id_champ, $idconnect)
 
 function VerifSession ($user_pseudo,$user_mdp, $idconnect)
 {
+echo "test fonctions";echo "<br>";
+echo "user_pseudo  : " .$user_pseudo;echo "<br>";
+echo "user_mdp : " .$user_mdp;echo "<br>";
 
 if ($user_pseudo and $user_mdp)
 	{
-	   $result=$idconnect->query( "SELECT mot_de_passe, id_prono 
+	   echo "test OK fonctions";echo "<br>";
+     $result=$idconnect->query( "SELECT mot_de_passe, id_prono 
 									               FROM phpab_membres 
 									               WHERE pseudo='$user_pseudo'");
         $row = mysqli_fetch_array($result);
-        
-        if ($row["mot_de_passe"] == $user_mdp){;$a=1;}
-        else {$a=0;}
+
+        echo $row["mot_de_passe"]; echo "<br>";
+        if ($row["mot_de_passe"] == $user_mdp)
+          {$a=1;}
+        else 
+          {$a=0;}
 
 	//session_start();
 	}
-else {$a=0;}
-return ("$a");
+else {
+     echo "test KO fonctions";echo "<br>";
+  $a=0;}
+  echo $a; echo "<br>";
+return $a;
 }
 ?>

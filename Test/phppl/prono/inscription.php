@@ -1,13 +1,16 @@
 <?php
 session_start();
 if (isset($_GET['champ'])) $champ = $_GET['champ'];else $champ = 0;
+if (isset($_REQUEST['champLigue'])) $champ = $_REQUEST['champLigue'];else $champLigue = 0;
 
 $tabTables = array('phpau', 'phppl', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
 if (isset($_POST['pseudo'])) $testpseudo = $_POST['pseudo'];
 if (isset($_POST['mail'])) $testmail = $_POST['mail'];
 if (isset($_POST['mdp'])) $testmdp = $_POST['mdp'];
 if (isset($_POST['nom'])) $testnom = $_POST['nom'];
+echo "<br>";
 
+echo "champLigue (inscription.php) : ".$champLigue;echo "<br>";
 echo "testpseudo : ".$testpseudo; echo "<br>";
 echo "testmail : ".$testmail; echo "<br>";
 echo "testmdp : ".$testmdp; echo "<br>";
@@ -170,12 +173,12 @@ Sportivement</font></p>
       echo "</table>";
     } else {
       echo "<table align=\"center\">";
-      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_ECHOUE . "</font><br /><a href=\"/Phpleague/phppl/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
+      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_ECHOUE . "</font><br /><a href=\"/Test/phppl/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
       echo "</table>";
     }
   } else {
     echo "<table align=\"center\">";
-    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Phpleague/phppl/prono/index.php?page=inscription&champ=$champ\"></font></font>" . "Réessayer" . "</a></td></tr>";
+    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Test/phppl/prono/index.php?page=inscription&champ=$champ&champLigue=$champLigue\"></font></font>" . "Réessayer" . "</a></td></tr>";
     echo "</table>";
   }
 }

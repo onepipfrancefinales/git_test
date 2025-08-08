@@ -1,5 +1,8 @@
 <?php
+echo "aaaaaaaa";
 if (isset($_GET['mode'])) $mode = $_GET['mode'];
+if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];
+echo "champLigue (logout) : ".$champLigue;
 echo "logout.php";
 require ("../config.php");;
 ouverture();
@@ -14,6 +17,6 @@ setcookie("mot_de_passe","",time()-$expire,"/","");
 include ("deconnexion.htm");
 ?>
 
-<META HTTP-EQUIV="refresh"; CONTENT="0; URL=../prono/index.php?mode=<?php echo $mode; ?>">
+<META HTTP-EQUIV="refresh"; CONTENT="0; URL=../prono/index.php?mode=<?php echo $mode; ?>&champLigue=<?php echo $champLigue; ?>">
 
 

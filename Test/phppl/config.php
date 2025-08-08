@@ -1,4 +1,5 @@
 <?php
+echo "test2 (config.php) : ";
 function ouverture()
 {
 global $idconnect;
