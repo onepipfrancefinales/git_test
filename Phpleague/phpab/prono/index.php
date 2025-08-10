@@ -8,6 +8,9 @@ if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_c
 if (isset($_REQUEST['user_pseudo'])) {$user_pseudo=$_REQUEST['user_pseudo'];} else {$user_pseudo='';}
 if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id='';}
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
+echo "<br>";
+echo "user_id0 (index) : ".$user_id; echo "<br>";
+
 if ($mode == "smart")
 {
   ?>
@@ -31,8 +34,7 @@ if ($mode == "smart")
 
 <?php 
 
-echo "user_pseudo : ".$user_pseudo; echo "<br>";
-echo "user_id : ".$user_id; echo "<br>";
+
 echo "gr_champ : ".$gr_champ; echo "<br>";
 echo "pageA : ".$page; echo "<br>";
 echo "<br>";
@@ -157,7 +159,7 @@ else{$page= $_GET['page'];
 */
 if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
 
-
+echo "user_id (index) : ".$user_id; echo "<br>";
 if ($page=="pronos" and $connecte=="oui") {include ("pronos1.php");}
 elseif ($page=="derniers_pronos" and $connecte=="oui") {include ("derniers_pronos.php");}
 elseif ($page=="profil" and $connecte=="oui") {include ("profil.php");}

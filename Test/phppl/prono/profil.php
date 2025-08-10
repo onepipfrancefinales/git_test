@@ -50,8 +50,8 @@ else
 			{
 			 $mot_de_passe_correct=$row["0"];
 			}
-          echo $user_id;
-		  echo $user_pseudo;
+          echo "user_id (profil) : ".$user_id;
+		      echo "user_pseudo (profil) : ".$user_pseudo;
 		  $ancien_mdp_crypt = md5($ancien_mdp);
 
           $date_naissance=$annee."-".$mois."-".$jour;

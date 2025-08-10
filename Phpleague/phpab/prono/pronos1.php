@@ -53,6 +53,8 @@ function ValideGrille(tot) {
 </SCRIPT>
 <?php
 
+echo "user_id0 (prono1) : ".$user_id; echo "<br>"; 
+
 if (isset($debut)) $debut = $debut;
 else $debut = 0;
 
@@ -132,9 +134,14 @@ if ($action == "reset") {
   }
 }
 
+///********************  */ Enregistrement des pronostics *************************
+
 if ($action == "valid_pronos") {
 
-
+echo "enregistrement";
+echo "id (prono1) : ".$id; echo "<br>"; 
+echo "user_id (prono1) : ".$user_id; echo "<br>"; 
+echo "<br>";
   for ($i = 1; $i <= $_REQUEST['nb_fiche']; $i++) {
     $nom_f_prono = "r_$i";
     $nom_id_match = "id_match_$i";
@@ -187,7 +194,8 @@ if ($action == "valid_pronos") {
       while ($row = mysqli_fetch_array($resultat)) {
         $id = $row["id"];
       }
-
+echo "------------------------" ;  echo "<br>";   
+echo "id (prono1) : ".$id; echo "<br>"; 
       if ($nb_prono == "1") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
           mysqli_query($idconnect, ("UPDATE phpab_pronostics 
@@ -297,12 +305,18 @@ if ($action == "valid_pronos") {
 
     echo "<tr><td class=\"blanc center\">$row[4]</td>";
     echo "<td class=\"blanc\">$date</td>";
+   if ($id_dom > 90000000) {
+    echo "<td align=\"right\" class=\"colorYellow\">$clubs_nom II</td>";
+   }
+   else
+     {
     echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
+  }
 
     if ($ecart_heures >= "0") {
       $x++;
       echo "<td>";
-      echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
+     echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
 ?><input type="hidden" value="1" name="r_<?php echo $x; ?>">
 
       <table width="100">
@@ -377,8 +391,13 @@ if ($action == "valid_pronos") {
             echo "</td></tr></table>";
             echo "</td></tr></table></td>";
           }
-
+ if ($id_ext > 90000000) {
+          echo "<td class=\"colorYellow\">$clubs_nom1 II</td><td align=center>";
+ }
+ else
+ {
           echo "<td class=\"blanc\">$clubs_nom1</td><td align=center>";
+ }
 
           if ($ecart_heures > 48) echo "<div class=\"blanc\">$ecart_jours jours</div>";
           elseif ($ecart_heures > 0) echo "<div class=\"blanc\">$ecart_heures h</div>";

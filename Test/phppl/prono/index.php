@@ -1,6 +1,5 @@
 <?php
-if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}
-echo "champLigue (index) : ". $champLigue; echo "<br>";							   
+if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}					   
 session_start();
 //echo "index.php : user -".$_SESSION['user']; echo "<br>";
 //echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
@@ -169,7 +168,7 @@ else{$page= $_GET['page'];
 */
 //if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
 
-
+//echo "user_id (index) : ".$user_id; echo "<br>";
 if ($page=="pronos" and $connecte=="oui") {include ("pronos1.php");}
 elseif ($page=="derniers_pronos" and $connecte=="oui") {include ("derniers_pronos.php");}
 elseif ($page=="profil" and $connecte=="oui") {include ("profil.php");}

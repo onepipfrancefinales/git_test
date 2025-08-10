@@ -1,12 +1,12 @@
 
 <?php
-var_dump($champLigue);echo "<br>";
-echo "champLigue (menu.identifie) : ".$champLigue;echo "<br>";
-echo strlen($champLigue);echo "<br>";
-
-
+//var_dump($champLigue);echo "<br>";
+echo "champLigue (menu.identifie) : ".$champLigue;
+//echo strlen($champLigue);echo "<br>";
 if (strlen($champLigue) > 2 ) $champLigue = substr($champLigue,0,2);
+echo "  ---  ";
 echo "champLigue traité : ".$champLigue;echo "<br>";
+
 if (is_numeric($gr_champ))
 $gr_champ = $gr_champ;
 
@@ -85,9 +85,7 @@ $gr_champ = $gr_champ;
             -->
              <br>
             <?php 
-            echo "-------------------";echo "<br>";
-            echo "champLigue (menu.identifie) : ".$champLigue;echo "<br>";
-           champ_prono ( $champLigue, $gr_champ, $idconnect, $mode); ?>
+                 champ_prono ( $champLigue, $gr_champ, $idconnect, $mode); ?>
             <br>
     </td>
   </tr>
@@ -104,7 +102,7 @@ $gr_champ = $gr_champ;
               <img src="affiche_trait_jaune.gif" alt="" width="22" height="9">
             </td>
             <td height="15" class="menu1 bold alignLeft">
-                  <?php echo PRONO_MENU_MES_CLASSEMENTS; ?>
+                  <?php echo PRONO_MENU_MES_CLASSEMENTS; ?><span class="size2 italic"> (Séletionner un championnat au préalable)</span> 
             </td>
           </tr>
         </tbody>
@@ -145,7 +143,7 @@ $gr_champ = $gr_champ;
             <td width="15" class="alignLeft">
               <img src="affiche_trait_jaune.gif" alt="" width="22" height="9"></td>
             <td class="menu1 bold alignLeft">
-                  <?php echo PRONO_MENU_MES_PRONOS; ?>
+                  <?php echo PRONO_MENU_MES_PRONOS; ?><span class="size2 italic"> (Séletionner un championnat au préalable)</span> 
             </td>
           </tr>
         </tbody>

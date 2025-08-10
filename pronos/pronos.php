@@ -41,25 +41,14 @@ if ($champLigue == 15)
      $titre = "Provence Alpes Côte d'Azur";
     }
 
-
-
-
-
-
-
-
 ?>
 <p class="colorRed size7 bold">
   Championnats des pronostiqueurs <br>
 ligue <?php echo $titre; ?></p>
 <h2 class="size6"> (EN PHASE DE TEST)</h2>
-<?php
-echo "champLigue(pronos) : ".$champLigue; echo "<br>";
-echo "cptePhp : ".$cptePhp;  echo "<br>";
-echo "affichage1";  echo "<br>";
-?>
+
 
 <object data="/Test/<?php echo $cptePhp; ?>/prono/index.php?champLigue=<?php echo $champLigue; ?>"
   height="1500" width="100%">
 </object>
-<h2>affichage2</h2>
+

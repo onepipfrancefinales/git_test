@@ -9,12 +9,13 @@ if (isset($_POST['mail'])) $testmail = $_POST['mail'];
 if (isset($_POST['mdp'])) $testmdp = $_POST['mdp'];
 if (isset($_POST['nom'])) $testnom = $_POST['nom'];
 echo "<br>";
-
+/*
 echo "champLigue (inscription.php) : ".$champLigue;echo "<br>";
 echo "testpseudo : ".$testpseudo; echo "<br>";
 echo "testmail : ".$testmail; echo "<br>";
 echo "testmdp : ".$testmdp; echo "<br>";
 echo "testnom : ".$testnom; echo "<br>";
+*/
 $tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');								   
 foreach ($tabTables as $table) {
   //phppl_pronostics

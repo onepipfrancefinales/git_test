@@ -438,7 +438,7 @@ if ($type=="hebdo")
        while ($row=mysqli_fetch_array($result))
        {
        $row[1]=addslashes($row[1]);
-       mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
+       mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation,  type) 
 								                  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
        }
 }
@@ -463,14 +463,28 @@ $totaux = $row[1] + $row[2] ;
  echo "<tr><td class=\"blanc\">$i</td>";
 
  if ($user_pseudo==$row[0]) echo "<td class=\"blanc bold\">$row[0]</td>";
- else  echo "<td class=\"blanc\">$row[0]</td>";
+ else  
+ echo "<td class=\"blanc\">$row[0]</td>";
  echo "<td class=\"blanc\">$row[1]</td>";
  echo "<td class=\"blanc\">$row[2]</td>";
- echo "<td class=\"blanc\">$totaux</td>  </tr>";
+ echo "<td class=\"blanc\">$totaux</td>" ; 
+ echo "<td class=\"blanc\">";club($row[0], $idconnect); echo "</td>  </tr>";
  $i++;
 }
 $champLigue= substr($gr_champ,0,2);
 if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><br><a href=\"index.php?page=classement&champLigue=$champLigue&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
+}
+
+function club($pseudo, $idconnect){
+
+  $result=$idconnect->query("SELECT ville
+                              FROM phppl_membres
+                              WHERE pseudo = '$pseudo' ");
+
+   while ($row = mysqli_fetch_array($result)) {
+    $club = $row[0]; 
+   }
+echo $club;
 }
 
 function date_form_inscription ()
@@ -504,8 +518,8 @@ function pseudo_admin ($gr_champ, $idconnect)
 
 function champ_prono ($champLigue, $gr_champ, $idconnect, $mode)
 {
-  echo "champLigue (fonctions) : ".$gr_champ; echo "<br>";
-  echo "gr_champ (fonctions) : ".$gr_champ; echo "<br>";
+//  echo "champLigue (fonctions) : ".$gr_champ; echo "<br>";
+//  echo "gr_champ (fonctions) : ".$gr_champ; echo "<br>";
   
 if (is_numeric($gr_champ))
   {$champLigue = $gr_champ; }
@@ -516,8 +530,8 @@ if (is_numeric($gr_champ))
  $maxChampLigue = $minChampLigue + 10000;
  $minChampLigue = substr($champLigue,0,2)*10000;
  $maxChampLigue = $minChampLigue + 10000;
- echo $minChampLigue; echo "<br>";
- echo $maxChampLigue; echo "<br>";
+// echo $minChampLigue; echo "<br>";
+// echo $maxChampLigue; echo "<br>";
  $resultat=$idconnect->query("SELECT DISTINCT id, nom
                               FROM phppl_gr_championnats 
                               WHERE  phppl_gr_championnats.activ_prono='1' 
