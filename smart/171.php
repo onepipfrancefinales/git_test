@@ -81,12 +81,12 @@ nomLigue2($bddComite, $champ, $bdd);
 					</td>
 				</tr>
 			</table>
-			<table class="width100PC">
+			<table class="width100PC backgroundWhite">
 				<tr>
-					<td>
+					<td >
 
-						
-					<hr class="backgroundWhite" style="height:25px;margin-top:0px; margin-bottom:0px; border-color:white;border-style:solid; border-width:0px;">
+						<br>
+				
 					<?php
 						$champLigue = substr($champ, 0, 2) * 10;
 						$champDiv = substr($champ, -3);

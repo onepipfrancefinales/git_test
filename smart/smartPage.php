@@ -10,6 +10,7 @@ if (isset($_GET['sommaire'])) $sommaire = $_GET['sommaire'];
 if (isset($_GET['lettre'])) $lettre = $_GET['lettre'];
 if (isset($_GET['chanson'])) $chanson = $_GET['chanson'];
 if (isset($_GET['pays'])) $pays = $_GET['pays'];
+if (isset($_GET['pronos'])) $pronos = $_GET['pronos'];
 if (isset($_GET['variable_1'])) $sigle = $_GET['variable_1'];
 if (isset($_GET['variableLettre'])) $variableLettre = $_GET['variableLettre'];
 if (isset($_GET['suiviLigue'])) $suiviLigue = $_GET['suiviLigue'];

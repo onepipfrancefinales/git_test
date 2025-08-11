@@ -12,9 +12,11 @@
       <br>
       <p class="size4">
         <img style="display: block;margin: auto;background-color: hsl(0, 0%, 90%); " alt="lien carte" src="https://www.icone-gif.com/gif/webmaster/new/new-gif-007.gif">
-        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php?affichage=0"><span class="ColorRed bold size5"> Championnats de France 2025</span></a><br>
-    
-        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php?affichage=0">Suivi des équipes engagées en championnat de france<br >(par ligue ou par anciens comités territoriaux)</a>
+      
+ <a class="size5"  style="text-decoration: none" href="/pronos/page_pronos.php?division=0&champLigue=11"> Pronostiquez
+        sur vos <br>propres championnats
+      </a>
+      
       </p>
       <br>
     </td>
@@ -139,9 +141,9 @@
       sur vos <br>propres championnats
     </a>
 -->
-      <a href="/pronos/page_pronos.php"> Pronostiquez<br>
-        sur vos <br>propres championnats
-      </a>
+     <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php?affichage=0"><span class="ColorRed bold size5"> Championnats de France 2025</span></a><br>
+    
+        <a  style="text-decoration: none" class="colorBlack" href="dossiers/actualites/pagesSuiviChampFrance.php?affichage=0">Suivi des équipes engagées en championnat de france<br >(par ligue ou par anciens comités territoriaux)</a>
     </td>
   </tr>
   <tr>

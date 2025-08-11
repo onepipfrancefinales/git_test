@@ -72,7 +72,7 @@
     </tr>
      <tr>
         <td colspan="2" class="size5 background003366 bold borderWidth1 width50PC">
-            <a class="colorWhite" href="../Test/phppl/prono/index.php?mode=smart"> Championnats des pronostiqueurs</a>
+            <a class="colorWhite" href="smartPage.php?page=pronos&mode=smart"> Championnats des pronostiqueurs</a>
         </td>
     </tr>
     
@@ -81,7 +81,7 @@
             <br>
             
             <p class="size5">
-                <a class="colorBlack" href="../Test/phppl/prono/index.php?mode=smart">Venez pronostiquer <br>sur vos championnats régionaux  <br> 
+                <a class="colorBlack" href="smartPage.php?page=pronos&mode=smart">Venez pronostiquer <br>sur vos championnats régionaux  <br> 
                 </a><br>
             </p>
 <!--

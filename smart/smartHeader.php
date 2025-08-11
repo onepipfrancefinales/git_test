@@ -24,7 +24,7 @@ switch ($page) {
         break;
     /* ligues */
 
-    case "pronostics":
+    case "pronos":
         $titre = "Ligues régionales <br> Concours de pronostiques";
         break;
     case  "ligues":
