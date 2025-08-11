@@ -36,7 +36,12 @@ function affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ)
 {
   $query="SELECT id_prono
           FROM phpl_clmnt_pronos, phpl_membres
-          WHERE phpl_membres.id=phpl_clmnt_pronos.id_membre AND id_champ='$gr_champ' AND type='mensuel_en_cours' AND id_champ='$gr_champ' ORDER by points desc, participation desc, phpl_membres.pseudo";
+          WHERE phpl_membres.id=phpl_clmnt_pronos.id_membre 
+          AND id_champ='$gr_champ' 
+          AND type='mensuel_en_cours' 
+          AND id_champ='$gr_champ' 
+          ORDER by points desc, participation 
+          desc, phpl_membres.pseudo";
   $result=mysql_query($query) or die (mysql_error());
   $i = "1";
   while ($row=mysql_fetch_array($result))
@@ -78,7 +83,11 @@ function affiche_clmnt_mensuel_30_jours ($user_id, $gr_champ)
 
 function affiche_clmnt_mensuel_hebdo ($user_id, $gr_champ)
 {
-  $query="SELECT id_prono FROM phpl_clmnt_pronos, phpl_membres WHERE phpl_membres.id=phpl_clmnt_pronos.id_membre AND id_champ='$gr_champ' AND type='hebdo' AND id_champ='$gr_champ' ORDER by points desc, participation desc, phpl_membres.pseudo";
+  $query="SELECT id_prono FROM phpl_clmnt_pronos, phpl_membres
+   WHERE phpl_membres.id=phpl_clmnt_pronos.id_membre 
+   AND id_champ='$gr_champ' AND type='hebdo' 
+   AND id_champ='$gr_champ' 
+   ORDER by points desc, participation desc, phpl_membres.pseudo";
   $result=mysql_query($query) or die (mysql_error());
   $i = "1";
   while ($row=mysql_fetch_array($result))

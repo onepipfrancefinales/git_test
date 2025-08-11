@@ -96,7 +96,7 @@ function affiche_clmnt_mensuel_30_jours ($user_id, $gr_champ, $idconnect)
   { if ($row[0]==$user_id){$class=$i;}
     $i++;
   }
- if (!isset($class)) {$clmnt=PRONO_CLASSEMENT_NON_CLASSE;}
+ if (!isset($class)) {echo PRONO_CLASSEMENT_NON_CLASSE;}
  else
   {
   if ($class=="1"){print $class; echo PRONO_CLASSEMENT_PREMIER;}
@@ -374,7 +374,7 @@ if ($type=="mensuel_en_cours")
                               WHERE id_champ='$gr_champ' 
                               AND type='mensuel_en_cours'"));
 
-   $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+   $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
                               FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
                               WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
                               AND phppl_gr_championnats.id='$gr_champ'
@@ -400,7 +400,7 @@ if ($type=="mensuel_30_jours")
                               WHERE id_champ='$gr_champ' 
                               AND type='mensuel_30_jours'"));
 
-   $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+   $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
                               FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
                               WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
                               AND phppl_gr_championnats.id='$gr_champ'
@@ -421,26 +421,41 @@ if ($type=="mensuel_30_jours")
 // classement hebdomadaire
 if ($type=="hebdo")
 {
+
+
    mysqli_query($idconnect, ("DELETE FROM phppl_clmnt_pronos 
                               WHERE id_champ='$gr_champ' 
                               AND type='hebdo'"));
-
-   $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+/*
+   $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) , SUM(participation) as participations
                               FROM phppl_membres, phppl_pronostics, phppl_matchs, phppl_gr_championnats
                               WHERE phppl_pronostics.id_champ=phppl_gr_championnats.id
                               AND phppl_gr_championnats.id='$gr_champ'
                               AND id_membre=phppl_membres.id
                               AND phppl_matchs.id=id_match
-                              AND DATE_ADD(date_reelle, INTERVAL 7 DAY) >= NOW()
+                              AND DATE_ADD( phppl_matchs.date_reelle, INTERVAL 7 DAY) >= NOW()
                               GROUP by pseudo
-                              ORDER by total, participations");
+                              ORDER by  participations");
+*/
+
+ $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) , SUM(participation) as participations
+                              FROM phppl_membres, phppl_pronostics, phppl_matchs
+                              WHERE phppl_pronostics.id_membre=phppl_membres.id
+                               AND phppl_pronostics.id_champ ='$gr_champ'
+                              AND phppl_matchs.id=id_match
+                              AND DATE_ADD( phppl_matchs.date_reelle, INTERVAL 7 DAY) >= NOW()
+                              GROUP by pseudo
+                              ORDER by  participations");
 
        while ($row=mysqli_fetch_array($result))
        {
+  
        $row[1]=addslashes($row[1]);
        mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation,  type) 
 								                  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
-       }
+      
+    }
+       
 }
 
 if (isset($_REQUEST['complet'])) {$complet=$_REQUEST['complet'];} else {$complet='';}

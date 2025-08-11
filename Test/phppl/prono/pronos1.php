@@ -134,10 +134,10 @@ if ($action == "reset") {
 
 if ($action == "valid_pronos") {
 
-echo "enregistrement";echo "<br>"; 
-echo "id (prono1) : ".$id; echo "<br>"; 
-echo "user_id (prono1) : ".$user_id; echo "<br>"; 
-echo "<br>";
+//echo "enregistrement";echo "<br>"; 
+//echo "id (prono1) : ".$id; echo "<br>"; 
+//echo "user_id (prono1) : ".$user_id; echo "<br>"; 
+//echo "<br>";
   for ($i = 1; $i <= $_REQUEST['nb_fiche']; $i++) {
     $nom_f_prono = "r_$i";
     $nom_id_match = "id_match_$i";
@@ -235,7 +235,7 @@ echo "id (prono1) : ".$id; echo "<br>";
   include("pronos.htm");
 
   $resultat = $idconnect->query("
-			 SELECT phppl_clubs.nom, CLEXT.nom, phppl_matchs.id, phppl_matchs.date_reelle, phppl_journees.numero, phppl_matchs.id_equipe_dom,phppl_matchs.id_equipe_ext
+			 SELECT phppl_clubs.nom, CLEXT.nom, phppl_matchs.id, phppl_matchs.date_reelle, phppl_journees.numero, phppl_matchs.id_equipe_dom, phppl_matchs.id_equipe_ext
 			 FROM phppl_clubs, phppl_clubs as CLEXT, phppl_matchs, phppl_journees, phppl_equipes, phppl_equipes as EXT, phppl_gr_championnats
 			 WHERE phppl_clubs.id=phppl_equipes.id_club
 			 AND CLEXT.id=EXT.id_club
@@ -262,7 +262,8 @@ echo "id (prono1) : ".$id; echo "<br>";
   while ($row = mysqli_fetch_array($resultat) and $i < $nb_matchs) {
     $clubs_nom = stripslashes($row[0]);
     $clubs_nom1 = stripslashes($row[1]);
-
+    $id_dom = $row[5];
+    $id_ext = $row[6];
 
     $resultat2 = $idconnect->query(" SELECT pronostic 
 									   FROM phppl_pronostics, phppl_membres 

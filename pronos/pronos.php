@@ -43,7 +43,7 @@ if ($champLigue == 15)
 
 ?>
 <p class="colorRed size7 bold">
-  Championnats des pronostiqueurs <br>
+  Concours pronostics <br>
 ligue <?php echo $titre; ?></p>
 <h2 class="size6"> (EN PHASE DE TEST)</h2>
 

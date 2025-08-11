@@ -51,7 +51,7 @@ echo "<br />";
 		}
 
 		$result=$idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phppl_membres, phppl_pronostics, phppl_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phppl_membres.id
@@ -70,7 +70,7 @@ echo "<br />";
 		}
 
 		$result = $idconnect->query("
-					SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+					SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 					FROM phppl_membres, phppl_pronostics, phppl_matchs
 					WHERE id_champ='$gr_champ'
 					AND id_membre=phppl_membres.id
@@ -88,7 +88,7 @@ echo "<br />";
 		}
 
 		$result = $idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phppl_membres, phppl_pronostics, phppl_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phppl_membres.id
