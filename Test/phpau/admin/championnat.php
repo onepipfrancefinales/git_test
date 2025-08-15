@@ -85,17 +85,17 @@ $id_joueur = isset($_POST['id_joueur']) ? $_POST['id_joueur'] : NULL;
 
 if ($action2=="creer" and $saison and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phpau_saisons (annee) values ('$saison')")) ;
+  mysqli_query($idconnect, ("INSERT INTO phpau_saisons (annee) values ('$saison')"));
 }
 
 if ($action2=="creer" and $division and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phpau_divisions (nom) values ('$division')")) ;
+  mysqli_query($idconnect, ("INSERT INTO phpau_divisions (nom) values ('$division')"));
 }
 
 if ($action3=="creer" and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phpau_championnats (id_division, id_saison) values ('$division','$saison')")) ;
+  mysqli_query($idconnect, ("INSERT INTO phpau_championnats (id_division, id_saison) values ('$division','$saison')"));
 }
 
 
@@ -119,12 +119,12 @@ if ($confirm=="ok" and $champ and $action=="supp")
   //$resultats=mysql_query($requete);
      while($row = mysqli_fetch_array($resultats))
       {
-        mysqli_query($idconnect, ("DELETE FROM phpau_matchs where id_equipe_dom='$row[0]' ")) ;
+        mysqli_query($idconnect, ("DELETE FROM phpau_matchs where id_equipe_dom='$row[0]' "));
         mysqli_query($idconnect, ("DELETE FROM phpau_matchs where id_equipe_ext='$row[0]' ")) ;
       }
-    mysqli_query($idconnect, ("DELETE FROM phpau_championnats where id='$champ' ")) ;
-    mysqli_query($idconnect, ("DELETE FROM phpau_journees WHERE  id_champ = '$champ'"));
-    mysqli_query($idconnect, ("DELETE FROM phpau_equipes WHERE id_champ ='$champ' "));
+   mysqli_query($idconnect, ("DELETE FROM phpau_championnats where id='$champ' "));
+   mysqli_query($idconnect, ("DELETE FROM phpau_journees WHERE  id_champ = '$champ'"));
+   mysqli_query($idconnect, ("DELETE FROM phpau_equipes WHERE id_champ ='$champ' "));
    mysqli_query($idconnect, ("DELETE FROM phpau_parametres WHERE id_champ ='$champ' "));
 
 }

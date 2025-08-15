@@ -26,7 +26,8 @@
             <tr>
               <td align="center" class=phpca6 colspan="4"><b><?php echo ADMIN_CHAMP_CREER_3; ?></b></td>
             </tr>
-              <td class=phpca3 align=right><form method="post"  action=""><?php echo ADMIN_GR_CHAMP_CREER_1; ?> :</td>
+              <td 
+              class=phpca3 align=right><form method="post"  action=""><?php echo ADMIN_GR_CHAMP_CREER_1; ?> :</td>
               <td class=phpca3 align=left>
                 <input type="texte" name="nom_group" size="25" maxlength="50">
               </td>
@@ -38,9 +39,6 @@
                 </form>
               </td>
              </tr>
-
-
-
           </table><br /><br />
           
 

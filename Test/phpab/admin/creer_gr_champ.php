@@ -23,7 +23,7 @@
             <tr>
               <td align="center" class=phpab6 colspan="4"><b>
                 
-                <?php echo ADMIN_CHAMP_CREER_3; ?></b></td>
+              <?php echo ADMIN_CHAMP_CREER_3; ?></b></td>
             </tr>
               <td class=phpab3 align=right><form method="post"  action=""><?php echo ADMIN_GR_CHAMP_CREER_1; ?> :</td>
               <td class=phpab3 align=left>

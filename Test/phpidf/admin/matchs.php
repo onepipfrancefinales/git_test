@@ -187,7 +187,7 @@ for ($counter=$nb_rencontres; $counter>0 ; $counter=$counter-1 ) // Nb de rencon
         $query = "SELECT DISTINCT phpidf_clubs.nom, phpidf_equipes.id FROM phpidf_clubs, phpidf_equipes
                   WHERE phpidf_equipes.id_champ='$champ' AND phpidf_clubs.id=phpidf_equipes.id_club ORDER BY phpidf_clubs.nom";
 
-      //  $result=mysql_query($query) or die(mysql_error());
+     //   $result=mysql_query($query) or die(mysql_error());
 		/*
         while ($row = mysql_fetch_array($result))
                 {

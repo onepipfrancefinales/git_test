@@ -1,42 +1,28 @@
-<?php
-require "../../Phpleague/phpau/config2.php";
+<?php 
+require '../../Phpleague/phpau/config2.php';
 require '../../Phpleague/phpau/admin/fonctions.php';
-include("../../Phpleague/phpau/lang/lang_fr.php");
-include("../../../fichierConfig.php");
+include '../../Phpleague/phpau/lang/lang_fr.php';
+include '../../fichierConfig.php';
 ouverture();
-
-
-
-
 
 echo "<br />";
 echo "champRecup : ".$champRecup;
 echo "<br />";
 echo "<hr />";
-if (isset($champRecup)) $champRecup=$champRecup; else $champRecup=0;
 
-echo "champRecup genererSansIhm : ".$champRecup;echo "<br />";
-//$tableauARA1 = array(100171, 100172, 100173, 100174 );
-//$tableauARA2 = array(100181, 100182, 100183, 100184, 100185, 100186);
-//$tableauARA3 = array(100191, 100192, 100193, 100194, 100195, 100196);
-//$tableauRES_ARA1= array(100271, 100272, 100273, 100274);
-//$tableauRES_ARA2= array(109181, 109182, 109183, 109184, 109185, 109186);
-
-	if ($champRecup == 100171) $tableau = array(100171, 100172, 100173, 100174);
-elseif ($champRecup == 100181) $tableau = array (100181, 100182, 100183, 100184, 100185, 100186);
-elseif ($champRecup == 100191) $tableau = array(100191, 100192, 100193, 100194, 100195, 100196);
-elseif ($champRecup == 100271) $tableau = array(100271, 100272, 100273, 100274);
-elseif ($champRecup == 109181) $tableau = array(109181, 109182, 109183, 109184, 109185, 109186);
+	if ($champRecup == 110171) {$tableau = array(110171, 110172, 110181,  110191, 110192, 110193, 110271, 110272, 119181);}	//BFC
+elseif ($champRecup == 120171) { $tableau = array(120171, 120181, 120191, 120192, 120271, 129181);} //BRE
+elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130191, 130192, 130271);}// CVL
+elseif ($champRecup == 160171) { $tableau = array(160171, 160181, 160182, 160191, 160192,160271, 169181,169182);}	//HDF
+elseif ($champRecup == 210171) { $tableau = array(210171, 210181, 210191,210271);} // PDL
 
 
-//for ($champDiv = $champRecup ; $champDiv < 220 ; $champDiv=$champDiv+10)
 
+
+//for ($champ =$champRecup; $champ <$champRecup+8; $champ++)
 foreach ($tableau as $champ)
-{	
-	//echo $champDiv;echo "<br />";
-	//for ($champ =$champDiv; $champ <$champDiv+8; $champ++)
-	//{	
-	echo $champ;echo "<br />";
+{
+
  affich_champ ($champ, $idconnect); 
 
 	include ("tps1.php3"); 
@@ -128,8 +114,8 @@ if ($nb_saving=$max*$nb_equipes)
 	 echo ADMIN_GRAPH_4;
 	 echo "<br/>";
 	}
-	//}
 }
+
 ?>
 <!--
 </td></tr></table>

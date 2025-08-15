@@ -19,17 +19,52 @@
 
 function affich_championnats ($champ, $action, $idconnect)
 {
-
-//else{
-  //$valLigueMin= $champ;
- // $valLigueMax= $valLigueMin+10;
- // }
+ global  $nomLigue;
+  if ($champ >= 100000 and $champ < 110000) {
+    $valLigueMin = 100000;
+    $valLigueMax = 110000;
+  } elseif ($champ >= 110000 and $champ < 120000) {
+    $valLigueMin = 110000;
+    $valLigueMax = 120000;
+  } elseif ($champ >= 120000 and $champ < 130000) {
+    $valLigueMin = 120000;
+    $valLigueMax = 130000;
+  } elseif ($champ >= 130000 and $champ < 140000) {
+    $valLigueMin = 130000;
+    $valLigueMax = 140000;
+  } elseif ($champ >= 150000 and $champ < 160000) {
+    $valLigueMin = 150000;
+    $valLigueMax = 160000;
+  } elseif ($champ >= 160000 and $champ < 170000) {
+    $valLigueMin = 160000;
+    $valLigueMax = 170000;
+  } elseif ($champ >= 170000 and $champ < 180000) {
+    $valLigueMin = 170000;
+    $valLigueMax = 180000;
+  } elseif ($champ >= 180000 and $champ < 190000) {
+    $valLigueMin = 180000;
+    $valLigueMax = 190000;
+  } elseif ($champ >= 190000 and $champ < 200000) {
+    $valLigueMin = 190000;
+    $valLigueMax = 200000;
+  } elseif ($champ >= 200000 and $champ < 210000) {
+    $valLigueMin = 200000;
+    $valLigueMax = 210000;
+  } elseif ($champ >= 210000 and $champ < 220000) {
+    $valLigueMin = 210000;
+    $valLigueMax = 220000;
+  } elseif ($champ >= 220000 and $champ < 230000) {
+    $valLigueMin = 220000;
+    $valLigueMax = 230000;
+  }
   $resultats=$idconnect->query("SELECT phpau_championnats.id, phpau_divisions.nom, phpau_saisons.annee 
             FROM phpau_championnats, phpau_divisions, phpau_saisons 
             WHERE phpau_championnats.id_division=phpau_divisions.id
             AND phpau_championnats.id_saison=phpau_saisons.id 
+			AND	phpau_divisions.id between $valLigueMin  and $valLigueMax 
 			ORDER BY id, nom");
-
+  
+  
   $i=0;
     while ($row = mysqli_fetch_array($resultats))
       {
@@ -63,7 +98,7 @@ function affich_championnats ($champ, $action, $idconnect)
 
         echo " $gras_1<a href=\"?page=championnat&action=equipes&champ=$row[0]\">[".EQUIPE."]</a>$gras_fin";
         echo " $gras_2<a href=\"?page=championnat&action=dates&champ=$row[0]\">[".DATE."]</a>$gras_fin";
-      //  echo " $gras_3<a href=\"?page=championnat&action=matchs&champ=$row[0]\">[".MATCH."]$gras_fin</a>";
+     //   echo " $gras_3<a href=\"?page=championnat&action=matchs&champ=$row[0]\">[".MATCH."]$gras_fin</a>";
         echo " $gras_4<a href=\"?page=championnat&action=parametres&champ=$row[0]\">[".PARAMETRE."]$gras_fin</a>";
         echo " $gras_5<a href=\"?page=championnat&action=resultats&champ=$row[0]\">[".RESULT."]$gras_fin</a>";
         echo " $gras_7<a href=\"?page=championnat&action=generer&champ=$row[0]\">[".GENERER."]$gras_fin</a>";
@@ -110,7 +145,7 @@ function affich_championnatsMAJ ($champ, $action, $idconnect)
        // echo " $gras_1<a href=\"?page=championnat&action=equipes&champ=$row[0]\">[".EQUIPE."]</a>$gras_fin";
        //echo " $gras_2<a href=\"?page=championnat&action=dates&champ=$row[0]\">[".DATE."]</a>$gras_fin";
        // echo " $gras_3<a href=\"?page=championnat&action=matchs&champ=$row[0]\">[".MATCH."]$gras_fin</a>";
-        //echo " $gras_4<a href=\"?page=championnat&action=parametres&champ=$row[0]\">[".PARAMETRE."]$gras_fin</a>";
+       //echo " $gras_4<a href=\"?page=championnat&action=parametres&champ=$row[0]\">[".PARAMETRE."]$gras_fin</a>";
        // echo " $gras_5<a href=\"?page=championnat&action=resultats&champ=$row[0]\">[".RESULT."]$gras_fin</a>";
 		echo " <b><a href=\"index6.php?page=championnat&action=generer&champ=$champ\">[".GENERER."]</b></a>";
 		echo "</tr>";
@@ -120,10 +155,13 @@ function affich_championnatsMAJ ($champ, $action, $idconnect)
 }
 
 
-function affich_gr_championnats ($gr_champ, $action, $idconnect)
+function affich_gr_championnats ($ligue, $gr_champ, $action, $idconnect)
 {
+
+  $ligueFin = $ligue + 10000;
    $resultats=$idconnect->query("  SELECT DISTINCT id, nom 
 								   FROM phpau_gr_championnats 
+                   WHERE id BETWEEN '$ligue' AND '$ligueFin'
 								   ORDER by id desc");
 
   $i=0;
@@ -148,9 +186,12 @@ function affich_gr_championnats ($gr_champ, $action, $idconnect)
         echo "<td class='$class'>$row[1]</td>";
         echo "<td class='$class' align=\"right\" width=\"75%\">";
 
-        echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
-     //   echo " $gras_2<a href=\"?page=groupes_championnats&action=generer&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
-     //   echo " $gras_8<a href=\"?page=groupes_championnats&action=supp&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
+          // echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
+      //  echo " $gras_1<a href=\"?page=groupes_championnats&action=generer&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
+      //  echo " $gras_1<a href=\"?page=groupes_championnats&action=supp&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
+        echo " $gras_1<a href=\"?page=groupes_championnats&action=editer&ligue=$ligue&gr_champ=$row[0]\">[".EDITER."]</a>$gras_fin";
+        echo " $gras_2<a href=\"?page=groupes_championnats&action=generer&ligue=$ligue&gr_champ=$row[0]\">[".ADMIN_GR_CHAMP_GENERER."]</a>$gras_fin";
+        echo " $gras_8<a href=\"?page=groupes_championnats&action=supp&ligue=$ligue&gr_champ=$row[0]\">[".ADMIN_RENS_8."]$gras_fin</a></td>";
 
         echo "</tr>";
         $i++;
@@ -182,10 +223,11 @@ function affich_gr_champ ($gr_champ, $idconnect)
    
     while($row = mysqli_fetch_array($resultats))
                 {
-				echo "tttt";
+				//echo " le groupe de championnats suivant : ";
 				echo $row[0];
-				echo "tttt";
+				//echo "tttt";
 				}
+       // echo "tttt";
 }
 
 function divisions_menu ($idconnect)
@@ -244,6 +286,27 @@ function champ_menu($idconnect)
 		 FROM phpau_championnats, phpau_divisions, phpau_saisons 
 		 WHERE phpau_divisions.id=phpau_championnats.id_division 
 		 AND phpau_saisons.id=phpau_championnats.id_saison 
+		 ORDER by annee desc, phpau_divisions.nom");
+   
+ echo "<select name=\"champ[]\" multiple size=\"8\">";
+ while($row = mysqli_fetch_array($result))
+    {
+     echo ("<option value=\"$row[0]\">$row[1] $row[2]/$row[3]\n");
+     echo ("</option>\n");
+    }
+ echo "</select>";
+}
+function champ_menu_par_ligue($ligue, $idconnect)
+{
+ // echo "ligue : ".$ligue; echo "<br>";
+  $ligueMax = $ligue +10000;
+//  echo "ligueMax : ". $ligueMax;echo "<br>";
+ $result=$idconnect->query(" 
+		 SELECT phpau_championnats.id, phpau_divisions.nom, phpau_saisons.annee, (phpau_saisons.annee)+1 
+		 FROM phpau_championnats, phpau_divisions, phpau_saisons 
+		 WHERE phpau_divisions.id = phpau_championnats.id_division 
+		 AND phpau_saisons.id= phpau_championnats.id_saison 
+     AND  phpau_divisions.id between '$ligue' AND $ligueMax 
 		 ORDER by annee desc, phpau_divisions.nom");
    
  echo "<select name=\"champ[]\" multiple size=\"8\">";
@@ -750,18 +813,16 @@ WHERE ext.id_champ='$champ'
    }
    
 	// echo "cache fin : ".$cache;  
-  /*
 	if($cache=="1")
-	{$requete="DELETE FROM phpau_clmnt_cache WHERE nom='exempte'" or die (mysql_error($idconnect));}
+	{$requete="DELETE FROM phpau_clmnt_cache WHERE nom='exempte'" ;}
 	else
-	{$requete="DELETE FROM phpau_clmnt WHERE nom='exempte'" or die (mysql_error($idconnect));}
+	{$requete="DELETE FROM phpau_clmnt WHERE nom='exempte'";}
 
-	$resultat=mysqli_query($idconnect,$requete) or die (mysqli_error($idconnect));
+	//$resultat=mysqli_query($idconnect,$requete) or die (mysqli_error($idconnect));
 	//mysql_query("UNLOCK TABLES") or die (mysql_error());
 
 
 	//echo "fin";//echo "<br />"; 
-  */
 }
 
 // Nombres de renseignement dans cette classe � partir de l'id_classe  (utilis� dans phpau_classe.php)

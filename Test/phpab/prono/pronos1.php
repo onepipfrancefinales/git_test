@@ -52,10 +52,16 @@ function ValideGrille(tot) {
 
 </SCRIPT>
 <?php
-//nombre de matchs à afficher
-$nb_matchs = 15;
-if (isset($debut)) $debut = $debut;else $debut = 0;
-if (isset($_REQUEST['debut'])) {  $debut = $_REQUEST['debut'];} else { $debut = '';}
+//echo "user_id0 (prono1) : ".$user_id; echo "<br>"; 
+
+if (isset($debut)) $debut = $debut;
+else $debut = 0;
+$nb_matchs = 18;
+if (isset($_REQUEST['debut'])) {
+  $debut = $_REQUEST['debut'];
+} else {
+  $debut = '';
+}
 
 if (empty($debut) or $debut == "0") $debut = 0;
 $apres = 1;
@@ -64,7 +70,7 @@ if (is_numeric($debut) && is_numeric($nb_matchs)) {
   $fin = $debut + $nb_matchs;
 }
 
-
+// /*******************   Réinitialisation des pronostics ***********************
 if ($action == "reset") {
   $resultat = $idconnect->query("SELECT tps_avant_prono 
 							 FROM phpab_gr_championnats 
@@ -124,9 +130,14 @@ if ($action == "reset") {
   }
 }
 
+///********************  */ Enregistrement des pronostics *************************
+
 if ($action == "valid_pronos") {
 
-
+//echo "enregistrement";echo "<br>"; 
+//echo "id (prono1) : ".$id; echo "<br>"; 
+//echo "user_id (prono1) : ".$user_id; echo "<br>"; 
+//echo "<br>";
   for ($i = 1; $i <= $_REQUEST['nb_fiche']; $i++) {
     $nom_f_prono = "r_$i";
     $nom_id_match = "id_match_$i";
@@ -179,7 +190,8 @@ if ($action == "valid_pronos") {
       while ($row = mysqli_fetch_array($resultat)) {
         $id = $row["id"];
       }
-
+echo "------------------------" ;  echo "<br>";   
+echo "id (prono1) : ".$id; echo "<br>"; 
       if ($nb_prono == "1") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
           mysqli_query($idconnect, ("UPDATE phpab_pronostics 
@@ -223,7 +235,7 @@ if ($action == "valid_pronos") {
   include("pronos.htm");
 
   $resultat = $idconnect->query("
-			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, phpab_matchs.id_equipe_dom,phpab_matchs.id_equipe_ext
+			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, phpab_matchs.id_equipe_dom, phpab_matchs.id_equipe_ext
 			 FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
 			 WHERE phpab_clubs.id=phpab_equipes.id_club
 			 AND CLEXT.id=EXT.id_club
@@ -252,6 +264,7 @@ if ($action == "valid_pronos") {
     $clubs_nom1 = stripslashes($row[1]);
     $id_dom = $row[5];
     $id_ext = $row[6];
+
     $resultat2 = $idconnect->query(" SELECT pronostic 
 									   FROM phpab_pronostics, phpab_membres 
 									   WHERE phpab_pronostics.id_match='$row[2]' 
@@ -296,8 +309,8 @@ if ($action == "valid_pronos") {
    }
    else
      {
-    echo "<td align=\"right\" class=\"blanc\">$clubs_nom </td>";
-   }
+    echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
+  }
 
     if ($ecart_heures >= "0") {
       $x++;

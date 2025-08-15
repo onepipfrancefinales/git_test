@@ -15,18 +15,6 @@
 // Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-/*
-if (isset($champ))              ;    $champ = '';
-if (isset($pts_victoire))       ;    $pts_victoire = '';
-if (isset($pts_nul))            ;    $pts_nul = '';
-if (isset($pts_defaite))        ;    $pts_defaite = '';
-if (isset($accession))          ;    $accession = '';
-if (isset($barrage))            ;    $barrage = '';
-if (isset($relegation))         ;    $relegation = '';
-if (isset($id_equipe_fetiche))  ;    $id_equipe_fetiche = '';
-if (isset($fiches_clubs))       ;    $fiches_clubs = '';
-if (isset($estimation))         ;    $estimation = '';
-*/
 
 if ($action2=="1")
  {
@@ -48,10 +36,10 @@ if ($action2=="1")
    else
    {
     // Insertion des param�tres dans la bdd
-   // $requete="INSERT INTO phppro_parametres (id_champ, pts_victoire, pts_nul, pts_defaite, accession, barrage, relegation,id_equipe_fetiche, fiches_clubs, estimation) 
+ //   $requete="INSERT INTO phppro_parametres (id_champ, pts_victoire, pts_nul, pts_defaite, accession, barrage, relegation,id_equipe_fetiche, fiches_clubs, estimation) 
 	//VALUES ('$champ', '$pts_victoire', '$pts_nul', '$pts_defaite', '$accession', '$barrage', '$relegation', '$id_equipe_fetiche', '$fiches_clubs', '$estimation')";
-   // $resultats = mysqli_query ($requete);
-   // if (!$resultats) ;
+    //$resultats = mysqli_query ($requete);
+    if (!$resultats) ;
     }  
  }
 
@@ -241,25 +229,12 @@ echo "<input type=\"submit\" value=$button></form><br />";
 
 <table class=phppro width="80%">
   <tr>
-    <td class=phppro2 align="center" colspan="4"><?php echo "Points administratifs et péréquation "; affich_champ ($champ, $idconnect); ?></td>
+    <td class=phppro2 align="center" colspan="4"><?php echo "Points administratifs "; affich_champ ($champ, $idconnect); ?></td>
   </tr>
-    <tr>
-  <td width="10%"><?php echo "Administratifs";?></td>
-  <td width="10%"><?php echo "Péréquation";?></td>
-  <td width="10%"><?php echo "Equipes";?></td>
-  <td width="70%"></td>
-  </tr>
-  </table>
-  
-  
-<table class=phppro width="80%">
   <tr>
-    <td  align="center" colspan="4"></td>
-  </tr>
-    
-    <td width="25%"><?php
-
-   
+    <td><?php 
+	
+	echo ADMIN_TAPVERT_MSG1; echo "<br />";echo ADMIN_TAPVERT_MSG3;
 
 	$result=$idconnect->query(" SELECT id 
 								FROM phppro_equipes 
@@ -276,7 +251,7 @@ echo "<input type=\"submit\" value=$button></form><br />";
 	while($row=mysqli_fetch_array($result))
 		{
 		$row[0] = stripslashes($row[0]);
-		echo "<INPUT TYPE=\"TEXT\" name=\"pts_admin[]\" value=\"$row[2]\" size=\"2\">";
+		echo "<INPUT TYPE=\"TEXT\" name=\"pts_admin[]\" value=\"$row[2]\" size=\"4\">";
 		echo "<INPUT TYPE=\"HIDDEN\"  name=\"id_equipe[]\" value=\"$row[1]\">";
 		echo "<INPUT TYPE=\"TEXT\"  name=\"jour_pere[]\" value=\"$row[3]\">";
 		echo "$row[0]<br />";

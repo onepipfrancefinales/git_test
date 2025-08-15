@@ -85,12 +85,12 @@ $id_joueur = isset($_POST['id_joueur']) ? $_POST['id_joueur'] : NULL;
 
 if ($action2=="creer" and $saison and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phpab_saisons (annee) values ('$saison')")) ;
+  mysqli_query($idconnect, ("INSERT INTO phpab_saisons (annee) values ('$saison')"));
 }
 
 if ($action2=="creer" and $division and $action=="creer")
 {
-  mysqli_query($idconnect, ("INSERT INTO phpab_divisions (nom) values ('$division')")) ;
+  mysqli_query($idconnect, ("INSERT INTO phpab_divisions (nom) values ('$division')"));
 }
 
 if ($action3=="creer" and $action=="creer")
@@ -120,11 +120,11 @@ if ($confirm=="ok" and $champ and $action=="supp")
      while($row = mysqli_fetch_array($resultats))
       {
         mysqli_query($idconnect, ("DELETE FROM phpab_matchs where id_equipe_dom='$row[0]' "));
-        mysqli_query($idconnect, ("DELETE FROM phpab_matchs where id_equipe_ext='$row[0]' "));
+        mysqli_query($idconnect, ("DELETE FROM phpab_matchs where id_equipe_ext='$row[0]' ")) ;
       }
-    mysqli_query($idconnect, ("DELETE FROM phpab_championnats where id='$champ' ")) ;
-    mysqli_query($idconnect, ("DELETE FROM phpab_journees WHERE  id_champ = '$champ'"));
-    mysqli_query($idconnect, ("DELETE FROM phpab_equipes WHERE id_champ ='$champ' "));
+   mysqli_query($idconnect, ("DELETE FROM phpab_championnats where id='$champ' "));
+   mysqli_query($idconnect, ("DELETE FROM phpab_journees WHERE  id_champ = '$champ'"));
+   mysqli_query($idconnect, ("DELETE FROM phpab_equipes WHERE id_champ ='$champ' "));
    mysqli_query($idconnect, ("DELETE FROM phpab_parametres WHERE id_champ ='$champ' "));
 
 }
@@ -166,20 +166,20 @@ if ($action=="supp" and $champ){ include ("supp_champ.php"); }
 
 if ($action=="creer") {include("creer_champ.php");}
 
-if ($action=="resultats") {include("resultats.php");} //Scores
+if ($action=="resultats") {include("resultats.php");}
 
-if ($action=="equipes" and $champ){include("equipes.php");} // Equipes
+if ($action=="equipes" and $champ){include("equipes.php");}
 
-if ($action=="dates" and $champ){include("dates.php");} //Dates
+if ($action=="dates" and $champ){include("dates.php");}
 
 if ($action=="matchs" and $champ){include("matchs.php");}
                                                 
-if ($action=="parametres" and $champ){include("parametres.php");} // Pts Bonus
+if ($action=="parametres" and $champ){include("parametres.php");}
 
 if ($action=="joueurs" and $champ){include("joueurs.php");}
 
 if ($action=="buteurs" and $champ){include("buteurs.php");}
 
-if ($action=="generer" and $champ){include("generer.php");} //valider
+if ($action=="generer" and $champ){include("generer.php");}
 
 ?>

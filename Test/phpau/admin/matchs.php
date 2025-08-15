@@ -196,8 +196,9 @@ for ($counter=$nb_rencontres; $counter>0 ; $counter=$counter-1 ) // Nb de rencon
 		  else echo (" <option value=\"$row[1]\">$row[0]");
                   echo ("</option>\n");
                 }
+                */
         echo "</select>";
-*/
+
         // saisie des rencontres EXTERIEUR
         echo "<TD class=$class align=center>";
         echo "<select name=\"id_exterieur[]\">";
@@ -325,7 +326,6 @@ echo "<small>MATCH_SUM = ".$sum_day."  </small>";
 			 echo "<br />";
 			 }
         }
-
         */
     $x++;
     }

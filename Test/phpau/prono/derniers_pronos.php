@@ -35,7 +35,7 @@ if ($debut == "0") {
 include("derniers_pronos.htm");
 
 
-$result = $idconnect->query("SELECT phpau_clubs.nom, CLEXT.nom, phpau_matchs.buts_dom, phpau_matchs.buts_ext, phpau_matchs.id, phpau_matchs.date_reelle, phpau_journees.numero, pts_prono_exact, pts_prono_participation
+$result = $idconnect->query("SELECT phpau_clubs.nom, CLEXT.nom, phpau_matchs.buts_dom, phpau_matchs.buts_ext, phpau_matchs.id, phpau_matchs.date_reelle, phpau_journees.numero, pts_prono_exact, pts_prono_participation,phpau_matchs.id_equipe_dom,phpau_matchs.id_equipe_ext
 FROM phpau_clubs, phpau_clubs as CLEXT, phpau_matchs, phpau_journees, phpau_equipes, phpau_equipes as EXT, phpau_gr_championnats
 WHERE phpau_clubs.id=phpau_equipes.id_club
 AND CLEXT.id=EXT.id_club 
@@ -58,6 +58,8 @@ if (mysqli_num_rows($result) == "0") {
 while ($row = mysqli_fetch_array($result) and $i < 10) {
   $clubs_nom = stripslashes($row[0]);
   $clubs_nom1 = stripslashes($row[1]);
+    $id_dom = $row[9];
+    $id_ext = $row[10];
   $result2 = $idconnect->query("SELECT pronostic 
 							FROM phpau_pronostics, phpau_membres 
 							WHERE phpau_pronostics.id_match='$row[4]' 
@@ -79,7 +81,15 @@ while ($row = mysqli_fetch_array($result) and $i < 10) {
   $date = format_date_fr_red($row[5]);
   echo "<tr><td class=\"blanc center\">$row[6]</td>";
   echo "<td class=\"blanc center\">$date</td>";
-  echo "<td class=\"blanc alignRight\">$clubs_nom</td>";
+
+
+  if ($id_dom > 90000000) {
+    echo "<td align=\"right\" class=\"colorYellow\">$clubs_nom II</td>";
+   }
+   else
+     {
+    echo "<td align=\"right\" class=\"blanc\">$clubs_nom </td>";
+   }
 
   echo "<td>";
   echo "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" width=\"50\"><tr><td>";
@@ -116,19 +126,28 @@ while ($row = mysqli_fetch_array($result) and $i < 10) {
   echo "</td>\n</tr>\n</table>\n</td>\n";
   $pronos_exact = $row['pts_prono_exact'] + $row['pts_prono_participation'];
 
-  echo "<td class=\"blanc\">$clubs_nom1</td>";
-  echo "<td class=\"blanc center\">$row[2]-$row[3]</td>";
+  if ($id_ext > 90000000) {
+          echo "<td class=\"colorYellow center\">$clubs_nom1 II</td>";
+ }
+ else
+ {
+          echo "<td class=\"blanc center\">$clubs_nom1</td>";
+ }
+  
+  
+  
+  echo "<td  class=\"blanc center\">$row[2]-$row[3]</td>";
   echo "<td class=\"center\">";
   if ($row[2] > $row[3] and $prono == 1) {
-    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
+    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td class=\"blanc center\">$pronos_exact";
   } elseif ($row[2] == $row[3] and $prono == "N") {
-    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
+    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td class=\"blanc center\">$pronos_exact";
   } elseif ($row[2] < $row[3] and $prono == "2") {
-    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$pronos_exact</div>";
+    echo "<img src=\"affiche_prono_correct.gif\" alt=\"\"></td><td class=\"blanc center\">$pronos_exact";
   } elseif ($prono == '0') {
-    echo "</td><td align=\"center\"><div class=\"blanc\">0</div>";
+    echo "</td><td class=\"blanc center\">0";
   } else {
-    echo "<img src=\"affiche_prono_erreur.gif\" alt=\"\"></td><td align=\"center\"><div class=\"blanc\">$row[pts_prono_participation]</div>";
+    echo "<img src=\"affiche_prono_erreur.gif\" alt=\"\"></td><td class=\"blanc center\">$row[pts_prono_participation]";
   }
   echo "</td>";
   echo "</tr>";

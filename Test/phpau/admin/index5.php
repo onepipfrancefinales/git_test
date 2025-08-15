@@ -31,6 +31,7 @@
 
 <?php
 $championnat = $_GET['champ'];
+$comite = $_GET['comite'];
 require ("../config.php") ;
 require ("fonctions.php");
 ouverture ();
@@ -43,18 +44,18 @@ ouverture ();
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
         <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpau">Comité 
-          Ligue Auvergne Rh�ne Alpes</font></td>
+          Cote d'Argent - Administration</font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
       <td class="phpau3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
-      <a href="?page=championnat"><?php echo LEAGUE; ?></a><br /><br />
+      <a href="?page=championnat"><?php// echo LEAGUE; ?></a><br /><br />
+      
+   -->  
       
      
-     --> 
-     
       
-      <a href="logout.php"><?php //echo "Logout"; ?></a><br />
+      <a href="logout.php"><?php// echo "Logout"; ?></a><br />
       </td>
       <td valign="top" colspan="2"><div align="center">
 
@@ -114,7 +115,7 @@ ouverture ();
   </center>
 </div>
 <?php $championnat = (substr($championnat,0,5)*10)+1;?>
-<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=au&bddComite=au&champ=<?php echo $championnat; ?>">
+<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=<?php echo $comite; ?>&bddComite=pl&champ=<?php echo $championnat; ?>">
 </body>
 
 </html>

@@ -32,7 +32,7 @@ if (isset($_POST['activ_prono'])) {$activ_prono=$_POST['activ_prono'];} else {$a
 
 // Insertion en table de la création d'un groupe de championnats
 if ($action2=="creer" and isset($nom_group) and $action=="creer")
-{   
+{ 
   echo "ligue : ".$ligue; echo "<br>";
   $ligueFin = $ligue + 10000;
   echo "ligueFin : ".$ligueFin;echo "<br>";
@@ -47,7 +47,7 @@ if ($action2=="creer" and isset($nom_group) and $action=="creer")
 echo "maxId : ".$maxId; echo "<br>";
 $newId = $maxId + 1 ;
 echo "newId : ".$newId;echo "<br>";
- mysqli_query ($idconnect,("INSERT INTO phpab_gr_championnats (id, nom) VALUES ('$newId','$nom_group')"));
+  mysqli_query ($idconnect,("INSERT INTO phpab_gr_championnats (id, nom) VALUES ('$newId','$nom_group')"));
 }
 
 // Suppression d'un groupe de championnat
@@ -65,14 +65,14 @@ if ($confirm=="ok" and $gr_champ and $action=="supp")
               <td class=phpab2><?php echo MENU_NOM; ?></td>
               <td class=phpab2></td>
             </tr>
-            <?php // affich_gr_championnats ($gr_champ, $action, $idconnect); ?>
-           <?php affich_gr_championnats ($ligue, $gr_champ, $action, $idconnect); ?>
-           
+              <?php // affich_gr_championnats ($gr_champ, $action, $idconnect); ?>
+            <?php affich_gr_championnats ($ligue, $gr_champ, $action, $idconnect); ?>
+          
             <tr>
               <td class=phpab5 align="right" colspan="4">
-			     <a href="?page=groupes_championnats&action=creer&ligue=<?php echo $ligue;?>"> 
-			  
-			    <?php echo ADMIN_GR_CHAMP_CREER;?></a>
+			    <a href="?page=groupes_championnats&action=creer&ligue=<?php echo $ligue;?>"> 
+			   
+          <?php echo ADMIN_GR_CHAMP_CREER;?></a>
 			  </td>
             </tr>
 

@@ -15,8 +15,8 @@
 // Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-echo "AAAgenerer_gr.php :";echo "<br />";
 echo "action -> impacte uniquement la table phppro_clmnt_pronos";echo "<br />";
+echo "<br />";
 ?>
 <table class=phppro width="80%">
   <tr>
@@ -51,7 +51,7 @@ echo "action -> impacte uniquement la table phppro_clmnt_pronos";echo "<br />";
 		}
 
 		$result=$idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phppro_membres, phppro_pronostics, phppro_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phppro_membres.id
@@ -70,7 +70,7 @@ echo "action -> impacte uniquement la table phppro_clmnt_pronos";echo "<br />";
 		}
 
 		$result = $idconnect->query("
-					SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+					SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 					FROM phppro_membres, phppro_pronostics, phppro_matchs
 					WHERE id_champ='$gr_champ'
 					AND id_membre=phppro_membres.id
@@ -88,7 +88,7 @@ echo "action -> impacte uniquement la table phppro_clmnt_pronos";echo "<br />";
 		}
 
 		$result = $idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phppro_membres, phppro_pronostics, phppro_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phppro_membres.id

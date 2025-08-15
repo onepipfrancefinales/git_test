@@ -20,16 +20,43 @@
 function affich_championnats ($champ, $action, $idconnect)
 {
  global  $nomLigue;
-if ($champ >= 110000 and $champ < 120000)
-	{$valLigueMin = 110000;  $valLigueMax = 120000; }	
- elseif ($champ >= 120000 and $champ < 130000)
-	{$valLigueMin = 120000;  $valLigueMax = 130000; }
- elseif ($champ >= 130000 and $champ < 140000) 
-	{$valLigueMin = 130000;  $valLigueMax = 140000; }
- elseif ($champ >= 160000 and $champ < 170000)
-	{$valLigueMin = 160000;  $valLigueMax = 170000; }
- elseif ($champ >= 210000 and $champ < 220000)
-	{$valLigueMin = 210000;  $valLigueMax = 220000; }
+  if ($champ >= 100000 and $champ < 110000) {
+    $valLigueMin = 100000;
+    $valLigueMax = 110000;
+  } elseif ($champ >= 110000 and $champ < 120000) {
+    $valLigueMin = 110000;
+    $valLigueMax = 120000;
+  } elseif ($champ >= 120000 and $champ < 130000) {
+    $valLigueMin = 120000;
+    $valLigueMax = 130000;
+  } elseif ($champ >= 130000 and $champ < 140000) {
+    $valLigueMin = 130000;
+    $valLigueMax = 140000;
+  } elseif ($champ >= 150000 and $champ < 160000) {
+    $valLigueMin = 150000;
+    $valLigueMax = 160000;
+  } elseif ($champ >= 160000 and $champ < 170000) {
+    $valLigueMin = 160000;
+    $valLigueMax = 170000;
+  } elseif ($champ >= 170000 and $champ < 180000) {
+    $valLigueMin = 170000;
+    $valLigueMax = 180000;
+  } elseif ($champ >= 180000 and $champ < 190000) {
+    $valLigueMin = 180000;
+    $valLigueMax = 190000;
+  } elseif ($champ >= 190000 and $champ < 200000) {
+    $valLigueMin = 190000;
+    $valLigueMax = 200000;
+  } elseif ($champ >= 200000 and $champ < 210000) {
+    $valLigueMin = 200000;
+    $valLigueMax = 210000;
+  } elseif ($champ >= 210000 and $champ < 220000) {
+    $valLigueMin = 210000;
+    $valLigueMax = 220000;
+  } elseif ($champ >= 220000 and $champ < 230000) {
+    $valLigueMin = 220000;
+    $valLigueMax = 230000;
+  }
   $resultats=$idconnect->query("SELECT phppl_championnats.id, phppl_divisions.nom, phppl_saisons.annee 
             FROM phppl_championnats, phppl_divisions, phppl_saisons 
             WHERE phppl_championnats.id_division=phppl_divisions.id

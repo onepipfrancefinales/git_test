@@ -1,9 +1,9 @@
 <table width="98%">
     <tr>
       <td width="50%" class="alignLeft bold">
-<a class="colorYellow" href="?page=derniers_pronos&debut=<?php echo "$fin&amp;gr_champ=$gr_champ";?>"><< <?php echo PRONO_GRILLE_PRECEDENT; ?></a></td>
+<a class="colorYellow" href="?&mode=<?php echo $mode; ?>&page=derniers_pronos&debut=<?php echo "$fin&amp;gr_champ=$gr_champ";?>"><< <?php echo PRONO_GRILLE_PRECEDENT; ?></a></td>
     <td width="50%" class="alignRight bold">
-      <a class="colorYellow" href="<?php echo $suiv; ?>"><?php echo PRONO_GRILLE_SUIVANT; ?> >></a>
+      <a class="colorYellow" href="<?php echo $suiv; ?>&mode=<?php echo $mode; ?>"><?php echo PRONO_GRILLE_SUIVANT; ?> >></a>
     </td>
   </tr>
   <tr>

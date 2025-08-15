@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phppleague : gestionnaire de championnat                           */
+// phpabeague : gestionnaire de championnat                           */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phppleague.univert.org                                      */
+// http://phpabeague.univert.org                                      */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phppleague.univert.org/forum               */
+// Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 echo "action -> impacte uniquement la table phpab_clmnt_pronos";echo "<br />";
@@ -33,9 +33,9 @@ echo "<br />";
 						  WHERE id_champ='$gr_champ'"));
 
 		$result=$idconnect->query(" 
-				SELECT id_membre, pseudo,
-				 SUM(points) as total,
-				  SUM(participation) as participations 
+				SELECT id_membre, pseudo, 
+				SUM(points) as total, 
+				SUM(participation) as participations 
 				FROM phpab_membres, phpab_pronostics
 				WHERE id_champ='$gr_champ' 
 				AND id_membre=phpab_membres.id
@@ -51,7 +51,7 @@ echo "<br />";
 		}
 
 		$result=$idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phpab_membres, phpab_pronostics, phpab_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phpab_membres.id
@@ -70,11 +70,11 @@ echo "<br />";
 		}
 
 		$result = $idconnect->query("
-					SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+					SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 					FROM phpab_membres, phpab_pronostics, phpab_matchs
 					WHERE id_champ='$gr_champ'
 					AND id_membre=phpab_membres.id
-					AND phpab_matchs.id = id_match
+					AND phpab_matchs.id=id_match
 					AND DATE_ADD(date_reelle, INTERVAL 30 DAY) >= NOW()
 					GROUP by pseudo
 					ORDER by total, participations");
@@ -88,7 +88,7 @@ echo "<br />";
 		}
 
 		$result = $idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phpab_membres, phpab_pronostics, phpab_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phpab_membres.id
@@ -102,7 +102,7 @@ echo "<br />";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')") );
+							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
 		}
 
 		echo ADMIN_GRAPH_PRONO; include ("tps2.php3");

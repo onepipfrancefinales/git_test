@@ -1,8 +1,8 @@
 <?php
 if ($action == "supp" and !$confirm=="oui")
  {
-   echo "<table ><tr><td class=\"center colorWhite size3\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
-   echo "<a class=\"center colorWhite size3\" href=\"index.php?page=profil&amp;action=supp&amp;confirm=oui\">".ADMIN_RENS_17."</a> - <a class=\"center colorWhite size3\" href=\"index.php\">".ADMIN_RENS_18."</a></td></tr></table>";
+   echo "<table class=\"marginAuto\"><tr><td class=\"center colorWhite size3\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
+   echo "<a class=\"center colorWhite size3\" href=\"index.php?champLigue=$champLigue&page=profil&action=supp&confirm=oui\">".ADMIN_RENS_17."</a> - <a class=\"center colorWhite size3\" href=\"index.php?champLigue=$champLigue\">".ADMIN_RENS_18."</a></td></tr></table>";
  }
 
 elseif ($action == "supp" and $confirm=="oui")
@@ -44,15 +44,14 @@ else
       $result = $idconnect->query("
 				 SELECT mot_de_passe 
 				 FROM phpca_membres 
-				 WHERE id_prono='$user_id' 
-				 AND pseudo='$user_pseudo'");
+				 WHERE  pseudo='$user_pseudo'");
 				 
           while ($row=mysqli_fetch_array($result))
 			{
 			 $mot_de_passe_correct=$row["0"];
 			}
-          echo $user_id;
-		  echo $user_pseudo;
+          echo "user_id (profil) : ".$user_id;
+		      echo "user_pseudo (profil) : ".$user_pseudo;
 		  $ancien_mdp_crypt = md5($ancien_mdp);
 
           $date_naissance=$annee."-".$mois."-".$jour;
@@ -65,7 +64,7 @@ else
            {
              mysqli_query ($idconnect, ("UPDATE phpca_membres 
 			 SET nom_site='$site', mail='$mail', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile' 
-			 WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
+			 WHERE  pseudo='$user_pseudo'"));
              
 			 $message.="profil mis à jour";
            }
@@ -95,7 +94,7 @@ else
 				SELECT pseudo, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile  
 				FROM phpca_membres 
 				WHERE pseudo='$user_pseudo' 
-				AND id_prono = '$user_id' ");
+				 ");
 
         while ($row=mysqli_fetch_array($result))
        { 
@@ -191,7 +190,7 @@ echo "<td><input type=\"text\" name=\"mobile1\" value=\"$mobile1\" maxlength=\"2
          echo "<tr bgcolor=\"#FFFFFF\"><td colspan=\"2\" align=\"center\">\n";
          echo "<input type=\"hidden\" name=\"page\" value=\"profil\">\n";
          echo "<input type=\"hidden\" name=\"action\" value=\"1\">\n";
-         echo "<a href=\"index.php?page=profil&amp;action=supp\"><font face=\"Verdana\" color=\"#000000\" size=\"1\">>> ".PRONO_PROFIL_SUPP_2." <<</font></a></td></tr>\n";
+         echo "<a href=\"index.php?page=profil&action=supp&champLigue=$champLigue\"><font face=\"Verdana\" color=\"#000000\" size=\"1\">>> ".PRONO_PROFIL_SUPP_2." <<</font></a></td></tr>\n";
          echo "<tr><td colspan=\"2\" align=\"center\"><br /><input type=\"submit\" value=".ENVOI."></td></tr></table></form></td></tr></table>\n";
       echo "</table>";
  	 echo "</td></tr></table>"; 

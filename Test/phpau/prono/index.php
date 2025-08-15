@@ -1,4 +1,5 @@
 <?php
+if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}					   
 session_start();
 //echo "index.php : user -".$_SESSION['user']; echo "<br>";
 //echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
@@ -9,8 +10,10 @@ if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_c
 if (isset($_REQUEST['user_pseudo'])) {$user_pseudo=$_REQUEST['user_pseudo'];} else {$user_pseudo='';}
 if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id='';}
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
-if (isset($_GET['page'])) $page = $_GET['page'];else {$mode='';}
-if (isset($_GET['style'])) $style = $_GET['style'];else {$mode='';}
+if (isset($_GET['page'])) $page = $_GET['page'];else {$page='';}
+if (isset($_GET['style'])) $style = $_GET['style'];else {$style='';}
+
+
 if ($mode == "smart")
 {
   ?>
@@ -22,17 +25,23 @@ if ($mode == "smart")
     <tr>
         <td colspan="2" class="h12">Ligues régionales <br> Concours de pronostiques</td>
     </tr>
+
+    
 </table>
 
+    
 <?php
+echo "<p class=\"size5 bold styleArial\">";
+  echo "Ligue Bourgogne Franche Comté ";
+  echo "</p>";
 }
-
   ?>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 
 <?php 
+
+																					
 include ("avant.php");
 
  ?>
@@ -44,6 +53,7 @@ include ("avant.php");
    
 include("haut.inc.php");
 include("menu.inc.php");  // Affichage du menu identifié / non identifié
+
  //  echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>";
 
 ///if ($page == "profil") {
@@ -158,9 +168,9 @@ if (!isset($_GET['page'])) {
   include ("accueil.htm");}
 else{$page= $_GET['page'];
 */
-if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
+//if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
 
-
+//echo "user_id (index) : ".$user_id; echo "<br>";
 if ($page=="pronos" and $connecte=="oui") {include ("pronos1.php");}
 elseif ($page=="derniers_pronos" and $connecte=="oui") {include ("derniers_pronos.php");}
 elseif ($page=="profil" and $connecte=="oui") {include ("profil.php");}
@@ -170,7 +180,7 @@ elseif ($page=="classement") {include ("classement.htm");}
 elseif ($page=="inscription") {include ("inscription.php");}
 elseif ($page=="erreur_login") {include ("erreur_login.php");}
 elseif ($page=="perdu_mdp") {include ("perdu_mdp.php");}
-else {include ("accueil.htm");}
+//else {include ("accueil.htm");}
 
       
 ?>

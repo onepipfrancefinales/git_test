@@ -38,7 +38,7 @@
   // ***** Auvergne Rhône Alpes *****	
   $ARAH = 22481;
   $ARAPH = 0;
-  $ARAS1 = 0;
+  $ARAS1 = 22478;
   $ARAResH = 22480;
   $ARAResPH = 0;
 

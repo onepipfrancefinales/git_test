@@ -15,7 +15,7 @@
 // Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-
+if (isset($_GET['ligue'])) {$ligue=$_GET['ligue'];} else {$ligue='';}
 if (isset($_GET['gr_champ'])) {$gr_champ=$_GET['gr_champ'];} else {$gr_champ='';}
 if (isset($_POST['action2'])) {$action2=$_POST['action2'];} else {$action2='';}
 if (isset($_POST['nom_group'])) {$nom_group=$_POST['nom_group'];} else {$nom_group='';}
@@ -29,9 +29,25 @@ if (isset($_POST['id_master'])) {$id_master=$_POST['id_master'];} else {$id_mast
 if (isset($_POST['tps_avant_prono'])) {$tps_avant_prono=$_POST['tps_avant_prono'];} else {$tps_avant_prono='';}
 if (isset($_POST['activ_prono'])) {$activ_prono=$_POST['activ_prono'];} else {$activ_prono='';}
 
+
+// Insertion en table de la création d'un groupe de championnats
 if ($action2=="creer" and isset($nom_group) and $action=="creer")
-{   
-  mysqli_query ($idconnect,("INSERT INTO phppro_gr_championnats (nom) VALUES ('$nom_group')"));
+{ 
+  echo "ligue : ".$ligue; echo "<br>";
+  $ligueFin = $ligue + 10000;
+  echo "ligueFin : ".$ligueFin;echo "<br>";
+  $resultats=$idconnect->query(" SELECT MAX(id)
+							  FROM phppro_gr_championnats 
+							  WHERE id BETWEEN '$ligue' AND '$ligueFin' ");
+
+ while($row = mysqli_fetch_array($resultats))
+      {
+        $maxId = $row[0];
+}
+echo "maxId : ".$maxId; echo "<br>";
+$newId = $maxId + 1 ;
+echo "newId : ".$newId;echo "<br>";
+  mysqli_query ($idconnect,("INSERT INTO phppro_gr_championnats (id, nom) VALUES ('$newId','$nom_group')"));
 }
 
 // Suppression d'un groupe de championnat
@@ -49,11 +65,14 @@ if ($confirm=="ok" and $gr_champ and $action=="supp")
               <td class=phppro2><?php echo MENU_NOM; ?></td>
               <td class=phppro2></td>
             </tr>
-            <?php affich_gr_championnats ($gr_champ, $action, $idconnect); ?>
+              <?php // affich_gr_championnats ($gr_champ, $action, $idconnect); ?>
+            <?php affich_gr_championnats ($ligue, $gr_champ, $action, $idconnect); ?>
+          
             <tr>
               <td class=phppro5 align="right" colspan="4">
-			    <a href="?page=groupes_championnats&action=creer"> 
-			    <?php echo ADMIN_GR_CHAMP_CREER;?></a>
+			    <a href="?page=groupes_championnats&action=creer&ligue=<?php echo $ligue;?>"> 
+			   
+          <?php echo ADMIN_GR_CHAMP_CREER;?></a>
 			  </td>
             </tr>
 
@@ -61,11 +80,6 @@ if ($confirm=="ok" and $gr_champ and $action=="supp")
 <br /><br />
 <?php
 // affichage le l'action engagée
-
-echo "**---------**";
-echo "action : ".$action;
-echo "**---------**";
-echo "<br />";echo "<br />";
 if ($action=="supp" and $gr_champ){ include ("supp_gr_champ.php"); }
 
 if ($action=="creer") {include("creer_gr_champ.php");}

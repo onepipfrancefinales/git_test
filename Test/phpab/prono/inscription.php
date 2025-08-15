@@ -1,18 +1,22 @@
 <?php
 session_start();
 if (isset($_GET['champ'])) $champ = $_GET['champ'];else $champ = 0;
+if (isset($_REQUEST['champLigue'])) $champLigue = $_REQUEST['champLigue'];else $champLigue = 0;
 
+$tabTables = array('phpau', 'phpab', 'phpca', 'phpab', 'phpidf', 'phpfed3NE', 'phppro');
 if (isset($_POST['pseudo'])) $testpseudo = $_POST['pseudo'];
 if (isset($_POST['mail'])) $testmail = $_POST['mail'];
 if (isset($_POST['mdp'])) $testmdp = $_POST['mdp'];
 if (isset($_POST['nom'])) $testnom = $_POST['nom'];
-
+echo "<br>";
+/*
+echo "champLigue (inscription.php) : ".$champLigue;echo "<br>";
 echo "testpseudo : ".$testpseudo; echo "<br>";
 echo "testmail : ".$testmail; echo "<br>";
 echo "testmdp : ".$testmdp; echo "<br>";
 echo "testnom : ".$testnom; echo "<br>";
-$tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
-
+*/
+$tabTables = array('phpau', 'phpab', 'phpca', 'phpab', 'phpidf', 'phpfed3NE', 'phppro');								   
 foreach ($tabTables as $table) {
   //phpab_pronostics
 
@@ -100,7 +104,7 @@ if (!$go == "1") {
     //mysqli_query($idconnect, ("INSERT INTO phpab_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
     //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
-//$tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
+//$tabTables = array('phpau', 'phpab', 'phpca', 'phpab', 'phpidf', 'phpfed3NE', 'phppro');
 $tabTables = array('phpab');
 foreach ($tabTables as $table) {
   //phpab_pronostics
@@ -170,12 +174,12 @@ Sportivement</font></p>
       echo "</table>";
     } else {
       echo "<table align=\"center\">";
-      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_ECHOUE . "</font><br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
+      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_ECHOUE . "</font><br /><a href=\"/Test/phpab/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
       echo "</table>";
     }
   } else {
     echo "<table align=\"center\">";
-    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Phpleague/phpab/prono/index.php?page=inscription&champ=$champ\"></font></font>" . "Réessayer" . "</a></td></tr>";
+    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Test/phpab/prono/index.php?page=inscription&champ=$champ&champLigue=$champLigue\"></font></font>" . "Réessayer" . "</a></td></tr>";
     echo "</table>";
   }
 }

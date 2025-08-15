@@ -31,6 +31,7 @@
 
 <?php
 $championnat = $_GET['champ'];
+$comite = $_GET['comite'];
 require ("../config.php") ;
 require ("fonctions.php");
 ouverture ();
@@ -50,7 +51,7 @@ ouverture ();
       <td class="phppro3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
       <a href="?page=championnat"><?php// echo LEAGUE; ?></a><br /><br />
       
-    --> 
+   -->  
       
      
       
@@ -77,7 +78,7 @@ ouverture ();
 
      if (VerifSession ($user_pseudo,$user_mdp, $idconnect)=="1")
                 {
-       if ($page=="championnat") {include ("championnat2.php");}
+       if ($page=="championnat") {include ("championnat5.php");}
        elseif ($page=="mini_classement") {include ("mini_classement.php");}
        elseif ($page=="membres") {include ("membres.php");}
         elseif ($page=="accueil") {include ("accueil.htm");}
@@ -113,12 +114,8 @@ ouverture ();
   -->
   </center>
 </div>
-<?php 
-$championnat = (substr($championnat,0,5)*10);
-echo "champ : ".$championnat?>
-<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=pro&bddComite=pro&champ=<?php echo $championnat; ?>">
-
-
+<?php $championnat = (substr($championnat,0,5)*10)+1;?>
+<meta http-equiv="refresh" content="0;URL=../../../smart/171.php?comite=<?php echo $comite; ?>&bddComite=pl&champ=<?php echo $championnat; ?>">
 </body>
 
 </html>

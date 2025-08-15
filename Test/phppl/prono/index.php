@@ -31,11 +31,13 @@ if ($mode == "smart")
 
     
 <?php
+echo "<p class=\"size5 bold styleArial\">";
+  echo "Ligue Bourgogne Franche Comté ";
+  echo "</p>";
 }
   ?>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 
 <?php 
 

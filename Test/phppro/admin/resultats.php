@@ -1,25 +1,4 @@
 <?php
-//***********************************************************************/
-// phpproeague : gestionnaire de championnat                              */
-// ============================================                         */
-//                                                                      */
-// Version : 0.82                                                       */
-// Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpproeague.univert.org                                         */
-//                                                                      */
-// This program is free software. You can redistribute it and/or modify */
-// it under the terms of the GNU General Public Licensde as published by */
-// the Free Software Foundation; either version 2 of the License.       */
-//                                                                      */
-//***********************************************************************/
-// Support technique : http://phpproeague.univert.org/forum               */
-//                                                                      */
-//***********************************************************************/
-
-//$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
-//$idconnect=@mysqli_connect('sql.franceserv.fr','onepip-france','Lavelan1969&','onepip-france-db3');	  
-
-//echo "numero :".$numero;echo "<br />";
 if (empty($numero)) {
 
   $resultats = $idconnect->query("  SELECT max(phppro_journees.numero) 
@@ -37,9 +16,7 @@ while ($row = mysqli_fetch_array($resultats)) {
     $numero = "1";
   }
 }
-if (empty($numero)) {
-  $numero = 1;
-}
+if (empty($numero)) { $numero = 1;}
 
 echo "numero : ".$numero; echo "<br />";
 echo "championnat : ".$champ; echo "<br />";
@@ -62,10 +39,11 @@ $nbreDeMatchs = $nbreMatchParJournee[0];
 $nbreDeMatchs = (int)$nbreDeMatchs;
 var_dump($nbreDeMatchs);
 echo "nbre de matchs : ".$nbreDeMatchs; echo "<br />";
-
+echo "---------------------------------------------"; echo "<br />";
+  $points_prono_exact=4;
 /***********************************/
 
-for ($i = 0; $i < 9 ; $i++) {
+for ($i = 0; $i < $nbreDeMatchs ; $i++) {
 
 //echo "date FR : ".$date_reelle[$i];echo "<br />";
 
@@ -103,18 +81,132 @@ echo "<br />";
 //echo $dateUSA[$i];echo "<br />";
 
   if (!(($butd[$i] == '') or ($butv[$i] == ''))) {
-   // echo "Etape 1";echo "<br />";
+  
+   echo "Traitement des scores"; echo "<br />";
     mysqli_query($idconnect, ("UPDATE phppro_matchs  
-    SET buts_dom='$butd[$i]',     buts_ext='$butv[$i]', date_reelle='$dateUSA[$i]'
-    WHERE id='$matchs_id[$i]'"));
+                               SET buts_dom ='$butd[$i]', buts_ext='$butv[$i]', date_reelle='$dateUSA[$i]'
+                               WHERE id='$matchs_id[$i]'"));
  
-} elseif (($butv[$i] == '') or ($butd[$i] == '')) {
-   // echo "Etape 2 : absences des scores" . "<br />"; echo "<br />";
+   mysqli_query($idconnect, ("UPDATE phppro_pronostics  
+                              SET buts_dom='$butd[$i]',     buts_ext='$butv[$i]'
+                              WHERE id_match='$matchs_id[$i]'"));
+
+    echo "MAJ en table effectuée"    ;echo "<br />";                      
+   /////***************************************************/******************** */ */
+   
+   echo "Scores : ".$matchs_id[$i]." : ".$butd[$i]. "- ".$butv[$i];echo "<br />";
+   echo "matchs_id[$i]".$matchs_id[$i]; echo "<br>";
+  
+
+   /* A verifier l'interet de cette requete
+   $requete3=$idconnect->query("SELECT pronostic
+                                FROM phppro_pronostics 
+                                WHERE id_match='$matchs_id[$i]'");
+            while ($row=mysqli_fetch_array($requete3))
+           {
+              $pronosticfait = $row[0];
+           }  
+*/
+echo "<br>";echo "<br>";
+
+
+echo "<br>";echo "<br>";
+//count du nombre de pronostiqueurs
+
+
+/*
+$requete = $idconnect->query("SELECT COUNT(id_match) 	
+			                        FROM phppro_pronostics 											   
+                              WHERE id_match='$matchs_id[$i]'");
+                               
+
+echo $matchs_id[$i];echo "<br>";
+while($row= mysqli_fetch_array($requete))
+{$nb_de_pronostiqueurs[]= $row[0];}echo $nb_de_pronostiqueurs[0] ." pronostiqueurs";echo "<br>";
+*/
+
+
+  
+   
+ 
+ echo "debut : ".$matchs_id[$i];
+ $tabParieurs = array();
+ 
+ 
+ $requete2=$idconnect->query("SELECT pronostic, id_membre 
+                                FROM phppro_pronostics 
+                                WHERE id_match='$matchs_id[$i]'");
+            while ($row=mysqli_fetch_array($requete2))
+                                 {  
+                                    $tabParieurs[] = $row[1];
+                                }  
+
+
+echo "<br>";
+foreach ($tabParieurs as $parieur) {
+ echo "-------------------";echo "<br>";
+echo "parieur :".$parieur; echo "<br>";
+echo "-------------------";echo "<br>";
+
+
+
+$requete2=$idconnect->query("SELECT pronostic
+                                FROM phppro_pronostics 
+                                WHERE id_match='$matchs_id[$i]' and id_membre = '$parieur' ");
+            while ($row=mysqli_fetch_array($requete2))
+                                 {  $prono = $row[0];
+                                   
+                                }  
+echo "---------zz----------";echo "<br>";
+echo "prono : ".$prono;echo "<br>";
+echo "---------zz----------";echo "<br>";
+
+                             
+
+ //cas d'un pronostic exact d'une victoire
+   if ($butd[$i] > $butv[$i] & $prono == "1") {
+    echo "prono victoire ok";
+          mysqli_query($idconnect,"UPDATE phppro_pronostics 
+                                   SET points = '$points_prono_exact', participation='1' 
+                                   WHERE id_match = '$matchs_id[$i]' and id_membre = '$parieur' "); }
+  //cas d'un pronostic exact d'un null
+   elseif ($butd[$i] == $butv[$i] & $prono == "N")  {
+    echo "prono null ok";
+           mysqli_query($idconnect,"UPDATE phppro_pronostics 
+                                    SET points = '$points_prono_exact', participation='1' 
+                                    WHERE id_match = '$matchs_id[$i]' and id_membre = '$parieur' ");}
+//cas d'un pronostic exact d'une défaite
+   elseif ($butd[$i] < $butv[$i] & $prono == "2")  {
+    echo "prono defaite ok";
+          mysqli_query($idconnect,"UPDATE phppro_pronostics 
+                                   SET points = '$points_prono_exact', participation='1' 
+                                   WHERE id_match = '$matchs_id[$i]' and id_membre = '$parieur'");}
+//cas non null
+  elseif ($prono != NULL) { 
+   // else { 
+ echo "prono echec : O point";
+          mysqli_query($idconnect,"UPDATE phppro_pronostics 
+                                   SET points = '0', participation = '1'
+                                   WHERE id_match = '$matchs_id[$i]'and id_membre = '$parieur' ");}
+         
+  echo "<br />";
+
+   /********************************************************************* */
+  }
+  } elseif (($butv[$i] == '') or ($butd[$i] == '')) {
+    echo "Absences de scores" . "<br />"; echo "<br />";
 
     mysqli_query($idconnect, ("UPDATE phppro_matchs 
 					SET buts_dom = NULL, buts_ext = NULL,  date_reelle='$dateUSA[$i]'
           WHERE id ='$matchs_id[$i]' "));
+
+          mysqli_query($idconnect, ("UPDATE phppro_pronostics  
+    SET buts_dom = NULL,     buts_ext = NULL
+    WHERE id_match='$matchs_id[$i]'"));
+
+
   }
+   
 }
 ?>
 

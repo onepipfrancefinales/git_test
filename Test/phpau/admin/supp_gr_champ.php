@@ -19,19 +19,17 @@
 if ($gr_champ and !$confirm=="ok")
 {
 ?>
-<table  class=phpau width="80%">
-            <tr>
-              <td class=phpau2 align="center"><?php echo ADMIN_GR_CHAMPIONNATS_SUPP; ?></td>
-            </tr>
-            <tr>
-              <td class=phpau3 align=center><?php echo ADMIN_GR_CHAMPIONNATS_SUPP1; ?> <b><?php affich_gr_champ ($gr_champ, $idconnect); ?></b> <?php echo ADMIN_GR_CHAMPIONNATS_SUPP2; ?></td>
-            </tr>
-            <tr>
-              <td class=phpau3 align=center><a href="?page=groupes_championnats&action=supp&gr_champ=<?php print $gr_champ; ?>&confirm=ok"><?php echo ADMIN_RENS_17; ?></a> - <a href="?page=groupes_championnats"><?php echo ADMIN_RENS_18; ?></a></td>
-            </tr>
-
-
-          </table>
+  <table  class=phpau width="80%">
+     <tr>
+       <td class=phpau2 align="center"><?php echo ADMIN_GR_CHAMPIONNATS_SUPP; ?></td>
+    </tr>
+    <tr>
+       <td class=phpau3 align=center><?php echo ADMIN_GR_CHAMPIONNATS_SUPP1; ?> <b><?php affich_gr_champ ($gr_champ, $idconnect); ?></b> <?php echo ADMIN_GR_CHAMPIONNATS_SUPP2; ?></td>
+    </tr>
+    <tr>
+       <td class=phpau3 align=center><a href="?page=groupes_championnats&action=supp&gr_champ=<?php print $gr_champ; ?>&ligue=<?php echo $ligue; ?>&confirm=ok"><?php echo ADMIN_RENS_17; ?></a> - <a href="?page=groupes_championnats"><?php echo ADMIN_RENS_18; ?></a></td>
+    </tr>
+  </table>
 <?php
 }
 
