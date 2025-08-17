@@ -247,6 +247,8 @@ echo "id (prono1) : ".$id; echo "<br>";
 			 AND phppl_matchs.buts_dom is null
 			 AND phppl_matchs.buts_ext is null
 			 AND phppl_clubs.nom!='exempte'
+       AND phpab_clubs.nom!='Exempt'
+       AND CLEXT.nom!='Exempt
 			 AND CLEXT.nom!='exempte'
 			 ORDER by phppl_matchs.date_reelle, phppl_clubs.nom
 			 LIMIT $debut, $fin ");

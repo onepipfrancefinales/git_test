@@ -54,14 +54,20 @@ function ValideGrille(tot) {
 <?php
 //echo "user_id0 (prono1) : ".$user_id; echo "<br>"; 
 
+echo "debut : " . $debut;
+echo "<br>";
+
 if (isset($debut)) $debut = $debut;
 else $debut = 0;
-$nb_matchs = 18;
+$nb_matchs = 18; //nombre de matchs affiché à l'écran
 if (isset($_REQUEST['debut'])) {
   $debut = $_REQUEST['debut'];
 } else {
   $debut = '';
 }
+
+
+
 
 if (empty($debut) or $debut == "0") $debut = 0;
 $apres = 1;
@@ -134,10 +140,10 @@ if ($action == "reset") {
 
 if ($action == "valid_pronos") {
 
-//echo "enregistrement";echo "<br>"; 
-//echo "id (prono1) : ".$id; echo "<br>"; 
-//echo "user_id (prono1) : ".$user_id; echo "<br>"; 
-//echo "<br>";
+  //echo "enregistrement";echo "<br>"; 
+  //echo "id (prono1) : ".$id; echo "<br>"; 
+  //echo "user_id (prono1) : ".$user_id; echo "<br>"; 
+  //echo "<br>";
   for ($i = 1; $i <= $_REQUEST['nb_fiche']; $i++) {
     $nom_f_prono = "r_$i";
     $nom_id_match = "id_match_$i";
@@ -190,8 +196,10 @@ if ($action == "valid_pronos") {
       while ($row = mysqli_fetch_array($resultat)) {
         $id = $row["id"];
       }
-echo "------------------------" ;  echo "<br>";   
-echo "id (prono1) : ".$id; echo "<br>"; 
+      echo "------------------------";
+      echo "<br>";
+      echo "id (prono1) : " . $id;
+      echo "<br>";
       if ($nb_prono == "1") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
           mysqli_query($idconnect, ("UPDATE phpab_pronostics 
@@ -247,8 +255,10 @@ echo "id (prono1) : ".$id; echo "<br>";
 			 AND phpab_matchs.buts_dom is null
 			 AND phpab_matchs.buts_ext is null
 			 AND phpab_clubs.nom!='exempte'
+       AND phpab_clubs.nom!='Exempt'
+       AND CLEXT.nom!='Exempt'
 			 AND CLEXT.nom!='exempte'
-			 ORDER by phpab_matchs.date_reelle, phpab_clubs.nom
+       ORDER by phpab_matchs.date_reelle, phpab_clubs.nom
 			 LIMIT $debut, $fin ");
 
   $i = 0;
@@ -264,6 +274,23 @@ echo "id (prono1) : ".$id; echo "<br>";
     $clubs_nom1 = stripslashes($row[1]);
     $id_dom = $row[5];
     $id_ext = $row[6];
+
+    $idMatch = $row[2];
+    $idMatchReduit = substr($idMatch, 2, 4);
+    $poule = substr($idMatchReduit, -1);
+    //if ($idMatchReduit > 200)
+
+    if (substr($idMatchReduit, 1, 2) == "17")
+      $Champ = "R1";
+    elseif (substr($idMatchReduit, 1, 2) == "18")
+      $Champ = "R2";
+    elseif (substr($idMatchReduit, 1, 2) == "19")
+      $Champ = "R3";
+    elseif (substr($idMatchReduit, 1, 2) == "20")
+      $Champ = "Promo R3";
+
+
+    $division = $Champ."-"."P".$poule;
 
     $resultat2 = $idconnect->query(" SELECT pronostic 
 									   FROM phpab_pronostics, phpab_membres 
@@ -304,18 +331,16 @@ echo "id (prono1) : ".$id; echo "<br>";
 
     echo "<tr><td class=\"blanc center\">$row[4]</td>";
     echo "<td class=\"blanc\">$date</td>";
-   if ($id_dom > 90000000) {
-    echo "<td align=\"right\" class=\"colorYellow\">$clubs_nom II</td>";
-   }
-   else
-     {
-    echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
-  }
+    if ($id_dom > 90000000) {
+      echo "<td align=\"right\" class=\"colorYellow\">$clubs_nom II</td>";
+    } else {
+      echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
+    }
 
     if ($ecart_heures >= "0") {
       $x++;
       echo "<td>";
-     echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
+      echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
 ?><input type="hidden" value="1" name="r_<?php echo $x; ?>">
 
       <table width="100">
@@ -390,13 +415,11 @@ echo "id (prono1) : ".$id; echo "<br>";
             echo "</td></tr></table>";
             echo "</td></tr></table></td>";
           }
- if ($id_ext > 90000000) {
-          echo "<td class=\"colorYellow\">$clubs_nom1 II</td><td align=center>";
- }
- else
- {
-          echo "<td class=\"blanc\">$clubs_nom1</td><td align=center>";
- }
+          if ($id_ext > 90000000) {
+            echo "<td class=\"colorYellow\">$clubs_nom1 II</td><td align=center>";
+          } else {
+            echo "<td class=\"blanc\">$clubs_nom1</td><td align=center>";
+          }
 
           if ($ecart_heures > 48) echo "<div class=\"blanc\">$ecart_jours jours</div>";
           elseif ($ecart_heures > 0) echo "<div class=\"blanc\">$ecart_heures h</div>";
@@ -405,10 +428,24 @@ echo "id (prono1) : ".$id; echo "<br>";
             echo "<div class=\"blanc\">" . PRONO_GRILLE_EXPIRE . "</div>";
           }
           echo "</td>";
+
+
+if ($id_ext > 90000000) {
+            echo "<td class=\"colorYellow size2\">$division</td>";
+          } else {
+            echo "<td class=\"blanc size2\">$division</td>";
+          }
+       //   echo "<td class=\"blanc size2\">".$division."</td>";
+
+
+
+
           echo "</tr>";
+
           $i++;
         }
         ?>
+
         <tr>
           <td colspan="6" align="center">
             <input type="hidden" name="action" value="valid_pronos">

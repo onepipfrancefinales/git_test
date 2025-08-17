@@ -178,7 +178,7 @@ function affich_gr_championnats($ligue, $gr_champ, $action, $idconnect)
   $resultats = $idconnect->query("  SELECT DISTINCT id, nom 
 								   FROM phpab_gr_championnats 
                    WHERE id BETWEEN '$ligue' AND '$ligueFin'
-								   ORDER by id desc");
+								   ORDER by nom asc");
 
   $i = 0;
   while ($row = mysqli_fetch_array($resultats)) {
