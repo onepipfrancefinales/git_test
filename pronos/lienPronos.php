@@ -1,9 +1,9 @@
 
   
 <br> 
- <table class="borderNone marginAuto ">
+ <table class="borderNone marginAuto width75PC ">
     <tr> 
-     <td colspan="3" class="size4 styleArial" > <a href="../pronos/pagePronos.php?division=<?php echo $division; ?>&champLigue=<?php echo $champLigue; ?>">Pronostiquez sur les compétitions de la ligue</a> </td>
+     <td class="size4 styleArial backgroundBlack" > <a  style ="text-decoration: none; color:#FFFFFF;" href="../pronos/pagePronos.php?division=<?php echo $division; ?>&champLigue=<?php echo $champLigue; ?>">Pronostiquez sur les compétitions de la ligue</a> </td>
     </tr>
   </table>
   

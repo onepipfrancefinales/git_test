@@ -38,6 +38,9 @@ color: #000000;font-size: 25px;font-family: arial;text-align: center;font-weight
 td.france{margin-bottom:0px; margin-top:0px; height:10px;background: linear-gradient(to left, red, white); border:2px solid #405864;border-radius:8px 8px 8px 8px;font-family: arial;color: #FFFFFF;font-size: 16px;
 text-align: center;font-weight: Bold; width:95%}
 
+td.franceProno{margin-bottom:0px; margin-top:0px; height:10px;background: black; border:2px solid #405864;border-radius:8px 8px 8px 8px;font-family: arial;color: #FFFFFF;font-size: 16px;
+text-align: center;font-weight: Bold; width:95%; }
+
 td.france a{text-decoration: none; color:#FFFFFF;}
 
 td.franceBleu{margin-top:0px;background:linear-gradient(to right, blue, white); border:2px solid #405864;border-radius:8px 8px 8px 8px;font-family: arial;color: #FFFFFF;font-size: 16px;

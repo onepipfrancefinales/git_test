@@ -128,10 +128,10 @@ if ($action3=="creer" and $champ)
   if (isset($row["id_master"])){$id_master = $row["id_master"];} else {$id_master=0;}
   if (isset($row["tps_avant_prono"])){$tps_avant_prono = $row["tps_avant_prono"];} else {$tps_avant_prono=0;}
   
-echo "nom2 : ".$nom_gr_champ;
+echo "nom2 : ".$nom_gr_champ;echo "<br>";
  //   mysqli_query($idconnect,("DELETE FROM phppl_gr_championnats 
 //						  WHERE id_champ = '0'"));
-echo "choix champ: ".$champ[0];
+echo "choix champ: ".$champ[0];echo "<br>";
     // reset ($champ);
 	// while ( list($cle, $val)= each($champ))
     //     {
@@ -145,14 +145,26 @@ echo "choix champ: ".$champ[0];
 			$nom_gr_champ=$row[0];
 			}
 		
+		echo "test1: ";echo "<br>";
 		
 		
-		
-		$activ_prono=1;
-		$pts_prono_exact=4;
-		$pts_prono_participation=1;
-		$id_master=7; 
-		$tps_avant_prono=1;
+		//$activ_prono=1;
+	//	$pts_prono_exact=4;
+		//$pts_prono_participation=1;
+	//	$id_master=7; 
+	//	$tps_avant_prono=1;
+
+
+echo "$gr_champ";echo "<br>";
+echo "$nom_gr_champ";echo "<br>";
+echo "$val";echo "<br>";
+echo "$activ_prono";echo "<br>";
+echo "$pts_prono_exact";echo "<br>";
+echo "$pts_prono_participation";echo "<br>";
+echo "$id_master";echo "<br>";
+echo "$tps_avant_prono";echo "<br>";
+
+
 		
 		
 		$val=$champ[0];
@@ -166,7 +178,7 @@ mysqli_query($idconnect,("DELETE FROM phppl_gr_championnats
 						  WHERE id_champ = '0'"));
 
 }
-
+echo "test2: ";echo "<br>";
 ?>
 
 <!-- tableau 2 : choix des poules -->

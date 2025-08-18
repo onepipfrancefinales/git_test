@@ -60,7 +60,7 @@ if (isset($_GET['division'])) $division = $_GET['division'];else $division=0;
   </table>
   <table class="marginAuto">
 
- <!--
+ 
   <tr>
  
 <td class="colonneForum"></td>
@@ -69,7 +69,7 @@ if (isset($_GET['division'])) $division = $_GET['division'];else $division=0;
   </td>
 <td class="colonneForum"></td>
 </tr>
-  -->
+  
 
   </table>
     

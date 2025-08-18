@@ -2,6 +2,11 @@
 $champ2 =substr($champ,0,2);
 $division =$champ2*10;
 
+
+$champLigue = substr($division,0,2);
+$div =170;
+$adresse = "../Test/phpab/prono/index.php?mode=smart&?division=$division$div&champLigue=$champLigue";
+
 ?>
 <table class="marginAuto width95PC backgroundWhite">
 <tr>
@@ -9,12 +14,17 @@ $division =$champ2*10;
 		Phases finales régionales <?php echo $datePhasesFinales;?>
 	</a></td>
 </tr>
+
+<tr>
+ <td class="franceBleu"><a href="palmares/pagePalmTerr.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ ;?>"> 
+ 		Palmarès régional</a></td>
+</tr>
 <tr>
  <td height="5"></td>
 </tr>
 <tr>
- <td class="franceBleu"><a href="palmares/pagePalmTerr.php?comite=<?php echo $comite; ?>&bddComite=<?php echo $bddComite; ?>&champ=<?php echo $champ ;?>"> 
- 		Palmarès régional</a></td>
+ <td class="franceProno "><a style ="text-decoration: none; color:#FFFFFF;" href="<?php echo $adresse ;?>"> 
+ 		Pronostiquez sur les compétitions de la ligue</a></td>
 </tr>
 </table>
 

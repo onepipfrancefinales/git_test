@@ -32,6 +32,16 @@ identifiant :  git_test
 Mdp : Laurent1969&
 
 
+
+Forum
+
+https://francefinalesprono.forumactif.com
+identifiant : Admin
+Mdp : 
+adresse : onepipthib@gmail.com
+
+
+
 stockage 
 google drive
 onepipthib

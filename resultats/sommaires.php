@@ -185,7 +185,7 @@ else
   </table>
   <?php
 }
-if ($champLigue == 11 OR $champLigue == 12 OR $champLigue == 13 OR $champLigue == 16 OR $champLigue == 21 OR $champLigue == 20) {
+if ($champLigue > 9 and  $champLigue < 23) {
 require '../pronos/lienPronos.php';
 }
 ?>

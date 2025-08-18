@@ -54,8 +54,7 @@ function ValideGrille(tot) {
 <?php
 //echo "user_id0 (prono1) : ".$user_id; echo "<br>"; 
 
-echo "debut : " . $debut;
-echo "<br>";
+
 
 if (isset($debut)) $debut = $debut;
 else $debut = 0;
@@ -196,10 +195,7 @@ if ($action == "valid_pronos") {
       while ($row = mysqli_fetch_array($resultat)) {
         $id = $row["id"];
       }
-      echo "------------------------";
-      echo "<br>";
-      echo "id (prono1) : " . $id;
-      echo "<br>";
+    
       if ($nb_prono == "1") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
           mysqli_query($idconnect, ("UPDATE phpab_pronostics 
@@ -258,7 +254,7 @@ if ($action == "valid_pronos") {
        AND phpab_clubs.nom!='Exempt'
        AND CLEXT.nom!='Exempt'
 			 AND CLEXT.nom!='exempte'
-       ORDER by phpab_matchs.date_reelle, phpab_clubs.nom
+       ORDER by phpab_matchs.date_reelle, phpab_matchs.id
 			 LIMIT $debut, $fin ");
 
   $i = 0;
