@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpproeague : gestionnaire de championnat                              */
+// phpabeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpproeague.univert.org                                         */
+// http://phpabeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpproeague.univert.org/forum               */
+// Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -28,24 +28,24 @@ reset ($date);
 	//$bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db3;charset=utf8', 'root', '');
 
 	
-	mysqli_query($idconnect,("UPDATE phppro_journees 
+	mysqli_query($idconnect,("UPDATE phpab_journees 
 			 SET date_prevue='$dateUS' 
 			WHERE numero='$y' 
 			AND id_champ='$champ'"));
 	
 
   $result2=$idconnect->query("
-			 SELECT phppro_journees.id 
-			 FROM phppro_journees, phppro_matchs 
-			 WHERE phppro_journees.id=phppro_matchs.id_journee 
-			 AND phppro_journees.numero='$y' 
+			 SELECT phpab_journees.id 
+			 FROM phpab_journees, phpab_matchs 
+			 WHERE phpab_journees.id=phpab_matchs.id_journee 
+			 AND phpab_journees.numero='$y' 
 			 AND id_champ='$champ'");
   // $result2=mysql_query($query2) or die ("probleme " .mysql_error());
       while ($row2= mysqli_fetch_array($result2))
       {
         $date_us_matchs="$dateUS $heure:$minute:00";
-        mysqli_query($idconnect, ("UPDATE phppro_matchs SET date_reelle='$date_us_matchs'
-		wHERE phppro_matchs.id_journee=$row2[0]"));
+        mysqli_query($idconnect, ("UPDATE phpab_matchs SET date_reelle='$date_us_matchs'
+		wHERE phpab_matchs.id_journee=$row2[0]"));
         //$result= mysql_query($query);
       }
 
@@ -74,9 +74,9 @@ reset ($date);
 
 
 ?>
-<table class=phppro width="80%">
+<table class=phpab width="80%">
             <tr>
-              <td class=phppro2 align="center" colspan="3"><?php echo ADMIN_DATES_TITRE." "; affich_champ ($champ, $idconnect); ?></td><td class=phppro2 align="right"><a href="#" onclick="window.open('Assistant_fr/dates.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
+              <td class=phpab2 align="center" colspan="3"><?php echo ADMIN_DATES_TITRE." "; affich_champ ($champ, $idconnect); ?></td><td class=phpab2 align="right"><a href="#" onclick="window.open('Assistant_fr/dates.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
 
             </tr>
 
@@ -98,7 +98,7 @@ reset ($date);
   {
   $resultats=$idconnect->query("
 			 SELECT * 
-			 FROM phppro_journees 
+			 FROM phpab_journees 
 			 WHERE id_champ='$champ'");
  // $resultats=mysql_query($requete);
   $nb_equipes1=mysqli_num_rows($resultats);
@@ -107,11 +107,11 @@ reset ($date);
   
   if ($nb_equipes1!==(($nb_equipes)*2-2))
   {
-    mysqli_query($idconnect, ("DELETE FROM phppro_journees WHERE id_champ='$champ'"));
+    mysqli_query($idconnect, ("DELETE FROM phpab_journees WHERE id_champ='$champ'"));
     $x=1;
     while ($x <= ($nb_equipes*2)-2)
 		{
-		mysqli_query($idconnect, ("INSERT INTO phppro_journees (numero, id_champ) VALUES ('$x','$champ')"));
+		mysqli_query($idconnect, ("INSERT INTO phpab_journees (numero, id_champ) VALUES ('$x','$champ')"));
 		//$result= mysql_query($query);
 		$x++;
 		}
@@ -123,14 +123,14 @@ reset ($date);
 
   $resultats=$idconnect->query("
 			 SELECT numero, date_prevue 
-			 FROM phppro_journees 
+			 FROM phpab_journees 
 			 WHERE id_champ='$champ' 
 			 ORDER BY numero");
     $i=0;
     while ($row= mysqli_fetch_array($resultats))
     {
-      if (($i%2)==0) {$class="phppro3";}
-      else {$class="phppro4";}
+      if (($i%2)==0) {$class="phpab3";}
+      else {$class="phpab4";}
       $dateFR=@date_us_vers_fr($row[1]);
       echo "<tr><td class=$class colspan=2><br /><b>".ADMIN_JOURNEES_MSG9." $row[0]</b><br />".ADMIN_JOURNEES_MSG10."</td><td colspan=2 class=$class>";
       echo "<input type=\"text\" name=\"date[]\" size=8 maxlength=8 value=\"$dateFR\"></td></tr>";

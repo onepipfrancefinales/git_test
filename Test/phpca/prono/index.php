@@ -31,9 +31,64 @@ if ($mode == "smart")
 
     
 <?php
+ switch ($champLigue){
+
+      case ($champLigue == 10 or substr($gr_champ,0,2)==10):
+			$ligue =  "Auvergne Rhône Alpes";
+			break;
+					
+			case ($champLigue == 11  or substr($gr_champ,0,2)==11):
+			$ligue =  "Bourgogne Franche Comté";
+			break;
+
+			case ($champLigue == 12 or substr($gr_champ,0,2)==12):
+			$ligue =  "Bretagne";
+			break;
+			
+			case ($champLigue == 13 or substr($gr_champ,0,2)==13):
+			$ligue =  "Centre Val de Loire";
+			break;
+
+      case ($champLigue == 14 or substr($gr_champ,0,2)==14):
+			$ligue =  "Corse";
+			break;
+
+      case ($champLigue == 15 or substr($gr_champ,0,2)==15):
+			$ligue =  "Grand Est";
+			break;
+
+      case ($champLigue == 16 or substr($gr_champ,0,2)==16):
+			$ligue =  "Haut de France";
+			break;
+
+			case ($champLigue == 17 or substr($gr_champ,0,2)==17):
+			$ligue = "Ile de France";
+			break;
+
+      case ($champLigue == 18 or substr($gr_champ,0,2)==18):
+			$ligue =  "Normandie";
+			break;
+
+      case ($champLigue == 19 or substr($gr_champ,0,2)==19):
+			$ligue =  "Nouvelle Aquitaine";
+			break;
+
+      case ($champLigue == 20 or substr($gr_champ,0,2)==20):
+			$ligue =  "Occitanie";
+			break;
+
+      case ($champLigue == 21 or substr($gr_champ,0,2)==21):
+			$ligue =  "Pays de la Loire";
+			break;
+
+      case ($champLigue == 22 or substr($gr_champ,0,2)==22):
+      $ligue = "Provence Alpes Côte d'Azur";
+      break;
+ }
 echo "<p class=\"size5 bold styleArial\">";
-  echo "Ligue Bourgogne Franche Comté ";
-  echo "</p>";
+echo "Ligue ". $ligue ;echo "<br>";
+echo "(EN PHASE DE TEST)";
+echo "</p>";
 }
   ?>
 
@@ -207,9 +262,11 @@ elseif ($page=="perdu_mdp") {include ("perdu_mdp.php");}
 if ($mode == "smart")
 {
  ?> 
-  <div class="center"> 
-  <iframe  height="100" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="center"> 
+  <iframe  width="100%" height="400" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+
  <?php 
 require '../../../smart/smartFooter.php';
 }

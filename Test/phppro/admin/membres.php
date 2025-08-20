@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpproeague : gestionnaire de championnat                              */
+// phpabeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpproeague.univert.org                                         */
+// http://phpabeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpproeague.univert.org/forum               */
+// Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -20,7 +20,7 @@
 
  //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
   
-  $resultats=$idconnect->query("SELECT * FROM phppro_membres order by id");
+  $resultats=$idconnect->query("SELECT * FROM phpab_membres order by id");
 //$resultats=mysql_query($requete);
 $nb_membres=mysqli_num_rows( $resultats );
 ?>
@@ -83,7 +83,7 @@ $i++;
 <?php
  //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
   
-  $resultats=$idconnect->query("SELECT * FROM phppro_membres order by id");
+  $resultats=$idconnect->query("SELECT * FROM phpab_membres order by id");
 //$resultats=mysql_query($requete)  or die ("probleme " .mysql_error());;
 while ($row=mysqli_fetch_array($resultats))
 {print $row['mail']; echo ";";}

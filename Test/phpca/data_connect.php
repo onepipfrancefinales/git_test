@@ -12,7 +12,6 @@ $login="onepip-france";
 $password="Lavelan1969&";
 
 $lang="fr";
-$PHPLEAGUE_RACINE="Phpleague/phpab/";
-
-$PHPLEAGUE_RACINE2="Phpleaguesmart/phpab/";
+$PHPLEAGUE_RACINE="Phpleague/phpca/";
+$PHPLEAGUE_RACINE2="Phpleaguesmart/phpca/";
 ?>

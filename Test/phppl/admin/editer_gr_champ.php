@@ -46,7 +46,7 @@ echo "<br>";
 */
 if ($action3=="2")
  {
-echo "action3 : ".$action3;
+
  /*
 $requete = $idconnect->query("SELECT COUNT(*)
 FROM phppl_gr_championnats 										    
@@ -63,11 +63,7 @@ $resultats=$idconnect->query("SELECT id
 							WHERE id='$gr_champ'");
  
 $nb_resultats=mysqli_num_rows($resultats);
-echo "--";echo "<br/>";
-echo  "nb_resultats:".$nb_resultats;echo  "nb_resultats:".$nb_resultats;
- 
-echo "rrr".$row[0];
-echo "------------------------------";echo "<br>";
+
 
 
 
@@ -75,8 +71,7 @@ echo "------------------------------";echo "<br>";
  if ($nb_resultats>0)
      { 
 	 //$nom_gr_champ="essai";
-	 echo "azaaz : ".$nom_gr_champ;
-	 echo "testA";
+
 	//M�j des param�tres
 	  
        mysqli_query($idconnect,("
@@ -89,12 +84,12 @@ echo "------------------------------";echo "<br>";
 	        activ_prono='$activ_prono' 
 	   WHERE id='$gr_champ'")) ;
     
- echo "testA1";
+
 	}
    else
      {
        // Insertion des paramètres dans la bdd
-     echo "testB";
+
 	  mysqli_query($idconnect,("
 	  INSERT INTO phppl_gr_championnats (id_champ,nom, pts_prono_exact, pts_prono_participation, id_master, tps_avant_prono) 
 	  VALUES ('$champ','$nom_gr_champ', '$pts_prono_exact', '$pts_prono_participation', '$id_master', '$tps_avant_prono')"));
@@ -103,8 +98,6 @@ echo "------------------------------";echo "<br>";
 
 if ($action3=="creer" and $champ)
 {
-  echo "action3 : ".$action3;
-  
   
   $result=$idconnect->query("
 		  SELECT * 
@@ -128,10 +121,10 @@ if ($action3=="creer" and $champ)
   if (isset($row["id_master"])){$id_master = $row["id_master"];} else {$id_master=0;}
   if (isset($row["tps_avant_prono"])){$tps_avant_prono = $row["tps_avant_prono"];} else {$tps_avant_prono=0;}
   
-echo "nom2 : ".$nom_gr_champ;echo "<br>";
+
  //   mysqli_query($idconnect,("DELETE FROM phppl_gr_championnats 
 //						  WHERE id_champ = '0'"));
-echo "choix champ: ".$champ[0];echo "<br>";
+
     // reset ($champ);
 	// while ( list($cle, $val)= each($champ))
     //     {
@@ -145,26 +138,14 @@ echo "choix champ: ".$champ[0];echo "<br>";
 			$nom_gr_champ=$row[0];
 			}
 		
-		echo "test1: ";echo "<br>";
 		
 		
-		//$activ_prono=1;
-	//	$pts_prono_exact=4;
-		//$pts_prono_participation=1;
-	//	$id_master=7; 
-	//	$tps_avant_prono=1;
-
-
-echo "$gr_champ";echo "<br>";
-echo "$nom_gr_champ";echo "<br>";
-echo "$val";echo "<br>";
-echo "$activ_prono";echo "<br>";
-echo "$pts_prono_exact";echo "<br>";
-echo "$pts_prono_participation";echo "<br>";
-echo "$id_master";echo "<br>";
-echo "$tps_avant_prono";echo "<br>";
-
-
+		
+		$activ_prono=1;
+		$pts_prono_exact=4;
+		$pts_prono_participation=1;
+		$id_master=7; 
+		$tps_avant_prono=1;
 		
 		
 		$val=$champ[0];
@@ -172,13 +153,13 @@ echo "$tps_avant_prono";echo "<br>";
            	              VALUES ('$gr_champ', '$nom_gr_champ', '$val', '$activ_prono', '$pts_prono_exact', '$pts_prono_participation', '$id_master', '$tps_avant_prono')")) ;
 	//	 }       
 
-echo "nom : ".$nom_gr_champ;
+
 
 mysqli_query($idconnect,("DELETE FROM phppl_gr_championnats 
 						  WHERE id_champ = '0'"));
 
 }
-echo "test2: ";echo "<br>";
+
 ?>
 
 <!-- tableau 2 : choix des poules -->

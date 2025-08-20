@@ -1,7 +1,7 @@
 <?php 
-require '../../Phpleague/phppro/config2.php';
-require '../../Phpleague/phppro/admin/fonctions.php';
-include '../../Phpleague/phppro/lang/lang_fr.php';
+require '../../Phpleague/phpab/config2.php';
+require '../../Phpleague/phpab/admin/fonctions.php';
+include '../../Phpleague/phpab/lang/lang_fr.php';
 include '../../fichierConfig.php';
 ouverture();
 
@@ -10,11 +10,11 @@ echo "champRecup : ".$champRecup;
 echo "<br />";
 echo "<hr />";
 
-	if ($champRecup == 110171) {$tableau = array(110171, 110172, 110181,  110191, 110192, 110193, 110271, 110272, 119181);}	//BFC
+	if ($champRecup == 110171) { $tableau = array(110171, 110172, 110181, 110191, 110192, 110193, 110271, 110272, 119181);}	//BFC
 elseif ($champRecup == 120171) { $tableau = array(120171, 120181, 120191, 120192, 120271, 129181);} //BRE
 elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130191, 130192, 130271);}// CVL
 elseif ($champRecup == 160171) { $tableau = array(160171, 160181, 160182, 160191, 160192,160271, 169181,169182);}	//HDF
-elseif ($champRecup == 210171) { $tableau = array(210171, 210181, 210191,210271);} // PDL
+elseif ($champRecup == 210171) { $tableau = array(210171, 210181, 210191, 210271);} // PDL
 
 
 
@@ -28,13 +28,13 @@ foreach ($tableau as $champ)
 	include ("tps1.php3"); 
 	 
 	$result1=$idconnect->query("	SELECT id 
-								FROM phppro_equipes 
+								FROM phpab_equipes 
 								WHERE id_champ='$champ'");
 
 	while ($row1=mysqli_fetch_array($result1))
 	{ 
-	$query="DELETE FROM phppro_clmnt_graph 
-		WHERE phppro_clmnt_graph.id_equipe='$row1[0]'" ;
+	$query="DELETE FROM phpab_clmnt_graph 
+		WHERE phpab_clmnt_graph.id_equipe='$row1[0]'" ;
         mysqli_query($idconnect, $query) or die (mysqli_error($idconnect));
 	}
 $debut=0;
@@ -42,7 +42,7 @@ $fin=1;
 	 
   $result = $idconnect->query("
 			SELECT accession, barrage, relegation 
-			FROM phppro_parametres 
+			FROM phpab_parametres 
 			WHERE id_champ='$champ'");
 								
 			while ($row=mysqli_fetch_array($result))
@@ -52,9 +52,9 @@ $fin=1;
 				//$relegation = nb_equipes($champ, $idconnect)- $row['relegation'];
 				}
 	
-  $result=$idconnect->query("SELECT max(phppro_journees.numero) 
-							 FROM phppro_journees, phppro_matchs 
-							 WHERE phppro_journees.id=phppro_matchs.id_journee AND buts_dom is not NULL and phppro_journees.id_champ='$champ'");
+  $result=$idconnect->query("SELECT max(phpab_journees.numero) 
+							 FROM phpab_journees, phpab_matchs 
+							 WHERE phpab_journees.id=phpab_matchs.id_journee AND buts_dom is not NULL and phpab_journees.id_champ='$champ'");
 
 $row=mysqli_fetch_array($result);
 $max=$row[0];
@@ -65,7 +65,7 @@ while ($fin<=$max)
   
   $result = $idconnect->query("
 			SELECT * 
-			FROM phppro_clmnt 
+			FROM phpab_clmnt 
 			ORDER BY POINTS
 			DESC, DIFF DESC, BUTSPOUR 
 			DESC, BUTSCONTRE 
@@ -77,7 +77,7 @@ $pl=1;
          $x=0;
          $id_equipe=$row["ID_EQUIPE"];
 
-         $query="INSERT INTO phppro_clmnt_graph (id_equipe, fin, classement) 
+         $query="INSERT INTO phpab_clmnt_graph (id_equipe, fin, classement) 
 				 VALUES ('$id_equipe','$fin', '$pl')" ;
          mysqli_query($idconnect, $query);
          $pl++;                    
@@ -86,16 +86,16 @@ $pl=1;
 }     
  
   $result = $idconnect->query("
-			SELECT phppro_clmnt_graph.id_equipe 
-			FROM phppro_clmnt_graph, phppro_equipes 
-			WHERE phppro_equipes.id=phppro_clmnt_graph.id_equipe
-            AND phppro_equipes.id_champ=$champ");
+			SELECT phpab_clmnt_graph.id_equipe 
+			FROM phpab_clmnt_graph, phpab_equipes 
+			WHERE phpab_equipes.id=phpab_clmnt_graph.id_equipe
+            AND phpab_equipes.id_champ=$champ");
 
 			$nb_saving=mysqli_num_rows($result);
  
   $result=$idconnect->query("
 		SELECT * 
-		FROM phppro_equipes 
+		FROM phpab_equipes 
 		WHERE id_champ=$champ");
 
 		$nb_equipes=mysqli_num_rows($result);            

@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpproeague : gestionnaire de championnat                              */
+// phpabeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpproeague.univert.org                                         */
+// http://phpabeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpproeague.univert.org/forum               */
+// Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -22,12 +22,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>phpproeague - Administration</title>
+<title>phpabeague - Administration</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
-<body topmargin="0" leftmargin="0" class="phppro">
+<body topmargin="0" leftmargin="0" class="phpab">
 
 <?php
 require ("../config.php") ;
@@ -40,12 +40,12 @@ ouverture ();
   <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppro"> 
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpab"> 
           Ligue Nouvelle Aquitaine - Administration</font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
-      <td class="phppro3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
+      <td class="phpab3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
       <a href="?page=championnat"><?php echo LEAGUE; ?></a><br /><br />
       
      
@@ -96,9 +96,9 @@ ouverture ();
       <td></td>
     </tr>
     <tr>
-      <td class="phppro" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
+      <td class="phpab" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
         </td>
-      <td class="phppro" colspan="3" width="70%" height="10" colspan="2" align="right"><a target="_blank" href="http://phpproeague.univert.org">phpproeague</a>
+      <td class="phpab" colspan="3" width="70%" height="10" colspan="2" align="right"><a target="_blank" href="http://phpabeague.univert.org">phpabeague</a>
         - Copyright © 2004-2005 - Tous droits réservés - <a href="mailto:Alexis@univert.org">Alexis
         MANGIN</a><br />
         </td>

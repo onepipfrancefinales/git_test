@@ -155,7 +155,7 @@ define("ADMIN_TAPVERT_MSG6","Activer les estimations dans la page du classement 
 
 // R�sultats
 define("ADMIN_RESULTS_TITRE","Résultats de");
-define("ADMIN_RESULTS_1","Exempt�e");
+define("ADMIN_RESULTS_1","Exemptée");
 
 // Buteurs
 //define("ADMIN_JOUEURS_TITRE","Fiches joueurs");
@@ -164,9 +164,9 @@ define("ADMIN_BUTEUR_TITRE","Buteurs de");
 //Graphiques
 define("ADMIN_GRAPH_TITRE","Résultats et classement mis 	&agrave; jours ");
 define("ADMIN_GRAPH","La création des graphiques et des classements a été réalisée avec succès"); //0.82
-define("ADMIN_GRAPH_PRONO","Le classement des membres a �t� r�alis�e avec succ�s"); //0.82
-define("ADMIN_GRAPH_1","La cr�ation des graphiques a �chou�, veuillez r�essayer !");
-define("ADMIN_GRAPH_2","Cette manoeuvre est � effectuer apr�s chaque ajout de r�sultats. Elle peut prendre un certain temps...");
+define("ADMIN_GRAPH_PRONO","Le classement des membres a  a été réalisée avec succès"); //0.82
+define("ADMIN_GRAPH_1","La création des graphiques a échoué, veuillez réessayer !");
+define("ADMIN_GRAPH_2","Cette manoeuvre est a effectuer après chaque ajout de résultats. Elle peut prendre un certain temps...");
 define("ADMIN_GRAPH_3","Evolution du classement de");
 define("ADMIN_GRAPH_4","");
 define("ADMIN_GRAPH_5","secondes");

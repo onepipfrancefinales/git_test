@@ -202,7 +202,7 @@ pourrait détruire vos données !</font></p>
      $contenu .= "\$login=\"$login\";\n";
      $contenu .= "\$password=\"$password\";\n";
      $contenu .= "\$lang=\"$lang\";\n";
-     $contenu .= "\$PHPLEAGUE_RACINE=\"$repertoire_script\";\n";
+     $contenu .= "\$phpcaEAGUE_RACINE=\"$repertoire_script\";\n";
      $contenu .= "?>\n";
 
      fwrite($fp,$contenu);

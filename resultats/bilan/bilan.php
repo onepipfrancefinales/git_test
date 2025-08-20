@@ -333,7 +333,7 @@
 
   <p class="QLiens"> Calendrier et résulats des rencontres de la poule</p>
 
-  <?php //calendrier($champ, false, $bdd); ?>
+  <?php calendrier($champ, false, $bdd); ?>
 
   <hr>
 

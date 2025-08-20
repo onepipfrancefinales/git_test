@@ -54,8 +54,7 @@ function ValideGrille(tot) {
 <?php
 //echo "user_id0 (prono1) : ".$user_id; echo "<br>"; 
 
-echo "debut : " . $debut;
-echo "<br>";
+
 
 if (isset($debut)) $debut = $debut;
 else $debut = 0;
@@ -76,10 +75,10 @@ if (is_numeric($debut) && is_numeric($nb_matchs)) {
   $fin = $debut + $nb_matchs;
 }
 
-// /*******************   Réinitialisation des pronostics ***********************
+// /*******************   Réinitialisation des pronostics  "Début" ***********************
 if ($action == "reset") {
   $resultat = $idconnect->query("SELECT tps_avant_prono 
-							 FROM phppro_gr_championnats 
+							 FROM phpab_gr_championnats 
 							 WHERE id='$gr_champ'");
   //$resultat=mysql_query($requete);
   while ($row = mysqli_fetch_array($resultat)) {
@@ -92,7 +91,7 @@ if ($action == "reset") {
 
   $resultat = $idconnect->query("
 			SELECT id 
-			FROM phppro_membres 
+			FROM phpab_membres 
 			WHERE id_prono='$user_id'");
 
   //$resultat = mysql_query($requete);
@@ -102,24 +101,26 @@ if ($action == "reset") {
   while ($row = mysqli_fetch_array($resultat)) {
     $id = $row["id"];
   }
-  $resultat = $idconnect->query("SELECT phppro_matchs.id
-          FROM phppro_clubs, phppro_clubs as CLEXT, phppro_matchs, phppro_journees, phppro_equipes, phppro_equipes as EXT, phppro_gr_championnats
-          WHERE phppro_clubs.id=phppro_equipes.id_club
+  echo "debut : ".$debut; echo "<br>";
+  echo "fin : ".$fin; echo "<br>";
+  $resultat = $idconnect->query("SELECT phpab_matchs.id
+          FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
+          WHERE phpab_clubs.id=phpab_equipes.id_club
           AND CLEXT.id=EXT.id_club
-          AND phppro_equipes.id=phppro_matchs.id_equipe_dom
-          AND EXT.id=phppro_matchs.id_equipe_ext
-          AND phppro_matchs.id_journee=phppro_journees.id
-          AND phppro_journees.id_champ=phppro_gr_championnats.id_champ
-          AND phppro_gr_championnats.id='$gr_champ'
-          AND phppro_matchs.buts_dom is null
-          AND phppro_matchs.buts_ext is null
-          ORDER by phppro_matchs.date_reelle, phppro_clubs.nom
+          AND phpab_equipes.id=phpab_matchs.id_equipe_dom
+          AND EXT.id=phpab_matchs.id_equipe_ext
+          AND phpab_matchs.id_journee=phpab_journees.id
+          AND phpab_journees.id_champ=phpab_gr_championnats.id_champ
+          AND phpab_gr_championnats.id='$gr_champ'
+          AND phpab_matchs.buts_dom is null
+          AND phpab_matchs.buts_ext is null
+          ORDER by phpab_matchs.date_reelle, phpab_clubs.nom
           LIMIT $debut, $fin ");
 
   while ($row = mysqli_fetch_array($resultat)) {
-    $resultat1 = $idconnect->query("SELECT phppro_matchs.date_reelle 
-                                    FROM phppro_matchs 
-                                    WHERE phppro_matchs.id='$row[0]'");
+    $resultat1 = $idconnect->query("SELECT phpab_matchs.date_reelle 
+                                    FROM phpab_matchs 
+                                    WHERE phpab_matchs.id='$row[0]'");
 
     while ($row1 = mysqli_fetch_array($resultat1)) {
       $date_relle = $row1[0];
@@ -127,12 +128,12 @@ if ($action == "reset") {
     $date_match_timestamp = format_date_timestamp($date_relle);
 
     if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
-      mysqli_query($idconnect, ("UPDATE  phppro_pronostics 
+      mysqli_query($idconnect, ("UPDATE  phpab_pronostics 
                                  SET pronostic='0' 
                                  WHERE id_match='$row[0]' 
                                  AND id_membre='$id'"));
     }
-    mysqli_query($idconnect, ("DELETE FROM phppro_pronostics WHERE pronostic='0'"));
+    mysqli_query($idconnect, ("DELETE FROM phpab_pronostics WHERE pronostic='0'"));
   }
 }
 
@@ -155,16 +156,16 @@ if ($action == "valid_pronos") {
       $id_match[$i] = $_REQUEST[$nom_id_match];
     }
 
-    $resultat = $idconnect->query("SELECT phppro_matchs.date_reelle 
-                                   FROM phppro_matchs 
-                                   WHERE phppro_matchs.id='$id_match[$i]'");
+    $resultat = $idconnect->query("SELECT phpab_matchs.date_reelle 
+                                   FROM phpab_matchs 
+                                   WHERE phpab_matchs.id='$id_match[$i]'");
 
     while ($row = mysqli_fetch_array($resultat)) {
       $date_relle = $row[0];
     }
 
     $resultat = $idconnect->query("SELECT tps_avant_prono 
-                                   FROM phppro_gr_championnats 
+                                   FROM phpab_gr_championnats 
                                    WHERE id='$gr_champ'");
 
     while ($row = mysqli_fetch_array($resultat)) {
@@ -176,41 +177,38 @@ if ($action == "valid_pronos") {
 
     if ($f_prono[$i] !== "undefined") {
 
-      mysqli_query($idconnect, ("DELETE FROM phppro_pronostics 
+      mysqli_query($idconnect, ("DELETE FROM phpab_pronostics 
                                  WHERE pronostic=' '"));
 
       $resultat = $idconnect->query("SELECT * 
-                                     FROM phppro_matchs, phppro_pronostics, phppro_membres 
-                                     WHERE phppro_membres.id_prono='$user_id'
-                                     AND phppro_membres.id=phppro_pronostics.id_membre
-                                     AND phppro_pronostics.id_match=phppro_matchs.id
-                                     AND phppro_pronostics.id_match='$id_match[$i]'");
+                                     FROM phpab_matchs, phpab_pronostics, phpab_membres 
+                                     WHERE phpab_membres.id_prono='$user_id'
+                                     AND phpab_membres.id=phpab_pronostics.id_membre
+                                     AND phpab_pronostics.id_match=phpab_matchs.id
+                                     AND phpab_pronostics.id_match='$id_match[$i]'");
 
       $nb_prono = mysqli_num_rows($resultat);
 
       $resultat = $idconnect->query("SELECT id 
-                                     FROM phppro_membres 
+                                     FROM phpab_membres 
                                      WHERE id_prono='$user_id'");
 
 
       while ($row = mysqli_fetch_array($resultat)) {
         $id = $row["id"];
       }
-      echo "------------------------";
-      echo "<br>";
-      echo "id (prono1) : " . $id;
-      echo "<br>";
+    
       if ($nb_prono == "1") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
-          mysqli_query($idconnect, ("UPDATE phppro_pronostics 
+          mysqli_query($idconnect, ("UPDATE phpab_pronostics 
                                      SET pronostic='$f_prono[$i]'
-                                     WHERE phppro_pronostics.id_membre='$id'
-                                     AND phppro_pronostics.id_match='$id_match[$i]'"));
+                                     WHERE phpab_pronostics.id_membre='$id'
+                                     AND phpab_pronostics.id_match='$id_match[$i]'"));
         }
       }
       if ($nb_prono == "0") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
-          mysqli_query($idconnect, ("INSERT INTO phppro_pronostics (id_membre, pronostic, id_match, id_champ) 
+          mysqli_query($idconnect, ("INSERT INTO phpab_pronostics (id_membre, pronostic, id_match, id_champ) 
                                      VALUES ('$id','$f_prono[$i]','$id_match[$i]', '$gr_champ')"));
         }
       } elseif ($nb_prono != "1" and $nb_prono != "0") {
@@ -242,23 +240,37 @@ if ($action == "valid_pronos") {
 
   include("pronos.htm");
 
+ 
+//echo "<br>";
+$twoWeeks = new DateTime();
+//echo "date actuelle : ".$twoWeeks;
+
+$twoWeeks->modify('+35 days'); 
+//echo "date du jours + 35 jours = " . $twoWeeks->format('Y-m-d H:i:s'); 
+//echo "<br>";
+$dateAffichageMaxi = $twoWeeks->format('Y-m-d H:i:s'); 
+//echo $essai;
+//echo "<br>";
+
+
   $resultat = $idconnect->query("
-			 SELECT phppro_clubs.nom, CLEXT.nom, phppro_matchs.id, phppro_matchs.date_reelle, phppro_journees.numero, phppro_matchs.id_equipe_dom, phppro_matchs.id_equipe_ext
-			 FROM phppro_clubs, phppro_clubs as CLEXT, phppro_matchs, phppro_journees, phppro_equipes, phppro_equipes as EXT, phppro_gr_championnats
-			 WHERE phppro_clubs.id=phppro_equipes.id_club
+			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, phpab_matchs.id_equipe_dom, phpab_matchs.id_equipe_ext
+			 FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
+			 WHERE phpab_clubs.id=phpab_equipes.id_club
 			 AND CLEXT.id=EXT.id_club
-			 AND phppro_equipes.id=phppro_matchs.id_equipe_dom
-			 AND EXT.id=phppro_matchs.id_equipe_ext
-			 AND phppro_matchs.id_journee=phppro_journees.id
-			 AND phppro_journees.id_champ=phppro_gr_championnats.id_champ
-			 AND phppro_gr_championnats.id='$gr_champ'
-			 AND phppro_matchs.buts_dom is null
-			 AND phppro_matchs.buts_ext is null
-			 AND phppro_clubs.nom!='exempte'
-       AND phppro_clubs.nom!='Exempt'
+			 AND phpab_equipes.id=phpab_matchs.id_equipe_dom
+			 AND EXT.id=phpab_matchs.id_equipe_ext
+			 AND phpab_matchs.id_journee=phpab_journees.id
+			 AND phpab_journees.id_champ=phpab_gr_championnats.id_champ
+			 AND phpab_gr_championnats.id='$gr_champ'
+			 AND phpab_matchs.buts_dom is null
+			 AND phpab_matchs.buts_ext is null
+			 AND phpab_clubs.nom!='exempte'
+       AND phpab_clubs.nom!='Exempt'
        AND CLEXT.nom!='Exempt'
 			 AND CLEXT.nom!='exempte'
-       ORDER by phppro_matchs.date_reelle, phppro_clubs.nom
+       AND phpab_matchs.date_reelle < '$dateAffichageMaxi'
+       ORDER by phpab_matchs.date_reelle, phpab_matchs.id
 			 LIMIT $debut, $fin ");
 
   $i = 0;
@@ -293,10 +305,10 @@ if ($action == "valid_pronos") {
     $division = $Champ."-"."P".$poule;
 
     $resultat2 = $idconnect->query(" SELECT pronostic 
-									   FROM phppro_pronostics, phppro_membres 
-									   WHERE phppro_pronostics.id_match='$row[2]' 
-									   AND phppro_membres.id=phppro_pronostics.id_membre 
-									   AND phppro_membres.id_prono='$user_id'");
+									   FROM phpab_pronostics, phpab_membres 
+									   WHERE phpab_pronostics.id_match='$row[2]' 
+									   AND phpab_membres.id=phpab_pronostics.id_membre 
+									   AND phpab_membres.id_prono='$user_id'");
 
     $nb_pronos = mysqli_num_rows($resultat2);
 
@@ -314,7 +326,7 @@ if ($action == "valid_pronos") {
     }
 
     $resultat2 = $idconnect->query("SELECT tps_avant_prono 
-                                    FROM phppro_gr_championnats 
+                                    FROM phpab_gr_championnats 
                                     WHERE id = '$gr_champ'");
 
     while ($row2 = mysqli_fetch_array($resultat2)) {

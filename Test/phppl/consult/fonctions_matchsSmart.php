@@ -19,6 +19,8 @@
 function ENTETE2()
 {
  ?>
+
+
       </td>
     </tr>
   </table>
@@ -30,8 +32,11 @@ function ENTETE2()
 
 // nombres de journees d un championnat
 function nb_journees($id_champ, $idconnect)
-         {	 
+         {
+		 
+			 
          $result=$idconnect->query("SELECT id FROM phppl_equipes WHERE id_champ='$id_champ'");
+        // $result=mysql_query($query);
          $nb_equipes=mysqli_num_rows( $result );
          $nb_journees=((($nb_equipes)*2)-2) ;
          return("$nb_journees");
@@ -40,9 +45,10 @@ function nb_journees($id_champ, $idconnect)
 // Nombres d equipes dans un championnat
 function nb_equipes($id_champ, $idconnect)
          {
-	 
+		
+			 
          $result=$idconnect->query("SELECT id FROM phppl_equipes WHERE id_champ='$id_champ'");
-       
+        // $result=mysql_query($query);
          $nb_equipes=mysqli_num_rows( $result );
          return("$nb_equipes");
          }
@@ -547,7 +553,7 @@ $comite="phppl";
                      if ($lien=='non'){echo "$row[$x]";}
                   //   else {echo "<a href=\"detaileq.php?champ=$champ&amp;id_equipe=".$row['ID_EQUIPE']."\">$row[$x]</a>";
                    //  else {echo "<a href=/resultats/page_bilan.php?comite=$comite&amp;champ=$champ&amp;id_equipe=".$row['ID_EQUIPE']." target=\"_top\">$row[$x]</a>";
-		   else {echo "<a href=/smart/bilan/pageBilan.php?smart=1&comite=$comite&amp;champ=$champ&amp;id_equipe=".$row['ID_EQUIPE']." target=\"_top\">$row[$x]</a>";
+		   else {echo "<a href=/smart/bilan/pageBilan.php?comite=$comite&amp;champ=$champ&amp;id_equipe=".$row['ID_EQUIPE']." target=\"_top\">$row[$x]</a>";
 		  
 				  //  if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "</b>";}
                      }

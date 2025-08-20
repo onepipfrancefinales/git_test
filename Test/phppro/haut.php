@@ -1,8 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC>
       <html>
         <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title>PhpLeague</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>pronostics</title>
 <link rel="stylesheet" type="text/css" href="../league.css">
+<link rel="stylesheet" type="text/css" href="../../../ligne1.css">
+<link rel="stylesheet" type="text/css" href="../../../smart/10.css">
+
+ 
 </head>
-<body class="phppro">
+<body class="phpl">

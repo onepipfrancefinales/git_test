@@ -551,7 +551,7 @@ if (is_numeric($gr_champ))
                               FROM phpca_gr_championnats 
                               WHERE  phpca_gr_championnats.activ_prono='1' 
                               AND id BETWEEN $minChampLigue AND $maxChampLigue
-                              ORDER by id");
+                              ORDER by nom asc");
                 
   while ($row= mysqli_fetch_array($resultat))
   {

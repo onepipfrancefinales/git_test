@@ -40,7 +40,40 @@
   </table>
   <br>
   <br>
+  <table width="800" border="1">
+    <tr class="backgroundBlue colorWhite bold styleArial">
+      <td colspan="7">MAJ comptes Pronos <span class="colorRed bold">(actuellement sur Test)</span></td>
+    </tr>
+    <tr>
+      <td><a href="/Test/phpau/admin/generer_grSansIhm.php">AU</a></td>
+      <td><a href="/Test/phpca/admin/generer_grSansIhm.php">CA</a></td>
+      <td><a href="/Test/phpidf/admin/generer_grSansIhm.php">IDF</a></td>
+      <td><a href="/Test/phpab/admin/generer_grSansIhm.php">OCC</a></td>
+      <td><a href="/Test/phppl/admin/generer_grSansIhm.php">PDL</a></td>
+      <td><a href="/Test/phppro/admin/generer_grSansIhm.php">PRO</a></td>
+      <td><a href="/Test/phpfed3NE/admin/generer_grSansIhm.php">FED3</a></td>
+   </tr>
+<!--
+<tr>
+      <td><a href="/Phpleague/phpau/admin/generer_grSansIhm.php">AU</a></td>
+      <td><a href="/Phpleague/phpca/admin/generer_grSansIhm.php">CA</a></td>
+      <td><a href="/Phpleague/phpidf/admin/generer_grSansIhm.php">IDF</a></td>
+      <td><a href="/Phpleague/phpab/admin/generer_grSansIhm.php">OCC</a></td>
+      <td><a href="/Phpleague/phppl/admin/generer_grSansIhm.php">PDL</a></td>
+      <td><a href="/Phpleague/phppro/admin/generer_grSansIhm.php">PRO</a></td>
+      <td><a href="/Phpleague/phpfed3NE/admin/generer_grSansIhm.php">FED3</a></td>
+    </tr>
 
+-->
+    <tr>
+     
+      <td colspan="7"><a href="/resultats/facebookResultatsDeLaJournee.php" target="_blank">MAJ de la table _clmnt_pronos </a></td>
+    </tr>
+  </table>
+
+
+
+  <p>&nbsp;</p>
   <table width="800" border="1">
     <tr class="backgroundBlue colorWhite bold styleArial">
       <td colspan="2">Génération images Facebook</td>

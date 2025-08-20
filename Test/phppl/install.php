@@ -127,7 +127,7 @@ else
      </select><hr>
      <p><?php echo SETUP_TITRE_SITE; echo "<font color=\"#FF0000\">*</font>"; ?> : <input maxLength="60" size="30" name="nom_site"><br />
      <br />
-     <?php echo SETUP_URL_SITE; echo "<font color=\"#FF0000\">*</font>"; ?> : <input maxLength="120" size="40" value="http://<?php print $_SERVER["HTTP_HOST"]; ?>" name="url_site"><br />
+     <?php echo SETUP_URL_SITE; echo "<font color=\"#FF0000\">*</font>"; ?> : <input maxLength="120" size="40" value="http://<? print $_SERVER["HTTP_HOST"]; ?>" name="url_site"><br />
      <br />
      <?php echo SETUP_REPERTOIRE_SCRIPT; echo "<font color=\"#FF0000\">*</font>"; ?> : <input maxLength="120" size="40" value="http://<?php
 $repertoire = explode("/", $_SERVER["SCRIPT_NAME"]);
@@ -202,7 +202,7 @@ pourrait détruire vos données !</font></p>
      $contenu .= "\$login=\"$login\";\n";
      $contenu .= "\$password=\"$password\";\n";
      $contenu .= "\$lang=\"$lang\";\n";
-     $contenu .= "\$PHPLEAGUE_RACINE=\"$repertoire_script\";\n";
+     $contenu .= "\$phpplEAGUE_RACINE=\"$repertoire_script\";\n";
      $contenu .= "?>\n";
 
      fwrite($fp,$contenu);
@@ -1365,7 +1365,7 @@ utilisateur</font></u></p>
 </body>
 </html>";
 
-  $from="Content-Type: text/html; charset=\"iso-8859-1\"\nFrom: $mail\n";
+  $from="Content-Type: text/html; charset=\"UTF-8\"\nFrom: $mail\n";
 
   $email=@mail($to,$sujet,$message,$from);
 

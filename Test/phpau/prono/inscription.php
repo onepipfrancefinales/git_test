@@ -16,7 +16,7 @@ echo "testmail : ".$testmail; echo "<br>";
 echo "testmdp : ".$testmdp; echo "<br>";
 echo "testnom : ".$testnom; echo "<br>";
 */
-$tabTables = array('phpau', 'phpab', 'phpca', 'phpau', 'phpidf', 'phpfed3NE', 'phppro');								   
+$tabTables = array('phpau', 'phpau', 'phpca', 'phpau', 'phpidf', 'phpfed3NE', 'phppro');								   
 foreach ($tabTables as $table) {
   //phpau_pronostics
 

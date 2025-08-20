@@ -1,26 +1,26 @@
 <?php
 //***********************************************************************/
-// phpproeague : gestionnaire de championnat                              */
+// phpabeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpproeague.univert.org                                         */
+// http://phpabeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpproeague.univert.org/forum               */
+// Support technique : http://phpabeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 echo "genererGroupe.php :";
 $champ ='192';
 ?>
-<table class=phppro width="80%">
+<table class=phpab width="80%">
             <tr>
-              <td class=phppro2 align="center" colspan="3"><?php echo ADMIN_GRAPH_TITRE." "; affich_champ ($champ, $idconnect); ?></td>
+              <td class=phpab2 align="center" colspan="3"><?php echo ADMIN_GRAPH_TITRE." "; affich_champ ($champ, $idconnect); ?></td>
             </tr>
             <tr>
             <td align="center">
@@ -35,19 +35,19 @@ $champ ='192';
   //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
   
   $result1=$idconnect->query("	SELECT id 
-								FROM phppro_equipes 
+								FROM phpab_equipes 
 								WHERE id_champ='$champ'");
 
   while ($row1=mysqli_fetch_array($result1))
   { 
-   $query="DELETE FROM phppro_clmnt_graph 
-		   WHERE phppro_clmnt_graph.id_equipe='$row1[0]'" ;
+   $query="DELETE FROM phpab_clmnt_graph 
+		   WHERE phpab_clmnt_graph.id_equipe='$row1[0]'" ;
    mysqli_query($idconnect, $query) or die (mysqli_error($idconnect));
   }
   $debut=0;
   $fin=1;
   $result=$idconnect->query("SELECT accession, barrage, relegation 
-							 FROM phppro_parametres 
+							 FROM phpab_parametres 
 							 WHERE id_champ='$champ'");
   while ($row=mysqli_fetch_array($result))
   {
@@ -57,9 +57,9 @@ $champ ='192';
   }
   $legende=CONSULT_CLMNT_MSG4.$debut.CONSULT_CLMNT_MSG5.$fin;
 
-  $result=$idconnect->query("SELECT max(phppro_journees.numero) 
-							 FROM phppro_journees, phppro_matchs 
-							 WHERE phppro_journees.id=phppro_matchs.id_journee AND buts_dom is not NULL and phppro_journees.id_champ='$champ'");
+  $result=$idconnect->query("SELECT max(phpab_journees.numero) 
+							 FROM phpab_journees, phpab_matchs 
+							 WHERE phpab_journees.id=phpab_matchs.id_journee AND buts_dom is not NULL and phpab_journees.id_champ='$champ'");
 
   $row=mysqli_fetch_array($result);
   $max=$row[0];
@@ -69,7 +69,7 @@ $champ ='192';
    @db_clmnt($champ, $debut, $fin, 0, $idconnect);
 
    $result=$idconnect->query("SELECT * 
-							 FROM phppro_clmnt 
+							 FROM phpab_clmnt 
 							 ORDER BY POINTS DESC, DIFF DESC, BUTSPOUR 
 							 DESC, BUTSCONTRE ASC, NOM");
    $pl=1;
@@ -78,7 +78,7 @@ $champ ='192';
      $x=0;
      $id_equipe=$row["ID_EQUIPE"];
 
-     $query="INSERT INTO phppro_clmnt_graph (id_equipe, fin, classement) 
+     $query="INSERT INTO phpab_clmnt_graph (id_equipe, fin, classement) 
 	 VALUES ('$id_equipe','$fin', '$pl')" ;
      mysqli_query($idconnect, $query);
      $pl++;                    
@@ -86,14 +86,14 @@ $champ ='192';
    $fin++;
   }     
 
-  $result=$idconnect->query("SELECT phppro_clmnt_graph.id_equipe 
-							 FROM phppro_clmnt_graph, phppro_equipes 
-							 WHERE phppro_equipes.id=phppro_clmnt_graph.id_equipe
-                                                 and phppro_equipes.id_champ=$champ");
+  $result=$idconnect->query("SELECT phpab_clmnt_graph.id_equipe 
+							 FROM phpab_clmnt_graph, phpab_equipes 
+							 WHERE phpab_equipes.id=phpab_clmnt_graph.id_equipe
+                                                 and phpab_equipes.id_champ=$champ");
 
  $nb_saving=mysqli_num_rows($result);
  $result=$idconnect->query("SELECT * 
-							 FROM phppro_equipes 
+							 FROM phpab_equipes 
 							 WHERE id_champ=$champ");
 
  $nb_equipes=mysqli_num_rows($result);             

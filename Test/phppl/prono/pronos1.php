@@ -54,8 +54,7 @@ function ValideGrille(tot) {
 <?php
 //echo "user_id0 (prono1) : ".$user_id; echo "<br>"; 
 
-echo "debut : " . $debut;
-echo "<br>";
+
 
 if (isset($debut)) $debut = $debut;
 else $debut = 0;
@@ -76,7 +75,7 @@ if (is_numeric($debut) && is_numeric($nb_matchs)) {
   $fin = $debut + $nb_matchs;
 }
 
-// /*******************   Réinitialisation des pronostics ***********************
+// /*******************   Réinitialisation des pronostics  "Début" ***********************
 if ($action == "reset") {
   $resultat = $idconnect->query("SELECT tps_avant_prono 
 							 FROM phppl_gr_championnats 
@@ -102,6 +101,8 @@ if ($action == "reset") {
   while ($row = mysqli_fetch_array($resultat)) {
     $id = $row["id"];
   }
+  echo "debut : ".$debut; echo "<br>";
+  echo "fin : ".$fin; echo "<br>";
   $resultat = $idconnect->query("SELECT phppl_matchs.id
           FROM phppl_clubs, phppl_clubs as CLEXT, phppl_matchs, phppl_journees, phppl_equipes, phppl_equipes as EXT, phppl_gr_championnats
           WHERE phppl_clubs.id=phppl_equipes.id_club
@@ -196,10 +197,7 @@ if ($action == "valid_pronos") {
       while ($row = mysqli_fetch_array($resultat)) {
         $id = $row["id"];
       }
-      echo "------------------------";
-      echo "<br>";
-      echo "id (prono1) : " . $id;
-      echo "<br>";
+    
       if ($nb_prono == "1") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
           mysqli_query($idconnect, ("UPDATE phppl_pronostics 
@@ -242,6 +240,19 @@ if ($action == "valid_pronos") {
 
   include("pronos.htm");
 
+ 
+//echo "<br>";
+$twoWeeks = new DateTime();
+//echo "date actuelle : ".$twoWeeks;
+
+$twoWeeks->modify('+35 days'); 
+//echo "date du jours + 35 jours = " . $twoWeeks->format('Y-m-d H:i:s'); 
+//echo "<br>";
+$dateAffichageMaxi = $twoWeeks->format('Y-m-d H:i:s'); 
+//echo $essai;
+//echo "<br>";
+
+
   $resultat = $idconnect->query("
 			 SELECT phppl_clubs.nom, CLEXT.nom, phppl_matchs.id, phppl_matchs.date_reelle, phppl_journees.numero, phppl_matchs.id_equipe_dom, phppl_matchs.id_equipe_ext
 			 FROM phppl_clubs, phppl_clubs as CLEXT, phppl_matchs, phppl_journees, phppl_equipes, phppl_equipes as EXT, phppl_gr_championnats
@@ -258,7 +269,8 @@ if ($action == "valid_pronos") {
        AND phppl_clubs.nom!='Exempt'
        AND CLEXT.nom!='Exempt'
 			 AND CLEXT.nom!='exempte'
-       ORDER by phppl_matchs.date_reelle, phppl_clubs.nom
+       AND phppl_matchs.date_reelle < '$dateAffichageMaxi'
+       ORDER by phppl_matchs.date_reelle, phppl_matchs.id
 			 LIMIT $debut, $fin ");
 
   $i = 0;
