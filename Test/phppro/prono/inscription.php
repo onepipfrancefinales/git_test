@@ -3,36 +3,36 @@ session_start();
 if (isset($_GET['champ'])) $champ = $_GET['champ'];else $champ = 0;
 if (isset($_REQUEST['champLigue'])) $champLigue = $_REQUEST['champLigue'];else $champLigue = 0;
 
-$tabTables = array('phpau', 'phpab', 'phpca', 'phpab', 'phpidf', 'phpfed3NE', 'phppro');
+
 if (isset($_POST['pseudo'])) $testpseudo = $_POST['pseudo'];
 if (isset($_POST['mail'])) $testmail = $_POST['mail'];
 if (isset($_POST['mdp'])) $testmdp = $_POST['mdp'];
-if (isset($_POST['nom'])) $testnom = $_POST['nom'];
-echo "<br>";
+if (isset($_POST['nom'])) $EquipeSuivi = $_POST['nom'];
 /*
-echo "champLigue (inscription.php) : ".$champLigue;echo "<br>";
-echo "testpseudo : ".$testpseudo; echo "<br>";
-echo "testmail : ".$testmail; echo "<br>";
-echo "testmdp : ".$testmdp; echo "<br>";
-echo "testnom : ".$testnom; echo "<br>";
+echo "<br>";
+echo "champLigue : ".$champLigue; echo "<br>";
+echo "pseudo : ".$pseudo; echo "<br>";
+echo "EquipeSuivi : ".$EquipeSuivi; echo "<br>";
 */
-$tabTables = array('phpau', 'phpab', 'phpca', 'phpab', 'phpidf', 'phpfed3NE', 'phppro');								   
+/*
+$tabTables = array('phpau', 'phppro', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');								   
 foreach ($tabTables as $table) {
-  //phpab_pronostics
+  //phppro_pronostics
 
   $tableMembres = $table . "_membres";
-  $tablePronostics = $table . "_pronostics";
-}
 
+}
+*/
 if (!$go == "1") {
   include("inscription.htm");
 } elseif ($go == "1") {
   $pseudo = addslashes($pseudo);
-
+ $EquipeSuivi = addslashes($EquipeSuivi);
   // On vérifie que le pseudo n'est pas utilisé
   $resultat = $idconnect->query("SELECT * 
-                                      FROM phpab_membres 
-                                      WHERE pseudo='$pseudo'");
+                                 FROM phppro_membres 
+                                 WHERE pseudo='$pseudo'");
+                                 
   //$resultat=mysql_query($requete);
   $nb_pseudo = mysqli_num_rows($resultat);
   if ($nb_pseudo >= 1) {
@@ -46,7 +46,7 @@ if (!$go == "1") {
   // On vérifie que le mail
   $resultat = $idconnect->query("
 					SELECT * 
-					FROM phpab_membres 
+					FROM phppro_membres 
 					WHERE mail='$mail'");
 
 
@@ -101,30 +101,30 @@ if (!$go == "1") {
       $mobile = $mobile1 . "-" . $mobile2 . "-" . $mobile3 . "-" . $mobile4 . "-" . $mobile5;
     }
 
-    //mysqli_query($idconnect, ("INSERT INTO phpab_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
+    //mysqli_query($idconnect, ("INSERT INTO phppro_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
     //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
-//$tabTables = array('phpau', 'phpab', 'phpca', 'phpab', 'phpidf', 'phpfed3NE', 'phppro');
-$tabTables = array('phpab');
+//$tabTables =        array('phpau', 'phppro', 'phpca', 'phppro', 'phpidf', 'phpfed3NE', 'phppro');
+$tabTables = array('phpau', 'phppro', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
 foreach ($tabTables as $table) {
-  //phpab_pronostics
+  //phppro_pronostics
   $tableMembres = $table . "_membres";
  
     mysqli_query($idconnect, ("INSERT INTO $tableMembres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, ville, pays, admin )
-                             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$pseudo', '$nom', '$pseudo', '$pseudo',  '$testnom', '$mdp','1' )"));
+                             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$pseudo', '$nom', '$pseudo', '$pseudo',  '$EquipeSuivi', '$mdp','1' )"));
 
 }
     $result = $idconnect->query("SELECT id 
-                             FROM phpab_membres 
+                             FROM phppro_membres 
                              WHERE id_prono='$id_prono'");
     $row = mysqli_fetch_array($result);
     $id_membre = $row[0];
 
-    mysqli_query($idconnect, ("INSERT INTO phpab_pronostics (id_membre, id_champ) 
+    mysqli_query($idconnect, ("INSERT INTO phppro_pronostics (id_membre, id_champ) 
 							              VALUES ('$id_membre', '$gr_champ')"));
 
     $result = $idconnect->query("SELECT pseudo, mail, nom_site, url_site 
-                               FROM phpab_membres 
+                               FROM phppro_membres 
                                WHERE pseudo='$pseudo' 
                                AND admin='1'");
 
@@ -170,16 +170,17 @@ Sportivement</font></p>
     $email = @mail($to, $sujet, $message, $from);
     if ($email) {
       echo "<table align=\"center\">";
-      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_SUCCES . "</font><br /><a class=\"colorWhite\" href=\"index.php?user=$pseudo&mot_de_passe=$mdpcrypt\">" . PRONO_INSCRIPTION_CONNEXION . "</font></a></td></tr>";
+      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_SUCCES . "</font><br /><a class=\"colorWhite\" href=\"index.php?page=pronos&champLigue=$champLigue&user=$pseudo&mot_de_passe=$mdpcrypt\">" ."</font></a></td></tr>";
+    //echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_SUCCES . "</font><br /><a class=\"colorWhite\" href=\"index.php?page=pronos&champLigue=$champLigue&user=$pseudo&mot_de_passe=$mdpcrypt\">" . PRONO_INSCRIPTION_CONNEXION . "</font></a></td></tr>";
       echo "</table>";
     } else {
       echo "<table align=\"center\">";
-      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_ECHOUE . "</font><br /><a href=\"/Test/phpab/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
+      echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_ECHOUE . "</font><br /><a href=\"/Test/phppro/prono/index.php?page=inscription\"><font color=\"#FFFFFF\">Connexion !</font></a></td></tr>";
       echo "</table>";
     }
   } else {
     echo "<table align=\"center\">";
-    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Test/phpab/prono/index.php?page=inscription&champ=$champ&champLigue=$champLigue\"></font></font>" . "Réessayer" . "</a></td></tr>";
+    echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">$message<br /><a href=\"/Test/phppro/prono/index.php?page=inscription&champ=$champ&champLigue=$champLigue\"></font></font>" . "Réessayer" . "</a></td></tr>";
     echo "</table>";
   }
 }

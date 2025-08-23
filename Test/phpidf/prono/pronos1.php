@@ -292,7 +292,7 @@ $dateAffichageMaxi = $twoWeeks->format('Y-m-d H:i:s');
     $poule = substr($idMatchReduit, -1);
     //if ($idMatchReduit > 200)
 
-    if (substr($idMatchReduit, 1, 2) == "17")
+    if (substr($idMatchReduit, 1, 2) == "17" or substr($idMatchReduit, 1, 2) == "27")
       $Champ = "R1";
     elseif (substr($idMatchReduit, 1, 2) == "18")
       $Champ = "R2";
