@@ -509,6 +509,7 @@ function calendrier($champ, $smart, $bdd)
 					  WHERE id_champ='$champ'");
  //nbre de journees      
  $tabNbre_journees = $result->fetch();
+
   if ($tabNbre_journees[0] > 0) {
  //echo "test tabNbre_journees : ".$tabNbre_journees[0];
 

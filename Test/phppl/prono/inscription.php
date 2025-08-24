@@ -15,7 +15,7 @@ echo "pseudo : ".$pseudo; echo "<br>";
 echo "EquipeSuivi : ".$EquipeSuivi; echo "<br>";
 */
 /*
-$tabTables = array('phpau', 'phppl', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');								   
+$tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');					   
 foreach ($tabTables as $table) {
   //phppl_pronostics
 
@@ -104,8 +104,8 @@ if (!$go == "1") {
     //mysqli_query($idconnect, ("INSERT INTO phppl_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
     //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
-//$tabTables =        array('phpau', 'phppl', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
-$tabTables = array('phpau', 'phppl', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
+//$tabTables =        array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
+$tabTables = array('phpau', 'phpab', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
 foreach ($tabTables as $table) {
   //phppl_pronostics
   $tableMembres = $table . "_membres";
@@ -171,7 +171,7 @@ Sportivement</font></p>
     if ($email) {
       echo "<table align=\"center\">";
       echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_SUCCES . "</font><br /><a class=\"colorWhite\" href=\"index.php?page=pronos&champLigue=$champLigue&user=$pseudo&mot_de_passe=$mdpcrypt\">" ."</font></a></td></tr>";
-    //echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_SUCCES . "</font><br /><a class=\"colorWhite\" href=\"index.php?page=pronos&champLigue=$champLigue&user=$pseudo&mot_de_passe=$mdpcrypt\">" . PRONO_INSCRIPTION_CONNEXION . "</font></a></td></tr>";
+   // echo "<tr><td colspan=\"2\" align=\"center\"> <font color=\"#ffffff\">" . PRONO_INSCRIPTION_SUCCES . "</font><br /><a class=\"colorWhite\" href=\"index.php?page=pronos&champLigue=$champLigue&user=$pseudo&mot_de_passe=$mdpcrypt\">" . PRONO_INSCRIPTION_CONNEXION . "</font></a></td></tr>";
       echo "</table>";
     } else {
       echo "<table align=\"center\">";

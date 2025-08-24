@@ -4,18 +4,33 @@ if ($action == "supp" and !$confirm=="oui")
    echo "<table class=\"marginAuto\"><tr><td class=\"center colorWhite size3\">".PRONO_PROFIL_SUR." $user_pseudo ?<br />";
    echo "<a class=\"center colorWhite size3\" href=\"index.php?champLigue=$champLigue&page=profil&action=supp&confirm=oui\">".ADMIN_RENS_17."</a> - <a class=\"center colorWhite size3\" href=\"index.php?champLigue=$champLigue\">".ADMIN_RENS_18."</a></td></tr></table>";
  }
-
+// suppression du compte
 elseif ($action == "supp" and $confirm=="oui")
  {
+
+$tabTables = array('phpau', 'phpab', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
+foreach ($tabTables as $table) {
+
+$tablePronostics = $table."_pronostics";
+$tableMembres = $table."_membres";
+$tableClmntPronos = $table."_clmnt_pronos";
+
+
+
    $user_pseudo=addslashes($user_pseudo);
-   $result=$idconnect->query("SELECT id FROM phpab_membres WHERE pseudo='$user_pseudo'");
+   $result=$idconnect->query("SELECT id FROM $tableMembres WHERE pseudo='$user_pseudo'");
   // $result=mysql_query($requete) or die ("probleme " .mysql_error());
    $row=mysqli_fetch_array($result);
+
+
+
    
-   mysqli_query($idconnect, ("DELETE FROM phpab_pronostics WHERE id_membre='$row[0]'"));
-   mysqli_query($idconnect, ("DELETE FROM phpab_membres WHERE id='$row[0]'"));
-   mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos WHERE id_membre='$row[0]'"));
-  ?>
+   mysqli_query($idconnect, ("DELETE FROM $tablePronostics WHERE id_membre='$row[0]'"));
+   mysqli_query($idconnect, ("DELETE FROM $tableMembres WHERE id='$row[0]'"));
+   mysqli_query($idconnect, ("DELETE FROM $tableClmntPronos WHERE id_membre='$row[0]'"));
+ 
+}
+ ?>
    <META HTTP-EQUIV="refresh"; CONTENT="0; URL=logout.php">
    <?php
    echo PRONO_PROFIL_SUPP;
@@ -41,17 +56,17 @@ else
 
   if ($action == "1")
  	 {
-      $result = $idconnect->query("
+
+    $result = $idconnect->query("
 				 SELECT mot_de_passe 
-				 FROM phpab_membres 
+				 FROM phppro_membres 
 				 WHERE  pseudo='$user_pseudo'");
 				 
           while ($row=mysqli_fetch_array($result))
 			{
 			 $mot_de_passe_correct=$row["0"];
 			}
-          echo "user_id (profil) : ".$user_id;
-		      echo "user_pseudo (profil) : ".$user_pseudo;
+
 		  $ancien_mdp_crypt = md5($ancien_mdp);
 
           $date_naissance=$annee."-".$mois."-".$jour;
@@ -62,10 +77,19 @@ else
 
           if (empty ($ancien_mdp) and empty ($nouveau_mdp) and empty ($nouveau_mdp2))
            {
-             mysqli_query ($idconnect, ("UPDATE phpab_membres 
-			 SET nom_site='$site', mail='$mail', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile' 
+
+$tabTables = array('phpau', 'phpab', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
+foreach ($tabTables as $table) {
+
+
+$tableMembres = $table."_membres";
+
+
+
+       mysqli_query ($idconnect, ("UPDATE $tableMembres 
+			 SET nom_site='$site', mail='$mail', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$nouveau_mdp', date_naissance='$date_naissance', profession='$profession', mobile='$mobile' 
 			 WHERE  pseudo='$user_pseudo'"));
-             
+}             
 			 $message.="profil mis à jour";
            }
           elseif (empty ($ancien_mdp)) {$message.= PRONO_PROFIL_ANCIEN_MDP;}
@@ -81,7 +105,16 @@ else
              {
               $nouveau_mdp_crypt=md5($nouveau_mdp2);
 
-              mysqli_query ($idconnect, ("update phpab_membres SET nom_site='$site', mail='$mail', mot_de_passe='$nouveau_mdp_crypt', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$pays', date_naissance='$date_naissance', profession='$profession', mobile='$mobile'  WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
+              $tabTables = array('phpau', 'phpab', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
+foreach ($tabTables as $table) {
+
+
+$tableMembres = $table."_membres";
+
+              mysqli_query ($idconnect, ("UPDATE $tableMembres  SET nom_site='$site', mail='$mail', mot_de_passe='$nouveau_mdp_crypt', nom='$nom', prenom='$prenom', adresse='$adresse', code_postal='$code_postal', ville='$ville', pays='$nouveau_mdp', date_naissance='$date_naissance', profession='$profession', mobile='$mobile'  WHERE id_prono='$user_id' and pseudo='$user_pseudo'"));
+             
+}       
+             
               $message.="profil mis à jour";
              }
              //elseif ($nouveau_mdp!=$nouveau_mdp2) {$message.="Nouveaux mots de passe diff�rents";}
@@ -92,7 +125,7 @@ else
  	
 	 $result= $idconnect->query("
 				SELECT pseudo, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile  
-				FROM phpab_membres 
+				FROM phppro_membres 
 				WHERE pseudo='$user_pseudo' 
 				 ");
 
@@ -114,7 +147,7 @@ else
 //echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Nom :</font></td>";
 //echo "<td><input type=\"text\" name=\"nom\" value=\"$row[nom]\" maxlength=\"50\"></td></tr>";
 
-// Pr�nom
+// Prénom
 //echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Pr�nom :</font></td>";
 //echo "<td><input type=\"text\" name=\"prenom\" value=\"$row[prenom]\" maxlength=\"50\"></td></tr>";
 
@@ -171,7 +204,7 @@ echo "</td></tr>";
 //echo "<tr><td width=\"50%\" align=\"right\"><font face=\"Verdana\" color=\"#ffffff\" size=\"1\">Profession :</font></td>";
 //echo "<td><input type=\"text\" name=\"profession\" value=\"$row[profession]\" maxlength=\"200\"></td></tr>";
 
-// N� Mobile
+// N° Mobile
 //$elementsmobile=explode("-",$row[mobile]);
 //$mobile1=$elementsmobile[0];
 //$mobile2=$elementsmobile[1];

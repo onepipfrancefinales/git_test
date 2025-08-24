@@ -15,7 +15,7 @@ echo "pseudo : ".$pseudo; echo "<br>";
 echo "EquipeSuivi : ".$EquipeSuivi; echo "<br>";
 */
 /*
-$tabTables = array('phpau', 'phpidf', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');								   
+$tabTables = array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');								   
 foreach ($tabTables as $table) {
   //phpidf_pronostics
 
@@ -104,8 +104,8 @@ if (!$go == "1") {
     //mysqli_query($idconnect, ("INSERT INTO phpidf_membres (pseudo, id_prono, mot_de_passe, mail, nom_site, nom, prenom, adresse, code_postal, ville, pays, date_naissance, profession, mobile, ip, last_connect, admin )
     //             VALUES ('$pseudo', '$id_prono', '$mdpcrypt', '$mail', '$site', '$nom', '$prenom', '$adresse', '$code_postal', '$ville', '$mdp', '$date_naissance', '$profession', '$mobile','$ip','$last_connect','1' )"));
 
-//$tabTables =        array('phpau', 'phpidf', 'phpca', 'phpidf', 'phpidf', 'phpfed3NE', 'phppro');
-$tabTables = array('phpau', 'phpidf', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
+//$tabTables =        array('phpau', 'phpab', 'phpca', 'phppl', 'phpidf', 'phpfed3NE', 'phppro');
+$tabTables = array('phpau', 'phpab', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
 foreach ($tabTables as $table) {
   //phpidf_pronostics
   $tableMembres = $table . "_membres";
