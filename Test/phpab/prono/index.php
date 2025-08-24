@@ -1,8 +1,8 @@
 <?php
 if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}					   
 session_start();
-echo "index.php : user -".$_SESSION['user']; echo "<br>";
-echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
+//echo "index.php : user -".$_SESSION['user']; echo "<br>";
+//echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
 
 if (isset($_REQUEST['page'])) {$page=$_REQUEST['page'];} else {$page='';}
 if (isset($_REQUEST['type'])) {$type=$_REQUEST['type'];} else {$page='';}
@@ -263,9 +263,11 @@ if ($mode == "smart")
 {
  ?> 
 
+<!--
 <div class="center"> 
   <iframe  width="100%" height="400" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+  -->
 
  <?php 
 require '../../../smart/smartFooter.php';

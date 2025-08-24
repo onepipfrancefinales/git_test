@@ -52,3 +52,10 @@ ligue <?php echo $titre; ?></p>
   height="1500" width="100%">
 </object>
 
+<!--
+<object data="/Phpleague/<?php echo $cptePhp; ?>/prono/index.php?champLigue=<?php echo $champLigue; ?>"
+  height="1500" width="100%">
+</object>
+
+  -->
+

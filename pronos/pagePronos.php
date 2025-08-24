@@ -65,11 +65,12 @@ if (isset($_GET['division'])) $division = $_GET['division'];else $division=0;
  
 <td class="colonneForum"></td>
 
-
+<!--
 <td class="center"> 
   <iframe width="1000" height="1000" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </td>
 <td class="colonneForum"></td>
+  -->
 </tr>
   
 

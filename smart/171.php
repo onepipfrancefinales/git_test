@@ -141,7 +141,7 @@ nomLigue2($bddComite, $champ, $bdd);
 		if ($bddComite == "fed3NE" or $bddComite == "pro") {
 			echo "<br><br><br><br><br><br></br><br></br><br></br></br><br><br><br>";
 		} elseif ($bddComite == "ab" or $bddComite == "au" or $bddComite == "ca") {
-			echo "<br><br><br><br><br><br><br><br></br><br><br><br><br><br>";
+			echo "<br><br><br><br><br><br><br><br></br><br><br><br><br><br><br><br>";
 		} else {
 			echo '<br></br><br><br>';
 		}

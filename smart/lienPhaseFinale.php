@@ -5,7 +5,20 @@ $division =$champ2*10;
 
 $champLigue = substr($division,0,2);
 $div =170;
-$adresse = "../Test/phpab/prono/index.php?mode=smart&?division=$division$div&champLigue=$champLigue";
+
+if ($champLigue == 10)
+$base="phpau";
+elseif ( $champLigue == 11 or $champLigue == 12 or $champLigue == 13 or  $champLigue == 16 or $champLigue == 21)
+$base="phppl";
+elseif ($champLigue == 19)
+$base="phpca";	
+elseif ($champLigue == 20)
+$base="phpab";
+	elseif ($champLigue == 15 or $champLigue == 17 or $champLigue == 18 or $champLigue == 22)
+$base="phpidf";
+		
+
+$adresse = "../Test/$base/prono/index.php?mode=smart&?division=$division$div&champLigue=$champLigue";
 
 ?>
 <table class="marginAuto width95PC backgroundWhite">

@@ -262,11 +262,11 @@ elseif ($page=="perdu_mdp") {include ("perdu_mdp.php");}
 if ($mode == "smart")
 {
  ?> 
-
+<!--
 <div class="center"> 
   <iframe  width="100%" height="400" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-
+  -->
  <?php 
 require '../../../smart/smartFooter.php';
 }
