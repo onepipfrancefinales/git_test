@@ -269,9 +269,34 @@ $dateAffichageMaxi = $twoWeeks->format('Y-m-d H:i:s');
        AND phpca_clubs.nom!='Exempt'
        AND CLEXT.nom!='Exempt'
 			 AND CLEXT.nom!='exempte'
+
+       ORDER by phpca_matchs.date_reelle, phpca_matchs.id
+			 LIMIT $debut, $fin ");
+
+
+/*
+  $resultat = $idconnect->query("
+			 SELECT phpca_clubs.nom, CLEXT.nom, phpca_matchs.id, phpca_matchs.date_reelle, phpca_journees.numero, phpca_matchs.id_equipe_dom, phpca_matchs.id_equipe_ext
+			 FROM phpca_clubs, phpca_clubs as CLEXT, phpca_matchs, phpca_journees, phpca_equipes, phpca_equipes as EXT, phpca_gr_championnats
+			 WHERE phpca_clubs.id=phpca_equipes.id_club
+			 AND CLEXT.id=EXT.id_club
+			 AND phpca_equipes.id=phpca_matchs.id_equipe_dom
+			 AND EXT.id=phpca_matchs.id_equipe_ext
+			 AND phpca_matchs.id_journee=phpca_journees.id
+			 AND phpca_journees.id_champ=phpca_gr_championnats.id_champ
+			 AND phpca_gr_championnats.id='$gr_champ'
+			 AND phpca_matchs.buts_dom is null
+			 AND phpca_matchs.buts_ext is null
+			 AND phpca_clubs.nom!='exempte'
+       AND phpca_clubs.nom!='Exempt'
+       AND CLEXT.nom!='Exempt'
+			 AND CLEXT.nom!='exempte'
        AND phpca_matchs.date_reelle < '$dateAffichageMaxi'
        ORDER by phpca_matchs.date_reelle, phpca_matchs.id
 			 LIMIT $debut, $fin ");
+
+*/
+
 
   $i = 0;
   $x = 0;

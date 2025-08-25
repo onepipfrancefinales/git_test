@@ -269,10 +269,32 @@ $dateAffichageMaxi = $twoWeeks->format('Y-m-d H:i:s');
        AND phpab_clubs.nom!='Exempt'
        AND CLEXT.nom!='Exempt'
 			 AND CLEXT.nom!='exempte'
-       AND phpab_matchs.date_reelle < '$dateAffichageMaxi'
+
        ORDER by phpab_matchs.date_reelle, phpab_matchs.id
 			 LIMIT $debut, $fin ");
 
+/*
+
+         $resultat = $idconnect->query("
+			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, phpab_matchs.id_equipe_dom, phpab_matchs.id_equipe_ext
+			 FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
+			 WHERE phpab_clubs.id=phpab_equipes.id_club
+			 AND CLEXT.id=EXT.id_club
+			 AND phpab_equipes.id=phpab_matchs.id_equipe_dom
+			 AND EXT.id=phpab_matchs.id_equipe_ext
+			 AND phpab_matchs.id_journee=phpab_journees.id
+			 AND phpab_journees.id_champ=phpab_gr_championnats.id_champ
+			 AND phpab_gr_championnats.id='$gr_champ'
+			 AND phpab_matchs.buts_dom is null
+			 AND phpab_matchs.buts_ext is null
+			 AND phpab_clubs.nom!='exempte'
+       AND phpab_clubs.nom!='Exempt'
+       AND CLEXT.nom!='Exempt'
+			 AND CLEXT.nom!='exempte'
+       AND phpab_matchs.date_reelle < '$dateAffichageMaxi'
+       ORDER by phpab_matchs.date_reelle, phpab_matchs.id
+			 LIMIT $debut, $fin ");
+*/
   $i = 0;
   $x = 0;
   //$resultat=mysql_query($requete);

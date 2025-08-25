@@ -153,7 +153,7 @@ function login_form()
    </tr>
    <tr><td colspan='2' class='univert' align='center'><input type='submit' name='submit' value='Connexion' >
    <br />
-   <a href='perdu_mdp.php'>J'ai oubli� mon mot de passe</a><br />
+   <a href='perdu_mdp.php'>J'ai oublié mon mot de passe</a><br />
    <a href='inscription.php'>Inscription</a><br />
    </td>
    </tr></form></table>";  }
@@ -165,7 +165,7 @@ function perdu_mot_de_passe()
   <td colspan='2' class='univert' align='center'>
   <div class=\"blanc\"><strong>Mot de passe perdu</strong></div><br /><br />
 <div class=\"blanc\">Entrez votre pseudo,
-<br />un nouveau mot de passe vous sera alors envoy� par mail.
+<br />un nouveau mot de passe vous sera alors envoyé par mail.
 </div>
 <form action='perdu_mdp.php' method='get'>
 <input class=textfield type=text name=pseudo size='35'>

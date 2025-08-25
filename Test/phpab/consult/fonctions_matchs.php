@@ -649,9 +649,9 @@ function calendrier($champ, $smart, $bdd)
                 $nb_requete = 0;
 
                 if ($cache == "1") {
-                  mysqli_query("DELETE FROM phpab_clmnt_cache WHERE ID_CHAMP='$champ'") or die(mysqli_error());
+                  mysqli_query("DELETE FROM phpab_clmnt_cache WHERE ID_CHAMP='$champ'") ;
                 } else {
-                  mysqli_query("DELETE FROM phpab_clmnt") or die(mysqli_error());
+                  mysqli_query("DELETE FROM phpab_clmnt");
                 }
                 $nb_requete++;
 
