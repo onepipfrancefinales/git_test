@@ -196,8 +196,8 @@ for ($counter=$nb_rencontres; $counter>0 ; $counter=$counter-1 ) // Nb de rencon
 		  else echo (" <option value=\"$row[1]\">$row[0]");
                   echo ("</option>\n");
                 }
-       */
-                echo "</select>";
+                */
+        echo "</select>";
 
         // saisie des rencontres EXTERIEUR
         echo "<TD class=$class align=center>";

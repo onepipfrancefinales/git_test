@@ -52,20 +52,21 @@ function ValideGrille(tot) {
 
 </SCRIPT>
 <?php
+//echo "user_id0 (prono1) : ".$user_id; echo "<br>"; 
 
-echo "user_id0 (prono1) : ".$user_id; echo "<br>"; 
+
 
 if (isset($debut)) $debut = $debut;
 else $debut = 0;
-
-
-$nb_matchs = 18;
-//echo "debut : ".$_REQUEST['debut'];echo "<br>";
+$nb_matchs = 18; //nombre de matchs affiché à l'écran
 if (isset($_REQUEST['debut'])) {
   $debut = $_REQUEST['debut'];
 } else {
   $debut = '';
 }
+
+
+
 
 if (empty($debut) or $debut == "0") $debut = 0;
 $apres = 1;
@@ -74,7 +75,7 @@ if (is_numeric($debut) && is_numeric($nb_matchs)) {
   $fin = $debut + $nb_matchs;
 }
 
-
+// /*******************   Réinitialisation des pronostics  "Début" ***********************
 if ($action == "reset") {
   $resultat = $idconnect->query("SELECT tps_avant_prono 
 							 FROM phpab_gr_championnats 
@@ -100,6 +101,8 @@ if ($action == "reset") {
   while ($row = mysqli_fetch_array($resultat)) {
     $id = $row["id"];
   }
+  echo "debut : ".$debut; echo "<br>";
+  echo "fin : ".$fin; echo "<br>";
   $resultat = $idconnect->query("SELECT phpab_matchs.id
           FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
           WHERE phpab_clubs.id=phpab_equipes.id_club
@@ -138,10 +141,10 @@ if ($action == "reset") {
 
 if ($action == "valid_pronos") {
 
-echo "enregistrement";
-echo "id (prono1) : ".$id; echo "<br>"; 
-echo "user_id (prono1) : ".$user_id; echo "<br>"; 
-echo "<br>";
+  //echo "enregistrement";echo "<br>"; 
+  //echo "id (prono1) : ".$id; echo "<br>"; 
+  //echo "user_id (prono1) : ".$user_id; echo "<br>"; 
+  //echo "<br>";
   for ($i = 1; $i <= $_REQUEST['nb_fiche']; $i++) {
     $nom_f_prono = "r_$i";
     $nom_id_match = "id_match_$i";
@@ -194,8 +197,7 @@ echo "<br>";
       while ($row = mysqli_fetch_array($resultat)) {
         $id = $row["id"];
       }
-echo "------------------------" ;  echo "<br>";   
-echo "id (prono1) : ".$id; echo "<br>"; 
+    
       if ($nb_prono == "1") {
         if ($date_actuelle < ($date_match_timestamp + $temps_avant_prono * 60)) {
           mysqli_query($idconnect, ("UPDATE phpab_pronostics 
@@ -238,8 +240,21 @@ echo "id (prono1) : ".$id; echo "<br>";
 
   include("pronos.htm");
 
+ 
+//echo "<br>";
+$twoWeeks = new DateTime();
+//echo "date actuelle : ".$twoWeeks;
+
+$twoWeeks->modify('+35 days'); 
+//echo "date du jours + 35 jours = " . $twoWeeks->format('Y-m-d H:i:s'); 
+//echo "<br>";
+$dateAffichageMaxi = $twoWeeks->format('Y-m-d H:i:s'); 
+//echo $essai;
+//echo "<br>";
+
+
   $resultat = $idconnect->query("
-			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero
+			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, phpab_matchs.id_equipe_dom, phpab_matchs.id_equipe_ext
 			 FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
 			 WHERE phpab_clubs.id=phpab_equipes.id_club
 			 AND CLEXT.id=EXT.id_club
@@ -251,10 +266,35 @@ echo "id (prono1) : ".$id; echo "<br>";
 			 AND phpab_matchs.buts_dom is null
 			 AND phpab_matchs.buts_ext is null
 			 AND phpab_clubs.nom!='exempte'
+       AND phpab_clubs.nom!='Exempt'
+       AND CLEXT.nom!='Exempt'
 			 AND CLEXT.nom!='exempte'
-			 ORDER by phpab_matchs.date_reelle, phpab_clubs.nom
+
+       ORDER by phpab_matchs.date_reelle, phpab_matchs.id
 			 LIMIT $debut, $fin ");
 
+/*
+
+         $resultat = $idconnect->query("
+			 SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, phpab_matchs.id_equipe_dom, phpab_matchs.id_equipe_ext
+			 FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
+			 WHERE phpab_clubs.id=phpab_equipes.id_club
+			 AND CLEXT.id=EXT.id_club
+			 AND phpab_equipes.id=phpab_matchs.id_equipe_dom
+			 AND EXT.id=phpab_matchs.id_equipe_ext
+			 AND phpab_matchs.id_journee=phpab_journees.id
+			 AND phpab_journees.id_champ=phpab_gr_championnats.id_champ
+			 AND phpab_gr_championnats.id='$gr_champ'
+			 AND phpab_matchs.buts_dom is null
+			 AND phpab_matchs.buts_ext is null
+			 AND phpab_clubs.nom!='exempte'
+       AND phpab_clubs.nom!='Exempt'
+       AND CLEXT.nom!='Exempt'
+			 AND CLEXT.nom!='exempte'
+       AND phpab_matchs.date_reelle < '$dateAffichageMaxi'
+       ORDER by phpab_matchs.date_reelle, phpab_matchs.id
+			 LIMIT $debut, $fin ");
+*/
   $i = 0;
   $x = 0;
   //$resultat=mysql_query($requete);
@@ -266,6 +306,26 @@ echo "id (prono1) : ".$id; echo "<br>";
   while ($row = mysqli_fetch_array($resultat) and $i < $nb_matchs) {
     $clubs_nom = stripslashes($row[0]);
     $clubs_nom1 = stripslashes($row[1]);
+    $id_dom = $row[5];
+    $id_ext = $row[6];
+
+    $idMatch = $row[2];
+    $idMatchReduit = substr($idMatch, 2, 4);
+    $poule = substr($idMatchReduit, -1);
+    //if ($idMatchReduit > 200)
+
+    if (substr($idMatchReduit, 1, 2) == "17" or substr($idMatchReduit, 1, 2) == "27")
+      $Champ = "R1";
+    elseif (substr($idMatchReduit, 1, 2) == "18")
+      $Champ = "R2";
+    elseif (substr($idMatchReduit, 1, 2) == "19")
+      $Champ = "R3";
+    elseif (substr($idMatchReduit, 1, 2) == "20")
+      $Champ = "Promo R3";
+
+
+    $division = $Champ."-"."P".$poule;
+
     $resultat2 = $idconnect->query(" SELECT pronostic 
 									   FROM phpab_pronostics, phpab_membres 
 									   WHERE phpab_pronostics.id_match='$row[2]' 
@@ -305,18 +365,16 @@ echo "id (prono1) : ".$id; echo "<br>";
 
     echo "<tr><td class=\"blanc center\">$row[4]</td>";
     echo "<td class=\"blanc\">$date</td>";
-   if ($id_dom > 90000000) {
-    echo "<td align=\"right\" class=\"colorYellow\">$clubs_nom II</td>";
-   }
-   else
-     {
-    echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
-  }
+    if ($id_dom > 90000000) {
+      echo "<td align=\"right\" class=\"colorYellow\">$clubs_nom II</td>";
+    } else {
+      echo "<td align=\"right\" class=\"blanc\">$clubs_nom</td>";
+    }
 
     if ($ecart_heures >= "0") {
       $x++;
       echo "<td>";
-     echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
+      echo "<input type=\"hidden\" name=\"id_match_$x\" value=\"$row[2]\">";
 ?><input type="hidden" value="1" name="r_<?php echo $x; ?>">
 
       <table width="100">
@@ -391,13 +449,11 @@ echo "id (prono1) : ".$id; echo "<br>";
             echo "</td></tr></table>";
             echo "</td></tr></table></td>";
           }
- if ($id_ext > 90000000) {
-          echo "<td class=\"colorYellow\">$clubs_nom1 II</td><td align=center>";
- }
- else
- {
-          echo "<td class=\"blanc\">$clubs_nom1</td><td align=center>";
- }
+          if ($id_ext > 90000000) {
+            echo "<td class=\"colorYellow\">$clubs_nom1 II</td><td align=center>";
+          } else {
+            echo "<td class=\"blanc\">$clubs_nom1</td><td align=center>";
+          }
 
           if ($ecart_heures > 48) echo "<div class=\"blanc\">$ecart_jours jours</div>";
           elseif ($ecart_heures > 0) echo "<div class=\"blanc\">$ecart_heures h</div>";
@@ -406,10 +462,24 @@ echo "id (prono1) : ".$id; echo "<br>";
             echo "<div class=\"blanc\">" . PRONO_GRILLE_EXPIRE . "</div>";
           }
           echo "</td>";
+
+
+if ($id_ext > 90000000) {
+            echo "<td class=\"colorYellow size2\">$division</td>";
+          } else {
+            echo "<td class=\"blanc size2\">$division</td>";
+          }
+       //   echo "<td class=\"blanc size2\">".$division."</td>";
+
+
+
+
           echo "</tr>";
+
           $i++;
         }
         ?>
+
         <tr>
           <td colspan="6" align="center">
             <input type="hidden" name="action" value="valid_pronos">

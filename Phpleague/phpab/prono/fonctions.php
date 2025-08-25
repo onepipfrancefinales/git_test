@@ -59,9 +59,9 @@ function affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect)
   $result=$idconnect->query("SELECT id_prono
           FROM phpab_clmnt_pronos, phpab_membres
           WHERE phpab_membres.id=phpab_clmnt_pronos.id_membre 
-		  AND id_champ='$gr_champ' AND type='mensuel_en_cours' 
-		  AND id_champ='$gr_champ' 
-		  ORDER by points desc, participation desc, phpab_membres.pseudo");
+		      AND id_champ='$gr_champ' AND type='mensuel_en_cours' 
+		      AND id_champ='$gr_champ' 
+		      ORDER by points desc, participation desc, phpab_membres.pseudo");
   //$result=mysql_query($query) or die (mysql_error());
   $i = "1";
   while ($row=mysqli_fetch_array($result))
@@ -96,7 +96,7 @@ function affiche_clmnt_mensuel_30_jours ($user_id, $gr_champ, $idconnect)
   { if ($row[0]==$user_id){$class=$i;}
     $i++;
   }
- if (!isset($class)) {$clmnt=PRONO_CLASSEMENT_NON_CLASSE;}
+ if (!isset($class)) {echo PRONO_CLASSEMENT_NON_CLASSE;}
  else
   {
   if ($class=="1"){print $class; echo PRONO_CLASSEMENT_PREMIER;}
@@ -153,7 +153,7 @@ function login_form()
    </tr>
    <tr><td colspan='2' class='univert' align='center'><input type='submit' name='submit' value='Connexion' >
    <br />
-   <a href='perdu_mdp.php'>J'ai oublié mon mot de passe</a><br />
+   <a href='perdu_mdp.php'>J'ai oubli� mon mot de passe</a><br />
    <a href='inscription.php'>Inscription</a><br />
    </td>
    </tr></form></table>";  }
@@ -165,7 +165,7 @@ function perdu_mot_de_passe()
   <td colspan='2' class='univert' align='center'>
   <div class=\"blanc\"><strong>Mot de passe perdu</strong></div><br /><br />
 <div class=\"blanc\">Entrez votre pseudo,
-<br />un nouveau mot de passe vous sera alors envoyé par mail.
+<br />un nouveau mot de passe vous sera alors envoy� par mail.
 </div>
 <form action='perdu_mdp.php' method='get'>
 <input class=textfield type=text name=pseudo size='35'>
@@ -181,7 +181,7 @@ function classement_general ($gr_champ, $user_pseudo, $idconnect)
 $result=$idconnect->query("  SELECT pseudo, points, participation 
 							               FROM phpab_clmnt_pronos
 							               WHERE id_champ='$gr_champ' 
-							               AND type='general'
+							               AND type = 'general'
 							               ORDER by points desc, participation desc, pseudo LIMIT 0, 10");
 
 $i=1;
@@ -351,10 +351,15 @@ echo $gr_champ_nom;
 function classement_type ($type)
 {
 if ($type=="") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
-if ($type=="general") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
-if ($type=="mensuel_en_cours") {echo "<br>".PRONO_CLASSEMENT_MOIS."<br>"."<br>";}
+if ($type=="general") {echo "<br>"."<br>";}
+if ($type=="mensuel_en_cours") {echo "<br>"."<br>";}
 if ($type=="mensuel_30_jours") {echo "<br>".PRONO_CLASSEMENT_30."<br>"."<br>";}
-if ($type=="hebdo") {echo "<br>".PRONO_CLASSEMENT_HEBDO."<br>"."<br>";}
+if ($type=="hebdo") { echo "<br>"."<br>";}
+//if ($type=="") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+//if ($type=="general") {echo "<br>".PRONO_CLASSEMENT_GENERAL_MAJ."<br>"."<br>";}
+//if ($type=="mensuel_en_cours") {echo "<br>".PRONO_CLASSEMENT_MOIS."<br>"."<br>";}
+//if ($type=="mensuel_30_jours") {echo "<br>".PRONO_CLASSEMENT_30."<br>"."<br>";}
+//if ($type=="hebdo") { echo "<br>".PRONO_CLASSEMENT_HEBDO."<br>"."<br>";}
 }
 
 function classement ($gr_champ, $type, $user_pseudo, $idconnect)
@@ -369,7 +374,7 @@ if ($type=="mensuel_en_cours")
                               WHERE id_champ='$gr_champ' 
                               AND type='mensuel_en_cours'"));
 
-   $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+   $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
                               FROM phpab_membres, phpab_pronostics, phpab_matchs, phpab_gr_championnats
                               WHERE phpab_pronostics.id_champ=phpab_gr_championnats.id
                               AND phpab_gr_championnats.id='$gr_champ'
@@ -395,7 +400,7 @@ if ($type=="mensuel_30_jours")
                               WHERE id_champ='$gr_champ' 
                               AND type='mensuel_30_jours'"));
 
-   $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+   $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
                               FROM phpab_membres, phpab_pronostics, phpab_matchs, phpab_gr_championnats
                               WHERE phpab_pronostics.id_champ=phpab_gr_championnats.id
                               AND phpab_gr_championnats.id='$gr_champ'
@@ -416,26 +421,41 @@ if ($type=="mensuel_30_jours")
 // classement hebdomadaire
 if ($type=="hebdo")
 {
+
+
    mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos 
                               WHERE id_champ='$gr_champ' 
                               AND type='hebdo'"));
-
-   $result=$idconnect->query("SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+/*
+   $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) , SUM(participation) as participations
                               FROM phpab_membres, phpab_pronostics, phpab_matchs, phpab_gr_championnats
                               WHERE phpab_pronostics.id_champ=phpab_gr_championnats.id
                               AND phpab_gr_championnats.id='$gr_champ'
                               AND id_membre=phpab_membres.id
                               AND phpab_matchs.id=id_match
-                              AND DATE_ADD(date_reelle, INTERVAL 7 DAY) >= NOW()
+                              AND DATE_ADD( phpab_matchs.date_reelle, INTERVAL 7 DAY) >= NOW()
                               GROUP by pseudo
-                              ORDER by total, participations");
+                              ORDER by  participations");
+*/
+
+ $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) , SUM(participation) as participations
+                              FROM phpab_membres, phpab_pronostics, phpab_matchs
+                              WHERE phpab_pronostics.id_membre=phpab_membres.id
+                               AND phpab_pronostics.id_champ ='$gr_champ'
+                              AND phpab_matchs.id=id_match
+                              AND DATE_ADD( phpab_matchs.date_reelle, INTERVAL 7 DAY) >= NOW()
+                              GROUP by pseudo
+                              ORDER by  participations");
 
        while ($row=mysqli_fetch_array($result))
        {
+  
        $row[1]=addslashes($row[1]);
-       mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
+       mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_pronos (id_champ, id_membre, pseudo, points, participation,  type) 
 								                  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
-       }
+      
+    }
+       
 }
 
 if (isset($_REQUEST['complet'])) {$complet=$_REQUEST['complet'];} else {$complet='';}
@@ -451,18 +471,35 @@ $result=$idconnect->query("SELECT pseudo, points, participation
 //}
 //$result=mysql_query($query) or die ("probleme " .mysql_error());
 $i=1;
+
 while ($row=mysqli_fetch_array($result))
 {
- echo "<tr><td><div class=\"blanc\">$i</div></td>";
+$totaux = $row[1] + $row[2] ;
+ echo "<tr><td class=\"blanc\">$i</td>";
 
- if ($user_pseudo==$row[0]) echo "<td><div class=\"blanc\"><b>$row[0]</b></div></td>";
- else  echo "<td><div class=\"blanc\">$row[0]</div></td>";
- echo "<td><div class=\"blanc\">$row[1]</div></td>";
- echo "<td><div class=\"blanc\">$row[2]</div></td></tr>";
-
+ if ($user_pseudo==$row[0]) echo "<td class=\"blanc bold\">$row[0]</td>";
+ else  
+ echo "<td class=\"blanc\">$row[0]</td>";
+ echo "<td class=\"blanc\">$row[1]</td>";
+ echo "<td class=\"blanc\">$row[2]</td>";
+ echo "<td class=\"blanc\">$totaux</td>" ; 
+ echo "<td class=\"blanc\">";club($row[0], $idconnect); echo "</td>  </tr>";
  $i++;
 }
-if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><a href=\"index.php?page=classement&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
+$champLigue= substr($gr_champ,0,2);
+if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><br><a href=\"index.php?page=classement&champLigue=$champLigue&type=$type&amp;complet=1&amp;gr_champ=$gr_champ\" class=\"blanc\"><b>".PRONO_CLASSEMENT_COMPLET."</b></a></td></tr>";
+}
+
+function club($pseudo, $idconnect){
+
+  $result=$idconnect->query("SELECT ville
+                              FROM phpab_membres
+                              WHERE pseudo = '$pseudo' ");
+
+   while ($row = mysqli_fetch_array($result)) {
+    $club = $row[0]; 
+   }
+echo $club;
 }
 
 function date_form_inscription ()
@@ -494,24 +531,37 @@ function pseudo_admin ($gr_champ, $idconnect)
  //echo $pseudo;
 }
 
-function champ_prono ($gr_champ, $idconnect, $mode)
+function champ_prono ($champLigue, $gr_champ, $idconnect, $mode)
 {
+//  echo "champLigue (fonctions) : ".$gr_champ; echo "<br>";
+//  echo "gr_champ (fonctions) : ".$gr_champ; echo "<br>";
+  
+if (is_numeric($gr_champ))
+  {$champLigue = $gr_champ; }
+   else
+  {$champLigue=$champLigue;}
+
+ $minChampLigue = substr($champLigue,0,2)*10000;
+ $maxChampLigue = $minChampLigue + 10000;
+ $minChampLigue = substr($champLigue,0,2)*10000;
+ $maxChampLigue = $minChampLigue + 10000;
+// echo $minChampLigue; echo "<br>";
+// echo $maxChampLigue; echo "<br>";
  $resultat=$idconnect->query("SELECT DISTINCT id, nom
                               FROM phpab_gr_championnats 
                               WHERE  phpab_gr_championnats.activ_prono='1' 
-                              ORDER by id");
-
+                              AND id BETWEEN $minChampLigue AND $maxChampLigue
+                              ORDER by nom asc");
+                
   while ($row= mysqli_fetch_array($resultat))
   {
     echo "&nbsp;";
-    echo  "<a href=\"index.php?page=pronos&mode=$mode&gr_champ=$row[0]\">";
+    echo  "<a href=\"index.php?page=pronos&mode=$mode&gr_champ=$row[0]&champLigue=$champLigue\">";
     if ($gr_champ==$row[0]){echo "<b>";}
     echo "$row[1]";
     if ($gr_champ==$row[0]){echo "</b>";}
     echo "</a><br />";
   }
-  
-
 }
 
 // Nombres d equipes dans un championnat
@@ -527,20 +577,28 @@ function nb_equipes($id_champ, $idconnect)
 
 function VerifSession ($user_pseudo,$user_mdp, $idconnect)
 {
-
+//echo "test fonctions";echo "<br>";
+//echo "user_pseudo  : " .$user_pseudo;echo "<br>";
+//echo "user_mdp : " .$user_mdp;echo "<br>";
 if ($user_pseudo and $user_mdp)
 	{
-	   $result=$idconnect->query( "SELECT mot_de_passe, id_prono 
+	//  echo "test OK fonctions";echo "<br>";
+    $result=$idconnect->query( "SELECT mot_de_passe, id_prono 
 									               FROM phpab_membres 
 									               WHERE pseudo='$user_pseudo'");
-        $row = mysqli_fetch_array($result);
+        $row = mysqli_fetch_array($result); 
         
-        if ($row["mot_de_passe"] == $user_mdp){;$a=1;}
-        else {$a=0;}
+        //  echo $row["mot_de_passe"]; echo "<br>";
+        if ($row["mot_de_passe"] == $user_mdp)
+          {$a=1;}
+        else 
+          {$a=0;}
 
 	//session_start();
 	}
-else {$a=0;}
-return ("$a");
+else {
+ // echo "test KO fonctions";echo "<br>";
+  $a=0;}
+return $a;
 }
 ?>

@@ -21,7 +21,9 @@
               <td class=phpab2 align="center" colspan="3"><?php echo ADMIN_GR_CHAMPIONNATS_CREA; ?></td><td class=phpab2 align="right"><a href="#" onclick="window.open('Assistant_fr/creer_gr_champ.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
             </tr>
             <tr>
-              <td align="center" class=phpab6 colspan="4"><b><?php echo ADMIN_CHAMP_CREER_3; ?></b></td>
+              <td align="center" class=phpab6 colspan="4"><b>
+                
+              <?php echo ADMIN_CHAMP_CREER_3; ?></b></td>
             </tr>
               <td class=phpab3 align=right><form method="post"  action=""><?php echo ADMIN_GR_CHAMP_CREER_1; ?> :</td>
               <td class=phpab3 align=left>

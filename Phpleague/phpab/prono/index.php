@@ -1,15 +1,18 @@
 <?php
+if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];else {$champLigue='';}					   
 session_start();
-echo "index.php : user -".$_SESSION['user']; echo "<br>";
-echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
+//echo "index.php : user -".$_SESSION['user']; echo "<br>";
+//echo "index.php : mot_de_passe -".$_SESSION['mot_de_passe'];
 
 if (isset($_REQUEST['page'])) {$page=$_REQUEST['page'];} else {$page='';}
+if (isset($_REQUEST['type'])) {$type=$_REQUEST['type'];} else {$page='';}
 if (isset($_REQUEST['gr_champ'])) {$gr_champ=$_REQUEST['gr_champ'];} else {$gr_champ='';}
 if (isset($_REQUEST['user_pseudo'])) {$user_pseudo=$_REQUEST['user_pseudo'];} else {$user_pseudo='';}
 if (isset($_REQUEST['user_id'])) {$user_id=$_REQUEST['user_id'];} else {$user_id='';}
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
-echo "<br>";
-echo "user_id0 (index) : ".$user_id; echo "<br>";
+if (isset($_GET['page'])) $page = $_GET['page'];else {$page='';}
+if (isset($_GET['style'])) $style = $_GET['style'];else {$style='';}
+
 
 if ($mode == "smart")
 {
@@ -22,22 +25,78 @@ if ($mode == "smart")
     <tr>
         <td colspan="2" class="h12">Ligues régionales <br> Concours de pronostiques</td>
     </tr>
+
+    
 </table>
 
+    
 <?php
-}
+ switch ($champLigue){
 
+      case ($champLigue == 10 or substr($gr_champ,0,2)==10):
+			$ligue =  "Auvergne Rhône Alpes";
+			break;
+					
+			case ($champLigue == 11  or substr($gr_champ,0,2)==11):
+			$ligue =  "Bourgogne Franche Comté";
+			break;
+
+			case ($champLigue == 12 or substr($gr_champ,0,2)==12):
+			$ligue =  "Bretagne";
+			break;
+			
+			case ($champLigue == 13 or substr($gr_champ,0,2)==13):
+			$ligue =  "Centre Val de Loire";
+			break;
+
+      case ($champLigue == 14 or substr($gr_champ,0,2)==14):
+			$ligue =  "Corse";
+			break;
+
+      case ($champLigue == 15 or substr($gr_champ,0,2)==15):
+			$ligue =  "Grand Est";
+			break;
+
+      case ($champLigue == 16 or substr($gr_champ,0,2)==16):
+			$ligue =  "Haut de France";
+			break;
+
+			case ($champLigue == 17 or substr($gr_champ,0,2)==17):
+			$ligue = "Ile de France";
+			break;
+
+      case ($champLigue == 18 or substr($gr_champ,0,2)==18):
+			$ligue =  "Normandie";
+			break;
+
+      case ($champLigue == 19 or substr($gr_champ,0,2)==19):
+			$ligue =  "Nouvelle Aquitaine";
+			break;
+
+      case ($champLigue == 20 or substr($gr_champ,0,2)==20):
+			$ligue =  "Occitanie";
+			break;
+
+      case ($champLigue == 21 or substr($gr_champ,0,2)==21):
+			$ligue =  "Pays de la Loire";
+			break;
+
+      case ($champLigue == 22 or substr($gr_champ,0,2)==22):
+      $ligue = "Provence Alpes Côte d'Azur";
+      break;
+ }
+echo "<p class=\"size5 bold styleArial\">";
+echo "Ligue ". $ligue ;echo "<br>";
+echo "(EN PHASE DE TEST)";
+echo "</p>";
+}
   ?>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 
 <?php 
 
-
-echo "gr_champ : ".$gr_champ; echo "<br>";
-echo "pageA : ".$page; echo "<br>";
-echo "<br>";
+																					
 include ("avant.php");
 
  ?>
@@ -49,6 +108,7 @@ include ("avant.php");
    
 include("haut.inc.php");
 include("menu.inc.php");  // Affichage du menu identifié / non identifié
+
  //  echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>";
 
 ///if ($page == "profil") {
@@ -135,6 +195,12 @@ if (isset($_POST['f_prono_6'])) {$f_prono_6=$_POST['f_prono_6'];} else {$f_prono
 if (isset($_POST['f_prono_7'])) {$f_prono_7=$_POST['f_prono_7'];} else {$f_prono_7='';}
 if (isset($_POST['f_prono_8'])) {$f_prono_8=$_POST['f_prono_8'];} else {$f_prono_8='';}
 if (isset($_POST['f_prono_9'])) {$f_prono_9=$_POST['f_prono_9'];} else {$f_prono_9='';}
+
+
+
+
+
+
 if (isset($_POST['id_match_0'])) {$id_match_0=$_POST['id_match_0'];} else {$id_match_0='';}
 if (isset($_POST['id_match_1'])) {$id_match_1=$_POST['id_match_1'];} else {$id_match_1='';}
 if (isset($_POST['id_match_2'])) {$id_match_2=$_POST['id_match_2'];} else {$id_match_2='';}
@@ -157,9 +223,9 @@ if (!isset($_GET['page'])) {
   include ("accueil.htm");}
 else{$page= $_GET['page'];
 */
-if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
+//if (isset($_GET['page'])) $page= $_GET['page'];else $page = "erreur_login";
 
-echo "user_id (index) : ".$user_id; echo "<br>";
+//echo "user_id (index) : ".$user_id; echo "<br>";
 if ($page=="pronos" and $connecte=="oui") {include ("pronos1.php");}
 elseif ($page=="derniers_pronos" and $connecte=="oui") {include ("derniers_pronos.php");}
 elseif ($page=="profil" and $connecte=="oui") {include ("profil.php");}
@@ -169,7 +235,7 @@ elseif ($page=="classement") {include ("classement.htm");}
 elseif ($page=="inscription") {include ("inscription.php");}
 elseif ($page=="erreur_login") {include ("erreur_login.php");}
 elseif ($page=="perdu_mdp") {include ("perdu_mdp.php");}
-else {include ("accueil.htm");}
+//else {include ("accueil.htm");}
 
       
 ?>
@@ -186,20 +252,25 @@ else {include ("accueil.htm");}
   </tr>
 </table>
 <p>&nbsp;</p>
-
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
  
 
 <?php
 
 if ($mode == "smart")
 {
-?>
-   <div class="marginAuto  ">
-  <iframe class="width100PC" height="800" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ ?> 
+
+<!--
+<div class="center"> 
+  <iframe  width="100%" height="400" src="https://francefinalesprono.forumactif.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+  -->
+
  <?php 
 require '../../../smart/smartFooter.php';
 }
+
   ?>
-
-
