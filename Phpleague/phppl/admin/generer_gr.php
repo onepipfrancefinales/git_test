@@ -15,8 +15,8 @@
 // Support technique : http://phppleague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-echo "AAAgenerer_gr.php :";echo "<br />";
 echo "action -> impacte uniquement la table phppl_clmnt_pronos";echo "<br />";
+echo "<br />";
 ?>
 <table class=phppl width="80%">
   <tr>
@@ -32,7 +32,12 @@ echo "action -> impacte uniquement la table phppl_clmnt_pronos";echo "<br />";
 		mysqli_query($idconnect,("DELETE FROM phppl_clmnt_pronos 
 						  WHERE id_champ='$gr_champ'"));
 
-		$result=$idconnect->query(" 
+	
+
+//**************** Général ****************** */
+//echo "gr_champ : ".$gr_champ; echo "<br>";
+
+$result=$idconnect->query(" 
 				SELECT id_membre, pseudo, 
 				SUM(points) as total, 
 				SUM(participation) as participations 
@@ -42,16 +47,26 @@ echo "action -> impacte uniquement la table phppl_clmnt_pronos";echo "<br />";
 				GROUP by pseudo
 				ORDER by total, participations");
 
-
 		while ($row=mysqli_fetch_array($result))
 		{
+			
+			//echo  $row[0]; echo "<br>";
+		//	echo  $row[1]; echo "<br>";
+		//	echo  $row[2]; echo "<br>";
+		////	echo  $row[3]; echo "<br>";
+			echo "*************"; echo "<br>";
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
 				  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'general')"));
-		}
+		
+	
+	}
+
+
+//**************** mensuel_en_cours ****************** */
 
 		$result=$idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phppl_membres, phppl_pronostics, phppl_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phppl_membres.id
@@ -69,8 +84,11 @@ echo "action -> impacte uniquement la table phppl_clmnt_pronos";echo "<br />";
 								VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_en_cours')") );
 		}
 
+
+//**************** mensuel_30_jours ****************** */
+
 		$result = $idconnect->query("
-					SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+					SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 					FROM phppl_membres, phppl_pronostics, phppl_matchs
 					WHERE id_champ='$gr_champ'
 					AND id_membre=phppl_membres.id
@@ -87,8 +105,12 @@ echo "action -> impacte uniquement la table phppl_clmnt_pronos";echo "<br />";
 								VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_30_jours')"));
 		}
 
+		
+	
+	//**************** hebdo ****************** */	
+	
 		$result = $idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phppl_membres, phppl_pronostics, phppl_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phppl_membres.id
@@ -102,7 +124,7 @@ echo "action -> impacte uniquement la table phppl_clmnt_pronos";echo "<br />";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phppl_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')") or die (mysqli_error()));
+							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
 		}
 
 		echo ADMIN_GRAPH_PRONO; include ("tps2.php3");

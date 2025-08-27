@@ -36,10 +36,10 @@ if ($action2=="1")
    else
    {
     // Insertion des param�tres dans la bdd
-   // $requete="INSERT INTO phpau_parametres (id_champ, pts_victoire, pts_nul, pts_defaite, accession, barrage, relegation,id_equipe_fetiche, fiches_clubs, estimation) 
+ //   $requete="INSERT INTO phpau_parametres (id_champ, pts_victoire, pts_nul, pts_defaite, accession, barrage, relegation,id_equipe_fetiche, fiches_clubs, estimation) 
 	//VALUES ('$champ', '$pts_victoire', '$pts_nul', '$pts_defaite', '$accession', '$barrage', '$relegation', '$id_equipe_fetiche', '$fiches_clubs', '$estimation')";
-   // $resultats = mysqli_query ($requete);
-  //  if (!$resultats) ;
+    //$resultats = mysqli_query ($requete);
+    if (!$resultats) ;
     }  
  }
 
@@ -128,7 +128,7 @@ echo "<input type=\"text\" name=\"relegation\"  value=\"$existant[relegation]\" 
 
 // Equipe � suivre plus particuli�rement
 // $idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
- /* 
+/*  
   $resultats=$idconnect->query("SELECT phpau_clubs.nom, phpau_equipes.id FROM phpau_equipes, phpau_clubs WHERE phpau_equipes.id_champ='$champ' AND phpau_clubs.id=phpau_equipes.id_club ORDER by nom");
 //$resultats = mysqli_query ($requete);
 echo "<tr><td class=phpau3>";

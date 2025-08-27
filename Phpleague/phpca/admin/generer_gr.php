@@ -15,8 +15,8 @@
 // Support technique : http://phpcaeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-echo "AAAgenerer_gr.php :";echo "<br />";
 echo "action -> impacte uniquement la table phpca_clmnt_pronos";echo "<br />";
+echo "<br />";
 ?>
 <table class=phpca width="80%">
   <tr>
@@ -51,7 +51,7 @@ echo "action -> impacte uniquement la table phpca_clmnt_pronos";echo "<br />";
 		}
 
 		$result=$idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phpca_membres, phpca_pronostics, phpca_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phpca_membres.id
@@ -70,7 +70,7 @@ echo "action -> impacte uniquement la table phpca_clmnt_pronos";echo "<br />";
 		}
 
 		$result = $idconnect->query("
-					SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+					SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 					FROM phpca_membres, phpca_pronostics, phpca_matchs
 					WHERE id_champ='$gr_champ'
 					AND id_membre=phpca_membres.id
@@ -88,7 +88,7 @@ echo "action -> impacte uniquement la table phpca_clmnt_pronos";echo "<br />";
 		}
 
 		$result = $idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phpca_membres, phpca_pronostics, phpca_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phpca_membres.id
@@ -102,7 +102,7 @@ echo "action -> impacte uniquement la table phpca_clmnt_pronos";echo "<br />";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phpca_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')") or die (mysqli_error()));
+							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
 		}
 
 		echo ADMIN_GRAPH_PRONO; include ("tps2.php3");

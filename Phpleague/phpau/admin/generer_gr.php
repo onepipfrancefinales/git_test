@@ -15,7 +15,8 @@
 // Support technique : http://phpaueague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
-echo "AAAgenerer_gr.php :";
+echo "action -> impacte uniquement la table phpau_clmnt_pronos";echo "<br />";
+echo "<br />";
 ?>
 <table class=phpau width="80%">
   <tr>
@@ -46,11 +47,11 @@ echo "AAAgenerer_gr.php :";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phpau_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-				  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'general')") or die (mysqli_error()));
+				  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'general')"));
 		}
 
 		$result=$idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phpau_membres, phpau_pronostics, phpau_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phpau_membres.id
@@ -65,11 +66,11 @@ echo "AAAgenerer_gr.php :";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phpau_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-								VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_en_cours')") or die (mysqli_error()));
+								VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_en_cours')") );
 		}
 
 		$result = $idconnect->query("
-					SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+					SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 					FROM phpau_membres, phpau_pronostics, phpau_matchs
 					WHERE id_champ='$gr_champ'
 					AND id_membre=phpau_membres.id
@@ -83,11 +84,11 @@ echo "AAAgenerer_gr.php :";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phpau_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-								VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_30_jours')") or die (mysqli_error()));
+								VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_30_jours')"));
 		}
 
 		$result = $idconnect->query("
-				SELECT id_membre, pseudo, sum(points) as total, sum(participation) as participations
+				SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
 				FROM phpau_membres, phpau_pronostics, phpau_matchs
 				WHERE id_champ='$gr_champ'
 				AND id_membre=phpau_membres.id
@@ -101,7 +102,7 @@ echo "AAAgenerer_gr.php :";
 		{
 		 $row[1]=addslashes($row[1]);
 		 mysqli_query($idconnect, ("INSERT INTO phpau_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
-							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')") or die (mysqli_error()));
+							VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
 		}
 
 		echo ADMIN_GRAPH_PRONO; include ("tps2.php3");

@@ -19,7 +19,7 @@
 //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
 //$idconnect=@mysqli_connect('sql.franceserv.fr','onepip-france','Lavelan1969&','onepip-france-db3');	  
   
-
+echo "numero :".$numero;echo "<br />";
 if (empty ($numero))
 {   
 
@@ -36,8 +36,31 @@ if (empty ($numero))
        if ($numero=="") {$numero="1";}
   }
 if (empty ($numero)){$numero=1;}
+echo "action : ".$action;echo "<br />";
+echo "action2 :".$action2;echo "<br />";
+//echo $val_matchs_id;
+echo "testtest";
+echo "----------------";
+echo "voir admin/resultats-> pronostic";
 
+//$resultats2=$idconnect->query("SELECT pronostic, id_membre, buts_dom, buts_ext 
+//								 FROM phpau_pronostics WHERE id_match='$val_matchs_id'");
+          
+ //          while ($row2=mysqli_fetch_array($resultats2))
+ //          {
+            //  if ($buts_dom >$buts_ext and $row2[0]=="1"){$query3="UPDATE phpau_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+             // elseif ($buts_dom ==$buts_ext and $row2[0]=="N"){$query3="UPDATE phpau_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+            //  elseif ($buts_dom <$buts_ext and $row2[0]=="2"){$query3="UPDATE phpau_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+             // else 
+			 // {
+			 //  mysqli_query ($idconnect, ("UPDATE phpau_pronostics 
+			//			SET points='$pts_prono_participation', participation='1' 
+			//			WHERE id_membre='$row2[1]' 	AND id_match='$val_matchs_id'"));
+		     // }
+             
+ //          }
 
+echo "--------------------";
 if ($action2=="1")
   {
      reset ($date_reelle);
@@ -48,14 +71,28 @@ if ($action2=="1")
 	 while ( list ($cle, $val_date_reelle)= each ($date_reelle) and list ($cle, $val_butd)= each ($butd) and list ($cle, $val_butv)= each ($butv) and list ($cle, $val_matchs_id)= each ($matchs_id))
          {
            
-            $date_us=format_date_us($val_date_reelle);
-       if ( !(($val_butd=='') or ($val_butv=='')))
-         {
-           $requete="UPDATE phpau_matchs SET phpau_matchs.buts_dom='$val_butd', phpau_matchs.buts_ext='$val_butv', phpau_matchs.date_reelle='$date_us'
+    $date_us=format_date_us($val_date_reelle);
+		echo "<br />";
+		echo "id match : ".$val_matchs_id;  echo "<br />";
+		echo "but domicile : ".$val_butd; echo "<br />";
+		echo "but visiteur : ".$val_butv; echo "<br />";
+		echo "&&&&&&";
+		echo "<br />";	
+			
+    if ( !(($val_butd=='') or ($val_butv=='')))
+       {
+        //Insertion des données dans la table matchs
+		$requete="UPDATE phpau_matchs SET phpau_matchs.buts_dom='$val_butd', phpau_matchs.buts_ext='$val_butv', phpau_matchs.date_reelle='$date_us'
                      WHERE phpau_matchs.id='$val_matchs_id'";
+					 
+			
+		//Insertion des données dans la table pronostics	
+		$requetePronos="UPDATE phpau_pronostics SET buts_dom='$val_butd', buts_ext='$val_butv'
+                     WHERE id_match='$val_matchs_id'";		 
 
        
-  $resultats4=$idconnect->query("SELECT pts_prono_exact, pts_prono_participation 
+		// Paramétres des pronostics
+		$resultats4=$idconnect->query("SELECT pts_prono_exact, pts_prono_participation 
 								 FROM phpau_gr_championnats 
 								 WHERE id_champ='$champ'");
 
@@ -65,11 +102,12 @@ if ($action2=="1")
               $pts_prono_participation=$row4[1];
               $points_prono_exact=$pts_prono_exact + $pts_prono_participation ;
            }
+   
 
-      
-  $resultats2=$idconnect->query("SELECT pronostic, id_membre 
-								 FROM phpau_pronostics 
-								 WHERE id_match='$val_matchs_id'");
+
+		// Contrôle des pronosctics et affectation des points
+		$resultats2=$idconnect->query("SELECT pronostic, id_membre 
+								 FROM phpau_pronostics WHERE id_match='$val_matchs_id'");
           
            while ($row2=mysqli_fetch_array($resultats2))
            {
@@ -78,15 +116,13 @@ if ($action2=="1")
               elseif ($val_butd<$val_butv and $row2[0]=="2"){$query3="UPDATE phpau_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
               else 
 			  {
-			   mysqli_query ($idconnect, ("UPDATE phpau_pronostics 
+		mysqli_query ($idconnect, ("UPDATE phpau_pronostics 
 						SET points='$pts_prono_participation', participation='1' 
-						WHERE id_membre='$row2[1]' 
-						AND id_match='$val_matchs_id'"));
-						}
-              //mysql_query($query3) or die (mysqli_error()));
-             }
-           
-         }
+						WHERE id_membre='$row2[1]' 	AND id_match='$val_matchs_id'")); 
+				}
+			}
+          	 
+        }
     
        elseif (($val_butv=='') or ($val_butd==''))
        {
@@ -94,9 +130,7 @@ if ($action2=="1")
 					SET phpau_matchs.buts_dom=NULL, phpau_matchs.buts_ext=NULL, phpau_matchs.date_reelle='$date_us'
                     WHERE phpau_matchs.id='$val_matchs_id' ")) ;	
   
-         $resultats2=$idconnect->query("SELECT pronostic, id_membre 
-										FROM phpau_pronostics 
-										WHERE id_match='$val_matchs_id'");
+         $resultats2=$idconnect->query("SELECT pronostic, id_membre FROM phpau_pronostics WHERE id_match='$val_matchs_id'");
          
          while ($row2=mysqli_fetch_array($resultats2))
          { 
@@ -105,39 +139,30 @@ if ($action2=="1")
 			WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'") or die (mysqli_error()));
          } 
        }
-	   if ( !empty($requete))
-		{
-     mysqli_query($idconnect, $requete);
-
-
+	  
+      if ( !empty($requete))
+		{			
+		mysqli_query($idconnect, $requete);
+		mysqli_query($idconnect, $requetePronos);
 		}
      }     
   }
-
 ?>
 
 <table class=phpau width="80%">
-            <tr>
-              <td class=phpau2 align="center" colspan="3"><?php echo ADMIN_RESULTS_TITRE." "; affich_champ ($champ, $idconnect); ?></td>
-            </tr>
-            <tr>
-              <td align="center"><?php journees ($champ, $numero, $action, $idconnect);?><br /><br />
-              </td>
-              </tr>
-              <tr>
-              <td>
-              <table align=center cellspacing="0" width="100%">
-              <form method="post" action="">
-              
-       <?php
-       resultats ($champ, $numero, $idconnect);
-       ?>  
-    </form>
-
-              
-
-
-</td>
-            </tr>
+  <tr>
+    <td class=phpau2 align="center" colspan="3"><?php echo ADMIN_RESULTS_TITRE." "; affich_champ ($champ, $idconnect); ?></td>
+  </tr>
+  <tr>
+    <td align="center"><?php journees ($champ, $numero, $action, $idconnect);?><br /><br /></td>
+  </tr>
+  <tr>
+    <td>			  
+	 <table align=center cellspacing="0" width="100%">
+	   <form method="post" action="">         
+         <?php resultats ($champ, $numero, $idconnect); ?>  
+       </form>
+   </td>
+  </tr>
 </table>
 <br /><br />

@@ -122,9 +122,9 @@ if ($confirm=="ok" and $champ and $action=="supp")
         mysqli_query($idconnect, ("DELETE FROM phppl_matchs where id_equipe_dom='$row[0]' "));
         mysqli_query($idconnect, ("DELETE FROM phppl_matchs where id_equipe_ext='$row[0]' ")) ;
       }
-    mysqli_query($idconnect, ("DELETE FROM phppl_championnats where id='$champ' "));
-    mysqli_query($idconnect, ("DELETE FROM phppl_journees WHERE  id_champ = '$champ'"));
-    mysqli_query($idconnect, ("DELETE FROM phppl_equipes WHERE id_champ ='$champ' "));
+   mysqli_query($idconnect, ("DELETE FROM phppl_championnats where id='$champ' "));
+   mysqli_query($idconnect, ("DELETE FROM phppl_journees WHERE  id_champ = '$champ'"));
+   mysqli_query($idconnect, ("DELETE FROM phppl_equipes WHERE id_champ ='$champ' "));
    mysqli_query($idconnect, ("DELETE FROM phppl_parametres WHERE id_champ ='$champ' "));
 
 }

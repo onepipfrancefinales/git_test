@@ -19,7 +19,7 @@
 //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
 //$idconnect=@mysqli_connect('sql.franceserv.fr','onepip-france','Lavelan1969&','onepip-france-db3');	  
   
-//echo "numero :".$numero;echo "<br />";
+echo "numero :".$numero;echo "<br />";
 if (empty ($numero))
 {   
 
@@ -36,12 +36,13 @@ if (empty ($numero))
        if ($numero=="") {$numero="1";}
   }
 if (empty ($numero)){$numero=1;}
-//echo "action : ".$action;echo "<br />";
-//echo "action2 :".$action2;echo "<br />";
+echo "action : ".$action;echo "<br />";
+echo "action2 :".$action2;echo "<br />";
 //echo $val_matchs_id;
-//echo "testtest";
-echo "----------------    ";
+echo "testtest";
+echo "----------------";
 echo "voir admin/resultats-> pronostic";
+
 //$resultats2=$idconnect->query("SELECT pronostic, id_membre, buts_dom, buts_ext 
 //								 FROM phpidf_pronostics WHERE id_match='$val_matchs_id'");
           
@@ -71,12 +72,12 @@ if ($action2=="1")
          {
            
     $date_us=format_date_us($val_date_reelle);
-	//	echo "<br />";
-	//	echo "id match : ".$val_matchs_id;  echo "<br />";
-	//	echo "but domicile : ".$val_butd; echo "<br />";
-	//	echo "but visiteur : ".$val_butv; echo "<br />";
-	//	echo "&&&&&&";
-	//	echo "<br />";	
+		echo "<br />";
+		echo "id match : ".$val_matchs_id;  echo "<br />";
+		echo "but domicile : ".$val_butd; echo "<br />";
+		echo "but visiteur : ".$val_butv; echo "<br />";
+		echo "&&&&&&";
+		echo "<br />";	
 			
     if ( !(($val_butd=='') or ($val_butv=='')))
        {
@@ -115,15 +116,13 @@ if ($action2=="1")
               elseif ($val_butd<$val_butv and $row2[0]=="2"){$query3="UPDATE phpidf_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
               else 
 			  {
-			 mysqli_query ($idconnect, ("UPDATE phpidf_pronostics 
+		mysqli_query ($idconnect, ("UPDATE phpidf_pronostics 
 						SET points='$pts_prono_participation', participation='1' 
-						WHERE id_membre='$row2[1]' 	
-						AND id_match='$val_matchs_id'"));
-		      }
-		//  mysqli_query($idconnect, $query3);
-		  }
+						WHERE id_membre='$row2[1]' 	AND id_match='$val_matchs_id'")); 
+				}
+			}
           	 
-         }
+        }
     
        elseif (($val_butv=='') or ($val_butd==''))
        {
@@ -131,9 +130,7 @@ if ($action2=="1")
 					SET phpidf_matchs.buts_dom=NULL, phpidf_matchs.buts_ext=NULL, phpidf_matchs.date_reelle='$date_us'
                     WHERE phpidf_matchs.id='$val_matchs_id' ")) ;	
   
-         $resultats2=$idconnect->query("SELECT pronostic, id_membre 
-										FROM phpidf_pronostics 
-										WHERE id_match='$val_matchs_id'");
+         $resultats2=$idconnect->query("SELECT pronostic, id_membre FROM phpidf_pronostics WHERE id_match='$val_matchs_id'");
          
          while ($row2=mysqli_fetch_array($resultats2))
          { 
@@ -142,7 +139,7 @@ if ($action2=="1")
 			WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'") or die (mysqli_error()));
          } 
        }
-	   
+	  
       if ( !empty($requete))
 		{			
 		mysqli_query($idconnect, $requete);

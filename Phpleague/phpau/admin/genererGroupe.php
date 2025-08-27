@@ -16,7 +16,7 @@
 //                                                                      */
 //***********************************************************************/
 echo "genererGroupe.php :";
-
+$champ ='192';
 ?>
 <table class=phpau width="80%">
             <tr>
@@ -25,12 +25,12 @@ echo "genererGroupe.php :";
             <tr>
             <td align="center">
 <?php
-if ($champ =151)
-$champ2  = array(151,152,153,154,155,156,157,158);	
-else
-$champ2  = array(251,252,253,254,255,256,257,258);	
-foreach ($champ2 as $champ)
-{
+//if ($champ =151)
+//$champ2  = array(151,152,153,154,155,156,157,158);	
+//else
+//$champ2  = array(251,252,253,254,255,256,257,258);	
+//foreach ($champ2 as $champ)
+//{
   include ("tps1.php3"); 
   //$idconnect=@mysqli_connect('127.0.0.1','root','','onepip-france-db3');	
   
@@ -111,6 +111,6 @@ foreach ($champ2 as $champ)
       echo ADMIN_GRAPH_4;
       echo "<br/>";
     }
-}
+//}
 ?>
 </td></tr></table>

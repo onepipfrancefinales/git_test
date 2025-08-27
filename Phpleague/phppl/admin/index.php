@@ -22,7 +22,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>phppleague - Administration</title>
+<title>Ligue Bourgogne France Comté - Administration</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -33,7 +33,8 @@
 require ("../config.php") ;
 require ("fonctions.php");
 ouverture ();
-$codeLigue = $_GET['champ'];
+if (isset($_GET['ligue'])) $ligue = $_GET['ligue']; else $ligue ="AAAA";
+if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
 ?>
 
 <div align="center">
@@ -41,47 +42,163 @@ $codeLigue = $_GET['champ'];
   <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phppl">Ligue 
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f">
+          <font class="phppl">Ligue 
 
 
-        <?php 
-		 switch ($codeLigue){
+      <?php 
+		 switch ($codeLigue or $ligue){
+
+      case ($codeLigue >= 100000 and $codeLigue < 110000):
+			echo  "Auvergne Rhône Alpes - Administration";
+      $ligue = 100000;
+			break;
 					
-			case ($codeLigue < 120000):
-			echo  "Bourgogne Franche Comt&eacute - Administration";
-			break;
-			
-			case ($codeLigue < 130000):
-			echo  "Bretagne - Administration";
-			break;
-			
-			case ($codeLigue < 140000):
-			echo  "Centre Val de Loire - Administration";
-			break;
-			
-			case ($codeLigue < 170000):
-			echo "Haut de France - Administration";
+			case (($codeLigue >= 110000 and $codeLigue < 120000) or ($ligue >= 110000 and $ligue < 120000)):
+			echo  "Bourgogne Franche Comté - Administration";
+      $ligue = 110000;
 			break;
 
-      case ($codeLigue < 220000):
-        echo "Pays de la Loire - Administration";
-        break;
+			  case (($codeLigue >= 120000 and $codeLigue < 130000) or ($ligue >= 120000 and $ligue < 130000)):
+			echo  "Bretagne - Administration";
+      $ligue = 120000;
+			break;
+			
+			  case (($codeLigue >= 130000 and $codeLigue < 140000) or ($ligue >= 130000 and $ligue < 140000)):
+			echo  "Centre Val de Loire - Administration";
+      $ligue = 130000;
+			break;
+
+      case ($codeLigue >= 140000 and $codeLigue < 150000):
+			echo  "Corse - Administration";
+      $ligue = 140000;
+			break;
+
+      case ($codeLigue >= 150000 and $codeLigue < 160000):
+			echo  "Grand Est - Administration";
+      $ligue = 150000;
+			break;
+
+        case (($codeLigue >= 160000 and $codeLigue < 170000) or ($ligue >= 160000 and $ligue < 170000)):
+			echo  "Haut de France - Administration";
+      $ligue = 160000;
+			break;
+
+			case ($codeLigue >= 170000 and $codeLigue < 180000):
+			echo "Ile de France - Administration";
+      $ligue = 170000;
+			break;
+
+      case ($codeLigue >= 180000 and $codeLigue < 190000):
+			echo  "Normandie - Administration";
+      $ligue = 180000;
+			break;
+
+      case ($codeLigue >= 190000 and $codeLigue < 200000):
+			echo  "Nouvelle Aquitaine - Administration";
+      $ligue = 190000;
+			break;
+
+      case ($codeLigue >= 200000 and $codeLigue < 210000):
+			echo  "Occitanie - Administration";
+      $ligue = 200000;
+			break;
+
+      case (($codeLigue >= 210000 and $codeLigue < 220000) or ($ligue >= 210000 and $ligue < 220000)):
+			echo  "Pays de la Loire - Administration";
+      $ligue = 210000;
+			break;
+
+      case ($codeLigue >= 220000 and $codeLigue < 230000):
+      echo "Provence Alpes Côte d'Azur - Administration";
+      $ligue = 220000;
+      break;
 	
 		 }
-		
-		?>
+     /*
+     switch ($ligue){
+
+      case ($ligue >= 100000 and $ligue < 110000):
+			echo  "Auvergne Rhône Alpes - Administration";
+      $ligue = 100000;
+			break;
+					
+			case ($ligue >= 110000 and $ligue < 120000):
+			echo  "Bourgogne Franche Comté - Administration";
+      $ligue = 110000;
+			break;
+
+			case ($ligue >= 120000 and $ligue < 130000):
+			echo  "Bretagne - Administration";
+      $ligue = 120000;
+			break;
+			
+			case ($ligue >= 130000 and $ligue < 140000):
+			echo  "Centre Val de Loire - Administration";
+      $ligue = 130000;
+			break;
+
+      case ($ligue >= 140000 and $ligue < 150000):
+			echo  "Corse - Administration";
+      $ligue = 140000;
+			break;
+
+      case ($ligue >= 150000 and $ligue < 160000):
+			echo  "Grand Est - Administration";
+      $ligue = 150000;
+			break;
+
+      case ($ligue >= 160000 and $ligue < 170000):
+			echo  "Haut de France - Administration";
+      $ligue = 160000;
+			break;
+
+			case ($ligue >= 170000 and $ligue < 180000):
+			echo "Ile de France - Administration";
+      $ligue = 170000;
+			break;
+
+      case ($ligue >= 180000 and $ligue < 190000):
+			echo  "Normandie - Administration";
+      $ligue = 180000;
+			break;
+
+      case ($ligue >= 190000 and $ligue < 200000):
+			echo  "Nouvelle Aquitaine - Administration";
+      $ligue = 190000;
+			break;
+
+      case ($ligue >= 200000 and $ligue < 210000):
+			echo  "Occitanie - Administration";
+      $ligue = 200000;
+			break;
+
+      case ($ligue >= 210000 and $ligue < 220000):
+			echo  "Pays de la Loire - Administration";
+      $ligue = 210000;
+			break;
+
+      case ($ligue >= 220000 and $ligue < 230000):
+      echo "Provence Alpes Côte d'Azur - Administration";
+      $ligue = 220000;
+      break;
+	
+		 }
+      */
+		//$ligue = substr($codeLigue,0,2);
+		?>  
 
         </font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
       <td class="phppl3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
-      <a href="?page=championnat"><?php echo LEAGUE; ?></a><br /><br />
-      <a href="?page=groupes_championnats"><?php echo "Groupes championnats"; ?></a><br /><br />
+      <a href="?page=championnat&action=resultats&champ=<?php echo $ligue; ?>&ligue=<?php echo $ligue; ?>"><?php echo LEAGUE; ?></a><br /><br />
+      <a href="?page=groupes_championnats&ligue=<?php echo $ligue; ?>&champ=<?php echo $codeLigue; ?>"><?php echo "Groupes championnats"; ?></a><br /><br />
       <a href="?page=fiches_clubs"><?php echo MENU_FICHES_CLUBS; ?></a><br /><br />
       <a href="?page=mini_classement"><?php echo ADMIN_MINI_1; ?></a><br /><br />
       <a href="?page=membres"><?php echo MENU_MEMBRES; ?></a><br /><br />
-      <a href="?page=credits"><?php echo MENU_CREDITS; ?></a><br /><br />
+     <!--  <a href="?page=credits"><?php echo MENU_CREDITS; ?></a><br /><br /> -->
       <a href="logout.php"><?php echo "Logout"; ?></a><br />
       </td>
       <td valign="top" colspan="2"><div align="center">
