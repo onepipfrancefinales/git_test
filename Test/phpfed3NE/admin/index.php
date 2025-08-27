@@ -113,8 +113,28 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
       echo "Provence Alpes Côte d'Azur - Administration";
       $ligue = 220000;
       break;
+
+       case ($codeLigue > 991000 and $codeLigue < 992000):
+      echo "Fédérale 3 - Excellence B -Poule 1 à 8";
+      $ligue = 991161;
+      break;
+
+       case ($codeLigue > 992000 and $codeLigue < 993000):
+      echo "Fédérale 3 - Excellence B -Poule 9 à 16";
+      $ligue = 992161;
+      break;
 	
 		 }
+/*
+     if ($champ >= 991160 and $champ < 991270)
+	{ $nomLigue= "Fédérale 3 - Excellence B -Poule 1 &agrave; 9";}	
+ else
+	{ $nomLigue= "Fédérale 3 - Excellence B -Poule 10 &agrave; 18";}
+*/ 
+//991161-991168---991261-991268
+//992161-992168---992261-992298
+
+
      /*
      switch ($ligue){
 

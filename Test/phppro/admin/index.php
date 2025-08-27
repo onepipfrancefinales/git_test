@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -27,7 +27,7 @@
 
 </head>
 
-<body topmargin="0" leftmargin="0" class="phpab">
+<body topmargin="0" leftmargin="0" class="phppro">
 
 <?php
 require ("../config.php") ;
@@ -43,7 +43,7 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
         <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f">
-          <font class="phpab">Ligue 
+          <font class="phppro">Ligue 
 
 
       <?php 
@@ -112,6 +112,26 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
       case ($codeLigue >= 220000 and $codeLigue < 230000):
       echo "Provence Alpes Côte d'Azur - Administration";
       $ligue = 220000;
+      break;
+
+       case ($codeLigue > 880000 and $codeLigue < 990000):
+      echo "Compétitions féminines - Administration";
+      $ligue = 220000;
+      break;
+
+      case ($codeLigue >= 990000 and $codeLigue < 990140):
+      echo "Compétitions Pro - Administration";
+      $ligue = 990110;
+      break;
+
+      case ($codeLigue >= 990140 and $codeLigue < 990150 or $codeLigue >= 990240 and $codeLigue < 990250):
+      echo "Fédérale 1 - Administration";
+      $ligue = 990140;
+      break;
+
+      case ($codeLigue >= 990150 and $codeLigue < 990160 or  $codeLigue >= 990250 and $codeLigue < 990260):
+      echo "Fédérale 2 - Administration";
+      $ligue = 990150;
       break;
 	
 		 }
@@ -192,7 +212,7 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
-      <td class="phpab3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
+      <td class="phppro3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
       <a href="?page=championnat&action=resultats&champ=<?php echo $ligue; ?>&ligue=<?php echo $ligue; ?>"><?php echo LEAGUE; ?></a><br /><br />
       <a href="?page=groupes_championnats&ligue=<?php echo $ligue; ?>&champ=<?php echo $codeLigue; ?>"><?php echo "Groupes championnats"; ?></a><br /><br />
       <a href="?page=fiches_clubs"><?php echo MENU_FICHES_CLUBS; ?></a><br /><br />
@@ -246,9 +266,9 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
       <td></td>
     </tr>
     <tr>
-      <td class="phpab" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
+      <td class="phppro" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
         </td>
-      <td class="phpab" colspan="3" width="70%" height="10" colspan="2" align="right">
+      <td class="phppro" colspan="3" width="70%" height="10" colspan="2" align="right">
         </td>
     </tr>
   </table>
