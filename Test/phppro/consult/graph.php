@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -22,7 +22,7 @@ ouverture ();
 $equipe = $_REQUEST['equipe'];
 
 // On détermine le nom de l'équipe à partir de son id et le championnat
-$query="SELECT phpab_clubs.nom, phpab_equipes.id_club, phpab_equipes.id_champ FROM phpab_equipes, phpab_clubs where phpab_clubs.id=phpab_equipes.id_club AND phpab_equipes.id='$equipe'";
+$query="SELECT phppro_clubs.nom, phppro_equipes.id_club, phppro_equipes.id_champ FROM phppro_equipes, phppro_clubs where phppro_clubs.id=phppro_equipes.id_club AND phppro_equipes.id='$equipe'";
 $result=mysql_query($query);
 while ($row=mysql_fetch_array($result))
 {
@@ -33,22 +33,22 @@ while ($row=mysql_fetch_array($result))
 
 
 //on détermine le nombre d'équipes
-$query="SELECT phpab_equipes.id FROM phpab_equipes, phpab_clubs WHERE id_champ='$champ' AND phpab_equipes.id_club=phpab_clubs.id AND phpab_clubs.nom!='exempte'";
+$query="SELECT phppro_equipes.id FROM phppro_equipes, phppro_clubs WHERE id_champ='$champ' AND phppro_equipes.id_club=phppro_clubs.id AND phppro_clubs.nom!='exempte'";
 $result=mysql_query($query);
 $nb_equipes=mysql_num_rows($result)+1;
 
 // on détermine la dernière journee jouée
-$query="SELECT max(phpab_journees.numero) FROM phpab_journees, phpab_matchs where phpab_journees.id=phpab_matchs.id_journee and buts_dom is not NULL AND phpab_journees.id_champ='$champ'";
+$query="SELECT max(phppro_journees.numero) FROM phppro_journees, phppro_matchs where phppro_journees.id=phppro_matchs.id_journee and buts_dom is not NULL AND phppro_journees.id_champ='$champ'";
 $result=mysql_query($query);
 while ($row=mysql_fetch_array($result)){$fin=$row[0];}
 
 // On détermine le nombre de journée total
-$query="SELECT id FROM phpab_journees WHERE id_champ='$champ'";
+$query="SELECT id FROM phppro_journees WHERE id_champ='$champ'";
 $result=mysql_query($query);
 $nb_journees=mysql_num_rows($result);
 
 // On déterrmine l'année et le nom de la division
-$query="SELECT phpab_saisons.annee, phpab_divisions.nom FROM phpab_saisons, phpab_divisions, phpab_championnats where phpab_championnats.id=$champ AND phpab_divisions.id=phpab_championnats.id_division and phpab_championnats.id_saison=phpab_saisons.id";
+$query="SELECT phppro_saisons.annee, phppro_divisions.nom FROM phppro_saisons, phppro_divisions, phppro_championnats where phppro_championnats.id=$champ AND phppro_divisions.id=phppro_championnats.id_division and phppro_championnats.id_saison=phppro_saisons.id";
 $result=mysql_query($query);
 
 while ($row=mysql_fetch_array($result)){$annee=($row[0]+1); $nom_champ="$row[1] $row[0]/$annee";}
@@ -103,7 +103,7 @@ $x=$x+($hauteur/$nb_equipes);
 $y++;
 }
 
-$requete_sql = "SELECT classement FROM phpab_clmnt_graph WHERE id_equipe='$equipe' ORDER BY fin";
+$requete_sql = "SELECT classement FROM phppro_clmnt_graph WHERE id_equipe='$equipe' ORDER BY fin";
 $resultat_requete = mysql_query($requete_sql);
 
 $x=$marge_gauche+20; //pas nb equipes !

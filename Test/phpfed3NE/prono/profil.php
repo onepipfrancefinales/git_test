@@ -8,7 +8,7 @@ if ($action == "supp" and !$confirm=="oui")
 elseif ($action == "supp" and $confirm=="oui")
  {
 
-$tabTables = array('phpau', 'phpab', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
+$tabTables = array('phpau', 'phpfed3NE', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
 foreach ($tabTables as $table) {
 
 $tablePronostics = $table."_pronostics";
@@ -78,7 +78,7 @@ else
           if (empty ($ancien_mdp) and empty ($nouveau_mdp) and empty ($nouveau_mdp2))
            {
 
-$tabTables = array('phpau', 'phpab', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
+$tabTables = array('phpau', 'phpfed3NE', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
 foreach ($tabTables as $table) {
 
 
@@ -105,7 +105,7 @@ $tableMembres = $table."_membres";
              {
               $nouveau_mdp_crypt=md5($nouveau_mdp2);
 
-              $tabTables = array('phpau', 'phpab', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
+              $tabTables = array('phpau', 'phpfed3NE', 'phpca', 'phpidf', 'phppl', 'phpfed3NE', 'phppro');		
 foreach ($tabTables as $table) {
 
 

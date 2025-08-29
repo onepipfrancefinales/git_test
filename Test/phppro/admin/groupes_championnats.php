@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 if (isset($_GET['ligue'])) {$ligue=$_GET['ligue'];} else {$ligue='';}
@@ -37,7 +37,7 @@ if ($action2=="creer" and isset($nom_group) and $action=="creer")
   $ligueFin = $ligue + 10000;
   echo "ligueFin : ".$ligueFin;echo "<br>";
   $resultats=$idconnect->query(" SELECT MAX(id)
-							  FROM phpab_gr_championnats 
+							  FROM phppro_gr_championnats 
 							  WHERE id BETWEEN '$ligue' AND '$ligueFin' ");
 
  while($row = mysqli_fetch_array($resultats))
@@ -47,29 +47,29 @@ if ($action2=="creer" and isset($nom_group) and $action=="creer")
 echo "maxId : ".$maxId; echo "<br>";
 $newId = $maxId + 1 ;
 echo "newId : ".$newId;echo "<br>";
-  mysqli_query ($idconnect,("INSERT INTO phpab_gr_championnats (id, nom) VALUES ('$newId','$nom_group')"));
+  mysqli_query ($idconnect,("INSERT INTO phppro_gr_championnats (id, nom) VALUES ('$newId','$nom_group')"));
 }
 
 // Suppression d'un groupe de championnat
 if ($confirm=="ok" and $gr_champ and $action=="supp")
 {
-  mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats WHERE id ='$gr_champ' "));
+  mysqli_query($idconnect,("DELETE FROM phppro_gr_championnats WHERE id ='$gr_champ' "));
 }
 ?>
 
-<br /><font class=phpab><?php echo GR_LEAGUE; ?></font><br /><br />
+<br /><font class=phppro><?php echo GR_LEAGUE; ?></font><br /><br />
 
-<table class=phpab width="90%">
+<table class=phppro width="90%">
             <tr>
-              <td class=phpab2><?php echo MENU_ID; ?></td>
-              <td class=phpab2><?php echo MENU_NOM; ?></td>
-              <td class=phpab2></td>
+              <td class=phppro2><?php echo MENU_ID; ?></td>
+              <td class=phppro2><?php echo MENU_NOM; ?></td>
+              <td class=phppro2></td>
             </tr>
               <?php // affich_gr_championnats ($gr_champ, $action, $idconnect); ?>
             <?php affich_gr_championnats ($ligue, $gr_champ, $action, $idconnect); ?>
           
             <tr>
-              <td class=phpab5 align="right" colspan="4">
+              <td class=phppro5 align="right" colspan="4">
 			    <a href="?page=groupes_championnats&action=creer&ligue=<?php echo $ligue;?>"> 
 			   
           <?php echo ADMIN_GR_CHAMP_CREER;?></a>

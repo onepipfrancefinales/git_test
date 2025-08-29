@@ -11,7 +11,7 @@ if (VerifSession ($user_pseudo,$user_mdp, $idconnect)=="1")
               
                 
                $result=$idconnect->query("	SELECT pseudo, id_prono 
-											FROM phpab_membres 
+											FROM phppro_membres 
 											WHERE pseudo='$user_pseudo'");
                 
                 $row = mysqli_fetch_array($result);

@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -22,12 +22,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Ligue Bourgogne France Comté - Administration</title>
+<title>Fédérale 3- Poule 1 à 8 - Administration</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
-<body topmargin="0" leftmargin="0" class="phpab">
+<body topmargin="0" leftmargin="0" class="phpfed3NE">
 
 <?php
 require ("../config.php") ;
@@ -43,7 +43,7 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
         <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f">
-          <font class="phpab">Ligue 
+          <font class="phpfed3NE">Ligue 
 
 
       <?php 
@@ -114,8 +114,10 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
       $ligue = 220000;
       break;
 
-       case ($codeLigue > 991000 and $codeLigue < 992000):
-      echo "Fédérale 3 - Excellence B -Poule 1 à 8";
+       case ($codeLigue == 991161):
+     
+      echo "Fédérale 3 - Excellence B -Poule 1 à 8"; 
+        echo "test";
       $ligue = 991161;
       break;
 
@@ -212,7 +214,7 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
-      <td class="phpab3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
+      <td class="phpfed3NE3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
       <a href="?page=championnat&action=resultats&champ=<?php echo $ligue; ?>&ligue=<?php echo $ligue; ?>"><?php echo LEAGUE; ?></a><br /><br />
       <a href="?page=groupes_championnats&ligue=<?php echo $ligue; ?>&champ=<?php echo $codeLigue; ?>"><?php echo "Groupes championnats"; ?></a><br /><br />
       <a href="?page=fiches_clubs"><?php echo MENU_FICHES_CLUBS; ?></a><br /><br />
@@ -252,7 +254,7 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
        else {include ("accueil.htm");}
                 }
        elseif ($identification == "non") {echo "Veuillez renseigner tous les champs !";}
-       elseif ($identification == "non2") {echo "Identifiants erron�s !";}
+       elseif ($identification == "non2") {echo "Identifiants erronés !";}
     
        else {echo "<br /><br /><br /><br />";include ("menu.non-identifie.htm");}
      
@@ -266,9 +268,9 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
       <td></td>
     </tr>
     <tr>
-      <td class="phpab" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
+      <td class="phpfed3NE" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
         </td>
-      <td class="phpab" colspan="3" width="70%" height="10" colspan="2" align="right">
+      <td class="phpfed3NE" colspan="3" width="70%" height="10" colspan="2" align="right">
         </td>
     </tr>
   </table>

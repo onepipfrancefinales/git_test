@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -22,7 +22,7 @@ ouverture ();
 $equipe = $_REQUEST['equipe'];
 
 // On détermine le nom de l'équipe à partir de son id et le championnat
-$result=$idconnect->query("SELECT phpab_clubs.nom, phpab_equipes.id_club, phpab_equipes.id_champ FROM phpab_equipes, phpab_clubs where phpab_clubs.id=phpab_equipes.id_club AND phpab_equipes.id='$equipe'");
+$result=$idconnect->query("SELECT phpfed3NE_clubs.nom, phpfed3NE_equipes.id_club, phpfed3NE_equipes.id_champ FROM phpfed3NE_equipes, phpfed3NE_clubs where phpfed3NE_clubs.id=phpfed3NE_equipes.id_club AND phpfed3NE_equipes.id='$equipe'");
 //$result=mysql_query($query);
 while ($row=mysqli_fetch_array($result))
 {
@@ -33,22 +33,22 @@ while ($row=mysqli_fetch_array($result))
 
 
 //on détermine le nombre d'équipes
-$result=$idconnect->query("SELECT phpab_equipes.id FROM phpab_equipes, phpab_clubs WHERE id_champ='$champ' AND phpab_equipes.id_club=phpab_clubs.id AND phpab_clubs.nom!='exempte'");
+$result=$idconnect->query("SELECT phpfed3NE_equipes.id FROM phpfed3NE_equipes, phpfed3NE_clubs WHERE id_champ='$champ' AND phpfed3NE_equipes.id_club=phpfed3NE_clubs.id AND phpfed3NE_clubs.nom!='exempte'");
 //$result=mysql_query($query);
 $nb_equipes=mysqli_num_rows($result)+1;
 
 // on détermine la dernière journee jouée
-$result=$idconnect->query("SELECT max(phpab_journees.numero) FROM phpab_journees, phpab_matchs where phpab_journees.id=phpab_matchs.id_journee and buts_dom is not NULL AND phpab_journees.id_champ='$champ'");
+$result=$idconnect->query("SELECT max(phpfed3NE_journees.numero) FROM phpfed3NE_journees, phpfed3NE_matchs where phpfed3NE_journees.id=phpfed3NE_matchs.id_journee and buts_dom is not NULL AND phpfed3NE_journees.id_champ='$champ'");
 //$result=mysql_query($query);
 while ($row=mysqli_fetch_array($result)){$fin=$row[0];}
 
 // On détermine le nombre de journée total
-$result=$idconnect->query("SELECT id FROM phpab_journees WHERE id_champ='$champ'");
+$result=$idconnect->query("SELECT id FROM phpfed3NE_journees WHERE id_champ='$champ'");
 //$result=mysql_query($query);
 $nb_journees=mysqli_num_rows($result);
 
 // On déterrmine l'année et le nom de la division
-$result=$idconnect->query("SELECT phpab_saisons.annee, phpab_divisions.nom FROM phpab_saisons, phpab_divisions, phpab_championnats where phpab_championnats.id=$champ AND phpab_divisions.id=phpab_championnats.id_division and phpab_championnats.id_saison=phpab_saisons.id");
+$result=$idconnect->query("SELECT phpfed3NE_saisons.annee, phpfed3NE_divisions.nom FROM phpfed3NE_saisons, phpfed3NE_divisions, phpfed3NE_championnats where phpfed3NE_championnats.id=$champ AND phpfed3NE_divisions.id=phpfed3NE_championnats.id_division and phpfed3NE_championnats.id_saison=phpfed3NE_saisons.id");
 //$result=mysql_query($query);
 
 while ($row=mysqli_fetch_array($result)){$annee=($row[0]+1); $nom_champ="$row[1] $row[0]/$annee";}
@@ -104,7 +104,7 @@ $x=$x+($hauteur/$nb_equipes);
 $y++;
 }
 
-$requete_sql = "SELECT classement FROM phpab_clmnt_graph WHERE id_equipe='$equipe' ORDER BY fin";
+$requete_sql = "SELECT classement FROM phpfed3NE_clmnt_graph WHERE id_equipe='$equipe' ORDER BY fin";
 $resultat_requete = mysql_query($requete_sql);
 
 $x=$marge_gauche+20; //pas nb equipes !

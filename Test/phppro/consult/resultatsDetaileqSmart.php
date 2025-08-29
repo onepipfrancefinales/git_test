@@ -6,19 +6,19 @@
 <body>
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -52,7 +52,7 @@ $id_equipe = $_REQUEST['id_equipe'];
 
 $resultat=$idconnect->query("
 		  SELECT id 
-		  FROM phpab_equipes 
+		  FROM phppro_equipes 
 		  WHERE id_champ='$champ' 
 		  AND id='$id_equipe'");
 		  
@@ -62,9 +62,9 @@ while ($row=mysqli_fetch_array($resultat))
     }
 	
 $resultat=$idconnect->query("
-		  SELECT phpab_clubs.nom FROM phpab_clubs, phpab_equipes 
-		  WHERE phpab_equipes.id='$id_equipe' 
-		  AND phpab_equipes.id_club=phpab_clubs.id");
+		  SELECT phppro_clubs.nom FROM phppro_clubs, phppro_equipes 
+		  WHERE phppro_equipes.id='$id_equipe' 
+		  AND phppro_equipes.id_club=phppro_clubs.id");
 
 
 while ($row=mysqli_fetch_array($resultat))
@@ -74,23 +74,23 @@ while ($row=mysqli_fetch_array($resultat))
     }
 $color=0;
 //echo "<div align=\"center\"><b>[ <font class=\"victoire\">".VICTOIRE."</font> | <font class=\"nul\">".NUL."</font> | <font class=\"defaite\">".DEFAITE."</font> ]</b></div><br />";
-echo "<table class=\"tablephpab2\" align=\"center\" cellspacing=\"0\"  width=\"100%\">";
+echo "<table class=\"tablephppro2\" align=\"center\" cellspacing=\"0\"  width=\"100%\">";
 
 $resultat=$idconnect->query("
-		SELECT phpab_journees.numero, cldom.nom, clext.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.date_reelle, phpab_matchs.id
-        FROM phpab_equipes as dom, phpab_equipes as ext, phpab_matchs, phpab_journees, phpab_clubs as cldom  , phpab_clubs as clext
-        WHERE phpab_matchs.id_equipe_dom=dom.id
-        AND phpab_matchs.id_equipe_ext=ext.id
-        AND (phpab_matchs.id_equipe_ext='$id_equipe'
-        OR phpab_matchs.id_equipe_dom='$id_equipe')
-        AND phpab_journees.id_champ='$champ'
+		SELECT phppro_journees.numero, cldom.nom, clext.nom, phppro_matchs.buts_dom, phppro_matchs.buts_ext, phppro_matchs.date_reelle, phppro_matchs.id
+        FROM phppro_equipes as dom, phppro_equipes as ext, phppro_matchs, phppro_journees, phppro_clubs as cldom  , phppro_clubs as clext
+        WHERE phppro_matchs.id_equipe_dom=dom.id
+        AND phppro_matchs.id_equipe_ext=ext.id
+        AND (phppro_matchs.id_equipe_ext='$id_equipe'
+        OR phppro_matchs.id_equipe_dom='$id_equipe')
+        AND phppro_journees.id_champ='$champ'
         AND dom.id_club=cldom.id
         AND ext.id_club=clext.id
-        AND phpab_matchs.id_journee=phpab_journees.id
-        ORDER BY phpab_journees.numero");
+        AND phppro_matchs.id_journee=phppro_journees.id
+        ORDER BY phppro_journees.numero");
 
 
-echo "<tr class=\"trphpab3\"><td align=\"center\"><b>".JOURNEE."</b></td><td width=\"5% align=\"center\"></td><td colspan=\"5\ align=\"center\"><b>Oppositions</b></td></tr>";
+echo "<tr class=\"trphppro3\"><td align=\"center\"><b>".JOURNEE."</b></td><td width=\"5% align=\"center\"></td><td colspan=\"5\ align=\"center\"><b>Oppositions</b></td></tr>";
         while  ($row=mysqli_fetch_array($resultat))
         {
       $row[1] = stripslashes($row[1]);

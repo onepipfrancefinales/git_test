@@ -1,29 +1,29 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
 if (empty ($numero))
   {
     $result=$idconnect->query("
-			SELECT max(phpab_journees.numero) 
-			FROM phpab_journees, phpab_matchs 
-			where phpab_journees.id=phpab_matchs.id_journee 
+			SELECT max(phpfed3NE_journees.numero) 
+			FROM phpfed3NE_journees, phpfed3NE_matchs 
+			where phpfed3NE_journees.id=phpfed3NE_matchs.id_journee 
 			and buts_dom is not NULL 
-			and phpab_journees.id_champ='$champ'");
+			and phpfed3NE_journees.id_champ='$champ'");
 			
   //  $resultats=mysql_query($requete);
      while ($row=mysqli_fetch_array($result))
@@ -42,7 +42,7 @@ if ($boucle==1)
      {     
        $result=$idconnect->query("
 			   SELECT id 
-			   FROM phpab_journees 
+			   FROM phpfed3NE_journees 
 			   WHERE  id_champ='$champ' 
 			   AND numero='$miroir'");
        //$result=mysql_query ($query);
@@ -51,7 +51,7 @@ if ($boucle==1)
           {
            $id_journee_miroir=$row[0] ;
           }
-       $query="DELETE FROM phpab_matchs WHERE id_journee='$id_journee_miroir'";
+       $query="DELETE FROM phpfed3NE_matchs WHERE id_journee='$id_journee_miroir'";
        mysql_query($query) or die(mysql_error());
 
      }
@@ -59,7 +59,7 @@ if ($boucle==1)
   $x=$numero-1;
   $result=$idconnect->query("
 		  SELECT id 
-		  FROM phpab_journees 
+		  FROM phpfed3NE_journees 
 		  WHERE id_champ='$champ' 
 		  AND numero='$x'");
 		  
@@ -68,7 +68,7 @@ if ($boucle==1)
        {
          $id_journee=$row[0] ;
        }
-  $query="DELETE FROM phpab_matchs WHERE id_journee='$id_journee'";
+  $query="DELETE FROM phpfed3NE_matchs WHERE id_journee='$id_journee'";
   mysql_query($query) or die(mysql_error());
 
   // insertion des nouvelles donn�es
@@ -76,13 +76,13 @@ if ($boucle==1)
    {
      //insertion
      //echo "<br />ALLER=".$id_journee."N�:".$x;
-     mysql_query("INSERT INTO phpab_matchs (id_journee, id_equipe_dom, id_equipe_ext) VALUES ('$id_journee','$id_domicile[$counter]','$id_exterieur[$counter]') ") or die(mysql_error());
+     mysql_query("INSERT INTO phpfed3NE_matchs (id_journee, id_equipe_dom, id_equipe_ext) VALUES ('$id_journee','$id_domicile[$counter]','$id_exterieur[$counter]') ") or die(mysql_error());
 
     //insertion journ�e miroir, si existe
 	if ($miroir<>"none")
 	{
           //echo "<br />MIROIR=".$id_journee_miroir."N�:".$miroir;
-	  $query="INSERT INTO phpab_matchs (id_journee, id_equipe_dom, id_equipe_ext) VALUES ('$id_journee_miroir','$id_exterieur[$counter]','$id_domicile[$counter]') ";
+	  $query="INSERT INTO phpfed3NE_matchs (id_journee, id_equipe_dom, id_equipe_ext) VALUES ('$id_journee_miroir','$id_exterieur[$counter]','$id_domicile[$counter]') ";
           mysql_query ($query) or die(mysql_error());
         }        
 
@@ -91,9 +91,9 @@ if ($boucle==1)
 */
 ?>
 
-<table class=phpab width="80%">
+<table class=phpfed3NE width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="3" width="100%"><?php echo ADMIN_MATCHS_TITRE." "; affich_champ ($champ, $idconnect); ?></td><td class=phpab2 align="right"><a href="#" onclick="window.open('Assistant_fr/matchs.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
+              <td class=phpfed3NE2 align="center" colspan="3" width="100%"><?php echo ADMIN_MATCHS_TITRE." "; affich_champ ($champ, $idconnect); ?></td><td class=phpfed3NE2 align="right"><a href="#" onclick="window.open('Assistant_fr/matchs.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
             </tr>
             <tr>
             
@@ -105,7 +105,7 @@ if ($boucle==1)
   $nb_equipes1 = array();
   $resultats=$idconnect->query("
 			 SELECT COUNT(*) 
-			 FROM phpab_journees 
+			 FROM phpfed3NE_journees 
 			 WHERE id_champ ='$champ'");	  
  
 
@@ -136,7 +136,7 @@ $nb_equipes1[]= $row[0];
 
 $result=$idconnect->query("
 		SELECT id 
-		FROM phpab_journees 
+		FROM phpfed3NE_journees 
 		WHERE id_champ='$champ' 
 		AND numero='$numero'");
 //$result=mysql_query ($query);
@@ -164,15 +164,15 @@ $i=0;
 for ($counter=$nb_rencontres; $counter>0 ; $counter=$counter-1 ) // Nb de rencontres dans la journ�e
 
         {
-           if (($i%2)==0) {$class="phpab3";}
-           else {$class="phpab4";}
+           if (($i%2)==0) {$class="phpfed3NE3";}
+           else {$class="phpfed3NE4";}
         // saisie des rencontres DOMICILE
 
 		echo "<TR valign=\"top\"><TD class=$class align=center>";
 		$counter0=$counter-1;
 		$res1=$idconnect->query(" 
 				SELECT * 
-				FROM phpab_matchs 
+				FROM phpfed3NE_matchs 
 				WHERE id_journee='$id_journee' 
 				LIMIT $counter0,1");
 		
@@ -184,8 +184,8 @@ for ($counter=$nb_rencontres; $counter>0 ; $counter=$counter-1 ) // Nb de rencon
 			}
         echo "<select name=\"id_domicile[]\">";
         echo "<option value=\"id[$counter]\"$club[$counter]></option> " ;
-        $query = "SELECT DISTINCT phpab_clubs.nom, phpab_equipes.id FROM phpab_clubs, phpab_equipes
-                  WHERE phpab_equipes.id_champ='$champ' AND phpab_clubs.id=phpab_equipes.id_club ORDER BY phpab_clubs.nom";
+        $query = "SELECT DISTINCT phpfed3NE_clubs.nom, phpfed3NE_equipes.id FROM phpfed3NE_clubs, phpfed3NE_equipes
+                  WHERE phpfed3NE_equipes.id_champ='$champ' AND phpfed3NE_clubs.id=phpfed3NE_equipes.id_club ORDER BY phpfed3NE_clubs.nom";
 
      //   $result=mysql_query($query) or die(mysql_error());
 		/*
@@ -205,11 +205,11 @@ for ($counter=$nb_rencontres; $counter>0 ; $counter=$counter-1 ) // Nb de rencon
         echo "<option value=\"0\"> </option> " ;
        
 	   $result= $idconnect->query("
-				SELECT DISTINCT phpab_clubs.nom, phpab_equipes.id 
-				FROM phpab_clubs, phpab_equipes 
-				WHERE phpab_equipes.id_champ='$champ' 
-				AND phpab_clubs.id=phpab_equipes.id_club 
-				ORDER BY phpab_clubs.nom");
+				SELECT DISTINCT phpfed3NE_clubs.nom, phpfed3NE_equipes.id 
+				FROM phpfed3NE_clubs, phpfed3NE_equipes 
+				WHERE phpfed3NE_equipes.id_champ='$champ' 
+				AND phpfed3NE_clubs.id=phpfed3NE_equipes.id_club 
+				ORDER BY phpfed3NE_clubs.nom");
 
        //$result=mysql_query($query) or die(mysql_error());
         while ($row = mysqli_fetch_array($result))
@@ -231,9 +231,9 @@ for ($counter=$nb_rencontres; $counter>0 ; $counter=$counter-1 ) // Nb de rencon
                 echo "<option value=\"none\" selected>".ADMIN_DATES_4."</option>\n";
                 $result=$idconnect->query("
 						SELECT numero, id 
-						FROM phpab_journees 
+						FROM phpfed3NE_journees 
 						WHERE id_champ='$champ'  
-						ORDER BY phpab_journees.numero");
+						ORDER BY phpfed3NE_journees.numero");
                // $result=mysql_query($query);
 			   
                 while ($row = mysqli_fetch_array($result)) {
@@ -266,9 +266,9 @@ echo "</select>";
 
 ?>
 </td></tr></table></table><br /><br />
-<table class=phpab width="80%">
+<table class=phpfed3NE width="80%">
   <tr> 
-    <td class=phpab2 align=center><?php echo ADMIN_COHERENCE_TITRE; ?>
+    <td class=phpfed3NE2 align=center><?php echo ADMIN_COHERENCE_TITRE; ?>
     </td>
   </tr>
   <tr>
@@ -281,7 +281,7 @@ if ($coherence=="1")
 
 // CHECK SUM DU CHAMPIONNAT
   $result=$idconnect->query("SELECT sum(id) 
-  FROM phpab_equipes 
+  FROM phpfed3NE_equipes 
   WHERE id_champ='$champ' ");
 //$check_sum=mysqli_fetch_array($result=mysqli_query($query));
 //$sumsum=$check_sum[0];
@@ -292,18 +292,18 @@ $nb_journees=(nb_equipes($champ, $idconnect)*2)-2;
 $x=1;
 while($x<=$nb_journees)
     {
-$result=$idconnect->query(" SELECT sum(phpab_matchs.id_equipe_dom), sum(phpab_matchs.id_equipe_ext) FROM phpab_matchs, phpab_journees WHERE phpab_matchs.id_journee=phpab_journees.id AND phpab_journees.id_champ='$champ'   AND phpab_journees.numero='$x' ");
+$result=$idconnect->query(" SELECT sum(phpfed3NE_matchs.id_equipe_dom), sum(phpfed3NE_matchs.id_equipe_ext) FROM phpfed3NE_matchs, phpfed3NE_journees WHERE phpfed3NE_matchs.id_journee=phpfed3NE_journees.id AND phpfed3NE_journees.id_champ='$champ'   AND phpfed3NE_journees.numero='$x' ");
 //$result=mysql_query($query);
 $sum=mysqli_fetch_array($result);
 $sum_day=$sum[0]+$sum[1];
 echo "<small>MATCH_SUM = ".$sum_day."  </small>";
     $result=$idconnect->query("
-			SELECT count(DISTINCT phpab_matchs.id_equipe_dom), 
-			count(DISTINCT phpab_matchs.id_equipe_ext) 
-			FROM phpab_matchs, phpab_journees   
-			WHERE phpab_matchs.id_journee=phpab_journees.id    
-			AND phpab_journees.id_champ='$champ'    
-			AND phpab_journees.numero='$x' ");
+			SELECT count(DISTINCT phpfed3NE_matchs.id_equipe_dom), 
+			count(DISTINCT phpfed3NE_matchs.id_equipe_ext) 
+			FROM phpfed3NE_matchs, phpfed3NE_journees   
+			WHERE phpfed3NE_matchs.id_journee=phpfed3NE_journees.id    
+			AND phpfed3NE_journees.id_champ='$champ'    
+			AND phpfed3NE_journees.numero='$x' ");
 			//$result=mysql_query($query);
 /*
     while( $row = (mysql_fetch_array($result)) )
@@ -331,21 +331,21 @@ echo "<small>MATCH_SUM = ".$sum_day."  </small>";
     }
 
 $result=$idconnect->query(" 
-		SELECT sum(phpab_matchs.id_equipe_dom), 
-			   sum(phpab_matchs.id_equipe_ext) 
-		FROM phpab_matchs, phpab_journees 
-		WHERE phpab_matchs.id_journee=phpab_journees.id 
-		AND phpab_journees.id_champ='$champ'  ");
+		SELECT sum(phpfed3NE_matchs.id_equipe_dom), 
+			   sum(phpfed3NE_matchs.id_equipe_ext) 
+		FROM phpfed3NE_matchs, phpfed3NE_journees 
+		WHERE phpfed3NE_matchs.id_journee=phpfed3NE_journees.id 
+		AND phpfed3NE_journees.id_champ='$champ'  ");
 		
 //$result=mysql_query($query);
 $sum=mysqli_fetch_array($result);
 $sumsum=$sum[0];
 $result=$idconnect->query("
-		SELECT sum(phpab_matchs.id_equipe_dom), 
-			   sum(phpab_matchs.id_equipe_ext) 
-		FROM phpab_matchs, phpab_journees 
-		WHERE  phpab_journees.id_champ='$champ' 
-		AND phpab_matchs.id_journee=phpab_journees.id  ");
+		SELECT sum(phpfed3NE_matchs.id_equipe_dom), 
+			   sum(phpfed3NE_matchs.id_equipe_ext) 
+		FROM phpfed3NE_matchs, phpfed3NE_journees 
+		WHERE  phpfed3NE_journees.id_champ='$champ' 
+		AND phpfed3NE_matchs.id_journee=phpfed3NE_journees.id  ");
 //$result=mysql_query($query);
 while($row=mysqli_fetch_array($result))
     {
@@ -362,10 +362,10 @@ while($row=mysqli_fetch_array($result))
 
  	}
  $result=$idconnect->query("
-		 SELECT   phpab_matchs.id_equipe_dom as DOM,  count(*) as ct 
-		 FROM phpab_matchs, phpab_journees 
-		 WHERE  phpab_journees.id_champ='$champ' 
-		 AND phpab_matchs.id_journee=phpab_journees.id 
+		 SELECT   phpfed3NE_matchs.id_equipe_dom as DOM,  count(*) as ct 
+		 FROM phpfed3NE_matchs, phpfed3NE_journees 
+		 WHERE  phpfed3NE_journees.id_champ='$champ' 
+		 AND phpfed3NE_matchs.id_journee=phpfed3NE_journees.id 
 		 GROUP BY DOM");
 		 
 //$result=mysql_query($query); 
@@ -378,11 +378,11 @@ while($row=mysqli_fetch_array($result))
 			}
 		}
  $result=$idconnect->query("
-		 SELECT phpab_matchs.id_equipe_ext as DOM,  
+		 SELECT phpfed3NE_matchs.id_equipe_ext as DOM,  
 		 count(*) as ct 
-		 FROM phpab_matchs, phpab_journees 
-		 WHERE  phpab_journees.id_champ='$champ' 
-		 AND phpab_matchs.id_journee=phpab_journees.id 
+		 FROM phpfed3NE_matchs, phpfed3NE_journees 
+		 WHERE  phpfed3NE_journees.id_champ='$champ' 
+		 AND phpfed3NE_matchs.id_journee=phpfed3NE_journees.id 
 		 GROUP BY DOM");
 //$result=mysql_query($query); 
 while($row=mysqli_fetch_array($result))

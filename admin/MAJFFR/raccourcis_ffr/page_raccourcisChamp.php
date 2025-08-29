@@ -28,9 +28,9 @@
 
   // ***** Féminines *****					
 
-  $FEMH = 0;
-  $FEMPH = 0;
-  $FEMS1 = 0;
+  $FEMH = 22454;
+  $FEMPH = 22474;
+  $FEMS1 = 22475;
   //	$FEMS2 = $row[3];
   //	$FEMS3 = $row[4];
   //	$FEMS4 = $row[5];
@@ -85,12 +85,12 @@
   $IDFResPH = 0;
 
   // ***** Normandie *****	
-  $NORH = 0;
-  $NORPH = 0;
-  $NORS1 = 0;
+  $NORH = 22527;
+  $NORPH = 22529;
+  $NORS1 = 55531;
   $NORS2 = 0;
-  $NORResH = 0;
-  $NORResPH = 0;
+  $NORResH = 22528;
+  $NORResPH = 22530;
 
   // ***** Nouvelle Aquitaine *****				
   $NAQH = 22483;

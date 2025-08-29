@@ -5,19 +5,19 @@
 <body>
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                            */
+// phpproeague : gestionnaire de championnat                            */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                       */
+// http://phpproeague.univert.org                                       */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum             */
+// Support technique : http://phpproeague.univert.org/forum             */
 //                                                                      */
 //***********************************************************************/
 
@@ -58,7 +58,7 @@ else
 
     // RAPPEL DES PARAMETRES du CHAMPIONNAT
     $result=$idconnect->query("SELECT accession, barrage, estimation, relegation, id_equipe_fetiche, fiches_clubs
-                         FROM phpab_parametres
+                         FROM phppro_parametres
                          WHERE id_champ='$champ'");
     $row=mysqli_fetch_array($result);
 
@@ -68,10 +68,10 @@ else
     $fiches_clubs = $row['fiches_clubs'];
     $id_equipe_fetiche=$row['id_equipe_fetiche'];
     
-     $resultats=$idconnect->query("SELECT phpab_equipes.id FROM phpab_equipes, phpab_clubs
-                  WHERE phpab_clubs.id=phpab_equipes.id_club 
+     $resultats=$idconnect->query("SELECT phppro_equipes.id FROM phppro_equipes, phppro_clubs
+                  WHERE phppro_clubs.id=phppro_equipes.id_club 
                   AND id_champ='$champ'
-                  AND phpab_clubs.nom='exempte'");
+                  AND phppro_clubs.nom='exempte'");
     //$resultats=mysql_query($requete) or die (mysql_error());
     
 	$exempte=mysqli_num_rows($resultats);
@@ -82,14 +82,14 @@ else
 	$legende=CONSULT_CLMNT_MSG4.$debut.CONSULT_CLMNT_MSG5.$fin;
 
 
-   $requete=$idconnect->query("SELECT DISTINCT * FROM phpab_clmnt_cache WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, PEN DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM");
+   $requete=$idconnect->query("SELECT DISTINCT * FROM phppro_clmnt_cache WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, PEN DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM");
    clmnt($legende, $type, $accession, $barrage, $relegation, $champ, $requete, $lien, $id_equipe_fetiche, $idconnect);
   
-    $result=$idconnect->query(" SELECT max(phpab_journees.numero) 
-								FROM phpab_journees, phpab_matchs 
-								WHERE phpab_journees.id=phpab_matchs.id_journee 
+    $result=$idconnect->query(" SELECT max(phppro_journees.numero) 
+								FROM phppro_journees, phppro_matchs 
+								WHERE phppro_journees.id=phppro_matchs.id_journee 
 								AND buts_dom is not NULL 
-								AND phpab_journees.id_champ='$champ'");
+								AND phppro_journees.id_champ='$champ'");
    
         while ($row=mysqli_fetch_array($result))
         {

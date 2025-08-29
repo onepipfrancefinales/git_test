@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -35,7 +35,7 @@ if (isset($_POST['idd'])) {$idd=$_POST['idd'];} else {$idd='';}
 
 if(!isset($_POST['id']))
 {
-       $result=mysql_query("SELECT id, nom FROM phpab_clubs ORDER BY nom");
+       $result=mysql_query("SELECT id, nom FROM phppro_clubs ORDER BY nom");
        echo "<form method=\"post\" action=\"\">";
        echo "<h3>".ADMIN_GESTEQUIPE_2."</h3>";
        echo "<select name=\"id\">";
@@ -62,19 +62,19 @@ if(!isset($_POST['id']))
 elseif ($go<>"1")
 {
        // On met a jour la bd
-       //$query= "SELECT * FROM phpab_logo WHERE id_club='$id'";
+       //$query= "SELECT * FROM phppro_logo WHERE id_club='$id'";
        //$result = mysql_query ($query);
        //$nb=mysql_num_rows($result);
 
        // Si pas d'URL logo renseignée, on l'insère
        //if ($nb=='0')
        //{
-         //mysql_query ("INSERT INTO phpab_logo (id_club) VALUES ('$id')") or die ("probleme " .mysql_error());
-         //mysql_query ("UPDATE phpab_clubs SET url_logo = '$pts'  WHERE id = '$id_equipe'") or die ("probleme " .mysql_error());
+         //mysql_query ("INSERT INTO phppro_logo (id_club) VALUES ('$id')") or die ("probleme " .mysql_error());
+         //mysql_query ("UPDATE phppro_clubs SET url_logo = '$pts'  WHERE id = '$id_equipe'") or die ("probleme " .mysql_error());
 
          //}
 
-       $query2= "SELECT * FROM phpab_donnee WHERE id_clubs='$id'";
+       $query2= "SELECT * FROM phppro_donnee WHERE id_clubs='$id'";
        $result2 = mysql_query ($query2);
        $nb2=mysql_num_rows($result2);
        $nb_rens=nb_rens2($idconnect);
@@ -82,17 +82,17 @@ elseif ($go<>"1")
        // Si pas de donnée pour les renseignements, on les crée
        if ($nb2!=$nb_rens)
        {
-         mysqli_query($idconnect, ("DELETE FROM phpab_donnee WHERE id_clubs=$id"));
+         mysqli_query($idconnect, ("DELETE FROM phppro_donnee WHERE id_clubs=$id"));
 				
-			$result=$idconnect->query("SELECT id FROM phpab_rens");
+			$result=$idconnect->query("SELECT id FROM phppro_rens");
 			while($row=mysqli_fetch_array($result))
 			{
-			 mysqli_query($idconnect, ("INSERT INTO phpab_donnee (id_clubs, id_rens) VALUES ('$id', '$row[0]')")) or die ("probleme " .mysql_error());
+			 mysqli_query($idconnect, ("INSERT INTO phppro_donnee (id_clubs, id_rens) VALUES ('$id', '$row[0]')")) or die ("probleme " .mysql_error());
 			}
         }
        
        echo "<h3>";
-       $query=$idconnect->query("SELECT id, nom FROM phpab_clubs WHERE id='$id'");
+       $query=$idconnect->query("SELECT id, nom FROM phppro_clubs WHERE id='$id'");
 
                While($row = mysqli_fetch_array($query))
                {
@@ -103,38 +103,38 @@ elseif ($go<>"1")
                }
 
        echo "</h3><br /><br />";
-       echo "<table class=tablephpab2 border=\"0\" cellpadding=\"2\" cellspacing=\"0\" valign=\"bottom\" align=\"center\" width=\"90%\"><form method=\"post\" action=\"\">";
+       echo "<table class=tablephppro2 border=\"0\" cellpadding=\"2\" cellspacing=\"0\" valign=\"bottom\" align=\"center\" width=\"90%\"><form method=\"post\" action=\"\">";
        echo "<input type=\"hidden\" name=\"id\" value=\"$id\">";
        echo "<input type=\"hidden\" name=\"page\" value=\"fiches_clubs\">";
        echo "<input type=\"hidden\" name=\"action\" value=\"gest\">";
-       $query="SELECT phpab_clubs.id, url_logo FROM phpab_clubs WHERE phpab_clubs.id='$id'";
+       $query="SELECT phppro_clubs.id, url_logo FROM phppro_clubs WHERE phppro_clubs.id='$id'";
        $result = mysql_query ($query) or die(mysql_error());;
 
                While($row = mysql_fetch_array($result))
                {
-                          echo "<tr class=phpab3>
+                          echo "<tr class=phppro3>
                           <td align=\"left\"><b>Classe</b></td>
                           <td align=\"left\"><b>".ADMIN_GESTEQUIPE_3."</b></td>
                           <td align=\"left\"><b>".ADMIN_GESTEQUIPE_4."</b></td>
                           <td align=\"left\"><b>".ADMIN_EQUIPE_5."</b></td>
                           <td align=\"left\"><b>".ADMIN_EQUIPE_6."</b></td></tr>";
-                          echo "<tr class=phpab2><td></td><td align=\"left\">".ADMIN_EQUIPE_7."</td>";
+                          echo "<tr class=phppro2><td></td><td align=\"left\">".ADMIN_EQUIPE_7."</td>";
                           echo "<td align=\"left\"><input type=\"text\" name=\"urllogo\" value=\"$row[1]\" size=25 maxlength=200><td></td><td></td></td></tr>";
                }
 
-        $query2="SELECT phpab_classe.nom, phpab_classe.id FROM phpab_classe order by rang";
+        $query2="SELECT phppro_classe.nom, phppro_classe.id FROM phppro_classe order by rang";
         $result2 = mysql_query ($query2);
                           $i=0;
                  while($row2 = mysql_fetch_array($result2))
                  {
-                             $query="SELECT phpab_rens.nom, phpab_donnee.nom, phpab_donnee.id, phpab_donnee.etat, phpab_donnee.url, phpab_classe.nom
-                             FROM phpab_rens, phpab_classe, phpab_clubs, phpab_donnee
-                             WHERE phpab_clubs.id='$id'
+                             $query="SELECT phppro_rens.nom, phppro_donnee.nom, phppro_donnee.id, phppro_donnee.etat, phppro_donnee.url, phppro_classe.nom
+                             FROM phppro_rens, phppro_classe, phppro_clubs, phppro_donnee
+                             WHERE phppro_clubs.id='$id'
                                    AND id_clubs='$id'
                                    AND id_classe='$row2[1]'
-                                   AND id_classe=phpab_classe.id
-                                   AND phpab_rens.id=id_rens
-                             ORDER by phpab_rens.rang";
+                                   AND id_classe=phppro_classe.id
+                                   AND phppro_rens.id=id_rens
+                             ORDER by phppro_rens.rang";
                              $result=mysql_query ($query) or die (mysql_error());
                                      
                                      While($row=mysql_fetch_array($result))
@@ -160,7 +160,7 @@ elseif ($go<>"1")
          echo "<tr><td colspan=\"8\"><br /><input type=\"hidden\" name=\"go\" value=\"1\">
          <center><input type=\"submit\" value=".ENVOI."></td></tr></table>";
          echo "<br /><br />";
-         $query="SELECT url_logo FROM phpab_clubs WHERE id='$id'";
+         $query="SELECT url_logo FROM phppro_clubs WHERE id='$id'";
          $result = mysql_query($query);
 
                  while($row = mysql_fetch_array($result))
@@ -168,13 +168,13 @@ elseif ($go<>"1")
                             echo "<center><img src=\"$row[0]\"><br /><br /><br /><br />";
                  }
                  
-         $result=$idconnect->query("SELECT phpab_classe.nom, phpab_classe.id FROM phpab_classe order by rang");
+         $result=$idconnect->query("SELECT phppro_classe.nom, phppro_classe.id FROM phppro_classe order by rang");
         // $result = mysql_query ($query);
 
                  while($row = mysql_fetch_array($result))
                  {
-                            echo "<table class=tablephpab2 cellspacing=\"0\" align=center width=\"90%\">";
-                            echo "<tr class=phpab3><td><b><font color=\"#FFFFFF\">$row[0]</font></b></td></tr>";
+                            echo "<table class=tablephppro2 cellspacing=\"0\" align=center width=\"90%\">";
+                            echo "<tr class=phppro3><td><b><font color=\"#FFFFFF\">$row[0]</font></b></td></tr>";
                             $id_classe=$row[1];
                             echo "<td><table cellspacing=\"0\"><tr><td><font face=\"arial\" size=\"2\">";
                             $aff_rens=aff_rens ($id_classe, $id);
@@ -183,21 +183,21 @@ elseif ($go<>"1")
                             echo "</table></td></table><br /><br />";
                  }
 
-         echo "<table class=tablephpab2 cellspacing=\"0\" align=center width=\"90%\"><tr class=phpab3><td><b><font color=\"#FFFFFF\">".CONSULT_CLUB_3."</font></b></td></tr>";
+         echo "<table class=tablephppro2 cellspacing=\"0\" align=center width=\"90%\"><tr class=phppro3><td><b><font color=\"#FFFFFF\">".CONSULT_CLUB_3."</font></b></td></tr>";
          
-		 $result=$idconnect->query("SELECT annee, phpab_divisions.nom, phpab_championnats.id, phpab_equipes.id
-         FROM phpab_saisons, phpab_championnats, phpab_divisions, phpab_clubs, phpab_equipes
-         WHERE phpab_equipes.id_champ=phpab_championnats.id
-               AND id_division=phpab_divisions.id
-               AND phpab_clubs.id=id_club
-               AND phpab_equipes.id_club='$id'
-               AND phpab_saisons.id=phpab_championnats.id_saison order by annee desc");
+		 $result=$idconnect->query("SELECT annee, phppro_divisions.nom, phppro_championnats.id, phppro_equipes.id
+         FROM phppro_saisons, phppro_championnats, phppro_divisions, phppro_clubs, phppro_equipes
+         WHERE phppro_equipes.id_champ=phppro_championnats.id
+               AND id_division=phppro_divisions.id
+               AND phppro_clubs.id=id_club
+               AND phppro_equipes.id_club='$id'
+               AND phppro_saisons.id=phppro_championnats.id_saison order by annee desc");
         
          
                  while($row = mysqli_fetch_array($result))
                  {
         echo "<tr><td></td></tr>";
-        echo "<tr class=\"trphpab2\"><td align=\"center\">$row[0]/". ($row[0]+1)." ($row[1])</td></tr>";
+        echo "<tr class=\"trphppro2\"><td align=\"center\">$row[0]/". ($row[0]+1)." ($row[1])</td></tr>";
         echo "<tr><td align=\"center\"><a href=\"../consult/classement.php?champ=$row[2]&amp;type=G%E9n%E9ral\">".CONSULT_CLUB_1."</a> - <a href=\"../consult/detaileq.php?champ=$row[2]&amp;id_equipe=$row[3]\">".CONSULT_CLUB_2."</a> - <a href=\"#\" onclick=\"window.open('../consult/graph.php?equipe=$row[3]','Stats','toolbar=0,location=0,directories=0,status=0,scrollbars=0,resizable=0,copyhistory=0,menuBar=0,width=560,height=320');return false;\">".CONSULT_CLUB_4."</a><br /><br /></td></tr>\n";
                 }
          echo"</table><br /><br />";
@@ -219,8 +219,8 @@ elseif ($go=="1")
 	 while ( list ($cle, $val)= each ($url) and list ($cle, $val1)= each ($nom) and list ($cle, $val2)= each ($etat) and list ($cle, $val3)= each ($idd))
          {
          $val_1=addslashes($val1);
-         mysql_query ("UPDATE phpab_clubs SET url_logo='$urllogo' WHERE id='$id'") or die ("probleme " .mysql_error());
-         mysql_query ("UPDATE phpab_donnee SET nom='$val_1', etat='$val2', url='$val' WHERE id='$val3'") or die ("probleme " .mysql_error());
+         mysql_query ("UPDATE phppro_clubs SET url_logo='$urllogo' WHERE id='$id'") or die ("probleme " .mysql_error());
+         mysql_query ("UPDATE phppro_donnee SET nom='$val_1', etat='$val2', url='$val' WHERE id='$val3'") or die ("probleme " .mysql_error());
          }
      echo "<font color=\"#008000\">".ADMIN_CLASSE_2."</font>";
      echo "</form>" ;

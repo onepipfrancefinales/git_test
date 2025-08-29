@@ -1,11 +1,11 @@
 <?php
 if (empty($numero)) {
 
-  $resultats = $idconnect->query("  SELECT max(phpab_journees.numero) 
-								  from phpab_journees, phpab_matchs 
-								  where phpab_journees.id=phpab_matchs.id_journee 
+  $resultats = $idconnect->query("  SELECT max(phpfed3NE_journees.numero) 
+								  from phpfed3NE_journees, phpfed3NE_matchs 
+								  where phpfed3NE_journees.id=phpfed3NE_matchs.id_journee 
 								  and buts_dom is not NULL 
-								  and phpab_journees.id_champ='$champ'");
+								  and phpfed3NE_journees.id_champ='$champ'");
 
  
 
@@ -26,7 +26,7 @@ echo "journée : ".$journee;echo "<br />";
 
 
 $resultats = $idconnect->query("  SELECT COUNT(*)
-								  from phpab_matchs 
+								  from phpfed3NE_matchs 
 								  where id_journee = '$journee'");
 
 while($row= mysqli_fetch_array($resultats))
@@ -83,11 +83,11 @@ echo "<br />";
   if (!(($butd[$i] == '') or ($butv[$i] == ''))) {
   
    echo "Traitement des scores"; echo "<br />";
-    mysqli_query($idconnect, ("UPDATE phpab_matchs  
+    mysqli_query($idconnect, ("UPDATE phpfed3NE_matchs  
                                SET buts_dom ='$butd[$i]', buts_ext='$butv[$i]', date_reelle='$dateUSA[$i]'
                                WHERE id='$matchs_id[$i]'"));
  
-   mysqli_query($idconnect, ("UPDATE phpab_pronostics  
+   mysqli_query($idconnect, ("UPDATE phpfed3NE_pronostics  
                               SET buts_dom='$butd[$i]',     buts_ext='$butv[$i]'
                               WHERE id_match='$matchs_id[$i]'"));
 
@@ -100,7 +100,7 @@ echo "<br />";
 
    /* A verifier l'interet de cette requete
    $requete3=$idconnect->query("SELECT pronostic
-                                FROM phpab_pronostics 
+                                FROM phpfed3NE_pronostics 
                                 WHERE id_match='$matchs_id[$i]'");
             while ($row=mysqli_fetch_array($requete3))
            {
@@ -116,7 +116,7 @@ echo "<br>";echo "<br>";
 
 /*
 $requete = $idconnect->query("SELECT COUNT(id_match) 	
-			                        FROM phpab_pronostics 											   
+			                        FROM phpfed3NE_pronostics 											   
                               WHERE id_match='$matchs_id[$i]'");
                                
 
@@ -134,7 +134,7 @@ while($row= mysqli_fetch_array($requete))
  
  
  $requete2=$idconnect->query("SELECT pronostic, id_membre 
-                                FROM phpab_pronostics 
+                                FROM phpfed3NE_pronostics 
                                 WHERE id_match='$matchs_id[$i]'");
             while ($row=mysqli_fetch_array($requete2))
                                  {  
@@ -151,7 +151,7 @@ echo "-------------------";echo "<br>";
 
 
 $requete2=$idconnect->query("SELECT pronostic
-                                FROM phpab_pronostics 
+                                FROM phpfed3NE_pronostics 
                                 WHERE id_match='$matchs_id[$i]' and id_membre = '$parieur' ");
             while ($row=mysqli_fetch_array($requete2))
                                  {  $prono = $row[0];
@@ -166,26 +166,26 @@ echo "---------zz----------";echo "<br>";
  //cas d'un pronostic exact d'une victoire
    if ($butd[$i] > $butv[$i] & $prono == "1") {
     echo "prono victoire ok";
-          mysqli_query($idconnect,"UPDATE phpab_pronostics 
+          mysqli_query($idconnect,"UPDATE phpfed3NE_pronostics 
                                    SET points = '$points_prono_exact', participation='1' 
                                    WHERE id_match = '$matchs_id[$i]' and id_membre = '$parieur' "); }
   //cas d'un pronostic exact d'un null
    elseif ($butd[$i] == $butv[$i] & $prono == "N")  {
     echo "prono null ok";
-           mysqli_query($idconnect,"UPDATE phpab_pronostics 
+           mysqli_query($idconnect,"UPDATE phpfed3NE_pronostics 
                                     SET points = '$points_prono_exact', participation='1' 
                                     WHERE id_match = '$matchs_id[$i]' and id_membre = '$parieur' ");}
 //cas d'un pronostic exact d'une défaite
    elseif ($butd[$i] < $butv[$i] & $prono == "2")  {
     echo "prono defaite ok";
-          mysqli_query($idconnect,"UPDATE phpab_pronostics 
+          mysqli_query($idconnect,"UPDATE phpfed3NE_pronostics 
                                    SET points = '$points_prono_exact', participation='1' 
                                    WHERE id_match = '$matchs_id[$i]' and id_membre = '$parieur'");}
 //cas non null
   elseif ($prono != NULL) { 
    // else { 
  echo "prono echec : O point";
-          mysqli_query($idconnect,"UPDATE phpab_pronostics 
+          mysqli_query($idconnect,"UPDATE phpfed3NE_pronostics 
                                    SET points = '0', participation = '1'
                                    WHERE id_match = '$matchs_id[$i]'and id_membre = '$parieur' ");}
          
@@ -196,11 +196,11 @@ echo "---------zz----------";echo "<br>";
   } elseif (($butv[$i] == '') or ($butd[$i] == '')) {
     echo "Absences de scores" . "<br />"; echo "<br />";
 
-    mysqli_query($idconnect, ("UPDATE phpab_matchs 
+    mysqli_query($idconnect, ("UPDATE phpfed3NE_matchs 
 					SET buts_dom = NULL, buts_ext = NULL,  date_reelle='$dateUSA[$i]'
           WHERE id ='$matchs_id[$i]' "));
 
-          mysqli_query($idconnect, ("UPDATE phpab_pronostics  
+          mysqli_query($idconnect, ("UPDATE phpfed3NE_pronostics  
     SET buts_dom = NULL,     buts_ext = NULL
     WHERE id_match='$matchs_id[$i]'"));
 
@@ -210,9 +210,9 @@ echo "---------zz----------";echo "<br>";
 }
 ?>
 
-<table class=phpab width="80%">
+<table class=phpfed3NE width="80%">
   <tr>
-    <td class=phpab2 align="center" colspan="3">
+    <td class=phpfed3NE2 align="center" colspan="3">
       <?php echo ADMIN_RESULTS_TITRE . " ";
       affich_champ($champ, $idconnect); ?>
     </td>

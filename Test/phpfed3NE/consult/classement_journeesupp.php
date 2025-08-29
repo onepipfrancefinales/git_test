@@ -6,19 +6,19 @@
 <body>
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -123,11 +123,11 @@ if (isset($_GET['type'])) {$type=$_GET['type'];} else {$type=GENERAL;}
 <?php
  //DIVISION ET ANNEE
 
-//$query = "SELECT phpab_divisions.nom, phpab_saisons.annee, (phpab_saisons.annee)+1 
-//          FROM phpab_championnats, phpab_divisions, phpab_saisons 
-//          WHERE phpab_championnats.id='$champ' 
-//          AND phpab_divisions.id=phpab_championnats.id_division
-//          AND phpab_saisons.id=phpab_championnats.id_saison";
+//$query = "SELECT phpfed3NE_divisions.nom, phpfed3NE_saisons.annee, (phpfed3NE_saisons.annee)+1 
+//          FROM phpfed3NE_championnats, phpfed3NE_divisions, phpfed3NE_saisons 
+//          WHERE phpfed3NE_championnats.id='$champ' 
+//          AND phpfed3NE_divisions.id=phpfed3NE_championnats.id_division
+//          AND phpfed3NE_saisons.id=phpfed3NE_championnats.id_saison";
 
 //$result = mysql_query($query) or die (mysql_error());
 
@@ -143,7 +143,7 @@ if (isset($type))
 
     // RAPPEL DES PARAMETRES du CHAMPIONNAT
     $result=$idconnect->query("SELECT accession, barrage, estimation, relegation, id_equipe_fetiche, fiches_clubs
-                         FROM phpab_parametres
+                         FROM phpfed3NE_parametres
                          WHERE id_champ='$champ'");
     $row=mysqli_fetch_array($result);
 
@@ -153,10 +153,10 @@ if (isset($type))
     $fiches_clubs = $row['fiches_clubs'];
     $id_equipe_fetiche=$row['id_equipe_fetiche'];
     
-   $resultats=$idconnect->query("SELECT phpab_equipes.id FROM phpab_equipes, phpab_clubs
-                  WHERE phpab_clubs.id=phpab_equipes.id_club 
+   $resultats=$idconnect->query("SELECT phpfed3NE_equipes.id FROM phpfed3NE_equipes, phpfed3NE_clubs
+                  WHERE phpfed3NE_clubs.id=phpfed3NE_equipes.id_club 
                   AND id_champ='$champ'
-                  AND phpab_clubs.nom='exempte'");
+                  AND phpfed3NE_clubs.nom='exempte'");
   //  $resultats=mysql_query($requete) or die (mysql_error());
     $exempte=mysqli_num_rows($resultats);
     if ($exempte=='1') {$relegation = $nb_equipe - $row['relegation']-1;}
@@ -170,14 +170,14 @@ case GENERAL;    // CLASSEMENT GENERAL 111111
 
 if ($debut=="1" and $fin==$nb_journees)
 {
-  //  $requete="SELECT DISTINCT * FROM phpab_clmnt_cache WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, PEN DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM";
+  //  $requete="SELECT DISTINCT * FROM phpfed3NE_clmnt_cache WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, PEN DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM";
   // clmnt($legende, $type, $accession, $barrage, $relegation, $champ, $requete, $id_equipe_fetiche);
   
-    $result=$idconnect->query(" SELECT max(phpab_journees.numero) 
-								FROM phpab_journees, phpab_matchs 
-								WHERE phpab_journees.id=phpab_matchs.id_journee 
+    $result=$idconnect->query(" SELECT max(phpfed3NE_journees.numero) 
+								FROM phpfed3NE_journees, phpfed3NE_matchs 
+								WHERE phpfed3NE_journees.id=phpfed3NE_matchs.id_journee 
 								AND buts_dom is not NULL 
-								AND phpab_journees.id_champ='$champ'");
+								AND phpfed3NE_journees.id_champ='$champ'");
    // $result=mysql_query($query) or die (mysql_error());
         while ($row=mysqli_fetch_array($result))
         {
@@ -205,7 +205,7 @@ if ($debut=="1" and $fin==$nb_journees)
 
   else
    {
-  // $requete="SELECT DISTINCT * FROM phpab_clmnt WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM";
+  // $requete="SELECT DISTINCT * FROM phpfed3NE_clmnt WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM";
 
   // @db_clmnt($champ, $debut, $fin, 0);
 
@@ -231,10 +231,10 @@ case GENERAL;    // CLASSEMENT GENERAL 222222
 
 if ($debut=="1" and $fin==$nb_journees)
 {
-//    $requete="SELECT DISTINCT * FROM phpab_clmnt_cache WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, PEN DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM";
+//    $requete="SELECT DISTINCT * FROM phpfed3NE_clmnt_cache WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, PEN DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM";
 //   clmnt($legende, $type, $accession, $barrage, $relegation, $champ, $requete, $lien, $id_equipe_fetiche);
   
-  	// $query="SELECT max(phpab_journees.numero) FROM phpab_journees, phpab_matchs WHERE phpab_journees.id=phpab_matchs.id_journee and buts_dom is not NULL and     phpab_journees.id_champ='$champ'";
+  	// $query="SELECT max(phpfed3NE_journees.numero) FROM phpfed3NE_journees, phpfed3NE_matchs WHERE phpfed3NE_journees.id=phpfed3NE_matchs.id_journee and buts_dom is not NULL and     phpfed3NE_journees.id_champ='$champ'";
  	//   $result=mysql_query($query) or die (mysql_error());
   	//      while ($row=mysql_fetch_array($result))
    	//     {
@@ -262,7 +262,7 @@ if ($debut=="1" and $fin==$nb_journees)
 
  	// else
  	//  {
-  	// $requete="SELECT DISTINCT * FROM phpab_clmnt WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM";
+  	// $requete="SELECT DISTINCT * FROM phpfed3NE_clmnt WHERE ID_CHAMP='$champ' ORDER BY POINTS DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM";
 
   	// @db_clmnt($champ, $debut, $fin, 0);
 

@@ -6,19 +6,19 @@
 <body>
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -48,7 +48,7 @@ if (isset($_GET['type'])) {$type=$_GET['type'];} else {$type=GENERAL;}
 if (isset($type))
 		{
    		$result=$idconnect->query("SELECT accession, barrage, estimation, relegation, id_equipe_fetiche, fiches_clubs
-                        FROM phpab_parametres
+                        FROM phpfed3NE_parametres
                         WHERE id_champ='$champ'");
    		$row=mysqli_fetch_array($result);
  
@@ -58,11 +58,11 @@ if ($debut=="1" and $fin==$nb_journees)
 			{
   
 		   
-		    	$result= $idconnect->query("SELECT max(phpab_journees.numero) 
-											FROM phpab_journees, phpab_matchs 
-											WHERE  phpab_journees.id=phpab_matchs.id_journee 
+		    	$result= $idconnect->query("SELECT max(phpfed3NE_journees.numero) 
+											FROM phpfed3NE_journees, phpfed3NE_matchs 
+											WHERE  phpfed3NE_journees.id=phpfed3NE_matchs.id_journee 
 											and buts_dom is not NULL 
-											and phpab_journees.id_champ='$champ'");
+											and phpfed3NE_journees.id_champ='$champ'");
                		// $result=mysql_query($query) or die (mysql_error());
       			 		while ($row=mysqli_fetch_array($result))
         		 		{

@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -22,12 +22,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>phpabeague - Administration</title>
+<title>phpfed3NEeague - Administration</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
-<body topmargin="0" leftmargin="0" class="phpab">
+<body topmargin="0" leftmargin="0" class="phpfed3NE">
 
 <?php
 $championnat = $_GET['champ'];
@@ -43,12 +43,12 @@ ouverture ();
   <table cellspacing="0" width="100%" height="100%" cellpadding="0">
     <tr>
       <td colspan="1" align="center" height="100"  bgcolor="#C0C0C0"></td>
-        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpab">Comité 
+        <td colspan="1" background="haut.gif" valign="middle" align="center" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"><font class="phpfed3NE">Comité 
           Cote d'Argent - Administration</font></td>
       <td bgcolor="#C0C0C0" style="border-bottom-style: dashed;border-bottom-width : 1px; border-color:#3b487f"></td>
     </tr>
     <tr>
-      <td class="phpab3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
+      <td class="phpfed3NE3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
       <a href="?page=championnat"><?php// echo LEAGUE; ?></a><br /><br />
       
    -->  
@@ -106,7 +106,7 @@ ouverture ();
       <td></td>
     </tr>
     <tr>
-      <td class="phpab" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
+      <td class="phpfed3NE" height="10" colspan="1"><img border="0" src="bouton.gif" width="111" height="25">
         </td>
      
     </tr>

@@ -1,24 +1,24 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
 $result=$idconnect->query("
 		  SELECT * 
-		  FROM phpab_gr_championnats 
+		  FROM phppro_gr_championnats 
 		  WHERE id='$gr_champ'");
 		  while ($row=mysqli_fetch_array($result))
 {
@@ -49,7 +49,7 @@ if ($action3=="2")
 
  /*
 $requete = $idconnect->query("SELECT COUNT(*)
-FROM phpab_gr_championnats 										    
+FROM phppro_gr_championnats 										    
 WHERE id='$gr_champ'"); 
 							
 $row=$requete->fetch();
@@ -59,7 +59,7 @@ $nbre= $row[0];
  */
  
 $resultats=$idconnect->query("SELECT id
-							FROM phpab_gr_championnats 
+							FROM phppro_gr_championnats 
 							WHERE id='$gr_champ'");
  
 $nb_resultats=mysqli_num_rows($resultats);
@@ -75,7 +75,7 @@ $nb_resultats=mysqli_num_rows($resultats);
 	//M�j des param�tres
 	  
        mysqli_query($idconnect,("
-	   UPDATE phpab_gr_championnats 
+	   UPDATE phppro_gr_championnats 
 	   SET  nom='$nom_gr_champ',
 			pts_prono_exact='$pts_prono_exact',
 	        pts_prono_participation='$pts_prono_participation',
@@ -91,7 +91,7 @@ $nb_resultats=mysqli_num_rows($resultats);
        // Insertion des paramètres dans la bdd
 
 	  mysqli_query($idconnect,("
-	  INSERT INTO phpab_gr_championnats (id_champ,nom, pts_prono_exact, pts_prono_participation, id_master, tps_avant_prono) 
+	  INSERT INTO phppro_gr_championnats (id_champ,nom, pts_prono_exact, pts_prono_participation, id_master, tps_avant_prono) 
 	  VALUES ('$champ','$nom_gr_champ', '$pts_prono_exact', '$pts_prono_participation', '$id_master', '$tps_avant_prono')"));
      }
  }
@@ -101,7 +101,7 @@ if ($action3=="creer" and $champ)
   
   $result=$idconnect->query("
 		  SELECT * 
-		  FROM phpab_gr_championnats 
+		  FROM phppro_gr_championnats 
 		  WHERE id='$gr_champ'");
  
   while ($row=mysqli_fetch_array($result))
@@ -122,7 +122,7 @@ if ($action3=="creer" and $champ)
   if (isset($row["tps_avant_prono"])){$tps_avant_prono = $row["tps_avant_prono"];} else {$tps_avant_prono=0;}
   
 
- //   mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats 
+ //   mysqli_query($idconnect,("DELETE FROM phppro_gr_championnats 
 //						  WHERE id_champ = '0'"));
 
     // reset ($champ);
@@ -131,7 +131,7 @@ if ($action3=="creer" and $champ)
 		
 		$result=$idconnect->query("
 		  SELECT nom 
-		  FROM phpab_gr_championnats 
+		  FROM phppro_gr_championnats 
 		  WHERE id='$gr_champ'");
 		  while ($row=mysqli_fetch_array($result))
 			{
@@ -149,13 +149,13 @@ if ($action3=="creer" and $champ)
 		
 		
 		$val=$champ[0];
-		  mysqli_query($idconnect,("INSERT INTO phpab_gr_championnats (id, nom, id_champ, activ_prono, pts_prono_exact, pts_prono_participation, id_master,tps_avant_prono)
+		  mysqli_query($idconnect,("INSERT INTO phppro_gr_championnats (id, nom, id_champ, activ_prono, pts_prono_exact, pts_prono_participation, id_master,tps_avant_prono)
            	              VALUES ('$gr_champ', '$nom_gr_champ', '$val', '$activ_prono', '$pts_prono_exact', '$pts_prono_participation', '$id_master', '$tps_avant_prono')")) ;
 	//	 }       
 
 
 
-mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats 
+mysqli_query($idconnect,("DELETE FROM phppro_gr_championnats 
 						  WHERE id_champ = '0'"));
 
 }
@@ -164,23 +164,23 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
 
 <!-- tableau 2 : choix des poules -->
  <!--
-<table class=phpab width="80%">
+<table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="4"><?php //echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); //echo $gr_champ;?></td><td class=phpab2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
+              <td class=phppro2 align="center" colspan="4"><?php //echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); //echo $gr_champ;?></td><td class=phppro2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
             </tr>
 
             <tr>
-              <td align="center" class=phpab6 colspan="4"><b><?php //echo ADMIN_GR_CHAMP_EDIT_2; ?></b></td>
+              <td align="center" class=phppro6 colspan="4"><b><?php //echo ADMIN_GR_CHAMP_EDIT_2; ?></b></td>
             </tr>
             
             <tr>
-              <td class=phpab3 colspan="3">
+              <td class=phppro3 colspan="3">
                 <form method="POST" action=""><?php //echo ADMIN_GR_CHAMP_EDIT_1; ?><?php //echo ADMIN_GR_CHAMP_EDIT_1; ?>
                 <b><?php //affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php //champ_menu ($idconnect); ?><br /><?php //echo ADMIN_EQUIPE_3; ?>
               </td>
               
               
-              <td class=phpab3 align=right colspan="2">
+              <td class=phppro3 align=right colspan="2">
                 <?php //$value= ADMIN_GR_CHAMP_EDIT_4; echo "<input type=\"submit\" value=\"$value\">";?>
                 <input type="hidden" name="action3" value="creer">
                 <input type="hidden" name="action" value="editer">
@@ -192,9 +192,9 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
             </tr>
 
             <tr>
-              <td align="center" class=phpab6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_5; ?><?php echo ADMIN_GR_CHAMP_EDIT_5; ?></b></td>
+              <td align="center" class=phppro6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_5; ?><?php echo ADMIN_GR_CHAMP_EDIT_5; ?></b></td>
             </tr>
-              <td class=phpab3 colspan="5" align="center"><?php  champ_gr_menu ($gr_champ, $idconnect); ?></td>
+              <td class=phppro3 colspan="5" align="center"><?php  champ_gr_menu ($gr_champ, $idconnect); ?></td>
 
 
               </td>
@@ -204,23 +204,23 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
 -->
 <br><br>
 <!-----  tableau modifier ------>
-<table class=phpab width="80%">
+<table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="4"><?php echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); echo $gr_champ;?></td><td class=phpab2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
+              <td class=phppro2 align="center" colspan="4"><?php echo ADMIN_GR_CHAMP_EDIT." " ; affich_gr_champ ($gr_champ, $idconnect); echo $gr_champ;?></td><td class=phppro2 align="right"><a href="#" onclick="window.open('Assistant_fr/equipes_2.htm','Assistant','toolbar=0,location=0,directories=0,status=0,scrollbars=1,resizable=0,copyhistory=0,menuBar=0,width=512,height=512');return false;"><img border="0" alt="Assistant" src="aide.gif"></a></td>
             </tr>
 
             <tr>
-              <td align="center" class=phpab6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_2; ?></b></td>
+              <td align="center" class=phppro6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_2; ?></b></td>
             </tr>
             
             <tr>
-              <td class=phpab3 colspan="3">
+              <td class=phppro3 colspan="3">
                 <form method="POST" action=""><?php echo ADMIN_GR_CHAMP_EDIT_1; ?>
                 <b><?php affich_gr_champ ($gr_champ, $idconnect); ?></b> : <?php champ_menu_par_ligue ($ligue, $idconnect); ?><br /><?php echo ADMIN_EQUIPE_3; ?>
               </td>
               
               
-              <td class=phpab3 align=right colspan="2">
+              <td class=phppro3 align=right colspan="2">
                 <?php $value= ADMIN_GR_CHAMP_EDIT_4; echo "<input type=\"submit\" value=\"$value\">";?>
                 <input type="hidden" name="action3" value="creer">
                 <input type="hidden" name="action" value="editer">
@@ -232,9 +232,9 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
             </tr>
 
             <tr>
-              <td align="center" class=phpab6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_5; ?></b></td>
+              <td align="center" class=phppro6 colspan="4"><b><?php echo ADMIN_GR_CHAMP_EDIT_5; ?></b></td>
             </tr>
-              <td class=phpab3 colspan="5" align="center"><?php  champ_gr_menu ($gr_champ, $idconnect); ?></td>
+              <td class=phppro3 colspan="5" align="center"><?php  champ_gr_menu ($gr_champ, $idconnect); ?></td>
 
 
               </td>
@@ -244,9 +244,9 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
 
 
 <!-- tableau 3 : chois des parametres -->
-<table class=phpab width="80%">
+<table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="3"><?php echo ADMIN_PARAM_MSG13." "; affich_gr_champ ($gr_champ, $idconnect);echo "test4"; ?></td>
+              <td class=phppro2 align="center" colspan="3"><?php echo ADMIN_PARAM_MSG13." "; affich_gr_champ ($gr_champ, $idconnect);echo "test4"; ?></td>
             </tr>
             <tr>
 
@@ -254,7 +254,7 @@ mysqli_query($idconnect,("DELETE FROM phpab_gr_championnats
 //Affichage des données dans le tableau	
   
 $result=$idconnect->query(" SELECT * 
-							FROM phpab_gr_championnats 
+							FROM phppro_gr_championnats 
 							WHERE id='$gr_champ'");
 //$resultats = mysql_query ($requete) or die ("probleme " .mysql_error());
 $existant=mysqli_fetch_array($result);
@@ -263,9 +263,9 @@ $existant=mysqli_fetch_array($result);
 echo "<form method=\"post\"  action=\"\">";
 
 // Activer les pronostics ?
-echo "<tr><td class=phpab4>";
+echo "<tr><td class=phppro4>";
 echo "Activer les pronostics ?";
-echo "<td class=phpab4>";
+echo "<td class=phppro4>";
 
   if ($existant['activ_prono']=="1"){$checked1="checked"; $checked2="";}
   if ($existant['activ_prono']=="0"){$checked1=""; $checked2="checked";}
@@ -275,24 +275,24 @@ echo "<input type=\"radio\" value=\"1\" $checked1 name=\"activ_prono\">".ADMIN_R
 
 
 // Points pour prono exact
-echo "<td class=phpab3>";
+echo "<td class=phppro3>";
 echo ADMIN_PARAM_MSG9;
-echo "</td><td class=phpab3>";
+echo "</td><td class=phppro3>";
 echo "<input type=\"text\" name=\"pts_prono_exact\" value=\"$existant[pts_prono_exact]\" size=3 maxlength=3></td></tr>";
 
 // Points pour prono participation
-echo "<tr><td class=phpab4>";
+echo "<tr><td class=phppro4>";
 echo ADMIN_PARAM_MSG10;
-echo "</td><td class=phpab4>";
+echo "</td><td class=phppro4>";
 echo "<input type=\"text\" name=\"pts_prono_participation\"  value=\"$existant[pts_prono_participation]\" size=3 maxlength=3></td></tr>";
 
 // Master
-echo "<tr><td class=phpab3>";
+echo "<tr><td class=phppro3>";
 echo ADMIN_PARAM_MSG11;
-echo "</td><td class=phpab3>";
+echo "</td><td class=phppro3>";
 
 $result2=$idconnect->query("SELECT pseudo, id 
-							FROM phpab_membres 
+							FROM phppro_membres 
 							ORDER BY pseudo");
 
 echo "<select name=\"id_master\">";
@@ -306,9 +306,9 @@ echo "<option></option>";
 echo "</select></td></tr>";
 
 // Temps de validation avant match
-echo "<tr><td class=phpab4>";
+echo "<tr><td class=phppro4>";
 echo ADMIN_PARAM_MSG12;
-echo "</td><td class=phpab4>";
+echo "</td><td class=phppro4>";
 echo "<input type=\"text\" name=\"tps_avant_prono\"  value=\"$existant[tps_avant_prono]\" size=3 maxlength=3></td></tr>";
 
 echo "<input type=\"hidden\" name=\"action3\" value=\"2\"><input type=\"hidden\" name=\"gr_champ\" value=\"$champ\"><td colspan=2 align=\"center\"><input type=\"submit\" value=".ENVOI.">";

@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -40,7 +40,7 @@ if (isset($typemini))
 {
 
 // RAPPEL DES PARAMETRES du CHAMPIONNAT
-//$result=mysql_query("SELECT * FROM phpab_parametres WHERE id_champ='$champmini'");
+//$result=mysql_query("SELECT * FROM phppro_parametres WHERE id_champ='$champmini'");
 //while ($row=mysql_fetch_array($result))
 // {
 //   $accessionmini = $row['accession'];
@@ -48,7 +48,7 @@ if (isset($typemini))
 //   $id_equipe_fetiche=$row['id_equipe_fetiche'];
 //   $relegation = $row['relegation'];
 // }
-//   $requete = "SELECT * FROM phpab_equipes, phpab_clubs WHERE phpab_clubs.id=phpab_equipes.id_club AND id_champ='$champmini' AND phpab_clubs.nom='exempte'";
+//   $requete = "SELECT * FROM phppro_equipes, phppro_clubs WHERE phppro_clubs.id=phppro_equipes.id_club AND id_champ='$champmini' AND phppro_clubs.nom='exempte'";
 //     $resultats=mysql_query($requete);
 //     $exempte=mysql_num_rows($resultats);
 //     if ($exempte=='1') {$relegationmini = nb_equipes($champmini)- $relegation-1;}
@@ -66,7 +66,7 @@ case GENERAL;    // CLASSEMENT GENERAL
 
 $requetemini=$idconnect->query("
 			 SELECT * 
-			 FROM phpab_clmnt_cache 
+			 FROM phppro_clmnt_cache 
 			 WHERE ID_CHAMP='$champmini' 
 			 ORDER BY POINTS DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM");
 
@@ -100,7 +100,7 @@ break;
 
 case DOMICILE;
         {
-        $requetemini=$idconnect->query("SELECT NOM, DOMPOINTS, DOMJOUES, DOMG,  DOMN, DOMP, DOMBUTSPOUR, DOMBUTSCONTRE, DOMDIFF, ID_EQUIPE FROM phpab_clmnt_cache WHERE ID_CHAMP='$champmini' 
+        $requetemini=$idconnect->query("SELECT NOM, DOMPOINTS, DOMJOUES, DOMG,  DOMN, DOMP, DOMBUTSPOUR, DOMBUTSCONTRE, DOMDIFF, ID_EQUIPE FROM phppro_clmnt_cache WHERE ID_CHAMP='$champmini' 
 		ORDER BY DOMPOINTS DESC, DOMDIFF DESC");
         if ($presentationmini=="1")
         {
@@ -130,7 +130,7 @@ break;
 
 case ATTAQUE;
         {
-        $requetemini=$idconnect->query("SELECT * FROM phpab_clmnt_cache WHERE ID_CHAMP='$champmini' 
+        $requetemini=$idconnect->query("SELECT * FROM phppro_clmnt_cache WHERE ID_CHAMP='$champmini' 
 		ORDER BY BUTSPOUR DESC, DIFF DESC");
         if ($presentationmini=="1")
         {
@@ -162,7 +162,7 @@ break;
 case DEFENSE;
         {  
 
-        $requetemini=$idconnect->query("SELECT * FROM phpab_clmnt_cache WHERE ID_CHAMP='$champmini' ORDER BY BUTSCONTRE ASC, DIFF DESC");
+        $requetemini=$idconnect->query("SELECT * FROM phppro_clmnt_cache WHERE ID_CHAMP='$champmini' ORDER BY BUTSCONTRE ASC, DIFF DESC");
         if ($presentationmini=="1")
         {
           if ($classmini=='1')
@@ -191,7 +191,7 @@ break;
 
 case GOALDIFF;
         {
-        $requetemini=$idconnect->query("SELECT * FROM phpab_clmnt_cache WHERE ID_CHAMP='$champmini' 
+        $requetemini=$idconnect->query("SELECT * FROM phppro_clmnt_cache WHERE ID_CHAMP='$champmini' 
 		ORDER BY DIFF DESC, BUTSPOUR DESC, BUTSCONTRE ASC ");
         if ($presentationmini=="1")
         {
@@ -219,7 +219,7 @@ case GOALDIFF;
 break;
 case EXTERIEUR;
         {
-         $requetemini=$idconnect->query("SELECT NOM, EXTPOINTS, EXTJOUES, EXTG,  EXTN, EXTP, EXTBUTSPOUR, EXTBUTSCONTRE, EXTDIFF, ID_EQUIPE FROM phpab_clmnt_cache WHERE ID_CHAMP='$champmini' 
+         $requetemini=$idconnect->query("SELECT NOM, EXTPOINTS, EXTJOUES, EXTG,  EXTN, EXTP, EXTBUTSPOUR, EXTBUTSCONTRE, EXTDIFF, ID_EQUIPE FROM phppro_clmnt_cache WHERE ID_CHAMP='$champmini' 
 		 ORDER BY EXTPOINTS DESC, EXTDIFF DESC ");
         if ($presentationmini=="1")
         {

@@ -8,7 +8,7 @@
         </tr>
         <tr>
             <td width="22%" align="center" valign="top" height="70">
-                <font face="Verdana" size="2" color="#3b487f"><b>phpabeague</b></font>
+                <font face="Verdana" size="2" color="#3b487f"><b>phpfed3NEeague</b></font>
             </td>
             <td width="78%" align="center" valign="top">
                 <?php include("pronos.inc.htm"); ?>

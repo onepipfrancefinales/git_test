@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -31,39 +31,39 @@ if (!isset($_GET['id_match']))
 else
  {
   $id_match=$_GET['id_match'];
-  $requete="SELECT cldom.nom AS cldom, clext.nom AS clext, phpab_journees.numero, phpab_matchs.date_reelle, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.date_reelle,
+  $requete="SELECT cldom.nom AS cldom, clext.nom AS clext, phppro_journees.numero, phppro_matchs.date_reelle, phppro_matchs.buts_dom, phppro_matchs.buts_ext, phppro_matchs.date_reelle,
                    cldom.url_logo AS logo_dom, clext.url_logo AS logo_ext
-            FROM phpab_clubs AS cldom, phpab_clubs AS clext, phpab_equipes AS dom, phpab_equipes AS ext, phpab_matchs, phpab_journees
-            WHERE phpab_matchs.id = '$id_match'
-            AND phpab_matchs.id_equipe_dom = dom.id
-            AND phpab_matchs.id_equipe_ext = ext.id
+            FROM phppro_clubs AS cldom, phppro_clubs AS clext, phppro_equipes AS dom, phppro_equipes AS ext, phppro_matchs, phppro_journees
+            WHERE phppro_matchs.id = '$id_match'
+            AND phppro_matchs.id_equipe_dom = dom.id
+            AND phppro_matchs.id_equipe_ext = ext.id
             AND dom.id_club = cldom.id
             AND ext.id_club = clext.id
-            AND phpab_matchs.id_journee = phpab_journees.id";
+            AND phppro_matchs.id_journee = phppro_journees.id";
   $resultats=mysql_query($requete) or die (mysql_error());
   
   $row=mysql_fetch_array($resultats);
   
 
-  $requete1="SELECT nom, prenom, phpab_joueurs.id as id_joueur
-             FROM phpab_joueurs, phpab_effectif, phpab_buteurs, phpab_equipes, phpab_matchs
-             WHERE phpab_joueurs.id=phpab_effectif.id_joueur
-             AND phpab_effectif.id=phpab_buteurs.id_effectif
-             AND phpab_buteurs.id_match='$id_match'
-             AND phpab_matchs.id_equipe_dom = phpab_equipes.id
-             AND phpab_equipes.id=phpab_effectif.id_equipe
-             AND phpab_matchs.id=phpab_buteurs.id_match";
+  $requete1="SELECT nom, prenom, phppro_joueurs.id as id_joueur
+             FROM phppro_joueurs, phppro_effectif, phppro_buteurs, phppro_equipes, phppro_matchs
+             WHERE phppro_joueurs.id=phppro_effectif.id_joueur
+             AND phppro_effectif.id=phppro_buteurs.id_effectif
+             AND phppro_buteurs.id_match='$id_match'
+             AND phppro_matchs.id_equipe_dom = phppro_equipes.id
+             AND phppro_equipes.id=phppro_effectif.id_equipe
+             AND phppro_matchs.id=phppro_buteurs.id_match";
   $resultats1=mysql_query($requete1) or die (mysql_error());
   
 
-  $requete2="SELECT nom, prenom, phpab_joueurs.id as id_joueur
-             FROM phpab_joueurs, phpab_effectif, phpab_buteurs, phpab_equipes, phpab_matchs
-             WHERE phpab_joueurs.id=phpab_effectif.id_joueur
-             AND phpab_effectif.id=phpab_buteurs.id_effectif
-             AND phpab_buteurs.id_match='$id_match'
-             AND phpab_matchs.id_equipe_ext = phpab_equipes.id
-             AND phpab_equipes.id=phpab_effectif.id_equipe
-             AND phpab_matchs.id=phpab_buteurs.id_match";
+  $requete2="SELECT nom, prenom, phppro_joueurs.id as id_joueur
+             FROM phppro_joueurs, phppro_effectif, phppro_buteurs, phppro_equipes, phppro_matchs
+             WHERE phppro_joueurs.id=phppro_effectif.id_joueur
+             AND phppro_effectif.id=phppro_buteurs.id_effectif
+             AND phppro_buteurs.id_match='$id_match'
+             AND phppro_matchs.id_equipe_ext = phppro_equipes.id
+             AND phppro_equipes.id=phppro_effectif.id_equipe
+             AND phppro_matchs.id=phppro_buteurs.id_match";
   $resultats2=mysql_query($requete2) or die (mysql_error());
 
   $i=0 ;
@@ -106,6 +106,6 @@ else
 ?>
 </div>
 <br />
-<p align="right"><font face="Verdana" size="1">Powered by <a href="http://phpabeague.univert.org" target="_blank">phpabeague</a></font></p>
+<p align="right"><font face="Verdana" size="1">Powered by <a href="http://phpproeague.univert.org" target="_blank">phpproeague</a></font></p>
 <?php
 ?>

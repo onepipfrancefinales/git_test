@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -28,7 +28,7 @@ require ("../league.css");
 echo "</STYLE>";
 ?>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <body class=phpab>
+        <body class=phppro>
 <?php
 
 if (!isset($_REQUEST['champ']))
@@ -39,7 +39,7 @@ else
 {
 $champ = $_REQUEST['champ'];
 // Nom du champ
-$query2="SELECT nom FROM phpab_divisions, phpab_championnats WHERE id_division=phpab_divisions.id and phpab_championnats.id='$champ'";
+$query2="SELECT nom FROM phppro_divisions, phppro_championnats WHERE id_division=phppro_divisions.id and phppro_championnats.id='$champ'";
 $result2=(mysql_query($query2));
 while ($row=mysql_fetch_array($result2))
        {
@@ -47,7 +47,7 @@ while ($row=mysql_fetch_array($result2))
        }
 
 // SELECTION DES PARAMETRES
-$query="SELECT * FROM phpab_parametres WHERE id_champ='$champ' ";
+$query="SELECT * FROM phppro_parametres WHERE id_champ='$champ' ";
 $result=(mysql_query($query));
 while ($row=mysql_fetch_array($result))
        {
@@ -55,32 +55,32 @@ while ($row=mysql_fetch_array($result))
        }
 
 // NOM de EQUIPE FAVORITE a partir de son id
-$result=(mysql_query("SELECT nom FROM phpab_clubs, phpab_equipes WHERE phpab_equipes.id='$id_equipe_fetiche' AND phpab_clubs.id=phpab_equipes.id_club"));
+$result=(mysql_query("SELECT nom FROM phppro_clubs, phppro_equipes WHERE phppro_equipes.id='$id_equipe_fetiche' AND phppro_clubs.id=phppro_equipes.id_club"));
 while ($row=mysql_fetch_array($result))
        {
        $equipe_fetiche=stripslashes($row[0]);
 
        }
 
-$query="SELECT max(phpab_journees.numero) from phpab_journees, phpab_matchs where phpab_journees.id=phpab_matchs.id_journee and buts_dom is not NULL and phpab_journees.id_champ='$champ' and (id_equipe_ext='$id_equipe_fetiche' or id_equipe_dom='$id_equipe_fetiche')";
+$query="SELECT max(phppro_journees.numero) from phppro_journees, phppro_matchs where phppro_journees.id=phppro_matchs.id_journee and buts_dom is not NULL and phppro_journees.id_champ='$champ' and (id_equipe_ext='$id_equipe_fetiche' or id_equipe_dom='$id_equipe_fetiche')";
                       $result=mysql_query($query);
 
                                while ($row=mysql_fetch_array($result))
                                { $numero=$row[0]+1;
                                  
-$query1="SELECT cldom.nom as cldom, clext.nom as clext, phpab_matchs.buts_dom, phpab_matchs.buts_ext , phpab_journees.date_prevue, cldom.id as cliddom, clext.id as clidext, phpab_matchs.date_reelle
-                FROM phpab_equipes as dom, phpab_equipes as ext, phpab_matchs, phpab_journees, phpab_clubs as cldom, phpab_clubs as clext
-                WHERE phpab_matchs.id_equipe_dom=dom.id
-                        AND phpab_matchs.id_equipe_ext=ext.id
-                        AND phpab_journees.id_champ='$champ'
-                        AND phpab_journees.numero='$numero'
+$query1="SELECT cldom.nom as cldom, clext.nom as clext, phppro_matchs.buts_dom, phppro_matchs.buts_ext , phppro_journees.date_prevue, cldom.id as cliddom, clext.id as clidext, phppro_matchs.date_reelle
+                FROM phppro_equipes as dom, phppro_equipes as ext, phppro_matchs, phppro_journees, phppro_clubs as cldom, phppro_clubs as clext
+                WHERE phppro_matchs.id_equipe_dom=dom.id
+                        AND phppro_matchs.id_equipe_ext=ext.id
+                        AND phppro_journees.id_champ='$champ'
+                        AND phppro_journees.numero='$numero'
                         AND dom.id_club=cldom.id
                         AND ext.id_club=clext.id
-                        AND phpab_matchs.id_journee=phpab_journees.id
-                        AND (phpab_matchs.id_equipe_ext='$id_equipe_fetiche'
-                        OR phpab_matchs.id_equipe_dom='$id_equipe_fetiche' )";
+                        AND phppro_matchs.id_journee=phppro_journees.id
+                        AND (phppro_matchs.id_equipe_ext='$id_equipe_fetiche'
+                        OR phppro_matchs.id_equipe_dom='$id_equipe_fetiche' )";
         $result=mysql_query($query1);
-         echo "<TABLE class=phpab cellspacing=\"0\" align=\"center\" >";
+         echo "<TABLE class=phppro cellspacing=\"0\" align=\"center\" >";
         $x=1;
         $legende="ème journée de $nom";
         
@@ -102,7 +102,7 @@ $query1="SELECT cldom.nom as cldom, clext.nom as clext, phpab_matchs.buts_dom, p
                 $jour = substr($date_reelle,8,2); // on récupère le jour
                 $mois = substr($date_reelle,5,2); // puis le mois
                 $annee = substr($date_reelle,0,4); // et l'annee
-                echo "<TR class=phpab ><TH class=phpab colspan=5 text-align=\"center\"><b> ". $numero."".$legende." le ".$jour."/".$mois."/".$annee."".CONSULT_CLMNT_MSG5."".$heure."h".$minute."</b></th></tr>";
+                echo "<TR class=phppro ><TH class=phppro colspan=5 text-align=\"center\"><b> ". $numero."".$legende." le ".$jour."/".$mois."/".$annee."".CONSULT_CLMNT_MSG5."".$heure."h".$minute."</b></th></tr>";
                 }
                 
                 if ($row[0]==$equipe_fetiche )
@@ -132,7 +132,7 @@ $query1="SELECT cldom.nom as cldom, clext.nom as clext, phpab_matchs.buts_dom, p
                 $bgcolor="#FFFFFF";
                         
 
-                echo "<TR class=phpab bgcolor=$bgcolor width=\"100%\"><TD class=phpab align=\"right\" width=\"40%\"><a href=\"club.php?id_clubs=$row[5]&champ=$champ\">".$DebMarqueur1.$row[0].$FinMarqueur1."</a><TD class=phpab align=\"center\">".$domproba."<TD class=phpab align=center>-<TD class=phpab>".$extproba."<TD class=phpab align=\"left\" width=\"40%\"><a href=\"club.php?id_clubs=$row[6]&champ=$champ\">".$DebMarqueur2.$row[1].$FinMarqueur2."</a>";
+                echo "<TR class=phppro bgcolor=$bgcolor width=\"100%\"><TD class=phppro align=\"right\" width=\"40%\"><a href=\"club.php?id_clubs=$row[5]&champ=$champ\">".$DebMarqueur1.$row[0].$FinMarqueur1."</a><TD class=phppro align=\"center\">".$domproba."<TD class=phppro align=center>-<TD class=phppro>".$extproba."<TD class=phppro align=\"left\" width=\"40%\"><a href=\"club.php?id_clubs=$row[6]&champ=$champ\">".$DebMarqueur2.$row[1].$FinMarqueur2."</a>";
                 $x++;
              }
 

@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -35,20 +35,20 @@ if ($debut == "0") {
 include("derniers_pronos.htm");
 
 
-$result = $idconnect->query("SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero, pts_prono_exact, pts_prono_participation,phpab_matchs.id_equipe_dom,phpab_matchs.id_equipe_ext
-FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
-WHERE phpab_clubs.id=phpab_equipes.id_club
+$result = $idconnect->query("SELECT phpfed3NE_clubs.nom, CLEXT.nom, phpfed3NE_matchs.buts_dom, phpfed3NE_matchs.buts_ext, phpfed3NE_matchs.id, phpfed3NE_matchs.date_reelle, phpfed3NE_journees.numero, pts_prono_exact, pts_prono_participation,phpfed3NE_matchs.id_equipe_dom,phpfed3NE_matchs.id_equipe_ext
+FROM phpfed3NE_clubs, phpfed3NE_clubs as CLEXT, phpfed3NE_matchs, phpfed3NE_journees, phpfed3NE_equipes, phpfed3NE_equipes as EXT, phpfed3NE_gr_championnats
+WHERE phpfed3NE_clubs.id=phpfed3NE_equipes.id_club
 AND CLEXT.id=EXT.id_club 
-AND phpab_equipes.id=phpab_matchs.id_equipe_dom
-AND EXT.id=phpab_matchs.id_equipe_ext
-AND phpab_matchs.id_journee=phpab_journees.id
-AND phpab_journees.id_champ=phpab_gr_championnats.id_champ
-AND phpab_gr_championnats.id='$gr_champ'
-AND phpab_matchs.buts_dom is not null
-AND phpab_matchs.buts_ext is not null
-AND phpab_clubs.nom!='exempte'
+AND phpfed3NE_equipes.id=phpfed3NE_matchs.id_equipe_dom
+AND EXT.id=phpfed3NE_matchs.id_equipe_ext
+AND phpfed3NE_matchs.id_journee=phpfed3NE_journees.id
+AND phpfed3NE_journees.id_champ=phpfed3NE_gr_championnats.id_champ
+AND phpfed3NE_gr_championnats.id='$gr_champ'
+AND phpfed3NE_matchs.buts_dom is not null
+AND phpfed3NE_matchs.buts_ext is not null
+AND phpfed3NE_clubs.nom!='exempte'
 AND CLEXT.nom!='exempte'
-ORDER by phpab_matchs.date_reelle desc, phpab_clubs.nom desc
+ORDER by phpfed3NE_matchs.date_reelle desc, phpfed3NE_clubs.nom desc
 LIMIT $debut, $fin ");
 $i = 0;
 //$result=mysql_query($query);
@@ -61,10 +61,10 @@ while ($row = mysqli_fetch_array($result) and $i < 10) {
     $id_dom = $row[9];
     $id_ext = $row[10];
   $result2 = $idconnect->query("SELECT pronostic 
-							FROM phpab_pronostics, phpab_membres 
-							WHERE phpab_pronostics.id_match='$row[4]' 
-							AND phpab_membres.id=phpab_pronostics.id_membre 
-							AND phpab_membres.id_prono='$user_id'");
+							FROM phpfed3NE_pronostics, phpfed3NE_membres 
+							WHERE phpfed3NE_pronostics.id_match='$row[4]' 
+							AND phpfed3NE_membres.id=phpfed3NE_pronostics.id_membre 
+							AND phpfed3NE_membres.id_prono='$user_id'");
   //$result2=mysql_query($query2) or die ("probleme " .mysql_error());
   $nb_pronos = mysqli_num_rows($result2);
 

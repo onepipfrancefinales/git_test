@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -35,7 +35,7 @@ function nb_journees($id_champ, $idconnect)
          {
 		 
 			 
-         $result=$idconnect->query("SELECT id FROM phpab_equipes WHERE id_champ='$id_champ'");
+         $result=$idconnect->query("SELECT id FROM phppro_equipes WHERE id_champ='$id_champ'");
         // $result=mysql_query($query);
          $nb_equipes=mysqli_num_rows( $result );
          $nb_journees=((($nb_equipes)*2)-2) ;
@@ -47,7 +47,7 @@ function nb_equipes($id_champ, $idconnect)
          {
 		
 			 
-         $result=$idconnect->query("SELECT id FROM phpab_equipes WHERE id_champ='$id_champ'");
+         $result=$idconnect->query("SELECT id FROM phppro_equipes WHERE id_champ='$id_champ'");
         // $result=mysql_query($query);
          $nb_equipes=mysqli_num_rows( $result );
          return("$nb_equipes");
@@ -58,18 +58,18 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
 
       // cellule d'affichage des derniers résultats
   $color=0;
-        $result=$idconnect->query("SELECT cldom.nom as cldom, clext.nom as clext, phpab_matchs.buts_dom, phpab_matchs.buts_ext,
-                        phpab_journees.date_prevue, cldom.id as cliddom, clext.id as clidext, date_reelle,
-                        dom.id as eqdom, ext.id as eqext, phpab_matchs.id as id_match
-                FROM phpab_equipes as dom, phpab_equipes as ext, phpab_matchs, phpab_journees,
-                     phpab_clubs as cldom, phpab_clubs as clext
-                WHERE phpab_matchs.id_equipe_dom=dom.id
-                        AND phpab_matchs.id_equipe_ext=ext.id
-                        AND phpab_journees.id_champ='$champ'
-                        AND phpab_journees.numero='$numero'
+        $result=$idconnect->query("SELECT cldom.nom as cldom, clext.nom as clext, phppro_matchs.buts_dom, phppro_matchs.buts_ext,
+                        phppro_journees.date_prevue, cldom.id as cliddom, clext.id as clidext, date_reelle,
+                        dom.id as eqdom, ext.id as eqext, phppro_matchs.id as id_match
+                FROM phppro_equipes as dom, phppro_equipes as ext, phppro_matchs, phppro_journees,
+                     phppro_clubs as cldom, phppro_clubs as clext
+                WHERE phppro_matchs.id_equipe_dom=dom.id
+                        AND phppro_matchs.id_equipe_ext=ext.id
+                        AND phppro_journees.id_champ='$champ'
+                        AND phppro_journees.numero='$numero'
                         AND dom.id_club=cldom.id
                         AND ext.id_club=clext.id
-                        AND phpab_matchs.id_journee=phpab_journees.id
+                        AND phppro_matchs.id_journee=phppro_journees.id
                         AND cldom.nom!='exempte'
                         AND clext.nom!='exempte'
                         ORDER BY date_reelle asc");
@@ -78,7 +78,7 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
 
 
 //mise en forme tableau oppositions
-        echo "<table align=\"center\" class=\"tablephpab2\"  width=\"100%\" cellspacing=\"1\" cellpadding=\"1\"><tr><td><table cellspacing=\"0\" align=\"center\" width=\"100%\" cellpadding=\"1\">\n";
+        echo "<table align=\"center\" class=\"tablephppro2\"  width=\"100%\" cellspacing=\"1\" cellpadding=\"1\"><tr><td><table cellspacing=\"0\" align=\"center\" width=\"100%\" cellpadding=\"1\">\n";
         $x=1;
         $minute = 0;
         $heure = 0;
@@ -94,7 +94,7 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
              $extproba= $row[3];
                 if ($row['buts_dom']=='' and $row['buts_ext']=='' and $proba==1 and $numero>=4)
                 {
-                $result2=$idconnect->query("SELECT DOMBUTSPOUR, DOMG, DOMN, DOMP, DOMBUTSCONTRE FROM phpab_clmnt_cache WHERE ID_EQUIPE='$row[eqdom]'");
+                $result2=$idconnect->query("SELECT DOMBUTSPOUR, DOMG, DOMN, DOMP, DOMBUTSCONTRE FROM phppro_clmnt_cache WHERE ID_EQUIPE='$row[eqdom]'");
                 //$result2=mysql_query($query2);
                       while ($row2=i($result2))
                       { 
@@ -104,7 +104,7 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
                       $ext_joues=($row2['DOMG']+$row2['DOMN']+$row2['DOMP']);
                       }
 
-                $result2=$idconnect->query("SELECT EXTG, EXTN, EXTP, EXTBUTSCONTRE, EXTBUTSPOUR FROM phpab_clmnt_cache WHERE ID_EQUIPE='$row[eqext]'");
+                $result2=$idconnect->query("SELECT EXTG, EXTN, EXTP, EXTBUTSCONTRE, EXTBUTSPOUR FROM phppro_clmnt_cache WHERE ID_EQUIPE='$row[eqext]'");
                // $result2=mysql_query($query2);
                       while ($row2=mysqli_fetch_array($result2))
                       {
@@ -122,7 +122,7 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
 
                 if ($x==1)
                 {
-                echo "<tr class=\"trphpab3\">\n<th colspan=\"5\"><b>".$legende." ". $numero."</b></th>\n</tr>";
+                echo "<tr class=\"trphppro3\">\n<th colspan=\"5\"><b>".$legende." ". $numero."</b></th>\n</tr>";
                 }
 
 
@@ -156,7 +156,7 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
                 if (($color%2)==0) {$classe="ligne1";} else {$classe="ligne2";}
 
 
-                //echo "<tr bgcolor=\"$bgcolor\" class=\"trphpab\">";
+                //echo "<tr bgcolor=\"$bgcolor\" class=\"trphppro\">";
 
                 //if (($minute==substr($row[7],14,2)) and ($heure==substr($row[7],11,2)) and ($jour==substr($row[7],8,2)) and ($mois==substr($row[7],5,2)) and ($annee==substr($row[7],0,4)))
                 if (!($annee==substr($row[7],0,4)) or !($mois==substr($row[7],5,2)) or !($jour==substr($row[7],8,2)) or !($minute==substr($row[7],14,2)) or !($heure==substr($row[7],11,2)))
@@ -217,17 +217,17 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
 
               }
 
-  $requete=$idconnect->query("SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext,
-            phpab_matchs.id, phpab_matchs.date_reelle
-            FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT
-            WHERE phpab_clubs.id=phpab_equipes.id_club
+  $requete=$idconnect->query("SELECT phppro_clubs.nom, CLEXT.nom, phppro_matchs.buts_dom, phppro_matchs.buts_ext,
+            phppro_matchs.id, phppro_matchs.date_reelle
+            FROM phppro_clubs, phppro_clubs as CLEXT, phppro_matchs, phppro_journees, phppro_equipes, phppro_equipes as EXT
+            WHERE phppro_clubs.id=phppro_equipes.id_club
             AND CLEXT.id=EXT.id_club
-            AND phpab_equipes.id=phpab_matchs.id_equipe_dom
-            AND EXT.id=phpab_matchs.id_equipe_ext
-            AND phpab_matchs.id_journee=phpab_journees.id
-            AND phpab_journees.numero='$numero'
-            AND phpab_journees.id_champ='$champ'
-            AND (CLEXT.nom='exempte' or phpab_clubs.nom='exempte'");
+            AND phppro_equipes.id=phppro_matchs.id_equipe_dom
+            AND EXT.id=phppro_matchs.id_equipe_ext
+            AND phppro_matchs.id_journee=phppro_journees.id
+            AND phppro_journees.numero='$numero'
+            AND phppro_journees.id_champ='$champ'
+            AND (CLEXT.nom='exempte' or phppro_clubs.nom='exempte'");
   //$resultats=mysql_query($requete) or die (mysql_error());
 /*
   while ($row=mysqli_fetch_array($requete))
@@ -235,8 +235,8 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
    $row[0] = stripslashes($row[0]);
    $row[1]= stripslashes($row[1]);
     if (($color%2)==0) {$bgcolor1="#e5e5e5";} else {$bgcolor1="#FFFFFF";}
-    if ($row[0]=='exempte') {echo "<tr bgcolor=\"$bgcolor1\" class=\"trphpab\"><td colspan=\"7\">".ADMIN_RESULTS_1." : $row[1]</td></tr>";}
-    if ($row[1]=='exempte') {echo "<tr bgcolor=\"$bgcolor1\" class=\"trphpab\"><td colspan=\"7\" >".ADMIN_RESULTS_1." : $row[0]</td></tr>";}
+    if ($row[0]=='exempte') {echo "<tr bgcolor=\"$bgcolor1\" class=\"trphppro\"><td colspan=\"7\">".ADMIN_RESULTS_1." : $row[1]</td></tr>";}
+    if ($row[1]=='exempte') {echo "<tr bgcolor=\"$bgcolor1\" class=\"trphppro\"><td colspan=\"7\" >".ADMIN_RESULTS_1." : $row[0]</td></tr>";}
   }
   */
   echo "</table></td></tr></table>\n<br />\n";
@@ -247,15 +247,15 @@ function aff_journee($champ, $numero, $legende, $proba, $fiches_clubs, $id_equip
 function db_clmnt($champ, $debut, $fin, $cache)
 {
   $nb_requete=0;
-  if($cache=="1"){ mysqli_query("DELETE FROM phpab_clmnt_cache WHERE ID_CHAMP='$champ'") or die (mysqli_error());}
-  else{ mysqli_query("DELETE FROM phpab_clmnt") or die (mysqli_error());}
+  if($cache=="1"){ mysqli_query("DELETE FROM phppro_clmnt_cache WHERE ID_CHAMP='$champ'") or die (mysqli_error());}
+  else{ mysqli_query("DELETE FROM phppro_clmnt") or die (mysqli_error());}
           $nb_requete++;
 
           if (!$fin){$fin=(nb_equipes($champ)*2)-2;}
           if (!$debut){$debut=1;}
 
 // SELECTION DES PARAMETRES
-$result=$idconnect->query("SELECT pts_victoire, pts_nul, pts_defaite FROM phpab_parametres WHERE id_champ='$champ'");
+$result=$idconnect->query("SELECT pts_victoire, pts_nul, pts_defaite FROM phppro_parametres WHERE id_champ='$champ'");
 $nb_requete++;
 //$result=(mysqli_query($query)) or die (mysqli_error()) ;
       while ($row=mysqli_fetch_array($result) )
@@ -266,16 +266,16 @@ $nb_requete++;
       }
 
 // victoires domicile
-$dom=$idconnect->query("SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+$dom=$idconnect->query("SELECT dom.id, count(dom.id), phppro_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phppro_equipes as dom, phppro_clubs, phppro_matchs, phppro_journees, phppro_championnats
 WHERE dom.id_champ='$champ'
-      AND dom.id_club=phpab_clubs.id
-      AND dom.id=phpab_matchs.id_equipe_dom
+      AND dom.id_club=phppro_clubs.id
+      AND dom.id=phppro_matchs.id_equipe_dom
       AND buts_dom > buts_ext
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phppro_championnats.id=phppro_journees.id_champ
+      AND phppro_journees.id=phppro_matchs.id_journee
+      AND phppro_journees.numero>='$debut'
+      AND phppro_journees.numero<='$fin'
+      GROUP by phppro_clubs.nom ");
       $nb_requete++;
 //$dom = mysql_query($query) or die (mysql_error());
      while($row= mysqli_fetch_array($dom))
@@ -288,16 +288,16 @@ WHERE dom.id_champ='$champ'
      }
 
 // Defaites domicile
-$dom=$idconnect->query("SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+$dom=$idconnect->query("SELECT dom.id, count(dom.id), phppro_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phppro_equipes as dom, phppro_clubs, phppro_matchs, phppro_journees, phppro_championnats
 WHERE dom.id_champ='$champ'
-      AND dom.id_club=phpab_clubs.id
-      AND dom.id=phpab_matchs.id_equipe_dom
+      AND dom.id_club=phppro_clubs.id
+      AND dom.id=phppro_matchs.id_equipe_dom
       AND buts_dom < buts_ext
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phppro_championnats.id=phppro_journees.id_champ
+      AND phppro_journees.id=phppro_matchs.id_journee
+      AND phppro_journees.numero>='$debut'
+      AND phppro_journees.numero<='$fin'
+      GROUP by phppro_clubs.nom ");
 
      //  $dom = mysql_query($query) or die (mysql_error());
 
@@ -310,18 +310,18 @@ WHERE dom.id_champ='$champ'
       else{$clmnt[$row[2]]['BUTSDOMCONTRE']+=$row[4];}
      }
 // Nuls domicile
-$dom=$idconnect->query("SELECT dom.id, count(dom.id), phpab_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phpab_equipes as dom, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+$dom=$idconnect->query("SELECT dom.id, count(dom.id), phppro_clubs.nom, sum(buts_dom), sum(buts_ext) FROM phppro_equipes as dom, phppro_clubs, phppro_matchs, phppro_journees, phppro_championnats
 WHERE dom.id_champ='$champ'
-      AND dom.id_club=phpab_clubs.id
-      AND dom.id=phpab_matchs.id_equipe_dom
+      AND dom.id_club=phppro_clubs.id
+      AND dom.id=phppro_matchs.id_equipe_dom
       AND buts_dom = buts_ext
       AND buts_dom is not null
       AND buts_ext is not null
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phppro_championnats.id=phppro_journees.id_champ
+      AND phppro_journees.id=phppro_matchs.id_journee
+      AND phppro_journees.numero>='$debut'
+      AND phppro_journees.numero<='$fin'
+      GROUP by phppro_clubs.nom ");
 
 //$dom = mysql_query($query) or die (mysql_error());
 
@@ -334,26 +334,26 @@ WHERE dom.id_champ='$champ'
       else{$clmnt[$row[2]]['BUTSDOMCONTRE']+=$row[4];}
      }
 // Resultats à domicile
-$query=$idconnect->query("SELECT phpab_clubs.nom FROM phpab_clubs, phpab_equipes, phpab_championnats
-WHERE phpab_equipes.id_champ=phpab_championnats.id
-      AND phpab_championnats.id='$champ'
-      AND phpab_equipes.id_club=phpab_clubs.id");
+$query=$idconnect->query("SELECT phppro_clubs.nom FROM phppro_clubs, phppro_equipes, phppro_championnats
+WHERE phppro_equipes.id_champ=phppro_championnats.id
+      AND phppro_championnats.id='$champ'
+      AND phppro_equipes.id_club=phppro_clubs.id");
 
 $result=mysqli_query($query) or die (mysqli_error());
 
         
 // RESULTATS EXTERIEURS :
 // victoires exterieur
-$dom=$idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+$dom=$idconnect->query("SELECT ext.id, count(ext.id), phppro_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phppro_equipes as ext, phppro_clubs, phppro_matchs, phppro_journees, phppro_championnats
 WHERE ext.id_champ='$champ'
-      AND ext.id_club=phpab_clubs.id
-      AND ext.id=phpab_matchs.id_equipe_ext
+      AND ext.id_club=phppro_clubs.id
+      AND ext.id=phppro_matchs.id_equipe_ext
       AND buts_ext > buts_dom
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phppro_championnats.id=phppro_journees.id_champ
+      AND phppro_journees.id=phppro_matchs.id_journee
+      AND phppro_journees.numero>='$debut'
+      AND phppro_journees.numero<='$fin'
+      GROUP by phppro_clubs.nom ");
 
 //$dom = mysql_query($query) or die (mysql_error());;
 
@@ -368,16 +368,16 @@ WHERE ext.id_champ='$champ'
 
      }
 // Defaites exterieur
-$dom=$idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+$dom=$idconnect->query("SELECT ext.id, count(ext.id), phppro_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phppro_equipes as ext, phppro_clubs, phppro_matchs, phppro_journees, phppro_championnats
 WHERE ext.id_champ='$champ'
-      AND ext.id_club=phpab_clubs.id
-      AND ext.id=phpab_matchs.id_equipe_ext
+      AND ext.id_club=phppro_clubs.id
+      AND ext.id=phppro_matchs.id_equipe_ext
       AND buts_ext < buts_dom
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phppro_championnats.id=phppro_journees.id_champ
+      AND phppro_journees.id=phppro_matchs.id_journee
+      AND phppro_journees.numero>='$debut'
+      AND phppro_journees.numero<='$fin'
+      GROUP by phppro_clubs.nom ");
 
 //$dom=mysql_query($query) or die (mysql_error());
                     
@@ -391,18 +391,18 @@ WHERE ext.id_champ='$champ'
       }
 
 // Nuls exterieur
-$dom=$idconnect->query("SELECT ext.id, count(ext.id), phpab_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phpab_equipes as ext, phpab_clubs, phpab_matchs, phpab_journees, phpab_championnats
+$dom=$idconnect->query("SELECT ext.id, count(ext.id), phppro_clubs.nom, sum(buts_ext), sum(buts_dom) FROM phppro_equipes as ext, phppro_clubs, phppro_matchs, phppro_journees, phppro_championnats
 WHERE ext.id_champ='$champ'
-      AND ext.id_club=phpab_clubs.id
-      AND ext.id=phpab_matchs.id_equipe_ext
+      AND ext.id_club=phppro_clubs.id
+      AND ext.id=phppro_matchs.id_equipe_ext
       AND buts_ext = buts_dom
       AND buts_dom is not null
       AND buts_ext is not null
-      AND phpab_championnats.id=phpab_journees.id_champ
-      AND phpab_journees.id=phpab_matchs.id_journee
-      AND phpab_journees.numero>='$debut'
-      AND phpab_journees.numero<='$fin'
-      GROUP by phpab_clubs.nom ");
+      AND phppro_championnats.id=phppro_journees.id_champ
+      AND phppro_journees.id=phppro_matchs.id_journee
+      AND phppro_journees.numero>='$debut'
+      AND phppro_journees.numero<='$fin'
+      GROUP by phppro_clubs.nom ");
 
 
 //$dom=mysql_query($query) or die (mysql_error());;
@@ -417,23 +417,23 @@ WHERE ext.id_champ='$champ'
       }
                  
 // TABLEAU DE CLASSEMENT
-$result=$idconnect->query("SELECT phpab_clubs.nom, phpab_equipes.penalite, phpab_equipes.id
-        FROM phpab_clubs, phpab_equipes, phpab_championnats
-        WHERE phpab_equipes.id_champ=phpab_championnats.id
-        AND phpab_championnats.id='$champ'
-        AND phpab_equipes.id_club=phpab_clubs.id");
+$result=$idconnect->query("SELECT phppro_clubs.nom, phppro_equipes.penalite, phppro_equipes.id
+        FROM phppro_clubs, phppro_equipes, phppro_championnats
+        WHERE phppro_equipes.id_champ=phppro_championnats.id
+        AND phppro_championnats.id='$champ'
+        AND phppro_equipes.id_club=phppro_clubs.id");
 
 //$result=mysql_query($query) or die (mysql_error());
 
-//mysql_query("LOCK TABLE phpab_clmnt WRITE, phpab_equipes WRITE, phpab_clubs WRITE") or die (mysql_error());
+//mysql_query("LOCK TABLE phppro_clmnt WRITE, phppro_equipes WRITE, phppro_clubs WRITE") or die (mysql_error());
 
     if (mysqli_num_rows($result)==0)
     {
-    $result=$idconnect->query("SELECT phpab_clubs.nom, phpab_equipes.id 
-            FROM phpab_clubs, phpab_equipes, phpab_championnats
-            WHERE phpab_equipes.id_champ=phpab_championnats.id
-            AND phpab_championnats.id='$champ'
-            AND phpab_equipes.id_club=phpab_clubs.id");
+    $result=$idconnect->query("SELECT phppro_clubs.nom, phppro_equipes.id 
+            FROM phppro_clubs, phppro_equipes, phppro_championnats
+            WHERE phppro_equipes.id_champ=phppro_championnats.id
+            AND phppro_championnats.id='$champ'
+            AND phppro_equipes.id_club=phppro_clubs.id");
 
     $result=mysqli_query($query) or die (mysqli_error());
     }
@@ -470,8 +470,8 @@ $result=$idconnect->query("SELECT phpab_clubs.nom, phpab_equipes.penalite, phpab
 
     $question="INSERT INTO ";
 
-    if($cache=="1"){$question.="phpab_clmnt_cache ";}
-    else{$question.="phpab_clmnt ";}
+    if($cache=="1"){$question.="phppro_clmnt_cache ";}
+    else{$question.="phppro_clmnt ";}
             
     $question.="SET NOM='$NOM',
           ID_EQUIPE='$row[id]',
@@ -505,8 +505,8 @@ $result=$idconnect->query("SELECT phpab_clubs.nom, phpab_equipes.penalite, phpab
 
     }
     
-if($cache=="1"){$requete="DELETE FROM phpab_clmnt_cache WHERE nom='exempte'" or die (mysql_error());}
-else{$requete="DELETE FROM phpab_clmnt WHERE nom='exempte'" or die (mysql_error());}
+if($cache=="1"){$requete="DELETE FROM phppro_clmnt_cache WHERE nom='exempte'" or die (mysql_error());}
+else{$requete="DELETE FROM phppro_clmnt WHERE nom='exempte'" or die (mysql_error());}
 
 $resultat=mysql_query($requete) or die (mysql_error());
 //mysql_query("UNLOCK TABLES") or die (mysql_error());
@@ -514,8 +514,8 @@ $resultat=mysql_query($requete) or die (mysql_error());
 
 function clmnt($legende, $type, $accession, $barrage, $relegation, $champ, $requete, $lien, $id_equipe_fetiche)
 {
-echo "<table class=\"tablephpab2\" align=\"center\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphpab3\"><th colspan=\"11\">".$legende."</th></tr>\n";
-echo "<tr class=\"trphpab3\">
+echo "<table class=\"tablephppro2\" align=\"center\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphppro3\"><th colspan=\"11\">".$legende."</th></tr>\n";
+echo "<tr class=\"trphppro3\">
 
 
 <th align=\"center\">".CLMNT_POSITION."</th>
@@ -545,7 +545,7 @@ $pl=1;
               while($x<3)
                {
                echo "<td>";
-$comite="phpab";
+$comite="phppro";
                    if ($x==0)
                     {
                    //  if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "<b>";}
@@ -574,8 +574,8 @@ $comite="phpab";
 
 function Buteur($legende, $requete, $type, $EquipeFetiche, $champ, $debut, $fin, $equipe, $complet)
 {
-echo "<table class=\"tablephpab2\" align=\"center\" cellspacing=\"0\" width=\"80%\" bgcolor=\"#FFFFFF\"><tr class=\"trphpab3\"><th colspan=\"11\">".$legende."<br /></th></tr>\n";
-echo "<tr class=\"trphpab3\"><th>".CLMNT_POSITION."</th><th align=\"left\">".MENU_NOM."</th><th align=\"left\">".TEAM."</th><th align=\"left\">".ADMIN_JOUEURS_2."</th></tr>\n";
+echo "<table class=\"tablephppro2\" align=\"center\" cellspacing=\"0\" width=\"80%\" bgcolor=\"#FFFFFF\"><tr class=\"trphppro3\"><th colspan=\"11\">".$legende."<br /></th></tr>\n";
+echo "<tr class=\"trphppro3\"><th>".CLMNT_POSITION."</th><th align=\"left\">".MENU_NOM."</th><th align=\"left\">".TEAM."</th><th align=\"left\">".ADMIN_JOUEURS_2."</th></tr>\n";
 $resultats=mysql_query($requete) or die (mysql_error());
 $pl=1;
 $total="-1";
@@ -585,7 +585,7 @@ $total="-1";
         $joueurs_nom=stripslashes($row["NomJoueur"]);
         $joueurs_prenom=stripslashes($row["PrenomJoueur"]);
         $row["nom"]=stripslashes($row["nom"]);
-      echo "<tr class=\"trphpab2\">";
+      echo "<tr class=\"trphppro2\">";
       echo "<td align=\"center\">";
       if ($total>$row["Total"] or ($pl=="1")){ print $pl;} else {echo "-";}
       $pl++;
@@ -628,12 +628,12 @@ echo "</table>";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Titre       : Add-on Gestion des clubs (fiches clubs), mini-classement,                     //
-//               statistiques, amélioration de la gestion des buteurs pour phpabeague.          //
+//               statistiques, amélioration de la gestion des buteurs pour phpproeague.          //
 // Auteur      : Alexis MANGIN                                                                 //
 // Email       : Alexis@univert.org                                                            //
 // Url         : http://www.univert.org                                                        //
-// Démo        : http://phpabeague.univert.org/demo.php                                         //
-// Description : Edition, gestion, fiches phpab_clubs, statistiques, mini-classement...         //
+// Démo        : http://phpproeague.univert.org/demo.php                                         //
+// Description : Edition, gestion, fiches phppro_clubs, statistiques, mini-classement...         //
 // Version     : 0.71 (29/03/2003)                                                             //
 //                                                                                             //
 //                                                                                             //
@@ -647,11 +647,11 @@ echo "</table>";
 // Affichage renseignements utilisée dans consult/club.php
 //function aff_rens ($id_classe, $id_clubs)
 //{
-//$query="SELECT phpab_donnee.id, phpab_donnee.nom, id_rens, id_clubs, phpab_rens.id, phpab_rens.nom, phpab_rens.id_classe, phpab_clubs.id, etat, phpab_donnee.url, phpab_rens.url
-//FROM phpab_donnee, phpab_rens, phpab_clubs
+//$query="SELECT phppro_donnee.id, phppro_donnee.nom, id_rens, id_clubs, phppro_rens.id, phppro_rens.nom, phppro_rens.id_classe, phppro_clubs.id, etat, phppro_donnee.url, phppro_rens.url
+//FROM phppro_donnee, phppro_rens, phppro_clubs
 //WHERE id_clubs='$id_clubs'
-//      AND id_clubs=phpab_clubs.id
-//      AND id_rens=phpab_rens.id
+//      AND id_clubs=phppro_clubs.id
+//      AND id_rens=phppro_rens.id
 //      AND id_classe='$id_classe'
 //      AND etat='1' order by rang";
 //$result = mysql_query ($query) or die(mysql_error());
@@ -670,11 +670,11 @@ echo "</table>";
 //        }
 
 
-function clmntmini($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $phpabEAGUE_RACINE, $id_equipe_fetiche)
+function clmntmini($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $phpproEAGUE_RACINE, $id_equipe_fetiche)
 {
 
-echo "<table class=tablephpab2 align=\"center\" cellspacing=\"0\" width=\"200\"><tr class=trphpab3><th colspan=10>".$legendemini;
-echo "<tr class=trphpab3>";
+echo "<table class=tablephppro2 align=\"center\" cellspacing=\"0\" width=\"200\"><tr class=trphppro3><th colspan=10>".$legendemini;
+echo "<tr class=trphppro3>";
 echo "<th align=\"center\">".CLMNT_POSITION."";
 echo "<th align=\"left\">".CLMNT_EQUIPE."";
 echo "<th align=\"left\">".CLMNT_POINTS."";
@@ -722,7 +722,7 @@ if ($pl<=$ap and $pl>=$av)
                     {
                      if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "<b>";}
                      if ($lienmini=='non'){echo "$row[$x]";}
-                     else {echo "<a href=\"".$phpabEAGUE_RACINE."consult/detaileq.php?champ=$champmini&amp;id_equipe=".$row['ID_EQUIPE']."\" target=\"_parent\">$row[$x]</a>";}
+                     else {echo "<a href=\"".$phpproEAGUE_RACINE."consult/detaileq.php?champ=$champmini&amp;id_equipe=".$row['ID_EQUIPE']."\" target=\"_parent\">$row[$x]</a>";}
                      if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "</b>";}
                      }
 
@@ -740,8 +740,8 @@ echo "</table>";
 
 function clmnt_barre($legende, $type, $accession, $barrage, $relegation,  $champ, $requete, $lien, $id_equipe_fetiche)
 {
-echo "<table class=\"tablephpab2\" align=\"center\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphpab3\"><th colspan=\"11\">".$legende;
-echo "</th></tr>\n<tr class=\"trphpab3\">
+echo "<table class=\"tablephppro2\" align=\"center\" cellspacing=\"0\" width=\"80%\"><tr class=\"trphppro3\"><th colspan=\"11\">".$legende;
+echo "</th></tr>\n<tr class=\"trphppro3\">
 <th align=\"center\">".CLMNT_POSITION."</th>
 <th align=\"left\">".CLMNT_EQUIPE."</th>
 <th align=\"left\">".CLMNT_POINTS."</th>\n";
@@ -812,10 +812,10 @@ $action=0;
         echo "</table>\n";
    }
 
-function clmntmini_barre($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $phpabEAGUE_RACINE, $id_equipe_fetiche)
+function clmntmini_barre($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $nb_dessusmini, $nb_dessousmini, $lienmini, $phpproEAGUE_RACINE, $id_equipe_fetiche)
 {
-echo "<table class=tablephpab2 align=\"center\" cellspacing=\"0\" width=\"200\"><tr class=trphpab3><th colspan=10>".$legendemini;
-echo "<tr class=trphpab3>";
+echo "<table class=tablephppro2 align=\"center\" cellspacing=\"0\" width=\"200\"><tr class=trphppro3><th colspan=10>".$legendemini;
+echo "<tr class=trphppro3>";
 echo "<th align=center>".CLMNT_POSITION."";
 echo "<th align=left>".CLMNT_EQUIPE."";
 echo "<th align=center>".CLMNT_POINTS."";
@@ -876,7 +876,7 @@ if ($pl<=$ap and $pl>=$av)
                     {
                      if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "<b>";} 
                      if ($lienmini=='non'){echo "$row[$x]";}
-                     else {echo "<a href=\"".$phpabEAGUE_RACINE."consult/detaileq.php?champ=$champmini&amp;id_equipe=".$row['ID_EQUIPE']."\" target=\"_parent\">$row[$x]</a>";}
+                     else {echo "<a href=\"".$phpproEAGUE_RACINE."consult/detaileq.php?champ=$champmini&amp;id_equipe=".$row['ID_EQUIPE']."\" target=\"_parent\">$row[$x]</a>";}
                      if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "</b>";}
                     }
                      else print $row[$x];
@@ -894,10 +894,10 @@ elseif ($pl<$av){$pl++;}
 echo "</table>";
 }
 
-function clmntred($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini, $champmini, $requetemini, $lienmini, $phpabEAGUE_RACINE, $id_equipe_fetiche)
+function clmntred($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini, $champmini, $requetemini, $lienmini, $phpproEAGUE_RACINE, $id_equipe_fetiche)
 {
-echo "<table class=tablephpab2 align=\"center\" cellspacing=\"0\"  width=\"200\"><tr class=trphpab3><th colspan=10>".$legendemini;
-echo "<tr class=trphpab3>
+echo "<table class=tablephppro2 align=\"center\" cellspacing=\"0\"  width=\"200\"><tr class=trphppro3><th colspan=10>".$legendemini;
+echo "<tr class=trphppro3>
 <th align=\"center\">".CLMNT_POSITION."
 <th align=\"center\">".CLMNT_EQUIPE."
 <th align=\"left\">".CLMNT_POINTS."
@@ -933,7 +933,7 @@ $pl=1;
                      if ($lienmini=='non'){echo "$row[$x]";}
                      else 
                       {
-                        echo "<a href=\"".$phpabEAGUE_RACINE."consult/detaileq.php?champ=$champmini&amp;id_equipe=".$row['ID_EQUIPE']."\" target=\"_parent\">$row[$x]</a>";
+                        echo "<a href=\"".$phpproEAGUE_RACINE."consult/detaileq.php?champ=$champmini&amp;id_equipe=".$row['ID_EQUIPE']."\" target=\"_parent\">$row[$x]</a>";
                       }
                      if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "</b>";} 
                      }
@@ -946,11 +946,11 @@ $pl=1;
         echo "</table>";
 }
 
-function clmnt_barrered($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $lienmini, $phpabEAGUE_RACINE, $id_equipe_fetiche)
+function clmnt_barrered($legendemini, $typemini, $accessionmini, $barragemini, $relegationmini,  $champmini, $requetemini, $lienmini, $phpproEAGUE_RACINE, $id_equipe_fetiche)
 {
 //mise en forme du mini classement
-echo "<table class=tablephpab2 align=\"center\"  cellspacing=\"0\" width=\"95%\"><tr class=trphpab3><th colspan=10>".$legendemini;
-echo "<tr class=trphpab3>
+echo "<table class=tablephppro2 align=\"center\"  cellspacing=\"0\" width=\"95%\"><tr class=trphppro3><th colspan=10>".$legendemini;
+echo "<tr class=trphppro3>
 <th align=\"center\">".CLMNT_POSITION."
 <th align=\"center\">".CLMNT_EQUIPE."
 <th align=\"left\">".CLMNT_POINTS."
@@ -992,7 +992,7 @@ $action=0;
                     {
                    //  if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "<b>";}
                      if ($lienmini=='non'){echo "$row[$x]";}
-                   //  else {echo "<a href=\"".$phpabEAGUE_RACINE."consult/detaileq.php?champ=$champmini&amp;id_equipe=".$row['ID_EQUIPE']."\" target=\"_parent\">$row[$x]</a>";}
+                   //  else {echo "<a href=\"".$phpproEAGUE_RACINE."consult/detaileq.php?champ=$champmini&amp;id_equipe=".$row['ID_EQUIPE']."\" target=\"_parent\">$row[$x]</a>";}
                    //  if ($row['ID_EQUIPE']==$id_equipe_fetiche){echo "</b>";}
                      }
 
@@ -1022,11 +1022,11 @@ function demande_champ ()
        <option value="0"> </option>
   
   <?php       
-       $query = "SELECT phpab_divisions.nom, phpab_saisons.annee, phpab_championnats.id
-                 FROM phpab_championnats, phpab_divisions, phpab_saisons
-                 WHERE phpab_championnats.id_division=phpab_divisions.id
-                 AND phpab_championnats.id_saison=phpab_saisons.id
-                 ORDER BY phpab_saisons.annee DESC, phpab_championnats.id";
+       $query = "SELECT phppro_divisions.nom, phppro_saisons.annee, phppro_championnats.id
+                 FROM phppro_championnats, phppro_divisions, phppro_saisons
+                 WHERE phppro_championnats.id_division=phppro_divisions.id
+                 AND phppro_championnats.id_saison=phppro_saisons.id
+                 ORDER BY phppro_saisons.annee DESC, phppro_championnats.id";
 
        $result = mysql_query($query) or die (mysql_error());
 
@@ -1049,9 +1049,9 @@ function demande_champ ()
 
 function demande_equipe($champ)
 {
-  $requete = "SELECT phpab_clubs.nom, id_champ, phpab_equipes.id
-              FROM phpab_clubs, phpab_equipes
-              WHERE phpab_equipes.id_champ='$champ' and phpab_clubs.id=phpab_equipes.id_club
+  $requete = "SELECT phppro_clubs.nom, id_champ, phppro_equipes.id
+              FROM phppro_clubs, phppro_equipes
+              WHERE phppro_equipes.id_champ='$champ' and phppro_clubs.id=phppro_equipes.id_club
               ORDER BY nom";
 $resultat = mysql_query($requete) or die (mysql_error());
 

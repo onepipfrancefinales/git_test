@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpfed3NEeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpfed3NEeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpfed3NEeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -50,7 +50,7 @@ print ("//-->\n");
 print ("</SCRIPT>\n");
 
 
-echo "<font class=phpab>".ADMIN_CLASSE_TITRE."</font><br /><br /><br />";
+echo "<font class=phpfed3NE>".ADMIN_CLASSE_TITRE."</font><br /><br /><br />";
 
 if (isset($_POST['data'])) {$data=$_POST['data'];} else {$data='';}
 if (isset($_POST['rang'])) {$rang=$_POST['rang'];} else {$rang='';}
@@ -65,11 +65,11 @@ switch($go)
 	 $nb_classe=nb_classe($data, $idconnect);
 	   if($nb_classe==0)
 	  {
-    mysqli_query($idconnect, ("DELETE FROM phpab_classe WHERE id='$data' ")) ;
+    mysqli_query($idconnect, ("DELETE FROM phpfed3NE_classe WHERE id='$data' ")) ;
     ?>
-    <table class=phpab width="80%">
+    <table class=phpfed3NE width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phpfed3NE2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center"  colspan="2"><b><?php echo ADMIN_CLUB_SUPP2; ?></b></td></tr></table><br />
@@ -79,9 +79,9 @@ switch($go)
 	         else
 	         {
             ?>
-            <table class=phpab width="80%">
+            <table class=phpfed3NE width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phpfed3NE2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center"  colspan="2"><?php echo ADMIN_CLASSE_3." $nb_classe ".ADMIN_CLASSE_4; ?></td></tr></table><br />
@@ -92,12 +92,12 @@ switch($go)
 	 case "creclasse":
 	 {    
 	 $data1=addslashes($data);
-	 mysqli_query($idconnect, ("INSERT INTO phpab_classe (nom) values ('$data1')"));
+	 mysqli_query($idconnect, ("INSERT INTO phpfed3NE_classe (nom) values ('$data1')"));
 	 
          ?>
-    <table class=phpab width="80%">
+    <table class=phpfed3NE width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phpfed3NE2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center"  colspan="2"><b><?php echo ADMIN_CLUB_CREA2; ?></b></td></tr></table><br />
@@ -121,13 +121,13 @@ if ($actionc=="1")
                 // $x=0;
                 //while($x <= $nb_classe2)
                // {
-               mysqli_query ($idconnect, ("UPDATE phpab_classe SET rang='$val' WHERE id='$val2'"));
+               mysqli_query ($idconnect, ("UPDATE phpfed3NE_classe SET rang='$val' WHERE id='$val2'"));
                //$x++;
                 }
                 ?>
-    <table class=phpab width="80%">
+    <table class=phpfed3NE width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phpfed3NE2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center" colspan="2"><b><?php echo ADMIN_CLASSE_2; ?></b></td></tr></table><br />
@@ -137,19 +137,19 @@ if ($actionc=="1")
     }
 
 ?>
-<table class=phpab width="80%">
+<table class=phpfed3NE width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_TITRE; ?></td>
+              <td class=phpfed3NE2 align="center" colspan="2"><?php echo ADMIN_CLASSE_TITRE; ?></td>
             </tr>
             <tr>
               <td align="center"  colspan="2"><b><?php echo ADMIN_RENS_8; ?></b></td></tr>
 <?php 
-echo "<tr><td class=phpab6><form method=\"post\" action=\"\">";
+echo "<tr><td class=phpfed3NE6><form method=\"post\" action=\"\">";
 echo ADMIN_CLASSE_SUPP1." ";
 echo "<select name=\"data\">";
 echo "<option value=\"0\"> </option>";
 
-$result = $idconnect->query("SELECT id, nom FROM phpab_classe ORDER BY nom");
+$result = $idconnect->query("SELECT id, nom FROM phpfed3NE_classe ORDER BY nom");
 
 while($row = mysqli_fetch_array($result)) 
 	{$a=$row[1]+1;
@@ -186,7 +186,7 @@ echo "</td><td align=right><input type=\"submit\" value=$button></form></td></tr
 
 $result = $idconnect->query("
 		  SELECT id, nom, rang 
-		  FROM phpab_classe 
+		  FROM phpfed3NE_classe 
 		  ORDER by rang");
 
 echo "<form method=\"post\" action=\"\">";
@@ -194,13 +194,13 @@ echo "<form method=\"post\" action=\"\">";
              while($row = mysqli_fetch_array($result))
              {
 $classe_nom=stripslashes($row["nom"]);
-echo "<table class=phpab border=\"0\" cellpadding=\"2\" cellspacing=\"0\" valign=\"bottom\" align=\"center\" width=\"80%\"><tr class=phpab3>";
-echo "<td class=\"phpab2\" align=\"center\"><input type=\"text\" name=\"rang[]\" value=\"$row[2]\" size=1 maxlength=1><b> $classe_nom</b></td>";
+echo "<table class=phpfed3NE border=\"0\" cellpadding=\"2\" cellspacing=\"0\" valign=\"bottom\" align=\"center\" width=\"80%\"><tr class=phpfed3NE3>";
+echo "<td class=\"phpfed3NE2\" align=\"center\"><input type=\"text\" name=\"rang[]\" value=\"$row[2]\" size=1 maxlength=1><b> $classe_nom</b></td>";
 echo "<input type=\"hidden\" name=\"id[]\" value=\"$row[0]\"></tr>";
 
 $result2 =  $idconnect->query("
 			SELECT id, nom, rang, id_classe 
-			FROM phpab_rens 
+			FROM phpfed3NE_rens 
 			WHERE id_classe='$row[0]' 
 			ORDER BY rang");
 

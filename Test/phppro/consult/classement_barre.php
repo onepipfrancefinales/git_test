@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -138,11 +138,11 @@ echo "<select name=\"debut\">";
     echo "<input type=\"submit\" value=\"$button\"></div>\n</form>\n";
 
 
-$result=$idconnect->query("SELECT phpab_divisions.nom, phpab_saisons.annee, (phpab_saisons.annee)+1 
-          FROM phpab_championnats, phpab_divisions, phpab_saisons 
-          WHERE phpab_championnats.id='$champ' 
-          AND phpab_divisions.id=phpab_championnats.id_division
-          AND phpab_saisons.id=phpab_championnats.id_saison");
+$result=$idconnect->query("SELECT phppro_divisions.nom, phppro_saisons.annee, (phppro_saisons.annee)+1 
+          FROM phppro_championnats, phppro_divisions, phppro_saisons 
+          WHERE phppro_championnats.id='$champ' 
+          AND phppro_divisions.id=phppro_championnats.id_division
+          AND phppro_saisons.id=phppro_championnats.id_saison");
 
 //$result = mysql_query($query) or die (mysql_error());
 
@@ -158,7 +158,7 @@ if (isset($type))
 
     // RAPPEL DES PARAMETRES du CHAMPIONNAT
     $result=$idconnect->query("SELECT accession, barrage, estimation, relegation, id_equipe_fetiche, fiches_clubs
-                         FROM phpab_parametres
+                         FROM phppro_parametres
                          WHERE id_champ='$champ'");
     $row=mysqli_fetch_array($result);
 
@@ -168,10 +168,10 @@ if (isset($type))
     $fiches_clubs = $row['fiches_clubs'];
     $id_equipe_fetiche=$row['id_equipe_fetiche'];
     
-    $resultats=$idconnect->query("SELECT phpab_equipes.id FROM phpab_equipes, phpab_clubs
-                  WHERE phpab_clubs.id=phpab_equipes.id_club 
+    $resultats=$idconnect->query("SELECT phppro_equipes.id FROM phppro_equipes, phppro_clubs
+                  WHERE phppro_clubs.id=phppro_equipes.id_club 
                   AND id_champ='$champ' 
-                  AND phpab_clubs.nom='exempte'";
+                  AND phppro_clubs.nom='exempte'";
    // $resultats=mysql_query($requete) ;
     $exempte=mysqli_num_rows($resultats);
     if ($exempte=='1') {$relegation = $nb_equipe - $row['relegation']-1;}
@@ -187,18 +187,18 @@ $legende=CONSULT_CLMNT_MSG4.$debut.CONSULT_CLMNT_MSG5.$fin;
 if ($debut=="1" and $fin==$nb_journees)
  {
     $requete="	SELECT DISTINCT * 
-				FROM phpab_clmnt_cache 
+				FROM phppro_clmnt_cache 
 				WHERE ID_CHAMP='$champ' 
 				ORDER BY POINTS DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE 
 				ASC, NOM";
     
 	clmnt_barre($legende, $type, $accession, $barrage, $relegation, $champ, $requete, $lien, $id_equipe_fetiche);
 
-    $result=$idconnect->query("SELECT max(phpab_journees.numero) 
-			FROM phpab_journees, phpab_matchs 
-			WHERE phpab_journees.id=phpab_matchs.id_journee 
+    $result=$idconnect->query("SELECT max(phppro_journees.numero) 
+			FROM phppro_journees, phppro_matchs 
+			WHERE phppro_journees.id=phppro_matchs.id_journee 
 			and buts_dom is not NULL 
-			and phpab_journees.id_champ='$champ'");
+			and phppro_journees.id_champ='$champ'");
     //$result=mysql_query($query) or die (mysql_error());
     
 	while ($row=mysqli_fetch_array($result))
@@ -225,7 +225,7 @@ if ($debut=="1" and $fin==$nb_journees)
 else
  {
   $requete=$idconnect->query("SELECT DISTINCT * 
-							  FROM phpab_clmnt WHERE ID_CHAMP='$champ' 
+							  FROM phppro_clmnt WHERE ID_CHAMP='$champ' 
 							  ORDER BY POINTS DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE ASC, NOM");
 
   @db_clmnt($champ, $debut, $fin, 0);
@@ -246,7 +246,7 @@ case DOMICILE;
   if ($debut=="1" and $fin==$nb_journees)
  {
   $requete=$idconnect->query("SELECT NOM, DOMPOINTS, DOMJOUES, DOMG,  DOMN, DOMP, DOMBUTSPOUR, DOMBUTSCONTRE, DOMDIFF, ID_EQUIPE  
-							  FROM phpab_clmnt_cache 
+							  FROM phppro_clmnt_cache 
 							  WHERE ID_CHAMP='$champ' 
 							  ORDER BY DOMPOINTS DESC, DOMDIFF DESC");
   
@@ -256,7 +256,7 @@ case DOMICILE;
   else
  { 
   $requete=$idconnect->query("SELECT NOM, DOMPOINTS, DOMJOUES, DOMG,  DOMN, DOMP, DOMBUTSPOUR, DOMBUTSCONTRE, DOMDIFF, ID_EQUIPE  
-							  FROM phpab_clmnt 
+							  FROM phppro_clmnt 
 							  WHERE ID_CHAMP='$champ' 
 							  ORDER BY DOMPOINTS DESC, DOMDIFF DESC");
   
@@ -274,7 +274,7 @@ case ATTAQUE;
    if ($debut=="1" and $fin==$nb_journees)
    {
     $requete=$idconnect->query("SELECT * 
-								FROM phpab_clmnt_cache 
+								FROM phppro_clmnt_cache 
 								WHERE ID_CHAMP='$champ' 
 								ORDER BY BUTSPOUR DESC, DIFF DESC");
     
@@ -284,7 +284,7 @@ case ATTAQUE;
    else
    {
    $requete=$idconnect->query("SELECT * 
-							   FROM phpab_clmnt 
+							   FROM phppro_clmnt 
 							   WHERE ID_CHAMP='$champ' 
 							   ORDER BY BUTSPOUR DESC, DIFF DESC");
    
@@ -301,14 +301,14 @@ case DEFENSE;
   
   if ($debut=="1" and $fin==$nb_journees)
    {
-    $requete="SELECT * FROM phpab_clmnt_cache WHERE ID_CHAMP='$champ' ORDER BY BUTSCONTRE ASC, DIFF DESC";
+    $requete="SELECT * FROM phppro_clmnt_cache WHERE ID_CHAMP='$champ' ORDER BY BUTSCONTRE ASC, DIFF DESC";
     clmnt_barre($legende, $type, $accession, $barrage, $relegation, $champ, $requete, $lien, $id_equipe_fetiche);
    }
 
    else
    {
     $requete=$idconnect->query("SELECT * 
-								FROM phpab_clmnt 
+								FROM phppro_clmnt 
 								WHERE ID_CHAMP='$champ' 
 								ORDER BY BUTSCONTRE ASC, DIFF DESC");
     @db_clmnt($champ, $debut, $fin, 0);
@@ -325,7 +325,7 @@ case BONUS;
   if ($debut=="1" and $fin==$nb_journees)
    {
     $requete=$idconnect->query("SELECT * 
-								FROM phpab_clmnt_cache 
+								FROM phppro_clmnt_cache 
 								WHERE ID_CHAMP='$champ' 
 								ORDER BY PEN DESC, DIFF DESC");
     
@@ -335,7 +335,7 @@ case BONUS;
    else
    {
     $requete=$idconnect->query("SELECT * 
-								FROM phpab_clmnt 
+								FROM phppro_clmnt 
 								WHERE ID_CHAMP='$champ' 
 								ORDER BY PEN DESC, DIFF DESC");
     
@@ -354,7 +354,7 @@ case GOALDIFF;
   if ($debut=="1" and $fin==$nb_journees)
    {
     $requete= $idconnect->query("SELECT * 
-								FROM phpab_clmnt_cache 
+								FROM phppro_clmnt_cache 
 								WHERE id_champ='$champ' 
 								ORDER BY DIFF DESC, BUTSPOUR DESC, BUTSCONTRE ASC ");
     
@@ -364,7 +364,7 @@ case GOALDIFF;
   else
   {
    $requete= $idconnect->query("SELECT * 
-							   FROM phpab_clmnt 
+							   FROM phppro_clmnt 
 							   WHERE id_champ='$champ' 
 							   ORDER BY DIFF DESC, BUTSPOUR DESC, BUTSCONTRE ASC ");
    
@@ -382,7 +382,7 @@ case EXTERIEUR;
    if ($debut=="1" and $fin==$nb_journees)
    {
     $requete=$idconnect->query("SELECT NOM, EXTPOINTS, EXTJOUES, EXTG,  EXTN, EXTP, EXTBUTSPOUR, EXTBUTSCONTRE, EXTDIFF, ID_EQUIPE  
-								FROM phpab_clmnt_cache 
+								FROM phppro_clmnt_cache 
 								WHERE ID_CHAMP='$champ' 
 								ORDER BY EXTPOINTS DESC, EXTDIFF DESC ");
     
@@ -392,7 +392,7 @@ case EXTERIEUR;
   else
   {
  $requete=$idconnect->query("SELECT NOM, EXTPOINTS, EXTJOUES, EXTG,  EXTN, EXTP, EXTBUTSPOUR, EXTBUTSCONTRE, EXTDIFF, ID_EQUIPE  
-							 FROM phpab_clmnt 
+							 FROM phppro_clmnt 
 							 WHERE ID_CHAMP='$champ' 
 							 ORDER BY EXTPOINTS DESC, EXTDIFF DESC ");
  

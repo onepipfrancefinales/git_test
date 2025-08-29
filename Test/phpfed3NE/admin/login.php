@@ -14,7 +14,7 @@ if (isset($_POST['autoidentification'])) {$autoidentification=$_POST['autoidenti
 	}
 	else
 	{
-    $query2=$idconnect->query("SELECT mot_de_passe FROM phpab_membres WHERE pseudo='$pseudo' and admin='1'");
+    $query2=$idconnect->query("SELECT mot_de_passe FROM phpfed3NE_membres WHERE pseudo='$pseudo' and admin='1'");
 	$result = mysqli_query($query2);
 	$row = mysqli_fetch_array($result);
         $password_crypt = md5($pass);
@@ -30,12 +30,12 @@ if (isset($_POST['autoidentification'])) {$autoidentification=$_POST['autoidenti
 
         $ip = $_SERVER["REMOTE_ADDR"];
 	$time = time();
-	 $result=$idconnect->query("SELECT * FROM phpab_membres WHERE pseudo='$pseudo' and admin='1'");
+	 $result=$idconnect->query("SELECT * FROM phpfed3NE_membres WHERE pseudo='$pseudo' and admin='1'");
 	//$result = mysql_query($query) or die ('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
 	$row = mysqli_fetch_array($result);
 	$mot_de_passe = $row['mot_de_passe'];
 
-	mysqli_query("UPDATE phpab_membres SET ip='$ip', last_connect='$time' WHERE pseudo='$pseudo'");
+	mysqli_query("UPDATE phpfed3NE_membres SET ip='$ip', last_connect='$time' WHERE pseudo='$pseudo'");
         if ($autoidentification) {$expire=365*24*3600;}
         else {$expire=3600;}
 	setcookie("user","$pseudo",time()+$expire,"/","");

@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 ?>
@@ -28,12 +28,12 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Titre       : Add-on Gestion des clubs (fiches clubs), mini-classement,                     //
-//               statistiques, amélioration de la gestion des buteurs pour phpabeague.          //
+//               statistiques, amélioration de la gestion des buteurs pour phpproeague.          //
 // Auteur      : Alexis MANGIN                                                                 //
 // Email       : Alexis@univert.org                                                            //
 // Url         : http://www.univert.org                                                        //
 // Démo        : http://univert42.free.fr/adversaire/classement/consult/classement.php?champ=2 //
-// Description : Edition, gestion, fiches phpab_clubs, statistiques, mini-classement...              //
+// Description : Edition, gestion, fiches phppro_clubs, statistiques, mini-classement...              //
 // Version     : 0.71 (29/03/2003)                                                             //
 //                                                                                             //
 //                                                                                             //
@@ -71,7 +71,7 @@ print ("}\n");
 print ("//-->\n");
 print ("</SCRIPT>\n");
 
-echo "<font class=phpab>".ADMIN_RENS_TITRE."</font><br /><br /><br />";
+echo "<font class=phppro>".ADMIN_RENS_TITRE."</font><br /><br /><br />";
 
 if (isset($_POST['rens'])) {$rens=$_POST['rens'];} else {$rens='';}
 if (isset($_POST['url'])) {$url=$_POST['url'];} else {$url='';}
@@ -86,13 +86,13 @@ switch($go) // Ajout/ suppression
  	 case "supprens" :
 	 {
 
-     mysql_query (" DELETE FROM phpab_rens WHERE id='$rens' ") or die ("probleme " .mysql_error());
-     mysql_query (" DELETE FROM phpab_donnee WHERE id_rens='$rens' ") or die ("probleme " .mysql_error());
+     mysql_query (" DELETE FROM phppro_rens WHERE id='$rens' ") or die ("probleme " .mysql_error());
+     mysql_query (" DELETE FROM phppro_donnee WHERE id_rens='$rens' ") or die ("probleme " .mysql_error());
 
 	 ?>
-    <table class=phpab width="80%">
+    <table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phppro2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center" colspan="2"><b><?php echo ADMIN_RENS_SUPP2; ?></b></td></tr></table><br />
@@ -106,20 +106,20 @@ switch($go) // Ajout/ suppression
 
            $rens=addslashes($rens);
 
-	 mysql_query ("INSERT INTO phpab_rens (nom) VALUES ('$rens')") or die ("probleme " .mysql_error());
+	 mysql_query ("INSERT INTO phppro_rens (nom) VALUES ('$rens')") or die ("probleme " .mysql_error());
          $rens2=rens2($rens, $idconnect);
 
-         $query="SELECT id FROM phpab_clubs";
+         $query="SELECT id FROM phppro_clubs";
          $result=mysql_query($query);
          while($row=mysql_fetch_array($result))
          {
-         mysql_query ("INSERT INTO phpab_donnee (id_clubs, id_rens) VALUES ('$row[0]', '$rens2')") or die ("probleme " .mysql_error());
+         mysql_query ("INSERT INTO phppro_donnee (id_clubs, id_rens) VALUES ('$row[0]', '$rens2')") or die ("probleme " .mysql_error());
          }
 
          ?>
-    <table class=phpab width="80%">
+    <table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phppro2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center" colspan="2"><b><?php echo ADMIN_CLUB_CREA2; ?></b></td></tr></table><br />
@@ -140,12 +140,12 @@ switch($go) // Ajout/ suppression
 	 while ( list ($cle, $val)= each ($url) and list ($cle, $val2)= each ($nom) and list ($cle, $val3)= each ($id))
          {
           $rens_nom = addslashes($val2);
-          mysql_query ("UPDATE phpab_rens SET url='$val', nom='$rens_nom' WHERE id='$val3'") or die ("probleme " .mysql_error());
+          mysql_query ("UPDATE phppro_rens SET url='$val', nom='$rens_nom' WHERE id='$val3'") or die ("probleme " .mysql_error());
          }
                ?>
-    <table class=phpab width="80%">
+    <table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phppro2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center" colspan="2"><b><?php echo ADMIN_CLASSE_2; ?></b></td></tr></table><br />
@@ -161,11 +161,11 @@ switch($ga)
             {
             reset ($data);
          while ( list($key, $val)= each($data))
-	 mysql_query (" UPDATE phpab_rens SET id_classe='0' WHERE phpab_rens.id='$val'") or die ("probleme " .mysql_error());
+	 mysql_query (" UPDATE phppro_rens SET id_classe='0' WHERE phppro_rens.id='$val'") or die ("probleme " .mysql_error());
 	 ?>
-    <table class=phpab width="80%">
+    <table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phppro2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center" colspan="2"><b><?php echo ADMIN_RENS_SUPP2; ?></b></td></tr></table><br />
@@ -180,12 +180,12 @@ switch($ga)
 	 {
        	reset ($classe);
 	while ( list($val, $value)= each($classe))
-	 mysql_query ("update phpab_rens SET id_classe='$value' WHERE id='$rens'") or die ("probleme " .mysql_error());
+	 mysql_query ("update phppro_rens SET id_classe='$value' WHERE id='$rens'") or die ("probleme " .mysql_error());
          
          ?>
-    <table class=phpab width="80%">
+    <table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phppro2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center" colspan="2"><b><?php echo ADMIN_CLUB_CREA2; ?></b></td></tr></table><br />
@@ -204,14 +204,14 @@ if ($actionc=="1")
     reset ($id);
 	 while ( list ($cle, $val)= each ($rang) and list ($cle, $val2)= each ($id))
          {
-                 mysql_query ("UPDATE phpab_rens SET rang='$val' WHERE id='$val2'") or die ("probleme " .mysql_error());
+                 mysql_query ("UPDATE phppro_rens SET rang='$val' WHERE id='$val2'") or die ("probleme " .mysql_error());
                  
         }
 
         ?>
-    <table class=phpab width="80%">
+    <table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
+              <td class=phppro2 align="center" colspan="2"><?php echo ADMIN_CLASSE_5; ?></td>
             </tr>
             <tr>
               <td align="center" colspan="2"><b><?php echo ADMIN_CLASSE_2; ?></b></td></tr></table><br />
@@ -224,9 +224,9 @@ if ($actionc=="1")
 
 
 ?>
-<table class=phpab width="80%">
+<table class=phppro width="80%">
             <tr>
-              <td class=phpab2 align="center" colspan="2"><?php echo ADMIN_RENS_TITRE; ?></td>
+              <td class=phppro2 align="center" colspan="2"><?php echo ADMIN_RENS_TITRE; ?></td>
             </tr>
             <tr>
               <td align="center"  colspan="2"><b><?php echo ADMIN_RENS_8; ?></b></td></tr>
@@ -238,7 +238,7 @@ echo "<form method=\"post\" action=\"\">";
 echo "<tr><td>".ADMIN_RENS_SUPP1;
 echo "<select name=\"rens\">";
 echo "<option value=\"0\"> </option>";
-$result = mysql_query("SELECT id, nom FROM phpab_rens ORDER BY nom");
+$result = mysql_query("SELECT id, nom FROM phppro_rens ORDER BY nom");
 
         while($row = mysql_fetch_array($result))
 	{
@@ -276,9 +276,9 @@ echo "</td><td align=right><input type=\"submit\" value=$button></form></td></tr
 echo "<br />";
 echo ADMIN_RENS_10;
 echo "<form method=\"post\" action=\"\">";
-echo "<table class=phpab cellspacing=\"0\" align=center border=\"0\" width=\"80%\"><center>";
-echo "<tr class=phpab3><td>".ADMIN_RENS_12."</td><td>".ADMIN_RENS_13."</td></tr>";
-$query="SELECT id, nom, url FROM phpab_rens";
+echo "<table class=phppro cellspacing=\"0\" align=center border=\"0\" width=\"80%\"><center>";
+echo "<tr class=phppro3><td>".ADMIN_RENS_12."</td><td>".ADMIN_RENS_13."</td></tr>";
+$query="SELECT id, nom, url FROM phppro_rens";
 $result = mysql_query($query);
 
         while($row = mysql_fetch_array($result))
@@ -311,7 +311,7 @@ echo ADMIN_RENS_4;
 echo "<form method=\"post\" action=\"\">";
 echo "<select name=\"rens\">";
 echo "<option value=\"0\"> </option>";
-$result = mysql_query("SELECT id, nom, id_classe FROM phpab_rens ORDER BY nom");
+$result = mysql_query("SELECT id, nom, id_classe FROM phppro_rens ORDER BY nom");
         while($row = mysql_fetch_array($result))
         {
            $a=$row[1]+1;
@@ -323,7 +323,7 @@ $result = mysql_query("SELECT id, nom, id_classe FROM phpab_rens ORDER BY nom");
 echo "</select>";
 echo ADMIN_RENS_1;
 echo "<select name=\"classe[]\">";
-$result = mysql_query("select id, nom FROM phpab_classe ");
+$result = mysql_query("select id, nom FROM phppro_classe ");
         while($row = mysql_fetch_array($result))
         {
            echo ("<option value=\"$row[0]\">$row[1]");
@@ -347,9 +347,9 @@ $nb_rens=$nb_rens+1;
 echo "<form method=\"post\" action=\"\">";
 echo ADMIN_RENS_5;
 echo "<br />";
-$query="SELECT phpab_rens.id, phpab_rens.id_classe, phpab_rens.nom, phpab_classe.id, phpab_classe.nom
-       FROM phpab_rens, phpab_classe
-       WHERE phpab_rens.id_classe=phpab_classe.id";
+$query="SELECT phppro_rens.id, phppro_rens.id_classe, phppro_rens.nom, phppro_classe.id, phppro_classe.nom
+       FROM phppro_rens, phppro_classe
+       WHERE phppro_rens.id_classe=phppro_classe.id";
 $result = mysql_query($query) or die (mysql_error());
 echo "<select name=\"data[]\"  multiple size=$nb_rens>";
            
@@ -371,7 +371,7 @@ echo "</form>";
 
 // Quels renseignements ne sont pas classés ?
 echo ADMIN_RENS_14;
-$query="SELECT phpab_rens.nom FROM phpab_rens where id_classe='0'";
+$query="SELECT phppro_rens.nom FROM phppro_rens where id_classe='0'";
 $result = mysql_query($query);
 $nb=mysql_num_rows($result);
         
@@ -393,14 +393,14 @@ echo "<hr>";
 
 echo "<br />";
 echo ADMIN_RENS_9;
-$query = "SELECT id, nom, rang from phpab_classe ORDER by rang";
+$query = "SELECT id, nom, rang from phppro_classe ORDER by rang";
 echo "<form method=\"post\" action=\"\">";
 $result = mysql_query($query);
      
      while($row = mysql_fetch_array($result))
      {
-        echo "<table class=phpab border=\"0\" cellpadding=\"2\" cellspacing=\"0\" valign=\"bottom\" align=\"center\" width=\"90%\"><tr class=phpab3><td><b> $row[1] </b></td></tr>";
-        $query2="SELECT id, nom, rang, id_classe FROM phpab_rens WHERE id_classe='$row[0]' ORDER by rang";
+        echo "<table class=phppro border=\"0\" cellpadding=\"2\" cellspacing=\"0\" valign=\"bottom\" align=\"center\" width=\"90%\"><tr class=phppro3><td><b> $row[1] </b></td></tr>";
+        $query2="SELECT id, nom, rang, id_classe FROM phppro_rens WHERE id_classe='$row[0]' ORDER by rang";
         $result2=mysql_query($query2);
              
              while($row = mysql_fetch_array($result2))

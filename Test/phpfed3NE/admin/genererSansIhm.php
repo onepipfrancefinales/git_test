@@ -1,7 +1,7 @@
 <?php 
-require '../../Phpleague/phpab/config2.php';
-require '../../Phpleague/phpab/admin/fonctions.php';
-include '../../Phpleague/phpab/lang/lang_fr.php';
+require '../../Phpleague/phpfed3NE/config2.php';
+require '../../Phpleague/phpfed3NE/admin/fonctions.php';
+include '../../Phpleague/phpfed3NE/lang/lang_fr.php';
 include '../../fichierConfig.php';
 ouverture();
 
@@ -28,13 +28,13 @@ foreach ($tableau as $champ)
 	include ("tps1.php3"); 
 	 
 	$result1=$idconnect->query("	SELECT id 
-								FROM phpab_equipes 
+								FROM phpfed3NE_equipes 
 								WHERE id_champ='$champ'");
 
 	while ($row1=mysqli_fetch_array($result1))
 	{ 
-	$query="DELETE FROM phpab_clmnt_graph 
-		WHERE phpab_clmnt_graph.id_equipe='$row1[0]'" ;
+	$query="DELETE FROM phpfed3NE_clmnt_graph 
+		WHERE phpfed3NE_clmnt_graph.id_equipe='$row1[0]'" ;
         mysqli_query($idconnect, $query) or die (mysqli_error($idconnect));
 	}
 $debut=0;
@@ -42,7 +42,7 @@ $fin=1;
 	 
   $result = $idconnect->query("
 			SELECT accession, barrage, relegation 
-			FROM phpab_parametres 
+			FROM phpfed3NE_parametres 
 			WHERE id_champ='$champ'");
 								
 			while ($row=mysqli_fetch_array($result))
@@ -52,9 +52,9 @@ $fin=1;
 				//$relegation = nb_equipes($champ, $idconnect)- $row['relegation'];
 				}
 	
-  $result=$idconnect->query("SELECT max(phpab_journees.numero) 
-							 FROM phpab_journees, phpab_matchs 
-							 WHERE phpab_journees.id=phpab_matchs.id_journee AND buts_dom is not NULL and phpab_journees.id_champ='$champ'");
+  $result=$idconnect->query("SELECT max(phpfed3NE_journees.numero) 
+							 FROM phpfed3NE_journees, phpfed3NE_matchs 
+							 WHERE phpfed3NE_journees.id=phpfed3NE_matchs.id_journee AND buts_dom is not NULL and phpfed3NE_journees.id_champ='$champ'");
 
 $row=mysqli_fetch_array($result);
 $max=$row[0];
@@ -65,7 +65,7 @@ while ($fin<=$max)
   
   $result = $idconnect->query("
 			SELECT * 
-			FROM phpab_clmnt 
+			FROM phpfed3NE_clmnt 
 			ORDER BY POINTS
 			DESC, DIFF DESC, BUTSPOUR 
 			DESC, BUTSCONTRE 
@@ -77,7 +77,7 @@ $pl=1;
          $x=0;
          $id_equipe=$row["ID_EQUIPE"];
 
-         $query="INSERT INTO phpab_clmnt_graph (id_equipe, fin, classement) 
+         $query="INSERT INTO phpfed3NE_clmnt_graph (id_equipe, fin, classement) 
 				 VALUES ('$id_equipe','$fin', '$pl')" ;
          mysqli_query($idconnect, $query);
          $pl++;                    
@@ -86,16 +86,16 @@ $pl=1;
 }     
  
   $result = $idconnect->query("
-			SELECT phpab_clmnt_graph.id_equipe 
-			FROM phpab_clmnt_graph, phpab_equipes 
-			WHERE phpab_equipes.id=phpab_clmnt_graph.id_equipe
-            AND phpab_equipes.id_champ=$champ");
+			SELECT phpfed3NE_clmnt_graph.id_equipe 
+			FROM phpfed3NE_clmnt_graph, phpfed3NE_equipes 
+			WHERE phpfed3NE_equipes.id=phpfed3NE_clmnt_graph.id_equipe
+            AND phpfed3NE_equipes.id_champ=$champ");
 
 			$nb_saving=mysqli_num_rows($result);
  
   $result=$idconnect->query("
 		SELECT * 
-		FROM phpab_equipes 
+		FROM phpfed3NE_equipes 
 		WHERE id_champ=$champ");
 
 		$nb_equipes=mysqli_num_rows($result);            

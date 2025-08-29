@@ -33,11 +33,11 @@ function choix_equipes($champ)
          echo "<form method=\"get\" action=\"\">";
          echo "<table class=\"tablephpl2\" align=\"center\" cellspacing=\"0\"><tr class=\"trphpl3\"><th>".DOMICILE."</th><th align=\"right\">".EXTERIEUR."</th></tr><tr><td align=\"left\">";
          
-		 $result= $idconnect->query("SELECT phpab_clubs.nom 
-									 FROM phpab_clubs, phpab_equipes 
-									 WHERE phpab_equipes.id_champ='$champ' 
-									 AND phpab_clubs.id=phpab_equipes.id_club 
-									 AND phpab_clubs.nom!='exempte' 
+		 $result= $idconnect->query("SELECT phpfed3NE_clubs.nom 
+									 FROM phpfed3NE_clubs, phpfed3NE_equipes 
+									 WHERE phpfed3NE_equipes.id_champ='$champ' 
+									 AND phpfed3NE_clubs.id=phpfed3NE_equipes.id_club 
+									 AND phpfed3NE_clubs.nom!='exempte' 
 									 ORDER BY nom");
          while($row=mysqli_fetch_array($result))
             {
@@ -46,11 +46,11 @@ function choix_equipes($champ)
             }
          echo "</td><td align=\"right\">";
          
-		 $result= $idconnect->query("select phpab_clubs.nom 
-									 from phpab_clubs, phpab_equipes 
+		 $result= $idconnect->query("select phpfed3NE_clubs.nom 
+									 from phpfed3NE_clubs, phpfed3NE_equipes 
 									 WHERE phpl_equipes.id_champ='$champ' 
-									 AND phpab_clubs.id=phpab_equipes.id_club 
-									 AND phpab_clubs.nom!='exempte' 
+									 AND phpfed3NE_clubs.id=phpfed3NE_equipes.id_club 
+									 AND phpfed3NE_clubs.nom!='exempte' 
 									 ORDER BY nom");
         
 		while($row=mysqli_fetch_array($result))
@@ -93,7 +93,7 @@ $champ = $_REQUEST['champ'];
 //@db_clmnt($champ, 0, 0, 0) ;
 //db_clmnt($legende, $type, $accession, $barrage, $relegation,  $champ, $debut, $fin, $pts_victoire, $pts_nul, $pts_defaite) ;
 $result= $idconnect->query("SELECT DOMG, DOMN, EXTG, DOMJOUES, EXTN,EXTJOUES 
-							FROM phpab_clmnt_cache 
+							FROM phpfed3NE_clmnt_cache 
 							WHERE NOM='$IdEqDom' 
 							AND ID_CHAMP='$champ'");
 
@@ -105,7 +105,7 @@ while ($row=mysqli_fetch_array($result))
     $dom_points+= ((($row['EXTG']*2)+($row['EXTN']))/$row['EXTJOUES']);
     }
 $result= $idconnect->query("SELECT EXTG, EXTN, EXTJOUES, DOMG, DOMN, DOMJOUES 
-							FROM phpab_clmnt_cache 
+							FROM phpfed3NE_clmnt_cache 
 							WHERE NOM='$IdEqExt' 
 							AND ID_CHAMP='$champ'";
 //$result=mysql_query($query);
@@ -122,7 +122,7 @@ if (!$entete == 'non') {echo "<table class=\"tablephpl2\" align=\"center\" cells
 // ***************
 
    $result2=$idconnect->query("SELECT DOMBUTSPOUR, DOMG, DOMN, DOMP, DOMBUTSCONTRE, DOMG, DOMN, DOMP 
-							   FROM phpab_clmnt_cache 
+							   FROM phpfed3NE_clmnt_cache 
 							   WHERE NOM='$IdEqDom' 
 							   AND ID_CHAMP='$champ'";
   //$result2=mysql_query($query2);
@@ -135,7 +135,7 @@ if (!$entete == 'non') {echo "<table class=\"tablephpl2\" align=\"center\" cells
 			   }
 
  $result2= $idconnect->query("SELECT EXTG, EXTN, EXTP, EXTBUTSCONTRE, EXTBUTSPOUR  
-							 FROM phpab_clmnt_cache 
+							 FROM phpfed3NE_clmnt_cache 
 							 WHERE NOM='$IdEqExt' 
 							 AND ID_CHAMP='$champ'";
 //$result2=mysql_query($query2);

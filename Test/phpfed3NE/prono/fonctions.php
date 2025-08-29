@@ -4,17 +4,17 @@ function affiche_points ($user_id, $gr_champ, $idconnect)
 
     /*
   $result=$idconnect->query("SELECT points 
-						                 FROM phpab_clmnt_pronos, phpab_membres 
-						                 WHERE phpab_membres.id=phpab_clmnt_pronos.id_membre 
-						                 AND phpab_membres.id_prono='$user_id' 
+						                 FROM phpfed3NE_clmnt_pronos, phpfed3NE_membres 
+						                 WHERE phpfed3NE_membres.id=phpfed3NE_clmnt_pronos.id_membre 
+						                 AND phpfed3NE_membres.id_prono='$user_id' 
                              AND type='general' 
 						                 AND id_champ='$gr_champ'");
 
 */
  $result=$idconnect->query("SELECT points, participation 
-						                 FROM phpab_clmnt_pronos, phpab_membres 
-						                 WHERE phpab_membres.id = phpab_clmnt_pronos.id_membre 
-						                 AND phpab_membres.id_prono='$user_id' 
+						                 FROM phpfed3NE_clmnt_pronos, phpfed3NE_membres 
+						                 WHERE phpfed3NE_membres.id = phpfed3NE_clmnt_pronos.id_membre 
+						                 AND phpfed3NE_membres.id_prono='$user_id' 
                           
 						                 AND id_champ='$gr_champ'");
 
@@ -31,11 +31,11 @@ function affiche_points ($user_id, $gr_champ, $idconnect)
 function affiche_clmnt_general ($user_id, $gr_champ, $idconnect)
 {
  $result=$idconnect->query(" SELECT id_prono 
-					            		   FROM phpab_clmnt_pronos, phpab_membres 
-							               WHERE phpab_membres.id = phpab_clmnt_pronos.id_membre 
+					            		   FROM phpfed3NE_clmnt_pronos, phpfed3NE_membres 
+							               WHERE phpfed3NE_membres.id = phpfed3NE_clmnt_pronos.id_membre 
 							               AND id_champ='$gr_champ' 
 							               AND type='general'  
-							               ORDER by points desc, participation desc, phpab_membres.pseudo");
+							               ORDER by points desc, participation desc, phpfed3NE_membres.pseudo");
  
   $i = "1";
   while ($row=mysqli_fetch_array($result))
@@ -57,11 +57,11 @@ function affiche_clmnt_general ($user_id, $gr_champ, $idconnect)
 function affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect)
 {
   $result=$idconnect->query("SELECT id_prono
-          FROM phpab_clmnt_pronos, phpab_membres
-          WHERE phpab_membres.id=phpab_clmnt_pronos.id_membre 
+          FROM phpfed3NE_clmnt_pronos, phpfed3NE_membres
+          WHERE phpfed3NE_membres.id=phpfed3NE_clmnt_pronos.id_membre 
 		      AND id_champ='$gr_champ' AND type='mensuel_en_cours' 
 		      AND id_champ='$gr_champ' 
-		      ORDER by points desc, participation desc, phpab_membres.pseudo");
+		      ORDER by points desc, participation desc, phpfed3NE_membres.pseudo");
   //$result=mysql_query($query) or die (mysql_error());
   $i = "1";
   while ($row=mysqli_fetch_array($result))
@@ -84,12 +84,12 @@ function affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect)
 function affiche_clmnt_mensuel_30_jours ($user_id, $gr_champ, $idconnect)
 {
   $result=$idconnect->query("SELECT id_prono 
-                             FROM phpab_clmnt_pronos, phpab_membres 
-                             WHERE phpab_membres.id=phpab_clmnt_pronos.id_membre 
+                             FROM phpfed3NE_clmnt_pronos, phpfed3NE_membres 
+                             WHERE phpfed3NE_membres.id=phpfed3NE_clmnt_pronos.id_membre 
                              AND id_champ='$gr_champ' 
                              AND id_champ='$gr_champ' 
                              AND type='mensuel_30_jours' 
-                             ORDER by points desc, participation desc, phpab_membres.pseudo");
+                             ORDER by points desc, participation desc, phpfed3NE_membres.pseudo");
  // $result=mysql_query($query) or die (mysql_error());
   $i = "1";
   while ($row=mysqli_fetch_array($result))
@@ -110,12 +110,12 @@ function affiche_clmnt_mensuel_30_jours ($user_id, $gr_champ, $idconnect)
 function affiche_clmnt_mensuel_hebdo ($user_id, $gr_champ, $idconnect)
 {
   $result=$idconnect->query("SELECT id_prono 
-							               FROM phpab_clmnt_pronos, phpab_membres 
-                             WHERE phpab_membres.id=phpab_clmnt_pronos.id_membre 
+							               FROM phpfed3NE_clmnt_pronos, phpfed3NE_membres 
+                             WHERE phpfed3NE_membres.id=phpfed3NE_clmnt_pronos.id_membre 
                              AND id_champ='$gr_champ' 
                              AND type='hebdo' 
                              AND id_champ='$gr_champ' 
-                             ORDER by points desc, participation desc, phpab_membres.pseudo");
+                             ORDER by points desc, participation desc, phpfed3NE_membres.pseudo");
  
   $i = "1";
   while ($row=mysqli_fetch_array($result))
@@ -179,7 +179,7 @@ function perdu_mot_de_passe()
 function classement_general ($gr_champ, $user_pseudo, $idconnect)
 {  
 $result=$idconnect->query("  SELECT pseudo, points, participation 
-							               FROM phpab_clmnt_pronos
+							               FROM phpfed3NE_clmnt_pronos
 							               WHERE id_champ='$gr_champ' 
 							               AND type = 'general'
 							               ORDER by points desc, participation desc, pseudo LIMIT 0, 10");
@@ -222,20 +222,20 @@ function format_date_timestamp($date){
 
 function grille_admin ($gr_champ, $idconnect)
 { 
-$result=$idconnect->query("SELECT phpab_clubs.nom, CLEXT.nom, phpab_matchs.buts_dom, phpab_matchs.buts_ext, phpab_matchs.id, phpab_matchs.date_reelle, phpab_journees.numero
-                           FROM phpab_clubs, phpab_clubs as CLEXT, phpab_matchs, phpab_journees, phpab_equipes, phpab_equipes as EXT, phpab_gr_championnats
-                           WHERE phpab_clubs.id=phpab_equipes.id_club
+$result=$idconnect->query("SELECT phpfed3NE_clubs.nom, CLEXT.nom, phpfed3NE_matchs.buts_dom, phpfed3NE_matchs.buts_ext, phpfed3NE_matchs.id, phpfed3NE_matchs.date_reelle, phpfed3NE_journees.numero
+                           FROM phpfed3NE_clubs, phpfed3NE_clubs as CLEXT, phpfed3NE_matchs, phpfed3NE_journees, phpfed3NE_equipes, phpfed3NE_equipes as EXT, phpfed3NE_gr_championnats
+                           WHERE phpfed3NE_clubs.id=phpfed3NE_equipes.id_club
                            AND CLEXT.id=EXT.id_club
-                           AND phpab_equipes.id=phpab_matchs.id_equipe_dom
-                           AND EXT.id=phpab_matchs.id_equipe_ext
-                           AND phpab_matchs.id_journee=phpab_journees.id
-                           AND phpab_journees.id_champ=phpab_gr_championnats.id_champ
-                           AND phpab_gr_championnats.id='$gr_champ'
-                           AND phpab_matchs.buts_dom is null
-                           AND phpab_matchs.buts_ext is null
-                           AND phpab_clubs.nom!='exempte'
+                           AND phpfed3NE_equipes.id=phpfed3NE_matchs.id_equipe_dom
+                           AND EXT.id=phpfed3NE_matchs.id_equipe_ext
+                           AND phpfed3NE_matchs.id_journee=phpfed3NE_journees.id
+                           AND phpfed3NE_journees.id_champ=phpfed3NE_gr_championnats.id_champ
+                           AND phpfed3NE_gr_championnats.id='$gr_champ'
+                           AND phpfed3NE_matchs.buts_dom is null
+                           AND phpfed3NE_matchs.buts_ext is null
+                           AND phpfed3NE_clubs.nom!='exempte'
                            AND CLEXT.nom!='exempte'
-                           ORDER by phpab_matchs.date_reelle, phpab_clubs.nom
+                           ORDER by phpfed3NE_matchs.date_reelle, phpfed3NE_clubs.nom
                            LIMIT 0, 10");
 
 $i=0;
@@ -246,9 +246,9 @@ $clubs_nom = stripslashes($row[0]);
 $clubs_nom1 = stripslashes($row[1]);
 
 $result2=$idconnect->query( "SELECT pronostic 
-					                   FROM phpab_pronostics, phpab_gr_championnats 
-							               WHERE phpab_pronostics.id_match='$row[4]' 
-							               AND phpab_gr_championnats.id='$gr_champ' 
+					                   FROM phpfed3NE_pronostics, phpfed3NE_gr_championnats 
+							               WHERE phpfed3NE_pronostics.id_match='$row[4]' 
+							               AND phpfed3NE_gr_championnats.id='$gr_champ' 
 							               AND id_membre=id_master");
 
 $nb_pronos= mysqli_num_rows($result2);
@@ -307,7 +307,7 @@ if ($nb_pronos == "0") {$prono="0";}
 
   echo "<td><div class=\"blanc\">$clubs_nom1</div></td>";
 
-  $resultats2=$idconnect->query("SELECT tps_avant_prono FROM phpab_gr_championnats WHERE id='$gr_champ'");
+  $resultats2=$idconnect->query("SELECT tps_avant_prono FROM phpfed3NE_gr_championnats WHERE id='$gr_champ'");
 
    while ($row2=mysqli_fetch_array($resultats2))
    {
@@ -337,7 +337,7 @@ if ($nb_pronos == "0") {$prono="0";}
 function nom_championnat($gr_champ, $idconnect) {
 
     $resultat=$idconnect->query("SELECT nom
-								 FROM phpab_gr_championnats 
+								 FROM phpfed3NE_gr_championnats 
 								 WHERE id = '$gr_champ' ");
 
    while ($row = mysqli_fetch_array($resultat)) {
@@ -370,16 +370,16 @@ if (!($type=="general" or $type=="mensuel_en_cours" or $type=="mensuel_30_jours"
 // classement mensuel_en_cours
 if ($type=="mensuel_en_cours")
 {
-   mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos 
+   mysqli_query($idconnect, ("DELETE FROM phpfed3NE_clmnt_pronos 
                               WHERE id_champ='$gr_champ' 
                               AND type='mensuel_en_cours'"));
 
    $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
-                              FROM phpab_membres, phpab_pronostics, phpab_matchs, phpab_gr_championnats
-                              WHERE phpab_pronostics.id_champ=phpab_gr_championnats.id
-                              AND phpab_gr_championnats.id='$gr_champ'
-                              AND id_membre=phpab_membres.id
-                              AND phpab_matchs.id=id_match
+                              FROM phpfed3NE_membres, phpfed3NE_pronostics, phpfed3NE_matchs, phpfed3NE_gr_championnats
+                              WHERE phpfed3NE_pronostics.id_champ=phpfed3NE_gr_championnats.id
+                              AND phpfed3NE_gr_championnats.id='$gr_champ'
+                              AND id_membre=phpfed3NE_membres.id
+                              AND phpfed3NE_matchs.id=id_match
                               AND MONTH (date_reelle) = MONTH (NOW())
                               AND YEAR (date_reelle) = YEAR (NOW())
                               GROUP by pseudo
@@ -388,7 +388,7 @@ if ($type=="mensuel_en_cours")
    while ($row=mysqli_fetch_array($result))
          {
          $row[1]=addslashes($row[1]);
-         mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
+         mysqli_query($idconnect, ("INSERT INTO phpfed3NE_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
                                     values ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_en_cours')"));
          }
 }          
@@ -396,16 +396,16 @@ if ($type=="mensuel_en_cours")
 // classement mensuel
 if ($type=="mensuel_30_jours")
 {
-   mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos 
+   mysqli_query($idconnect, ("DELETE FROM phpfed3NE_clmnt_pronos 
                               WHERE id_champ='$gr_champ' 
                               AND type='mensuel_30_jours'"));
 
    $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) as total, SUM(participation) as participations
-                              FROM phpab_membres, phpab_pronostics, phpab_matchs, phpab_gr_championnats
-                              WHERE phpab_pronostics.id_champ=phpab_gr_championnats.id
-                              AND phpab_gr_championnats.id='$gr_champ'
-                              AND id_membre=phpab_membres.id
-                              AND phpab_matchs.id=id_match
+                              FROM phpfed3NE_membres, phpfed3NE_pronostics, phpfed3NE_matchs, phpfed3NE_gr_championnats
+                              WHERE phpfed3NE_pronostics.id_champ=phpfed3NE_gr_championnats.id
+                              AND phpfed3NE_gr_championnats.id='$gr_champ'
+                              AND id_membre=phpfed3NE_membres.id
+                              AND phpfed3NE_matchs.id=id_match
                               AND DATE_ADD(date_reelle, INTERVAL 30 DAY) >= NOW()
                               GROUP by pseudo
                               ORDER by total, participations");
@@ -414,7 +414,7 @@ if ($type=="mensuel_30_jours")
        while ($row=mysqli_fetch_array($result))
        {
        $row[1]=addslashes($row[1]);
-       mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
+       mysqli_query($idconnect, ("INSERT INTO phpfed3NE_clmnt_pronos (id_champ, id_membre, pseudo, points, participation, type) 
                                   values ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'mensuel_30_jours')"));
        }
 }
@@ -423,27 +423,27 @@ if ($type=="hebdo")
 {
 
 
-   mysqli_query($idconnect, ("DELETE FROM phpab_clmnt_pronos 
+   mysqli_query($idconnect, ("DELETE FROM phpfed3NE_clmnt_pronos 
                               WHERE id_champ='$gr_champ' 
                               AND type='hebdo'"));
 /*
    $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) , SUM(participation) as participations
-                              FROM phpab_membres, phpab_pronostics, phpab_matchs, phpab_gr_championnats
-                              WHERE phpab_pronostics.id_champ=phpab_gr_championnats.id
-                              AND phpab_gr_championnats.id='$gr_champ'
-                              AND id_membre=phpab_membres.id
-                              AND phpab_matchs.id=id_match
-                              AND DATE_ADD( phpab_matchs.date_reelle, INTERVAL 7 DAY) >= NOW()
+                              FROM phpfed3NE_membres, phpfed3NE_pronostics, phpfed3NE_matchs, phpfed3NE_gr_championnats
+                              WHERE phpfed3NE_pronostics.id_champ=phpfed3NE_gr_championnats.id
+                              AND phpfed3NE_gr_championnats.id='$gr_champ'
+                              AND id_membre=phpfed3NE_membres.id
+                              AND phpfed3NE_matchs.id=id_match
+                              AND DATE_ADD( phpfed3NE_matchs.date_reelle, INTERVAL 7 DAY) >= NOW()
                               GROUP by pseudo
                               ORDER by  participations");
 */
 
  $result=$idconnect->query("SELECT id_membre, pseudo, SUM(points) , SUM(participation) as participations
-                              FROM phpab_membres, phpab_pronostics, phpab_matchs
-                              WHERE phpab_pronostics.id_membre=phpab_membres.id
-                               AND phpab_pronostics.id_champ ='$gr_champ'
-                              AND phpab_matchs.id=id_match
-                              AND DATE_ADD( phpab_matchs.date_reelle, INTERVAL 7 DAY) >= NOW()
+                              FROM phpfed3NE_membres, phpfed3NE_pronostics, phpfed3NE_matchs
+                              WHERE phpfed3NE_pronostics.id_membre=phpfed3NE_membres.id
+                               AND phpfed3NE_pronostics.id_champ ='$gr_champ'
+                              AND phpfed3NE_matchs.id=id_match
+                              AND DATE_ADD( phpfed3NE_matchs.date_reelle, INTERVAL 7 DAY) >= NOW()
                               GROUP by pseudo
                               ORDER by  participations");
 
@@ -451,7 +451,7 @@ if ($type=="hebdo")
        {
   
        $row[1]=addslashes($row[1]);
-       mysqli_query($idconnect, ("INSERT INTO phpab_clmnt_pronos (id_champ, id_membre, pseudo, points, participation,  type) 
+       mysqli_query($idconnect, ("INSERT INTO phpfed3NE_clmnt_pronos (id_champ, id_membre, pseudo, points, participation,  type) 
 								                  VALUES ('$gr_champ', '$row[0]', '$row[1]', '$row[2]', '$row[3]', 'hebdo')"));
       
     }
@@ -461,7 +461,7 @@ if ($type=="hebdo")
 if (isset($_REQUEST['complet'])) {$complet=$_REQUEST['complet'];} else {$complet='';}
 
 $result=$idconnect->query("SELECT pseudo, points, participation 
-                           FROM phpab_clmnt_pronos
+                           FROM phpfed3NE_clmnt_pronos
                            WHERE id_champ='$gr_champ' 
                            AND type='$type'
                            ORDER by points desc, participation desc, pseudo");
@@ -493,7 +493,7 @@ if (!($complet=='1')) echo "<tr><td colspan=\"4\" align = \"right\"><br><a href=
 function club($pseudo, $idconnect){
 
   $result=$idconnect->query("SELECT ville
-                              FROM phpab_membres
+                              FROM phpfed3NE_membres
                               WHERE pseudo = '$pseudo' ");
 
    while ($row = mysqli_fetch_array($result)) {
@@ -519,9 +519,9 @@ echo "</select>";
 function pseudo_admin ($gr_champ, $idconnect)
 {
  $resultat=$idconnect->query("SELECT pseudo 
-							                FROM phpab_membres, phpab_gr_championnats 
-							                WHERE phpab_gr_championnats.id_master=phpab_membres.id 
-							                AND phpab_gr_championnats.id='$gr_champ'");
+							                FROM phpfed3NE_membres, phpfed3NE_gr_championnats 
+							                WHERE phpfed3NE_gr_championnats.id_master=phpfed3NE_membres.id 
+							                AND phpfed3NE_gr_championnats.id='$gr_champ'");
  
   while ($row= mysqli_fetch_array($resultat))
   {  
@@ -548,8 +548,8 @@ if (is_numeric($gr_champ))
 // echo $minChampLigue; echo "<br>";
 // echo $maxChampLigue; echo "<br>";
  $resultat=$idconnect->query("SELECT DISTINCT id, nom
-                              FROM phpab_gr_championnats 
-                              WHERE  phpab_gr_championnats.activ_prono='1' 
+                              FROM phpfed3NE_gr_championnats 
+                              WHERE  phpfed3NE_gr_championnats.activ_prono='1' 
                               AND id BETWEEN $minChampLigue AND $maxChampLigue
                               ORDER by nom asc");
                 
@@ -568,7 +568,7 @@ if (is_numeric($gr_champ))
 function nb_equipes($id_champ, $idconnect)
          {
 	      $result=$idconnect->query("SELECT id 
-                                   FROM phpab_equipes 
+                                   FROM phpfed3NE_equipes 
                                    WHERE id_champ='$id_champ'");
        
          $nb_equipes=mysqli_num_rows( $result );
@@ -584,7 +584,7 @@ if ($user_pseudo and $user_mdp)
 	{
 	//  echo "test OK fonctions";echo "<br>";
     $result=$idconnect->query( "SELECT mot_de_passe, id_prono 
-									               FROM phpab_membres 
+									               FROM phpfed3NE_membres 
 									               WHERE pseudo='$user_pseudo'");
         $row = mysqli_fetch_array($result); 
         

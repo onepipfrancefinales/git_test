@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -23,11 +23,11 @@ echo "numero :".$numero;echo "<br />";
 if (empty ($numero))
 {   
 
-  $resultats=$idconnect->query("  SELECT max(phpab_journees.numero) 
-								  from phpab_journees, phpab_matchs 
-								  where phpab_journees.id=phpab_matchs.id_journee 
+  $resultats=$idconnect->query("  SELECT max(phppro_journees.numero) 
+								  from phppro_journees, phppro_matchs 
+								  where phppro_journees.id=phppro_matchs.id_journee 
 								  and buts_dom is not NULL 
-								  and phpab_journees.id_champ='$champ'");
+								  and phppro_journees.id_champ='$champ'");
    
      while ($row=mysqli_fetch_array($resultats))
        {
@@ -44,16 +44,16 @@ echo "----------------";
 echo "voir admin/resultats-> pronostic";
 
 //$resultats2=$idconnect->query("SELECT pronostic, id_membre, buts_dom, buts_ext 
-//								 FROM phpab_pronostics WHERE id_match='$val_matchs_id'");
+//								 FROM phppro_pronostics WHERE id_match='$val_matchs_id'");
           
  //          while ($row2=mysqli_fetch_array($resultats2))
  //          {
-            //  if ($buts_dom >$buts_ext and $row2[0]=="1"){$query3="UPDATE phpab_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
-             // elseif ($buts_dom ==$buts_ext and $row2[0]=="N"){$query3="UPDATE phpab_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
-            //  elseif ($buts_dom <$buts_ext and $row2[0]=="2"){$query3="UPDATE phpab_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+            //  if ($buts_dom >$buts_ext and $row2[0]=="1"){$query3="UPDATE phppro_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+             // elseif ($buts_dom ==$buts_ext and $row2[0]=="N"){$query3="UPDATE phppro_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+            //  elseif ($buts_dom <$buts_ext and $row2[0]=="2"){$query3="UPDATE phppro_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
              // else 
 			 // {
-			 //  mysqli_query ($idconnect, ("UPDATE phpab_pronostics 
+			 //  mysqli_query ($idconnect, ("UPDATE phppro_pronostics 
 			//			SET points='$pts_prono_participation', participation='1' 
 			//			WHERE id_membre='$row2[1]' 	AND id_match='$val_matchs_id'"));
 		     // }
@@ -82,18 +82,18 @@ if ($action2=="1")
     if ( !(($val_butd=='') or ($val_butv=='')))
        {
         //Insertion des données dans la table matchs
-		$requete="UPDATE phpab_matchs SET phpab_matchs.buts_dom='$val_butd', phpab_matchs.buts_ext='$val_butv', phpab_matchs.date_reelle='$date_us'
-                     WHERE phpab_matchs.id='$val_matchs_id'";
+		$requete="UPDATE phppro_matchs SET phppro_matchs.buts_dom='$val_butd', phppro_matchs.buts_ext='$val_butv', phppro_matchs.date_reelle='$date_us'
+                     WHERE phppro_matchs.id='$val_matchs_id'";
 					 
 			
 		//Insertion des données dans la table pronostics	
-		$requetePronos="UPDATE phpab_pronostics SET buts_dom='$val_butd', buts_ext='$val_butv'
+		$requetePronos="UPDATE phppro_pronostics SET buts_dom='$val_butd', buts_ext='$val_butv'
                      WHERE id_match='$val_matchs_id'";		 
 
        
 		// Paramétres des pronostics
 		$resultats4=$idconnect->query("SELECT pts_prono_exact, pts_prono_participation 
-								 FROM phpab_gr_championnats 
+								 FROM phppro_gr_championnats 
 								 WHERE id_champ='$champ'");
 
            while ($row4=mysqli_fetch_array($resultats4))
@@ -107,16 +107,16 @@ if ($action2=="1")
 
 		// Contrôle des pronosctics et affectation des points
 		$resultats2=$idconnect->query("SELECT pronostic, id_membre 
-								 FROM phpab_pronostics WHERE id_match='$val_matchs_id'");
+								 FROM phppro_pronostics WHERE id_match='$val_matchs_id'");
           
            while ($row2=mysqli_fetch_array($resultats2))
            {
-              if ($val_butd>$val_butv and $row2[0]=="1"){$query3="UPDATE phpab_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
-              elseif ($val_butd==$val_butv and $row2[0]=="N"){$query3="UPDATE phpab_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
-              elseif ($val_butd<$val_butv and $row2[0]=="2"){$query3="UPDATE phpab_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+              if ($val_butd>$val_butv and $row2[0]=="1"){$query3="UPDATE phppro_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+              elseif ($val_butd==$val_butv and $row2[0]=="N"){$query3="UPDATE phppro_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
+              elseif ($val_butd<$val_butv and $row2[0]=="2"){$query3="UPDATE phppro_pronostics SET points='$points_prono_exact', participation='1' WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'";}
               else 
 			  {
-		mysqli_query ($idconnect, ("UPDATE phpab_pronostics 
+		mysqli_query ($idconnect, ("UPDATE phppro_pronostics 
 						SET points='$pts_prono_participation', participation='1' 
 						WHERE id_membre='$row2[1]' 	AND id_match='$val_matchs_id'")); 
 				}
@@ -126,15 +126,15 @@ if ($action2=="1")
     
        elseif (($val_butv=='') or ($val_butd==''))
        {
-          mysqli_query ($idconnect, ("UPDATE phpab_matchs 
-					SET phpab_matchs.buts_dom=NULL, phpab_matchs.buts_ext=NULL, phpab_matchs.date_reelle='$date_us'
-                    WHERE phpab_matchs.id='$val_matchs_id' ")) ;	
+          mysqli_query ($idconnect, ("UPDATE phppro_matchs 
+					SET phppro_matchs.buts_dom=NULL, phppro_matchs.buts_ext=NULL, phppro_matchs.date_reelle='$date_us'
+                    WHERE phppro_matchs.id='$val_matchs_id' ")) ;	
   
-         $resultats2=$idconnect->query("SELECT pronostic, id_membre FROM phpab_pronostics WHERE id_match='$val_matchs_id'");
+         $resultats2=$idconnect->query("SELECT pronostic, id_membre FROM phppro_pronostics WHERE id_match='$val_matchs_id'");
          
          while ($row2=mysqli_fetch_array($resultats2))
          { 
-            mysqli_query ($idconnect, ("UPDATE phpab_pronostics 
+            mysqli_query ($idconnect, ("UPDATE phppro_pronostics 
 			SET points = '0', participation='0' 
 			WHERE id_membre='$row2[1]' AND id_match='$val_matchs_id'") or die (mysqli_error()));
          } 
@@ -149,9 +149,9 @@ if ($action2=="1")
   }
 ?>
 
-<table class=phpab width="80%">
+<table class=phppro width="80%">
   <tr>
-    <td class=phpab2 align="center" colspan="3"><?php echo ADMIN_RESULTS_TITRE." "; affich_champ ($champ, $idconnect); ?></td>
+    <td class=phppro2 align="center" colspan="3"><?php echo ADMIN_RESULTS_TITRE." "; affich_champ ($champ, $idconnect); ?></td>
   </tr>
   <tr>
     <td align="center"><?php journees ($champ, $numero, $action, $idconnect);?><br /><br /></td>

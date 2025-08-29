@@ -37,7 +37,7 @@ if (isset($type))
 {
   	
    $res=$idconnect->query("SELECT accession, barrage, estimation, relegation, id_equipe_fetiche, fiches_clubs
-                         FROM phpab_parametres
+                         FROM phpfed3NE_parametres
                          WHERE id_champ='$champ'");
    $row=mysqli_fetch_array($res);
 	
@@ -47,10 +47,10 @@ if (isset($type))
     $fiches_clubs = $row['fiches_clubs'];
     $id_equipe_fetiche=$row['id_equipe_fetiche'];
     
-    $res2=$idconnect->query("SELECT phpab_equipes.id FROM phpab_equipes, phpab_clubs
-							WHERE phpab_clubs.id=phpab_equipes.id_club 
+    $res2=$idconnect->query("SELECT phpfed3NE_equipes.id FROM phpfed3NE_equipes, phpfed3NE_clubs
+							WHERE phpfed3NE_clubs.id=phpfed3NE_equipes.id_club 
 							AND id_champ='$champ'
-							AND phpab_clubs.nom='exempte'");
+							AND phpfed3NE_clubs.nom='exempte'");
     //$resultats=mysql_query($requete) or die (mysql_error());
     $exempte=mysqli_num_rows($res2);
     if ($exempte=='1') {$relegation = $nb_equipe - $row['relegation']-1;}
@@ -60,7 +60,7 @@ if ($debut=="1" and $fin==$nb_journees)
 {
   
   
-   $res3=$idconnect->query("SELECT max(phpab_journees.numero) FROM phpab_journees, phpab_matchs WHERE phpab_journees.id=phpab_matchs.id_journee and buts_dom is not NULL and     phpab_journees.id_champ='$champ'");
+   $res3=$idconnect->query("SELECT max(phpfed3NE_journees.numero) FROM phpfed3NE_journees, phpfed3NE_matchs WHERE phpfed3NE_journees.id=phpfed3NE_matchs.id_journee and buts_dom is not NULL and     phpfed3NE_journees.id_champ='$champ'");
     //$result=mysql_query($query) or die (mysql_error());
         while ($row=mysqli_fetch_array($res3))
         {
@@ -80,7 +80,7 @@ if (isset ($legende)) $legende =$legende;else $legende= "";
 if ($debut=="1" and $fin==$nb_journees)
 {
     $requete=$idconnect->query("SELECT DISTINCT * 
-								FROM phpab_clmnt_cache 
+								FROM phpfed3NE_clmnt_cache 
 								WHERE ID_CHAMP='$champ' 
 								ORDER BY POINTS DESC, PEN DESC, DIFF DESC, BUTSPOUR DESC , BUTSCONTRE 
 								ASC, NOM");

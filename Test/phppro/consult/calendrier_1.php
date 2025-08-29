@@ -1,18 +1,18 @@
 <?php
 //***********************************************************************/
-// phpabeague : gestionnaire de championnat                              */
+// phpproeague : gestionnaire de championnat                              */
 // ============================================                         */
 //                                                                      */
 // Version : 0.82                                                       */
 // Copyright (c) 2004    Alexis MANGIN                                  */
-// http://phpabeague.univert.org                                         */
+// http://phpproeague.univert.org                                         */
 //                                                                      */
 // This program is free software. You can redistribute it and/or modify */
 // it under the terms of the GNU General Public License as published by */
 // the Free Software Foundation; either version 2 of the License.       */
 //                                                                      */
 //***********************************************************************/
-// Support technique : http://phpabeague.univert.org/forum               */
+// Support technique : http://phpproeague.univert.org/forum               */
 //                                                                      */
 //***********************************************************************/
 
@@ -41,19 +41,19 @@ else
          
       if ($numero == "")
       {
-      $result= $idconnect->query("SELECT max(phpab_journees.numero) 
-								  FROM phpab_journees, phpab_matchs 
-								  where phpab_journees.id=phpab_matchs.id_journee 
+      $result= $idconnect->query("SELECT max(phppro_journees.numero) 
+								  FROM phppro_journees, phppro_matchs 
+								  where phppro_journees.id=phppro_matchs.id_journee 
 								  and buts_dom is not NULL 
-								  and phpab_journees.id_champ='$champ'");
+								  and phppro_journees.id_champ='$champ'");
       }
       elseif (isset($numero))
       {
-      $result=$idconnect->query(" SELECT max(phpab_journees.numero) 
-								  FROM phpab_journees, phpab_matchs 
-								  where phpab_journees.id=phpab_matchs.id_journee 
-								  and phpab_journees.id_champ='$champ' 
-								  and phpab_journees.numero='$numero'");
+      $result=$idconnect->query(" SELECT max(phppro_journees.numero) 
+								  FROM phppro_journees, phppro_matchs 
+								  where phppro_journees.id=phppro_matchs.id_journee 
+								  and phppro_journees.id_champ='$champ' 
+								  and phppro_journees.numero='$numero'");
       }
       //$result=mysql_query($query);
 
@@ -97,8 +97,8 @@ else
 
              // SELECTION DES PARAMETRES
              $result=$idconnect->query("SELECT fiches_clubs, id_equipe_fetiche
-                               FROM phpab_parametres
-                               WHERE phpab_parametres.id_champ='$champ'");
+                               FROM phppro_parametres
+                               WHERE phppro_parametres.id_champ='$champ'");
 
              $row=mysqli_fetch_array($result);
 

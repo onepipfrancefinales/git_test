@@ -27,13 +27,13 @@ echo "pass : ".$pass;echo "<br>";
 	{
 
 		echo "test5";echo "<br>";
-   	 header("Location: /Test/phpab/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
+   	 header("Location: /Test/phpfed3NE/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
 	}
 	elseif ($_REQUEST['user']=='' || $_REQUEST['pass']=='')
 	{
 
 		echo "test6";echo "<br>";
-	 header("Location: /Test/phpab/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
+	 header("Location: /Test/phpfed3NE/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
 	 echo "test66";echo "<br>";
     }
 	
@@ -45,7 +45,7 @@ echo "pass : ".$pass;echo "<br>";
 		$user = addslashes($_REQUEST['user']);
         $pass = $_REQUEST['pass'];
         $result =$idconnect->query( "SELECT mot_de_passe 
-									 FROM phpab_membres 
+									 FROM phpfed3NE_membres 
 									 WHERE pseudo='$user'");
 		//$result = mysql_query($query);
 		$row = mysqli_fetch_array($result);
@@ -58,7 +58,7 @@ echo "pass : ".$pass;echo "<br>";
 
 		if($row['mot_de_passe'] != $password_crypt or mysqli_num_rows($result)=="0")
 		{
-        	header("Location: /Test/phpab/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=1");
+        	header("Location: /Test/phpfed3NE/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=1");
 		}
 			
 		else
@@ -69,7 +69,7 @@ echo "pass : ".$pass;echo "<br>";
     	$ip = $_SERVER["REMOTE_ADDR"];
 		$time = time();
 
-		$result =$idconnect->query( "SELECT * FROM phpab_membres WHERE pseudo='$user'");
+		$result =$idconnect->query( "SELECT * FROM phpfed3NE_membres WHERE pseudo='$user'");
 		//$result = mysql_query($query) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
 		$row = mysqli_fetch_array($result);
 		$mot_de_passe = $row['mot_de_passe'];
@@ -77,7 +77,7 @@ echo "pass : ".$pass;echo "<br>";
 		//$bdd = new PDO('mysql:host=127.0.0.1;dbname=onepip-france-db3;charset=utf8', 'root', '');
 		
 		
-		mysqli_query( $idconnect,("UPDATE phpab_membres SET ip='$ip', last_connect='$time' WHERE pseudo='$user'"));
+		mysqli_query( $idconnect,("UPDATE phpfed3NE_membres SET ip='$ip', last_connect='$time' WHERE pseudo='$user'"));
         if ($autoidentification) {$expire=365*24*3600;}
         else {$expire=3600;}
 		
@@ -94,8 +94,8 @@ echo "pass : ".$pass;echo "<br>";
 	echo "login.php : user -".$_SESSION['user'];echo "<br>";
 	echo "login.php : mot_de_passe -".$_SESSION['mot_de_passe'];echo "<br>";
 
-		//header("Location: /Test/phpab/prono/index.php?champLigue=$champLigue");
-		header("Location: /Test/phpab/prono/index.php?page=pronos&champLigue=$champLigue");
+		//header("Location: /Test/phpfed3NE/prono/index.php?champLigue=$champLigue");
+		header("Location: /Test/phpfed3NE/prono/index.php?page=pronos&champLigue=$champLigue");
 		
 	}
 	}
