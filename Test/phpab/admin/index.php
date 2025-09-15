@@ -22,7 +22,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Ligue Bourgogne France Comté - Administration</title>
+<title>Admin - Ligue Occitanie</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>

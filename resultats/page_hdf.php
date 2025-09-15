@@ -66,7 +66,7 @@ $comiteNom = "des Flandres"; ?>
       <!-- Colonne centrale -->
       <td class="colonneCentrale center">
         <h1> Compétitions Régionales</h1>
-        <h2 class="titre">Ligue Haut de France </h2>
+        <h2 class="titre">Ligue Hauts de France </h2>
         <h2 class="commentaire">Le comité territorial des Flandres est devenu<br>
           la ligue des Hauts de France en 2018.</h2>
         <?php
@@ -87,9 +87,20 @@ $comiteNom = "des Flandres"; ?>
             $champ2 = $champ + 100;
             $nomSerie = "(Ex honneur/ promotion honneur)";
           } else if ($idCompetition == 18) {
+
+            if ($champ < 160185)
+              {           
             $competition =  $REG2;
             $champ2 = $champ + 9000;
             $nomSerie = "(Ex 1re/ 2me série)";
+              }
+              else
+                 {           
+            $competition =  "Promotion Régionale 2";
+            $champ2 = 0;
+            $nomSerie = "(Ex 1re/ 2me série)";
+              }
+          
           } else if ($idCompetition == 19) {
             $competition =  $REG3;
             $champ2 = 0;
@@ -97,6 +108,9 @@ $comiteNom = "des Flandres"; ?>
           }
 
           echo "  <br>" . "<br>";
+          if ($champ == 160185)
+echo "<h5>" .  $competition . " - " . "Poule " . substr($champ, -1)-4;
+            else
           echo "<h5>" .  $competition . " - " . "Poule " . substr($champ, -1);
           echo "<br>"; ?>
 

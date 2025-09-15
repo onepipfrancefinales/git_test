@@ -45,19 +45,19 @@ if ($champLigue == 15)
 <p class="colorRed size7 bold">
   Concours pronostics <br>
 ligue <?php echo $titre; ?></p>
-<h2 class="size6"> (EN PHASE DE TEST)</h2>
 
 
+<!--
 <object data="/Test/<?php echo $cptePhp; ?>/prono/index.php?champLigue=<?php echo $champLigue; ?>"
   height="1500" width="100%">
 </object>
+-->
 
-<!--
 <object data="/Phpleague/<?php echo $cptePhp; ?>/prono/index.php?champLigue=<?php echo $champLigue; ?>"
   height="1500" width="100%">
 </object>
 
-  -->
+  
 
 
     

@@ -34,11 +34,15 @@ if (isset($_POST['activ_prono'])) {$activ_prono=$_POST['activ_prono'];} else {$a
 if ($action2=="creer" and isset($nom_group) and $action=="creer")
 { 
   echo "ligue : ".$ligue; echo "<br>";
-  $ligueFin = $ligue + 10000;
+  $ligue2 = $ligue + 100;
+  echo "ligue2 : ".$ligue2; echo "<br>";
+  $ligueFin = $ligue + 10;
+   $ligueFin2 = $ligue2 + 10;
   echo "ligueFin : ".$ligueFin;echo "<br>";
   $resultats=$idconnect->query(" SELECT MAX(id)
 							  FROM phppro_gr_championnats 
-							  WHERE id BETWEEN '$ligue' AND '$ligueFin' ");
+							  WHERE id BETWEEN '$ligue' AND '$ligueFin'
+                OR id BETWEEN '$ligue2' AND '$ligueFin2' ");
 
  while($row = mysqli_fetch_array($resultats))
       {

@@ -113,6 +113,26 @@ if (isset($_GET['champ'])) $codeLigue = $_GET['champ']; else $codeLigue ="AAAA";
       echo "Provence Alpes Côte d'Azur - Administration";
       $ligue = 220000;
       break;
+     
+      case ($codeLigue >= 880000 and $codeLigue < 890000):
+      echo "Compétitions Féminines - Administration";
+      $ligue = 880280;
+      break;
+
+        case ($codeLigue >= 990110 and $codeLigue < 990140):
+      echo "Compétitions Pro - Administration";
+      $ligue =990110;
+      break;
+
+       case ($codeLigue >= 990140 and $codeLigue < 990150 OR $codeLigue >= 990240 and $codeLigue < 990250):
+      echo "Compétitions Fédérale 1 - Administration";
+      $ligue = 990140;
+      break;
+
+       case ($codeLigue >= 990150 and $codeLigue < 990160 OR $codeLigue >= 990250 and $codeLigue < 990260):
+      echo "Compétitions Fédérale 2 - Administration";
+      $ligue = 990150;
+      break;
 	
 		 }
      /*

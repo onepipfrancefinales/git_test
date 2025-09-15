@@ -194,7 +194,7 @@ nomLigue2($bddComite, $champ, $bdd);
 
 			foreach ($tabLigue as $champ) {
 
-
+echo "<div>";
 				//echo "champ : ".$champ;
 				//Traitement du numéro des poules
 
@@ -270,6 +270,7 @@ nomLigue2($bddComite, $champ, $bdd);
 
 
 				$nbreChamp = $nbreChamp + 1;
+				echo "</div>";
 			}
 		}
 		//************************************  
@@ -296,7 +297,7 @@ nomLigue2($bddComite, $champ, $bdd);
 			for ($i = $champ; $i < $finChamp; $i++) {
 				divisionPlusPoule($bddComite, $champ, $bdd);
 			?>
-
+<div>
 				<table class="width90PC marginAuto" style = "padding-bottom : 10px" >
 					<tr>
 						<td class="titrePlus"><?php echo $poule; ?></td>
@@ -325,6 +326,7 @@ nomLigue2($bddComite, $champ, $bdd);
 				echo "<br>";
 				$champ = $champ + 1;
 				$nbreChamp = $nbreChamp + 1;
+				echo "</div>";
 			}
 		} else {
 
@@ -333,6 +335,7 @@ nomLigue2($bddComite, $champ, $bdd);
 			listePoule($champ, $bddComite, $bdd);
 
 			foreach ($tabDivisions as $champ) {
+				echo "<div>";
 				echo "<br>";
 				// echo "champ :".$champ;
 				//  echo "champ apres else :".$champ;
@@ -369,8 +372,10 @@ nomLigue2($bddComite, $champ, $bdd);
 
 		<?php
 				$nbreChamp = $nbreChamp + 1;
+					echo "</div>";
 			}
 		}
+
 		/*
   <!--
   <a href="prono/prono.php">test</a>
@@ -385,5 +390,4 @@ nomLigue2($bddComite, $champ, $bdd);
 		?>
 	</div>
 </body>
-
 </html>
