@@ -6,12 +6,12 @@ $login="root";
 $password="";
 */
 $hostname="sql.franceserv.fr";
+//$database="onepip-france-db2";
 $database="onepip-france_db6";
 $login="onepip-france";
 $password="Lavelan1969&";
 
 $lang="fr";
-$PHPLEAGUE_RACINE="Phpleague/phpab/";
-
-$PHPLEAGUE_RACINE2="Phpleaguesmart/phpab/";
+$PHPLEAGUE_RACINE="Phpleague/phpidf/";
+$PHPLEAGUE_RACINE2="Phpleaguesmart/phpidf/";
 ?>

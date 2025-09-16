@@ -376,18 +376,12 @@ echo "<div>";
 			}
 		}
 
-		/*
-  <!--
-  <a href="prono/prono.php">test</a>
-  -->
-*/
+
 		echo "<br>";
 		include("infos_centre.php");
 		echo "<br>" . "<br>";
 		require("bas.php");
-		echo "<hr>";
-		//include("../pub/pub_displayCarre.php");
-		?>
+		echo "<hr>";?>
 	</div>
 </body>
 </html>

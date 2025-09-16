@@ -202,7 +202,7 @@ pourrait détruire vos données !</font></p>
      $contenu .= "\$login=\"$login\";\n";
      $contenu .= "\$password=\"$password\";\n";
      $contenu .= "\$lang=\"$lang\";\n";
-     $contenu .= "\$PHPLEAGUE_RACINE=\"$repertoire_script\";\n";
+     $contenu .= "\$phpcaEAGUE_RACINE=\"$repertoire_script\";\n";
      $contenu .= "?>\n";
 
      fwrite($fp,$contenu);
@@ -1365,7 +1365,7 @@ utilisateur</font></u></p>
 </body>
 </html>";
 
-  $from="Content-Type: text/html; charset=\"iso-8859-1\"\nFrom: $mail\n";
+  $from="Content-Type: text/html; charset=\"UTF-8\"\nFrom: $mail\n";
 
   $email=@mail($to,$sujet,$message,$from);
 

@@ -7,7 +7,7 @@ require("data_connect.php");
 $idconnect=@mysqli_connect($hostname,$login,$password,$database);	
  	
 return($idconnect);
-return($phpabEAGUE_RACINE);
+return($phpidfEAGUE_RACINE);
 }
 include("data_connect.php");
 include("../lang/lang_".$lang.".php");

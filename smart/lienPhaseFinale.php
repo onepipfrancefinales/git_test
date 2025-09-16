@@ -18,7 +18,7 @@ $base="phpab";
 $base="phpidf";
 		
 
-$adresse = "../Test/$base/prono/index.php?mode=smart&?division=$division$div&champLigue=$champLigue";
+$adresse = "../Phpleague/$base/prono/index.php?mode=smart&?division=$division$div&champLigue=$champLigue";
 
 ?>
 <table class="marginAuto width95PC backgroundWhite">
