@@ -65,7 +65,10 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2" class="borderWidth1"> <?php require "resultats/tableauEffectifsClubs.php";  ?>  <br> </td>
+    <td colspan="2" class="borderWidth1"> <?php require "resultats/tableauEffectifsClubs.php";  ?>  <br> <br>
+  <?php require "resultats/tableauEffectifsClubsFeminin.php";  ?>
+  <br><br>
+  </td>
   </tr>
   <tr>
     <td colspan="2" class="size5 background003366 colorWhite bold borderWidth1"> Un peu d'histoire </td>

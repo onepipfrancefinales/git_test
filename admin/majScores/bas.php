@@ -41,9 +41,14 @@
   <br>
   <br>
   <table width="800" border="1">
-    <tr class="backgroundBlue colorWhite bold styleArial">
+   
+  
+  
+  <!--
+  <tr class="backgroundBlue colorWhite bold styleArial">
       <td colspan="7">MAJ comptes Pronos <span class="colorRed bold">(actuellement sur Test)</span></td>
     </tr>
+    
     <tr>
       <td><a href="/Test/phpau/admin/generer_grSansIhm.php">AU</a></td>
       <td><a href="/Test/phpca/admin/generer_grSansIhm.php">CA</a></td>
@@ -53,7 +58,10 @@
       <td><a href="/Test/phppro/admin/generer_grSansIhm.php">PRO</a></td>
       <td><a href="/Test/phpfed3NE/admin/generer_grSansIhm.php">FED3</a></td>
    </tr>
-<!--
+-->
+<tr class="backgroundBlue colorWhite bold styleArial">
+      <td colspan="7">MAJ comptes Pronos <span class="colorRed bold"></span></td>
+    </tr>
 <tr>
       <td><a href="/Phpleague/phpau/admin/generer_grSansIhm.php">AU</a></td>
       <td><a href="/Phpleague/phpca/admin/generer_grSansIhm.php">CA</a></td>
@@ -64,7 +72,7 @@
       <td><a href="/Phpleague/phpfed3NE/admin/generer_grSansIhm.php">FED3</a></td>
     </tr>
 
--->
+
     <tr>
      
       <td colspan="7"><a href="/resultats/facebookResultatsDeLaJournee.php" target="_blank">MAJ de la table _clmnt_pronos </a></td>

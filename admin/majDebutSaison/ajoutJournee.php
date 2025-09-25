@@ -412,7 +412,9 @@ elseif ($ligue== "phpidf" or $ligue == "phppl")
 	//NOR
 	elseif (substr($id,0,6) == 180171){
 		  $debutPouleTraite = 18017101;
-	      $finPouleTraite = 18022122;
+		 					
+	      $finPouleTraite =   19000000;
+		//  $finPouleTraite = 18022122;
 	}
 	elseif (substr($id,0,6) == 116271){
 		  $debutPouleTraite = 11627101;
@@ -498,15 +500,40 @@ while (!feof($fp))
 	if (isset($liste[4]))$id_journee = $liste[4];
 	if (isset($liste[5]))$buts_dom = $liste[5]; 
 	if (isset($liste[6]))$buts_ext = $liste[6];
-   
+
+	
+//	echo $ligne[$i];echo "<br>";
+//	echo "affichage des données du fichier"."<br>";
+	//echo $id." ".$id_equipe_dom." ".$id_equipe_ext." ".$date_reelle." ".$id_journee." ".buts_dom." ".."<br>";
+//	echo "testTest : ".$liste[0]."<br>";
+	//echo "testcount : ".count($liste[])."<br>";
+//	echo "testTest : ".$liste[0]."<br>";
+	//affichage des donnéesdans le fichier
+	/*
+echo "affichage des données dans le fichier"."<br>";
+for ($i=0; $i<$nbreLignes; $i++)
+	{echo  $id[$i] ."  ".
+		 $id_equipe_dom[$i]."  ".
+		 $id_equipe_ext[$i]."  ".
+		 $date_reelle[$i]."  ". 
+		 $id_journee[$i]."  ".
+		 $buts_dom[$i] ." - ".
+		 $buts_ext[$i]."<br>";
+	}
+  */ 
 $journee = "J".substr($id_journee,-2);
 $competition = substr($id,3,3);
 
 //echo "debut de poule : ".$debutPouleTraite; echo "<br>";
 ///echo "fin de poule : ".$finPouleTraite; echo "<br>";
 
+
+
+
 if ($id > 0)
 {	   		
+	echo "Ligne du Fichier(triée) : ". $id." ".$id_equipe_dom." ".$id_equipe_ext." ".$date_reelle." ".$id_journee." ".$buts_dom." ".$buts_ext;
+	
 
 $buts_dom = intval($buts_dom);
 $buts_ext = intval($buts_ext);
@@ -516,7 +543,7 @@ $buts_ext = intval($buts_ext);
 				FROM $tableMatch
 				WHERE substr(id_journee,-2) like '%$journeeTraitee%'
 				and id_journee between '$debutPouleTraite' and '$finPouleTraite'
-				order by id
+				order by id_equipe_dom
 				 "); 
 										
 	 while ($row = $reponse->fetch() )
@@ -529,22 +556,42 @@ $buts_ext = intval($buts_ext);
 		 $buts_domBdd[] = $row[5];
 		 $buts_extBdd[] = $row[6];
 		}
-	// ------  test 1 : scores inscrits en base et non présents dans le fichier -------------
-	if ($buts_domBdd[$i] + $buts_extBdd[$i]  > 0 and $buts_dom + $buts_ext == 0) {
-	//	echo "<br>";
-	//	echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
-	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
-	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
 
+//affichage des données en base
+/*
+echo "affichage des données en base"."<br>";
+for ($i=0; $i<$nbreLignes; $i++)
+	{echo  $idBdd[$i] ."  ".
+		 $id_equipe_domBdd[$i]."  ".
+		 $id_equipe_extBdd[$i]."  ".
+		 $date_reelleBdd[$i]."  ". 
+		 $id_journeeBdd[$i]."  ".
+		 $buts_domBdd[$i] ." - ".
+		 $buts_extBdd[$i]."<br>";
+	}
+*/
+	
+	if ($buts_domBdd[$i] + $buts_extBdd[$i]  > 0 and $buts_dom + $buts_ext == 0) {
+
+		
+		
+//echo" ------  test 1 : scores inscrits en base et non présents dans le fichier -------------";
+/*
+
+		echo "<br>";
+		echo $i . ' - '. $id . ' ' . "test1  : ". $ligne. "<br>";
+		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
+		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
+*/
 	} elseif ($buts_domBdd[$i] + $buts_extBdd[$i] == 0 and  $buts_dom + $buts_ext > 0) {
 		
-
-		// ------ test 2 : Pas de scores en base  et  scores présents dans le fichier --------
-		 
-	//	echo $i . ' - '. $id . ' ' . "test2 : ". $ligne;
-	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
-	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
-		
+		/*
+		echo "<br>";
+		echo"------ test 2 : Pas de scores en base  et  scores présents dans le fichier --------";echo "<br>";
+		echo $i . ' - '. $ligne;echo "<br>";
+		echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
+		echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
+		*/
 
 //			echo "comparaisons Ok Ok";
 	//		echo "<br>";
@@ -574,7 +621,7 @@ $buts_ext = intval($buts_ext);
 //				echo "<br>";
 //				echo "id_equipe_ext : " . $id_equipe_ext; echo "<br>";
 //				echo "id_equipe_dom : " . $id_equipe_dom; echo "<br>";
-//				echo "id_journee : " . $id_journee;	echo "<br>";
+				echo "id_journee : " . $id_journee;	echo "<br>";
 //				echo "idChampRetour : " . $idChampRetour;echo "<br>";
 
 				$requete = $bdd->query("SELECT COUNT(id)
@@ -614,7 +661,7 @@ echo "numero : ".$numero;
 				}
 
 				echo "dateRetour : " . $dateRetour;
-				//echo "<br>";
+	
 				
 
 	//TODO Modifier la lheure en fonction du champiuonnat traité (premi)
@@ -632,15 +679,34 @@ echo "numero : ".$numero;
 			//}
 		}
 	}
-	// -------  test 3 scores présents en base et dans le fichier -------
-	elseif ( $buts_domBdd[$i] + $buts_extBdd[$i] != 0 and  $buts_dom + $buts_ext !=0){	
-	//	echo "<br>";echo "<br>";
-	//	echo $i;echo "<br>";
-	//	echo $id_journee;echo "<br>";
-	//	echo $buts_domBdd[$i].'-'.$buts_dom ;echo "<br>";
-	//	echo $buts_extBdd[$i].'-'.$buts_ext;echo "<br>";
-	//	echo "<br>";echo "br";
 	
+	elseif ( $buts_domBdd[$i] + $buts_extBdd[$i] != 0 and  $buts_dom + $buts_ext !=0){	
+/*
+		echo "<br>";
+		echo " -------  test 3 scores présents en base et dans le fichier -------";echo "<br>";
+		echo "fichier : ".$i . ' - '. $ligne;echo "<br>";
+	*/
+		//echo $id_equipe_domBdd[$i] ."--". $id_equipe_dom."-".$buts_extBdd[$i].'-'.$buts_ext;echo "<br>";
+/*
+		echo  "bdd xx : ".$i ." ".$idBdd[$i] ."  ".
+		 $id_equipe_domBdd[$i]."  ".
+		 $id_equipe_extBdd[$i]."  ".
+		 $date_reelleBdd[$i]."  ". 
+		 $id_journeeBdd[$i]."  ".
+		 $buts_domBdd[$i] ." - ".
+		 $buts_extBdd[$i];
+*/
+	///	echo "<br>";
+	//	echo "<br>";
+/*
+
+		echo "<br>";echo "<br>";
+		echo $i ."--". $id_journee;echo "<br>";
+		echo $id_equipe_domBdd[$i] ."--". $id_equipe_dom;echo "<br>";
+		echo $buts_domBdd[$i].'-'.$buts_dom ;echo "<br>";
+		echo $buts_extBdd[$i].'-'.$buts_ext;echo "<br>";
+		echo "<br>";
+*/
 	//	echo $i . ' - '. $id . ' ' . "test3 : ". $ligne. "<br>";
 	//	echo ("buts_domBdd : ".$buts_domBdd[$i]); echo ("  buts_dom: ".$buts_dom);echo "<br>";
 	//	echo ("buts_extBdd : ".$buts_extBdd[$i]); echo ("  buts_ext: ".$buts_ext);echo "<br>";
@@ -650,8 +716,17 @@ echo "numero : ".$numero;
 	
 	elseif ( $buts_dom + $buts_ext == 0)		{	
 	
-	//	echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." --- bdd --- ". $date_reelleBdd[$i]." --- fichier --- ".$date_reelle;
 
+//echo" test 4  transformation des scores 0-0 en NULL-NULL  et  Verification de la date de la rencontre "."<br>";
+
+		//	echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." --- bdd --- ". $date_reelleBdd[$i]." --- fichier --- ".$date_reelle;
+/*
+		echo "<br>";
+		echo " -------  test 4 pas de scores en base et pas de scroe dans le fichier -------";echo "<br>";
+		echo $i . ' - '. $ligne;echo "<br>";
+		
+echo "<br>";
+*/
 
 		if ($date_reelleBdd[$i] != $date_reelle)
 		{
@@ -661,7 +736,7 @@ echo "numero : ".$numero;
 			AND id_equipe_ext = '$id_equipe_ext'  ");
 
 //echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." --- bdd --- ". $date_reelleBdd[$i]." --- fichier --- ".$date_reelle." rencontre reportée"."<br>";
-echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." rencontre reportée au " .$date_reelle."<br>";
+//echo $i . ' - '. $id . ' ' . "test4 : ". $ligne." rencontre reportée au " .$date_reelle."<br>";
 		}
 else{
 
@@ -735,9 +810,9 @@ else{
 	}
 	
 	if ($buts_dom == 25 and $buts_ext == 0 and $bonusDeLaJournee >= 0){
-	echo "forfait ext3";
+	//echo "forfait ext3";
 	//	echo "<br />";
-	echo $buts_dom.' - '.$buts_ext.' - '.$bonusDeLaJournee;
+	//echo $buts_dom.' - '.$buts_ext.' - '.$bonusDeLaJournee;
 	//echo "<br />";
 	$equipeTraitee = $id_equipe_ext;
 	forfait($equipeTraitee, $id_journee, $ligue, $bdd);

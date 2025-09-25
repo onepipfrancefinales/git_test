@@ -30,28 +30,28 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
   </font></b></font> 
   <?php
-  if (isset ($_GET['bddComitePlusId'])) $bddComitePlusId = $_GET['bddComitePlusId']; else $bddComitePlusId = "aucune ligue s&eacute;lectionn&eacute;e";
+  if (isset ($_GET['bddComitePlusId'])) $bddComitePlusId = $_GET['bddComitePlusId']; else $bddComitePlusId = "aucune ligue sélectionnée";
 echo "Bdd et Ligue choisies  : ".$bddComitePlusId;
 ?>
   <form name="form1" method="GET" action="pageMAJdesBonus.php?comite=<?php echo $bddComitePlusId;?>">
   <p>&nbsp;</p>
-    <p><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b><font size="3" color="#000000">S&eacute;lection 
+    <p><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b><font size="3" color="#000000">Sélection 
       de ligue</font> </b></font> 
       <select name="bddComitePlusId"  size="1">
         <option selected>Ligue</option>
-        <option value="phppr-990141"><b>F&eacute;d&eacute;rale 1</b></option>
-        <option value="phppr-990241"><b>Espoir F&eacute;d 1</b></option>
-		<option value="phppr-990151"><b>F&eacute;d&eacute;rale 2</b></option>
-        <option value="phppr-990251"><b>F&eacute;d&eacute;rale B</b></option>
-	    <option value="phpfe-991161"><b>F&eacute;d&eacute;rale 3</b></option>
+        <option value="phppr-990141"><b>Fédérale 1</b></option>
+        <option value="phppr-990241"><b>Espoir Féd 1</b></option>
+		<option value="phppr-990151"><b>Fédérale 2</b></option>
+        <option value="phppr-990251"><b>Fédérale B</b></option>
+	    <option value="phpfe-991161"><b>Fédérale 3</b></option>
         <option value="phpfe-991261"><b>Excellence B</b></option>
-		<option value="phppr-880280"><b>Comp&eacute;titions f&eacute;minines</b></option>
+		<option value="phppr-880280"><b>Compétitions féminines</b></option>
         <option value="phpau-100171"><b>ARA R1</b></option>
         <option value="phpau-100181"><b>ARA R2</b></option>
 		<option value="phpau-100191"><b>ARA R3</b></option>
 		<option value="phpau-100271"><b>ARA Rés R1</b></option>
 		<option value="phpau-109181"><b>ARA Rés R2</b></option>	
-		<option value="phppl-110171"><b>Bourgogne Franche Comt&eacute;</b></option>
+		<option value="phppl-110171"><b>Bourgogne Franche Comté</b></option>
         <option value="phppl-120171"><b>Bretagne</b></option>
         <option value="phppl-130171"><b>Centre Val de Loire</b></option>
         <option value="phpid-150171"><b>Grand Est</b></option>

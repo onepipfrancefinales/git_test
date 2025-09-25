@@ -15,7 +15,7 @@
 
 
 
-require '..//admin/fonctions.php';
+require '../admin/fonctions.php';
 require '../config.php';
 ouverture();
 

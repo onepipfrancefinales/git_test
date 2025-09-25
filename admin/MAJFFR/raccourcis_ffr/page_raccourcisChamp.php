@@ -40,7 +40,7 @@
   $ARAPH = 22412;
   $ARAS1 = 22478;
   $ARAResH = 22480;
-  $ARAResPH = 0;
+  $ARAResPH = 22437;
 
   // ***** Bretagne *****									
   $BREH = 22534;
@@ -73,8 +73,9 @@
   // ***** Hauts de France *****					
   $HDFH = 22517;
   $HDFPH = 22519;
-  $HDFS1 = 22542;
-  $HDFResH = 0;
+  $HDFS1 = 22541;
+  $HDFS2 = 22542;
+  $HDFResH = 22518;
   $HDFResPH = 22520;
 
   // ***** ile de france *****							
@@ -354,12 +355,17 @@
       </td>
       <td><a href="<?php echo $adresseFFR . $HDFS1; ?>" target="_blank"><?php echo $HDFS1; ?></a>
       </td>
-      <td></td>
+  
+      <td><a href="<?php echo $adresseFFR . $HDFS2; ?>" target="_blank"><?php echo $HDFS2; ?></td>
       <td class="backgroundBlack"></td>
       <td><a href="<?php echo $adresseFFR . $HDFResH; ?>" target="_blank"><?php echo $HDFResH; ?></a>
       </td>
       <td><a href="<?php echo $adresseFFR . $HDFResPH; ?>" target="_blank"><?php echo $HDFResPH; ?></a>
-      </td>
+     
+    
+    
+     
+    </td>
       <td class="bold">HDF
       </td>
     </tr>

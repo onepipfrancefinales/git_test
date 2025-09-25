@@ -9,14 +9,24 @@ echo "<br />";
 echo "champRecup : ".$champRecup;
 echo "<br />";
 echo "<hr />";
-
+/*
 	if ($champRecup == 110171) { $tableau = array(110171, 110172, 110181, 110191, 110192, 110193, 110271, 110272, 119181);}	//BFC
 elseif ($champRecup == 120171) { $tableau = array(120171, 120181, 120191, 120192, 120271, 129181);} //BRE
 elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130191, 130192, 130271);}// CVL
 elseif ($champRecup == 160171) { $tableau = array(160171, 160181, 160182, 160191, 160192,160271, 169181,169182);}	//HDF
 elseif ($champRecup == 210171) { $tableau = array(210171, 210181, 210191, 210271);} // PDL
+*/
+$tableauARA1 = array(100171, 100172, 100173, 100174, 100271, 100272, 100273, 100274);
+$tableauARA2 = array(100181, 100182, 100183, 100184, 100185, 100186);
+$tableauARA3 = array(100191, 100192, 100193, 100194, 100195, 100196, 100197);
+$tableauRES_ARA1 = array(100271, 100272, 100273, 100274);
+$tableauRES_ARA2 = array(109181, 109182, 109183, 109184, 109185, 109186);
 
-
+if ($champRecup == 100171)	$tableau = $tableauARA1;
+elseif ($champRecup == 100181)	$tableau = $tableauARA2;
+elseif ($champRecup == 100191)	$tableau = $tableauARA3;
+elseif ($champRecup == 100271)	$tableau = $tableauRES_ARA1;
+elseif ($champRecup == 109181)	$tableau = $tableauRES_ARA2;
 
 
 //for ($champ =$champRecup; $champ <$champRecup+8; $champ++)

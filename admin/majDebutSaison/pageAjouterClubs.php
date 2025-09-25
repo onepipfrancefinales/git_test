@@ -28,6 +28,12 @@ les fichiers sont a récupèrer dans ligues 20xx-20xx/maj des rencontres A RECUP
         <option value="170"><b>Régionale 1</b></option>
         <option value="180"><b>Régionale 2</b></option>
         <option value="190"><b>Régionale 3</b></option>
+        <option value="Aucune sélection"><b>-----------</b></option>
+        <option value="280"><b>Elite 1</b></option>
+        <option value="285"><b>Elite 2</b></option>
+        <option value="290"><b>Fédérale 1</b></option>
+        <option value="295"><b>Fédérale 2</b></option>
+        <option value="300"><b>Régionale X</b></option>
         <option value="Autres     "><b>-----------</b></option>
         <option value="980"><b>En sommeil</b></option>
         <option value="990"><b>Inactif</b></option> 

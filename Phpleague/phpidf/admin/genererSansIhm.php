@@ -9,13 +9,17 @@ echo "<br />";
 echo "champRecup : ".$champRecup;
 echo "<br />";
 echo "<hr />";
-
+/*
 	if ($champRecup == 110171) { $tableau = array(110171, 110172, 110181, 110191, 110192, 110193, 110271, 110272, 119181);}	//BFC
 elseif ($champRecup == 120171) { $tableau = array(120171, 120181, 120191, 120192, 120271, 129181);} //BRE
 elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130191, 130192, 130271);}// CVL
 elseif ($champRecup == 160171) { $tableau = array(160171, 160181, 160182, 160191, 160192,160271, 169181,169182);}	//HDF
 elseif ($champRecup == 210171) { $tableau = array(210171, 210181, 210191, 210271);} // PDL
-
+*/
+	if ($champRecup == 150171) { $tableau = array(150171, 150182, 150182, 150191, 150192, 150193, 150271, 159181, 159182);}	//GES
+elseif ($champRecup == 170171) { $tableau = array(170171, 170172, 170181, 170182, 170183, 170191, 170192, 170193, 170271, 170272, 179181, 179182, 179183);} //IDF
+elseif ($champRecup == 180171) { $tableau = array(180171, 180181, 180191, 180192, 180193, 180271, 199181);}//NOR
+elseif ($champRecup == 220171) { $tableau = array(220171, 220181, 220182, 220191, 220192 ,220193, 220271, 229181, 229182);}	//PCA
 
 
 

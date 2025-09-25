@@ -199,6 +199,7 @@ echo "<br />";
 //global $champRecup;
 $champRecup=$champ;
 echo "champRecup : ".$champRecup;echo "<br />";
+echo "ligue : ".$ligue;echo "<br />";
 
 require "../../Phpleague/$ligue/admin/genererSansIhm.php";
 require '../majScores/bas.php';

@@ -1,5 +1,8 @@
 
 <?php
+if (isset($_GET['mode'])) $mode = $_GET['mode'];else {$mode='';}
+
+
 //var_dump($champLigue);echo "<br>";
 //echo "champLigue (menu.identifie) : ".$champLigue;
 //echo strlen($champLigue);echo "<br>";
@@ -10,8 +13,13 @@ if (strlen($champLigue) > 2 ) $champLigue = substr($champLigue,0,2);
 if (is_numeric($gr_champ))
 $gr_champ = $gr_champ;
 
-
+echo "mode : ".$mode;
 ?>
+
+
+
+
+
 <table border="1" cellpadding="0" cellspacing="0" width="100%" >
   <tr>
     <td height="23" class="prono1">

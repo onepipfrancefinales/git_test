@@ -1075,9 +1075,9 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 	// indiquer le nombre de clubs par divisions avec un id d'une ligue passé en paramétre 
 	function structureLigue($idLigue, $bdd)
 	{
-		global $d110, $d120, $d130, $d135, $d140, $d150, $d160, $d170, $d180, $d190;
+		global $d110, $d120, $d130, $d135, $d140, $d150, $d160, $d170, $d180, $d190, $d280, $d285, $d290, $d295, $d300;
 
-		$tabDivision = array('110', '120', '130', '135', '140', '150', '160', '170', '180', '190');
+		$tabDivision = array('110', '120', '130', '135', '140', '150', '160', '170', '180', '190', '280', '285', '290', '295', '300');
 		$nbre = array();
 		$tabNbre = array();
 		foreach ($tabDivision as $division) {
@@ -1098,6 +1098,11 @@ function clubsParLigueEnEntente($idLigue, $type, $var1, $bdd)
 		$d170 = $tabNbre[7];
 		$d180 = $tabNbre[8];
 		$d190 = $tabNbre[9];
+		$d280 = $tabNbre[10];
+		$d285 = $tabNbre[11];
+		$d290 = $tabNbre[12];
+		$d295 = $tabNbre[13];
+		$d300 = $tabNbre[14];
 	}
 
 	function cssColonne($trigrammeLigue)
