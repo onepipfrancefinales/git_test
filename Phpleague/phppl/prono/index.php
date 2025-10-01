@@ -23,7 +23,7 @@ if ($mode == "smart")
       <td class="h22 width95PC"> France Finales Rugby </td>
     </tr>
     <tr>
-        <td colspan="2" class="h12">Ligues régionales <br> Concours de pronostiques</td>
+        <td colspan="2" class="h12">Ligues régionales <br> Concours de pronostics</td>
     </tr>
 
     

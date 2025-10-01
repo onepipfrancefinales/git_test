@@ -38,6 +38,15 @@ require 'resultats/constantes.php';
   <meta name="robots" content="All">
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1020385463"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1020385463');
+</script>
 
 <body>
 

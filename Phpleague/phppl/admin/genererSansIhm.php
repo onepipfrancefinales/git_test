@@ -10,9 +10,9 @@ echo "champRecup : ".$champRecup;
 echo "<br />";
 echo "<hr />";
 
-	if ($champRecup == 110171) { $tableau = array(110171, 110172, 110181, 110191, 110192, 110193, 110271, 110272, 119181);}	//BFC
+	if ($champRecup == 110171) { $tableau = array(110171, 110172, 110181, 110182, 110191, 110192, 110271, 110272, 119181, 119182);}	//BFC
 elseif ($champRecup == 120171) { $tableau = array(120171, 120181, 120191, 120192, 120271, 129181);} //BRE
-elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130191, 130192, 130271);}// CVL
+elseif ($champRecup == 130171) { $tableau = array(130171, 130181, 130185, 130191, 130271);}// CVL
 elseif ($champRecup == 160171) { $tableau = array(160171, 160181, 160182, 160191, 160192,160271, 169181,169182);}	//HDF
 elseif ($champRecup == 210171) { $tableau = array(210171, 210181, 210191, 210271);} // PDL
 

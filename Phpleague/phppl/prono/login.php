@@ -1,5 +1,5 @@
 <?php
-echo "test (login)";
+echo "Phpleague (login)";
 if (isset($_GET['mode'])) $mode = $_GET['mode'];else $mode ="AAAA";
 if (isset($_REQUEST['champLigue'])) $champLigue = $_REQUEST['champLigue'];else $champLigue ="AAAA";
 
@@ -8,13 +8,13 @@ echo "mode : ".$mode;
 echo "champLigue (login): ".$champLigue;
 
 require ("../config.php");
-echo "test (login)";
+echo "Phpleague (login)";
 
 ouverture ();
-echo "test3";
+echo "Phpleague3";
 echo "<br>";
 $autoidentification = isset($_POST['autoidentification']) ? $_POST['autoidentification'] : NULL;
-$mode = isset($_POST['testMode']) ? $_POST['testMode'] : NULL;
+//$mode = isset($_POST['PhpleagueMode']) ? $_POST['PhpleagueMode'] : NULL;
 $user = isset($_POST['user']) ? $_POST['user'] : NULL;
 $pass = isset($_POST['pass']) ? $_POST['pass'] : NULL;
 
@@ -26,20 +26,20 @@ echo "pass : ".$pass;echo "<br>";
 	if(!isset($_REQUEST['user']) or !isset($_REQUEST['pass']))
 	{
 
-		echo "test5";echo "<br>";
-   	 header("Location: /Test/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
+		echo "Phpleague5";echo "<br>";
+   	 header("Location: /Phpleague/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
 	}
 	elseif ($_REQUEST['user']=='' || $_REQUEST['pass']=='')
 	{
 
-		echo "test6";echo "<br>";
-	 header("Location: /Test/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
-	 echo "test66";echo "<br>";
+		echo "Phpleague6";echo "<br>";
+	 header("Location: /Phpleague/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=0");
+	 echo "Phpleague66";echo "<br>";
     }
 	
 	else
 	{
-      echo "test7";echo "<br>";
+      echo "Phpleague7";echo "<br>";
 		
 		
 		$user = addslashes($_REQUEST['user']);
@@ -58,13 +58,13 @@ echo "pass : ".$pass;echo "<br>";
 
 		if($row['mot_de_passe'] != $password_crypt or mysqli_num_rows($result)=="0")
 		{
-        	header("Location: /Test/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=1");
+        	header("Location: /Phpleague/phppl/prono/index.php?champLigue=$champLigue&mode=$mode&page=erreur_login&t=1");
 		}
 			
 		else
 		{
 			echo "<br>";
-			echo "test7";echo "<br>";
+			echo "Phpleague7";echo "<br>";
 			echo "user : ".$user;echo "<br>";
     	$ip = $_SERVER["REMOTE_ADDR"];
 		$time = time();
@@ -94,8 +94,8 @@ echo "pass : ".$pass;echo "<br>";
 	echo "login.php : user -".$_SESSION['user'];echo "<br>";
 	echo "login.php : mot_de_passe -".$_SESSION['mot_de_passe'];echo "<br>";
 
-		//header("Location: /Test/phppl/prono/index.php?champLigue=$champLigue");
-		header("Location: /Test/phppl/prono/index.php?page=pronos&champLigue=$champLigue");
+		//header("Location: /Phpleague/phppl/prono/index.php?champLigue=$champLigue");
+		header("Location: /Phpleague/phppl/prono/index.php?page=pronos&mode=$mode&champLigue=$champLigue");
 		
 	}
 	}

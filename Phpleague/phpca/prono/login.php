@@ -14,7 +14,7 @@ ouverture ();
 echo "test3";
 echo "<br>";
 $autoidentification = isset($_POST['autoidentification']) ? $_POST['autoidentification'] : NULL;
-$mode = isset($_POST['testMode']) ? $_POST['testMode'] : NULL;
+//$mode = isset($_POST['testMode']) ? $_POST['testMode'] : NULL;
 $user = isset($_POST['user']) ? $_POST['user'] : NULL;
 $pass = isset($_POST['pass']) ? $_POST['pass'] : NULL;
 
@@ -95,7 +95,7 @@ echo "pass : ".$pass;echo "<br>";
 	echo "login.php : mot_de_passe -".$_SESSION['mot_de_passe'];echo "<br>";
 
 		//header("Location: /Phpleague/phpca/prono/index.php?champLigue=$champLigue");
-		header("Location: /Phpleague/phpca/prono/index.php?page=pronos&champLigue=$champLigue");
+		header("Location: /Phpleague/phpca/prono/index.php?page=pronos&mode=$mode&champLigue=$champLigue");
 		
 	}
 	}
