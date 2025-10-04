@@ -1846,6 +1846,7 @@ function meilleureAttaque($phpComite, $champ, $bdd)
 	}
 
 	$moyenneMeilleureAttaque = $pointsMeilleureAttaque / $jouesMeilleureAttaque;
+
 }
 
 // Affichage de l'equipe et moyenne de la meilleure défense	

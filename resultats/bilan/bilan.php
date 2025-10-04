@@ -128,7 +128,6 @@
   <?php
   //$comite= substr ($comite,0,3);
   echo "Championnat ";
-
   if ($phpComite == "phppro") {
     if (substr($champ, 3, 2) == 11)
       echo "Top 14";
@@ -144,7 +143,6 @@
       echo "Fédérale 2";
     elseif (substr($champ, 3, 2) == 25)
       echo "Fédérale B";
-
   } elseif ($phpComite == "phpfed3NE") {
     if (substr($champ, 3, 2) == 16)
       echo "Fédérale 3";
@@ -166,27 +164,27 @@
   <h4 >Classement général</h4>
   <!-- Classement général de la poule -->
 <div  align="center" >
-  <?php
-  classementDetaille($champ, $bdd);
-  ?>
+  <?php  classementDetaille($champ, $bdd);  ?>
 </div>
   <!--
   <h3><font color="#000000" face="Arial, Helvetica, sans-serif"> Evolution du classement</font></h3>
   -->
 
   <?php
-  //echo "prochainement";
-  //require 'graphiqueTest2.php';
-  //require 'graphiqueTest3.php';
   echo "<br>";
-  echo "<br>";
-  echo "<br>"; ?>
-
+ 
+ 
+ require("../../connect/connexion6.php"); 
+echo "<div class=\"center\">";
+graphiqueEvolClassement ($comite, $champ, $bdd);
+echo "</div>";?>
   <h4> Suivi des résultats des rencontres </h4>
+  
+  <div class="center">
   <?php
-  require '../../connect/connexion6.php';
+
  evolutionResultatsSmart($equipe, $comite, $champ, $bdd);
-  ?>
+  ?></div>
   <br><br>
   <h4> Journée(s) reportée(s)</h4>
   <br>

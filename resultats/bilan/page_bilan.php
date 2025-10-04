@@ -13,7 +13,7 @@ require "../../Phpleague/" . $comite . "/consult/fonctions_matchs.php";
 require "../../Phpleague/" . $comite . "/lang/lang_fr.php";
 require "../../saison.php";
 require "../fonctions.php";
-
+require "../../graphiques/evolutionClassement.php";
 require "../../connect/connexion1.php";
 
 
@@ -25,9 +25,9 @@ affichage5Saisons($finSaison, $equipe, $champ, $phpComite, $bdd);
 require "../../connect/connexion6.php";
 
 nomDivision($phpComite, $champ, $bdd);
-//meilleureAttaque($phpComite, $champ, $bdd);
-//meilleureDefense($phpComite, $champ, $bdd);
-//nombreEquipe($phpComite, $champ, $bdd);
+meilleureAttaque($phpComite, $champ, $bdd);
+meilleureDefense($phpComite, $champ, $bdd);
+nombreEquipe($phpComite, $champ, $bdd);
 traitementDesScores($equipe, $phpComite, $bdd);
 ?>
 
