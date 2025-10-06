@@ -166,7 +166,7 @@ echo "</table>";
  <p class="center bold"><b><?php matchsEnRetards('ca', 19, $bdd) ;?> </fpont></b></p><hr />
 <p class="center bold"><?php matchsEnRetards2('ca', 19, $bdd) ;?> </b></p>
 
-<p class="center bold size8">Ligue Occitanie</fpont>
+<p class="center bold size8">Ligue Occitanie</p>
  <p class="center bold"><?php matchsEnRetards('ab', 20, $bdd) ;?></p><hr />
 <p class="center bold"><?php matchsEnRetards2('ab', 20, $bdd) ;?></p>
 

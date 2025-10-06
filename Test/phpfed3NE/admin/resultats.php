@@ -194,7 +194,7 @@ echo "---------zz----------";echo "<br>";
    /********************************************************************* */
   }
   } elseif (($butv[$i] == '') or ($butd[$i] == '')) {
-    echo "Absences de scores" . "<br />"; echo "<br />";
+  //  echo "Absences de scores" . "<br />"; echo "<br />";
 
     mysqli_query($idconnect, ("UPDATE phpfed3NE_matchs 
 					SET buts_dom = NULL, buts_ext = NULL,  date_reelle='$dateUSA[$i]'

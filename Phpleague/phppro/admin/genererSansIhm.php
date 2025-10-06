@@ -12,7 +12,7 @@ if (isset($champRecup)) $champRecup=$champRecup; else $champRecup=0;
 
 
 if ($champRecup == 990141)
-	$tableau = array(990141, 990142, 990143, 990144);	
+	$tableau = array(990141, 990142, 990143, 990144, 990241, 990242, 990243, 990244);	
 elseif ($champRecup == 990241)
 	$tableau = array(990241, 990242, 990243, 990244);	
 //fed2
