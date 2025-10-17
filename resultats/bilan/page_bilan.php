@@ -26,6 +26,7 @@ require "../../connect/connexion6.php";
 
 nomDivision($phpComite, $champ, $bdd);
 meilleureAttaque($phpComite, $champ, $bdd);
+tableauMeilleureAttaqueDefense($phpComite, $champ, $bdd);
 meilleureDefense($phpComite, $champ, $bdd);
 nombreEquipe($phpComite, $champ, $bdd);
 traitementDesScores($equipe, $phpComite, $bdd);

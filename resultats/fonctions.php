@@ -121,7 +121,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 		echo "<td class=\"verticalAlign\"> ";
 		echo "<h3 class=\"center \">Equipe I </h3>";
 		aff_journee($champ, $bdd);
-	//	maj($champ, false, $comite, $bdd);
+		//	maj($champ, false, $comite, $bdd);
 		clmnt($champ, false, $bdd);
 		aff_journeeSupp($champ,  $bdd);
 		echo "</td>";
@@ -132,7 +132,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 		if (substr($champ, 3, 2) > 17)
 			$champ = $champ + 9000;
 		else $champ = $champ + 100;
-	//	maj($champ, false, $comite, $bdd);
+		//	maj($champ, false, $comite, $bdd);
 		clmnt($champ2, false, $bdd);
 		aff_journeeSupp($champ2,  $bdd);
 		echo "</td>";
@@ -144,7 +144,7 @@ function affichage($champ, $champ2, $comite, $bdd)
 	} else {
 		AffichageLogos($champ, $comite, false, $bdd);
 		aff_journee($champ, $bdd);
-	//	maj($champ, false, $comite, $bdd);
+		//	maj($champ, false, $comite, $bdd);
 		clmnt($champ, false, $bdd);
 		aff_journeeSupp($champ,  $bdd);
 		//echo "<p class=\"ressource\">". messages ($champ);  </."</p>";
@@ -1492,16 +1492,16 @@ function journeesReportees($comite, $champ, $bdd)
 				}
 				if ($cpte < 7) {
 			?>
-					<table class="marginAuto width90PC background3B487F"   >
+					<table class="marginAuto width90PC background3B487F">
 						<tr class="backgroundGray">
 							<th class="size2 colorBlack center">
 
 								<?php
 								$j = $i + 1;
 								$datePrevue[$j];
-								
+
 								echo "journée n° " . $j . " prévue le " . substr($datePrevue[$i], 8, 2) . "-" . substr($datePrevue[$j], 5, 2) . "-" . substr($datePrevue[$j], 0, 4);
-								
+
 								?>
 
 							</th>
@@ -1527,9 +1527,8 @@ function journeesReportees($comite, $champ, $bdd)
 										$dateFR = $DateTime->format('d-M-Y');
 
 										echo ${"tabEquipeDom" . $id_journee}[$k] . " - " . ${"tabEquipeExt" . $id_journee}[$k] . " reportée au " . $dateFR;
-									echo "<br>";
+										echo "<br>";
 									}
-									
 								}
 								?>
 							</td>
@@ -1802,18 +1801,18 @@ function AffichageLogos($champ, $comite, $smart, $bdd)
 		//echo substr($tabNbreEquipe[$j],2,1);
 		if (substr($tabNbreEquipe[$j], 2, 1) != 5) {
 			if ($smart == true) {
-				$mode= "smart";
+				$mode = "smart";
 				$dim = 38;
 				$lien = "/smart/ficheClubs/pageFicheClubs.php?champion=";
 			} else {
-				$mode= "noSmart";
+				$mode = "noSmart";
 				$dim = 68;
 				$lien = "/consultation/pageclub00.php?champion=";
 			}
 			?>
 
-			<a style="text-decoration:none;"  href="<?php echo $lien . $tabNbreEquipe[$j].'&mode='.$mode.'&page=recherche';?>">
-				<img src="/images/blasons200_200/<?php echo $tabNbreEquipe[$j]; ?>.gif" height="<?php echo $dim; ?>" width="<?php echo $dim; ?>" alt="texte" title="<?php echo ${"sigleEquipe".($j)}; ?>">
+			<a style="text-decoration:none;" href="<?php echo $lien . $tabNbreEquipe[$j] . '&mode=' . $mode . '&page=recherche'; ?>">
+				<img src="/images/blasons200_200/<?php echo $tabNbreEquipe[$j]; ?>.gif" height="<?php echo $dim; ?>" width="<?php echo $dim; ?>" alt="texte" title="<?php echo ${"sigleEquipe" . ($j)}; ?>">
 			</a>
 
 <?php
@@ -1832,7 +1831,6 @@ function meilleureAttaque($phpComite, $champ, $bdd)
 	global $nomMeilleureAttaque, $moyenneMeilleureAttaque;
 	$bd_clmnt_cache = $phpComite . "_clmnt_cache";
 
-
 	$reponse = $bdd->query("
 		 SELECT NOM, JOUES, BUTSPOUR
 		 FROM $bd_clmnt_cache 
@@ -1846,8 +1844,45 @@ function meilleureAttaque($phpComite, $champ, $bdd)
 	}
 
 	$moyenneMeilleureAttaque = $pointsMeilleureAttaque / $jouesMeilleureAttaque;
-
 }
+
+
+function tableauMeilleureAttaqueDefense($phpComite, $champ, $bdd)
+
+{
+	$tableauNomMeilleureAttaque = array();
+	$tableauNbrePointsMarques = array();
+	$tableauNomMeilleureDefense = array();
+	$tableauNbrePointsPris = array();
+
+	global $tableauNomMeilleureAttaque, $tableauNbrePointsMarques, $tableauNomMeilleureDefense, $tableauNbrePointsPris;
+
+
+	$bd_clmnt_cache = $phpComite . "_clmnt_cache";
+
+	$reponse = $bdd->query("
+		 SELECT NOM, JOUES, BUTSPOUR
+		 FROM $bd_clmnt_cache 
+		 WHERE ID_champ=$champ
+		 ORDER BY BUTSPOUR DESC");
+
+	while ($row = $reponse->fetch()) {
+		$tableauNomMeilleureAttaque[] = $row[0];
+		$tableauNbrePointsMarques[] = $row[2];
+	}
+
+	$reponse = $bdd->query("
+		 SELECT NOM, JOUES, BUTSCONTRE
+		 FROM $bd_clmnt_cache 
+		 WHERE ID_champ=$champ
+		 ORDER BY BUTSCONTRE ASC");
+
+	while ($row = $reponse->fetch()) {
+		$tableauNomMeilleureDefense[] = $row[0];
+		$tableauNbrePointsPris[] = $row[2];
+	}
+}
+
 
 // Affichage de l'equipe et moyenne de la meilleure défense	
 function meilleureDefense($phpComite, $champ, $bdd)
@@ -1919,7 +1954,7 @@ function nomClub($equipe, $bdd)
 						WHERE id=$equipe OR id=$equipe - 90000000");
 	while ($donnees = $reponse->fetch()) {
 		$nom = $donnees['sigle'];
-		$ancienComite =$donnees['comite'];
+		$ancienComite = $donnees['comite'];
 	}
 }
 

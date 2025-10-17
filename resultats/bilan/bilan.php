@@ -1,7 +1,7 @@
 <table width="600" class="marginAuto borderNone">
   <tr>
     <td width="572">&nbsp;</td>
-    <td width="133" > </td>
+    <td width="133"> </td>
   </tr>
   <tr>
     <td width="572">
@@ -10,12 +10,12 @@
       </h2>
     </td>
     <td rowspan="2" valign="middle" align="center">
-      
-        <?php
-        $logoEquipe = substr($logoEquipe, -5); {
-         print("<img class=\"width200 height200\" src=\"/images/blasons200_200/$logoEquipe.gif\" alt=\"blason du club\">");
-       }
-      ?>      
+
+      <?php
+      $logoEquipe = substr($logoEquipe, -5); {
+        print("<img class=\"width200 height200\" src=\"/images/blasons200_200/$logoEquipe.gif\" alt=\"blason du club\">");
+      }
+      ?>
     </td>
   </tr>
   <tr>
@@ -161,41 +161,41 @@
 <div>
   </p>
   <br>
-  <h4 >Classement général</h4>
+  <h4>Classement général</h4>
   <!-- Classement général de la poule -->
-<div  align="center" >
-  <?php  classementDetaille($champ, $bdd);  ?>
-</div>
+  <div align="center">
+    <?php classementDetaille($champ, $bdd);  ?>
+  </div>
   <!--
   <h3><font color="#000000" face="Arial, Helvetica, sans-serif"> Evolution du classement</font></h3>
   -->
 
   <?php
   echo "<br>";
- 
- 
- require("../../connect/connexion6.php"); 
-echo "<div class=\"center\">";
-graphiqueEvolClassement ($comite, $champ, $bdd);
-echo "</div>";?>
-  <h4> Suivi des résultats des rencontres </h4>
-  
-  <div class="center">
-  <?php
 
- evolutionResultatsSmart($equipe, $comite, $champ, $bdd);
-  ?></div>
+
+  require("../../connect/connexion6.php");
+  echo "<div class=\"center\">";
+  graphiqueEvolClassement($comite, $champ, $bdd);
+  echo "</div>"; ?>
+  <h4> Suivi des résultats des rencontres </h4>
+
+  <div class="center">
+    <?php
+
+    evolutionResultatsSmart($equipe, $comite, $champ, $bdd);
+    ?></div>
   <br><br>
   <h4> Journée(s) reportée(s)</h4>
   <br>
-  <?php  journeesReportees($comite, $champ, $bdd); ?>
+  <?php journeesReportees($comite, $champ, $bdd); ?>
   <br><br>
 
   <p class=titreNoir2>Calendrier et résultats de<br>
     <?php echo $nom; ?>
   </p>
 
-  <?php  oppositionsDetaillees($champ, $id_equipe, false, $bdd); ?>
+  <?php oppositionsDetaillees($champ, $id_equipe, false, $bdd); ?>
   <hr>
   <hr><br>
 
@@ -296,11 +296,14 @@ echo "</div>";?>
   <br>
   <hr>
   <br>
+  <!---------------------------------------------->
+  <!-- 
   <table width="72%" class="marginAuto borderNone">
     <tr>
       <td class="QLiens">Meilleure attaque de la poule :</td>
       <td class="QLiens">
         <?php echo $nomMeilleureAttaque; ?>
+
       </td>
       <td width="20%">
         <div class="titreNoir3">
@@ -321,6 +324,52 @@ echo "</div>";?>
     </tr>
   </table>
 
+-->
+  <!---------------------------------------------->
+  <table width="80%" class="marginAuto ">
+    <tr>
+      <td colspan="2" class="alignLeft QLiens">
+        <?php echo "Meilleures attaque" . "<br>" . "<br>"; ?>
+      </td>
+      <td width="1%" class="backgroundBlack"></td>
+      <td colspan="2" class="alignLeft QLiens">
+        <?php echo "Meilleures défense" . "<br>" . "<br>"; ?>
+      </td>
+    </tr>
+    <tr>
+      <td class="alignLeft QLiens">
+        <?php
+        for ($i = 0; $i < 6; $i++) {
+          echo $i + 1 . " - " . $tableauNomMeilleureAttaque[$i] . "<br>";
+        }
+        ?>
+      </td>
+      <td class="alignRight QLiens">
+        <?php
+        for ($i = 0; $i < 6; $i++) {
+          echo $tableauNbrePointsMarques[$i] . " pts" . "<br>";
+        }
+        ?>
+      </td>
+ <td width="1%" class="backgroundBlack"></td>
+      <td class="alignLeft QLiens">
+        <?php
+        for ($i = 0; $i < 6; $i++) {
+          echo  $i + 1 . " - " . $tableauNomMeilleureDefense[$i] . "<br>";
+        }
+        ?>
+      </td>
+      <td class="alignRight QLiens">
+        <?php
+        for ($i = 0; $i < 6; $i++) {
+          echo $tableauNbrePointsPris[$i] . " pts" . "<br>";
+        }
+        ?>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <!---------------------------------------------->
   <hr>
   <div align="left"><a href="javascript:history.go(-1)">
       <font color="#000099"><i><b>&lt;---
@@ -339,16 +388,16 @@ echo "</div>";?>
     <?php echo $nom; ?>
 
   <h3 class="QLiens" style="margin-left: 16%"><a href="/consultation/pageclub00.php?champion=<?php echo $equipe; ?>">
-  
-  <br>
-  Infos du club,<br>
-  Bureau, contacts,<br>
-  Résultats des saisons précédentes,<br>
-  Palmarès,<br>
-  etc ...<br>
-</h3>
+
+      <br>
+      Infos du club,<br>
+      Bureau, contacts,<br>
+      Résultats des saisons précédentes,<br>
+      Palmarès,<br>
+      etc ...<br>
+  </h3>
   <hr>
-  
+
 
 
   <br>

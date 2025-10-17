@@ -52,11 +52,16 @@ nomLigue2($bddComite, $champ, $bdd);
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="robots" content="All">
 	<meta name=viewport content="width=device-width, initial-scale=1">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>
+<!--	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260" crossorigin="anonymous"></script>-->
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
 </head>
 
-<body 
->
+<body>
+	<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-9177538664500260">
+</amp-auto-ads>
 	<div class="fixed-header backgroundWhite">
 		<div class="container">
 			<table class="width98PC borderColorBlack borderWidth1">
@@ -399,5 +404,7 @@ echo "<hr>";
 		require("bas.php");
 		echo "<hr>";?>
 	</div>
+	<div id="135743-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6">
+	</script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=135743&formatId=6"></script></div>
 </body>
 </html>

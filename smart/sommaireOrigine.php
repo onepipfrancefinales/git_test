@@ -148,7 +148,7 @@
   <?php
 
 require ("bas.php");
-include("../pub/pub_displayCarre.php"); 
+//include("../pub/pub_displayCarre.php"); 
 ?>
 </body>
 </html>
