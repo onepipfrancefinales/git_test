@@ -293,7 +293,7 @@ echo "<hr>";
 				$champ = $champ + 1;
 
 			if (is_numeric($champ) && is_numeric($max)) {
-				// cas d'une division avec 10 poules (saison 2022-2023 ARA R�gionale 3)
+				// cas d'une division avec 10 poules (saison 2022-2023 ARA Régionale 3)
 				if ($champ == 100191)
 					$finChamp = 100201;
 				else
@@ -381,30 +381,23 @@ echo "<hr>";
 				<tr>
 					<td><?php aff_journeeSupp($champ,  $bdd); ?></td>
 				</tr>
-				
-				
 			</table>
-			
 			<hr>
-				
-				
-				
 				<br>
-
 		<?php
 				$nbreChamp = $nbreChamp + 1;
 					
 			}
 		}
-
-
 		echo "<br>";
 		include("infos_centre.php");
 		echo "<br>" . "<br>";
 		require("bas.php");
 		echo "<hr>";?>
 	</div>
-	<div id="135743-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6">
-	</script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=135743&formatId=6"></script></div>
+	<div id="135743-6">
+		<script src="//ads.themoneytizer.com/s/gen.js?type=6"></script>
+		<script src="//ads.themoneytizer.com/s/requestform.js?siteId=135743&formatId=6"></script>
+	</div>
 </body>
 </html>

@@ -325,18 +325,18 @@ function classementDetaille($champ, $bdd)
   echo "<tr class=\"trphppl3\">
 
 	<th align=\"center\">" . CLMNT_POSITION . "</th>
-	<th align=\"left\">" . CLMNT_EQUIPE . "</th>
-	<th align=\"left\">" . CLMNT_POINTS . "</th>
-	<th align=\"left\">" . CLMNT_JOUES . "</th>
-	<th align=\"left\">" . CLMNT_VICTOIRES . "</th>
-	<th align=\"left\">" . CLMNT_NULS . "</th>
-	<th align=\"left\">" . CLMNT_DEFAITES . "</th>
-	<th align=\"left\">" . CLMNT_BUTSPOUR . "</th>
-	<th align=\"left\">" . CLMNT_BUTSCONTRE . "</th>
-	<th align=\"left\">" . CLMNT_DIFF . "</th>
-	<th align=\"left\">" . CLMNT_PEN . "</th>
-	<th align=\"left\">" . PTS_ADMIN . "</th>
-	<th align=\"left\">" . JOURPERE . "</th>
+	<th align=\"center\">" . CLMNT_EQUIPE . "</th>
+	<th align=\"center\">" . CLMNT_POINTS . "</th>
+	<th align=\"center\">" . CLMNT_JOUES . "</th>
+	<th align=\"center\">" . CLMNT_VICTOIRES . "</th>
+	<th align=\"center\">" . CLMNT_NULS . "</th>
+	<th align=\"center\">" . CLMNT_DEFAITES . "</th>
+	<th align=\"center\">" . CLMNT_BUTSPOUR . "</th>
+	<th align=\"center\">" . CLMNT_BUTSCONTRE . "</th>
+	<th align=\"center\">" . CLMNT_DIFF . "</th>
+	<th align=\"center\">" . CLMNT_PEN . "</th>
+	<th align=\"center\">" . PTS_ADMIN . "</th>
+	<th align=\"center\">" . JOURPERE . "</th>
 	<th align=\"left\"></th></tr>\n";
 
   //  if (isset ($legende)) $legende =$legende;else $legende= "";
@@ -382,7 +382,7 @@ function classementDetaille($champ, $bdd)
     $x = 0;
     //colonne x de 0 � 11 --  Equipe Points .....Bonus Admin Pereq
     while ($x < 12) {
-      echo "<td><div align=\"left\">";
+      echo "<td><div align=\"center\">";
       if ($x == 0) {
         // echo "<a href=/resultats/bilan/page_bilan.php?comite=$comite&amp;champ=$champ target=\"_top\">$row[$x]</a>";
         echo "$row[$x]";
@@ -1245,15 +1245,15 @@ WHERE ext.id_champ='$champ'
                 echo "</th></tr>\n<tr class=\"trphppl3\">
 <th align=\"center\">" . CLMNT_POSITION . "</th>
 <th align=\"left\">" . CLMNT_EQUIPE . "</th>
-<th align=\"left\">" . CLMNT_POINTS . "</th>\n";
-                echo "<th align=\"left\">" . CLMNT_JOUES . "</th>
-<th align=\"left\">" . CLMNT_VICTOIRES . "</th>
-<th align=\"left\">" . CLMNT_NULS . "</th>
-<th align=\"left\">" . CLMNT_DEFAITES . "</th>
-<th align=\"left\">" . CLMNT_BUTSPOUR . "</th>
-<th align=\"left\">" . CLMNT_BUTSCONTRE . "</th>
-<th align=\"left\">" . CLMNT_DIFF . "</th>
-<th align=\"left\">" . CLMNT_PEN . "</th>
+<th align=\"center\">" . CLMNT_POINTS . "</th>\n";
+echo "<th align=\"center\">" . CLMNT_JOUES . "</th>
+<th align=\"center\">" . CLMNT_VICTOIRES . "</th>
+<th align=\"center\">" . CLMNT_NULS . "</th>
+<th align=\"center\">" . CLMNT_DEFAITES . "</th>
+<th align=\"center\">" . CLMNT_BUTSPOUR . "</th>
+<th align=\"center\">" . CLMNT_BUTSCONTRE . "</th>
+<th align=\"center\">" . CLMNT_DIFF . "</th>
+<th align=\"center\">" . CLMNT_PEN . "</th>
 <th align=\"left\"></th></tr>\n";
 
                 $result = mysqli_query($requete) or die(mysqli_error());
