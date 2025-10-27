@@ -15,9 +15,6 @@ if (isset($_GET['ancre'])) {
 	$ancre = $_GET['ancre'];
 }
 
-
-
-
 require '../resultats/fonctions.php';
 require 'fonctions.php';
 require "../Phpleague/php" . $bddComite . "/consult/fonctions_matchs.php";
@@ -71,8 +68,6 @@ nomLigue2($bddComite, $champ, $bdd);
 				</tr>
 				<tr>
 					<td colspan="2" class="h12" >
-						
-						
 					<span class=" borderColorBlack" >
 						<?php
 						//affichage du type de championnat
@@ -390,6 +385,21 @@ echo "<hr>";
 			}
 		}
 		echo "<br>";
+		?>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
+     crossorigin="anonymous"></script>
+<!-- smartphone -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-9177538664500260"
+     data-ad-slot="2063142913"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+		<?php
 		include("infos_centre.php");
 		echo "<br>" . "<br>";
 		require("bas.php");
@@ -399,5 +409,6 @@ echo "<hr>";
 		<script src="//ads.themoneytizer.com/s/gen.js?type=6"></script>
 		<script src="//ads.themoneytizer.com/s/requestform.js?siteId=135743&formatId=6"></script>
 	</div>
+
 </body>
 </html>

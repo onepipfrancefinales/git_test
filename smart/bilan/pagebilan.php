@@ -23,6 +23,7 @@ affichage5Saisons($finSaison, $equipeComite,$champ,$phpComite, $bdd);
 	require ("../../connect/connexion6.php");
 traitementDesScores($equipe, $comite, $bdd);
 nomDivision($phpComite, $champ, $bdd);
+tableauMeilleureAttaqueDefense($phpComite, $champ, $bdd);
 //meilleureAttaque ($phpCcomite, $champ, $bdd);
 //meilleureDefense ($phpComite, $champ, $bdd);
 

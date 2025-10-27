@@ -21,7 +21,7 @@ division($champ, $bdd);
 ?>
 <!DOCTYPE html>
 <head> 
-<title>Resultats et classementsss</title>
+<title>Resultats et classements</title>
 <link rel="stylesheet" type="text/css" href="menu_smart2.css">  
 <link type="text/css" rel="stylesheet" href="10.css"> 
 <link type="text/css" rel="stylesheet" href="paramTiroir.css">
@@ -128,7 +128,7 @@ else
   </div>
 </div>
 	
-	<!-- fin entete fig�e-------->
+	<!-- fin entete figée-------->
 	
 	
 <div class="container">	

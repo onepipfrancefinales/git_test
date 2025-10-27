@@ -13,11 +13,12 @@ if ($equipe > 90000000) {
 <?php $logoEquipe = substr($logoEquipe, -5);
 echo ("<img src=\"/images/blasons200_200/$logoEquipe.gif\" >"); ?>
 <p class="bold" style="font-size: 20px"><?php echo "Ligue " . $nomLigue; ?></p>
-<p><?php echo "(ex " . $ancienComite . " )"; ?><p>
+<p><?php echo "(ex " . $ancienComite . " )"; ?>
+<p>
 
 
-<hr />
-<hr />
+  <hr />
+  <hr />
 <p>
 <h2 align="center">Saisons précédentes</h2>
 
@@ -233,16 +234,16 @@ echo ("<img src=\"/images/blasons200_200/$logoEquipe.gif\" >"); ?>
   </table>
   <table align="center" width="16%" border="0">
     <tr>
-      <td bgcolor="#FF0000" height="25"></td>
+      <td class= "backgroundRed" height="25"></td>
       <td class="taille8B" align="left">Défaite</td>
-      <td bgcolor="#00CC00" height="25"></td>
+      <td class="backgroundGreen" height="25"></td>
       <td class="taille8B" align="left">Victoire</td>
-      <td bgcolor="#FFCC00" height="25"></td>
+      <td class ="backgroundYellow" height="25"></td>
       <td class="taille8B" align="left">Nul</td>
     </tr>
   </table>
   <br>
-  <br>
+  
 
   <table class="marginAuto" width="75%" border="0" height="250">
     <tr>
@@ -364,7 +365,56 @@ echo ("<img src=\"/images/blasons200_200/$logoEquipe.gif\" >"); ?>
       </td>
     </tr>
   </table>
-  </center>
+
+
+<!------------------------------->
+    <table width="80%" class="marginAuto ">
+    <tr>
+      <td colspan="2" class="alignLeft QLiens bold">
+        <?php echo "<br>" . "Meilleures attaque" . "<br>"; ?>
+      </td>
+    </tr>
+    <tr>
+      <td class="alignLeft QLiens">
+        <?php
+        for ($i = 0; $i < 6; $i++) {
+          echo $i + 1 . " - " . $tableauNomMeilleureAttaque[$i] . "<br>";
+        }
+        ?>
+      </td>
+
+      <td class="alignRight QLiens">
+        <?php
+        for ($i = 0; $i < 6; $i++) {
+          echo $tableauNbrePointsMarques[$i] . " pts" . "<br>";
+        }
+        ?>
+</tr>
+<tr>
+         <td colspan="2" class="alignLeft QLiens bold">
+        <?php echo  "<br>" ."Meilleures défense" . "<br>"; ?>
+      
+      </td>
+      </tr>
+<tr>
+      <td class="alignLeft QLiens">
+        <?php
+        for ($i = 0; $i < 6; $i++) {
+          echo  $i + 1 . " - " . $tableauNomMeilleureDefense[$i] . "<br>";
+        }
+        ?>
+      </td>
+      <td class="alignRight QLiens">
+        <?php
+        for ($i = 0; $i < 6; $i++) {
+          echo $tableauNbrePointsPris[$i] . " pts" . "<br>";
+        }
+        ?>
+      </td>
+    </tr>
+  </table>
+  <br>
+<!------------------------------->
   <hr>
   <h2>Calendrier et <br> résultats de la poule</h2>
   <?php calendrier($champ, true, $bdd); ?>

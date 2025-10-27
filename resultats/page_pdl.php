@@ -15,7 +15,7 @@ $comite="phppl";
 $CMT="PL";
 $comiteNom="Pays de Loire";?>
  
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <link rel= "canonical" href= "https://francefinalesrugby.fr/resultats/page_pdl.php/" />
@@ -34,15 +34,13 @@ $comiteNom="Pays de Loire";?>
   <meta name="copyright" content="Comite Midi Pyrenees de Rugby">
   <meta name="author" content="Equipe France Finales Rugby">
   <meta name="robots" content="All">
-    <script language="JavaScript">
-   function ouvrirPopup(page,nom,options) {
-  window.open(page,nom,options);
-}
+   
 </script>
+<!--
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9177538664500260"
      crossorigin="anonymous"></script>
-
+-->
 </head>
 <body>
 <table class="table">
@@ -54,7 +52,7 @@ $comiteNom="Pays de Loire";?>
     </tr>
     <tr class="backgroundColorWhite" >
       <td colspan="3">
-        <?php include("../pub/pub_displayHorizontal.php");?>
+        <?php //include("../pub/pub_displayHorizontal.php");?>
       </td>
     </tr>
     <tr>
@@ -127,6 +125,9 @@ $comiteNom="Pays de Loire";?>
     </tr>
     
 </table>
+
+
+
 
  <footer> 
   <?php include("piedDePage.php"); ?>

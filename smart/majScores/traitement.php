@@ -20,7 +20,7 @@ if (isset ($bonusEquipe1TableEquipes)) $bonusEquipe1TableEquipes = $bonusEquipe1
 if (isset ($bonusEquipe2TableEquipes)) $bonusEquipe2TableEquipes = $bonusEquipe2TableEquipes; else $bonusEquipe2TableEquipes = 0;
 if (isset ($bonusDeLaJourneeAcquisEquipe1)) $bonusDeLaJourneeAcquisEquipe1 = $bonusDeLaJourneeAcquisEquipe1; else $bonusDeLaJourneeAcquisEquipe1 =0;
 if (isset ($bonusDeLaJourneeAcquisEquipe2)) $bonusDeLaJourneeAcquisEquipe2 = $bonusDeLaJourneeAcquisEquipe2; else $bonusDeLaJourneeAcquisEquipe2 =0;
-	
+
 //$bonusEquipe1TableEquipes
 
 
@@ -28,7 +28,7 @@ $championnat = substr("$journee",0 ,6);
 $champ = substr("$journee",0 ,6);
 //*****************************************************************************
 //********                                                            *********
-// *******    Donn�es de la journ�e r�cup�rer a partir du formulaire  *********
+// *******    Données de la journée récupérer a partir du formulaire  *********
 //********                                                            *********
 //*****************************************************************************
 require ("../../connect/connexion6.php"); 
@@ -63,7 +63,7 @@ echo "<br />";echo "<br />";
 */
 //************************************************************************************
 //********                                                                   *********
-// *******    Donn�es recup�rees dans les table equipes et equipesresultats  *********
+// *******    Données recupérees dans les table equipes et equipesresultats  *********
 //********                                                                   *********
 //************************************************************************************
 /*
@@ -165,7 +165,7 @@ $phpcomite_equipesResultat = $phpcomite."_equipesresultat";
 */
 //*************************************************************************
 //********                                                        *********
-// *******                      Traitement des donn2es            *********
+// *******                      Traitement des données            *********
 //********                                                        *********
 //**************************************************************************
 /*
@@ -310,7 +310,6 @@ if ($bonusDeLaJourneeAcquisEquipe2 == 0 and ($bonusOffEquipe2DeLaJournee + $bonu
 				SET penaliteDef = $eq2TotauxBonusDefensifs
 				WHERE id='$codeEquipe2' ") ;}	
 }
-
 
 if ($bddComite== 'fed3ne' OR $bddComite=='pro' OR $bddComite== 'fed3NE')
 {	

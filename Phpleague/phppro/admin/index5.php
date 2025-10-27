@@ -48,13 +48,13 @@ ouverture ();
     </tr>
     <tr>
       <td class="phppro3" width="12%" valign="top" style="border-right-style: dashed;border-right-width : 1px; border-color:#3b487f">
-      <a href="?page=championnat"><?php// echo LEAGUE; ?></a><br /><br />
+      <a href="?page=championnat"><?php // echo LEAGUE; ?></a><br /><br />
       
     --> 
       
      
       
-      <a href="logout.php"><?php// echo "Logout"; ?></a><br />
+      <a href="logout.php"><?php // echo "Logout"; ?></a><br />
       </td>
       <td valign="top" colspan="2"><div align="center">
 

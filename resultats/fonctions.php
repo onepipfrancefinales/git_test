@@ -1864,6 +1864,7 @@ function tableauMeilleureAttaqueDefense($phpComite, $champ, $bdd)
 		 SELECT NOM, JOUES, BUTSPOUR
 		 FROM $bd_clmnt_cache 
 		 WHERE ID_champ=$champ
+		 AND NOM !='Exempt'
 		 ORDER BY BUTSPOUR DESC");
 
 	while ($row = $reponse->fetch()) {
@@ -1875,6 +1876,7 @@ function tableauMeilleureAttaqueDefense($phpComite, $champ, $bdd)
 		 SELECT NOM, JOUES, BUTSCONTRE
 		 FROM $bd_clmnt_cache 
 		 WHERE ID_champ=$champ
+		AND NOM !='Exempt'
 		 ORDER BY BUTSCONTRE ASC");
 
 	while ($row = $reponse->fetch()) {
