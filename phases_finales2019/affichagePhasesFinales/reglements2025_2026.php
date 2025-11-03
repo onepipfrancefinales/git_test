@@ -1,30 +1,170 @@
-<html>
-<head>
 
-<link type="text/css" rel="stylesheet" href="sommaire.css">
-</head>
-<body>
 
-<script type="text/javascript" language="javascript">
-		 function twFermer() {
-		 window.close();
-		 }
-  </script>     
-     <div align = "center">
-            <input type="button" onClick="twFermer()" value="Fermer" name="button2">
-       </div>
-	  <hr/>
+
+	 
 
 <?php
-require "../datesReglementsFed.php";
-$cmt = $_GET['cmt'];
+////require "../datesReglementsFed.php";
+//$cmt = $_GET['cmt'];
 
 //*******************************************************************
 //*                                                                 *
 //*                       Réglement féderale 1                      *
 //*                                                                 *
 //*******************************************************************
-if ($cmt == 'f1' or $cmt==990140 or $division== 140 or $division == 240)
+if ($division== 110 )
+{
+  ?>
+  <p class="reg_nomDivision">Top 14 </p>
+<p class="reg_titre">1.Phase finale </p>
+<p class="reg_sousTitre">1.1 Les qualifiés (6 équipes)</p>
+<p class="reg_texte">  Les 1er et 2me sont directement qualifiés en demi finale.
+<p class="reg_texte">Les équipes classées 3me, 4me, 5me et 6me passeront par un barrage pour accéder aux demies finale
+
+
+<!--
+<p class="reg_sousTitre">1.2 Modalités des  rencontres</p>
+
+ 
+<p class="reg_texte"> des barrages seront organisés entre les equipes classées 3me, 4me 5me et 6me. 
+  Retour ( les rencontres Aller auront lieu sur les terrains des équipes 
+  les moins bien classées) .<br>
+  les demi-finales et la finale se jouent sur une rencontre et sur terrain neutre.  </p>
+  
+<p class="reg_titre">2.Accession à la division Nationale 2</p>
+<p class="reg_texte">	
+  Les équipes qualifiées en demi-finales seront promues en Nationale 2</p>
+ --> 
+  
+<p class="reg_titre">3.Relègation en Pro D2</p>
+<p class="reg_texte">L'équipe classée 14me est relègué en Pro D2.</p>
+<p class="reg_texte">L'équipe classée 13me affrontera le Vice champion de France de Pro D2. </p>
+<p class="reg_texte"> le vainqueur de cette rencontre restera ou accedera au top 14.</p>
+
+
+<p class="reg_titre">4.Calendrier</p>
+<p class="reg_texte">
+
+
+  Barrages : <?php echo $quartTop14 ; ?><br/>
+  Demi : <?php echo$demiTop14 ; ?> <br/>
+  Finale : <?php echo $finaleTop14 ; ?><br/></p>
+
+
+
+  <?
+}
+if ($division== 120 )
+{
+  ?>
+    <p class="reg_nomDivision">Pro D2 </p>
+<p class="reg_titre">1.Phase finale </p>
+<p class="reg_sousTitre">1.1 Les qualifiés (6 équipes)</p>
+
+<!--
+<p class="reg_sousTitre">1.2 Modalités des  rencontres</p>
+<p class="reg_texte">  Les 1/8èmes , les quarts se jouent en rencontres Aller 
+  Retour ( les rencontres Aller auront lieu sur les terrains des équipes 
+  les moins bien classées) .<br>
+  les demi-finales et la finale se jouent sur une rencontre et sur terrain neutre.  </p>
+  
+<p class="reg_titre">2.Accession à la division Nationale 2</p>
+<p class="reg_texte">	
+  Les équipes qualifiées en demi-finales seront promues en Nationale 2</p>
+  
+  
+<p class="reg_titre">3.Relègation en Fédérale 2</p>
+<p class="reg_texte">Les équipes classées 11me et 12me seront relèguées en fédérale 2.</p>
+
+-->
+
+
+<p class="reg_titre">4.Calendrier</p>
+<p class="reg_texte">
+
+   Barrages : <?php echo $quartProD2 ; ?><br/>
+  Demi : <?php echo$demiProD2 ; ?> <br/>
+  Finale : <?php echo $finaleProD2 ; ?><br/></p>
+  <?php
+}
+if ($division== 130 )
+{
+  ?>
+  <p class="reg_nomDivision">Nationale </p>
+<p class="reg_titre">1.Phase finale </p>
+<p class="reg_sousTitre">1.1 Les qualifiés (6 équipes)</p>
+
+<!--
+<p class="reg_sousTitre">1.2 Modalités des  rencontres</p>
+<p class="reg_texte">  Les 1/8èmes , les quarts se jouent en rencontres Aller 
+  Retour ( les rencontres Aller auront lieu sur les terrains des équipes 
+  les moins bien classées) .<br>
+  les demi-finales et la finale se jouent sur une rencontre et sur terrain neutre.  </p>
+  
+<p class="reg_titre">2.Accession à la division Nationale 2</p>
+<p class="reg_texte">	
+  Les équipes qualifiées en demi-finales seront promues en Nationale 2</p>
+  
+  
+<p class="reg_titre">3.Relègation en Fédérale 2</p>
+<p class="reg_texte">Les équipes classées 11me et 12me seront relèguées en fédérale 2.</p>
+
+-->
+
+<p class="reg_titre">4.Calendrier</p>
+<p class="reg_texte">
+
+
+   Barrages : <?php echo $quartNat1  ; ?><br/>
+  Demi : <?php echo$demiNat1 ; ?> <br/>
+  Finale : <?php echo $finaleNat1  ; ?><br/></p>
+
+<?php
+}
+if ($division== 135 )
+{
+  ?>
+  <p class="reg_nomDivision">Nationale 2 </p>
+<p class="reg_titre">1.Phase finale </p>
+<p class="reg_sousTitre">1.1 Les qualifiés (12 équipes)</p>
+
+
+<!--
+<p class="reg_sousTitre">1.2 Modalités des  rencontres</p>
+<p class="reg_texte">  Les 1/8èmes , les quarts se jouent en rencontres Aller 
+  Retour ( les rencontres Aller auront lieu sur les terrains des équipes 
+  les moins bien classées) .<br>
+  les demi-finales et la finale se jouent sur une rencontre et sur terrain neutre.  </p>
+  
+<p class="reg_titre">2.Accession à la division Nationale 2</p>
+<p class="reg_texte">	
+  Les équipes qualifiées en demi-finales seront promues en Nationale 2</p>
+  
+  
+<p class="reg_titre">3.Relègation en Fédérale 2</p>
+<p class="reg_texte">Les équipes classées 11me et 12me seront relèguées en fédérale 2.</p>
+
+-->
+
+
+<p class="reg_titre">4.Calendrier</p>
+<p class="reg_texte">
+
+
+  Barrages : <?php echo $barrageFed1 ; ?><br/>
+  Huitième A/R : <?php echo $huitiemeFed1 ; ?> <br/>
+  Quarts A/R : <?php echo $quartFed1 ; ?><br/>
+  Demi : <?php echo$demiFed1 ; ?> <br/>
+  Finale : <?php echo $finaleFed1 ; ?><br/></p>
+
+<?php
+}
+
+
+
+
+
+if ($division== 140 )
 {
 ?>
 <p class="reg_nomDivision">Fédérale 1 </p>
@@ -52,11 +192,40 @@ Les vainqueurs de ces barrages participeront aux 1/8ème du champ de France.<p>
 
 <p class="reg_titre">4.Calendrier</p>
 <p class="reg_texte">
-  Barrages : Le 26 Avril<br/>
-  Huitième A/R : Les 3 et 10 mai <br/>
-  Quarts A/R : Les 17 et 24 mai<br/>
-  Demi : Le 07 juin <br/>
-  Finale : Le 14 juin<br/></p>
+
+
+  Barrages : <?php echo $barrageFed1 ; ?><br/>
+  Huitième A/R : <?php echo $huitiemeFed1 ; ?> <br/>
+  Quarts A/R : <?php echo $quartFed1 ; ?><br/>
+  Demi : <?php echo$demiFed1 ; ?> <br/>
+  Finale : <?php echo $finaleFed1 ; ?><br/></p>
+<?php
+}
+
+elseif (  $division == 245)
+{
+?>
+<p class="reg_nomDivision">Espoirs Fédéraux </p>
+ 
+
+<p class="reg_titre">1.Phase finale </p>
+<p class="reg_sousTitre">1.1 les qualifiés (16 équipes)</p>
+<p class="reg_texte">
+Sont qualifiés directement pour les 1/8ème du championnat de France, les 1er, 2e 3me et 4me de chaque poules. <br><br>
+</p>
+   
+<p class="reg_sousTitre">1.2 Modalités des rencontres</u><br>
+<p class="reg_texte">
+  Toutes les confrontations ont lieu sur une seule rencontre. </p>
+
+<p class="reg_titre">2.Calendrier </p>
+<p class="reg_texte">
+  Barrages : <?php echo $barrageEspFed1; ?><br/>
+  Huitième : <?php echo $huitiemeEspFed1; ?><br/>
+  Quarts : <?php echo $quartEspFed1; ?><br/>
+  Demi : <?php echo $demiEspFed1; ?><br/>
+  Finale : <?php echo $finaleEspFed1; ?><br/></p>
+
 <?php
 }
 //*******************************************************************
@@ -64,7 +233,7 @@ Les vainqueurs de ces barrages participeront aux 1/8ème du champ de France.<p>
 //*           Réglement fédérale 2 / fédérale B                     *
 //*                                                                 *
 //*******************************************************************
-elseif ($cmt == 'fed2' or $cmt==990150  or $division== 150 or $division == 250)
+elseif ( $division== 150 )
 {
 ?>
 <p class="reg_nomDivision">Fédérale 2 </p>
@@ -99,8 +268,12 @@ Les vainqueurs de ces barrages participeront aux 16ème A/R du champ de France.<
   Quarts : <?php echo $quartFed2; ?><br/>
   Demi : <?php echo $demiFed2; ?><br/>
   Finale : <?php echo $finaleFed2; ?><br/></p>
+ <?php 
   
-  
+}
+elseif (  $division == 250)
+{
+?>
 <p class="reg_nomDivision">Fédérale B </p>
  
 
@@ -133,7 +306,7 @@ Barrages : <?php echo $barrageFedB; ?><br/>
 //*           Réglement fédérale 3 / Excellence B                   *
 //*                                                                 *
 //*******************************************************************
-elseif ($cmt == 'fed3GS' or $cmt == 'fed3NE' or $cmt == '991161' or $cmt == '991261' or $cmt == '992161' or $cmt == '992261')
+elseif ($division == 160)
 {
 ?>
 
@@ -173,8 +346,12 @@ Les équipes classées 9ème et 10ème de chaque poule seront relèguées en ré
   Demi : <?php echo $demiFed3; ?><br/>
   Finale : <?php echo $finaleFed3; ?><br/>
   </p>
-  
+  <?php
+}
+else if ($division == 260)
+{
 
+  ?>
 <p class="reg_nomDivision">Excellence B</p>
 
 <p class="reg_titre">1.Phase finale </p>
@@ -325,12 +502,5 @@ Les équipes classées 8me de chaque poule seront relèguées en fédérale 2 la
 <?php
 }
 ?>  
+<hr>
 
-	<hr/><br/>
- 
-     <div align = "center">
-            <input type="button" onClick="twFermer()" value="Fermer" name="button2">
-     </div>
-
-</body>
-</html>

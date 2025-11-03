@@ -237,14 +237,35 @@ $saisonEnCours=$row[0];
 	//*****************************************
 	function nbreTitre($nomChampion,  $id_equipe, $table, $categorie, $bdd)
 	{
-		$nbTitre = array();
+
+//	echo $nomChampion	; echo "<b>";
+
+	if (substr($nomChampion,1,1) == "'")	
+	   $nomChampion = str_replace("'", " ", $nomChampion);
+	
+		
+		
+		
+		
+	//	echo ("nomChampion(fonction) ; ".$nomChampion);echo "<br>";
+		/*
+		echo ("id_equipe(fonction) ; ".$id_equipe);echo "<br>";
+		echo ("table(fonction) ; ".$table);echo "<br>";
+		echo ("categorie(fonction) ; ".$categorie);echo "<br>";
+*/
+
+			$nbTitre = array();
 		global $nombreTitre;
 		$nbTitre = $bdd->query("SELECT COUNT(*)
 					  FROM $table  
-					  WHERE categorie='$categorie' AND (entente='$nomChampion' OR entente='$id_equipe')  ");
+					  WHERE categorie='$categorie' AND ( entente='$id_equipe'  OR entente='$nomChampion')  ");
 
-		$nbTitre = $nbTitre->fetch();
+		
+//echo ("nomChampion(fonction) ; ".$nomChampion);echo "<br>";
+
+$nbTitre = $nbTitre->fetch();
 		$nombreTitre = $nbTitre[0];
+		//echo "fonctions : ".$nombreTitre;echo "<br>";
 	}
 
 	//************************************************
@@ -266,6 +287,11 @@ $saisonEnCours=$row[0];
 
 	function palmaresParClub($nomChampion, $id_equipe, $table, $categorie, $bdd)
 	{
+		
+			if (substr($nomChampion,1,1) == "'")	
+	   $nomChampion = str_replace("'", " ", $nomChampion);
+		
+		
 		$reponse = $bdd->query("SELECT saison, titre, championnat, division
 								FROM $table
 								WHERE categorie='$categorie' AND (entente='$id_equipe' OR entente='$nomChampion')   
@@ -308,6 +334,12 @@ $saisonEnCours=$row[0];
 
 	function nbreTitreEU($nomChampion, $bdd)
 	{
+
+
+	if (substr($nomChampion,1,1) == "'")	
+	   $nomChampion = str_replace("'", " ", $nomChampion);
+
+
 		$nbTitreEU = array();
 		global $nombreTitreEU;
 
@@ -326,12 +358,17 @@ $saisonEnCours=$row[0];
 	function palmaresEU($id_equipe, $bdd)
 	{
 
+		
+
 		$reponse1 = $bdd->query("SELECT nom_1
 		FROM bdclubs
 		WHERE id=$id_equipe");
 		while ($donnees = $reponse1->fetch()) {
 			$nomChampion = $donnees['nom_1'];
 		}
+
+	if (substr($nomChampion,1,1) == "'")	
+	   $nomChampion = str_replace("'", " ", $nomChampion);
 
 		$reponse = $bdd->query("SELECT *
 						FROM bdeurope

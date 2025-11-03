@@ -13,7 +13,10 @@
   else
     require("../connect/connexion1.php");
 
+//echo "idEquipe :".$id_equipe; echo "<br>";
+//echo "europe :".  "<br>";
   //****************     Palmares européens      *******************************
+ 
   $table = "bdeurope";
   nbreTitreEU($id_equipe, $bdd);
   if ($nombreTitreEU > 0) {
@@ -22,17 +25,33 @@
     else
 
       echo "<h2> Titres Européens </h2>";
-  } ?>
+  }
+    
+  ?>
   <div id="palmares" class="center">
     <?php palmaresEU($id_equipe, $bdd);  ?>
   </div>
 
   <?php
+  //echo "fin europe :".  "<br>";
   //****************     Palmares équipes Unes      *******************************
+  //echo "equipe1 :".  "<br>";
   $table = "bdequipe1";
   $categorie = "A";
+
+
+/*
+echo "nomChampion1 : ".$nomChampion.  "<br>";
+echo "id_equipe1 : ".$id_equipe.  "<br>";
+
+*/
+
   nbreTitre($nomChampion, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreChampion = $nombreTitre;
+
+//echo "nbreTitreChampion".$nbreTitreChampion.  "<br>";;
+
+
 
   nbreTitre($clubNom1, $id_equipe,$table, $categorie, $bdd);
   $nbreTitreFusion1 = $nombreTitre;
@@ -46,7 +65,7 @@
   nbreTitre($clubNom4, $id_equipe, $table, $categorie, $bdd);
   $nbreTitreFusion4 = $nombreTitre;
 
-
+//echo "equipe1-fin :".  "<br>";
 
   if ($nbreTitreChampion > 0 or $nbreTitreFusion1 > 0 or $nbreTitreFusion2 > 0 or $nbreTitreFusion3 > 0 or $nbreTitreFusion4 > 0) {
     if ($smart == true or $mode == "smart")
@@ -69,6 +88,7 @@
 
   <?php
   //****************     Palmares équipes II      *******************************
+
   $table = "bdequipe2";
   $categorie = "B";
   nbreTitre($nomChampion, $id_equipe, $table, $categorie, $bdd);

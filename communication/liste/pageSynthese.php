@@ -60,10 +60,10 @@ $query = " 	SELECT nom
       <td bgcolor="#FFFFFF" height="260" valign="top" width="650"> 
         <p><br />
           <font face="Arial, Helvetica, sans-serif" size="5"><b><font color="#FF0000" size="6">Suivi 
-          des équipes engagées <br>
+          des &eacute;quipes engag&eacute;es <br>
           en championnat de France<br>
           <br>
-          <font color="#000000">comité <?php echo $nomComite; ?></font></font></b></font></p>
+          <font color="#000000">comit&eacute; <?php echo $nomComite; ?></font></font></b></font></p>
         <p><br>
           <?php    
 		  $terr="terr".''.$comiteMaj.''.".php";
