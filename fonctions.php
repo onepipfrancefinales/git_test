@@ -106,12 +106,9 @@ $saisonEnCours=$row[0];
 							OR idffr ='$chaine2') and type='M' ");
 		}
 
-		if (isset($id)) $id = $id;
-		else $id = 0;
-		if (isset($code)) $code = $code;
-		else $code = 0;
-		if (isset($numLigue)) $numLigue = $numLigue;
-		else $numLigue = 0;
+		if (isset($id)) $id = $id;	else $id = 0;
+		if (isset($code)) $code = $code;else $code = 0;
+		if (isset($numLigue)) $numLigue = $numLigue;else $numLigue = 0;
 
 
 		while ($row = $requete->fetch()) {

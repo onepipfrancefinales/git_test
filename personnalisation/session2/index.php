@@ -12,7 +12,7 @@ $comite = $_GET['comite'];
 ?>
 <html>
 <head>
-<title>Mise � jour des r�sultats</title>
+<title>Mise à jour des résultats</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="../../personnalisation/admin/formulaire.css"/> 
 <link type="text/css" rel="stylesheet" href="../../smart/10.css"> 

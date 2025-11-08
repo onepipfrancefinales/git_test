@@ -4,9 +4,19 @@ require "../fonctions.php";
 require "fonctions.php";
 if (isset($_REQUEST['champion'])) $chaine = $_REQUEST['champion'];else $chaine = "2029157";
 //if (isset($_GET['champion'])) $chaine = $_GET['champion']; else $chaine="2029076";
+
 // remplacementde l'apostrophe
-if (stristr($chaine, "'") == true) {  $chaine2 = str_replace("'", " ", $chaine);  $chaine = $chaine2;  echo "<br>";}
-if (isset($_GET['nouveauClub'])) {  $nouveauClub = $_GET['nouveauClub'];} else {  $nouveauClub = 0;}
+if (stristr($chaine, "'") == true) {
+  $chaine2 = str_replace("'", " ", $chaine);
+  $chaine = $chaine2;
+  echo "<br>";
+}
+
+if (isset($_GET['nouveauClub'])) {
+  $nouveauClub = $_GET['nouveauClub'];
+} else {
+  $nouveauClub = 0;
+}
 
 
 //echo "chaine : ".$chaine; echo "<br/>";
@@ -63,7 +73,7 @@ fusionDeClubs2($equipe, $bdd);
 <html lang="fr">
 
 <head>
-  <link rel="canonical" href="https://francefinalesrugby.fr/consultation/pageclub00.php?champion=<?php echo $equipe; ?>">
+  <link rel="canonical" href="https://francefinalesrugby.fr/consultation/pageclub00.php">
   <meta name="description" content="<?php echo $nomLong; ?> (Bureau; Siège; Stade; Contacts; palmarès)">
   <meta name="classification" content="Sport,Rugby">
   <meta name="resource-type" content="document">
