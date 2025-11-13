@@ -268,6 +268,7 @@ require 'resultats/constantes.php';
         <br>
 -->
       <?php //include("informations/majParSMS/infosMajClassement.php"); 
+      //jshjshdfjsqhfsqhdfjskq
       ?>
 
       <!-- <p align="center"><a href="brennus_histoire/pageAccueil.php">test</a></p>-->
