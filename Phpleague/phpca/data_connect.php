@@ -1,17 +1,16 @@
 <?php
-/*
-$hostname="127.0.0.1";
-$database="onepip-france-db2";
-$login="root";
-$password="";
-*/
-$hostname="sql.franceserv.fr";
-//$database="onepip-france-db2";
-$database="onepip-france_db6";
-$login="onepip-france";
-$password="Lavelan1969&";
+$lang = "fr";
+$PHPLEAGUE_RACINE = "Phpleague/phpab/";
+$PHPLEAGUE_RACINE2 = "Phpleaguesmart/phpab/";
 
-$lang="fr";
-$PHPLEAGUE_RACINE="Phpleague/phpca/";
-$PHPLEAGUE_RACINE2="Phpleaguesmart/phpca/";
-?>
+if ($localHost) {
+    $hostname = "127.0.0.1";
+    $database = "onepip-france-db2";
+    $login = "root";
+    $password = "";
+} else {
+    $hostname = "sql.franceserv.fr";
+    $database = "onepip-france_db6";
+    $login = "onepip-france";
+    $password = "Lavelan1969&";
+}

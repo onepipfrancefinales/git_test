@@ -1,9 +1,15 @@
 <?php 
+echo "1";echo "<br />";
 require '../../Phpleague/phpca/config2.php';
+echo "2";echo "<br />";
 require '../../Phpleague/phpca/admin/fonctions.php';
+echo "3";echo "<br />";
 include '../../Phpleague/phpca/lang/lang_fr.php';
+echo "4";echo "<br />";
 include '../../fichierConfig.php';
+echo "5";echo "<br />";
 ouverture();
+echo "6";echo "<br />";
 
 echo "<br />";
 echo "champRecup : ".$champRecup;
